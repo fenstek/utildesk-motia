@@ -2,131 +2,92 @@
 slug: fathom
 title: Fathom
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: "2026-07-14-optiplex-editorial-50"
+category: "AI Audio"
 price_model: Freemium
 tags:
   - meetings
   - notes
   - transcription
   - productivity
-official_url: 'https://www.fathom.ai/'
+official_url: "https://www.fathom.ai/"
+description: "Fathom transparently records online meetings, creates transcripts and AI summaries, and connects conversation insights with follow-up work and team processes."
+updated_at: 2026-07-14
 popularity: 0
 source_language: de
 translation: full
 ---
 # Fathom
 
-Fathom is an intelligent tool for automatic transcription and summarization of online meetings. It helps users capture important conversation content without having to manually take notes, and supports productivity in teams. By integrating with popular video conferencing platforms, Fathom enables easy and efficient post-meeting preparation.
-
-## For whom is Fathom suitable?
-
-Fathom is primarily aimed at professionals, teams, and organizations that regularly hold virtual meetings and place a strong emphasis on precise documentation. It is particularly suitable for project managers, sales teams, human resources departments, and anyone who wants to create meeting notes quickly and reliably. Fathom is also a great tool for freelancers and individuals who want to optimize their meetings.
-
-Fathom is most useful for support, sales, communication, and service teams that need to manage many contacts in a traceable way. The value should be judged in a real process where availability, response quality, conversation handoffs, and clean follow-up become not only faster but also easier to explain.
-
-The first step with Fathom should not be a showroom test. A real work item shows much faster whether ownership, review, and output quality actually fit together.
-
-## Editorial assessment
-
-Fathom should be measured by process quality. A good implementation makes handoffs clearer, decisions easier to trace, and errors visible earlier.
-
-A good test case for Fathom is a real contact case with intake, prioritization, response, escalation, and follow-up. If response time, handoff quality, customer satisfaction, documentation, and follow-up effort do not improve in a plausible way afterwards, the value is not proven yet.
-
-- **Checkpoint for Fathom:** Before rollout, response time, handoff quality, customer satisfaction, documentation, and follow-up effort should be supported by a small before-and-after comparison.
-- **Good start for Fathom:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
-- **Risk with Fathom:** Even a good interface helps only partly when channels, ownership, escalation paths, and privacy rules are not agreed together.
+Fathom is an AI meeting assistant for individuals and teams that need a reliable record of conversations in Zoom, Google Meet, or Microsoft Teams. After capture, it produces a transcript, summary, highlights, and—depending on the plan—action items or follow-up drafts. The important boundary is accountability: participants must be informed about the recording, and a person still needs to check decisions, tasks, names, and sensitive statements before they become operational data.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/fathom-editorial.webp" alt="Illustration for Fathom: meeting notes emerge from audio waves and conversation moments" loading="lazy" decoding="async" />
+  <img src="/images/tools/fathom-editorial.webp" alt="Meeting notes emerge from conversation waves and marked decision points" loading="lazy" decoding="async" />
 </figure>
 
-## Key Features
+## Who is Fathom for?
 
-- **Automatic Transcription:** Converts spoken language into text to capture meeting notes.
-- **Meeting Summaries:** Generates concise summaries of key discussion points.
-- **Integration with Video Conferencing Tools:** Seamlessly integrates with platforms like Zoom, Google Meet, or Microsoft Teams.
-- **Note Management:** Stores and organizes meeting notes in a central location.
-- **Search Function:** Enables quick finding of content within transcripts.
-- **Marking Important Points:** Allows users to mark relevant passages during the meeting.
-- **Data Protection and Security:** Offers features to comply with data protection standards depending on the provider.
-- **Team Collaboration:** Supports shared use and editing of notes.
+Fathom suits sales, customer success, recruiting, consulting, and project teams with a high volume of recurring video calls. Its value is clearest when a call must lead to a concrete handoff: a CRM update, task list, decision, or short customer email. The free individual plan may be enough for personal meeting memory. An organization handling employment, health, legal, or other sensitive information should first define its legal basis, retention period, access model, and deletion process.
 
-- **Practical run with Fathom:** The tool should be tested against a real contact case with intake, prioritization, response, escalation, and follow-up, so strengths and limits become visible outside a polished demo.
-- **Quality control in Fathom:** The team needs a simple way to review response time, handoff quality, customer satisfaction, documentation, and follow-up effort after use.
-- **Handoff with Fathom:** Results, open questions, and decisions should be documented so other roles can continue the work later.
+## How it fits a meeting process
 
-## Benefits and Drawbacks
+Fathom can work as a visible notetaker that joins a call; its newer bot-free desktop experience is being rolled out gradually and was initially documented as limited to Mac and English-language meetings. Depending on the capture mode, it can capture transcript only, audio, or audio and video. After the call, Fathom generates a summary that still needs a human accuracy check. Transcription supports 38 languages, while summary translation is available for selected languages and plans.
 
-### Benefits
+## A practical team workflow
 
-- Saves time through automatic recording.
-- Improves meeting understanding.
-- Increases productivity through easy information preparation.
-- Supports multiple video conferencing platforms.
-- Intuitive user interface and easy-to-use.
-- Offers a free trial version.
+Start with one bounded process, such as first sales calls. The owner decides when recording is allowed, how external attendees are informed, which summary template is appropriate, and where action items should go. After the call, the owner checks names, figures, commitments, and deadlines, corrects errors, and copies only the relevant points into the CRM or task system. The summary is shared only after that review. This keeps Fathom as an input to verified work instead of creating a second, uncontrolled archive.
 
-- Fathom is especially useful when a recurring process should no longer depend on one person's private know-how.
-- Fathom can improve handoffs when availability, response quality, conversation handoffs, and clean follow-up currently leave too much context in individual heads.
+## Integrations and operations
 
-### Drawbacks
+Fathom lists integrations for CRM synchronization, Slack, Zapier, Make, Asana, ChatGPT, and Claude, and it provides a public API. API keys are user-level keys and do not automatically grant access to other users’ unshared recordings. The documented API limit is 60 calls per minute, with no higher standard limit. That is reasonable for small post-meeting workflows, but teams should test it before building a central importer. Transcripts do not have a direct download button; the official help describes copying them from the call view. Audio, video, and sharing therefore need to be managed deliberately in Fathom and downstream systems.
 
-- Transcription quality may vary depending on audio quality.
-- Expanded features are usually only available in paid plans.
-- Data protection and compliance can vary depending on the use case and region.
-- Requires stable internet connection during meetings.
+## Quality control and limitations
 
-- Fathom can merely move the friction elsewhere when channels, ownership, escalation paths, and privacy rules are not agreed together.
-- Fathom stays reliable only when maintenance, quality checks, and open decisions are reviewed regularly.
+Do not evaluate Fathom only by asking whether a transcript looks fluent. Check wrong names, omitted qualifications, invented tasks, and incorrectly assigned speakers. For ten to twenty approved real meetings, compare manual preparation time, correction effort, task handoff completeness, and follow-up questions. Poor microphones, overlapping speech, accents, and specialist vocabulary can reduce quality; a team transcription dictionary can help on supported team plans but does not remove the need for review. A polished summary is not evidence that a decision was actually made.
 
-## Pricing & Costs
+## Privacy, security, and governance
 
-Fathom offers a freemium model, making basic features available for free. For enhanced features, such as longer transcription times, expanded integrations, or team features, paid subscriptions are required. The exact prices and services vary depending on the plan and provider. Custom pricing may be possible for larger teams or enterprises.
+Fathom states that it has SOC 2 Type II, HIPAA, and GDPR compliance support and provides DPA materials. Its security documentation says data is stored in the United States, which is a concrete transfer and contract question for EU and UK customers. Fathom says its subprocessors are contractually prohibited from training their AI models on user data, while de-identified customer data may be used to improve Fathom’s proprietary models; an opt-out is available. Teams should document that setting, subprocessors, roles, SSO, link permissions, and who acts as controller.
 
-A fair cost check for Fathom should include licenses, numbers, integrations, training, administration, and ongoing quality control. Otherwise the tool can look cheaper at the start than it is in productive use.
+Recordings are not silent: a bot, banner, recording notice, or in-app consent mechanism makes capture visible. The meeting owner remains responsible for obtaining appropriate consent. Team administrators can manage sharing, downloads, deletion, and retention; automatic retention rules for recordings, transcripts, and summaries are tied to higher team functionality. Avoid “Anyone with the link” for confidential calls because a link that has already been shared cannot be unsent, even though access can be revoked later.
 
-## Alternatives to Fathom
+## Pricing and total cost
 
-- **Otter.ai:** Another tool for automatic transcription with extensive integrations and collaboration features.
-- **Rev:** A professional transcription service with AI-powered and manual options.
-- **Temi:** Faster and more affordable transcription with a focus on simple use.
-- **Sonix:** Offers automated transcription and translation capabilities for multiple languages.
-- **Fireflies.ai:** AI-powered meeting notes with a focus on team collaboration and CRM integration.
+According to Fathom’s official pricing page, the individual Free plan is $0 and includes unlimited recordings, transcriptions, and storage, while advanced AI features are limited. Premium is listed at $16 per user per month when billed annually or $20 month-to-month. Team is listed at $15 or $19 per user per month, and Business at $25 or $34; the team plans have a two-user minimum, while Enterprise is sales-led. Prices and entitlements can change. A realistic budget also includes review time, CRM and automation maintenance, training, DPA work, and the cost of an incorrectly shared or inaccurate recording.
 
-A comparison for Fathom should go beyond feature lists. The key question is whether contact-center, meeting, helpdesk, chat, and collaboration tools support the current roles, data, and handoffs better.
+## Editorial Assessment
+
+Fathom is recommended for teams that run many online meetings and can reliably turn reviewed summaries into tasks, CRM updates, or customer communication. It creates value when one owner controls capture, review, sharing, and deletion, and a pilot demonstrates less preparation time or fewer clarification loops. For private bot-free notes, strict local data control, or a structured collaborative minutes process with its own governance, a narrower alternative is a better fit.
+
+## Alternatives
+
+- [Fireflies.ai](/en/tools/fireflies-ai/): Takes a more integration- and search-oriented approach for teams that need to route conversation data into several systems.
+- [Granola](/en/tools/granola/): Works as a bot-free AI notebook that combines personal notes with conversation context, making it better suited to individual note-taking.
+- [Otter.ai](/en/tools/otter-ai/): Is positioned more broadly as a transcription and notes tool for meetings, interviews, lectures, and mixed audio workflows.
+- [Avoma](/en/tools/avoma/): Focuses more directly on sales and customer-success workflows with conversation analysis and pipeline context.
+- [Fellow.app](/en/tools/fellow-app/): Is a better match for structured agendas, meeting management, and task follow-through than for a pure conversation archive.
 
 ## FAQ
 
-**1. How accurate is the transcription in Fathom?**
-The accuracy depends on the audio quality, language, and accent of the speakers. In general, the tool provides a good initial transcription that can be corrected manually as needed.
+**Does Fathom make recording visible to participants?**
 
-**2. Which video conferencing platforms are supported?**
-Fathom integrates with popular platforms like Zoom, Google Meet, and Microsoft Teams. The support for additional platforms may vary depending on the version.
+Yes. Fathom documents visible notices or consent mechanisms for both bot-based and bot-free experiences. The organization responsible for the meeting must still provide the legally appropriate notice and obtain any required consent in the relevant jurisdictions.
 
-**3. Is Fathom GDPR-compliant?**
-Data protection regulations vary depending on the provider and their location. Users should review the data protection policies to ensure their requirements are met.
+**Can Fathom send meeting information into a CRM automatically?**
 
-**4. Can I test Fathom for free?**
-Yes, Fathom offers a free trial version that provides basic features. Upgrading to a paid plan is required for additional features.
+Yes, CRM synchronization and field synchronization are documented features, with scope depending on the plan and integration. Review automated entries before saving them, especially amounts, commitments, and next steps.
 
-**5. How does Fathom store my meeting data?**
-Meeting notes and transcripts are stored in the cloud on secure servers provided by the company. Details on data storage should be obtained from the respective terms of use.
+**Can I download a transcript as a file?**
 
-**6. Is Fathom suitable for individuals or only for teams?**
-The tool is suitable for both individuals and teams. However, team features often require paid plans.
+The official help says there is no direct transcript download. A transcript can be copied from the call view. Teams needing a durable export should test the API, summary, and archive workflow before rollout.
 
-**7. Can I export the transcripts?**
-Yes, Fathom allows exporting transcripts in various formats to use or archive them.
+**Is Fathom suitable for sensitive EU conversations?**
 
-**8. Does Fathom support other languages?**
-The language support depends on the provider. Fathom typically supports English, with additional languages available depending on the version.
+There is no universal yes or no. Fathom describes GDPR support, a DPA, and US data storage; the customer must also assess legal basis, transfer, consent, access, retention, and deletion. A locally controlled or more narrowly scoped tool may be preferable for especially sensitive calls.
 
-**9. How should a team test Fathom?**
-For Fathom, use one real, bounded use case. Define the goal, owner, data basis, review steps, and success criteria first, then compare effort and output quality after the test.
+**How should a team pilot Fathom?**
 
-**10. When is Fathom a poor fit?**
-Fathom is a poor fit when channels, ownership, escalation paths, and privacy rules are not agreed together, or when nobody has time for setup, review, and ongoing maintenance. In that case the work simply moves to another place.
+Choose one recurring meeting type, name an owner, and define correction quality, preparation time, and complete task handoff before the pilot. After a small sample, decide from those measures rather than from the demo interface.
