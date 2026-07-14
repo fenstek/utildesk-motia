@@ -20,6 +20,10 @@ Amazon Aurora is AWS's managed relational database service for MySQL- and Postgr
 
 For teams with an existing PostgreSQL or MySQL application, Aurora can be a sensible route to higher availability and scale. Compatibility does not mean that every extension, version upgrade, or operating assumption transfers unchanged. A migration and load test are still essential.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-aurora-editorial.webp" alt="a nocturnal watercolor observatory with synchronized peaks" loading="lazy" decoding="async" />
+</figure>
+
 ## When Aurora fits
 
 Aurora fits transactional web applications, SaaS products, and internal systems where PostgreSQL or MySQL is already a natural choice and AWS remains the preferred operating stack. Read replicas, Multi-AZ operation, automatic backups, and regional failure scenarios can then be used as platform capabilities.

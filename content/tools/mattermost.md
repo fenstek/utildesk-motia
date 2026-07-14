@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Mattermost ist eine Open-Source-Plattform für Teamkommunikation und Zusammenarbeit, die sich durch ihre Anpassungsfähigkeit und Automatisierungsmöglichkeiten auszeichnet. Besonders im Bereich der Künstlichen Intelligenz (KI) bietet Mattermost Funktionen, die Teams unterstützen, ihre Workflows effizienter zu gestalten und repetitive Aufgaben zu automatisieren. Die Plattform kombiniert Chat, Workflow-Automatisierung und AI-gestützte Assistenz in einer sicheren Umgebung, die sich sowohl für kleine Teams als auch für große Unternehmen eignet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mattermost-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Mattermost" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Mattermost ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

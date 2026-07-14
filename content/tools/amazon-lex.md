@@ -27,6 +27,10 @@ Lex passt zu Produkt-, Support- und Plattformteams, die bereits auf AWS arbeiten
 
 Weniger geeignet ist Lex als Ersatz für einen unstrukturierten Supportprozess. Wenn Zuständigkeiten, Fachwissen oder die Befugnis zur Entscheidung unklar sind, beschleunigt ein Bot nur die falsche Antwort. Zuerst muss feststehen, was der Bot niemals tun oder behaupten darf.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-lex-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Amazon Lex" loading="lazy" decoding="async" />
+</figure>
+
 ## Zentrale Bausteine
 
 - **Text und Sprache:** Nutzer können über Chat oder Sprache mit einem Bot interagieren; Lex bringt ASR und NLU für diese Schnittstellen mit.

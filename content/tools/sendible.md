@@ -18,6 +18,10 @@ generated_at: 2026-05-17
 
 Sendible ist eine umfassende Social-Media-Management-Plattform, die speziell für Unternehmen, Agenturen und Marketing-Teams entwickelt wurde. Mit Fokus auf Automatisierung und KI-gestützte Funktionen hilft Sendible dabei, Social-Media-Inhalte effizient zu planen, zu veröffentlichen und zu analysieren. Die Plattform unterstützt zahlreiche soziale Netzwerke und ermöglicht eine zentrale Steuerung aller Marketingaktivitäten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sendible-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Sendible" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Sendible ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

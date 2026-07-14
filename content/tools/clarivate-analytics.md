@@ -18,6 +18,10 @@ generated_at: "2026-05-11"
 
 Clarivate Analytics, insbesondere die Web of Science-Plattform, ist ein führendes Tool zur wissenschaftlichen Recherche und Datenanalyse. Es bietet Zugang zu umfangreichen bibliografischen Datenbanken, die Forschern, Entwicklern und Unternehmen ermöglichen, wissenschaftliche Veröffentlichungen, Zitationen und Trends effizient zu durchsuchen und auszuwerten. Mit leistungsstarken Such- und Analysefunktionen unterstützt Web of Science die Identifikation relevanter Forschungsergebnisse und die Bewertung von wissenschaftlicher Wirkung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clarivate-analytics-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Clarivate Analytics (Web of Science)" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Clarivate Analytics (Web of Science) entscheidet nicht die Trefferzahl, sondern die Nachvollziehbarkeit der Recherche. Suchraum, Quellenqualität, Zitationen und Gegenprüfung müssen sichtbar bleiben, sonst wirkt das Ergebnis schneller belastbar, als es ist. Wir würden mit einer engen Recherchefrage starten und jeden Fund gegen Kontrollquellen, Notizen und Ausschlussgründe prüfen.

@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Google T5 ist ein leistungsstarkes KI-Modell, das auf der Text-zu-Text-Transformationsarchitektur basiert. Es wurde entwickelt, um eine Vielzahl von natürlichen Sprachverarbeitungsaufgaben durch eine einheitliche Text-zu-Text-Formulierung zu lösen. T5 kann Texte generieren, übersetzen, zusammenfassen, klassifizieren und vieles mehr, indem es Eingabetexte in gewünschte Ausgabetexte umwandelt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-t5-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Google T5 (Text-to-Text Transfer Transformer)" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Google T5 (Text-to-Text Transfer Transformer) zählt nicht das Modellversprechen, sondern die kontrollierte Einbettung: Datenbasis, Modellversion, Messpunkte und Reproduzierbarkeit müssen vor dem Einsatz feststehen. Wir würden mit einem eng begrenzten Analyse- oder Modellfall starten, eine Baseline danebenlegen und Fehlerfälle aktiv sammeln. Empfehlenswert, wenn ein Team Evaluation, Betrieb und Nachpflege wirklich übernimmt; riskant, wenn nur ein KI-Schlagwort gesucht wird.

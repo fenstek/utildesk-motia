@@ -18,6 +18,10 @@ generated_at: "2026-05-11"
 
 Elasticsearch ist eine leistungsstarke, verteilte Such- und Analyse-Engine, die auf Apache Lucene basiert. Sie ermöglicht die schnelle Suche, Analyse und Visualisierung großer Mengen an Daten in Echtzeit. Als Herzstück des Elastic Stack wird Elasticsearch häufig für Anwendungen wie Log-Analyse, Volltextsuche, Datenvisualisierung und Business-Analytics eingesetzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elasticsearch-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Elasticsearch" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Elasticsearch steht und fällt die Entscheidung mit Datenmodell, Zugriffen, Kostenkontrolle und Betrieb. Wir würden zuerst einen begrenzten Datenfluss mit echten Volumina, klaren Abfragen und dokumentierten Fehlerfällen prüfen. Eine schnelle Demo sagt wenig, wenn Pflege, Governance und Performance ungeklärt bleiben.

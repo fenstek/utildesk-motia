@@ -1,0 +1,213 @@
+{
+  "batch": "2026-07-14-codex-subscription-20",
+  "generator": "Codex built-in image_gen via current ChatGPT subscription",
+  "status": "implemented",
+  "dimensions": {
+    "width": 1280,
+    "height": 720
+  },
+  "format": "webp",
+  "quality": 82,
+  "items": [
+    {
+      "slug": "adobe-podcast",
+      "image": "content/images/tools/adobe-podcast-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "documentary analogue recording studio, warm magazine photography",
+      "status": "implemented"
+    },
+    {
+      "slug": "airbyte",
+      "image": "content/images/tools/airbyte-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "layered paper-cut harbor with data cargo routes",
+      "status": "implemented"
+    },
+    {
+      "slug": "amazon-aurora",
+      "image": "content/images/tools/amazon-aurora-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "night watercolor observatory for distributed database",
+      "status": "implemented"
+    },
+    {
+      "slug": "amazon-msk",
+      "image": "content/images/tools/amazon-msk-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "industrial linocut message-sorting station",
+      "status": "implemented"
+    },
+    {
+      "slug": "apache-beam",
+      "image": "content/images/tools/apache-beam-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "transparent glass streaming-pipeline sculpture in museum",
+      "status": "implemented"
+    },
+    {
+      "slug": "apigee",
+      "image": "content/images/tools/apigee-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "strict Swiss screenprint API checkpoint",
+      "status": "implemented"
+    },
+    {
+      "slug": "are-na",
+      "image": "content/images/tools/are-na-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "tactile editorial collage research archive",
+      "status": "implemented"
+    },
+    {
+      "slug": "avid-media-composer",
+      "image": "content/images/tools/avid-media-composer-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "documentary film-editing room with light table",
+      "status": "implemented"
+    },
+    {
+      "slug": "avigilon-control-center",
+      "image": "content/images/tools/avigilon-control-center-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "restrained neo-noir physical-security center",
+      "status": "implemented"
+    },
+    {
+      "slug": "aws-bedrock",
+      "image": "content/images/tools/aws-bedrock-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "geological cross-section foundation for AI workflows",
+      "status": "implemented"
+    },
+    {
+      "slug": "aws-lambda",
+      "image": "content/images/tools/aws-lambda-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "minimalist kinetic paper theater of events",
+      "status": "implemented"
+    },
+    {
+      "slug": "axis-camera-station",
+      "image": "content/images/tools/axis-camera-station-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "architectural pencil-and-wash protected-building plan",
+      "status": "implemented"
+    },
+    {
+      "slug": "azure-functions",
+      "image": "content/images/tools/azure-functions-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "two-color risograph modular event workshop",
+      "status": "implemented"
+    },
+    {
+      "slug": "blockly",
+      "image": "content/images/tools/blockly-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "top-down wooden modular programming workshop",
+      "status": "implemented"
+    },
+    {
+      "slug": "breezy-hr",
+      "image": "content/images/tools/breezy-hr-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "soft architectural watercolor hiring journey",
+      "status": "implemented"
+    },
+    {
+      "slug": "brevo",
+      "image": "content/images/tools/brevo-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "bright silkscreen mail workshop with segmented routes",
+      "status": "implemented"
+    },
+    {
+      "slug": "bruno",
+      "image": "content/images/tools/bruno-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "dark cinematic API product-testing lab",
+      "status": "implemented"
+    },
+    {
+      "slug": "carbon-black",
+      "image": "content/images/tools/carbon-black-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "black-and-white monotype cyber-defense perimeter",
+      "status": "implemented"
+    },
+    {
+      "slug": "cisco-contact-center",
+      "image": "content/images/tools/cisco-contact-center-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "theatrical contact-center routing diorama",
+      "status": "implemented"
+    },
+    {
+      "slug": "code-org",
+      "image": "content/images/tools/code-org-editorial.webp",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "style": "colorful wooden educational cause-and-effect diorama",
+      "status": "implemented"
+    }
+  ]
+}

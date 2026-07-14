@@ -27,6 +27,10 @@ Auto-sklearn passt zu Data-Science- und ML-Teams, die für strukturierte Daten e
 
 Es ist kein No-Code-Werkzeug und kein universeller Ersatz für Deep Learning, Computer Vision oder spezialisierte Zeitreihenmodelle. Bei kleinen Datensätzen, sehr harten Latenzanforderungen oder einer zwingend interpretierbaren Modellklasse kann ein bewusst manuell gewähltes Modell besser sein.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/auto-sklearn-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Auto-sklearn" loading="lazy" decoding="async" />
+</figure>
+
 ## Was Auto-sklearn automatisiert - und was nicht
 
 - **Modell- und Hyperparametersuche:** Bayesianische Optimierung und Meta-Learning wählen Kandidaten effizienter als zufälliges Ausprobieren.

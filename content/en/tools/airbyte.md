@@ -18,6 +18,10 @@ translation: full
 
 Airbyte is a data-movement platform for teams that need to operate sources, destinations, and ownership over time, rather than run a one-off export. It connects SaaS products, databases, warehouses, and data lakes through connectors and can be used as a cloud service or self-managed. Its open-source core and Connector Builder are particularly useful when standard integrations are not enough.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/airbyte-editorial.webp" alt="a paper-cut harbor with data cargo routes between islands" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Airbyte for?
 
 Airbyte fits data and engineering teams building recurring replication between operational systems and analytics or AI stacks. A useful case might be keeping CRM and support data current in a warehouse, or exposing approved business data as context for an internal agent.

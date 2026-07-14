@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Samsung Bixby ist ein intelligenter virtueller Assistent, der speziell für Samsung-Geräte entwickelt wurde. Er unterstützt Nutzer dabei, ihr Smartphone und andere kompatible Geräte per Sprachbefehl zu steuern, Aufgaben zu automatisieren und Informationen schnell abzurufen. Bixby integriert sich tief in das Samsung-Ökosystem und bietet neben Sprachsteuerung auch Funktionen zur Text- und Bildeingabe.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/samsung-bixby-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Samsung Bixby" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Samsung Bixby ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

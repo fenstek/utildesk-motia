@@ -21,6 +21,10 @@ Prometheus is an open-source metrics and monitoring system, not an AI assistant 
 
 Prometheus suits teams operating services, containers, or infrastructure and wanting to turn technical signals into useful observability. It works particularly well with a pull-based exporter landscape and complements visualisation through [Grafana](/en/tools/grafana/). Log search and distributed traces require additional systems; metrics alone do not explain every incident.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/prometheus-editorial.webp" alt="Editorial illustration of Prometheus in a practical workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Start with a few SLO signals
 
 Begin from the user perspective: availability, error rate, and latency of one critical journey. A wall of CPU charts helps little if no one knows whether customers are affected. Define an owner, urgency, runbook, and concrete action for each alert.

@@ -25,6 +25,10 @@ Der Ablauf ist einfach: Foto hochladen, Bestellung und gewünschte Extras wähle
 
 Das Ergebnis passt als Profilbild, Team-Seite, Speaker-Karte oder wiederkehrende Illustration in Social Media. Es ist dagegen kein Werkzeug für eine Live-Kampagne, die noch am selben Nachmittag hundert Varianten braucht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avatoon-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Avatoon" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen Avatoon sinnvoll ist
 
 Avatoon passt zu kleinen Unternehmen und Einzelpersonen, die ein einheitliches, freundlich gezeichnetes Erscheinungsbild statt klassischer Headshots möchten. Für eine Teamseite kann das mehr Konsistenz bringen als eine Mischung aus privaten Smartphone-Fotos. Der Nutzen ist besonders klar, wenn Stil, Hintergrund und Freigabe für alle Beteiligten vorab festgelegt werden.

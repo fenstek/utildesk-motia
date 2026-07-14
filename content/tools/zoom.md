@@ -19,6 +19,10 @@ generated_at: "2026-05-21"
 
 Zoom ist eine weitverbreitete Kommunikationsplattform, die vor allem für Videokonferenzen, Online-Meetings und Webinare genutzt wird. Durch die Integration von KI-gestützten Funktionen unterstützt Zoom Nutzer dabei, ihre Arbeitsabläufe zu automatisieren und effizienter zu gestalten. Die Plattform ist besonders geeignet für Unternehmen und Teams, die auf eine zuverlässige und skalierbare Lösung für virtuelle Zusammenarbeit setzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoom-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Zoom" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoom ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

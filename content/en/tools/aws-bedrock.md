@@ -17,6 +17,10 @@ translation: full
 
 AWS Bedrock is AWS's managed platform for building generative-AI applications with foundation models from multiple providers. Its value is not a promise that every model behaves identically. It is the ability to run model access, permissions, deployment and cost allocation inside an AWS operating model a company already knows.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-bedrock-editorial.webp" alt="a geological cross-section with workspaces on luminous roots" loading="lazy" decoding="async" />
+</figure>
+
 ## What Bedrock actually provides
 
 Bedrock provides managed access to foundation models through AWS. AWS lists more than 100 models from providers including Amazon, Anthropic, DeepSeek, Moonshot AI, MiniMax and OpenAI. Availability, modalities and features still vary by model and region, so a catalogue is not a selection strategy. Compare candidates against the same real tasks, data and acceptance criteria.

@@ -22,6 +22,10 @@ Aide is an agentic AI platform for customer experience. Used on an existing help
 
 Aide suits CX and support teams using Zendesk, Front, or Gorgias, especially with high volumes of repeatable enquiries. Ecommerce teams can use it where rules around order status, address changes, or returns are clear. Rare, domain-complex, or heavily regulated cases usually benefit more from well-trained human support than automation.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aide-editorial.webp" alt="Editorial illustration of Aide in a practical workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Start with one intent
 
 Do not begin by trying to automate all support. Take one clear intent, such as explaining an order status; define allowed data and actions, test historical cases, and inspect edge cases. Add the next intent only when error rate, escalation, and customer impact are understood.

@@ -1,6 +1,65 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-13_
 
+## 2026-07-14 - Dimensions full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN Dimensions cards from official product, Help Center, API release-note, pricing/access, and privacy materials, covering linked research data, discovery workflows, evaluation limits, integrations, licensing, and international data handling.
+- Added a practical research workflow, measurable quality checks, five verified internal alternatives, and six practical FAQs in both languages with a concrete editorial assessment.
+- Preserved the existing single `dimensions-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - Dialogflow full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN Dialogflow cards from official Google Cloud documentation, Conversational Agents pricing, compliance/security controls, quotas, and release notes, covering ES/CX boundaries, flows, playbooks, webhooks, versioned environments, evaluation, governance, and usage-based costs.
+- Added a concrete rollout workflow, four verified internal alternatives, five practical FAQs per language, and an explicit editorial assessment.
+- Preserved the existing single `dialogflow-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - DesignEvo full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN DesignEvo cards from official product, feature, pricing, Help Center, privacy, and terms pages, covering template editing, account-based storage, export boundaries, commercial-use licensing, icon provenance, privacy, and the lack of a backup service.
+- Added a practical logo workflow, quality and trademark checks, concrete editorial assessments, five verified internal alternatives, and six practical FAQs in both languages.
+- Preserved the existing single `designevo-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - Datadog full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN Datadog cards from official observability, APM, security, pricing, and documentation sources, covering Agent-based collection, traces, logs, instrumentation, incident workflow, governance, and usage-based cost structure.
+- Added a practical rollout and incident workflow, measurable quality criteria, concrete editorial assessments, five verified internal alternatives, and four practical FAQs in both languages.
+- Preserved the existing single `datadog-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - DataCamp full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN DataCamp cards from official product, support, pricing, privacy, security, DataLab, and content-update sources, covering browser exercises, notebook-based projects, tracks, DataLab boundaries, AI-native data handling, and subscription structure.
+- Added a practical learning workflow, transfer and quality criteria, governance guidance, concrete editorial assessments, five verified internal alternatives, and seven practical FAQs in both languages.
+- Preserved the existing single `datacamp-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - Databricks full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN Databricks cards from official lakehouse, compute, SQL, security/trust, pricing, and release-note materials, covering Spark, Delta Lake, Unity Catalog, Lakeflow Jobs, MLflow, governance, staged releases, and workload-dependent costs.
+- Added a practical ingestion-to-serving workflow, quality and operations checks, concrete editorial assessments, five verified internal alternatives, and five practical FAQs in both languages.
+- Preserved the existing single `databricks-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - Darktable full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN Darktable cards around the local RAW workflow: Lighttable, Darkroom pixelpipe, styles, XMP sidecars, library backups, local copies, export profiles, metadata review, and upgrade boundaries, using official Darktable documentation and release notes.
+- Added a concrete culling-to-export workflow, quality criteria, privacy and file-governance guidance, realistic operating-cost structure, four verified internal alternatives, and six practical FAQs in both languages.
+- Preserved the existing single `darktable-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - Connected Papers full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN Connected Papers cards from the official product, FAQ, about, pricing, privacy, and terms pages, covering similarity graphs, Prior/Derivative Works, Semantic Scholar data provenance, workflow boundaries, governance, and current plan structure.
+- Added a practical research workflow, quality-control limits, concrete editorial assessments, five verified internal alternatives, and six practical FAQs in both languages.
+- Preserved the existing single `connected-papers-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - Conceptboard full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN Conceptboard cards from official product, Help Center, pricing, security, and changelog sources, covering boards/projects, roles, tasks, approvals, exports, integrations, current plan structure, and cloud-only operating boundaries.
+- Added a practical workshop-to-approval workflow, quality checks, governance guidance, concrete editorial assessments, five verified internal alternatives, and six practical FAQs in both languages.
+- Preserved the existing single `conceptboard-editorial.webp` illustration and refreshed only the paired card metadata and last-modified entries.
+
+## 2026-07-14 - Tool-card quality campaign, CockroachDB
+
+- Rewrote the DE/EN CockroachDB cards around distributed SQL architecture, quorum replication, transaction retries, rollout workflow, backup/restore, security governance, current Cloud cost structure, and license boundaries.
+- Added four verified internal alternatives and five practical FAQs per language, while preserving the existing `cockroachdb-editorial.webp` illustration in both cards.
+
 ## 2026-07-13 - Tool-card quality campaign, Seeing AI, StackBlitz and Tableau
 
 - Rebuilt the DE/EN cards around concrete use cases, operating boundaries, practical workflows, verified internal alternatives, and FAQs.
@@ -1345,3 +1404,66 @@ _Last updated: 2026-07-13_
 
 - Rebuilt the DE/EN cards around concrete audio cleanup, SEO/content optimization, analytical database and project-management workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
 - These four cards complete the 100-card accumulation batch. No shared CSS, generators, or generated files were changed.
+## 2026-07-14 - Coda full bilingual tool-card editorial pass
+
+- Rewrote the single `coda` tool card in DE and EN from primary-source checks of Coda help, pricing/billing, security/trust, limits, Packs, AI, Automations, and the July 2026 Superhuman Docs naming update.
+- Added a concrete implementation workflow, operating limits, export and ownership guidance, data/security governance, maker-based cost structure, editorial assessment, five internal alternatives, and six practical FAQs in each language.
+- Preserved the existing single `coda-editorial.webp` illustration and refreshed only the two coda lastmod entries.
+
+## 2026-07-14 - CodePen full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN cards around CodePen's documented Pens, Projects, collaboration, privacy modes, public-code licensing, editor limits, export workflow, and current pricing structure.
+- Added a concrete prototype-to-handover workflow, quality criteria, security/governance guidance, editorial assessment, five verified internal alternatives, and five practical FAQs in each language.
+- Preserved the existing single `codepen-editorial.webp` illustration and refreshed only the two CodePen lastmod entries.
+
+## 2026-07-14 - CodeSandbox full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN cards around Browser Sandboxes, Devboxes/VM environments, Sandpack, the CodeSandbox SDK, GitHub review workflows, operational limits, security governance, and usage-based cost structure using official CodeSandbox sources.
+- Added a concrete prototype-to-handover workflow, quality checks, editorial assessment, five verified internal alternatives, and five practical FAQs in each language.
+- Preserved the existing single `codesandbox-editorial.webp` illustration and refreshed only the two CodeSandbox lastmod entries; no shared files, generators, registries, or other cards were changed.
+
+## 2026-07-14 - Confluent Platform full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN cards around self-managed Apache Kafka distribution, Kafka Connect, Schema Registry, stream processing, operations, security/governance, recovery testing, and total-cost structure using official Confluent sources.
+- Added a concrete rollout workflow, editorial assessment, five verified internal alternatives, and five practical FAQs in each language.
+- Preserved the existing single `confluent-platform-editorial.webp` illustration and refreshed only the two Confluent Platform lastmod entries.
+
+## 2026-07-14 - ContentStudio full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN cards around ContentStudio Publisher, Planner, AI Studio, RSS/Evergreen/Bulk automations, approvals, analytics, operations, governance, current pricing structure, and documented product boundaries.
+- Added a concrete rollout workflow, evaluation criteria, editorial assessment, five verified internal alternatives, and five practical FAQs in each language.
+- Preserved the existing single `contentstudio-editorial.webp` illustration and refreshed only the two ContentStudio lastmod entries.
+
+## 2026-07-14 - Coursera full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN cards around Coursera's current course, Guided Project, Professional Certificate, Specialization, degree, AI Coach, and Coursera for Business boundaries using official Coursera product, pricing, privacy, and security sources.
+- Added a concrete learning and team rollout workflow, evaluation criteria, operational ownership, governance and data guidance, variable cost structure, five verified internal alternatives, and five practical FAQs in both languages.
+- Preserved the existing single `coursera-editorial.webp` illustration and refreshed only the two Coursera lastmod entries.
+
+## 2026-07-14 - Deep Image full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN cards around Deep Image's documented enhancement, upscaling, API, async jobs, storage integrations, credit model, 40-day gallery retention, and provider privacy boundaries.
+- Added a concrete image-processing workflow, evaluation criteria, security/governance guidance, editorial assessment, five verified internal alternatives, and five practical FAQs in both languages.
+- Preserved the existing single `deep-image-editorial.webp` illustration and refreshed only the two Deep Image lastmod entries.
+
+## 2026-07-14 - Deepfake full bilingual tool-card editorial pass
+
+- Rewrote the DE/EN cards as a fact-checked, responsible-use guide to the deepfake technology category, explicitly documenting that the current official URL redirects to an 18+ platform rather than confirming a general production editor.
+- Added a practical consent-to-release workflow, quality evaluation, governance, privacy, cost boundaries, editorial assessment, five verified internal alternatives, and five practical FAQs in both languages.
+- Preserved the existing single `deepfake-editorial.webp` illustration and refreshed only the two deepfake lastmod entries.
+## 2026-07-14 - Tool-card quality campaign, Discord
+
+- Rebuilt the DE/EN card around Discord's server, channel, role, onboarding, app, moderation, and voice/video workflow, with explicit boundaries around project records and sensitive data.
+- Added verified internal alternatives and practical FAQs, preserved the existing `discord-editorial.webp` illustration, and recorded the current pricing/privacy caveats without inventing fixed prices or limits.
+## 2026-07-14 - Dollify.AI tool-card editorial rewrite
+
+- Rewrote the DE/EN `dollify` cards from the obsolete mobile-avatar description to the current official Dollify.AI web studio for multi-model image and video generation.
+- Grounded workflow, credit pricing, privacy, third-party processing, user-content licensing, and output-review guidance in the official site, pricing page, Privacy Policy, Terms, and model pages.
+- Added five validated internal alternatives and five practical FAQs per language; retained the existing `dollify-editorial.webp` illustration in both cards.
+
+## 2026-07-14 - Integrated editorial, illustration and Umami batch
+
+- Integrated the completed OptiPlex editorial pass for 20 bilingual tool cards: CockroachDB, Coda, CodePen, CodeSandbox, Conceptboard, Confluent Platform, Connected Papers, ContentStudio, Coursera, Darktable, Databricks, DataCamp, Datadog, Deep Image, Deepfake, DesignEvo, Dialogflow, Dimensions, Discord and Dollify.AI.
+- Added 20 distinct 1280x720 WebP editorial illustrations generated with Codex built-in image generation via the ChatGPT subscription, with one figure in each DE/EN card: Adobe Podcast, Airbyte, Amazon Aurora, Amazon MSK, Apache Beam, Apigee, Are.na, Avid Media Composer, Avigilon Control Center, AWS Bedrock, AWS Lambda, Axis Camera Station, Azure Functions, Blockly, Breezy HR, Brevo, Bruno, Carbon Black, Cisco Contact Center and Code.org. The batch is recorded in the illustration registry and its implementation manifest.
+- Connected existing editorial WebP assets that had been present on disk but missing from one or both localized cards: 67 slugs and 75 Markdown files. A post-integration audit requires exactly one matching image reference in both language variants for every active paired card with an existing asset.
+- Preserved the human-edited bodies while carrying forward only the latest `popularity` values for 42 DE cards from the divergent `autobot` Umami sync commit `8a25b89b`.

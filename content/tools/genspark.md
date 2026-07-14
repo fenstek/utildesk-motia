@@ -18,6 +18,10 @@ generated_at: 2026-05-12
 
 Genspark ist ein vielseitiges KI-Tool, das entwickelt wurde, um bei der Recherche, dem Verfassen von Texten und der allgemeinen Unterstützung im Arbeitsalltag zu helfen. Es kombiniert moderne künstliche Intelligenz mit benutzerfreundlichen Funktionen, die sowohl für Einsteiger als auch für Profis geeignet sind. Mit einem Freemium-Preismodell bietet Genspark eine gute Möglichkeit, die Vorteile von KI-Technologie ohne hohe Anfangsinvestitionen zu nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/genspark-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Genspark" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Genspark entscheidet nicht die Trefferzahl, sondern die Nachvollziehbarkeit der Recherche. Suchraum, Quellenqualität, Zitationen und Gegenprüfung müssen sichtbar bleiben, sonst wirkt das Ergebnis schneller belastbar, als es ist. Wir würden mit einer engen Recherchefrage starten und jeden Fund gegen Kontrollquellen, Notizen und Ausschlussgründe prüfen.

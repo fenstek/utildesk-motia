@@ -21,6 +21,10 @@ Amazon Aurora ist der verwaltete relationale Datenbankdienst von AWS für MySQL-
 
 Für Teams mit einer bestehenden PostgreSQL- oder MySQL-Anwendung kann Aurora ein sinnvoller Weg zu mehr Ausfallsicherheit und Skalierung sein. Kompatibel bedeutet allerdings nicht, dass jede Erweiterung, jeder Versionssprung und jede Betriebsannahme unverändert übernommen werden kann. Ein Migrations- und Lasttest bleibt Pflicht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-aurora-editorial.webp" alt="Nächtliches Aquarell-Observatorium mit synchronisierten Gipfeln" loading="lazy" decoding="async" />
+</figure>
+
 ## Wann Aurora passt
 
 Aurora passt zu transaktionalen Webanwendungen, SaaS-Produkten und internen Systemen, bei denen PostgreSQL oder MySQL bereits eine natürliche Wahl ist und AWS der bevorzugte Betriebsstack bleibt. Lesereplikate, Multi-AZ-Betrieb, automatische Sicherungen und regionale Ausfallszenarien können dann als Plattformfunktionen genutzt werden.

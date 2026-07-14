@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Pillar ist ein innovatives KI-Tool, das darauf ausgelegt ist, Produktivität und Automatisierung in Unternehmen und für Einzelanwender zu steigern. Es kombiniert intelligente Assistenzfunktionen mit datengetriebenen Analysen, um Arbeitsabläufe effizienter zu gestalten und die Entscheidungsfindung zu unterstützen. Mit einem freemium-Preismodell bietet Pillar sowohl grundlegende Funktionen kostenlos als auch erweiterte Features in kostenpflichtigen Plänen an.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pillar-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Pillar" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Pillar ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

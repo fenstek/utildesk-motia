@@ -13,7 +13,7 @@ official_url: "https://pixlr.com/"
 description: "Pixlr ist ein browserbasierter Editor und eine Suite für schnelle Bildbearbeitung, Design und ausgewählte KI-Generierung mit klaren Grenzen bei PSD-Kompatibilität und Kontrollen."
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 28
+popularity: 29
 tier: C
 generated_at: 2026-05-16
 ---

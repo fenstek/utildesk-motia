@@ -21,6 +21,10 @@ translation: full
 
 Carbon Black by VMware is a comprehensive endpoint security platform specifically designed to assist businesses in detecting, preventing, and responding to cyberattacks. Focusing on modern threats, Carbon Black offers a combination of real-time monitoring, behavioral analysis, and threat intelligence to quickly identify and close security gaps.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/carbon-black-editorial.webp" alt="a black-and-white cyber-defense perimeter and response team" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Carbon Black (VMware), the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

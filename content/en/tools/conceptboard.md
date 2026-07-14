@@ -2,139 +2,92 @@
 slug: conceptboard
 title: Conceptboard
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
+editorial_batch: "2026-07-14-full-tool-card-editorial"
+category: Produktivität
 price_model: Freemium
 tags:
   - whiteboard
   - collaboration
   - productivity
 official_url: 'https://conceptboard.com/'
+description: 'Cloud whiteboard for workshops, visual planning, and approvals with roles, tasks, sections, and PDF or PNG exports.'
 popularity: 0
 translation: full
+updated_at: 2026-07-14
 ---
 # Conceptboard
 
-Conceptboard is a digital whiteboard tool designed specifically for team collaboration. It enables visual communication, shared brainstorming, and project organization in real time, regardless of where team members are located. With its versatile features, Conceptboard supports productivity and makes complex workflows easier to manage through an intuitive user interface.
-
-## Who is Conceptboard suitable for?
-
-Conceptboard is aimed at teams and companies that value efficient, visual collaboration. The tool is especially useful for:
-
-- Project managers who want to present project plans and progress clearly
-- Creative teams that want to develop and share ideas visually
-- Educational institutions that want to create interactive learning environments
-- Remote and hybrid teams that collaborate across locations
-- Consultants and agencies that run client presentations and workshops digitally
-
-The tool is flexible enough to be used in both small teams and large organizations.
+Conceptboard is a browser-based whiteboard for workshops, visual planning, and controlled approvals. Its useful boundary is the workflow around the canvas: a board can collect material, comments, tasks, sections, and decisions, then produce a PDF or PNG handover. It is a cloud workspace that requires an internet connection, not an offline archive or a replacement for a structured system of record.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/conceptboard-editorial.webp" alt="Illustration for Conceptboard: collaborative creative wall with notes, sketches, and arrows" loading="lazy" decoding="async" />
 </figure>
 
-## Main Features
+## What Conceptboard is and who it suits
 
-- **Unlimited whiteboards:** Create as many digital boards as you need for different projects and topics.
-- **Real-time collaboration:** Multiple users can work on a board at the same time and track changes live.
-- **Versatile tools:** Draw, highlight, text boxes, shapes, sticky notes, and more for flexible design.
-- **File uploads and integration:** Add images, PDFs, videos, and other documents; integrate with common tools such as Slack, Microsoft Teams, and Google Drive.
-- **Templates:** Use ready-made templates for workshops, brainstorming, project planning, and more.
-- **Commenting and chat:** Direct communication and feedback within the boards.
-- **Version history:** Changes can be tracked and undone if needed.
-- **Access permissions:** Different permissions for team members and external participants.
-- **Offline mode:** Work is possible even without an internet connection (depending on the plan).
-- **Mobile and desktop apps:** Access across different devices and operating systems.
+Conceptboard fits product, project, consulting, and education teams that run workshops or visual reviews repeatedly. A board can bring together research fragments, architecture options, learning material, or client feedback. A one-off idea dump may be better served by a simpler document. Conceptboard earns its place when the team defines who facilitates, who comments, who decides, and which artifact leaves the board.
 
-## Typical Use Cases
+## Components in a real workflow
 
-- **Focused rollout:** Conceptboard is a good fit when operations, learning, and office teams want to stop improvising a recurring workflow around whiteboard, collaboration, productivity.
-- **Operations, not demos:** The tool becomes more valuable when tasks, knowledge, coordination, and recurring routines are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** Conceptboard can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+The core is a board containing text, shapes, drawings, sticky notes, files, comments, and tasks. Sections and the board outline provide hierarchical navigation for large canvases and help prepare presentations or partial exports. Projects group boards by team or initiative. Feedback uses Editor, Reviewer, and Reader roles, with deliberately different permissions: Reviewers have a limited feedback-oriented toolset, while Readers are read-only.
 
-## What really matters in daily use
+## A practical workshop and review workflow
 
-In day-to-day work, Conceptboard is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+Start with a named board template that states the goal, participants, timeboxes, and expected decision. Import only the material needed for the session, gather contributions, and mark unresolved items with tasks and @mentions. Facilitation can use cursors, a timer, voting, and other live features where the license provides them. Afterwards, remove duplicates, record decisions in a clearly labelled section, and assign follow-up work. For a customer or design handover, an Editor starts an approval process with a due date. After review, export the approved version as a PDF or image and move it into the accountable archive or delivery workflow.
 
-Conceptboard is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+## Integrations, export, and operations
 
-## Pros and Cons
+Conceptboard works primarily in the browser. Its official Help Center documents file uploads, attachments, board and section exports as PDF or PNG, and embedded external content. Depending on team and board rights, integrations include Microsoft Teams, Webex, Jira, and Azure; availability and synchronisation depend on the plan and role. A pilot should therefore test more than invitations: verify the path from board to ticket, meeting record, presentation, or archive. An export is a handover snapshot, not automatically the maintained source of truth.
 
-### Pros
-- Intuitive user interface that is easy to understand even for beginners
-- Strong collaboration features for remote teams
-- Extensive toolset for a wide range of use cases
-- Good integration with other productivity apps
-- Flexible licensing model with a free entry tier
+## Quality checks and decision criteria
 
-### Cons
-- Some advanced features are only available in paid plans
-- May occasionally experience performance issues with very large boards or many participants
-- Learning curve for complex features if you want to make full use of the tool
+Evaluate Conceptboard with one real workshop and one real review, not an empty demo. Measure whether decisions are easier to find, whether follow-up questions decrease, and whether assigned work is actually completed. Test performance with realistic attachments, the readability of exported PDFs, the permissions of an external guest, and the return or deletion of materials. If the result still lives in chat, tickets, and personal downloads at the same time, the team has not created a reliable process.
 
-## Workflow Fit
+## Security, privacy, and governance
 
-Conceptboard fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+Conceptboard describes its cloud service as GDPR-compliant and hosted in Germany. Its security material names ISO 27001, ISO 27017, and ISO 27018 certifications, TLS in transit, and AES-256 encryption at rest. Depending on the agreement and plan, SAML/OAuth SSO, audit logs, administrator controls, and hosting options with IONOS, StackIT, dedicated infrastructure, or on-premises deployment may be available. Do not assume these controls for every free account. Before placing personal data or confidential customer documents on boards, review the DPA, retention and deletion process, subcontractors, guest links, and the actual data-residency option with the vendor and your legal or IT owners.
 
-If Conceptboard becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+## Pricing and total operating cost
 
-## Privacy & Data
-
-Before adopting Conceptboard, clarify which data will enter the tool and whether documents, personal data, learning records, and internal notes are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating Conceptboard, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Conceptboard before the data path is understood.
+The official pricing page lists a Free tier, Starter from €5 per user per month, Advanced from €10, and Corporate & Government from €14; statutory VAT is added. Packages differ in active boards, projects, storage, file-size limits, board history, approvals, administration, support, and SSO. IONOS or StackIT hosting can add cost, while special, dedicated, or on-premises options are quote-based. Budget for named seats, guests and projects, storage, contract terms, exports and archiving, administration, and the privacy review—not just the headline seat price.
 
 ## Editorial Assessment
 
-Conceptboard is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+Conceptboard is recommended for teams running facilitated workshops, visual reviews, or client approvals with explicit ownership. It creates value when a board has a defined input, a decision point, and a documented handover, and when a pilot uses real materials rather than demo sticky notes. Choose a narrower alternative for quick personal notes, long-term structured knowledge management, or a fully local workspace. The buying decision should rest on whether the team consistently uses board permissions, the approval checkpoint, and the final storage destination.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Conceptboard genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+## Alternatives
 
-## Pricing & Costs
-
-Conceptboard offers different pricing plans based on team size and the features required. Typically, these include:
-
-- **Free basic version:** Limited number of boards and participants, basic features
-- **Pro plan:** Expanded features, more boards and participants, priority support
-- **Business plan:** Comprehensive features for larger teams, advanced security options, and admin controls
-- **Enterprise plan:** Customized solutions with individual adjustments and support
-
-Exact prices vary depending on the provider and selected plan and should be checked on the official website.
-
-## Alternatives to Conceptboard
-
-- **Miro:** Another popular digital whiteboard with extensive collaboration features.
-- **MURAL:** Focused on visual collaboration and design thinking processes.
-- **Jamboard (Google):** Simple whiteboard tool, well integrated into Google Workspace.
-- **Microsoft Whiteboard:** Free tool for teams using Microsoft 365.
-- **Stormboard:** Combines digital whiteboarding with task management.
+- [FigJam](/en/tools/figjam/): A natural fit when visual workshops need to stay close to Figma files and an existing design workspace.
+- [MURAL](/en/tools/mural/): Better for facilitation-heavy workshops and design-thinking methods with a different template and moderation emphasis.
+- [Miro](/en/tools/miro/): A broader whiteboard platform for large collaborative canvases and extensive integration requirements.
+- [Microsoft Teams](/en/tools/microsoft-teams/): The straightforward choice when Microsoft 365 is already the identity and meeting backbone and whiteboarding should sit inside meetings.
+- [Airtable](/en/tools/airtable/): Better when workshop outcomes need to become structured records, views, and operational follow-up.
 
 ## FAQ
 
-**1. Is Conceptboard free to use?**
-Yes, there is a free basic version with limited features and user counts.
+**Can I use Conceptboard for free?**
 
-**2. Can Conceptboard be used offline?**
-Depending on the plan and app version, offline use is possible, with synchronization taking place once the connection is restored.
+There is a Free tier with limits on boards, objects, and storage. More projects, history, approvals, administration, and enterprise controls depend on the paid packages.
 
-**3. Which integrations does Conceptboard offer?**
-Conceptboard can be connected with Slack, Microsoft Teams, Google Drive, and other productivity tools, among others.
+**Does Conceptboard work offline?**
 
-**4. How secure is data in Conceptboard?**
-Conceptboard relies on modern security standards and provides different access permissions to help protect data. Details may vary depending on the plan.
+The vendor describes Conceptboard as a cloud-based solution that requires an internet connection. For workshops, test connectivity and prepare a separate export or meeting-record path instead of relying on offline editing.
 
-**5. Are there mobile apps for Conceptboard?**
-Yes, Conceptboard offers apps for iOS and Android as well as desktop applications.
+**Which roles can I give external participants?**
 
-**6. Can I use Conceptboard for workshops and presentations?**
-Yes, the tool is well suited for interactive workshops, presentations, and meetings.
+Boards support Editor, Reviewer, and Reader roles, and guests without a Conceptboard account can be invited. Before sharing, verify whether the guest may only read, provide feedback, edit content, or export material.
 
-**7. How many users can work on a board at the same time?**
-The number varies by plan; in general, several dozen users can work simultaneously.
+**Can I export a board for a handover?**
 
-**8. Are there templates to help me get started quickly?**
-Yes, Conceptboard provides numerous templates for different use cases.
+Editors can export boards or sections as PDF or PNG, and attachments can be downloaded separately. Treat the export as a snapshot and define its filename, version, owner, and destination archive.
+
+**Are SSO and audit logs included in the Free tier?**
+
+Not by default. The pricing comparison places SSO and audit logs with the Corporate & Government offer; confirm administration and security controls for the exact plan and contract.
+
+**Is Conceptboard suitable for confidential customer material?**
+
+Only after an organisation-specific review. The vendor cites GDPR, German data centres, and ISO certifications, but the DPA, retention, guest access, subcontractors, and hosting choice still require your own governance decision.

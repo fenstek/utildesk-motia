@@ -18,6 +18,10 @@ generated_at: "2026-05-17"
 
 Slate Digital FG-X ist ein professionelles Mastering-Tool, das speziell für die Musikproduktion entwickelt wurde. Es kombiniert leistungsstarke Limiter- und Kompressor-Algorithmen, um die Lautstärke eines Tracks zu maximieren, ohne die Klangqualität zu beeinträchtigen. FG-X ist bekannt für seine Fähigkeit, den Sound transparent zu gestalten und gleichzeitig den Mix dynamisch und lebendig zu halten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/slate-digital-fg-x-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Slate Digital FG-X" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Slate Digital FG-X zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

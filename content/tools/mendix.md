@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Mendix ist eine leistungsstarke Low-Code- und No-Code-Plattform, die Unternehmen dabei unterstützt, schnell und effizient Anwendungen zu entwickeln und Geschäftsprozesse zu automatisieren. Mit einem Fokus auf einfache Bedienbarkeit und flexible Integration bietet Mendix sowohl technischen als auch weniger technischen Nutzern die Möglichkeit, digitale Lösungen ohne umfangreiche Programmierkenntnisse zu erstellen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mendix-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Mendix" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Mendix sollte die Bewertung am Entwicklungsprozess hängen: Setup, Review, Tests, Übergabe und Wartbarkeit müssen nachvollziehbarer werden. Wir würden das Tool an einem kleinen, realen Ticket prüfen und nicht nur an einer idealen Demo oder einem einzelnen Benchmark.

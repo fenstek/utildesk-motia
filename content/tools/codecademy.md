@@ -18,6 +18,10 @@ generated_at: 2026-05-11
 
 Codecademy ist eine interaktive Online-Plattform, die das Erlernen von Programmiersprachen und Entwicklerfähigkeiten erleichtert. Durch praxisnahe Übungen und strukturierte Kurse ermöglicht sie Nutzern, ihre Coding-Kompetenzen Schritt für Schritt auszubauen – ideal für Anfänger ebenso wie für Fortgeschrittene.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/codecademy-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Codecademy" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Codecademy zählt weniger die Demo-Lektion als die Frage, ob Lernziel, Feedback und Pflege der Inhalte zusammenpassen. Wir würden eine konkrete Übung mit Zielgruppe, Testdurchlauf und Auswertung prüfen, bevor das Tool in einen Kurs oder ein Onboarding wandert. Entscheidend ist, ob Lernende danach klarer handeln können.

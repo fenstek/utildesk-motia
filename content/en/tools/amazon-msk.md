@@ -17,6 +17,10 @@ translation: full
 
 Amazon MSK is AWS's managed Apache Kafka service. AWS handles cluster control-plane operations while applications continue using normal Kafka clients to create topics and produce or consume records. That removes broker administration, not the harder work of an event system: contracts, partitioning, retention, access and replay.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-msk-editorial.webp" alt="a linocut sorting station with streams of parcels" loading="lazy" decoding="async" />
+</figure>
+
 ## What MSK runs
 
 MSK Provisioned provides Kafka clusters with Standard or Express brokers, where teams choose capacity and storage. MSK Serverless removes more capacity management and bills for cluster and partition time, data written and read, and storage. MSK Connect runs Kafka Connect connectors; MSK Replicator copies data between Provisioned clusters and regions.

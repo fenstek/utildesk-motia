@@ -18,6 +18,10 @@ generated_at: "2026-05-11"
 
 Duolingo ist eine beliebte Lernplattform, die sich auf das Erlernen von Sprachen mithilfe von KI-gestützten Übungen spezialisiert hat. Die App bietet interaktive Lektionen, die spielerisch und abwechslungsreich gestaltet sind, um das Sprachlernen einfach und motivierend zu gestalten. Mit einer Kombination aus Vokabeltraining, Grammatikübungen und Hörverständnis unterstützt Duolingo Nutzer aller Niveaustufen beim kontinuierlichen Ausbau ihrer Sprachkenntnisse.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/duolingo-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Duolingo" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Duolingo zählt weniger die Demo-Lektion als die Frage, ob Lernziel, Feedback und Pflege der Inhalte zusammenpassen. Wir würden eine konkrete Übung mit Zielgruppe, Testdurchlauf und Auswertung prüfen, bevor das Tool in einen Kurs oder ein Onboarding wandert. Entscheidend ist, ob Lernende danach klarer handeln können.

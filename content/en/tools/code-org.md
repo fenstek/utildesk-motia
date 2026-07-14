@@ -21,6 +21,10 @@ translation: full
 
 Code.org is a free online platform specializing in teaching programming skills. It is especially geared towards children and teenagers but also provides resources for teachers and developers. Through interactive courses, playful exercises, and easy-to-understand tutorials, Code.org makes learning programming accessible and entertaining.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/code-org-editorial.webp" alt="a wooden educational diorama with children and cause-and-effect modules" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Code.org, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

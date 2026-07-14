@@ -20,6 +20,10 @@ popularity: 0
 
 Katalon ist eine umfassende Testautomatisierungsplattform, die vor allem für die Entwicklung und Durchführung von Softwaretests mit Unterstützung von KI-Technologien konzipiert wurde. Das Tool richtet sich an Teams, die ihre Testprozesse optimieren und automatisieren möchten, ohne tiefgehende Programmierkenntnisse vorauszusetzen. Katalon kombiniert benutzerfreundliche Oberflächen mit leistungsfähigen Funktionen für Web-, API-, Mobile- und Desktop-Tests und bietet dabei eine Freemium-Preisstruktur.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/katalon-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Katalon" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Katalon sollte die Bewertung am Entwicklungsprozess hängen: Setup, Review, Tests, Übergabe und Wartbarkeit müssen nachvollziehbarer werden. Wir würden das Tool an einem kleinen, realen Ticket prüfen und nicht nur an einer idealen Demo oder einem einzelnen Benchmark.

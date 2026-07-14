@@ -21,6 +21,10 @@ Are.na ist ein ruhiges Werkzeug zum Sammeln und Verbinden von Recherchematerial.
 
 Die Stärke von Are.na liegt im kuratierten Kontext. Ein Block kann in mehreren Channels auftauchen, wodurch Verbindungen zwischen Themen sichtbar bleiben. Das eignet sich für Designrecherche, Lehre, Redaktion, künstlerische Praxis und frühe Produktentdeckung, wenn das Team nicht sofort alles in eine Datenbank oder Präsentation pressen möchte.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/are-na-editorial.webp" alt="Forschungsarchiv aus Fotografien, Materialien und verbindenden Fäden" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen eignet sich Are.na?
 
 Are.na passt zu Einzelpersonen und kleinen Teams, die Quellen, Referenzen und lose Ideen sammeln, ohne daraus sofort Aufgaben zu machen. Gute Einsatzfelder sind visuelle Recherche, Literatur- und Linklisten, Projektmoodboards, redaktionelle Vorarbeit und Wissenssammlungen für Workshops.

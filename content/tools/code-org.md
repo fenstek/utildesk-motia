@@ -18,6 +18,10 @@ generated_at: "2026-05-18"
 
 Code.org ist eine kostenlose Online-Plattform, die sich auf die Vermittlung von Programmierkenntnissen spezialisiert hat. Sie richtet sich besonders an Kinder und Jugendliche, bietet aber auch Ressourcen für Lehrkräfte und Entwickler. Mit interaktiven Kursen, spielerischen Übungen und leicht verständlichen Tutorials macht Code.org das Erlernen von Programmierung zugänglich und unterhaltsam.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/code-org-editorial.webp" alt="Hölzerne Lerndiorama mit Kindern und Modulen aus Ursache und Wirkung" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Code.org zählt weniger die Demo-Lektion als die Frage, ob Lernziel, Feedback und Pflege der Inhalte zusammenpassen. Wir würden eine konkrete Übung mit Zielgruppe, Testdurchlauf und Auswertung prüfen, bevor das Tool in einen Kurs oder ein Onboarding wandert. Entscheidend ist, ob Lernende danach klarer handeln können.

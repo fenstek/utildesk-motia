@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Usage-based
 tags: [customer-support, automation, productivity, workflow]
 official_url: "https://aide.app/"
-popularity: 83
+popularity: 82
 tier: D
 generated_at: 2026-05-10
 ---
@@ -21,6 +21,10 @@ Aide ist eine agentische KI-Plattform für Customer Experience. Sie wird auf bes
 ## Für wen ist Aide geeignet?
 
 Aide passt zu CX- und Supportteams auf Zendesk, Front oder Gorgias, besonders bei hohem, wiederholbarem Anfragevolumen. E-Commerce-Teams können es nutzen, wenn klare Regeln zu Bestellstatus, Adressänderungen oder Retouren bestehen. Für seltene, fachlich komplexe oder stark regulierte Fälle ist ein gut geschulter menschlicher Support meist wichtiger als Automatisierung.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aide-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Aide" loading="lazy" decoding="async" />
+</figure>
 
 ## Mit einem Intent starten
 

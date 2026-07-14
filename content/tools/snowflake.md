@@ -22,6 +22,10 @@ Snowflake ist eine Cloud-Datenplattform für Analyse, Data Warehousing und Daten
 
 Snowflake passt zu Teams mit mehreren Datenquellen, BI-Anforderungen oder datengetriebenen Produkten, die kein eigenes Warehouse betreiben wollen. Es eignet sich für strukturierte und semi-strukturierte Daten, Reporting und kontrolliertes Teilen. Für einen kleinen operativen Datenbestand ist eine transaktionale Datenbank wie [PostgreSQL](/tools/postgresql/) oft passender; für Spark-lastige Data-Engineering- und ML-Workloads kann [Databricks](/tools/databricks/) besser passen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snowflake-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Snowflake" loading="lazy" decoding="async" />
+</figure>
+
 ## Ein sinnvoller Pilot
 
 Wählen Sie eine echte Fragestellung und wenige, dokumentierte Quellen. Legen Sie Datenbesitzer, Qualitätsprüfungen, Freshness-Ziel und erwartete Kennzahl fest. Ein Dashboard ist erst glaubwürdig, wenn Definitionen, Transformationen und Zeitzone nachvollziehbar sind. Vergleichen Sie Ergebnis und Kosten nach einem festen Zeitraum.

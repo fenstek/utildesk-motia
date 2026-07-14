@@ -2,127 +2,100 @@
 slug: connected-papers
 title: Connected Papers
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-14-full-tool-card-editorial"
+category: "AI Research"
+price_model: "Freemium"
 tags:
-  - analytics
-  - automation
-official_url: 'https://www.connectedpapers.com/'
+  - research
+  - academic-search
+  - citations
+official_url: "https://www.connectedpapers.com/"
 popularity: 0
 source_language: de
 translation: full
+generated_at: "2026-05-15"
+description: "Connected Papers maps academic literature as a similarity graph, helping researchers find related, prior, and derivative works around a seed paper."
+updated_at: 2026-07-14
 ---
 # Connected Papers
 
-Connected Papers is an innovative tool in the field of scientific research and analysis. It uses advanced algorithms to visually connect research papers and provide a comprehensive overview of a specific research topic. With Connected Papers, users can quickly find relevant studies, recognize relationships, and discover new research approaches - all supported by artificial intelligence and automated analysis methods.
+Connected Papers is a web-based discovery tool for getting oriented in an academic field. Give it a paper, DOI, arXiv, Semantic Scholar or PubMed URL, or a title, and it builds a visual graph of related papers. That makes a new topic easier to map, but it does not replace a systematic search strategy, full-text screening, or checking the original sources.
 
-## Who is Connected Papers for?
+## Who it is for
 
-Connected Papers is primarily aimed at researchers, students, academics, and professionals who need to conduct in-depth literature searches. It is ideal for anyone who wants to better understand complex scientific relationships, such as when preparing research papers, theses, or academic articles. Librarians and information specialists also benefit from the automated networking and analysis of large document collections. Additionally, the tool can be useful for innovation managers and business analysts who want to observe trends and developments in a specific field.
+The tool suits students, researchers, librarians, and R&D teams that want to move from a known paper to relevant neighbors. It is particularly useful at the start of a thesis, literature review, or technical investigation when the right terminology and search routes are not yet clear. A systematic review still needs documented databases, inclusion criteria, exclusion reasons, and a reproducible search log.
 
-## Typical Use Cases
+## How the graph works
 
-- **Focused rollout:** Connected Papers is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around analytics, automation.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** Connected Papers can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
-
-## What really matters in daily use
-
-In day-to-day work, Connected Papers is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
-
-Connected Papers is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+Connected Papers says its data is connected to the Semantic Scholar Paper Corpus, licensed under ODC-BY. For each graph, it analyzes a large candidate set and presents a smaller selection with strong connections to the origin paper. Distance represents similarity, not necessarily a direct citation: the provider describes a metric based on co-citation and bibliographic coupling. Node size and color are useful orientation signals, but they are not judgments of research quality, causality, or current relevance.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/connected-papers-editorial.webp" alt="Illustration for Connected Papers: research papers as a connected citation network" loading="lazy" decoding="async" />
+  <img src="/images/tools/connected-papers-editorial.webp" alt="Researchers examining a connected network of academic papers and citation relationships" loading="lazy" decoding="async" />
 </figure>
 
-## Key Features
+## A practical research workflow
 
-- Visual graphs to represent relationships between research papers
-- Automated search for relevant papers based on input documents
-- Access to extensive databases and publication archives
-- Ability to analyze relationships and influence factors of studies
-- Graph export functions for papers and literature summaries
-- User-friendly interface for intuitive navigation and analysis
-- Support for multiple fields and interdisciplinary research
-- Integration of citation information and metadata to papers
+1. Choose a genuinely central seed paper and record its identifier and bibliographic details.
+2. Read the graph as a hypothesis map: mark clusters, older foundational works, and unexpected neighbors.
+3. Use Prior Works to look for predecessors and Derivative Works to find reviews or later state-of-the-art papers.
+4. Verify title, abstract, venue, year, DOI, and citation context in the original source or a second database.
+5. Store accepted papers in the team’s reference manager with the search date, selection reason, and exclusion reason.
 
-## Advantages and Disadvantages
+This places Connected Papers between discovery and screening. A central node is a prompt for verification, not proof that the work is relevant, rigorous, or up to date.
 
-### Advantages
+## Operations and handover
 
-- Enables quick and efficient overview of complex research fields
-- Supports the discovery of new and relevant literature sources
-- Visual presentation simplifies understanding of research networks
-- Saves time compared to manual literature research
-- Intuitive interface even for those without advanced technical knowledge
-- Fosters interdisciplinary connections and new research approaches
+Saved Papers and Graph History support recurring investigations. The product also lists Multi-origin graphs and views for Similar Papers, Prior Works, and Derivative Works. A team should move checked results into its existing reference manager or review log rather than treating the graph as the archive. Group plans provide administrator-controlled seats, according to the provider; Connected Papers is still not a complete systematic-review platform or library-management system.
 
-### Disadvantages
+## Quality control and limits
 
-- Coverage of certain fields may vary depending on the data source
-- The completeness of connections depends on available metadata
-- Costs and availability of advanced features vary depending on the plan
-- Limited data coverage for very specialized or new topics
-- No full replacement for manual, critical literature evaluation
+Before citing a result, check the title, abstract, full-text version, DOI, publication venue, and the context in which a work is cited. Coverage can differ between fields, and very new, local, or poorly indexed work may not appear. Similarity can also connect papers with different methods, populations, or research questions. For reproducible reviews, use the graph as one supplementary discovery step alongside multiple databases and a predefined screening protocol.
 
-## Workflow Fit
+## Privacy and governance
 
-Connected Papers fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+The official privacy policy names account details, search queries, saved papers, page views, and third-party analytics. It says data is stored in Microsoft Azure and that specialized providers support authentication, email, analytics, storage, and data processing. Teams should therefore keep confidential manuscripts, unpublished project names, and personal notes out of search fields until they have checked purpose, retention, deletion, subprocessors, and whether a DPA is available. Use individual accounts, avoid password sharing, and document whether Academic or Business terms apply.
 
-If Connected Papers becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+## Pricing and operating cost
 
-## Privacy & Data
-
-Before adopting Connected Papers, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating Connected Papers, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Connected Papers before the data path is understood.
+The official pricing page describes five Connected Papers graphs per month on the Free plan, with the listed core features included. Academic and Business plans provide unlimited graphs; Academic is intended for academic, nonprofit, or personal use, while Business is for commercial work. Group plans manage seats, and automatic renewal and unused-seat rules belong in procurement review. Prices and terms can change, so check the pricing page before buying. The wider cost also includes screening time, full-text access, reference-management software, and expert review.
 
 ## Editorial Assessment
 
-Connected Papers is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+We recommend Connected Papers for a bounded discovery phase: teams with one or more good seed papers can quickly map predecessors, successors, and thematic neighbors. It creates value when every candidate is checked against the original source and recorded against explicit criteria. For systematic reviews, very new niches, or tightly controlled bibliometrics, a broader reproducible database strategy is the better foundation; Connected Papers should supplement that process rather than define it.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Connected Papers genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+## Alternatives
 
-## Pricing & Costs
-
-The pricing structure of Connected Papers varies depending on the provider and chosen plan. There are usually free basic versions with limited functions, as well as paid subscriptions that enable more advanced analysis and larger data access. Details on costs should be viewed directly with the provider, as they can change regularly and depend on usage and company size.
-
-## Alternatives to Connected Papers
-
-- **Research Rabbit**: A tool for visualizing research networks with a focus on collaborative functions.
-- **Litmaps**: Offers interactive maps of scientific literature and tracks new publications in real-time.
-- **Inciteful**: Focuses on citation analysis and identifying key publications in a research field.
-- **VOSviewer**: Open-source software for creating and visualizing bibliometric networks.
-- **Dimensions**: Scientific data platform with extensive analysis and visualization capabilities.
+- [Semantic Scholar](/en/tools/semantic-scholar/): Provides broader academic search and metadata when the first task is finding papers, authors, or topics systematically.
+- [Litmaps](/en/tools/litmaps/): Better suited to ongoing citation monitoring when a team needs to follow new publications over time.
+- [Google Scholar](/en/tools/google-scholar/): A practical complement for broad web discovery across articles, books, dissertations, and citations.
+- [Consensus](/en/tools/consensus/): Fits question-led evidence discovery when summaries are used as a starting point and checked against the studies.
+- [scite](/en/tools/scite/): More appropriate when the team needs to inspect citation context and whether later work supports or disputes a claim.
 
 ## FAQ
 
-**1. How does Connected Papers work?**
-Connected Papers analyzes the relationships between research papers by evaluating citations, thematic similarities, and other metadata. The result is a visual graph that represents the connections between the papers.
+**Do I need a paper as the starting point?**
 
-**2. Do I need special knowledge to use Connected Papers?**
-No, the tool is user-friendly and does not require advanced technical or bibliometric knowledge. The intuitive interface makes it accessible even for beginners.
+Yes. A graph starts from a paper identifier, title, or supported URL. The quality and perspective of the seed influence the neighborhood that becomes visible.
 
-**3. Can I test Connected Papers for free?**
-Usually, Connected Papers offers a free basic version that allows for basic functions, while paid plans are required for more advanced analysis.
+**Does distance mean that two papers cite each other?**
 
-**4. Which fields does Connected Papers support?**
-Connected Papers covers a wide range of scientific disciplines, including natural sciences, technology, medicine, social sciences, and more. The coverage may vary depending on the data source.
+No. The graph uses similarity based on co-citation and bibliographic coupling. Two papers can be close without directly citing one another.
 
-**5. How up-to-date are the data in Connected Papers?**
-The data freshness depends on the integrated databases and their update cycles. In general, the information is current, but there may be delays with some sources.
+**Can it replace a systematic literature review?**
 
-**6. Can I export the results?**
-Yes, Connected Papers allows exporting graphs and literature summaries in various formats to use them in reports or presentations.
+No. It is a discovery and orientation aid. A review still requires reproducible searches, several sources, screening rules, full-text checks, and an audit trail.
 
-**7. Is Connected Papers suitable for business use?**
-Yes, especially for research and development departments and innovation management, Connected Papers can provide valuable insights.
+**What does the free plan include?**
 
-**8. How secure are my data in Connected Papers?**
-Data security and protection are important considerations for the provider. For detailed information, consult the data protection policy of the respective provider.
+The official pricing page describes five graphs per month and the listed core features. Recheck the current pricing page before adoption because limits and terms can change.
+
+**Can a company use the Academic plan?**
+
+Not by default. The provider describes Academic for academic, nonprofit, or personal use and Business for commercial work. Confirm the current terms before assigning a plan.
+
+**What data should stay out of the search box?**
+
+Do not enter confidential manuscripts, personal notes, or unpublished project details. The privacy policy says search queries, saved papers, and account data are processed, so the data path should be reviewed first.

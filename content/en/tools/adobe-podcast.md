@@ -20,6 +20,10 @@ Adobe Podcast is a browser-based audio environment for recording speech and gett
 
 Its best-known tool, Enhance Speech, can process spoken audio so a weak webcam or phone recording sounds closer to a controlled microphone take. That can rescue interviews, screen recordings, and internal updates. It cannot replace good source material, careful recording, or an editorial sign-off.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-podcast-editorial.webp" alt="a warm analogue recording studio with a microphone and reel-to-reel tape machine" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is it for?
 
 Adobe Podcast suits podcasters, marketing and communications teams, educators, and individuals who regularly create intelligible spoken clips without opening complex audio software for every recording. It is especially useful for fast first passes, remote interviews, and recordings made outside ideal rooms.

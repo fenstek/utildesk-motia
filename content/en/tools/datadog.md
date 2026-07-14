@@ -2,134 +2,86 @@
 slug: datadog
 title: Datadog
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: 'Subscription, Tiered Pricing'
+editorial_batch: "2026-07-14-full-tool-card-editorial"
+category: AI Infrastructure
+price_model: "Subscription, usage-based"
 tags:
   - data
   - workflow
-official_url: 'https://www.datadoghq.com/'
+official_url: "https://www.datadoghq.com/"
+description: "Cloud observability and security platform for infrastructure, APM, logs, traces, and operations, with usage-based billing and significant governance requirements."
 popularity: 0
 source_language: de
 translation: full
+updated_at: 2026-07-14
 ---
 # Datadog
 
-Datadog is a comprehensive monitoring and analytics platform designed specifically for modern IT infrastructures and applications. The solution combines data from various sources to provide in-depth insights into performance, security, and operational workflows. With the support of AI-powered functions, Datadog helps in understanding complex data flows and optimizing workflows more efficiently.
+Datadog is a cloud observability and security platform for teams that need to connect infrastructure, applications, logs, and distributed traces in one operating process. Its value is not a single dashboard but the ability to correlate signals during an incident. The SaaS boundary matters: telemetry is sent to Datadog, and costs depend on products, data volume, retention, and monitored units.
 
-## For Who is Datadog Suitable?
+## Who is Datadog for?
 
-Datadog is primarily targeted at IT teams, DevOps specialists, developers, and organizations seeking a centralized platform to monitor their infrastructure, applications, and cloud environments. It is particularly suitable for organizations that need to consolidate large amounts of data from various sources and leverage automated analysis to quickly identify and resolve issues. Additionally, organizations with complex workflows and hybrid or multi-cloud architectures can benefit from Datadog's versatile features.
+Datadog fits DevOps, SRE, platform, and security teams operating multiple services, cloud accounts, or hybrid environments. It is most useful when a team can assign service ownership and investigate production behaviour systematically rather than occasionally searching raw logs. A small project with one server and limited operational risk may need only a narrower monitoring stack.
 
-## Typical Use Cases
+## What belongs in the operating model?
 
-- **Focused rollout:** Datadog is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around data, workflow.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** Datadog can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
-
-## What really matters in daily use
-
-In day-to-day work, Datadog is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
-
-Datadog is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+The Datadog Agent collects telemetry from supported hosts and workloads, while applications can be instrumented separately. Infrastructure Monitoring supplies host, container, and system signals; APM follows requests across services; and Log Management processes events. Dashboards, monitors, service views, and incident workflows turn those signals into an operating layer. Depending on the need, teams can add network, synthetic, real user, or security products. These modules are not an automatic complete solution: each signal needs a purpose, a retention decision, and an owner.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/datadog-editorial.webp" alt="Illustration for Datadog: observability city model with colored telemetry trails" loading="lazy" decoding="async" />
+  <img src="/images/tools/datadog-editorial.webp" alt="Abstract observability city model with connected telemetry trails" loading="lazy" decoding="async" />
 </figure>
 
-## Key Features
+## A practical rollout workflow
 
-- **Infrastructure Monitoring:** Real-time monitoring of servers, containers, cloud services, and networks.
-- **Application Performance Management (APM):** Detailed insights into the performance of applications and microservices.
-- **Log Management:** Collection, analysis, and visualization of log data from various sources.
-- **AI-based Anomaly Detection:** Automated detection of unusual patterns in metrics and logs.
-- **Customizable Dashboards and Visualizations:** Adaptable, interactive dashboards for monitoring and reporting.
-- **Alerting and Notifications:** Flexible alerting at predefined thresholds or anomalies.
-- **Workflow Integrations:** Support for numerous integrations with DevOps and collaboration tools.
-- **Security Monitoring:** Real-time monitoring of security-relevant events and threats.
-- **API and Automation Tools:** Possibilities for automating monitoring and reaction processes.
+Start with one service, one concrete failure mode, and a few questions: is it reachable, how long do requests take, and where do errors begin? Follow the official setup for the Agent, instrument a representative request path, and check data quality before building a large dashboard. Then define monitors with thresholds or anomaly logic, connect them to the on-call or incident process, and document the owner. Add more services and log sources only after the signals help in a real investigation.
 
-## Advantages and Disadvantages
+In daily work, an alert should lead to an investigation: open the monitor, narrow the affected service and trace, correlate logs in the same time window, check a change or dependency, and record the cause in the incident. Afterward, keep only dashboards and alerts that support a decision. Otherwise the interface grows faster than the team’s diagnostic ability.
 
-### Advantages
+## Integration and maintenance
 
-- Comprehensive platform for monitoring infrastructure, applications, and security.
-- AI-powered analysis helps in identifying issues more quickly and resolving them.
-- Scalable, suitable for small to very large environments.
-- Numerous integrations enable easy incorporation into existing workflows.
-- Intuitive user interface with flexible dashboards and reports.
+Datadog can receive data from cloud services, hosts, containers, and applications and connect it with collaboration and incident tools. For custom services, automatic or manual instrumentation and consistent tags matter; inconsistent service names make correlation unreliable. Plan Agent upgrades, access reviews, monitor rotation, and export or archive paths as part of operations. OpenTelemetry may be part of the instrumentation strategy, but it does not decide which data should be stored or indexed in Datadog.
 
-### Disadvantages
+## Quality checks and decision criteria
 
-- Complexity of the platform can be challenging for beginners.
-- Costs can increase quickly depending on usage and plan.
-- Some features require additional setup time to optimize.
-- Some advanced features are only available in higher-tier plans.
+Evaluate a rollout against real operational questions: how quickly can the team find the affected service, how many alerts are actionable, and can it correlate logs and traces with enough completeness? A pilot can use one critical path, one defined failure case, and a review after several operating cycles. Check whether high-cardinality tags, debug logs, or broad trace collection make searches slower or increase spend. A green dashboard does not prove application health if instrumentation has blind spots.
 
-## Workflow Fit
+## Security, privacy, and governance
 
-Datadog fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+Treat telemetry as potentially sensitive production data: logs and traces may contain identifiers, URLs, payload fragments, or personal data. Before rollout, review scrubbing and redaction, API and application keys, roles, SSO and access design, retention, and regional requirements. Decide who may view security signals and who may change monitors or retention rules. Datadog provides security and governance capabilities, but their effectiveness still depends on configuration, data classification, and a workable incident process.
 
-If Datadog becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+## Pricing and real operating cost
 
-## Privacy & Data
-
-Before adopting Datadog, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating Datadog, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Datadog before the data path is understood.
+Datadog is not simply priced per team. Depending on the selected products, billing can involve infrastructure hosts, APM hosts, ingested or indexed logs, ingested or indexed spans, containers, devices, and other product units. Annual, monthly, and on-demand options differ, so the official pricing page should be checked against region, contract, and expected usage before a decision. Also budget Agent and instrumentation work, data cleanup, retention, archives, alert maintenance, and on-call time. A pilot should expose telemetry volume and its most expensive sources before more modules are enabled.
 
 ## Editorial Assessment
 
-Datadog is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+We recommend Datadog to teams with several production services, real on-call or incident ownership, and the discipline to curate telemetry. It creates value when traces, logs, and infrastructure metrics lead to a faster, defensible decision during an incident, measured through criteria such as time to diagnosis or actionable-alert rate. For a single system, a tight budget, or an organisation that cannot send data to an external SaaS service, a smaller or self-operated alternative is usually the better choice.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Datadog genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+## Alternatives
 
-## Pricing & Costs
-
-Datadog offers various pricing plans that vary based on functionality and usage volume. The pricing model is primarily based on a subscription and can differ depending on the plan chosen. There is usually a free trial or a Freemium access with limited functionality. For detailed pricing, it is recommended to visit the official website or request a customized quote.
-
-## Alternatives to Datadog
-
-- **New Relic:** A well-known monitoring platform focusing on application performance and infrastructure.
-- **Dynatrace:** Offers AI-powered monitoring and automation for cloud environments.
-- **Prometheus:** An open-source solution for monitoring and alerting, particularly popular in the Kubernetes ecosystem.
-- **Splunk:** Platform for analyzing large data volumes with a focus on log management and security.
-- **AppDynamics:** Monitoring tool focusing on application performance and business transparency.
+- [New Relic](/en/tools/new-relic/): Broad SaaS observability with a similar APM and logging focus; a practical choice when the team already has New Relic experience.
+- [Dynatrace](/en/tools/dynatrace/): More oriented toward automated topology and root-cause analysis in large environments, with its own cost and complexity curve.
+- [Prometheus](/en/tools/prometheus/): Open-source metrics monitoring for teams that want to operate Kubernetes-oriented metrics themselves and choose logs or APM separately.
+- [Grafana](/en/tools/grafana/): Flexible visualization and observability across data sources, suitable for a deliberately modular stack.
+- [Splunk](/en/tools/splunk/): Relevant when log analysis, security, and compliance workflows matter more than a unified APM suite.
 
 ## FAQ
 
-**1. What types of data can Datadog monitor?
+**Do I need the Datadog Agent on every system?**
 
-Datadog can collect and analyze metrics, logs, and traces from servers, applications, containers, cloud services, and networks.
+Not every source is connected in the same way. The Agent is the typical path for host and much infrastructure telemetry; APM can additionally use libraries or other supported instrumentation paths. Decide per workload which signals are necessary.
 
-**2. Is Datadog suitable for small businesses?
+**How can we stop logs from dominating the bill?**
 
-Yes, Datadog is scalable and can be used by small teams, but the costs and functionality should be considered.
+Separate collection, processing, and indexing decisions; remove unnecessary fields and debug-heavy sources early; and set retention according to investigation value. Monitor ingested and indexed volume separately and test the rules against real incidents.
 
-**3. How does Datadog use AI in monitoring?
+**Can Datadog handle personal data from production?**
 
-Datadog uses AI-powered anomaly detection to automatically identify unusual patterns and alert on potential issues early.
+There is no universal yes or no. Classify logs and traces, mask sensitive values before transmission, review contract, region, roles, and deletion processes, and obtain approval from privacy and security owners for the concrete use case.
 
-**4. Is there a free version of Datadog?
+**How should a small team start with Datadog?**
 
-There is usually a Freemium access or a free trial with limited functionality.
-
-**5. How does Datadog integrate with existing workflows?
-
-Datadog offers numerous integrations with DevOps tools, cloud providers, and collaboration platforms, making it easy to incorporate into existing workflows.
-
-**6. What security features does Datadog offer?
-
-In addition to monitoring infrastructure and applications, Datadog also provides security monitoring for detecting security incidents in real-time.
-
-**7. Is Datadog cloud-based or on-premise?
-
-Datadog is primarily a cloud-based platform that collects data from on-premise sources and analyzes it in the cloud.
-
-**8. How flexible are the pricing plans?
-
-Prices vary depending on usage and chosen plan. There are options for subscriptions with different functionality and usage models.
+Use one critical service, a small set of monitors, and a scheduled review. Measure whether diagnosis and escalation improve; if only alert volume and cost rise, reduce the data scope or choose a narrower alternative.

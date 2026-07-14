@@ -19,6 +19,10 @@ generated_at: 2026-05-17
 
 Avid Media Composer ist eine professionelle Non-linear-Editing-Software für Film, Fernsehen und Postproduktion. Ihr besonderer Wert liegt weniger in einem schnellen Social-Clip als in der kontrollierten Arbeit mit vielen Stunden Material, klaren Bins, Versionen und Rollen im Team.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avid-media-composer-editorial.webp" alt="Schnittraum mit Filmstreifen auf dem Leuchttisch und gemeinsamer Regiearbeit" loading="lazy" decoding="async" />
+</figure>
+
 ## Der richtige Einsatzfall
 
 Media Composer passt zu langen Formaten, Doku, Broadcast, Serien und Produktionen mit Assistenzschnitt, vielen Takes oder mehreren Editoren. Eine kleine Ein-Personen-Produktion kann damit ebenfalls schneiden, bezahlt aber mit Einarbeitung für Funktionen, die erst im großen Workflow ihren Wert zeigen.

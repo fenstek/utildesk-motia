@@ -18,6 +18,10 @@ generated_at: "2026-05-11"
 
 ContentBot ist ein vielseitiges Tool zur automatisierten Texterstellung, das speziell entwickelt wurde, um den Schreibprozess zu erleichtern und zu beschleunigen. Es unterstützt Nutzer dabei, qualitativ hochwertige Inhalte für Blogs, Social Media, Marketingkampagnen oder Webseiten zu generieren. Mit Hilfe von Künstlicher Intelligenz bietet ContentBot eine breite Palette an Funktionen, die das Erstellen von Content effizienter machen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/contentbot-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von ContentBot" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei ContentBot liegt der Wert nicht im schnellsten Rohtext, sondern in sauberer Textarbeit: Briefing, Tonfall, Terminologie, Faktencheck und Freigabe müssen zusammenpassen. Wir würden mit einem realen Textfall starten, Varianten bewusst vergleichen und jede Aussage prüfen, die rechtlich, fachlich oder markenseitig heikel ist.

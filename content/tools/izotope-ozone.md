@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 iZotope Ozone ist eine professionelle Audio-Mastering-Software, die KI-gestützte Technologien nutzt, um den Mastering-Prozess zu vereinfachen und zu optimieren. Mit einer Vielzahl von Tools und intelligenten Algorithmen hilft Ozone Musikproduzenten, Tontechnikern und Kreativen, ihren Sound auf ein neues Niveau zu heben – sei es im Studio oder unterwegs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/izotope-ozone-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von iZotope Ozone" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei iZotope Ozone zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

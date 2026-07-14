@@ -18,6 +18,10 @@ generated_at: "2026-05-11"
 
 DxO PhotoLab ist eine leistungsstarke Bildbearbeitungssoftware, die speziell für Fotografen entwickelt wurde, die ihre RAW-Fotos mit präziser Kontrolle und innovativen KI-gestützten Werkzeugen optimieren möchten. Die Software bietet eine Kombination aus automatischer Korrektur, manueller Bearbeitung und fortschrittlicher Rauschunterdrückung, um hochwertige Ergebnisse zu erzielen, ohne die Bildqualität zu beeinträchtigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dxo-photolab-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von DxO PhotoLab" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei DxO PhotoLab zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

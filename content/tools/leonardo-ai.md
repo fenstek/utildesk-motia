@@ -20,6 +20,10 @@ popularity: 0
 
 Leonardo AI ist eine innovative Plattform im Bereich der künstlichen Intelligenz, die sich auf die Erstellung und Bearbeitung von Bildern mittels KI-Technologien spezialisiert hat. Mit einer benutzerfreundlichen Oberfläche und vielseitigen Funktionen ermöglicht Leonardo AI sowohl Anfängern als auch Profis die einfache Generierung hochwertiger visueller Inhalte. Das Tool eignet sich insbesondere für kreative Projekte, Designarbeiten und visuelle Kommunikation, wobei es durch seine freemium-Preisgestaltung eine flexible Nutzung erlaubt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/leonardo-ai-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Leonardo AI" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Leonardo AI zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

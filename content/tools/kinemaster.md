@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Freemium
 tags: [video-editing, mobile, creative-tools, ai-video]
 official_url: "https://www.kinemaster.com/"
-popularity: 49
+popularity: 48
 tier: D
 lastReviewed: 2026-07-13
 ---

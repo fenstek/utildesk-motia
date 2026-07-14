@@ -26,6 +26,10 @@ Lex fits product, support, and platform teams already operating on AWS that want
 
 It is a poor substitute for an unstructured support process. If ownership, specialist knowledge, or authority to decide is unclear, a bot only accelerates the wrong answer. Decide first what the bot must never do or claim.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-lex-editorial.webp" alt="Editorial illustration of Amazon Lex in a practical workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Core building blocks
 
 - **Text and voice:** Users can interact through chat or speech; Lex provides ASR and NLU for those interfaces.

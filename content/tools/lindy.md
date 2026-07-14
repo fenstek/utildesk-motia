@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Lindy ist ein innovativer AI-Agent, der entwickelt wurde, um Arbeitsabläufe zu automatisieren und die Produktivität durch intelligente Assistenzsysteme zu steigern. Mit Fokus auf Automatisierung und Integration verschiedener Anwendungen unterstützt Lindy Nutzer dabei, repetitive Aufgaben effizienter zu gestalten und komplexe Prozesse zu vereinfachen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lindy-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Lindy" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Lindy ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

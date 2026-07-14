@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Fathom ist ein intelligentes Tool zur automatischen Transkription und Zusammenfassung von Online-Meetings. Es hilft Nutzern, wichtige Gesprächsinhalte festzuhalten, ohne manuell mitschreiben zu müssen, und unterstützt so die Produktivität in Teams. Durch die Integration in gängige Videokonferenzplattformen ermöglicht Fathom eine einfache und effiziente Nachbereitung von Besprechungen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fathom-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Fathom" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Fathom ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

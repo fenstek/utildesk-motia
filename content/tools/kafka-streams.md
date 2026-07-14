@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Kafka Streams ist eine leistungsstarke Open-Source-Bibliothek zur Verarbeitung von Datenströmen in Echtzeit. Sie ermöglicht die Entwicklung von Anwendungen und Microservices, die kontinuierlich Daten aus Apache Kafka-Topics lesen, verarbeiten und wieder schreiben können. Durch die enge Integration mit Apache Kafka bietet Kafka Streams eine skalierbare und fehlertolerante Lösung für Streaming-Analytics, Event-Driven-Architekturen und Automatisierung von Workflows.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kafka-streams-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Kafka Streams" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Kafka Streams entscheidet die Integrationsqualität: Datenflüsse, Berechtigungen, Fehlerfälle und Wartung müssen vor dem produktiven Einsatz sichtbar sein. Wir würden zuerst einen kleinen End-to-End-Prozess bauen, ihn absichtlich scheitern lassen und prüfen, ob Logs, Zuständigkeiten und Rückwege verständlich bleiben.

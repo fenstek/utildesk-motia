@@ -19,6 +19,10 @@ generated_at: 2026-05-18
 
 AWS Lambda führt Code als Reaktion auf API-Aufrufe oder Ereignisse aus, ohne dass ein Team Server bereitstellen oder patchen muss. Typische Trigger sind API Gateway, S3, SQS und EventBridge. Jede Invocation einer Lambda Function läuft unabhängig; horizontale Skalierung ist verwaltet, gemeinsamer Zustand darf aber nicht vorausgesetzt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-lambda-editorial.webp" alt="Kinetisches Papiertheater aus Ereignissen und kurzlebigen Funktionen" loading="lazy" decoding="async" />
+</figure>
+
 ## Wann Lambda passt
 
 Lambda passt zu klar abgegrenzten Backends, Webhooks, Dateiverarbeitung, zeitgesteuerter Automatisierung und Event-Handlern. Es passt schlecht zu Prozessen, die dauerhaft offene Verbindungen, lokale Langzeitdaten oder mehr als 15 Minuten ununterbrochene Laufzeit verlangen. Dafür braucht es andere Compute-Modelle oder einen orchestrierten Workflow.

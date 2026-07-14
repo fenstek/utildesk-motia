@@ -18,6 +18,10 @@ generated_at: "2026-05-17"
 
 Bruno ist ein Open-Source-Tool, das speziell für Entwickler entwickelt wurde, um API-Tests und die Entwicklung effizienter zu gestalten. Es unterstützt Entwickler dabei, APIs schnell zu testen, zu debuggen und zu optimieren, wodurch Entwicklungszyklen verkürzt und die Qualität der Software verbessert werden kann. Als kostenloses Tool bietet Bruno eine flexible und anpassbare Plattform für Entwickler, die Wert auf Transparenz und Community-Support legen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bruno-editorial.webp" alt="Dunkles API-Testlabor mit Proben, Ventilen und Kabeln" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Bruno entscheidet die Integrationsqualität: Datenflüsse, Berechtigungen, Fehlerfälle und Wartung müssen vor dem produktiven Einsatz sichtbar sein. Wir würden zuerst einen kleinen End-to-End-Prozess bauen, ihn absichtlich scheitern lassen und prüfen, ob Logs, Zuständigkeiten und Rückwege verständlich bleiben.

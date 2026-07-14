@@ -26,6 +26,10 @@ Auto-sklearn suits data-science and ML teams that want a reproducible model base
 
 It is not a no-code tool or a universal replacement for deep learning, computer vision, or specialised time-series models. With small datasets, hard latency limits, or a required interpretable model class, a consciously selected manual model can be better.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/auto-sklearn-editorial.webp" alt="Editorial illustration of Auto-sklearn in a practical workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## What Auto-sklearn automates - and what it does not
 
 - **Model and hyperparameter search:** Bayesian optimisation and meta-learning select candidates more efficiently than random trial and error.

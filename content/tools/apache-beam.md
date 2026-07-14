@@ -21,6 +21,10 @@ Apache Beam ist ein Open-Source-Programmiermodell für Datenpipelines, die endli
 
 Das ist besonders nützlich, wenn ein Team ETL, Ereignisverarbeitung und Zeitlogik konsistent modellieren möchte. Es ist jedoch kein Freifahrtschein für einen problemlosen Runner-Wechsel: Fähigkeiten, Performance, Semantik und Betrieb unterscheiden sich je nach Backend.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-beam-editorial.webp" alt="Glasskulptur einer Streaming-Pipeline in einem Museum" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen sich Beam lohnt
 
 Beam passt zu Data-Engineering-Teams, die wiederkehrende Datenflüsse programmatisch bauen und sowohl Batch- als auch Streaming-Fälle beherrschen müssen. Typische Aufgaben sind die Anreicherung von Ereignissen, Datenübertragungen zwischen Speichern, periodische Transformationsjobs und die Vorbereitung von Daten für Analytics oder ML.

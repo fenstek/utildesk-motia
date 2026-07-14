@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Pipedrive ist eine cloudbasierte CRM-Software, die speziell für Vertriebsteams entwickelt wurde, um Verkaufsprozesse zu optimieren und den Überblick über Leads und Opportunities zu behalten. Mit einem klar strukturierten Pipeline-Management und intelligenten Automatisierungen unterstützt Pipedrive Unternehmen dabei, effizienter zu verkaufen und bessere Abschlüsse zu erzielen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pipedrive-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Pipedrive" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Pipedrive zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

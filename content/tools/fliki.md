@@ -19,6 +19,10 @@ generated_at: 2026-05-12
 
 Fliki ist ein innovatives AI-Tool, das speziell für die Erstellung von Videos und Podcasts aus Textinhalten entwickelt wurde. Mit Hilfe von künstlicher Intelligenz verwandelt Fliki Texte in ansprechende audiovisuelle Medien, die sich hervorragend für Marketing, Bildung oder Social Media eignen. Die Plattform bietet eine intuitive Benutzeroberfläche und eine Vielzahl von Anpassungsmöglichkeiten, um Inhalte schnell und effizient zu produzieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fliki-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Fliki" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Fliki liegt der Wert nicht im schnellsten Rohtext, sondern in sauberer Textarbeit: Briefing, Tonfall, Terminologie, Faktencheck und Freigabe müssen zusammenpassen. Wir würden mit einem realen Textfall starten, Varianten bewusst vergleichen und jede Aussage prüfen, die rechtlich, fachlich oder markenseitig heikel ist.

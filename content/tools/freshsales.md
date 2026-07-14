@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Freshsales ist eine KI-gestützte CRM-Lösung, die speziell für Vertriebsteams entwickelt wurde, um Verkaufsprozesse zu optimieren, Kundenbeziehungen zu verbessern und die Produktivität zu steigern. Die Plattform integriert intelligente Automatisierungen, Lead-Management und Analysefunktionen in einer benutzerfreundlichen Oberfläche. So unterstützt Freshsales Unternehmen dabei, ihre Vertriebszyklen zu verkürzen und den Umsatz effizient zu erhöhen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshsales-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Freshsales" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Freshsales zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

@@ -1,11 +1,12 @@
 ---
 slug: darktable
 title: Darktable
+description: "Lokaler Open-Source-Workflow für RAW-Entwicklung, Bildverwaltung und kontrollierten Export mit nicht-destruktiver Bearbeitung, XMP-Sidecars und Styles."
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-14-full-tool-card-editorial"
 category: Design
 price_model: Open Source
 tags: [photo, editing, raw, open-source]
@@ -13,58 +14,81 @@ official_url: "https://www.darktable.org/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-15"
+updated_at: 2026-07-14
 ---
 # Darktable
 
-Darktable ist eine leistungsstarke Open-Source-Software für die Fotoentwicklung und Bildbearbeitung, die sich insbesondere auf die Verarbeitung von RAW-Daten spezialisiert hat. Sie bietet Fotografen und Designern eine umfassende Plattform, um Bilder professionell zu optimieren, ohne dabei auf teure Lizenzgebühren angewiesen zu sein. Mit einer Vielzahl an Werkzeugen und einem nicht-destruktiven Workflow ermöglicht Darktable eine flexible und effiziente Bearbeitung digitaler Fotos.
+Darktable ist eine lokal laufende Open-Source-Anwendung für RAW-Entwicklung, Bildverwaltung und kontrollierten Export. Sie passt zu Fotograf:innen und kleinen Produktionsteams, die Kameraoriginale nicht-destruktiv entwickeln und ihre Bearbeitung als wiederholbaren Prozess organisieren wollen. Die wichtige Grenze: Darktable ist kein Cloud-DAM und kein gemeinsamer Review-Arbeitsraum; Bibliothek, Sidecars, Backups und Übergaben bleiben Aufgabe des Teams.
 
 ## Für wen ist Darktable geeignet?
 
-Darktable richtet sich vor allem an Hobbyfotografen, professionelle Fotografen und Bildbearbeiter, die RAW-Dateien bearbeiten möchten und dabei Wert auf eine freie, kostenlose Softwarelösung legen. Auch Nutzer, die eine Alternative zu kommerziellen Programmen wie Adobe Lightroom suchen, finden in Darktable ein umfangreiches Toolset. Aufgrund der Vielzahl an Funktionen und der teilweise komplexen Bedienung ist Darktable besonders für Anwender geeignet, die bereit sind, sich in eine professionelle Bildbearbeitung einzuarbeiten. Ebenso profitieren Anwender von plattformübergreifender Unterstützung, da Darktable auf Linux, macOS und Windows verfügbar ist.
+Darktable ist sinnvoll, wenn ein Team RAW-Dateien auf eigenen Rechnern oder Speichern verarbeiten, Metadaten pflegen und Varianten ohne Veränderung des Originals erzeugen möchte. Die Oberfläche und der Pixelpipe-Ansatz verlangen Einarbeitung. Wer nur gelegentlich ein JPEG zuschneidet, fährt mit einem einfacheren Editor besser. Wer dagegen viele Aufnahmen sichtet, bewertet, verschlagwortet und in mehreren Ausgabeformaten entwickelt, kann von einem lokalen, lizenzkostenfreien Werkzeug profitieren.
 
-## Typische Einsatzszenarien
+## Die Bausteine im realen Prozess
 
-- **Gezielter Einstieg:** Darktable eignet sich, wenn Content-, Design- und Produktionsteams einen wiederkehrenden Ablauf rund um photo, editing, raw nicht mehr improvisieren wollen.
-- **Betrieb statt Demo:** Nützlich wird das Tool vor allem dann, wenn Assets, Entwürfe, Review-Schleifen und Veröffentlichungen sauber dokumentiert und nicht nur einmalig ausprobiert werden.
-- **Übergaben im Team:** Darktable kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
-- **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
-
-## Redaktionelle Einordnung
-
-Bei Darktable sollte ein Test mit echtem Rohmaterial beginnen: Briefing, Rechte, Qualität, Varianten und finale Abnahme. Einzelne Demo-Beispiele sagen wenig über den Produktionsalltag.
-
-Darktable ist stark, wenn Medienarbeit schneller wird und trotzdem Freigabe, Lizenzen und Nachbearbeitung klar bleiben. Offen gelassene Rechte oder Exportregeln werden später teuer.
+Die Lighttable dient zum Import, Sichten, Filtern, Bewerten und Taggen. Im Darkroom werden Module als Verarbeitungskette, der Pixelpipe, angewendet; Presets und Styles können wiederkehrende Entwicklungsschritte vorbereiten. Die Bibliotheksdatenbank hält Katalog- und Bearbeitungsinformationen, während XMP-Sidecars die Bearbeitung neben der Quelldatei sichern können. Das Ergebnis entsteht erst beim Export, etwa als JPEG oder TIFF, nicht beim bloßen Ändern eines RAW.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/darktable-editorial.webp" alt="Illustration zu Darktable: Dunkelkammer-Tisch mit Kontaktboegen, Filtern und Landschaftsabzug" loading="lazy" decoding="async" />
+  <img src="/images/tools/darktable-editorial.webp" alt="Dunkelkammer-Tisch mit Kontaktbögen, Filtern und Landschaftsabzug als Sinnbild für Darktables RAW-Workflow" loading="lazy" decoding="async" />
 </figure>
 
-## Hauptfunktionen
+## Ein belastbarer Workflow
 
-- Nicht-destruktive Bearbeitung von RAW-Dateien mit umfassender Unterstützung verschiedener Kameramodelle
-- Umfangreiche Werkzeuge zur Farbkorrektur, Belichtungsanpassung und Rauschreduzierung
-- Mehr als 70 Module für Bildverbesserungen, darunter Tonwertkorrektur, Schärfen, Objektivkorrektur und Retusche
-- Unterstützung von mehreren Monitoren und hochauflösenden Bildschirmen
-- Möglichkeit zur Stapelverarbeitung von Fotos für effizientes Arbeiten
-- Verwaltung und Organisation von Fotos mit Tags, Bewertungen und Farbmarkierungen
-- Exportoptionen in verschiedene Bildformate inklusive JPEG, TIFF und PNG
-- Unterstützung von Plugins und Skripten zur Erweiterung der Funktionalität
-- Integration von Geotagging und Kartenansicht zur Verortung von Bildern
-- Open-Source-Community mit regelmäßigen Updates und Erweiterungen
+1. **Import und Sicherung:** Originale in einer unveränderten Ordnerstruktur ablegen, Kamera- und Aufnahmedaten prüfen und XMP-Sidecars aktivieren.
+2. **Auswahl:** Ausschuss markieren, Sterne und Farbmarkierungen für Auswahlstufen verwenden und Tags nach Projekt, Auftrag oder Motiv vergeben.
+3. **Entwicklung:** Mit einem definierten Basisprofil beginnen, Belichtung und Farbe an Referenzbildern prüfen und lokale Korrekturen oder Masken nur dort einsetzen, wo sie den Zweck unterstützen.
+4. **Style und Varianten:** Wiederkehrende Schritte als Style speichern, aber vor einer Serie an mehreren echten Motiven kontrollieren; ein Style ersetzt keine Sichtprüfung.
+5. **Export und Übergabe:** Zielprofil, Dateiformat, Abmessungen, Dateinamen und Metadaten je Ausgabekanal festlegen. JPEG für Web oder Übergabe ist nicht automatisch die richtige Wahl für weitere Rasterbearbeitung; dafür kann TIFF geeigneter sein.
 
-## Vorteile und Nachteile
+## Betrieb, Export und Übergaben
 
-### Vorteile
-- Kostenlos und Open Source ohne versteckte Kosten oder Abonnements
-- Umfangreiches Werkzeugset vergleichbar mit professioneller Software
-- Plattformübergreifende Verfügbarkeit (Linux, macOS, Windows)
-- Nicht-destruktiver Workflow für maximale Flexibilität
-- Aktive Community und regelmäßige Weiterentwicklung
-- Unterstützt eine Vielzahl von RAW-Formaten und Kamera-Modellen
+Darktable arbeitet mit einer lokalen Bibliothek und kann ohne Onlinekonto betrieben werden. Für mobile Arbeit gibt es lokale Kopien, die später mit dem Hauptspeicher synchronisiert werden können. Das hilft bei externen Laufwerken, erzeugt aber eine weitere Synchronisationsstelle. Ein Team sollte daher Ordnernamen, Eigentümer, Schreibrechte und die Regel für parallele Bearbeitung dokumentieren. Vor dem Umbenennen oder Verschieben von Dateien müssen Bibliothek und zugehörige XMP-Dateien berücksichtigt werden; sonst entstehen verwaiste Einträge oder verlorene Bearbeitungsschritte.
 
-### Nachteile
-- Steile Lernkurve für Einsteiger ohne Vorkenntnisse
-- Benutzeroberfläche kann für Neulinge komplex wirken
-- Eingeschränkte Unterstützung für manche proprietäre RAW-Formate je nach Kamera
-- Keine direkte mobile App verfügbar
-- Teilweise weniger intuitive Bedienung im Vergleich zu kommerziellen Lösungen
+## Qualität und Entscheidungskriterien
+
+Bewertet nicht die Zahl der Module, sondern einen kleinen Referenzsatz aus schwierigen Aufnahmen: Mischlicht, hohe ISO, Hauttöne, Objektivfehler und ein anspruchsvoller Export. Messt Zeit bis zum freigegebenen Ergebnis, Korrekturschleifen, Farbabweichungen und Wiederherstellbarkeit nach einem Bibliotheksfehler. Prüft zudem, ob Styles zwischen Rechnern reproduzierbar sind und ob die erzeugten Dateien die erwarteten Farbprofile und Metadaten enthalten. Wenn ein zweiter Editor regelmäßig Handarbeit übernehmen muss, gehört dieser Übergabepunkt in die Entscheidung.
+
+## Sicherheit, Datenschutz und Governance
+
+Die lokale Verarbeitung reduziert den Cloud-Datenpfad, ist aber keine automatische Sicherheitsgarantie. RAWs, XMPs, Bibliotheken, Vorschaudaten und Exportordner müssen mit den normalen Zugriffs- und Backup-Regeln geschützt werden. EXIF- und GPS-Daten können beim Export bewusst ein- oder ausgeschlossen werden; vor einer Veröffentlichung ist das eine redaktionelle Prüfung. Bei Kund:innen- oder Personenaufnahmen gehören Einwilligung, Aufbewahrung, Löschung und die Rechte am Ausgangsmaterial ins Projektbriefing. Backups sollten RAWs, XMP-Sidecars, Konfiguration und Bibliotheksdatenbank umfassen. Vor einem Versionswechsel ist ein getesteter Rückfallplan wichtig, weil eine neue Bibliothek nicht zwingend von einer älteren Version gelesen werden kann.
+
+## Kosten und laufender Aufwand
+
+Darktable selbst wird als Open-Source-Software ohne Abonnement eingesetzt. Das bedeutet nicht, dass der Prozess kostenlos ist: Es fallen gegebenenfalls Kosten für Rechner, GPU, Speicher, Backups, Farbmanagement, Schulung und Support an. Bei mehreren Arbeitsplätzen ist der größte Aufwand meist die Pflege gemeinsamer Ordner- und Backupregeln sowie die Prüfung von Exporten. Die Entscheidung sollte daher gegen die Gesamtkosten des bestehenden Workflows und nicht nur gegen eine Lizenzzeile fallen.
+
+## Redaktionelle Einschätzung
+
+Darktable empfehlen wir Fotograf:innen und kleinen Teams, die RAW-Entwicklung lokal kontrollieren, sich in einen technisch dichten Workflow einarbeiten und Daten selbst verwalten wollen. Wert entsteht, wenn Bibliothek, XMP-Sicherung, Styles, Farbprofile und Exportziele als ein dokumentierter Ablauf betrieben werden. Für spontane Einzelbilder, kollaborative Cloud-Freigaben oder Teams ohne klare Dateiverantwortung ist ein zugänglicherer oder stärker integrierter Dienst die bessere Wahl. Startet mit einem realen Referenzprojekt und entscheidet nach Wiederherstellbarkeit und freigegebener Ausgabequalität, nicht nach der Länge der Featureliste.
+
+## Alternativen
+
+- [RawTherapee](/tools/rawtherapee/): Ebenfalls auf RAW-Entwicklung spezialisiert und eine naheliegende Wahl, wenn Katalogfunktionen weniger wichtig sind.
+- [GIMP](/tools/gimp/): Geeigneter für pixelbasierte Retusche, Compositing und manuelle Bildmontage nach der RAW-Entwicklung.
+- [Adobe Lightroom](/tools/adobe-lightroom/): Bietet einen stärker integrierten kommerziellen Foto-Workflow, wenn Cloud-Synchronisation und geführte Katalogverwaltung wichtiger sind.
+- [Krita](/tools/krita/): Passt besser zu digitalem Malen, Illustration und manueller Rasterbearbeitung als zur katalogorientierten RAW-Entwicklung.
+
+## FAQ
+
+**Ist Darktable für Anfänger:innen geeignet?**
+
+Ja, aber nicht als selbsterklärter Schnelleditor. Ein begrenzter Lernpfad mit Import, Auswahl, Belichtung, Farbe und Export ist sinnvoller als der Versuch, alle Module gleichzeitig zu verstehen.
+
+**Verändert Darktable die RAW-Originale?**
+
+Der Entwicklungsworkflow ist nicht-destruktiv. Bearbeitungen werden in der Bibliothek und, wenn konfiguriert, in XMP-Sidecars gespeichert; für eine verteilbare Datei muss ausdrücklich exportiert werden.
+
+**Welche Dateien müssen gesichert werden?**
+
+Mindestens die RAW-Originale, die zugehörigen XMP-Sidecars und die Darktable-Bibliotheksdatenbank. Für eine vollständige Migration kommen Konfiguration, Styles und Presets hinzu. Ein Restore sollte mit einer Testkopie geprobt werden.
+
+**Kann ein Team dieselbe Bibliothek gleichzeitig nutzen?**
+
+Darktable ist primär ein lokaler Desktop-Workflow. Eine gemeinsame Bibliothek auf einem Netzlaufwerk ist keine automatische Mehrbenutzer- und Review-Lösung; Besitz, Sperren, Backup und parallele Bearbeitung müssen separat geregelt werden.
+
+**Ist Darktable für kommerzielle Projekte verwendbar?**
+
+Die Software ist Open Source und kann in kommerziellen Workflows eingesetzt werden. Davon unberührt bleiben Rechte an Fotos, Personen, Musik oder Marken sowie die Lizenzbedingungen eingebundener Inhalte und Pakete.
+
+**Was sollte vor einem Versionswechsel geprüft werden?**
+
+Erstellt ein vollständiges Backup, testet es und prüft die Release Notes auf Bibliotheks- und Plattformgrenzen. Neue Bibliotheksdaten können mit älteren Darktable-Versionen inkompatibel sein.

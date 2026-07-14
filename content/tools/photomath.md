@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Photomath ist eine innovative Lern-App, die Mathematikaufgaben mithilfe von Künstlicher Intelligenz erkennt und Schritt-für-Schritt-Lösungen anbietet. Die Anwendung richtet sich an Schüler, Studenten und alle, die mathematische Probleme verstehen und lösen möchten. Mit der Möglichkeit, Aufgaben einfach mit der Kamera zu scannen oder manuell einzugeben, erleichtert Photomath das Lernen und Verstehen von mathematischen Konzepten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/photomath-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Photomath" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Photomath zählt weniger die Demo-Lektion als die Frage, ob Lernziel, Feedback und Pflege der Inhalte zusammenpassen. Wir würden eine konkrete Übung mit Zielgruppe, Testdurchlauf und Auswertung prüfen, bevor das Tool in einen Kurs oder ein Onboarding wandert. Entscheidend ist, ob Lernende danach klarer handeln können.

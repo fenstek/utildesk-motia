@@ -18,6 +18,10 @@ generated_at: 2026-05-16
 
 Airbyte ist eine Datenbewegungsplattform für Teams, die Daten nicht nur einmal exportieren, sondern Quellen, Ziele und Zuständigkeiten dauerhaft betreiben müssen. Sie verbindet SaaS-Anwendungen, Datenbanken, Warehouses und Daten-Lakes über Konnektoren und lässt sich als Cloud-Service oder selbst verwaltet einsetzen. Der Open-Source-Kern und der Connector-Builder sind besonders interessant, wenn Standardanschlüsse nicht reichen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/airbyte-editorial.webp" alt="Papierhafen mit Datenfrachtrouten zwischen Inseln" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Airbyte geeignet?
 
 Airbyte passt zu Data- und Engineering-Teams, die wiederkehrende Replikation zwischen operativen Systemen und Analytics- oder KI-Stacks aufbauen. Ein guter Anwendungsfall ist etwa: CRM- und Supportdaten landen verlässlich im Warehouse, oder freigegebene Unternehmensdaten werden als Kontext für einen internen Agenten bereitgestellt.

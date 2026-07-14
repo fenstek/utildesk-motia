@@ -18,6 +18,10 @@ generated_at: 2026-05-12
 
 Google Assistant ist ein intelligenter digitaler Assistent von Google, der mithilfe von künstlicher Intelligenz und natürlicher Sprachverarbeitung Nutzern hilft, Aufgaben zu erledigen, Informationen abzurufen und Geräte zu steuern. Er ist auf vielen Geräten wie Smartphones, Smart Speakern, Smart Displays und weiteren kompatiblen Geräten verfügbar und unterstützt die Interaktion per Sprache oder Text.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-assistant-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Google Assistant" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Google Assistant ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

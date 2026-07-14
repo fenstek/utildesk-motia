@@ -18,6 +18,10 @@ generated_at: 2026-05-11
 
 Convai ist eine innovative KI-Plattform, die sich auf die Entwicklung und Integration von intelligenten virtuellen Assistenten spezialisiert hat. Sie ermöglicht Unternehmen und Entwicklern, automatisierte, natürliche und interaktive Gesprächserlebnisse zu schaffen. Dabei kombiniert Convai modernste KI-Technologien mit benutzerfreundlichen Tools, um die Kommunikation zwischen Mensch und Maschine zu verbessern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/convai-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Convai" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Convai ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

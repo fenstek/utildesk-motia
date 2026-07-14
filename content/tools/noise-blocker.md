@@ -18,6 +18,10 @@ generated_at: 2026-05-13
 
 Noise Blocker ist ein KI-gestütztes Tool zur Geräuschunterdrückung, das darauf abzielt, störende Hintergrundgeräusche in Audio- und Kommunikationsanwendungen effektiv zu minimieren. Es unterstützt Nutzer dabei, in lauten Umgebungen klar und ungestört zu kommunizieren und die Produktivität zu steigern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/noise-blocker-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Noise Blocker" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Noise Blocker zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

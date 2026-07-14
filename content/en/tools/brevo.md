@@ -21,6 +21,10 @@ translation: full
 
 Brevo is a versatile marketing platform specially focused on email marketing, CRM, and automation. With a broad feature set, Brevo supports businesses in strengthening customer relationships, crafting effective marketing campaigns, and automating processes—all within a user-friendly environment. The platform offers a freemium pricing model, enabling beginners to use its basic functions for free while advanced users can benefit from extended features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/brevo-editorial.webp" alt="a vivid mail workshop with segmented envelope routes" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Brevo, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: data hygiene, consent, handovers and reporting decide whether the tool helps in daily work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

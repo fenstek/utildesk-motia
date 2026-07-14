@@ -21,6 +21,10 @@ translation: full
 
 Breezy HR is a modern recruiting and applicant management software that helps companies optimize and automate their hiring process. With a user-friendly interface and comprehensive features, Breezy HR makes managing applications, screening candidates, and collaborating within teams easier. The software is particularly tailored for small and medium-sized businesses looking for an efficient solution for their human resource management.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/breezy-hr-editorial.webp" alt="a watercolor journey through real hiring stages" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Breezy HR, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

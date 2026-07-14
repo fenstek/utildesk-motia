@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Invoca ist eine KI-gestützte Plattform für Marketing-Analytics und Kundeninteraktionen, die Unternehmen dabei unterstützt, eingehende Anrufe zu analysieren und zu optimieren. Durch die Kombination von Künstlicher Intelligenz und Echtzeit-Datenanalyse bietet Invoca tiefe Einblicke in das Kundenverhalten und hilft dabei, Marketingkampagnen effizienter zu gestalten und den Kundenservice zu verbessern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/invoca-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Invoca" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Invoca steht und fällt die Entscheidung mit Datenmodell, Zugriffen, Kostenkontrolle und Betrieb. Wir würden zuerst einen begrenzten Datenfluss mit echten Volumina, klaren Abfragen und dokumentierten Fehlerfällen prüfen. Eine schnelle Demo sagt wenig, wenn Pflege, Governance und Performance ungeklärt bleiben.

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14",
+  "last_updated": "2026-07-14",
   "purpose": "Persistent registry of tool cards that already received editorial mid-article illustrations. Check this file before adding future tool-card artwork so the same page is not illustrated twice.",
   "selection_rule": "Exclude every slug listed in batches[].slugs unless the user explicitly asks to replace or revise an existing illustration.",
   "batches": [
@@ -2899,6 +2899,64 @@
         "content/images/tools/mina-meeting-assistant-editorial.webp",
         "content/images/tools/bluerails-discovery-editorial.webp",
         "content/images/tools/propane-editorial.webp"
+      ]
+    },
+    {
+      "id": "2026-07-14-codex-subscription-20",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1280,
+      "image_height_px": 720,
+      "placement": "single mid-article image-only figure in both DE and EN cards",
+      "model": "OpenAI Codex built-in image generation via ChatGPT subscription",
+      "visual_direction": "Twenty distinct story-forward editorial scenes in varied photographic, collage, watercolor, linocut, risograph, diorama and mixed-media styles; no APIs, Gemini, SVG placeholders, logos, readable text, UI screenshots or watermarks.",
+      "slugs": [
+        "adobe-podcast",
+        "airbyte",
+        "amazon-aurora",
+        "amazon-msk",
+        "apache-beam",
+        "apigee",
+        "are-na",
+        "avid-media-composer",
+        "avigilon-control-center",
+        "aws-bedrock",
+        "aws-lambda",
+        "axis-camera-station",
+        "azure-functions",
+        "blockly",
+        "breezy-hr",
+        "brevo",
+        "bruno",
+        "carbon-black",
+        "cisco-contact-center",
+        "code-org"
+      ],
+      "images": [
+        "content/images/tools/adobe-podcast-editorial.webp",
+        "content/images/tools/airbyte-editorial.webp",
+        "content/images/tools/amazon-aurora-editorial.webp",
+        "content/images/tools/amazon-msk-editorial.webp",
+        "content/images/tools/apache-beam-editorial.webp",
+        "content/images/tools/apigee-editorial.webp",
+        "content/images/tools/are-na-editorial.webp",
+        "content/images/tools/avid-media-composer-editorial.webp",
+        "content/images/tools/avigilon-control-center-editorial.webp",
+        "content/images/tools/aws-bedrock-editorial.webp",
+        "content/images/tools/aws-lambda-editorial.webp",
+        "content/images/tools/axis-camera-station-editorial.webp",
+        "content/images/tools/azure-functions-editorial.webp",
+        "content/images/tools/blockly-editorial.webp",
+        "content/images/tools/breezy-hr-editorial.webp",
+        "content/images/tools/brevo-editorial.webp",
+        "content/images/tools/bruno-editorial.webp",
+        "content/images/tools/carbon-black-editorial.webp",
+        "content/images/tools/cisco-contact-center-editorial.webp",
+        "content/images/tools/code-org-editorial.webp"
       ]
     }
   ]

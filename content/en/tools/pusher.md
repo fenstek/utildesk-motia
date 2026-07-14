@@ -21,6 +21,10 @@ Pusher is a hosted service for realtime events in web and mobile applications. I
 
 Pusher fits product teams needing fast realtime features without operating their own messaging cluster. It is particularly appropriate for clear UI events: an order changes status, a support ticket gets a message, or a colleague edits a document. For durable business processes, however, Pusher replaces neither a queue nor a reliable database.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pusher-editorial.webp" alt="Editorial illustration of Pusher in a practical workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## The right architectural model
 
 An event should announce a change rather than define state by itself. After receiving it, a client can load the authoritative state from an API. That handles lost connections, duplicate events, and delayed messages. An order must not be treated as paid simply because one browser saw an event.

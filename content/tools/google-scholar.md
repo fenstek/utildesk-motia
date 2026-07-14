@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Google Scholar ist eine frei zugängliche Suchmaschine, die speziell für die Recherche wissenschaftlicher Literatur entwickelt wurde. Sie ermöglicht den Zugriff auf eine breite Palette akademischer Quellen wie Artikel, Dissertationen, Bücher, Konferenzbeiträge und Gerichtsurteile. Google Scholar unterstützt Forschende dabei, relevante Literatur schnell zu finden, Zitationen nachzuverfolgen und den Überblick über den aktuellen Stand der Forschung zu behalten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-scholar-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Google Scholar" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Google Scholar entscheidet nicht die Trefferzahl, sondern die Nachvollziehbarkeit der Recherche. Suchraum, Quellenqualität, Zitationen und Gegenprüfung müssen sichtbar bleiben, sonst wirkt das Ergebnis schneller belastbar, als es ist. Wir würden mit einer engen Recherchefrage starten und jeden Fund gegen Kontrollquellen, Notizen und Ausschlussgründe prüfen.

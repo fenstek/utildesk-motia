@@ -17,6 +17,10 @@ translation: full
 
 Avid Media Composer is a professional non-linear editor for film, television and post-production. Its distinctive value is not a fast social clip: it is controlled work with many hours of footage, clearly owned bins, versions and team roles.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avid-media-composer-editorial.webp" alt="an editing room with film on a light table and directorial collaboration" loading="lazy" decoding="async" />
+</figure>
+
 ## The right use case
 
 Media Composer fits long-form, documentary, broadcast and series work with assistant editors, many takes or several editors. A solo creator can use it, but pays a learning cost for features that earn their value mainly in a substantial production workflow.
