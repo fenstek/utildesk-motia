@@ -321,3 +321,10 @@
 - Active stages: source inbox 07:15, daily discovery 08:00, hourly research bridge/orchestrator/runner/rewrite, local review server, six-hour private Cloudflare review sync, and publish/rework queue consumers.
 - `opcl` has no active `agent-newsman` cron after the migration. Historical `opcl` descriptions above are retained as history and must not be treated as current topology.
 - Latest end-to-end factory proof: Shared AI Workspaces candidate `20260712-shared-ai-workspaces-wie-teams-kontext-memory-und-agentenraeume--trend_piece-6b68f8e3`, NotebookLM notebook `445b5a3b-a946-45db-85a3-1b7064fece3b`, article QA 100, status `review_ready`.
+
+## 2026-07-15 Tool detail runtime migration preview state
+
+- Branch `codex/tool-runtime-migration-20260714` contains the completed local preview stack through commits `1aaf13d2`..`ff7104a5`: unified public state, D1 schema/publisher, shared detail view model, runtime routes/cache, parity gates, content-addressed assets, complete local D1 projection and a default-off Pages tool allowlist proxy.
+- Verified public set is exactly 1228 DE and 1228 EN tool entries. The full local runtime crawl passed 2456/2456 canonical routes; the deduplicated resource audit passed 10,754 URLs with zero failures.
+- Production remains unchanged. The available Cloudflare credential can inspect Pages project `utildesk-motia` but cannot access target D1/Worker ownership; the configured production Worker currently returns 404 for tool preview and canonical routes.
+- Safe next operation requires the existing credential/account that owns D1 `259ed703-ba7c-4aba-a269-e167d391eae6` and Worker `utildesk-content-runtime`. Back up D1, apply migrations, publish the 20-slug cohort and deploy the Worker before activating the Pages KV allowlist.
