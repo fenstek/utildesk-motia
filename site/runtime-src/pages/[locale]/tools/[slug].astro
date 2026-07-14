@@ -1,0 +1,20 @@
+---
+export const prerender = false;
+import RuntimeToolDetail from "../../../components/RuntimeToolDetail.astro";
+import RuntimeToolUnavailable from "../../../components/RuntimeToolUnavailable.astro";
+import { getRuntimeContentEntry, listRuntimeContentEntries } from "../../../lib/runtimeContent";
+
+const locale = Astro.params.locale;
+const slug = Astro.params.slug ?? "";
+const validLocale = locale === "en";
+const entry = validLocale ? await getRuntimeContentEntry("tool", "en", slug) : null;
+if (entry?.routeState === "redirect") return Astro.redirect(entry.canonicalPath, 301);
+const renderable = Boolean(entry?.isActive && entry.routeState === "active");
+const status = entry?.routeState === "tombstone" ? 410 : 404;
+if (!renderable) Astro.response.status = status;
+const [tools, guides] = renderable ? await Promise.all([
+  listRuntimeContentEntries("tool", "en"),
+  listRuntimeContentEntries("ratgeber", "en"),
+]) : [[], []];
+---
+{renderable && entry ? <RuntimeToolDetail locale="en" entry={entry} tools={tools} guides={guides} /> : <RuntimeToolUnavailable locale="en" status={status} />}

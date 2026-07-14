@@ -1,0 +1,181 @@
+---
+import BaseLayout from "../../src/layouts/BaseLayout.astro";
+import ContentJump from "../../src/components/ContentJump.astro";
+import { CATEGORIES } from "../../src/lib/categories";
+import { tagHref } from "../../src/lib/tagRoutes";
+import { buildToolDetailViewModel } from "../../shared/toolDetailViewModel.mjs";
+import type { RuntimeContentEntry, RuntimeLocale } from "../lib/runtimeContent";
+import { runtimeDisplayTools, runtimeGuideBacklinks, runtimeToolEntryLike } from "../lib/toolRuntime";
+
+interface Props {
+  locale: RuntimeLocale;
+  entry: RuntimeContentEntry;
+  tools: RuntimeContentEntry[];
+  guides: RuntimeContentEntry[];
+  preview?: boolean;
+}
+
+const { locale, entry, tools, guides, preview = false } = Astro.props;
+const en = locale === "en";
+const backlinks = runtimeGuideBacklinks(guides, entry.slug, locale);
+const sourceEntry = runtimeToolEntryLike(entry);
+const view = buildToolDetailViewModel({
+  entry: sourceEntry,
+  locale,
+  localized: {
+    title: entry.title,
+    category: entry.category,
+    priceModel: entry.priceModel,
+    description: entry.excerpt,
+    markdown: entry.markdown,
+    tags: Array.isArray(entry.metadata.tags) ? entry.metadata.tags.map(String) : [],
+    officialUrl: typeof entry.metadata.official_url === "string" ? entry.metadata.official_url : "",
+    affiliateUrl: typeof entry.metadata.affiliate_url === "string" ? entry.metadata.affiliate_url : "",
+  },
+  displayTools: runtimeDisplayTools(tools),
+  categories: CATEGORIES,
+  guideBacklinks: backlinks,
+  contentLastmod: { [`content/tools/${entry.slug}.md`]: entry.sourceUpdatedAt || entry.sourcePublishedAt || "" },
+  searchIndexDecision: { robots: entry.robotsPolicy, googlebotRobots: entry.googlebotPolicy },
+});
+const data = view.data;
+const alternatePaths = { de: `/tools/${entry.slug}/`, en: `/en/tools/${entry.slug}/` };
+const robots = preview ? "noindex,nofollow,noarchive" : view.searchIndexDecision.robots;
+const googlebotRobots = preview ? "noindex,nofollow,noarchive" : view.searchIndexDecision.googlebotRobots;
+const categoryLabel = en ? (view.category || view.primaryCategory?.title) : view.primaryCategory?.title;
+const categoryHref = view.primaryCategory ? `${en ? "/en" : ""}/category/${view.primaryCategory.slug}/` : "";
+const toolIndexHref = `${en ? "/en" : ""}/tools/`;
+const guidesHref = `${en ? "/en" : ""}/ratgeber/`;
+const methodologyHref = en ? "/en/methodology/" : "/methodologie/";
+const priceModel = view.priceModel;
+---
+
+<BaseLayout
+  locale={locale}
+  title={en ? `${view.title}: Features, Pricing and Use Cases | Utildesk` : `${view.title} — Utildesk`}
+  description={view.metaDescription}
+  robots={robots}
+  googlebotRobots={googlebotRobots}
+  alternatePaths={alternatePaths}
+>
+  <Fragment slot="head">
+    <link rel="canonical" href={view.canonicalUrl} />
+    <link rel="alternate" type="application/json" href={view.machinePaths.json} title={`${view.title} (JSON)`} />
+    <link rel="alternate" type="text/markdown" href={view.machinePaths.markdown} title={`${view.title} (Markdown)`} />
+    {view.isCuratedTool ? <script type="application/ld+json" set:html={JSON.stringify(view.softwareApplicationSchema)} /> : null}
+    <script type="application/ld+json" set:html={JSON.stringify(view.breadcrumbSchema)} />
+    {view.faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(view.faqSchema)} /> : null}
+  </Fragment>
+
+  <main
+    class="runtime-tool-detail"
+    data-runtime-preview={preview ? "true" : undefined}
+    data-source-revision={entry.revision}
+    data-source-hash={entry.sourceHash}
+  >
+    {preview && <div class="runtime-tool-preview">{en ? "Runtime preview" : "Runtime-Vorschau"} · D1 revision {entry.revision} · noindex</div>}
+    <div class="tool-akte">
+      <nav class="akte-crumb" aria-label="Breadcrumb">
+        <a href={toolIndexHref}>{en ? "Back to Tool Index" : "← Tool-Index"}</a>
+        {view.primaryCategory ? <Fragment><span class="akte-crumb-sep">/</span><a href={categoryHref}>{categoryLabel}</a></Fragment>
+          : view.category ? <Fragment><span class="akte-crumb-sep">/</span><span>{view.category}</span></Fragment> : null}
+        <span class="akte-crumb-sep">/</span><span class="akte-crumb-current">{view.title}</span>
+      </nav>
+
+      <header class="akte-mast">
+        <div class="akte-mast-body">
+          <div class="akte-mast-kicker">{en ? "Tool File" : "↳ Tool-Akte"}{view.category ? `${en ? " / " : " · "}${view.category}` : ""}</div>
+          <h1 class="akte-mast-h1">{view.title}<span class="akte-mast-dot">.</span></h1>
+          {view.mastheadOneliner && <p class="akte-mast-oneliner">{view.mastheadOneliner}</p>}
+          {(view.category || priceModel || view.displayTags.length) && <div class="akte-chips">
+            {view.category && categoryHref ? <a class="akte-chip akte-chip-category" href={categoryHref}>{view.category}</a>
+              : view.category ? <span class="akte-chip akte-chip-category">{view.category}</span> : null}
+            {priceModel && <span class="akte-chip akte-chip-price">{priceModel}</span>}
+            {view.displayTags.map((tag) => <a class="akte-chip akte-chip-tag" href={tagHref(tag, locale)}>#{tag}</a>)}
+          </div>}
+          {(view.providerUrl || view.providerDomain) && <div class="akte-actions">
+            {view.providerUrl && <a class="akte-action akte-action-primary" href={view.providerUrl} target="_blank" rel="noopener noreferrer">
+              {en ? "Open provider" : "↗ Zum Anbieter"}{view.providerDomain ? `${en ? " / " : " · "}${view.providerDomain}` : ""}
+            </a>}
+            <a class="akte-action akte-action-ghost" href={toolIndexHref}>{en ? "Back to index" : "⇄ Zurück zum Index"}</a>
+          </div>}
+        </div>
+
+        <aside class="akte-faktenblatt" aria-label={en ? "Fact sheet" : "Faktenblatt"}>
+          <div class="akte-faktenblatt-tab">{en ? "Fact sheet" : "Faktenblatt"}</div>
+          <div class="akte-faktenblatt-head">
+            <span class="akte-monogram" aria-hidden="true">{view.logoUrl
+              ? <img src={view.logoUrl} alt="" loading="lazy" data-fallback-srcs={view.logoFallbacks.length ? JSON.stringify(view.logoFallbacks) : undefined} />
+              : view.monogramLetter}</span>
+            <div class="akte-faktenblatt-vendor"><div class="akte-faktenblatt-vendor-name">{view.vendorName}</div>{view.providerDomain && <div class="akte-faktenblatt-vendor-domain">{view.providerDomain}</div>}</div>
+          </div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">{en ? "Category" : "Kategorie"}</span><span class="akte-faktenblatt-val">{view.category || "—"}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">{en ? "Pricing model" : "Preismodell"}</span><span class="akte-faktenblatt-val">{priceModel || "—"}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Hosting</span><span class="akte-faktenblatt-val">Web / {en ? "provider" : "Anbieter"}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">{en ? "DPA available" : "AVV verfügbar"}</span><span class="akte-faktenblatt-val">{en ? "check" : "prüfen"}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Open Source</span><span class="akte-faktenblatt-val">{priceModel === "Open Source" ? (en ? "Yes" : "Ja") : (en ? "No" : "Nein")}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Self-hostable</span><span class="akte-faktenblatt-val">{en ? "No" : "Nein"}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">API</span><span class="akte-faktenblatt-val">{en ? "check" : "prüfen"}</span></div>
+          <div class="akte-faktenblatt-row is-paid"><span class="akte-faktenblatt-key">{en ? "Paid placement" : "Bezahlte Platzierung"}</span><span class="akte-faktenblatt-val">{en ? "no" : "nein"}</span></div>
+          <hr class="akte-faktenblatt-divider" />
+          <div class="akte-faktenblatt-foot">
+            <div><span class="akte-faktenblatt-key">{en ? "Last reviewed" : "Zuletzt geprüft"}</span><span>{view.lastCheckedShort || "—"}</span></div>
+            <div><span class="akte-faktenblatt-key">{en ? "In index since" : "Im Index seit"}</span><span>{view.inIndexSinceShort || "—"}</span></div>
+            <div><span class="akte-faktenblatt-key">{en ? "Used in" : "Verwendet in"}</span><span>{view.mentionedInCount ? `${view.mentionedInCount} ${en ? "guides" : "Ratgebern"}` : "—"}</span></div>
+          </div>
+        </aside>
+      </header>
+
+      {view.editorialFigureHtml && <div class="akte-feature-visual" set:html={view.editorialFigureHtml}></div>}
+      <section class="akte-verdict-card" aria-label={en ? "Editorial verdict" : "Redaktionelles Verdikt"}>
+        <span class="akte-verdict-tab">{en ? "Editorial verdict" : "Verdikt der Redaktion"}</span>
+        <div class="akte-verdict-main"><span class="akte-verdict-glyph">{view.editorialVerdict.icon}</span><div class="akte-verdict-copy">
+          <p class="akte-verdict-kicker">{view.editorialVerdict.detailKicker}</p><h2>{view.editorialVerdictHeadline}</h2><p>{view.editorialVerdictText}</p>
+        </div><aside class="akte-verdict-trust"><strong>{en ? "Trust" : "Vertrauen"}</strong><span class="akte-trust-bars"><i></i><i></i><i></i><i></i><em></em></span><small>{view.editorialTrustLabel}</small></aside></div>
+      </section>
+      <section class="akte-tldr akte-tldr-always" aria-label="TL;DR"><div class="akte-tldr-aside"><span class="akte-tldr-kicker">{en ? "In 60 sec." : "In 60 Sek."}</span><span class="akte-tldr-title">TL;DR<span class="akte-mast-dot">.</span></span></div><div class="akte-tldr-body">
+        <p>{view.mastheadOneliner}</p><ul>
+          <li>{view.category ? (en ? `${view.title} is filed under ${view.category}.` : `${view.title} ist in ${view.category} einsortiert.`) : (en ? `${view.title} is listed in the index.` : `${view.title} folgt im Index ohne feste Kategorie.`)}</li>
+          <li>{priceModel ? (en ? `Pricing model: ${priceModel}.` : `Preismodell: ${priceModel}.`) : (en ? "Check pricing with the provider." : "Preismodell beim Anbieter prüfen.")}</li>
+          <li>{en ? "No paid placement in the Utildesk index." : "Keine bezahlte Platzierung im Utildesk-Index."}</li>
+        </ul>
+      </div></section>
+      <ContentJump headings={view.articleHeadings} locale={locale} />
+      {view.isCuratedTool ? <p class="editorial-note">{en ? "Curated by" : "Kuratiert von"} <strong>Utildesk {en ? "Editorial" : "Redaktion"}</strong>{view.checkedDate && <span> · {en ? "last checked" : "zuletzt geprüft"}: {view.checkedDate}</span>}<span> · <a href={methodologyHref}>{en ? "Methodology" : "Methodologie"}</a></span></p>
+        : <p class="editorial-note">{en ? "Entry automatically created from public sources" : "Eintrag automatisch erstellt aus öffentlichen Quellen"}{view.generatedAt && <span> · {en ? "as of" : "Stand"}: {view.generatedAt}</span>}<span> · <a href={methodologyHref}>{en ? "Methodology" : "Methodologie"}</a></span></p>}
+    </div>
+
+    <article class="card article akte-article"><div class="article-body akte-article-body">
+      {!view.isCuratedTool && <blockquote class="tool-disclosure">{en ? "This entry was generated automatically from public provider information and has not been editorially reviewed." : "Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und ist nicht redaktionell kuratiert."}</blockquote>}
+      <div set:html={view.articleHtml}></div>
+    </div></article>
+
+    {view.guideBacklinks.length > 0 && <section class="akte-alts tool-akte" aria-label={en ? "Guides featuring this tool" : "Ratgeber mit diesem Tool"}>
+      <div class="akte-alts-head"><div class="akte-alts-head-left"><div class="akte-alts-kicker">{en ? "Editorial context" : "Im redaktionellen Kontext"}</div><h2 class="akte-alts-title">{en ? `Guides about ${view.title}` : `Ratgeber zu ${view.title}`}<span class="akte-mast-dot">.</span></h2></div><a class="akte-alts-all" href={guidesHref}>{en ? "All guides" : "Alle Ratgeber"}</a></div>
+      <div class="akte-alts-grid">{view.guideBacklinks.slice(0, 4).map((guide) => <a class="akte-alt-card" href={`${en ? "/en" : ""}/ratgeber/${guide.slug}/`}><div class="akte-alt-card-name">{guide.title}</div><p class="akte-alt-card-tone">{guide.excerpt}</p></a>)}</div>
+    </section>}
+
+    {view.alternativesTop.length > 0 && <section class="akte-alts tool-akte" aria-label={en ? "Related files" : "Verwandte Akten"}>
+      <div class="akte-alts-head"><div class="akte-alts-head-left"><div class="akte-alts-kicker">{en ? "Related files" : "↳ Verwandte Akten"}</div><h2 class="akte-alts-title">{en ? "Comparable tools" : "Vergleichbare Werkzeuge"}<span class="akte-mast-dot">.</span></h2></div><a class="akte-alts-all" href={toolIndexHref}>{en ? "All files" : "↳ alle Akten"}</a></div>
+      <div class="akte-alts-grid">{view.alternativesTop.map((tool, index) => <a href={`${en ? "/en" : ""}/tools/${tool.slug}/`} class="akte-alt-card">
+        <div class="akte-alt-card-head"><span class="akte-alt-card-kicker">Alternative {String(index + 1).padStart(2, "0")}</span><span class="akte-alt-card-mono" aria-hidden="true">{tool.iconUrl ? <img src={tool.iconUrl} alt="" loading="lazy" data-fallback-srcs={tool.iconFallbacks?.length ? JSON.stringify(tool.iconFallbacks) : undefined} /> : tool.title.charAt(0).toUpperCase()}</span></div>
+        <div class="akte-alt-card-name">{tool.title}<span class="akte-mast-dot">.</span></div><p class="akte-alt-card-tone">{tool.excerpt || (en ? "Short description coming soon." : "Kurzbeschreibung folgt.")}</p>
+        <div class="akte-alt-card-foot"><span class="akte-alt-card-meta">{[tool.category, tool.priceModel || tool.price_model].filter(Boolean).join(en ? " / " : " · ")}</span><span class="akte-alt-card-open">{en ? "Open file" : "Akte öffnen ↗"}</span></div>
+      </a>)}</div>
+    </section>}
+
+    <div class="tool-akte"><aside class="akte-colophon" aria-label="Colophon">
+      <span><span class="akte-colophon-key">{en ? "File" : "Akte"}</span> {view.vendorName}</span>
+      <span><span class="akte-colophon-key">Status</span> {view.isCuratedTool ? (en ? "curated" : "kuratiert") : (en ? "automatic" : "automatisch")}</span>
+      {view.lastCheckedShort && <span><span class="akte-colophon-key">{en ? "Last review" : "Letzte Prüfung"}</span> {view.lastCheckedShort}</span>}
+      <span><span class="akte-colophon-key">{en ? "Data" : "Daten"}</span> <a href={view.machinePaths.json}>{view.machinePaths.json}</a></span>
+      <span><span class="akte-colophon-key">{en ? "License" : "Lizenz"}</span> CC BY-NC 4.0</span><span class="akte-colophon-paid">0 {en ? "paid placements" : "bezahlte Platzierungen"}</span>
+    </aside></div>
+  </main>
+</BaseLayout>
+
+<style>
+  .runtime-tool-preview { margin: 0 auto; width: min(100% - 36px, 1480px); border: 1px dashed var(--err); color: var(--err); padding: 10px 12px; font: 700 .75rem/1.4 var(--mono); text-transform: uppercase; }
+  .editorial-note { margin: 14px 0 0; font-family: var(--mono); color: var(--fg-3); font-size: .78rem; line-height: 1.6; letter-spacing: .04em; }
+  .editorial-note a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+</style>

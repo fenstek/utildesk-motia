@@ -165,6 +165,62 @@ export async function listRuntimeContentEntries(
 
 type CacheVersionRow = { source_hash?: string; revision?: number; entries?: number; max_revision?: number };
 
+export type RuntimeCacheIdentity = {
+  cluster: "tool" | "ratgeber";
+  version: string;
+  revision: number | null;
+  sourceHash: string | null;
+};
+
+const routeIdentity = (pathname: string) => {
+  const preview = pathname.match(/^\/runtime-preview\/(de|en)\/(tools|ratgeber)\/([^/]+)\/?$/);
+  if (preview) return {
+    kind: preview[2] === "tools" ? "tool" as const : "ratgeber" as const,
+    locale: preview[1] as RuntimeLocale,
+    slug: preview[3],
+  };
+  const detail = pathname.match(/^\/(en\/)?(tools|ratgeber)\/([^/]+)\/?$/);
+  if (detail) return {
+    kind: detail[2] === "tools" ? "tool" as const : "ratgeber" as const,
+    locale: detail[1] ? "en" as const : "de" as const,
+    slug: detail[3],
+  };
+  const index = pathname.match(/^\/(en\/)?(tools|ratgeber)\/?$/);
+  if (index) return {
+    kind: index[2] === "tools" ? "tool" as const : "ratgeber" as const,
+    locale: index[1] ? "en" as const : "de" as const,
+    slug: null,
+  };
+  return null;
+};
+
+export async function getRuntimeCacheIdentity(pathname: string): Promise<RuntimeCacheIdentity | null> {
+  const route = routeIdentity(pathname);
+  if (!route) return null;
+  if (route.slug) {
+    const row = await database()
+      .prepare("SELECT source_hash, revision FROM content_entries WHERE kind = ? AND locale = ? AND slug = ? AND is_active = 1 AND route_state = 'active'")
+      .bind(route.kind, route.locale, route.slug)
+      .first<CacheVersionRow>();
+    return row?.source_hash ? {
+      cluster: route.kind,
+      version: `${row.revision ?? 1}-${row.source_hash}`,
+      revision: Number(row.revision ?? 1),
+      sourceHash: row.source_hash,
+    } : null;
+  }
+  const row = await database()
+    .prepare("SELECT COUNT(*) AS entries, MAX(revision) AS max_revision FROM content_entries WHERE kind = ? AND locale = ? AND is_active = 1 AND route_state = 'active'")
+    .bind(route.kind, route.locale)
+    .first<CacheVersionRow>();
+  return row ? {
+    cluster: route.kind,
+    version: `${row.entries ?? 0}-${row.max_revision ?? 0}`,
+    revision: Number(row.max_revision ?? 0),
+    sourceHash: null,
+  } : null;
+}
+
 export async function getRatgeberCacheVersion(pathname: string): Promise<string | null> {
   const match = pathname.match(/^\/(en\/)?ratgeber(?:\/([^/]+))?\/?$/);
   if (!match) return null;
