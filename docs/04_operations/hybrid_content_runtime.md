@@ -26,6 +26,32 @@ All tool pages, the home page, APIs, feeds, robots.txt, Markdown endpoints and t
 
 The Pages proxy is fail-open. A Worker/D1 upstream error or an imported-content 404 falls back to the existing static route. For an immediate manual rollback without a rebuild, write `off` to the existing Pages KV binding `RATGEBER_REVIEW` under `content-runtime:ratgeber`; delete the key or set any other value to re-enable the runtime.
 
+Tool detail delivery has a separate, fail-closed switch in the same KV namespace. A missing key, `off`, malformed allowlist or KV read failure keeps static Pages in control and does not change the Ratgeber switch:
+
+- `content-runtime:tools=off|allowlist|on`
+- `content-runtime:tools:allowlist=<JSON array of slugs>`
+
+The first reviewed cohort is committed at `site/runtime/allowlists/tools-20.json`. Write the allowlist before changing the mode so a partially completed operation cannot widen traffic:
+
+```bash
+cd site
+node_modules/.bin/wrangler kv key put content-runtime:tools:allowlist \
+  --path runtime/allowlists/tools-20.json --binding RATGEBER_REVIEW \
+  --env production --remote --config wrangler.toml
+node_modules/.bin/wrangler kv key put content-runtime:tools allowlist \
+  --binding RATGEBER_REVIEW --env production --remote --config wrangler.toml
+```
+
+Immediate tool-only rollback:
+
+```bash
+cd site
+node_modules/.bin/wrangler kv key put content-runtime:tools off \
+  --binding RATGEBER_REVIEW --env production --remote --config wrangler.toml
+```
+
+Do not set `on` until the 20- and 100-route cohorts have each passed two complete live-check rounds. Tool Worker 404, 5xx or fetch exceptions fall back to the frozen/static Pages route; successful proxied responses carry `X-Utildesk-Content-Runtime: tools-v1`.
+
 ### Presentation bridge
 
 The Ratgeber Worker and Pages are independently deployed. Pages therefore injects
