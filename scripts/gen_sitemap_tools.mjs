@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync, statSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { getToolPublicState } from "../site/shared/toolPublicState.mjs";
 
 const ROOT = process.cwd();
 const TOOLS_DIR = join(ROOT, "content", "tools");
@@ -68,14 +69,9 @@ for (const f of files) {
   const md = readFileSync(p, "utf8");
   const fm = getFrontmatter(md);
 
-  // Only DONE tools in sitemap
-  const status = (fm.status || "").toUpperCase();
-  if (status && status !== "DONE") continue;
-  const disabled = fm.disabled === true || String(fm.disabled || "").toLowerCase() === "true";
-  if (disabled) continue;
-
-  const slug = f.replace(/\.md$/i, "");
-  if (slug === "_TEMPLATE") continue;
+  const publicState = getToolPublicState({ filename: f, data: fm });
+  if (!publicState.isPublishable) continue;
+  const slug = publicState.slug;
   const st = statSync(p);
 
   toolUrls.push({

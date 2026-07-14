@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import { fromContent } from "./contentRoot.mjs";
 import { stripMarkdown } from "./machineReadable";
 import { normalizePriceModel } from "./priceModel";
+import { isPublishableTool } from "../../shared/toolPublicState.mjs";
 
 export const CATEGORY_EN: Record<string, { title: string; description: string }> = {
   "ai-chatbots": {
@@ -106,6 +107,10 @@ const getEnglishToolTranslation = (slug: string): EnglishToolTranslation | null 
   }
 
   const parsed = matter(readFileSync(filePath, "utf8"));
+  if (!isPublishableTool({ filename: `${slug}.md`, slug, data: parsed.data })) {
+    englishToolTranslationCache.set(slug, null);
+    return null;
+  }
   const translation = {
     data: parsed.data as Record<string, any>,
     content: parsed.content.trim(),

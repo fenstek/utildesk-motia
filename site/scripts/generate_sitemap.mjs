@@ -15,6 +15,7 @@ import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import { getToolPublicState } from '../shared/toolPublicState.mjs';
 import {
   createToolAddedAtRankMap,
   getToolSearchIndexDecision,
@@ -203,15 +204,13 @@ async function readToolIndexPolicySlugs() {
   try {
     const files = await readdir(CONTENT_TOOLS_DIR);
     for (const file of files) {
-      if (!file.endsWith('.md') || file.startsWith('_')) continue;
+      if (!file.endsWith('.md')) continue;
       const sourcePath = join(CONTENT_TOOLS_DIR, file);
       const raw = await readFile(sourcePath, 'utf8');
       const parsed = matter(raw);
-      const slug = String(parsed.data.slug ?? file.replace(/\.md$/i, ''));
-      const disabled =
-        parsed.data.disabled === true ||
-        String(parsed.data.disabled || '').toLowerCase() === 'true';
-      if (disabled) continue;
+      const publicState = getToolPublicState({ filename: file, data: parsed.data });
+      if (!publicState.isPublishable) continue;
+      const slug = publicState.slug;
 
       const decision = getToolSearchIndexDecision(
         {

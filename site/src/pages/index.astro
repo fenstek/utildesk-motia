@@ -12,6 +12,7 @@ import { tagHref } from "../lib/tagRoutes";
 import { CATEGORIES } from "../lib/categories";
 import { listRatgeberEntries } from "../lib/ratgeber";
 import { normalizeToolEditorialVerdict } from "../lib/toolVerdict";
+import { isPublishableTool } from "../../shared/toolPublicState.mjs";
 import {
   buildCollectionPageSchema,
   buildOrganizationSchema,
@@ -20,8 +21,7 @@ import {
 } from "../lib/siteMeta";
 
 const toolsDir = fromContent("tools");
-const files = (await readdir(toolsDir))
-  .filter((file) => file.endsWith(".md") && !file.startsWith("_"));
+const files = (await readdir(toolsDir)).filter((file) => file.endsWith(".md"));
 
 const stripMarkdown = (text: string) =>
   text
@@ -79,8 +79,7 @@ const tools = await Promise.all(
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
     const { data, content } = matter(raw);
-    const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
-    if (disabled) return null;
+    if (!isPublishableTool({ filename: file, data })) return null;
 
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
