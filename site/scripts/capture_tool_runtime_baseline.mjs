@@ -37,7 +37,17 @@ const DEFAULT_CONTROL_SLUGS = [
 ];
 
 const parseArgs = (argv) => {
-  const options = { baseUrl: DEFAULT_BASE_URL, canonicalOrigin: null, outDir: null, slugsFile: null, screenshots: false, cdpUrl: null };
+  const options = {
+    baseUrl: DEFAULT_BASE_URL,
+    canonicalOrigin: null,
+    outDir: null,
+    slugsFile: null,
+    screenshots: false,
+    cdpUrl: null,
+    all: false,
+    runtimePreview: false,
+    viewport: { width: 390, height: 844 },
+  };
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
     if (arg === "--base-url") options.baseUrl = argv[++index];
@@ -45,6 +55,13 @@ const parseArgs = (argv) => {
     else if (arg === "--out") options.outDir = argv[++index];
     else if (arg === "--slugs-file") options.slugsFile = argv[++index];
     else if (arg === "--screenshots") options.screenshots = true;
+    else if (arg === "--all") options.all = true;
+    else if (arg === "--runtime-preview") options.runtimePreview = true;
+    else if (arg === "--viewport") {
+      const match = String(argv[++index] ?? "").match(/^(\d+)x(\d+)$/);
+      if (!match) throw new Error("--viewport must be WIDTHxHEIGHT");
+      options.viewport = { width: Number(match[1]), height: Number(match[2]) };
+    }
     else if (arg === "--cdp-url") options.cdpUrl = argv[++index];
     else throw new Error(`Unknown argument: ${arg}`);
   }
@@ -146,14 +163,14 @@ const readSlugs = async (path) => {
 
 const toHeaderObject = (headers) => Object.fromEntries([...headers.entries()].sort(([left], [right]) => left.localeCompare(right)));
 
-const screenshot = async (url, destination) => {
+const screenshot = async (url, destination, viewport) => {
   await execFileAsync("google-chrome", [
     "--headless=new",
     "--disable-gpu",
     "--no-sandbox",
     "--hide-scrollbars",
     "--force-device-scale-factor=1",
-    "--window-size=390,844",
+    `--window-size=${viewport.width},${viewport.height}`,
     `--screenshot=${destination}`,
     url,
   ], { timeout: 60_000, maxBuffer: 1024 * 1024 });
@@ -170,7 +187,7 @@ const waitForSocket = (socket) => new Promise((resolveSocket, rejectSocket) => {
   socket.addEventListener("error", () => rejectSocket(new Error("CDP WebSocket connection failed")), { once: true });
 });
 
-export const screenshotViaCdp = async (cdpUrl, url, destination) => {
+export const screenshotViaCdp = async (cdpUrl, url, destination, viewport = { width: 390, height: 844 }) => {
   const endpoint = String(cdpUrl).replace(/\/+$/, "");
   const targetResponse = await fetch(`${endpoint}/json/new?${encodeURIComponent("about:blank")}`, { method: "PUT" });
   if (!targetResponse.ok) throw new Error(`CDP target creation failed (${targetResponse.status})`);
@@ -191,12 +208,12 @@ export const screenshotViaCdp = async (cdpUrl, url, destination) => {
     await waitForSocket(socket);
     await cdpCommand(socket, pending, "Page.enable");
     await cdpCommand(socket, pending, "Emulation.setDeviceMetricsOverride", {
-      width: 390,
-      height: 844,
+      width: viewport.width,
+      height: viewport.height,
       deviceScaleFactor: 1,
-      mobile: true,
-      screenWidth: 390,
-      screenHeight: 844,
+      mobile: viewport.width <= 600,
+      screenWidth: viewport.width,
+      screenHeight: viewport.height,
     });
     await cdpCommand(socket, pending, "Page.navigate", { url });
     await cdpCommand(socket, pending, "Runtime.evaluate", {
@@ -233,13 +250,9 @@ async function main() {
   const canonicalOrigin = normalizedBaseUrl(options.canonicalOrigin || options.baseUrl);
   const outDir = resolve(options.outDir);
   const htmlDir = join(outDir, "html");
-  const screenshotDir = join(outDir, "screenshots-390x844");
+  const screenshotDir = join(outDir, `screenshots-${options.viewport.width}x${options.viewport.height}`);
   await mkdir(htmlDir, { recursive: true });
   if (options.screenshots) await mkdir(screenshotDir, { recursive: true });
-
-  const slugs = uniqueSorted(await readSlugs(options.slugsFile));
-  if (slugs.length < 24) throw new Error(`Control set must contain at least 24 slugs; got ${slugs.length}`);
-  for (const slug of slugs) if (!safeSlug(slug)) throw new Error(`Unsafe slug: ${slug}`);
 
   const [deEntries, enEntries] = await Promise.all([
     listRuntimeEntries({ kind: "tool", locale: "de" }),
@@ -249,6 +262,9 @@ async function main() {
     de: deEntries.map((entry) => entry.slug).sort(),
     en: enEntries.map((entry) => entry.slug).sort(),
   };
+  const slugs = uniqueSorted(options.all ? active.de : await readSlugs(options.slugsFile));
+  if (slugs.length < 24) throw new Error(`Control set must contain at least 24 slugs; got ${slugs.length}`);
+  for (const slug of slugs) if (!safeSlug(slug)) throw new Error(`Unsafe slug: ${slug}`);
   await writeFile(join(outDir, "active-slugs-de.json"), `${JSON.stringify(active.de, null, 2)}\n`);
   await writeFile(join(outDir, "active-slugs-en.json"), `${JSON.stringify(active.en, null, 2)}\n`);
   const deBySlug = new Map(deEntries.map((entry) => [entry.slug, entry]));
@@ -259,15 +275,16 @@ async function main() {
     if (!deBySlug.has(slug) || !enBySlug.has(slug)) throw new Error(`${slug}: not active in both locales`);
     for (const locale of ["de", "en"]) {
       const path = `${locale === "en" ? "/en" : ""}/tools/${slug}/`;
-      const url = `${baseUrl}${path}`;
+      const requestPath = options.runtimePreview ? `/runtime-preview/${locale}/tools/${slug}/` : path;
+      const url = `${baseUrl}${requestPath}`;
       const response = await fetch(url, { redirect: "manual", headers: { "User-Agent": "Utildesk-Runtime-Migration-Baseline/1.0" } });
       const html = await response.text();
       const fileStem = `${locale}-${slug}`;
       await writeFile(join(htmlDir, `${fileStem}.html`), html);
       const viewport = options.screenshots && response.status === 200
         ? options.cdpUrl
-          ? await screenshotViaCdp(options.cdpUrl, url, join(screenshotDir, `${fileStem}.png`))
-          : await screenshot(url, join(screenshotDir, `${fileStem}.png`)).then(() => null)
+          ? await screenshotViaCdp(options.cdpUrl, url, join(screenshotDir, `${fileStem}.png`), options.viewport)
+          : await screenshot(url, join(screenshotDir, `${fileStem}.png`), options.viewport).then(() => null)
         : null;
       const entry = locale === "de" ? deBySlug.get(slug) : enBySlug.get(slug);
       records.push({
@@ -275,6 +292,7 @@ async function main() {
         locale,
         url,
         path,
+        requestPath,
         status: response.status,
         headers: toHeaderObject(response.headers),
         bytes: Buffer.byteLength(html),
@@ -300,7 +318,8 @@ async function main() {
     capturedAt: new Date().toISOString(),
     baseUrl,
     canonicalOrigin,
-    viewport: options.screenshots ? { width: 390, height: 844, deviceScaleFactor: 1 } : null,
+    runtimePreview: options.runtimePreview,
+    viewport: options.screenshots ? { ...options.viewport, deviceScaleFactor: 1 } : null,
     controlSlugs: slugs,
     activeCounts: { de: active.de.length, en: active.en.length },
     activeSetParity: JSON.stringify(active.de) === JSON.stringify(active.en),

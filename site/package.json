@@ -23,6 +23,7 @@
     "capture:tool-runtime-baseline": "node scripts/capture_tool_runtime_baseline.mjs",
     "check:tool-runtime-parity": "node scripts/check_tool_runtime_parity.mjs",
     "audit:tool-runtime-resources": "node scripts/audit_tool_runtime_resources.mjs",
+    "import:runtime-local": "node scripts/import_local_runtime_projection.mjs",
     "test:tool-runtime": "node --test scripts/tests/*.test.mjs",
     "fetch:logos": "node ../scripts/fetch_simpleicons_logos.mjs"
   },

@@ -93,6 +93,18 @@ test("buildToolDetailViewModel produces localized EN routes and filters inactive
   assert.equal(view.articleHtml.includes("inline-provider-link"), false);
 });
 
+test("English runtime fallback keeps the established 158-character meta limit", () => {
+  const description = "A".repeat(200);
+  const view = buildToolDetailViewModel({
+    entry,
+    locale: "en",
+    localized: { description },
+    displayTools: [],
+  });
+  assert.equal(view.metaDescription, `${"A".repeat(155)}...`);
+  assert.equal(view.metaDescription.length, 158);
+});
+
 test("non-curated entries never emit FAQ or SoftwareApplication eligibility by accident", () => {
   const automatic = {
     slug: "automatic",

@@ -67,5 +67,5 @@ export function runtimeGuideBacklinks(guides: RuntimeContentEntry[], slug: strin
       return href === `${prefix}${slug}/` || href === `/tools/${slug}/` || href === `/en/tools/${slug}/`;
     });
     return matches ? [{ slug: guide.slug, title: guide.title, excerpt: guide.excerpt }] : [];
-  });
+  }).sort((left, right) => left.slug.localeCompare(right.slug));
 }

@@ -324,7 +324,10 @@ export function buildToolDetailViewModel({
 
   const alternatives = buildAlternatives(markdown, slug, displayTools).slice(0, 3);
   const description = asString(localized.description ?? data.description ?? data.summary ?? data.excerpt ?? data.tagline) || firstParagraph(markdown) || `${title} - Informationen, Features und Anwendungsfälle`;
-  const metaDescription = asString(localized.metaDescription) || (description.length > 160 ? `${description.slice(0, 157).trimEnd()}...` : description);
+  const metaDescriptionLimit = locale === "en" ? 158 : 160;
+  const metaDescriptionSlice = locale === "en" ? 155 : 157;
+  const metaDescription = asString(localized.metaDescription)
+    || (description.length > metaDescriptionLimit ? `${description.slice(0, metaDescriptionSlice).trimEnd()}...` : description);
   const mastheadOneliner = description || firstParagraph(markdown);
   const featureList = Array.isArray(localized.featureList) ? localized.featureList : extractFeatureList(markdown);
   const faqPairs = isCuratedTool ? extractFaqPairs(markdown) : [];
