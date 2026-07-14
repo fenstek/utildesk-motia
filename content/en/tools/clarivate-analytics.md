@@ -1,84 +1,92 @@
 ---
-slug: "clarivate-analytics"
-title: "Clarivate Analytics (Web of Science)"
+slug: clarivate-analytics
+title: Clarivate Analytics (Web of Science)
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Developer"
+editorial_batch: "2026-07-14-optiplex-editorial-50"
+category: "AI Research"
+price_model: "Je nach Plan"
 tags: [research, search, analytics, data]
-description: "Clarivate Analytics, including Web of Science, helps researchers and organisations search publications, track citations and analyse research impact."
+official_url: "https://clarivate.com/products/scientific-and-academic-research/research-discovery-and-workflow-solutions/webofscience-platform/"
+description: "Web of Science combines curated literature, citation and research data for traceable discovery and bibliometric analysis."
+popularity: 0
+tier: "D"
+generated_at: "2026-05-11"
+translation: full
+updated_at: 2026-07-14
 ---
 # Clarivate Analytics (Web of Science)
 
-Clarivate Analytics (Web of Science) is a tool that should be evaluated through the work it improves, not only through the feature names on the product page. In practice, it matters whether Clarivate Analytics (Web of Science) helps a team handle data quality, queries, analysis, model maintenance, and traceable decisions with more clarity, less rework, and better handoff between people.
-
-The strongest use cases for Clarivate Analytics (Web of Science) appear when a real workflow already exists and the team can compare the old process with the new one. If nobody can name the owner, the review step, or the expected result, even a capable tool can become another loose tab in the browser.
-
-## Who is Clarivate Analytics (Web of Science) for?
-
-Clarivate Analytics (Web of Science) is most useful for data, analytics, research, and engineering teams that need decisions to be reproducible. It can also help smaller teams when the task is repeated often enough to justify setup, documentation, and a short review routine.
-
-The first decision should be practical: where does Clarivate Analytics (Web of Science) remove friction today, and where would it only add another place to check? A small pilot is usually more revealing than a long comparison table.
-
-## Editorial assessment
-
-Clarivate Analytics (Web of Science) should be measured by process quality. A good implementation makes handoffs clearer, decisions easier to trace, and errors visible earlier.
-
-A useful pilot for Clarivate Analytics (Web of Science) starts with a limited data set with a clear source, defined question, owner, and acceptance point. After that, the team should judge whether data quality, runtime, maintainability, result stability, and acceptance of the analysis are visibly better in the real workflow, not just in a demo.
-
-- **Checkpoint for Clarivate Analytics (Web of Science):** Before rollout, data quality, runtime, maintainability, result stability, and acceptance of the analysis should be supported by a small before-and-after comparison.
-- **Good start for Clarivate Analytics (Web of Science):** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
-- **Risk with Clarivate Analytics (Web of Science):** The value becomes weak when data sources, definitions, access rights, and ownership remain unclear.
+Clarivate Analytics is best understood here as the Web of Science platform: an institutionally licensed research and citation database for scholarly literature. It supports literature reviews, discovery of related work, citation analysis and research monitoring. It is not a universal full-text archive or a substitute for assessing a study's methods; the records and features available to a user depend on the subscribed collections.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/clarivate-analytics-editorial.webp" alt="Illustration for Clarivate Analytics: researchers explore publications and citation networks in a library" loading="lazy" decoding="async" />
+  <img src="/images/tools/clarivate-analytics-editorial.webp" alt="Researchers trace publications and connected citation paths across several screens in a library" loading="lazy" decoding="async" />
 </figure>
 
-## Key features
+## Who is Web of Science for?
 
-- **Workflow support in Clarivate Analytics (Web of Science):** The tool should help teams move from input to reviewed output without hiding important decisions.
-- **Practical run with Clarivate Analytics (Web of Science):** The tool should be tested against a limited data set with a clear source, defined question, owner, and acceptance point, so strengths and limits become visible outside a polished demo.
-- **Quality control in Clarivate Analytics (Web of Science):** The team needs a simple way to review data quality, runtime, maintainability, result stability, and acceptance of the analysis after use.
-- **Handoff with Clarivate Analytics (Web of Science):** Results, open questions, and decisions should be documented so other roles can continue the work later.
-- **Team adoption around Clarivate Analytics (Web of Science):** The tool becomes more useful when rules, owners, and review points are named before the rollout.
+The platform is aimed at researchers, students, libraries, research managers and research-intensive organisations. It earns its cost when a question must be answered across many sources in a reproducible way, such as a systematic review, a funding strategy or an institution's publication analysis. For one quick lookup, an open search service may be enough. Web of Science is more defensible when coverage, citation relationships and exportable evidence are part of the assignment.
 
-## Pros and cons
+## What data and components are included?
 
-### Pros
+The centre of the service is Web of Science Core Collection, with multidisciplinary indexes for journals, books and conference proceedings. Depending on the contract, additional collections include the Preprint Citation Index, Grants Index, Data Citation Index, Policy Citation Index and Derwent Innovations Index. Searches connect documents with cited and citing works. The platform also provides saved searches, alerts, citation reports, result analysis and exports such as RIS, Excel or EndNote; individual databases and functions remain subscription-dependent.
 
-- Clarivate Analytics (Web of Science) is especially useful when a recurring process should no longer depend on one person's private know-how.
-- Clarivate Analytics (Web of Science) helps most when data quality, queries, analysis, model maintenance, and traceable decisions should be documented and checked instead of explained from scratch every time.
-- Clarivate Analytics (Web of Science) gives teams a clearer basis for comparison when the pilot has a defined owner and success criteria.
+## A defensible research workflow
 
-### Cons
+1. Define the question, search fields and exclusion rules before searching, and record the institution and access scope.
+2. Start broad, then narrow the Boolean query. Save the search history and date instead of keeping only a copied result list.
+3. Check title, abstract, document type, subject area and source. Use citation paths for discovery, then read the original paper and check retractions or corrections.
+4. Export only the fields needed, deduplicate them in the review system and record why items were excluded.
+5. Have a second person inspect the query, sample and interpretation. Only then should metrics enter a report, proposal or dashboard.
 
-- Clarivate Analytics (Web of Science) can merely move the friction elsewhere when data sources, definitions, access rights, and ownership remain unclear.
-- Clarivate Analytics (Web of Science) is not a self-running fix; without an owner and review, the team quickly loses sight of quality and limits.
-- Clarivate Analytics (Web of Science) is less convincing when the team wants a quick fix but has no time for setup, documentation, or follow-up.
+## Operations, exports and automation
 
-## Pricing & costs
+Library or research administrators need to clarify access, roles and licensed databases. For recurring pipelines, Clarivate offers Web of Science APIs. The Expanded API uses an API key, a registered application, a paid licence and contract-defined request and record limits. It is an integration component, not permission for unrestricted bulk downloading. Store surface exports and API data with the search date, query, licence terms and schema context so that later comparisons do not silently mix different data snapshots.
 
-For Clarivate Analytics (Web of Science), it is worth looking behind the sticker price: infrastructure, operations, monitoring, training, data model maintenance, and governance. These factors often decide ROI more than the entry price.
+## Quality and metric boundaries
 
-## Alternatives to Clarivate Analytics (Web of Science)
+The editorial selection of Core Collection can provide a consistent basis, but it does not make coverage complete or equally representative for every discipline, region and language. Citation counts are database measures, not direct measures of research quality; they vary by index, subscription depth, document type and time window. A review should therefore retain its search protocol, coverage checks against controlled sources, exclusion reasons and content assessment. A citation report should never be the sole basis for funding, hiring or judging research quality.
 
-Alternatives to Clarivate Analytics (Web of Science) should be chosen by the concrete work problem. In some cases, databases, BI tools, pipeline systems, research platforms, and open frameworks are better because they create fewer detours in the existing workflow.
+## Privacy, security and governance
+
+The platform processes account data and research activity in an external service. Use institutional SSO, least-privilege roles and no shared passwords; keep API keys in a secret manager rather than notebooks or Git. Before exporting, check whether author data, affiliations or internal research topics reveal personal or confidential information. For benchmarking and monitoring dashboards, agree with the library, privacy office and contract owner on licence scope, retention, sharing and deletion.
+
+## Costs and editorial assessment
+
+Web of Science is not sold with one universally applicable public single-user price. Costs typically combine an institutional licence, selected databases, user or access scope, support and training, and potentially API or data products. Before renewal, measure which reviews, reports or monitoring tasks are actually completed with it and whether open sources provide adequate coverage.
+
+## Editorial Assessment
+
+Web of Science is recommended for libraries and research teams that regularly need curated citation data, traceable searches and institution-level analysis. It creates value when the licence scope, search ownership and methodological checking are explicit. For occasional literature discovery, open full-text searching or a strongly discipline-specific need, a narrower alternative is often the better choice.
+
+## Alternatives
+
+- [Semantic Scholar](/en/tools/semantic-scholar/): A free, AI-assisted discovery service for a quick starting point; its coverage and metrics are not equivalent to an institutional Web of Science licence.
+- [Scopus](/en/tools/scopus/): A commercial, broad literature and citation database for direct comparison in bibliometrics and research monitoring.
+- [Dimensions](/en/tools/dimensions/): Connects publications with grants, patents, datasets and policy documents when the context must go beyond citations.
+- [Connected Papers](/en/tools/connected-papers/): Visualises similar work around a seed paper for orientation, not as a complete systematic-review record.
+- [Google Scholar](/en/tools/google-scholar/): A low-friction web search for first leads and citation trails, with less transparent coverage and curation.
 
 ## FAQ
 
-**1. What is Clarivate Analytics (Web of Science) used for?**
-Clarivate Analytics (Web of Science) is used when teams want to improve work around data quality, queries, analysis, model maintenance, and traceable decisions and need the result to be easier to review.
+**Do I need an institutional subscription for Web of Science?**
 
-**2. Who benefits most from Clarivate Analytics (Web of Science)?**
-Clarivate Analytics (Web of Science) is most useful for data, analytics, research, and engineering teams that need decisions to be reproducible, especially when the work repeats often and needs a clear handoff.
+Full access to databases and features normally requires an institutional licence or another subscribed route. The visible scope follows the contract; personal registration does not provide a collection that the institution has not licensed.
 
-**3. How should a team test Clarivate Analytics (Web of Science)?**
-For Clarivate Analytics (Web of Science), use one real, bounded use case. Define the goal, owner, data basis, review steps, and success criteria first, then compare effort and output quality after the test.
+**Are Web of Science citation counts a quality score?**
 
-**4. What should be checked before rollout?**
-Before rollout, Clarivate Analytics (Web of Science) should have named owners, a review path, data rules, and a simple way to measure whether the workflow improved.
+No. They describe citations counted within the available Web of Science products and can vary by index, period and document type. Treat them as one indicator alongside content review, disciplinary context and qualitative criteria.
 
-**5. When is Clarivate Analytics (Web of Science) a poor fit?**
-Clarivate Analytics (Web of Science) is a poor fit when data sources, definitions, access rights, and ownership remain unclear, or when nobody has time for setup, review, and ongoing maintenance.
+**Can Web of Science feed a data pipeline?**
+
+Yes. Clarivate provides APIs with a registered application, API key, paid access and contractual limits. Before building a pipeline, confirm fields, export rights, rate limits, cost and permitted data storage.
+
+**How reproducible is a literature review in Web of Science?**
+
+Searches can be documented with search history, date, fields and exports. Reproducibility still requires fixed criteria, coverage checks, deduplication, an exclusion log and independent review.
+
+**When should I choose an alternative?**
+
+Choose one when an institutional licence is not justified, open literature is sufficient, or you need to connect grants, patents and datasets through another model. Base the decision on coverage, traceability and usage rights, not on the raw number of results.
