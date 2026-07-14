@@ -33,7 +33,8 @@ const sortedTags = Array.from(tagFrequency.entries())
   })
   .map(([tag]) => tag);
 const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2).slice(0, 24);
-const recentRatgeber = (await listRatgeberEntries()).slice(0, 3);
+const ratgeberEntries = await listRatgeberEntries();
+const recentRatgeber = ratgeberEntries.slice(0, 3);
 const categoryCounts = Array.from(
   enabledTools.reduce((map, tool) => {
     const category = tool.category || "Unsortiert";
@@ -203,6 +204,46 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     </div>
   </div>
 
+  {ratgeberEntries.length > 0 && (
+    <section id="guide-search-results" class="tool-akte tools-guides akte-alts inv-guide-search" aria-live="polite" hidden>
+      <div class="akte-alts-head">
+        <div class="akte-alts-head-left">
+          <div class="akte-alts-kicker">↳ Treffer im Ratgeber</div>
+          <h2 class="akte-alts-title">Passende Entscheidungen<span class="akte-mast-dot">.</span></h2>
+        </div>
+        <span class="akte-alts-all" id="guide-search-count"></span>
+      </div>
+      <div class="akte-alts-grid" id="guide-search-grid">
+        {ratgeberEntries.map((article, idx) => (
+          <a
+            href={`/ratgeber/${article.slug}/`}
+            class="akte-alt-card"
+            data-guide-title={article.data.title?.toLowerCase()}
+            data-guide-search={[
+              article.data.excerpt,
+              article.data.category,
+              article.data.eyebrow,
+              ...(article.data.tags || []),
+              ...(article.data.relatedTools || []).map((tool) => tool.title),
+            ].filter(Boolean).join(" ").toLowerCase()}
+            hidden
+          >
+            <div class="akte-alt-card-head">
+              <span class="akte-alt-card-kicker">Ratgeber {String(idx + 1).padStart(2, "0")}</span>
+              <span class="akte-alt-card-mono" aria-hidden="true">§</span>
+            </div>
+            <div class="akte-alt-card-name">{article.data.title}<span class="akte-mast-dot">.</span></div>
+            <p class="akte-alt-card-tone">{article.data.excerpt || "Redaktionelle Einordnung und Tool-Bezüge aus dem Utildesk-Ratgeber."}</p>
+            <div class="akte-alt-card-foot">
+              <span class="akte-alt-card-meta">{article.data.eyebrow || article.data.category || "Guide"}</span>
+              <span class="akte-alt-card-open">Lesen ↗</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
   <div class="tool-akte inv-list-wrap">
   <aside class="inv-filter-rail" aria-label="Filter">
     <div class="inv-filter-kicker">↳ Filter</div>
@@ -253,6 +294,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         data-slug={tool.slug.toLowerCase()}
         data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
         data-category={categoryValue}
+        data-search={tool.description.toLowerCase()}
         data-verdict={verdict.value}
         data-letter={getToolLetter(tool.title)}
         data-added={tool.addedAtMs}
@@ -350,7 +392,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
   </div>
 
   {recentRatgeber.length > 0 && (
-    <section class="tool-akte tools-guides akte-alts" aria-label="Passende Guides">
+    <section id="recent-guides" class="tool-akte tools-guides akte-alts" aria-label="Passende Guides">
       <div class="akte-alts-head">
         <div class="akte-alts-head-left">
           <div class="akte-alts-kicker">↳ Passende Ratgeber</div>
@@ -396,6 +438,10 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const jumpLinks = Array.from(document.querySelectorAll('.inv-jump-letter'));
       const resultCount = document.getElementById('tools-result-count');
       const clearFilterBtn = document.getElementById('clear-filter-btn');
+      const guideSearchSection = document.getElementById('guide-search-results');
+      const guideSearchCount = document.getElementById('guide-search-count');
+      const guideCards = Array.from(document.querySelectorAll('[data-guide-title]'));
+      const recentGuides = document.getElementById('recent-guides');
       let pageBlocks = 1;
       let activeLetter = '';
       let activeView = 'list';
@@ -561,9 +607,79 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         return activeView === 'tiles' ? 24 : 18;
       }
 
+      function normalizeSearch(value) {
+        return String(value || '')
+          .toLowerCase()
+          .normalize('NFKD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^a-z0-9]+/g, ' ')
+          .trim();
+      }
+
+      function searchScore(fields, rawQuery) {
+        const query = normalizeSearch(rawQuery);
+        if (!query) return 1;
+        const terms = query.split(/\s+/).filter(Boolean);
+        const title = normalizeSearch(fields.title);
+        const slug = normalizeSearch(fields.slug);
+        const tags = normalizeSearch(fields.tags);
+        const category = normalizeSearch(fields.category);
+        const content = normalizeSearch(fields.content);
+        const haystack = [title, slug, tags, category, content].join(' ');
+        if (!terms.every(function(term) { return haystack.includes(term); })) return 0;
+
+        let score = 0;
+        if (title === query) score += 1200;
+        else if (title.startsWith(query)) score += 800;
+        else if (title.includes(query)) score += 600;
+        if (slug === query) score += 700;
+        else if (slug.includes(query)) score += 450;
+        if (tags.includes(query)) score += 350;
+        if (category.includes(query)) score += 250;
+        terms.forEach(function(term) {
+          if (title.includes(term)) score += 120;
+          if (slug.includes(term)) score += 90;
+          if (tags.includes(term)) score += 80;
+          if (category.includes(term)) score += 60;
+          if (content.includes(term)) score += 30;
+        });
+        return score;
+      }
+
+      function filterGuides(rawQuery) {
+        const query = normalizeSearch(rawQuery);
+        if (recentGuides) recentGuides.hidden = Boolean(query);
+        if (!guideSearchSection) return;
+        if (!query) {
+          guideSearchSection.hidden = true;
+          guideCards.forEach(function(card) { card.hidden = true; });
+          return;
+        }
+
+        const matches = guideCards
+          .map(function(card) {
+            return {
+              card: card,
+              score: searchScore({
+                title: card.getAttribute('data-guide-title'),
+                content: card.getAttribute('data-guide-search'),
+              }, query),
+            };
+          })
+          .filter(function(item) { return item.score > 0; })
+          .sort(function(a, b) { return b.score - a.score; });
+
+        const visible = new Set(matches.slice(0, 6).map(function(item) { return item.card; }));
+        guideCards.forEach(function(card) { card.hidden = !visible.has(card); });
+        guideSearchSection.hidden = matches.length === 0;
+        if (guideSearchCount) {
+          guideSearchCount.textContent = matches.length === 1 ? '1 Ratgeber' : matches.length + ' Ratgeber';
+        }
+      }
+
       // Filter + sort + pagination
       function filterTools() {
-        const query = searchInput.value.toLowerCase().trim();
+        const query = normalizeSearch(searchInput.value);
         const sortMode = sortSelect ? sortSelect.value : 'az';
         const baseFiltered = cards.filter(function(card) {
           const title = card.getAttribute('data-title') || '';
@@ -571,14 +687,10 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           const tags = card.getAttribute('data-tags') || '';
           const verdict = card.getAttribute('data-verdict') || '';
           const category = card.getAttribute('data-category') || '';
-          const tagList = tags.split(',').map(function(t) { return t.trim().toLowerCase(); });
-
-          // Check search query match
-          const searchMatch = !query ||
-                             title.includes(query) ||
-                             slug.includes(query) ||
-                             category.includes(query) ||
-                             tags.includes(query);
+          const content = card.getAttribute('data-search') || '';
+          const score = searchScore({ title: title, slug: slug, tags: tags, category: category, content: content }, query);
+          card.dataset.searchScore = String(score);
+          const searchMatch = !query || score > 0;
 
           const verdictMatch = selectedFilters.verdict.size === 0 || selectedFilters.verdict.has(verdict);
           const categoryMatch = selectedFilters.category.size === 0 || selectedFilters.category.has(category);
@@ -597,6 +709,13 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         filtered.sort(function(a, b) {
           const aTitle = (a.getAttribute('data-title') || '').toLowerCase();
           const bTitle = (b.getAttribute('data-title') || '').toLowerCase();
+          if (query) {
+            const scoreDiff = Number(b.dataset.searchScore || 0) - Number(a.dataset.searchScore || 0);
+            if (scoreDiff !== 0) return scoreDiff;
+            const popularityDiff = Number(b.getAttribute('data-popularity') || 0) - Number(a.getAttribute('data-popularity') || 0);
+            if (popularityDiff !== 0) return popularityDiff;
+            return aTitle.localeCompare(bTitle, 'de');
+          }
           if (sortMode === 'new') {
             const aAdded = Number(a.getAttribute('data-added') || '0');
             const bAdded = Number(b.getAttribute('data-added') || '0');
@@ -657,6 +776,8 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         if (resultCount) {
           resultCount.textContent = 'Anzeige · ' + currentVisible + ' von ' + totalFiltered + ' Treffern';
         }
+
+        filterGuides(query);
 
         jumpLinks.forEach(function(link) {
           const letter = link.getAttribute('data-jump-letter') || '';

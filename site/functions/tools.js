@@ -19,13 +19,5 @@ export function onRequest(context) {
     }
   }
 
-  const sort = url.searchParams.get("sort");
-  if (sort) {
-    const normalizedSort = String(sort).toLowerCase();
-    if (["az", "new", "pop"].includes(normalizedSort) && url.searchParams.size === 1) {
-      return Response.redirect(`${url.origin}/tools/`, 308);
-    }
-  }
-
   return context.next();
 }

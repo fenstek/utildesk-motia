@@ -52,6 +52,7 @@ if (grid) {
     Object.assign(card.dataset, {
       title: text(item.title).toLowerCase(), slug: text(item.slug).toLowerCase(),
       tags: tags.map((tag) => text(tag).toLowerCase()).join(","), category: category.toLowerCase(),
+      search: text(item.excerpt || item.description).toLowerCase(),
       verdict: verdict.value, letter: letterFor(text(item.title)), added: text(item.addedAtMs || 0),
       addedOrder: text(item.addedAtOrderMs || 0), popularity: text(item.popularity || 0),
     });
