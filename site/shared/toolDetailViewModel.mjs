@@ -120,6 +120,14 @@ const wrapFaq = (html, label) => html.replace(
   `<details class="content-secondary" open><summary>${label}</summary><div class="content-secondary-body">$1$2</div></details>`,
 );
 
+const filterInactiveToolLinks = (html, tools) => {
+  const active = new Set(tools.map((tool) => tool.slug));
+  return String(html).replace(
+    /<a\b([^>]*\bhref=["']\/(?:en\/)?tools\/([a-z0-9-]+)\/?["'][^>]*)>([\s\S]*?)<\/a>/gi,
+    (whole, _attributes, slug, label) => active.has(slug) ? whole : label,
+  );
+};
+
 const extractFaqPairs = (markdown, limit = 8) => {
   const section = String(markdown).match(/(?:^|\n)#{2,3}\s+(?:FAQ|Haeufige Fragen|Häufige Fragen|Frequently Asked Questions)\s*\n([\s\S]*?)(?=\n#{1,3}\s|\s*$)/i);
   if (!section) return [];
@@ -309,7 +317,10 @@ export function buildToolDetailViewModel({
   if (locale === "de") articleHtml = ensureProviderLink(linkFirstMention(articleHtml, title, providerUrl), visibleProviderUrl, providerUrl);
   const extractedFigure = extractEditorialFigure(articleHtml);
   const navigation = addHeadingIds(extractedFigure.html);
-  articleHtml = wrapFaq(navigation.html, locale === "en" ? "Open frequently asked questions" : "FAQ aufklappen");
+  articleHtml = filterInactiveToolLinks(
+    wrapFaq(navigation.html, locale === "en" ? "Open frequently asked questions" : "FAQ aufklappen"),
+    displayTools,
+  );
 
   const alternatives = buildAlternatives(markdown, slug, displayTools).slice(0, 3);
   const description = asString(localized.description ?? data.description ?? data.summary ?? data.excerpt ?? data.tagline) || firstParagraph(markdown) || `${title} - Informationen, Features und Anwendungsfälle`;
