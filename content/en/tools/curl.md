@@ -25,6 +25,10 @@ updated_at: 2026-07-14
 
 Curl is a command-line program for transferring data with URL syntax; its libcurl library is also embedded directly in applications. In practice it is not an API management suite or a shared test workspace. It is a small, scriptable building block for requests, downloads, uploads, and network diagnosis. Its value appears when a team versions the command, checks the response, and knows which build is actually running.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/curl-editorial.webp" alt="A developer connects network services at a modular transfer console" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Curl for?
 
 Curl fits developers, SRE and DevOps teams, system administrators, CI pipelines, and support engineers who need to reproduce a request. A health check, an upload to an internal service, or a faulty header can be isolated quickly. Teams looking for shared request collections, API documentation, or extensive test data will usually need a more specialised tool around it.

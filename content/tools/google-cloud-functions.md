@@ -20,6 +20,10 @@ updated_at: 2026-07-14
 
 Google Cloud Functions ist Googles Funktionsmodell für kleine HTTP- und ereignisgetriebene Backends. In der aktuellen Generation heißt der Dienst Cloud Run functions: Quellcode wird gebaut, als Container abgelegt und als Cloud-Run-Service betrieben. Das nimmt Serverpflege ab, macht aber weder Architektur noch Verantwortung unsichtbar. Für jede Funktion braucht es einen klaren Auslöser, einen Einstiegspunkt, ein Berechtigungsmodell und einen Plan für Fehler, Wiederholungen und Kosten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-functions-editorial.webp" alt="Ein Team steuert kleine ereignisbasierte Funktionen in einer technischen Werkhalle" loading="lazy" decoding="async" />
+</figure>
+
 ## Was ist Google Cloud Functions und für wen?
 
 Der Dienst passt zu Entwicklerteams, die eine einzelne Reaktion sauber aus einem größeren System herauslösen wollen: etwa eine HTTP-API, eine Pub/Sub-Verarbeitung, eine Reaktion auf Cloud Storage oder eine Firestore-Verarbeitung. Eventarc vermittelt ereignisgetriebene Auslöser; HTTP-Funktionen können außerdem von Workflows, Cloud Scheduler, Cloud Tasks oder Pub/Sub-Push aufgerufen werden. Für ein dauerhaft laufendes, stark individuell konfiguriertes Backend ist Cloud Run als direkter Containerdienst oft die klarere Wahl.

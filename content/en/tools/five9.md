@@ -25,6 +25,10 @@ updated_at: 2026-07-14
 
 Five9 is a cloud contact center platform for organizations that need to connect voice and digital interactions in an operational service process. The useful starting question is not whether a demo contains enough AI, but which requests arrive through which channel, how they are routed, documented, and handed to a person when necessary. Five9 is aimed more at medium-sized and enterprise contact center operations than at a small team looking only for a business phone system.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/five9-editorial.webp" alt="Service staff coordinate customer conversations and handoffs in a contact center" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Five9 for?
 
 Five9 fits support, sales, and service organizations with multiple queues, locations, channels, or shifts. Team leaders can manage routing, occupancy, and quality, while agents work in a central desktop with the customer context relevant to the case. In-house centers and BPOs can use it when roles, numbers, data flows, and escalations are defined before configuration begins.

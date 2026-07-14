@@ -20,6 +20,10 @@ generated_at: "2026-05-18"
 
 Firebase Realtime Database ist ein verwalteter JSON-Datenspeicher für mobile und webbasierte Anwendungen, in denen mehrere Clients denselben Zustand schnell sehen sollen. Typische Beispiele sind Chat-Nachrichten, Präsenz, Live-Status oder kleine kollaborative Oberflächen. Der Kern ist kein relationales Tabellenmodell, sondern ein JSON-Baum mit Listenern, SDKs und Regeln. Das macht den Einstieg schnell, setzt aber voraus, dass Datenpfade, Abfragen und Berechtigungen vor dem Produktionsstart bewusst entworfen werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/firebase-realtime-database-editorial.webp" alt="Ein Team beobachtet in Echtzeit verbundene Datenströme in einem Leitstand" loading="lazy" decoding="async" />
+</figure>
+
 ## Was das Produkt leistet
 
 Die Datenbank hält eine Verbindung zwischen Anwendung und Server und meldet Änderungen an registrierte Clients. Mit `set`, `update`, `push` und Transaktionen lassen sich einzelne Knoten oder mehrere Pfade verändern. Auto-generierte Schlüssel helfen bei Listen und parallelen Schreibvorgängen. Die Plattform nimmt den Betrieb der Datenbankinstanz ab; sie ersetzt aber weder ein fachliches Datenmodell noch eine saubere Server- und Release-Strategie.

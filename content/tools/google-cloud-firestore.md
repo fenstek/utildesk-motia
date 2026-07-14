@@ -20,6 +20,10 @@ updated_at: 2026-07-14
 
 Google Cloud Firestore ist eine verwaltete, dokumentenorientierte NoSQL-Datenbank für Web-, Mobil- und Serveranwendungen. Sie passt besonders zu Produkten, die Dokumente lesen, ändern und an verbundene Clients synchronisieren müssen; sie ersetzt aber kein relationales Datenmodell und keine Kosten- oder Berechtigungsplanung. Firestore gibt es im Firebase- und Google-Cloud-Kontext, mit Native Mode für den typischen Dokument- und Echtzeit-Workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-firestore-editorial.webp" alt="Ein mobiler Nachbarschaftsdienst synchronisiert Informationen zwischen mehreren Orten" loading="lazy" decoding="async" />
+</figure>
+
 ## Was ist Firestore und für wen?
 
 Produktteams wählen Firestore häufig für Benutzerprofile, Projekt- und Aufgabendaten, Chat- oder Kollaborationsfunktionen und mobile Apps mit zeitweise schlechter Verbindung. Daten liegen in Collections und Documents; Documents können verschachtelte Werte und Subcollections enthalten. Diese Flexibilität beschleunigt einen klar abgegrenzten Produktbereich, verlangt aber ein Datenmodell, das die späteren Abfragen von Anfang an berücksichtigt. Für viele Joins, stark normalisierte Geschäftsobjekte oder ad-hoc SQL-Auswertungen ist eine relationale Datenbank oft die ehrlichere Ausgangsbasis.

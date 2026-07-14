@@ -20,6 +20,10 @@ generated_at: "2026-05-17"
 
 HoneyBook ist eine Clientflow-Plattform für Selbstständige und kleine dienstleistende Unternehmen. Sie führt einen Interessenten von der Anfrage über Formular, Termin, Angebot und Vertrag bis zu Rechnung und Zahlung durch einen gemeinsamen Ablauf. Das ist nützlich, wenn Kundendaten und nächste Schritte heute über E-Mail, Kalender, Dokumente und Zahlungsanbieter verteilt sind. HoneyBook ist aber kein vollwertiges ERP und ersetzt keine saubere Buchhaltung, rechtliche Prüfung oder individuelle Datenschutzbewertung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/honeybook-editorial.webp" alt="Kreative planen gemeinsam ein Kundenprojekt in einem warmen Studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Was HoneyBook im Alltag abdeckt
 
 Der Kern ist ein kundenseitiger Ablauf in einem Smart File. Darin lassen sich unter anderem Services, Verträge, Rechnungen und Zahlungsseiten kombinieren und an den Kunden teilen. Ein Client Portal hält freigegebene Dateien, Nachrichten und Zahlungen für den jeweiligen Kunden zusammen. Lead Forms können Anfragen erfassen; der Scheduler hilft, verfügbare Termine anzubieten. So sieht ein Freelancer nicht nur den Kontakt, sondern auch, welche Aktion als Nächstes fällig ist.

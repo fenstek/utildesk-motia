@@ -20,6 +20,10 @@ updated_at: 2026-07-14
 
 Curl ist ein Kommandozeilenprogramm für Datenübertragungen mit URL-Syntax; die zugehörige libcurl-Bibliothek wird auch direkt in Software eingebettet. Im Alltag ist es kein API-Managementsystem und kein Testlabor mit zentraler Oberfläche, sondern ein sehr kleiner, skriptfähiger Baustein für Requests, Downloads, Uploads und Netzwerkdiagnose. Sein Wert entsteht dort, wo ein Team Befehle versioniert, Ausgaben prüft und den verwendeten Build kontrolliert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/curl-editorial.webp" alt="Eine Entwicklerin verbindet Netzwerkdienste an einem modularen Übertragungspult" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Curl geeignet?
 
 Curl passt zu Entwicklerinnen, SRE- und DevOps-Teams, Systemadministration, CI-Pipelines und Support, die einen HTTP(S)-Aufruf reproduzierbar ausführen wollen. Ein einzelner Healthcheck, ein Upload in einen internen Dienst oder das Nachstellen eines fehlerhaften Headers ist damit schnell isoliert. Für fachliche API-Dokumentation, gemeinsame Request-Sammlungen oder komplexe Testdaten braucht man eher ein spezialisiertes Werkzeug.

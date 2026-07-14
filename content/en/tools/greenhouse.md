@@ -25,6 +25,10 @@ translation: full
 
 Greenhouse is a cloud recruiting platform that brings applications, interviews, hiring decisions and the handoff into onboarding into one operating process. Its value is not an automatically better selection; it is clearer accountability: who reviews an application, which criteria guide an interview, when feedback becomes visible and who makes the decision. That framework is useful for organizations hiring regularly with several participants. For occasional single hires, implementation and maintenance can outweigh the benefit of a dedicated system.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/greenhouse-editorial.webp" alt="Candidates and recruiting teams meet in an open, planted selection space" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Greenhouse for?
 
 Greenhouse is aimed primarily at recruiting and HR teams coordinating multiple openings, hiring managers and interviewers. The vendor positions the platform across sourcing, applications, interviewing, offers and onboarding. That breadth fits organizations seeking a consistent process across departments or regions. A small company making a few straightforward hires should first compare whether a lighter ATS can provide enough ownership, traceability and candidate communication with less administration.

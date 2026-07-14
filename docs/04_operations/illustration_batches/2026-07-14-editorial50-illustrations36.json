@@ -1,0 +1,299 @@
+{
+  "batch": "2026-07-14-editorial50-illustrations36",
+  "generator": "Codex built-in image_gen via ChatGPT subscription",
+  "status": "implemented",
+  "dimensions": "1280x720",
+  "format": "webp",
+  "quality": 82,
+  "placement": "single editorial figure after the opening paragraph in both DE and EN cards",
+  "items": [
+    {
+      "slug": "italki",
+      "path": "content/images/tools/italki-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "documentary video-call conversation",
+      "status": "implemented"
+    },
+    {
+      "slug": "klaviyo",
+      "path": "content/images/tools/klaviyo-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "bright stencil screenprint customer routes",
+      "status": "implemented"
+    },
+    {
+      "slug": "kodex",
+      "path": "content/images/tools/kodex-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "black-and-white woodcut mechanical code inspection",
+      "status": "implemented"
+    },
+    {
+      "slug": "lever",
+      "path": "content/images/tools/lever-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "architectural gouache candidate spaces",
+      "status": "implemented"
+    },
+    {
+      "slug": "linear",
+      "path": "content/images/tools/linear-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "minimal paper kinetic issue sculpture",
+      "status": "implemented"
+    },
+    {
+      "slug": "lm-studio",
+      "path": "content/images/tools/lm-studio-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "cinematic local AI laboratory still",
+      "status": "implemented"
+    },
+    {
+      "slug": "loom",
+      "path": "content/images/tools/loom-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "warm painted asynchronous explanation across time zones",
+      "status": "implemented"
+    },
+    {
+      "slug": "loudmax",
+      "path": "content/images/tools/loudmax-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "abstract oil sound wave",
+      "status": "implemented"
+    },
+    {
+      "slug": "lunacy",
+      "path": "content/images/tools/lunacy-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "surreal ink and watercolor vector studio",
+      "status": "implemented"
+    },
+    {
+      "slug": "mailshake",
+      "path": "content/images/tools/mailshake-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "retro-futurist postal workshop collage",
+      "status": "implemented"
+    },
+    {
+      "slug": "makecode",
+      "path": "content/images/tools/makecode-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "colorful clay educational device diorama",
+      "status": "implemented"
+    },
+    {
+      "slug": "microsoft-azure-cosmos-db",
+      "path": "content/images/tools/microsoft-azure-cosmos-db-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "astronomical data constellation lithograph",
+      "status": "implemented"
+    },
+    {
+      "slug": "microsoft-office-365",
+      "path": "content/images/tools/microsoft-office-365-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "layered paper-cut collaboration",
+      "status": "implemented"
+    },
+    {
+      "slug": "mindmeister",
+      "path": "content/images/tools/mindmeister-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "botanical ink and watercolor mind map",
+      "status": "implemented"
+    },
+    {
+      "slug": "mongodb-atlas",
+      "path": "content/images/tools/mongodb-atlas-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "pseudo-documentary macro atlas cartography",
+      "status": "implemented"
+    },
+    {
+      "slug": "moxo",
+      "path": "content/images/tools/moxo-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "fashion-editorial document workflow",
+      "status": "implemented"
+    },
+    {
+      "slug": "notion-calendar",
+      "path": "content/images/tools/notion-calendar-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "geometric Bauhaus time coordination poster",
+      "status": "implemented"
+    },
+    {
+      "slug": "openfaas",
+      "path": "content/images/tools/openfaas-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "two-color risograph function factory",
+      "status": "implemented"
+    },
+    {
+      "slug": "planner",
+      "path": "content/images/tools/planner-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "top-down wood cork paper planning board",
+      "status": "implemented"
+    },
+    {
+      "slug": "rawtherapee",
+      "path": "content/images/tools/rawtherapee-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "plein-air photo laboratory painting",
+      "status": "implemented"
+    },
+    {
+      "slug": "couchbase",
+      "path": "content/images/tools/couchbase-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "gouache cutaway distributed data workshop",
+      "status": "implemented"
+    },
+    {
+      "slug": "curl",
+      "path": "content/images/tools/curl-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "painterly modular protocol-routing workstation",
+      "status": "implemented"
+    },
+    {
+      "slug": "dubsado",
+      "path": "content/images/tools/dubsado-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "editorial client-workflow studio",
+      "status": "implemented"
+    },
+    {
+      "slug": "duckdb",
+      "path": "content/images/tools/duckdb-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "nocturnal local-data desk",
+      "status": "implemented"
+    },
+    {
+      "slug": "eagle",
+      "path": "content/images/tools/eagle-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "cinematic archive research room",
+      "status": "implemented"
+    },
+    {
+      "slug": "firebase-realtime-database",
+      "path": "content/images/tools/firebase-realtime-database-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "neo-noir realtime operations center",
+      "status": "implemented"
+    },
+    {
+      "slug": "five9",
+      "path": "content/images/tools/five9-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "theatrical contact-center routing",
+      "status": "implemented"
+    },
+    {
+      "slug": "google-bigtable",
+      "path": "content/images/tools/google-bigtable-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "blueprint distributed-data hall",
+      "status": "implemented"
+    },
+    {
+      "slug": "google-cloud-firestore",
+      "path": "content/images/tools/google-cloud-firestore-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "paper-cut synchronized community services",
+      "status": "implemented"
+    },
+    {
+      "slug": "google-cloud-functions",
+      "path": "content/images/tools/google-cloud-functions-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "linocut event-driven function factory",
+      "status": "implemented"
+    },
+    {
+      "slug": "google-cloud-spanner",
+      "path": "content/images/tools/google-cloud-spanner-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "cinematic astronomical distributed infrastructure",
+      "status": "implemented"
+    },
+    {
+      "slug": "google-vertex-ai",
+      "path": "content/images/tools/google-vertex-ai-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "mixed-media model-evaluation laboratory",
+      "status": "implemented"
+    },
+    {
+      "slug": "gotowebinar",
+      "path": "content/images/tools/gotowebinar-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "screenprint broadcast studio",
+      "status": "implemented"
+    },
+    {
+      "slug": "greenhouse",
+      "path": "content/images/tools/greenhouse-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "botanical cut-paper recruiting conservatory",
+      "status": "implemented"
+    },
+    {
+      "slug": "honeybook",
+      "path": "content/images/tools/honeybook-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "encaustic creative client studio",
+      "status": "implemented"
+    },
+    {
+      "slug": "hubspot-service-hub",
+      "path": "content/images/tools/hubspot-service-hub-editorial.webp",
+      "width": 1280,
+      "height": 720,
+      "style": "watercolor customer-service repair atelier",
+      "status": "implemented"
+    }
+  ]
+}

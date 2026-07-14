@@ -20,6 +20,10 @@ updated_at: 2026-07-14
 
 Google Bigtable ist ein verwalteter, sparsamer Key-Value-Speicher für Workloads mit sehr vielen Zeilen, hohem Durchsatz und niedriger Latenz. Typische Kandidaten sind Zeitreihen, Geräte- und Telemetriedaten, Ereignisse oder andere Datensätze, die über einen bekannten Schlüssel beziehungsweise Schlüsselbereich gelesen werden. Bigtable ist keine relationale Datenbank mit Joins: Das Datenmodell, die Row Keys und die erwarteten Lesezugriffe müssen vor dem Betrieb zusammenpassen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-bigtable-editorial.webp" alt="Ein Team plant große Datenreihen an einem weitläufigen technischen Tisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Was ist Bigtable und für wen?
 
 Bigtable richtet sich an Plattform-, Daten- und Anwendungsteams, die große Mengen einzelner Schlüsselwerte in Google Cloud speichern und über Client Libraries, APIs oder passende Analysepfade verarbeiten. Die Tabellen sind spärlich; Daten liegen in Zeilen, Column Families und versionierten Cells. Für einen Dienst, der Beziehungen per Join auflöst, viele kleine transaktionale Aggregate über mehrere Zeilen benötigt oder nur eine kleine relationale Anwendung betreibt, ist Bigtable meist die falsche Abstraktion.
