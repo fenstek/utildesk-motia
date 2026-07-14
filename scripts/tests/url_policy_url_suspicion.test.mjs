@@ -16,6 +16,16 @@ test('url_policy: dot-tech and dot-attorney are denied final hosts', () => {
   assert.equal(isDeniedFinalHost('www.dot-attorney.org'), true);
 });
 
+test('url_policy: manually verified adult platforms are denied', () => {
+  for (const url of ['https://deepfake.com/', 'https://deepnude.com/']) {
+    const result = validateOfficialUrl(url, {
+      slug: 'deepfake',
+      title: 'Deepfake',
+    });
+    assert.equal(result.ok, false, `${url} must not be accepted as an official tool URL`);
+  }
+});
+
 test('url_policy: denied final URL patterns are detected', () => {
   assert.equal(matchDeniedFinalUrlPattern('https://example.com/domain-for-sale'), 'final_url_matches_denied_pattern');
   assert.equal(matchDeniedFinalUrlPattern('https://dan.com/buy-domain/example.com'), 'final_url_matches_denied_pattern');

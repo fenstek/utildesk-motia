@@ -96,6 +96,8 @@ const GENERIC_SLUGS = new Set([
 const SEED_BLACKLIST_DOMAINS = new Set([
   "waveaid.com.au", // Australian content/news site, not an AI tool
   "vergeal.fr",     // French content site, not an AI tool
+  "deepfake.com",   // Adult creator platform, not a concrete catalog product
+  "deepnude.com",   // Adult generator destination reached from deepfake.com
 ]);
 
 /**
@@ -129,6 +131,7 @@ const TRACKING_PARAMS = ["utm_", "trackid=", "ref=", "affiliate_id=", "click_id=
 /** Terms anywhere in the URL that indicate adult/gambling content. */
 const HARD_URL_TOKENS = [
   "casino", "bet365", "poker", "slots", "payday-loan", "xxx",
+  "deepnude",
 ];
 
 // ── Auth ──────────────────────────────────────────────────────────────────────

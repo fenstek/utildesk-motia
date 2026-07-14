@@ -61,6 +61,9 @@ const FORBIDDEN_HOSTS = new Set([
   "medium.com",
   "reddit.com",
   "duckduckgo.com",
+  // Manually verified adult platforms, not acceptable catalog product URLs.
+  "deepfake.com",
+  "deepnude.com",
 ]);
 
 const BRAND_STOP_WORDS = new Set([

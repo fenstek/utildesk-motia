@@ -48,6 +48,8 @@ const OFFICIAL_URL_DENY_HOST = new Set([
   'apps.apple.com','play.google.com',
   // search engines / redirects / trackers
   'duckduckgo.com','google.com','bing.com',
+  // manually verified adult platforms, not catalog products
+  'deepfake.com','deepnude.com',
 ]);
 
 const OFFICIAL_URL_DENY_SUBSTR = [

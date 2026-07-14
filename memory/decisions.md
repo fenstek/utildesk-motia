@@ -1,5 +1,11 @@
 # Decisions
 
+## 2026-07-14 Generic concepts and unsafe guessed domains
+
+- Generic concepts such as `Deepfake` are not publishable tools unless a concrete, independently verified product entity exists.
+- A fallback domain guess is never sufficient evidence for an official URL. Manually verified adult, parked, or wrong-entity destinations must be denied in every active and legacy URL resolver.
+- When such a row has already been published, set the Sheet source-of-truth row to `BLACKLIST`, clear its official URL, disable both language cards, and redirect stale routes to the relevant index.
+
 ## 2026-07-12 Compact inventory crawl surface
 
 - Keep the complete tool inventory available through `/api/tools.json` and `/en/api/tools.json`, but do not server-render all long-tail cards into `/tools/` HTML.

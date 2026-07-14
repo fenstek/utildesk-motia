@@ -69,3 +69,9 @@
 # transformers disabled (covered by Hugging Face Transformers)
 /tools/transformers   /tools/hugging-face-transformers/   301
 /tools/transformers/  /tools/hugging-face-transformers/   301
+
+# deepfake BLACKLIST (generic concept; guessed domain is an adult creator platform)
+/tools/deepfake      /tools/      301
+/tools/deepfake/     /tools/      301
+/en/tools/deepfake   /en/tools/   301
+/en/tools/deepfake/  /en/tools/   301

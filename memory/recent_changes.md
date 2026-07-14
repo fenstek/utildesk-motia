@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-14_
 
+## 2026-07-14 - Removed unsafe generic Deepfake entry
+
+- Moved Sheet row 193 from `DONE` to `BLACKLIST` and cleared the guessed `deepfake.com` official URL after manual verification showed that the destination is an adult creator platform, not a concrete product tool.
+- Disabled the DE/EN repository cards, removed them from search/API/routes, and redirected the stale public paths to the corresponding tool indexes.
+- Hardened current and legacy official-URL resolvers plus the suspicious-row postcheck so the verified adult destinations cannot be auto-published again.
+
 ## 2026-07-14 - Functional ranked catalogue and Ratgeber search
 
 - Fixed Cloudflare Pages middleware so safe `/tools/` and `/en/tools/` search and filter parameters survive canonical redirects while tracking noise is still removed.
