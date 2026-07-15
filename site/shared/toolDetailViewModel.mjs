@@ -236,7 +236,11 @@ export function getToolContextHints(markdown) {
   const items = section
     ? (section[2].match(/^[-*]\s+(.+)$/gm) ?? []).map((line) => line.replace(/^[-*]\s+/, "").trim())
     : [];
-  const titles = items.map(parseAlternative).filter((item) => item && !item.slug).map((item) => item.name);
+  const titles = items
+    .map(parseAlternative)
+    .filter((item) => item && !item.slug)
+    .map((item) => stripMarkdown(item.name))
+    .filter(Boolean);
   return {
     slugs: [...new Set(slugs)].sort(),
     titles: [...new Set(titles)].sort((left, right) => left.localeCompare(right)),

@@ -5,7 +5,7 @@ import { CATEGORIES } from "../../src/lib/categories";
 import { tagHref } from "../../src/lib/tagRoutes";
 import { buildToolDetailViewModel } from "../../shared/toolDetailViewModel.mjs";
 import type { RuntimeContentEntry, RuntimeGuideContextEntry, RuntimeLocale, RuntimeToolContextEntry } from "../lib/runtimeContent";
-import { runtimeDisplayTools, runtimeGuideBacklinks, runtimeToolEntryLike } from "../lib/toolRuntime";
+import { runtimeDisplayTools, runtimeGuideBacklinks, runtimeToolDescription, runtimeToolEntryLike } from "../lib/toolRuntime";
 
 interface Props {
   locale: RuntimeLocale;
@@ -26,7 +26,7 @@ const view = buildToolDetailViewModel({
     title: entry.title,
     category: entry.category,
     priceModel: entry.priceModel,
-    description: entry.excerpt,
+    description: runtimeToolDescription(entry, locale),
     markdown: entry.markdown,
     tags: Array.isArray(entry.metadata.tags) ? entry.metadata.tags.map(String) : [],
     officialUrl: typeof entry.metadata.official_url === "string" ? entry.metadata.official_url : "",

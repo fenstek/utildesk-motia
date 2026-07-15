@@ -49,6 +49,10 @@ test("getToolContextHints limits runtime context to linked slugs and named alter
     slugs: [],
     titles: ["Named Tool"],
   });
+  assert.deepEqual(getToolContextHints("## Alternatives\n\n- `Notion AI`: useful option"), {
+    slugs: [],
+    titles: ["Notion AI"],
+  });
 });
 
 test("buildToolDetailViewModel produces the shared DE delivery contract", () => {
