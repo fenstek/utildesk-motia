@@ -386,6 +386,24 @@ async function readBuiltLocalizedTools(rootDir, indexableSlugs) {
   return readBuiltTools(indexableSlugs, rootDir, 'en');
 }
 
+async function readFocusedRuntimeTools(indexableSlugs, locale = 'de') {
+  const directory = locale === 'en' ? join(REPO_ROOT, 'content/en/tools') : CONTENT_TOOLS_DIR;
+  const tools = [];
+  for (const slug of FOCUS_TOOL_SLUGS) {
+    if (!indexableSlugs.has(slug)) continue;
+    const sourcePath = join(directory, `${slug}.md`);
+    try {
+      const parsed = matter(await readFile(sourcePath, 'utf8'));
+      const publicState = getToolPublicState({ filename: `${slug}.md`, data: parsed.data });
+      if (!publicState.isPublishable) continue;
+      tools.push({ slug, lastmod: await readToolSourceLastmod(slug, locale, sourcePath) });
+    } catch {
+      continue;
+    }
+  }
+  return tools;
+}
+
 async function readBuiltStaticPage(...segments) {
   const indexPath = join(DIST_DIR, ...segments, 'index.html');
   try {
@@ -775,8 +793,8 @@ function buildFocusedUrlList(inputs, tools, enTools) {
 async function generateSitemaps() {
   const toolIndexPolicy = await readToolIndexPolicySlugs();
   const sharedInputs = await collectSharedSitemapInputs();
-  const googleTools = await readBuiltTools(toolIndexPolicy.googleIndexableSlugs);
-  const googleEnTools = await readBuiltLocalizedTools(DIST_EN_TOOLS_DIR, toolIndexPolicy.googleIndexableSlugs);
+  const googleTools = await readFocusedRuntimeTools(toolIndexPolicy.googleIndexableSlugs, 'de');
+  const googleEnTools = await readFocusedRuntimeTools(toolIndexPolicy.googleIndexableSlugs, 'en');
 
   const focusUrls = buildFocusedUrlList(sharedInputs, googleTools, googleEnTools);
   const googleUrls = focusUrls;
@@ -829,10 +847,10 @@ async function main() {
     Object.assign(result, result.google);
     console.log(`✅ Sitemap generated: ${OUTPUT_FILE}`);
     console.log(`   Total URLs: ${result.count}`);
-    console.log(`   Tools: ${result.tools} (from dist/tools/)`);
+    console.log(`   Tools: ${result.tools} (from runtime source policy)`);
     console.log(`   Categories: ${result.categories} (from dist/category/)`);
     console.log(`   Ratgeber: ${result.ratgeber} (from dist/ratgeber/)`);
-    console.log(`   English tools: ${result.enTools} (from dist/en/tools/)`);
+    console.log(`   English tools: ${result.enTools} (from runtime source policy)`);
     console.log(`   English categories: ${result.enCategories} (from dist/en/category/)`);
     console.log(`   English ratgeber: ${result.enRatgeber} (from dist/en/ratgeber/)`);
     const staticPages =
