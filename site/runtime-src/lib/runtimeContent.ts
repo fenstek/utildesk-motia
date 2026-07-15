@@ -248,10 +248,10 @@ export async function listRuntimeGuideBacklinkContext(
       `SELECT slug, title, excerpt, metadata_json
        FROM content_entries
        WHERE kind = 'ratgeber' AND locale = ? AND is_active = 1 AND route_state = 'active'
-         AND (metadata_json LIKE ? OR metadata_json LIKE ?)
+         AND (instr(metadata_json, ?) > 0 OR instr(metadata_json, ?) > 0)
        ORDER BY slug ASC`,
     )
-    .bind(locale, `%/tools/${toolSlug}/%`, `%/en/tools/${toolSlug}/%`)
+    .bind(locale, `/tools/${toolSlug}/`, `/en/tools/${toolSlug}/`)
     .all<Pick<RuntimeContentRow, "slug" | "title" | "excerpt" | "metadata_json">>();
   return result.results.map((row) => ({
     slug: row.slug,
