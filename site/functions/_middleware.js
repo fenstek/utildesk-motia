@@ -25,6 +25,7 @@ const PUBLIC_EXACT_PATHS = new Set([
 // cannot own a path directly. Pages proxies just this migrated content cluster
 // to the D1-backed renderer; every other public route stays on the static app.
 const RUNTIME_ORIGIN = "https://utildesk-content-runtime.s-skorykov.workers.dev";
+const FROZEN_TOOL_FALLBACK_ORIGIN = "https://5dd2d5f7.utildesk-motia.pages.dev";
 const RUNTIME_RATGEBER_STYLESHEET = "/runtime-ratgeber-detail.css?v=20260713-1";
 const stripDuplicatedRuntimeSecondaryImage = (html) => html.replace(
   /<figure class="ratgeber-inline-image">\s*<img\b[^>]*\bsrc="([^"]+)"[^>]*>\s*<\/figure>/g,
@@ -97,6 +98,21 @@ export const toolDetailSlug = (pathname) => {
 
 const isToolAssetPath = (pathname) => pathname.startsWith("/tool-assets/");
 
+export const frozenToolFallback = async (context) => {
+  const url = new URL(context.request.url);
+  const frozen = new URL(`${url.pathname}${url.search}`, FROZEN_TOOL_FALLBACK_ORIGIN);
+  try {
+    const response = await fetch(new Request(frozen, context.request));
+    if (!response.ok) return context.next();
+    const headers = new Headers(response.headers);
+    headers.delete("X-Utildesk-Content-Runtime");
+    headers.set("X-Utildesk-Tool-Fallback", "frozen-7a4190c4");
+    return new Response(response.body, { status: response.status, headers });
+  } catch {
+    return context.next();
+  }
+};
+
 export const proxyRuntime = async (context, cluster = "ratgeber") => {
   const url = new URL(context.request.url);
   const upstream = new URL(`${url.pathname}${url.search}`, RUNTIME_ORIGIN);
@@ -105,7 +121,7 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
     const response = await fetch(new Request(upstream, context.request));
     // Keep a static fallback for a path which has not been imported into D1.
     if ((response.status === 404 && !url.pathname.startsWith("/runtime-assets/") && !isToolAssetPath(url.pathname)) || response.status >= 500) {
-      return context.next();
+      return cluster === "tools" ? frozenToolFallback(context) : context.next();
     }
 
     // The runtime Worker and Pages are deployed independently. Keep the
@@ -151,7 +167,7 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
   } catch {
     // An upstream outage must preserve the existing Pages version instead of
     // turning an editorial page into a hard error.
-    return context.next();
+    return cluster === "tools" ? frozenToolFallback(context) : context.next();
   }
 };
 
@@ -256,8 +272,10 @@ export async function onRequest(context) {
   }
 
   const runtimeToolSlug = toolDetailSlug(url.pathname);
-  if (runtimeToolSlug && await toolRuntimeIsEnabled(context, runtimeToolSlug)) {
-    return proxyRuntime(context, "tools");
+  if (runtimeToolSlug) {
+    return await toolRuntimeIsEnabled(context, runtimeToolSlug)
+      ? proxyRuntime(context, "tools")
+      : frozenToolFallback(context);
   }
 
   if (!url.search || !isPublicHtmlPath(url.pathname)) {
