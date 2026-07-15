@@ -3,13 +3,15 @@ import type { RuntimeContentEntry, RuntimeGuideContextEntry, RuntimeLocale, Runt
 
 const stringValue = (data: Record<string, unknown>, key: string) => typeof data[key] === "string" ? String(data[key]) : "";
 const stringArray = (value: unknown) => Array.isArray(value) ? value.map(String).filter(Boolean) : [];
-const cleanDescription = (value: string) => value
+const cleanDescription = (value: string, removeStandaloneDash = false) => {
+  const cleaned = value
   .replace(/!\[[^\]]*]\([^)]*\)/g, "")
   .replace(/\[([^\]]+)]\([^)]*\)/g, "$1")
   .replace(/[`*_>#]/g, "")
-  .replace(/(^|\s)-\s+/g, "$1")
-  .replace(/\s+/g, " ")
-  .trim();
+  return (removeStandaloneDash ? cleaned.replace(/(^|\s)-\s+/g, "$1") : cleaned)
+    .replace(/\s+/g, " ")
+    .trim();
+};
 const avatar = (title: string) => {
   const text = title.trim().split(/\s+/).slice(0, 2).map((part) => part[0] ?? "").join("").toUpperCase() || "?";
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><rect width="128" height="128" rx="24" fill="#E8F0FE"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#1A73E8">${text}</text></svg>`;
@@ -56,7 +58,7 @@ export function runtimeToolDescription(entry: RuntimeContentEntry, locale: Runti
     || stringValue(entry.metadata, "summary")
     || stringValue(entry.metadata, "excerpt")
     || stringValue(entry.metadata, "tagline")
-    || entry.excerpt;
+    || cleanDescription(entry.excerpt, true);
 }
 
 export function runtimeDisplayTools(entries: RuntimeToolContextEntry[]) {
