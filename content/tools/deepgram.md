@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Usage-based
 tags: [audio, transcription, api, voice-ai]
 official_url: "https://deepgram.com/"
-popularity: 63
+popularity: 55
 tier: C
 lastReviewed: 2026-07-13
 ---

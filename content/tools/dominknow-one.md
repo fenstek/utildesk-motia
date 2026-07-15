@@ -1,19 +1,19 @@
 ---
 slug: dominknow-one
 title: DominKnow | ONE
-description: "Cloudbasierte Authoring- und LCMS-Plattform für responsive Lerninhalte, Software-Simulationen, Zusammenarbeit und wiederverwendbare Veröffentlichung."
+description: Cloudbasierte Authoring- und LCMS-Plattform für responsive Lerninhalte, Software-Simulationen, Zusammenarbeit und wiederverwendbare Veröffentlichung.
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
 category: AI Writing
 price_model: Subscription
 tags: [education, authoring, content, collaboration]
 official_url: "https://dominknow.com/"
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 61
+popularity: 54
 tier: C
 generated_at: 2026-05-11
 ---

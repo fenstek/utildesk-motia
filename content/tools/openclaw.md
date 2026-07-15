@@ -11,7 +11,7 @@ category: AI Agents
 price_model: Open Source
 tags: ["ai-agents", "automation", "self-hosting", "messaging"]
 official_url: "https://openclaw.ai/"
-popularity: 90
+popularity: 89
 tier: A
 lastReviewed: 2026-07-13
 mentionedIn: ["multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"]

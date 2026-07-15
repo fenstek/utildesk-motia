@@ -2,20 +2,20 @@
 slug: pipedream
 title: Pipedream
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-pipedream-editorial"
-category: "AI Agents"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-pipedream-editorial
+category: AI Agents
 price_model: Freemium
 tags: [automation, integrations, workflows, ai-agents]
 official_url: "https://pipedream.com/"
-popularity: 30
-description: "Pipedream verbindet API-Integrationen, Trigger, fertige Actions und eigenen Code in ausfuehrbaren Workflows. Der praktische Wert liegt in nachvollziehbaren Event-Flows, nicht in einer beliebig langen Integrationsliste."
+popularity: 27
+description: Pipedream verbindet API-Integrationen, Trigger, fertige Actions und eigenen Code in ausfuehrbaren Workflows. Der praktische Wert liegt in nachvollziehbaren Event-Flows, nicht in einer beliebig langen Integrationsliste.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-tier: "C"
-generated_at: "2026-05-16"
+tier: C
+generated_at: 2026-05-16
 ---
 # Pipedream
 

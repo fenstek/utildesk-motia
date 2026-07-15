@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Usage-based
 tags: ["computer-vision", "ocr", "image-analysis", "api"]
 official_url: "https://cloud.google.com/vision"
-popularity: 56
+popularity: 49
 tier: C
 generated_at: 2026-05-15
 lastReviewed: 2026-07-13

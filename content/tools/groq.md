@@ -10,7 +10,7 @@ category: AI Coding
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://groq.com"
-popularity: 50
+popularity: 43
 tier: C
 generated_at: 2026-05-27
 ---
