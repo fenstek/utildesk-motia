@@ -2,6 +2,45 @@
 
 Status: implementation runbook; production remains gated until preview parity passes.
 
+## Quota-safe validation contract
+
+Live exhaustive validation is permanently disabled. The former pattern of a
+2,456-route production capture followed by a 10,754-resource audit is forbidden:
+cache hits still consume Worker/Pages Functions requests, and repeating that
+pattern exhausted most of the free daily quota without adding proportional
+release confidence.
+
+Use only these three contracts:
+
+```bash
+# Exhaustive 2,456-route parity against localhost Miniflare/local D1.
+npm --prefix site run gate:tool-runtime-local-full -- \
+  --base-url http://127.0.0.1:8791 \
+  --canonical-origin https://tools.utildesk.de \
+  --baseline site/.runtime/audits/<run>/fresh-static/manifest.json \
+  --out site/.runtime/audits/<run>/local-full
+
+# Exactly one deterministic production canary, at most 24 slugs / 48 HTML GETs.
+npm --prefix site run gate:tool-runtime-production-canary -- \
+  --execute --max-live-requests 500 \
+  --ledger docs/04_operations/tool_runtime_live_request_ledger_2026-07.json \
+  --baseline site/.runtime/audits/<run>/fresh-static/manifest.json \
+  --out site/.runtime/audits/<run>/production-canary
+
+# Changed HTML/JSON/Markdown plus changed content-addressed assets only.
+npm --prefix site run gate:tool-runtime-production-delta -- \
+  --git-range <base>..<head> --execute --max-live-requests 500 \
+  --ledger docs/04_operations/tool_runtime_live_request_ledger_2026-07.json \
+  --out site/.runtime/audits/<run>/production-delta
+```
+
+Production commands refuse `--all`, more than 24 canary slugs, a budget above
+500, a cumulative ledger over 500, and execution before the recorded reset
+gate. The legacy capture and recursive resource-audit scripts refuse every
+non-loopback origin. Reservations are written before the first request and are
+never automatically reclaimed. There is no automatic retry; one retry may be
+planned and ledgered only for a genuine transient transport failure.
+
 ## Invariants
 
 - `content/tools` and `content/en/tools` are the editorial source. D1 is a derived read model.
