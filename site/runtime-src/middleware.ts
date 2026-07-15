@@ -40,6 +40,9 @@ export const onRequest = defineMiddleware(async (context, next) => {
     if (identity.revision != null) response.headers.set("X-Utildesk-Source-Revision", String(identity.revision));
     if (identity.sourceHash) response.headers.set("X-Utildesk-Source-Hash", identity.sourceHash);
   }
-  if (response.ok) context.locals.cfContext.waitUntil(caches.default.put(cacheKey, response.clone()));
+  // Backpressure cold renders on their cache write. Queuing thousands of
+  // cloned HTML bodies with waitUntil can exhaust an isolate before the edge
+  // cache drains, which presents as intermittent Worker 1102 responses.
+  if (response.ok) await caches.default.put(cacheKey, response.clone());
   return response;
 });
