@@ -25,7 +25,7 @@ const PUBLIC_EXACT_PATHS = new Set([
 // cannot own a path directly. Pages proxies just this migrated content cluster
 // to the D1-backed renderer; every other public route stays on the static app.
 const RUNTIME_ORIGIN = "https://utildesk-content-runtime.s-skorykov.workers.dev";
-const FROZEN_TOOL_FALLBACK_ORIGIN = "https://5dd2d5f7.utildesk-motia.pages.dev";
+const FROZEN_TOOL_FALLBACK_ORIGIN = "https://utildesk-tool-fallback.pages.dev";
 const RUNTIME_RATGEBER_STYLESHEET = "/runtime-ratgeber-detail.css?v=20260713-1";
 const stripDuplicatedRuntimeSecondaryImage = (html) => html.replace(
   /<figure class="ratgeber-inline-image">\s*<img\b[^>]*\bsrc="([^"]+)"[^>]*>\s*<\/figure>/g,
