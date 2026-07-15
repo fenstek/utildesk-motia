@@ -108,7 +108,7 @@ The tool cache key is `renderer version + D1 revision + source_hash`. Verify a f
 
 The exporter hashes each referenced `/images/tools/*.webp` and projects `asset_key` plus `asset_hash` through migration `0003_tool_asset_projection.sql`. A rendered illustration uses `/tool-assets/<sha256>/<original-name>.webp`; this URL is immutable and the Worker verifies the bytes before returning them.
 
-Before a remote production upsert containing illustrations, configure the verified production R2 bucket as the Worker's `TOOL_ASSETS` binding and pass the same bucket to the publisher:
+For routine remote production upserts containing new or replaced illustrations, configure the verified production R2 bucket as the Worker's `TOOL_ASSETS` binding and pass the same bucket to the publisher:
 
 ```bash
 npm --prefix site run publish:runtime -- \
@@ -119,7 +119,22 @@ npm --prefix site run publish:runtime -- \
   --database utildesk-content-runtime-production
 ```
 
-The publisher checks the local hash, uploads the content-addressed object first, downloads it to a private temporary directory, verifies the hash, and only then changes D1. Production refuses an illustrated upsert without `--asset-bucket`. Old Pages `/images/tools/*` files remain a read-only fallback: if the R2 binding or object is absent, the asset endpoint fetches the old Pages file and serves it only when its SHA-256 matches. Do not proxy `/tool-assets/*` to the Worker until the R2 binding is verified; do not delete old Pages or R2 objects during this migration.
+The publisher checks the local hash, uploads the content-addressed object first, downloads it to a private temporary directory, verifies the hash, and only then changes D1.
+
+The initial pilot may use already-live static illustrations without enabling R2. This transitional mode is explicit:
+
+```bash
+npm --prefix site run publish:runtime -- \
+  --kind tool --slugs-file /path/to/slugs.txt --remote --production \
+  --confirm TOOL_RUNTIME_PRODUCTION --backup /private/backup/before.sql \
+  --allow-pages-fallback-assets \
+  --config wrangler.runtime.production.jsonc \
+  --database utildesk-content-runtime-production
+```
+
+Before changing D1, `--allow-pages-fallback-assets` fetches every projected `/images/tools/*.webp` from the live Pages origin, requires `image/webp`, and verifies an exact SHA-256 match with the committed local file. It therefore cannot publish a new or replaced illustration that is not already live. R2 remains required for normal delta publishing of new image bytes.
+
+Old Pages `/images/tools/*` files remain a read-only fallback: if the R2 binding or object is absent, the asset endpoint fetches the old Pages file and serves it only when its SHA-256 matches. Do not delete old Pages or R2 objects during this migration.
 
 ## Deactivate, redirect and tombstone
 
