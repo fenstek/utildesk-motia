@@ -97,6 +97,21 @@ function parseMetadata(value: string): Record<string, unknown> {
   }
 }
 
+async function inheritMissingEnglishToolMetadata(
+  kind: RuntimeContentKind,
+  locale: RuntimeLocale,
+  slug: string,
+  metadata: Record<string, unknown>,
+) {
+  if (kind !== "tool" || locale !== "en" || Array.isArray(metadata.tags)) return metadata;
+  const source = await database()
+    .prepare("SELECT metadata_json FROM content_entries WHERE kind = 'tool' AND locale = 'de' AND slug = ? AND is_active = 1 AND route_state = 'active'")
+    .bind(slug)
+    .first<Pick<RuntimeContentRow, "metadata_json">>();
+  const sourceMetadata = source ? parseMetadata(source.metadata_json) : {};
+  return Array.isArray(sourceMetadata.tags) ? { ...metadata, tags: sourceMetadata.tags } : metadata;
+}
+
 export async function getRuntimeContentEntry(
   kind: RuntimeContentKind,
   locale: RuntimeLocale,
@@ -114,13 +129,14 @@ export async function getRuntimeContentEntry(
     .first<RuntimeContentRow>();
 
   if (!row) return null;
+  const metadata = await inheritMissingEnglishToolMetadata(row.kind, row.locale, row.slug, parseMetadata(row.metadata_json));
   return {
     kind: row.kind,
     locale: row.locale,
     slug: row.slug,
     title: row.title,
     excerpt: row.excerpt,
-    metadata: parseMetadata(row.metadata_json),
+    metadata,
     markdown: row.markdown,
     sourceHash: row.source_hash,
     revision: Number(row.revision ?? 1),

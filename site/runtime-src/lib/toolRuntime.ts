@@ -7,6 +7,7 @@ const cleanDescription = (value: string) => value
   .replace(/!\[[^\]]*]\([^)]*\)/g, "")
   .replace(/\[([^\]]+)]\([^)]*\)/g, "$1")
   .replace(/[`*_>#]/g, "")
+  .replace(/(^|\s)-\s+/g, "$1")
   .replace(/\s+/g, " ")
   .trim();
 const avatar = (title: string) => {
