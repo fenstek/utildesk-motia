@@ -2,7 +2,10 @@ import { defineMiddleware } from "astro:middleware";
 import { RENDERER_CACHE_VERSION } from "./generated/cacheVersion";
 import { getRuntimeCacheIdentity } from "./lib/runtimeContent";
 
-const EDGE_CACHE_CONTROL = "public, max-age=0, s-maxage=300, stale-while-revalidate=86400";
+// Route keys include both renderer and D1 source revisions, so a long edge TTL
+// cannot serve stale content after a publish. It keeps the full long-tail set
+// warm without a five-minute expiry wave forcing concurrent Astro renders.
+const EDGE_CACHE_CONTROL = "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800";
 
 export const onRequest = defineMiddleware(async (context, next) => {
   if (context.request.method !== "GET") return next();
