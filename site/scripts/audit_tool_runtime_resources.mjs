@@ -21,6 +21,12 @@ const manifest = JSON.parse(await readFile(resolve(options.manifest), "utf8"));
 const base = options.resolveBase.replace(/\/+$/, "");
 const assetBase = (options.assetBase || base).replace(/\/+$/, "");
 const linkBase = (options.linkBase || base).replace(/\/+$/, "");
+for (const [label, value] of [["resolve-base", base], ["asset-base", assetBase], ["link-base", linkBase]]) {
+  const hostname = new URL(value).hostname;
+  if (!["127.0.0.1", "localhost", "::1"].includes(hostname)) {
+    throw new Error(`Live recursive resource audits are forbidden; --${label} must be localhost or loopback`);
+  }
+}
 const resources = new Map();
 const add = (value, kind, owner) => {
   if (!value || value.startsWith("data:") || value.startsWith("#")) return;

@@ -264,6 +264,10 @@ export const screenshotViaCdp = async (cdpUrl, url, destination, viewport = { wi
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   const baseUrl = normalizedBaseUrl(options.baseUrl);
+  const baseHostname = new URL(baseUrl).hostname;
+  if (!["127.0.0.1", "localhost", "::1"].includes(baseHostname)) {
+    throw new Error("Direct live capture is forbidden. Use tool_runtime_gate.mjs production-canary with a request ledger.");
+  }
   const canonicalOrigin = normalizedBaseUrl(options.canonicalOrigin || options.baseUrl);
   const outDir = resolve(options.outDir);
   const htmlDir = join(outDir, "html");

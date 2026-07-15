@@ -24,6 +24,9 @@
     "capture:tool-runtime-baseline": "node scripts/capture_tool_runtime_baseline.mjs",
     "check:tool-runtime-parity": "node scripts/check_tool_runtime_parity.mjs",
     "audit:tool-runtime-resources": "node scripts/audit_tool_runtime_resources.mjs",
+    "gate:tool-runtime-local-full": "node scripts/tool_runtime_gate.mjs local-full",
+    "gate:tool-runtime-production-canary": "node scripts/tool_runtime_gate.mjs production-canary",
+    "gate:tool-runtime-production-delta": "node scripts/tool_runtime_gate.mjs production-delta",
     "import:runtime-local": "node scripts/import_local_runtime_projection.mjs",
     "test:tool-runtime": "node --test scripts/tests/*.test.mjs",
     "fetch:logos": "node ../scripts/fetch_simpleicons_logos.mjs"
