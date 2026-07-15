@@ -31,6 +31,22 @@ export interface RuntimeContentEntry {
   popularity: number;
 }
 
+export interface RuntimeToolContextEntry {
+  slug: string;
+  title: string;
+  excerpt: string;
+  metadata: Record<string, unknown>;
+  category: string | null;
+  priceModel: string | null;
+}
+
+export interface RuntimeGuideContextEntry {
+  slug: string;
+  title: string;
+  excerpt: string;
+  metadata: Record<string, unknown>;
+}
+
 type RuntimeContentRow = {
   kind: RuntimeContentKind;
   locale: RuntimeLocale;
@@ -168,6 +184,69 @@ export async function listRuntimeContentEntries(
     category: row.category,
     priceModel: row.price_model,
     popularity: Number(row.popularity ?? 0),
+  }));
+}
+
+export async function listRuntimeToolContext(
+  locale: RuntimeLocale,
+  requestedSlugs: string[],
+  requestedTitles: string[],
+): Promise<RuntimeToolContextEntry[]> {
+  const slugs = [...new Set(requestedSlugs)]
+    .filter((slug) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))
+    .slice(0, 48);
+  const titles = [...new Set(requestedTitles.map((title) => String(title).trim()).filter(Boolean))].slice(0, 32);
+  const conditions: string[] = [];
+  const values: unknown[] = [locale];
+  if (slugs.length) {
+    conditions.push(`slug IN (${slugs.map(() => "?").join(", ")})`);
+    values.push(...slugs);
+  }
+  if (titles.length) {
+    conditions.push(`title COLLATE NOCASE IN (${titles.map(() => "?").join(", ")})`);
+    values.push(...titles);
+  }
+  if (!conditions.length) return [];
+  const result = await database()
+    .prepare(
+      `SELECT slug, title, excerpt, metadata_json, category, price_model
+       FROM content_entries
+       WHERE kind = 'tool' AND locale = ? AND is_active = 1 AND route_state = 'active'
+         AND (${conditions.join(" OR ")})
+       ORDER BY title ASC`,
+    )
+    .bind(...values)
+    .all<Pick<RuntimeContentRow, "slug" | "title" | "excerpt" | "metadata_json" | "category" | "price_model">>();
+  return result.results.map((row) => ({
+    slug: row.slug,
+    title: row.title,
+    excerpt: row.excerpt,
+    metadata: parseMetadata(row.metadata_json),
+    category: row.category,
+    priceModel: row.price_model,
+  }));
+}
+
+export async function listRuntimeGuideBacklinkContext(
+  locale: RuntimeLocale,
+  toolSlug: string,
+): Promise<RuntimeGuideContextEntry[]> {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(toolSlug)) return [];
+  const result = await database()
+    .prepare(
+      `SELECT slug, title, excerpt, metadata_json
+       FROM content_entries
+       WHERE kind = 'ratgeber' AND locale = ? AND is_active = 1 AND route_state = 'active'
+         AND (metadata_json LIKE ? OR metadata_json LIKE ?)
+       ORDER BY slug ASC`,
+    )
+    .bind(locale, `%/tools/${toolSlug}/%`, `%/en/tools/${toolSlug}/%`)
+    .all<Pick<RuntimeContentRow, "slug" | "title" | "excerpt" | "metadata_json">>();
+  return result.results.map((row) => ({
+    slug: row.slug,
+    title: row.title,
+    excerpt: row.excerpt,
+    metadata: parseMetadata(row.metadata_json),
   }));
 }
 

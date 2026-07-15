@@ -228,6 +228,21 @@ const parseAlternative = (item) => {
   return plain ? { name: plain[1], slug: "" } : null;
 };
 
+export function getToolContextHints(markdown) {
+  const source = String(markdown);
+  const slugs = [...source.matchAll(/\]\(\/(?:en\/)?tools\/([a-z0-9-]+)\/?(?:[?#][^)]*)?\)/gi)]
+    .map((match) => match[1]);
+  const section = source.match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
+  const items = section
+    ? (section[2].match(/^[-*]\s+(.+)$/gm) ?? []).map((line) => line.replace(/^[-*]\s+/, "").trim())
+    : [];
+  const titles = items.map(parseAlternative).filter((item) => item && !item.slug).map((item) => item.name);
+  return {
+    slugs: [...new Set(slugs)].sort(),
+    titles: [...new Set(titles)].sort((left, right) => left.localeCompare(right)),
+  };
+}
+
 const buildAlternatives = (markdown, slug, tools) => {
   const section = String(markdown).match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
   const items = section ? (section[2].match(/^[-*]\s+(.+)$/gm) ?? []).map((line) => line.replace(/^[-*]\s+/, "").trim()) : [];
