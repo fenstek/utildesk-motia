@@ -79,7 +79,7 @@ test("allowlist proxies both locales and leaves other tools static", async () =>
   let fetchCalls = 0;
   globalThis.fetch = async (request) => {
     fetchCalls += 1;
-    if (new URL(request.url).hostname === "5dd2d5f7.utildesk-motia.pages.dev") {
+    if (new URL(request.url).hostname === "utildesk-tool-fallback.pages.dev") {
       return new Response("frozen", { status: 200 });
     }
     return new Response(`runtime:${new URL(request.url).pathname}`, { status: 200, headers: { "Content-Type": "text/html" } });
@@ -105,7 +105,7 @@ test("tool upstream 404, 5xx and exception fail open to the static route", async
   const values = { "content-runtime:tools": "on" };
   for (const behavior of [404, 503, "throw"]) {
     globalThis.fetch = async (request) => {
-      if (new URL(request.url).hostname === "5dd2d5f7.utildesk-motia.pages.dev") {
+      if (new URL(request.url).hostname === "utildesk-tool-fallback.pages.dev") {
         return new Response("frozen", { status: 200 });
       }
       if (behavior === "throw") throw new Error("upstream unavailable");
