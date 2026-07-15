@@ -100,27 +100,8 @@ const isToolAssetPath = (pathname) => pathname.startsWith("/tool-assets/");
 export const proxyRuntime = async (context, cluster = "ratgeber") => {
   const url = new URL(context.request.url);
   const upstream = new URL(`${url.pathname}${url.search}`, RUNTIME_ORIGIN);
-  const toolCache = context.request.method === "GET" && cluster === "tools" && toolDetailSlug(url.pathname)
-    ? globalThis.caches?.default
-    : null;
-  const cacheKey = toolCache
-    ? new Request(url.toString(), { method: "GET" })
-    : null;
 
   try {
-    if (toolCache && cacheKey) {
-      const cached = await toolCache.match(cacheKey);
-      if (cached) {
-        const headers = new Headers(cached.headers);
-        headers.set("X-Utildesk-Content-Runtime", "tools-v1");
-        headers.set("X-Utildesk-Pages-Cache", "HIT");
-        return new Response(context.request.method === "HEAD" ? null : cached.body, {
-          status: cached.status,
-          headers,
-        });
-      }
-    }
-
     const response = await fetch(new Request(upstream, context.request));
     // Keep a static fallback for a path which has not been imported into D1.
     if ((response.status === 404 && !url.pathname.startsWith("/runtime-assets/") && !isToolAssetPath(url.pathname)) || response.status >= 500) {
@@ -166,12 +147,7 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
 
     const headers = new Headers(response.headers);
     headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : "ratgeber-v1");
-    const runtimeResponse = new Response(response.body, { status: response.status, headers });
-    if (toolCache && cacheKey && response.ok && response.headers.get("content-type")?.includes("text/html")) {
-      await toolCache.put(cacheKey, runtimeResponse.clone());
-      runtimeResponse.headers.set("X-Utildesk-Pages-Cache", "MISS");
-    }
-    return runtimeResponse;
+    return new Response(response.body, { status: response.status, headers });
   } catch {
     // An upstream outage must preserve the existing Pages version instead of
     // turning an editorial page into a hard error.

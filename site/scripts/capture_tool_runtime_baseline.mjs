@@ -46,6 +46,7 @@ const parseArgs = (argv) => {
     cdpUrl: null,
     all: false,
     runtimePreview: false,
+    concurrency: 1,
     viewport: { width: 390, height: 844 },
   };
   for (let index = 0; index < argv.length; index += 1) {
@@ -57,6 +58,7 @@ const parseArgs = (argv) => {
     else if (arg === "--screenshots") options.screenshots = true;
     else if (arg === "--all") options.all = true;
     else if (arg === "--runtime-preview") options.runtimePreview = true;
+    else if (arg === "--concurrency") options.concurrency = Number(argv[++index]);
     else if (arg === "--viewport") {
       const match = String(argv[++index] ?? "").match(/^(\d+)x(\d+)$/);
       if (!match) throw new Error("--viewport must be WIDTHxHEIGHT");
@@ -66,12 +68,27 @@ const parseArgs = (argv) => {
     else throw new Error(`Unknown argument: ${arg}`);
   }
   if (!options.outDir) throw new Error("--out is required");
+  if (!Number.isInteger(options.concurrency) || options.concurrency < 1 || options.concurrency > 24) {
+    throw new Error("--concurrency must be an integer from 1 to 24");
+  }
   return options;
 };
 
 const safeSlug = (value) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(String(value));
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const normalizedBaseUrl = (value) => String(value).replace(/\/+$/, "");
+const fetchWithRetry = async (url, init, attempts = 4) => {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      return await fetch(url, init);
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) await new Promise((resolveRetry) => setTimeout(resolveRetry, attempt * 250));
+    }
+  }
+  throw lastError;
+};
 const decodeEntities = (value) => String(value)
   .replaceAll("&quot;", '"')
   .replaceAll("&#39;", "'")
@@ -271,13 +288,16 @@ async function main() {
   const enBySlug = new Map(enEntries.map((entry) => [entry.slug, entry]));
   const records = [];
 
-  for (const slug of slugs) {
-    if (!deBySlug.has(slug) || !enBySlug.has(slug)) throw new Error(`${slug}: not active in both locales`);
-    for (const locale of ["de", "en"]) {
+  for (const slug of slugs) if (!deBySlug.has(slug) || !enBySlug.has(slug)) throw new Error(`${slug}: not active in both locales`);
+  const work = slugs.flatMap((slug) => ["de", "en"].map((locale) => ({ slug, locale })));
+  let cursor = 0;
+  const captureWorker = async () => {
+    while (cursor < work.length) {
+      const { slug, locale } = work[cursor++];
       const path = `${locale === "en" ? "/en" : ""}/tools/${slug}/`;
       const requestPath = options.runtimePreview ? `/runtime-preview/${locale}/tools/${slug}/` : path;
       const url = `${baseUrl}${requestPath}`;
-      const response = await fetch(url, { redirect: "manual", headers: { "User-Agent": "Utildesk-Runtime-Migration-Baseline/1.0" } });
+      const response = await fetchWithRetry(url, { redirect: "manual", headers: { "User-Agent": "Utildesk-Runtime-Migration-Baseline/1.0" } });
       const html = await response.text();
       const fileStem = `${locale}-${slug}`;
       await writeFile(join(htmlDir, `${fileStem}.html`), html);
@@ -307,7 +327,10 @@ async function main() {
       });
       process.stdout.write(`${response.status} ${locale} ${slug}\n`);
     }
-  }
+  };
+  const concurrency = options.screenshots ? 1 : options.concurrency;
+  await Promise.all(Array.from({ length: Math.min(concurrency, work.length) }, captureWorker));
+  records.sort((left, right) => left.slug.localeCompare(right.slug) || left.locale.localeCompare(right.locale));
 
   const invalid = records.filter((record) =>
     record.status !== 200

@@ -5,7 +5,6 @@ import { onRequest, toolDetailSlug, toolRuntimeIsEnabled } from "../../functions
 import { listRuntimeEntries } from "../runtime-content.mjs";
 
 const originalFetch = globalThis.fetch;
-const originalCaches = globalThis.caches;
 
 const contextFor = ({ pathname = "/tools/chatgpt/", values = {}, nextBody = "static" } = {}) => {
   let nextCalls = 0;
@@ -26,8 +25,6 @@ const contextFor = ({ pathname = "/tools/chatgpt/", values = {}, nextBody = "sta
 
 test.after(() => {
   globalThis.fetch = originalFetch;
-  if (originalCaches === undefined) delete globalThis.caches;
-  else globalThis.caches = originalCaches;
 });
 
 test("tool route parser accepts only canonical DE/EN detail paths", () => {
@@ -115,54 +112,27 @@ test("tool upstream 404, 5xx and exception fail open to the static route", async
   }
 });
 
-test("tool runtime caches successful HTML at the Pages edge", async () => {
+test("Pages proxy does not hide source-revision changes behind a second cache", async () => {
   const values = {
     "content-runtime:tools": "allowlist",
     "content-runtime:tools:allowlist": JSON.stringify(["chatgpt"]),
-  };
-  const stored = new Map();
-  globalThis.caches = {
-    default: {
-      match: async (request) => stored.get(request.url)?.clone(),
-      put: async (request, response) => { stored.set(request.url, response.clone()); },
-    },
   };
   let fetchCalls = 0;
   globalThis.fetch = async () => {
     fetchCalls += 1;
-    return new Response("runtime", { status: 200, headers: { "Content-Type": "text/html" } });
+    return new Response(`runtime-${fetchCalls}`, {
+      status: 200,
+      headers: { "Content-Type": "text/html", "X-Utildesk-Source-Revision": String(fetchCalls) },
+    });
   };
 
   const first = await onRequest(contextFor({ values }).context);
-  assert.equal(first.headers.get("X-Utildesk-Pages-Cache"), "MISS");
-  assert.equal(await first.text(), "runtime");
+  assert.equal(first.headers.get("X-Utildesk-Pages-Cache"), null);
+  assert.equal(await first.text(), "runtime-1");
   const second = await onRequest(contextFor({ values }).context);
-  assert.equal(second.headers.get("X-Utildesk-Pages-Cache"), "HIT");
-  assert.equal(await second.text(), "runtime");
-  assert.equal(fetchCalls, 1);
-});
-
-test("HEAD requests never populate the GET tool cache", async () => {
-  const values = {
-    "content-runtime:tools": "allowlist",
-    "content-runtime:tools:allowlist": JSON.stringify(["chatgpt"]),
-  };
-  let puts = 0;
-  globalThis.caches = {
-    default: {
-      match: async () => null,
-      put: async () => { puts += 1; },
-    },
-  };
-  globalThis.fetch = async () => new Response(null, {
-    status: 200,
-    headers: { "Content-Type": "text/html" },
-  });
-  const fixture = contextFor({ values });
-  fixture.context.request = new Request("https://tools.utildesk.de/tools/chatgpt/", { method: "HEAD" });
-  const response = await onRequest(fixture.context);
-  assert.equal(response.status, 200);
-  assert.equal(puts, 0);
+  assert.equal(second.headers.get("X-Utildesk-Pages-Cache"), null);
+  assert.equal(await second.text(), "runtime-2");
+  assert.equal(fetchCalls, 2);
 });
 
 test("tool kill switch does not disable the existing Ratgeber runtime", async () => {
