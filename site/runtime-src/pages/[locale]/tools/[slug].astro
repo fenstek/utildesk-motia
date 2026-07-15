@@ -9,7 +9,7 @@ const locale = Astro.params.locale;
 const slug = Astro.params.slug ?? "";
 const validLocale = locale === "en";
 const entry = validLocale ? await getRuntimeContentEntry("tool", "en", slug) : null;
-if (entry?.routeState === "redirect") return Astro.redirect(entry.canonicalPath, 301);
+if (entry?.routeState === "redirect" && entry.redirectTargetPath) return Astro.redirect(entry.redirectTargetPath, 301);
 const renderable = Boolean(entry?.isActive && entry.routeState === "active");
 const status = entry?.routeState === "tombstone" ? 410 : 404;
 if (!renderable) Astro.response.status = status;

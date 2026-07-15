@@ -182,10 +182,10 @@ export function buildRouteStateBatch(operation, slugs, { sourceCommit, redirects
       return {
         sql: `UPDATE content_entries
 SET is_active = 0, route_state = 'redirect',
-    canonical_path = CASE locale WHEN 'en' THEN ? ELSE ? END,
+    redirect_target_path = CASE locale WHEN 'en' THEN ? ELSE ? END,
     robots_policy = ?, googlebot_policy = NULL, source_commit = ?, deleted_at = NULL,
     revision = revision + 1, synced_at = CURRENT_TIMESTAMP
-WHERE kind = 'tool' AND slug = ? AND (route_state <> 'redirect' OR canonical_path <> CASE locale WHEN 'en' THEN ? ELSE ? END);`,
+WHERE kind = 'tool' AND slug = ? AND (route_state <> 'redirect' OR COALESCE(redirect_target_path, '') <> CASE locale WHEN 'en' THEN ? ELSE ? END);`,
         params: [`/en/tools/${target}/`, `/tools/${target}/`, ROUTE_NOINDEX, sourceCommit, slug, `/en/tools/${target}/`, `/tools/${target}/`],
       };
     }
@@ -193,6 +193,7 @@ WHERE kind = 'tool' AND slug = ? AND (route_state <> 'redirect' OR canonical_pat
     return {
       sql: `UPDATE content_entries
 SET is_active = 0, route_state = ?, robots_policy = ?, googlebot_policy = NULL,
+    redirect_target_path = NULL,
     source_commit = ?, deleted_at = ${operation === "tombstone" ? "COALESCE(deleted_at, CURRENT_TIMESTAMP)" : "NULL"},
     revision = revision + 1, synced_at = CURRENT_TIMESTAMP
 WHERE kind = 'tool' AND slug = ? AND (is_active <> 0 OR route_state <> ?);`,

@@ -18,6 +18,7 @@ export interface RuntimeContentEntry {
   isActive: boolean;
   routeState: "active" | "redirect" | "disabled" | "tombstone";
   canonicalPath: string;
+  redirectTargetPath: string | null;
   robotsPolicy: string;
   googlebotPolicy: string | null;
   editorialReviewed: boolean;
@@ -62,6 +63,7 @@ type RuntimeContentRow = {
   is_active: number;
   route_state: "active" | "redirect" | "disabled" | "tombstone";
   canonical_path: string;
+  redirect_target_path: string | null;
   robots_policy: string;
   googlebot_policy: string | null;
   editorial_reviewed: number;
@@ -103,7 +105,7 @@ export async function getRuntimeContentEntry(
   const row = await database()
     .prepare(
       `SELECT kind, locale, slug, title, excerpt, metadata_json, markdown, source_hash, revision,
-              source_published_at, source_updated_at, is_active, route_state, canonical_path,
+              source_published_at, source_updated_at, is_active, route_state, canonical_path, redirect_target_path,
               robots_policy, googlebot_policy, editorial_reviewed, illustration_path,
               asset_key, asset_hash, source_commit, deleted_at, category, price_model, popularity
        FROM content_entries WHERE kind = ? AND locale = ? AND slug = ?`,
@@ -127,6 +129,7 @@ export async function getRuntimeContentEntry(
     isActive: Number(row.is_active) === 1,
     routeState: row.route_state,
     canonicalPath: row.canonical_path,
+    redirectTargetPath: row.redirect_target_path,
     robotsPolicy: row.robots_policy,
     googlebotPolicy: row.googlebot_policy,
     editorialReviewed: Number(row.editorial_reviewed) === 1,
@@ -148,7 +151,7 @@ export async function listRuntimeContentEntries(
   const result = await database()
     .prepare(
       `SELECT kind, locale, slug, title, excerpt, metadata_json, markdown, source_hash, revision,
-              source_published_at, source_updated_at, is_active, route_state, canonical_path,
+              source_published_at, source_updated_at, is_active, route_state, canonical_path, redirect_target_path,
               robots_policy, googlebot_policy, editorial_reviewed, illustration_path,
               asset_key, asset_hash, source_commit, deleted_at, category, price_model, popularity
        FROM content_entries
@@ -173,6 +176,7 @@ export async function listRuntimeContentEntries(
     isActive: Number(row.is_active) === 1,
     routeState: row.route_state,
     canonicalPath: row.canonical_path,
+    redirectTargetPath: row.redirect_target_path,
     robotsPolicy: row.robots_policy,
     googlebotPolicy: row.googlebot_policy,
     editorialReviewed: Number(row.editorial_reviewed) === 1,
