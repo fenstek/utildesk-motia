@@ -13,6 +13,7 @@ import { createToolAddedAtRankMap, getToolSearchIndexDecision } from "../../../l
 import { buildToolDetailViewModel } from "../../../../shared/toolDetailViewModel.mjs";
 
 export async function getStaticPaths() {
+  if (process.env.UTILDESK_BUILD_FROZEN_TOOL_DETAILS !== "1") return [];
   const entries = await listActiveToolEntries();
   return entries.filter((entry) => hasEnglishToolTranslation(entry.slug)).map((entry) => ({
     params: { locale: "en", slug: entry.slug },
