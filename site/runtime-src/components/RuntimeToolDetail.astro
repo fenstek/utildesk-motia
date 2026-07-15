@@ -4,14 +4,14 @@ import ContentJump from "../../src/components/ContentJump.astro";
 import { CATEGORIES } from "../../src/lib/categories";
 import { tagHref } from "../../src/lib/tagRoutes";
 import { buildToolDetailViewModel } from "../../shared/toolDetailViewModel.mjs";
-import type { RuntimeContentEntry, RuntimeLocale } from "../lib/runtimeContent";
+import type { RuntimeContentEntry, RuntimeGuideContextEntry, RuntimeLocale, RuntimeToolContextEntry } from "../lib/runtimeContent";
 import { runtimeDisplayTools, runtimeGuideBacklinks, runtimeToolEntryLike } from "../lib/toolRuntime";
 
 interface Props {
   locale: RuntimeLocale;
   entry: RuntimeContentEntry;
-  tools: RuntimeContentEntry[];
-  guides: RuntimeContentEntry[];
+  tools: RuntimeToolContextEntry[];
+  guides: RuntimeGuideContextEntry[];
   preview?: boolean;
 }
 

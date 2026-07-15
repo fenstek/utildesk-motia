@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildToolDetailViewModel } from "../../shared/toolDetailViewModel.mjs";
+import { buildToolDetailViewModel, getToolContextHints } from "../../shared/toolDetailViewModel.mjs";
 
 const entry = {
   slug: "example",
@@ -39,6 +39,17 @@ const displayTools = [
   { slug: "example", title: "Example", iconUrl: "/images/logos/example.svg", iconFallbacks: [] },
   { slug: "other", title: "Other", category: "Automation", priceModel: "Paid", excerpt: "Alternative", iconUrl: null, iconFallbacks: [] },
 ];
+
+test("getToolContextHints limits runtime context to linked slugs and named alternatives", () => {
+  assert.deepEqual(getToolContextHints(entry.content), {
+    slugs: ["inactive", "other"],
+    titles: [],
+  });
+  assert.deepEqual(getToolContextHints("## Alternatives\n\n- **Named Tool**: useful option"), {
+    slugs: [],
+    titles: ["Named Tool"],
+  });
+});
 
 test("buildToolDetailViewModel produces the shared DE delivery contract", () => {
   const view = buildToolDetailViewModel({

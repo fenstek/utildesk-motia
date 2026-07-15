@@ -1,4 +1,5 @@
-import type { RuntimeContentEntry, RuntimeLocale } from "./runtimeContent";
+import { getToolContextHints } from "../../shared/toolDetailViewModel.mjs";
+import type { RuntimeContentEntry, RuntimeGuideContextEntry, RuntimeLocale, RuntimeToolContextEntry } from "./runtimeContent";
 
 const stringValue = (data: Record<string, unknown>, key: string) => typeof data[key] === "string" ? String(data[key]) : "";
 const stringArray = (value: unknown) => Array.isArray(value) ? value.map(String).filter(Boolean) : [];
@@ -37,7 +38,12 @@ export function runtimeToolEntryLike(entry: RuntimeContentEntry) {
   };
 }
 
-export function runtimeDisplayTools(entries: RuntimeContentEntry[]) {
+export function runtimeToolContextRequest(markdown: string, currentSlug: string) {
+  const hints = getToolContextHints(markdown);
+  return { slugs: [...new Set([currentSlug, ...hints.slugs])], titles: hints.titles };
+}
+
+export function runtimeDisplayTools(entries: RuntimeToolContextEntry[]) {
   return entries.map((entry) => {
     const data = entry.metadata;
     const title = entry.title;
@@ -57,7 +63,7 @@ export function runtimeDisplayTools(entries: RuntimeContentEntry[]) {
   });
 }
 
-export function runtimeGuideBacklinks(guides: RuntimeContentEntry[], slug: string, locale: RuntimeLocale) {
+export function runtimeGuideBacklinks(guides: RuntimeGuideContextEntry[], slug: string, locale: RuntimeLocale) {
   const prefix = locale === "en" ? "/en/tools/" : "/tools/";
   return guides.flatMap((guide) => {
     const related = Array.isArray(guide.metadata.relatedTools) ? guide.metadata.relatedTools : [];

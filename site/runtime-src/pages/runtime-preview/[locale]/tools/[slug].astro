@@ -2,7 +2,8 @@
 export const prerender = false;
 import RuntimeToolDetail from "../../../../components/RuntimeToolDetail.astro";
 import RuntimeToolUnavailable from "../../../../components/RuntimeToolUnavailable.astro";
-import { getRuntimeContentEntry, listRuntimeContentEntries, type RuntimeLocale } from "../../../../lib/runtimeContent";
+import { getRuntimeContentEntry, listRuntimeGuideBacklinkContext, listRuntimeToolContext, type RuntimeLocale } from "../../../../lib/runtimeContent";
+import { runtimeToolContextRequest } from "../../../../lib/toolRuntime";
 
 const locale = Astro.params.locale === "de" || Astro.params.locale === "en" ? Astro.params.locale as RuntimeLocale : null;
 const slug = Astro.params.slug ?? "";
@@ -10,9 +11,10 @@ const entry = locale ? await getRuntimeContentEntry("tool", locale, slug) : null
 const renderable = Boolean(entry?.isActive && entry.routeState === "active");
 const status = entry?.routeState === "tombstone" ? 410 : 404;
 if (!renderable) Astro.response.status = status;
+const context = entry ? runtimeToolContextRequest(entry.markdown, entry.slug) : { slugs: [], titles: [] };
 const [tools, guides] = renderable && locale ? await Promise.all([
-  listRuntimeContentEntries("tool", locale),
-  listRuntimeContentEntries("ratgeber", locale),
+  listRuntimeToolContext(locale, context.slugs, context.titles),
+  listRuntimeGuideBacklinkContext(locale, slug),
 ]) : [[], []];
 ---
 {renderable && entry && locale ? <RuntimeToolDetail locale={locale} entry={entry} tools={tools} guides={guides} preview /> : <RuntimeToolUnavailable locale={locale || "de"} status={status} />}
