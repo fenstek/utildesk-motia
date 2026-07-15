@@ -211,6 +211,12 @@ export async function listRuntimeToolContext(
       const stem = title.replace(/\s*\([^)]*\)\s*$/g, "").trim();
       return stem && stem !== title ? [title, stem] : [title];
     }))];
+    const fuzzyTitleExpression = `trim(replace(replace(replace(replace(
+      ' ' || lower(trim(CASE
+        WHEN instr(title, '(') > 0 THEN substr(title, 1, instr(title, '(') - 1)
+        ELSE title
+      END)) || ' ',
+      ' ai ', ' '), ' tool ', ' '), ' app ', ' '), ' platform ', ' '))`;
     conditions.push(`EXISTS (
       SELECT 1 FROM json_each(?) AS requested_title
       WHERE lower(title) = lower(requested_title.value)
@@ -218,6 +224,9 @@ export async function listRuntimeToolContext(
               WHEN instr(title, '(') > 0 THEN substr(title, 1, instr(title, '(') - 1)
               ELSE title
             END)) = lower(requested_title.value)
+         OR ${fuzzyTitleExpression} = trim(replace(replace(replace(replace(
+              ' ' || lower(requested_title.value) || ' ',
+              ' ai ', ' '), ' tool ', ' '), ' app ', ' '), ' platform ', ' '))
     )`);
     values.push(JSON.stringify(titleKeys));
   }
