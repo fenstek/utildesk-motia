@@ -36,5 +36,11 @@
 /markdown/*
   X-Robots-Tag: noindex
 
+/en/api/*
+  X-Robots-Tag: noindex
+
+/en/markdown/*
+  X-Robots-Tag: noindex
+
 /tools/*
   Cache-Control: public, max-age=0, must-revalidate
