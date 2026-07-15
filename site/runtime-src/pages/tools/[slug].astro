@@ -7,7 +7,7 @@ import { runtimeToolContextRequest } from "../../lib/toolRuntime";
 
 const slug = Astro.params.slug ?? "";
 const entry = await getRuntimeContentEntry("tool", "de", slug);
-if (entry?.routeState === "redirect") return Astro.redirect(entry.canonicalPath, 301);
+if (entry?.routeState === "redirect" && entry.redirectTargetPath) return Astro.redirect(entry.redirectTargetPath, 301);
 const renderable = Boolean(entry?.isActive && entry.routeState === "active");
 const status = entry?.routeState === "tombstone" ? 410 : 404;
 if (!renderable) Astro.response.status = status;

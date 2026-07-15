@@ -237,6 +237,7 @@ export function buildEntriesUpsertStatement(entries) {
     "  is_active = excluded.is_active,",
     "  route_state = excluded.route_state,",
     "  canonical_path = excluded.canonical_path,",
+    "  redirect_target_path = NULL,",
     "  robots_policy = excluded.robots_policy,",
     "  googlebot_policy = excluded.googlebot_policy,",
     "  editorial_reviewed = excluded.editorial_reviewed,",

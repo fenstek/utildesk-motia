@@ -132,6 +132,8 @@ test("route-state operations never emit physical deletes", () => {
     assert.doesNotMatch(statement.sql, /\bDELETE\b/i);
   }
   assert.match(redirect[0].sql, /route_state = 'redirect'/);
+  assert.match(redirect[0].sql, /redirect_target_path/);
+  assert.doesNotMatch(redirect[0].sql, /SET[\s\S]*canonical_path\s*=/i);
 });
 
 test("reconcile reports route, source and asset drift classes", () => {
