@@ -100,7 +100,7 @@ const isToolAssetPath = (pathname) => pathname.startsWith("/tool-assets/");
 export const proxyRuntime = async (context, cluster = "ratgeber") => {
   const url = new URL(context.request.url);
   const upstream = new URL(`${url.pathname}${url.search}`, RUNTIME_ORIGIN);
-  const toolCache = cluster === "tools" && toolDetailSlug(url.pathname)
+  const toolCache = context.request.method === "GET" && cluster === "tools" && toolDetailSlug(url.pathname)
     ? globalThis.caches?.default
     : null;
   const cacheKey = toolCache

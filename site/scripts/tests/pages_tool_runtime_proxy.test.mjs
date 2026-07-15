@@ -142,6 +142,29 @@ test("tool runtime caches successful HTML at the Pages edge", async () => {
   assert.equal(fetchCalls, 1);
 });
 
+test("HEAD requests never populate the GET tool cache", async () => {
+  const values = {
+    "content-runtime:tools": "allowlist",
+    "content-runtime:tools:allowlist": JSON.stringify(["chatgpt"]),
+  };
+  let puts = 0;
+  globalThis.caches = {
+    default: {
+      match: async () => null,
+      put: async () => { puts += 1; },
+    },
+  };
+  globalThis.fetch = async () => new Response(null, {
+    status: 200,
+    headers: { "Content-Type": "text/html" },
+  });
+  const fixture = contextFor({ values });
+  fixture.context.request = new Request("https://tools.utildesk.de/tools/chatgpt/", { method: "HEAD" });
+  const response = await onRequest(fixture.context);
+  assert.equal(response.status, 200);
+  assert.equal(puts, 0);
+});
+
 test("tool kill switch does not disable the existing Ratgeber runtime", async () => {
   globalThis.fetch = async () => new Response("ratgeber runtime", { status: 200, headers: { "Content-Type": "text/plain" } });
   const fixture = contextFor({
