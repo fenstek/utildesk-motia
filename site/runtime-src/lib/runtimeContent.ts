@@ -223,28 +223,21 @@ export async function listRuntimeToolContext(
     values.push(...slugs);
   }
   if (titles.length) {
-    const titleKeys = [...new Set(titles.flatMap((title) => {
+    const exactTitleKeys = [...new Set(titles.flatMap((title) => {
       const stem = title.replace(/\s*\([^)]*\)\s*$/g, "").trim();
       return stem && stem !== title ? [title, stem] : [title];
     }))];
-    const fuzzyTitleExpression = `trim(replace(replace(replace(replace(
-      ' ' || lower(trim(CASE
-        WHEN instr(title, '(') > 0 THEN substr(title, 1, instr(title, '(') - 1)
-        ELSE title
-      END)) || ' ',
-      ' ai ', ' '), ' tool ', ' '), ' app ', ' '), ' platform ', ' '))`;
-    conditions.push(`EXISTS (
-      SELECT 1 FROM json_each(?) AS requested_title
-      WHERE lower(title) = lower(requested_title.value)
-         OR lower(trim(CASE
-              WHEN instr(title, '(') > 0 THEN substr(title, 1, instr(title, '(') - 1)
-              ELSE title
-            END)) = lower(requested_title.value)
-         OR ${fuzzyTitleExpression} = trim(replace(replace(replace(replace(
-              ' ' || lower(requested_title.value) || ' ',
-              ' ai ', ' '), ' tool ', ' '), ' app ', ' '), ' platform ', ' '))
+    const fuzzyTitleKeys = [...new Set(exactTitleKeys.map((title) => title
+      .toLowerCase()
+      .replace(/\([^)]*\)/g, " ")
+      .replace(/\b(ai|tool|app|platform)\b/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()))].filter(Boolean);
+    conditions.push(`(
+      lower(title) IN (SELECT lower(value) FROM json_each(?))
+      OR title_match_key IN (SELECT value FROM json_each(?))
     )`);
-    values.push(JSON.stringify(titleKeys));
+    values.push(JSON.stringify(exactTitleKeys), JSON.stringify(fuzzyTitleKeys));
   }
   if (!conditions.length) return [];
   const result = await database()
