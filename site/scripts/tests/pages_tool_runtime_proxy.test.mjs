@@ -46,6 +46,21 @@ test("the first production cohort contains 20 unique active DE/EN slugs", async 
   assert.deepEqual(allowlist.filter((slug) => !deActive.has(slug) || !enActive.has(slug)), []);
 });
 
+test("the second production cohort contains the pilot and 100 unique active DE/EN slugs", async () => {
+  const [pilot, allowlist, de, en] = await Promise.all([
+    readFile(new URL("../../runtime/allowlists/tools-20.json", import.meta.url), "utf8").then(JSON.parse),
+    readFile(new URL("../../runtime/allowlists/tools-100.json", import.meta.url), "utf8").then(JSON.parse),
+    listRuntimeEntries({ kind: "tool", locale: "de" }),
+    listRuntimeEntries({ kind: "tool", locale: "en" }),
+  ]);
+  assert.equal(allowlist.length, 100);
+  assert.equal(new Set(allowlist).size, 100);
+  assert.deepEqual(pilot.filter((slug) => !allowlist.includes(slug)), []);
+  const deActive = new Set(de.map(({ slug }) => slug));
+  const enActive = new Set(en.map(({ slug }) => slug));
+  assert.deepEqual(allowlist.filter((slug) => !deActive.has(slug) || !enActive.has(slug)), []);
+});
+
 test("tool runtime defaults off and fails closed on malformed KV", async () => {
   assert.equal(await toolRuntimeIsEnabled(contextFor().context, "chatgpt"), false);
   assert.equal(await toolRuntimeIsEnabled(contextFor({ values: {
