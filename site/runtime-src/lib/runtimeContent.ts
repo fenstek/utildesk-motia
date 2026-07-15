@@ -203,8 +203,19 @@ export async function listRuntimeToolContext(
     values.push(...slugs);
   }
   if (titles.length) {
-    conditions.push(`title COLLATE NOCASE IN (${titles.map(() => "?").join(", ")})`);
-    values.push(...titles);
+    const titleKeys = [...new Set(titles.flatMap((title) => {
+      const stem = title.replace(/\s*\([^)]*\)\s*$/g, "").trim();
+      return stem && stem !== title ? [title, stem] : [title];
+    }))];
+    conditions.push(`EXISTS (
+      SELECT 1 FROM json_each(?) AS requested_title
+      WHERE lower(title) = lower(requested_title.value)
+         OR lower(trim(CASE
+              WHEN instr(title, '(') > 0 THEN substr(title, 1, instr(title, '(') - 1)
+              ELSE title
+            END)) = lower(requested_title.value)
+    )`);
+    values.push(JSON.stringify(titleKeys));
   }
   if (!conditions.length) return [];
   const result = await database()
