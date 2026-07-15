@@ -117,9 +117,39 @@ export function toolAssetsForEntries(entries, repoDir = RUNTIME_PATHS.REPO_DIR) 
     if (!existsSync(sourcePath)) throw new Error(`${entry.contentKey}: asset source missing: ${entry.illustrationPath}`);
     const actualHash = createHash("sha256").update(readFileSync(sourcePath)).digest("hex");
     if (actualHash !== entry.assetHash) throw new Error(`${entry.contentKey}: asset hash drift before upload`);
-    assets.set(entry.assetKey, { key: entry.assetKey, hash: entry.assetHash, sourcePath });
+    assets.set(entry.assetKey, {
+      key: entry.assetKey,
+      hash: entry.assetHash,
+      sourcePath,
+      fallbackPath: entry.illustrationPath,
+    });
   }
   return [...assets.values()].sort((left, right) => left.key.localeCompare(right.key));
+}
+
+export async function verifyPagesFallbackAssets(
+  assets,
+  { origin = "https://tools.utildesk.de", fetchImpl = fetch } = {},
+) {
+  if (!assets.length) return [];
+  const normalizedOrigin = String(origin).replace(/\/$/, "");
+  const verified = [];
+  for (const asset of assets) {
+    if (!/^\/images\/tools\/[a-z0-9._-]+\.webp$/i.test(asset.fallbackPath ?? "")) {
+      throw new Error(`${asset.key}: unsafe Pages fallback path`);
+    }
+    const response = await fetchImpl(`${normalizedOrigin}${asset.fallbackPath}`);
+    if (!response.ok) throw new Error(`${asset.key}: Pages fallback returned HTTP ${response.status}`);
+    const contentType = response.headers.get("content-type") ?? "";
+    if (!contentType.toLowerCase().startsWith("image/webp")) {
+      throw new Error(`${asset.key}: Pages fallback is not image/webp`);
+    }
+    const bytes = Buffer.from(await response.arrayBuffer());
+    const remoteHash = createHash("sha256").update(bytes).digest("hex");
+    if (remoteHash !== asset.hash) throw new Error(`${asset.key}: Pages fallback failed hash verification`);
+    verified.push({ key: asset.key, hash: asset.hash, fallbackPath: asset.fallbackPath });
+  }
+  return verified;
 }
 
 export function uploadR2Assets(assets, { bucket, siteDir = RUNTIME_PATHS.SITE_DIR } = {}) {

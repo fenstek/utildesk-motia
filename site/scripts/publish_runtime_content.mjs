@@ -17,6 +17,7 @@ import {
   resolveRequestedSlugs,
   toolAssetsForEntries,
   uploadR2Assets,
+  verifyPagesFallbackAssets,
 } from "./lib/tool-runtime-publisher.mjs";
 
 const args = process.argv.slice(2);
@@ -83,6 +84,7 @@ async function runToolPublisher() {
   const remote = has("--remote");
   const dryRun = has("--dry-run") || !remote || operation === "reconcile";
   const production = has("--production");
+  const allowPagesFallbackAssets = has("--allow-pages-fallback-assets");
   const configPath = valueFor("--config") || (production ? "wrangler.runtime.production.jsonc" : "wrangler.hybrid.jsonc");
   const requestedDatabase = valueFor("--database") || (production ? "utildesk-content-runtime-production" : "utildesk-content-runtime-preview");
   const target = readRuntimeConfig(resolve(RUNTIME_PATHS.SITE_DIR, configPath), requestedDatabase);
@@ -158,7 +160,13 @@ async function runToolPublisher() {
       physicalDeletes: false,
     },
     warnings: release.warnings,
-    assets: { objects: assets.length, contentAddressed: true, bucket: valueFor("--asset-bucket") || null },
+    assets: {
+      objects: assets.length,
+      contentAddressed: true,
+      source: valueFor("--asset-bucket") ? "r2" : allowPagesFallbackAssets ? "pages-fallback" : "unconfigured",
+      bucket: valueFor("--asset-bucket") || null,
+      pagesFallback: allowPagesFallbackAssets,
+    },
   };
 
   if (dryRun) {
@@ -185,8 +193,14 @@ async function runToolPublisher() {
   }
   if (operation === "upsert" && assets.length) {
     const assetBucket = valueFor("--asset-bucket");
-    if (production && !assetBucket) throw new Error("Production tool upsert with illustrations requires --asset-bucket");
-    if (assetBucket) uploadR2Assets(assets, { bucket: assetBucket });
+    if (production && !assetBucket && !allowPagesFallbackAssets) {
+      throw new Error("Production tool upsert with illustrations requires --asset-bucket or --allow-pages-fallback-assets");
+    }
+    if (assetBucket) {
+      uploadR2Assets(assets, { bucket: assetBucket });
+    } else if (allowPagesFallbackAssets) {
+      await verifyPagesFallbackAssets(assets);
+    }
   }
   const results = await executeD1Batch({ ...connection, statements });
   console.log(JSON.stringify({ ...summary, published: true, results: results.length }, null, 2));

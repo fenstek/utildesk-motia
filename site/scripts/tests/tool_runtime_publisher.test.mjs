@@ -7,6 +7,7 @@ import {
   executeD1Batch,
   reconcileToolState,
   toolAssetsForEntries,
+  verifyPagesFallbackAssets,
 } from "../lib/tool-runtime-publisher.mjs";
 
 const fakeEntry = (slug, locale, sourceHash = `${slug}-${locale}`) => ({
@@ -80,6 +81,44 @@ test("D1 batch failure is a hard stop", async () => {
 
 test("asset plan is empty for entries without illustrations", () => {
   assert.deepEqual(toolAssetsForEntries([fakeEntry("alpha", "de"), fakeEntry("alpha", "en")]), []);
+});
+
+test("Pages fallback verifies WebP bytes against the projected hash", async () => {
+  const bytes = Buffer.from("verified-webp-fixture");
+  const hash = (await import("node:crypto")).createHash("sha256").update(bytes).digest("hex");
+  const requests = [];
+  const verified = await verifyPagesFallbackAssets([
+    { key: `${hash}/alpha.webp`, hash, fallbackPath: "/images/tools/alpha.webp" },
+  ], {
+    origin: "https://example.test/",
+    fetchImpl: async (url) => {
+      requests.push(url);
+      return {
+        ok: true,
+        status: 200,
+        headers: { get: (name) => name.toLowerCase() === "content-type" ? "image/webp" : null },
+        arrayBuffer: async () => bytes,
+      };
+    },
+  });
+  assert.deepEqual(requests, ["https://example.test/images/tools/alpha.webp"]);
+  assert.deepEqual(verified, [{ key: `${hash}/alpha.webp`, hash, fallbackPath: "/images/tools/alpha.webp" }]);
+});
+
+test("Pages fallback rejects wrong bytes, content type and unsafe paths", async () => {
+  const asset = { key: "expected/alpha.webp", hash: "0".repeat(64), fallbackPath: "/images/tools/alpha.webp" };
+  const response = (contentType = "image/webp") => ({
+    ok: true,
+    status: 200,
+    headers: { get: () => contentType },
+    arrayBuffer: async () => Buffer.from("wrong"),
+  });
+  await assert.rejects(verifyPagesFallbackAssets([asset], { fetchImpl: async () => response() }), /hash verification/);
+  await assert.rejects(verifyPagesFallbackAssets([asset], { fetchImpl: async () => response("text/html") }), /not image\/webp/);
+  await assert.rejects(
+    verifyPagesFallbackAssets([{ ...asset, fallbackPath: "/other/alpha.webp" }], { fetchImpl: async () => response() }),
+    /unsafe Pages fallback path/,
+  );
 });
 
 test("route-state operations never emit physical deletes", () => {
