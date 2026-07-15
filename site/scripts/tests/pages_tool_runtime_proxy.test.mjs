@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { onRequest, toolDetailSlug, toolRuntimeIsEnabled } from "../../functions/_middleware.js";
+import { frozenToolFallback, onRequest, toolDetailSlug, toolRuntimeIsEnabled } from "../../functions/_middleware.js";
 import { listRuntimeEntries } from "../runtime-content.mjs";
 
 const originalFetch = globalThis.fetch;
@@ -79,6 +79,9 @@ test("allowlist proxies both locales and leaves other tools static", async () =>
   let fetchCalls = 0;
   globalThis.fetch = async (request) => {
     fetchCalls += 1;
+    if (new URL(request.url).hostname === "5dd2d5f7.utildesk-motia.pages.dev") {
+      return new Response("frozen", { status: 200 });
+    }
     return new Response(`runtime:${new URL(request.url).pathname}`, { status: 200, headers: { "Content-Type": "text/html" } });
   };
 
@@ -92,24 +95,37 @@ test("allowlist proxies both locales and leaves other tools static", async () =>
 
   const excluded = contextFor({ pathname: "/tools/claude/", values });
   const response = await onRequest(excluded.context);
-  assert.equal(await response.text(), "static");
-  assert.equal(excluded.nextCalls(), 1);
-  assert.equal(fetchCalls, 2);
+  assert.equal(await response.text(), "frozen");
+  assert.equal(response.headers.get("X-Utildesk-Tool-Fallback"), "frozen-7a4190c4");
+  assert.equal(excluded.nextCalls(), 0);
+  assert.equal(fetchCalls, 3);
 });
 
 test("tool upstream 404, 5xx and exception fail open to the static route", async () => {
   const values = { "content-runtime:tools": "on" };
   for (const behavior of [404, 503, "throw"]) {
-    globalThis.fetch = async () => {
+    globalThis.fetch = async (request) => {
+      if (new URL(request.url).hostname === "5dd2d5f7.utildesk-motia.pages.dev") {
+        return new Response("frozen", { status: 200 });
+      }
       if (behavior === "throw") throw new Error("upstream unavailable");
       return new Response("runtime failure", { status: behavior });
     };
     const fixture = contextFor({ values });
     const response = await onRequest(fixture.context);
-    assert.equal(response.headers.get("X-Static-Fallback"), "1");
-    assert.equal(await response.text(), "static");
-    assert.equal(fixture.nextCalls(), 1);
+    assert.equal(response.headers.get("X-Utildesk-Tool-Fallback"), "frozen-7a4190c4");
+    assert.equal(await response.text(), "frozen");
+    assert.equal(fixture.nextCalls(), 0);
   }
+});
+
+test("frozen tool fallback is immutable and fails through only if unavailable", async () => {
+  globalThis.fetch = async (request) => new Response(new URL(request.url).pathname, { status: 200 });
+  const fixture = contextFor({ pathname: "/en/tools/chatgpt/" });
+  const response = await frozenToolFallback(fixture.context);
+  assert.equal(await response.text(), "/en/tools/chatgpt/");
+  assert.equal(response.headers.get("X-Utildesk-Tool-Fallback"), "frozen-7a4190c4");
+  assert.equal(fixture.nextCalls(), 0);
 });
 
 test("Pages proxy does not hide source-revision changes behind a second cache", async () => {
