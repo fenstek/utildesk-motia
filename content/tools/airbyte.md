@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [data, integration, etl, open-source]
 official_url: "https://airbyte.com/"
-popularity: 81
+popularity: 95
 tier: B
 generated_at: 2026-05-16
 ---

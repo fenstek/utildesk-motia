@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Freemium
 tags: [ai, writing]
 official_url: "https://www.zoho.com/writer/"
-popularity: 85
+popularity: 84
 tier: B
 generated_at: 2026-05-13
 ---

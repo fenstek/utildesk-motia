@@ -2,21 +2,21 @@
 slug: deepfake
 title: Deepfake
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-deepfake-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-deepfake-full-tool-card-editorial
 disabled: true
-disabled_reason: "generic_concept_and_wrong_adult_domain"
+disabled_reason: generic_concept_and_wrong_adult_domain
 search_index: false
 category: Audio & Video
-price_model: "Varies"
-description: "Deepfake bezeichnet KI-basierte Medienmanipulation. Diese Einordnung erklärt sichere Anwendungsfälle, Rechte, Prüfungen und die Grenzen des aktuellen offiziellen Links."
+price_model: Varies
+description: Deepfake bezeichnet KI-basierte Medienmanipulation. Diese Einordnung erklärt sichere Anwendungsfälle, Rechte, Prüfungen und die Grenzen des aktuellen offiziellen Links.
 updated_at: 2026-07-14
 tags: [ai, video, safety]
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 57
+tier: C
+generated_at: 2026-05-15
 ---
 # Deepfake
 

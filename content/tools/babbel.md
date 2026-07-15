@@ -8,14 +8,14 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-13-full-editorial-coverage
 lastReviewed: 2026-07-13
 editorial_verdict: recommend
-editorial_verdict_headline: "Empfehlen - fuer eine tragfaehige Lernroutine, nicht als Sprachpruefung."
-editorial_verdict_text: "Stark bei kurzen, regelmaessigen Lektionen und aktivem Sprechen; fuer berufliche Sicherheit braucht es reale Gespraeche und fachliches Feedback dazu."
-editorial_trust_label: "4 / 5 - klarer Alltagsnutzen"
+editorial_verdict_headline: Empfehlen - fuer eine tragfaehige Lernroutine, nicht als Sprachpruefung.
+editorial_verdict_text: Stark bei kurzen, regelmaessigen Lektionen und aktivem Sprechen; fuer berufliche Sicherheit braucht es reale Gespraeche und fachliches Feedback dazu.
+editorial_trust_label: 4 / 5 - klarer Alltagsnutzen
 category: Produktivität
 price_model: Abonnement
 tags: [education, language, learning, mobile]
 official_url: "https://www.babbel.com/"
-popularity: 74
+popularity: 94
 tier: D
 generated_at: 2026-05-27
 ---
