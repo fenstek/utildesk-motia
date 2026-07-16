@@ -279,10 +279,15 @@ export async function executeD1Batch({ accountId, databaseId, token, statements,
   return payload.result;
 }
 
+export function parseGitPorcelainPaths(status) {
+  const normalized = String(status ?? "").replace(/\r?\n$/, "");
+  return normalized ? normalized.split(/\r?\n/).map((line) => line.slice(3)) : [];
+}
+
 export function gitReleaseState(repoDir = RUNTIME_PATHS.REPO_DIR, { allowedDirtyPaths = [] } = {}) {
   const commit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: repoDir, encoding: "utf8" }).trim();
-  const status = execFileSync("git", ["status", "--porcelain", "--untracked-files=all"], { cwd: repoDir, encoding: "utf8" }).trim();
-  const dirtyPaths = status ? status.split(/\r?\n/).map((line) => line.slice(3)) : [];
+  const status = execFileSync("git", ["status", "--porcelain", "--untracked-files=all"], { cwd: repoDir, encoding: "utf8" });
+  const dirtyPaths = parseGitPorcelainPaths(status);
   const allowed = new Set(allowedDirtyPaths.map((path) => String(path).replaceAll("\\", "/")));
   const blockingDirtyPaths = dirtyPaths.filter((path) => !allowed.has(path.replaceAll("\\", "/")));
   return { commit, clean: blockingDirtyPaths.length === 0, dirtyPaths, blockingDirtyPaths };
