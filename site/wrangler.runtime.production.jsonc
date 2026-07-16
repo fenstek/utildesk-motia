@@ -12,10 +12,4 @@
       "migrations_dir": "./runtime/migrations"
     }
   ],
-  "r2_buckets": [
-    {
-      "binding": "TOOL_ASSETS",
-      "bucket_name": "utildesk-tool-assets"
-    }
-  ]
 }
