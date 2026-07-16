@@ -203,3 +203,11 @@
 - Tool runtime has independent Pages KV keys `content-runtime:tools` and `content-runtime:tools:allowlist`. Missing/malformed state defaults off; Worker 404, 5xx and fetch errors fail open to static Pages; the Ratgeber switch remains independent.
 - Production rollout is strictly 20, then 100, then all active detail routes. Static tool-detail generation and later API/search/home/index migration cannot be removed or advanced until live parity and rollback gates for the preceding cohort pass.
 - Compact sitemap and robots/googlebot staging remain unchanged; a runtime migration must not broaden sitemap depth or replace Google-specific staging with global noindex.
+
+## 2026-07-16 - Permanent quota-safe runtime operations
+
+- Never repeat an exhaustive production tool crawl or recursive resource audit. Full 2,456-route and resource/hash confidence is localhost-only; production uses one 24-slug canary, changed machine/asset deltas and passive state reads.
+- Every Cloudflare-facing command reserves its worst-case requests in `docs/04_operations/tool_runtime_live_request_ledger_2026-07.json` before execution. The hard remaining-release ceiling is 500 and reservations are never silently reclaimed.
+- Production commands permanently reject `--all`; machine endpoints stay fetchable but `noindex`; Google/Bing/focus sitemaps remain compact and long-tail Googlebot staging is not replaced by global noindex.
+- Tool details, tool shells and Ratgeber retain independent KV switches. Roll back only the failing cluster; intentional disabled/tombstone states must never be resurrected from the frozen fallback.
+- R2 enablement is an explicit account-owner/billing decision. Without it, keep the binding absent and fail closed on changed asset hashes; never weaken verification to finish a release.
