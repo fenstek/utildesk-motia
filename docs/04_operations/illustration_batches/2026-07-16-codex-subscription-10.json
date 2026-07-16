@@ -1,7 +1,7 @@
 {
   "batch_date": "2026-07-16",
   "generation_source": "codex-subscription-imagegen",
-  "status": "integration_pending",
+  "status": "implemented",
   "dimensions": {
     "width": 1280,
     "height": 720
