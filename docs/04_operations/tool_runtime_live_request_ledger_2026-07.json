@@ -1124,6 +1124,132 @@
         "https://www.bing.com/indexnow"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T20:51:29.782Z",
+      "mode": "production-d1-backup",
+      "command": "wrangler d1 export production backup",
+      "estimate": {
+        "total": 5,
+        "export": 1,
+        "verification": 1,
+        "cliOverhead": 3
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T21:01:08.231Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 19,
+        "pagesAssets": 0,
+        "total": 23
+      },
+      "worstCaseRequests": 23,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T21:01:35.856Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file /tmp/utildesk-tool-runtime-release-2026-07-16T21-01-06-537Z/slugs.json --out /tmp/utildesk-tool-runtime-release-2026-07-16T21-01-06-537Z/live-delta --ledger /home/jgdus/projects/utildesk-motia-production-sync/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 18,
+        "json": 18,
+        "markdown": 18,
+        "assets": 9,
+        "control": 0,
+        "indexNow": 0,
+        "total": 63
+      },
+      "worstCaseRequests": 63,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/zoho-office-suite/",
+        "https://tools.utildesk.de/api/tools/zoho-office-suite.json",
+        "https://tools.utildesk.de/markdown/tools/zoho-office-suite.md",
+        "https://tools.utildesk.de/en/tools/zoho-office-suite/",
+        "https://tools.utildesk.de/en/api/tools/zoho-office-suite.json",
+        "https://tools.utildesk.de/en/markdown/tools/zoho-office-suite.md",
+        "https://tools.utildesk.de/tools/zoho-people/",
+        "https://tools.utildesk.de/api/tools/zoho-people.json",
+        "https://tools.utildesk.de/markdown/tools/zoho-people.md",
+        "https://tools.utildesk.de/en/tools/zoho-people/",
+        "https://tools.utildesk.de/en/api/tools/zoho-people.json",
+        "https://tools.utildesk.de/en/markdown/tools/zoho-people.md",
+        "https://tools.utildesk.de/tools/zoho-sheet/",
+        "https://tools.utildesk.de/api/tools/zoho-sheet.json",
+        "https://tools.utildesk.de/markdown/tools/zoho-sheet.md",
+        "https://tools.utildesk.de/en/tools/zoho-sheet/",
+        "https://tools.utildesk.de/en/api/tools/zoho-sheet.json",
+        "https://tools.utildesk.de/en/markdown/tools/zoho-sheet.md",
+        "https://tools.utildesk.de/tools/zoho-social/",
+        "https://tools.utildesk.de/api/tools/zoho-social.json",
+        "https://tools.utildesk.de/markdown/tools/zoho-social.md",
+        "https://tools.utildesk.de/en/tools/zoho-social/",
+        "https://tools.utildesk.de/en/api/tools/zoho-social.json",
+        "https://tools.utildesk.de/en/markdown/tools/zoho-social.md",
+        "https://tools.utildesk.de/tools/zoho-workplace/",
+        "https://tools.utildesk.de/api/tools/zoho-workplace.json",
+        "https://tools.utildesk.de/markdown/tools/zoho-workplace.md",
+        "https://tools.utildesk.de/en/tools/zoho-workplace/",
+        "https://tools.utildesk.de/en/api/tools/zoho-workplace.json",
+        "https://tools.utildesk.de/en/markdown/tools/zoho-workplace.md",
+        "https://tools.utildesk.de/tools/zoho-writer/",
+        "https://tools.utildesk.de/api/tools/zoho-writer.json",
+        "https://tools.utildesk.de/markdown/tools/zoho-writer.md",
+        "https://tools.utildesk.de/en/tools/zoho-writer/",
+        "https://tools.utildesk.de/en/api/tools/zoho-writer.json",
+        "https://tools.utildesk.de/en/markdown/tools/zoho-writer.md",
+        "https://tools.utildesk.de/tools/zoho-zia/",
+        "https://tools.utildesk.de/api/tools/zoho-zia.json",
+        "https://tools.utildesk.de/markdown/tools/zoho-zia.md",
+        "https://tools.utildesk.de/en/tools/zoho-zia/",
+        "https://tools.utildesk.de/en/api/tools/zoho-zia.json",
+        "https://tools.utildesk.de/en/markdown/tools/zoho-zia.md",
+        "https://tools.utildesk.de/tools/zoom-phone/",
+        "https://tools.utildesk.de/api/tools/zoom-phone.json",
+        "https://tools.utildesk.de/markdown/tools/zoom-phone.md",
+        "https://tools.utildesk.de/en/tools/zoom-phone/",
+        "https://tools.utildesk.de/en/api/tools/zoom-phone.json",
+        "https://tools.utildesk.de/en/markdown/tools/zoom-phone.md",
+        "https://tools.utildesk.de/tools/zulip/",
+        "https://tools.utildesk.de/api/tools/zulip.json",
+        "https://tools.utildesk.de/markdown/tools/zulip.md",
+        "https://tools.utildesk.de/en/tools/zulip/",
+        "https://tools.utildesk.de/en/api/tools/zulip.json",
+        "https://tools.utildesk.de/en/markdown/tools/zulip.md",
+        "https://tools.utildesk.de/tool-assets/1107dd2fcc50ccaeccc4a9e20340ee76599e33e89b295fe00709053d2d6a9745/zoho-sheet-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/33fda46ba107db6fe8ee054a4602079de23245c23d4a2a8869828fd69d2d8fd6/zoho-office-suite-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/373ec04c5b3ddc25a96efd30667c1241812663e688daf148833ab533c642783f/zoho-zia-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/39e147c8056441ab51d71faf9bd41572f72fed46addd65ff20985d276559d246/zoho-people-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/60f0c8f6e59390aa8cf8daaaff28fb8f8e24dcde1b0d038902e3bcbff85445f5/zoho-social-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/627c7ce5466ed68cfcb94f9404f03b78e74298101559fc0dbd5111bc8fd55556/zoho-writer-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/690100336b96e08074f405c3e1006e5ceae4784f6c8dd80a73a728f105733976/zoho-workplace-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/80a2cd3f1246ff02ee606d49777a7dfeb166df988900905cbeda4fee50038c08/zoom-phone-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/ff3a31da196baab63fdd06a1c416a230a3026d71287904c4c99cd60064698b19/zulip-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T21:01:49.160Z",
+      "mode": "production-indexnow-delta",
+      "command": "indexnow_submit.py submit-batch [changed canonical HTML only]",
+      "estimate": {
+        "indexNow": 2,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.indexnow.org/indexnow",
+        "https://www.bing.com/indexnow"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }

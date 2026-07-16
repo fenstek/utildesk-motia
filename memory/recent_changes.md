@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-16_
 
+## 2026-07-16 - Final nine-card illustration runtime release
+
+- Published the final nine tool-card illustrations through the D1/R2 runtime from source commit `c05d478c`: 18 DE/EN locale entries, nine R2 objects and five transactional D1 statements.
+- The bounded delta gate passed all 63 checks with zero failures; both global IndexNow and Bing accepted all 18 canonical URLs with HTTP `200`. No Astro/Pages build ran and `dist` stayed unchanged.
+- The tracked request ledger is `1169/10000`. The active DE/EN illustration gap is now zero; the release backup is stored under the private `20260716-illustrations9` package.
+
 ## 2026-07-16 - Nine final tool-card illustrations
 
 - Generated nine distinct narrative illustrations in-chat with Codex subscription image generation, without Gemini or external API calls: Zoho Office Suite, Zoho Social, Zoom Phone, Zoho People, Zoho Sheet, Zoho Workplace, Zoho Writer, Zoho Zia and Zulip.
