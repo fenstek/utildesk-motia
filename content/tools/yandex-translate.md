@@ -21,7 +21,7 @@ Yandex Translate ist ein Online-Übersetzer für schnelle Übersetzungen zwische
 Wie bei allen maschinellen Übersetzern gilt: Die Ausgabe ist ein Vorschlag, kein Urteil. Je wichtiger der Text, desto eher braucht er menschliche Prüfung, besonders bei Recht, Medizin, Verträgen, Markenstimme oder sensiblen politischen Kontexten.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/yandex-translate-editorial.webp" alt="Drei Reisende klären eine Übergabe mit einem übersetzten Dokument am Bahnsteig" loading="lazy" decoding="async" />
+  <img src="/images/tools/yandex-translate-editorial.webp" alt="Drei Reisende klären ein übersetztes Dokument am Bahnsteig" loading="lazy" decoding="async" />
 </figure>
 
 ## Für wen ist Yandex.Translate geeignet?
