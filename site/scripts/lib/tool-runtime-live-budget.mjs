@@ -2,8 +2,8 @@ import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 export const LIVE_REQUEST_RESET_AT = "2026-07-16T00:05:00.000Z";
-export const DEFAULT_MAX_LIVE_REQUESTS = 500;
-export const HARD_MAX_LIVE_REQUESTS = 500;
+export const DEFAULT_MAX_LIVE_REQUESTS = 10_000;
+export const HARD_MAX_LIVE_REQUESTS = 10_000;
 export const MAX_PRODUCTION_CANARY_SLUGS = 24;
 export const MAX_PERFORMANCE_ROUTES = 10;
 

@@ -25,20 +25,20 @@ npm --prefix site run gate:tool-runtime-local-full -- \
 
 # Exactly one deterministic production canary, at most 24 slugs / 48 HTML GETs.
 npm --prefix site run gate:tool-runtime-production-canary -- \
-  --execute --max-live-requests 500 \
+  --execute --max-live-requests 10000 \
   --ledger "$PWD/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json" \
   --baseline "$PWD/site/.runtime/audits/$RUN_ID/fresh-static/manifest.json" \
   --out "/tmp/utildesk-tool-runtime-$RUN_ID-production-canary"
 
 # Changed HTML/JSON/Markdown plus changed content-addressed assets only.
 npm --prefix site run gate:tool-runtime-production-delta -- \
-  --git-range <base>..<head> --execute --max-live-requests 500 \
+  --git-range <base>..<head> --execute --max-live-requests 10000 \
   --ledger "$PWD/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json" \
   --out "/tmp/utildesk-tool-runtime-$RUN_ID-production-delta"
 ```
 
 Production commands refuse `--all`, more than 24 canary slugs, a budget above
-500, a cumulative ledger over 500, and execution before the recorded reset
+10,000, a cumulative daily ledger over 10,000, and execution before the recorded reset
 gate. The legacy capture and recursive resource-audit scripts refuse every
 non-loopback origin. Reservations are written before the first request and are
 never automatically reclaimed. There is no automatic retry; one retry may be
@@ -208,7 +208,7 @@ npm --prefix site run release:tool-runtime -- \
   --git-range <base>..<head> --operation upsert \
   --asset-bucket utildesk-tool-assets \
   --ledger "$PWD/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json" \
-  --max-live-requests 500
+  --max-live-requests 10000
 
 # After inspecting the deterministic preflight and committing a clean release:
 npm --prefix site run release:tool-runtime -- \
@@ -216,7 +216,7 @@ npm --prefix site run release:tool-runtime -- \
   --asset-bucket utildesk-tool-assets \
   --backup /private/backup/before.sql \
   --ledger "$PWD/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json" \
-  --max-live-requests 500 --production --execute
+  --max-live-requests 10000 --production --execute
 ```
 
 The wrapper never invokes Astro and fingerprints `site/dist` before/after execution. It refuses `--all`, refuses a complete worst-case estimate beyond the remaining ledger, and reserves publisher, delta-validation and two IndexNow submissions before their respective live commands. An ordinary ten-card release with ten changed assets is budgeted at 97 requests.
