@@ -53,3 +53,12 @@ Local evidence:
 - One-time normal build proof: 1,053 total static pages in 9.80 seconds, peak RSS 582,924 KiB, and zero tool detail HTML or per-tool JSON/Markdown mirrors. The postbuild guard reports all 7,368 localized detail artifacts as D1-owned.
 - Content-only release proof: a two-card/two-asset dry-run reserves 25 worst-case requests, leaves 475/500, sets `astroBuild=false`, and does not create or modify `site/dist`.
 - Local browser proof: Chrome rendered representative homepage, Tool Index, detail, category and tag layouts at 390x844 and 1440x1000 from localhost HTML and the exact runtime stylesheet. External font/image requests were removed from the self-contained fixtures; no production or third-party URL was fetched. The inspected frames had coherent desktop/mobile geometry and no visible horizontal overflow.
+
+## Bounded production rollout after reset
+
+- Live ownership inspection confirmed Pages deployment `3953ef98-b27e-4f68-acc6-b2950eaff99a`, Worker version `80f70efe-25ed-4067-a4f7-f2e1cb5607b7`, and pending D1 migration `0006_runtime_collection_revisions.sql` before rollout.
+- D1 migration `0006` applied successfully. The first new Worker version was `641e23b2-8c03-4c86-a9fb-ce9657b6cb90`; Pages deployment `2e3addbc` uploaded eight changed files and the Functions bundle.
+- The saved tool switch was `off` with the 100-slug allowlist preserved. It was switched to `on` only after direct Worker checks. The independent shell switch was also enabled; Ratgeber was never mutated.
+- Tool-detail canary: 48/48 localized routes returned 200 with exact static HTML/SEO parity and `tools-v1`; p50 106.2 ms, p95 118.5 ms, max cold request 373.1 ms. The four-slug machine delta then passed 24/24 unique HTML/JSON/Markdown checks with zero asset requests.
+- The first shell canary exposed a material fail-open: four cold category/tag routes returned static Pages without `tool-shell-v1`. The shell switch was immediately rolled back to `off`; tool details stayed on and Ratgeber was untouched.
+- Direct Worker diagnosis proved all failed paths rendered 200, but list shells were loading full Markdown bodies for every active entry on a cold isolate. The fix adds metadata-only shell projections plus collection-revision-keyed isolate caching. The full local shell gate remains exact at 968/968 and now completes in seconds instead of minutes. A corrected Worker retry is required before re-enabling the shell switch.

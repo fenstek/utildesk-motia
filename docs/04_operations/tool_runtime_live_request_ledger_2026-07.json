@@ -49,6 +49,281 @@
         "https://api.cloudflare.com/client/v4"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:04:23.696Z",
+      "mode": "production-d1-migration-0006",
+      "command": "wrangler d1 migrations apply utildesk-content-runtime-production --remote",
+      "estimate": {
+        "migrationList": 1,
+        "migrationApply": 1,
+        "verification": 1,
+        "cliOverhead": 2,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:06:01.272Z",
+      "mode": "production-worker-deploy",
+      "command": "wrangler deploy dist-runtime/server/entry.mjs with D1 binding and no unavailable R2 binding",
+      "estimate": {
+        "upload": 1,
+        "versionCreate": 1,
+        "deploymentCreate": 1,
+        "metadataReads": 3,
+        "cliOverhead": 4,
+        "total": 10
+      },
+      "worstCaseRequests": 10,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:06:49.315Z",
+      "mode": "production-worker-direct-smoke",
+      "command": "four one-shot requests to the newly deployed Worker before Pages cutover",
+      "estimate": {
+        "html": 2,
+        "json": 1,
+        "markdown": 1,
+        "total": 4
+      },
+      "worstCaseRequests": 4,
+      "plannedUrls": [
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/tools/chatgpt/",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/api/tools/chatgpt.json",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/markdown/tools/chatgpt.md",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/tools/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:07:08.848Z",
+      "mode": "production-pages-deploy",
+      "command": "single wrangler pages deploy of the locally proven normal dist plus Functions bundle",
+      "estimate": {
+        "manifestAndProjectReads": 5,
+        "assetUploadBatches": 35,
+        "deploymentAndFunctionUpload": 5,
+        "statusAndCliOverhead": 5,
+        "total": 50
+      },
+      "worstCaseRequests": 50,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:08:28.795Z",
+      "mode": "production-kv-tool-and-shell-switch",
+      "command": "read the existing tool switch once and set the independent shell switch on once via authenticated Pages admin",
+      "estimate": {
+        "toolStateRead": 1,
+        "shellStateWrite": 1,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://tools.utildesk.de/admin/ratgeber/api/tool-runtime",
+        "https://tools.utildesk.de/admin/ratgeber/api/tool-shell-runtime"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:09:00.988Z",
+      "mode": "production-tool-all-switch",
+      "command": "set tool runtime from saved off state to all active routes after local gates",
+      "estimate": {
+        "toolStateWrite": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://tools.utildesk.de/admin/ratgeber/api/tool-runtime?action=enable-all-20260716"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:09:34.406Z",
+      "mode": "production-canary",
+      "command": "production-canary --execute --max-live-requests 500 --performance-routes 10 --ledger ../docs/04_operations/tool_runtime_live_request_ledger_2026-07.json --baseline .runtime/audits/20260715T140414Z/fresh-static/manifest.json --out /tmp/utildesk-production-canary-20260716",
+      "estimate": {
+        "html": 48,
+        "json": 0,
+        "markdown": 0,
+        "assets": 0,
+        "control": 0,
+        "indexNow": 0,
+        "total": 48
+      },
+      "worstCaseRequests": 48,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/10to8/",
+        "https://tools.utildesk.de/en/tools/10to8/",
+        "https://tools.utildesk.de/tools/8x8/",
+        "https://tools.utildesk.de/en/tools/8x8/",
+        "https://tools.utildesk.de/tools/abbyy-vantage/",
+        "https://tools.utildesk.de/en/tools/abbyy-vantage/",
+        "https://tools.utildesk.de/tools/ableton-live/",
+        "https://tools.utildesk.de/en/tools/ableton-live/",
+        "https://tools.utildesk.de/tools/activecampaign/",
+        "https://tools.utildesk.de/en/tools/activecampaign/",
+        "https://tools.utildesk.de/tools/adobe-firefly/",
+        "https://tools.utildesk.de/en/tools/adobe-firefly/",
+        "https://tools.utildesk.de/tools/adobe-podcast/",
+        "https://tools.utildesk.de/en/tools/adobe-podcast/",
+        "https://tools.utildesk.de/tools/aider/",
+        "https://tools.utildesk.de/en/tools/aider/",
+        "https://tools.utildesk.de/tools/airbyte/",
+        "https://tools.utildesk.de/en/tools/airbyte/",
+        "https://tools.utildesk.de/tools/anyconv/",
+        "https://tools.utildesk.de/en/tools/anyconv/",
+        "https://tools.utildesk.de/tools/autogen/",
+        "https://tools.utildesk.de/en/tools/autogen/",
+        "https://tools.utildesk.de/tools/aws-textract/",
+        "https://tools.utildesk.de/en/tools/aws-textract/",
+        "https://tools.utildesk.de/tools/base44/",
+        "https://tools.utildesk.de/en/tools/base44/",
+        "https://tools.utildesk.de/tools/browserbase/",
+        "https://tools.utildesk.de/en/tools/browserbase/",
+        "https://tools.utildesk.de/tools/chatgpt/",
+        "https://tools.utildesk.de/en/tools/chatgpt/",
+        "https://tools.utildesk.de/tools/claude/",
+        "https://tools.utildesk.de/en/tools/claude/",
+        "https://tools.utildesk.de/tools/cohere/",
+        "https://tools.utildesk.de/en/tools/cohere/",
+        "https://tools.utildesk.de/tools/crisp/",
+        "https://tools.utildesk.de/en/tools/crisp/",
+        "https://tools.utildesk.de/tools/google-search-console/",
+        "https://tools.utildesk.de/en/tools/google-search-console/",
+        "https://tools.utildesk.de/tools/hermes-agent/",
+        "https://tools.utildesk.de/en/tools/hermes-agent/",
+        "https://tools.utildesk.de/tools/playwright/",
+        "https://tools.utildesk.de/en/tools/playwright/",
+        "https://tools.utildesk.de/tools/postgresql/",
+        "https://tools.utildesk.de/en/tools/postgresql/",
+        "https://tools.utildesk.de/tools/renpy/",
+        "https://tools.utildesk.de/en/tools/renpy/",
+        "https://tools.utildesk.de/tools/reply-io/",
+        "https://tools.utildesk.de/en/tools/reply-io/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:12:49.406Z",
+      "mode": "production-delta",
+      "command": "production-delta --execute --max-live-requests 500 --slugs-file /tmp/utildesk-machine-delta-slugs-20260716.json --ledger ../docs/04_operations/tool_runtime_live_request_ledger_2026-07.json --out /tmp/utildesk-production-machine-delta-20260716",
+      "estimate": {
+        "html": 8,
+        "json": 8,
+        "markdown": 8,
+        "assets": 0,
+        "control": 0,
+        "indexNow": 0,
+        "total": 24
+      },
+      "worstCaseRequests": 24,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/dell-boomi/",
+        "https://tools.utildesk.de/api/tools/dell-boomi.json",
+        "https://tools.utildesk.de/markdown/tools/dell-boomi.md",
+        "https://tools.utildesk.de/en/tools/dell-boomi/",
+        "https://tools.utildesk.de/en/api/tools/dell-boomi.json",
+        "https://tools.utildesk.de/en/markdown/tools/dell-boomi.md",
+        "https://tools.utildesk.de/tools/flyr/",
+        "https://tools.utildesk.de/api/tools/flyr.json",
+        "https://tools.utildesk.de/markdown/tools/flyr.md",
+        "https://tools.utildesk.de/en/tools/flyr/",
+        "https://tools.utildesk.de/en/api/tools/flyr.json",
+        "https://tools.utildesk.de/en/markdown/tools/flyr.md",
+        "https://tools.utildesk.de/tools/microsoft-azure-api-management/",
+        "https://tools.utildesk.de/api/tools/microsoft-azure-api-management.json",
+        "https://tools.utildesk.de/markdown/tools/microsoft-azure-api-management.md",
+        "https://tools.utildesk.de/en/tools/microsoft-azure-api-management/",
+        "https://tools.utildesk.de/en/api/tools/microsoft-azure-api-management.json",
+        "https://tools.utildesk.de/en/markdown/tools/microsoft-azure-api-management.md",
+        "https://tools.utildesk.de/tools/puppeteer/",
+        "https://tools.utildesk.de/api/tools/puppeteer.json",
+        "https://tools.utildesk.de/markdown/tools/puppeteer.md",
+        "https://tools.utildesk.de/en/tools/puppeteer/",
+        "https://tools.utildesk.de/en/api/tools/puppeteer.json",
+        "https://tools.utildesk.de/en/markdown/tools/puppeteer.md"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:17:29.878Z",
+      "mode": "production-shell-contract-canary",
+      "command": "17 unique one-shot shell/catalog/sitemap/robots/Ratgeber contract checks",
+      "estimate": {
+        "shellHtml": 10,
+        "catalogJson": 2,
+        "sitemaps": 3,
+        "robots": 1,
+        "ratgeberControl": 1,
+        "total": 17
+      },
+      "worstCaseRequests": 17,
+      "plannedUrls": [
+        "https://tools.utildesk.de/",
+        "https://tools.utildesk.de/en/",
+        "https://tools.utildesk.de/tools/",
+        "https://tools.utildesk.de/en/tools/",
+        "https://tools.utildesk.de/category/",
+        "https://tools.utildesk.de/en/category/",
+        "https://tools.utildesk.de/category/entwickler-tools/",
+        "https://tools.utildesk.de/en/category/entwickler-tools/",
+        "https://tools.utildesk.de/tools/tag/ai/",
+        "https://tools.utildesk.de/en/tools/tag/ai/",
+        "https://tools.utildesk.de/api/tools.json",
+        "https://tools.utildesk.de/en/api/tools.json",
+        "https://tools.utildesk.de/sitemap.xml",
+        "https://tools.utildesk.de/sitemap-bing.xml",
+        "https://tools.utildesk.de/sitemap-focus.xml",
+        "https://tools.utildesk.de/robots.txt",
+        "https://tools.utildesk.de/ratgeber/shared-ai-workspaces-team-kontext-memory-agenten/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:23:55.461Z",
+      "mode": "production-shell-rollback",
+      "command": "disable only tool-shell runtime after category/tag fallback mismatch",
+      "estimate": {
+        "shellStateWrite": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://tools.utildesk.de/admin/ratgeber/api/tool-shell-runtime?action=rollback-shell-mismatch-20260716"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:24:06.860Z",
+      "mode": "production-worker-shell-diagnosis",
+      "command": "five one-shot direct Worker requests for only the failed Pages fallback paths",
+      "estimate": {
+        "directWorkerReads": 5,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/category/entwickler-tools/",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/en/category/entwickler-tools/",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/tools/tag/ai/",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/en/tools/tag/ai/",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/ratgeber/shared-ai-workspaces-team-kontext-memory-agenten/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }

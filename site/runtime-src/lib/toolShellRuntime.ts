@@ -1,13 +1,13 @@
 import { slugifyTag } from "../../src/lib/tagRoutes";
 import type { RuntimeLocale } from "./runtimeContent";
-import { listRuntimeContentEntries } from "./runtimeContent";
+import { listRuntimeShellEntries } from "./runtimeContent";
 import { buildRuntimeDisplayTool, buildRuntimeHomeTool, buildRuntimeRatgeberPageEntry } from "./toolMachineRuntime";
 
 export async function getRuntimeToolShellData(locale: RuntimeLocale) {
   const [tools, ratgeber, primaryTools] = await Promise.all([
-    listRuntimeContentEntries("tool", locale),
-    listRuntimeContentEntries("ratgeber", locale),
-    locale === "en" ? listRuntimeContentEntries("tool", "de") : Promise.resolve([]),
+    listRuntimeShellEntries("tool", locale),
+    listRuntimeShellEntries("ratgeber", locale),
+    locale === "en" ? listRuntimeShellEntries("tool", "de") : Promise.resolve([]),
   ]);
   const primaryBySlug = new Map(primaryTools.map((entry) => [entry.slug, entry]));
   return {
