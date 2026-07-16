@@ -17,6 +17,10 @@ translation: full
 
 Python is a general-purpose programming language especially common in automation, data work, web backends, scientific computing, and AI. Its advantage is not only readable syntax but a vast ecosystem. That also makes operations demanding: dependencies, runtime versions, and data access need deliberate management.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/python-editorial.webp" alt="Natural-history workshop linked by a graceful serpent path" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Python for?
 
 Python suits teams turning scripts into dependable services, building data pipelines, integrating APIs, or embedding models and agents in products. The language is approachable for beginners, but design, testing, and operations remain professional work in production. Compute-intensive, latency-critical, or deeply mobile applications may be better served by [Go](/en/tools/go/), Java, or native components.

@@ -1,0 +1,61 @@
+{
+  "batch_date": "2026-07-16",
+  "generation_source": "codex-subscription-imagegen",
+  "status": "integration_pending",
+  "dimensions": {
+    "width": 1280,
+    "height": 720
+  },
+  "illustrations": [
+    {
+      "slug": "crisp",
+      "path": "content/images/tools/crisp-editorial.webp",
+      "style": "candid warm editorial photography"
+    },
+    {
+      "slug": "dell-boomi",
+      "path": "content/images/tools/dell-boomi-editorial.webp",
+      "style": "tactile claymation integration workshop"
+    },
+    {
+      "slug": "flyr",
+      "path": "content/images/tools/flyr-editorial.webp",
+      "style": "cinematic airport operations film still"
+    },
+    {
+      "slug": "google-search-console",
+      "path": "content/images/tools/google-search-console-editorial.webp",
+      "style": "Japanese woodblock-inspired search cartography"
+    },
+    {
+      "slug": "microsoft-azure-api-management",
+      "path": "content/images/tools/microsoft-azure-api-management-editorial.webp",
+      "style": "brutalist architectural gateway model"
+    },
+    {
+      "slug": "playwright",
+      "path": "content/images/tools/playwright-editorial.webp",
+      "style": "expressive gouache theater rehearsal"
+    },
+    {
+      "slug": "postgresql",
+      "path": "content/images/tools/postgresql-editorial.webp",
+      "style": "cyanotype archive-vault illustration"
+    },
+    {
+      "slug": "puppeteer",
+      "path": "content/images/tools/puppeteer-editorial.webp",
+      "style": "layered paper-cut shadow-puppet theater"
+    },
+    {
+      "slug": "python",
+      "path": "content/images/tools/python-editorial.webp",
+      "style": "natural-history editorial collage"
+    },
+    {
+      "slug": "renpy",
+      "path": "content/images/tools/renpy-editorial.webp",
+      "style": "hand-painted visual-novel storyboarding studio"
+    }
+  ]
+}

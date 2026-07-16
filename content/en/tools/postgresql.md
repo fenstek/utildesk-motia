@@ -17,6 +17,10 @@ translation: full
 
 PostgreSQL is an open-source relational database for applications needing reliable transactions, data integrity, and complex queries. It handles classic business entities alongside JSON data, full-text search, and extensions such as PostGIS. Its strength is a solid data core, not solving every data problem without modelling.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/postgresql-editorial.webp" alt="Cyanotype archive vault with linked relational record drawers" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is PostgreSQL for?
 
 PostgreSQL suits product catalogues, users and permissions, orders, internal tools, analytical queries, and many SaaS backends. Small applications gain the same transactional guarantees as larger systems. For a local single-file application, [SQLite](/en/tools/sqlite/) is often simpler; for purely document-centred data or very specific scale, another store can be better.

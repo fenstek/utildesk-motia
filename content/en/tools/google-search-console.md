@@ -22,6 +22,10 @@ translation: full
 
 Google Search Console is a free tool from Google that offers website owners and online marketing experts comprehensive insights into their websites' performance in Google Search. It allows monitoring, analyzing, and optimizing visibility and search presence by providing important data on search queries, clicks, impressions, and technical issues.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-search-console-editorial.webp" alt="Editors and engineers tracing discoverability paths toward a lighthouse archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Google Search Console, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: data hygiene, consent, handovers and reporting decide whether the tool helps in daily work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

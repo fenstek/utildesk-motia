@@ -17,6 +17,10 @@ translation: full
 
 Playwright is an open-source framework for end-to-end testing modern web applications. It combines a test runner, assertions, browser isolation, parallel execution, and diagnostic tools, and tests Chromium, Firefox, and WebKit on Windows, Linux, and macOS. It is therefore more than a browser library: it is a working framework for repeatable UI quality.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/playwright-editorial.webp" alt="Theater crew testing the same scene across three miniature stages" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Playwright for?
 
 Playwright suits product and QA teams whose application must work reliably across browsers and releases. It is especially useful for SPAs, login and payment flows, complex forms, role permissions, and visual regression checks. JavaScript/TypeScript, Python, Java, and .NET teams can use it. For focused Chromium scripts or PDF generation, [Puppeteer](/en/tools/puppeteer/) can be leaner.
