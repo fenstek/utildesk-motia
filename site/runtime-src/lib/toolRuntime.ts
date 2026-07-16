@@ -12,10 +12,10 @@ const cleanDescription = (value: string, removeStandaloneDash = false) => {
     .replace(/\s+/g, " ")
     .trim();
 };
-const excerptFromMarkdown = (markdown: string) => String(markdown ?? "")
+const excerptFromMarkdown = (markdown: string, removeStandaloneDash = false) => String(markdown ?? "")
   .split(/\n\s*\n/)
   .filter((paragraph) => !paragraph.trim().startsWith("#"))
-  .map((paragraph) => cleanDescription(paragraph))
+  .map((paragraph) => cleanDescription(paragraph, removeStandaloneDash))
   .find(Boolean) ?? "";
 const avatar = (title: string) => {
   const text = title.trim().split(/\s+/).slice(0, 2).map((part) => part[0] ?? "").join("").toUpperCase() || "?";
@@ -64,7 +64,7 @@ export function runtimeToolDescription(entry: RuntimeContentEntry, locale: Runti
     || stringValue(entry.metadata, "tagline");
   if (locale === "en") return (explicit ? cleanDescription(explicit) : excerptFromMarkdown(entry.markdown))
     .replace(/\s+([,.;:!?])/g, "$1");
-  return explicit || excerptFromMarkdown(entry.markdown);
+  return explicit || excerptFromMarkdown(entry.markdown, true);
 }
 
 export function runtimeDisplayTools(entries: RuntimeToolContextEntry[]) {

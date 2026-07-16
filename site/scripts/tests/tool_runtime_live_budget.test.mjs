@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { execFile } from "node:child_process";
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { mkdtemp, readdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { promisify } from "node:util";
@@ -17,6 +18,23 @@ import {
 const execFileAsync = promisify(execFile);
 const afterReset = new Date("2026-07-16T00:05:01.000Z");
 const slugs = Array.from({ length: 24 }, (_, index) => `tool-${index}`);
+
+async function fingerprintTree(directory) {
+  try {
+    const entries = await readdir(directory, { recursive: true, withFileTypes: true });
+    const records = [];
+    for (const entry of entries) {
+      if (!entry.isFile()) continue;
+      const file = join(entry.parentPath, entry.name);
+      const details = await stat(file);
+      records.push(`${file.slice(directory.length)}:${details.size}:${details.mtimeMs}`);
+    }
+    return createHash("sha256").update(records.sort().join("\n")).digest("hex");
+  } catch (error) {
+    if (error?.code === "ENOENT") return null;
+    throw error;
+  }
+}
 
 test("production canary is deterministically limited to 48 localized HTML requests", () => {
   assert.deepEqual(estimateProductionCanary({ slugs, performanceRoutes: 10 }), {
@@ -119,4 +137,36 @@ test("release and remote publisher entrypoints permanently reject --all", async 
   ], { cwd: resolve(import.meta.dirname, "../..") }, (error, stdout, stderr) => resolveResult({ error, stdout, stderr })));
   assert.ok(publisher.error);
   assert.match(publisher.stderr, /refuses --all/);
+});
+
+test("bounded text-only release dry-run invokes no Astro build and mutates no source or dist tree", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "utildesk-release-dry-run-"));
+  const siteDir = resolve(import.meta.dirname, "../..");
+  const repoDir = resolve(siteDir, "..");
+  const slugFile = join(directory, "slugs.txt");
+  const ledger = join(directory, "ledger.json");
+  await writeFile(slugFile, "dell-boomi\n");
+  const [contentBefore, distBefore] = await Promise.all([
+    fingerprintTree(join(repoDir, "content")),
+    fingerprintTree(join(siteDir, "dist")),
+  ]);
+  try {
+    const { stdout } = await execFileAsync(process.execPath, [
+      resolve(import.meta.dirname, "../tool_runtime_release.mjs"),
+      "--slugs-file", slugFile,
+      "--ledger", ledger,
+      "--max-live-requests", "500",
+      "--allow-pages-fallback-assets",
+    ], { cwd: siteDir, maxBuffer: 4 * 1024 * 1024 });
+    const report = JSON.parse(stdout);
+    assert.equal(report.dryRun, true);
+    assert.equal(report.astroBuild, false);
+    assert.equal(report.distUnchanged, true);
+    assert.equal(report.slugs.length, 1);
+    assert.equal(report.assets, 0);
+    assert.equal(await fingerprintTree(join(repoDir, "content")), contentBefore);
+    assert.equal(await fingerprintTree(join(siteDir, "dist")), distBefore);
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
 });

@@ -13,25 +13,28 @@ release confidence.
 Use only these three contracts:
 
 ```bash
+# Run from the repository root and choose one evidence identifier.
+RUN_ID=20260716T000000Z
+
 # Exhaustive 2,456-route parity against localhost Miniflare/local D1.
 npm --prefix site run gate:tool-runtime-local-full -- \
   --base-url http://127.0.0.1:8791 \
   --canonical-origin https://tools.utildesk.de \
-  --baseline site/.runtime/audits/<run>/fresh-static/manifest.json \
-  --out site/.runtime/audits/<run>/local-full
+  --baseline "$PWD/site/.runtime/audits/$RUN_ID/fresh-static/manifest.json" \
+  --out "/tmp/utildesk-tool-runtime-$RUN_ID-local-full"
 
 # Exactly one deterministic production canary, at most 24 slugs / 48 HTML GETs.
 npm --prefix site run gate:tool-runtime-production-canary -- \
   --execute --max-live-requests 500 \
-  --ledger docs/04_operations/tool_runtime_live_request_ledger_2026-07.json \
-  --baseline site/.runtime/audits/<run>/fresh-static/manifest.json \
-  --out site/.runtime/audits/<run>/production-canary
+  --ledger "$PWD/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json" \
+  --baseline "$PWD/site/.runtime/audits/$RUN_ID/fresh-static/manifest.json" \
+  --out "/tmp/utildesk-tool-runtime-$RUN_ID-production-canary"
 
 # Changed HTML/JSON/Markdown plus changed content-addressed assets only.
 npm --prefix site run gate:tool-runtime-production-delta -- \
   --git-range <base>..<head> --execute --max-live-requests 500 \
-  --ledger docs/04_operations/tool_runtime_live_request_ledger_2026-07.json \
-  --out site/.runtime/audits/<run>/production-delta
+  --ledger "$PWD/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json" \
+  --out "/tmp/utildesk-tool-runtime-$RUN_ID-production-delta"
 ```
 
 Production commands refuse `--all`, more than 24 canary slugs, a budget above
@@ -40,6 +43,9 @@ gate. The legacy capture and recursive resource-audit scripts refuse every
 non-loopback origin. Reservations are written before the first request and are
 never automatically reclaimed. There is no automatic retry; one retry may be
 planned and ledgered only for a genuine transient transport failure.
+The explicit `$PWD` prefixes above are intentional: `npm --prefix site` runs the
+Node command with `site/` as its working directory, while these evidence and
+ledger paths are written from the repository root.
 The request ledger is the only tracked path allowed to change while the
 publisher verifies the production release commit. Any content, runtime,
 configuration or unrelated documentation change still blocks publication.
@@ -83,6 +89,15 @@ npm --prefix site run publish:runtime -- \
 ```
 
 Dry-run output contains only keys, slugs, operation counts and validation results. It never includes Markdown bodies or credentials. A dirty source tree is reported and is a production blocker.
+
+For the release wrapper, dry-run output must also report `astroBuild: false` and
+`distUnchanged: true`. The wrapper fingerprints an existing `site/dist` before
+and after preflight; it does not create `site/dist` when the directory is absent.
+This is the required proof for a bounded text-only card release. For an ordinary
+shell or design change, run the normal `npm --prefix site run build`: its
+postbuild contract fails if even one active tool-detail HTML, JSON or Markdown
+artifact is emitted. Only `build:frozen-tools` may emit those six artifacts per
+active slug.
 
 The full initial projection can be planned without changing D1:
 
@@ -192,7 +207,7 @@ The normal 1-100 card flow is the wrapper below. It performs changed-slug discov
 npm --prefix site run release:tool-runtime -- \
   --git-range <base>..<head> --operation upsert \
   --asset-bucket utildesk-tool-assets \
-  --ledger docs/04_operations/tool_runtime_live_request_ledger_2026-07.json \
+  --ledger "$PWD/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json" \
   --max-live-requests 500
 
 # After inspecting the deterministic preflight and committing a clean release:
@@ -200,7 +215,7 @@ npm --prefix site run release:tool-runtime -- \
   --git-range <base>..<head> --operation upsert \
   --asset-bucket utildesk-tool-assets \
   --backup /private/backup/before.sql \
-  --ledger docs/04_operations/tool_runtime_live_request_ledger_2026-07.json \
+  --ledger "$PWD/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json" \
   --max-live-requests 500 --production --execute
 ```
 
@@ -271,4 +286,9 @@ Renderer: roll the Worker back to its recorded deployment. This does not change 
 
 Whole tool cluster: set only `content-runtime:tools=off` in the Pages runtime-control binding. The Ratgeber key remains unchanged. Verify canonical tool URLs against the frozen Pages origin before investigating D1/Worker.
 
-Frozen static baseline for this migration is identified by Git tag `tool-runtime-fallback-20260714`; its private artifact path and checksum are recorded in the external migration report, not in Git.
+Frozen static baseline for this migration is identified by Git tag
+`tool-runtime-fallback-20260714` at `f0f280e7`. The retained local archive is
+`site/.runtime/backups/20260715T140213Z/pages-frozen-7a4190c4.tar.zst`, SHA-256
+`8b292e374ef8b7af740ed72f7b2569ee86b7b3e748436a5aac75ec104b1ac511`.
+It is intentionally ignored and must not be added to Git; verify the checksum
+before a restore drill.

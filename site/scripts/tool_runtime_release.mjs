@@ -69,7 +69,9 @@ const canonicalUrls = slugs.flatMap((slug) => [`https://tools.utildesk.de/tools/
 const preflight = { operation, slugs, localeEntries: slugs.length * 2, assets: assets.length, canonicalUrls, estimates: { publish: publishEstimate, validation: deltaEstimate, indexNow: indexNowEstimate, total: totalEstimate }, ledger: { usedBefore, remainingAfterWorstCase: maxLiveRequests - usedBefore - totalEstimate }, astroBuild: false };
 
 if (!has("--execute")) {
-  console.log(JSON.stringify({ dryRun: true, ...preflight }, null, 2));
+  const distAfter = await fingerprintDirectory(join(siteDir, "dist"));
+  if (distAfter !== distBefore) throw new Error("Tool-runtime dry-run mutated site/dist");
+  console.log(JSON.stringify({ dryRun: true, ...preflight, distUnchanged: true }, null, 2));
   process.exit(0);
 }
 if (!has("--production")) throw new Error("--execute requires --production");
