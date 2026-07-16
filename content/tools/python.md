@@ -24,7 +24,7 @@ Python ist eine universelle Programmiersprache, die besonders in Automatisierung
 
 ## Für wen ist Python geeignet?
 
-Python passt zu Teams, die Skripte zu stabilen Diensten entwickeln, Datenpipelines bauen, APIs integrieren oder Modelle und Agenten in Produkte einbetten. Für Einsteiger ist der Spracheinstieg niedrigschwellig; für produktive Systeme bleiben Design, Tests und Betrieb trotzdem professionelle Aufgaben. Rechenintensive, latenzkritische oder stark mobile Anwendungen können mit [Go](/tools/go/) , Java oder nativen Komponenten besser bedient sein.
+Python passt zu Teams, die Skripte zu stabilen Diensten entwickeln, Datenpipelines bauen, APIs integrieren oder Modelle und Agenten in Produkte einbetten. Für Einsteiger ist der Spracheinstieg niedrigschwellig; für produktive Systeme bleiben Design, Tests und Betrieb trotzdem professionelle Aufgaben. Rechenintensive, latenzkritische oder stark mobile Anwendungen können mit Go, Java oder nativen Komponenten besser bedient sein.
 
 ## Der richtige erste Produktionsfall
 
@@ -44,10 +44,10 @@ Type Hints, Formatter, Linter und automatisierte Tests machen dynamischen Code v
 
 ## Alternativen zu Python
 
-- [JavaScript](/tools/javascript/): wenn dieselbe Sprache für Browser und Server sinnvoll ist.
-- [Go](/tools/go/): für kompakte, parallel arbeitende Services mit einfachen Deployments.
-- [Java](/tools/java/): für große Enterprise-Systeme und eine statisch typisierte JVM-Landschaft.
-- [R](/tools/r/): wenn statistische Analyse und Forschung klar vor allgemeiner Softwareentwicklung stehen.
+- JavaScript: wenn dieselbe Sprache für Browser und Server sinnvoll ist.
+- Go: für kompakte, parallel arbeitende Services mit einfachen Deployments.
+- Java: für große Enterprise-Systeme und eine statisch typisierte JVM-Landschaft.
+- R: wenn statistische Analyse und Forschung klar vor allgemeiner Softwareentwicklung stehen.
 
 ## Redaktionelle Einschätzung
 

@@ -23,7 +23,7 @@ PostgreSQL is an open-source relational database for applications needing reliab
 
 ## Who is PostgreSQL for?
 
-PostgreSQL suits product catalogues, users and permissions, orders, internal tools, analytical queries, and many SaaS backends. Small applications gain the same transactional guarantees as larger systems. For a local single-file application, [SQLite](/en/tools/sqlite/) is often simpler; for purely document-centred data or very specific scale, another store can be better.
+PostgreSQL suits product catalogues, users and permissions, orders, internal tools, analytical queries, and many SaaS backends. Small applications gain the same transactional guarantees as larger systems. For a local analytical single-file application, [DuckDB](/en/tools/duckdb/) is often simpler; for purely document-centred data or very specific scale, another store can be better.
 
 ## Model data before optimising
 
@@ -43,10 +43,10 @@ The application should not connect as a superuser. Separate migration, applicati
 
 ## Alternatives to PostgreSQL
 
-- [MySQL](/en/tools/mysql/): when the existing stack and managed offers already centre on it.
-- [SQLite](/en/tools/sqlite/): for local, embedded, or very small standalone applications.
+- [CockroachDB](/en/tools/cockroachdb/): when distributed SQL and horizontal scale matter more than exact PostgreSQL compatibility.
+- [DuckDB](/en/tools/duckdb/): for local analytical processing and embedded OLAP queries rather than a transactional application server.
 - [MongoDB](/en/tools/mongodb/): when document-centred data and access patterns are genuinely primary.
-- [Supabase](/en/tools/supabase/): when PostgreSQL is used as a platform with auth, storage, and API components.
+- [Amazon Aurora](/en/tools/amazon-aurora/): when a fully managed, PostgreSQL-compatible deployment in AWS is preferred.
 
 ## Editorial assessment
 

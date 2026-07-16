@@ -24,7 +24,7 @@ PostgreSQL ist eine relationale Open-Source-Datenbank für Anwendungen, die Tran
 
 ## Für wen ist PostgreSQL geeignet?
 
-PostgreSQL passt für Produktdaten, Nutzer- und Berechtigungssysteme, Aufträge, interne Tools, analytische Abfragen und viele SaaS-Backends. Kleine Anwendungen profitieren von derselben Transaktionssicherheit wie große Systeme. Für eine lokale Ein-Datei-Anwendung ist [SQLite](/tools/sqlite/) oft einfacher; für reine Dokumentdaten oder extrem spezifische Skalierung kann ein anderer Speicher besser passen.
+PostgreSQL passt für Produktdaten, Nutzer- und Berechtigungssysteme, Aufträge, interne Tools, analytische Abfragen und viele SaaS-Backends. Kleine Anwendungen profitieren von derselben Transaktionssicherheit wie große Systeme. Für eine lokale analytische Ein-Datei-Anwendung ist [DuckDB](/tools/duckdb/) oft einfacher; für reine Dokumentdaten oder extrem spezifische Skalierung kann ein anderer Speicher besser passen.
 
 ## Datenmodell vor Optimierung
 
@@ -44,10 +44,10 @@ Die Anwendung sollte nicht als Superuser verbinden. Trennen Sie Rollen für Migr
 
 ## Alternativen zu PostgreSQL
 
-- [MySQL](/tools/mysql/): wenn der bestehende Stack und Managed-Angebote darauf ausgerichtet sind.
-- [SQLite](/tools/sqlite/): für lokale, eingebettete oder sehr kleine Einzelanwendungen.
+- [CockroachDB](/tools/cockroachdb/): wenn verteiltes SQL und horizontale Skalierung wichtiger als PostgreSQL-Kompatibilität im Detail sind.
+- [DuckDB](/tools/duckdb/): für lokale analytische Verarbeitung und eingebettete OLAP-Abfragen statt eines transaktionalen Anwendungsservers.
 - [MongoDB](/tools/mongodb/): wenn dokumentzentrierte Daten und deren Zugriffsmuster wirklich im Vordergrund stehen.
-- [Supabase](/tools/supabase/): wenn PostgreSQL mit Authentifizierung, Storage und API-Bausteinen als Plattform genutzt werden soll.
+- [Amazon Aurora](/tools/amazon-aurora/): wenn ein vollständig verwalteter, PostgreSQL-kompatibler Betrieb im AWS-Umfeld gewünscht ist.
 
 ## Redaktionelle Einschätzung
 
