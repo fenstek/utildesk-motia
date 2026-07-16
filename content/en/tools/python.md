@@ -43,7 +43,7 @@ Type hints, formatters, linters, and automated tests make dynamic code easier to
 
 ## Alternatives to Python
 
-- JavaScript: when one language for browser and server is useful.
+- JavaScript is useful when one language should cover both browser and server.
 - Go: for compact concurrent services with simple deployment.
 - Java: for large enterprise systems and a statically typed JVM landscape.
 - R: when statistical analysis and research clearly outweigh general software engineering.
