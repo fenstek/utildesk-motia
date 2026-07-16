@@ -2,10 +2,10 @@
 slug: rawtherapee
 title: RawTherapee
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-editorial-100"
 category: Design
 price_model: Open Source
 tags:
@@ -13,9 +13,10 @@ tags:
   - editing
   - raw
   - open-source
-official_url: 'https://rawtherapee.com/'
-description: 'RawTherapee is a powerful open-source software for editing RAW images. It is designed for photographers and image editors seeking extensive tools to optimize and develop raw data from digital cameras. With a wide range of features, RawTherapee enables detailed and precise image editing—ranging from exposure correction to color enhancement. The software is cross-platform and supports numerous camera models.'
+official_url: "https://rawtherapee.com/"
+description: "RawTherapee is a design tool whose value should be judged in a concrete workflow with clear ownership and review."
 translation: full
+updated_at: 2026-07-17
 ---
 # RawTherapee
 
@@ -25,8 +26,7 @@ RawTherapee is a powerful open-source software for editing RAW images. It is des
   <img src="/images/tools/rawtherapee-editorial.webp" alt="A photo lab revealing detail from a raw negative" loading="lazy" decoding="async" />
 </figure>
 
-## Editorial assessment
-
+## Editorial Assessment
 With RawTherapee, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: image quality, rights, brand fit and editing effort decide more than isolated wow examples. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
 
 We would test RawTherapee in one small, real scenario first: one concrete visual task with brand rules, usage rights and a comparison with manual editing. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
@@ -71,14 +71,6 @@ RawTherapee is particularly suitable for hobby photographers, enthusiastic amate
 
 RawTherapee is entirely open source and free to use. There are no license fees or subscription costs. The software can be freely downloaded, used, and shared. Users wishing to support development can contribute through donations.
 
-## Alternatives to RawTherapee
-
-- **Darktable** – Another open-source RAW development software with extensive features and a strong focus on workflow optimization.
-- **Adobe Lightroom** – Commercial software with a comprehensive feature set and integrated Digital Asset Management, based on a subscription model.
-- **Capture One** – Professional RAW development focusing on color quality and workflow, paid with various licensing options.
-- **LightZone** – Open-source RAW editor with non-destructive workflow and special exposure tools.
-- **digiKam** – Open-source photo management with integrated RAW editing, especially suitable for users wanting to combine image management and editing.
-
 ## FAQ
 
 **1. Does RawTherapee support all RAW files from my camera?**
@@ -104,3 +96,10 @@ Since RawTherapee is open source, users can support development through donation
 
 **8. How often is RawTherapee updated?**
 The software is regularly maintained and developed. The frequency of updates depends on the community and the developers.
+
+## Alternatives
+
+- [ClickUp](/en/tools/clickup/): Task and project management when structured ownership matters more than this tool’s specialist focus.
+- [Obsidian](/en/tools/obsidian/): Local, linked notes when the team needs stronger control over its knowledge files.
+- [GitHub Copilot](/en/tools/github-copilot/): Development assistance when the primary workflow is code and repository work.
+- [Canva](/en/tools/canva/): Visual creation when layout and fast content production matter more than this specialist workflow.

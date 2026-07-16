@@ -1,21 +1,22 @@
 ---
 slug: yarn-spinner
-title: Yarn Spinner
+title: "Yarn Spinner"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
+editorial_batch: "2026-07-17-editorial-100"
+category: Developer Tools
 price_model: Open Source
 tags:
   - writing
   - game development
   - open source
   - developer tools
-official_url: 'https://yarnspinner.dev/'
-description: 'Yarn Spinner is an open-source tool designed specifically for creating interactive dialogues and narrative content in games. It allows developers and writers to easily write, manage, and integrate complex stories with branching dialogues into their games. With its flexible scripting language and straightforward integration into various game engines, Yarn Spinner is a popular choice for developers seeking to add narrative depth to their projects.'
+official_url: "https://yarnspinner.dev/"
+description: "Yarn Spinner is a developer tools tool whose value should be judged in a concrete workflow with clear ownership and review."
 translation: full
+updated_at: 2026-07-17
 ---
 # Yarn Spinner
 
@@ -25,8 +26,7 @@ Yarn Spinner is an open-source tool tailored for crafting interactive dialogues 
   <img src="/images/tools/yarn-spinner-editorial.webp" alt="Handcrafted workshop where colored yarns are joined into a narrative pattern" loading="lazy" decoding="async" />
 </figure>
 
-## Editorial assessment
-
+## Editorial Assessment
 With Yarn Spinner, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
 
 We would test Yarn Spinner in one small, real scenario first: one real repository task with review rules, a small change and a clear rollback path. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
@@ -68,14 +68,6 @@ Yarn Spinner primarily targets game developers, writers, and narrative designers
 
 Yarn Spinner is an open-source project available for free. There are no licensing fees or subscription costs. Users can freely download, use, and tailor the tool to their needs.
 
-## Alternatives to Yarn Spinner
-
-- **Ink by Inkle Studios**: Also an open-source tool for creating interactive stories with its own scripting language, well suited for narrative games.
-- **Twine**: A free tool for creating nonlinear stories, mainly used for text-based games and prototypes.
-- **Dialogue System for Unity**: A paid plugin offering extensive dialogue management and UI integration features in Unity.
-- **Articy:draft**: A professional tool for planning and developing interactive stories, with paid licensing options.
-- **Chat Mapper**: A dialogue creation tool providing both free and paid versions.
-
 ## FAQ
 
 **What exactly is Yarn Spinner?**
@@ -101,3 +93,10 @@ Yes, the open-source license permits use in commercial games without extra fees.
 
 **How current is the project?**
 Yarn Spinner is actively developed, maintained by a community, with regular updates improving functionality and stability.
+
+## Alternatives
+
+- [ClickUp](/en/tools/clickup/): Task and project management when structured ownership matters more than this tool’s specialist focus.
+- [Obsidian](/en/tools/obsidian/): Local, linked notes when the team needs stronger control over its knowledge files.
+- [GitHub Copilot](/en/tools/github-copilot/): Development assistance when the primary workflow is code and repository work.
+- [Canva](/en/tools/canva/): Visual creation when layout and fast content production matter more than this specialist workflow.

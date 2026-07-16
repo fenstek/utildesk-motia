@@ -2,20 +2,21 @@
 slug: kodex
 title: Kodex
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
+editorial_batch: "2026-07-17-editorial-100"
+category: Developer Tools
 price_model: Freemium
 tags:
   - code editor
   - iOS
   - developer tools
   - productivity
-official_url: 'https://www.kodex.app/'
-description: 'Kodex is a powerful code editor for iOS designed specifically for developers who want to stay productive on the go. Featuring a user-friendly interface and versatile tools, Kodex enables writing, editing, and managing source code directly on iPhone and iPad. With its freemium model, it offers a solid basic version with the option to unlock advanced features.'
+official_url: "https://www.kodex.app/"
+description: "Kodex is a developer tools tool whose value should be judged in a concrete workflow with clear ownership and review."
 translation: full
+updated_at: 2026-07-17
 ---
 # Kodex
 
@@ -25,8 +26,7 @@ Kodex is a powerful code editor for iOS, designed specifically for developers wh
   <img src="/images/tools/kodex-editorial.webp" alt="A code stream inspected through mechanical parts" loading="lazy" decoding="async" />
 </figure>
 
-## Editorial assessment
-
+## Editorial Assessment
 With Kodex, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
 
 We would test Kodex in one small, real scenario first: one real repository task with review rules, a small change and a clear rollback path. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
@@ -68,14 +68,6 @@ Kodex is aimed at developers, programmers, and tech-savvy users looking for a mo
 
 Kodex uses a freemium pricing model. The basic version is free and offers essential functions for writing and editing code. To access advanced features such as Git integration, enhanced code completion, or additional themes, upgrading to a paid version is required. Exact prices and available plans may vary by provider and region.
 
-## Alternatives to Kodex
-
-- **Textastic** – Popular iOS code editor with extensive syntax support and FTP/SFTP access.
-- **Buffer Editor** – Offers a wide range of developer tools and cloud integration.
-- **Working Copy** – Focuses on Git integration and version control directly on iOS devices.
-- **GoCoEdit** – Supports remote file editing and multiple programming languages.
-- **Code Editor by Panic (Nova for iOS)** – High-quality editor with many professional features, but paid.
-
 ## FAQ
 
 **1. Does Kodex support all programming languages?**
@@ -101,3 +93,10 @@ Yes, Kodex supports external keyboards and offers keyboard shortcuts to improve 
 
 **8. How secure is my data in Kodex?**
 Kodex stores data locally on the device and, depending on settings, also uses cloud services. Security therefore also depends on the cloud providers used.
+
+## Alternatives
+
+- [ClickUp](/en/tools/clickup/): Task and project management when structured ownership matters more than this tool’s specialist focus.
+- [Obsidian](/en/tools/obsidian/): Local, linked notes when the team needs stronger control over its knowledge files.
+- [GitHub Copilot](/en/tools/github-copilot/): Development assistance when the primary workflow is code and repository work.
+- [Canva](/en/tools/canva/): Visual creation when layout and fast content production matter more than this specialist workflow.
