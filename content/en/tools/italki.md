@@ -2,10 +2,10 @@
 slug: italki
 title: italki
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-editorial-100"
 category: Productivity
 price_model: Usage-based
 tags:
@@ -14,7 +14,8 @@ tags:
   - learning
   - marketplace
 official_url: 'https://www.italki.com/'
-description: 'italki is an online platform that connects language learners with qualified teachers worldwide. Users can book personalized language lessons tailored to their individual needs and goals. The platform serves as a marketplace for language tutors across many languages, enabling flexible, location-independent learning via video chat.'
+description: 'italki connects language learners with individual teachers for flexible, goal-based lessons and conversation practice by video.'
+updated_at: 2026-07-17
 translation: full
 ---
 # italki
@@ -80,13 +81,12 @@ italki uses a usage-based pricing model. Users pay only for the lessons they boo
 
 There are no monthly subscriptions or hidden fees. Payment is made directly through the platform before each lesson. italki also offers credit accounts that allow users to manage their lesson budgets.
 
-## Alternatives to italki
+## Alternatives
 
-- **Preply:** Also a marketplace for language lessons with many teachers and a usage-based pricing model.
-- **Tandem:** Focuses on free language exchange combined with paid tutors.
-- **Verbling:** Platform for online language lessons with video chat and professional teachers.
-- **Lingoda:** Offers structured courses and live lessons on a subscription basis.
-- **HelloTalk:** Language learning app with community and language exchange focus, less suited for formal lessons.
+- [Duolingo](/en/tools/duolingo/): More standardized app practice for short daily sessions and habit building.
+- [Babbel](/en/tools/babbel/): Structured lessons when a guided course path matters more than choosing a tutor.
+- [LingQ](/en/tools/lingq/): Input-focused reading and listening practice for learners who want more authentic material.
+- [Busuu](/en/tools/busuu/): A course-oriented option with structured practice when less tutor selection is desired.
 
 ## FAQ
 

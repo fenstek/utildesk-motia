@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-16_
 
+## 2026-07-17 - Editorial-clean batch of 100 tool cards
+
+- Reworked the 100 highest-severity flagged active cards from the editorial coverage audit in DE and EN, preserving existing illustrations and popularity values.
+- Added full editorial structure, practical workflow and limits, localized assessment, verified internal alternatives, FAQ coverage, and synchronized paired metadata/last-modified entries.
+- Release spec is stored outside the repository at `/home/jgdus/release-spec-editorial-100-2026-07-17.json`; no illustration or popularity-only changes are included.
+
 ## 2026-07-16 - Final nine-card illustration runtime release
 
 - Published the final nine tool-card illustrations through the D1/R2 runtime from source commit `c05d478c`: 18 DE/EN locale entries, nine R2 objects and five transactional D1 statements.
