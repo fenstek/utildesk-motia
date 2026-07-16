@@ -230,6 +230,12 @@ Homepage, Tool Index, category and tag routes use a separate opt-in key:
 
 Missing/malformed KV state is `off`; a Worker 404/5xx/exception falls through to the Pages shell. This key does not alter `content-runtime:tools` or `content-runtime:ratgeber`. The admin endpoint is `/admin/ratgeber/api/tool-shell-runtime` and accepts only explicit `on`/`off` JSON.
 
+Renderer deployments must use `npm --prefix site run deploy:runtime`. The
+generated `dist-runtime/server/wrangler.json` owns both the Worker entry and its
+`ASSETS` directory. A direct `wrangler deploy dist-runtime/server/entry.mjs`
+command is forbidden because it omits the shared runtime stylesheet and client
+scripts.
+
 Disabled/tombstoned rows carry `X-Utildesk-Route-State`, so Pages does not accidentally resurrect an intentionally retired tool from the frozen fallback. A genuinely missing D1 row still fails open to frozen static.
 
 ## Deactivate, redirect and tombstone

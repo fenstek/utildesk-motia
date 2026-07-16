@@ -76,3 +76,11 @@ Final production architecture: Markdown/Git -> guarded delta publisher -> paired
 - Uploaded one bounded ChatGPT proof object and verified the downloaded and served bytes at SHA-256 `7137d1d1776dfb0df9bae5fde01ad1b4b85ea711ed102d25c1356efa69d8ce3f`.
 - The single direct Worker GET returned `200`, `image/webp`, immutable caching and `X-Utildesk-Asset-Source: r2`. No broad live crawl or historical bulk copy ran.
 - The request ledger now reserves 346/500 worst-case requests, leaving 154 for bounded follow-up work.
+
+## 2026-07-16 runtime asset incident and recovery
+
+- A later content release exposed a latent deployment defect: the active Worker rendered correct HTML and R2 image URLs, but `/runtime-assets/BaseLayout.C877vJB7.css` returned `404`. The production screenshot therefore looked like raw browser-default HTML even though D1 rows and R2 objects were healthy.
+- Root cause: prior renderer deployments targeted `dist-runtime/server/entry.mjs` directly. That command uploads Worker modules but does not attach Astro's generated `dist-runtime/client` asset directory.
+- Recovery used the generated `dist-runtime/server/wrangler.json` with its `ASSETS` binding and the existing `utildesk-content-runtime-session` namespace (`SESSION`). Worker version `47a09f05-9366-4cf3-bc12-1c4a66e57540` restored the shared stylesheet without a Pages rebuild.
+- The repository now provides `npm --prefix site run deploy:runtime` plus a bundle gate that requires one substantial shared CSS file and both localized inventory scripts before Wrangler may deploy the generated manifest.
+- Final bounded proof used four one-shot production requests: homepage, stylesheet, Crisp detail and Crisp R2 image all returned `200`; the stylesheet is 261551 bytes and the image is 104842 bytes. No broad crawl ran. The final ledger is 497/500.

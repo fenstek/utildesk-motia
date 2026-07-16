@@ -1,5 +1,11 @@
 # Project State
 
+## 2026-07-16 Runtime asset recovery
+
+- Production runtime renderer version `47a09f05-9366-4cf3-bc12-1c4a66e57540` serves the shared `/runtime-assets/BaseLayout.C877vJB7.css` through the Worker `ASSETS` binding; homepage, tool pages and R2 illustrations are styled and live again.
+- Future renderer releases must use `npm --prefix site run deploy:runtime`; deploying the bare `dist-runtime/server/entry.mjs` is forbidden because it omits runtime CSS and client scripts.
+- The tracked live-request ledger is at 497/500 worst-case requests after the emergency repair. No further production inspection or deployment should run before the next daily reset unless the ledger is reset under its documented policy.
+
 ## Summary
 
 По состоянию на 2026-04-21 `utildesk-motia` — это production-репозиторий каталога AI-инструментов и связанных `ratgeber`-статей.

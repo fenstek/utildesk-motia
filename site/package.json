@@ -13,6 +13,8 @@
     "build:frozen-tools": "UTILDESK_BUILD_FROZEN_TOOL_DETAILS=1 npm run build",
     "build:hybrid": "node scripts/generate_runtime_cache_version.mjs && astro build --config astro.hybrid.config.mjs",
     "build:runtime": "node scripts/generate_runtime_sitemap_static.mjs && node scripts/generate_runtime_cache_version.mjs && astro build --config astro.runtime.config.mjs",
+    "check:runtime-deploy-bundle": "node scripts/check_runtime_deploy_bundle.mjs",
+    "deploy:runtime": "npm run build:runtime && npm run check:runtime-deploy-bundle && wrangler deploy --config dist-runtime/server/wrangler.json",
     "postbuild": "node scripts/sync_public_images.mjs && node scripts/sync_runtime_ratgeber_fallback_css.mjs && node scripts/generate_published_ratgeber_manifest.mjs && node ../scripts/check_built_tool_routes.mjs && node scripts/generate_sitemap.mjs",
     "preview": "astro preview",
     "export:runtime": "node scripts/export_runtime_content.mjs",

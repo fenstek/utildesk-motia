@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-07-14_
+_Last updated: 2026-07-16_
+
+## 2026-07-16 - Runtime asset delivery recovery
+
+- Diagnosed the unstyled production homepage and tool pages as a deployment-bundle error, not a D1/R2 publication failure: runtime HTML referenced `/runtime-assets/BaseLayout.C877vJB7.css`, while the active Worker version returned `404` for that asset. The ten new content-addressed WebP files were already healthy in R2.
+- Rebuilt and deployed the production renderer through Astro's generated `dist-runtime/server/wrangler.json`, which attaches the `ASSETS` directory alongside D1, R2 and the explicit existing `SESSION` KV namespace. Production version `47a09f05-9366-4cf3-bc12-1c4a66e57540` now serves the shared stylesheet with immutable caching.
+- Added `check_runtime_deploy_bundle.mjs`, two regression tests and the supported `npm run deploy:runtime` command. Direct `wrangler deploy dist-runtime/server/entry.mjs` deployment is now documented as forbidden because it drops hashed CSS/JS assets.
+- Bounded production proof: homepage `200 tool-shell-v1`; shared CSS `200 text/css`, 261551 bytes; Crisp `200 tools-v1`; Crisp illustration `200 image/webp`, 104842 bytes, `X-Utildesk-Asset-Source: r2`. Full local runtime suite passed 76/76.
 
 ## 2026-07-14 - OptiPlex editorial-50 and illustration-36 release
 
