@@ -214,6 +214,69 @@ export async function listRuntimeContentEntries(
   });
 }
 
+const shellEntryCache = new Map<string, { revision: number; entries: Promise<RuntimeContentEntry[]> }>();
+
+export async function listRuntimeShellEntries(
+  kind: RuntimeContentKind,
+  locale: RuntimeLocale,
+): Promise<RuntimeContentEntry[]> {
+  const collection = await getRuntimeCollectionRevision(kind, locale);
+  const cacheKey = `${kind}:${locale}`;
+  const cached = shellEntryCache.get(cacheKey);
+  if (cached?.revision === collection.revision) return cached.entries;
+
+  const entries = database()
+    .prepare(
+      `SELECT kind, locale, slug, title, excerpt, metadata_json, source_hash, revision,
+              source_published_at, source_updated_at, illustration_path, asset_key, asset_hash,
+              category, price_model, popularity
+       FROM content_entries
+       WHERE kind = ? AND locale = ? AND is_active = 1 AND route_state = 'active'`,
+    )
+    .bind(kind, locale)
+    .all<RuntimeContentRow>()
+    .then((result) => result.results.map((row) => ({
+      kind: row.kind,
+      locale: row.locale,
+      slug: row.slug,
+      title: row.title,
+      excerpt: row.excerpt,
+      metadata: parseMetadata(row.metadata_json),
+      markdown: "",
+      sourceHash: row.source_hash,
+      revision: Number(row.revision ?? 1),
+      sourcePublishedAt: row.source_published_at,
+      sourceUpdatedAt: row.source_updated_at,
+      isActive: true,
+      routeState: "active" as const,
+      canonicalPath: "",
+      redirectTargetPath: null,
+      robotsPolicy: "",
+      googlebotPolicy: null,
+      editorialReviewed: false,
+      illustrationPath: row.illustration_path,
+      assetKey: row.asset_key,
+      assetHash: row.asset_hash,
+      sourceCommit: null,
+      deletedAt: null,
+      category: row.category,
+      priceModel: row.price_model,
+      popularity: Number(row.popularity ?? 0),
+    })).sort((left, right) => {
+      const leftTime = left.sourcePublishedAt ? Date.parse(left.sourcePublishedAt) : 0;
+      const rightTime = right.sourcePublishedAt ? Date.parse(right.sourcePublishedAt) : 0;
+      const safeLeftTime = Number.isFinite(leftTime) ? leftTime : 0;
+      const safeRightTime = Number.isFinite(rightTime) ? rightTime : 0;
+      if (safeRightTime !== safeLeftTime) return safeRightTime - safeLeftTime;
+      return left.title.localeCompare(right.title, locale);
+    }));
+  shellEntryCache.set(cacheKey, { revision: collection.revision, entries });
+  entries.catch(() => {
+    if (shellEntryCache.get(cacheKey)?.entries === entries) shellEntryCache.delete(cacheKey);
+  });
+  return entries;
+}
+
 export async function listRuntimeToolContext(
   locale: RuntimeLocale,
   requestedSlugs: string[],
