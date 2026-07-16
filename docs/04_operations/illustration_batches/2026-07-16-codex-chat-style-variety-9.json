@@ -4,6 +4,7 @@
   "status": "implemented",
   "dimensions": {"width": 1280, "height": 720},
   "constraints": {"gemini": false, "external_api": false, "readable_text": false, "logos": false, "watermarks": false},
+  "slugs": ["zoho-office-suite", "zoho-social", "zoom-phone", "zoho-people", "zoho-sheet", "zoho-workplace", "zoho-writer", "zoho-zia", "zulip"],
   "illustrations": [
     {"slug": "zoho-office-suite", "path": "content/images/tools/zoho-office-suite-editorial.webp", "style": "original cubist editorial office scene"},
     {"slug": "zoho-social", "path": "content/images/tools/zoho-social-editorial.webp", "style": "original surrealist social-media city"},
