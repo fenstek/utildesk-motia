@@ -5,10 +5,18 @@ import {
   buildRouteStateBatch,
   buildUpsertBatch,
   executeD1Batch,
+  parseGitPorcelainPaths,
   reconcileToolState,
   toolAssetsForEntries,
   verifyPagesFallbackAssets,
 } from "../lib/tool-runtime-publisher.mjs";
+
+test("porcelain parser preserves the first path character", () => {
+  assert.deepEqual(parseGitPorcelainPaths(" M docs/ledger.json\n?? private/report.json\n"), [
+    "docs/ledger.json",
+    "private/report.json",
+  ]);
+});
 
 const fakeEntry = (slug, locale, sourceHash = `${slug}-${locale}`) => ({
   contentKey: `tool:${locale}:${slug}`,
