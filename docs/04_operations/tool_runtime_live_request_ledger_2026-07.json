@@ -428,6 +428,140 @@
         "https://utildesk-content-runtime.s-skorykov.workers.dev"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T10:54:56.202Z",
+      "mode": "production-d1-backup-illustrations10",
+      "command": "wrangler d1 export utildesk-content-runtime-production before ten-card illustration delta",
+      "estimate": {
+        "d1Export": 1,
+        "cliOverhead": 4,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T11:07:10.509Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 21,
+        "pagesAssets": 0,
+        "total": 25
+      },
+      "worstCaseRequests": 25,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T11:07:45.627Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file /home/jgdus/private/utildesk-releases/20260716-illustrations10/release-report/slugs.json --out /home/jgdus/private/utildesk-releases/20260716-illustrations10/release-report/live-delta --ledger /home/jgdus/projects/utildesk-illustrations10-release-20260716/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json --max-live-requests 500 --execute",
+      "estimate": {
+        "html": 20,
+        "json": 20,
+        "markdown": 20,
+        "assets": 10,
+        "control": 0,
+        "indexNow": 0,
+        "total": 70
+      },
+      "worstCaseRequests": 70,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/crisp/",
+        "https://tools.utildesk.de/api/tools/crisp.json",
+        "https://tools.utildesk.de/markdown/tools/crisp.md",
+        "https://tools.utildesk.de/en/tools/crisp/",
+        "https://tools.utildesk.de/en/api/tools/crisp.json",
+        "https://tools.utildesk.de/en/markdown/tools/crisp.md",
+        "https://tools.utildesk.de/tools/dell-boomi/",
+        "https://tools.utildesk.de/api/tools/dell-boomi.json",
+        "https://tools.utildesk.de/markdown/tools/dell-boomi.md",
+        "https://tools.utildesk.de/en/tools/dell-boomi/",
+        "https://tools.utildesk.de/en/api/tools/dell-boomi.json",
+        "https://tools.utildesk.de/en/markdown/tools/dell-boomi.md",
+        "https://tools.utildesk.de/tools/flyr/",
+        "https://tools.utildesk.de/api/tools/flyr.json",
+        "https://tools.utildesk.de/markdown/tools/flyr.md",
+        "https://tools.utildesk.de/en/tools/flyr/",
+        "https://tools.utildesk.de/en/api/tools/flyr.json",
+        "https://tools.utildesk.de/en/markdown/tools/flyr.md",
+        "https://tools.utildesk.de/tools/google-search-console/",
+        "https://tools.utildesk.de/api/tools/google-search-console.json",
+        "https://tools.utildesk.de/markdown/tools/google-search-console.md",
+        "https://tools.utildesk.de/en/tools/google-search-console/",
+        "https://tools.utildesk.de/en/api/tools/google-search-console.json",
+        "https://tools.utildesk.de/en/markdown/tools/google-search-console.md",
+        "https://tools.utildesk.de/tools/microsoft-azure-api-management/",
+        "https://tools.utildesk.de/api/tools/microsoft-azure-api-management.json",
+        "https://tools.utildesk.de/markdown/tools/microsoft-azure-api-management.md",
+        "https://tools.utildesk.de/en/tools/microsoft-azure-api-management/",
+        "https://tools.utildesk.de/en/api/tools/microsoft-azure-api-management.json",
+        "https://tools.utildesk.de/en/markdown/tools/microsoft-azure-api-management.md",
+        "https://tools.utildesk.de/tools/playwright/",
+        "https://tools.utildesk.de/api/tools/playwright.json",
+        "https://tools.utildesk.de/markdown/tools/playwright.md",
+        "https://tools.utildesk.de/en/tools/playwright/",
+        "https://tools.utildesk.de/en/api/tools/playwright.json",
+        "https://tools.utildesk.de/en/markdown/tools/playwright.md",
+        "https://tools.utildesk.de/tools/postgresql/",
+        "https://tools.utildesk.de/api/tools/postgresql.json",
+        "https://tools.utildesk.de/markdown/tools/postgresql.md",
+        "https://tools.utildesk.de/en/tools/postgresql/",
+        "https://tools.utildesk.de/en/api/tools/postgresql.json",
+        "https://tools.utildesk.de/en/markdown/tools/postgresql.md",
+        "https://tools.utildesk.de/tools/puppeteer/",
+        "https://tools.utildesk.de/api/tools/puppeteer.json",
+        "https://tools.utildesk.de/markdown/tools/puppeteer.md",
+        "https://tools.utildesk.de/en/tools/puppeteer/",
+        "https://tools.utildesk.de/en/api/tools/puppeteer.json",
+        "https://tools.utildesk.de/en/markdown/tools/puppeteer.md",
+        "https://tools.utildesk.de/tools/python/",
+        "https://tools.utildesk.de/api/tools/python.json",
+        "https://tools.utildesk.de/markdown/tools/python.md",
+        "https://tools.utildesk.de/en/tools/python/",
+        "https://tools.utildesk.de/en/api/tools/python.json",
+        "https://tools.utildesk.de/en/markdown/tools/python.md",
+        "https://tools.utildesk.de/tools/renpy/",
+        "https://tools.utildesk.de/api/tools/renpy.json",
+        "https://tools.utildesk.de/markdown/tools/renpy.md",
+        "https://tools.utildesk.de/en/tools/renpy/",
+        "https://tools.utildesk.de/en/api/tools/renpy.json",
+        "https://tools.utildesk.de/en/markdown/tools/renpy.md",
+        "https://tools.utildesk.de/tool-assets/1fbb6370aab273f6a16f11df3fcdfb545472ae3874362d505bac047f1038eab1/renpy-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/42e814a761b8da4d166157ddb1410362991827cecfc20e5c183e7121d280b392/puppeteer-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/729fea72d15271f8572daa37bcf096ff0955455c84df4244edf525afa40c3d98/python-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/76ce31e589bb9b71dd85bf8dc3604f50fbc10d4b159e792118d4e29b76129e60/crisp-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/8e7adc7c55966ee9bb987e7cf345f8dee2fbd802c3b4d044a1f6b94bc1358dc2/flyr-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/940cb472e6360879f420430bb02d7636052b24849bf10ec12475d660c4610f8b/google-search-console-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/d757ed830afa3f1e25f39f07edfa537ec2e94f0184e23750e2918df9c5079a90/dell-boomi-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/d79d0a4913d26718733a15fb3f9b6ef57ed3e33b9fcf59e4b24d1d4fec0615a6/microsoft-azure-api-management-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/e205d160428aecf5e862d88c6a78f1c1d00d195902941c26f6d78a5d1fbad862/playwright-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/f2358fcdbd0ca58049bb8f6e19f070261428ed45c34732e07cc5ba4c47d6d74f/postgresql-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T11:08:06.868Z",
+      "mode": "production-indexnow-delta",
+      "command": "indexnow_submit.py submit-batch [changed canonical HTML only]",
+      "estimate": {
+        "indexNow": 2,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.indexnow.org/indexnow",
+        "https://www.bing.com/indexnow"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
