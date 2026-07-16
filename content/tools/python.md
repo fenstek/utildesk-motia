@@ -44,7 +44,7 @@ Type Hints, Formatter, Linter und automatisierte Tests machen dynamischen Code v
 
 ## Alternativen zu Python
 
-- JavaScript: wenn dieselbe Sprache für Browser und Server sinnvoll ist.
+- JavaScript ist sinnvoll, wenn dieselbe Sprache für Browser und Server genutzt werden soll.
 - Go: für kompakte, parallel arbeitende Services mit einfachen Deployments.
 - Java: für große Enterprise-Systeme und eine statisch typisierte JVM-Landschaft.
 - R: wenn statistische Analyse und Forschung klar vor allgemeiner Softwareentwicklung stehen.
