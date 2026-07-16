@@ -43,7 +43,7 @@ Sistrix is subscription software with capability varying by plan. Before buying,
 
 ## Alternatives to Sistrix
 
-- [Ahrefs](/en/tools/ahrefs/): particularly strong for link and competitor research.
+- [Serpstat](/en/tools/serpstat/): combines keyword, competitor, and site-audit research in one SEO suite.
 - [Semrush](/en/tools/semrush/): a broad suite for SEO, PPC, and content workflows.
 - [Google Search Console](/en/tools/google-search-console/): the primary source for your own Google search performance.
 - [Moz Pro](/en/tools/moz-pro/): an SEO suite with keyword, link, and site-audit capabilities.
