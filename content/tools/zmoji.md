@@ -18,6 +18,10 @@ generated_at: 2026-05-09
 
 Zmoji ist ein innovatives KI-Tool, das speziell entwickelt wurde, um Arbeitsabläufe zu automatisieren und als digitaler Assistent in verschiedenen Bereichen zu unterstützen. Es kombiniert intelligente Automatisierung mit benutzerfreundlichen Funktionen, um die Produktivität zu steigern und repetitive Aufgaben effizienter zu gestalten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zmoji-editorial.webp" alt="Eine Gestalterin wählt einen persönlichen Avatar für eine Nachricht" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Zmoji geeignet?
 
 Zmoji richtet sich an Einzelpersonen und Unternehmen, die ihre Arbeitsprozesse durch den Einsatz von Künstlicher Intelligenz optimieren möchten. Besonders nützlich ist das Tool für:

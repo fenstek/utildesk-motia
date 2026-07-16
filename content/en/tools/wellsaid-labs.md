@@ -21,6 +21,10 @@ translation: full
 
 WellSaid Labs is an advanced AI-based platform for creating natural-sounding voice recordings from text. Using state-of-the-art speech synthesis technologies, WellSaid Labs turns written content into realistically sounding, high-quality audio recordings. The application is especially suited for businesses, content creators, and developers who want to create professional voice-overs, audiobooks, learning content, or podcasts quickly and efficiently without having to record their own voice.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wellsaid-labs-editorial.webp" alt="Voice actor and editors choosing a voice-over take in a studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is WellSaid Labs suitable for?
 
 WellSaid Labs is aimed at a wide range of users. These include:

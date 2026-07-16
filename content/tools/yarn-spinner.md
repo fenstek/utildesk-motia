@@ -18,6 +18,10 @@ generated_at: 2026-05-17
 
 Yarn Spinner ist ein Open-Source-Tool, das speziell für die Erstellung von interaktiven Dialogen und erzählerischen Inhalten in Spielen entwickelt wurde. Es ermöglicht Entwicklern und Autoren, komplexe Geschichten mit verzweigten Dialogen einfach zu schreiben, zu verwalten und in ihre Spiele zu integrieren. Durch seine flexible Skriptsprache und die einfache Integration in verschiedene Game-Engines ist Yarn Spinner eine beliebte Wahl für Entwickler, die narrative Tiefe in ihre Projekte bringen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/yarn-spinner-editorial.webp" alt="Handgefertigte Werkstatt, in der farbige Fäden zu einem erzählerischen Muster verbunden werden" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Yarn Spinner liegt der Wert nicht im schnellsten Rohtext, sondern in sauberer Textarbeit: Briefing, Tonfall, Terminologie, Faktencheck und Freigabe müssen zusammenpassen. Wir würden mit einem realen Textfall starten, Varianten bewusst vergleichen und jede Aussage prüfen, die rechtlich, fachlich oder markenseitig heikel ist.

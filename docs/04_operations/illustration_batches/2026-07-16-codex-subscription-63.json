@@ -1,0 +1,538 @@
+{
+  "id": "2026-07-16-codex-subscription-63",
+  "status": "implemented",
+  "date": "2026-07-16",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "generation_source": "OpenAI Codex built-in image generation via ChatGPT subscription",
+  "agents": 7,
+  "items_per_agent": 9,
+  "source_manifests": [
+    "2026-07-16-codex-subscription-63-agent-1.json",
+    "2026-07-16-codex-subscription-63-agent-2.json",
+    "2026-07-16-codex-subscription-63-agent-3.json",
+    "2026-07-16-codex-subscription-63-agent-4.json",
+    "2026-07-16-codex-subscription-63-agent-5.json",
+    "2026-07-16-codex-subscription-63-agent-6.json",
+    "2026-07-16-codex-subscription-63-agent-7.json"
+  ],
+  "constraints": {
+    "image_format": "webp",
+    "width_px": 1280,
+    "height_px": 720,
+    "gemini": false,
+    "external_api": false,
+    "svg_placeholder": false,
+    "readable_text": false,
+    "logos": false,
+    "watermarks": false
+  },
+  "items": [
+    {
+      "slug": "reply-io",
+      "image": "content/images/tools/reply-io-editorial.webp",
+      "style": "European editorial photography, documentary 35mm",
+      "concept": "A rain-lit station cafe handoff of reviewed outreach cards, showing automation paused for human judgment.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "simplenote",
+      "image": "content/images/tools/simplenote-editorial.webp",
+      "style": "Tactile paper collage with ink wash and linocut texture",
+      "concept": "A quiet weekly review where a person removes and reorders connected paper notes, tags, and threads.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "sistrix",
+      "image": "content/images/tools/sistrix-editorial.webp",
+      "style": "Two-color European linocut and letterpress print",
+      "concept": "An analyst traces a broken red route through a map archive to turn an SEO anomaly into a testable hypothesis.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "smartrecruiters",
+      "image": "content/images/tools/smartrecruiters-editorial.webp",
+      "style": "European documentary editorial photography, natural 35mm grain",
+      "concept": "Three people review blank candidate folders with stone score markers while one interviewer pauses the decision.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wavepad",
+      "image": "content/images/tools/wavepad-editorial.webp",
+      "style": "Hand-built paper collage with cyanotype, charcoal, and linocut marks",
+      "concept": "A craftsperson cuts and tapes abstract waveform strips on a radio-workshop bench to repair an audio seam.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "waves-abbey-road-tg-mastering-chain",
+      "image": "content/images/tools/waves-abbey-road-tg-mastering-chain-editorial.webp",
+      "style": "Cinematic analog-studio still, European editorial 35mm photography",
+      "concept": "An engineer turns one unmarked analog control while a mix passes through a layered mastering chain toward approval.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "waves-l1-ultramaximizer",
+      "image": "content/images/tools/waves-l1-ultramaximizer-editorial.webp",
+      "style": "European linocut poster with coarse paper and layered ink",
+      "concept": "A technician gently trims the crest of a broadcast wave so it stays powerful without breaking.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "waves-l2-ultramaximizer",
+      "image": "content/images/tools/waves-l2-ultramaximizer-editorial.webp",
+      "style": "Painterly cinematic editorial photograph with hand-colored film wash",
+      "concept": "A projectionist and engineer complete a final listening handoff in an empty cinema before delivery.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "weaviate",
+      "image": "content/images/tools/weaviate-editorial.webp",
+      "style": "Hand-painted gouache miniature with layered paper diorama construction",
+      "concept": "An archivist places a fragment into a floating drawer while threads connect related objects across a semantic map.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "webdriverio",
+      "image": "content/images/tools/webdriverio-editorial.webp",
+      "style": "documentary cinema",
+      "concept": "QA engineers hand off an isolated browser-to-mobile test in a physical device lab",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "weglot",
+      "image": "content/images/tools/weglot-editorial.webp",
+      "style": "mid-century gouache",
+      "concept": "Editors compare translated website proofs, terminology tabs, and a market rollout map before release",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wellsaid-labs",
+      "image": "content/images/tools/wellsaid-labs-editorial.webp",
+      "style": "documentary cinema",
+      "concept": "Voice actor, editor, and producer choose the approved narration take in a recording studio",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wevideo",
+      "image": "content/images/tools/wevideo-editorial.webp",
+      "style": "ceramic diorama",
+      "concept": "A miniature film crew assembles a collaborative short story from physical edits toward a projection",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "when2meet",
+      "image": "content/images/tools/when2meet-editorial.webp",
+      "style": "architectural paper model",
+      "concept": "People place tokens on converging paths to resolve a shared meeting time in a community hall",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "whereby",
+      "image": "content/images/tools/whereby-editorial.webp",
+      "style": "documentary cinema",
+      "concept": "A host connects a remote guest through a simple camera handoff across a rainy interior window",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "whimsical",
+      "image": "content/images/tools/whimsical-editorial.webp",
+      "style": "printmaking paper craft",
+      "concept": "A workshop team moves pins across a physical flowchart, mind map, and wireframe to resolve a dependency",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "whitesmoke",
+      "image": "content/images/tools/whitesmoke-editorial.webp",
+      "style": "linocut and risograph",
+      "concept": "Writer and proofreader mark a business letter, reject drafts, and clip the clean final proof",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wink",
+      "image": "content/images/tools/wink-editorial.webp",
+      "style": "analog film collage",
+      "concept": "Designer, reviewer, and client move a visual campaign from rough concept through variants to approved handoff",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wipo-patentscope",
+      "image": "content/images/tools/wipo-patentscope-editorial.webp",
+      "style": "Japanese woodblock print",
+      "concept": "Two researchers compare patent drawings in a wooden archive, tracing prior art from a selected drawer to a defensible research handoff.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wit-ai",
+      "image": "content/images/tools/wit-ai-editorial.webp",
+      "style": "cyanotype documentary collage",
+      "concept": "A developer and voice tester sort ambiguous utterance cards around a microphone, turning an edge case into a reviewed intent.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wix-mit-velo",
+      "image": "content/images/tools/wix-mit-velo-editorial.webp",
+      "style": "mixed-media magazine collage",
+      "concept": "Designer and developer connect a hand-cut storefront facade to a physical data drawer, showing visual prototyping becoming a dynamic site.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "woebot",
+      "image": "content/images/tools/woebot-editorial.webp",
+      "style": "atmospheric location photography",
+      "concept": "In a misty greenhouse, a participant takes one manageable step along a stone path while a facilitator keeps the human support boundary visible.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wombo-ai",
+      "image": "content/images/tools/wombo-ai-editorial.webp",
+      "style": "crafted miniature diorama",
+      "concept": "An artist chooses among three handmade creature variants, making human curation the final step in an image-generation workflow.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wordreference",
+      "image": "content/images/tools/wordreference-editorial.webp",
+      "style": "Japanese woodblock print",
+      "concept": "At a windswept ferry terminal, a traveler and language mediator resolve a near-synonym by comparing blank phrase cards with a reference dictionary.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wordsmith",
+      "image": "content/images/tools/wordsmith-editorial.webp",
+      "style": "mixed-media magazine collage",
+      "concept": "Editors pour colored data tiles into a movable-type tray and hold back one exaggerated tile during proofing of a recurring report.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wordtune",
+      "image": "content/images/tools/wordtune-editorial.webp",
+      "style": "atmospheric location photography",
+      "concept": "On a sunlit train, an editor compares tone variants and hands a clearer human-approved draft to a colleague.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "workable",
+      "image": "content/images/tools/workable-editorial.webp",
+      "style": "cinematic still photography",
+      "concept": "A recruiter sorts candidate folders into workflow trays while hiring managers review structured interview cards and one pending human decision.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "workato",
+      "image": "content/images/tools/workato-editorial.webp",
+      "style": "expressionist oil-and-gouache painting",
+      "concept": "Brass relay stations route customer, finance, and support records to a human approval handoff.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "workday",
+      "image": "content/images/tools/workday-editorial.webp",
+      "style": "natural-history plate with documentary watercolor",
+      "concept": "HR folders and finance materials meet at a glass balance for accountable review.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "workfusion",
+      "image": "content/images/tools/workfusion-editorial.webp",
+      "style": "stop-motion miniature archive set",
+      "concept": "A tactile document sorter automates routine files while a reviewer resolves an exception.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wrike",
+      "image": "content/images/tools/wrike-editorial.webp",
+      "style": "cinematic industrial documentary still",
+      "concept": "Theatre crews pass project boards, dependencies, resources, and approvals through a fly tower.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "writer",
+      "image": "content/images/tools/writer-editorial.webp",
+      "style": "hand-pulled linocut print",
+      "concept": "A print editor checks a proof against a style sample before a branded text run is released.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "writerduet",
+      "image": "content/images/tools/writerduet-editorial.webp",
+      "style": "handmade paper-cut theatre diorama",
+      "concept": "Two writers slide a blank revision page across a stage workshop with colored handoff tabs.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "wysa",
+      "image": "content/images/tools/wysa-editorial.webp",
+      "style": "pastel gouache natural-history plate",
+      "concept": "A quiet breathing ritual sits beside an open door toward professional support.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "xai",
+      "image": "content/images/tools/xai-editorial.webp",
+      "style": "expressionist cinematic night painting",
+      "concept": "A radio-style operator routes a chatbot response and keeps a red escalation cord available.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "xamarin",
+      "image": "content/images/tools/xamarin-editorial.webp",
+      "style": "painterly cinematic industrial coastal scene",
+      "concept": "One boat hull becomes two platform tests in parallel channels joined by a bridge.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "xero",
+      "image": "content/images/tools/xero-editorial.webp",
+      "style": "handcrafted paper collage",
+      "concept": "A bookkeeper sorts invoices and ledgers while handing a bound financial file to a colleague.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "xgboost",
+      "image": "content/images/tools/xgboost-editorial.webp",
+      "style": "blue-and-cream risograph print",
+      "concept": "A tactile model-selection workshop weighs colored data batches before routing them through greenhouse-like test stages.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "yandex-translate",
+      "image": "content/images/tools/yandex-translate-editorial.webp",
+      "style": "soft documentary portraiture",
+      "concept": "Travelers clarify a translated handoff on a rainy train platform before continuing in different directions.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "yarn-spinner",
+      "image": "content/images/tools/yarn-spinner-editorial.webp",
+      "style": "warm handcrafted felt miniature",
+      "concept": "A spinner and knitter turn separate colored strands into one branching narrative textile.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "yesware",
+      "image": "content/images/tools/yesware-editorial.webp",
+      "style": "cinematic hotel-lobby still",
+      "concept": "A salesperson prepares a sealed follow-up letter while a prospect waits across a glass partition.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "you-com",
+      "image": "content/images/tools/you-com-editorial.webp",
+      "style": "crafted miniature product metaphor",
+      "concept": "A tiny messenger navigates a neighborhood of distinct service paths linking correspondence, appointments, repairs, and delivery.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "youcam-perfect",
+      "image": "content/images/tools/youcam-perfect-editorial.webp",
+      "style": "sunlit painterly studio scene",
+      "concept": "A portrait artist compares a proof print with a retouched portrait while checking fine details through a loupe.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "youchat",
+      "image": "content/images/tools/youchat-editorial.webp",
+      "style": "watercolor-and-paper collage",
+      "concept": "A small group reviews conversation cards, marks a response, and hands the selected answer onward.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "youtrack",
+      "image": "content/images/tools/youtrack-editorial.webp",
+      "style": "navy-and-amber linocut theater",
+      "concept": "A backstage crew builds and hands off painted stage elements toward a live production.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zabbix",
+      "image": "content/images/tools/zabbix-editorial.webp",
+      "style": "brutalist model photography",
+      "concept": "An operator traces one amber infrastructure warning through concrete server racks and decides whether to escalate.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zamzar-ai",
+      "image": "content/images/tools/zamzar-ai-editorial.webp",
+      "style": "watercolor reportage",
+      "concept": "Two collaborators compare an original disc and converted document for layout, quality, and downstream workflow safety.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zao",
+      "image": "content/images/tools/zao-editorial.webp",
+      "style": "claymation miniature",
+      "concept": "A film crew pauses a face-swap set at a physical consent checkpoint before allowing the entertaining effect to proceed.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zencastr",
+      "image": "content/images/tools/zencastr-editorial.webp",
+      "style": "watercolor-and-ink documentary reportage",
+      "concept": "A producer coordinates separate remote recording booths and hands the session to backup and publishing.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zendesk-suite",
+      "image": "content/images/tools/zendesk-suite-editorial.webp",
+      "style": "claymation and paper-craft miniature",
+      "concept": "A service counter routes one customer request through mail, phone, and chat while a supervisor checks escalation ownership.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zendesk-talk",
+      "image": "content/images/tools/zendesk-talk-editorial.webp",
+      "style": "nocturnal cinematic still",
+      "concept": "A headset agent routes a difficult night call across a physical cord board while a colleague prepares a callback escalation.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zendesk",
+      "image": "content/images/tools/zendesk-editorial.webp",
+      "style": "painterly gouache",
+      "concept": "A support lead sorts customer cases into priority trays, hands off an urgent case, and updates a shared knowledge binder.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zeplin",
+      "image": "content/images/tools/zeplin-editorial.webp",
+      "style": "screen-print collage",
+      "concept": "Designer, developer, and QA reviewer move physical specs, assets, and spacing guides across a design-to-code handoff table.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zeppelin",
+      "image": "content/images/tools/zeppelin-editorial.webp",
+      "style": "nocturnal cinematic model photography",
+      "concept": "Three researchers connect a shared exploratory notebook to multiple physical analysis stations and an archive thread for reproducibility.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zest-ai",
+      "image": "content/images/tools/zest-ai-editorial.webp",
+      "style": "Bauhaus paper collage",
+      "concept": "Data stewards sort a sensitive dataset into approved and held-back streams before a reviewed AI analysis.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zmoji",
+      "image": "content/images/tools/zmoji-editorial.webp",
+      "style": "Detailed gouache editorial illustration",
+      "concept": "A creator chooses an expressive personalized avatar sticker for a casual community message.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zoho-books",
+      "image": "content/images/tools/zoho-books-editorial.webp",
+      "style": "Embroidered textile scene",
+      "concept": "A small accounting team routes receipts, invoice evidence and payment reconciliation to a final human month-end review.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zoho-calendar",
+      "image": "content/images/tools/zoho-calendar-editorial.webp",
+      "style": "Warm documentary photography",
+      "concept": "Clinic colleagues resolve an overlapping appointment by moving blank color cards into a shared time plan.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zoho-creator",
+      "image": "content/images/tools/zoho-creator-editorial.webp",
+      "style": "Crafted miniature-world photography",
+      "concept": "Human makers test a physical no-code process with gates, pipes and a clear handoff from request to result.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zoho-crm",
+      "image": "content/images/tools/zoho-crm-editorial.webp",
+      "style": "Painterly oil-and-gouache scene",
+      "concept": "Sales colleagues qualify seedlings as leads in a greenhouse and hand the promising case to its next owner.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zoho-desk",
+      "image": "content/images/tools/zoho-desk-editorial.webp",
+      "style": "Cinematic documentary still",
+      "concept": "A repair-shop support specialist escalates a difficult customer case and hands the case folder to a technician.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zoho-expense",
+      "image": "content/images/tools/zoho-expense-editorial.webp",
+      "style": "Two-color linocut printmaking",
+      "concept": "A field worker submits a travel receipt while a finance reviewer applies a human approval seal and begins reimbursement.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zoho-notebook",
+      "image": "content/images/tools/zoho-notebook-editorial.webp",
+      "style": "Watercolor and colored-pencil painterly scene",
+      "concept": "Travelers organize a sketched idea and pass it between a paper notebook, a camera and a shared handoff.",
+      "dimensions": "1280x720",
+      "visual_inspection": "passed"
+    }
+  ]
+}

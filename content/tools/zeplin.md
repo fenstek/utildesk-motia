@@ -19,6 +19,10 @@ updated_at: 2026-06-11
 
 Zeplin ist ein Handoff- und Spezifikationswerkzeug zwischen Design und Entwicklung. Es ist dann nützlich, wenn ein Team nicht nur Screens übergeben, sondern Designentscheidungen, Assets, Abstände, Komponenten und Status nachvollziehbar machen will.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zeplin-editorial.webp" alt="Designerin und Entwickler vergleichen Spezifikationen am Handoff-Tisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Zeplin geeignet?
 
 - Design- und Frontend-Teams mit regelmäßigem UI-Handoff.

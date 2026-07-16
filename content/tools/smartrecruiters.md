@@ -18,6 +18,10 @@ generated_at: 2026-05-17
 
 SmartRecruiters ist eine Recruiting- und Applicant-Tracking-Plattform (ATS) für Stellenausschreibungen, Bewerbungen, Interviewprozesse, Feedback und Einstellungen. Ihr Nutzen liegt darin, einen nachvollziehbaren Auswahlprozess über Recruiter, Fachbereiche und Kandidaten hinweg zu organisieren. Sie macht eine unklare Auswahlpraxis nicht automatisch fairer oder rechtskonform.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smartrecruiters-editorial.webp" alt="Bewerbungsauswahl mit geprüften Kriterien und menschlichem Veto" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist SmartRecruiters geeignet?
 
 Die Plattform passt zu Unternehmen mit mehreren offenen Rollen, Beteiligten und wiederkehrenden Hiring-Prozessen. Sie ist besonders sinnvoll, wenn Bewerberkommunikation, Interviewfeedback und Freigaben bisher über E-Mail und Tabellen verstreut sind. Kleine Teams mit wenigen Einstellungen pro Jahr sollten Aufwand, Preis und Prozesskomplexität gegen einfachere Lösungen wie [BambooHR](/tools/bamboohr/) abwägen.

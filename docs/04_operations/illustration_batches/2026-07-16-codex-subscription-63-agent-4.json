@@ -1,0 +1,75 @@
+{
+  "agent": 4,
+  "slugs": [
+    {
+      "slug": "workato",
+      "final_path": "content/images/tools/workato-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "expressionist oil-and-gouache painting",
+      "concept": "Brass relay stations route customer, finance, and support records to a human approval handoff."
+    },
+    {
+      "slug": "workday",
+      "final_path": "content/images/tools/workday-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "natural-history plate with documentary watercolor",
+      "concept": "HR folders and finance materials meet at a glass balance for accountable review."
+    },
+    {
+      "slug": "workfusion",
+      "final_path": "content/images/tools/workfusion-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "stop-motion miniature archive set",
+      "concept": "A tactile document sorter automates routine files while a reviewer resolves an exception."
+    },
+    {
+      "slug": "wrike",
+      "final_path": "content/images/tools/wrike-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "cinematic industrial documentary still",
+      "concept": "Theatre crews pass project boards, dependencies, resources, and approvals through a fly tower."
+    },
+    {
+      "slug": "writer",
+      "final_path": "content/images/tools/writer-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "hand-pulled linocut print",
+      "concept": "A print editor checks a proof against a style sample before a branded text run is released."
+    },
+    {
+      "slug": "writerduet",
+      "final_path": "content/images/tools/writerduet-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "handmade paper-cut theatre diorama",
+      "concept": "Two writers slide a blank revision page across a stage workshop with colored handoff tabs."
+    },
+    {
+      "slug": "wysa",
+      "final_path": "content/images/tools/wysa-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "pastel gouache natural-history plate",
+      "concept": "A quiet breathing ritual sits beside an open door toward professional support."
+    },
+    {
+      "slug": "xai",
+      "final_path": "content/images/tools/xai-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "expressionist cinematic night painting",
+      "concept": "A radio-style operator routes a chatbot response and keeps a red escalation cord available."
+    },
+    {
+      "slug": "xamarin",
+      "final_path": "content/images/tools/xamarin-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "painterly cinematic industrial coastal scene",
+      "concept": "One boat hull becomes two platform tests in parallel channels joined by a bridge."
+    }
+  ],
+  "generation_source": "codex-subscription-imagegen",
+  "visual_inspection": {
+    "status": "passed",
+    "count": "9/9",
+    "notes": "All approved final WebPs were visually inspected; WriterDuet was regenerated once for blank pages, and Workato, WorkFusion, and Writer were regenerated once to remove line-like document marks."
+  },
+  "status": "implemented"
+}

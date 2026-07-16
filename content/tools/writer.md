@@ -22,6 +22,10 @@ Writer ist eine KI-Schreibplattform für Teams, die nicht nur einzelne Texte gen
 
 Für private Einzeltexte gibt es leichtere Alternativen. Writer wird vor allem dann interessant, wenn mehrere Personen mit denselben Sprachregeln, Begriffen und Qualitätsstandards arbeiten sollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/writer-editorial.webp" alt="Redaktionelle Prüfung eines Marken-Textentwurfs vor der Freigabe" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Writer liegt der Wert nicht im schnellsten Rohtext, sondern in sauberer Textarbeit: Briefing, Tonfall, Terminologie, Faktencheck und Freigabe müssen zusammenpassen. Wir würden mit einem realen Textfall starten, Varianten bewusst vergleichen und jede Aussage prüfen, die rechtlich, fachlich oder markenseitig heikel ist.

@@ -1,0 +1,72 @@
+{
+  "agent": 5,
+  "batch": "63-illustration",
+  "slugs": [
+    {
+      "slug": "xero",
+      "path": "content/images/tools/xero-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "handcrafted paper collage",
+      "concept": "A bookkeeper sorts invoices and ledgers while handing a bound financial file to a colleague."
+    },
+    {
+      "slug": "xgboost",
+      "path": "content/images/tools/xgboost-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "blue-and-cream risograph print",
+      "concept": "A tactile model-selection workshop weighs colored data batches before routing them through greenhouse-like test stages."
+    },
+    {
+      "slug": "yandex-translate",
+      "path": "content/images/tools/yandex-translate-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "soft documentary portraiture",
+      "concept": "Travelers clarify a translated handoff on a rainy train platform before continuing in different directions."
+    },
+    {
+      "slug": "yarn-spinner",
+      "path": "content/images/tools/yarn-spinner-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "warm handcrafted felt miniature",
+      "concept": "A spinner and knitter turn separate colored strands into one branching narrative textile."
+    },
+    {
+      "slug": "yesware",
+      "path": "content/images/tools/yesware-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "cinematic hotel-lobby still",
+      "concept": "A salesperson prepares a sealed follow-up letter while a prospect waits across a glass partition."
+    },
+    {
+      "slug": "you-com",
+      "path": "content/images/tools/you-com-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "crafted miniature product metaphor",
+      "concept": "A tiny messenger navigates a neighborhood of distinct service paths linking correspondence, appointments, repairs, and delivery."
+    },
+    {
+      "slug": "youcam-perfect",
+      "path": "content/images/tools/youcam-perfect-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "sunlit painterly studio scene",
+      "concept": "A portrait artist compares a proof print with a retouched portrait while checking fine details through a loupe."
+    },
+    {
+      "slug": "youchat",
+      "path": "content/images/tools/youchat-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "watercolor-and-paper collage",
+      "concept": "A small group reviews conversation cards, marks a response, and hands the selected answer onward."
+    },
+    {
+      "slug": "youtrack",
+      "path": "content/images/tools/youtrack-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "navy-and-amber linocut theater",
+      "concept": "A backstage crew builds and hands off painted stage elements toward a live production."
+    }
+  ],
+  "generation_source": "codex-subscription-imagegen",
+  "visual_inspection": "passed 9/9 recovered PNGs; chronological mapping confirmed by content; no rejected images",
+  "status": "implemented"
+}

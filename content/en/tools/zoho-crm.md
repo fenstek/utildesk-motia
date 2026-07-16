@@ -21,6 +21,10 @@ translation: full
 
 Zoho CRM is a comprehensive customer relationship management solution that helps businesses streamline customer relationships, automate sales, and increase productivity. With intelligent automation features and a user-friendly interface, Zoho CRM offers a flexible platform that adapts to the needs of a wide range of industries and company sizes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-crm-editorial.webp" alt="A sales team hands off a qualified lead" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho CRM suitable for?
 
 Zoho CRM is particularly suitable for small to medium-sized businesses as well as larger organizations that want to digitize and make their sales processes more efficient. The platform is ideal for sales teams, marketing departments, and customer service teams looking for a central solution to manage leads, contacts, and sales opportunities. Thanks to its wide range of customization options, Zoho CRM is also suitable for industries with specific requirements, such as IT, retail, or service companies.

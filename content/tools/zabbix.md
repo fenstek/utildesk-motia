@@ -21,6 +21,10 @@ Bei Zabbix lohnt sich ein nüchterner Blick. Das Tool wirkt am stärksten, wenn 
 
 Der faire Praxistest für Zabbix: ein reales Beispiel nehmen, ein Ziel definieren und das Ergebnis gegen die bisherige Arbeitsweise halten. Genau dort trennt sich nützliche Hilfe von bloßer Tool-Neugier.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zabbix-editorial.webp" alt="Ein Operator verfolgt ein einzelnes Warnsignal im Serverraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Der praktische Kern
 
 Entwicklerwerkzeuge müssen nicht glänzen, sie müssen verlässlich sein: reproduzierbar, dokumentierbar und gut in bestehende Abläufe integrierbar. Für Zabbix sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

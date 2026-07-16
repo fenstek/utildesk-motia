@@ -23,6 +23,10 @@ WhiteSmoke is a writing and grammar tool for proofreading, style guidance, and t
 
 In today's writing-tool market, comparison matters. Many modern alternatives are strong in browsers, AI assistance, or team workflows. WhiteSmoke can still be interesting if it fits your own writing context and language needs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/whitesmoke-editorial.webp" alt="Editor correcting a printed business text with a red pencil" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is WhiteSmoke suitable for?
 
 WhiteSmoke is suitable for users who correct English or multilingual texts, want simple style improvements, or prefer a classic writing check. For deep collaborative writing, modern AI text work, or German-language style editing, you should also consider alternatives.

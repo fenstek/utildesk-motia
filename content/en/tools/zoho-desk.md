@@ -20,6 +20,10 @@ translation: full
 
 Zoho Desk is a cloud-based help desk software that helps companies run customer service efficiently. With AI-powered features and an intuitive user interface, Zoho Desk makes it possible to centrally manage customer inquiries across multiple channels. This helps support teams respond faster, automate workflows, and improve customer satisfaction.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-desk-editorial.webp" alt="A support case is handed from customer service to the workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Desk suitable for?
 
 Zoho Desk is aimed at small and medium-sized businesses as well as larger organizations that want to professionalize their customer service. The tool is especially well suited for support teams that want to integrate multiple communication channels such as email, phone, chat, and social media. Companies with a high volume of inquiries also benefit from the automation and analytics features. Across industries, Zoho Desk is a practical solution for anyone looking for a scalable help desk platform with AI support.

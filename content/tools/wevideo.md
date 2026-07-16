@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 WeVideo ist eine cloudbasierte Videobearbeitungsplattform, die es Nutzern ermöglicht, Videos einfach und flexibel online zu erstellen und zu bearbeiten. Die Plattform bietet eine benutzerfreundliche Oberfläche, die sowohl für Anfänger als auch für erfahrene Videoersteller geeignet ist. Dank der Cloud-Technologie können Projekte jederzeit und von überall aus bearbeitet und geteilt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wevideo-editorial.webp" alt="Filmteam montiert gemeinsam eine kurze Geschichte für die Projektion" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei WeVideo zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

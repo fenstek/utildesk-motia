@@ -17,6 +17,10 @@ translation: full
 
 WebdriverIO is a JavaScript and TypeScript framework for browser and mobile test automation. It combines its own testing environment with WebDriver and DevTools protocols, and can work with runners such as Mocha, Jasmine, or Cucumber as well as Appium for mobile applications. Its strength is adaptability to an existing QA stack, not maximum simplicity on day one.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/webdriverio-editorial.webp" alt="QA team handing off a browser and mobile test in a device lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is WebdriverIO for?
 
 WebdriverIO suits teams already using WebDriver, Selenium Grid, cloud browsers, or Appium and needing a modern Node.js layer over them. It is also relevant when Cucumber BDD, custom reporters, or a mixed web/mobile test estate are part of the process. For a new web-only suite with minimal setup, [Playwright](/en/tools/playwright/) is often more direct.

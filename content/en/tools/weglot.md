@@ -20,6 +20,10 @@ Weglot makes an existing website multilingual without building a separate site f
 
 The quick first impression can be misleading. A machine-translated page is not automatically an international-ready page. Terminology, prices, legal text, metadata, product names, forms, and support routes all need rules of their own. Weglot can handle technical delivery; the publisher still owns the content.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/weglot-editorial.webp" alt="Editors reviewing translated website proofs before an international rollout" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Weglot for?
 
 Weglot is particularly useful to marketing, ecommerce, and web teams that want to test or operate a live website in a small number of additional languages. It is practical for WordPress, Shopify, Webflow, Wix, and similar sites, and can also work with custom front ends when there is a clear integration path.

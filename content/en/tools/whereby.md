@@ -21,6 +21,10 @@ translation: full
 
 Whereby is an easy-to-use video conferencing platform designed specifically for simple and fast online meetings. Without complex software installations or sign-ups, participants can join meetings directly through their browser. With a focus on flexibility and intuitive operation, Whereby supports teams and individuals in effective communication and collaboration - ideal for remote work, client meetings, or quick check-ins.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/whereby-editorial.webp" alt="Host connecting a meeting through a camera with a remote guest" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Whereby suitable for?
 
 Whereby is especially well suited for small to medium-sized teams, freelancers, and companies that want to run straightforward and fast video conferences without much technical effort. The platform is also interesting for educational institutions and customer service, as it does not require software installation and works on various devices. Anyone who values ease of use, privacy, and flexible meeting rooms will find a suitable solution in Whereby.

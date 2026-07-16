@@ -18,6 +18,10 @@ generated_at: 2026-05-16
 
 Zoho Notebook ist eine vielseitige Notizen-App, die Nutzern hilft, Gedanken, Ideen und wichtige Informationen übersichtlich zu organisieren. Die Anwendung bietet eine intuitive Oberfläche und vielfältige Funktionen, um Notizen in verschiedenen Formaten zu erstellen, zu verwalten und zu synchronisieren. Zoho Notebook eignet sich für alle, die eine flexible und kostenlose Lösung für ihre persönliche oder berufliche Organisation suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-notebook-editorial.webp" alt="Reisende teilen eine organisierte Notiz zwischen Papier und Geräten" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoho Notebook ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

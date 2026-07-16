@@ -18,6 +18,10 @@ generated_at: 2026-05-13
 
 Wysa ist ein KI-gestützter Chatbot, der speziell entwickelt wurde, um Menschen bei der Bewältigung von psychischen Herausforderungen und der Förderung des mentalen Wohlbefindens zu unterstützen. Die App kombiniert evidenzbasierte therapeutische Techniken mit künstlicher Intelligenz, um Nutzern rund um die Uhr eine anonyme und zugängliche Selbsthilfe anzubieten. Wysa wird zunehmend als ergänzendes Werkzeug in der Gesundheitsvorsorge und im Bereich Mental Health eingesetzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wysa-editorial.webp" alt="Ruhiger Selbsthilfe-Moment mit klarer Tür zu professioneller Unterstützung" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Wysa ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

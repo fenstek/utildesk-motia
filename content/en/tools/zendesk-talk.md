@@ -29,6 +29,10 @@ When evaluating Zendesk Voice, the better question is not how many features it h
 
 Before rollout, Zendesk Voice should pass a small reality check: who owns the result, who reviews it, and what improvement would the team actually notice?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zendesk-talk-editorial.webp" alt="A support agent routes a difficult call for escalation" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 A realistic view of Zendesk Voice starts with the actual workflow. The tool is strongest when customer communication, availability, and clean handoffs between channels reduces visible friction instead of adding another layer of process.

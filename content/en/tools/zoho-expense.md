@@ -22,6 +22,10 @@ translation: full
 
 Zoho Expense is a cloud-based solution for managing business expenses that helps companies efficiently capture, track, and control expense reports. The software uses automation and AI technologies to reduce manual processes, ensure compliance with company policies, and increase financial transparency. Zoho Expense is especially well suited for small to mid-sized businesses that want to digitize their expense processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-expense-editorial.webp" alt="A travel expense is reviewed and approved for reimbursement" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Expense suitable for?
 
 Zoho Expense is designed for businesses of all sizes looking for a simple and automated expense management solution. The software is particularly suitable for:

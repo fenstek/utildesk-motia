@@ -10,7 +10,7 @@ category: "AI Infrastructure"
 price_model: Freemium
 tags: [ai, machine-learning, model-hub, inference, open-source]
 official_url: "https://huggingface.co/"
-popularity: 0
+popularity: 42
 description: "Hugging Face verbindet einen offenen Hub für Modelle, Datensätze und Demos mit Bibliotheken und produktiven Inferenzdiensten. Entscheidend sind Modellprüfung, Lizenzklarheit und ein bewusst gewählter Betriebsweg."
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13

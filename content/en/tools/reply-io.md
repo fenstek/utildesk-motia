@@ -26,6 +26,10 @@ Reply.io is a powerful platform for automated sales and email marketing that hel
 With Reply.io, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: data hygiene, consent, handovers and reporting decide whether the tool helps in daily work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
 
 We would test Reply.io in one small, real scenario first: one small campaign or pipeline step with clean contacts and a measurable follow-up. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reply-io-editorial.webp" alt="Sales team handing over reviewed outreach cards" loading="lazy" decoding="async" />
+</figure>
 ## Who is Reply.io suitable for?
 
 Reply.io is primarily suited for sales and marketing teams looking to automate lead generation and customer communication. Small and medium-sized businesses as well as larger organizations benefit from the platform, especially if they conduct regular email campaigns, follow-ups, and multichannel outreach. Freelancers and agencies managing multiple client projects can also streamline their processes with Reply.io.

@@ -18,6 +18,10 @@ generated_at: "2026-05-06"
 
 When2meet ist ein einfaches, webbasiertes Tool zur Terminplanung, das es Gruppen ermöglicht, schnell und unkompliziert gemeinsame verfügbare Zeiten für Meetings oder Veranstaltungen zu finden. Ohne Registrierung kann jeder Teilnehmer seine Verfügbarkeit angeben, wodurch die Koordination von Terminen deutlich erleichtert wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/when2meet-editorial.webp" alt="Menschen legen gemeinsame Wege zu einem Termin in einem Modell fest" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei When2meet ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

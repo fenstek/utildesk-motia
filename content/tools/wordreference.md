@@ -18,6 +18,10 @@ generated_at: "2026-05-09"
 
 WordReference ist ein umfassendes Online-Wörterbuch und Übersetzungstool, das Nutzern hilft, Sprachbarrieren zu überwinden. Es bietet schnelle und präzise Übersetzungen, umfangreiche Wörterbucheinträge sowie Foren für den Austausch mit Muttersprachlern. Ideal für Studierende, Berufstätige und jeden, der Fremdsprachen lernen oder übersetzen möchte.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wordreference-editorial.webp" alt="Zwei Reisende klären eine Sprachbedeutung am Wörterbuch" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist WordReference geeignet?
 
 WordReference richtet sich an Sprachlernende, Übersetzer, Lehrer und alle, die regelmäßig Fremdsprachen verwenden. Ob im Studium, Beruf oder Alltag – das Tool unterstützt bei der schnellen Suche nach Wortbedeutungen, Synonymen, Konjugationen und idiomatischen Ausdrücken. Besonders hilfreich ist es für Menschen, die eine zuverlässige, vielseitige und einfach zugängliche Sprachreferenz benötigen.

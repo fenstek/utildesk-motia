@@ -20,6 +20,10 @@ translation: full
 
 Zoho Calendar is a versatile online calendar tool that helps users plan and manage appointments efficiently. It integrates seamlessly with the Zoho product suite and offers features for scheduling, calendar sharing, and team collaboration. The intuitive interface makes it easy to organize personal and professional schedules, helping to increase productivity.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-calendar-editorial.webp" alt="Colleagues agree on a shared appointment" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Calendar for?
 
 Zoho Calendar is aimed at individuals, teams, and businesses looking for a reliable and flexible solution for scheduling and time management. The tool is especially well suited for users who already use other Zoho services or need integration with various calendars such as Google Calendar or Outlook. Freelancers, small to medium-sized businesses, and organizations with collaborative workflows also benefit from the shared calendar management features.

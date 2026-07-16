@@ -21,6 +21,10 @@ translation: full
 
 You.com is an innovative AI-powered search engine designed to make browsing the internet more personal, efficient, and privacy-friendly. With a focus on artificial intelligence, You.com combines traditional search results with AI-generated answers to give users a tailored and versatile experience. The platform offers a freemium pricing structure that includes both free and advanced features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/you-com-editorial.webp" alt="Miniature paths connect a message, appointment, repair, and delivery" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is You.com suitable for?
 
 You.com is aimed primarily at users who value a personalized, privacy-oriented search engine. The tool is especially suitable for:

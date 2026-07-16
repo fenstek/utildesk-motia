@@ -21,6 +21,10 @@ translation: full
 
 Workday is a cloud-based platform specializing in human capital management (HCM), financial management, and enterprise planning. With integrated AI capabilities, Workday helps companies make their HR and finance processes more efficient, analyze data more effectively, and make informed decisions. The solution offers comprehensive tools for personnel management, talent management, payroll, and financial reporting and planning.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/workday-editorial.webp" alt="Reconciling personnel records with financial decisions" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Workday for?
 
 Workday is aimed primarily at mid-sized and large companies that want to digitize and automate their HR and finance processes. Organizations across industries benefit from an integrated platform for employee management, payroll, financial planning, and analytics. Workday is especially well suited for companies with complex requirements around compliance, reporting, and global collaboration.

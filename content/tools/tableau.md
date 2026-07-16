@@ -11,7 +11,7 @@ price_model: Freemium
 tags: [ai, analytics, data-visualization, enterprise, productivity]
 official_url: "https://www.tableau.com/"
 description: Tableau verbindet Datenquellen, interaktive Visualisierungen und veröffentlichte Analysen für kontrollierte BI-Arbeit in Teams.
-popularity: 11
+popularity: 12
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
 tier: D

@@ -21,6 +21,10 @@ translation: full
 
 xAI is a modern AI tool specifically designed to increase productivity through intelligent automation and interactive chatbots. It combines powerful AI features with a user-friendly interface that is suitable for both individuals and businesses. With its freemium approach, users can try the basic features for free and upgrade to advanced features if needed.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/xai-editorial.webp" alt="Reviewed chatbot response on its way to a human handoff" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is xAI suitable for?
 
 xAI is aimed at a broad audience, including:

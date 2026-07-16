@@ -18,6 +18,10 @@ generated_at: "2026-05-06"
 
 Zendesk Voice ist eine cloudbasierte Telefonielösung, die speziell für den Kundenservice entwickelt wurde. Sie ermöglicht es Unternehmen, Anrufe direkt in ihr Zendesk-Supportsystem zu integrieren, um so eine nahtlose Kommunikation mit Kunden zu gewährleisten. Mit Funktionen wie automatischer Anrufweiterleitung, Aufzeichnung und KI-gestützter Analyse unterstützt Zendesk Voice Teams dabei, ihren Support effizienter und persönlicher zu gestalten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zendesk-talk-editorial.webp" alt="Eine Supportagentin routet einen dringenden Anruf zur Übergabe" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zendesk Voice zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

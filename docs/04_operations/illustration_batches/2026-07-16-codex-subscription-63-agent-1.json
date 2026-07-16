@@ -1,0 +1,66 @@
+{
+  "agent": 1,
+  "generation_source": "codex-subscription-imagegen",
+  "status": "implemented",
+  "visual_inspection": "passed",
+  "dimensions": {
+    "width": 1280,
+    "height": 720
+  },
+  "assets": [
+    {
+      "slug": "reply-io",
+      "final_path": "content/images/tools/reply-io-editorial.webp",
+      "style": "European editorial photography, documentary 35mm",
+      "concept": "A rain-lit station cafe handoff of reviewed outreach cards, showing automation paused for human judgment."
+    },
+    {
+      "slug": "simplenote",
+      "final_path": "content/images/tools/simplenote-editorial.webp",
+      "style": "Tactile paper collage with ink wash and linocut texture",
+      "concept": "A quiet weekly review where a person removes and reorders connected paper notes, tags, and threads."
+    },
+    {
+      "slug": "sistrix",
+      "final_path": "content/images/tools/sistrix-editorial.webp",
+      "style": "Two-color European linocut and letterpress print",
+      "concept": "An analyst traces a broken red route through a map archive to turn an SEO anomaly into a testable hypothesis."
+    },
+    {
+      "slug": "smartrecruiters",
+      "final_path": "content/images/tools/smartrecruiters-editorial.webp",
+      "style": "European documentary editorial photography, natural 35mm grain",
+      "concept": "Three people review blank candidate folders with stone score markers while one interviewer pauses the decision."
+    },
+    {
+      "slug": "wavepad",
+      "final_path": "content/images/tools/wavepad-editorial.webp",
+      "style": "Hand-built paper collage with cyanotype, charcoal, and linocut marks",
+      "concept": "A craftsperson cuts and tapes abstract waveform strips on a radio-workshop bench to repair an audio seam."
+    },
+    {
+      "slug": "waves-abbey-road-tg-mastering-chain",
+      "final_path": "content/images/tools/waves-abbey-road-tg-mastering-chain-editorial.webp",
+      "style": "Cinematic analog-studio still, European editorial 35mm photography",
+      "concept": "An engineer turns one unmarked analog control while a mix passes through a layered mastering chain toward approval."
+    },
+    {
+      "slug": "waves-l1-ultramaximizer",
+      "final_path": "content/images/tools/waves-l1-ultramaximizer-editorial.webp",
+      "style": "European linocut poster with coarse paper and layered ink",
+      "concept": "A technician gently trims the crest of a broadcast wave so it stays powerful without breaking."
+    },
+    {
+      "slug": "waves-l2-ultramaximizer",
+      "final_path": "content/images/tools/waves-l2-ultramaximizer-editorial.webp",
+      "style": "Painterly cinematic editorial photograph with hand-colored film wash",
+      "concept": "A projectionist and engineer complete a final listening handoff in an empty cinema before delivery."
+    },
+    {
+      "slug": "weaviate",
+      "final_path": "content/images/tools/weaviate-editorial.webp",
+      "style": "Hand-painted gouache miniature with layered paper diorama construction",
+      "concept": "An archivist places a fragment into a floating drawer while threads connect related objects across a semantic map."
+    }
+  ]
+}

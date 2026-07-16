@@ -23,6 +23,10 @@ Wordsmith becomes interesting when speed and control need to meet. For natural l
 
 With Wordsmith, look at daily use after the first week. If the tool is still used because it makes work easier, that is stronger than a good first impression.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wordsmith-editorial.webp" alt="Editors review data pieces for a recurring report" loading="lazy" decoding="async" />
+</figure>
+
 ## Practical core
 
 Writing tools are useful when they provide raw material, variants, and structure without hiding editorial responsibility.

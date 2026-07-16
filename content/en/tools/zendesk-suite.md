@@ -21,6 +21,10 @@ translation: full
 
 Zendesk Suite is a comprehensive customer service platform that helps businesses efficiently manage customer inquiries and enhance support. The solution combines helpdesk, CRM, and AI-powered tools in a single interface to simplify communication with customers across various channels.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zendesk-suite-editorial.webp" alt="A service counter routes one customer request across channels" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Zendesk Suite, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

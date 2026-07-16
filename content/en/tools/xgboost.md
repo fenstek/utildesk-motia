@@ -24,6 +24,10 @@ XGBoost becomes interesting when speed and control need to meet. For machine-lea
 
 A useful test for XGBoost does not start with a feature list, but with a real work case. Once the input, reviewer, and next step are clear, the practical value becomes easier to judge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/xgboost-editorial.webp" alt="Handcrafted experiment weighing training data against model decisions" loading="lazy" decoding="async" />
+</figure>
+
 ## Practical core
 
 Developer tools do not need to shine; they need to be reliable: reproducible, documentable, and easy to integrate into existing flows.

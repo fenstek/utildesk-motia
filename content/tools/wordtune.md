@@ -19,6 +19,10 @@ generated_at: "2026-05-13"
 
 Wordtune ist ein KI-gestütztes Schreibwerkzeug, das Nutzern hilft, ihre Texte klarer, präziser und ansprechender zu formulieren. Die Software nutzt moderne Algorithmen zur natürlichen Sprachverarbeitung, um alternative Formulierungen, Verbesserungen und Umschreibungen anzubieten. Wordtune eignet sich für verschiedenste Textarten, von E-Mails über Blogbeiträge bis hin zu akademischen Arbeiten, und unterstützt damit die Produktivität und Kreativität beim Schreiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wordtune-editorial.webp" alt="Redakteurin übergibt eine überarbeitete Fassung im Zug" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Wordtune liegt der Wert nicht im schnellsten Rohtext, sondern in sauberer Textarbeit: Briefing, Tonfall, Terminologie, Faktencheck und Freigabe müssen zusammenpassen. Wir würden mit einem realen Textfall starten, Varianten bewusst vergleichen und jede Aussage prüfen, die rechtlich, fachlich oder markenseitig heikel ist.

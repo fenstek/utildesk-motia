@@ -22,6 +22,10 @@ popularity: 0
 
 You.com ist eine innovative KI-gestützte Suchmaschine, die darauf abzielt, das Internetsurfen persönlicher, effizienter und datenschutzfreundlicher zu gestalten. Mit einem Fokus auf Künstliche Intelligenz kombiniert You.com traditionelle Suchergebnisse mit AI-generierten Antworten, um Nutzern eine maßgeschneiderte und vielseitige Erfahrung zu bieten. Die Plattform bietet eine freemium-Preisstruktur, die sowohl kostenlose als auch erweiterte Funktionen umfasst.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/you-com-editorial.webp" alt="Miniaturhafte Wege verbinden Nachricht, Termin, Reparatur und Lieferung" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist You.com geeignet?
 
 You.com richtet sich vor allem an Nutzer, die Wert auf eine personalisierte und datenschutzorientierte Suchmaschine legen. Besonders geeignet ist das Tool für:

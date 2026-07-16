@@ -18,6 +18,10 @@ generated_at: 2026-05-16
 
 Whimsical ist ein vielseitiges Online-Tool, das vor allem für die Erstellung von Diagrammen, Flowcharts, Wireframes und kollaborativen Whiteboards genutzt wird. Es hilft Teams und Einzelpersonen, Ideen visuell zu strukturieren und gemeinsam an Projekten zu arbeiten. Durch eine intuitive Benutzeroberfläche und vielfältige Funktionen unterstützt Whimsical die Produktivität in verschiedenen Arbeitsbereichen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/whimsical-editorial.webp" alt="Team ordnet mit Pins eine Produktidee auf einem Papiermodell" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Whimsical ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

@@ -21,6 +21,10 @@ translation: full
 
 When2meet is a simple web-based scheduling tool that helps groups quickly and easily find shared available times for meetings or events. Without registration, each participant can enter their availability, making it much easier to coordinate dates and times.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/when2meet-editorial.webp" alt="People placing shared paths toward one meeting in a paper model" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is When2meet suitable for?
 
 When2meet is ideal for teams, groups, or organizations that want to find a shared appointment without much effort. It is especially useful for:

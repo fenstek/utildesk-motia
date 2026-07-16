@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Zoho Desk ist eine cloudbasierte Helpdesk-Software, die Unternehmen dabei unterstützt, ihren Kundenservice effizient zu gestalten. Mit KI-gestützten Funktionen und einer intuitiven Benutzeroberfläche ermöglicht Zoho Desk die zentrale Verwaltung von Kundenanfragen über verschiedene Kanäle hinweg. So können Support-Teams schneller reagieren, Arbeitsprozesse automatisieren und die Kundenzufriedenheit steigern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-desk-editorial.webp" alt="Ein Supportfall wird vom Kundendienst an die Werkstatt übergeben" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoho Desk sollte die Entscheidung an einem echten Arbeitsfall hängen: Eingaben, Ergebnis, Verantwortung und Folgekosten müssen sichtbar sein. Wir würden klein starten, den Nutzen gegen den bisherigen Ablauf vergleichen und bewusst festhalten, welche Aufgaben weiterhin menschliche Prüfung brauchen.

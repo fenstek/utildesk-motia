@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Woebot ist ein innovativer KI-basierter Chatbot, der zur Unterstützung der psychischen Gesundheit entwickelt wurde. Durch den Einsatz von kognitiver Verhaltenstherapie (KVT) und täglichen Gesprächen bietet Woebot eine zugängliche Möglichkeit, emotionale Unterstützung und mentale Gesundheitspflege in den Alltag zu integrieren. Die Anwendung ist besonders darauf ausgelegt, Nutzern dabei zu helfen, Stress, Angst und depressive Symptome besser zu bewältigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/woebot-editorial.webp" alt="Ein achtsamer Morgenmoment im Gewächshaus" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Woebot ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

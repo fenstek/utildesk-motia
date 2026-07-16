@@ -21,6 +21,10 @@ translation: full
 
 Woebot is an innovative AI-based chatbot designed to support mental health. By using cognitive behavioral therapy (CBT) and daily conversations, Woebot offers an accessible way to bring emotional support and mental health care into everyday life. The app is especially designed to help users better manage stress, anxiety, and depressive symptoms.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/woebot-editorial.webp" alt="A mindful morning moment in a greenhouse" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Woebot suitable for?
 
 Woebot is aimed at people looking for a straightforward, low-barrier way to support their mental health. The chatbot is especially suitable for:

@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 WorkFusion ist eine leistungsstarke Plattform für intelligente Automatisierung, die Unternehmen dabei unterstützt, repetitive und zeitaufwändige Aufgaben durch den Einsatz von Künstlicher Intelligenz (KI) und Robotic Process Automation (RPA) zu optimieren. Die Lösung kombiniert maschinelles Lernen, Prozessautomatisierung und Datenverarbeitung, um Geschäftsprozesse effizienter zu gestalten und Mitarbeiter von Routinearbeiten zu entlasten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/workfusion-editorial.webp" alt="Automatisierte Dokumentensortierung mit menschlicher Ausnahmeprüfung" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei WorkFusion ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

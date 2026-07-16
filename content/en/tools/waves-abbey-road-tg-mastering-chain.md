@@ -38,6 +38,10 @@ In day-to-day work, Waves Abbey Road TG Mastering Chain is less about having eve
 
 Waves Abbey Road TG Mastering Chain is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/waves-abbey-road-tg-mastering-chain-editorial.webp" alt="Engineer guiding a mix through an analog mastering chain" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **EMI TG12410 Transfer Console emulation**: Authentic recreation of the legendary analog console sound.

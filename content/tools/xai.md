@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 xAI ist ein modernes KI-Tool, das speziell entwickelt wurde, um die Produktivität durch intelligente Automatisierung und interaktive Chatbots zu steigern. Es bietet eine Kombination aus leistungsfähigen KI-Funktionen und einer benutzerfreundlichen Oberfläche, die sowohl für Einzelpersonen als auch für Unternehmen geeignet ist. Durch den Freemium-Ansatz können Nutzer grundlegende Funktionen kostenlos testen und bei Bedarf auf erweiterte Features upgraden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/xai-editorial.webp" alt="Geprüfte Chatbot-Antwort auf dem Weg zur menschlichen Übergabe" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei xAI ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

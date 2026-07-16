@@ -21,6 +21,10 @@ translation: full
 
 Xamarin is a powerful framework for cross-platform mobile development that enables developers to build native apps for iOS, Android, and Windows using a shared C# codebase. It integrates seamlessly into the Microsoft development environment and supports the use of .NET libraries, making development more efficient and flexible.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/xamarin-editorial.webp" alt="Shared app design tested across two mobile platforms" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Xamarin suitable for?
 
 Xamarin is aimed at professional developers and companies that want to build mobile applications for multiple platforms at the same time without sacrificing native performance and user experience. It is particularly well suited for teams that already have experience with C# and .NET and want to optimize their development processes through a unified codebase. Developers who rely on strong integration with Microsoft tools and services also benefit from it.

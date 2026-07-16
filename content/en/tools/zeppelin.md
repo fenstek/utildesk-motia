@@ -23,6 +23,10 @@ Zeppelin fits workflows where notebook-based data analysis with multiple interpr
 
 For a fair test, demo data is rarely enough. A better approach is a real mini-workflow for this use case: for data teams that collaborate on Spark- and SQL-adjacent analysis. That also makes the key caution clear in a small setting: without clean versioning, reproducibility becomes difficult.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zeppelin-editorial.webp" alt="Three researchers connect a shared analysis notebook to data samples" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zeppelin suitable for?
 
 Zeppelin is suitable for users who need more structure to use exploratory analysis and shared notebooks on data platforms. Its value becomes especially clear once the question of which interpreters, permissions, and result artifacts are binding has been answered.

@@ -17,6 +17,10 @@ translation: full
 
 SmartRecruiters is a recruiting and applicant-tracking platform for job postings, applications, interviews, feedback, and hiring. Its value is organising a traceable selection process across recruiters, hiring teams, and candidates. It does not automatically make an unclear hiring practice fair or legally compliant.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smartrecruiters-editorial.webp" alt="Candidate review with shared criteria and a human pause" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is SmartRecruiters for?
 
 The platform suits organisations with several open roles, stakeholders, and recurring hiring processes. It is especially useful where candidate communication, interview feedback, and approvals are spread across email and spreadsheets. Small teams hiring only a few people a year should weigh effort, price, and process complexity against simpler tools such as [BambooHR](/en/tools/bamboohr/).

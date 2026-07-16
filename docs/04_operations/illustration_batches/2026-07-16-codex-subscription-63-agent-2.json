@@ -1,0 +1,67 @@
+{
+  "agent": 2,
+  "batch": "2026-07-16-codex-subscription-63-agent-2",
+  "generation_source": "codex-subscription-imagegen",
+  "status": "implemented",
+  "dimensions": {
+    "width": 1280,
+    "height": 720
+  },
+  "visual_inspection": "passed",
+  "assets": [
+    {
+      "slug": "webdriverio",
+      "final_path": "content/images/tools/webdriverio-editorial.webp",
+      "style": "documentary cinema",
+      "concept": "QA engineers hand off an isolated browser-to-mobile test in a physical device lab"
+    },
+    {
+      "slug": "weglot",
+      "final_path": "content/images/tools/weglot-editorial.webp",
+      "style": "mid-century gouache",
+      "concept": "Editors compare translated website proofs, terminology tabs, and a market rollout map before release"
+    },
+    {
+      "slug": "wellsaid-labs",
+      "final_path": "content/images/tools/wellsaid-labs-editorial.webp",
+      "style": "documentary cinema",
+      "concept": "Voice actor, editor, and producer choose the approved narration take in a recording studio"
+    },
+    {
+      "slug": "wevideo",
+      "final_path": "content/images/tools/wevideo-editorial.webp",
+      "style": "ceramic diorama",
+      "concept": "A miniature film crew assembles a collaborative short story from physical edits toward a projection"
+    },
+    {
+      "slug": "when2meet",
+      "final_path": "content/images/tools/when2meet-editorial.webp",
+      "style": "architectural paper model",
+      "concept": "People place tokens on converging paths to resolve a shared meeting time in a community hall"
+    },
+    {
+      "slug": "whereby",
+      "final_path": "content/images/tools/whereby-editorial.webp",
+      "style": "documentary cinema",
+      "concept": "A host connects a remote guest through a simple camera handoff across a rainy interior window"
+    },
+    {
+      "slug": "whimsical",
+      "final_path": "content/images/tools/whimsical-editorial.webp",
+      "style": "printmaking paper craft",
+      "concept": "A workshop team moves pins across a physical flowchart, mind map, and wireframe to resolve a dependency"
+    },
+    {
+      "slug": "whitesmoke",
+      "final_path": "content/images/tools/whitesmoke-editorial.webp",
+      "style": "linocut and risograph",
+      "concept": "Writer and proofreader mark a business letter, reject drafts, and clip the clean final proof"
+    },
+    {
+      "slug": "wink",
+      "final_path": "content/images/tools/wink-editorial.webp",
+      "style": "analog film collage",
+      "concept": "Designer, reviewer, and client move a visual campaign from rough concept through variants to approved handoff"
+    }
+  ]
+}

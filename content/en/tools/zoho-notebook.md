@@ -21,6 +21,10 @@ translation: full
 
 Zoho Notebook is a versatile note-taking app that assists users in organizing thoughts, ideas, and important information in a clear and structured way. The application offers an intuitive interface and a wide range of features to create, manage, and synchronize notes in various formats. Zoho Notebook is suitable for anyone looking for a flexible and free solution for personal or professional organization.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-notebook-editorial.webp" alt="Travelers share an organized note between paper and devices" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Zoho Notebook, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

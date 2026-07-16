@@ -39,6 +39,10 @@ A useful pilot for Waves L2 Ultramaximizer starts with a real recording with sou
 - **Good start for Waves L2 Ultramaximizer:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Waves L2 Ultramaximizer:** Even a good interface helps only partly when source material, rights, target platforms, loudness goals, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/waves-l2-ultramaximizer-editorial.webp" alt="Final audio approval in an empty cinema before delivery" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Precise limiter:** Prevents clipping and ensures clean loudness boosting without distortion.

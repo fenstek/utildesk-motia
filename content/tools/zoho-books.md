@@ -19,6 +19,10 @@ mentionedIn: ["ki-tools-eu-datenverarbeitung-kleine-unternehmen", "rechnungen-au
 
 Zoho Books ist eine cloudbasierte Buchhaltungssoftware, die kleinen und mittelständischen Unternehmen hilft, ihre Finanzen effizient zu verwalten. Mit automatisierten Funktionen für Rechnungsstellung, Ausgabenmanagement und Finanzberichterstattung unterstützt Zoho Books dabei, Buchhaltungsprozesse zu vereinfachen und Zeit zu sparen. Die Integration von KI-gestützten Tools ermöglicht eine präzisere und schnellere Verarbeitung finanzieller Daten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-books-editorial.webp" alt="Ein Buchhaltungsteam gleicht Belege und Zahlungen vor dem Monatsabschluss ab" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Zoho Books geeignet?
 
 Zoho Books richtet sich vor allem an kleine und mittlere Unternehmen, Freiberufler sowie Selbstständige, die eine benutzerfreundliche und umfassende Lösung für Buchhaltung und Rechnungsstellung suchen. Es eignet sich für Unternehmen, die ihre Finanzprozesse digitalisieren und automatisieren möchten, ohne dabei auf komplexe ERP-Systeme angewiesen zu sein. Auch für Buchhalter und Steuerberater, die mehrere Mandanten verwalten, bietet Zoho Books praktische Funktionen.

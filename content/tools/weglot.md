@@ -21,6 +21,10 @@ Weglot macht eine bestehende Website mehrsprachig, ohne dass für jede Sprache e
 
 Der schnelle erste Eindruck kann täuschen. Eine maschinell übersetzte Seite ist noch keine gute internationale Seite. Begriffe, Preisangaben, Rechtstexte, Metadaten, Produktnamen, Formulare und Supportwege brauchen jeweils eigene Regeln. Weglot hilft bei der technischen Auslieferung; die Verantwortung für den Inhalt bleibt beim Betreiber.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/weglot-editorial.webp" alt="Redaktion prüft übersetzte Website-Proofs vor dem internationalen Rollout" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Weglot geeignet?
 
 Weglot passt besonders zu Marketing-, E-Commerce- und Webteams, die eine bereits laufende Website in wenigen Zielsprachen testen oder betreiben wollen. Es ist praktisch für WordPress-, Shopify-, Webflow-, Wix- und vergleichbare Websites, aber auch für eigene Frontends, wenn ein klarer Integrationsweg vorhanden ist.

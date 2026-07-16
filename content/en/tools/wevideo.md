@@ -20,6 +20,10 @@ translation: full
 
 WeVideo is a cloud-based video editing platform that lets users create and edit videos easily and flexibly online. The platform offers a user-friendly interface that is suitable for both beginners and experienced video creators. Thanks to cloud technology, projects can be edited and shared anytime and from anywhere.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wevideo-editorial.webp" alt="Film crew assembling a short story together for a projection" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is WeVideo suitable for?
 
 WeVideo is aimed at individuals, educational institutions, and businesses looking for a straightforward video editing solution. The tool is especially suitable for users who do not want to install extensive software and want to work from different devices. Teachers and students also benefit from the collaborative features and intuitive operation. For small and medium-sized businesses, WeVideo offers a flexible way to create marketing videos, training materials, or presentations.

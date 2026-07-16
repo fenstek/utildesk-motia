@@ -17,6 +17,10 @@ translation: full
 
 Sistrix is an SEO platform for visibility, keywords, competitors, links, and technical analysis. Its Visibility Index is a useful trend indicator for a domain's organic presence, not a direct measure of revenue, traffic, or quality. It is therefore most valuable as a starting point for hypotheses checked against Search Console, analytics, and real landing pages.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sistrix-editorial.webp" alt="SEO analysis tracing an anomaly through a map archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Sistrix for?
 
 Sistrix suits SEO teams, content owners, and agencies comparing markets and competitors over time. It is especially useful for larger domains, international directories, and structured content programmes. For a small site with few pages, [Google Search Console](/en/tools/google-search-console/) and sound web analytics are often enough at first.

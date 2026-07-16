@@ -21,6 +21,10 @@ translation: full
 
 WriterDuet is a web-based software solution developed specifically for screenwriters and creatives. The tool enables real-time collaborative writing, making it ideal for teams working together on film, television, or theater projects. With a clear, intuitive interface and extensive features, WriterDuet supports the entire writing process, from the first idea to the final screenplay.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/writerduet-editorial.webp" alt="Shared screenplay handoff between two writers beside a stage" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is WriterDuet suitable for?
 
 WriterDuet is aimed primarily at professional screenwriters, film students, and creatives who write screenplays, plays, or other narrative texts. It is especially well suited for teams that want to collaborate regardless of location, since the platform offers real-time synchronization. Solo writers also benefit from the organization and formatting features that simplify the writing process.

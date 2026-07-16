@@ -23,3 +23,7 @@ Reply.io ist eine leistungsstarke Plattform für automatisiertes Verkaufs- und E
 Bei Reply.io ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.
 
 Reply.io ist hilfreich, wenn es bestehende Arbeit ordnet. Es bleibt schwach, wenn ein unklarer Prozess nur digitalisiert wird und niemand entscheidet, welche Regeln wirklich gelten.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reply-io-editorial.webp" alt="Vertriebsteam übergibt geprüfte Outreach-Karten" loading="lazy" decoding="async" />
+</figure>

@@ -23,6 +23,10 @@ translation: full
 
 Wix with Velo is an extended development platform built on top of the popular Wix website builder. It combines the advantages of no-code tools with the flexibility of custom JavaScript code. This allows developers and creative users to build, automate, and customize complex web applications without relying on external development environments.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wix-mit-velo-editorial.webp" alt="Designer and developer build a dynamic website together" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Wix with Velo for?
 
 Wix with Velo is aimed at a broad range of users:

@@ -14,7 +14,7 @@ price_model: Varies
 description: Deepfake bezeichnet KI-basierte Medienmanipulation. Diese Einordnung erklärt sichere Anwendungsfälle, Rechte, Prüfungen und die Grenzen des aktuellen offiziellen Links.
 updated_at: 2026-07-14
 tags: [ai, video, safety]
-popularity: 57
+popularity: 56
 tier: C
 generated_at: 2026-05-15
 ---

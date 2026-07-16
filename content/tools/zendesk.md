@@ -18,6 +18,10 @@ generated_at: "2026-05-09"
 
 Zendesk ist eine cloudbasierte Kundenservice-Plattform, die Unternehmen dabei unterstützt, den Support effizient zu organisieren und Kundenanfragen über verschiedene Kanäle zu verwalten. Mit integrierten KI-Funktionen und einem benutzerfreundlichen Interface ermöglicht Zendesk eine nahtlose Kommunikation zwischen Support-Teams und Kunden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zendesk-editorial.webp" alt="Ein Supportteam sortiert Anfragen und übergibt einen dringenden Fall" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Zendesk geeignet?
 
 Zendesk richtet sich vor allem an kleine bis große Unternehmen, die ihren Kundenservice digitalisieren und professionalisieren möchten. Besonders geeignet ist die Plattform für Unternehmen mit hohem Anfragevolumen, die mehrere Kommunikationskanäle (E-Mail, Chat, Telefon, Social Media) bedienen wollen. Auch Support-Teams, die Automatisierung und KI-gestützte Lösungen nutzen möchten, profitieren von Zendesk.

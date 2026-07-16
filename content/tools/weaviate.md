@@ -23,3 +23,7 @@ Weaviate ist eine Open-Source-Vector-Datenbank, die speziell für die Verwaltung
 Bei Weaviate entscheidet die Integrationsqualität: Datenflüsse, Berechtigungen, Fehlerfälle und Wartung müssen vor dem produktiven Einsatz sichtbar sein. Wir würden zuerst einen kleinen End-to-End-Prozess bauen, ihn absichtlich scheitern lassen und prüfen, ob Logs, Zuständigkeiten und Rückwege verständlich bleiben.
 
 Weaviate lohnt sich, wenn ein Team Schnittstellen wirklich betreibt und nicht nur verbindet. Ohne Ownership für Änderungen, Limits und Monitoring wird aus Integration schnell ein weiterer stiller Abhängigkeitspunkt.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/weaviate-editorial.webp" alt="Archivfragmente werden über semantische Verbindungen zusammengeführt" loading="lazy" decoding="async" />
+</figure>
