@@ -1521,3 +1521,9 @@ _Last updated: 2026-07-14_
 - Deployed Worker version `ebdbb3c0-23d8-4a51-907d-c36df1625f51`; Pages was not rebuilt or redeployed.
 - Uploaded one content-addressed ChatGPT proof object. Upload/download and direct Worker delivery matched SHA-256 `7137d1d1776dfb0df9bae5fde01ad1b4b85ea711ed102d25c1356efa69d8ce3f`; the response was `200 image/webp`, immutable and marked `X-Utildesk-Asset-Source: r2`.
 - No historical bulk migration or broad production crawl ran. The 1,146 historical objects remain on the verified Pages/frozen fallback until changed naturally.
+
+## 2026-07-16 - Next 10 tool-card illustrations
+
+- Added one distinct 1280x720 WebP editorial illustration to both DE and EN cards for Crisp, Dell Boomi, FLYR, Google Search Console, Microsoft Azure API Management, Playwright, PostgreSQL, Puppeteer, Python and Ren'Py.
+- Generated the artwork with Codex built-in image generation through the ChatGPT subscription, without Gemini or API-key usage; all ten final scenes use different visual directions and contain no logos, readable UI text or watermarks.
+- Registered the batch for future duplicate exclusion and refreshed only the 20 affected content-lastmod entries. Production publication uses the bounded D1/R2 delta workflow and does not rebuild Astro or Pages.
