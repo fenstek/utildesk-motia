@@ -17,6 +17,10 @@ translation: full
 
 Simplenote is a lightweight cross-platform note app for quick text, tags, search, Markdown, and sync. Its value is deliberately low complexity: an idea or list should be captured and found again without a folder tree, database design, or project board. That is different from knowledge management or task management.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/simplenote-editorial.webp" alt="Paper notes being reordered during a weekly review" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Simplenote for?
 
 Simplenote fits personal working notes, short lists, drafts, and lightweight shared text. It is useful when speed and device sync matter more than rich formatting or structured projects. For connected long-term notes, [Obsidian](/en/tools/obsidian/) can be a better fit; for sensitive notes with more control over sync, [Joplin](/en/tools/joplin/) is an alternative.

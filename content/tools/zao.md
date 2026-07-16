@@ -21,6 +21,10 @@ Zao steht für Face-Swap- und Videoeffekte mit hohem Unterhaltungswert, aber auc
 
 Wer Zao einführt, sollte nicht sofort den ganzen Prozess umbauen. Besser ist ein begrenzter Versuch mit klaren Kriterien: Zeitgewinn, Ergebnisqualität, Nacharbeit und Akzeptanz im Team.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zao-editorial.webp" alt="Ein Filmteam hält vor einem Face-Swap-Dreh die Einwilligung an" loading="lazy" decoding="async" />
+</figure>
+
 ## Der praktische Kern
 
 Zao muss in einem echten Beispiel zeigen, ob KI-nahe Face-Swap- und Videoeffekte mit hohem Unterhaltungswert und hohen Datenschutzfragen damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.

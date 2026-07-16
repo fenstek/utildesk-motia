@@ -23,6 +23,10 @@ translation: full
 
 Yesware is a powerful tool specifically designed for sales and marketing teams to boost their productivity. It offers a combination of email tracking, automation, CRM integration, and analytics features that make the sales process more efficient. With Yesware, users can better track, automate, and evaluate their communication to move to closing faster.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/yesware-editorial.webp" alt="Sales conversation with a sealed letter and prepared follow-up mail" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Yesware for?
 
 Yesware is primarily aimed at sales representatives, marketing professionals, and small to medium-sized businesses that want to optimize their sales and communication processes. It is especially useful for teams that communicate heavily by email and want to keep track of customer contacts. Yesware is also a suitable solution for companies that already use CRM systems and want to complement them with automation and analytics features.

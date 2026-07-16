@@ -22,6 +22,10 @@ Xero passt in Workflows, in denen Cloud-Buchhaltung für kleine Unternehmen und 
 
 Ein fairer Test sollte mit echten Rechnungen, Banktransaktionen und Steuerlogik laufen. Dann wird schnell sichtbar, ob Xero den Finanzprozess kleiner Firmen, Agenturen oder Beratungen vereinfacht und wo fachliche Buchhaltungsverantwortung trotzdem bleibt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/xero-editorial.webp" alt="Papierbasierter Buchhaltungs- und Rechnungsworkflow mit Übergabe an ein Teammitglied" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Xero geeignet?
 
 Geeignet ist Xero für Nutzer, die mehr Struktur brauchen, um Rechnungen, Bankabgleich und Finanzübersicht zusammenzuführen. Der Nutzen wird besonders sichtbar, sobald die Frage beantwortet ist, welche Steuerregeln, Bankfeeds und Beraterzugriffe benötigt werden.

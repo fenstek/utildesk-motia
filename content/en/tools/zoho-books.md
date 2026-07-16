@@ -20,6 +20,10 @@ translation: full
 
 Zoho Books is a cloud-based accounting software that helps small and medium-sized businesses manage their finances efficiently. With automated features for invoicing, expense management, and financial reporting, Zoho Books helps simplify accounting processes and save time. The integration of AI-powered tools enables more accurate and faster processing of financial data.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-books-editorial.webp" alt="An accounting team reconciles receipts and payments before month-end close" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Books suitable for?
 
 Zoho Books is aimed primarily at small and medium-sized businesses, freelancers, and self-employed professionals who are looking for a user-friendly and comprehensive solution for accounting and invoicing. It is suitable for companies that want to digitize and automate their financial processes without relying on complex ERP systems. Zoho Books also offers practical features for accountants and tax advisors who manage multiple clients.

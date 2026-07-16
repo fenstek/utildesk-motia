@@ -22,6 +22,10 @@ translation: full
 
 YouCam Perfect is a mobile photo editing app focused on enhancing and beautifying photos with the help of AI technologies. The app offers a wide range of features to quickly and easily optimize photos, apply filters, and create creative effects. It is ideal for users who want to edit their pictures professionally on their smartphones.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/youcam-perfect-editorial.webp" alt="Photographer checks a portrait print beside an edited version" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With YouCam Perfect, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: inputs, roles, result review and follow-up costs are clear before rollout. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

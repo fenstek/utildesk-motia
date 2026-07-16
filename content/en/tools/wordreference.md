@@ -21,6 +21,10 @@ translation: full
 
 WordReference is a comprehensive online dictionary and translation tool that helps users overcome language barriers. It offers fast and accurate translations, extensive dictionary entries, and forums for exchanging ideas with native speakers. It is ideal for students, professionals, and anyone who wants to learn or translate foreign languages.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wordreference-editorial.webp" alt="Two travelers clarify a language meaning beside a dictionary" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is WordReference for?
 
 WordReference is aimed at language learners, translators, teachers, and anyone who regularly uses foreign languages. Whether for study, work, or everyday use, the tool helps with quickly looking up word meanings, synonyms, conjugations, and idiomatic expressions. It is especially useful for people who need a reliable, versatile, and easily accessible language reference.

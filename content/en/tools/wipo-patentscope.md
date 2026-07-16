@@ -16,6 +16,10 @@ WIPO PATENTSCOPE gives researchers, engineers and patent professionals access to
 
 The tool is strongest as a research starting point: broad coverage, advanced search options and official patent data without a paid subscription.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wipo-patentscope-editorial.webp" alt="Patent researchers compare technical drawings in an archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** WIPO PATENTSCOPE is a good fit when engineering, data, and platform teams want to stop improvising a recurring workflow around patents, research, search.

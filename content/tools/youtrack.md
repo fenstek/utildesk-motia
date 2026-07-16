@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 YouTrack ist ein flexibles und leistungsstarkes Tool für Projektmanagement und Issue-Tracking, das speziell für Entwicklerteams und agile Arbeitsmethoden entwickelt wurde. Es unterstützt Teams dabei, Aufgaben effizient zu organisieren, den Fortschritt zu verfolgen und die Zusammenarbeit zu verbessern. Mit intelligenten Features wie anpassbaren Workflows, Zeiterfassung und umfangreichen Suchmöglichkeiten erleichtert YouTrack die Verwaltung komplexer Projekte.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/youtrack-editorial.webp" alt="Werkstatt und Bühne zeigen die Übergabe von Aufgaben in einem Projekt" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei YouTrack ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

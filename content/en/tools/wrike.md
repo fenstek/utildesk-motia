@@ -23,6 +23,10 @@ Wrike helps teams organize projects, tasks, approvals, and resources visibly. It
 
 Suitable for marketing, operations, professional services, agencies, and teams with many parallel projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wrike-editorial.webp" alt="Cross-team project handoff with tasks and approvals" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Wrike for?
 
 Wrike is most useful for teams and individuals that treat a work management platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.

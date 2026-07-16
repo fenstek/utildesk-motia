@@ -18,6 +18,10 @@ generated_at: "2026-05-17"
 
 Workable ist eine umfassende Recruiting-Software, die Unternehmen dabei unterstützt, den gesamten Einstellungsprozess effizient zu gestalten. Von der Veröffentlichung von Stellenanzeigen über das Bewerbermanagement bis hin zur Automatisierung von Routineaufgaben bietet Workable eine benutzerfreundliche Plattform, die Personalabteilungen und HR-Teams entlastet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/workable-editorial.webp" alt="Recruiterin sortiert Bewerbungsunterlagen für Interviews" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Workable ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

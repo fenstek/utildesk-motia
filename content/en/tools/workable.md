@@ -26,6 +26,10 @@ Workable is an all-in-one recruiting software that assists companies in efficien
 With Workable, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
 
 We would test Workable in one small, real scenario first: one real weekly routine with meetings, reminders, handovers and a short review. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/workable-editorial.webp" alt="Recruiter sorts candidate folders for interviews" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Workable for?
 
 Workable is aimed at small and medium-sized businesses as well as larger organizations looking to digitize and optimize their recruiting processes. The tool is especially suitable for HR teams, recruiters, and hiring managers seeking a centralized solution for application and candidate communication management. Agencies and companies with regular hiring needs also benefit from its automation and collaboration features.

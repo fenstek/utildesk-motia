@@ -1,0 +1,74 @@
+{
+  "agent": 6,
+  "generation_source": "codex-subscription-imagegen",
+  "status": "implemented",
+  "dimensions": {
+    "width": 1280,
+    "height": 720
+  },
+  "slugs": [
+    {
+      "slug": "zabbix",
+      "final_path": "content/images/tools/zabbix-editorial.webp",
+      "style": "brutalist model photography",
+      "concept": "An operator traces one amber infrastructure warning through concrete server racks and decides whether to escalate.",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zamzar-ai",
+      "final_path": "content/images/tools/zamzar-ai-editorial.webp",
+      "style": "watercolor reportage",
+      "concept": "Two collaborators compare an original disc and converted document for layout, quality, and downstream workflow safety.",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zao",
+      "final_path": "content/images/tools/zao-editorial.webp",
+      "style": "claymation miniature",
+      "concept": "A film crew pauses a face-swap set at a physical consent checkpoint before allowing the entertaining effect to proceed.",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zencastr",
+      "final_path": "content/images/tools/zencastr-editorial.webp",
+      "style": "watercolor-and-ink documentary reportage",
+      "concept": "A producer coordinates separate remote recording booths and hands the session to backup and publishing.",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zendesk-suite",
+      "final_path": "content/images/tools/zendesk-suite-editorial.webp",
+      "style": "claymation and paper-craft miniature",
+      "concept": "A service counter routes one customer request through mail, phone, and chat while a supervisor checks escalation ownership.",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zendesk-talk",
+      "final_path": "content/images/tools/zendesk-talk-editorial.webp",
+      "style": "nocturnal cinematic still",
+      "concept": "A headset agent routes a difficult night call across a physical cord board while a colleague prepares a callback escalation.",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zendesk",
+      "final_path": "content/images/tools/zendesk-editorial.webp",
+      "style": "painterly gouache",
+      "concept": "A support lead sorts customer cases into priority trays, hands off an urgent case, and updates a shared knowledge binder.",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zeplin",
+      "final_path": "content/images/tools/zeplin-editorial.webp",
+      "style": "screen-print collage",
+      "concept": "Designer, developer, and QA reviewer move physical specs, assets, and spacing guides across a design-to-code handoff table.",
+      "visual_inspection": "passed"
+    },
+    {
+      "slug": "zeppelin",
+      "final_path": "content/images/tools/zeppelin-editorial.webp",
+      "style": "nocturnal cinematic model photography",
+      "concept": "Three researchers connect a shared exploratory notebook to multiple physical analysis stations and an archive thread for reproducibility.",
+      "visual_inspection": "passed"
+    }
+  ]
+}

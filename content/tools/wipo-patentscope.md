@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 WIPO PATENTSCOPE ist eine umfassende Suchplattform der Weltorganisation für geistiges Eigentum (WIPO), die Zugriff auf Millionen von Patenten und Patentdokumenten weltweit bietet. Das Tool ermöglicht es Entwicklern, Forschern und Unternehmen, detaillierte Patentinformationen zu recherchieren, um Innovationen zu fördern und technische Entwicklungen zu verfolgen. Mit einer benutzerfreundlichen Oberfläche und leistungsstarken Suchfunktionen unterstützt PATENTSCOPE bei der Analyse von Patentdaten aus verschiedenen Ländern und Regionen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wipo-patentscope-editorial.webp" alt="Patentforscher vergleichen technische Zeichnungen im Archiv" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei WIPO PATENTSCOPE entscheidet nicht die Trefferzahl, sondern die Nachvollziehbarkeit der Recherche. Suchraum, Quellenqualität, Zitationen und Gegenprüfung müssen sichtbar bleiben, sonst wirkt das Ergebnis schneller belastbar, als es ist. Wir würden mit einer engen Recherchefrage starten und jeden Fund gegen Kontrollquellen, Notizen und Ausschlussgründe prüfen.

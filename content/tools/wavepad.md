@@ -28,6 +28,10 @@ WavePad passt zu Podcastern, Kursproduzenten, kleinen Teams, Voiceover-Workflows
 - Voiceovers für Videos, Kurse oder Präsentationen bearbeiten.
 - Audioformate konvertieren und Lautstärke normalisieren.
 - Kurze Soundclips, Ansagen oder Telefon-/IVR-Audio aufbereiten.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wavepad-editorial.webp" alt="Audioaufnahme wird mit Papierwellen und einer Schnittstelle repariert" loading="lazy" decoding="async" />
+</figure>
 - Fehler, Pausen oder Störgeräusche in Einzeldateien korrigieren.
 
 ## Hauptfunktionen

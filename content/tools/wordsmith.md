@@ -23,6 +23,10 @@ Wordsmith ist vor allem dann spannend, wenn Tempo und Kontrolle zusammenkommen m
 
 Bei Wordsmith lohnt sich ein Blick auf den Alltag nach der ersten Woche. Wenn das Tool dann noch genutzt wird, weil es Arbeit einfacher macht, ist das ein besseres Zeichen als ein starker Ersteindruck.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wordsmith-editorial.webp" alt="Redaktion prüft Datenbausteine für einen Bericht" loading="lazy" decoding="async" />
+</figure>
+
 ## Der praktische Kern
 
 Schreibtools sind dann nützlich, wenn sie Rohmaterial, Varianten und Struktur liefern, ohne die redaktionelle Verantwortung zu verschleiern. Für Wordsmith sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

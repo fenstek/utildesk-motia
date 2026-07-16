@@ -20,6 +20,10 @@ Zeppelin passt in Workflows, in denen notebookbasierte Datenanalyse mit mehreren
 
 Ein fairer Test sollte mit einem echten Notebook, mehreren Datenquellen und einer späteren Wiederholung laufen. So zeigt sich, ob Zeppelin Spark- und SQL-nahe Analysen kollaborativ tragfähig macht oder ob fehlende Versionierung die Ergebnisse schwer reproduzierbar lässt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zeppelin-editorial.webp" alt="Drei Forschende verbinden ein gemeinsames Analyse-Notebook mit Datenproben" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zeppelin steht und fällt die Entscheidung mit Datenmodell, Zugriffen, Kostenkontrolle und Betrieb. Wir würden zuerst einen begrenzten Datenfluss mit echten Volumina, klaren Abfragen und dokumentierten Fehlerfällen prüfen. Eine schnelle Demo sagt wenig, wenn Pflege, Governance und Performance ungeklärt bleiben.

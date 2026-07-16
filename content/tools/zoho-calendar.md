@@ -18,6 +18,10 @@ generated_at: 2026-05-28
 
 Zoho Calendar ist ein vielseitiges Online-Kalendertool, das Nutzern hilft, Termine effizient zu planen und zu verwalten. Es integriert sich nahtlos in die Zoho-Produktpalette und bietet Funktionen zur Terminplanung, Freigabe von Kalendern und Zusammenarbeit im Team. Die intuitive Benutzeroberfläche erleichtert die Organisation von persönlichen und beruflichen Zeitplänen, wodurch die Produktivität gesteigert wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-calendar-editorial.webp" alt="Kolleginnen und Kollegen legen einen gemeinsamen Termin fest" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoho Calendar ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

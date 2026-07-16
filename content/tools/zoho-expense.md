@@ -20,6 +20,10 @@ mentionedIn: ["ki-tools-eu-datenverarbeitung-kleine-unternehmen", "rechnungen-au
 
 Zoho Expense ist eine cloudbasierte Lösung zur Verwaltung von Geschäftsausgaben, die Unternehmen dabei unterstützt, ihre Spesenabrechnungen effizient zu erfassen, zu verfolgen und zu kontrollieren. Die Software nutzt Automatisierung und KI-Technologien, um manuelle Prozesse zu reduzieren, die Einhaltung von Firmenrichtlinien sicherzustellen und die finanzielle Transparenz zu erhöhen. Zoho Expense eignet sich besonders für kleine bis mittelgroße Unternehmen, die ihre Ausgabenprozesse digitalisieren möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-expense-editorial.webp" alt="Eine Reiseausgabe wird geprüft und zur Erstattung freigegeben" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Zoho Expense geeignet?
 
 Zoho Expense richtet sich an Unternehmen jeder Größe, die eine einfache und automatisierte Lösung zur Spesenverwaltung suchen. Besonders geeignet ist die Software für:

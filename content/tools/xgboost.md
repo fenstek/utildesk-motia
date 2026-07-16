@@ -21,6 +21,10 @@ XGBoost ist vor allem dann spannend, wenn Tempo und Kontrolle zusammenkommen mü
 
 Ein sinnvoller Test beginnt bei XGBoost nicht mit einer Feature-Liste, sondern mit einem echten Arbeitsfall. Erst wenn klar ist, welches Material hineingeht, wer das Ergebnis prüft und wo es weiterverwendet wird, zeigt sich der praktische Wert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/xgboost-editorial.webp" alt="Handwerkliche Versuchsanordnung zum Abwägen von Trainingsdaten und Modellentscheidungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Der praktische Kern
 
 Entwicklerwerkzeuge müssen nicht glänzen, sie müssen verlässlich sein: reproduzierbar, dokumentierbar und gut in bestehende Abläufe integrierbar. Für XGBoost sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

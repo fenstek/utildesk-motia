@@ -20,6 +20,10 @@ translation: full
 
 Wink is an AI-powered design tool that simplifies the creation of images and graphics. It is aimed at designers, creatives, and anyone who wants to create visual content quickly and efficiently. By combining an intuitive interface with powerful AI features, Wink makes it possible to create designs flexibly without requiring extensive prior knowledge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wink-editorial.webp" alt="Creative team handing off a reviewed image variant for final approval" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Wink suitable for?
 
 Wink is suitable for a broad audience:

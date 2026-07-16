@@ -1,0 +1,71 @@
+{
+  "agent": 3,
+  "slugs": [
+    {
+      "slug": "wipo-patentscope",
+      "final_path": "content/images/tools/wipo-patentscope-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Japanese woodblock print",
+      "concept": "Two researchers compare patent drawings in a wooden archive, tracing prior art from a selected drawer to a defensible research handoff."
+    },
+    {
+      "slug": "wit-ai",
+      "final_path": "content/images/tools/wit-ai-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "cyanotype documentary collage",
+      "concept": "A developer and voice tester sort ambiguous utterance cards around a microphone, turning an edge case into a reviewed intent."
+    },
+    {
+      "slug": "wix-mit-velo",
+      "final_path": "content/images/tools/wix-mit-velo-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "mixed-media magazine collage",
+      "concept": "Designer and developer connect a hand-cut storefront facade to a physical data drawer, showing visual prototyping becoming a dynamic site."
+    },
+    {
+      "slug": "woebot",
+      "final_path": "content/images/tools/woebot-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "atmospheric location photography",
+      "concept": "In a misty greenhouse, a participant takes one manageable step along a stone path while a facilitator keeps the human support boundary visible."
+    },
+    {
+      "slug": "wombo-ai",
+      "final_path": "content/images/tools/wombo-ai-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "crafted miniature diorama",
+      "concept": "An artist chooses among three handmade creature variants, making human curation the final step in an image-generation workflow."
+    },
+    {
+      "slug": "wordreference",
+      "final_path": "content/images/tools/wordreference-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Japanese woodblock print",
+      "concept": "At a windswept ferry terminal, a traveler and language mediator resolve a near-synonym by comparing blank phrase cards with a reference dictionary."
+    },
+    {
+      "slug": "wordsmith",
+      "final_path": "content/images/tools/wordsmith-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "mixed-media magazine collage",
+      "concept": "Editors pour colored data tiles into a movable-type tray and hold back one exaggerated tile during proofing of a recurring report."
+    },
+    {
+      "slug": "wordtune",
+      "final_path": "content/images/tools/wordtune-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "atmospheric location photography",
+      "concept": "On a sunlit train, an editor compares tone variants and hands a clearer human-approved draft to a colleague."
+    },
+    {
+      "slug": "workable",
+      "final_path": "content/images/tools/workable-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "cinematic still photography",
+      "concept": "A recruiter sorts candidate folders into workflow trays while hiring managers review structured interview cards and one pending human decision."
+    }
+  ],
+  "generation_source": "codex-subscription-imagegen",
+  "visual_inspection": "passed: all nine final WebP files visually inspected; distinct scenes, no readable text, logos, watermarks or fake UI",
+  "status": "implemented"
+}

@@ -21,6 +21,10 @@ Bei Zencastr lohnt sich ein nüchterner Blick. Das Tool wirkt am stärksten, wen
 
 Zencastr sollte dort getestet werden, wo heute Reibung entsteht: Übergaben, Varianten, Korrekturen, Suche oder Produktion. Wenn diese Stellen sauberer werden, passt das Werkzeug in den Ablauf.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zencastr-editorial.webp" alt="Ein Produzent übergibt eine Remote-Aufnahme zur Sicherung" loading="lazy" decoding="async" />
+</figure>
+
 ## Der praktische Kern
 
 Audio wirkt sofort ehrlich: Rauschen, Timing, Stimme und Rechte fallen schneller auf, als einem lieb ist.

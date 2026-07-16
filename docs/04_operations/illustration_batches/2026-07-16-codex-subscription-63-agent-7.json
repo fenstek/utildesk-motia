@@ -1,0 +1,75 @@
+{
+  "agent": 7,
+  "slugs": [
+    {
+      "slug": "zest-ai",
+      "final_path": "content/images/tools/zest-ai-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Bauhaus paper collage",
+      "concept": "Data stewards sort a sensitive dataset into approved and held-back streams before a reviewed AI analysis."
+    },
+    {
+      "slug": "zmoji",
+      "final_path": "content/images/tools/zmoji-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Detailed gouache editorial illustration",
+      "concept": "A creator chooses an expressive personalized avatar sticker for a casual community message."
+    },
+    {
+      "slug": "zoho-books",
+      "final_path": "content/images/tools/zoho-books-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Embroidered textile scene",
+      "concept": "A small accounting team routes receipts, invoice evidence and payment reconciliation to a final human month-end review."
+    },
+    {
+      "slug": "zoho-calendar",
+      "final_path": "content/images/tools/zoho-calendar-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Warm documentary photography",
+      "concept": "Clinic colleagues resolve an overlapping appointment by moving blank color cards into a shared time plan."
+    },
+    {
+      "slug": "zoho-creator",
+      "final_path": "content/images/tools/zoho-creator-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Crafted miniature-world photography",
+      "concept": "Human makers test a physical no-code process with gates, pipes and a clear handoff from request to result."
+    },
+    {
+      "slug": "zoho-crm",
+      "final_path": "content/images/tools/zoho-crm-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Painterly oil-and-gouache scene",
+      "concept": "Sales colleagues qualify seedlings as leads in a greenhouse and hand the promising case to its next owner."
+    },
+    {
+      "slug": "zoho-desk",
+      "final_path": "content/images/tools/zoho-desk-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Cinematic documentary still",
+      "concept": "A repair-shop support specialist escalates a difficult customer case and hands the case folder to a technician."
+    },
+    {
+      "slug": "zoho-expense",
+      "final_path": "content/images/tools/zoho-expense-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Two-color linocut printmaking",
+      "concept": "A field worker submits a travel receipt while a finance reviewer applies a human approval seal and begins reimbursement."
+    },
+    {
+      "slug": "zoho-notebook",
+      "final_path": "content/images/tools/zoho-notebook-editorial.webp",
+      "dimensions": "1280x720",
+      "style": "Watercolor and colored-pencil painterly scene",
+      "concept": "Travelers organize a sketched idea and pass it between a paper notebook, a camera and a shared handoff."
+    }
+  ],
+  "generation_source": "codex-subscription-imagegen",
+  "visual_inspection": {
+    "status": "passed",
+    "checked": 9,
+    "notes": "All nine outputs were visually inspected; one calendar variant was regenerated to remove readable-looking clock and schedule marks."
+  },
+  "status": "implemented"
+}

@@ -20,6 +20,10 @@ translation: full
 
 Zest AI is an innovative AI platform specialized in providing data analytics and automation solutions for businesses. With advanced algorithms, Zest AI helps efficiently evaluate large volumes of data and make informed decisions. The platform is particularly well suited for organizations that want to optimize their business processes with artificial intelligence without relying on complex programming.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zest-ai-editorial.webp" alt="Data stewards sort inputs for a reviewed AI analysis" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zest AI for?
 
 Zest AI is aimed at companies across a wide range of industries that want to automate their data analysis and decision-making. The solution is especially useful for:

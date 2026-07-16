@@ -22,6 +22,10 @@ Zao is not a magic button, but a tool with a fairly clear place: AI-adjacent fac
 
 When introducing Zao, avoid rebuilding the whole process at once. A limited pilot with clear criteria for time saved, quality, review effort, and team acceptance is more useful.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zao-editorial.webp" alt="A film team pauses a face-swap shoot for consent" loading="lazy" decoding="async" />
+</figure>
+
 ## Practical core
 
 Creative tools save time when they make material malleable. They hurt when every result looks like the same template or filter.

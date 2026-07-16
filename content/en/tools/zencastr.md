@@ -25,6 +25,10 @@ Zencastr deserves a practical look. It is strongest when judged along a real wor
 
 Zencastr should be tested where friction already exists: handoffs, variants, corrections, search, or production. If those points become cleaner, the tool has a plausible place in the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zencastr-editorial.webp" alt="A producer hands off a remote recording for backup" loading="lazy" decoding="async" />
+</figure>
+
 ## Practical core
 
 Audio is brutally honest: noise, timing, voice, and rights show up faster than one expects.

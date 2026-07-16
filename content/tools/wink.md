@@ -18,6 +18,10 @@ generated_at: "2026-05-06"
 
 Wink ist ein Design-Tool, das auf künstlicher Intelligenz basiert und die Erstellung von Bildern und Grafiken vereinfacht. Es richtet sich an Designer, Kreative und alle, die visuelle Inhalte schnell und effizient erstellen möchten. Mit einer Mischung aus intuitiver Bedienung und leistungsfähigen KI-Funktionen ermöglicht Wink eine flexible Gestaltung von Designs, ohne dass umfangreiche Vorkenntnisse erforderlich sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wink-editorial.webp" alt="Kreativteam übergibt eine geprüfte Bildvariante zur finalen Freigabe" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Wink zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

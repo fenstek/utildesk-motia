@@ -22,6 +22,10 @@ translation: full
 
 Wit.ai is a powerful platform for voice and text processing that enables developers to create intelligent chatbots and voice controls. The platform uses natural language processing (NLP) to understand and respond to user input. Wit.ai provides APIs that integrate well with a variety of applications and supports multiple languages. This allows companies and developers to build innovative solutions that respond to voice commands and automate interactions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wit-ai-editorial.webp" alt="Developers review voice examples beside a microphone" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Wit.ai for?
 
 Wit.ai is aimed primarily at developers, start-ups, and companies that want to integrate voice or text interfaces into their products. The platform is especially suitable for:

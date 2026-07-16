@@ -22,6 +22,10 @@ translation: full
 
 Writer is an AI-powered writing tool designed to help create text more efficiently, consistently, and with higher quality. It supports users in drafting content faster, minimizing errors, and improving writing style. With a combination of automated text generation, correction assistance, and customization options, Writer is suitable for a wide range of use cases in both professional and personal settings.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/writer-editorial.webp" alt="Editorial review of a branded draft before approval" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Writer suitable for?
 
 Writer is aimed at individuals and businesses that regularly need to create text and want intelligent support in the process. This includes:

@@ -25,6 +25,10 @@ Zamzar is best known as an online file converter and, in AI contexts, is often r
 
 In conversion, though, fast is not the same as careless. File contents, quality loss, layout fidelity, and privacy should be checked before upload, especially when customer documents or confidential content are involved.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zamzar-ai-editorial.webp" alt="Two people compare an original and converted document print" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zamzar AI suitable for?
 
 Zamzar is suitable for individuals, office teams, support, content production, and occasional format changes. For large batch processes, confidential documents, or automated enterprise pipelines, local tools, APIs, or controlled converters are often the better choice.

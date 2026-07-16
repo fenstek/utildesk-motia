@@ -23,6 +23,10 @@ updated_at: 2026-06-11
 
 Workato is an automation and integration platform for organizations that want to connect SaaS processes, data flows and business workflows systematically. Compared with simpler automation tools, Workato focuses more on controlled, cross-team enterprise processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/workato-editorial.webp" alt="Controlled handoff of business processes between connected systems" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Workato for?
 
 - Operations, IT and RevOps teams with many SaaS systems.

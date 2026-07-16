@@ -25,6 +25,10 @@ WavePad is a versatile audio editing software that is suitable for both simple s
 With WavePad, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: inputs, roles, result review and follow-up costs are clear before rollout. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
 
 We would test WavePad in one small, real scenario first: one limited work case with realistic data, clear ownership and a visible result. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wavepad-editorial.webp" alt="Audio waveform being repaired by hand at an editing bench" loading="lazy" decoding="async" />
+</figure>
 ## Who is WavePad suitable for?
 
 WavePad is aimed at a broad audience: from hobby musicians and podcasters to teachers and students, as well as professional sound engineers. The software is especially suitable for anyone looking for an intuitive solution for editing audio recordings without having to learn complicated programs. It also offers a practical and efficient solution for users who want to create audio content for videos, podcasts, or other digital media.

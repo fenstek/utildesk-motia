@@ -24,6 +24,10 @@ Weaviate is an open-source vector database designed specifically for managing an
 
 Weaviate is primarily aimed at companies and developers who want to efficiently search and analyze large volumes of unstructured data such as text, images, or audio content. The solution is especially relevant for industries such as e-commerce, media, research, or IT, where semantic search and AI-powered data analysis are essential. Teams that want to integrate machine learning models and build their own AI applications also benefit from Weaviate's flexible architecture.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/weaviate-editorial.webp" alt="Archive fragments connected by semantic relationships" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Vector-based database:** Storage and management of data in vector format for semantic search.

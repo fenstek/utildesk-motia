@@ -23,3 +23,7 @@ Der Waves L2 Ultramaximizer ist ein professionelles Audio-Tool, das vor allem f�
 Bei Waves L2 Ultramaximizer zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.
 
 Waves L2 Ultramaximizer ist stark, wenn es wiederkehrende Medienarbeit beschleunigt und trotzdem klare Rechte- und Qualitätsregeln respektiert. Riskant wird es, wenn Quellen, Lizenzen oder finale Abnahme offen bleiben.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/waves-l2-ultramaximizer-editorial.webp" alt="Finale Tonabnahme im leeren Kino vor der Auslieferung" loading="lazy" decoding="async" />
+</figure>

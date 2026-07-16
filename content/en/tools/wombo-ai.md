@@ -20,6 +20,10 @@ translation: full
 
 Wombo AI is an innovative AI-powered application that allows users to create impressive digital artwork from simple inputs. The app combines artificial intelligence with creative algorithms to generate images in different styles within seconds. Wombo AI is aimed primarily at users who want to create unique graphics without in-depth design knowledge, whether for social media, personal projects, or inspiration.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wombo-ai-editorial.webp" alt="Artist selects one character from several image ideas" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Wombo AI suitable for?
 
 Wombo AI is ideal for creatives, social media users, content creators, and anyone who wants to generate artistic images quickly and easily. Even people without experience in graphic design or digital art benefit from the simple interface and the wide range of style options. Mobile availability also makes the app attractive for use on the go. Companies and marketing teams can use Wombo AI to create visual content with minimal effort, although the results may vary depending on the desired level of detail and quality.

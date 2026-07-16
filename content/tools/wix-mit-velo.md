@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Wix mit Velo ist eine erweiterte Entwicklungsplattform, die auf dem beliebten Website-Builder Wix basiert. Sie kombiniert die Vorteile von No-Code-Tools mit der Flexibilität von benutzerdefiniertem JavaScript-Code. So können Entwickler und kreative Anwender komplexe Webanwendungen erstellen, automatisieren und individuell anpassen – ohne auf externe Entwicklungsumgebungen angewiesen zu sein.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wix-mit-velo-editorial.webp" alt="Designer und Entwickler bauen gemeinsam eine dynamische Website" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Wix mit Velo zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

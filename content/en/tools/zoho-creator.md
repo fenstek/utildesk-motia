@@ -21,6 +21,10 @@ translation: full
 
 Zoho Creator is a powerful no-code platform for building custom business applications and automating processes. It enables users to create tailored apps without deep programming knowledge, helping businesses digitize and optimize their workflows. The platform is aimed at organizations of all sizes that want to increase productivity and replace manual tasks with automated workflows.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-creator-editorial.webp" alt="A team tests a hand-built no-code process" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Creator suitable for?
 
 Zoho Creator is especially well suited for small and medium-sized businesses that want to develop their own applications quickly and flexibly without relying on external developers. IT teams and developers also benefit from the platform, as they can implement complex automations and integrations with minimal effort. Across industries, Zoho Creator is suitable for anyone who wants to digitize processes, manage data centrally, and automate workflows - for example in sales, HR, logistics, or customer service.

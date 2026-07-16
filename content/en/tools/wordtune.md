@@ -21,6 +21,10 @@ translation: full
 
 Wordtune is an AI-powered writing tool that helps users make their text clearer, more precise, and more engaging. The software uses modern natural language processing algorithms to suggest alternative phrasings, improvements, and rewrites. Wordtune is suited to a wide range of text types, from emails and blog posts to academic papers, helping boost productivity and creativity while writing.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wordtune-editorial.webp" alt="Editor hands over a revised draft on a train" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Wordtune suitable for?
 
 Wordtune is aimed at a broad audience, including students, professionals, content creators, marketing experts, and anyone who writes regularly. The tool is especially valuable for people who want to improve their writing skills or for whom English is not their native language. Teams that want to maintain consistent and professional communication standards also benefit from Wordtune's features.

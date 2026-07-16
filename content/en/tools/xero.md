@@ -25,6 +25,10 @@ Xero fits workflows where cloud accounting for small businesses and firms is not
 
 For a fair test, demo data is rarely enough. A real mini-workflow in this use case is better: for small companies, agencies, and consultants with a digital finance process. That also reveals the small red flag: incorrect coding does not replace accounting responsibility.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/xero-editorial.webp" alt="Paper-based bookkeeping and invoice workflow handed to a team member" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Xero suitable for?
 
 Xero is suitable for users who need more structure to bring invoices, bank reconciliation, and financial visibility together. The benefit becomes especially clear once the question of which tax rules, bank feeds, and advisor access are needed has been answered.

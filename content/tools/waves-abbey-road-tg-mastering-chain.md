@@ -23,3 +23,7 @@ Die Waves Abbey Road TG Mastering Chain ist ein hochwertiges Audio-Plugin, das d
 Bei Waves Abbey Road TG Mastering Chain zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.
 
 Waves Abbey Road TG Mastering Chain ist stark, wenn es wiederkehrende Medienarbeit beschleunigt und trotzdem klare Rechte- und Qualitätsregeln respektiert. Riskant wird es, wenn Quellen, Lizenzen oder finale Abnahme offen bleiben.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/waves-abbey-road-tg-mastering-chain-editorial.webp" alt="Toningenieur führt einen Mix durch eine analoge Mastering-Kette" loading="lazy" decoding="async" />
+</figure>

@@ -21,6 +21,10 @@ translation: full
 
 Wysa is an AI-powered chatbot designed specifically to help people manage mental health challenges and support their emotional well-being. The app combines evidence-based therapeutic techniques with artificial intelligence to offer users anonymous, accessible self-help around the clock. Wysa is increasingly being used as a complementary tool in healthcare and mental health settings.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wysa-editorial.webp" alt="Quiet self-help moment with a clear path to professional support" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Wysa suitable for?
 
 Wysa is aimed at people looking for support with stress, anxiety, depression, or other mental health burdens, but who may not have direct access to professional therapy or want to supplement it. The app is ideal for people who:

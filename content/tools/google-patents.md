@@ -10,7 +10,7 @@ category: AI Research
 price_model: Kostenlos
 tags: [research, patents, search, innovation]
 official_url: "https://patents.google.com/"
-popularity: 47
+popularity: 48
 tier: C
 lastReviewed: 2026-07-13
 ---

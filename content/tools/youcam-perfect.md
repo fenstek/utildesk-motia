@@ -18,6 +18,10 @@ generated_at: "2026-05-03"
 
 YouCam Perfect ist eine mobile Foto- und Beauty-App für schnelle Portraitbearbeitung, Filter und Social-Media-Bilder. Sie ist auf sichtbare visuelle Aufwertung ausgelegt, nicht auf neutrale Dokumentation.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/youcam-perfect-editorial.webp" alt="Fotografin prüft einen Portraitabzug mit Lupe und bearbeiteter Variante" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist YouCam Perfect geeignet?
 
 Die App passt zu Creators, privaten Nutzern, kleinen Shops und Social-Media-Teams, die Portraits oder Lifestyle-Bilder direkt am Smartphone bearbeiten möchten. Für professionelle Retusche, Markenproduktion oder dokumentarische Bilder ist mehr Kontrolle nötig.

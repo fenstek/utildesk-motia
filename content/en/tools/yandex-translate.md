@@ -23,6 +23,10 @@ Yandex Translate is an online translator for quick translations between many lan
 
 As with all machine translators, the output is a suggestion, not a verdict. The more important the text, the more likely it needs human review, especially for law, medicine, contracts, brand voice, or sensitive political contexts.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/yandex-translate-editorial.webp" alt="Three travelers clarify a handoff with a translated document at a train platform" loading="lazy" decoding="async" />
+</figure>
+
 ## For whom is Yandex.Translate suitable?
 
 Yandex Translate is suitable for quick everyday translations, language comparison, private research, and simple text drafts. Companies should pay particular attention to privacy, availability, compliance, and regional requirements before using it.

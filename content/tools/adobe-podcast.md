@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Freemium
 tags: [audio, podcast, speech-enhancement, ai]
 official_url: "https://podcast.adobe.com/"
-popularity: 81
+popularity: 97
 tier: D
 generated_at: 2026-05-16
 lastReviewed: 2026-07-13

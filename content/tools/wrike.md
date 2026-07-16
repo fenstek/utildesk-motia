@@ -21,6 +21,10 @@ Wrike hilft Teams, Projekte, Aufgaben, Freigaben und Ressourcen sichtbar zu orga
 
 Geeignet für Marketing, Operations, Professional Services, Agenturen und Teams mit vielen parallelen Projekten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wrike-editorial.webp" alt="Teamübergreifende Projektübergabe mit Aufgaben und Freigaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Wrike geeignet?
 
 Wrike eignet sich für Teams und Organisationen, die Projekte, Aufgaben, Ressourcen, Freigaben und Reporting zentraler steuern möchten. Besonders passend ist es für Marketing, Operations, Professional Services und teamübergreifende Arbeit, bei der Abhängigkeiten sichtbar werden müssen.

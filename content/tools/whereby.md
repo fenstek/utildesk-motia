@@ -18,6 +18,10 @@ generated_at: "2026-05-06"
 
 Whereby ist eine benutzerfreundliche Videokonferenzplattform, die speziell für einfache und schnelle Online-Meetings entwickelt wurde. Ohne komplexe Software-Installationen oder Anmeldung können Teilnehmer direkt über ihren Browser an Meetings teilnehmen. Mit Fokus auf Flexibilität und intuitive Bedienung unterstützt Whereby Teams und Einzelpersonen bei der effektiven Kommunikation und Zusammenarbeit – ideal für Remote-Arbeit, Kundenmeetings oder schnelle Abstimmungen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/whereby-editorial.webp" alt="Moderation verbindet ein Meeting über eine Kamera mit einem entfernten Gast" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Whereby ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

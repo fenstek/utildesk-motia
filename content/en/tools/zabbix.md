@@ -22,6 +22,10 @@ Zabbix deserves a practical look. It is strongest when judged along a real workf
 
 A fair practical test for Zabbix is simple: use a real example, define the goal, and compare the result with the current workflow. That is where useful help separates from tool curiosity.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zabbix-editorial.webp" alt="An operator traces one warning signal through a server room" loading="lazy" decoding="async" />
+</figure>
+
 ## Practical core
 
 Developer tools do not need to shine; they need to be reliable: reproducible, documentable, and easy to integrate into existing flows.

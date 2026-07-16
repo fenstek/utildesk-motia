@@ -20,6 +20,10 @@ translation: full
 
 YouChat is an AI-based chatbot designed to help users with information searches, writing, and communication. With natural language processing, YouChat delivers fast and accurate answers to a wide range of questions and supports both personal and professional everyday use. The tool is accessible through an intuitive user interface and offers a combination of free basic use and advanced features in the premium model.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/youchat-editorial.webp" alt="People review blank conversation cards together and mark an answer" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is YouChat suitable for?
 
 YouChat is aimed at a broad audience, including:
