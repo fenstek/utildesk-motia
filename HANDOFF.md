@@ -299,7 +299,7 @@
 - Kill switches are independent: `content-runtime:tools`, `content-runtime:tool-shell`, and the pre-existing Ratgeber switch. If a tool-detail mismatch appears, turn off only tools; if homepage/index/category/tag fails, turn off only tool-shell; never change Ratgeber as part of either rollback.
 - Frozen recovery remains tag `tool-runtime-fallback-20260714`, archive `site/.runtime/backups/20260715T140213Z/pages-frozen-7a4190c4.tar.zst`, and fallback deployment `44f4f878`.
 - Production live scans are capped by `docs/04_operations/tool_runtime_live_request_ledger_2026-07.json`. Live `--all`, 2,456-route captures and recursive resource crawls are forbidden.
-- R2 is not enabled in the owning account. Keep production on verified Pages/frozen assets and block changed asset releases until account-owner enablement.
+- R2 is enabled in the owning account. Bucket `utildesk-tool-assets` is Standard/WEUR and production Worker binding `TOOL_ASSETS` is active. Use it for new or changed illustrations; historical objects may remain on the verified Pages/frozen fallback.
 
 
 ## 2026-05-12 Video AI tools / Ratgeber publication handoff
