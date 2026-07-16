@@ -23,7 +23,7 @@ Simplenote is a lightweight cross-platform note app for quick text, tags, search
 
 ## Who is Simplenote for?
 
-Simplenote fits personal working notes, short lists, drafts, and lightweight shared text. It is useful when speed and device sync matter more than rich formatting or structured projects. For connected long-term notes, [Obsidian](/en/tools/obsidian/) can be a better fit; for sensitive notes with more control over sync, [Joplin](/en/tools/joplin/) is an alternative.
+Simplenote fits personal working notes, short lists, drafts, and lightweight shared text. It is useful when speed and device sync matter more than rich formatting or structured projects. For connected long-term notes, [Obsidian](/en/tools/obsidian/) can be a better fit; for richer notebooks and web clipping, [Evernote](/en/tools/evernote/) is an alternative.
 
 ## A workable note practice
 
@@ -40,9 +40,9 @@ Convenient cloud sync does not mean sensitive content belongs in the app. Review
 ## Alternatives to Simplenote
 
 - [Obsidian](/en/tools/obsidian/): for local, linked knowledge bases and flexible structure.
-- [Joplin](/en/tools/joplin/): open source with more focus on control and encryption.
+- [Evernote](/en/tools/evernote/): for richer notebooks, attachments, and web clipping.
 - [Microsoft OneNote](/en/tools/microsoft-onenote/): for richly formatted notebooks and Microsoft integration.
-- [Notion](/en/tools/notion/): for team databases, documentation, and processes.
+- [Zoho Notebook](/en/tools/zoho-notebook/): for visually organized note cards and cross-device capture.
 
 ## Editorial assessment
 

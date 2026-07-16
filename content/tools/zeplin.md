@@ -61,7 +61,7 @@ Die Kosten hängen von Teamgröße, Projekten und Handoff-Anforderungen ab. Der 
 ## Alternativen zu Zeplin
 
 - [Figma](/tools/figma/): breiter als Design-, Prototyping- und Dev-Mode-Zentrum.
-- [Adobe XD](/tools/adobe-xd/): klassische UI-/Prototyping-Alternative in Adobe-Umgebungen.
+- [Framer](/tools/framer/): verbindet visuelles Design, Prototyping und die Veröffentlichung interaktiver Websites.
 - [Sketch](/tools/sketch/): stark für macOS-nahe UI-Design-Workflows.
 - [Lunacy](/tools/lunacy/): leichter und zugänglich für Design-Dateien und UI-Arbeit.
 - [Marvel](/tools/marvel/): fokussiert auf Prototyping und einfache Designübergaben.
@@ -82,7 +82,7 @@ Zeplin passt weniger gut, wenn Zuständigkeiten, Datenqualität oder Freigaben n
 
 ### Welche Alternative sollte zuerst verglichen werden?
 
-Das hängt vom Engpass ab. Wenn der Engpass einfacher, günstiger oder stärker spezialisiert ist, lohnt zuerst ein Blick auf Figma oder Adobe XD.
+Das hängt vom Engpass ab. Wenn der Engpass einfacher, günstiger oder stärker spezialisiert ist, lohnt zuerst ein Blick auf Figma oder Framer.
 
 ### Worauf sollte man beim Rollout achten?
 
