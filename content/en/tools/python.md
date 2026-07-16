@@ -23,7 +23,7 @@ Python is a general-purpose programming language especially common in automation
 
 ## Who is Python for?
 
-Python suits teams turning scripts into dependable services, building data pipelines, integrating APIs, or embedding models and agents in products. The language is approachable for beginners, but design, testing, and operations remain professional work in production. Compute-intensive, latency-critical, or deeply mobile applications may be better served by [Go](/en/tools/go/), Java, or native components.
+Python suits teams turning scripts into dependable services, building data pipelines, integrating APIs, or embedding models and agents in products. The language is approachable for beginners, but design, testing, and operations remain professional work in production. Compute-intensive, latency-critical, or deeply mobile applications may be better served by Go, Java, or native components.
 
 ## The right first production use
 
@@ -43,10 +43,10 @@ Type hints, formatters, linters, and automated tests make dynamic code easier to
 
 ## Alternatives to Python
 
-- [JavaScript](/en/tools/javascript/): when one language for browser and server is useful.
-- [Go](/en/tools/go/): for compact concurrent services with simple deployment.
-- [Java](/en/tools/java/): for large enterprise systems and a statically typed JVM landscape.
-- [R](/en/tools/r/): when statistical analysis and research clearly outweigh general software engineering.
+- JavaScript: when one language for browser and server is useful.
+- Go: for compact concurrent services with simple deployment.
+- Java: for large enterprise systems and a statically typed JVM landscape.
+- R: when statistical analysis and research clearly outweigh general software engineering.
 
 ## Editorial assessment
 
