@@ -408,6 +408,26 @@
         "https://api.cloudflare.com/client/v4"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T07:39:22.589Z",
+      "mode": "production-r2-enable",
+      "command": "create/info utildesk-tool-assets, deploy Worker binding, upload/get one bounded proof object, one direct smoke",
+      "estimate": {
+        "bucketCreate": 5,
+        "bucketInfo": 5,
+        "workerDeploy": 10,
+        "objectPutGet": 4,
+        "directSmoke": 1,
+        "cliOverhead": 5,
+        "total": 30
+      },
+      "worstCaseRequests": 30,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
