@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-16_
 
+## 2026-07-16 - Nine final tool-card illustrations
+
+- Generated nine distinct narrative illustrations in-chat with Codex subscription image generation, without Gemini or external API calls: Zoho Office Suite, Zoho Social, Zoom Phone, Zoho People, Zoho Sheet, Zoho Workplace, Zoho Writer, Zoho Zia and Zulip.
+- Normalized every asset to `1280x720` WebP and inserted one shared figure into each DE/EN card with language-specific alt text. Existing card copy, FAQs and alternatives were preserved.
+- Registered the batch in `docs/04_operations/tool_card_illustration_registry.json` and `docs/04_operations/illustration_batches/2026-07-16-codex-chat-style-variety-9.json`.
+
 ## 2026-07-16 - 63 tool-card illustration runtime release
 
 - Integrated seven isolated OptiPlex Luna batches produced through the Codex subscription without Gemini or API billing: 63 distinct 1280x720 WebP illustrations, 126 paired DE/EN card references, batch manifests and the central illustration registry.

@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Zoho Social ist eine umfassende Social-Media-Management-Plattform, die Unternehmen und Marketingteams dabei unterstützt, ihre Online-Präsenz effizient zu verwalten, Inhalte zu planen und die Performance in sozialen Netzwerken zu analysieren. Mit einer benutzerfreundlichen Oberfläche und vielfältigen Funktionen richtet sich das Tool an Unternehmen jeder Größe, die ihre Social-Media-Strategie professionalisieren möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-social-editorial.webp" alt="Redaktionelle Illustration zu Zoho Social: Social-Media-Team und vernetzte Gespräche" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoho Social steht und fällt die Entscheidung mit Datenmodell, Zugriffen, Kostenkontrolle und Betrieb. Wir würden zuerst einen begrenzten Datenfluss mit echten Volumina, klaren Abfragen und dokumentierten Fehlerfällen prüfen. Eine schnelle Demo sagt wenig, wenn Pflege, Governance und Performance ungeklärt bleiben.

@@ -20,6 +20,10 @@ translation: full
 
 Zoho Workplace is a comprehensive office suite designed specifically for productive collaboration and efficient work in businesses. The platform combines various applications such as email, document editing, presentations, and team communication in a unified environment. Thanks to integrated AI features, Zoho Workplace helps teams streamline workflows and work more productively.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-workplace-editorial.webp" alt="Editorial illustration for Zoho Workplace: shared workspace for teams" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Workplace suitable for?
 
 Zoho Workplace is aimed primarily at small and medium-sized businesses looking for a cost-effective and versatile solution for office communication and collaboration. Teams and organizations that value a cloud-based platform also benefit from its flexible use and integrated AI tools. Educational institutions and freelancers can also use Zoho Workplace depending on their needs.

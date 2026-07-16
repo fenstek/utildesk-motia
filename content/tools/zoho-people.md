@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Zoho People ist eine umfassende cloudbasierte HR-Softwarelösung, die Unternehmen dabei unterstützt, ihre Personalverwaltung und People Operations effizient zu gestalten. Die Plattform kombiniert Automatisierung, Self-Service-Funktionen und KI-gestützte Tools, um HR-Prozesse wie Zeiterfassung, Urlaubsverwaltung, Leistungsmanagement und Mitarbeiterdatenverwaltung zu optimieren. Zoho People richtet sich an Unternehmen unterschiedlicher Größe und Branchen, die ihre Human-Capital-Management-Aufgaben digitalisieren und vereinfachen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-people-editorial.webp" alt="Redaktionelle Illustration zu Zoho People: Menschen und HR-Prozesse im Team" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoho People ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

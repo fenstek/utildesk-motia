@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Zoho Sheet ist ein webbasiertes Tabellenkalkulationsprogramm, das Teil der Zoho Office Suite ist. Es ermöglicht Nutzern, Tabellen online zu erstellen, zu bearbeiten und gemeinsam in Echtzeit daran zu arbeiten. Mit vielfältigen Funktionen zur Datenanalyse, Automatisierung und Zusammenarbeit unterstützt Zoho Sheet Teams und Einzelpersonen dabei, produktiver und effizienter zu arbeiten – egal ob im Büro, Homeoffice oder unterwegs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-sheet-editorial.webp" alt="Redaktionelle Illustration zu Zoho Sheet: Teams machen aus Daten Entscheidungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoho Sheet ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

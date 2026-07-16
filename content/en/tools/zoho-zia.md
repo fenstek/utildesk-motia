@@ -21,6 +21,10 @@ translation: full
 
 Zoho Zia is an AI-powered assistant solution integrated into the Zoho ecosystem that helps businesses automate their CRM processes and make data-driven decisions. With intelligent analytics, predictions, and automation, Zia makes work easier across sales, marketing, and customer service.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-zia-editorial.webp" alt="Editorial illustration for Zoho Zia: an assistant connects signals and decisions" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Zia suitable for?
 
 Zoho Zia is aimed primarily at small and medium-sized businesses that want to use their CRM data more efficiently. Teams that want to automate repetitive tasks and optimize their sales and marketing strategies with AI-driven insights also benefit from Zia. The tool is suitable for users who already use Zoho CRM or other Zoho applications and want to expand them with intelligent features.

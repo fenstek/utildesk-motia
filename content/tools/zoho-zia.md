@@ -18,6 +18,10 @@ generated_at: "2026-05-06"
 
 Zoho Zia ist eine KI-gestützte Assistenzlösung, die in das Zoho-Ökosystem integriert ist und Unternehmen dabei unterstützt, ihre CRM-Prozesse zu automatisieren und datenbasierte Entscheidungen zu treffen. Mit intelligenten Analysen, Vorhersagen und Automatisierungen erleichtert Zia die Arbeit im Vertrieb, Marketing und Kundenservice.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-zia-editorial.webp" alt="Redaktionelle Illustration zu Zoho Zia: Assistenz verbindet Signale und Entscheidungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoho Zia ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

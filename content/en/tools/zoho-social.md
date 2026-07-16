@@ -21,6 +21,10 @@ translation: full
 
 Zoho Social is a comprehensive social media management platform that helps businesses and marketing teams manage their online presence efficiently, plan content, and analyze performance across social networks. With a user-friendly interface and a wide range of features, the tool is aimed at companies of all sizes that want to professionalize their social media strategy.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-social-editorial.webp" alt="Editorial illustration for Zoho Social: social media team and connected conversations" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Social suitable for?
 
 Zoho Social is suitable for small and medium-sized businesses, marketing agencies, and social media managers who want to centrally manage multiple social media channels. Freelancers and content creators also benefit from the planning and analytics features. The tool is especially useful for teams that want to publish content in a coordinated way and monitor interaction with their audience.

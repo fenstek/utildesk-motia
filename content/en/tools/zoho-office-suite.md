@@ -20,6 +20,10 @@ translation: full
 
 Zoho Office Suite is a comprehensive set of online productivity tools that enables individuals and businesses to create, edit, and share documents. With a wide range of applications covering word processing, spreadsheets, presentations, and more, the suite offers a flexible platform for efficient work, both as a team and individually. The integration of different tools and cloud-based use make collaboration and access from anywhere easier.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-office-suite-editorial.webp" alt="Editorial illustration for Zoho Office Suite: shared documents and team work" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Office Suite suitable for?
 
 Zoho Office Suite is aimed at small and medium-sized businesses, freelancers, and teams looking for a cost-effective and flexible solution for productivity and collaboration. Thanks to its freemium pricing model, it is also of interest to private users who want to use basic office functions without high costs. The suite is especially suitable for users who value a cloud-based work environment and want to share and edit documents with others in real time.

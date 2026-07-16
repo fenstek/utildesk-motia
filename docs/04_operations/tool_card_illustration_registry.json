@@ -3230,6 +3230,50 @@
         "content/images/tools/zoho-expense-editorial.webp",
         "content/images/tools/zoho-notebook-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-07-16-codex-chat-style-variety-9",
+      "status": "implemented",
+      "date": "2026-07-16",
+      "languages": ["de", "en"],
+      "generation_source": "OpenAI Codex built-in image generation via ChatGPT subscription",
+      "agents": 1,
+      "items_per_agent": 9,
+      "constraints": {
+        "image_format": "webp",
+        "width_px": 1280,
+        "height_px": 720,
+        "gemini": false,
+        "external_api": false,
+        "svg_placeholder": false,
+        "readable_text": false,
+        "logos": false,
+        "watermarks": false
+      },
+      "slugs": [
+        "zoho-office-suite",
+        "zoho-social",
+        "zoom-phone",
+        "zoho-people",
+        "zoho-sheet",
+        "zoho-workplace",
+        "zoho-writer",
+        "zoho-zia",
+        "zulip"
+      ],
+      "images": [
+        "content/images/tools/zoho-office-suite-editorial.webp",
+        "content/images/tools/zoho-social-editorial.webp",
+        "content/images/tools/zoom-phone-editorial.webp",
+        "content/images/tools/zoho-people-editorial.webp",
+        "content/images/tools/zoho-sheet-editorial.webp",
+        "content/images/tools/zoho-workplace-editorial.webp",
+        "content/images/tools/zoho-writer-editorial.webp",
+        "content/images/tools/zoho-zia-editorial.webp",
+        "content/images/tools/zulip-editorial.webp"
+      ],
+      "visual_direction": "Nine distinct narrative editorial styles: cubist office collaboration, surreal social-media city, stencil street-art telephony, elongated modernist HR scene, geometric data abstraction, expressive post-impressionist workplace, nineteenth-century literary writing room, luminous impressionist AI guidance, and vintage cabaret communications stage.",
+      "note": "Created in-chat with Codex image generation; all outputs normalized to the shared tool-card format and inserted once in each DE/EN card."
     }
   ]
 }

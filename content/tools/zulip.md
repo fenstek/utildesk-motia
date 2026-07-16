@@ -18,6 +18,10 @@ generated_at: "2026-05-13"
 
 Zulip ist eine Open-Source-Kommunikationsplattform, die speziell für effiziente Teamzusammenarbeit entwickelt wurde. Mit einem einzigartigen Thread-basierten Chat-System ermöglicht Zulip die strukturierte und übersichtliche Kommunikation, selbst in großen Gruppen und bei komplexen Projekten. Durch die Kombination von Echtzeit- und asynchroner Kommunikation unterstützt Zulip Teams dabei, produktiver und organisierter zu arbeiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zulip-editorial.webp" alt="Redaktionelle Illustration zu Zulip: Threads verbinden ein Produktionsteam" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zulip sollte die Entscheidung an einem echten Arbeitsfall hängen: Eingaben, Ergebnis, Verantwortung und Folgekosten müssen sichtbar sein. Wir würden klein starten, den Nutzen gegen den bisherigen Ablauf vergleichen und bewusst festhalten, welche Aufgaben weiterhin menschliche Prüfung brauchen.
