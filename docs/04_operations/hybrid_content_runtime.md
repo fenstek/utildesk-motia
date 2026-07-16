@@ -127,12 +127,19 @@ node_modules/.bin/wrangler dev --config dist-runtime/server/wrangler.json \
 
 The importer refuses non-localhost URLs. Stop the fixture importer before using the runtime; it is a test-only entrypoint and is never part of the production bundle.
 
-Deploy only the isolated preview Worker:
+Deploy the complete production renderer bundle:
 
 ```powershell
 Set-Location site
-node_modules/.bin/wrangler.cmd deploy --config dist/server/wrangler.json
+npm run deploy:runtime
 ```
+
+`deploy:runtime` is the only supported production renderer deployment command.
+It builds the runtime, verifies the generated `ASSETS` binding plus the shared
+CSS and locale scripts, and deploys through `dist-runtime/server/wrangler.json`.
+Never deploy `dist-runtime/server/entry.mjs` directly: that uploads the Worker
+code without the hashed `/runtime-assets/*` files and leaves runtime HTML
+unstyled.
 
 ## Cache Contract
 

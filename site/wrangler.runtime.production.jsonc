@@ -4,6 +4,12 @@
   "compatibility_date": "2026-07-13",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
+  "kv_namespaces": [
+    {
+      "binding": "SESSION",
+      "id": "2d151e52377a46558bf3d3c7a0bc3380"
+    }
+  ],
   "d1_databases": [
     {
       "binding": "UTILDESK_CONTENT",

@@ -562,6 +562,63 @@
         "https://www.bing.com/indexnow"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T11:26:41.003Z",
+      "mode": "production-emergency-css-diagnosis",
+      "command": "bounded homepage, stylesheet, tool card and illustration diagnosis after unstyled production report",
+      "estimate": {
+        "html": 2,
+        "css": 2,
+        "assets": 2,
+        "control": 2,
+        "total": 8
+      },
+      "worstCaseRequests": 8,
+      "plannedUrls": [
+        "https://tools.utildesk.de/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T11:39:56.794Z",
+      "mode": "production-emergency-runtime-assets-repair",
+      "command": "single generated-manifest Worker deploy with ASSETS plus bounded homepage, stylesheet, tool-card and R2-image verification",
+      "estimate": {
+        "workerDeploy": 10,
+        "html": 2,
+        "css": 1,
+        "asset": 1,
+        "browserDocumentAndSubresources": 8,
+        "total": 22
+      },
+      "worstCaseRequests": 22,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4",
+        "https://tools.utildesk.de/",
+        "https://tools.utildesk.de/tools/crisp/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T11:45:00.000Z",
+      "mode": "production-emergency-runtime-assets-corrective-deploy",
+      "command": "resolve the existing runtime SESSION namespace, rebuild with an explicit binding, deploy the generated Astro manifest and run four one-shot production checks",
+      "estimate": {
+        "kvNamespaceRead": 5,
+        "workerDeploy": 10,
+        "html": 2,
+        "css": 1,
+        "asset": 1,
+        "total": 19
+      },
+      "worstCaseRequests": 19,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4",
+        "https://tools.utildesk.de/",
+        "https://tools.utildesk.de/tools/crisp/"
+      ],
+      "retryPolicy": "This is a corrected deployment after a deterministic local configuration failure, not an automatic transport retry. No further retry is permitted today."
     }
   ]
 }
