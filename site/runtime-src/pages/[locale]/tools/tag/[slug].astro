@@ -1,0 +1,10 @@
+---
+export const prerender = false;
+import StaticEnglishTagDetail from "../../../../../src/pages/[locale]/tools/tag/[slug].astro";
+import { getRuntimeToolShellData, resolveRuntimeTag } from "../../../../lib/toolShellRuntime";
+const validLocale = Astro.params.locale === "en";
+const data = await getRuntimeToolShellData("en");
+const tag = validLocale ? resolveRuntimeTag(data.displayTools, Astro.params.slug ?? "") : null;
+if (!tag) Astro.response.status = 404;
+---
+{tag && <StaticEnglishTagDetail runtimeTag={tag} runtimeTools={data.displayTools} />}

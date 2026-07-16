@@ -171,13 +171,12 @@ export async function listRuntimeContentEntries(
               robots_policy, googlebot_policy, editorial_reviewed, illustration_path,
               asset_key, asset_hash, source_commit, deleted_at, category, price_model, popularity
        FROM content_entries
-       WHERE kind = ? AND locale = ? AND is_active = 1 AND route_state = 'active'
-       ORDER BY COALESCE(source_published_at, '') DESC, title ASC`,
+       WHERE kind = ? AND locale = ? AND is_active = 1 AND route_state = 'active'`,
     )
     .bind(kind, locale)
     .all<RuntimeContentRow>();
 
-  return result.results.map((row) => ({
+  const entries = result.results.map((row) => ({
     kind: row.kind,
     locale: row.locale,
     slug: row.slug,
@@ -205,6 +204,14 @@ export async function listRuntimeContentEntries(
     priceModel: row.price_model,
     popularity: Number(row.popularity ?? 0),
   }));
+  return entries.sort((left, right) => {
+    const leftTime = left.sourcePublishedAt ? Date.parse(left.sourcePublishedAt) : 0;
+    const rightTime = right.sourcePublishedAt ? Date.parse(right.sourcePublishedAt) : 0;
+    const safeLeftTime = Number.isFinite(leftTime) ? leftTime : 0;
+    const safeRightTime = Number.isFinite(rightTime) ? rightTime : 0;
+    if (safeRightTime !== safeLeftTime) return safeRightTime - safeLeftTime;
+    return left.title.localeCompare(right.title, locale);
+  });
 }
 
 export async function listRuntimeToolContext(
@@ -283,7 +290,26 @@ export async function listRuntimeGuideBacklinkContext(
   }));
 }
 
-type CacheVersionRow = { source_hash?: string; revision?: number; entries?: number; max_revision?: number };
+type CacheVersionRow = { source_hash?: string; revision?: number; updated_at?: string };
+
+export type RuntimeCollectionRevision = {
+  kind: RuntimeContentKind;
+  locale: RuntimeLocale;
+  revision: number;
+  updatedAt: string;
+};
+
+export async function getRuntimeCollectionRevision(
+  kind: RuntimeContentKind,
+  locale: RuntimeLocale,
+): Promise<RuntimeCollectionRevision> {
+  const row = await database()
+    .prepare("SELECT revision, updated_at FROM runtime_collection_revisions WHERE kind = ? AND locale = ?")
+    .bind(kind, locale)
+    .first<CacheVersionRow>();
+  if (!row) throw new Error(`Runtime collection revision missing for ${kind}:${locale}`);
+  return { kind, locale, revision: Number(row.revision ?? 1), updatedAt: row.updated_at ?? new Date(0).toISOString() };
+}
 
 export type RuntimeCacheIdentity = {
   cluster: "tool" | "ratgeber";
@@ -311,10 +337,47 @@ const routeIdentity = (pathname: string) => {
     locale: index[1] ? "en" as const : "de" as const,
     slug: null,
   };
+  const toolMachineDetail = pathname.match(/^\/(en\/)?(?:api|markdown)\/tools\/([^/]+)\.(?:json|md)$/);
+  if (toolMachineDetail) return {
+    kind: "tool" as const,
+    locale: toolMachineDetail[1] ? "en" as const : "de" as const,
+    slug: toolMachineDetail[2],
+  };
+  const toolMachineIndex = pathname.match(/^\/(en\/)?api\/tools\.json$/);
+  if (toolMachineIndex) return {
+    kind: "tool" as const,
+    locale: toolMachineIndex[1] ? "en" as const : "de" as const,
+    slug: null,
+  };
   return null;
 };
 
 export async function getRuntimeCacheIdentity(pathname: string): Promise<RuntimeCacheIdentity | null> {
+  const shell = pathname.match(/^\/(en\/)?(?:|tools\/?)$/);
+  if (shell) {
+    const locale: RuntimeLocale = shell[1] ? "en" : "de";
+    const [tools, ratgeber] = await Promise.all([
+      getRuntimeCollectionRevision("tool", locale),
+      getRuntimeCollectionRevision("ratgeber", locale),
+    ]);
+    return {
+      cluster: "tool",
+      version: `shell-${tools.revision}-${ratgeber.revision}`,
+      revision: tools.revision,
+      sourceHash: null,
+    };
+  }
+  const toolArchive = pathname.match(/^\/(en\/)?(?:category(?:\/[^/]+)?|tools\/tag\/[^/]+)\/?$/);
+  if (toolArchive) {
+    const locale: RuntimeLocale = toolArchive[1] ? "en" : "de";
+    const collection = await getRuntimeCollectionRevision("tool", locale);
+    return {
+      cluster: "tool",
+      version: `archive-${collection.revision}`,
+      revision: collection.revision,
+      sourceHash: null,
+    };
+  }
   const route = routeIdentity(pathname);
   if (!route) return null;
   if (route.slug) {
@@ -329,16 +392,13 @@ export async function getRuntimeCacheIdentity(pathname: string): Promise<Runtime
       sourceHash: row.source_hash,
     } : null;
   }
-  const row = await database()
-    .prepare("SELECT COUNT(*) AS entries, MAX(revision) AS max_revision FROM content_entries WHERE kind = ? AND locale = ? AND is_active = 1 AND route_state = 'active'")
-    .bind(route.kind, route.locale)
-    .first<CacheVersionRow>();
-  return row ? {
+  const collection = await getRuntimeCollectionRevision(route.kind, route.locale);
+  return {
     cluster: route.kind,
-    version: `${row.entries ?? 0}-${row.max_revision ?? 0}`,
-    revision: Number(row.max_revision ?? 0),
+    version: `collection-${collection.revision}`,
+    revision: collection.revision,
     sourceHash: null,
-  } : null;
+  };
 }
 
 export async function getRatgeberCacheVersion(pathname: string): Promise<string | null> {
@@ -355,11 +415,8 @@ export async function getRatgeberCacheVersion(pathname: string): Promise<string 
     return row?.source_hash ? `${row.revision ?? 1}-${row.source_hash}` : null;
   }
 
-  const row = await database()
-    .prepare("SELECT COUNT(*) AS entries, MAX(revision) AS max_revision FROM content_entries WHERE kind = 'ratgeber' AND locale = ? AND is_active = 1 AND route_state = 'active'")
-    .bind(locale)
-    .first<CacheVersionRow>();
-  return row ? `${row.entries ?? 0}-${row.max_revision ?? 0}` : null;
+  const collection = await getRuntimeCollectionRevision("ratgeber", locale);
+  return `collection-${collection.revision}`;
 }
 
 export async function getRuntimeToolAsset(assetHash: string): Promise<{ key: string; fallbackPath: string } | null> {

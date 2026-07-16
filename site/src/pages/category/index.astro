@@ -9,7 +9,8 @@ import {
   SITE_URL,
 } from "../../lib/siteMeta";
 
-const tools = await listDisplayTools("de");
+const runtimeTools = Astro.props.runtimeTools as Awaited<ReturnType<typeof listDisplayTools>> | undefined;
+const tools = runtimeTools ?? await listDisplayTools("de");
 const issueNo = getDecisionIssueNumber();
 const categoriesWithCount = CATEGORIES.map((category) => {
   const count = tools.filter((tool) =>

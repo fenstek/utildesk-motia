@@ -21,6 +21,9 @@ export function getStaticPaths() {
   return [{ params: { locale: "en" } }];
 }
 
+const runtimeTools = Astro.props.runtimeTools as any[] | undefined;
+const runtimeRatgeber = Astro.props.runtimeRatgeber as Awaited<ReturnType<typeof listRatgeberEntries>> | undefined;
+
 const stripMarkdown = (text: string) =>
   text
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
@@ -70,8 +73,8 @@ const getFrequencyClass = (count: number, max: number) => {
   return "tag-freq-low";
 };
 
-const entries = (await listActiveToolEntries()).filter((entry) => hasEnglishToolTranslation(entry.slug));
-const tools = entries.map((entry) => {
+const entries = runtimeTools ? [] : (await listActiveToolEntries()).filter((entry) => hasEnglishToolTranslation(entry.slug));
+const tools = runtimeTools ?? entries.map((entry) => {
   const meta = getEnglishToolMeta(entry);
   const rawCategory = entry.data.category ? String(entry.data.category) : null;
   const rawTags = Array.isArray(entry.data.tags) ? entry.data.tags.map((tag) => String(tag)) : [];
@@ -114,7 +117,7 @@ const latestTools = [
 const templateTools = Array.from(
   new Map([...latestTools, ...enabledTools].map((tool) => [tool.slug, tool])).values()
 ).slice(0, 12);
-const allRatgeber = await listRatgeberEntries("en");
+const allRatgeber = runtimeRatgeber ?? await listRatgeberEntries("en");
 const editorialRatgeberSlugs = [
   "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
   "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",

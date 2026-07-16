@@ -28,10 +28,19 @@ for (const [label, value] of [["resolve-base", base], ["asset-base", assetBase],
   }
 }
 const resources = new Map();
+const externalResources = new Map();
 const add = (value, kind, owner) => {
   if (!value || value.startsWith("data:") || value.startsWith("#")) return;
   const selectedBase = kind === "image" ? assetBase : linkBase;
-  const url = /^https?:\/\//i.test(value) ? value : new URL(value, `${selectedBase}/`).toString();
+  const parsed = new URL(value, "https://tools.utildesk.de/");
+  if (parsed.hostname !== "tools.utildesk.de") {
+    const current = externalResources.get(parsed.toString()) ?? { url: parsed.toString(), kinds: new Set(), owners: new Set() };
+    current.kinds.add(kind);
+    current.owners.add(owner);
+    externalResources.set(parsed.toString(), current);
+    return;
+  }
+  const url = new URL(`${parsed.pathname}${parsed.search}`, `${selectedBase}/`).toString();
   const current = resources.get(url) ?? { url, kinds: new Set(), owners: new Set() };
   current.kinds.add(kind);
   current.owners.add(owner);
@@ -54,6 +63,8 @@ const worker = async () => {
     let status = 0;
     let error = null;
     try {
+      const hostname = new URL(resource.url).hostname;
+      if (!["127.0.0.1", "localhost", "::1"].includes(hostname)) throw new Error(`Refusing non-loopback resource ${resource.url}`);
       let response = await fetch(resource.url, { method: "HEAD", redirect: "manual" });
       if (response.status === 405) response = await fetch(resource.url, { method: "GET", redirect: "manual" });
       status = response.status;
@@ -71,7 +82,18 @@ const worker = async () => {
 await Promise.all(Array.from({ length: Math.min(8, queue.length || 1) }, worker));
 results.sort((left, right) => left.url.localeCompare(right.url));
 const failures = results.filter((result) => !result.ok);
-const report = { checkedAt: new Date().toISOString(), resolveBase: base, assetBase, linkBase, checked: results.length, failed: failures.length, failures, results };
+const report = {
+  checkedAt: new Date().toISOString(),
+  resolveBase: base,
+  assetBase,
+  linkBase,
+  checked: results.length,
+  failed: failures.length,
+  externalUnchecked: externalResources.size,
+  externalResources: [...externalResources.values()].map((item) => ({ ...item, kinds: [...item.kinds].sort(), owners: [...item.owners].sort() })),
+  failures,
+  results,
+};
 if (options.out) await writeFile(resolve(options.out), `${JSON.stringify(report, null, 2)}\n`);
 console.log(JSON.stringify({ checked: report.checked, failed: report.failed, failures: failures.slice(0, 20) }, null, 2));
 if (failures.length) process.exitCode = 1;

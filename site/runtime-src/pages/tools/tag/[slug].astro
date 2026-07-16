@@ -1,0 +1,9 @@
+---
+export const prerender = false;
+import StaticTagDetail from "../../../../src/pages/tools/tag/[slug].astro";
+import { getRuntimeToolShellData, resolveRuntimeTag } from "../../../lib/toolShellRuntime";
+const data = await getRuntimeToolShellData("de");
+const tag = resolveRuntimeTag(data.displayTools, Astro.params.slug ?? "");
+if (!tag) Astro.response.status = 404;
+---
+{tag && <StaticTagDetail runtimeTag={tag} runtimeTools={data.displayTools} />}

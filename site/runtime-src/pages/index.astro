@@ -1,0 +1,7 @@
+---
+export const prerender = false;
+import StaticHomepage from "../../src/pages/index.astro";
+import { getRuntimeToolShellData } from "../lib/toolShellRuntime";
+const data = await getRuntimeToolShellData("de");
+---
+<StaticHomepage runtimeTools={data.homeTools} runtimeRatgeber={data.ratgeber} />

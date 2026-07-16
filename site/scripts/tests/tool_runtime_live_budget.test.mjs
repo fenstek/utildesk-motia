@@ -10,6 +10,7 @@ import {
   assertProductionModeArgs,
   estimateProductionCanary,
   estimateProductionDelta,
+  estimateProductionPublish,
   reserveLiveRequests,
 } from "../lib/tool-runtime-live-budget.mjs";
 
@@ -27,6 +28,12 @@ test("production canary is deterministically limited to 48 localized HTML reques
     indexNow: 0,
     total: 48,
   });
+});
+
+test("publisher estimate covers atomic D1 verification and content-addressed asset round trips", () => {
+  assert.deepEqual(estimateProductionPublish({ assets: 10, assetMode: "r2" }), { d1: 4, r2: 21, pagesAssets: 0, total: 25 });
+  assert.deepEqual(estimateProductionPublish({ assets: 10, assetMode: "pages-fallback" }), { d1: 4, r2: 0, pagesAssets: 10, total: 14 });
+  assert.equal(estimateProductionPublish({ compareOnly: true }).total, 1);
 });
 
 test("ordinary ten-card delta stays near the 100-request target", () => {
@@ -98,4 +105,18 @@ test("ledger reserves worst-case requests before execution and never exceeds 500
 test("legacy capture command refuses live hosts before issuing a request", async () => {
   const script = resolve(import.meta.dirname, "../capture_tool_runtime_baseline.mjs");
   await assert.rejects(execFileAsync(process.execPath, [script, "--all", "--base-url", "https://tools.utildesk.de", "--out", join(tmpdir(), "forbidden-live-capture")]), /Direct live capture is forbidden/);
+});
+
+test("release and remote publisher entrypoints permanently reject --all", async () => {
+  const release = await new Promise((resolveResult) => execFile(process.execPath, [
+    resolve(import.meta.dirname, "../tool_runtime_release.mjs"), "--all", "--git-range", "HEAD~1..HEAD",
+  ], (error, stdout, stderr) => resolveResult({ error, stdout, stderr })));
+  assert.ok(release.error);
+  assert.match(release.stderr, /refuses --all/);
+
+  const publisher = await new Promise((resolveResult) => execFile(process.execPath, [
+    resolve(import.meta.dirname, "../publish_runtime_content.mjs"), "--kind", "tool", "--operation", "reconcile", "--all", "--remote",
+  ], { cwd: resolve(import.meta.dirname, "../..") }, (error, stdout, stderr) => resolveResult({ error, stdout, stderr })));
+  assert.ok(publisher.error);
+  assert.match(publisher.stderr, /refuses --all/);
 });

@@ -20,8 +20,10 @@ import {
   SITE_URL,
 } from "../lib/siteMeta";
 
-const toolsDir = fromContent("tools");
-const files = (await readdir(toolsDir)).filter((file) => file.endsWith(".md"));
+const runtimeTools = Astro.props.runtimeTools as any[] | undefined;
+const runtimeRatgeber = Astro.props.runtimeRatgeber as Awaited<ReturnType<typeof listRatgeberEntries>> | undefined;
+const toolsDir = runtimeTools ? "" : fromContent("tools");
+const files = runtimeTools ? [] : (await readdir(toolsDir)).filter((file) => file.endsWith(".md"));
 
 const stripMarkdown = (text: string) =>
   text
@@ -74,7 +76,7 @@ const resolveCategoryIcon = (category: string | null, tags: string[]) => {
   return "generic";
 };
 
-const tools = await Promise.all(
+const tools = runtimeTools ?? await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
@@ -164,7 +166,7 @@ const latestTools = [...pinnedTools, ...restTools].slice(0, 6);
 const templateTools = Array.from(
   new Map([...latestTools, ...restTools].map((tool) => [tool.slug, tool])).values()
 ).slice(0, 12);
-const allRatgeber = await listRatgeberEntries();
+const allRatgeber = runtimeRatgeber ?? await listRatgeberEntries();
 const editorialRatgeberSlugs = [
   "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
   "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",

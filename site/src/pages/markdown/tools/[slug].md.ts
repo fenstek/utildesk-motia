@@ -5,6 +5,7 @@ import { classifyToolEntry, isCuratedToolEntry, stripTemplateBoilerplate } from 
 export const prerender = true;
 
 export async function getStaticPaths() {
+  if (process.env.UTILDESK_BUILD_FROZEN_TOOL_DETAILS !== "1") return [];
   const entries = await listActiveToolEntries();
   return entries.map((entry) => ({
     params: { slug: entry.slug },

@@ -1,0 +1,10 @@
+---
+export const prerender = false;
+import StaticCategoryDetail from "../../../src/pages/category/[slug].astro";
+import { CATEGORIES } from "../../../src/lib/categories";
+import { getRuntimeToolShellData } from "../../lib/toolShellRuntime";
+const category = CATEGORIES.find((item) => item.slug === Astro.params.slug);
+if (!category) Astro.response.status = 404;
+const data = await getRuntimeToolShellData("de");
+---
+{category && <StaticCategoryDetail runtimeCategory={category} runtimeTools={data.displayTools} />}

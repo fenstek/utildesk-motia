@@ -279,10 +279,13 @@ export async function executeD1Batch({ accountId, databaseId, token, statements,
   return payload.result;
 }
 
-export function gitReleaseState(repoDir = RUNTIME_PATHS.REPO_DIR) {
+export function gitReleaseState(repoDir = RUNTIME_PATHS.REPO_DIR, { allowedDirtyPaths = [] } = {}) {
   const commit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: repoDir, encoding: "utf8" }).trim();
   const status = execFileSync("git", ["status", "--porcelain", "--untracked-files=all"], { cwd: repoDir, encoding: "utf8" }).trim();
-  return { commit, clean: !status, dirtyPaths: status ? status.split(/\r?\n/).map((line) => line.slice(3)) : [] };
+  const dirtyPaths = status ? status.split(/\r?\n/).map((line) => line.slice(3)) : [];
+  const allowed = new Set(allowedDirtyPaths.map((path) => String(path).replaceAll("\\", "/")));
+  const blockingDirtyPaths = dirtyPaths.filter((path) => !allowed.has(path.replaceAll("\\", "/")));
+  return { commit, clean: blockingDirtyPaths.length === 0, dirtyPaths, blockingDirtyPaths };
 }
 
 export function assertProductionSafety({ production, remote, confirmation, backupPath, releaseState, databaseName }) {
@@ -290,7 +293,7 @@ export function assertProductionSafety({ production, remote, confirmation, backu
   if (!remote) throw new Error("--production requires --remote");
   if (confirmation !== PRODUCTION_CONFIRMATION) throw new Error(`--production requires --confirm ${PRODUCTION_CONFIRMATION}`);
   if (!String(databaseName).includes("production")) throw new Error(`Production flag targets non-production database ${databaseName}`);
-  if (!releaseState.clean) throw new Error(`Production requires a clean release commit; dirty paths: ${releaseState.dirtyPaths.join(", ")}`);
+  if (!releaseState.clean) throw new Error(`Production requires a clean release commit apart from its request ledger; dirty paths: ${(releaseState.blockingDirtyPaths ?? releaseState.dirtyPaths).join(", ")}`);
   if (!backupPath || !existsSync(resolve(backupPath))) throw new Error("Production requires --backup pointing to a completed D1 export");
   const backup = statSync(resolve(backupPath));
   if (!String(backupPath).endsWith(".sql") || backup.size === 0) throw new Error("Production D1 backup must be a non-empty .sql export");

@@ -13,7 +13,9 @@ import {
   SITE_URL,
 } from "../../lib/siteMeta";
 
-const enabledTools = [...(await listDisplayTools("de"))].sort(compareToolsByNewest("de"));
+const runtimeTools = Astro.props.runtimeTools as DisplayTool[] | undefined;
+const runtimeRatgeber = Astro.props.runtimeRatgeber as Awaited<ReturnType<typeof listRatgeberEntries>> | undefined;
+const enabledTools = [...(runtimeTools ?? await listDisplayTools("de"))].sort(compareToolsByNewest("de"));
 const initialTools = selectSearchFocusTools(enabledTools, 36);
 const issueNo = getDecisionIssueNumber();
 
@@ -33,7 +35,7 @@ const sortedTags = Array.from(tagFrequency.entries())
   })
   .map(([tag]) => tag);
 const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2).slice(0, 24);
-const ratgeberEntries = await listRatgeberEntries();
+const ratgeberEntries = runtimeRatgeber ?? await listRatgeberEntries();
 const recentRatgeber = ratgeberEntries.slice(0, 3);
 const categoryCounts = Array.from(
   enabledTools.reduce((map, tool) => {

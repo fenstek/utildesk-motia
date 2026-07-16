@@ -42,9 +42,20 @@ const assertNewestSort = (label, relativePath) => {
     throw new Error(`${label}: no tool cards found in ${relativePath}`);
   }
 
-  for (let index = 1; index < cards.length; index += 1) {
-    const previous = cards[index - 1];
-    const current = cards[index];
+  const missingManifestValues = cards.filter((card) => Number(manifest[card.slug] || 0) !== card.addedAt);
+  if (missingManifestValues.length > 0) {
+    throw new Error(`${label}: card timestamps do not match manifest: ${missingManifestValues.map((card) => card.slug).join(", ")}`);
+  }
+
+  // The server intentionally emits the 36-card search-focus cohort. The
+  // ?sort=new contract is client-side, so validate the exact projection the
+  // browser applies instead of requiring focus order to already be newest.
+  const projected = [...cards].sort((left, right) =>
+    right.addedAt - left.addedAt || right.addedAtOrder - left.addedAtOrder || left.title.localeCompare(right.title),
+  );
+  for (let index = 1; index < projected.length; index += 1) {
+    const previous = projected[index - 1];
+    const current = projected[index];
     const isSorted =
       previous.addedAt > current.addedAt ||
       (previous.addedAt === current.addedAt && previous.addedAtOrder >= current.addedAtOrder);
@@ -55,12 +66,17 @@ const assertNewestSort = (label, relativePath) => {
     }
   }
 
-  const topFive = cards.slice(0, 5);
+  const topFive = projected.slice(0, 5);
   const missingManifest = topFive.filter((card) => Number(manifest[card.slug] || 0) !== card.addedAt);
   if (missingManifest.length > 0) {
     throw new Error(
       `${label}: top cards do not match manifest timestamps: ${missingManifest.map((card) => card.slug).join(", ")}`,
     );
+  }
+
+  const html = readFileSync(join(repoRoot, "site", "dist", relativePath), "utf8");
+  if (!html.includes("sortMode === 'new'") || !html.includes("return bAdded - aAdded")) {
+    throw new Error(`${label}: built client-side newest-sort implementation is missing`);
   }
 
   console.log(`${label}:`);

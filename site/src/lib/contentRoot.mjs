@@ -2,7 +2,19 @@ import { lstatSync, readFileSync, realpathSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const SITE_ROOT = fileURLToPath(new URL("../../", import.meta.url));
+function resolveSiteRoot() {
+  try {
+    if (typeof import.meta.url === "string" && import.meta.url.startsWith("file:")) {
+      return fileURLToPath(new URL("../../", import.meta.url));
+    }
+  } catch {
+    // Bundled Worker modules do not have a filesystem-backed import.meta.url.
+  }
+
+  return resolve(process.cwd(), "site");
+}
+
+const SITE_ROOT = resolveSiteRoot();
 
 function resolveContentPointer(baseDir) {
   const pointerPath = join(baseDir, "content");

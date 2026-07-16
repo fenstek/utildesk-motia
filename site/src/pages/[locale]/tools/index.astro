@@ -17,10 +17,12 @@ export function getStaticPaths() {
   return [{ params: { locale: "en" } }];
 }
 
-const enabledTools = [...(await listDisplayTools("en"))].sort(compareToolsByNewest("en"));
+const runtimeTools = Astro.props.runtimeTools as DisplayTool[] | undefined;
+const runtimeRatgeber = Astro.props.runtimeRatgeber as Awaited<ReturnType<typeof listRatgeberEntries>> | undefined;
+const enabledTools = [...(runtimeTools ?? await listDisplayTools("en"))].sort(compareToolsByNewest("en"));
 const initialTools = selectSearchFocusTools(enabledTools, 36);
 const issueNo = getDecisionIssueNumber();
-const ratgeberEntries = await listRatgeberEntries("en");
+const ratgeberEntries = runtimeRatgeber ?? await listRatgeberEntries("en");
 const recentRatgeber = ratgeberEntries.slice(0, 3);
 
 const categoryCounts = Array.from(

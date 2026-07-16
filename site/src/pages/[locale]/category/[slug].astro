@@ -20,7 +20,8 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const category = Astro.props.category ?? CATEGORIES.find((cat) => cat.slug === slug);
+const runtimeTools = Astro.props.runtimeTools as Awaited<ReturnType<typeof listDisplayTools>> | undefined;
+const category = Astro.props.runtimeCategory ?? Astro.props.category ?? CATEGORIES.find((cat) => cat.slug === slug);
 
 if (!category) {
   return Astro.redirect("/404");
@@ -28,7 +29,7 @@ if (!category) {
 
 const title = categoryTitleEn(category.slug, category.title);
 const description = categoryDescriptionEn(category.slug, category.description);
-const tools = [...(await listDisplayTools("en"))]
+const tools = [...(runtimeTools ?? await listDisplayTools("en"))]
   .filter((tool) => tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag)))
   .sort((a, b) => a.title.localeCompare(b.title, "en"));
 const toolCount = tools.length;

@@ -53,6 +53,7 @@ export function parseGateArgs(argv) {
     ledgerPath: valueFor(argv, "--ledger"),
     maxLiveRequests,
     performanceRoutes,
+    operation: valueFor(argv, "--operation") || "upsert",
     execute: has(argv, "--execute"),
   };
 }
@@ -132,7 +133,7 @@ async function deltaAssetPaths(slugs) {
 
 async function runProductionDelta(options, slugs, budget) {
   if (!options.outDir) throw new Error("production-delta --execute requires --out");
-  const assetPaths = await deltaAssetPaths(slugs);
+  const assetPaths = options.operation === "upsert" ? await deltaAssetPaths(slugs) : [];
   const checks = [];
   for (const slug of slugs) {
     for (const locale of ["de", "en"]) {
@@ -146,16 +147,24 @@ async function runProductionDelta(options, slugs, budget) {
         const body = await response.text();
         const headers = headerObject(response.headers);
         const noindexOk = kind === "html" || /\bnoindex\b/i.test(headers["x-robots-tag"] || "");
-        checks.push({ path, kind, status: response.status, bytes: Buffer.byteLength(body), noindexOk, contentType: headers["content-type"] || "" });
+        const expectedStatus = options.operation === "upsert" ? 200
+          : options.operation === "redirect" && kind === "html" ? "redirect"
+          : options.operation === "tombstone" ? 410
+          : 404;
+        const statusOk = expectedStatus === "redirect" ? [301, 302, 307, 308].includes(response.status) : response.status === expectedStatus;
+        const routeStateOk = options.operation === "upsert" || kind === "html" && options.operation === "redirect"
+          ? true
+          : headers["x-utildesk-route-state"] === (options.operation === "deactivate" ? "disabled" : options.operation);
+        checks.push({ path, kind, status: response.status, expectedStatus, statusOk, routeStateOk, bytes: Buffer.byteLength(body), noindexOk, contentType: headers["content-type"] || "" });
       }
     }
   }
   for (const path of assetPaths) {
     const response = await fetch(`${options.baseUrl}${path}`, { redirect: "manual", headers: { "User-Agent": "Utildesk-Quota-Safe-Production-Delta/1.0" } });
-    checks.push({ path, kind: "asset", status: response.status, bytes: Number(response.headers.get("content-length") || 0), noindexOk: true, contentType: response.headers.get("content-type") || "" });
+    checks.push({ path, kind: "asset", status: response.status, expectedStatus: 200, statusOk: response.status === 200, routeStateOk: true, bytes: Number(response.headers.get("content-length") || 0), noindexOk: true, contentType: response.headers.get("content-type") || "" });
     await response.body?.cancel();
   }
-  const failures = checks.filter((check) => check.status !== 200 || !check.noindexOk || (check.kind === "json" && !check.contentType.includes("application/json")) || (check.kind === "markdown" && !check.contentType.includes("text/markdown")) || (check.kind === "asset" && !check.contentType.startsWith("image/")));
+  const failures = checks.filter((check) => !check.statusOk || !check.routeStateOk || !check.noindexOk || (options.operation === "upsert" && check.kind === "json" && !check.contentType.includes("application/json")) || (options.operation === "upsert" && check.kind === "markdown" && !check.contentType.includes("text/markdown")) || (check.kind === "asset" && !check.contentType.startsWith("image/")));
   const result = { ok: failures.length === 0, slugs, assetPaths, budget, checks, failures };
   await mkdir(resolve(options.outDir), { recursive: true });
   await writeFile(resolve(options.outDir, "result.json"), `${JSON.stringify(result, null, 2)}\n`);
@@ -165,12 +174,13 @@ async function runProductionDelta(options, slugs, budget) {
 
 export async function runGate(argv = process.argv.slice(2), { now = new Date() } = {}) {
   const options = parseGateArgs(argv);
+  if (!new Set(["upsert", "deactivate", "redirect", "tombstone"]).has(options.operation)) throw new Error("--operation must be upsert, deactivate, redirect or tombstone");
   if (options.mode === "local-full") return runLocalFull(options);
   const slugs = uniqueSorted(await selectedSlugs(options));
   if (!slugs.length) throw new Error(`${options.mode} selected no changed slugs`);
   for (const slug of slugs) if (!safeSlug(slug)) throw new Error(`Unsafe slug: ${slug}`);
   assertProductionModeArgs({ ...options, slugs, now });
-  const assetPaths = options.mode === "production-delta" ? await deltaAssetPaths(slugs) : [];
+  const assetPaths = options.mode === "production-delta" && options.operation === "upsert" ? await deltaAssetPaths(slugs) : [];
   const estimate = options.mode === "production-canary"
     ? estimateProductionCanary({ slugs, performanceRoutes: options.performanceRoutes })
     : estimateProductionDelta({ slugs, assetPaths, includeControlRequest: false, includeIndexNow: false });

@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
-import mdx from "@astrojs/mdx";
 
 // This config is intentionally separate from the live Pages build. It lets us
 // validate Worker-rendered routes while the current static production site stays intact.
@@ -13,7 +12,7 @@ export default defineConfig({
   // Preview the eventual steady-state deployment: routes are rendered by the
   // Worker, so adding locales does not multiply a static build.
   output: "server",
-  integrations: [mdx()],
+  integrations: [],
   adapter: cloudflare({
     configPath: "./wrangler.hybrid.jsonc",
     imageService: "passthrough",

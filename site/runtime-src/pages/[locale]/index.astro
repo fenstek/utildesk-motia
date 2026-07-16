@@ -1,0 +1,8 @@
+---
+export const prerender = false;
+import StaticEnglishHomepage from "../../../src/pages/[locale]/index.astro";
+import { getRuntimeToolShellData } from "../../lib/toolShellRuntime";
+if (Astro.params.locale !== "en") Astro.response.status = 404;
+const data = await getRuntimeToolShellData("en");
+---
+<StaticEnglishHomepage runtimeTools={data.homeTools} runtimeRatgeber={data.ratgeber} />

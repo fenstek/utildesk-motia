@@ -1,6 +1,6 @@
 # Tool runtime release and rollback
 
-Status: implementation runbook; production remains gated until preview parity passes.
+Status: quota-safe runtime release runbook.
 
 ## Quota-safe validation contract
 
@@ -40,6 +40,9 @@ gate. The legacy capture and recursive resource-audit scripts refuse every
 non-loopback origin. Reservations are written before the first request and are
 never automatically reclaimed. There is no automatic retry; one retry may be
 planned and ledgered only for a genuine transient transport failure.
+The request ledger is the only tracked path allowed to change while the
+publisher verifies the production release commit. Any content, runtime,
+configuration or unrelated documentation change still blocks publication.
 
 ## Invariants
 
@@ -95,14 +98,13 @@ npm --prefix site run publish:runtime -- \
   --d1-state /path/to/tool-state.json
 ```
 
-Read-only remote reconcile:
+Remote exhaustive reconcile is intentionally disabled under the permanent live-request budget. Export/query a bounded snapshot once, then reconcile locally:
 
 ```bash
 source /path/to/existing/utildesk-env.sh
 npm --prefix site run publish:runtime -- \
-  --kind tool --operation reconcile --all --remote --dry-run \
-  --config wrangler.hybrid.jsonc \
-  --database utildesk-content-runtime-preview
+  --kind tool --operation reconcile --all --dry-run \
+  --d1-state /private/snapshots/tool-state.json
 ```
 
 Reconcile reports missing locale entries, extra active entries, expected routes in a non-active state, source-hash drift and asset-hash drift. It never mutates D1.
@@ -141,19 +143,19 @@ curl -I https://<preview-worker>/runtime-preview/en/tools/chatgpt/
 
 Preview responses must be `noindex,nofollow,noarchive` while retaining the production self-canonical, DE/EN hreflang, JSON/Markdown alternates and JSON-LD. Canonical runtime routes are `/tools/<slug>/` and `/en/tools/<slug>/`. Active rows return `200`; `redirect` returns `301` to the stored `canonical_path`; `disabled` and unknown rows return `404`; `tombstone` returns `410`.
 
-The tool cache key is `renderer version + D1 revision + source_hash`. Verify a first `MISS`, a second `HIT`, then change only a local/preview revision and verify another `MISS` followed by `HIT`. Required evidence headers are `X-Utildesk-Content-Runtime: tool-v2`, `X-Utildesk-Content-Version`, `X-Utildesk-Source-Revision` and `X-Utildesk-Source-Hash`. This cache identity is independent from the Ratgeber cluster.
+The tool cache key is `renderer version + D1 revision + source_hash`. Aggregate tool/shell routes use the monotonic `runtime_collection_revisions` identity from migration `0006`; it cannot collide when timestamps are equal. Required delivery evidence includes `X-Utildesk-Content-Runtime: tools-v1`, `X-Utildesk-Source-Revision` and `X-Utildesk-Source-Hash`. This cache identity is independent from the Ratgeber cluster.
 
 ## Content-addressed illustrations
 
 The exporter hashes each referenced `/images/tools/*.webp` and projects `asset_key` plus `asset_hash` through migration `0003_tool_asset_projection.sql`. A rendered illustration uses `/tool-assets/<sha256>/<original-name>.webp`; this URL is immutable and the Worker verifies the bytes before returning them.
 
-For routine remote production upserts containing new or replaced illustrations, configure the verified production R2 bucket as the Worker's `TOOL_ASSETS` binding and pass the same bucket to the publisher:
+For routine remote production upserts containing new or replaced illustrations, the Worker's `TOOL_ASSETS` binding points to `utildesk-tool-assets`; pass the same bucket to the publisher:
 
 ```bash
 npm --prefix site run publish:runtime -- \
   --kind tool --slugs-file /path/to/slugs.txt --remote --production \
   --confirm TOOL_RUNTIME_PRODUCTION --backup /private/backup/before.sql \
-  --asset-bucket <verified-tool-assets-bucket> \
+  --asset-bucket utildesk-tool-assets \
   --config wrangler.runtime.production.jsonc \
   --database utildesk-content-runtime-production
 ```
@@ -175,6 +177,41 @@ Before changing D1, `--allow-pages-fallback-assets` fetches every projected `/im
 
 Old Pages `/images/tools/*` files remain a read-only fallback: if the R2 binding or object is absent, the asset endpoint fetches the old Pages file and serves it only when its SHA-256 matches. Do not delete old Pages or R2 objects during this migration.
 
+The bucket begins as a delta store. The 1,146 historical illustration objects remain safely available from the frozen/Pages fallback and are not bulk-copied during a content release. Every new or replaced image is uploaded content-addressed to R2 before its paired D1 update.
+
+## Single content-only delta command
+
+The normal 1-100 card flow is the wrapper below. It performs changed-slug discovery, strict DE/EN/public-state validation, content-addressed asset publication, one paired D1 transaction, post-write source-hash verification, bounded live HTML/JSON/Markdown/asset validation, and IndexNow for only the changed DE/EN canonical HTML URLs:
+
+```bash
+npm --prefix site run release:tool-runtime -- \
+  --git-range <base>..<head> --operation upsert \
+  --asset-bucket utildesk-tool-assets \
+  --ledger docs/04_operations/tool_runtime_live_request_ledger_2026-07.json \
+  --max-live-requests 500
+
+# After inspecting the deterministic preflight and committing a clean release:
+npm --prefix site run release:tool-runtime -- \
+  --git-range <base>..<head> --operation upsert \
+  --asset-bucket utildesk-tool-assets \
+  --backup /private/backup/before.sql \
+  --ledger docs/04_operations/tool_runtime_live_request_ledger_2026-07.json \
+  --max-live-requests 500 --production --execute
+```
+
+The wrapper never invokes Astro and fingerprints `site/dist` before/after execution. It refuses `--all`, refuses a complete worst-case estimate beyond the remaining ledger, and reserves publisher, delta-validation and two IndexNow submissions before their respective live commands. An ordinary ten-card release with ten changed assets is budgeted at 97 requests.
+
+## Runtime shell switch
+
+Homepage, Tool Index, category and tag routes use a separate opt-in key:
+
+- `content-runtime:tool-shell=off|on`
+- delivery header `X-Utildesk-Content-Runtime: tool-shell-v1`
+
+Missing/malformed KV state is `off`; a Worker 404/5xx/exception falls through to the Pages shell. This key does not alter `content-runtime:tools` or `content-runtime:ratgeber`. The admin endpoint is `/admin/ratgeber/api/tool-shell-runtime` and accepts only explicit `on`/`off` JSON.
+
+Disabled/tombstoned rows carry `X-Utildesk-Route-State`, so Pages does not accidentally resurrect an intentionally retired tool from the frozen fallback. A genuinely missing D1 row still fails open to frozen static.
+
 ## Deactivate, redirect and tombstone
 
 ```bash
@@ -192,7 +229,7 @@ Multiple redirects use a JSON object such as `{ "old-a": "new-a", "old-b": "new-
 
 ## Production gate
 
-Do not run this section until preview parity, allowlist selection and account ownership are all confirmed.
+Do not run this section until local-full HTML, machine, shell, resource, visual and build-graph gates are green.
 
 1. Verify the configured account, production database UUID, Pages project and Worker.
 2. Export production D1 to a private path outside Git.
