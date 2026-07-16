@@ -18,6 +18,10 @@ generated_at: "2026-05-06"
 
 Zoom Phone ist eine cloudbasierte Telefonielösung, die speziell für Unternehmen entwickelt wurde, um nahtlose Kommunikation und Integration in bestehende Arbeitsabläufe zu ermöglichen. Als Teil der Zoom-Plattform verbindet es traditionelle Telefonie mit modernen Collaboration-Tools und unterstützt sowohl interne als auch externe Gespräche über ein einziges, übersichtliches System.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoom-phone-editorial.webp" alt="Redaktionelle Illustration zu Zoom Phone: vernetzte Telefongespräche im Arbeitsalltag" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Zoom Phone ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

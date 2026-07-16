@@ -1,0 +1,18 @@
+{
+  "batch_date": "2026-07-16",
+  "generation_source": "codex-subscription-imagegen",
+  "status": "implemented",
+  "dimensions": {"width": 1280, "height": 720},
+  "constraints": {"gemini": false, "external_api": false, "readable_text": false, "logos": false, "watermarks": false},
+  "illustrations": [
+    {"slug": "zoho-office-suite", "path": "content/images/tools/zoho-office-suite-editorial.webp", "style": "original cubist editorial office scene"},
+    {"slug": "zoho-social", "path": "content/images/tools/zoho-social-editorial.webp", "style": "original surrealist social-media city"},
+    {"slug": "zoom-phone", "path": "content/images/tools/zoom-phone-editorial.webp", "style": "original high-contrast stencil street-art scene"},
+    {"slug": "zoho-people", "path": "content/images/tools/zoho-people-editorial.webp", "style": "original elongated modernist HR scene"},
+    {"slug": "zoho-sheet", "path": "content/images/tools/zoho-sheet-editorial.webp", "style": "original geometric data abstraction"},
+    {"slug": "zoho-workplace", "path": "content/images/tools/zoho-workplace-editorial.webp", "style": "original expressive post-impressionist workplace"},
+    {"slug": "zoho-writer", "path": "content/images/tools/zoho-writer-editorial.webp", "style": "original nineteenth-century literary illustration"},
+    {"slug": "zoho-zia", "path": "content/images/tools/zoho-zia-editorial.webp", "style": "original luminous impressionist AI guidance scene"},
+    {"slug": "zulip", "path": "content/images/tools/zulip-editorial.webp", "style": "original vintage cabaret communications poster"}
+  ]
+}

@@ -18,6 +18,10 @@ translation: full
 
 Zoho Writer is not primarily a text generator. It is a cloud editor for documents that need to be co-authored, reviewed, and handed over with a visible history. Its value comes from combining real-time editing, comments, change tracking, templates, and Zoho integrations. Zia can assist with wording and refinement, but the practical payoff is in turning a draft into a document a team can actually approve.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-writer-editorial.webp" alt="Editorial illustration for Zoho Writer: collaborative writing and editorial work" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Writer for?
 
 Zoho Writer suits small and mid-sized teams that work on proposals, briefs, HR documents, knowledge-base material, or recurring customer communications. It is particularly compelling when Zoho CRM, Zoho Sign, or other Zoho products are already part of the stack and documents should not keep moving between disconnected tools.

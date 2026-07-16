@@ -20,6 +20,10 @@ translation: full
 
 Zoho Sheet is a web-based spreadsheet application that is part of the Zoho Office Suite. It allows users to create, edit, and collaborate on spreadsheets online in real time. With a wide range of features for data analysis, automation, and collaboration, Zoho Sheet helps teams and individuals work more productively and efficiently, whether in the office, working from home, or on the go.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoho-sheet-editorial.webp" alt="Editorial illustration for Zoho Sheet: teams turn data into decisions" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Zoho Sheet suitable for?
 
 Zoho Sheet is aimed at businesses of all sizes, freelancers, project managers, and anyone looking for a flexible, cloud-based spreadsheet solution. It is especially well suited for teams that value collaborative editing and easy integration with other Zoho applications. Zoho Sheet also offers an intuitive interface and helpful templates for users without in-depth Excel knowledge. For education and small businesses that prefer cost-efficient yet powerful tools, Zoho Sheet is an attractive option.
