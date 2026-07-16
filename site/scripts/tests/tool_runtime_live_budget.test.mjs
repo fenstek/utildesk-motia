@@ -139,7 +139,7 @@ test("release and remote publisher entrypoints permanently reject --all", async 
   assert.match(publisher.stderr, /refuses --all/);
 });
 
-test("bounded text-only release dry-run invokes no Astro build and mutates no source or dist tree", async () => {
+test("bounded one-card release dry-run invokes no Astro build and mutates no source or dist tree", async () => {
   const directory = await mkdtemp(join(tmpdir(), "utildesk-release-dry-run-"));
   const siteDir = resolve(import.meta.dirname, "../..");
   const repoDir = resolve(siteDir, "..");
@@ -156,14 +156,14 @@ test("bounded text-only release dry-run invokes no Astro build and mutates no so
       "--slugs-file", slugFile,
       "--ledger", ledger,
       "--max-live-requests", "500",
-      "--allow-pages-fallback-assets",
+      "--asset-bucket", "utildesk-tool-assets",
     ], { cwd: siteDir, maxBuffer: 4 * 1024 * 1024 });
     const report = JSON.parse(stdout);
     assert.equal(report.dryRun, true);
     assert.equal(report.astroBuild, false);
     assert.equal(report.distUnchanged, true);
     assert.equal(report.slugs.length, 1);
-    assert.equal(report.assets, 0);
+    assert.equal(report.assets, 1);
     assert.equal(await fingerprintTree(join(repoDir, "content")), contentBefore);
     assert.equal(await fingerprintTree(join(siteDir, "dist")), distBefore);
   } finally {
