@@ -1503,3 +1503,13 @@ _Last updated: 2026-07-14_
 - Applied D1 migration `0006`; deployed Worker `585af87a-af2c-40cc-a13c-f20cb3e02cf0` and Pages `2e3addbc-c918-419b-bf2a-a23e2ac22f35`.
 - Production verification passed the exact 48-route detail canary, 24 unique machine routes, corrected shell category/tag retry, compact 114-URL sitemap contracts and byte-identical robots. The first shell mismatch was rolled back automatically, fixed locally, redeployed and retested.
 - R2 was not enabled in the owning account, so the production binding remains absent and hash-verified Pages/frozen assets stay active. No credential or billing state was changed.
+
+## 2026-07-16 - Local-only post-migration hardening
+
+- Removed the unreferenced legacy `test_tool_route_entries` script and note; they described normal static tool-detail generation that no longer exists and did not cover the frozen fallback contract.
+- Made the real postbuild guard fixture-testable. Normal shell builds now have regression coverage that rejects any emitted tool-detail HTML/JSON/Markdown artifact, while frozen builds require all six localized artifacts per active slug.
+- Added a bounded text-only `release:tool-runtime` dry-run regression using the asset-free `dell-boomi` pair. It fingerprints `content/` and `site/dist`, reports `astroBuild: false` and `distUnchanged: true`, and creates no release output or ledger entry.
+- The normal local build completed in 7.21 seconds with 1,053 pages, zero static tool-detail/mirror artifacts, and unchanged compact 114-URL Google/Bing/focus sitemaps.
+- One local-full capture covered all 2,456 DE/EN routes. Its final comparator exposed one German meta-description dash-cleaning regression; the locale-specific frozen-static behavior was restored and regression-tested. A targeted local Worker render of the affected Azure Text to Speech route brought the saved 2,456-record comparison to zero errors without repeating the exhaustive capture.
+- Clarified runbook paths passed through `npm --prefix site`: evidence and ledger arguments now use explicit repository-root `$PWD` paths, preventing accidental `site/site/...` resolution.
+- This hardening turn made no production, remote D1/KV/R2, IndexNow, deploy or push request.
