@@ -1,0 +1,7 @@
+---
+export const prerender = false;
+import StaticCategoryIndex from "../../../src/pages/category/index.astro";
+import { getRuntimeToolShellData } from "../../lib/toolShellRuntime";
+const data = await getRuntimeToolShellData("de");
+---
+<StaticCategoryIndex runtimeTools={data.displayTools} />

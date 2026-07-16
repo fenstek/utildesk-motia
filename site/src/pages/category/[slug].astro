@@ -18,13 +18,14 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const category = Astro.props.category ?? CATEGORIES.find((cat) => cat.slug === slug);
+const runtimeTools = Astro.props.runtimeTools as Awaited<ReturnType<typeof listDisplayTools>> | undefined;
+const category = Astro.props.runtimeCategory ?? Astro.props.category ?? CATEGORIES.find((cat) => cat.slug === slug);
 
 if (!category) {
   return Astro.redirect("/404");
 }
 
-const tools = [...(await listDisplayTools("de"))]
+const tools = [...(runtimeTools ?? await listDisplayTools("de"))]
   .filter((tool) => tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag)))
   .sort((a, b) => a.title.localeCompare(b.title, "de"));
 const toolCount = tools.length;

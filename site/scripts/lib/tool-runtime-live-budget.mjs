@@ -74,6 +74,15 @@ export function estimateProductionDelta({ slugs, assetPaths = [], includeControl
   return { ...result, total: Object.values(result).reduce((sum, value) => sum + value, 0) };
 }
 
+export function estimateProductionPublish({ assets = 0, assetMode = "none", compareOnly = false }) {
+  if (!Number.isInteger(assets) || assets < 0) throw new Error("assets must be a non-negative integer");
+  if (compareOnly) return { d1: 1, r2: 0, pagesAssets: 0, total: 1 };
+  const d1 = 4; // target identity, schema, one atomic batch, post-write source-state verification
+  const r2 = assetMode === "r2" && assets ? 1 + assets * 2 : 0; // bucket identity plus put/get per object
+  const pagesAssets = assetMode === "pages-fallback" ? assets : 0;
+  return { d1, r2, pagesAssets, total: d1 + r2 + pagesAssets };
+}
+
 export function emptyLiveRequestLedger() {
   return {
     version: 1,

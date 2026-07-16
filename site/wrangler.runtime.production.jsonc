@@ -2,6 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "utildesk-content-runtime",
   "compatibility_date": "2026-07-13",
+  "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
   "d1_databases": [
     {
@@ -9,6 +10,12 @@
       "database_name": "utildesk-content-runtime-production",
       "database_id": "259ed703-ba7c-4aba-a269-e167d391eae6",
       "migrations_dir": "./runtime/migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "TOOL_ASSETS",
+      "bucket_name": "utildesk-tool-assets"
     }
   ]
 }

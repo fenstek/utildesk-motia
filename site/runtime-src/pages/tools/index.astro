@@ -1,0 +1,7 @@
+---
+export const prerender = false;
+import StaticToolsIndex from "../../../src/pages/tools/index.astro";
+import { getRuntimeToolShellData } from "../../lib/toolShellRuntime";
+const data = await getRuntimeToolShellData("de");
+---
+<StaticToolsIndex runtimeTools={data.displayTools} runtimeRatgeber={data.ratgeber} />

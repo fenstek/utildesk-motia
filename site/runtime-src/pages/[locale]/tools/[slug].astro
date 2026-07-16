@@ -12,7 +12,10 @@ const entry = validLocale ? await getRuntimeContentEntry("tool", "en", slug) : n
 if (entry?.routeState === "redirect" && entry.redirectTargetPath) return Astro.redirect(entry.redirectTargetPath, 301);
 const renderable = Boolean(entry?.isActive && entry.routeState === "active");
 const status = entry?.routeState === "tombstone" ? 410 : 404;
-if (!renderable) Astro.response.status = status;
+if (!renderable) {
+  Astro.response.status = status;
+  if (entry?.routeState) Astro.response.headers.set("X-Utildesk-Route-State", entry.routeState);
+}
 const context = entry ? runtimeToolContextRequest(entry.markdown, entry.slug) : { slugs: [], titles: [] };
 const [tools, guides] = renderable ? await Promise.all([
   listRuntimeToolContext("en", context.slugs, context.titles),

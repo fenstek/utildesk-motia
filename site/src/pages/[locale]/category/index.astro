@@ -15,7 +15,8 @@ export function getStaticPaths() {
   return [{ params: { locale: "en" } }];
 }
 
-const tools = await listDisplayTools("en");
+const runtimeTools = Astro.props.runtimeTools as Awaited<ReturnType<typeof listDisplayTools>> | undefined;
+const tools = runtimeTools ?? await listDisplayTools("en");
 const issueNo = getDecisionIssueNumber();
 const categories = CATEGORIES.map((category) => {
   const count = tools.filter((tool) =>

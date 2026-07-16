@@ -26,13 +26,14 @@ export async function getStaticPaths() {
   }));
 }
 
-const selectedTag = String(Astro.props.tag || "");
+const selectedTag = String(Astro.props.runtimeTag || Astro.props.tag || "");
 
 if (!selectedTag) {
   return Astro.redirect("/404");
 }
 
-const enabledTools = await listDisplayTools("de");
+const runtimeTools = Astro.props.runtimeTools as Awaited<ReturnType<typeof listDisplayTools>> | undefined;
+const enabledTools = runtimeTools ?? await listDisplayTools("de");
 const selectedTagLower = selectedTag.toLowerCase();
 const selectedTagLabel = humanizeTagLabel(selectedTag);
 const filteredTools = enabledTools

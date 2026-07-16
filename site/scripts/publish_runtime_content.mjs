@@ -1,5 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { join, resolve } from "node:path";
+import { join, relative, resolve } from "node:path";
 import { spawn } from "node:child_process";
 import { buildEntryUpsertSql, listRuntimeEntries, RUNTIME_PATHS } from "./runtime-content.mjs";
 import {
@@ -19,6 +19,11 @@ import {
   uploadR2Assets,
   verifyPagesFallbackAssets,
 } from "./lib/tool-runtime-publisher.mjs";
+import {
+  DEFAULT_MAX_LIVE_REQUESTS,
+  estimateProductionPublish,
+  reserveLiveRequests,
+} from "./lib/tool-runtime-live-budget.mjs";
 
 const args = process.argv.slice(2);
 const valueFor = (flag) => {
@@ -82,13 +87,18 @@ async function runToolPublisher() {
     throw new Error("--operation must be upsert, deactivate, redirect, tombstone or reconcile");
   }
   const remote = has("--remote");
+  const compareRemote = has("--compare-remote");
+  const liveAccess = remote || compareRemote;
   const dryRun = has("--dry-run") || !remote || operation === "reconcile";
   const production = has("--production");
   const allowPagesFallbackAssets = has("--allow-pages-fallback-assets");
   const configPath = valueFor("--config") || (production ? "wrangler.runtime.production.jsonc" : "wrangler.hybrid.jsonc");
   const requestedDatabase = valueFor("--database") || (production ? "utildesk-content-runtime-production" : "utildesk-content-runtime-preview");
   const target = readRuntimeConfig(resolve(RUNTIME_PATHS.SITE_DIR, configPath), requestedDatabase);
-  const releaseState = gitReleaseState();
+  const ledgerPath = resolve(valueFor("--ledger") || join(RUNTIME_PATHS.REPO_DIR, "docs/04_operations/tool_runtime_live_request_ledger_2026-07.json"));
+  const releaseState = gitReleaseState(RUNTIME_PATHS.REPO_DIR, {
+    allowedDirtyPaths: [relative(RUNTIME_PATHS.REPO_DIR, ledgerPath)],
+  });
   assertProductionSafety({
     production,
     remote,
@@ -98,10 +108,11 @@ async function runToolPublisher() {
     databaseName: target.databaseName,
   });
 
+  if (liveAccess && has("--all")) throw new Error("Remote publisher refuses --all; use a bounded slug file or git range");
   const accountId = process.env.CLOUDFLARE_ACCOUNT_ID || process.env.CF_ACCOUNT_ID;
   const token = process.env.CLOUDFLARE_API_TOKEN || process.env.CF_API_TOKEN;
   const connection = { accountId, databaseId: target.databaseId, token };
-  if (remote && (!accountId || !token)) throw new Error("Remote D1 access requires existing CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN");
+  if (liveAccess && (!accountId || !token)) throw new Error("Remote D1 access requires existing CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN");
 
   let requestedSlugs = [];
   if (operation !== "reconcile" || !has("--all")) {
@@ -169,8 +180,21 @@ async function runToolPublisher() {
     },
   };
 
+  if (liveAccess) {
+    const assetMode = valueFor("--asset-bucket") ? "r2" : allowPagesFallbackAssets ? "pages-fallback" : "none";
+    const estimate = estimateProductionPublish({ assets: assets.length, assetMode, compareOnly: !remote });
+    summary.liveRequestBudget = await reserveLiveRequests({
+      ledgerPath,
+      mode: remote ? "production-publish" : "production-compare",
+      command: `publish_runtime_content.mjs --kind tool --operation ${operation} [bounded release]`,
+      estimate,
+      urls: ["https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"],
+      maxLiveRequests: Number(valueFor("--max-live-requests") ?? DEFAULT_MAX_LIVE_REQUESTS),
+    });
+  }
+
   if (dryRun) {
-    const actualRows = await readActualRows({ remote: has("--compare-remote"), snapshotPath: valueFor("--d1-state"), connection });
+    const actualRows = await readActualRows({ remote: compareRemote, snapshotPath: valueFor("--d1-state"), connection });
     if (operation === "upsert" && actualRows) {
       const actual = new Map(actualRows.map((row) => [`${row.locale}:${row.slug}`, row]));
       summary.operations = release.entries.map((entry) => {
@@ -203,7 +227,38 @@ async function runToolPublisher() {
     }
   }
   const results = await executeD1Batch({ ...connection, statements });
-  console.log(JSON.stringify({ ...summary, published: true, results: results.length }, null, 2));
+  const placeholders = requestedSlugs.map(() => "?").join(", ");
+  const verifiedRows = requestedSlugs.length ? await queryD1({
+    ...connection,
+    sql: `SELECT locale, slug, is_active, route_state, source_hash, asset_hash, redirect_target_path, revision
+          FROM content_entries WHERE kind = 'tool' AND slug IN (${placeholders}) ORDER BY slug, locale`,
+    params: requestedSlugs,
+  }).then((items) => items.flatMap((item) => item.results ?? [])) : [];
+  const expectedEntries = new Map(release.entries.map((entry) => [`${entry.locale}:${entry.slug}`, entry]));
+  const verificationErrors = [];
+  for (const slug of requestedSlugs) {
+    const rows = verifiedRows.filter((row) => row.slug === slug);
+    if (rows.length !== 2) verificationErrors.push(`${slug}: expected two localized D1 rows, got ${rows.length}`);
+    for (const row of rows) {
+      if (operation === "upsert") {
+        const expected = expectedEntries.get(`${row.locale}:${row.slug}`);
+        if (!expected || row.source_hash !== expected.sourceHash || (row.asset_hash ?? null) !== (expected.assetHash ?? null) || Number(row.is_active) !== 1 || row.route_state !== "active") {
+          verificationErrors.push(`${row.locale}:${slug}: published source/asset/route state mismatch`);
+        }
+      } else {
+        const expectedState = operation === "redirect" ? "redirect" : operation === "tombstone" ? "tombstone" : "disabled";
+        if (Number(row.is_active) !== 0 || row.route_state !== expectedState) verificationErrors.push(`${row.locale}:${slug}: expected ${expectedState}`);
+      }
+    }
+  }
+  if (verificationErrors.length) throw new Error(`Post-publish D1 verification failed:\n- ${verificationErrors.join("\n- ")}`);
+  const report = { ...summary, published: true, results: results.length, verifiedRows: verifiedRows.length, sourceHashVerified: operation === "upsert" };
+  const reportPath = valueFor("--report");
+  if (reportPath) {
+    await mkdir(resolve(reportPath, ".."), { recursive: true });
+    await writeFile(resolve(reportPath), `${JSON.stringify(report, null, 2)}\n`);
+  }
+  console.log(JSON.stringify(report, null, 2));
 }
 
 if (kind === "ratgeber") await runLegacyRatgeber();

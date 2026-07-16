@@ -22,6 +22,11 @@ const CONTENT_SOURCES = [
 ];
 
 const asString = (value) => (value == null ? "" : String(value).trim());
+const asIsoDate = (value) => {
+  if (value == null || value === "") return "";
+  const parsed = value instanceof Date ? value : new Date(String(value));
+  return Number.isFinite(parsed.getTime()) ? parsed.toISOString() : asString(value);
+};
 
 const firstParagraph = (markdown) =>
   String(markdown)
@@ -45,8 +50,8 @@ const toRuntimeEntry = async ({ kind, locale, file, raw, primaryEntry = null }) 
   const slug = asString(parsed.data.slug) || file.replace(/\.md$/i, "");
   const title = asString(parsed.data.title) || slug;
   const excerpt = asString(parsed.data.excerpt || parsed.data.description || parsed.data.summary) || firstParagraph(parsed.content);
-  const sourceUpdatedAt = asString(parsed.data.updated || parsed.data.lastReviewed || parsed.data.last_reviewed);
-  const sourcePublishedAt = asString(parsed.data.date || parsed.data.created_at || parsed.data.createdAt);
+  const sourceUpdatedAt = asIsoDate(parsed.data.updated || parsed.data.lastReviewed || parsed.data.last_reviewed);
+  const sourcePublishedAt = asIsoDate(parsed.data.date || parsed.data.created_at || parsed.data.createdAt);
 
   const basis = primaryEntry ?? { slug, data: parsed.data, content: parsed.content };
   const searchDecision = kind === "tool"

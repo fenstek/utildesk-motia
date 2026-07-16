@@ -96,6 +96,27 @@ export const toolDetailSlug = (pathname) => {
   return match?.[1] ?? null;
 };
 
+export const toolMachineRoute = (pathname) => {
+  const catalog = pathname.match(/^\/(?:en\/)?api\/tools\.json$/);
+  if (catalog) return { slug: null, kind: "catalog" };
+  const detail = pathname.match(/^\/(?:en\/)?api\/tools\/([a-z0-9]+(?:-[a-z0-9]+)*)\.json$/);
+  if (detail) return { slug: detail[1], kind: "json" };
+  const markdown = pathname.match(/^\/(?:en\/)?markdown\/tools\/([a-z0-9]+(?:-[a-z0-9]+)*)\.md$/);
+  if (markdown) return { slug: markdown[1], kind: "markdown" };
+  return null;
+};
+
+export const toolShellRoute = (pathname) => {
+  if (pathname === "/" || pathname === "/en" || pathname === "/en/") return { kind: "homepage" };
+  if (/^\/(?:en\/)?tools\/?$/.test(pathname)) return { kind: "index" };
+  if (/^\/(?:en\/)?category\/?$/.test(pathname)) return { kind: "category-index" };
+  const category = pathname.match(/^\/(?:en\/)?category\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/);
+  if (category) return { kind: "category", slug: category[1] };
+  const tag = pathname.match(/^\/(?:en\/)?tools\/tag\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/);
+  if (tag) return { kind: "tag", slug: tag[1] };
+  return null;
+};
+
 const isToolAssetPath = (pathname) => pathname.startsWith("/tool-assets/");
 
 export const frozenToolFallback = async (context) => {
@@ -119,8 +140,9 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
 
   try {
     const response = await fetch(new Request(upstream, context.request));
+    const intentionalRouteState = response.headers.get("X-Utildesk-Route-State");
     // Keep a static fallback for a path which has not been imported into D1.
-    if ((response.status === 404 && !url.pathname.startsWith("/runtime-assets/") && !isToolAssetPath(url.pathname)) || response.status >= 500) {
+    if ((response.status === 404 && !intentionalRouteState && !url.pathname.startsWith("/runtime-assets/") && !isToolAssetPath(url.pathname)) || response.status >= 500) {
       return cluster === "tools" ? frozenToolFallback(context) : context.next();
     }
 
@@ -162,7 +184,7 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
     }
 
     const headers = new Headers(response.headers);
-    headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : "ratgeber-v1");
+    headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : cluster === "tool-shell" ? "tool-shell-v1" : "ratgeber-v1");
     return new Response(response.body, { status: response.status, headers });
   } catch {
     // An upstream outage must preserve the existing Pages version instead of
@@ -192,6 +214,15 @@ export const toolRuntimeIsEnabled = async (context, slug) => {
   } catch {
     // Tool runtime is opt-in. A KV read/parse failure must leave the static
     // fallback in control and must never affect the Ratgeber switch.
+    return false;
+  }
+};
+
+export const toolShellRuntimeIsEnabled = async (context) => {
+  try {
+    return (await context.env.RATGEBER_REVIEW?.get("content-runtime:tool-shell")) === "on";
+  } catch {
+    // Shell migration is independently opt-in and fails open to Pages.
     return false;
   }
 };
@@ -271,11 +302,21 @@ export async function onRequest(context) {
     return proxyRuntime(context, "ratgeber");
   }
 
+  const runtimeToolMachine = toolMachineRoute(url.pathname);
+  if (runtimeToolMachine && await toolRuntimeIsEnabled(context, runtimeToolMachine.slug ?? "")) {
+    return proxyRuntime(context, "tools");
+  }
+
   const runtimeToolSlug = toolDetailSlug(url.pathname);
   if (runtimeToolSlug) {
     return await toolRuntimeIsEnabled(context, runtimeToolSlug)
       ? proxyRuntime(context, "tools")
       : frozenToolFallback(context);
+  }
+
+  const runtimeToolShell = toolShellRoute(url.pathname);
+  if (runtimeToolShell && !url.search && await toolShellRuntimeIsEnabled(context)) {
+    return proxyRuntime(context, "tool-shell");
   }
 
   if (!url.search || !isPublicHtmlPath(url.pathname)) {
@@ -302,7 +343,9 @@ export async function onRequest(context) {
 
     // Catalogue controls are functional client-side state. The page keeps a
     // canonical link to /tools/, while these allow search and filters to work.
-    return context.next();
+    return await toolShellRuntimeIsEnabled(context)
+      ? proxyRuntime(context, "tool-shell")
+      : context.next();
   }
 
   return Response.redirect(`${url.origin}${withTrailingSlash(url.pathname)}`, 308);

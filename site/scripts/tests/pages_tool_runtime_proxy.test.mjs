@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { frozenToolFallback, onRequest, toolDetailSlug, toolRuntimeIsEnabled } from "../../functions/_middleware.js";
+import { frozenToolFallback, onRequest, toolDetailSlug, toolMachineRoute, toolRuntimeIsEnabled, toolShellRoute, toolShellRuntimeIsEnabled } from "../../functions/_middleware.js";
 import { listRuntimeEntries } from "../runtime-content.mjs";
 
 const originalFetch = globalThis.fetch;
@@ -33,6 +33,24 @@ test("tool route parser accepts only canonical DE/EN detail paths", () => {
   assert.equal(toolDetailSlug("/tools/"), null);
   assert.equal(toolDetailSlug("/tools/tag/ai/"), null);
   assert.equal(toolDetailSlug("/api/tools/chatgpt.json"), null);
+});
+
+test("tool machine parser accepts only JSON catalogs/details and Markdown details", () => {
+  assert.deepEqual(toolMachineRoute("/api/tools.json"), { slug: null, kind: "catalog" });
+  assert.deepEqual(toolMachineRoute("/en/api/tools.json"), { slug: null, kind: "catalog" });
+  assert.deepEqual(toolMachineRoute("/api/tools/chatgpt.json"), { slug: "chatgpt", kind: "json" });
+  assert.deepEqual(toolMachineRoute("/en/markdown/tools/chatgpt.md"), { slug: "chatgpt", kind: "markdown" });
+  assert.equal(toolMachineRoute("/api/ratgeber.json"), null);
+  assert.equal(toolMachineRoute("/api/tools/../secret.json"), null);
+});
+
+test("tool shell parser includes only homepage, index, category and tag routes", () => {
+  for (const pathname of ["/", "/en/", "/tools/", "/en/tools/", "/category/", "/category/entwickler-tools/", "/en/tools/tag/ai/"]) {
+    assert.ok(toolShellRoute(pathname), pathname);
+  }
+  for (const pathname of ["/tools/chatgpt/", "/ratgeber/", "/api/tools.json", "/category/../secret/"]) {
+    assert.equal(toolShellRoute(pathname), null, pathname);
+  }
 });
 
 test("the first production cohort contains 20 unique active DE/EN slugs", async () => {
@@ -71,6 +89,28 @@ test("tool runtime defaults off and fails closed on malformed KV", async () => {
   } }).context, "chatgpt"), false);
 });
 
+test("tool shell has an independent opt-in switch which fails closed", async () => {
+  assert.equal(await toolShellRuntimeIsEnabled(contextFor().context), false);
+  assert.equal(await toolShellRuntimeIsEnabled(contextFor({ values: { "content-runtime:tool-shell": "on" } }).context), true);
+  const context = contextFor().context;
+  context.env.RATGEBER_REVIEW.get = async () => { throw new Error("KV unavailable"); };
+  assert.equal(await toolShellRuntimeIsEnabled(context), false);
+});
+
+test("tool shell proxies independently and fails open to the Pages shell", async () => {
+  globalThis.fetch = async () => new Response("runtime shell", { status: 200, headers: { "Content-Type": "text/html" } });
+  const enabled = contextFor({ pathname: "/category/entwickler-tools/", values: { "content-runtime:tool-shell": "on", "content-runtime:tools": "off" } });
+  const response = await onRequest(enabled.context);
+  assert.equal(response.headers.get("X-Utildesk-Content-Runtime"), "tool-shell-v1");
+  assert.equal(await response.text(), "runtime shell");
+  assert.equal(enabled.nextCalls(), 0);
+
+  globalThis.fetch = async () => new Response("runtime failure", { status: 503 });
+  const failed = contextFor({ pathname: "/tools/", values: { "content-runtime:tool-shell": "on" } });
+  assert.equal(await (await onRequest(failed.context)).text(), "static");
+  assert.equal(failed.nextCalls(), 1);
+});
+
 test("allowlist proxies both locales and leaves other tools static", async () => {
   const values = {
     "content-runtime:tools": "allowlist",
@@ -101,6 +141,20 @@ test("allowlist proxies both locales and leaves other tools static", async () =>
   assert.equal(fetchCalls, 3);
 });
 
+test("all-route mode proxies tool machine endpoints while off mode keeps the static mirror", async () => {
+  globalThis.fetch = async (request) => new Response(`runtime:${new URL(request.url).pathname}`, {
+    status: 200,
+    headers: { "Content-Type": "application/json", "X-Robots-Tag": "noindex" },
+  });
+  for (const pathname of ["/api/tools.json", "/en/api/tools.json", "/api/tools/chatgpt.json", "/en/markdown/tools/chatgpt.md"]) {
+    const response = await onRequest(contextFor({ pathname, values: { "content-runtime:tools": "on" } }).context);
+    assert.equal(response.headers.get("X-Utildesk-Content-Runtime"), "tools-v1");
+    assert.equal(await response.text(), `runtime:${pathname}`);
+  }
+  const staticResponse = await onRequest(contextFor({ pathname: "/api/tools/chatgpt.json", values: { "content-runtime:tools": "off" } }).context);
+  assert.equal(await staticResponse.text(), "static");
+});
+
 test("tool upstream 404, 5xx and exception fail open to the static route", async () => {
   const values = { "content-runtime:tools": "on" };
   for (const behavior of [404, 503, "throw"]) {
@@ -117,6 +171,19 @@ test("tool upstream 404, 5xx and exception fail open to the static route", async
     assert.equal(await response.text(), "frozen");
     assert.equal(fixture.nextCalls(), 0);
   }
+});
+
+test("an intentional D1 disabled state is not resurrected from the frozen fallback", async () => {
+  globalThis.fetch = async () => new Response("disabled", {
+    status: 404,
+    headers: { "X-Utildesk-Route-State": "disabled", "X-Robots-Tag": "noindex" },
+  });
+  const fixture = contextFor({ values: { "content-runtime:tools": "on" } });
+  const response = await onRequest(fixture.context);
+  assert.equal(response.status, 404);
+  assert.equal(response.headers.get("X-Utildesk-Route-State"), "disabled");
+  assert.equal(await response.text(), "disabled");
+  assert.equal(fixture.nextCalls(), 0);
 });
 
 test("frozen tool fallback is immutable and fails through only if unavailable", async () => {
