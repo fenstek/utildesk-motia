@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-16_
 
+## 2026-07-16 - 63 tool-card illustration runtime release
+
+- Integrated seven isolated OptiPlex Luna batches produced through the Codex subscription without Gemini or API billing: 63 distinct 1280x720 WebP illustrations, 126 paired DE/EN card references, batch manifests and the central illustration registry.
+- Preserved the existing editorial prose, FAQs and alternatives outside the inserted figure blocks; replaced inactive alternatives in Simplenote, Sistrix and Zeplin before release.
+- Published source commit `6aa676f1` through the D1/R2 runtime path: 126 locale rows in 32 D1 statements, 63 content-addressed R2 objects, 441/441 live delta checks green, and both global and Bing IndexNow endpoints returned `200` for all 126 canonical URLs.
+- Astro/Pages were not rebuilt and `dist` remained unchanged. The internal daily live-request ceiling is now 10,000; the tracked worst-case ledger is 1,076/10,000, and nine active paired cards remain without illustrations.
+
 ## 2026-07-16 - Runtime asset delivery recovery
 
 - Diagnosed the unstyled production homepage and tool pages as a deployment-bundle error, not a D1/R2 publication failure: runtime HTML referenced `/runtime-assets/BaseLayout.C877vJB7.css`, while the active Worker version returned `404` for that asset. The ten new content-addressed WebP files were already healthy in R2.

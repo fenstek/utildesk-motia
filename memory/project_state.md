@@ -4,7 +4,8 @@
 
 - Production runtime renderer version `47a09f05-9366-4cf3-bc12-1c4a66e57540` serves the shared `/runtime-assets/BaseLayout.C877vJB7.css` through the Worker `ASSETS` binding; homepage, tool pages and R2 illustrations are styled and live again.
 - Future renderer releases must use `npm --prefix site run deploy:runtime`; deploying the bare `dist-runtime/server/entry.mjs` is forbidden because it omits runtime CSS and client scripts.
-- The tracked live-request ledger is at 497/10,000 worst-case requests after the emergency repair. The internal safety ceiling was raised from 500 to 10,000 on explicit owner instruction; the real Cloudflare Workers/Pages Functions allowance remains 100,000 requests per day.
+- The tracked live-request ledger is at 1,076/10,000 worst-case requests after the emergency repair and the 63-illustration runtime release. The internal safety ceiling was raised from 500 to 10,000 on explicit owner instruction; the real Cloudflare Workers/Pages Functions allowance remains 100,000 requests per day.
+- The 63-illustration batch is live through D1/R2 from source commit `6aa676f1`: 126 paired DE/EN entries, 63 content-addressed WebP objects, 441/441 delta checks green, and both IndexNow endpoints returned `200`. Astro/Pages were not rebuilt; nine active paired cards remain without illustrations.
 
 ## Summary
 
@@ -345,3 +346,4 @@
 - R2 is enabled. Standard/WEUR bucket `utildesk-tool-assets` is bound to the Worker as `TOOL_ASSETS`; new and changed illustrations use content-addressed R2 objects while unchanged historical assets retain the verified Pages/frozen fallback.
 - Bounded release evidence: 48-route production detail canary exact, 24-route machine delta green, corrected shell canary green, compact Google/Bing/focus sitemaps all 114 URLs, and 346/500 worst-case live requests reserved. The R2 proof object returned exact SHA-256 and `X-Utildesk-Asset-Source: r2`.
 - The first normal R2 content delta published ten new tool illustrations and 20 DE/EN entries from source commit `e19b950c`. The bounded 70-check HTML/JSON/Markdown/asset gate passed, IndexNow accepted the 20 canonical URLs, Astro/Pages were not rebuilt, and the request ledger now stands at 448/500. The active DE/EN illustration gap is 72 paired cards.
+- The second normal R2 content delta published 63 new tool illustrations and 126 DE/EN entries from source commit `6aa676f1`. The full 441-check HTML/JSON/Markdown/asset delta passed, both IndexNow endpoints accepted all 126 canonical URLs, and `dist` remained unchanged without an Astro/Pages rebuild. The request ledger stands at 1,076/10,000, leaving nine active paired cards without illustrations.
