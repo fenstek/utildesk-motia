@@ -4,5 +4,51 @@
   "hardLimit": 500,
   "policy": "Worst-case reservations are charged before execution and are never reclaimed automatically.",
   "historicalNote": "The previous live exhaustive audits consumed the old daily quota and are preserved as evidence. They must not be repeated. This ledger starts the bounded post-reset remainder of the release.",
-  "entries": []
+  "entries": [
+    {
+      "reservedAt": "2026-07-16T01:49:28.584Z",
+      "mode": "production-state-inspection",
+      "command": "bounded Cloudflare Pages/Worker/D1/R2/KV state inspection (6 CLI reads, sequential)",
+      "estimate": {
+        "cliReads": 6,
+        "worstCasePerRead": 5,
+        "total": 30
+      },
+      "worstCaseRequests": 30,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T01:56:36.795Z",
+      "mode": "production-runtime-ownership-inspection",
+      "command": "bounded Worker/D1/R2 read using the saved existing-runtime credential scope",
+      "estimate": {
+        "cliReads": 3,
+        "worstCasePerRead": 5,
+        "total": 15
+      },
+      "worstCaseRequests": 15,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T01:57:36.706Z",
+      "mode": "production-r2-scope-discovery",
+      "command": "list R2 buckets in the two remaining saved credential scopes",
+      "estimate": {
+        "cliReads": 2,
+        "worstCasePerRead": 5,
+        "total": 10
+      },
+      "worstCaseRequests": 10,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    }
+  ]
 }

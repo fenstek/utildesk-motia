@@ -53,6 +53,11 @@ configuration or unrelated documentation change still blocks publication.
 - There is no physical delete path. A removed route is `disabled`, `redirect` or `tombstone` first.
 - Production requires a clean commit, an explicit confirmation string, a fresh non-empty D1 SQL export and an API lookup that matches the configured database name and UUID.
 - Ratgeber continues to use its independent runtime, route proxy and kill switch.
+- `TOOL_ASSETS` is optional at runtime. If R2 is not enabled for the Worker/D1
+  account, omit the production binding and use only `--allow-pages-fallback-assets`;
+  changed asset bytes must fail closed instead of silently replacing a hash.
+  Enabling R2 is an account-owner/billing action and is never inferred from a
+  content release.
 
 Cloudflare contracts used by the publisher:
 
