@@ -1,5 +1,13 @@
 # Next Steps
 
+## 2026-07-16 Tool runtime follow-up
+
+1. Do not run another live all-route audit. Use `gate:tool-runtime-local-full`, then at most one bounded production canary or changed-slug delta with the committed ledger.
+2. For the next text-only card release, use `npm --prefix site run release:tool-runtime` with a bounded slug file or Git range, the fresh D1 backup, `--allow-pages-fallback-assets`, and no Astro build.
+3. Before releasing any new or changed illustration, an account owner must explicitly enable R2 in the Worker/D1 account and create `utildesk-tool-assets`; then restore the `TOOL_ASSETS` production binding and rerun local plus bounded asset validation. Until then changed assets intentionally fail closed.
+4. Keep the frozen tag/archive and fallback Pages deployment. Run the documented restore drill after any future fallback implementation change, not as a routine production crawl.
+5. Observe normal Cloudflare errors/latency passively. Do not add recurring synthetic canary loops.
+
 4. Re-check Search Console after the refreshed sitemap is downloaded again:
    - confirm that old alias URLs age out of the submitted/error set;
    - confirm that the newest `ratgeber` article leaves the `URL not known to Google` state.

@@ -1493,3 +1493,13 @@ _Last updated: 2026-07-14_
 - Added canonical and noindex preview runtime detail routes, revision-aware cache keys/headers, content-addressed WebP projection with R2-first/hash-verified Pages fallback, and a reproducible complete local D1 importer.
 - Automated live/static/runtime parity now covers canonical, hreflang, robots/googlebot, JSON-LD, machine alternates, alternatives, Ratgeber backlinks, images, links, 390px/1440px overflow and cache MISS/HIT. Full local results: 2456 route responses and 10,754 resources with zero failures.
 - Added a committed 20-slug production cohort and a default-off independent Pages proxy with tool-only kill switch and static fail-open tests. No push or production deploy was performed because the current credential does not own the configured production D1/Worker and the live Worker returns 404 for tool routes.
+
+## 2026-07-16 - Complete tool runtime production migration
+
+- Enforced a permanent 500-request live ledger with local-full, production-canary and production-delta contracts; every production entry point rejects live `--all`.
+- Added runtime DE/EN tool catalogs, detail JSON/Markdown, homepage, Tool Index, categories and tags; added monotonic collection revisions and metadata-only shell caching.
+- Normal builds now produced 1,053 pages in 9.80 seconds and zero tool-detail HTML/JSON/Markdown artifacts while the immutable frozen fallback remains reproducible.
+- Added the paired atomic delta release wrapper with source/public-state guards, source/asset hash verification, route-state operations, changed-canonical IndexNow and no Astro/dist mutation for text-only releases.
+- Applied D1 migration `0006`; deployed Worker `585af87a-af2c-40cc-a13c-f20cb3e02cf0` and Pages `2e3addbc-c918-419b-bf2a-a23e2ac22f35`.
+- Production verification passed the exact 48-route detail canary, 24 unique machine routes, corrected shell category/tag retry, compact 114-URL sitemap contracts and byte-identical robots. The first shell mismatch was rolled back automatically, fixed locally, redeployed and retested.
+- R2 was not enabled in the owning account, so the production binding remains absent and hash-verified Pages/frozen assets stay active. No credential or billing state was changed.

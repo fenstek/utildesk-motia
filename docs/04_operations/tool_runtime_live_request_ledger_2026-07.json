@@ -324,6 +324,90 @@
         "https://utildesk-content-runtime.s-skorykov.workers.dev/ratgeber/shared-ai-workspaces-team-kontext-memory-agenten/"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:29:05.845Z",
+      "mode": "production-worker-corrective-deploy",
+      "command": "single corrective Worker deploy after shell cold-load rollback and local 968-route retest",
+      "estimate": {
+        "upload": 1,
+        "versionCreate": 1,
+        "deploymentCreate": 1,
+        "metadataReads": 3,
+        "cliOverhead": 4,
+        "total": 10
+      },
+      "worstCaseRequests": 10,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:29:35.434Z",
+      "mode": "production-worker-corrective-canary",
+      "command": "four unique direct cold shell checks after corrective deploy",
+      "estimate": {
+        "directWorkerReads": 4,
+        "total": 4
+      },
+      "worstCaseRequests": 4,
+      "plannedUrls": [
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/category/ai-chatbots/",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/en/category/ai-chatbots/",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/tools/tag/automation/",
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/en/tools/tag/automation/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:30:09.326Z",
+      "mode": "production-shell-corrective-retry",
+      "command": "enable shell once then check four unique category/tag paths after corrective Worker deploy",
+      "estimate": {
+        "shellStateWrite": 1,
+        "shellHtml": 4,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://tools.utildesk.de/admin/ratgeber/api/tool-shell-runtime?action=retry-on-20260716",
+        "https://tools.utildesk.de/category/ai-chatbots/",
+        "https://tools.utildesk.de/en/category/ai-chatbots/",
+        "https://tools.utildesk.de/tools/tag/automation/",
+        "https://tools.utildesk.de/en/tools/tag/automation/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:30:49.978Z",
+      "mode": "production-final-state-read",
+      "command": "final Worker deployments, D1 migration list and Pages project/deployment reads",
+      "estimate": {
+        "cliReads": 4,
+        "worstCasePerRead": 5,
+        "total": 20
+      },
+      "worstCaseRequests": 20,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-16T02:46:57.254Z",
+      "mode": "production-git-alignment-and-pages-confirmation",
+      "command": "push final [CI Skip] commit to codex branch and master, then read Pages deployment list once",
+      "estimate": {
+        "worstCaseSkippedPagesDeployment": 50,
+        "postPushPagesRead": 5,
+        "total": 55
+      },
+      "worstCaseRequests": 55,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }

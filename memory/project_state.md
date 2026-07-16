@@ -328,3 +328,13 @@
 - Verified public set is exactly 1228 DE and 1228 EN tool entries. The full local runtime crawl passed 2456/2456 canonical routes; the deduplicated resource audit passed 10,754 URLs with zero failures.
 - Production remains unchanged. The available Cloudflare credential can inspect Pages project `utildesk-motia` but cannot access target D1/Worker ownership; the configured production Worker currently returns 404 for tool preview and canonical routes.
 - Safe next operation requires the existing credential/account that owns D1 `259ed703-ba7c-4aba-a269-e167d391eae6` and Worker `utildesk-content-runtime`. Back up D1, apply migrations, publish the 20-slug cohort and deploy the Worker before activating the Pages KV allowlist.
+
+## 2026-07-16 Tool runtime production architecture
+
+- All 1,228 active DE and 1,228 active EN tool-detail routes are D1/Worker-owned behind the Pages `content-runtime:tools=on` switch. The independent `content-runtime:tool-shell=on` switch owns homepage, Tool Index, category and tag shells; Ratgeber remains independently controlled and was not changed by this release.
+- Production Worker version is `585af87a-af2c-40cc-a13c-f20cb3e02cf0` (deployment `4884237a-ff6a-4147-a0a1-1c640ad56956`). Pages production deployment is `2e3addbc-c918-419b-bf2a-a23e2ac22f35` with source `57f770b`.
+- D1 migrations `0001` through `0006` are applied. Collection revisions invalidate tool catalogs and shells monotonically; shell reads are metadata-only and revision-cached per isolate.
+- Normal Astro builds emit no tool detail HTML and no per-tool JSON/Markdown mirrors. Frozen fallback tag `tool-runtime-fallback-20260714`, archive SHA-256 `8b292e374ef8b7af740ed72f7b2569ee86b7b3e748436a5aac75ec104b1ac511`, and fallback Pages deployment `44f4f878` remain the tested recovery path.
+- Runtime DE/EN catalog, detail JSON and Markdown endpoints are fetchable and `noindex`. Delta publication is paired/atomic and quota-ledgered; remote `--all` is forbidden.
+- R2 is not enabled in the Worker/D1 Cloudflare account (code 10042). Production assets therefore remain hash-verified Pages/frozen fallback; changed/new assets fail closed until an account owner enables R2.
+- Bounded release evidence: 48-route production detail canary exact, 24-route machine delta green, corrected shell canary green, compact Google/Bing/focus sitemaps all 114 URLs, and 316/500 worst-case live requests charged including the conservative Git-alignment deployment reservation.
