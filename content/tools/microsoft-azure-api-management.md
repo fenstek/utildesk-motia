@@ -19,6 +19,10 @@ updated_at: 2026-06-11
 
 Microsoft Azure API Management ist ein API-Gateway und Verwaltungsdienst für Teams, die Schnittstellen nicht nur veröffentlichen, sondern sicher betreiben wollen. In der Praxis geht es um Zugriff, Versionierung, Limits, Developer-Portale und nachvollziehbare Fehlerwege.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-api-management-editorial.webp" alt="Brutalistisches Modell eines kontrollierten API-Gateways" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Microsoft Azure API Management geeignet?
 
 - Entwicklungsteams mit mehreren internen oder externen APIs.
