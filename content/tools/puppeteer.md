@@ -18,6 +18,10 @@ generated_at: 2026-05-17
 
 Puppeteer ist eine JavaScript-Bibliothek zur Steuerung von Chrome oder Firefox über das DevTools Protocol beziehungsweise WebDriver BiDi. Sie wird häufig für Browser-Tests, Screenshots, PDF-Ausgaben, Datenerfassung und wiederholbare Browserabläufe eingesetzt. Standardmäßig startet sie ohne sichtbares Browserfenster; für Fehlersuche kann derselbe Ablauf sichtbar laufen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/puppeteer-editorial.webp" alt="Schattenpuppenspiel mit wiederholbaren Fadenszenen" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Puppeteer geeignet?
 
 Puppeteer passt zu JavaScript- oder TypeScript-Teams, die browsernahe Automatisierung gezielt in eine Anwendung oder ein Skript einbauen wollen. Es eignet sich gut für PDF-Rendering, visuelle Regressionen, kontrollierte Crawls und Tests eines Chromium-zentrierten Produkts. Wer sofort einen umfangreichen Test-Runner mit Berichten, Projekten und WebKit-Unterstützung braucht, sollte auch [Playwright](/tools/playwright/) prüfen.

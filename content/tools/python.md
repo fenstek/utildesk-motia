@@ -18,6 +18,10 @@ generated_at: 2026-05-18
 
 Python ist eine universelle Programmiersprache, die besonders in Automatisierung, Datenarbeit, Web-Backends, wissenschaftlichem Rechnen und KI verbreitet ist. Ihre Stärke ist nicht nur die lesbare Syntax, sondern ein sehr großes Ökosystem. Genau das macht sie zugleich anspruchsvoll im Betrieb: Abhängigkeiten, Laufzeitversionen und Datenzugriffe müssen bewusst verwaltet werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/python-editorial.webp" alt="Naturkundliche Werkstatt mit serpentinenförmig verbundenen Modulen" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Python geeignet?
 
 Python passt zu Teams, die Skripte zu stabilen Diensten entwickeln, Datenpipelines bauen, APIs integrieren oder Modelle und Agenten in Produkte einbetten. Für Einsteiger ist der Spracheinstieg niedrigschwellig; für produktive Systeme bleiben Design, Tests und Betrieb trotzdem professionelle Aufgaben. Rechenintensive, latenzkritische oder stark mobile Anwendungen können mit [Go](/tools/go/) , Java oder nativen Komponenten besser bedient sein.
