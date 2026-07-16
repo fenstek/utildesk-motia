@@ -19,6 +19,10 @@ updated_at: 2026-06-11
 
 Dell Boomi ist eine Integrationsplattform für Unternehmen, die SaaS-Systeme, Datenflüsse, APIs und Geschäftsprozesse kontrolliert verbinden wollen. Entscheidend ist nicht, ob zwei Systeme einmal Daten austauschen, sondern ob dieser Austausch überwacht, versioniert und wartbar bleibt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dell-boomi-editorial.webp" alt="Clay-Workshop mit kontrolliert verbundener Leitungsweiche" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Dell Boomi geeignet?
 
 - IT- und Integrationsteams mit vielen SaaS-, ERP-, CRM- oder Datenplattformen.

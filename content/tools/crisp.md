@@ -19,6 +19,10 @@ updated_at: 2026-06-11
 
 Crisp ist eine Kundenkommunikationsplattform rund um Live-Chat, gemeinsames Postfach, Automatisierung und einfache Helpdesk-Funktionen. Die wichtigste Frage ist nicht, ob ein Chat-Widget eingebaut werden kann, sondern ob ein Team anschließend wirklich schneller und konsistenter antwortet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crisp-editorial.webp" alt="Support-Team ordnet farbige Nachrichtenplättchen im Hotelservice" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Crisp geeignet?
 
 - Startups, SaaS-Teams und kleine Support-Organisationen mit Website-Chat.

@@ -17,6 +17,10 @@ translation: full
 
 Puppeteer is a JavaScript library for controlling Chrome or Firefox through the DevTools Protocol or WebDriver BiDi. Teams commonly use it for browser tests, screenshots, PDF output, controlled data collection, and repeatable browser flows. It runs without a visible browser window by default, while the same flow can run headed for debugging.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/puppeteer-editorial.webp" alt="Layered shadow theater showing repeatable puppet tasks" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Puppeteer for?
 
 Puppeteer suits JavaScript and TypeScript teams that want to build browser-level automation into an application or script. It works well for PDF rendering, visual regression work, controlled crawls, and testing Chromium-centred products. Teams needing an extensive runner, reporting, projects, and WebKit support should also evaluate [Playwright](/en/tools/playwright/).

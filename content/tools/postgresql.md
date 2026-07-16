@@ -18,6 +18,10 @@ generated_at: 2026-05-17
 
 PostgreSQL ist eine relationale Open-Source-Datenbank für Anwendungen, die Transaktionen, Datenintegrität und komplexe Abfragen zuverlässig brauchen. Sie trägt klassische Geschäftsobjekte ebenso wie JSON-Daten, Volltextsuche oder Erweiterungen wie PostGIS. Ihre Stärke liegt in einem soliden Datenkern, nicht darin, jedes Datenproblem ohne Modellierung zu lösen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/postgresql-editorial.webp" alt="Cyanotypie eines verknüpften relationalen Archivgewölbes" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist PostgreSQL geeignet?
 
 PostgreSQL passt für Produktdaten, Nutzer- und Berechtigungssysteme, Aufträge, interne Tools, analytische Abfragen und viele SaaS-Backends. Kleine Anwendungen profitieren von derselben Transaktionssicherheit wie große Systeme. Für eine lokale Ein-Datei-Anwendung ist [SQLite](/tools/sqlite/) oft einfacher; für reine Dokumentdaten oder extrem spezifische Skalierung kann ein anderer Speicher besser passen.

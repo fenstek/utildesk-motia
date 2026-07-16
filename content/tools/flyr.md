@@ -19,6 +19,10 @@ updated_at: 2026-06-11
 
 FLYR ist eine Plattform für Reise- und Airline-Unternehmen, die Preisgestaltung, Nachfrage, Retailing und kommerzielle Entscheidungen datengetriebener steuern wollen. Das ist kein allgemeines KI-Tool, sondern ein spezialisiertes Enterprise-System für sehr konkrete Revenue- und Travel-Prozesse.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/flyr-editorial.webp" alt="Planungsteam legt Flugrouten auf einer physischen Karte fest" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist FLYR geeignet?
 
 - Airlines, Reiseanbieter und Travel-Tech-Teams mit komplexer Preis- und Angebotslogik.

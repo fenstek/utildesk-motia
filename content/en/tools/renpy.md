@@ -21,6 +21,10 @@ translation: full
 
 Renpy is an open-source engine for developing visual novels and interactive stories. The software targets developers and authors who want to create narrative games without extensive programming knowledge. Renpy combines a simple scripting language with powerful features to implement complex storylines and appealing user interfaces.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/renpy-editorial.webp" alt="Hand-painted storyboarding studio with branching scene cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Renpy, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
