@@ -332,9 +332,9 @@
 ## 2026-07-16 Tool runtime production architecture
 
 - All 1,228 active DE and 1,228 active EN tool-detail routes are D1/Worker-owned behind the Pages `content-runtime:tools=on` switch. The independent `content-runtime:tool-shell=on` switch owns homepage, Tool Index, category and tag shells; Ratgeber remains independently controlled and was not changed by this release.
-- Production Worker version is `585af87a-af2c-40cc-a13c-f20cb3e02cf0` (deployment `4884237a-ff6a-4147-a0a1-1c640ad56956`). Pages production deployment is `2e3addbc-c918-419b-bf2a-a23e2ac22f35` with source `57f770b`.
+- Production Worker version is `ebdbb3c0-23d8-4a51-907d-c36df1625f51`. Pages production deployment remains `2e3addbc-c918-419b-bf2a-a23e2ac22f35` with source `57f770b`.
 - D1 migrations `0001` through `0006` are applied. Collection revisions invalidate tool catalogs and shells monotonically; shell reads are metadata-only and revision-cached per isolate.
 - Normal Astro builds emit no tool detail HTML and no per-tool JSON/Markdown mirrors. Frozen fallback tag `tool-runtime-fallback-20260714`, archive SHA-256 `8b292e374ef8b7af740ed72f7b2569ee86b7b3e748436a5aac75ec104b1ac511`, and fallback Pages deployment `44f4f878` remain the tested recovery path.
 - Runtime DE/EN catalog, detail JSON and Markdown endpoints are fetchable and `noindex`. Delta publication is paired/atomic and quota-ledgered; remote `--all` is forbidden.
-- R2 is not enabled in the Worker/D1 Cloudflare account (code 10042). Production assets therefore remain hash-verified Pages/frozen fallback; changed/new assets fail closed until an account owner enables R2.
-- Bounded release evidence: 48-route production detail canary exact, 24-route machine delta green, corrected shell canary green, compact Google/Bing/focus sitemaps all 114 URLs, and 316/500 worst-case live requests charged including the conservative Git-alignment deployment reservation.
+- R2 is enabled. Standard/WEUR bucket `utildesk-tool-assets` is bound to the Worker as `TOOL_ASSETS`; new and changed illustrations use content-addressed R2 objects while unchanged historical assets retain the verified Pages/frozen fallback.
+- Bounded release evidence: 48-route production detail canary exact, 24-route machine delta green, corrected shell canary green, compact Google/Bing/focus sitemaps all 114 URLs, and 346/500 worst-case live requests reserved. The R2 proof object returned exact SHA-256 and `X-Utildesk-Asset-Source: r2`.

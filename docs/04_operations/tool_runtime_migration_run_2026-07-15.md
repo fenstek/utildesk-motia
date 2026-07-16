@@ -66,4 +66,13 @@ Local evidence:
 - Final D1 read returned `No migrations to apply`. Final Pages production deployment is `2e3addbc-c918-419b-bf2a-a23e2ac22f35` for source `57f770b`; its Functions bundle owns the proxy and the normal build contains no tool-detail artifacts.
 - Final request ledger: 19 reservations, 316 worst-case requests charged, 184/500 remaining. The last reservation conservatively covers a full Pages deployment even though the aligned Git commit carries `[CI Skip]`, plus one post-push status read. No automatic retry, exhaustive live crawl, live resource recursion, broad screenshot pass or repeated warm loop ran.
 
-Final production architecture: Markdown/Git -> guarded delta publisher -> paired atomic D1 rows; the Worker renders all active DE/EN tool details, machine endpoints and revision-keyed collection shells; Pages middleware independently switches tool details, tool shells and Ratgeber and preserves frozen/static fail-open behavior. Google, Bing and focus sitemaps remain compact at 114 URLs with 30 localized tool URLs and zero category URLs; `robots.txt` is byte-identical to the proven build. R2 code is ready but production remains on hash-verified Pages/frozen assets until the account owner enables R2.
+Final production architecture: Markdown/Git -> guarded delta publisher -> paired atomic D1 rows; the Worker renders all active DE/EN tool details, machine endpoints and revision-keyed collection shells; Pages middleware independently switches tool details, tool shells and Ratgeber and preserves frozen/static fail-open behavior. Google, Bing and focus sitemaps remain compact at 114 URLs with 30 localized tool URLs and zero category URLs; `robots.txt` is byte-identical to the proven build.
+
+## 2026-07-16 R2 activation addendum
+
+- The account owner enabled the R2 subscription through Cloudflare checkout. The included monthly allowance is 10 GB-month, 1 million Class A operations and 10 million Class B operations; usage above that allowance is billable.
+- Created Standard bucket `utildesk-tool-assets` with location hint `WEUR` and restored the production Worker binding `TOOL_ASSETS`.
+- Deployed Worker version `ebdbb3c0-23d8-4a51-907d-c36df1625f51` without rebuilding or redeploying Pages.
+- Uploaded one bounded ChatGPT proof object and verified the downloaded and served bytes at SHA-256 `7137d1d1776dfb0df9bae5fde01ad1b4b85ea711ed102d25c1356efa69d8ce3f`.
+- The single direct Worker GET returned `200`, `image/webp`, immutable caching and `X-Utildesk-Asset-Source: r2`. No broad live crawl or historical bulk copy ran.
+- The request ledger now reserves 346/500 worst-case requests, leaving 154 for bounded follow-up work.

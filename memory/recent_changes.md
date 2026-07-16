@@ -1513,3 +1513,11 @@ _Last updated: 2026-07-14_
 - One local-full capture covered all 2,456 DE/EN routes. Its final comparator exposed one German meta-description dash-cleaning regression; the locale-specific frozen-static behavior was restored and regression-tested. A targeted local Worker render of the affected Azure Text to Speech route brought the saved 2,456-record comparison to zero errors without repeating the exhaustive capture.
 - Clarified runbook paths passed through `npm --prefix site`: evidence and ledger arguments now use explicit repository-root `$PWD` paths, preventing accidental `site/site/...` resolution.
 - This hardening turn made no production, remote D1/KV/R2, IndexNow, deploy or push request.
+
+## 2026-07-16 - R2 tool asset storage enabled
+
+- Activated Cloudflare R2 after explicit account-owner approval; the subscription starts at `$0/month` with usage-based overages beyond the included allowance.
+- Created Standard bucket `utildesk-tool-assets` in `WEUR` and added production Worker binding `TOOL_ASSETS`.
+- Deployed Worker version `ebdbb3c0-23d8-4a51-907d-c36df1625f51`; Pages was not rebuilt or redeployed.
+- Uploaded one content-addressed ChatGPT proof object. Upload/download and direct Worker delivery matched SHA-256 `7137d1d1776dfb0df9bae5fde01ad1b4b85ea711ed102d25c1356efa69d8ce3f`; the response was `200 image/webp`, immutable and marked `X-Utildesk-Asset-Source: r2`.
+- No historical bulk migration or broad production crawl ran. The 1,146 historical objects remain on the verified Pages/frozen fallback until changed naturally.
