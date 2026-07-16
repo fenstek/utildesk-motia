@@ -207,7 +207,7 @@
 ## 2026-07-16 - Permanent quota-safe runtime operations
 
 - Never repeat an exhaustive production tool crawl or recursive resource audit. Full 2,456-route and resource/hash confidence is localhost-only; production uses one 24-slug canary, changed machine/asset deltas and passive state reads.
-- Every Cloudflare-facing command reserves its worst-case requests in `docs/04_operations/tool_runtime_live_request_ledger_2026-07.json` before execution. The hard remaining-release ceiling is 500 and reservations are never silently reclaimed.
+- Every Cloudflare-facing command reserves its worst-case requests in `docs/04_operations/tool_runtime_live_request_ledger_2026-07.json` before execution. The internal daily hard ceiling is 10,000, raised from 500 by explicit owner instruction on 2026-07-16; reservations are never silently reclaimed and production `--all` remains forbidden.
 - Production commands permanently reject `--all`; machine endpoints stay fetchable but `noindex`; Google/Bing/focus sitemaps remain compact and long-tail Googlebot staging is not replaced by global noindex.
 - Tool details, tool shells and Ratgeber retain independent KV switches. Roll back only the failing cluster; intentional disabled/tombstone states must never be resurrected from the frozen fallback.
 - R2 enablement is an explicit account-owner/billing decision. It was approved and completed on 2026-07-16; production now uses `TOOL_ASSETS` -> `utildesk-tool-assets` for new or changed illustration bytes. Keep exact hash verification and the Pages/frozen fallback for unchanged historical assets; never bulk-copy or weaken verification merely to finish a release.

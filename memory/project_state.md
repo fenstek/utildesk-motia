@@ -4,7 +4,7 @@
 
 - Production runtime renderer version `47a09f05-9366-4cf3-bc12-1c4a66e57540` serves the shared `/runtime-assets/BaseLayout.C877vJB7.css` through the Worker `ASSETS` binding; homepage, tool pages and R2 illustrations are styled and live again.
 - Future renderer releases must use `npm --prefix site run deploy:runtime`; deploying the bare `dist-runtime/server/entry.mjs` is forbidden because it omits runtime CSS and client scripts.
-- The tracked live-request ledger is at 497/500 worst-case requests after the emergency repair. No further production inspection or deployment should run before the next daily reset unless the ledger is reset under its documented policy.
+- The tracked live-request ledger is at 497/10,000 worst-case requests after the emergency repair. The internal safety ceiling was raised from 500 to 10,000 on explicit owner instruction; the real Cloudflare Workers/Pages Functions allowance remains 100,000 requests per day.
 
 ## Summary
 

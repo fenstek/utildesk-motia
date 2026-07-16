@@ -1,7 +1,7 @@
 {
   "version": 1,
   "resetAt": "2026-07-16T00:05:00.000Z",
-  "hardLimit": 500,
+  "hardLimit": 10000,
   "policy": "Worst-case reservations are charged before execution and are never reclaimed automatically.",
   "historicalNote": "The previous live exhaustive audits consumed the old daily quota and are preserved as evidence. They must not be repeated. This ledger starts the bounded post-reset remainder of the release.",
   "entries": [

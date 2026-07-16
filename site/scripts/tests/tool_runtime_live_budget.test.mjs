@@ -65,11 +65,11 @@ test("ordinary ten-card delta stays near the 100-request target", () => {
   assert.ok(estimate.total <= 100);
 });
 
-test("production contracts reject --all, oversized canaries and budgets above 500", () => {
-  const base = { mode: "production-canary", baseUrl: "https://tools.utildesk.de", slugs, maxLiveRequests: 500, now: afterReset };
+test("production contracts reject --all, oversized canaries and budgets above 10000", () => {
+  const base = { mode: "production-canary", baseUrl: "https://tools.utildesk.de", slugs, maxLiveRequests: 10_000, now: afterReset };
   assert.throws(() => assertProductionModeArgs({ ...base, argv: ["production-canary", "--all"] }), /refuses --all/);
   assert.throws(() => assertProductionModeArgs({ ...base, slugs: [...slugs, "tool-24"] }), /1-24/);
-  assert.throws(() => assertProductionModeArgs({ ...base, maxLiveRequests: 501 }), /1 to 500/);
+  assert.throws(() => assertProductionModeArgs({ ...base, maxLiveRequests: 10_001 }), /1 to 10000/);
 });
 
 test("production execution is time-gated but a request-free preflight is allowed", () => {
@@ -78,7 +78,7 @@ test("production execution is time-gated but a request-free preflight is allowed
     argv: ["production-canary"],
     baseUrl: "https://tools.utildesk.de",
     slugs,
-    maxLiveRequests: 500,
+    maxLiveRequests: 10_000,
     now: new Date("2026-07-15T23:59:59.000Z"),
   };
   assert.doesNotThrow(() => assertProductionModeArgs({ ...base, execute: false }));
@@ -90,7 +90,7 @@ test("local-full URL contract refuses every non-loopback host", () => {
   assert.throws(() => assertLocalOnlyUrl("https://tools.utildesk.de"), /localhost or loopback/);
 });
 
-test("ledger reserves worst-case requests before execution and never exceeds 500", async () => {
+test("ledger reserves worst-case requests before execution and never exceeds 10000", async () => {
   const directory = await mkdtemp(join(tmpdir(), "utildesk-live-ledger-"));
   const ledgerPath = join(directory, "ledger.json");
   try {
@@ -98,23 +98,23 @@ test("ledger reserves worst-case requests before execution and never exceeds 500
       ledgerPath,
       mode: "production-canary",
       command: "first",
-      estimate: { total: 400 },
+      estimate: { total: 9_000 },
       urls: ["https://tools.utildesk.de/tools/chatgpt/"],
-      maxLiveRequests: 500,
+      maxLiveRequests: 10_000,
       now: afterReset,
     });
-    assert.equal(first.remaining, 100);
+    assert.equal(first.remaining, 1_000);
     await assert.rejects(reserveLiveRequests({
       ledgerPath,
       mode: "production-delta",
       command: "second",
-      estimate: { total: 101 },
-      maxLiveRequests: 500,
+      estimate: { total: 1_001 },
+      maxLiveRequests: 10_000,
       now: afterReset,
     }), /budget exhausted/);
     const ledger = JSON.parse(await readFile(ledgerPath, "utf8"));
     assert.equal(ledger.entries.length, 1);
-    assert.equal(ledger.entries[0].worstCaseRequests, 400);
+    assert.equal(ledger.entries[0].worstCaseRequests, 9_000);
   } finally {
     await rm(directory, { recursive: true, force: true });
   }
@@ -155,7 +155,7 @@ test("bounded one-card release dry-run invokes no Astro build and mutates no sou
       resolve(import.meta.dirname, "../tool_runtime_release.mjs"),
       "--slugs-file", slugFile,
       "--ledger", ledger,
-      "--max-live-requests", "500",
+      "--max-live-requests", "10000",
       "--asset-bucket", "utildesk-tool-assets",
     ], { cwd: siteDir, maxBuffer: 4 * 1024 * 1024 });
     const report = JSON.parse(stdout);
