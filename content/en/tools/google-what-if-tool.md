@@ -1,24 +1,26 @@
 ---
-slug: google-what-if-tool
-title: Google What-If Tool
+slug: "google-what-if-tool"
+title: "Google What-If Tool"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Coding"
+price_model: "Kostenlos"
 tags:
   - data
   - analytics
   - developer-tools
   - education
   - chatbot
-official_url: 'https://pair-code.github.io/what-if-tool/'
+official_url: "https://pair-code.github.io/what-if-tool/"
 popularity: 0
-description: 'An interactive visual analysis platform for exploring machine learning models without writing code, with support for scenario testing, fairness analysis, and model understanding.'
-translation: full
+description: "Google What-If Tool is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Google What-If Tool
 
 The Google What-If Tool is an interactive visualization and analysis platform that lets users explore and understand machine learning models without any programming effort. Developed by Google, the tool supports exploring model results through simple changes to input data in “what-if” scenarios to analyze their impact on predictions. This promotes a better understanding of model behavior, fairness, and robustness.
@@ -89,19 +91,22 @@ The Google What-If Tool is a free open-source tool provided by Google. There are
 
 Beyond the list price, Google What-If Tool should be evaluated by the cost of adoption. Relevant factors include setup, phone numbers, integrations, training, and ongoing administration. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to Google What-If Tool
-
-- **LIME (Local Interpretable Model-agnostic Explanations)** – An open-source library for explaining models through local approximations.
-- **SHAP (SHapley Additive exPlanations)** – A tool for assigning feature importance based on game theory.
-- **TensorBoard** – TensorFlow’s visualization tool, which also offers explainability features.
-- **InterpretML** – Microsoft’s framework for model-agnostic explainability and analysis.
-- **AI Explainability 360** – IBM toolkit with various methods for AI explainability.
-
-When comparing options, Google What-If Tool should not only be measured against very similar products. Depending on the goal, contact-center, helpdesk, and collaboration tools may fit better if they are closer to the existing process or require less maintenance.
-
 ## FAQ
 
 **1. Do I need programming knowledge to use the Google What-If Tool?**
+
+**What should a Google What-If Tool pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Google What-If Tool without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Google What-If Tool the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 In principle, the tool is designed so that it can also be used without in-depth programming knowledge, especially in the web-based version. For advanced features and integration into your own projects, however, basic knowledge of Python and TensorFlow is helpful.
 
 **2. Which ML models is the tool compatible with?**
@@ -130,3 +135,14 @@ A narrow pilot is enough: real task, clear acceptance point, and a short retrosp
 
 **10. When is Google What-If Tool a poor fit?**
 When channels, ownership, and escalation rules are not clearly defined, or when nobody has time for setup, review, and maintenance. In that case Google What-If Tool becomes another stop in the process rather than real relief.
+
+## Workflow and rollout
+
+A useful start with Google What-If Tool begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Google What-If Tool holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,22 +1,24 @@
 ---
-slug: vivaldi
-title: Vivaldi
+slug: "vivaldi"
+title: "Vivaldi"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Free"
 tags:
   - browser
   - web
   - privacy
   - productivity
-official_url: 'https://vivaldi.com/'
-description: 'Vivaldi is a free web browser known for its high level of customization and extensive features. Designed with a focus on productivity and privacy, it offers users a flexible and efficient browsing experience tailored to individual needs.'
-translation: full
+official_url: "https://vivaldi.com/"
+description: "Vivaldi is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Vivaldi
 
 Vivaldi is a free web browser distinguished by its strong customization options and comprehensive features. Developed with a focus on productivity and privacy, Vivaldi offers users a flexible and efficient browsing experience that can be adapted to their individual needs.
@@ -86,17 +88,22 @@ Vivaldi is a very good choice for power users who will actually use browser cont
 
 Vivaldi is free to use. There are no paid versions or subscriptions. All features are available without limitations.
 
-## Alternatives to Vivaldi
-
-- **Mozilla Firefox:** Open-source browser with a strong focus on privacy and extensibility.
-- **Google Chrome:** Market-leading browser with extensive extension offerings and high performance.
-- **Microsoft Edge:** Chromium-based browser with good integration into Windows environments.
-- **Brave:** Privacy-focused browser with built-in ad-blocker and reward system.
-- **Opera:** Browser featuring integrated VPN and other convenience functions.
-
 ## FAQ
 
 **1. Is Vivaldi really free?**
+
+**What should a Vivaldi pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Vivaldi without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Vivaldi the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Vivaldi can be downloaded and used for free without paying for any features.
 
 **2. How secure is Vivaldi regarding privacy?**
@@ -119,3 +126,10 @@ Yes, users can configure custom search engines and easily switch between them.
 
 **8. Does Vivaldi support extensions?**
 Vivaldi is based on Chromium and thus supports most Chrome extensions.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

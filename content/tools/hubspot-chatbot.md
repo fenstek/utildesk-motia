@@ -1,19 +1,22 @@
 ---
-slug: hubspot-chatbot
-title: HubSpot Chatbot
+description: "HubSpot Chatbot ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "hubspot-chatbot"
+title: "HubSpot Chatbot"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Chatbots"
-price_model: Je nach Plan
+price_model: "Je nach Plan"
 tags: [chatbots, customer-support, crm]
 official_url: "https://www.hubspot.com/products/crm/chatbot-builder"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-12"
+updated_at: "2026-07-17"
 ---
+
 # HubSpot Chatbot
 
 HubSpot Chatbot ist ein KI-gestütztes Tool zur Automatisierung der Kundenkommunikation direkt auf Ihrer Webseite. Es unterstützt Unternehmen dabei, Besucher in Echtzeit zu betreuen, qualifizierte Leads zu generieren und häufige Anfragen ohne manuellen Aufwand zu beantworten. Durch die Integration in das HubSpot CRM können Konversationen nahtlos dokumentiert und personalisierte Marketing- und Vertriebsprozesse ausgelöst werden.
@@ -59,14 +62,6 @@ HubSpot Chatbot eignet sich vor allem für kleine bis mittelständische Unterneh
 
 Die Preisgestaltung für den HubSpot Chatbot variiert je nach gewähltem HubSpot-Plan. Grundsätzlich ist der Chatbot in den kostenpflichtigen Marketing- und Sales-Hubs enthalten, wobei die Verfügbarkeit bestimmter Funktionen von der jeweiligen Lizenz abhängt. Es gibt auch eine kostenlose HubSpot CRM-Version, die eingeschränkte Chatbot-Funktionalitäten bietet. Für detaillierte und aktuelle Preisinformationen empfiehlt es sich, die offizielle HubSpot-Webseite zu konsultieren.
 
-## Alternativen zu HubSpot Chatbot
-
-- **Drift:** Fokus auf Conversational Marketing mit umfangreichen Automatisierungsfunktionen.
-- **Intercom:** Umfassende Kundenkommunikationsplattform mit Chatbots, Messenger und Helpdesk.
-- **ManyChat:** Besonders geeignet für Messenger-basierte Chatbots auf Facebook und Instagram.
-- **Tidio:** Einfache Chatbot-Lösung mit Fokus auf kleine Unternehmen und E-Commerce.
-- **Zendesk Chat:** Integration in das Zendesk Kundenservice-Ökosystem mit Chatbot-Erweiterungen.
-
 ## Was im Alltag wirklich zählt
 
 HubSpot Chatbot ist sinnvoll, wenn Website-Dialoge direkt mit CRM, Leads und Marketingprozessen verbunden werden sollen. Entscheidend ist, ob der Bot qualifiziert, routet und dokumentiert, ohne Besucher in starre Fragenketten zu zwingen.
@@ -83,6 +78,19 @@ HubSpot Chatbot ist am stärksten als Teil eines CRM-Flusses. Als isolierter Web
 ## FAQ
 
 **1. Brauche ich Programmierkenntnisse, um den HubSpot Chatbot einzurichten?**
+
+**Wie sollte ein Pilot mit HubSpot Chatbot aussehen?**
+
+Für HubSpot Chatbot: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in HubSpot Chatbot verarbeitet werden?**
+
+HubSpot Chatbot: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu HubSpot Chatbot sinnvoll?**
+
+Bei HubSpot Chatbot ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Nein, der Chatbot kann über eine benutzerfreundliche Oberfläche konfiguriert werden, ohne dass Programmierkenntnisse notwendig sind.
 
 **2. Kann der Chatbot auch mehrere Sprachen unterstützen?**
@@ -105,3 +113,10 @@ Ja, jedoch hängt die Eignung von den spezifischen Anforderungen und dem gewähl
 
 **8. Wie sicher sind die Daten, die über den Chatbot gesammelt werden?**
 HubSpot legt Wert auf Datenschutz und Datensicherheit, die genauen Maßnahmen richten sich nach den jeweiligen gesetzlichen Vorgaben und HubSpot-Richtlinien.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

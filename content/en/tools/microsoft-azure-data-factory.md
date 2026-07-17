@@ -1,22 +1,24 @@
 ---
-slug: microsoft-azure-data-factory
-title: Microsoft Azure Data Factory
+slug: "microsoft-azure-data-factory"
+title: "Microsoft Azure Data Factory"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
-price_model: Usage-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Entwickler-Tools"
+price_model: "Nutzungsbasiert"
 tags:
   - data
   - integration
   - automation
   - cloud
-official_url: 'https://azure.microsoft.com/en-us/products/data-factory/'
-description: 'Microsoft Azure Data Factory is a cloud-based service for orchestrating and automating data integration processes. It enables businesses to collect data from diverse sources, transform it, and load it into target systems. With its scalability and integration within the Azure ecosystem, Azure Data Factory supports modern data pipelines and ETL (Extract, Transform, Load) processes in the cloud.'
-translation: full
+official_url: "https://azure.microsoft.com/en-us/products/data-factory/"
+description: "Microsoft Azure Data Factory is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Microsoft Azure Data Factory
 
 Microsoft Azure Data Factory is a cloud-based service for orchestrating and automating data integration workflows. It allows companies to gather data from a variety of sources, transform it, and load it into target systems. Thanks to its scalability and integration within the Azure ecosystem, Azure Data Factory supports modern data pipelines and ETL (Extract, Transform, Load) processes in the cloud.
@@ -94,17 +96,22 @@ Microsoft Azure Data Factory uses a usage-based pricing model. Costs mainly cons
 
 Exact prices vary depending on region and usage. There is no base fee, so costs only occur based on actual use. Azure offers free quotas for smaller projects or testing purposes. For detailed pricing information, it is recommended to consult the official Azure pricing page.
 
-## Alternatives to Microsoft Azure Data Factory
-
-- **AWS Glue**: Cloud-based ETL service from Amazon Web Services offering similar data integration and transformation capabilities.
-- **Google Cloud Dataflow**: Service for real-time and batch data processing on the Google Cloud Platform.
-- **Talend**: Data integration platform with open-source options and extensive connectors.
-- **Apache NiFi**: Open-source tool for automating data flows with a focus on real-time data.
-- **Informatica PowerCenter**: Established solution for complex ETL and data integration processes often used in enterprise environments.
-
 ## FAQ
 
 **1. Is Microsoft Azure Data Factory suitable for small businesses?**
+
+**What should a Microsoft Azure Data Factory pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Microsoft Azure Data Factory without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Microsoft Azure Data Factory the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, the usage-based pricing model allows small businesses and projects with low data volumes to operate cost-effectively.
 
 **2. Which data sources does Azure Data Factory support?**
@@ -127,3 +134,10 @@ Azure Data Factory is closely integrated with services like Azure Synapse Analyt
 
 **8. Where can I find more information and documentation?**
 Official documentation and tutorials are available on the Microsoft Azure website.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

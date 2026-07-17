@@ -1,19 +1,22 @@
 ---
-slug: avaya-onecloud
-title: Avaya Experience Platform
+description: "Avaya Experience Platform ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "avaya-onecloud"
+title: "Avaya Experience Platform"
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
-editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
-category: Produktivität
-price_model: Abonnement
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Abonnement"
 tags: [contact-center, communication, customer-support, ai]
 official_url: "https://www.avaya.com/en/products/infinity-platform/"
 popularity: 0
 tier: C
 generated_at: 2026-05-10
+updated_at: "2026-07-17"
 ---
+
 # Avaya Experience Platform
 
 Avaya Experience Platform ist eine umfassende Cloud-basierte Lösung, die Unternehmen dabei unterstützt, ihre Kundenkommunikation und Kontaktcenter effizienter zu gestalten. Mit modernen KI-Funktionen und flexiblen Tools zur Integration verschiedener Kommunikationskanäle ermöglicht die Plattform eine verbesserte Kundenbetreuung und optimiert interne Arbeitsabläufe.
@@ -84,19 +87,22 @@ Avaya Experience Platform wird im Abonnement angeboten. Die genauen Preise häng
 
 Neben dem Listenpreis sollte bei Avaya Experience Platform auch der Einführungsaufwand berücksichtigt werden. Relevant sind Einrichtung, Rufnummern, Integrationen, Schulung und laufende Administration. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
 
-## Alternativen zu Avaya Experience Platform
-
-- **Genesys Cloud CX:** Umfassende Contact-Center-Lösung mit starker KI-Integration und Omnichannel-Support.
-- **Five9:** Cloud-basiertes Contact-Center mit Fokus auf Automatisierung und einfache Bedienbarkeit.
-- **Zendesk Suite:** Kundenservice-Plattform mit Multichannel-Kommunikation und CRM-Funktionen.
-- **Talkdesk:** Flexible Contact-Center-Software mit KI-gestützten Tools und Integrationen.
-- **Cisco Contact Center:** Etablierte Lösung mit umfangreichen Kommunikations- und Managementfunktionen.
-
-Beim Vergleich lohnt es sich, Avaya Experience Platform nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch Contact-Center-, Helpdesk- und Collaboration-Lösungen die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
-
 ## FAQ
 
 **1. Welche Kommunikationskanäle unterstützt Avaya Experience Platform?**
+
+**Wie sollte ein Pilot mit Avaya Experience Platform aussehen?**
+
+Für Avaya Experience Platform: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Avaya Experience Platform verarbeitet werden?**
+
+Avaya Experience Platform: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Avaya Experience Platform sinnvoll?**
+
+Bei Avaya Experience Platform ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Die Plattform unterstützt Telefonie, E-Mail, Chat, SMS und Social-Media-Kanäle, um eine einheitliche Kundenkommunikation zu ermöglichen.
 
 **2. Ist die Avaya Experience Platform cloudbasiert?**
@@ -125,3 +131,14 @@ Das Team sollte eine reale Aufgabe auswählen, vorher Erfolgskriterien notieren 
 
 **10. Wann passt Avaya Experience Platform eher nicht?**
 Wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind, sollte Avaya Experience Platform zunächst nicht breit eingeführt werden. Ohne Pflege- und Review-Zeit entsteht sonst schnell ein weiterer Kanal.
+
+## Arbeitsablauf und Einführung
+
+Ein sinnvoller Start mit Avaya Experience Platform beginnt mit einem konkreten Ablauf und einem kleinen Kreis von Nutzern. Definiere Eingang, erwartetes Ergebnis und den manuellen Kontrollpunkt, bevor weitere Automatisierungen oder Berechtigungen dazukommen. Dokumentiere, wer Inhalte freigibt und wie ein Fehler zurückgerollt wird. So zeigt ein Pilot schnell, ob Avaya Experience Platform im Alltag trägt oder nur in einer Demo überzeugt.
+
+## Alternativen
+
+- [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

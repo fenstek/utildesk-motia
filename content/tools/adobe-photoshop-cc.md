@@ -1,19 +1,22 @@
 ---
-slug: adobe-photoshop-cc
-title: Adobe Photoshop
+description: "Adobe Photoshop ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "adobe-photoshop-cc"
+title: "Adobe Photoshop"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Design
-price_model: Abonnement
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Design"
+price_model: "Abonnement"
 tags: [photo, editing, design, ai]
 official_url: "https://www.adobe.com/products/photoshop.html"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-15"
+updated_at: "2026-07-17"
 ---
+
 # Adobe Photoshop
 
 Adobe Photoshop ist eine weltweit anerkannte Software zur Bildbearbeitung und digitalen Gestaltung. Sie bietet eine Vielzahl von Werkzeugen für professionelle Fotografen, Designer und Kreative, die hochwertige Grafiken, Fotos und digitale Kunstwerke erstellen möchten. Dank regelmäßiger Updates und Integration von KI-Funktionen bleibt Photoshop stets auf dem neuesten Stand der Technik.
@@ -82,17 +85,22 @@ Photoshop bleibt der Standard, wenn Bildbearbeitung wirklich präzise werden mus
 
 Adobe Photoshop ist im Abonnement erhältlich. Die Preise variieren je nach Anbieter, Region und gewähltem Plan. Häufig gibt es verschiedene Optionen, zum Beispiel als Einzelanwendung oder im Creative Cloud Komplettpaket. Die Kosten liegen meist im mittleren bis oberen Preissegment für professionelle Software.
 
-## Alternativen zu Adobe Photoshop
-
-- **GIMP:** Open-Source-Bildbearbeitungsprogramm mit umfangreichen Funktionen, kostenlos verfügbar.
-- **Affinity Photo:** Einmalzahlung, professionelle Bildbearbeitung mit ähnlichem Funktionsumfang.
-- **Corel PaintShop Pro:** Kostenpflichtige Alternative mit Fokus auf Fotobearbeitung und Grafikdesign.
-- **Pixlr:** Browserbasierte Lösung, freemium-Modell, geeignet für einfache Bearbeitungen.
-- **Canva:** Design-Tool mit Fokus auf einfache Bedienung, freemium-Modell, eher für grafische Layouts.
-
 ## FAQ
 
 **1. Ist Adobe Photoshop für Anfänger geeignet?**
+
+**Wie sollte ein Pilot mit Adobe Photoshop aussehen?**
+
+Für Adobe Photoshop: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Adobe Photoshop verarbeitet werden?**
+
+Adobe Photoshop: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Adobe Photoshop sinnvoll?**
+
+Bei Adobe Photoshop ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Photoshop bietet viele professionelle Funktionen, die für Einsteiger zunächst komplex erscheinen können. Es gibt jedoch zahlreiche Tutorials und Lernressourcen, die den Einstieg erleichtern.
 
 **2. Welche Systemanforderungen hat Adobe Photoshop?**
@@ -115,3 +123,10 @@ Photoshop ist Teil der Adobe Creative Cloud und ermöglicht einen nahtlosen Aust
 
 **8. Gibt es spezielle Funktionen für KI-gestützte Bildbearbeitung?**
 Ja, Photoshop integriert zunehmend KI-Tools, die beispielsweise das Freistellen von Objekten oder das automatische Verbessern von Bildern erleichtern.
+
+## Alternativen
+
+- [fotor](/tools/fotor/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [freepik](/tools/freepik/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [kapwing](/tools/kapwing/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [flexclip](/tools/flexclip/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

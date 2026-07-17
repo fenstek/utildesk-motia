@@ -1,21 +1,24 @@
 ---
-slug: dialogflow-cx
-title: Dialogflow CX
+description: "Dialogflow CX is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "dialogflow-cx"
+title: "Dialogflow CX"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Je nach Plan"
 tags:
   - chatbot
   - automation
-official_url: 'https://cloud.google.com/dialogflow/cx'
+official_url: "https://docs.cloud.google.com/dialogflow/cx/docs"
 popularity: 0
 source_language: de
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Dialogflow CX
 
 Dialogflow CX is a advanced platform from Google for creating and managing conversational AI chatbots and virtual assistants. It enables businesses to create complex conversations with natural language and automate customer interactions efficiently. The platform supports the development of multi-step dialogues with a graphical user interface and offers extensive integration options.
@@ -102,17 +105,22 @@ The pricing of Dialogflow CX is based on usage, particularly the number of reque
 
 For accurate pricing information, it is recommended to consult the official Google Cloud Pricing Page or contact a provider directly.
 
-## Alternatives to Dialogflow CX
-
-- **Microsoft Bot Framework:** Microsoft's platform for developing and managing chatbots with extensive integration options.
-- **IBM Watson Assistant:** AI-powered solution from IBM for conversational applications with a focus on businesses.
-- **Rasa:** Open-source framework for creating chatbots with a strong community and high customizability.
-- **Amazon Lex:** AWS-based service for developing speech and text chatbots with native integration in Amazon services.
-- **Kore.ai:** Platform for Conversational AI with extensive tools for businesses and omnichannel support.
-
 ## FAQ
 
 **1. What is the difference between Dialogflow CX and Dialogflow ES?**
+
+**What should a Dialogflow CX pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Dialogflow CX without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Dialogflow CX the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Dialogflow CX is the expanded version with a focus on complex and multi-step dialogues, while Dialogflow ES is designed for simple and standardized chatbots.
 
 **2. Which languages is Dialogflow CX supporting?**
@@ -135,3 +143,10 @@ Dialogflow CX uses security standards and compliance models from Google Cloud, i
 
 **8. Which industries benefit particularly from Dialogflow CX?**
 Especially telecommunications, financial services, e-commerce, healthcare, and other industries with high automation needs in customer contact.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

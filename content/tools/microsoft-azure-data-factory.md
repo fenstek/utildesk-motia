@@ -1,19 +1,22 @@
 ---
-slug: microsoft-azure-data-factory
-title: Microsoft Azure Data Factory
+description: "Microsoft Azure Data Factory ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "microsoft-azure-data-factory"
+title: "Microsoft Azure Data Factory"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "Entwickler-Tools"
-price_model: Nutzungsbasiert
+price_model: "Nutzungsbasiert"
 tags: [data, integration, automation, cloud]
 official_url: "https://azure.microsoft.com/en-us/products/data-factory/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-16"
+updated_at: "2026-07-17"
 ---
+
 # Microsoft Azure Data Factory
 
 Microsoft Azure Data Factory ist ein Cloud-basierter Dienst zur Orchestrierung und Automatisierung von Datenintegrationsprozessen. Er ermöglicht es Unternehmen, Daten aus verschiedensten Quellen zu sammeln, zu transformieren und in Zielsysteme zu laden. Durch seine Skalierbarkeit und Integration in das Azure-Ökosystem unterstützt Azure Data Factory moderne Datenpipelines und ETL-Prozesse (Extract, Transform, Load) in der Cloud.
@@ -91,17 +94,22 @@ Microsoft Azure Data Factory verwendet ein nutzungsbasiertes Preismodell. Die Ko
 
 Die genauen Preise variieren je nach Region und Nutzung. Es besteht keine Grundgebühr, sodass Kosten nur bei tatsächlicher Nutzung anfallen. Für kleinere Projekte oder Tests bietet Azure teilweise kostenlose Kontingente an. Für detaillierte Preisinformationen empfiehlt es sich, die offizielle Azure-Preisseite zu konsultieren.
 
-## Alternativen zu Microsoft Azure Data Factory
-
-- **AWS Glue**: Cloud-basierter ETL-Dienst von Amazon Web Services mit ähnlicher Funktionalität zur Datenintegration und -transformation.
-- **Google Cloud Dataflow**: Dienst zur Echtzeit- und Batch-Datenverarbeitung auf der Google Cloud Platform.
-- **Talend**: Plattform für Datenintegration mit Open-Source-Optionen und umfangreichen Konnektoren.
-- **Apache NiFi**: Open-Source-Tool zur Automatisierung von Datenflüssen mit Fokus auf Echtzeitdaten.
-- **Informatica PowerCenter**: Etablierte Lösung für komplexe ETL- und Datenintegrationsprozesse, oft im Enterprise-Umfeld eingesetzt.
-
 ## FAQ
 
 **1. Ist Microsoft Azure Data Factory für kleine Unternehmen geeignet?**
+
+**Wie sollte ein Pilot mit Microsoft Azure Data Factory aussehen?**
+
+Für Microsoft Azure Data Factory: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Microsoft Azure Data Factory verarbeitet werden?**
+
+Microsoft Azure Data Factory: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Microsoft Azure Data Factory sinnvoll?**
+
+Bei Microsoft Azure Data Factory ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Ja, dank des nutzungsbasierten Preismodells können auch kleine Unternehmen und Projekte mit geringem Datenvolumen kosteneffizient arbeiten.
 
 **2. Welche Datenquellen unterstützt Azure Data Factory?**
@@ -124,3 +132,10 @@ Azure Data Factory ist eng mit Diensten wie Azure Synapse Analytics, Azure Datab
 
 **8. Wo finde ich weitere Informationen und Dokumentationen?**
 Offizielle Dokumentationen und Tutorials sind auf der Microsoft Azure-Website verfügbar.
+
+## Alternativen
+
+- [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

@@ -1,22 +1,25 @@
 ---
-slug: solomon
-title: Solomon
+description: "Solomon is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "solomon"
+title: "Solomon"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Je nach Plan"
 tags:
   - education
   - assistant
   - productivity
   - ai
-official_url: 'https://usesolomon.ai/'
+official_url: "https://usesolomon.ai/"
 popularity: 0
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Solomon
 
 Solomon is an AI-powered tool designed specifically to support education, productivity, and personal assistance. It combines advanced artificial intelligence with user-friendly features that help users organize and complete tasks more efficiently. Whether in education, everyday work, or personal use, Solomon supports information gathering, planning, and creative work.
@@ -92,19 +95,22 @@ Solomon offers various pricing models that can differ depending on the provider 
 
 Exact prices and terms vary, so it is advisable to check the official provider information.
 
-## Alternatives to Solomon
-
-- **ChatGPT**: A versatile AI chatbot that can be used for many text-based tasks.
-- **Notion AI**: A note-taking and AI assistant tool with a focus on productivity.
-- **Quizlet**: A learning platform with AI support for education and exam preparation.
-- **Microsoft Copilot**: AI-powered assistance in Microsoft 365 applications.
-- **Google Bard**: An AI-based assistant for research and text generation.
-
-When comparing options, Solomon should not only be measured against very similar products. Depending on the goal, AI assistants, automation platforms, model APIs, and specialized expert tools may fit better if they are closer to the existing process or require less maintenance.
-
 ## FAQ
 
 **1. Is Solomon suitable for beginners?**
+
+**What should a Solomon pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Solomon without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Solomon the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Solomon is designed so that users without deep technical knowledge can also benefit from its features.
 
 **2. Which languages does Solomon support?**
@@ -142,3 +148,14 @@ Beyond the list price, Solomon should be evaluated by the cost of adoption. Rele
 <figure class="tool-editorial-figure">
   <img src="/images/tools/solomon-editorial.webp" alt="Illustration for Solomon: learning map hall with assistance paths" loading="lazy" decoding="async" />
 </figure>
+
+## Workflow and rollout
+
+A useful start with Solomon begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Solomon holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

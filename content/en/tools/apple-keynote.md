@@ -1,22 +1,25 @@
 ---
-slug: apple-keynote
-title: Apple Keynote
+description: "Apple Keynote is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "apple-keynote"
+title: "Apple Keynote"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Agents"
+price_model: "Kostenlos"
 tags:
   - assistant
   - automation
   - workflow
-official_url: 'https://support.apple.com/keynote'
+official_url: "https://support.apple.com/keynote"
 popularity: 0
 source_language: de
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Apple Keynote
 
 Apple Keynote is a powerful presentation software specifically designed for macOS and iOS. It allows users to create engaging and professional presentations with a variety of design and automation features. In combination with intelligent assistants and automation options, Keynote supports efficient workflow in creating and delivering presentations.
@@ -96,28 +99,22 @@ Apple Keynote is available for all Apple device users at no additional cost. The
 
 Beyond the list price, Apple Keynote should be evaluated by the cost of adoption. Relevant factors include licensing model, storage, export options, templates, team approvals, and training. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to Apple Keynote
-
-- **Microsoft PowerPoint**
-  Well-known and widely used presentation tool with extensive features and compatibility with various operating systems. Price: Varies depending on the plan, usually a subscription.
-
-- **Google Slides**
-  Cloud-based presentation software that enables real-time collaboration. Free with a Google account.
-
-- **Prezi**
-  Presentation software focusing on dynamic, zoomable presentations. Price: Freemium with paid plans.
-
-- **Canva**
-  Design platform with presentation features that enable easy creation of visually appealing slides. Price: Freemium.
-
-- **LibreOffice Impress**
-  Open-source alternative for presentations with basic features. Free and cross-platform.
-
-When comparing options, Apple Keynote should not only be measured against very similar products. Depending on the goal, design, image, video, and prototyping tools may fit better if they are closer to the existing process or require less maintenance.
-
 ## FAQ
 
 **1. Is Apple Keynote free?**
+
+**What should a Apple Keynote pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Apple Keynote without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Apple Keynote the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Apple Keynote is free for all Apple device users without additional costs.
 
 **2. On which devices can I use Keynote?**
@@ -148,3 +145,14 @@ Use a small real use case. Define the goal, owner, and success criteria first, t
 
 **10. When is Apple Keynote a poor fit?**
 It is a poor fit when briefing, rights, brand rules, and export formats remain vague and the team has no capacity for setup, review, and ongoing care. Then Apple Keynote mostly moves the problem around.
+
+## Workflow and rollout
+
+A useful start with Apple Keynote begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Apple Keynote holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

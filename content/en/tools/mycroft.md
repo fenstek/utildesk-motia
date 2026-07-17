@@ -1,22 +1,24 @@
 ---
-slug: mycroft
-title: Mycroft
+slug: "mycroft"
+title: "Mycroft"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Open Source
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Open Source"
 tags:
   - assistant
   - voice
   - open source
-official_url: 'https://community.openconversational.ai/'
+official_url: "https://community.openconversational.ai/"
 popularity: 0
-description: 'Mycroft is an open-source voice assistant with flexible customization, smart home control, privacy-focused local processing, and support for developers, hobbyists, and organizations looking for an independent alternative to proprietary assistants.'
-translation: full
+description: "Mycroft is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Mycroft
 
 Mycroft is an open-source voice assistant designed to offer users a flexible and customizable alternative to proprietary voice assistants. With voice control and versatile features, Mycroft helps with everyday tasks, information retrieval, and automating smart home devices. Because the code is open, developers and tech enthusiasts can extend and adapt Mycroft to suit their needs.
@@ -95,17 +97,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Mycroft is open source and can generally be used free of charge. There are no license fees. Costs may arise for special hardware variants or professional support offerings, depending on the provider. Users can install Mycroft on their own hardware, which may involve additional costs for devices and infrastructure. Mycroft itself does not offer subscription or usage-based pricing models.
 
-## Alternatives to Mycroft
-
-- **Amazon Alexa:** Commercial voice assistant with broad device support and extensive skills.
-- **Google Assistant:** Powerful AI-based assistant with extensive integrations and high recognition accuracy.
-- **Apple Siri:** Voice assistant on Apple devices with a focus on integration within the Apple ecosystem.
-- **Snips (formerly):** Former open-source voice assistant with a focus on local processing (now discontinued, but still relevant as inspiration).
-- **Jasper:** Open-source voice assistant aimed at developers and hobbyists.
-
 ## FAQ
 
 **1. Is Mycroft really free?**
+
+**What should a Mycroft pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Mycroft without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Mycroft the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Mycroft is available as a free open-source project. Users can download the code and install it on their own hardware without paying license fees.
 
 **2. Which languages does Mycroft support?**
@@ -128,3 +135,10 @@ Mycroft offers an open API and development environment that lets users program t
 
 **8. Does Mycroft work without an internet connection?**
 Some basic functions of Mycroft can be used offline, but many services require an internet connection. The extent of offline functionality depends on the setup.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

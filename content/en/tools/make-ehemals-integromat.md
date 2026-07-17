@@ -1,23 +1,24 @@
 ---
-slug: make-ehemals-integromat
-title: Make (formerly Integromat)
+slug: "make-ehemals-integromat"
+title: "Make (ehemals Integromat)"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Agents"
+price_model: "Freemium"
 tags:
   - AI
   - assistant
   - automation
-official_url: 'https://www.make.com/'
+official_url: "https://www.make.com/"
 popularity: 0
-description: 'Make is a powerful automation platform for connecting apps and services, building visual workflows, syncing data, and simplifying repetitive tasks without coding.'
-translation: full
-updated_at: 2026-05-21
+description: "Make (ehemals Integromat) is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Make (formerly Integromat)
 
 Make, formerly known as Integromat, is a powerful automation platform that makes it possible to connect different applications and services and create complex workflows. With a visual editor, users can automate processes, synchronize data, and simplify repetitive tasks without any programming knowledge. Make offers a wide range of integrations and supports both simple and complex automation scenarios.
@@ -106,14 +107,6 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Make offers a freemium model that provides a good starting point with basic features. The free plans often include a limited number of operations and scenarios per month. For larger teams or more extensive automations, there are various paid subscriptions that, depending on the provider and plan, offer different numbers of operations, faster execution, and expanded support. Prices and included features may vary, so it is recommended to check the current terms directly on the provider's website.
 
-## Alternatives to Make (formerly Integromat)
-
-- **Zapier:** Also a leading tool for workflow automation, focused on ease of use and a large number of integrations.
-- **Microsoft Power Automate:** Especially suitable for users in the Microsoft ecosystem with extensive automation options.
-- **Automate.io:** Offers similar features with a focus on marketing and sales channels.
-- **n8n:** Open-source alternative with flexible customization options and self-hosting.
-- **Workato:** Enterprise-oriented platform with advanced integration and automation features.
-
 ## Related Guides
 
 - [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
@@ -122,6 +115,19 @@ Make offers a freemium model that provides a good starting point with basic feat
 ## FAQ
 
 **1. Do I need programming knowledge to use Make?**
+
+**What should a Make (ehemals Integromat) pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Make (ehemals Integromat) without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Make (ehemals Integromat) the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 No, Make offers a visual interface that also allows users without programming knowledge to create automations. For more complex scenarios, technical understanding can be helpful.
 
 **2. Which apps can I connect with Make?**
@@ -144,3 +150,10 @@ Execution speed depends on the chosen plan and the complexity of the workflows. 
 
 **8. Can I use Make as a team?**
 Yes, Make supports team features, allowing multiple users to work on automations together and share scenarios.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,22 +1,24 @@
 ---
-slug: tableau-prep
-title: Tableau Prep
+slug: "tableau-prep"
+title: "Tableau Prep"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Subscription
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Abonnement"
 tags:
   - data preparation
   - analytics
   - ETL
-official_url: 'https://www.tableau.com/products/prep'
+official_url: "https://www.tableau.com/products/prep"
 popularity: 0
-description: 'A visual data-preparation tool for cleaning, transforming, and combining data for analysis and Tableau workflows.'
-translation: full
+description: "Tableau Prep is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Tableau Prep
 
 Tableau Prep is a powerful data-preparation tool that helps users prepare data quickly and efficiently for analysis. It combines a user-friendly interface with intelligent features that simplify cleaning, transforming, and combining data. Tableau Prep is especially useful for data analysts, business intelligence professionals, and anyone who wants to prepare complex datasets for meaningful visualizations.
@@ -99,17 +101,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Tableau Prep is typically offered as part of a subscription that varies depending on the feature set and number of users. It is often included in Tableau Creator licenses, which cover both Tableau Prep and Tableau Desktop and Tableau Server. Exact pricing depends on the provider, the selected plan, and the contract term. For accurate information, it is best to contact the provider directly or check the official website.
 
-## Alternatives to Tableau Prep
-
-- **Alteryx Designer**: A comprehensive tool for data preparation, analysis, and automation, especially for complex workflows.
-- **Microsoft Power Query**: Free and integrated into Excel and Power BI, ideal for users already working in the Microsoft ecosystem.
-- **Talend Open Studio**: Open-source platform for ETL and data integration with broad functionality.
-- **Trifacta Wrangler**: User-friendly data-preparation tool with a focus on self-service and automation.
-- **Informatica PowerCenter**: Enterprise solution for extensive data integration and ETL processes.
-
 ## FAQ
 
 **1. What is Tableau Prep?**
+
+**What should a Tableau Prep pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Tableau Prep without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Tableau Prep the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Tableau Prep is a tool for visual and automated data preparation that helps clean and transform data for analysis purposes.
 
 **2. Do I need programming knowledge to use Tableau Prep?**
@@ -132,3 +139,10 @@ Popular alternatives include Alteryx, Microsoft Power Query, Talend, Trifacta, a
 
 **8. How much does Tableau Prep cost?**
 Costs vary depending on the licensing model, number of users, and feature set. More detailed pricing is available from the provider.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

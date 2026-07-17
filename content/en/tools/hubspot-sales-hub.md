@@ -1,23 +1,24 @@
 ---
-slug: hubspot-sales-hub
-title: HubSpot Sales Hub
+slug: "hubspot-sales-hub"
+title: "HubSpot Sales Hub"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Marketing
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Marketing & Vertrieb"
+price_model: "Freemium"
 tags:
   - CRM
   - Sales
   - Automation
   - Marketing
-official_url: 'https://www.hubspot.com/products/sales'
-description: 'A comprehensive sales platform for managing contacts, automating workflows, tracking deals, and analyzing performance, with integrations for marketing tools and a free entry plan.'
-translation: full
-updated_at: 2026-05-21
+official_url: "https://www.hubspot.com/products/sales"
+description: "HubSpot Sales Hub is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # HubSpot Sales Hub
 
 HubSpot Sales Hub is a comprehensive sales platform that helps companies optimize their sales processes and manage customer relationships more efficiently. The tool combines CRM functionality, automation, and analytics tailored specifically to the needs of sales teams. With a freemium pricing structure, HubSpot Sales Hub gives both small and large businesses an entry point into modern sales management.
@@ -31,7 +32,6 @@ It is important not to confuse automation with relationship building. Good rules
 ## Who is HubSpot Sales Hub suitable for?
 
 HubSpot Sales Hub is aimed primarily at small and medium-sized businesses that want to digitize and automate their sales activities. Sales reps, team leaders, and marketing managers all benefit from features that make the sales process more transparent and efficient. The tool is ideal for teams looking for an integrated CRM that can be connected to marketing and service tools. Startups and companies just beginning with structured sales management will also find a flexible solution here.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/hubspot-sales-hub-editorial.webp" alt="Illustration for HubSpot Sales Hub: contact cards and pipeline elements organizing a sales process" loading="lazy" decoding="async" />
@@ -67,7 +67,6 @@ HubSpot Sales Hub is aimed primarily at small and medium-sized businesses that w
 - Customization options are limited depending on the plan.
 - Support offerings vary depending on the selected pricing model.
 
-
 ## What Really Matters in Daily Use
 
 With HubSpot Sales Hub, the longest feature list matters less than whether the tool gets a clear place in the existing workflow. CRM value does not come from more fields; it comes from clean contacts, clear ownership, and reliable handoffs between sales, marketing, and service.
@@ -86,17 +85,22 @@ HubSpot Sales Hub pays off when processes are clarified before migration and dat
 
 HubSpot Sales Hub offers a freemium model that provides a free entry point. The basic version already includes important features for contact management and simple automations. For advanced features such as advanced automation, advanced reports, or additional users, paid subscriptions are required. Prices vary depending on the selected plan and company size. There are different tiers tailored to the needs of small teams through to large sales organizations.
 
-## Alternatives to HubSpot Sales Hub
-
-- **Pipedrive:** A CRM focused on ease of use and pipeline management, suitable for small to medium-sized sales teams.
-- **Salesforce Sales Cloud:** An extensive CRM solution with high customizability and a broad range of features, especially for larger companies.
-- **Zoho CRM:** A flexible CRM with diverse automation options and good value for money.
-- **Freshsales:** CRM and sales automation with AI-powered features, ideal for growing sales teams.
-- **Microsoft Dynamics 365 Sales:** A comprehensive CRM and sales platform that integrates well into Microsoft ecosystems.
-
 ## FAQ
 
 **1. Is HubSpot Sales Hub really free to use?**
+
+**What should a HubSpot Sales Hub pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in HubSpot Sales Hub without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to HubSpot Sales Hub the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, HubSpot Sales Hub offers a free basic version with core features that are sufficient for many small teams. However, advanced features require a paid subscription.
 
 **2. Which automation features are included?**
@@ -119,3 +123,10 @@ Onboarding is quick thanks to the intuitive user interface and extensive documen
 
 **8. Does HubSpot Sales Hub offer support?**
 Support options depend on the selected plan. Free users have access to community support, while paying customers receive expanded support.
+
+## Alternatives
+
+- [HubSpot Sales](/en/tools/hubspot-sales/): is worth comparing when another existing workflow or ecosystem fits better.
+- [hubspot-marketing-hub](/en/tools/hubspot-marketing-hub/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [mailchimp](/en/tools/mailchimp/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [ActiveCampaign](/en/tools/activecampaign/): is worth comparing when the scope, collaboration model or administration needs differ.

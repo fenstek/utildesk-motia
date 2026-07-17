@@ -1,19 +1,22 @@
 ---
-slug: tableau-public
-title: Tableau Public
+description: "Tableau Public ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "tableau-public"
+title: "Tableau Public"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Image"
-price_model: Kostenlos
+price_model: "Kostenlos"
 tags: [data-visualization, analytics, dashboards]
 official_url: "https://public.tableau.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-21"
+updated_at: "2026-07-17"
 ---
+
 # Tableau Public
 
 Tableau Public ist besonders interessant, wenn öffentliche Datenvisualisierungen und Portfolio-Dashboards nicht nur einmalig ausprobiert, sondern wiederholt im Team genutzt werden soll. Dann geht es nicht um ein einzelnes Aha-Erlebnis, sondern darum, Analysen teilbar zu machen, ohne eine geschlossene BI-Umgebung aufzubauen.
@@ -78,19 +81,22 @@ Tableau Public ist komplett kostenlos nutzbar. Für erweiterte Funktionen und pr
 
 Für die Budgetplanung sollte Tableau Public nicht nur nach Listenpreis bewertet werden. Wichtiger sind Betriebsaufwand, Schulung, Integrationen und die Frage, ob die Daten öffentlich sein dürfen und wie Quellen sichtbar bleiben.
 
-## Alternativen zu Tableau Public
-
-- **Microsoft Power BI:** Bietet umfangreiche Visualisierungs- und Analysefunktionen mit kostenlosen und kostenpflichtigen Plänen.
-- **Google Data Studio:** Kostenloses Tool von Google für die Erstellung interaktiver Berichte und Dashboards.
-- **Qlik Sense:** Plattform für Datenvisualisierung mit Self-Service-Analytics, meist kostenpflichtig.
-- **Chart.js:** Open-Source-JavaScript-Bibliothek für einfache Diagramme, erfordert Programmierkenntnisse.
-- **Looker Studio:** Eine weitere Alternative für datengetriebene Berichte, Teil von Google Cloud.
-
-Bei der Auswahl der Alternativen lohnt sich ein Vergleich entlang des konkreten Engpasses. Wenn öffentliche Datenvisualisierungen und Portfolio-Dashboards im Mittelpunkt stehen, zählen andere Kriterien als bei einem allgemeinen Toolvergleich: Datenkontrolle, Lernkurve, Integrationen und die Qualität der Ergebnisse im eigenen Material.
-
 ## FAQ
 
 **1. Ist Tableau Public wirklich kostenlos?**
+
+**Wie sollte ein Pilot mit Tableau Public aussehen?**
+
+Für Tableau Public: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Tableau Public verarbeitet werden?**
+
+Tableau Public: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Tableau Public sinnvoll?**
+
+Bei Tableau Public ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Ja, Tableau Public kann kostenlos genutzt werden, um Datenvisualisierungen zu erstellen und online zu teilen.
 
 **2. Kann ich meine Daten privat halten?**
@@ -119,3 +125,14 @@ Am besten mit einem kleinen, echten Szenario aus dem eigenen Alltag. Dabei sollt
 
 **10. Was ist der häufigste Stolperstein bei Tableau Public?**
 Der häufigste Stolperstein ist ein zu breiter Start. Vor dem Rollout sollte klar sein, ob die Daten öffentlich sein dürfen und wie Quellen sichtbar bleiben; sonst wird der Nutzen schwer zu bewerten.
+
+## Arbeitsablauf und Einführung
+
+Ein sinnvoller Start mit Tableau Public beginnt mit einem konkreten Ablauf und einem kleinen Kreis von Nutzern. Definiere Eingang, erwartetes Ergebnis und den manuellen Kontrollpunkt, bevor weitere Automatisierungen oder Berechtigungen dazukommen. Dokumentiere, wer Inhalte freigibt und wie ein Fehler zurückgerollt wird. So zeigt ein Pilot schnell, ob Tableau Public im Alltag trägt oder nur in einer Demo überzeugt.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

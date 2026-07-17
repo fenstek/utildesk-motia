@@ -1,22 +1,24 @@
 ---
-slug: fountain
-title: Fountain
+slug: "fountain"
+title: "Fountain"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Subscription
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Image"
+price_model: "Abonnement"
 tags:
   - recruiting
   - hr
   - automation
   - ai
-official_url: 'https://www.fountain.com/'
-description: 'Fountain is an AI-powered recruiting platform that automates candidate management, workflow tasks, and hiring processes to help teams find and hire qualified candidates more efficiently.'
-translation: full
+official_url: "https://www.fountain.com/"
+description: "Fountain is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Fountain
 
 Fountain is an innovative AI-powered platform that automates and optimizes the recruiting process. With a focus on improving efficiency and saving time, Fountain helps companies identify and hire qualified candidates faster. The application combines modern automation technologies with intelligent HR features to simplify the entire applicant management process.
@@ -97,6 +99,19 @@ Fountain offers a subscription model with different pricing tiers depending on t
 ## FAQ
 
 **1. What advantages does Fountain offer compared to traditional recruiting methods?**
+
+**What should a Fountain pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Fountain without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Fountain the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Fountain automates many manual processes, saving time and increasing efficiency in candidate selection through AI-powered algorithms.
 
 **2. Is Fountain suitable for small businesses?**
@@ -129,3 +144,10 @@ Choose a real task, write down success criteria, and compare after the test whet
 
 **10. When is Fountain a poor fit?**
 If briefing, rights, brand rules, and export formats remain vague, Fountain should not be rolled out broadly yet. Without maintenance and review time, it quickly becomes another channel.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

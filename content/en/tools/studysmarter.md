@@ -1,23 +1,25 @@
 ---
-slug: studysmarter
-title: StudySmarter
+slug: "studysmarter"
+title: "StudySmarter"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Freemium"
 tags:
   - education
   - learning
   - productivity
   - ai
-official_url: 'https://www.studysmarter.de/'
+official_url: "https://www.studysmarter.de/"
 popularity: 0
-description: 'StudySmarter is an AI-assisted learning platform with flashcards, study plans, summaries, statistics, and community features for students, professionals, and teachers.'
-translation: full
+description: "StudySmarter is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # StudySmarter
 
 StudySmarter is an innovative learning platform designed to make learning more efficient and productive. By combining interactive learning materials, AI-powered features, and a large community, StudySmarter helps students, university students, and professionals reach their learning goals and optimize the learning process.
@@ -87,6 +89,19 @@ StudySmarter can improve learning rhythm and structure. It becomes truly effecti
 ## FAQ
 
 **1. Is StudySmarter really free?**
+
+**What should a StudySmarter pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in StudySmarter without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to StudySmarter the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, the platform offers a free basic version with many features. A paid subscription is available for advanced features.
 
 **2. Can I use StudySmarter offline?**
@@ -109,3 +124,10 @@ Yes, the platform offers community features and groups for learning together.
 
 **8. How secure are my data at StudySmarter?**
 StudySmarter places importance on data protection and uses common security standards; details can be found in the provider's privacy policy.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

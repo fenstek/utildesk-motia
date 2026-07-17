@@ -1,23 +1,26 @@
 ---
-slug: followupthen
-title: FollowUpThen
+description: "FollowUpThen is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "followupthen"
+title: "FollowUpThen"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Agents"
+price_model: "Freemium"
 tags:
   - productivity
   - automation
   - workflow
   - crm
-official_url: 'https://www.followupthen.com/'
+official_url: "https://www.followupthen.com/"
 popularity: 0
 source_language: de
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # FollowUpThen
 
 FollowUpThen is a practical tool for automating email reminders, particularly suited for managing follow-ups and tasks in the workplace. It can be easily integrated into existing email systems and helps users keep track of important messages and deadlines without having to open additional apps.
@@ -95,19 +98,22 @@ FollowUpThen offers various pricing plans that differ in terms of functionality 
 
 Beyond the list price, FollowUpThen should be evaluated by the cost of adoption. Relevant factors include contact volume, automations, reporting, integrations, and data maintenance. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to FollowUpThen
-
-- **Boomerang for Gmail:** Enhanced email reminders and planning features directly in Gmail.
-- **RightInbox:** Enhances Gmail with follow-up reminders and email tracking.
-- **Todoist:** A comprehensive task manager with email integration.
-- **Zapier:** Automates follow-ups and workflows with various apps.
-- **Salesforce Inbox:** CRM-oriented email extension for sales teams.
-
-When comparing options, FollowUpThen should not only be measured against very similar products. Depending on the goal, CRM, email, social, analytics, and sales-engagement tools may fit better if they are closer to the existing process or require less maintenance.
-
 ## FAQ
 
 **1. How does FollowUpThen work?**
+
+**What should a FollowUpThen pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in FollowUpThen without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to FollowUpThen the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 FollowUpThen works through email addresses, where users send messages with a time specification (e.g., 2days@followupthen.com) to be reminded at a later time.
 
 **2. Do I need special software?**
@@ -136,3 +142,14 @@ Start with one clear task rather than every feature. After a few runs, check whe
 
 **10. When is FollowUpThen a poor fit?**
 It becomes risky when audiences, tracking, consent, and follow-up processes are not clearly defined, or when decisions will not be reviewed later. In that case FollowUpThen adds surface area without enough clarity.
+
+## Workflow and rollout
+
+A useful start with FollowUpThen begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether FollowUpThen holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

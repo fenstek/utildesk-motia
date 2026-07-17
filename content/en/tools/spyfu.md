@@ -1,22 +1,24 @@
 ---
-slug: spyfu
-title: SpyFu
+slug: "spyfu"
+title: "SpyFu"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Marketing & Sales
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Marketing & Vertrieb"
+price_model: "Je nach Plan"
 tags:
   - SEO
   - marketing
   - analytics
-official_url: 'https://www.spyfu.com/'
+official_url: "https://www.spyfu.com/"
 popularity: 0
-description: 'SpyFu is a competitive intelligence tool for SEO and PPC that helps teams compare keywords, ads, and search opportunities.'
-translation: full
+description: "SpyFu is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # SpyFu
 
 SpyFu is a competitive analysis tool for SEO and PPC. It shows which keywords competitors are visible for, which ads they may be running, and where opportunities lie in organic or paid search.
@@ -81,14 +83,6 @@ SpyFu mainly works with public and modeled search data. For team reports, intern
 
 SpyFu offers plan-based pricing depending on queries, reports, and feature scope. The value depends on whether the research regularly feeds into SEO or Ads decisions. The pricing model listed in the dataset is: Varies by plan.
 
-## Alternatives to SpyFu
-
-- Semrush: broader for SEO, PPC, content, and competitive analysis.
-- Ahrefs: very strong for backlinks and organic research.
-- SE Ranking: more affordable and broad for many SEO tasks.
-- Similarweb: stronger for traffic and market analysis.
-- Google Search Console and Ads: essential for your own real data.
-
 ## Editorial assessment
 
 SpyFu gives you a useful look over the fence. The data should be treated as hypotheses and then worked with using your own strategy, your own numbers, and real search intent.
@@ -100,6 +94,19 @@ At the same time, the most important limitation should be stated openly: data is
 ## FAQ
 
 **Is SpyFu suitable for small teams?**
+
+**What should a SpyFu pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in SpyFu without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to SpyFu the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, if the specific use case is kept small enough and the team plans maintenance realistically.
 
 **What should you pay attention to before using SpyFu?**
@@ -107,3 +114,10 @@ Data is estimated and may differ from real account data. It should also be clear
 
 **Does SpyFu replace human work?**
 No. SpyFu can accelerate or structure work, but decisions, quality control, and responsibility remain with the team.
+
+## Alternatives
+
+- [HubSpot Sales](/en/tools/hubspot-sales/): is worth comparing when another existing workflow or ecosystem fits better.
+- [hubspot-marketing-hub](/en/tools/hubspot-marketing-hub/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [mailchimp](/en/tools/mailchimp/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [ActiveCampaign](/en/tools/activecampaign/): is worth comparing when the scope, collaboration model or administration needs differ.

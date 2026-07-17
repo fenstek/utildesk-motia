@@ -1,22 +1,24 @@
 ---
-slug: react-native
-title: React Native
+slug: "react-native"
+title: "React Native"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Open Source
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Coding"
+price_model: "Open Source"
 tags:
   - mobile-development
   - framework
   - developer-tools
-official_url: 'https://reactnative.dev/'
+official_url: "https://reactnative.dev/"
 popularity: 0
-description: 'React Native is an open-source framework for building iOS and Android apps with JavaScript and React. It combines native performance with the flexibility of web technologies, supports shared codebases, and offers tools for debugging, hot reloading, and access to native APIs.'
-translation: full
+description: "React Native is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # React Native
 
 React Native is an open-source framework developed by Facebook that makes it possible to build mobile apps for iOS and Android with JavaScript and React. It combines the benefits of native development with the flexibility of web technologies and allows developers to build cross-platform applications from a shared codebase.
@@ -98,17 +100,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 React Native is an open-source project and therefore free to use. However, costs may arise for additional tools, hosting, backend services, or commercial plugins, depending on the project and provider.
 
-## Alternatives to React Native
-
-- **Flutter:** A framework from Google that is programmed with Dart and also enables cross-platform apps.
-- **Xamarin:** Microsoft’s framework for cross-platform apps with C#.
-- **NativeScript:** Open-source framework for native apps with JavaScript, TypeScript, or Angular.
-- **Ionic:** Hybrid app framework that uses web technologies and is based on Cordova or Capacitor.
-- **SwiftUI / Jetpack Compose:** Native UI frameworks for iOS and Android respectively that are not cross-platform solutions, but do simplify native development.
-
 ## FAQ
 
 **1. Is React Native free?**
+
+**What should a React Native pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in React Native without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to React Native the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, React Native is an open-source framework and can be used free of charge.
 
 **2. Which programming language is used for React Native?**
@@ -133,3 +140,10 @@ Sometimes platform-specific adjustments are necessary, and very graphics-intensi
 React Native has a very active and large community with numerous resources, libraries, and support options.
 
 ---
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

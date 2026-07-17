@@ -1,21 +1,24 @@
 ---
-slug: avaya-onecloud
-title: Avaya Experience Platform
+description: "Avaya Experience Platform is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "avaya-onecloud"
+title: "Avaya Experience Platform"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Subscription
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Abonnement"
 tags:
   - contact-center
   - communication
   - customer-support
   - ai
-official_url: 'https://www.avaya.com/en/products/infinity-platform/'
-translation: full
+official_url: "https://www.avaya.com/en/products/infinity-platform/"
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Avaya Experience Platform
 
 Avaya Experience Platform is a comprehensive cloud-based solution that helps companies make their customer communication and contact centers more efficient. With modern AI features and flexible tools for integrating various communication channels, the platform enables better customer support and streamlines internal workflows.
@@ -86,19 +89,22 @@ Avaya Experience Platform is offered as a subscription. Exact pricing depends on
 
 Beyond the list price, Avaya Experience Platform should be evaluated by the cost of adoption. Relevant factors include setup, phone numbers, integrations, training, and ongoing administration. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to Avaya Experience Platform
-
-- **Genesys Cloud CX:** Comprehensive contact center solution with strong AI integration and omnichannel support.
-- **Five9:** Cloud-based contact center with a focus on automation and ease of use.
-- **Zendesk Suite:** Customer service platform with multichannel communication and CRM features.
-- **Talkdesk:** Flexible contact center software with AI-powered tools and integrations.
-- **Cisco Contact Center:** Established solution with extensive communication and management features.
-
-When comparing options, Avaya Experience Platform should not only be measured against very similar products. Depending on the goal, contact-center, helpdesk, and collaboration tools may fit better if they are closer to the existing process or require less maintenance.
-
 ## FAQ
 
 **1. Which communication channels does Avaya Experience Platform support?**
+
+**What should a Avaya Experience Platform pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Avaya Experience Platform without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Avaya Experience Platform the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 The platform supports telephony, email, chat, SMS, and social media channels to enable unified customer communication.
 
 **2. Is Avaya Experience Platform cloud-based?**
@@ -127,3 +133,14 @@ Choose a real task, write down success criteria, and compare after the test whet
 
 **10. When is Avaya Experience Platform a poor fit?**
 If channels, ownership, and escalation rules are not clearly defined, Avaya Experience Platform should not be rolled out broadly yet. Without maintenance and review time, it quickly becomes another channel.
+
+## Workflow and rollout
+
+A useful start with Avaya Experience Platform begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Avaya Experience Platform holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

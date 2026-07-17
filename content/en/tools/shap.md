@@ -1,24 +1,26 @@
 ---
-slug: shap
-title: SHAP (SHapley Additive exPlanations)
+slug: "shap"
+title: "SHAP (SHapley Additive exPlanations)"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Open Source
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Open Source"
 tags:
   - data
   - analytics
   - education
   - developer-tools
   - chatbot
-official_url: 'https://github.com/shap/shap'
+official_url: "https://github.com/shap/shap"
 popularity: 0
-description: 'SHAP is an open-source framework for explaining predictions from complex machine-learning models using Shapley values. It helps data scientists, developers, analysts, educators, and organizations make model behavior more transparent through local and global explanations, visualizations, and Python integrations.'
-translation: full
+description: "SHAP (SHapley Additive exPlanations) is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # SHAP (SHapley Additive exPlanations)
 
 SHAP is a powerful open-source tool for explaining predictions made by complex machine-learning models. Based on Shapley values from game theory, it makes it possible to show the influence of individual features on model predictions in a transparent way. SHAP is often used in data analysis, AI development, and education to make models easier to understand and interpret.
@@ -92,17 +94,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 SHAP is freely available as an open-source project under the MIT License. There are no direct costs for using it. However, infrastructure costs (e.g. cloud computing power) may vary depending on the use case.
 
-## Alternatives to SHAP
-
-- [LIME (Local Interpretable Model-agnostic Explanations)](/tools/lime/): Also a popular tool for model interpretation with a focus on local explanations.
-- **ELI5:** A Python library that provides explanations for various models, including simple visualizations.
-- **InterpretML:** Microsoft's open-source toolkit for interpretable ML models with different explanation approaches.
-- **Anchors:** An extension of LIME that enables more precise and stable local explanations.
-- **Captum:** A PyTorch library for model interpretation with a focus on neural networks.
-
 ## FAQ
 
 **1. What are Shapley values?**
+
+**What should a SHAP (SHapley Additive exPlanations) pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in SHAP (SHapley Additive exPlanations) without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to SHAP (SHapley Additive exPlanations) the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Shapley values come from game theory and fairly distribute the payoff of a coalition game among the individual players. In SHAP, they are used to quantify the contribution of each feature to a model prediction.
 
 **2. Does SHAP support all machine-learning models?**
@@ -125,3 +132,10 @@ SHAP is mainly used as a Python library. GUI-based tools usually require third-p
 
 **8. Where can I find documentation and examples?**
 The official SHAP documentation and example notebooks are available on GitHub and on the project site. There are also tutorials to help you get started.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

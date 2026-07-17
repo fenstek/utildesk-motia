@@ -1,22 +1,25 @@
 ---
-slug: wordreference
-title: WordReference
+description: "WordReference is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "wordreference"
+title: "WordReference"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Freemium"
 tags:
   - translation
   - language
   - reference
   - productivity
-official_url: 'https://www.wordreference.com/'
+official_url: "https://www2.wordreference.com/"
 popularity: 0
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # WordReference
 
 WordReference is a comprehensive online dictionary and translation tool that helps users overcome language barriers. It offers fast and accurate translations, extensive dictionary entries, and forums for exchanging ideas with native speakers. It is ideal for students, professionals, and anyone who wants to learn or translate foreign languages.
@@ -85,6 +88,19 @@ WordReference is a research tool for language. Its value lies in patiently choos
 ## FAQ
 
 **1. Is WordReference free?**
+
+**What should a WordReference pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in WordReference without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to WordReference the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 WordReference's core features can be used for free. Some additional features or ad-free use are paid and depend on the provider and plan.
 
 **2. Which languages does WordReference support?**
@@ -109,3 +125,10 @@ WordReference combines dictionary content, conjugations, pronunciation help, and
 WordReference is well suited as a quick reference source when writing, translating, or learning. Integration usually happens through a browser or mobile apps, without requiring additional software installation.
 
 ---
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

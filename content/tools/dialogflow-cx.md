@@ -1,19 +1,22 @@
 ---
-slug: dialogflow-cx
-title: Dialogflow CX
+description: "Dialogflow CX ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "dialogflow-cx"
+title: "Dialogflow CX"
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
-editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
-category: AI Chatbots
-price_model: Je nach Plan
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Je nach Plan"
 tags: [chatbot, automation]
 official_url: "https://docs.cloud.google.com/dialogflow/cx/docs"
 popularity: 0
 tier: C
 generated_at: 2026-05-15
+updated_at: "2026-07-17"
 ---
+
 # Dialogflow CX
 
 Dialogflow CX ist eine fortschrittliche Plattform von Google zur Erstellung und Verwaltung von konversationellen KI-Chatbots und virtuellen Assistenten. Sie ermöglicht es Unternehmen, komplexe Dialoge mit natürlicher Sprache zu gestalten und automatisierte Kundeninteraktionen effizient zu steuern. Die Plattform unterstützt dabei die Entwicklung von mehrstufigen Dialogen mit grafischer Benutzeroberfläche und bietet umfangreiche Integrationsmöglichkeiten.
@@ -100,17 +103,22 @@ Die Preisgestaltung von Dialogflow CX richtet sich nach der Nutzung, insbesonder
 
 Für genaue Preisangaben empfiehlt es sich, die offizielle Google Cloud Pricing-Seite zu konsultieren oder direkt mit einem Anbieter Kontakt aufzunehmen.
 
-## Alternativen zu Dialogflow CX
-
-- **Microsoft Bot Framework:** Plattform von Microsoft zur Entwicklung und Verwaltung von Chatbots mit umfangreichen Integrationsmöglichkeiten.
-- **IBM Watson Assistant:** KI-gestützte Lösung von IBM für konversationelle Anwendungen mit Fokus auf Unternehmen.
-- **Rasa:** Open-Source-Framework für die Erstellung von Chatbots mit starker Community und hoher Anpassbarkeit.
-- **Amazon Lex:** AWS-basierter Service zur Entwicklung von Sprach- und Text-Chatbots mit nativer Integration in Amazon-Dienste.
-- **Kore.ai:** Plattform für Conversational AI mit umfangreichen Tools für Unternehmen und Omnichannel-Support.
-
 ## FAQ
 
 **1. Was ist der Unterschied zwischen Dialogflow CX und Dialogflow ES?**
+
+**Wie sollte ein Pilot mit Dialogflow CX aussehen?**
+
+Für Dialogflow CX: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Dialogflow CX verarbeitet werden?**
+
+Dialogflow CX: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Dialogflow CX sinnvoll?**
+
+Bei Dialogflow CX ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Dialogflow CX ist die erweiterte Version mit Fokus auf komplexe und mehrstufige Dialoge, während Dialogflow ES für einfache und standardisierte Chatbots gedacht ist.
 
 **2. Welche Sprachen unterstützt Dialogflow CX?**
@@ -133,3 +141,10 @@ Dialogflow CX nutzt die Sicherheitsstandards und Compliance-Modelle der Google C
 
 **8. Welche Branchen profitieren besonders von Dialogflow CX?**
 Insbesondere Telekommunikation, Finanzdienstleistungen, E-Commerce, Gesundheitswesen und andere Branchen mit hohem Bedarf an automatisiertem Kundenkontakt.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

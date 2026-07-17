@@ -1,19 +1,22 @@
 ---
-slug: taguette
-title: Taguette
+description: "Taguette ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "taguette"
+title: "Taguette"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Research"
-price_model: Open Source
+price_model: "Open Source"
 tags: [research, data, writing]
 official_url: "https://www.taguette.org/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-21"
+updated_at: "2026-07-17"
 ---
+
 # Taguette
 
 Taguette ist ein Open-Source-Tool für qualitative Datenanalyse, vor allem für das Markieren und Codieren von Textmaterial. Es hilft, Interviews, Notizen oder Dokumente systematischer auszuwerten, ohne sofort in eine schwere Forschungssoftware einzusteigen.
@@ -78,14 +81,6 @@ Interviewdaten können sehr sensibel sein. Vor der Nutzung sollten Anonymisierun
 
 Als Open-Source-Werkzeug kann Taguette kostengünstig eingesetzt werden. Kosten entstehen eher durch Hosting, Wartung, Schulung und die eigentliche Analysezeit. Das im Datensatz geführte Preismodell ist: Open Source.
 
-## Alternativen zu Taguette
-
-- MAXQDA: sehr stark für professionelle qualitative und Mixed-Methods-Analyse.
-- NVivo: etabliert in Forschung und großen Analyseprojekten.
-- ATLAS.ti: umfangreich für qualitative Daten und Teamprojekte.
-- Dovetail: beliebt für UX-Research und Insight-Repositories.
-- Airtable oder Notion: pragmatisch für sehr kleine Auswertungen, aber methodisch weniger spezialisiert.
-
 ## Redaktionelle Einschätzung
 
 Taguette ist ein gutes Werkzeug für klare, textbasierte qualitative Arbeit. Es zwingt nicht zur Methode, aber es steht ihr auch nicht im Weg.
@@ -97,6 +92,19 @@ Gleichzeitig sollte die wichtigste Grenze offen ausgesprochen werden: Weniger m�
 ## FAQ
 
 **Ist Taguette für kleine Teams geeignet?**
+
+**Wie sollte ein Pilot mit Taguette aussehen?**
+
+Für Taguette: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Taguette verarbeitet werden?**
+
+Taguette: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Taguette sinnvoll?**
+
+Bei Taguette ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Ja, wenn der konkrete Einsatz klein genug gehalten wird und das Team die Pflege realistisch einplant.
 
 **Worauf sollte man vor dem Einsatz von Taguette achten?**
@@ -104,3 +112,10 @@ Weniger mächtig als etablierte Großlösungen für qualitative Analyse. Außerd
 
 **Ersetzt Taguette menschliche Arbeit?**
 Nein. Taguette kann Arbeit beschleunigen oder strukturieren, aber Entscheidungen, Qualitätskontrolle und Verantwortung bleiben beim Team.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

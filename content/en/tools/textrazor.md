@@ -1,22 +1,24 @@
 ---
-slug: textrazor
-title: TextRazor
+slug: "textrazor"
+title: "TextRazor"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Entwickler-Tools"
+price_model: "Freemium"
 tags:
   - NLP
   - API
   - text analysis
   - developer tools
-official_url: 'https://www.textrazor.com/'
-description: 'A powerful text analysis API for developers that extracts entities, topics, sentiment, language, and semantic relationships from unstructured text.'
-translation: full
+official_url: "https://www.textrazor.com/"
+description: "TextRazor is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # TextRazor
 
 TextRazor is a powerful text analysis API that helps developers understand and process natural language. With extensive features for entity recognition, topic extraction, and semantic analysis, TextRazor offers a flexible solution for a wide range of applications in NLP (Natural Language Processing) and data processing. The tool makes it possible to turn unstructured text into structured data, which is especially useful for search engines, content management systems, and analytics platforms.
@@ -102,17 +104,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 TextRazor offers a **Freemium** pricing model. This means that a free basic version with limited request volume is available, ideal for testing and smaller projects. For more extensive use, paid plans with higher limits and additional features are available. Exact prices and conditions may vary depending on the plan and provider.
 
-## Alternatives to TextRazor
-
-- **Google Cloud Natural Language API:** Extensive NLP services with strong integration into Google Cloud.
-- **IBM Watson Natural Language Understanding:** Offers advanced text analysis features with AI support.
-- **Microsoft Azure Text Analytics:** Part of Azure Cognitive Services with a focus on text analysis and sentiment.
-- **MeaningCloud:** API for text classification, entity recognition, and sentiment analysis.
-- **Aylien Text Analysis API:** NLP tools focused on news and media analysis.
-
 ## FAQ
 
 **1. What exactly is TextRazor?**
+
+**What should a TextRazor pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in TextRazor without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to TextRazor the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 TextRazor is an API for analyzing and processing natural language that helps developers understand texts and automatically extract important information.
 
 **2. Which languages does TextRazor support?**
@@ -135,3 +142,10 @@ TextRazor offers precise entity recognition supported by machine learning and ex
 
 **8. Can I add my own dictionaries or categories?**
 Yes, TextRazor allows the use of custom dictionaries to adapt the analysis to specific needs.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

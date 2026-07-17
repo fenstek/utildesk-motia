@@ -1,19 +1,22 @@
 ---
-slug: microsoft-365
-title: Microsoft 365
+description: "Microsoft 365 ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "microsoft-365"
+title: "Microsoft 365"
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
-editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
-category: AI Image
-price_model: Abonnement
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Image"
+price_model: "Abonnement"
 tags: [productivity, office-suite, collaboration]
 official_url: "https://www.microsoft.com/de-de/microsoft-365"
 popularity: 0
 tier: C
 generated_at: 2026-05-27
+updated_at: "2026-07-17"
 ---
+
 # Microsoft 365
 
 Microsoft 365 ist eine umfassende Office-Suite, die produktivitätssteigernde Anwendungen mit KI-gestützten Funktionen kombiniert. Es bietet Werkzeuge für Textverarbeitung, Tabellenkalkulation, Präsentationen, E-Mail-Kommunikation und Zusammenarbeit in Teams. Dank integrierter KI-Features unterstützt Microsoft 365 Nutzer dabei, effizienter zu arbeiten, Inhalte schneller zu erstellen und Projekte gemeinsam zu verwalten.
@@ -55,14 +58,6 @@ Microsoft 365 richtet sich an Einzelpersonen, kleine und mittlere Unternehmen so
 
 Microsoft 365 wird in verschiedenen Abonnementplänen angeboten, die sich je nach Umfang der enthaltenen Anwendungen und Services unterscheiden. Es gibt Angebote für Privatpersonen, Familien, Unternehmen und Bildungseinrichtungen. Die Preise variieren je nach Region und Plan. Einige Pläne bieten eine kostenlose Testphase oder eingeschränkte Basisversionen an.
 
-## Alternativen zu Microsoft 365
-
-- **Google Workspace:** Cloud-basierte Office-Anwendungen mit Fokus auf Zusammenarbeit und Echtzeit-Editing.
-- **LibreOffice:** Kostenlose Open-Source-Office-Suite mit klassischen Programmen für Textverarbeitung, Tabellen und Präsentationen.
-- **Zoho Office Suite:** Cloud-Office mit vielseitigen Tools und integriertem CRM, geeignet für kleine Unternehmen.
-- **OnlyOffice:** Kollaborative Office-Plattform mit Integration in verschiedene Cloud-Dienste.
-- **Apple iWork:** Kostenlose Office-Anwendungen für macOS und iOS mit Fokus auf Design und einfache Bedienung.
-
 ## Was im Alltag wirklich zählt
 
 Microsoft 365 ist im Alltag weniger ein einzelnes Tool als eine Arbeitsumgebung aus Mail, Dateien, Meetings, Dokumenten und Identitäten. Der Nutzen hängt stark davon ab, ob Teams klare Ablageorte, Freigaben, Namensregeln und Sicherheitsrichtlinien vereinbaren, statt SharePoint, OneDrive und Teams wild zu vermischen.
@@ -79,6 +74,19 @@ Microsoft 365 ist sehr leistungsfähig, aber nur mit Ordnung wirklich produktiv.
 ## FAQ
 
 **1. Welche Anwendungen sind in Microsoft 365 enthalten?**
+
+**Wie sollte ein Pilot mit Microsoft 365 aussehen?**
+
+Für Microsoft 365: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Microsoft 365 verarbeitet werden?**
+
+Microsoft 365: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Microsoft 365 sinnvoll?**
+
+Bei Microsoft 365 ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Microsoft 365 umfasst Programme wie Word, Excel, PowerPoint, Outlook, OneNote, Teams und weitere je nach gewähltem Plan.
 
 **2. Kann ich Microsoft 365 auf mehreren Geräten nutzen?**
@@ -101,3 +109,10 @@ Viele Anwendungen lassen sich offline nutzen, für Synchronisation, Updates und 
 
 **8. Wie funktioniert die Preisgestaltung von Microsoft 365?**
 Microsoft 365 wird als Abonnement angeboten, das je nach Plan monatlich oder jährlich bezahlt wird. Preise variieren nach Funktionsumfang und Nutzerzahl.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

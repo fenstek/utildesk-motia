@@ -1,23 +1,24 @@
 ---
-slug: microsoft-copilot
-title: Microsoft Copilot
+slug: "microsoft-copilot"
+title: "Microsoft Copilot"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Writing"
+price_model: "Freemium"
 tags:
   - writing
-official_url: 'https://copilot.microsoft.com/'
+official_url: "https://copilot.microsoft.com/"
 affiliate_url: 'https://copilot.microsoft.com/'
 created_at: 2026-02-02T00:00:00.000Z
-updated_at: 2026-05-21
+updated_at: "2026-07-17"
 popularity: 0
-description: 'Microsoft Copilot is a Microsoft 365-integrated AI assistant that helps with writing, data analysis, presentation creation, email management, and workflow automation.'
-translation: full
+description: "Microsoft Copilot is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
 ---
+
 # Microsoft Copilot
 
 Microsoft Copilot is an AI-powered tool integrated into Microsoft 365 that helps users work more productively. It supports text creation, data analysis, task automation, and much more by understanding and responding to natural language. Copilot uses advanced AI models to simplify complex tasks and make workflows more efficient.
@@ -107,16 +108,22 @@ Microsoft Copilot is currently available as a freemium model. Basic functions ar
 
 👉 **Go to provider:** https://copilot.microsoft.com/
 
-## Alternatives to Microsoft Copilot
-
-- **Google Bard:** AI-powered tool for text generation and support in Google Workspace
-- [ChatGPT (OpenAI)](/tools/chatgpt/): ** General AI platform for a wide range of applications, also usable as a plugin in various tools
-- **Jasper AI:** AI solution focused specifically on marketing and content creation
-- **Notion AI:** AI features integrated into the Notion platform for notes and project management
-- **Zoho Zia:** AI assistant for Zoho apps with a focus on automation and data analysis
 ## FAQ
 
 **1. Do I need a special Microsoft 365 subscription to use Microsoft Copilot?**
+
+**What should a Microsoft Copilot pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Microsoft Copilot without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Microsoft Copilot the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 The availability of Microsoft Copilot depends on the respective Microsoft 365 plan. Some features are only included in certain business or enterprise plans.
 
 **2. How secure is my data when using Microsoft Copilot?**
@@ -139,3 +146,10 @@ Depending on the Microsoft 365 plan, users may be able to try or use certain Cop
 
 **8. How does Microsoft Copilot differ from other AI tools?**
 Copilot is specifically designed for integration with and optimization of the Microsoft 365 suite, providing a seamless user experience within that environment.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

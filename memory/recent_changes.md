@@ -1560,3 +1560,10 @@ _Last updated: 2026-07-16_
 - Generated the artwork with Codex built-in image generation through the ChatGPT subscription, without Gemini or API-key usage; all ten final scenes use different visual directions and contain no logos, readable UI text or watermarks.
 - Registered the batch for future duplicate exclusion and refreshed only the 20 affected content-lastmod entries. Production publication uses the bounded D1/R2 delta workflow and does not rebuild Astro or Pages.
 - Released the 20 localized entries from source commit `e19b950c`: D1 source-hash verification passed for all rows, ten content-addressed objects were served from `utildesk-tool-assets`, the 70-request production delta gate passed without failures, and both IndexNow endpoints accepted all 20 canonical URLs. `site/dist` remained unchanged and 72 active paired cards remain without illustrations.
+## 2026-07-17 - Full editorial cleanup of remaining flagged tool cards
+
+- Processed the deterministic strict-audit queue of 585 flagged active tool slugs in DE and EN; clean cards and illustrations were left untouched.
+- Added or completed editorial assessment, verdict, practical workflow context, limitations, governance and cost criteria, localized FAQ coverage, internal alternatives, descriptions and reviewed metadata while preserving official URLs, popularity and existing images.
+- Updated only the 1,170 corresponding content-lastmod entries. Local strict audit finished at 1,228 scanned, 0 flagged, 1,228 clean; English translation and editorial template checks passed.
+- Per-card inspect and verify completed for all 585 slugs. Two legacy image geometry findings (branchtrack and ableton-live) remain guard warnings because their existing WebP illustrations were explicitly out of scope for modification; no image files were changed.
+- No production deployment, Cloudflare request, push, IndexNow submission or Astro/Pages build was performed in this local editorial pass.

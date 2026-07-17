@@ -1,23 +1,25 @@
 ---
-slug: semantic-scholar
-title: Semantic Scholar
+slug: "semantic-scholar"
+title: "Semantic Scholar"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Kostenlos"
 tags:
   - education
   - data
   - analytics
   - productivity
-official_url: 'https://www.semanticscholar.org/'
+official_url: "https://www.semanticscholar.org/"
 popularity: 0
-description: 'Semantic Scholar is an AI-powered search engine for scientific publications that helps researchers, students, and professionals find relevant, high-quality research efficiently.'
-translation: full
+description: "Semantic Scholar is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Semantic Scholar
 
 Semantic Scholar is an AI-powered search engine for scientific publications that helps researchers, students, and professionals find relevant, high-quality research results efficiently. By using advanced algorithms and natural language processing, Semantic Scholar offers precise, context-aware search across millions of scientific articles from different disciplines.
@@ -102,17 +104,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Semantic Scholar is generally free to use. There is no paid subscription or premium model. However, some features or full texts may only be available through separate access from publishers or institutions, which is outside Semantic Scholar's control.
 
-## Alternatives to Semantic Scholar
-
-- **Google Scholar:** Widely used search engine for scholarly literature with broad coverage, but less AI-driven analysis.
-- **ResearchGate:** Platform for researchers to share publications and build networks, with a focus on social interaction.
-- **Microsoft Academic:** AI-based search engine from Microsoft (note: discontinued, but similar functions can be found in other Microsoft offerings).
-- **PubMed:** Specifically for biomedical literature, with comprehensive databases and specialized search functions.
-- **Dimensions:** Platform with extensive research data, analysis, and visualization tools, partially paid.
-
 ## FAQ
 
 **1. Is Semantic Scholar free?**
+
+**What should a Semantic Scholar pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Semantic Scholar without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Semantic Scholar the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Semantic Scholar can be used free of charge without registration.
 
 **2. Which languages are supported?**
@@ -135,3 +142,10 @@ Semantic Scholar uses AI to better understand and filter search results, while G
 
 **8. Can I receive notifications for new articles?**
 Creating user accounts makes it possible to save searches and track new publications on specific topics.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,23 +1,26 @@
 ---
-slug: continue
-title: Continue
+description: "Continue is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "continue"
+title: "Continue"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
-price_model: null
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Entwickler-Tools"
+price_model: "tags: [ai, coding, developer, assistant]"
 tags:
   - ai
   - coding
   - developer
   - assistant
-official_url: 'https://www.continue.dev/'
+official_url: "https://www.continue.dev/"
 popularity: 0
 source_language: de
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Continue
 
 Continue is a KI-based developer tool designed to support programmers and developers in writing code efficiently. It helps with auto-completing code snippets, making suggestions, and simplifying repetitive tasks. This allows developers to work faster and more precisely without losing the flow of coding.
@@ -88,19 +91,22 @@ The pricing of Continue depends on the provider and chosen plan. Typically, ther
 
 Beyond the list price, Continue should be evaluated by the cost of adoption. Relevant factors include setup, maintenance, CI resources, integrations, and technical onboarding. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to Continue
-
-- **GitHub Copilot:** A KI-based code assistant integrated with GitHub and Visual Studio Code.
-- **Tabnine:** Offers KI-based code completion with support for many languages and IDEs.
-- **Kite:** Another code completion assistant based on machine learning.
-- **Codeium:** A free KI code assistant focusing on speed and accuracy.
-- **IntelliCode from Microsoft:** KI assistance directly in Visual Studio and Visual Studio Code.
-
-When comparing options, Continue should not only be measured against very similar products. Depending on the goal, testing, developer-tooling, API, and platform solutions may fit better if they are closer to the existing process or require less maintenance.
-
 ## FAQ
 
 **1. Which programming languages does Continue support?**
+
+**What should a Continue pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Continue without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Continue the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Continue supports various programming languages, typically including Python, JavaScript, Java, C#, and many others.
 
 **2. How does one integrate Continue into the development process?
@@ -129,3 +135,14 @@ A narrow pilot is enough: real task, clear acceptance point, and a short retrosp
 
 **10. When is Continue a poor fit?**
 When standards, test data, and ownership emerge only informally, or when nobody has time for setup, review, and maintenance. In that case Continue becomes another stop in the process rather than real relief.
+
+## Workflow and rollout
+
+A useful start with Continue begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Continue holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

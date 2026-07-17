@@ -1,22 +1,24 @@
 ---
-slug: google-chrome
-title: Google Chrome
+slug: "google-chrome"
+title: "Google Chrome"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Free"
 tags:
   - browser
   - web
   - productivity
   - developer-tools
-official_url: 'https://chrome.google/'
-description: 'Google Chrome is a widely used web browser developed by Google, known for its speed, user-friendliness, and extensive extension capabilities. It supports modern web standards and includes integrated developer tools, making it particularly appealing to web developers. Available for free on multiple platforms, Chrome is suitable for both individual users and professionals seeking productive internet use.'
-translation: full
+official_url: "https://www.google.com/chrome/"
+description: "Google Chrome is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Google Chrome
 
 Google Chrome is a widely used web browser developed by Google. It is characterized by its speed, ease of use, and extensive extension options. Chrome supports modern web standards and offers integrated developer tools, which are especially interesting for web developers. As a free browser, it is available on many platforms and is suitable for both private users and professional users who want to work productively on the internet.
@@ -90,17 +92,22 @@ Google Chrome remains a highly compatible and powerful browser. Its strength bec
 
 Google Chrome is completely **free** to use. There are no hidden costs or premium versions. Updates and security improvements are provided automatically. Usage is independent of any paid Google service, but a Google account is required for synchronization.
 
-## Alternatives to Google Chrome
-
-- **Mozilla Firefox** – open-source browser focusing on privacy and customization.
-- **Microsoft Edge** – Chromium-based browser with good Windows integration and additional features.
-- **Opera** – browser with built-in VPN and power-saving mode.
-- **Brave** – privacy-oriented browser with ad blocker and reward system.
-- **Vivaldi** – highly customizable browser for power users.
-
 ## FAQ
 
 **1. Is Google Chrome really free?**
+
+**What should a Google Chrome pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Google Chrome without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Google Chrome the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Google Chrome is a free web browser with no paid versions. All features are available without charge.
 
 **2. Which operating systems does Google Chrome support?**
@@ -123,3 +130,10 @@ Yes, the basic functions are available without a Google account. However, a Goog
 
 **8. Why does Google Chrome use so much memory?**
 Chrome separates tabs and extensions into separate processes, which increases stability but can lead to higher RAM usage. This design allows a crash in one tab not to affect the entire browser.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,22 +1,24 @@
 ---
-slug: rocket-chat
-title: Rocket.Chat
+slug: "rocket-chat"
+title: "Rocket.Chat"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Freemium"
 tags:
   - chat
   - communication
   - open source
   - collaboration
-official_url: 'https://www.rocket.chat/'
-description: 'Rocket.Chat is a flexible open-source communication platform for team chat, collaboration, and secure self-hosted messaging, with integrations, calls, and a freemium pricing model.'
-translation: full
+official_url: "https://www.rocket.chat/"
+description: "Rocket.Chat is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Rocket.Chat
 
 Rocket.Chat is a versatile open-source communications platform that helps teams and organizations collaborate effectively. As a chat and collaboration tool, Rocket.Chat provides a secure environment for messages, file transfers, and video calls. The platform is especially known for its adaptability and wide range of integration options. With a freemium pricing model, users can access both a free basic version and advanced features in paid plans.
@@ -24,7 +26,6 @@ Rocket.Chat is a versatile open-source communications platform that helps teams 
 ## Who is Rocket.Chat suitable for?
 
 Rocket.Chat is aimed at small, medium-sized, and large businesses that are looking for a flexible and secure communication solution. The platform is especially well suited for organizations that value privacy and prefer an open-source alternative to proprietary chat solutions. Development teams, educational institutions, and non-profit organizations also benefit from its customizability and extensive integration options. Because Rocket.Chat can be self-hosted, the platform is suitable for users with specific compliance requirements.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/rocket-chat-editorial.webp" alt="Illustration for Rocket.Chat: Message slips travel through workshop rooms, a moderation gate, and a toolbox shelf" loading="lazy" decoding="async" />
@@ -94,17 +95,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Rocket.Chat offers a freemium model. The basic version is free and includes many important features for team communication. Paid subscriptions are available for advanced features such as enhanced security options, greater scalability, and professional support. Prices and included services vary depending on the provider and plan. Custom offers can also be created for individual requirements.
 
-## Alternatives to Rocket.Chat
-
-- **Slack:** A widely used cloud-based communication platform with extensive integrations and ease of use.
-- **Microsoft Teams:** Part of the Microsoft 365 ecosystem, ideal for businesses with extensive Office tools.
-- **Mattermost:** Also an open-source alternative with a focus on self-hosting and security features.
-- **Discord:** Originally for gamers, but increasingly used for team communication, especially for smaller groups.
-- **Zulip:** Open-source chat with a unique threading system for better clarity.
-
 ## FAQ
 
 **1. Is Rocket.Chat really free?**
+
+**What should a Rocket.Chat pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Rocket.Chat without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Rocket.Chat the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Rocket.Chat offers a free basic version with many features. Paid plans are available for additional features and professional support.
 
 **2. Can I self-host Rocket.Chat?**
@@ -127,3 +133,10 @@ Yes, the free version is well suited for trying out and testing the core feature
 
 **8. What are the advantages of the open-source solution over proprietary chat tools?**
 Open source enables full control over data and customizations, which is especially beneficial for privacy and individual requirements.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

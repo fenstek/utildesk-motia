@@ -1,22 +1,24 @@
 ---
-slug: kibana
-title: Kibana
+slug: "kibana"
+title: "Kibana"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: 'Subscription, Open Source'
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Image"
+price_model: "Abonnement, Open Source"
 tags:
   - assistant
   - automation
   - workflow
-official_url: 'https://www.elastic.co/kibana'
+official_url: "https://www.elastic.co/kibana"
 popularity: 0
-description: 'Kibana is most useful when dashboards, log search, and observability work together in the Elastic Stack. Its value comes from making logs, metrics, and security signals readable in one place, with a clear process for deciding which events matter and who maintains the dashboards.'
-translation: full
+description: "Kibana is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Kibana
 
 Kibana is better understood through the concrete workflow than through a simple feature list: dashboards, log search, and observability in the Elastic Stack. Its practical value comes where logs, metrics, and security signals need to be made readable in one place, without pushing every decision out into side tools.
@@ -84,19 +86,22 @@ Kibana is generally free to use as open-source software. For advanced features, 
 
 For budget planning, Kibana should not be judged by list price alone. Operating effort, training, integrations, and the question of which events are actually decision-relevant and who maintains the dashboards matter more.
 
-## Alternatives to Kibana
-
-- **Grafana:** Also open source, specialized in monitoring and visualizing a wide range of data sources.
-- **Tableau:** Commercial BI platform with extensive analysis and visualization features.
-- **Power BI:** Microsoft’s business intelligence tool for data analysis and reporting.
-- **Splunk:** Data analytics and monitoring platform focused on machine data.
-- **Metabase:** Open-source tool for simple data visualization and dashboards.
-
-When choosing among alternatives, it is worth comparing them along the specific bottleneck. If dashboards, log search, and observability in the Elastic Stack are the focus, other criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of the results on your own material.
-
 ## FAQ
 
 **1. Is Kibana free to use?**
+
+**What should a Kibana pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Kibana without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Kibana the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Kibana is generally free as open-source software. However, advanced features and support are paid.
 
 **2. Which data sources does Kibana support?**
@@ -125,3 +130,14 @@ Best with a small, real scenario from your own day-to-day work. Check whether th
 
 **10. What is the most common stumbling block with Kibana?**
 The most common stumbling block is starting too broadly. Before rollout, it should be clear which events are actually decision-relevant and who maintains the dashboards; otherwise the value is hard to assess.
+
+## Workflow and rollout
+
+A useful start with Kibana begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Kibana holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

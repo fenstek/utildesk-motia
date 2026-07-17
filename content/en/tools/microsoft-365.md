@@ -1,22 +1,24 @@
 ---
-slug: microsoft-365
-title: Microsoft 365
+slug: "microsoft-365"
+title: "Microsoft 365"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Subscription
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Image"
+price_model: "Abonnement"
 tags:
   - productivity
   - office-suite
   - collaboration
-official_url: 'https://www.microsoft.com/de-de/microsoft-365'
+official_url: "https://www.microsoft.com/de-de/microsoft-365"
 popularity: 0
-description: 'A comprehensive office suite that combines productivity apps with AI-powered features for writing, spreadsheets, presentations, email, and team collaboration.'
-translation: full
+description: "Microsoft 365 is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Microsoft 365
 
 Microsoft 365 is a comprehensive office suite that combines productivity apps with AI-powered features. It offers tools for word processing, spreadsheets, presentations, email communication, and team collaboration. Thanks to integrated AI features, Microsoft 365 helps users work more efficiently, create content faster, and manage projects together.
@@ -58,14 +60,6 @@ Microsoft 365 is aimed at individuals, small and medium-sized businesses, and la
 
 Microsoft 365 is offered in various subscription plans that differ depending on the scope of the included applications and services. There are offers for individuals, families, businesses, and educational institutions. Prices vary by region and plan. Some plans offer a free trial period or limited basic versions.
 
-## Alternatives to Microsoft 365
-
-- **Google Workspace:** Cloud-based office applications with a focus on collaboration and real-time editing.
-- **LibreOffice:** Free open-source office suite with classic programs for word processing, spreadsheets, and presentations.
-- **Zoho Office Suite:** Cloud office with versatile tools and integrated CRM, suitable for small businesses.
-- **OnlyOffice:** Collaborative office platform with integration into various cloud services.
-- **Apple iWork:** Free office applications for macOS and iOS with a focus on design and ease of use.
-
 ## What really matters in daily use
 
 Microsoft 365 is less a single tool than a work environment for mail, files, meetings, documents, and identities. Its value depends heavily on clear storage locations, permissions, naming rules, and security policies instead of mixing SharePoint, OneDrive, and Teams without structure.
@@ -82,6 +76,19 @@ Microsoft 365 is powerful, but productive only with order. The biggest leverage 
 ## FAQ
 
 **1. Which applications are included in Microsoft 365?**
+
+**What should a Microsoft 365 pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Microsoft 365 without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Microsoft 365 the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Microsoft 365 includes programs such as Word, Excel, PowerPoint, Outlook, OneNote, Teams, and others depending on the selected plan.
 
 **2. Can I use Microsoft 365 on multiple devices?**
@@ -104,3 +111,10 @@ Many applications can be used offline, but an internet connection is required fo
 
 **8. How does Microsoft 365 pricing work?**
 Microsoft 365 is offered as a subscription that is paid monthly or annually depending on the plan. Prices vary according to feature scope and number of users.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,26 +1,27 @@
 ---
-slug: cotypist
-title: Cotypist
-category: Productivity
-price_model: Plan-based
+slug: "cotypist"
+title: "Cotypist"
+category: "Produktivität"
+price_model: "Je nach Plan"
 tags:
   - local-ai
   - autocomplete
   - macos
   - writing
   - productivity
-official_url: 'https://cotypist.app/'
+official_url: "https://cotypist.app/"
 tier: D
 generated_at: '2026-06-24'
-description: 'A macOS writing and autocomplete tool focused on local AI, faster drafting, reusable text blocks, and low-friction suggestions for everyday text work.'
-updated_at: '2026-06-24'
+description: "Cotypist is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+updated_at: "2026-07-17"
 editorial_reviewed: true
-editorial_reviewed_by: 'Utildesk manual editorial pass'
-editorial_reviewed_at: '2026-06-24'
-editorial_status: 'manual_polished'
-editorial_batch: '2026-06-24-sheet-hype-12-human-polish'
-translation: full
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+translation: "full"
 ---
+
 # Cotypist
 
 Cotypist is a writing and autocomplete tool for macOS, especially useful anywhere a lot of text is created and input should not have to start from scratch every time. Its positioning clearly suggests a practical helper for faster drafting, reusable text snippets, and AI-assisted suggestions in everyday work. The focus on local AI is particularly relevant: anyone who wants to write without sending content into a cloud-based workspace every time will find an approach here that leans more heavily on the device, speed, and direct interaction.
@@ -127,17 +128,6 @@ What to look at when checking costs:
 
 👉 **To the provider:** https://cotypist.app/
 
-## Alternatives to Cotypist
-
-Depending on the goal, several alternatives may be relevant in an internal tool catalog or in your own workspace:
-
-- **TextExpander**: More focused on text snippets, shortcuts, and standardization. Useful when recurring content matters more than AI suggestions.
-- **Raycast AI**: Interesting for Mac users who already use a productive launcher and want to integrate AI features into existing workflows.
-- **Keyboard Maestro**: An automation solution for Mac when writing acceleration should come more from macros, shortcuts, and system automation than from AI.
-- **Typst / note workflows with editor helpers**: For users who want to bundle their writing processes in an existing editor or knowledge system instead of using a separate autocomplete tool.
-
-The best alternative depends on whether the actual problem is "typing faster," "standardizing recurring content," or "revising text with AI." Cotypist sits more in the last and middle categories.
-
 ## June 2026 Editorial Update
 
 Cotypist is a good example of local AI that does not need to look spectacular to be useful. Its strongest use case is not the long novel or a full knowledge base, but the small writing friction in everyday work: emails, replies, status updates, notes, short rewrites, and recurring phrasing.
@@ -155,6 +145,23 @@ On balance, Cotypist is an interesting tool for individual writing processes on 
 ## FAQ
 
 ### What is Cotypist in one sentence?
+
+**Who is Cotypist for?**
+
+Cotypist suits teams that use the workflow regularly and can own rollout, access decisions and quality review.
+
+**What should a Cotypist pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Cotypist without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Cotypist the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Cotypist is a macOS tool for writing assistance and autocomplete that aims to make everyday text faster and smoother.
 
 ### What tasks is Cotypist most useful for?
@@ -177,3 +184,10 @@ Mainly plan details, possible limits, privacy behavior, model access, and whethe
 
 ### Is there a free version?
 That cannot be determined reliably from the available information. You should check with the provider which plans and trial options are available.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

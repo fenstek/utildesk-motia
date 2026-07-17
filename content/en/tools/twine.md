@@ -1,22 +1,24 @@
 ---
-slug: twine
-title: Twine
+slug: "twine"
+title: "Twine"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: 'Free, Open Source'
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Writing"
+price_model: "Kostenlos, Open Source"
 tags:
   - interactive-fiction
   - writing
   - games
-official_url: 'https://twinery.org/'
+official_url: "https://twinery.org/"
 popularity: 0
-description: 'Twine is a free, open-source tool for creating interactive stories and text-based games, with a visual workflow for branching narratives and support for HTML export, CSS, and JavaScript.'
-translation: full
+description: "Twine is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Twine
 
 Twine is an open-source tool for creating interactive stories and text-based games. It allows authors to design branching storylines without programming knowledge while still offering the flexibility to build complex narrative structures. Twine is very popular with writers, game developers, and educators who want to create interactive content.
@@ -100,17 +102,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Twine is completely free and open source. There are no paid plans or usage restrictions. The software can be used directly in the browser or downloaded as a desktop application.
 
-## Alternatives to Twine
-
-- **Ink by Inkle Studios:** Open-source scripting tool for interactive stories with a focus on narrative depth.
-- **ChoiceScript:** Text-based programming system for creating choice-based games.
-- **Ren’Py:** Engine for visual novels with extensive multimedia features and Python scripting.
-- **Quest:** Free tool for interactive text adventures with a built-in editor and publishing options.
-- **Inform 7:** System for creating interactive fiction games with natural language.
-
 ## FAQ
 
 **1. Do I need programming knowledge to use Twine?**
+
+**What should a Twine pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Twine without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Twine the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 No, Twine is designed so that users without programming knowledge can also create interactive stories. For advanced features, however, basic knowledge of CSS and JavaScript is helpful.
 
 **2. Can I create Twine projects offline?**
@@ -135,3 +142,10 @@ Yes, Twine is open source and can be used freely for private and commercial proj
 Twine itself can be used in multiple languages, and projects can be created in any language because the text is entered freely.
 
 ---
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,22 +1,24 @@
 ---
-slug: scrivener
-title: Scrivener
+slug: "scrivener"
+title: "Scrivener"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Paid
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Writing"
+price_model: "Kostenpflichtig"
 tags:
   - writing
   - authors
   - productivity
-official_url: 'https://www.literatureandlatte.com/scrivener/overview'
+official_url: "https://www.literatureandlatte.com/scrivener/overview"
 popularity: 0
-description: 'A powerful writing app for authors, screenwriters, researchers, and other long-form writers who need strong organization, flexible structure, and export options.'
-translation: full
+description: "Scrivener is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Scrivener
 
 Scrivener is a powerful writing app designed specifically for authors, writers, and anyone creating long-form text. With a focus on organization, structure, and productivity, Scrivener supports the entire writing process, from the first idea to the finished manuscript. It offers numerous tools to manage complex projects clearly and support creative flow.
@@ -24,7 +26,6 @@ Scrivener is a powerful writing app designed specifically for authors, writers, 
 ## Who is Scrivener for?
 
 Scrivener is aimed primarily at professional authors, screenwriters, journalists, researchers, and students who need to handle large writing projects. It is also a valuable tool for bloggers and content creators who prefer a structured way of working. Anyone who works a lot with research, notes, and multiple documents at the same time will especially benefit from its organizational features. Beginners may initially feel overwhelmed by the range of features, but with some familiarization, the tool can significantly increase productivity.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/scrivener-editorial.webp" alt="Illustration for Scrivener: Scene cards, manuscript pages, and research objects shape a writing arc" loading="lazy" decoding="async" />
@@ -94,17 +95,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Scrivener is typically offered as a **one-time purchase**. Prices may vary depending on the platform (Mac, Windows, iOS) and provider. A free trial with full functionality is often available for a limited time (for example, 30 days). Discounts for students or promotional offers are also occasionally available. Subscription-based or usage-based pricing is currently not common.
 
-## Alternatives to Scrivener
-
-- **Microsoft Word:** Widely used word processor with basic structuring features
-- **Ulysses:** Writing app for Mac and iOS focused on simplicity and distraction-free writing
-- **yWriter:** Free writing program that also offers project organization for authors
-- **Novlr:** Online writing platform focused on authors and cloud synchronization
-- **Google Docs:** Collaborative word processing with real-time collaboration and cloud storage
-
 ## FAQ
 
 **1. Is there a free version of Scrivener?**
+
+**What should a Scrivener pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Scrivener without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Scrivener the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Scrivener does not offer a permanently free version, but it does provide a free trial period that typically covers about 30 days of use depending on the platform.
 
 **2. Which operating systems does Scrivener run on?**
@@ -127,3 +133,10 @@ Yes, Scrivener creates automatic backups to help prevent data loss.
 
 **8. Can I also use Scrivener for academic writing?**
 Yes, especially because it makes it easy to organize extensive research and notes, Scrivener is also well suited to academic writing.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,21 +1,24 @@
 ---
-slug: hubspot-chatbot
-title: HubSpot Chatbot
+description: "HubSpot Chatbot is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "hubspot-chatbot"
+title: "HubSpot Chatbot"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Je nach Plan"
 tags:
   - chatbots
   - customer-support
   - crm
-official_url: 'https://www.hubspot.com/products/crm/chatbot-builder'
+official_url: "https://www.hubspot.com/products/crm/chatbot-builder"
 popularity: 0
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # HubSpot Chatbot
 
 HubSpot Chatbot is an AI-powered tool for automating customer communication directly on your website. It helps businesses support visitors in real time, generate qualified leads, and answer common requests without manual effort. Thanks to integration with HubSpot CRM, conversations can be documented seamlessly and personalized marketing and sales processes can be triggered.
@@ -61,14 +64,6 @@ HubSpot Chatbot is especially suitable for small to medium-sized businesses that
 
 HubSpot Chatbot pricing varies depending on the selected HubSpot plan. In general, the chatbot is included in the paid Marketing and Sales Hubs, although the availability of certain features depends on the respective license. There is also a free HubSpot CRM version that offers limited chatbot functionality. For detailed and up-to-date pricing information, it is recommended to consult the official HubSpot website.
 
-## Alternatives to HubSpot Chatbot
-
-- **Drift:** Focuses on conversational marketing with extensive automation features.
-- **Intercom:** Comprehensive customer communication platform with chatbots, messenger, and help desk.
-- **ManyChat:** Especially suitable for messenger-based chatbots on Facebook and Instagram.
-- **Tidio:** Simple chatbot solution focused on small businesses and e-commerce.
-- **Zendesk Chat:** Integration into the Zendesk customer service ecosystem with chatbot extensions.
-
 ## What really matters in daily use
 
 HubSpot Chatbot makes sense when website conversations should connect directly to CRM, leads, and marketing processes. The key is whether the bot qualifies, routes, and documents without forcing visitors into rigid question chains.
@@ -85,6 +80,19 @@ HubSpot Chatbot is strongest as part of a CRM flow. As an isolated website bot, 
 ## FAQ
 
 **1. Do I need programming knowledge to set up HubSpot Chatbot?**
+
+**What should a HubSpot Chatbot pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in HubSpot Chatbot without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to HubSpot Chatbot the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 No, the chatbot can be configured through a user-friendly interface without any programming knowledge.
 
 **2. Can the chatbot also support multiple languages?**
@@ -107,3 +115,10 @@ Yes, but suitability depends on the specific requirements and the selected HubSp
 
 **8. How secure is the data collected through the chatbot?**
 HubSpot places importance on data protection and data security; the exact measures depend on the applicable legal requirements and HubSpot policies.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

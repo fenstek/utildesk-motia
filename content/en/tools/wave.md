@@ -1,22 +1,23 @@
 ---
-slug: wave
-title: Wave
-updated_at: 2026-06-12
+slug: "wave"
+title: "Wave"
+updated_at: "2026-07-17"
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
-editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: AI
-price_model: Freemium
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Freemium"
 tags:
   - accounting
   - finance
-official_url: 'https://www.waveapps.com/'
+official_url: "https://www.waveapps.com/"
 popularity: 0
-description: 'Cloud-based accounting and finance software for small businesses, freelancers, and self-employed professionals, with invoicing, expense management, reporting, and AI-assisted automation.'
-translation: full
+description: "Wave is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
 ---
+
 # Wave
 
 Wave is cloud-based accounting and finance software designed specifically for small businesses, freelancers, and self-employed professionals. The platform combines accounting, invoicing, and financial management with a strong focus on ease of use and automation. Wave uses AI-powered features to reduce administrative work and make financial processes more efficient.
@@ -94,14 +95,6 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Wave offers a free basic plan that includes accounting, invoicing, and basic financial management. Additional paid services such as payment processing and payroll are optional and are charged based on usage and region. Prices for these add-on services vary, and fees are often charged per transaction or as monthly subscriptions. A detailed price list is available on Wave's official website.
 
-## Alternatives to Wave
-
-- **QuickBooks:** Comprehensive accounting software with many features for small and medium-sized businesses, though usually paid.
-- **FreshBooks:** User-friendly invoicing and accounting software, especially suitable for freelancers.
-- **Xero:** Cloud-based accounting platform with strong automation and integrations.
-- **Zoho Books:** Part of the Zoho Suite, offering comprehensive financial and invoicing features.
-- **Sage Business Cloud Accounting:** Flexible tool for small businesses with a focus on accounting and taxes.
-
 ## Related Guides
 
 - [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
@@ -109,6 +102,19 @@ Wave offers a free basic plan that includes accounting, invoicing, and basic fin
 ## FAQ
 
 **1. Is Wave really free?**
+
+**What should a Wave pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Wave without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Wave the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Wave's basic plan is free and offers core accounting and invoicing features. Fees may apply for add-on services such as payment processing or payroll.
 
 **2. Which payment methods does Wave support?**
@@ -149,3 +155,10 @@ Growing companies need integrations, tax logic, permissions and exportability. W
 ### Internal comparison points
 
 Useful comparison points in the Utildesk catalogue are [Xero](/en/tools/xero/), [Zoho Books](/en/tools/zoho-books/), [FreshBooks](/en/tools/freshbooks/), [Sage Business Cloud Accounting](/en/tools/sage-business-cloud-accounting/). These links keep Wave connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

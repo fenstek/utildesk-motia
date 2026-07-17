@@ -1,19 +1,22 @@
 ---
-slug: openrouter
-title: OpenRouter
+description: "OpenRouter ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "openrouter"
+title: "OpenRouter"
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
-editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
-category: AI Coding
-price_model: 
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Coding"
+price_model: "tags: [\"developer-tools\", \"api\"]"
 tags: ["developer-tools", "api"]
 official_url: "https://openrouter.ai"
 popularity: 0
 tier: D
 generated_at: 2026-05-13
+updated_at: "2026-07-17"
 ---
+
 # OpenRouter
 
 OpenRouter ist eine API- und Routing-Plattform für den Zugriff auf verschiedene KI-Modelle über eine einheitliche Schnittstelle. Der Wert liegt in Flexibilität: Teams können Modelle vergleichen, wechseln und je nach Aufgabe anders routen.
@@ -69,14 +72,6 @@ Im Katalog ist OpenRouter mit dem Preismodell **Je nach Nutzung** geführt. Für
 
 **Zum Anbieter:** https://openrouter.ai
 
-## Alternativen zu OpenRouter
-
-- OpenAI API: direkter Zugriff auf OpenAI-Modelle.
-- Anthropic API: direkter Claude-Zugang.
-- Together AI: Infrastruktur für offene und gehostete Modelle.
-- Hugging Face Inference: breiter Modellzugang im HF-Ökosystem.
-- LiteLLM: technische Abstraktionsschicht für mehrere LLM-Anbieter.
-
 ## Redaktionelle Einschätzung
 
 OpenRouter ist stark für Modellflexibilität. Genau diese Flexibilität verlangt aber saubere Kontrolle über Daten, Kosten und Qualität.
@@ -84,6 +79,18 @@ OpenRouter ist stark für Modellflexibilität. Genau diese Flexibilität verlang
 ## FAQ
 
 **Ist OpenRouter für Einsteiger geeignet?**
+
+**Wie sollte ein Pilot mit OpenRouter aussehen?**
+
+Für OpenRouter: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in OpenRouter verarbeitet werden?**
+
+OpenRouter: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu OpenRouter sinnvoll?**
+
+Bei OpenRouter ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
 
 Für einen ersten Test ist OpenRouter meist machbar. Vor produktiver Nutzung sollten Ziel, Datenlage, Kosten und Qualitätsprüfung aber klar feststehen.
 
@@ -94,3 +101,10 @@ Besonders lohnt sich OpenRouter, wenn der beschriebene Workflow regelmäßig vor
 **Worauf sollte man vor dem Einsatz achten?**
 
 Vor dem Einsatz von OpenRouter sollten Datenzugriff, Rechte, Kosten, Exportmöglichkeiten und ein menschlicher Qualitätscheck geklärt sein.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

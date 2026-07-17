@@ -1,22 +1,24 @@
 ---
-slug: libreoffice-impress
-title: LibreOffice Impress
+slug: "libreoffice-impress"
+title: "LibreOffice Impress"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Open Source
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Open Source"
 tags:
   - presentation
   - productivity
   - office
   - open source
-official_url: 'https://www.libreoffice.org/#screenshots'
-description: 'LibreOffice Impress is a free, open-source presentation tool for creating slide decks with layouts, animations, transitions, multimedia, and broad format compatibility, including PowerPoint files.'
-translation: full
+official_url: "https://www.libreoffice.org/#screenshots"
+description: "LibreOffice Impress is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # LibreOffice Impress
 
 LibreOffice Impress is a powerful, free presentation program that is part of the LibreOffice suite. It makes it possible to create appealing presentations with a wide range of design options, animations, and effects. As open-source software, it offers a free alternative to commercial presentation programs and is compatible with a variety of file formats, including Microsoft PowerPoint.
@@ -62,14 +64,6 @@ LibreOffice Impress is ideal for students, teachers, company employees, and anyo
 
 LibreOffice Impress is open source and free to use. There are no license fees or subscription costs, making it especially attractive for price-conscious users. The software can be downloaded freely and used without restrictions.
 
-## Alternatives to LibreOffice Impress
-
-- **Microsoft PowerPoint**: Market-leading presentation software with extensive features, but paid as part of Office 365 (subscription).
-- **Google Slides**: Free, web-based presentation tool with strong collaboration features; requires a Google account and an internet connection.
-- **Apple Keynote**: Presentation program for macOS and iOS with appealing designs, free for Apple users.
-- **WPS Presentation**: Part of the WPS Office Suite with compatible presentation features; offers free and paid versions.
-- **Canva**: Online design tool with simple presentation features; freemium model with advanced features available for a fee.
-
 ## What really matters in daily use
 
 LibreOffice Impress is attractive when presentations need to be created offline, in open formats, and without a subscription. The practical test is compatibility, template care, and export quality: teams exchanging files with PowerPoint users should review layouts after imports and PDF export.
@@ -86,6 +80,19 @@ Impress is solid for factual decks and independent work environments. For highly
 ## FAQ
 
 **1. Is LibreOffice Impress really free?**
+
+**What should a LibreOffice Impress pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in LibreOffice Impress without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to LibreOffice Impress the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Impress is part of the LibreOffice suite, which can be downloaded and used free of charge as open-source software.
 
 **2. Can I open and edit PowerPoint files with Impress?**
@@ -108,3 +115,10 @@ Yes, it offers a wide range of animations and transition effects for creating li
 
 **8. Is there a way to receive feedback directly in the presentation?**
 Impress supports commenting features that let users add notes, although real-time collaborative features are limited.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

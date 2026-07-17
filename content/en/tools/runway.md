@@ -1,23 +1,25 @@
 ---
-slug: runway
-title: Runway
+description: "Runway is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "runway"
+title: "Runway"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Image"
+price_model: "Freemium"
 tags:
   - video
   - automation
-official_url: 'https://runwayml.com/'
+official_url: "'https://runwayml.com/'"
 affiliate_url: 'https://runwayml.com/'
 created_at: '2026-02-02'
-updated_at: 2026-05-21
+updated_at: "2026-07-17"
 popularity: 0
-translation: full
+translation: "full"
 ---
+
 # Runway
 
 Runway is an innovative AI platform that gives creators and developers powerful tools for creating and editing media content. With a focus on machine learning and real-time video processing, Runway makes it possible to integrate state-of-the-art AI models into creative workflows. The platform is suitable for both beginners and professionals and combines an intuitive interface with extensive functionality.
@@ -38,7 +40,6 @@ Runway is aimed at a broad audience, including:
 - **Educational institutions and students** who want to gain hands-on experience with AI technologies.
 
 The platform is especially well suited to users who value ease of use without wanting to compromise on professional results.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/runway-editorial.webp" alt="Illustration for Runway: Storyboard cards turn into a projected scene on a film set" loading="lazy" decoding="async" />
@@ -109,16 +110,22 @@ Runway offers a freemium model that allows free use with limited functionality. 
 
 👉 **To the provider:** https://runwayml.com/
 
-## Alternatives to Runway
-
-- **Lumen5**: A platform for AI-powered video creation with a focus on marketing content.
-- **DeepArt**: A specialized application for artistic style transfer on images.
-- **Descript**: A tool for audio and video editing with AI-powered transcription and editing.
-- **Adobe Sensei**: Adobe's AI framework for automating and improving creative processes.
-- **Synthesia**: A platform for creating AI-generated videos with virtual presenters.
 ## FAQ
 
 **1. Do I need programming knowledge to use Runway?**
+
+**What should a Runway pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Runway without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Runway the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Runway is designed so that even users without programming knowledge can use the most important features. However, technical knowledge is helpful for advanced customization and API use.
 
 **2. What types of AI models can I use in Runway?**
@@ -141,3 +148,10 @@ Runway uses common security standards for cloud services. Details about data pro
 
 **8. Can I try Runway for free?**
 Yes, the freemium model allows you to try many features for free before upgrading to a paid plan.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

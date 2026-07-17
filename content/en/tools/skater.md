@@ -1,23 +1,25 @@
 ---
-slug: skater
-title: Skater
+slug: "skater"
+title: "Skater"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Je nach Plan"
 tags:
   - sports
   - coaching
   - analytics
   - ai
-official_url: 'https://www.skaterai.com/'
+official_url: "https://www.skaterai.com/"
 popularity: 0
-description: 'AI-powered sports coaching and performance analysis tool for trainers, athletes, and analysts who want to optimize training, evaluate movement patterns, and track performance data.'
-translation: full
+description: "Skater is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Skater
 
 Skater is an innovative AI-powered tool specifically designed for sports, coaching, and performance analysis. It helps coaches, athletes, and analysts optimize training processes, analyze movement patterns, and capture individual performance data. By using cutting-edge artificial intelligence, Skater provides precise insights into sporting activities and supports more effective training planning.
@@ -59,14 +61,6 @@ Skater is aimed at sports trainers, coaches, and athletes who want to improve pe
 
 Skater's pricing depends on the respective provider and the selected plan. In general, different models are offered, including subscriptions with monthly or annual billing. Some providers offer freemium versions with limited functionality, while more comprehensive features are usually paid. Custom offers for teams or professional users are also possible.
 
-## Alternatives to Skater
-
-- **CoachAI:** AI-powered tool for training planning and performance analysis with a focus on team sports.
-- **Sportlytics:** Platform for data-driven sports analysis and coaching, including wearable integration.
-- **MotionPro:** Software for detailed movement analysis with a focus on rehabilitation sports.
-- **AthleteIQ:** AI tool for personalized training and performance tracking.
-- **FitAnalytics:** Comprehensive solution for sports data analysis and training optimization.
-
 ## What really matters in daily use
 
 Skater is aimed at teams that want to explain and diagnose model predictions more clearly. Its practical value is not one chart, but the comparison of explanation approaches so model behavior, feature influence, and possible false assumptions can be discussed.
@@ -83,6 +77,19 @@ Skater helps make models feel less mysterious. It still does not replace data un
 ## FAQ
 
 **1. Which sports does Skater support?**
+
+**What should a Skater pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Skater without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Skater the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Skater is versatile and, depending on the provider, supports a wide range of sports, especially those with a high level of movement such as figure skating, ice hockey, soccer, or athletics.
 
 **2. Do I need special hardware to use Skater?**
@@ -105,3 +112,10 @@ Accuracy depends on the quality of the input data and the AI technology used. In
 
 **8. What technical requirements are there?**
 Depending on the solution, different operating systems and devices are supported. Details can be found in the respective provider information.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.
