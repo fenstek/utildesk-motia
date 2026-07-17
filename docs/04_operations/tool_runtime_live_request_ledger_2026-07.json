@@ -2796,6 +2796,22 @@
         "https://www.bing.com/indexnow"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-17T08:04:47.778Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 1171,
+        "pagesAssets": 0,
+        "total": 1175
+      },
+      "worstCaseRequests": 1175,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
