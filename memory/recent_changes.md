@@ -1567,3 +1567,10 @@ _Last updated: 2026-07-16_
 - Updated only the 1,170 corresponding content-lastmod entries. Local strict audit finished at 1,228 scanned, 0 flagged, 1,228 clean; English translation and editorial template checks passed.
 - Per-card inspect and verify completed for all 585 slugs. Two legacy image geometry findings (branchtrack and ableton-live) remain guard warnings because their existing WebP illustrations were explicitly out of scope for modification; no image files were changed.
 - No production deployment, Cloudflare request, push, IndexNow submission or Astro/Pages build was performed in this local editorial pass.
+
+## 2026-07-17 - Always-on Research Agents Ratgeber publication
+
+- Published the NotebookLM-first candidate `Always-on Research Agents: Wenn Suche zu laufenden Beobachtern wird` after a full human DE/EN editorial rewrite and current-source fact check.
+- Removed unsupported benchmark and autonomy claims from the draft; the finished article focuses on source-bounded observation, evidence handoffs, context retention, costs and human approval.
+- Added four verified internal tool links plus related Ratgeber links on observability and agent security.
+- Added two visually distinct, direct Codex-generated WebP illustrations: a non-photorealistic observatory-and-source-map cover and a tactile evidence-routing collage. Neither contains people, offices, UI, logos, readable text or watermarks.
