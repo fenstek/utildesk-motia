@@ -1,5 +1,16 @@
 # Project State
 
+## 2026-07-17 Focused search recovery
+
+- Production homepage uses the live Ratgeber collection count (`39` at release time); the previous hardcoded `25` fallback is gone.
+- Umami is active on Pages and the primary human-quality signal is `qualified-reader`, emitted only after 45 seconds, 50% scroll depth and trusted interaction.
+- Google Search Console and `robots.txt` continue to use only `https://tools.utildesk.de/sitemap.xml`; Bing's explicitly submitted freshness feed is `https://tools.utildesk.de/sitemap-focus.xml`. All three compact sitemap surfaces contain `126` canonical URLs after this release; no broad sitemap was restored.
+- The compact tool cohort gained exactly five reviewed pairs: `litmaps`, `paperpile`, `research-rabbit`, `adobe-enhance-speech`, and `fotojet` in DE/EN.
+- Live acceptance for those ten routes: HTTP `200`, runtime header `tools-v1`, self-canonical and no global or Google-specific `noindex`.
+- Active renderer version: `3b9d9b1e-a6d0-4883-a8c7-f5fb3bc3933b`. Active Pages release from this change: `b5815c26`; it includes the Pages Functions bundle and leaves `content-runtime:tools=on`.
+- Google accepted the compact sitemap resubmission with HTTP `204`; Bing accepted the compact focus feed; global and Bing IndexNow accepted the changed hub/methodology canonicals with HTTP `200`.
+- Current tracked live-request reservation is `4363/10000`; remaining worst-case allowance is `5637`.
+
 ## 2026-07-16 Runtime asset recovery
 
 - Production runtime renderer version `47a09f05-9366-4cf3-bc12-1c4a66e57540` serves the shared `/runtime-assets/BaseLayout.C877vJB7.css` through the Worker `ASSETS` binding; homepage, tool pages and R2 illustrations are styled and live again.

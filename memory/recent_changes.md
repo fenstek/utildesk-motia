@@ -1,5 +1,16 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-07-16_
+_Last updated: 2026-07-17_
+
+## 2026-07-17 - Focused search recovery release
+
+- Replaced every homepage fallback guide count with the live collection total; production now shows `39 Ratgeber` and contains no stale `25` counter.
+- Restored Umami through public production configuration and added the strict `qualified-reader` event: 45 seconds, at least 50% scroll depth and a trusted pointer or keyboard interaction.
+- Expanded the DE/EN methodology pages with source priority, editorial-review meaning, AI-use disclosure, update/correction policy and visible review dates, without personal data.
+- Added exactly five reviewed focus tools to the compact search cohort in both locales: Litmaps, Paperpile, Research Rabbit, Adobe Enhance Speech and FotoJet. The three compact sitemaps now contain `126` canonical URLs; no broad sitemap was restored.
+- Published the ten DE/EN tool projections and five assets through the bounded D1/R2 release from source commit `23158fd6`; the pre-release D1 backup is `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-backups\2026-07-17\before-search-recovery.sql`.
+- Deployed runtime Worker version `3b9d9b1e-a6d0-4883-a8c7-f5fb3bc3933b` and Pages production deployment `b5815c26`. The Pages deployment was repeated once from the `site` directory so the adjacent Functions bundle was included; `content-runtime:tools` remained `on`.
+- Bounded production proof passed for all ten focus routes: `200`, `X-Utildesk-Content-Runtime: tools-v1`, self-canonical, no meta/header `noindex`. Google accepted `sitemap.xml` with HTTP `204`, Bing accepted `sitemap-focus.xml`, and both IndexNow endpoints accepted the three changed hub/methodology URLs with HTTP `200`.
+- The tracked live-request ledger now reserves `4363/10000`, leaving `5637` worst-case requests.
 
 ## 2026-07-17 - Editorial-clean batch of 100 tool cards
 
