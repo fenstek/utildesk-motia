@@ -238,6 +238,11 @@
         "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
       },
       {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: Wenn Suche zu laufenden Beobachtern wird",
+        "excerpt": "Always-on Research Agents beobachten Quellen über Zeit, verdichten Veränderungen und liefern überprüfbare Briefings. Dieser Leitfaden zeigt, wo sie helfen, wo sie scheitern und wie Teams klein starten."
+      },
+      {
         "slug": "chatgpt-claude-gemini",
         "title": "ChatGPT, Claude und Gemini: Drei KI-Assistenten, drei sehr unterschiedliche Stärken",
         "excerpt": "Ein praxisnaher Vergleich der drei größten KI-Assistenten für Schreiben, Recherche, Coding und Datenschutz."
@@ -305,6 +310,11 @@
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
         "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      },
+      {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: Wenn Suche zu laufenden Beobachtern wird",
+        "excerpt": "Always-on Research Agents beobachten Quellen über Zeit, verdichten Veränderungen und liefern überprüfbare Briefings. Dieser Leitfaden zeigt, wo sie helfen, wo sie scheitern und wie Teams klein starten."
       },
       {
         "slug": "chatgpt-claude-gemini",
@@ -379,6 +389,11 @@
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
         "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      },
+      {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: Wenn Suche zu laufenden Beobachtern wird",
+        "excerpt": "Always-on Research Agents beobachten Quellen über Zeit, verdichten Veränderungen und liefern überprüfbare Briefings. Dieser Leitfaden zeigt, wo sie helfen, wo sie scheitern und wie Teams klein starten."
       },
       {
         "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
@@ -727,6 +742,13 @@
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
         "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      }
+    ],
+    "apify": [
+      {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: Wenn Suche zu laufenden Beobachtern wird",
+        "excerpt": "Always-on Research Agents beobachten Quellen über Zeit, verdichten Veränderungen und liefern überprüfbare Briefings. Dieser Leitfaden zeigt, wo sie helfen, wo sie scheitern und wie Teams klein starten."
       }
     ],
     "zapier": [
@@ -1624,6 +1646,11 @@
         "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
       },
       {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: When Search Becomes Ongoing Observation",
+        "excerpt": "Always-on research agents watch defined sources over time, surface meaningful changes and produce reviewable briefings. This guide explains where they help, where they fail and how teams can start safely."
+      },
+      {
         "slug": "chatgpt-claude-gemini",
         "title": "ChatGPT, Claude and Gemini: Three AI Assistants, Three Very Different Strengths",
         "excerpt": "A practical comparison of the three major AI assistants for writing, research, coding and privacy-sensitive work."
@@ -1691,6 +1718,11 @@
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
         "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      },
+      {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: When Search Becomes Ongoing Observation",
+        "excerpt": "Always-on research agents watch defined sources over time, surface meaningful changes and produce reviewable briefings. This guide explains where they help, where they fail and how teams can start safely."
       },
       {
         "slug": "chatgpt-claude-gemini",
@@ -1765,6 +1797,11 @@
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
         "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      },
+      {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: When Search Becomes Ongoing Observation",
+        "excerpt": "Always-on research agents watch defined sources over time, surface meaningful changes and produce reviewable briefings. This guide explains where they help, where they fail and how teams can start safely."
       },
       {
         "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
@@ -2113,6 +2150,13 @@
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
         "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      }
+    ],
+    "apify": [
+      {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: When Search Becomes Ongoing Observation",
+        "excerpt": "Always-on research agents watch defined sources over time, surface meaningful changes and produce reviewable briefings. This guide explains where they help, where they fail and how teams can start safely."
       }
     ],
     "zapier": [
