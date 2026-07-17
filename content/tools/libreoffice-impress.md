@@ -1,19 +1,22 @@
 ---
-slug: libreoffice-impress
-title: LibreOffice Impress
+description: "LibreOffice Impress ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "libreoffice-impress"
+title: "LibreOffice Impress"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Produktivität
-price_model: Open Source
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Open Source"
 tags: [presentation, productivity, office, open-source]
 official_url: "https://www.libreoffice.org/#screenshots"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-12"
+updated_at: "2026-07-17"
 ---
+
 # LibreOffice Impress
 
 LibreOffice Impress ist ein leistungsstarkes, kostenloses Präsentationsprogramm, das Teil der LibreOffice Suite ist. Es ermöglicht das Erstellen von ansprechenden Präsentationen mit vielfältigen Gestaltungsmöglichkeiten, Animationen und Effekten. Als Open-Source-Software bietet es eine kostenfreie Alternative zu kommerziellen Präsentationsprogrammen und ist kompatibel mit verschiedensten Dateiformaten, darunter Microsoft PowerPoint.
@@ -59,14 +62,6 @@ LibreOffice Impress eignet sich ideal für Studierende, Lehrkräfte, Firmenmitar
 
 LibreOffice Impress ist Open Source und kostenlos nutzbar. Es fallen keine Lizenzgebühren oder Abonnementkosten an, wodurch es besonders für preisbewusste Nutzer attraktiv ist. Die Software kann frei heruntergeladen und ohne Einschränkungen verwendet werden.
 
-## Alternativen zu LibreOffice Impress
-
-- **Microsoft PowerPoint**: Marktführende Präsentationssoftware mit umfangreichen Funktionen, jedoch kostenpflichtig im Rahmen von Office 365 (Abonnement).
-- **Google Slides**: Kostenloses, webbasiertes Präsentationstool mit starker Kollaborationsfunktion, benötigt Google-Konto und Internetverbindung.
-- **Apple Keynote**: Präsentationsprogramm für macOS und iOS mit ansprechenden Designs, kostenlos für Apple-Nutzer.
-- **WPS Presentation**: Teil der WPS Office Suite mit kompatiblen Präsentationsfunktionen, bietet kostenlose und kostenpflichtige Versionen.
-- **Canva**: Online-Design-Tool mit einfachen Präsentationsfunktionen, Freemium-Modell mit erweiterten Features gegen Bezahlung.
-
 ## Was im Alltag wirklich zählt
 
 LibreOffice Impress ist besonders attraktiv, wenn Präsentationen offline, offen und ohne Abo-Zwang erstellt werden sollen. Der Alltagstest liegt bei Kompatibilität, Vorlagenpflege und Exporten: Wer viel mit PowerPoint-Nutzern austauscht, sollte Layouts nach jedem Import und PDF-Export prüfen.
@@ -83,6 +78,19 @@ Impress ist solide für sachliche Decks und unabhaengige Arbeitsumgebungen. Bei 
 ## FAQ
 
 **1. Ist LibreOffice Impress wirklich kostenlos?**
+
+**Wie sollte ein Pilot mit LibreOffice Impress aussehen?**
+
+Für LibreOffice Impress: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in LibreOffice Impress verarbeitet werden?**
+
+LibreOffice Impress: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu LibreOffice Impress sinnvoll?**
+
+Bei LibreOffice Impress ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Ja, Impress ist Teil der LibreOffice Suite, die als Open-Source-Software kostenlos heruntergeladen und genutzt werden kann.
 
 **2. Kann ich PowerPoint-Dateien mit Impress öffnen und bearbeiten?**
@@ -105,3 +113,10 @@ Ja, es bietet eine Vielzahl von Animationen und Übergangseffekten zur Gestaltun
 
 **8. Gibt es eine Möglichkeit, Feedback direkt in der Präsentation zu erhalten?**
 Impress unterstützt Kommentarfunktionen, mit denen Nutzer Anmerkungen hinzufügen können, allerdings sind kollaborative Echtzeitfunktionen begrenzt.
+
+## Alternativen
+
+- [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

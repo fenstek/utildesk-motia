@@ -1,22 +1,24 @@
 ---
-slug: apple-iwork
-title: Apple iWork
+slug: "apple-iwork"
+title: "Apple iWork"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Free"
 tags:
   - office
   - documents
   - presentation
   - productivity
-official_url: 'https://www.apple.com/apps/'
-description: 'Apple iWork is a free productivity suite from Apple for creating documents, spreadsheets, and presentations on macOS and iOS, with intuitive tools, iCloud sync, and support for collaboration and Microsoft Office formats.'
-translation: full
+official_url: "https://www.apple.com/apps/"
+description: "Apple iWork is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Apple iWork
 
 Apple iWork is a free productivity software suite from Apple consisting of the three main applications Pages, Numbers, and Keynote. These programs let you create and edit documents, spreadsheets, and presentations and are specially optimized for macOS and iOS users. iWork stands out with a user-friendly interface, seamless integration into the Apple ecosystem, and a wide range of templates for professional results.
@@ -87,19 +89,22 @@ Apple iWork is available free of charge for all Apple device users. There are no
 
 Beyond the list price, Apple iWork should be evaluated by the cost of adoption. Relevant factors include licensing model, storage, export options, templates, team approvals, and training. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to Apple iWork
-
-- **Microsoft Office 365** – Comprehensive office suite with a subscription model, cross-platform.
-- **Google Workspace** – Cloud-based office applications with real-time collaboration.
-- **LibreOffice** – Free open-source office suite with extensive features.
-- **OnlyOffice** – Office suite focused on collaboration and cloud integration.
-- **Zoho Office Suite** – Web-based productivity applications with extensive tools.
-
-When comparing options, Apple iWork should not only be measured against very similar products. Depending on the goal, design, image, video, and prototyping tools may fit better if they are closer to the existing process or require less maintenance.
-
 ## FAQ
 
 **1. Is Apple iWork really free?**
+
+**What should a Apple iWork pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Apple iWork without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Apple iWork the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Apple iWork is available free of charge for all Apple device users and does not require any additional payment.
 
 **2. Can I open iWork documents with Microsoft Office?**
@@ -128,3 +133,14 @@ Start with one clear task rather than every feature. After a few runs, check whe
 
 **10. When is Apple iWork a poor fit?**
 It becomes risky when briefing, rights, brand rules, and export formats remain vague, or when decisions will not be reviewed later. In that case Apple iWork adds surface area without enough clarity.
+
+## Workflow and rollout
+
+A useful start with Apple iWork begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Apple iWork holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

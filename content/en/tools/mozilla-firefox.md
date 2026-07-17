@@ -1,22 +1,24 @@
 ---
-slug: mozilla-firefox
-title: Mozilla Firefox
+slug: "mozilla-firefox"
+title: "Mozilla Firefox"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Free"
 tags:
   - browser
   - web
   - privacy
   - developer tools
-official_url: 'https://www.firefox.com/en-US/'
-description: 'Mozilla Firefox is a free web browser renowned for its speed, security, and customizability. It offers extensive privacy features and developer tools designed to make web browsing more efficient and secure. Firefox is open source and developed by a nonprofit organization committed to protecting users'' privacy.'
-translation: full
+official_url: "https://www.firefox.com/en-US/"
+description: "Mozilla Firefox is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Mozilla Firefox
 
 Mozilla Firefox is a free web browser known for its speed, security, and adaptability. It provides extensive privacy features and tools for developers to make surfing the internet more efficient and safer. Firefox is open source and developed by a nonprofit organization dedicated to protecting its users' privacy.
@@ -85,17 +87,22 @@ Firefox is a strong choice for users who take privacy, openness, and web diversi
 
 Mozilla Firefox is completely free to use. There are no hidden costs or paid upgrades, as the browser is offered as an open-source project under a free license.
 
-## Alternatives to Mozilla Firefox
-
-- **Google Chrome:** A very popular browser with fast performance but less emphasis on privacy.
-- **Microsoft Edge:** Based on Chromium, with good Windows integration and increasing privacy features.
-- **Brave:** A browser with built-in ad blocking focusing on privacy and a rewards system.
-- **Opera:** Offers integrated VPN functions and other convenience features.
-- **Tor Browser:** Designed specifically for anonymous browsing with a strong focus on privacy and security.
-
 ## FAQ
 
 **1. Is Mozilla Firefox really free?**
+
+**What should a Mozilla Firefox pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Mozilla Firefox without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Mozilla Firefox the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Firefox is a free, open-source web browser with no paid features.
 
 **2. How does Firefox protect my privacy?**
@@ -118,3 +125,10 @@ Firefox is generally free to use, but some websites may be optimized for other b
 
 **8. How secure is Firefox compared to other browsers?**
 Firefox is widely regarded as very secure, especially due to its privacy features and rapid responses to security issues.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

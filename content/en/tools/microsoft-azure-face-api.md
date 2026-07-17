@@ -1,22 +1,24 @@
 ---
-slug: microsoft-azure-face-api
-title: Microsoft Azure Face API
+slug: "microsoft-azure-face-api"
+title: "Microsoft Azure Face API"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
-price_model: Usage-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Entwickler-Tools"
+price_model: "Nutzungsbasiert"
 tags:
   - ai
   - api
   - computer-vision
   - cloud
-official_url: 'https://learn.microsoft.com/en-us/azure/ai-services/face/overview-identity'
-description: 'Microsoft Azure Face API is a powerful cloud-based service for face recognition and analysis. It enables developers to integrate features like face detection, face analysis, and identity verification into their applications. Utilizing advanced AI and computer vision technologies, the API can recognize, compare, and analyze faces in images—making it ideal for security solutions, user recognition, and personalized experiences.'
-translation: full
+official_url: "https://learn.microsoft.com/en-us/azure/ai-services/face/overview-identity"
+description: "Microsoft Azure Face API is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Microsoft Azure Face API
 
 Microsoft Azure Face API is a powerful cloud-based service for face recognition and analysis. It enables developers to add features such as face detection, face analysis, and identity verification to their applications. The API uses advanced AI and computer vision technologies to detect, compare, and analyze faces in images—perfect for security solutions, user authentication, or personalized user experiences.
@@ -97,17 +99,22 @@ Microsoft Azure Face API charges based on usage. Prices vary depending on the nu
 
 It is recommended to check the current pricing on the official Microsoft Azure website since it may change depending on the plan and usage.
 
-## Alternatives to Microsoft Azure Face API
-
-- **Amazon Rekognition:** Cloud-based image and video analysis with face recognition and other features.
-- **Google Cloud Vision API:** Comprehensive image analysis including face detection and labeling.
-- **Face++:** AI-based face recognition API offering extensive analysis features.
-- **Kairos:** Face recognition focused on identity verification and demographic analysis.
-- **OpenCV:** Open-source computer vision library with face recognition but no cloud integration.
-
 ## FAQ
 
 **1. What is Microsoft Azure Face API?**
+
+**What should a Microsoft Azure Face API pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Microsoft Azure Face API without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Microsoft Azure Face API the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 It's a Microsoft cloud service allowing developers to integrate face recognition and analysis features into their applications.
 
 **2. How does face recognition work?**
@@ -130,3 +137,10 @@ No, it requires an internet connection as it is a cloud service.
 
 **8. What are common use cases?**
 Access control, user identification, security monitoring, personalized applications, and more.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

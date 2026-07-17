@@ -1,19 +1,22 @@
 ---
-slug: eli5
-title: ELI5
+description: "ELI5 ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "eli5"
+title: "ELI5"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Agents"
-price_model:
+price_model: "tags: [assistant, automation, workflow]"
 tags: [assistant, automation, workflow]
 official_url: "https://eli5.readthedocs.io/en/latest/"
 popularity: 0
 tier: "D"
 generated_at: "2026-05-11"
+updated_at: "2026-07-17"
 ---
+
 # ELI5
 
 ELI5 steht für Erklärungen in einfacher Sprache: komplexe Themen sollen so heruntergebrochen werden, dass sie ohne Vorwissen verständlicher werden. Als Toolkonzept ist es besonders wertvoll für Lernen, Kommunikation und erste Orientierung.
@@ -69,14 +72,6 @@ Im Katalog ist ELI5 mit dem Preismodell **Je nach Nutzung** geführt. Für eine 
 
 **Zum Anbieter:** https://eli5.readthedocs.io/en/latest/
 
-## Alternativen zu ELI5
-
-- ChatGPT: flexibel für Erklärungen in verschiedenen Tiefen.
-- Claude: stark bei vorsichtiger, strukturierter Erklärung.
-- Khan Academy: kuratierte Lerninhalte statt freier Antworten.
-- NotebookLM: Erklärungen aus eigenen Quellen.
-- Wikipedia Simple English: einfache Einstiegstexte für viele Themen.
-
 ## Redaktionelle Einschätzung
 
 ELI5 ist stark, wenn Verständnis wichtiger ist als Fachjargon. Man darf nur nicht vergessen, danach wieder präzise zu werden.
@@ -84,6 +79,18 @@ ELI5 ist stark, wenn Verständnis wichtiger ist als Fachjargon. Man darf nur nic
 ## FAQ
 
 **Ist ELI5 für Einsteiger geeignet?**
+
+**Wie sollte ein Pilot mit ELI5 aussehen?**
+
+Für ELI5: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in ELI5 verarbeitet werden?**
+
+ELI5: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu ELI5 sinnvoll?**
+
+Bei ELI5 ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
 
 Für einen ersten Test ist ELI5 meist machbar. Vor produktiver Nutzung sollten Ziel, Datenlage, Kosten und Qualitätsprüfung aber klar feststehen.
 
@@ -94,3 +101,10 @@ Besonders lohnt sich ELI5, wenn der beschriebene Workflow regelmäßig vorkommt,
 **Worauf sollte man vor dem Einsatz achten?**
 
 Vor dem Einsatz von ELI5 sollten Datenzugriff, Rechte, Kosten, Exportmöglichkeiten und ein menschlicher Qualitätscheck geklärt sein.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

@@ -1,19 +1,22 @@
 ---
-slug: liveagent
-title: LiveAgent
+description: "LiveAgent ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "liveagent"
+title: "LiveAgent"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Infrastructure"
-price_model: Abonnement
+price_model: "Abonnement"
 tags: [customer-support, communication, crm]
 official_url: "https://www.liveagent.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-12"
+updated_at: "2026-07-17"
 ---
+
 # LiveAgent
 
 LiveAgent ist eine umfassende Kundenservice-Software, die Unternehmen dabei unterstützt, die Kommunikation mit Kunden effizient zu gestalten. Durch die Integration verschiedener Kommunikationskanäle wie E-Mail, Live-Chat, Telefon und soziale Medien bietet LiveAgent eine zentrale Plattform für den Kunden-Support. Die Lösung nutzt KI-gestützte Funktionen, um Anfragen schneller zu bearbeiten und das Kundenerlebnis zu verbessern.
@@ -55,14 +58,6 @@ LiveAgent richtet sich an kleine bis mittelständische Unternehmen sowie größe
 
 LiveAgent bietet verschiedene Abonnement-Modelle an, deren Preise je nach Funktionsumfang und Nutzeranzahl variieren. Es gibt in der Regel eine kostenlose Testphase, um die Software vor dem Abschluss eines Abos zu testen. Die genauen Kosten sind abhängig vom gewählten Plan und den gewünschten Zusatzleistungen. Details dazu finden Interessenten direkt beim Anbieter.
 
-## Alternativen zu LiveAgent
-
-- **Zendesk:** Bekanntes Kundenservice-Tool mit umfangreichen Funktionen für Support und CRM.
-- **Freshdesk:** Cloud-basierte Helpdesk-Lösung mit Multichannel-Support und Automatisierungen.
-- **Zoho Desk:** Teil der Zoho Suite, bietet integriertes Kundenmanagement und Ticketing.
-- **Help Scout:** Einfach zu nutzende Support-Plattform mit Fokus auf E-Mail- und Chat-Kommunikation.
-- **Intercom:** Plattform für Kundenkommunikation mit Chatbots und Marketing-Tools.
-
 ## Was im Alltag wirklich zählt
 
 LiveAgent ist dann stark, wenn Supportkanäle nicht länger getrennt in Mailbox, Chat und Social Inbox liegen sollen. Entscheidend ist, ob Tickets sauber priorisiert, Agenten entlastet und Antwortzeiten sichtbar werden, ohne dass Kunden zwischen Kanälen unterschiedliche Aussagen bekommen.
@@ -79,6 +74,19 @@ LiveAgent kann Ordnung in wachsenden Kundendialog bringen. Der Nutzen hängt jed
 ## FAQ
 
 **1. Unterstützt LiveAgent KI-Funktionen?**
+
+**Wie sollte ein Pilot mit LiveAgent aussehen?**
+
+Für LiveAgent: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in LiveAgent verarbeitet werden?**
+
+LiveAgent: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu LiveAgent sinnvoll?**
+
+Bei LiveAgent ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Ja, LiveAgent integriert KI-gestützte Chatbots und Automatisierungen, die die Bearbeitung von Kundenanfragen erleichtern.
 
 **2. Welche Kommunikationskanäle können mit LiveAgent verwaltet werden?**
@@ -101,3 +109,10 @@ Die Preise variieren je nach Plan und Nutzerzahl. Es gibt unterschiedliche Abonn
 
 **8. Wie schnell ist der Support von LiveAgent?**
 LiveAgent bietet Support über verschiedene Kanäle an; die Reaktionszeiten hängen vom gewählten Service-Level ab.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

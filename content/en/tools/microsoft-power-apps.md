@@ -1,21 +1,24 @@
 ---
-slug: microsoft-power-apps
-title: Microsoft Power Apps
+description: "Microsoft Power Apps is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "microsoft-power-apps"
+title: "Microsoft Power Apps"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Automation
-price_model: Subscription
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Automatisierung"
+price_model: "Abonnement"
 tags:
   - no-code
   - automation
   - developer
-official_url: 'https://www.microsoft.com/de-de/power-platform/products/power-apps'
+official_url: "https://www.microsoft.com/de-de/power-platform/products/power-apps"
 popularity: 0
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Microsoft Power Apps
 
 Microsoft Power Apps is a platform for rapidly building custom business applications without extensive programming knowledge. The solution enables companies to automate processes and create digital solutions for a wide range of needs, from simple forms to complex workflows. Power Apps is part of the Microsoft Power Platform and integrates seamlessly with other Microsoft services such as Office 365, Dynamics 365, and Azure.
@@ -105,17 +108,22 @@ Microsoft Power Apps is generally offered as a subscription-based service. Price
 
 The exact prices depend on the selected plan, the number of users, and the required features. Companies should clarify the costs with the respective provider or via the Microsoft website.
 
-## Alternatives to Microsoft Power Apps
-
-- **AppSheet (Google):** No-code platform for app development with strong Google integration
-- **OutSystems:** Low-code platform for the rapid development of complex enterprise applications
-- **Mendix:** Low-code development platform focused on scalability and enterprise features
-- **Zoho Creator:** No-code/low-code platform with a wide range of automation options
-- **Bubble:** Visual web app development platform without programming
-
 ## FAQ
 
 **1. Do I need programming knowledge to use Microsoft Power Apps?**
+
+**What should a Microsoft Power Apps pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Microsoft Power Apps without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Microsoft Power Apps the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 In general, the platform is designed for users without programming knowledge who want to build apps with drag-and-drop. However, programming knowledge can be helpful for more complex functions.
 
 **2. Can I connect Power Apps with other Microsoft services?**
@@ -138,3 +146,10 @@ That depends on the complexity. Simple apps can be created in a few hours, while
 
 **8. Which data sources can I connect?**
 More than 400 data sources are available, including SQL Server, Excel, SharePoint, Salesforce, and various cloud services.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

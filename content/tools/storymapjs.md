@@ -1,20 +1,22 @@
 ---
-slug: storymapjs
-title: StoryMapJS
+slug: "storymapjs"
+title: "StoryMapJS"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Image"
-price_model: Kostenlos
+price_model: "Kostenlos"
 tags: [storytelling, maps, journalism]
 official_url: "https://storymap.knightlab.com/"
 popularity: 0
-description: StoryMapJS ist ein kostenloses Storytelling-Werkzeug für Karten, Orte, Zeitleisten und journalistische Erzählungen.
+description: "StoryMapJS ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
 tier: "C"
 generated_at: "2026-05-17"
+updated_at: "2026-07-17"
 ---
+
 # StoryMapJS
 
 StoryMapJS verbindet Orte mit Erzählung. Statt nur Marker auf eine Karte zu setzen, baut man eine geführte Geschichte aus Stationen, Bildern, Text und räumlichem Kontext.
@@ -67,13 +69,6 @@ Im Katalog ist StoryMapJS mit dem Preismodell **Kostenlos** geführt. Trotzdem e
 
 **Zum Anbieter:** https://storymap.knightlab.com/
 
-## Alternativen zu StoryMapJS
-
-- Arcgis Storymaps: umfangreicher für professionelle Kartenstories, Organisationen und GIS-nahe Workflows.
-- Google My Maps: einfacher für persönliche oder interne Karten mit Markern, aber weniger erzählerisch.
-- Mapbox: stärker für individuell entwickelte Kartenanwendungen und eigenes Design.
-- Timelinejs: bessere Alternative, wenn Zeitverlauf wichtiger ist als geografischer Raum.
-
 ## Redaktionelle Einschätzung
 
 StoryMapJS ist stark, wenn räumliche oder historische Abläufe erzählt werden sollen. Es ist kein vollwertiges GIS und kein CMS, sondern ein leichtes Storytelling-Werkzeug für Karten, Stationen und narrative Reihenfolgen.
@@ -81,6 +76,18 @@ StoryMapJS ist stark, wenn räumliche oder historische Abläufe erzählt werden 
 ## FAQ
 
 **Ist StoryMapJS für Einsteiger geeignet?**
+
+**Wie sollte ein Pilot mit StoryMapJS aussehen?**
+
+Für StoryMapJS: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in StoryMapJS verarbeitet werden?**
+
+StoryMapJS: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu StoryMapJS sinnvoll?**
+
+Bei StoryMapJS ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
 
 Ja, wenn die Geschichte bereits klar ist. Die technische Hürde ist niedrig; die eigentliche Arbeit liegt in Auswahl, Dramaturgie, Medienrechten und verständlichen Texten.
 
@@ -91,3 +98,10 @@ StoryMapJS lohnt sich, wenn Orte selbst Bedeutung tragen: Reiserouten, historisc
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Koordinaten, Bild- und Kartenrechte, Datenschutz bei sensiblen Orten, mobile Darstellung und die langfristige Einbettung auf der eigenen Website.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

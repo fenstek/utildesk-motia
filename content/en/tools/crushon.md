@@ -1,22 +1,25 @@
 ---
-slug: crushon
-title: CrushOn
+description: "CrushOn is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "crushon"
+title: "CrushOn"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Freemium"
 tags:
   - ai
   - chatbot
   - companion
-official_url: 'https://crushon.ai/'
+official_url: "https://crushon.ai/"
 popularity: 0
 source_language: de
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # CrushOn
 
 CrushOn is a KI-based chatbot platform that functions as a digital companion. The application is designed to enable personal conversations, offer emotional support, and act as a virtual friend. By utilizing modern KI technologies, CrushOn creates an interactive and individual user experience that goes beyond simple text responses.
@@ -96,19 +99,22 @@ CrushOn offers a freemium model. The basic features are free and provide access 
 
 Beyond the list price, CrushOn should be evaluated by the cost of adoption. Relevant factors include setup, phone numbers, integrations, training, and ongoing administration. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to CrushOn
-
-- **Replika:** A KI-based chatbot that functions as a virtual friend and emotional companion.
-- **Wysa:** An app offering KI-based conversations for mental health and well-being.
-- **Mitsuku (Kuki):** A highly acclaimed chatbot with natural language processing capabilities.
-- **ChatGPT:** A general-purpose KI chatbot with various applications.
-- **YouChat:** A KI chatbot focusing on fast and informative responses.
-
-When comparing options, CrushOn should not only be measured against very similar products. Depending on the goal, contact-center, helpdesk, and collaboration tools may fit better if they are closer to the existing process or require less maintenance.
-
 ## FAQ
 
 **1. Is CrushOn really free to use?**
+
+**What should a CrushOn pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in CrushOn without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to CrushOn the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, CrushOn offers a free basic version with limited features. Enhanced features are available for a fee.
 
 **2. How secure are my data with CrushOn?**
@@ -137,3 +143,14 @@ Use a small real use case. Define the goal, owner, and success criteria first, t
 
 **10. When is CrushOn a poor fit?**
 It is a poor fit when channels, ownership, and escalation rules are not clearly defined and the team has no capacity for setup, review, and ongoing care. Then CrushOn mostly moves the problem around.
+
+## Workflow and rollout
+
+A useful start with CrushOn begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether CrushOn holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

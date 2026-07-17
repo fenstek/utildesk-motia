@@ -1,22 +1,24 @@
 ---
-slug: modal
-title: Modal
+slug: "modal"
+title: "Modal"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Cloud
-price_model: null
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "tags: [\"automation\", \"data\", \"api\"]"
 tags:
   - automation
   - data
   - api
-official_url: 'https://modal.com'
+official_url: "https://modal.com"
 popularity: 0
-description: 'Modal is a cloud platform for running compute-intensive applications, handling scalable workloads, and integrating easily into existing development workflows.'
-translation: full
+description: "Modal is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Modal
 
 Modal is a cloud-based platform specifically designed to make it easier for developers and companies to run compute-intensive applications in the cloud. By providing scalable infrastructure and simple integration, Modal enables efficient processing of large volumes of data and complex workloads without overloading local resources.
@@ -94,17 +96,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Modal pricing typically depends on the compute time used, storage requirements, and other resources. Depending on the provider and plan, different billing models such as usage-based fees, subscriptions, or combinations of both may be used. It is recommended to check the exact terms on the provider's official website to find the best solution for your needs.
 
-## Alternatives to Modal
-
-- **AWS Lambda:** Amazon's serverless computing service with broad integration into AWS services.
-- **Google Cloud Functions:** Cloud functions with simple scaling and strong integration with Google services.
-- **Azure Functions:** Microsoft's serverless platform with extensive support for different languages.
-- **IBM Cloud Functions:** Serverless offering based on OpenWhisk, suitable for flexible cloud applications.
-- **OpenFaaS:** Open-source serverless framework that runs on Kubernetes or other platforms.
-
 ## FAQ
 
 **1. What exactly is Modal?**
+
+**What should a Modal pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Modal without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Modal the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Modal is a cloud serverless computing platform that makes it possible to run and scale applications and functions without your own server infrastructure.
 
 **2. Which programming languages are supported?**
@@ -127,3 +134,10 @@ Yes, Modal is suitable for compute-intensive applications such as training machi
 
 **8. Are there limits on function runtime?**
 Depending on the provider and plan, runtime limits may apply to individual functions. These should be checked before use.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

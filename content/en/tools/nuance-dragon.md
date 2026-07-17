@@ -1,22 +1,24 @@
 ---
-slug: nuance-dragon
-title: Nuance Dragon
+slug: "nuance-dragon"
+title: "Nuance Dragon"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: 'Paid, Subscription'
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Audio"
+price_model: "Kostenpflichtig, Abonnement"
 tags:
   - voice
   - transcription
   - productivity
-official_url: 'https://dragon.nuance.com/en-us/dragon'
+official_url: "https://dragon.nuance.com/en-us/dragon"
 popularity: 0
-description: 'Powerful speech recognition software for dictation, transcription, and productivity, with high accuracy, customizable options, and support for both personal and professional use.'
-translation: full
+description: "Nuance Dragon is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Nuance Dragon
 
 Nuance Dragon is a powerful speech recognition software that converts spoken language into text. The software is used primarily for dictation, transcription, and increasing productivity across a range of professional fields. With high recognition accuracy and extensive customization options, Nuance Dragon helps users optimize their workflows through voice input.
@@ -96,17 +98,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Nuance Dragon is offered in different versions that vary in features and price. The pricing model is mainly based on paid licensing and subscriptions. Depending on the provider and plan, different packages may be available with one-time purchases or recurring payments. Professional users often receive custom offers with expanded support and additional features. Exact pricing should be checked directly with the provider.
 
-## Alternatives to Nuance Dragon
-
-- **Google Speech-to-Text**: Cloud-based speech recognition with high availability and easy integration.
-- **Microsoft Dictate**: Free tool for Office applications with basic speech recognition.
-- **Otter.ai**: Transcription service focused on meetings and collaboration.
-- **IBM Watson Speech to Text**: AI-based speech recognition with extensive customization options.
-- **Speechnotes**: Simple dictation app for quick notes and transcriptions.
-
 ## FAQ
 
 **1. How accurate is Nuance Dragon's speech recognition?**
+
+**What should a Nuance Dragon pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Nuance Dragon without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Nuance Dragon the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Accuracy is usually above 90% depending on the environment and customization, but it can be improved further through individual training.
 
 **2. Which languages does Nuance Dragon support?**
@@ -129,3 +136,10 @@ Depending on the provider, free trial versions or demo versions may be available
 
 **8. How secure is my data when using Nuance Dragon?**
 With locally installed versions, your data remains on your device. Cloud-based variants are subject to the privacy policies of the respective provider.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

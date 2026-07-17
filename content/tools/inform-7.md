@@ -1,19 +1,22 @@
 ---
-slug: inform-7
-title: Inform 7
+description: "Inform 7 ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "inform-7"
+title: "Inform 7"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Agents"
-price_model: Kostenlos, Open Source
+price_model: "Kostenlos, Open Source"
 tags: [assistant, automation, workflow]
 official_url: "https://ganelson.github.io/inform-website/"
 popularity: 0
 tier: "D"
 generated_at: "2026-05-12"
+updated_at: "2026-07-17"
 ---
+
 # Inform 7
 
 Inform 7 ist ein Werkzeug zum Schreiben interaktiver Fiktion mit einer ungewöhnlich natürlichen, englischsprachigen Regelsyntax. Es ist besonders interessant für Autorinnen, Game-Designer und Lehrkontexte, in denen Geschichten und Systeme zusammen gedacht werden.
@@ -69,14 +72,6 @@ Im Katalog ist Inform 7 mit dem Preismodell **Kostenlos, Open Source** geführt.
 
 **Zum Anbieter:** https://ganelson.github.io/inform-website/
 
-## Alternativen zu Inform 7
-
-- Twine: leichter für nichtlineare Hypertext-Geschichten.
-- Ink: stark für narrative Skripte in Games.
-- Ren'Py: besser für Visual Novels.
-- ChoiceScript: fokussiert auf entscheidungsbasierte Textspiele.
-- Unity: viel breiter für visuelle Spiele und interaktive Anwendungen.
-
 ## Redaktionelle Einschätzung
 
 Inform 7 ist ein Nischenwerkzeug mit Charakter. Wer interaktive Fiktion ernst nimmt, bekommt hier eine ungewöhnlich präzise Schreibmaschine für Spielwelten.
@@ -84,6 +79,18 @@ Inform 7 ist ein Nischenwerkzeug mit Charakter. Wer interaktive Fiktion ernst ni
 ## FAQ
 
 **Ist Inform 7 für Einsteiger geeignet?**
+
+**Wie sollte ein Pilot mit Inform 7 aussehen?**
+
+Für Inform 7: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Inform 7 verarbeitet werden?**
+
+Inform 7: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Inform 7 sinnvoll?**
+
+Bei Inform 7 ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
 
 Für einen ersten Test ist Inform 7 meist machbar. Vor produktiver Nutzung sollten Ziel, Datenlage, Kosten und Qualitätsprüfung aber klar feststehen.
 
@@ -94,3 +101,10 @@ Besonders lohnt sich Inform 7, wenn der beschriebene Workflow regelmäßig vorko
 **Worauf sollte man vor dem Einsatz achten?**
 
 Vor dem Einsatz von Inform 7 sollten Datenzugriff, Rechte, Kosten, Exportmöglichkeiten und ein menschlicher Qualitätscheck geklärt sein.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

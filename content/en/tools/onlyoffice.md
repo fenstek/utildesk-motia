@@ -1,21 +1,23 @@
 ---
-slug: onlyoffice
-title: OnlyOffice
+slug: "onlyoffice"
+title: "OnlyOffice"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Je nach Plan"
 tags:
   - assistant
   - automation
-official_url: 'https://onlyoffice.com/'
+official_url: "https://onlyoffice.com/"
 popularity: 0
-description: A versatile office platform that combines collaborative editing with automation and AI features for teams that want flexible document management and real-time collaboration.
-translation: full
+description: "OnlyOffice is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # OnlyOffice
 
 OnlyOffice is a versatile platform that combines collaborative office tools with automation and AI features. It enables efficient creation, editing, and management of documents, spreadsheets, and presentations in real time. OnlyOffice is aimed at businesses and teams that want to increase productivity through intelligent automation and seamless collaboration.
@@ -61,14 +63,6 @@ OnlyOffice is especially well suited for small to medium-sized businesses, educa
 
 OnlyOffice offers different pricing models based on the required features and number of users. There are both free basic versions with limited functionality and paid plans with advanced features such as expanded automation, support, and cloud hosting. Prices may vary depending on the provider and license type. For detailed information, it is advisable to consult the official website.
 
-## Alternatives to OnlyOffice
-
-- **Microsoft 365:** Comprehensive office suite with cloud integration and AI features.
-- **Google Workspace:** Collaborative online office solution with real-time editing and automation.
-- **Zoho Office Suite:** Integrated tools for document management and teamwork with automation.
-- **LibreOffice:** Open-source office suite installed locally with extensive features.
-- **WPS Office:** Free and paid office programs with cloud synchronization.
-
 ## What really matters in daily use
 
 OnlyOffice is interesting for teams that want Office-compatible editing with more control over hosting and integration. The decisive questions are file fidelity, collaborative editing, permissions, and whether existing storage or collaboration systems can be connected cleanly.
@@ -85,6 +79,19 @@ OnlyOffice is a serious alternative when control and format proximity matter mor
 ## FAQ
 
 **1. Is OnlyOffice free to use?**
+
+**What should a OnlyOffice pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in OnlyOffice without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to OnlyOffice the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 OnlyOffice offers a free basic version with limited features. Paid plans are available for advanced features and more users.
 
 **2. Can OnlyOffice be installed locally?**
@@ -107,3 +114,10 @@ OnlyOffice is suitable for teams of any size, and larger companies can benefit f
 
 **8. How can I integrate OnlyOffice with other tools?**
 OnlyOffice supports integrations through APIs and plugins with various cloud and business applications.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

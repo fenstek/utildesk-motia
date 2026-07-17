@@ -1,22 +1,24 @@
 ---
-slug: apple-numbers
-title: Apple Numbers
+slug: "apple-numbers"
+title: "Apple Numbers"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Free"
 tags:
   - spreadsheet
   - office
   - productivity
   - collaboration
-official_url: 'https://support.apple.com/numbers'
-description: 'Apple Numbers is a free spreadsheet software included in Apple''s iWork suite. It offers a user-friendly interface and is ideal for users working productively on macOS, iOS, or iPadOS. Numbers allows easy creation and editing of tables, charts, and data visualizations, making it suitable for simple to moderate spreadsheet needs.'
-translation: full
+official_url: "https://support.apple.com/numbers"
+description: "Apple Numbers is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Apple Numbers
 
 Apple Numbers is a free spreadsheet software that is part of Apple's iWork suite. It offers an intuitive interface and is especially suited for users who want to work productively on macOS, iOS, or iPadOS. With Numbers, tables, charts, and data visualizations can be easily created and edited—ideal for simple to moderate spreadsheet requirements.
@@ -95,17 +97,22 @@ Numbers is strong for clear, visual, and relatively small spreadsheets. It does 
 
 Apple Numbers is available for free and can be used at no additional cost on all supported Apple devices. There are no paid upgrades or subscriptions for the software itself, as it is part of the free iWork suite.
 
-## Alternatives to Apple Numbers
-
-- **Microsoft Excel** – Professional spreadsheet software with extensive features, available via subscription (Microsoft 365) or one-time purchase.
-- **Google Sheets** – Free online spreadsheet tool with strong collaboration features, web-based.
-- **LibreOffice Calc** – Open-source alternative with many features, cross-platform.
-- **Zoho Sheet** – Cloud-based spreadsheet with collaboration and automation, freemium or subscription-based depending on plan.
-- **Airtable** – A mix of spreadsheet and database, suitable for project management and flexible data organization, mostly freemium.
-
 ## FAQ
 
 **1. Is Apple Numbers compatible with Microsoft Excel?**
+
+**What should a Apple Numbers pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Apple Numbers without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Apple Numbers the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Numbers supports importing and exporting Excel files (.xlsx), but complex Excel formulas or macros might not always be fully transferred.
 
 **2. Can I use Apple Numbers on Windows or Android?**
@@ -128,3 +135,10 @@ To utilize full functionality, having an Apple device is recommended. Access via
 
 **8. What file formats does Apple Numbers support?**
 Numbers supports its native format as well as importing and exporting Excel files (.xlsx), CSV files, and PDF export.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

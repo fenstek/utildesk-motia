@@ -1,22 +1,24 @@
 ---
-slug: mit-scratch
-title: MIT Scratch
+slug: "mit-scratch"
+title: "MIT Scratch"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Coding"
+price_model: "Kostenlos"
 tags:
   - coding
   - education
   - creative-learning
-official_url: 'https://scratch.mit.edu/'
+official_url: "https://scratch.mit.edu/"
 popularity: 0
-description: 'MIT Scratch is a visual programming language and online platform for children and beginners to learn coding fundamentals through play. Users build interactive stories, games, and animations by snapping blocks together, while developing creative problem-solving and programming logic without complex syntax.'
-translation: full
+description: "MIT Scratch is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # MIT Scratch
 
 MIT Scratch is a visual programming language and online platform designed specifically for children and beginners to learn the basics of coding in a playful way. By snapping code blocks together, users can create interactive stories, games, and animations while building creative problem-solving skills. Scratch promotes an understanding of programming logic without complex syntax and is used worldwide in schools and educational institutions.
@@ -60,17 +62,22 @@ MIT Scratch is primarily aimed at children around the age of 8 and up, teenagers
 
 MIT Scratch is completely free to use. There are no fees for using the online platform or for creating and sharing projects. There are no paid premium versions or subscriptions.
 
-## Alternatives to MIT Scratch
-
-- **Tynker** – another visual programming platform with advanced courses and paid modules
-- **Blockly** – a drag-and-drop coding tool developed by Google that can be integrated into different applications
-- **Code.org** – offers interactive courses and tutorials for children and beginners in various programming languages
-- **Snap!** – a Scratch-like platform with expanded functionality for older students and advanced users
-- **Alice** – a 3D programming environment for creating animations and games with visual programming
-
 ## FAQ
 
 **1. Do I need prior knowledge to use MIT Scratch?**
+
+**What should a MIT Scratch pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in MIT Scratch without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to MIT Scratch the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 No, Scratch is specifically designed for beginners and children with no programming experience.
 
 **2. Is MIT Scratch really free?**
@@ -93,3 +100,18 @@ Yes, Scratch is used worldwide in many schools as an introduction to programming
 
 **8. Which devices can I use for Scratch?**
 Scratch works in the browser on desktop computers, laptops, and tablets, and there is an offline application for Windows and Mac.
+
+## Editorial Assessment
+
+MIT Scratch is a defensible choice when a defined workflow, clear ownership and a limited pilot come together. The decision should rest less on a feature checklist than on whether the team can review results, hand work over reliably and respond to change. Our verdict: a good fit for recurring work with an accountable owner; for a narrow or occasional task, a simpler alternative is usually more sensible.
+
+## Workflow and rollout
+
+A useful start with MIT Scratch begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether MIT Scratch holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,8 +1,8 @@
 ---
-slug: claude-tag
-title: Claude Tag
-category: AI Agents
-price_model: Subscription
+slug: "claude-tag"
+title: "Claude Tag"
+category: "AI Agents"
+price_model: "Abonnement"
 tags:
   - ai
   - assistant
@@ -10,18 +10,19 @@ tags:
   - workplace
   - agents
   - collaboration
-official_url: 'https://www.anthropic.com/news/introducing-claude-tag'
+official_url: "https://www.anthropic.com/news/introducing-claude-tag"
 tier: D
 generated_at: '2026-06-24'
-description: 'A Slack-based team assistant from Anthropic that lets teams delegate tasks in channel, work asynchronously, and keep the full project context visible where decisions and follow-ups already happen.'
-updated_at: '2026-06-24'
+description: "Claude Tag is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+updated_at: "2026-07-17"
 editorial_reviewed: true
-editorial_reviewed_by: 'Utildesk manual editorial pass'
-editorial_reviewed_at: '2026-06-24'
-editorial_status: 'manual_polished'
-editorial_batch: '2026-06-24-sheet-hype-12-human-polish'
-translation: full
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+translation: "full"
 ---
+
 # Claude Tag
 
 Claude Tag is a Slack-based work assistant for teams that want to delegate tasks not just in one-on-one chats, but directly in the ongoing flow of a project. The core idea is simple: in selected Slack channels, you can trigger `@Claude`, hand off tasks in natural language, and let the work continue asynchronously while the team stays visible in the channel. According to Anthropic, this is intended as a new step for collaborative work with Claude and is initially especially relevant for enterprise and team environments. For the **AI Agents** category, this is a fairly clear use case: not just responding, but acting, summarizing, following up, and structuring work over time.
@@ -114,19 +115,6 @@ Anthropic also mentions an onboarding credit note for eligible Enterprise and Te
 
 👉 **Provider:** https://www.anthropic.com/news/introducing-claude-tag
 
-## Alternatives to Claude Tag
-
-If you want a similar outcome but have different requirements, consider these alternatives:
-
-- `Slack AI`: a natural fit if the focus is on Slack-native summaries, search, and workflows rather than a fully agentic assistant
-- `ChatGPT Team` or `ChatGPT Enterprise`: suitable when team work is organized more in separate workspaces and Slack does not have to be the central control point
-- `Microsoft Copilot`: useful in organizations built heavily around Microsoft 365 and Teams
-- `Gemini for Workspace`: interesting when documents, mail, and collaboration are closely integrated with Google Workspace
-- `Notion AI`: a fit when knowledge, project context, and tasks are managed more heavily in documents and knowledge bases
-- `Claude Code` or other Claude-adjacent work tools: more appropriate when the main need is in technical environments or code-centered tasks
-
-The difference from Claude Tag is less about model quality than about the working style. Claude Tag is primarily a multi-person Slack agent. If you do not have strong Slack channel operations, you usually need a more general team or knowledge tool.
-
 ## June 2026 Editorial Update
 
 Claude Tag matters because Anthropic is moving Claude from a private assistant into a visible team-channel workflow. The practical value is not another chat surface; it is the ability to keep tasks, follow-ups, and context inside the Slack channel where decisions already happen.
@@ -143,7 +131,20 @@ There are still limits. Claude Tag is not a plug-and-play product for every orga
 
 ## FAQ
 
-**What exactly is Claude Tag?**  
+**What exactly is Claude Tag?**
+
+**What should a Claude Tag pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Claude Tag without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Claude Tag the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Claude Tag is a Slack-based team assistant from Anthropic that you can address with `@Claude` in channels and that handles tasks asynchronously in the team context.
 
 **How is Claude Tag different from a normal chatbot?**  
@@ -166,3 +167,10 @@ According to the official announcement, it starts in beta for Enterprise and Tea
 
 **Is Claude Tag worthwhile for small teams?**  
 Only if Slack is already the central workspace and several people regularly work in the same context. For very small teams, a more general assistant may be enough.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

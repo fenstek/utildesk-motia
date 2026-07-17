@@ -1,19 +1,22 @@
 ---
-slug: libreoffice-calc
-title: LibreOffice Calc
+description: "LibreOffice Calc ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "libreoffice-calc"
+title: "LibreOffice Calc"
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
-editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
-category: Produktivität
-price_model: Open Source
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Open Source"
 tags: [spreadsheet,office,open-source,productivity]
 official_url: "https://www.libreoffice.org/#screenshots"
 popularity: 0
 tier: C
 generated_at: 2026-05-16
+updated_at: "2026-07-17"
 ---
+
 # LibreOffice Calc
 
 LibreOffice Calc ist ein leistungsstarkes, kostenloses Tabellenkalkulationsprogramm aus der Open-Source-Suite LibreOffice. Es bietet umfangreiche Funktionen zur Datenanalyse, Tabellenverwaltung und Visualisierung, die sowohl für private Anwender als auch für professionelle Nutzer geeignet sind. Als Alternative zu kommerziellen Office-Programmen ist Calc besonders attraktiv durch seine Offenheit und Anpassbarkeit.
@@ -85,17 +88,22 @@ LibreOffice Calc ist kein glamouröses Tool, aber ein ernstzunehmender Tabellene
 
 LibreOffice Calc ist komplett Open Source und somit kostenlos nutzbar. Es fallen keine Lizenzgebühren oder Abonnements an. Die Software kann frei heruntergeladen, installiert und genutzt werden. Für Unternehmen oder Nutzer, die professionellen Support wünschen, bieten einige Dienstleister kostenpflichtige Support- und Schulungsleistungen an, die jedoch optional sind.
 
-## Alternativen zu LibreOffice Calc
-
-- **Microsoft Excel** – Marktführende Tabellenkalkulation mit umfangreichen Funktionen, kostenpflichtig im Rahmen von Microsoft 365
-- **Google Sheets** – Webbasierte Tabellenkalkulation mit einfacher Zusammenarbeit, kostenfrei mit Google-Konto, aber cloudbasiert
-- **OnlyOffice Spreadsheet Editor** – Open-Source-Alternative mit Fokus auf Zusammenarbeit und Kompatibilität
-- **WPS Spreadsheets** – Teil der WPS Office Suite, bietet viele Excel-ähnliche Funktionen, mit Freemium-Modell
-- **Zoho Sheet** – Cloudbasierte Tabellenkalkulation mit Collaboration-Features, Freemium-Modell
-
 ## FAQ
 
 **1. Ist LibreOffice Calc mit Microsoft Excel-Dateien kompatibel?**
+
+**Wie sollte ein Pilot mit LibreOffice Calc aussehen?**
+
+Für LibreOffice Calc: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in LibreOffice Calc verarbeitet werden?**
+
+LibreOffice Calc: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu LibreOffice Calc sinnvoll?**
+
+Bei LibreOffice Calc ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Ja, LibreOffice Calc kann Excel-Dateien (.xls und .xlsx) öffnen, bearbeiten und speichern. Die Kompatibilität ist in den meisten Fällen sehr gut, allerdings können bei komplexen Makros oder speziellen Excel-Funktionen Einschränkungen auftreten.
 
 **2. Benötige ich eine Internetverbindung, um LibreOffice Calc zu nutzen?**
@@ -118,3 +126,10 @@ Calc unterstützt Funktionen wie Kommentare und Änderungsverfolgung. Für Echtz
 
 **8. Wie oft wird LibreOffice Calc aktualisiert?**
 LibreOffice veröffentlicht regelmäßig Updates und neue Versionen, die Fehler beheben und neue Funktionen hinzufügen. Die genaue Häufigkeit variiert je nach Entwicklungsschwerpunkt.
+
+## Alternativen
+
+- [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

@@ -1,22 +1,24 @@
 ---
-slug: sas-viya
-title: SAS Viya
+slug: "sas-viya"
+title: "SAS Viya"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Je nach Plan"
 tags:
   - analytics
   - data-science
   - enterprise-ai
-official_url: 'https://www.sas.com/en_us/software/viya.html'
+official_url: "https://www.sas.com/en_us/software/viya.html"
 popularity: 0
-description: 'SAS Viya is a cloud-based analytics platform for data science, machine learning, advanced analytics, and enterprise AI workflows.'
-translation: full
+description: "SAS Viya is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # SAS Viya
 
 SAS Viya is a modern, cloud-based analytics platform that helps organizations make data-driven decisions and build complex AI models. The platform provides a scalable environment for data science, machine learning, and advanced analytics, and is aimed especially at companies that want to implement robust, enterprise-wide AI solutions.
@@ -29,7 +31,6 @@ SAS Viya is ideal for companies and organizations that want to bring their data 
 - IT teams that want to manage scalable and secure analytics solutions
 - Companies with high requirements for data integration and processing
 - Industries such as financial services, healthcare, retail, and manufacturing that use complex data analysis and predictive models
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sas-viya-editorial.webp" alt="Illustration for SAS Viya: Data grows in a greenhouse from preparation through model training to deployment" loading="lazy" decoding="async" />
@@ -99,17 +100,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 SAS Viya's pricing depends on the provider, the scope of use, and the features required. Billing is usually based on the number of users, computing power, or as a subscription-based service. For exact pricing, it is best to request a quote directly from the provider or consult the official SAS websites.
 
-## Alternatives to SAS Viya
-
-- **Databricks:** A platform for big data and AI with a focus on Apache Spark and collaborative development
-- **Google Cloud AI Platform:** Cloud-based tools for machine learning and data analysis
-- **Microsoft Azure Machine Learning:** Integrated environment for model training, deployment, and monitoring
-- **IBM Watson Studio:** AI and data science platform with extensive analytics capabilities
-- **RapidMiner:** User-friendly data science platform with a drag-and-drop workflow focus
-
 ## FAQ
 
 **1. What is SAS Viya?**
+
+**What should a SAS Viya pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in SAS Viya without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to SAS Viya the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 SAS Viya is a cloud-based analytics platform that helps organizations analyze data, build AI models, and make data-driven decisions.
 
 **2. Which programming languages does SAS Viya support?**
@@ -132,3 +138,10 @@ SAS Viya combines a scalable cloud architecture with extensive analytics and gov
 
 **8. Is there a free trial version of SAS Viya?**
 Depending on the provider and region, a trial version or demo may be available. Details should be requested directly from SAS or authorized partners.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

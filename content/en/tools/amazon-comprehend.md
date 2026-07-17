@@ -1,23 +1,26 @@
 ---
-slug: amazon-comprehend
-title: Amazon Comprehend
+description: "Amazon Comprehend is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+slug: "amazon-comprehend"
+title: "Amazon Comprehend"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Usage-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Nutzungsbasiert"
 tags:
   - data
   - analytics
   - automation
   - productivity
-official_url: 'https://aws.amazon.com/comprehend/'
+official_url: "https://aws.amazon.com/comprehend/"
 popularity: 0
 source_language: de
-translation: full
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Amazon Comprehend
 
 Amazon Comprehend is a powerful, cloud-based service from Amazon Web Services (AWS) that uses natural language processing (Natural Language Processing, NLP) to automatically analyze and understand text. With the help of machine learning, Amazon Comprehend identifies key words, entities, sentiments, and relationships in unstructured text data. This helps businesses gain valuable insights from large volumes of text data and automate processes.
@@ -86,17 +89,22 @@ Amazon Comprehend is typically billed based on actual usage. Prices are determin
 
 There is usually a free tier with limited monthly volume, ideal for testing and small projects. For larger projects, it is recommended to check the current prices on the AWS website.
 
-## Alternatives to Amazon Comprehend
-
-- **Google Cloud Natural Language API:** Offers similar NLP functions with a focus on machine learning and integration into the Google Cloud.
-- **Microsoft Azure Text Analytics:** Part of Azure Cognitive Services with extensive text analysis tools.
-- **IBM Watson Natural Language Understanding:** Strong NLP platform with extensive analysis functions.
-- **SpaCy (Open Source):** High-performance NLP library for Python, ideal for custom implementations.
-- **MonkeyLearn:** Cloud-based text analysis with user-friendly interface and automation.
-
 ## FAQ
 
 **1. Which languages does Amazon Comprehend support?**
+
+**What should a Amazon Comprehend pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Amazon Comprehend without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Amazon Comprehend the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Amazon Comprehend supports multiple common languages, including English, Spanish, French, German, Italian, Portuguese, and others. The availability of individual functions may vary depending on the language.
 
 **2. Do I need programming knowledge to use Amazon Comprehend?**
@@ -119,3 +127,10 @@ Yes, the service is designed to handle unstructured text data such as emails, so
 
 **8. How can I integrate Amazon Comprehend into my applications?**
 Amazon Comprehend offers REST APIs and SDKs for various programming languages, making it easy to integrate into individual software solutions.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

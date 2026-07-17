@@ -1,8 +1,8 @@
 ---
-slug: microsoft-agent-framework
-title: Microsoft Agent Framework
-category: Entwickler-Tools
-price_model: Open Source
+slug: "microsoft-agent-framework"
+title: "Microsoft Agent Framework"
+category: "Entwickler-Tools"
+price_model: "Open Source"
 tags:
   - ai
   - agents
@@ -10,18 +10,19 @@ tags:
   - dotnet
   - python
   - developer-tools
-official_url: 'https://learn.microsoft.com/en-us/agent-framework/overview/'
+official_url: "https://learn.microsoft.com/en-us/agent-framework/overview/"
 tier: D
 generated_at: '2026-06-24'
-description: 'A developer framework for building agentic applications and multi-step workflows with state, tools, MCP servers, checkpoints, and .NET/Python support.'
-updated_at: '2026-06-24'
+description: "Microsoft Agent Framework is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+updated_at: "2026-07-17"
 editorial_reviewed: true
-editorial_reviewed_by: 'Utildesk manual editorial pass'
-editorial_reviewed_at: '2026-06-24'
-editorial_status: 'manual_polished'
-editorial_batch: '2026-06-24-sheet-hype-12-human-polish'
-translation: full
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+translation: "full"
 ---
+
 # Microsoft Agent Framework
 
 **Microsoft Agent Framework is a developer framework for building agent-based applications and multi-step workflows.** It is aimed at teams that want to implement autonomous or semi-autonomous assistance features not as a loose script solution, but as a structured software building block. The focus is on two things: individual agents that work with models, tools, and MCP servers, and workflows that bring together multiple steps, multiple agents, or functions in a controlled way.
@@ -123,16 +124,6 @@ Especially with third-party systems, costs and responsibilities should be consid
 
 👉 **To the provider:** https://learn.microsoft.com/en-us/agent-framework/overview/
 
-## Alternatives to Microsoft Agent Framework
-
-- **Semantic Kernel:** A natural alternative from the same ecosystem if you want to focus more on classic orchestration, plugin, and integration patterns.
-- **AutoGen:** Useful when multi-agent patterns are the priority and you want a more agent-centric way of working.
-- **LangChain:** A widely used option for LLM-oriented application building blocks if your team already works in that ecosystem.
-- **Your own service layer without a framework:** Often the lowest-maintenance solution for simple, clearly defined processes.
-- **Azure AI Foundry-adjacent integration:** If the project is already strongly aligned with Microsoft Cloud and related model services, a tighter platform fit may be organizationally easier.
-
-The choice mainly depends on whether the focus is on open agents, controlled workflows, Microsoft proximity, or possible portability.
-
 ## June 2026 Editorial Update
 
 Microsoft Agent Framework is strategically interesting because Microsoft treats agents less like demos and more like regular software architecture. Sessions, tools, MCP, checkpoints, human-in-the-loop steps, and workflows are part of the design model. That makes it especially relevant for teams already invested in .NET, Python, Azure, or Microsoft Foundry.
@@ -149,7 +140,20 @@ There are limits as well. The framework does not replace good product design, a 
 
 ## FAQ
 
-**Is Microsoft Agent Framework only for Azure?**  
+**Is Microsoft Agent Framework only for Azure?**
+
+**What should a Microsoft Agent Framework pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Microsoft Agent Framework without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Microsoft Agent Framework the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 No. According to the official overview, several environments and model providers are supported. Azure-adjacent setups are a natural fit, but not the only option.
 
 **Do I need .NET to use the framework?**  
@@ -172,3 +176,10 @@ Very important when conversations or tasks run for a longer time. The framework 
 
 **Can I build human approvals into workflows with it?**  
 Yes, the workflow side supports checkpoints and human-in-the-loop scenarios. That is especially useful for sensitive decisions or approvals.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

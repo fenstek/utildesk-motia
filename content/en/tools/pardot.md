@@ -1,23 +1,25 @@
 ---
-slug: pardot
-title: Pardot (Salesforce)
+slug: "pardot"
+title: "Pardot (Salesforce)"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Subscription
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Agents"
+price_model: "Abonnement"
 tags:
   - marketing
   - automation
   - CRM
   - analytics
-official_url: 'https://www.salesforce.com/marketing/b2b-automation/'
+official_url: "https://www.salesforce.com/marketing/b2b-automation/"
 popularity: 0
-description: 'A Salesforce marketing automation platform for B2B teams to generate, qualify, and nurture leads, automate campaigns, and connect marketing activity with CRM data.'
-translation: full
+description: "Pardot (Salesforce) is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Pardot (Salesforce)
 
 Pardot is a powerful marketing automation solution from Salesforce, designed specifically for B2B companies. The platform helps marketing and sales teams generate, qualify, and nurture leads in a targeted way, all with the goal of increasing revenue and improving customer relationships. With comprehensive CRM integrations and AI-powered analytics features, Pardot enables efficient automation of marketing campaigns and data-driven decision-making.
@@ -93,17 +95,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Pardot is usually offered as a subscription. The exact pricing structure varies depending on the feature set, number of users, and contract length. Typically, there are different plans that vary in features and support. For exact details, it is best to request a custom quote from the provider.
 
-## Alternatives to Pardot (Salesforce)
-
-- **HubSpot Marketing Hub:** A comprehensive marketing automation platform with CRM integration, suitable for B2B and B2C.
-- **Marketo Engage (Adobe):** A powerful marketing automation solution focused on lead management.
-- **ActiveCampaign:** Combines email marketing, automation, and CRM, often for small to medium-sized businesses.
-- **Mailchimp:** A simpler solution with marketing automation, ideal for smaller businesses and beginners.
-- **SharpSpring:** A cost-effective alternative with extensive automation and CRM features.
-
 ## FAQ
 
 **1. Is Pardot only suitable for Salesforce users?**
+
+**What should a Pardot (Salesforce) pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Pardot (Salesforce) without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Pardot (Salesforce) the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Pardot is especially designed for integration with Salesforce CRM, but it can also be connected to other systems via APIs. However, its full functionality usually comes into its own when used together with Salesforce.
 
 **2. What type of company benefits most from Pardot?**
@@ -126,3 +133,10 @@ Lead scoring evaluates the engagement and interactions of leads with content and
 
 **8. Which languages and regions are supported?**
 Pardot can be used internationally and supports multiple languages, depending on configuration and Salesforce settings.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

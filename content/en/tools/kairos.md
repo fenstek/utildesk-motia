@@ -1,23 +1,25 @@
 ---
-slug: kairos
-title: Kairos
+slug: "kairos"
+title: "Kairos"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Coding"
+price_model: "Je nach Plan"
 tags:
   - face-recognition
   - api
   - security
   - ai
-official_url: 'https://www.kairos.com/'
+official_url: "https://www.kairos.com/"
 popularity: 0
-description: 'Kairos is an advanced facial recognition API for biometric identification and analysis, with features for access management, fraud prevention, customer analysis, and multi-platform integration.'
-translation: full
+description: "Kairos is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Kairos
 
 Kairos is an advanced facial recognition API that gives businesses and developers powerful tools for biometric identification and analysis. Using artificial intelligence, Kairos enables secure and efficient solutions for access management, fraud prevention, and customer analysis. The platform is flexible and supports a range of applications in security and user authentication.
@@ -60,14 +62,6 @@ Kairos is aimed at companies and developers who want to integrate facial recogni
 
 Kairos offers different pricing plans based on usage volume and feature scope. A freemium model with limited API calls is often included to allow initial testing. For more extensive or commercial use, subscriptions or usage-based models are available. Exact prices and terms depend on the selected plan and individual requirements.
 
-## Alternatives to Kairos
-
-- **Microsoft Azure Face API:** Offers similarly comprehensive facial recognition services with high scalability.
-- **Amazon Rekognition:** Cloud-based image and video analysis with facial recognition and additional AI features.
-- **Face++:** Known for precise facial recognition and versatile biometric analysis tools.
-- **Google Cloud Vision:** Comprehensive image analysis including facial recognition and object detection.
-- **OpenCV:** Open-source computer vision library, also with facial recognition modules, but it requires more development effort.
-
 ## What really matters in daily use
 
 Kairos needs especially careful evaluation in the area of facial recognition and visual identity. Beyond recognition performance, consent, bias testing, privacy, use context, and whether biometric processing is appropriate at all are central.
@@ -84,6 +78,19 @@ Kairos requires more care than many other AI tools. Precisely because the techno
 ## FAQ
 
 **1. How does facial recognition work in Kairos?**
+
+**What should a Kairos pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Kairos without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Kairos the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Kairos uses AI-based algorithms to detect faces in images or videos, analyze them, and compare them with stored data.
 
 **2. Is using Kairos compliant with data protection regulations?**
@@ -106,3 +113,10 @@ Yes, the API is optimized for web and mobile applications and supports various p
 
 **8. How does Kairos scale as user demand grows?**
 The platform is scalable and adapts to increasing requirements depending on the plan and usage.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

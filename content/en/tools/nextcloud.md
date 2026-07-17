@@ -1,22 +1,24 @@
 ---
-slug: nextcloud
-title: Nextcloud
+slug: "nextcloud"
+title: "Nextcloud"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Open Source
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Open Source"
 tags:
   - cloud storage
   - collaboration
   - open source
   - productivity
-official_url: 'https://nextcloud.com/'
-description: 'Nextcloud is an open-source platform for cloud storage and collaboration that provides businesses and individuals with a flexible, secure, and self-hosted alternative to commercial cloud services. It enables file storage, sharing, and collaborative editing while maintaining full control over your own data. The software supports extensive integrations and extensions that enhance productivity and teamwork.'
-translation: full
+official_url: "https://nextcloud.com/"
+description: "Nextcloud is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Nextcloud
 
 Nextcloud is an open-source platform for cloud storage and collaboration that offers businesses and individuals a flexible, secure, and self-hosted alternative to commercial cloud services. With Nextcloud, you can store, share, and collaboratively edit files — all while retaining full control over your own data. The software supports a wide range of integrations and extensions that enhance productivity and teamwork.
@@ -86,17 +88,22 @@ Nextcloud is strong for organizations that value control more than maximum conve
 
 Nextcloud is open source and generally available for free. The software can be installed on your own hardware or with hosting providers. Depending on usage and requirements, costs may arise for servers, hosting, maintenance, or professional support services. Some providers also offer hosted Nextcloud solutions with subscription models that include different service levels and additional features.
 
-## Alternatives to Nextcloud
-
-- **ownCloud:** Also open source, with similar cloud storage and collaboration features.
-- **Dropbox:** Commercial cloud solution focusing on ease of use and integration, offered as a paid freemium model.
-- **Google Drive:** Cloud storage and office suite from Google, deeply integrated for collaboration, usage- and subscription-based.
-- **Microsoft OneDrive:** Cloud storage with seamless integration into Microsoft 365, subscription-based.
-- **Seafile:** Open-source cloud solution focusing on high performance and synchronization.
-
 ## FAQ
 
 **1. Is Nextcloud really free?**
+
+**What should a Nextcloud pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Nextcloud without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Nextcloud the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Nextcloud is open source and can be downloaded and used for free. Costs may occur due to hosting, maintenance, or professional services.
 
 **2. Do I need technical knowledge to use Nextcloud?**
@@ -119,3 +126,10 @@ Storage depends on your own server or hosting provider, as Nextcloud itself does
 
 **8. Is Nextcloud suitable for businesses?**
 Yes, Nextcloud is especially appealing for businesses that value data privacy and customized cloud solutions.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

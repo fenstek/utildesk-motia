@@ -1,23 +1,25 @@
 ---
-slug: valohai
-title: Valohai
+slug: "valohai"
+title: "Valohai"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Je nach Plan"
 tags:
   - MLOps
   - machine learning
   - cloud
   - developer tools
-official_url: 'https://valohai.com/'
+official_url: "https://valohai.com/"
 popularity: 0
-description: 'Valohai is an MLOps platform for automating the full machine learning lifecycle, from training and versioning to scaling and deployment.'
-translation: full
+description: "Valohai is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Valohai
 
 Valohai is an MLOps platform specifically designed to automate and manage the entire lifecycle of machine learning projects. The platform helps data scientists and developers train, version, and scale models efficiently, both in the cloud and on-premises. With Valohai, companies can deliver their AI projects faster and more reliably by ensuring repeatable workflows and centralized experiment management.
@@ -95,17 +97,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Valohai offers different pricing models based on the selected plan and usage scope. Pricing is often based on a subscription model with customizable packages. Some features or resources may also be billed on a usage basis. For exact information, it is advisable to contact the provider directly or request a consultation to receive a suitable offer.
 
-## Alternatives to Valohai
-
-- **MLflow:** Open-source platform for managing the machine learning lifecycle, with a focus on experiment tracking and model management.
-- **Kubeflow:** Open-source project for building portable, scalable ML workflows on Kubernetes.
-- **Weights & Biases:** Cloud-based platform for experiment tracking, model monitoring, and collaboration.
-- **SageMaker (AWS):** Fully managed service from Amazon for building, training, and deploying ML models.
-- **Neptune.ai:** Tool for experiment tracking, model versioning, and team collaboration.
-
 ## FAQ
 
 **1. What exactly is Valohai?**
+
+**What should a Valohai pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Valohai without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Valohai the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Valohai is an MLOps platform that automates and manages the entire process of machine learning projects, including training, versioning, and scaling.
 
 **2. Which users is Valohai suitable for?**
@@ -128,3 +135,10 @@ The platform assigns version information to training data, models, and code to e
 
 **8. Can Valohai be integrated with existing cloud providers?**
 Yes, Valohai can be integrated into various cloud environments, including AWS, Google Cloud, and Microsoft Azure.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

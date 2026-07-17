@@ -1,19 +1,22 @@
 ---
-slug: wordreference
-title: WordReference
+description: "WordReference ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "wordreference"
+title: "WordReference"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Produktivität
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Freemium"
 tags: [translation, language, reference, productivity]
 official_url: "https://www2.wordreference.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-09"
+updated_at: "2026-07-17"
 ---
+
 # WordReference
 
 WordReference ist ein umfassendes Online-Wörterbuch und Übersetzungstool, das Nutzern hilft, Sprachbarrieren zu überwinden. Es bietet schnelle und präzise Übersetzungen, umfangreiche Wörterbucheinträge sowie Foren für den Austausch mit Muttersprachlern. Ideal für Studierende, Berufstätige und jeden, der Fremdsprachen lernen oder übersetzen möchte.
@@ -58,14 +61,6 @@ WordReference richtet sich an Sprachlernende, Übersetzer, Lehrer und alle, die 
 
 WordReference bietet ein Freemium-Modell an: Die Grundfunktionen sind kostenlos nutzbar, inklusive Zugriff auf Wörterbücher und Foren. Werbefreie Nutzung und weitere Features können je nach Plattform und Angebot kostenpflichtig sein. Detaillierte Informationen zu Preisen sind auf der jeweiligen Website einsehbar.
 
-## Alternativen zu WordReference
-
-- **Linguee** – Kombination aus Wörterbuch und Suchmaschine für Übersetzungen mit Beispielsätzen aus echten Texten.
-- **DeepL Übersetzer** – KI-gestützter Übersetzungsdienst mit hoher Genauigkeit, besonders für längere Texte.
-- **Google Übersetzer** – Vielseitiger kostenloser Übersetzungsdienst mit umfangreichen Sprachoptionen und KI-gestützter Übersetzung.
-- **Reverso Context** – Übersetzungen im Kontext mit Beispielsätzen und Lernhilfen.
-- **Bab.la** – Online-Wörterbuch mit Übersetzungen, Spielen und Lernmaterialien.
-
 ## Was im Alltag wirklich zählt
 
 WordReference ist stark, wenn Nutzer nicht nur eine schnelle Übersetzung, sondern Bedeutungsnuancen, Beispiele und Community-Erklärungen brauchen. Besonders bei Redewendungen, Registerfragen und mehrdeutigen Begriffen ist es hilfreicher, mehrere Belege zu lesen als ein einzelnes maschinelles Ergebnis zu übernehmen.
@@ -82,6 +77,19 @@ WordReference ist ein Recherchewerkzeug für Sprache. Sein Wert liegt in der ged
 ## FAQ
 
 **1. Ist WordReference kostenlos?**
+
+**Wie sollte ein Pilot mit WordReference aussehen?**
+
+Für WordReference: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in WordReference verarbeitet werden?**
+
+WordReference: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu WordReference sinnvoll?**
+
+Bei WordReference ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Die Grundfunktionen von WordReference können kostenlos genutzt werden. Einige zusätzliche Funktionen oder werbefreie Nutzung sind kostenpflichtig und hängen vom Anbieter und Plan ab.
 
 **2. Welche Sprachen unterstützt WordReference?**
@@ -106,3 +114,10 @@ WordReference kombiniert Wörterbuchinhalte, Konjugationen, Aussprachehilfen und
 WordReference eignet sich gut als schnelle Nachschlagequelle beim Schreiben, Übersetzen oder Lernen. Die Integration erfolgt meist über Browser oder mobile Apps, ohne dass zusätzliche Software installiert werden muss.
 
 ---
+
+## Alternativen
+
+- [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

@@ -1,20 +1,22 @@
 ---
-slug: microsoft-agent-framework
-title: Microsoft Agent Framework
-category: Entwickler-Tools
-price_model: Open Source
+description: "Microsoft Agent Framework ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "microsoft-agent-framework"
+title: "Microsoft Agent Framework"
+category: "Entwickler-Tools"
+price_model: "Open Source"
 tags: [ai, agents, framework, dotnet, python, developer-tools]
 official_url: "https://learn.microsoft.com/en-us/agent-framework/overview/"
 tier: D
 generated_at: 2026-06-24
 popularity: 0
-updated_at: "2026-06-24"
+updated_at: "2026-07-17"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-24"
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-06-24-sheet-hype-12-human-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 ---
+
 # Microsoft Agent Framework
 
 **Microsoft Agent Framework ist ein Entwickler-Framework für den Bau von agentenbasierten Anwendungen und mehrstufigen Workflows.** Es richtet sich an Teams, die autonome oder teilautonome Assistenzfunktionen nicht als lose Skriptlösung, sondern als strukturierten Softwarebaustein umsetzen wollen. Der Schwerpunkt liegt auf zwei Dingen: einzelnen Agents, die mit Modellen, Tools und MCP-Servern arbeiten, und Workflows, die mehrere Schritte, mehrere Agents oder Funktionen kontrolliert zusammenführen.
@@ -116,16 +118,6 @@ Besonders bei Drittanbieter-Systemen sollten Kosten und Verantwortlichkeiten get
 
 👉 **Zum Anbieter:** https://learn.microsoft.com/en-us/agent-framework/overview/
 
-## Alternativen zu Microsoft Agent Framework
-
-- **Semantic Kernel:** Naheliegende Alternative aus demselben Ökosystem, wenn man stärker auf klassische Orchestrierung, Plug-in- und Integrationsmuster setzt.
-- **AutoGen:** Sinnvoll, wenn Multi-Agent-Muster im Vordergrund stehen und man eine eher agentenzentrierte Arbeitsweise sucht.
-- **LangChain:** Eine verbreitete Option für LLM-orientierte Anwendungsbausteine, wenn das Team bereits in diesem Ökosystem arbeitet.
-- **Eigene Service-Schicht ohne Framework:** Für einfache, klar definierte Prozesse oft die wartungsärmste Lösung.
-- **Azure AI Foundry-nahe Integration:** Wenn das Projekt ohnehin stark auf Microsoft-Cloud und zugehörige Modellservices ausgerichtet ist, kann ein enger Plattformbezug organisatorisch einfacher sein.
-
-Die Wahl hängt vor allem davon ab, ob der Schwerpunkt auf offenen Agenten, kontrollierten Workflows, Microsoft-Nähe oder möglicher Portabilität liegt.
-
 ## Redaktionelle Aktualisierung Juni 2026
 
 Microsoft Agent Framework ist strategisch spannend, weil Microsoft Agenten nicht nur als Demo-Pattern, sondern als reguläre Softwarearchitektur behandelt: Sessions, Tools, MCP, Checkpoints, Human-in-the-loop und Workflows gehören direkt zum Denkmodell. Das macht die Lösung vor allem für Teams interessant, die bereits in .NET, Python, Azure oder Microsoft Foundry investieren.
@@ -142,7 +134,20 @@ Grenzen gibt es aber ebenfalls. Das Framework ersetzt kein gutes Produktdesign, 
 
 ## FAQ
 
-**Ist Microsoft Agent Framework nur für Azure gedacht?**  
+**Ist Microsoft Agent Framework nur für Azure gedacht?**
+
+**Wie sollte ein Pilot mit Microsoft Agent Framework aussehen?**
+
+Für Microsoft Agent Framework: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Microsoft Agent Framework verarbeitet werden?**
+
+Microsoft Agent Framework: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Microsoft Agent Framework sinnvoll?**
+
+Bei Microsoft Agent Framework ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Nein. Laut offizieller Übersicht werden mehrere Umgebungen und Modellanbieter unterstützt. Azure-nahe Setups sind naheliegend, aber nicht die einzige Option.
 
 **Brauche ich .NET, um das Framework zu nutzen?**  
@@ -167,3 +172,10 @@ Sehr wichtig, wenn Konversationen oder Aufgaben länger laufen. Das Framework br
 Ja, die Workflow-Seite unterstützt Kontrollpunkte und Human-in-the-loop-Szenarien. Das ist besonders nützlich bei sensiblen Entscheidungen oder Freigaben.
 
 Дата/время: 2026-06-24 00:00 (Europe/Berlin)
+
+## Alternativen
+
+- [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

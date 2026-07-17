@@ -1,24 +1,26 @@
 ---
-slug: maxqda
-title: MAXQDA
+slug: "maxqda"
+title: "MAXQDA"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Je nach Plan"
 tags:
   - automation
   - data
   - analytics
   - productivity
   - education
-official_url: 'https://www.maxqda.com/'
+official_url: "https://www.maxqda.com/"
 popularity: 0
-description: 'MAXQDA is a powerful software suite for qualitative and quantitative data analysis used in research, education, market research, and related fields.'
-translation: full
+description: "MAXQDA is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # MAXQDA
 
 MAXQDA is powerful software for qualitative and quantitative data analysis, used especially in the social sciences, market research, education, and other research fields. The application helps users systematically code, analyze, and visualize large volumes of text, image, audio, and video data in order to gain well-founded insights and work productively.
@@ -86,6 +88,19 @@ MAXQDA rewards methodological care. Teams that maintain codes, categories, and m
 ## FAQ
 
 **1. Which file formats does MAXQDA support?**
+
+**What should a MAXQDA pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in MAXQDA without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to MAXQDA the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 MAXQDA supports numerous formats such as Word documents, PDFs, Excel spreadsheets, audio and video files, and images.
 
 **2. Is MAXQDA suitable for beginners?**
@@ -108,3 +123,10 @@ Yes, MAXQDA offers extensive training, webinars, and support options for users o
 
 **8. Is MAXQDA suitable for quantitative analysis?**
 Yes, in addition to qualitative methods, MAXQDA also supports quantitative analyses and mixed methods approaches.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

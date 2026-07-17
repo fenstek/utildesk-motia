@@ -1,23 +1,25 @@
 ---
-slug: tads
-title: TADS (Text Adventure Development System)
+slug: "tads"
+title: "TADS (Text Adventure Development System)"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Open Source
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Produktivität"
+price_model: "Open Source"
 tags:
   - developer tools
   - gaming
   - open source
   - writing
-official_url: 'https://www.tads.org/'
+official_url: "https://www.tads.org/"
 popularity: 0
-description: 'A powerful open-source development system for building text adventures and interactive fiction, with its own programming language, integrated development environment, and strong support for complex narrative games.'
-translation: full
+description: "TADS (Text Adventure Development System) is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # TADS (Text Adventure Development System)
 
 TADS is a powerful open-source development system designed specifically for creating text adventures and interactive fiction. It offers a comprehensive programming language and an integrated development environment that allows authors and developers to build complex narrative games with extensive worlds and interactions. TADS supports both beginners and experienced developers and encourages creative writing combined with technical flexibility.
@@ -91,17 +93,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 TADS is open source and therefore free to use. There are no hidden costs or subscriptions. Users can download, modify, and distribute the system freely. Any costs may come from optional learning materials or supplementary tools, depending on individual needs.
 
-## Alternatives to TADS
-
-- **Inform 7:** Also a popular language for interactive fiction, with natural-language syntax and extensive features.
-- **Twine:** A simple browser-based tool for creating non-linear stories, ideal for beginners.
-- **ChoiceScript:** A specialized scripting language for text-based choose-your-own-adventure games with a focus on multiple-choice mechanics.
-- **ADRIFT:** A visual development tool for text adventures that minimizes the need for programming knowledge.
-- **Quest:** A free tool with a graphical interface for easily creating text games.
-
 ## FAQ
 
 **1. Do I need programming knowledge to use TADS?**
+
+**What should a TADS (Text Adventure Development System) pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in TADS (Text Adventure Development System) without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to TADS (Text Adventure Development System) the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Basic programming knowledge is helpful, since TADS uses its own programming language. However, beginners can learn with the help of tutorials and community support.
 
 **2. On which platforms can I play games created with TADS?**
@@ -124,3 +131,10 @@ Yes, the open-source license also permits commercial use, although the license t
 
 **8. Are there alternatives if I am looking for a simpler solution?**
 Tools like Twine or Quest are more accessible and are well suited for beginners without programming knowledge.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

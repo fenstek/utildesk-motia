@@ -1,11 +1,12 @@
 ---
-slug: lime
-title: LIME (Local Interpretable Model-agnostic Explanations)
+description: "LIME (Local Interpretable Model-agnostic Explanations) ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "lime"
+title: "LIME (Local Interpretable Model-agnostic Explanations)"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Infrastructure"
 price_model: "Open Source"
 tags: ["data", "analytics", "education", "developer-tools", "chatbot"]
@@ -13,7 +14,9 @@ official_url: "https://github.com/marcotcr/lime"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-12"
+updated_at: "2026-07-17"
 ---
+
 # LIME (Local Interpretable Model-agnostic Explanations)
 
 LIME ist ein Open-Source-Tool zur Erklärung von Vorhersagen komplexer Machine-Learning-Modelle. Es ermöglicht Entwicklern und Datenwissenschaftlern, die Entscheidungen von Algorithmen besser zu verstehen, indem es lokal interpretierbare Erklärungen für einzelne Vorhersagen liefert. Dies fördert Transparenz und Vertrauen in KI-Systeme, insbesondere bei Modellen, die als Blackbox gelten.
@@ -64,14 +67,6 @@ Das Tool ist modellagnostisch und somit mit verschiedenen Machine-Learning-Algor
 
 LIME ist ein Open-Source-Projekt und steht kostenlos zur Verfügung. Es gibt keine direkten Lizenzkosten, jedoch können Kosten für Infrastruktur oder Support anfallen, je nach Einsatzszenario.
 
-## Alternativen zu LIME
-
-- **SHAP (SHapley Additive exPlanations):** Bietet konsistente und additive Erklärungen mit theoretischen Garantien
-- **ELI5:** Erklärtool mit Fokus auf einfache Visualisierungen und Debugging von Modellen
-- **InterpretML:** Microsofts Toolkit für interpretierbare Machine-Learning-Modelle mit globalen und lokalen Erklärungen
-- **Anchor:** Erklärungen basierend auf präzisen Regeln als Alternative zu LIME
-- **Skater:** Open-Source-Framework zur Modellinterpretation und Debugging
-
 ## Was im Alltag wirklich zählt
 
 LIME ist nützlich, wenn Machine-Learning-Vorhersagen lokal erklärbar gemacht werden sollen. Es hilft, einzelne Entscheidungen zu untersuchen, sollte aber nicht mit einer vollständigen Erklärung des gesamten Modells verwechselt werden; Sampling, Features und Datenvorbereitung beeinflussen die Aussagen stark.
@@ -88,6 +83,19 @@ LIME ist ein hilfreiches Diagnosewerkzeug, kein Freibrief für Blackbox-Modelle.
 ## FAQ
 
 **Was bedeutet „lokal interpretierbar“ bei LIME?**
+
+**Wie sollte ein Pilot mit LIME (Local Interpretable Model-agnostic Explanations) aussehen?**
+
+Für LIME (Local Interpretable Model-agnostic Explanations): Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in LIME (Local Interpretable Model-agnostic Explanations) verarbeitet werden?**
+
+LIME (Local Interpretable Model-agnostic Explanations): Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu LIME (Local Interpretable Model-agnostic Explanations) sinnvoll?**
+
+Bei LIME (Local Interpretable Model-agnostic Explanations) ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Lokal interpretierbar heißt, dass die Erklärungen sich auf einzelne Vorhersagen konzentrieren, nicht auf das gesamte Modell. Dadurch kann man nachvollziehen, warum das Modell gerade diese spezifische Entscheidung getroffen hat.
 
 **Welche Machine-Learning-Modelle unterstützt LIME?**
@@ -110,3 +118,10 @@ LIME ist als Python-Paket verfügbar und lässt sich leicht in Data-Science-Work
 
 **Welche Alternativen gibt es, wenn LIME nicht ausreicht?**
 Tools wie SHAP, ELI5 oder InterpretML bieten ergänzende oder teilweise erweiterte Funktionen zur Modellinterpretation. Die Wahl hängt vom Anwendungsfall ab.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

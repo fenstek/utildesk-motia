@@ -1,22 +1,24 @@
 ---
-slug: tableau-public
-title: Tableau Public
+slug: "tableau-public"
+title: "Tableau Public"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Image"
+price_model: "Kostenlos"
 tags:
   - data visualization
   - analytics
   - dashboards
-official_url: 'https://public.tableau.com/'
+official_url: "https://public.tableau.com/"
 popularity: 0
-description: 'Tableau Public is a free tool for creating and sharing interactive data visualizations and portfolio dashboards, especially useful for data journalism, teaching, community projects, and open reports. Its main tradeoff is that published content is public, so it works best when visibility, source transparency, and publishing discipline are acceptable.'
-translation: full
+description: "Tableau Public is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Tableau Public
 
 Tableau Public is especially interesting when public data visualizations and portfolio dashboards are not just tried once, but used repeatedly by a team. In that case, the goal is not a single aha moment, but making analyses shareable without building a closed BI environment.
@@ -81,19 +83,22 @@ Tableau Public is completely free to use. For advanced features and private stor
 
 For budget planning, Tableau Public should not be evaluated only by list price. More important are operating effort, training, integrations, and whether the data may be public and how sources remain visible.
 
-## Alternatives to Tableau Public
-
-- **Microsoft Power BI:** Offers extensive visualization and analysis features with free and paid plans.
-- **Google Data Studio:** Free Google tool for creating interactive reports and dashboards.
-- **Qlik Sense:** Data visualization platform with self-service analytics, usually paid.
-- **Chart.js:** Open-source JavaScript library for simple charts, requires programming knowledge.
-- **Looker Studio:** Another alternative for data-driven reports, part of Google Cloud.
-
-When choosing alternatives, it is worth comparing them along the specific bottleneck. If public data visualizations and portfolio dashboards are the focus, different criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of the results with your own material.
-
 ## FAQ
 
 **1. Is Tableau Public really free?**
+
+**What should a Tableau Public pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Tableau Public without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Tableau Public the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Tableau Public can be used free of charge to create data visualizations and share them online.
 
 **2. Can I keep my data private?**
@@ -122,3 +127,14 @@ Best with a small, real scenario from your own day-to-day work. Check whether th
 
 **10. What is the most common stumbling block with Tableau Public?**
 The most common stumbling block is starting too broadly. Before rollout, it should be clear whether the data may be public and how sources remain visible; otherwise, the value is hard to assess.
+
+## Workflow and rollout
+
+A useful start with Tableau Public begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Tableau Public holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

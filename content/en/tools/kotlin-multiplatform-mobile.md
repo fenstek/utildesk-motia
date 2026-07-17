@@ -1,22 +1,24 @@
 ---
-slug: kotlin-multiplatform-mobile
-title: Kotlin Multiplatform Mobile (KMM)
+slug: "kotlin-multiplatform-mobile"
+title: "Kotlin Multiplatform Mobile (KMM)"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Open Source
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Coding"
+price_model: "Open Source"
 tags:
   - mobile development
   - framework
   - developer tools
-official_url: 'https://kotlinlang.org/multiplatform/'
+official_url: "https://kotlinlang.org/multiplatform/"
 popularity: 0
-description: A JetBrains framework for sharing Kotlin code across Android and iOS while keeping native user interfaces and platform-specific performance.
-translation: full
+description: "Kotlin Multiplatform Mobile (KMM) is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Kotlin Multiplatform Mobile (KMM)
 
 Kotlin Multiplatform Mobile (KMM) is a framework developed by JetBrains that enables developers to create shared codebases for Android and iOS applications. By reusing business logic and other core components, mobile apps can be developed more efficiently while still using the native UI elements of both platforms. KMM therefore supports cross-platform development without having to sacrifice native performance or user experience.
@@ -83,17 +85,22 @@ Our assessment: Kotlin Multiplatform Mobile (KMM) is strongest when benefits, li
 
 Kotlin Multiplatform Mobile is an open-source framework and can be used for free. Development tools such as Android Studio are also available for free. Additional costs may arise from the use of paid plugins, services, or from the effort involved in platform-specific development.
 
-## Alternatives to Kotlin Multiplatform Mobile (KMM)
-
-- **Flutter**: A UI toolkit developed by Google for cross-platform development with its own rendering engine and Dart as the programming language.
-- **React Native**: A framework from Facebook that uses JavaScript and React to create native apps for Android and iOS.
-- **Xamarin**: Microsoft's cross-platform framework that uses C# and .NET to develop native apps.
-- **NativeScript**: Enables native app development with JavaScript, TypeScript, or Angular.
-- **SwiftUI & Jetpack Compose (combined)**: Separate native UI frameworks for iOS and Android that enable modern declarative UI development, but do not provide a shared codebase.
-
 ## FAQ
 
 **1. What is Kotlin Multiplatform Mobile (KMM)?**
+
+**What should a Kotlin Multiplatform Mobile (KMM) pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Kotlin Multiplatform Mobile (KMM) without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Kotlin Multiplatform Mobile (KMM) the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 KMM is a framework for cross-platform development that allows developers to create shared codebases for Android and iOS, especially for business logic and other core functions.
 
 **2. Is KMM free to use?**
@@ -118,3 +125,10 @@ Basic knowledge of Kotlin and platform-specific development is helpful. For begi
 Yes, KMM is modular and can be integrated into existing Android and iOS projects to gradually use shared code.
 
 ---
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

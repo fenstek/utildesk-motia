@@ -1,21 +1,23 @@
 ---
-slug: photopea
-title: Photopea
+slug: "photopea"
+title: "Photopea"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Image"
+price_model: "Freemium"
 tags:
   - image
   - workflow
-official_url: 'https://www.photopea.com/'
+official_url: "https://www.photopea.com/"
 popularity: 0
-description: 'A browser-based image editor with layered editing, broad file format support, and a freemium model.'
-translation: full
+description: "Photopea is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Photopea
 
 Photopea is a versatile online image editor that offers many of the features of well-known desktop software, while running directly in the browser. It is suitable for editing photos, graphics, and designs without installing additional software. The application supports various file formats, including PSD, XCF, Sketch, XD, and CDR, enabling flexible and fast image editing.
@@ -102,17 +104,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Photopea offers a freemium model. The basic functions are available for free, with ads displayed. For ad-free use and additional features, there are paid subscriptions, with prices that may vary depending on the provider and plan. Monthly or yearly subscriptions are usually available. Details on the exact costs should be checked on the official website.
 
-## Alternatives to Photopea
-
-- **Adobe Photoshop Express** – A stripped-down, free version of Photoshop with basic editing functions.
-- **GIMP** – Open-source desktop image editing with extensive features, but no online version.
-- **Pixlr** – Online image editing with a similar feature set and different pricing options.
-- **Canva** – Focus on design and simple image editing with many templates, more suitable for beginners.
-- **Affinity Photo** – Professional desktop software with a one-time purchase price, not web-based.
-
 ## FAQ
 
 **1. Is Photopea really free?**
+
+**What should a Photopea pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Photopea without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Photopea the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Photopea can be used for free in the browser, although with ads. There are also paid subscriptions for additional features and ad-free use.
 
 **2. Do I need to install anything?**
@@ -135,3 +142,10 @@ No, Photopea works exclusively online in the browser.
 
 **8. How can I use Photopea without ads?**
 By subscribing to a paid plan, you can remove the ads and unlock additional features.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

@@ -1,22 +1,24 @@
 ---
-slug: liveagent
-title: LiveAgent
+slug: "liveagent"
+title: "LiveAgent"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Subscription
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Infrastructure"
+price_model: "Abonnement"
 tags:
   - customer-support
   - communication
   - CRM
-official_url: 'https://www.liveagent.com/'
+official_url: "https://www.liveagent.com/"
 popularity: 0
-description: 'LiveAgent is a customer service platform with multichannel ticketing, live chat, automation, CRM integration, reporting, and mobile apps for teams managing support across email, chat, phone, and social channels.'
-translation: full
+description: "LiveAgent is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # LiveAgent
 
 LiveAgent is a comprehensive customer service software that helps companies manage communication with customers efficiently. By integrating different communication channels such as email, live chat, phone, and social media, LiveAgent provides a central platform for customer support. The solution uses AI-powered features to process requests faster and improve the customer experience.
@@ -58,14 +60,6 @@ LiveAgent is aimed at small and medium-sized businesses as well as larger organi
 
 LiveAgent offers various subscription plans, with prices varying depending on the feature set and number of users. There is usually a free trial period to test the software before subscribing. The exact costs depend on the selected plan and the desired additional services. Interested users can find details directly from the provider.
 
-## Alternatives to LiveAgent
-
-- **Zendesk:** Well-known customer service tool with extensive features for support and CRM.
-- **Freshdesk:** Cloud-based helpdesk solution with multichannel support and automations.
-- **Zoho Desk:** Part of the Zoho Suite, offering integrated customer management and ticketing.
-- **Help Scout:** Easy-to-use support platform focused on email and chat communication.
-- **Intercom:** Customer communication platform with chatbots and marketing tools.
-
 ## What really matters in daily use
 
 LiveAgent is strongest when support channels should no longer live separately in email, chat, and social inboxes. The key question is whether tickets can be prioritized, agents supported, and response times made visible without customers receiving different answers across channels.
@@ -82,6 +76,19 @@ LiveAgent can bring order to growing customer conversations. Its value depends o
 ## FAQ
 
 **1. Does LiveAgent support AI features?**
+
+**What should a LiveAgent pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in LiveAgent without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to LiveAgent the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, LiveAgent integrates AI-powered chatbots and automations that make it easier to process customer inquiries.
 
 **2. Which communication channels can be managed with LiveAgent?**
@@ -104,3 +111,10 @@ Prices vary depending on the plan and number of users. Different subscriptions a
 
 **8. How fast is LiveAgent support?**
 LiveAgent offers support through various channels; response times depend on the selected service level.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

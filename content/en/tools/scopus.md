@@ -1,22 +1,24 @@
 ---
-slug: scopus
-title: Scopus
+slug: "scopus"
+title: "Scopus"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Video
-price_model: Plan-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Audio & Video"
+price_model: "Je nach Plan"
 tags:
   - research
   - bibliometrics
   - publications
-official_url: 'https://www.elsevier.com/products/scopus'
+official_url: "https://www.elsevier.com/products/scopus"
 popularity: 0
-description: 'Scopus is a comprehensive multidisciplinary database for scholarly literature that helps researchers, academics, and institutions find relevant publications and bibliometric data. It provides powerful search and analysis tools for tracking research trends, evaluating output, and managing citations, authors, and publications.'
-translation: full
+description: "Scopus is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Scopus
 
 Scopus is a comprehensive, multidisciplinary database for scholarly literature that helps researchers, academics, and institutions find relevant publications and bibliometric data. The platform offers extensive search and analysis features to identify scientific trends, assess research performance, and search literature efficiently. Scopus helps users keep track of publications, citations, and authors, making it an indispensable tool for anyone working in academia.
@@ -24,7 +26,6 @@ Scopus is a comprehensive, multidisciplinary database for scholarly literature t
 ## Who is Scopus suitable for?
 
 Scopus is primarily aimed at scientists, researchers, librarians, and academic institutions that need access to a broad collection of scholarly articles and conference papers. Research managers and bibliometricians also benefit from the analysis features to assess research performance and support funding decisions. Companies with research departments also use Scopus to monitor scientific developments and competitors.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/scopus-editorial.webp" alt="Illustration for Scopus: Research cards from archive drawers are connected into a knowledge map" loading="lazy" decoding="async" />
@@ -93,17 +94,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Scopus pricing depends heavily on the specific licensing model and provider. Institutions such as universities or research organizations usually sign annual subscriptions, with costs depending on the size of the institution and the scope of access. Individual access is less common and often more expensive. There are no standardized prices, so it is recommended to request information directly from the provider or through authorized resellers.
 
-## Alternatives to Scopus
-
-- **Web of Science** – A similarly comprehensive scholarly database with a focus on citation analysis.
-- **Google Scholar** – A free search tool for scholarly literature with broad but less curated coverage.
-- **Dimensions** – A platform for research outputs and bibliometric data with additional funding and patent information.
-- **PubMed** – Specifically for medical and life sciences literature, freely accessible.
-- **Microsoft Academic** – (Discontinued, but formerly an alternative with AI-powered literature search)
-
 ## FAQ
 
 **1. What is the main purpose of Scopus?**
+
+**What should a Scopus pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Scopus without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Scopus the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Scopus is used for comprehensive research into scholarly literature and for analyzing research performance using bibliometric data.
 
 **2. How up to date is the data in Scopus?**
@@ -126,3 +132,10 @@ Scopus is a curated, paid database with advanced analysis features, while Google
 
 **8. Are videos also integrated into Scopus?**
 Scopus primarily focuses on scholarly text, but in some cases it also offers multimedia content to support research.
+
+## Alternatives
+
+- [fotor](/en/tools/fotor/): is worth comparing when another existing workflow or ecosystem fits better.
+- [freepik](/en/tools/freepik/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [kapwing](/en/tools/kapwing/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [flexclip](/en/tools/flexclip/): is worth comparing when the scope, collaboration model or administration needs differ.

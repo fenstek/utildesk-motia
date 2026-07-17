@@ -1,22 +1,24 @@
 ---
-slug: aws-cloud9
-title: AWS Cloud9
+slug: "aws-cloud9"
+title: "AWS Cloud9"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
-price_model: Usage-based
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Entwickler-Tools"
+price_model: "Nutzungsbasiert"
 tags:
   - coding
   - cloud
   - developer
-official_url: 'https://aws.amazon.com/cloud9/'
+official_url: "https://aws.amazon.com/cloud9/"
 popularity: 0
-description: 'A cloud-based AWS development environment that keeps code, terminal, runtime, and AWS resources close together for browser-based work on cloud projects.'
-translation: full
+description: "AWS Cloud9 is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # AWS Cloud9
 
 AWS Cloud9 is a cloud-based development environment in the AWS ecosystem. The idea is that code, terminal, runtime, and AWS resources stay close together, so developers can work directly in the browser and handle cloud-adjacent projects.
@@ -81,14 +83,6 @@ Because development happens in the cloud account, IAM roles, network access, sec
 
 Costs depend on the underlying AWS resources, such as compute, storage, and runtime. Before use, it should be clear which instances are running and who is responsible for cleanup. The pricing model listed in the dataset is: usage-based.
 
-## Alternatives to AWS Cloud9
-
-- GitHub Codespaces: very strong for repository-centric cloud development.
-- Gitpod: flexible dev environments for different Git workflows.
-- VS Code Dev Containers: well controlled locally or remotely.
-- JetBrains Gateway: remote development with the comfort of JetBrains IDEs.
-- Local IDE plus AWS CLI: often sufficient for experienced developers.
-
 ## Editorial assessment
 
 AWS Cloud9 is useful when AWS-focused development is needed without local friction. For durable team standards, however, costs, availability, and permissions should be clarified very consciously.
@@ -100,6 +94,19 @@ At the same time, the most important limitation should be stated openly: current
 ## FAQ
 
 **Is AWS Cloud9 suitable for small teams?**
+
+**What should a AWS Cloud9 pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in AWS Cloud9 without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to AWS Cloud9 the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Partially. Small teams should check whether the benefit really justifies the setup and maintenance effort.
 
 **What should you pay attention to before using AWS Cloud9?**
@@ -107,3 +114,10 @@ Current service availability and AWS recommendations should be checked. It shoul
 
 **Does AWS Cloud9 replace human work?**
 No. AWS Cloud9 can speed up or structure work, but decisions, quality control, and responsibility remain with the team.
+
+## Alternatives
+
+- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

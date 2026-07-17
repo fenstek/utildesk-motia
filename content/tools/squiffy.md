@@ -1,19 +1,22 @@
 ---
-slug: squiffy
-title: Squiffy
+description: "Squiffy ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "squiffy"
+title: "Squiffy"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Writing"
-price_model: Open Source
+price_model: "Open Source"
 tags: [writing,gaming,open-source,storytelling]
 official_url: "https://squiffystory.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-18"
+updated_at: "2026-07-17"
 ---
+
 # Squiffy
 
 Squiffy sollte man weniger über die reine Featureliste lesen als über den konkreten Arbeitsablauf: interaktive Textgeschichten und einfache Choice-Strukturen. Der praktische Wert entsteht dort, wo es darum geht, narrative Prototypen ohne schwere Game-Engine auszuprobieren, ohne jede Entscheidung wieder in Nebentools auszulagern.
@@ -73,18 +76,22 @@ Squiffy überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind,
 
 Im Katalog ist Squiffy als **Open Source** geführt. Für die Budgetplanung zählt daher weniger der Listenpreis als die Zeit für Struktur, Tests, Hosting und Pflege der interaktiven Geschichte.
 
-## Alternativen zu Squiffy
-
-- [Twine](/tools/twine/): naheliegend, wenn interaktive Geschichten mit größerer Community und breiterem Ökosystem gesucht werden.
-- [Quest](/tools/quest/): passend, wenn klassische Textadventures mit Räumen, Objekten und Spielzuständen im Vordergrund stehen.
-- [Ink by Inkle](/tools/ink-by-inkle/): stärker, wenn Dialoge und narrative Spielskripte in ein größeres Projekt eingebunden werden sollen.
-- [Ren'Py](/tools/ren-py/): besser für Visual Novels mit Präsentationslogik und Figuren.
-
-Bei der Auswahl der Alternativen lohnt sich ein Vergleich entlang des konkreten Engpasses. Wenn interaktive Textgeschichten und einfache Choice-Strukturen im Mittelpunkt stehen, zählen andere Kriterien als bei einem allgemeinen Toolvergleich: Datenkontrolle, Lernkurve, Integrationen und die Qualität der Ergebnisse im eigenen Material.
-
 ## FAQ
 
 **1. Ist Squiffy für Anfänger geeignet?**
+
+**Wie sollte ein Pilot mit Squiffy aussehen?**
+
+Für Squiffy: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in Squiffy verarbeitet werden?**
+
+Squiffy: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu Squiffy sinnvoll?**
+
+Bei Squiffy ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Ja, wenn das erste Projekt klein bleibt. Eine kurze Geschichte mit wenigen Entscheidungen ist der beste Einstieg.
 
 **2. Welche Preisoptionen gibt es bei Squiffy?**
@@ -113,3 +120,14 @@ Am besten mit einem kleinen, echten Szenario aus dem eigenen Alltag. Dabei sollt
 
 **10. Was ist der häufigste Stolperstein bei Squiffy?**
 Der häufigste Stolperstein ist ein zu breiter Start. Vor dem Rollout sollte klar sein, wie Verzweigungen dokumentiert und Sackgassen getestet werden; sonst wird der Nutzen schwer zu bewerten.
+
+## Redaktionelle Einschätzung
+
+Squiffy ist vor allem dann eine tragfähige Wahl, wenn ein klarer Prozess, eine benannte Verantwortung und ein begrenzter Pilot zusammenkommen. Für die Entscheidung zählt weniger die Funktionsliste als die Frage, ob das Team Ergebnisse zuverlässig prüfen, übergeben und bei Änderungen nachsteuern kann. Unser Verdict: empfehlenswert für wiederkehrende Aufgaben mit passendem Verantwortlichen; für einen einzelnen, seltenen Zweck ist eine schlankere Alternative meist vernünftiger.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

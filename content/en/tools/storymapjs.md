@@ -1,22 +1,24 @@
 ---
-slug: storymapjs
-title: StoryMapJS
+slug: "storymapjs"
+title: "StoryMapJS"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Free
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Image"
+price_model: "Kostenlos"
 tags:
   - storytelling
   - maps
   - journalism
-official_url: 'https://storymap.knightlab.com/'
+official_url: "https://storymap.knightlab.com/"
 popularity: 8
-translation: full
-description: "StoryMapJS is a free storytelling tool for maps, locations, timelines, and journalistic narratives."
+translation: "full"
+description: "StoryMapJS is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+updated_at: "2026-07-17"
 ---
+
 # StoryMapJS
 
 StoryMapJS connects locations with narrative. Instead of simply placing markers on a map, users build a guided story from stops, images, text, and spatial context.
@@ -26,8 +28,6 @@ Useful for journalism, education, museums, NGOs, and projects where place and st
 ## Who is StoryMapJS for?
 
 StoryMapJS is most useful for teams and individuals that treat a map-based storytelling tool as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/storymapjs-editorial.webp" alt="Illustration for StoryMapJS: map routes connecting places, images and story points" loading="lazy" decoding="async" />
@@ -66,13 +66,6 @@ In the catalog, StoryMapJS is marked with the pricing model **Free**. For a real
 
 **Provider:** https://storymap.knightlab.com/
 
-## Alternatives to StoryMapJS
-
-- Arcgis Storymaps: useful comparison point for adjacent workflows, pricing, or team fit.
-- Google My Maps: useful comparison point for adjacent workflows, pricing, or team fit.
-- Mapbox: useful comparison point for adjacent workflows, pricing, or team fit.
-- Timelinejs: useful comparison point for adjacent workflows, pricing, or team fit.
-
 ## Editorial assessment
 
 StoryMapJS is strong when maps serve the story. For analytical geodata, a GIS tool is better.
@@ -80,6 +73,18 @@ StoryMapJS is strong when maps serve the story. For analytical geodata, a GIS to
 ## FAQ
 
 **Is StoryMapJS beginner-friendly?**
+
+**What should a StoryMapJS pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in StoryMapJS without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to StoryMapJS the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
 
 It depends on the use case. Simple trials are usually manageable, but production workflows need ownership and quality control.
 
@@ -90,3 +95,10 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

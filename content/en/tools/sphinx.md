@@ -1,21 +1,23 @@
 ---
-slug: sphinx
-title: Sphinx
+slug: "sphinx"
+title: "Sphinx"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Freemium"
 tags:
   - chatbot
   - data
-official_url: 'https://www.sphinx-doc.org/en/master'
+official_url: "https://www.sphinx-doc.org/en/master"
 popularity: 0
-description: 'A practical documentation tool for teams that need repeatable, versioned workflows for generating technical docs from source code and reStructuredText.'
-translation: full
+description: "Sphinx is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Sphinx
 
 Sphinx is especially interesting when documentation generation from source code and reStructuredText is not just something you try once, but something you want to use repeatedly as a team. At that point, it is not about a single aha moment, but about building technical documentation in a versioned and reproducible way.
@@ -78,19 +80,22 @@ Sphinx offers a freemium pricing model, where core functions can be used for fre
 
 For budget planning, Sphinx should not be evaluated by list price alone. Operational effort, training, integrations, and the question of which parts come automatically from code and which are explained editorially are more important.
 
-## Alternatives to Sphinx
-
-- **Read the Docs** – Open-source platform for hosting and creating documentation with a focus on developers.
-- **MkDocs** – Another popular tool for creating static websites for documentation.
-- **Docusaurus** – A React-based documentation website framework developed by Facebook.
-- **GitBook** – Cloud-based platform for collaborative documentation creation with easy usability.
-- **Confluence** – Comprehensive platform for knowledge management and team collaboration, often used in companies.
-
-When choosing among alternatives, it is worth comparing them against the specific bottleneck. If documentation generation from source code and reStructuredText is the focus, different criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of the results on your own material.
-
 ## FAQ
 
 **1. What exactly is Sphinx?**
+
+**What should a Sphinx pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Sphinx without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Sphinx the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Sphinx is an AI-powered tool for creating, managing, and publishing documentation, especially used in technical contexts.
 
 **2. Is Sphinx free to use?**
@@ -119,3 +124,14 @@ Best with a small, real scenario from your own day-to-day work. Check whether th
 
 **10. What is the most common stumbling block with Sphinx?**
 The most common stumbling block is starting too broadly. Before rollout, it should be clear which parts come automatically from code and which are explained editorially; otherwise, the value is hard to assess.
+
+## Workflow and rollout
+
+A useful start with Sphinx begins with one concrete workflow and a small user group. Define the input, expected outcome and manual checkpoint before adding more automation or permissions. Record who approves the result and how a failed step is reversed. A focused pilot makes it clear whether Sphinx holds up in daily work or only looks convincing in a demo.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

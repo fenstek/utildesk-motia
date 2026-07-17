@@ -1,19 +1,22 @@
 ---
-slug: onlyoffice
-title: OnlyOffice
+description: "OnlyOffice ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "onlyoffice"
+title: "OnlyOffice"
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
-editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
-category: AI Chatbots
-price_model: Je nach Plan
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Chatbots"
+price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://onlyoffice.com/"
 popularity: 0
 tier: C
 generated_at: 2026-05-28
+updated_at: "2026-07-17"
 ---
+
 # OnlyOffice
 
 OnlyOffice ist eine vielseitige Plattform, die kollaborative Office-Tools mit Automatisierungs- und KI-Funktionen kombiniert. Sie ermöglicht die effiziente Erstellung, Bearbeitung und Verwaltung von Dokumenten, Tabellen und Präsentationen in Echtzeit. OnlyOffice richtet sich an Unternehmen und Teams, die ihre Produktivität durch intelligente Automatisierung und nahtlose Zusammenarbeit steigern möchten.
@@ -59,14 +62,6 @@ OnlyOffice eignet sich besonders für kleine bis mittelständische Unternehmen, 
 
 OnlyOffice bietet verschiedene Preismodelle, die sich nach den benötigten Funktionen und der Anzahl der Nutzer richten. Es gibt sowohl kostenlose Basisversionen mit eingeschränktem Funktionsumfang als auch kostenpflichtige Pläne mit erweiterten Features wie erweiterter Automatisierung, Support und Cloud-Hosting. Die Preise können je nach Anbieter und Lizenztyp variieren. Für detaillierte Informationen empfiehlt es sich, die offizielle Webseite zu konsultieren.
 
-## Alternativen zu OnlyOffice
-
-- **Microsoft 365:** Umfassende Office-Suite mit Cloud-Anbindung und KI-Funktionen.
-- **Google Workspace:** Kollaborative Online-Office-Lösung mit Echtzeitbearbeitung und Automatisierung.
-- **Zoho Office Suite:** Integrierte Tools für Dokumentenmanagement und Teamarbeit mit Automatisierung.
-- **LibreOffice:** Open-Source-Office-Paket, das lokal installiert wird, mit umfangreichen Funktionen.
-- **WPS Office:** Kostenlose und kostenpflichtige Office-Programme mit Cloud-Synchronisation.
-
 ## Was im Alltag wirklich zählt
 
 OnlyOffice ist interessant für Teams, die Office-kompatible Dokumentbearbeitung mit mehr Kontrolle über Hosting und Integration verbinden wollen. Entscheidend sind Dateitreue, gemeinsame Bearbeitung, Rechte und die Frage, ob bestehende Speicher- oder Kollaborationssysteme sauber angebunden werden können.
@@ -83,6 +78,19 @@ OnlyOffice ist eine ernsthafte Alternative, wenn Kontrolle und Formatnähe wicht
 ## FAQ
 
 **1. Ist OnlyOffice kostenlos nutzbar?**
+
+**Wie sollte ein Pilot mit OnlyOffice aussehen?**
+
+Für OnlyOffice: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in OnlyOffice verarbeitet werden?**
+
+OnlyOffice: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu OnlyOffice sinnvoll?**
+
+Bei OnlyOffice ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 OnlyOffice bietet eine kostenlose Basisversion mit eingeschränkten Funktionen an. Für erweiterte Features und mehr Nutzer sind kostenpflichtige Pläne verfügbar.
 
 **2. Kann OnlyOffice lokal installiert werden?**
@@ -105,3 +113,10 @@ OnlyOffice eignet sich für Teams jeder Größe, wobei größere Unternehmen von
 
 **8. Wie kann ich OnlyOffice in andere Tools integrieren?**
 OnlyOffice unterstützt Integrationen über APIs und Plugins mit verschiedenen Cloud- und Business-Anwendungen.
+
+## Alternativen
+
+- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

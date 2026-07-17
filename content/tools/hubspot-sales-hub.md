@@ -1,20 +1,22 @@
 ---
-slug: hubspot-sales-hub
-title: HubSpot Sales Hub
+description: "HubSpot Sales Hub ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+slug: "hubspot-sales-hub"
+title: "HubSpot Sales Hub"
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
-editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
-category: Marketing & Vertrieb
-price_model: Freemium
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: "2026-07-17"
+editorial_status: "manual_polished"
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "Marketing & Vertrieb"
+price_model: "Freemium"
 tags: [crm, sales, automation, marketing]
 official_url: "https://www.hubspot.com/products/sales"
 popularity: 0
-updated_at: 2026-05-21
+updated_at: "2026-07-17"
 tier: C
 generated_at: 2026-05-27
 ---
+
 # HubSpot Sales Hub
 
 HubSpot Sales Hub ist eine umfassende Vertriebsplattform, die Unternehmen dabei unterstützt, ihre Verkaufsprozesse zu optimieren und die Kundenbeziehungen effizienter zu gestalten. Das Tool bietet eine Kombination aus CRM-Funktionalitäten, Automatisierung und Analyse, die speziell auf die Bedürfnisse von Vertriebsteams ausgerichtet sind. Mit einer Freemium-Preisstruktur ermöglicht HubSpot Sales Hub sowohl kleinen als auch großen Unternehmen den Einstieg in ein modernes Sales-Management.
@@ -81,17 +83,22 @@ HubSpot Sales Hub lohnt sich, wenn Prozesse vor der Migration geklärt sind und 
 
 HubSpot Sales Hub bietet ein Freemium-Modell an, das einen kostenlosen Einstieg ermöglicht. Die Basisversion enthält bereits wichtige Funktionen für Kontaktmanagement und einfache Automatisierungen. Für erweiterte Features wie erweiterte Automatisierung, erweiterte Berichte oder zusätzliche Benutzer sind kostenpflichtige Abonnements erforderlich. Die Preise variieren je nach gewähltem Plan und Unternehmensgröße. Es gibt unterschiedliche Stufen, die auf die Bedürfnisse von kleinen Teams bis hin zu großen Vertriebsorganisationen zugeschnitten sind.
 
-## Alternativen zu HubSpot Sales Hub
-
-- **Pipedrive:** Ein CRM mit Fokus auf einfache Bedienung und Pipeline-Management, geeignet für kleine bis mittelgroße Vertriebsteams.
-- **Salesforce Sales Cloud:** Eine umfangreiche CRM-Lösung mit hoher Anpassbarkeit und einer breiten Palette an Funktionen, vor allem für größere Unternehmen.
-- **Zoho CRM:** Ein flexibles CRM mit vielfältigen Automatisierungsoptionen und einem guten Preis-Leistungs-Verhältnis.
-- **Freshsales:** CRM und Sales Automation mit KI-gestützten Funktionen, ideal für wachsende Vertriebsteams.
-- **Microsoft Dynamics 365 Sales:** Eine umfassende CRM- und Vertriebsplattform, die sich gut in Microsoft-Ökosysteme integriert.
-
 ## FAQ
 
 **1. Ist HubSpot Sales Hub wirklich kostenlos nutzbar?**
+
+**Wie sollte ein Pilot mit HubSpot Sales Hub aussehen?**
+
+Für HubSpot Sales Hub: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+
+**Welche Daten sollten nicht ungeprüft in HubSpot Sales Hub verarbeitet werden?**
+
+HubSpot Sales Hub: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+
+**Wann ist eine Alternative zu HubSpot Sales Hub sinnvoll?**
+
+Bei HubSpot Sales Hub ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+
 Ja, HubSpot Sales Hub bietet eine kostenlose Basisversion mit grundlegenden Funktionen, die für viele kleine Teams ausreichend sind. Erweiterte Funktionen erfordern jedoch ein kostenpflichtiges Abonnement.
 
 **2. Welche Automatisierungsfunktionen sind enthalten?**
@@ -114,3 +121,10 @@ Das Onboarding ist durch die intuitive Benutzeroberfläche und umfangreiche Doku
 
 **8. Bietet HubSpot Sales Hub Support?**
 Support-Angebote hängen vom gewählten Plan ab. Kostenlose Nutzer erhalten Zugang zu Community-Support, während zahlende Kunden erweiterten Support erhalten.
+
+## Alternativen
+
+- [HubSpot Sales](/tools/hubspot-sales/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [hubspot-marketing-hub](/tools/hubspot-marketing-hub/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [mailchimp](/tools/mailchimp/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [ActiveCampaign](/tools/activecampaign/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

@@ -1,23 +1,24 @@
 ---
-slug: microsoft-teams
-title: Microsoft Teams
+slug: "microsoft-teams"
+title: "Microsoft Teams"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: 'Freemium, Subscription'
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Agents"
+price_model: "Freemium, Abonnement"
 tags:
   - assistant
   - automation
   - workflow
-official_url: 'https://www.microsoft.com/en-us/microsoft-teams'
+official_url: "https://www.microsoft.com/en-us/microsoft-teams"
 popularity: 0
-description: 'Microsoft Teams is a collaboration platform that combines chat, video meetings, file sharing, AI-powered assistance, and workflow automation for teams of all sizes.'
-translation: full
-updated_at: 2026-05-21
+description: "Microsoft Teams is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Microsoft Teams
 
 Microsoft Teams is a comprehensive collaboration platform that brings communication, teamwork, and automation together in one tool. Especially in the area of AI-powered assistance and workflow optimization, Teams offers a wide range of possibilities for making work processes more efficient. Its integration of chat, video conferencing, file storage, and automated workflows makes it a central tool for businesses of all sizes.
@@ -98,17 +99,22 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Microsoft Teams offers a **freemium model** that provides basic features at no cost. For advanced features and larger teams, various **subscription plans** are available, which vary depending on company size and requirements. Pricing is based on the selected plan and usually includes additional storage, enhanced security features, and support.
 
-## Alternatives to Microsoft Teams
-
-- **Slack:** Focus on messaging and integration of numerous apps, with AI-powered features depending on the plan.
-- **Zoom:** Strong video conferencing solution with chat and webinar features.
-- **Google Workspace (Google Meet, Chat):** Complete package for communication and collaboration with AI features.
-- **Cisco Webex:** Comprehensive platform for meetings, messaging, and automation.
-- **Mattermost:** Open-source alternative for secure team communication and automation.
-
 ## FAQ
 
 **1. Can Microsoft Teams be used for free?**
+
+**What should a Microsoft Teams pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Microsoft Teams without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Microsoft Teams the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Yes, Microsoft Teams offers a free version with basic features for small teams and individuals.
 
 **2. Which AI features are integrated into Microsoft Teams?**
@@ -131,3 +137,10 @@ A Microsoft account is required, and a stable internet connection is recommended
 
 **8. Can Microsoft Teams be used without Microsoft 365?**
 The free version can be used independently of Microsoft 365, but a subscription is often required for advanced features.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.

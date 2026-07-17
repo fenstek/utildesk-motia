@@ -1,22 +1,24 @@
 ---
-slug: speech-to-text
-title: Speech-to-Text
+slug: "speech-to-text"
+title: "Speech-to-Text"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
+editorial_batch: "2026-07-17-full-tool-card-editorial"
+category: "AI Audio"
+price_model: "Freemium"
 tags:
   - audio
   - transcription
   - productivity
-official_url: 'https://cloud.google.com/speech-to-text'
+official_url: "https://cloud.google.com/speech-to-text"
 popularity: 0
-description: 'AI-powered speech-to-text tools that automatically convert spoken language into written text for transcription, productivity, accessibility, and content workflows.'
-translation: full
+description: "Speech-to-Text is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+translation: "full"
+updated_at: "2026-07-17"
 ---
+
 # Speech-to-Text
 
 Speech-to-text is a technology that automatically converts spoken language into written text. This AI-based solution makes it easier to transcribe audio content and improves productivity across a variety of use cases. Whether for notes, interviews, meetings, or subtitles, speech-to-text tools provide a fast and efficient way to capture spoken information digitally.
@@ -110,17 +112,22 @@ Most speech-to-text tools operate on a freemium model:
 
 Exact prices depend on the respective provider and plan.
 
-## Alternatives to Speech-to-Text
-
-- **Google Speech-to-Text:** Extensive speech recognition with high accuracy and API integration.
-- **Microsoft Azure Speech Services:** Cloud-based solution with a wide range of features and strong multilingual support.
-- **IBM Watson Speech to Text:** AI-powered transcription with customization options for specialized terminology.
-- **Otter.ai:** Popular for meeting transcriptions with collaboration features.
-- **Sonix:** Automatic transcription focused on easy editing and export.
-
 ## FAQ
 
 **1. How accurate are speech-to-text tools?**
+
+**What should a Speech-to-Text pilot look like?**
+
+Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
+
+**Which data should not be processed in Speech-to-Text without review?**
+
+Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
+
+**When is an alternative to Speech-to-Text the better choice?**
+
+Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
+
 Accuracy depends on various factors, including audio quality, language, accent, and background noise. Modern AI models often achieve recognition rates above 90%, but this can vary depending on the situation.
 
 **2. Do speech-to-text tools support multiple languages?**
@@ -143,3 +150,10 @@ For example, meeting minutes, interview transcriptions, subtitles, dictation, or
 
 **8. How do I integrate speech-to-text into my applications?**
 Many providers offer APIs that make it possible to integrate speech recognition into your own software or workflows.
+
+## Alternatives
+
+- [OpenAI API](/en/tools/openai-api/): is worth comparing when another existing workflow or ecosystem fits better.
+- [Anthropic](/en/tools/anthropic/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [Mistral](/en/tools/mistral/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepSeek](/en/tools/deepseek/): is worth comparing when the scope, collaboration model or administration needs differ.
