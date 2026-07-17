@@ -1,6 +1,7 @@
 ---
 description: "FotoJet ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
 slug: "fotojet"
+search_index: true
 title: "FotoJet"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"

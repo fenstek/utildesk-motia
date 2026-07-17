@@ -97,7 +97,7 @@ const copy = isEn
       mastSub: "An editorial decision desk for AI tools",
       issueLine: "Issue",
       edited: "Edited in Germany",
-      rightStats: `${totalGuides || guides.length || 25} decisions · ${toolsCount} tools indexed`,
+      rightStats: `${totalGuides} decisions · ${toolsCount} tools indexed`,
       noAds: "0 paid placements",
       kicker: `Decision № ${issueNo} · AI tool review`,
       headline: "Should my team introduce Cursor, Copilot or Claude Code?",
@@ -132,10 +132,10 @@ const copy = isEn
       tablePrice: "Price",
       tableOpen: "Open",
       topTagsLabel: "Top tags ->",
-      footer: `No paid slots. No ranking theater. ${totalGuides || guides.length || 25} editorial guides + ${toolsCount} indexed tools from public sources.`,
+      footer: `No paid slots. No ranking theater. ${totalGuides} editorial guides + ${toolsCount} indexed tools from public sources.`,
       footerLines: [
         "No paid slots. No ranking theater.",
-        `${totalGuides || guides.length || 25} editorial guides + ${toolsCount} indexed tools from public sources.`,
+        `${totalGuides} editorial guides + ${toolsCount} indexed tools from public sources.`,
       ],
       footerCopyright: `Copyright © ${copyrightYear} Utildesk`,
       footerPrivacy: "Privacy",
@@ -154,7 +154,7 @@ const copy = isEn
       mastSub: "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge",
       issueLine: "Ausgabe",
       edited: "Redigiert in Deutschland",
-      rightStats: `${totalGuides || guides.length || 25} Entscheidungen · ${toolsCount} Tools indiziert`,
+      rightStats: `${totalGuides} Entscheidungen · ${toolsCount} Tools indiziert`,
       noAds: "0 bezahlte Platzierungen",
       kicker: `Entscheidung № ${issueNo} · AI-Tool Review`,
       headline: "Soll mein Team Cursor, Copilot oder Claude Code einf\u00fchren?",
@@ -189,10 +189,10 @@ const copy = isEn
       tablePrice: "Preis",
       tableOpen: "Open",
       topTagsLabel: "Top.Tags ->",
-      footer: `Keine bezahlten Slots. Kein Ranking-Theater. ${totalGuides || guides.length || 25} redaktionelle Ratgeber + ${toolsCount} indizierte Tools mit öffentlichen Quellen.`,
+      footer: `Keine bezahlten Slots. Kein Ranking-Theater. ${totalGuides} redaktionelle Ratgeber + ${toolsCount} indizierte Tools mit öffentlichen Quellen.`,
       footerLines: [
         "Keine bezahlten Slots. Kein Ranking-Theater.",
-        `${totalGuides || guides.length || 25} redaktionelle Ratgeber + ${toolsCount} indizierte Tools mit öffentlichen Quellen.`,
+        `${totalGuides} redaktionelle Ratgeber + ${toolsCount} indizierte Tools mit öffentlichen Quellen.`,
       ],
       footerCopyright: `Copyright © ${copyrightYear} Utildesk`,
       footerPrivacy: "Datenschutz",
@@ -346,7 +346,7 @@ const categoryRows = categories.slice(0, 8);
           <p>{copy.mastSub}</p>
         </div>
         <div class="ds-masthead-ki-side ds-masthead-ki-side-right">
-          {totalGuides || guides.length || 25} {isEn ? "decisions" : "Entscheidungen"} {"\u00b7"} {toolsCount} {isEn ? "tools indexed" : "Tools indiziert"}<br />
+          {totalGuides} {isEn ? "decisions" : "Entscheidungen"} {"\u00b7"} {toolsCount} {isEn ? "tools indexed" : "Tools indiziert"}<br />
           0 {isEn ? "paid placements" : "bezahlte Platzierungen"}
         </div>
       </div>

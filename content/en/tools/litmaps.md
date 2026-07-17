@@ -1,5 +1,6 @@
 ---
 slug: "litmaps"
+search_index: true
 title: "Litmaps"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"

@@ -1,6 +1,7 @@
 ---
 description: "FotoJet is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
 slug: "fotojet"
+search_index: true
 title: "FotoJet"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"

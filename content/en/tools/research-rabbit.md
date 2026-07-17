@@ -1,5 +1,6 @@
 ---
 slug: research-rabbit
+search_index: true
 title: Research Rabbit
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"

@@ -1,6 +1,7 @@
 ---
 description: "Litmaps ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
 slug: "litmaps"
+search_index: true
 title: "Litmaps"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"

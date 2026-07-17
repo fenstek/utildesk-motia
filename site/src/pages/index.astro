@@ -167,6 +167,8 @@ const templateTools = Array.from(
   new Map([...latestTools, ...restTools].map((tool) => [tool.slug, tool])).values()
 ).slice(0, 12);
 const allRatgeber = runtimeRatgeber ?? await listRatgeberEntries();
+const guideCount = allRatgeber.length;
+const homeDescription = `${guideCount} redaktionelle Ratgeber und ein indizierter Tool-Katalog aus öffentlichen Quellen für KI-Tools, Automatisierung und sichere Workflows.`;
 const editorialRatgeberSlugs = [
   "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
   "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
@@ -264,7 +266,7 @@ const featuredToolsSchema = {
 
 const homePageSchema = buildCollectionPageSchema({
   name: "Utildesk KI-Tools Verzeichnis 2026",
-  description: "25 redaktionelle Ratgeber plus indizierte AI-Tools aus öffentlichen Quellen.",
+  description: `${guideCount} redaktionelle Ratgeber plus indizierte AI-Tools aus öffentlichen Quellen.`,
   url: `${SITE_URL}/`,
   about: ["KI-Tools Verzeichnis 2026", "AI-Tools", "Automatisierung", "Produktivität", "Ratgeber"],
   mainEntity: featuredToolsSchema,
@@ -280,7 +282,7 @@ const homepageSchemas = [
 
 <BaseLayout
   title="KI-Tools verstehen, vergleichen und sicher einsetzen - Utildesk"
-  description="25 redaktionelle Ratgeber und ein indizierter Tool-Katalog aus öffentlichen Quellen für KI-Tools, Automatisierung und sichere Workflows."
+  description={homeDescription}
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/" />
@@ -312,7 +314,7 @@ const homepageSchemas = [
         </h1>
         <p class="terminal-copy">
           <span class="terminal-comment"># </span>
-          25 redaktionelle Ratgeber plus {enabledTools.length} indizierte Tools mit öffentlichen Quellen:
+          {guideCount} redaktionelle Ratgeber plus {enabledTools.length} indizierte Tools mit öffentlichen Quellen:
           von AI-Coding und Datenschutz bis Automatisierung, Recherche und Produktivität.
         </p>
         <div class="terminal-hero-actions" aria-label="Schnelle Einstiege">

@@ -1,6 +1,7 @@
 ---
 description: "Paperpile is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
 slug: "paperpile"
+search_index: true
 title: "Paperpile"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
