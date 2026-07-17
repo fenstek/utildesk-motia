@@ -270,6 +270,9 @@ if ((/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//
   ]);
 }
 
+const socialImageAlt = locale === "en"
+  ? `Editorial illustration for ${resolvedTitle}`
+  : `Redaktionelle Illustration zu ${resolvedTitle}`;
 const alternatePaths = propAlternatePaths ?? getAlternatePaths(pathname);
 const languageSwitchTarget = alternatePaths
   ? alternatePaths[locale === "en" ? "de" : "en"]
@@ -317,7 +320,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <meta property="og:image" content={socialImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Photorealistic computer technology workspace with AI workflow montage" />
+    <meta property="og:image:alt" content={socialImageAlt} />
     <meta property="og:locale" content={locale === "en" ? "en_US" : "de_DE"} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={resolvedTitle} />
