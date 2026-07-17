@@ -292,7 +292,9 @@ const designLabels = JSON.stringify({
 
 const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
 
-const UMAMI_WEBSITE_ID = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
+// The Umami website id is public by design; this fallback also covers direct runtime builds.
+const UMAMI_WEBSITE_ID =
+  import.meta.env.PUBLIC_UMAMI_WEBSITE_ID || "1cb00ebe-8e55-45c6-ad41-e34ff8e28e18";
 
 const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
@@ -397,8 +399,9 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     {shouldLoadUmami && (
       <script is:inline>
         (() => {
-          let tenSecondsPassed = false;
-          let meaningfulAction = "";
+          let readingTimePassed = false;
+          let scrollDepthReached = false;
+          let humanInteraction = false;
           let sent = false;
 
           const pageType = location.pathname.includes("/ratgeber/")
@@ -407,23 +410,32 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
               ? "tool"
               : "hub";
           const sendWhenReady = () => {
-            if (sent || !tenSecondsPassed || !meaningfulAction || !window.umami?.track) return;
+            if (
+              sent ||
+              !readingTimePassed ||
+              !scrollDepthReached ||
+              !humanInteraction ||
+              !window.umami?.track
+            ) return;
             sent = true;
-            window.umami.track("engaged-human", {
-              action: meaningfulAction,
+            window.umami.track("qualified-reader", {
+              depth: "50+",
               pageType,
               language: document.documentElement.lang || "de",
+              seconds: 45,
             });
           };
-          const noteAction = (action) => {
-            meaningfulAction ||= action;
+
+          const noteHumanInteraction = (event) => {
+            if (!event.isTrusted) return;
+            humanInteraction = true;
             sendWhenReady();
           };
 
           window.setTimeout(() => {
-            tenSecondsPassed = true;
+            readingTimePassed = true;
             sendWhenReady();
-          }, 10000);
+          }, 45000);
 
           let scrollTicking = false;
           window.addEventListener("scroll", () => {
@@ -431,17 +443,16 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             scrollTicking = true;
             window.requestAnimationFrame(() => {
               const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-              if (window.scrollY >= 400 || window.scrollY / scrollable >= 0.25) noteAction("scroll");
+              if (window.scrollY / scrollable >= 0.5) {
+                scrollDepthReached = true;
+                sendWhenReady();
+              }
               scrollTicking = false;
             });
           }, { passive: true });
 
-          document.addEventListener("click", (event) => {
-            const link = event.target?.closest?.("a[href]");
-            if (!link) return;
-            const href = link.getAttribute("href") || "";
-            if (href.startsWith("/") || href.startsWith(location.origin)) noteAction("internal-click");
-          }, { passive: true });
+          window.addEventListener("pointerdown", noteHumanInteraction, { passive: true });
+          window.addEventListener("keydown", noteHumanInteraction, { passive: true });
         })();
       </script>
     )}

@@ -4,6 +4,10 @@
   "compatibility_date": "2026-07-13",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
+  "vars": {
+    "PUBLIC_UMAMI_SRC": "https://stats.utildesk.de/script.js",
+    "PUBLIC_UMAMI_WEBSITE_ID": "1cb00ebe-8e55-45c6-ad41-e34ff8e28e18"
+  },
   "kv_namespaces": [
     {
       "binding": "SESSION",

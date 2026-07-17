@@ -1,6 +1,7 @@
 ---
 description: "Adobe Enhance Speech ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
 slug: "adobe-enhance-speech"
+search_index: true
 title: "Adobe Enhance Speech"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
