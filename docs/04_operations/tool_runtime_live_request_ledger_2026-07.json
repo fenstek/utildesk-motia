@@ -2812,6 +2812,131 @@
         "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-17T15:49:36.116Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 11,
+        "pagesAssets": 0,
+        "total": 15
+      },
+      "worstCaseRequests": 15,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-17T15:50:03.437Z",
+      "mode": "production-indexnow-delta",
+      "command": "indexnow_submit.py submit-batch [changed canonical HTML only]",
+      "estimate": {
+        "indexNow": 2,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.indexnow.org/indexnow",
+        "https://www.bing.com/indexnow"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-17T16:02:47.474Z",
+      "mode": "production-pages-functions-redeploy",
+      "command": "single wrangler pages deploy from the site root so the verified dist and Pages Functions bundle ship together",
+      "estimate": {
+        "manifestAndProjectReads": 5,
+        "assetUploadBatches": 35,
+        "deploymentAndFunctionUpload": 5,
+        "statusAndCliOverhead": 5,
+        "total": 50
+      },
+      "worstCaseRequests": 50,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; this is the one corrective deploy after the first invocation omitted the adjacent Functions directory."
+    },
+    {
+      "reservedAt": "2026-07-17T16:02:47.474Z",
+      "mode": "production-tool-runtime-switch-recovery",
+      "command": "authenticated read and restore of content-runtime:tools=on after the Pages Functions redeploy",
+      "estimate": {
+        "toolStateRead": 1,
+        "toolStateWrite": 1,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://tools.utildesk.de/admin/ratgeber/api/tool-runtime"
+      ],
+      "retryPolicy": "No automatic retry; stop on authentication or binding errors."
+    },
+    {
+      "reservedAt": "2026-07-17T16:02:47.474Z",
+      "mode": "production-search-recovery-smoke",
+      "command": "one bounded post-deploy verification of ten focus tool canonicals plus homepage, methodology, robots and compact sitemap surfaces",
+      "estimate": {
+        "htmlAndHeaders": 18,
+        "total": 18
+      },
+      "worstCaseRequests": 18,
+      "plannedUrls": [
+        "https://tools.utildesk.de/",
+        "https://tools.utildesk.de/methodologie/",
+        "https://tools.utildesk.de/en/methodology/",
+        "https://tools.utildesk.de/robots.txt",
+        "https://tools.utildesk.de/sitemap.xml",
+        "https://tools.utildesk.de/sitemap-focus.xml",
+        "https://tools.utildesk.de/sitemap-bing.xml",
+        "https://tools.utildesk.de/tools/litmaps/",
+        "https://tools.utildesk.de/en/tools/litmaps/",
+        "https://tools.utildesk.de/tools/paperpile/",
+        "https://tools.utildesk.de/en/tools/paperpile/",
+        "https://tools.utildesk.de/tools/research-rabbit/",
+        "https://tools.utildesk.de/en/tools/research-rabbit/",
+        "https://tools.utildesk.de/tools/adobe-enhance-speech/",
+        "https://tools.utildesk.de/en/tools/adobe-enhance-speech/",
+        "https://tools.utildesk.de/tools/fotojet/",
+        "https://tools.utildesk.de/en/tools/fotojet/"
+      ],
+      "retryPolicy": "No automatic retry; one request per route surface."
+    },
+    {
+      "reservedAt": "2026-07-17T16:05:47.030Z",
+      "mode": "production-search-engine-resubmission",
+      "command": "resubmit the compact Google sitemap through Search Console API and the compact Bing focus feed through Bing Webmaster API",
+      "estimate": {
+        "googleAuthAndSubmit": 3,
+        "bingFeedSubmit": 1,
+        "total": 4
+      },
+      "worstCaseRequests": 4,
+      "plannedUrls": [
+        "https://searchconsole.googleapis.com/webmasters/v3/sites/sc-domain%3Atools.utildesk.de/sitemaps/https%3A%2F%2Ftools.utildesk.de%2Fsitemap.xml",
+        "https://ssl.bing.com/webmaster/api.svc/json/SubmitFeed"
+      ],
+      "retryPolicy": "No automatic retry; record any API error and stop."
+    },
+    {
+      "reservedAt": "2026-07-17T16:05:47.030Z",
+      "mode": "production-indexnow-search-recovery-delta",
+      "command": "submit only the changed homepage and DE/EN methodology canonicals to global IndexNow and Bing IndexNow",
+      "estimate": {
+        "globalIndexNow": 1,
+        "bingIndexNow": 1,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.indexnow.org/indexnow",
+        "https://www.bing.com/indexnow"
+      ],
+      "retryPolicy": "No automatic retry; changed canonical HTML only."
     }
   ]
 }
