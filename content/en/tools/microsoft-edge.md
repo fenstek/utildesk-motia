@@ -1,20 +1,20 @@
 ---
 slug: microsoft-edge
-title: Microsoft Edge
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
+title: "Microsoft Edge"
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Produktivität
 price_model: Freemium
-tags:
-  - ai
-  - browser
-  - web
-official_url: 'https://www.microsoft.com/en-us/edge?cs=3783549923&form=MA13FJ'
+official_url: "https://www.microsoft.com/en-us/edge?cs=3783549923&form=MA13FJ"
+description: "A modern Microsoft browser based on Chromium, with AI features, productivity tools, and strong security."
+updated_at: 2026-07-17
+
 popularity: 0
-description: 'A modern Microsoft browser based on Chromium, with AI features, productivity tools, and strong security.'
+tier: C
+generated_at: 2026-05-16
 translation: full
 ---
 # Microsoft Edge
@@ -99,36 +99,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Microsoft Edge is generally free to use (freemium model). The core features are available to all users at no cost. Advanced AI-powered features or Microsoft 365 integrations may incur additional costs depending on the plan or subscription. Exact prices and availability depend on the respective Microsoft offering.
 
-## Alternatives to Microsoft Edge
+## Alternatives
 
-- **Google Chrome:** Widely used Chromium-based browser with a large extension ecosystem
-- **Mozilla Firefox:** Open-source browser with a focus on privacy and customization
-- **Brave:** Chromium-based browser with built-in ad blocker and a privacy focus
-- **Opera:** Browser with built-in VPN, ad blocker, and innovative features
-- **Vivaldi:** Highly customizable browser with many productivity tools and tab management features
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Microsoft Edge before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Microsoft Edge before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Microsoft Edge before moving data or ownership.
 
 ## FAQ
 
-**1. Is Microsoft Edge free?**
-Yes, Microsoft Edge is generally free to use. However, some advanced features may require payment, especially in connection with Microsoft 365.
+**Who is Microsoft Edge for?**
 
-**2. Which operating systems are supported?**
-Microsoft Edge is available for Windows, macOS, iOS, Android, and Linux.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. Does Microsoft Edge support browser extensions?**
-Yes, Microsoft Edge supports many extensions from the Microsoft Store as well as from the Chrome Web Store.
+**How should I measure a Microsoft Edge pilot?**
 
-**4. How secure is Microsoft Edge?**
-Edge offers extensive security features such as tracking protection, phishing protection, and regular security updates to protect users from threats.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. Which AI features are integrated in Microsoft Edge?**
-Microsoft Edge integrates AI-powered tools that can help, for example, with writing text, researching, or organizing content, depending on the version and region.
+**What data should not enter Microsoft Edge without review?**
 
-**6. Can I synchronize my data across devices?**
-Yes, Microsoft Edge allows synchronization of passwords, favorites, browsing history, and settings across different devices.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. How does Microsoft Edge differ from other Chromium browsers?**
-In addition to its Chromium base, Edge offers better integration with Microsoft services as well as special productivity and security features.
+**When should I choose an alternative to Microsoft Edge?**
 
-**8. Is there an offline mode for features?**
-Many Edge features are web-based, but some features such as saved favorites or PDF viewing also work offline.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

@@ -1,19 +1,20 @@
 ---
 slug: microsoft-bot-framework
-title: Microsoft Bot Framework
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+title: "Microsoft Bot Framework"
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: "AI Chatbots"
 price_model: Freemium
-tags:
-  - ai
-  - chatbots
-official_url: 'https://learn.microsoft.com/en-us/azure/bot-service?view=azure-bot-service-4.0'
+official_url: "https://learn.microsoft.com/en-us/azure/bot-service?view=azure-bot-service-4.0"
+description: "A comprehensive platform for building, connecting, deploying, and managing intelligent chatbots with multichannel support, Azure integration, and SDKs for flexible bot development."
+updated_at: 2026-07-17
+
 popularity: 0
-description: 'A comprehensive platform for building, connecting, deploying, and managing intelligent chatbots with multichannel support, Azure integration, and SDKs for flexible bot development.'
+tier: C
+generated_at: 2026-05-16
 translation: full
 ---
 # Microsoft Bot Framework
@@ -104,36 +105,26 @@ Microsoft Bot Framework itself can be used free of charge as a development platf
 
 For beginners, a free tier with limited resources is available, while larger companies can use paid plans with expanded capacities.
 
-## Alternatives to Microsoft Bot Framework
+## Alternatives
 
-- **Dialogflow (Google):** An AI-based platform for creating chatbots with a focus on natural language processing.
-- [IBM Watson Assistant](/tools/ibm-watson-assistant/): Offers extensive AI tools for developing intelligent virtual assistants.
-- [Rasa](/tools/rasa/): Open source framework for developing context-aware chatbots and voice assistants.
-- [Amazon Lex](/tools/amazon-lex/): AWS service for creating chatbots with automatic speech recognition and speech synthesis.
-- [Botpress](/tools/botpress/): Open source platform for developing and managing chatbots with a graphical interface.
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Microsoft Bot Framework before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Microsoft Bot Framework before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Microsoft Bot Framework before moving data or ownership.
 
 ## FAQ
 
-**1. Is Microsoft Bot Framework free?**
-The development platform itself can be used free of charge, but hosting and AI services incur costs depending on usage.
+**Who is Microsoft Bot Framework for?**
 
-**2. Which programming languages are supported?**
-C# and JavaScript/TypeScript are primarily supported, but there are also options for integration with other languages.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. Can I use bots on multiple platforms at the same time?**
-Yes, the framework supports multichannel integration, so bots can be available on different platforms simultaneously.
+**How should I measure a Microsoft Bot Framework pilot?**
 
-**4. Do I need Azure to use the framework?**
-Azure is highly recommended for development and hosting, since many features are built on it, but development can also be done locally.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. How complex can the bots be?**
-The framework allows the development of everything from simple to highly complex, context-sensitive bots with AI capabilities.
+**What data should not enter Microsoft Bot Framework without review?**
 
-**6. Is there a community or support?**
-Yes, Microsoft offers extensive documentation as well as an active developer community and support options.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. Can I use the framework without programming knowledge?**
-Basic programming knowledge is recommended to use the framework effectively.
+**When should I choose an alternative to Microsoft Bot Framework?**
 
-**8. How secure are the bots created?**
-Through integration with Azure services, bots benefit from Microsoft’s security standards and compliance certifications.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.
