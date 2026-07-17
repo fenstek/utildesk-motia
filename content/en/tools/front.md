@@ -1,19 +1,20 @@
 ---
 slug: front
 title: Front
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: null
-tags:
-  - customer-support
-  - shared-inbox
-  - communication
-official_url: 'https://front.com/'
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: "AI Infrastructure"
+price_model: "Auf Anfrage"
+official_url: "https://front.com/"
+description: "Front in practice: workflow fit, limits, data handling, costs, and alternatives for a grounded decision."
+updated_at: 2026-07-17
+
 popularity: 0
+tier: C
+generated_at: 2026-05-15
 translation: full
 ---
 # Front
@@ -107,28 +108,42 @@ The exact pricing structure can be found on the provider’s official website an
 - **Freshdesk**: Comprehensive helpdesk solution with multi-channel support.
 - **Gmelius**: Tool for jointly managing Gmail inboxes with automations.
 
+## Workflow and rollout
+
+Start with a bounded task that already recurs. Define the input, owner, expected output, and the point where a person reviews the result. With Front, this small pilot is more informative than a long feature list because it shows which steps become faster and which work remains with the team.
+
+## Operations, handovers and quality
+
+Daily value depends on traceable handovers. Record where results are stored or passed on, which failures must be visible, and how a task is closed. Test representative examples rather than only a perfect demo. If Front sits inside a chain, assign ownership for changes, access rights, and periodic review.
+
+## Privacy and governance
+
+Run a data-flow review before rollout: what content enters the service, who can access it, how long it remains available, and how results can be exported or deleted. The answer depends on the provider's current documentation and the chosen contract. Sensitive customer, employee, or development data should enter only after that review and the required internal approval.
+
+## Costs and decision criteria
+
+The operating cost of Front is more than a possible subscription. Include users, storage, connected services, setup, training, review time, and exception handling. The decision is sound when a defined workflow produces less rework while meeting its quality bar. If it does not, a smaller or already adopted tool may be the better choice.
+
+## Alternatives
+
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Front before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Front before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Front before moving data or ownership.
+
 ## FAQ
 
-**1. Can Front be integrated with other tools?**
-Yes, Front offers numerous integrations with CRM systems, helpdesk software, calendars, and other applications to simplify workflows.
+**Who is Front for?**
 
-**2. Does Front support mobile devices?**
-Yes, Front provides apps for iOS and Android, allowing users to access all features while on the go.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. Is Front suitable for small teams?**
-Yes, Front offers plans specifically tailored to small teams, with features varying by plan.
+**How should I measure a Front pilot?**
 
-**4. Does Front include automation features?**
-Yes, Front uses AI-powered automations to automatically assign, prioritize, and handle messages.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. How secure is data in Front?**
-Front uses encryption and permission controls to ensure the security and protection of customer data.
+**What data should not enter Front without review?**
 
-**6. Can Front be tested before purchase?**
-Depending on the provider and plan, there are often free trial periods or demo versions to get familiar with the platform before making a decision.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. Which communication channels does Front support?**
-Front combines email, SMS, chat, and social media in a shared inbox for centralized management.
+**When should I choose an alternative to Front?**
 
-**8. How does teamwork work with Front?**
-Team members can comment on messages internally, assign tasks, and work together on replies to increase efficiency.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

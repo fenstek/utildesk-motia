@@ -1,19 +1,20 @@
 ---
 slug: intellicode
-title: IntelliCode (Microsoft)
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
-price_model: Plan-based
-tags:
-  - coding
-  - developer tools
-official_url: 'https://visualstudio.microsoft.com/services/intellicode/'
+title: "IntelliCode (Microsoft)"
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Entwickler-Tools
+price_model: "Je nach Plan"
+official_url: "https://visualstudio.microsoft.com/services/intellicode/"
+description: "Microsoft IntelliCode is an AI-powered coding assistant for Visual Studio and Visual Studio Code that suggests context-aware completions and recommendations based on open-source patterns and project-specific code."
+updated_at: 2026-07-17
+
 popularity: 0
-description: Microsoft IntelliCode is an AI-powered coding assistant for Visual Studio and Visual Studio Code that suggests context-aware completions and recommendations based on open-source patterns and project-specific code.
+tier: C
+generated_at: 2026-05-15
 translation: full
 ---
 # IntelliCode (Microsoft)
@@ -98,36 +99,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 IntelliCode is included for free in many Visual Studio versions and in Visual Studio Code. For advanced features such as custom team models, there may be additional costs depending on the Microsoft plan or subscription. Exact pricing depends on the licensing of the respective Microsoft product and may vary.
 
-## Alternatives to IntelliCode
+## Alternatives
 
-- **Tabnine:** AI-based code completion with support for many languages and editors.
-- **Kite:** An AI code assistant that offers context-aware suggestions and documentation.
-- **Codota:** Specifically for Java and Kotlin, offering intelligent code hints and snippets.
-- **GitHub Copilot:** Developed by GitHub and OpenAI, it delivers AI-powered code suggestions in real time.
-- **Visual Studio Code Snippets:** Extensions with prebuilt code snippets for various languages.
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with IntelliCode (Microsoft) before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with IntelliCode (Microsoft) before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with IntelliCode (Microsoft) before moving data or ownership.
 
 ## FAQ
 
-**1. Is IntelliCode free?**
-IntelliCode is included for free in many Visual Studio and Visual Studio Code versions. However, some advanced features may be tied to paid plans.
+**Who is IntelliCode (Microsoft) for?**
 
-**2. Which programming languages does IntelliCode support?**
-Supported languages include C#, Python, JavaScript, TypeScript, Java, and other popular languages.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. How does the AI behind IntelliCode work?**
-IntelliCode uses machine learning based on millions of lines of open-source code as well as project-specific data to generate context-aware suggestions.
+**How should I measure a IntelliCode (Microsoft) pilot?**
 
-**4. Can IntelliCode be used in teams?**
-Yes, teams can train their own models to adapt recommendations to shared code.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. Is special setup required?**
-The basic functionality is available immediately after installation. Additional configuration is required for team models.
+**What data should not enter IntelliCode (Microsoft) without review?**
 
-**6. Does IntelliCode work offline too?**
-Basic functions can be used offline, but some AI-powered features require an internet connection.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. How does IntelliCode differ from other AI code assistants?**
-IntelliCode is deeply integrated into Microsoft's development environments and offers team- and project-specific models in addition to general suggestions.
+**When should I choose an alternative to IntelliCode (Microsoft)?**
 
-**8. How can I install IntelliCode?**
-IntelliCode is available as an extension for Visual Studio and Visual Studio Code and can be installed through the respective marketplaces.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

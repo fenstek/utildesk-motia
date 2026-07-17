@@ -1,20 +1,20 @@
 ---
 slug: futurelearn
 title: FutureLearn
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Produktivität
 price_model: Freemium
-tags:
-  - education
-  - courses
-  - learning
-  - productivity
-official_url: 'https://www.futurelearn.com/'
-description: 'FutureLearn is an online learning platform with courses from universities and institutions around the world, offering flexible, interactive learning for personal development and professional upskilling.'
+official_url: "https://www.futurelearn.com/"
+description: "FutureLearn is an online learning platform with courses from universities and institutions around the world, offering flexible, interactive learning for personal development and professional upskilling."
+updated_at: 2026-07-17
+
+popularity: 0
+tier: C
+generated_at: 2026-05-15
 translation: full
 ---
 # FutureLearn
@@ -95,36 +95,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 FutureLearn offers a freemium model. Many courses can be completed for free, although access to additional materials, exams, and certificates is usually paid. Prices depend on the course and the chosen plan. Options include one-time payments for individual courses or subscriptions for unlimited access to multiple courses. Custom offers are available for companies and educational institutions.
 
-## Alternatives to FutureLearn
+## Alternatives
 
-- **Coursera:** Also a platform with courses from universities worldwide, offering extensive specializations and degrees.
-- **edX:** Offers free and paid courses with a focus on academic content and certificates.
-- **Udemy:** Broad course selection with a focus on professional and practical skills, usually paid.
-- **LinkedIn Learning:** Professional development with a focus on career skills and integration into LinkedIn profiles.
-- **Khan Academy:** Free educational offering focused on foundational knowledge, especially for school and college students.
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with FutureLearn before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with FutureLearn before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with FutureLearn before moving data or ownership.
 
 ## FAQ
 
-**1. Is FutureLearn really free to use?**
-Many courses can be taken for free, but access is often time-limited and certificates are usually paid.
+**Who is FutureLearn for?**
 
-**2. What kinds of courses does FutureLearn offer?**
-FutureLearn offers courses across a wide range of subject areas, including business, IT, health, art, and more.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. How do I get a certificate?**
-Certificates are available after completing a course, usually for a fee, depending on the course and plan.
+**How should I measure a FutureLearn pilot?**
 
-**4. Can I use FutureLearn on mobile devices?**
-Yes, there are apps for iOS and Android that let you learn anytime, anywhere.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. Is there a way to use courses offline?**
-Some content can be downloaded and used offline in the mobile apps, depending on the course.
+**What data should not enter FutureLearn without review?**
 
-**6. How interactive are the courses?**
-Courses include videos, quizzes, and discussion forums that encourage exchange with other learners.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. Do I need prior knowledge for the courses?**
-It depends on the course. There are both beginner and advanced courses.
+**When should I choose an alternative to FutureLearn?**
 
-**8. Can I use FutureLearn for professional development?**
-Yes, many courses are geared toward professional qualifications and can support career growth.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

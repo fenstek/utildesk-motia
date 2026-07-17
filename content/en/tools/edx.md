@@ -1,21 +1,20 @@
 ---
 slug: edx
 title: edX
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: "AI Image"
 price_model: Freemium
-tags:
-  - education
-  - courses
-  - career
-  - learning
-official_url: 'https://www.edx.org/'
+official_url: "https://www.edx.org/"
+description: "edX in practice: workflow fit, limits, data handling, costs, and alternatives for a grounded decision."
+updated_at: 2026-07-17
+
 popularity: 0
-source_language: de
+tier: C
+generated_at: 2026-05-15
 translation: full
 ---
 # edX
@@ -94,36 +93,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 edX follows a freemium model: many courses can be accessed for free, but without an official certificate. To earn a certificate, a MicroMasters, or other credentials, fees apply, which vary depending on the course, program, and provider. There are also subscription plans for certain programs that grant access to multiple courses. Companies can also customize edX's training programs for their employees.
 
-## Alternatives to edX
+## Alternatives
 
-- **Coursera** – Like edX, Coursera offers a wide range of courses from top universities with certificates and specializations.
-- **Udacity** – Focuses on technology-oriented Nanodegree programs, particularly in AI and Data Science.
-- **LinkedIn Learning** – Large collection of practical video courses, ideal for professional upskilling.
-- **FutureLearn** – Platform with a diverse range of courses from international universities, often with a social and cultural focus.
-- **Khan Academy** – Free educational offering with a focus on school and foundational knowledge, less focused on certificates.
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with edX before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with edX before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with edX before moving data or ownership.
 
 ## FAQ
 
-**1. Can I use edX for free?
-Yes, many courses can be accessed and completed for free. However, a fee is required for an official certificate or specialized programs.
+**Who is edX for?**
 
-**2. Which languages are offered on edX?
-Most courses are in English, with some available in other languages, including German, depending on the course.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. How long do the courses on edX last?
-Course lengths vary: from a few weeks to several months, depending on the course content and learner pace.
+**How should I measure a edX pilot?**
 
-**4. Does edX offer courses specifically on Artificial Intelligence?
-Yes, there are numerous AI courses covering the basics, advanced techniques, and applications.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. Can I track my learning progress on edX?
-Yes, the platform offers tracking tools to monitor progress and provide personalized recommendations.
+**What data should not enter edX without review?**
 
-**6. Is there a mobile app for edX?
-Yes, edX has a mobile app that allows learners to access courses on-the-go.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. How recognized are the certificates from edX?
-Certificates are issued by renowned universities and are recognized in many industries, but their value can vary depending on the employer.
+**When should I choose an alternative to edX?**
 
-**8. Can I earn a complete degree through edX?
-edX offers MicroMasters and online Master's programs in collaboration with universities, which can be partially credited towards a traditional degree.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

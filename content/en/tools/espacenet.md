@@ -1,21 +1,20 @@
 ---
 slug: espacenet
 title: Espacenet
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Free
-tags:
-  - research
-  - patents
-  - search
-  - innovation
-official_url: 'https://worldwide.espacenet.com/'
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: "AI Research"
+price_model: Kostenlos
+official_url: "https://worldwide.espacenet.com/"
+description: "Espacenet in practice: workflow fit, limits, data handling, costs, and alternatives for a grounded decision."
+updated_at: 2026-07-17
+
 popularity: 0
-source_language: de
+tier: C
+generated_at: 2026-05-15
 translation: full
 ---
 # Espacenet
@@ -103,38 +102,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Espacenet is a **free** offer of the European Patent Office and can be used without any fees. There are no hidden costs or premium versions. This makes Espacenet particularly attractive for users who want to conduct reliable and comprehensive patent research without any financial commitments.
 
-## Alternatives to Espacenet
+## Alternatives
 
-- **Google Patents:** Free patent search with integration of Google search technologies and simple usage.
-- **PatentScope (WIPO):** Free access to the patent collection of the World Intellectual Property Organization with extended search functions.
-- **Derwent Innovation:** Professional paid tool for in-depth patent analysis and competitive observation.
-- **The Lens:** Open-source platform for patent and scientific research with extensive analysis tools.
-- **Orbit Intelligence:** Commercial solution for IP management and strategic patent analysis.
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Espacenet before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Espacenet before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Espacenet before moving data or ownership.
 
 ## FAQ
 
-**1. Is Espacenet really free to use?**
-Yes, Espacenet is a free service of the European Patent Office and requires no fees or subscriptions.
+**Who is Espacenet for?**
 
-**2. Do I need to register to use Espacenet?**
-No, registration is not mandatory. A free user account can be created for extended functions.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. Which patent offices are included in Espacenet?**
-Espacenet includes patents from numerous countries and regions, including European, US-American, Japanese, and many other national patent offices.
+**How should I measure a Espacenet pilot?**
 
-**4. Can I download patent documents?**
-Yes, many patent documents are available as PDFs for download, including descriptions and drawings.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. How up-to-date are the data in Espacenet?**
-The update of the data depends on the patent office and is updated regularly to ensure the most up-to-date data.
+**What data should not enter Espacenet without review?**
 
-**6. Is Espacenet suitable for filing patents?**
-Espacenet is primarily for research and analysis, not for patent filing. For patent filing, please contact the relevant patent office.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. Does Espacenet support patent family searches?**
-Yes, Espacenet provides an overview of patent families, which combines patents from different countries.
+**When should I choose an alternative to Espacenet?**
 
-**8. Is there a mobile app for Espacenet?**
-There is no official mobile app available, but the platform is accessible via mobile browsers.
-
----
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

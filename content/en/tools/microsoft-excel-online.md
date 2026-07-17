@@ -1,19 +1,20 @@
 ---
 slug: microsoft-excel-online
-title: Microsoft Excel Online
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
+title: "Microsoft Excel Online"
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Produktivität
 price_model: Freemium
-tags:
-  - spreadsheet
-  - productivity
-  - collaboration
-official_url: 'https://www.microsoft.com/en-us/microsoft-365/excel'
+official_url: "https://www.microsoft.com/en-us/microsoft-365/excel"
+description: "Microsoft Excel Online in practice: workflow fit, limits, data handling, costs, and alternatives for a grounded decision."
+updated_at: 2026-07-17
+
 popularity: 0
+tier: C
+generated_at: 2026-05-16
 translation: full
 ---
 # Microsoft Excel Online
@@ -107,36 +108,26 @@ Microsoft Excel Online can be used free of charge in the basic version if you ha
 
 More exact pricing details can vary depending on the provider and plan.
 
-## Alternatives to Microsoft Excel Online
+## Alternatives
 
-- **Google Sheets:** Free online spreadsheet service from Google with strong collaboration features.
-- **Zoho Sheet:** Part of the Zoho Office Suite, offering extensive spreadsheet functions and teamwork.
-- **OnlyOffice Spreadsheet Editor:** Open-source alternative with online and desktop versions.
-- **Apple Numbers:** For users in the Apple ecosystem, with a focus on design and ease of use.
-- **LibreOffice Calc:** Desktop software with extensive functionality, but no native online version.
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Microsoft Excel Online before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Microsoft Excel Online before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Microsoft Excel Online before moving data or ownership.
 
 ## FAQ
 
-**1. Do I need a Microsoft account to use Excel Online?**
-Yes, using Microsoft Excel Online requires a free Microsoft account.
+**Who is Microsoft Excel Online for?**
 
-**2. Can I use Excel Online without an internet connection?**
-Excel Online requires an active internet connection because it is web-based.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. Which functions are missing compared with the desktop version?**
-Some advanced analysis and macro functions are not available or are limited in Excel Online.
+**How should I measure a Microsoft Excel Online pilot?**
 
-**4. How secure is my data in Excel Online?**
-Data is stored in Microsoft data centers and protected by encryption and security measures; details depend on the subscription you choose.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. Can I use Excel Online on my smartphone or tablet?**
-Yes, Excel Online is accessible through the browser or the Microsoft Excel app on mobile devices.
+**What data should not enter Microsoft Excel Online without review?**
 
-**6. Is collaboration with multiple people at the same time possible?**
-Yes, multiple users can work on the same file simultaneously in real time and see changes.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. How much storage space do I get?**
-Storage depends on the OneDrive account and the Microsoft 365 plan you choose.
+**When should I choose an alternative to Microsoft Excel Online?**
 
-**8. Can I also download files from Excel Online as Excel files?**
-Yes, files can be downloaded in XLSX format and opened locally.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

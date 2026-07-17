@@ -1,19 +1,20 @@
 ---
 slug: drift
 title: Drift
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
-tags:
-  - assistant
-  - automation
-official_url: 'https://www.salesloft.com/platform/drift'
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: "AI Chatbots"
+price_model: "Je nach Plan"
+official_url: "https://www.salesloft.com/platform/drift"
+description: "Drift in practice: workflow fit, limits, data handling, costs, and alternatives for a grounded decision."
+updated_at: 2026-07-17
+
 popularity: 0
-source_language: de
+tier: C
+generated_at: 2026-05-15
 translation: full
 ---
 # Drift
@@ -98,36 +99,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Drift's pricing varies depending on the chosen plan, company size, and additional features. Typically, there are different tiers, from basic versions for smaller teams to comprehensive enterprise solutions with extended features and support. Prices are usually not publicly available and are offered on a case-by-case basis. A free trial or demo is often possible to evaluate the platform beforehand.
 
-## Alternatives to Drift
+## Alternatives
 
-- **Intercom:** Another platform for Conversational Marketing focusing on customer engagement and support
-- **HubSpot Chatbot:** Part of the HubSpot CRM suite with chatbot and automation features
-- **LivePerson:** A KI-based messaging platform for sales and customer service
-- **Zendesk Chat:** Live chat solution with automation capabilities for customer service
-- **ManyChat:** A chatbot platform optimized for social media and messenger marketing
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Drift before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Drift before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Drift before moving data or ownership.
 
 ## FAQ
 
-**1. What is Drift exactly?**
-Drift is a KI-based platform for Conversational Marketing and Sales Automation that helps businesses manage customer interactions through chatbots and live chat.
+**Who is Drift for?**
 
-**2. How does Drift's Lead Qualification work?**
-Drift uses intelligent chatbots to engage with website visitors in real-time, ask questions, and evaluate leads based on their responses, prioritizing them in real-time.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. Can Drift integrate with existing CRM systems?**
-Yes, Drift offers integrations with many popular CRM and marketing tools, enabling seamless data transfer and workflow automation.
+**How should I measure a Drift pilot?**
 
-**4. What are the benefits of Drift compared to traditional chat solutions?**
-Drift combines AI-driven automation with personalized customer communication, leading to higher conversion rates and more efficient sales processes.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. Is there a free version of Drift?**
-Depending on the provider and plan, there may be free trial versions or limited basic plans available, with detailed information available directly from the provider.
+**What data should not enter Drift without review?**
 
-**6. How secure is using Drift?**
-Drift typically implements industry-standard security measures, but businesses should review their own data protection and compliance requirements.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. For which company sizes is Drift suitable?**
-Drift is scalable and suitable for both small and large businesses with complex sales and marketing needs.
+**When should I choose an alternative to Drift?**
 
-**8. How long does the implementation of Drift take?**
-The implementation duration depends on the complexity of the integration and individual requirements, with noticeable results typically visible within a few weeks.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

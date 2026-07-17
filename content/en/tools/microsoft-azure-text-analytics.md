@@ -1,20 +1,20 @@
 ---
 slug: microsoft-azure-text-analytics
-title: Microsoft Azure Text Analytics
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
-tags:
-  - ai
-  - nlp
-  - api
-official_url: 'https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview'
+title: "Microsoft Azure Text Analytics"
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: "AI Infrastructure"
+price_model: "Je nach Plan"
+official_url: "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview"
+description: "A cloud-based text analysis service for extracting sentiment, key phrases, entities, language, and sensitive information from unstructured text through APIs and batch processing."
+updated_at: 2026-07-17
+
 popularity: 0
-description: 'A cloud-based text analysis service for extracting sentiment, key phrases, entities, language, and sensitive information from unstructured text through APIs and batch processing.'
+tier: C
+generated_at: 2026-05-16
 translation: full
 ---
 # Microsoft Azure Text Analytics
@@ -103,36 +103,26 @@ Microsoft Azure Text Analytics generally offers a usage-based pricing model that
 
 Exact prices vary depending on region, plan, and usage. For accurate and up-to-date pricing information, it is recommended to consult the official Azure website.
 
-## Alternatives to Microsoft Azure Text Analytics
+## Alternatives
 
-- **Google Cloud Natural Language API:** Offers similar NLP capabilities with a focus on the Google ecosystem.
-- [IBM Watson Natural Language Understanding](/tools/ibm-watson-natural-language-understanding/): Comprehensive text analysis with strong AI support and industry focus.
-- [Amazon Comprehend](/tools/amazon-comprehend/): AWS-based service for text analysis and entity recognition with seamless integration into AWS.
-- **SpaCy (Open Source):** Powerful NLP library for developers who want to train their own models.
-- **TextRazor:** API-based text analysis with a focus on entity extraction and semantic analysis.
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Microsoft Azure Text Analytics before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Microsoft Azure Text Analytics before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Microsoft Azure Text Analytics before moving data or ownership.
 
 ## FAQ
 
-**1. Which languages does Microsoft Azure Text Analytics support?**
-The service supports numerous languages, including English, German, Spanish, French, Chinese, and many others. The exact list may vary depending on the feature.
+**Who is Microsoft Azure Text Analytics for?**
 
-**2. How is Microsoft Azure Text Analytics integrated?**
-Integration is mainly done via REST APIs, which can be used in various programming languages. SDKs are also available for common platforms.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. Is there a free trial?**
-Yes, Microsoft generally offers a free quota to test the service. Details are available on the Azure website.
+**How should I measure a Microsoft Azure Text Analytics pilot?**
 
-**4. How secure is the data when using it?**
-Microsoft Azure meets high security and privacy standards. Data is encrypted in transit and at rest. Special compliance offerings are available for sensitive data.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. Can Microsoft Azure Text Analytics also process large amounts of data?**
-Yes, the service is scalable and can analyze large volumes of text data in batch processing.
+**What data should not enter Microsoft Azure Text Analytics without review?**
 
-**6. What types of entities can be recognized?**
-Typical entities include people, organizations, places, dates, quantities, events, and more, depending on the feature.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. Is an internet connection required to use it?**
-Yes, since this is a cloud service, an internet connection is required.
+**When should I choose an alternative to Microsoft Azure Text Analytics?**
 
-**8. Can sentiment analysis be adapted to specific industries?**
-By default, sentiment analysis is general-purpose. For industry-specific customization, additional training or extensions are often required.
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.

@@ -1,20 +1,20 @@
 ---
 slug: metabase
 title: Metabase
-editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Open Source
-tags:
-  - analytics
-  - data
-  - dashboards
-  - open-source
-official_url: 'https://www.metabase.com/'
+editorial_reviewed: "true"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: "AI Infrastructure"
+price_model: "Open Source"
+official_url: "https://www.metabase.com/"
+description: "Metabase in practice: workflow fit, limits, data handling, costs, and alternatives for a grounded decision."
+updated_at: 2026-07-17
+
 popularity: 0
+tier: C
+generated_at: 2026-05-16
 translation: full
 ---
 # Metabase
@@ -94,38 +94,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Metabase is open source in its base version and can therefore be used free of charge when self-hosted. For companies that prefer a hosted solution or want additional support, the provider offers paid subscription plans. Prices vary depending on the plan and the number of users. Details on current pricing are available on the official website.
 
-## Alternatives to Metabase
+## Alternatives
 
-- **Tableau:** Powerful BI platform with extensive visualization and analytics features, usually paid.
-- **Power BI:** Microsoft’s business intelligence solution with broad integration into Office environments, subscription-based.
-- **Redash:** Open-source data visualization and query tool, similar to Metabase, with a focus on SQL.
-- **Looker:** Cloud-based BI platform with extensive analytics features, usually suited to larger companies.
-- **Grafana:** Open-source dashboarding tool specialized in time-series data and monitoring.
+- [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Metabase before moving data or ownership.
+- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Metabase before moving data or ownership.
+- [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Metabase before moving data or ownership.
 
 ## FAQ
 
-**1. Is Metabase really free?**
-Yes, the open-source version of Metabase can be downloaded for free and self-hosted. Additional features or hosted services incur costs.
+**Who is Metabase for?**
 
-**2. Which data sources does Metabase support?**
-Metabase supports a wide range of SQL databases such as MySQL, PostgreSQL, and SQL Server, as well as some NoSQL and cloud services.
+Teams with a recurring use case and an owner for quality, access, and maintenance.
 
-**3. Do I need programming knowledge to use Metabase?**
-No, Metabase is designed so that users without programming knowledge can create queries and build dashboards.
+**How should I measure a Metabase pilot?**
 
-**4. Can I use Metabase in the cloud?**
-Yes, in addition to self-installation there is also a hosted cloud version that is available through a subscription.
+Use one real workflow, define a success criterion first, and compare elapsed work, result quality, and rework with the previous method.
 
-**5. How secure is my data with Metabase?**
-With self-hosting, security is in your own hands. The cloud versions offer industry-standard security measures; details vary by provider.
+**What data should not enter Metabase without review?**
 
-**6. Is there a mobile app for Metabase?**
-Metabase does not offer its own mobile app, but dashboards can be accessed through mobile browsers.
+Sensitive material should wait until terms, roles, retention, deletion, and the responsible privacy or security approval are understood.
 
-**7. How does support work for Metabase?**
-For the open-source version, community support is available. Paid plans often include professional support.
+**When should I choose an alternative to Metabase?**
 
-**8. Can I customize Metabase to suit my individual needs?**
-Yes, thanks to its open-source nature, Metabase is highly customizable and can be extended with plugins and add-ons.
-
----
+When another tool covers the required core workflow with less configuration, clearer costs, or more suitable export and permission controls.
