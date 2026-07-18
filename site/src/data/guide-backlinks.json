@@ -84,6 +84,11 @@
         "excerpt": "KI-Agenten scheitern selten nur an einem HTTP-Fehler. Teams brauchen Traces, Tool-Kontext, Datenherkunft und klare Freigaben, um Agenten in Produktion wirklich zu verstehen."
       },
       {
+        "slug": "mozaik-wenn-agenten-auf-ereignisse-reagieren",
+        "title": "Mozaik: Wenn Agenten nicht nach Plan, sondern auf Ereignisse reagieren",
+        "excerpt": "Mozaik ist eine TypeScript-Runtime fuer reaktive Agenten. Der Beitrag zeigt, wann Event-Busse und geteilte Kontexte helfen, welche Betriebsrisiken sie schaffen und wie ein kleiner Pilot kontrollierbar bleibt."
+      },
+      {
         "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
         "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
         "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
@@ -256,6 +261,11 @@
         "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
         "title": "KI-Tools ohne Anmeldung: bequem, aber selten wirklich privat",
         "excerpt": "KI-Tools ohne Anmeldung sparen Zeit, sind aber kein Datenschutzsiegel. Wann No-Login sinnvoll ist — und wann Teams besser kontrollierte Tools nutzen."
+      },
+      {
+        "slug": "mozaik-wenn-agenten-auf-ereignisse-reagieren",
+        "title": "Mozaik: Wenn Agenten nicht nach Plan, sondern auf Ereignisse reagieren",
+        "excerpt": "Mozaik ist eine TypeScript-Runtime fuer reaktive Agenten. Der Beitrag zeigt, wann Event-Busse und geteilte Kontexte helfen, welche Betriebsrisiken sie schaffen und wie ein kleiner Pilot kontrollierbar bleibt."
       },
       {
         "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
@@ -441,6 +451,11 @@
         "excerpt": "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
       },
       {
+        "slug": "mozaik-wenn-agenten-auf-ereignisse-reagieren",
+        "title": "Mozaik: Wenn Agenten nicht nach Plan, sondern auf Ereignisse reagieren",
+        "excerpt": "Mozaik ist eine TypeScript-Runtime fuer reaktive Agenten. Der Beitrag zeigt, wann Event-Busse und geteilte Kontexte helfen, welche Betriebsrisiken sie schaffen und wie ein kleiner Pilot kontrollierbar bleibt."
+      },
+      {
         "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
         "title": "Multi-Model Coding: Wie Codex, Gemini und Claude sich sinnvoll gegenpruefen",
         "excerpt": "Mehrere Coding-Agenten helfen nicht, weil sie magisch objektiv sind. Sie helfen, wenn Planung, Umsetzung, Review und Verantwortung sauber getrennt bleiben."
@@ -536,6 +551,11 @@
         "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
         "title": "KI-Orchestrierung: Die neue Workflow-Ebene in der Softwareentwicklung",
         "excerpt": "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
+      },
+      {
+        "slug": "mozaik-wenn-agenten-auf-ereignisse-reagieren",
+        "title": "Mozaik: Wenn Agenten nicht nach Plan, sondern auf Ereignisse reagieren",
+        "excerpt": "Mozaik ist eine TypeScript-Runtime fuer reaktive Agenten. Der Beitrag zeigt, wann Event-Busse und geteilte Kontexte helfen, welche Betriebsrisiken sie schaffen und wie ein kleiner Pilot kontrollierbar bleibt."
       },
       {
         "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
@@ -1492,6 +1512,11 @@
         "excerpt": "AI agents rarely fail only through an HTTP error. Teams need traces, tool context, source provenance and approval records to understand agents in production."
       },
       {
+        "slug": "mozaik-wenn-agenten-auf-ereignisse-reagieren",
+        "title": "Mozaik: When Agents React to Events Instead of Following a Script",
+        "excerpt": "Mozaik is a TypeScript runtime for reactive agents. This guide explains when an event bus and shared context help, which operating risks they create and how to keep a small pilot under control."
+      },
+      {
         "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
         "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
         "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
@@ -1664,6 +1689,11 @@
         "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
         "title": "AI Tools Without Signup: Convenient, But Rarely Truly Private",
         "excerpt": "AI tools without signup remove friction, but they are not a privacy seal. When no-login tools are useful — and when teams need controlled workflows."
+      },
+      {
+        "slug": "mozaik-wenn-agenten-auf-ereignisse-reagieren",
+        "title": "Mozaik: When Agents React to Events Instead of Following a Script",
+        "excerpt": "Mozaik is a TypeScript runtime for reactive agents. This guide explains when an event bus and shared context help, which operating risks they create and how to keep a small pilot under control."
       },
       {
         "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
@@ -1849,6 +1879,11 @@
         "excerpt": "The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps."
       },
       {
+        "slug": "mozaik-wenn-agenten-auf-ereignisse-reagieren",
+        "title": "Mozaik: When Agents React to Events Instead of Following a Script",
+        "excerpt": "Mozaik is a TypeScript runtime for reactive agents. This guide explains when an event bus and shared context help, which operating risks they create and how to keep a small pilot under control."
+      },
+      {
         "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
         "title": "Multi-Model Coding: How Codex, Gemini and Claude Can Review Each Other Well",
         "excerpt": "More coding agents do not create automatic objectivity. They help when planning, implementation, review and accountability stay clearly separated."
@@ -1944,6 +1979,11 @@
         "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
         "title": "AI Orchestration: The New Workflow Layer in Software Development",
         "excerpt": "The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps."
+      },
+      {
+        "slug": "mozaik-wenn-agenten-auf-ereignisse-reagieren",
+        "title": "Mozaik: When Agents React to Events Instead of Following a Script",
+        "excerpt": "Mozaik is a TypeScript runtime for reactive agents. This guide explains when an event bus and shared context help, which operating risks they create and how to keep a small pilot under control."
       },
       {
         "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
