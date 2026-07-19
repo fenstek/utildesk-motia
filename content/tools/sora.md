@@ -95,4 +95,3 @@ Als historischer Referenzpunkt: Die Entwicklung von Sora erklärt, warum heutige
 
 **5. Was muss bei einem Ersatz geprüft werden?**
 Rechte, Markenfreigaben, Personenähnlichkeit, Exportformate, Kosten, Datenzugriff und der konkrete Freigabeprozess.
-
