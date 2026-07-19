@@ -2,24 +2,30 @@
 slug: perplexity
 title: Perplexity
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
+editorial_batch: 2026-07-19-product-update
 category: AI Writing
 price_model: Freemium
 tags: ["writing"]
 official_url: "https://www.perplexity.ai"
 affiliate_url: "https://www.perplexity.ai"
 tier: A
-lastReviewed: 2026-05-28
+lastReviewed: 2026-07-19
 mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "chatgpt-claude-gemini", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 created_at: 2026-02-02
-updated_at: 2026-06-12
+updated_at: 2026-07-19
 popularity: 0
 description: Perplexity ist eine KI-Such- und Antwortmaschine für schnelle Recherche mit Quellenhinweisen und Web-Kontext.
 ---
 # Perplexity
+
+## Stand vom 19. Juli 2026
+
+Perplexity entwickelt sich von der quellenorientierten Suche zu einer laenger laufenden Rechercheoberflaeche. Der aktuelle Produktstand umfasst unter anderem fortsetzbare Arbeit ueber vergangene Aufgaben, Modellwechsel innerhalb eines Auftrags sowie Funktionen fuer private Unternehmensrecherche und Veroeffentlichung. Diese Moeglichkeiten ersetzen aber nicht den Quellencheck: Eine plausible Antwort mit Links ist noch kein belastbarer Beleg.
+
+Fuer Teams eignet sich ein wiederholbares Briefing mit klaren Quellenklassen, Zeitfenster und Ergebnisformat. Bei Wettbewerbs- oder Marktanalysen sollten die verlinkten Primaerquellen in die Arbeitsnotiz uebernommen werden. Zugriffe auf interne Daten, gespeicherte Recherchekontexte und planabhaengige Limits gehoeren vor der breiten Nutzung in den Datenschutz- und Kostencheck.
 
 Perplexity verbindet Suchmaschine und KI-Antwort. Es eignet sich besonders für schnelle Orientierung, erste Marktchecks und Fragen, bei denen Quellenhinweise wichtiger sind als ein freier Chatverlauf.
 
@@ -77,7 +83,7 @@ Im Katalog ist Perplexity mit dem Preismodell **Freemium** geführt. Für die Pr
 
 **Zum Anbieter:** https://www.perplexity.ai
 
-## Alternativen zu Perplexity
+## Alternativen
 
 - [Chatgpt](/tools/chatgpt/): breiter KI-Assistent für Schreiben, Analyse, Code und flexible Aufgaben jenseits reiner Suche.
 - [Claude](/tools/claude/): stärker bei langen Dokumenten, vorsichtiger Textarbeit und strukturierten Reviews.
@@ -120,3 +126,7 @@ Quellen muessen geprueft, Zitate gelesen und Schlussfolgerungen getrennt bewerte
 ### Interne Vergleichspunkte
 
 Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [ChatGPT](/tools/chatgpt/), [Gemini](/tools/gemini/), [You.com](/tools/you-com/), [Poe](/tools/poe/). Diese Links helfen, Perplexity nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
+
+**Wie pruefe ich eine Perplexity-Recherche vor einer Entscheidung?**
+
+Oeffne die wichtigsten Originalquellen, halte Datum und Autor fest und trenne belegte Aussagen von Schlussfolgerungen der KI. Bei Markt-, Rechts- oder Kaufentscheidungen sollte eine Person die Quellenliste freigeben, nicht nur die Zusammenfassung.

@@ -2,24 +2,30 @@
 slug: gemini
 title: Gemini
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: "2026-07-19-product-update"
+category: "AI Writing"
 price_model: "Freemium"
 tags:
   - writing
 official_url: 'https://gemini.google.com/'
 affiliate_url: 'https://gemini.google.com/'
 created_at: 2026-02-02T00:00:00.000Z
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 source_language: de
 translation: full
 description: "Google's multimodal AI assistant for research, writing and analysis, with practical connections to Workspace, Search, Android and everyday team workflows."
 ---
 # Gemini
+
+## Status on 19 July 2026
+
+Gemini is increasingly more than a separate chat window inside the Google ecosystem. New capabilities in Docs, Sheets, Slides, and Drive can work with selected files, email, and web context; availability is staged and varies by plan or Workspace agreement. The useful outcome is a reviewable working draft built from existing material, not merely a summary.
+
+Before enabling it, administrators should define which data spaces can be used, which groups receive access, and how outputs are reviewed. A sound pilot takes one bounded process - such as preparing a proposal from Drive material - and measures handling time, source grounding, and required rework.
 
 Gemini deserves a practical look. It is strongest when judged along a real workflow: who puts material in, who reviews the output, and where does the result go next?
 
@@ -81,7 +87,7 @@ In the catalog, Gemini is marked with the pricing model **Freemium**. For a real
 
 **Provider:** https://gemini.google.com/
 
-## Alternatives to Gemini
+## Alternatives
 
 - [Claude](/en/tools/claude/): useful comparison point if workflow, pricing, or specialization should differ.
 - [ChatGPT](/en/tools/chatgpt/): useful comparison point if workflow, pricing, or specialization should differ.

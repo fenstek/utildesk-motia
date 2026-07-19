@@ -2,23 +2,29 @@
 slug: perplexity
 title: Perplexity
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: AI
+editorial_batch: 2026-07-19-product-update
+category: "AI Writing"
 price_model: Freemium
 tags:
   - writing
 official_url: 'https://www.perplexity.ai'
 affiliate_url: 'https://www.perplexity.ai'
 created_at: '2026-02-02'
-updated_at: 2026-06-12
+updated_at: 2026-07-19
 popularity: 0
 translation: full
 description: "Perplexity is an AI search and answer engine for fast research with source references and web context."
 ---
 # Perplexity
+
+## Status on 19 July 2026
+
+Perplexity is moving from source-oriented search toward a longer-running research surface. The current product includes continuation across past work, model switching within a task, and features for private-company research and publishing. None of this removes the need to check sources: a plausible answer with links is not yet a defensible finding.
+
+Teams should use a repeatable brief with defined source classes, time window, and output format. For market or competitive research, bring the linked primary sources into the working note. Access to internal data, retained research context, and plan-dependent limits belong in the privacy and cost review before wider adoption.
 
 Perplexity combines search engine and AI answer. It is especially useful for quick orientation, initial market checks, and questions where source references matter more than a free-form chat.
 
@@ -71,7 +77,7 @@ In the catalog, Perplexity is marked with the pricing model **Freemium**. For a 
 
 **Provider:** https://www.perplexity.ai
 
-## Alternatives to Perplexity
+## Alternatives
 
 - [Chatgpt](/en/tools/chatgpt/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Claude](/en/tools/claude/): useful comparison point for adjacent workflows, pricing, or team fit.
@@ -114,3 +120,7 @@ Sources must be checked, citations read and conclusions evaluated separately. Fo
 ### Internal comparison points
 
 Useful comparison points in the Utildesk catalogue are [ChatGPT](/en/tools/chatgpt/), [Gemini](/en/tools/gemini/), [You.com](/en/tools/you-com/), [Poe](/en/tools/poe/). These links keep Perplexity connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
+
+**How should I validate Perplexity research before a decision?**
+
+Open the most important primary sources, record their date and author, and separate sourced facts from the AI's inferences. For market, legal, or purchasing decisions, a person should approve the source list rather than only the summary.

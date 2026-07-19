@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-19_
 
+## 2026-07-19 - Editorial product-update pass for established AI tools
+
+- Refreshed the paired DE/EN cards for Brave, OpenRouter, Kimi, ChatGPT, Gemini, Perplexity, Cursor, ElevenLabs, Midjourney, Replit and GitHub Copilot from current official product and release materials.
+- Added concrete July-2026 operating guidance instead of duplicate cards: agent/browser boundaries, model-routing controls, current workspaces and connected data, agentic coding safeguards, voice-consent checks, image-production limits and production ownership.
+- Kept the existing single illustrations and FAQ inventories intact; synchronized editorial and last-modified metadata for all 22 language files and normalized the alternatives heading so the existing internal links render as tool alternatives.
+
 ## 2026-07-19 - Hype16 intake and editorial package
 
 - Added 16 verified high-interest candidates to the Google Sheet source of truth (rows 1777-1792) as `NEW`: ComfyUI, Dify, Langfuse, Kiro, GitHub Agentic Workflows, Amazon Bedrock AgentCore Browser, IBM Bob, Oracle AI Agent Studio, Flowise, Langflow, Google ADK, MCP Inspector, Qwen Code, Firebase Studio, Windsurf and SWE-agent.

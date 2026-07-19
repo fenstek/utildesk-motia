@@ -2,10 +2,10 @@
 slug: midjourney
 title: Midjourney
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update
 category: Design
 price_model: Abonnement
 tags: ["ai", "design", "image", "creative", "visual"]
@@ -14,11 +14,17 @@ affiliate_url: "https://www.midjourney.com/"
 tier: C
 generated_at: 2026-05-28
 created_at: 2026-02-02
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 description: KI-Bildgenerator für hochwertige Konzeptbilder, Illustrationen, Stimmungen und visuelle Experimente.
 ---
 # Midjourney
+
+## Stand vom 19. Juli 2026
+
+Mit V8.1 ist Midjourney schneller geworden und bietet HD-Ausgaben direkt im Web-Workflow. Fuer Editorial und Markenarbeit ist wichtiger als die Modellnummer, dass Prompt, Referenzen, Moodboard und Auswahlentscheidung als nachvollziehbare Serie behandelt werden. HD kostet mehr Rechenzeit; Bearbeitungsfunktionen wie Inpainting oder Outpainting koennen die Ausgabe wieder auf Standardaufloesung bringen.
+
+Ein guter Arbeitsablauf beginnt mit wenigen festen Bildprinzipien statt mit hundert Zufallsprompts: Motiv, Bildsprache, Ausschluesse, Freigabekriterium und Ablage. Danach wird ein kleines Set mit derselben Referenz getestet und nur die beste Richtung weiter ausgearbeitet. Vor der Veroeffentlichung bleiben Markenrecht, Personenbezug, Text im Bild und die Lizenzbedingungen ein menschlicher Check.
 
 Midjourney ist ein KI-Bildgenerator für hochwertige visuelle Konzepte, Illustrationen, Stimmungen und Bildexperimente.
 
@@ -85,7 +91,7 @@ Midjourney arbeitet mit kostenpflichtigen Plänen. Testmöglichkeiten, Limits un
 
 **Zum Anbieter:** https://www.midjourney.com/
 
-## Alternativen zu Midjourney
+## Alternativen
 
 - [DALL-E](/tools/dall-e/): für Bildgenerierung im OpenAI-Umfeld.
 - [Stable Diffusion](/tools/stable-diffusion/): für offene und selbst betreibbare Bildmodelle.
@@ -110,3 +116,7 @@ Für Inspiration ja, für finale Logos eher nicht. Logos müssen vektorisierbar,
 **Worauf sollte man achten?**
 
 Auf Rechte, Ähnlichkeiten zu bestehenden Werken, Personen- oder Markenbezüge, Bildfehler und konsistente Stilführung über mehrere Motive hinweg.
+
+**Wann lohnt sich HD bei Midjourney?**
+
+HD lohnt sich fuer Motive, die nach der Auswahl ohne starke Bearbeitung in eine groessere Ausgabe gehen sollen. Fuer schnelle Konzeptvarianten ist die Standardausgabe oft der bessere, schnellere und guenstigere Zwischenschritt.

@@ -2,11 +2,12 @@
 slug: cursor
 title: Cursor
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-19-product-update"
 category: "Entwickler-Tools"
+description: "Cursor ist ein agentischer Code-Editor fuer Refactoring, Tests und nachvollziehbare Aenderungen im Repository."
 price_model: "Freemium"
 tags:
   - ai
@@ -14,13 +15,19 @@ tags:
 official_url: 'https://www.cursor.com'
 affiliate_url: 'https://www.cursor.com'
 tier: "A"
-lastReviewed: "2026-05-21"
+lastReviewed: "2026-07-19"
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: "2026-02-07"
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 ---
 # Cursor
+
+## Stand vom 19. Juli 2026
+
+Cursor sollte inzwischen als Arbeitsflaeche fuer mehrere agentische Coding-Auftraege bewertet werden. Aktuelle Erweiterungen betreffen parallele Sitzungen, Side-Chats mit Suche im Verlauf, Cloud-Agent-Hooks, Team-MCP-Marktplatz und Aufgaben aus Slack. Das beschleunigt die Uebergabe, veraendert aber auch die Angriffs- und Kontrollflaeche eines Projekts.
+
+Ein Team sollte Agenten deshalb nicht mit einem unbeschraenkten Repository starten lassen. Sinnvoll sind ein kleiner Issue-Scope, gesperrte Produktionssecrets, ein erlaubter Tool- und MCP-Satz, Testpflicht und ein Review vor jedem Merge. Fuer Cloud-Aufgaben gehoeren Kosten, Laufzeit und Zugang zu verbundenen Diensten in den selben Pull-Request-Check wie der Code.
 
 Cursor ist ein KI-Code-Editor für Entwickler, die Chat, Codebase-Kontext und konkrete Änderungen in derselben Arbeitsfläche nutzen wollen. Der praktische Wert liegt nicht in einzelnen Vorschlägen, sondern darin, schneller durch fremde Repositories zu navigieren, kleine Patches vorzubereiten und Tests oder Review-Fragen direkt am Code zu klären.
 
@@ -65,13 +72,13 @@ Cursor richtet sich vor allem an Softwareentwickler, die regelmäßig in bestehe
 
 Cursor bietet ein Freemium-Modell an. Die kostenlose Version umfasst grundlegende Funktionen wie einfache Code-Vervollständigung und Basis-Fehlererkennung. Für erweiterte Features wie tiefere Code-Analysen, Teamfunktionen und Prioritäts-Support gibt es verschiedene kostenpflichtige Pläne. Die Preise variieren je nach Anbieter und gewähltem Paket und können monatlich oder jährlich abgerechnet werden.
 
-## Alternativen zu Cursor
+## Alternativen
 
-- [GitHub Copilot](/tools/github-copilot/): Ein KI-gestütztes Coding-Tool von GitHub, das Code-Vorschläge direkt in der IDE anbietet.
-- [Tabnine](/tools/tabnine/): KI-basierte Autovervollständigung, die in viele Editoren integriert werden kann.
-- **Kite:** Automatisierte Code-Vervollständigung mit Fokus auf Python.
-- **Codeium:** Kostenloses KI-Coding-Tool mit schnellen Vorschlägen.
-- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): KI-basierte Programmierhilfe mit Integration in AWS-Services.
+- [GitHub Copilot](/tools/github-copilot/): wenn Repository-, Pull-Request- und Plattformintegration im Mittelpunkt stehen.
+- [OpenAI Codex](/tools/openai-codex/): fuer kontrollierte Agentenlaeufe mit Terminal, Tests und Repository-Kontext.
+- [Windsurf](/tools/windsurf/): wenn ein anderer agentischer Editor-Workflow besser zum Team passt.
+- [Tabnine](/tools/tabnine/): fuer editornahe Code-Vervollstaendigung mit engerem Scope.
+- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): fuer Entwicklungsworkflows nahe AWS.
 
 ## Was im Alltag wirklich zählt
 

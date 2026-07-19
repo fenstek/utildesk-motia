@@ -2,11 +2,11 @@
 slug: chatgpt
 title: ChatGPT
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: "2026-07-19-product-update"
+category: "AI Chatbots"
 price_model: Freemium
 tags:
   - ai
@@ -15,7 +15,7 @@ tags:
 official_url: "https://chatgpt.com/"
 affiliate_url: "https://chatgpt.com/"
 created_at: 2026-01-26T00:00:00.000Z
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 source_language: de
 translation: full
@@ -23,6 +23,12 @@ description: "OpenAI's general-purpose AI workspace for research, writing, codin
 ---
 
 # ChatGPT
+
+## Status on 19 July 2026
+
+The current desktop experience separates quick chats from longer Work tasks and makes Projects plus search across chats, files, and images more visible. Work can continue across web, mobile, and desktop, while local conversations remain on the originating computer. That makes context and storage part of the workflow, rather than a secondary detail after model choice.
+
+Use a simple operating rule: share Project context only for a defined initiative, separate files by sensitivity, and version important results outside the chat. When using apps or connected services, review permissions per connection and keep actions with external effects behind deliberate confirmation.
 
 ChatGPT is OpenAI's AI assistant for people who want to get from a question to a usable draft quickly. The tool writes, explains, structures, translates, analyzes files, helps with programming, and can work with web search, images, voice, Canvas, and agentic features depending on the plan.
 
@@ -106,7 +112,7 @@ ChatGPT has free entry options and paid plans for higher limits, additional feat
 
 **Go to provider:** https://chatgpt.com/
 
-## Alternatives to ChatGPT
+## Alternatives
 
 - [Claude](/en/tools/claude/): Especially strong for long text, analysis, writing, and careful reasoning.
 - [Gemini](/en/tools/gemini/): Interesting for users in the Google ecosystem and multimodal tasks.

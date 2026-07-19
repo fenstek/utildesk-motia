@@ -2,24 +2,30 @@
 slug: gemini
 title: Gemini
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update
 category: AI Writing
 price_model: Freemium
 tags: ["writing"]
 official_url: "https://gemini.google.com/"
 affiliate_url: "https://gemini.google.com/"
 tier: A
-lastReviewed: 2026-05-28
+lastReviewed: 2026-07-19
 mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "chatgpt-claude-gemini", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 created_at: 2026-02-02
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 description: Gemini ist Googles KI-Assistent für Schreiben, Recherche, Ideenarbeit und produktnahe Workspace-Workflows.
 ---
 # Gemini
+
+## Stand vom 19. Juli 2026
+
+Gemini ist im Google-Umfeld deutlich mehr als ein separates Chatfenster geworden. Neue Funktionen in Docs, Sheets, Slides und Drive koennen mit ausgewaehlten Dateien, E-Mails und Web-Kontext arbeiten; Teile davon werden gestaffelt und je nach Plan oder Workspace-Vertrag bereitgestellt. Der praktische Wert entsteht dort, wo ein Team aus vorhandenen Unterlagen eine pruefbare Arbeitsfassung statt nur eine Zusammenfassung braucht.
+
+Vor der Aktivierung sollte die Administration festlegen, welche Datenraeume einbezogen werden duerfen, welche Nutzergruppen Zugriff erhalten und wie Ergebnisse kontrolliert werden. Ein guter Pilot nimmt einen begrenzten Prozess - etwa die Vorbereitung eines Angebots aus Drive-Material - und misst Bearbeitungszeit, Quellenbezug und notwendige Nacharbeit.
 
 Bei Gemini lohnt sich ein nüchterner Blick. Das Tool wirkt am stärksten, wenn man es nicht isoliert bewertet, sondern entlang eines echten Arbeitsablaufs: Wer gibt Material hinein, wer prüft das Ergebnis, und wo landet es danach?
 
@@ -83,7 +89,7 @@ Im Katalog ist Gemini mit dem Preismodell **Freemium** geführt. Für eine belas
 
 **Zum Anbieter:** https://gemini.google.com/
 
-## Alternativen zu Gemini
+## Alternativen
 
 - [Claude](/tools/claude/): stärker, wenn Schreiben, Analyse, Code, Rechercheunterstützung und lange Dokumentkontexte gefragt ist.
 - [ChatGPT](/tools/chatgpt/): passender, wenn der Schwerpunkt auf Schreiben, Recherche, Code, Datenanalyse, Bilder und alltägliche Wissensarbeit liegt.

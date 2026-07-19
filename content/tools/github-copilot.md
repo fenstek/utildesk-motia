@@ -2,23 +2,30 @@
 slug: github-copilot
 title: GitHub Copilot
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update
 category: Entwickler-Tools
+description: "GitHub Copilot unterstuetzt Code, Reviews und agentische Aufgaben, braucht aber Tests, Sicherheitschecks und menschliche Freigabe."
 price_model: Freemium
 tags: 
 official_url: "https://github.com/features/copilot/"
 affiliate_url: "https://github.com/features/copilot/"
 tier: A
-lastReviewed: 2026-05-27
+lastReviewed: 2026-07-19
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-02-02
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 ---
 # GitHub Copilot
+
+## Stand vom 19. Juli 2026
+
+GitHub Copilot umfasst inzwischen parallele Sitzungen, einen integrierten Browser, synchronisierte Verlaeufe, Modellwahl und bessere Kosten- und Nutzungsdaten. Der Coding Agent kann ausserdem Security-Pruefungen wie Code Scanning, Secret Scanning und Dependency-Vulnerability-Checks in seinen Ablauf einbeziehen. Das erweitert den Nutzen, macht aber die Abnahme eines Pull Requests nicht optional.
+
+Der robuste Teamablauf ist weiterhin unspektakulaer: Issue mit Akzeptanzkriterien, begrenzter Agentenauftrag, Tests und Security-Checks, danach ein menschliches Review des Diff und der Release-Auswirkung. Parallelitaet hilft bei klar getrennten Aufgaben; bei Migrationen, Berechtigungen und gemeinsam genutzten Dateien steigt ohne Koordination eher das Risiko als die Geschwindigkeit.
 
 GitHub Copilot ist ein KI-basierter Code-Assistent, der Entwicklern hilft, schneller und effizienter zu programmieren. Durch die Integration in gängige Code-Editoren wie Visual Studio Code bietet Copilot kontextabhängige Code-Vervollständigungen und Vorschläge, die auf Millionen von Open-Source-Codebeispielen basieren. Dieses Tool unterstützt zahlreiche Programmiersprachen und Frameworks und eignet sich ideal, um Routineaufgaben zu automatisieren, neue Funktionen zu implementieren oder komplexe Algorithmen zu entwickeln.
 
@@ -115,13 +122,13 @@ Die genauen Preise können je nach Region und Anbieter variieren. Weitere Detail
 
 👉 **Zum Anbieter:** https://github.com/features/copilot/
 
-## Alternativen zu GitHub Copilot
+## Alternativen
 
-- [Tabnine](/tools/tabnine/): KI-basierter Code-Assistent mit breiter Sprachunterstützung und lokalem Modus.
-- **Kite:** Bietet intelligente Autovervollständigung und Dokumentationshilfe, besonders für Python.
-- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): KI-Codegenerator mit Fokus auf AWS-Integration und Cloud-Services.
-- **Codex (OpenAI):** Basis der GitHub Copilot-Technologie, direkt von OpenAI verfügbar.
-- [Visual Studio IntelliCode](/tools/visual-studio-intellicode/): Microsofts KI-gestützte Codevervollständigung, integriert in Visual Studio.
+- [Cursor](/tools/cursor/): wenn Codebase-Chat und agentische Arbeit im Editor im Mittelpunkt stehen.
+- [OpenAI Codex](/tools/openai-codex/): wenn Aufgaben als kontrollierbare Agentenlaeufe mit Tests und Diffs abgearbeitet werden sollen.
+- [Windsurf](/tools/windsurf/): fuer einen anderen agentischen Editor-Workflow.
+- [Tabnine](/tools/tabnine/): fuer engere editornahe Vervollstaendigung.
+- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): fuer Entwicklungsworkflows nahe AWS.
 ## FAQ
 
 **1. Unterstützt GitHub Copilot alle Programmiersprachen?**

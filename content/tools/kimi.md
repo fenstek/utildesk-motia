@@ -2,10 +2,10 @@
 slug: kimi
 title: Kimi
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-19-product-update"
 category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, assistant, chatbot]
@@ -14,8 +14,15 @@ popularity: 0
 description: "Kimi ist ein KI-Assistent für KI-Assistent mit starkem Fokus auf lange Kontexte, Recherche und dokumentnahe Aufgaben."
 tier: "C"
 generated_at: "2026-05-12"
+updated_at: "2026-07-19"
 ---
 # Kimi
+
+## Stand vom 19. Juli 2026
+
+Bei Kimi muss heute strikt zwischen dem Chat-Produkt und den Modell- beziehungsweise API-Versionen unterschieden werden. Die offizielle Plattform kuendigt fuer Teile der K2-Serie das Ende der Wartung an; Modellnamen, Kontextgrenzen und Verfuegbarkeit duerfen deshalb nicht aus alten Vergleichsartikeln uebernommen werden. Der aktuelle Nutzen liegt weiterhin in langen Materialien, Recherche und agentischen Arbeitsablaeufen, aber nur nach einem Test mit der konkret gewaehlten Version.
+
+Ein belastbarer Testfall ist zum Beispiel ein festes Quellenpaket mit einer nachvollziehbaren Ergebnisform: Entscheidungsnotiz, Vergleichstabelle oder Code-Review. Das Team sollte dabei pruefen, welche Quellen wirklich verwendet wurden, ob Ergebnisse zwischen Laeufen stabil bleiben und ob hochgeladene Inhalte in den gewaehlten Daten- und Speicherregeln liegen. Fuer sensible oder langfristige Prozesse ist ein austauschbares Modell-Interface sinnvoller als eine harte Bindung an einen einzigen Kimi-Endpunkt.
 
 In der Praxis entscheidet bei Kimi nicht die Featureliste allein. Entscheidend ist, ob das Tool eine kleine, aber nervige Lücke im Workflow schließt: KI-Assistent mit starkem Fokus auf lange Kontexte, Recherche und dokumentnahe Aufgaben.
 
@@ -73,7 +80,7 @@ Im Katalog ist Kimi mit dem Preismodell **Freemium** geführt. Für eine belastb
 
 **Zum Anbieter:** https://www.kimi.com/
 
-## Alternativen zu Kimi
+## Alternativen
 
 - [Claude](/tools/claude/): stärker, wenn Schreiben, Analyse, Code, Rechercheunterstützung und lange Dokumentkontexte gefragt ist.
 - [ChatGPT](/tools/chatgpt/): passender, wenn der Schwerpunkt auf Schreiben, Recherche, Code, Datenanalyse, Bilder und alltägliche Wissensarbeit liegt.
