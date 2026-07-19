@@ -2,11 +2,12 @@
 slug: cursor
 title: Cursor
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
+editorial_batch: "2026-07-19-product-update"
+category: "Entwickler-Tools"
+description: "Cursor is an agentic code editor for refactoring, tests, and reviewable repository changes."
 price_model: Freemium
 tags:
   - ai
@@ -14,12 +15,18 @@ tags:
 official_url: 'https://www.cursor.com'
 affiliate_url: 'https://www.cursor.com'
 created_at: '2026-02-07'
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 source_language: de
 translation: full
 ---
 # Cursor
+
+## Status on 19 July 2026
+
+Cursor should now be assessed as a workspace for multiple agentic coding tasks. Recent additions cover parallel sessions, searchable side chats, cloud-agent hooks, a team MCP marketplace, and Slack-based work intake. That speeds up handoffs, but it also widens a project's security and control surface.
+
+Do not start an agent against an unconstrained repository. A safer setup uses a small issue scope, blocked production secrets, an allowed tool and MCP set, mandatory tests, and a review before every merge. For cloud tasks, cost, runtime, and access to connected services belong in the same pull-request check as the code.
 
 Cursor is an innovative developer tool that utilizes artificial intelligence to ease and accelerate programming work. It supports developers in code creation, error correction, and optimization by providing context-based suggestions and automations. As a Freemium model, Cursor offers both free basic functions and enhanced features in paid plans.
 
@@ -67,13 +74,13 @@ Cursor is primarily aimed at software developers who want to increase their prod
 
 Cursor offers a Freemium model. The free version includes basic functions such as simple code completion and basic error detection. Paid plans offer expanded features like deeper code analysis, team functions, and priority support. Prices vary depending on the provider and chosen package, and can be billed monthly or annually.
 
-## Alternatives to Cursor
+## Alternatives
 
-- [GitHub Copilot](/tools/github-copilot/): A KI-driven coding tool from GitHub that offers code suggestions directly in the IDE.
-- [Tabnine](/tools/tabnine/): AI-based auto-completion that can be integrated into many editors.
-- **Kite:** Automated code completion with a focus on Python.
-- **Codeium:** Free KI coding tool with fast suggestions.
-- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): KI-driven programming assistance with integration into AWS services.
+- [GitHub Copilot](/en/tools/github-copilot/): for teams that want repository, pull-request, and platform integration.
+- [OpenAI Codex](/en/tools/openai-codex/): for controlled agent runs with terminal, tests, and repository context.
+- [Windsurf](/en/tools/windsurf/): for a different agentic editor workflow.
+- [Tabnine](/en/tools/tabnine/): for editor-centric code completion with a narrower scope.
+- [Amazon CodeWhisperer](/en/tools/amazon-codewhisperer/): for development workflows close to AWS.
 
 ## What really matters in daily use
 

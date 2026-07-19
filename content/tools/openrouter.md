@@ -4,9 +4,9 @@ slug: "openrouter"
 title: "OpenRouter"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-07-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-07-19-product-update"
 category: "AI Coding"
 price_model: "tags: [\"developer-tools\", \"api\"]"
 tags: ["developer-tools", "api"]
@@ -14,10 +14,16 @@ official_url: "https://openrouter.ai"
 popularity: 0
 tier: D
 generated_at: 2026-05-13
-updated_at: "2026-07-17"
+updated_at: "2026-07-19"
 ---
 
 # OpenRouter
+
+## Stand vom 19. Juli 2026
+
+OpenRouter ist heute mehr als ein Modellschalter. Die Plattform hat einen eigenen MCP-Server, eine vereinheitlichte Image-API und Workspace-Guardrails wie Modell-Listen, Ausgabenlimits, PII-Redaktion und Optionen fuer strengere Datenbehandlung ergaenzt. Das macht sie fuer Teams interessant, die Modellzugriff nicht nur im Prototyp, sondern als kontrollierbare Plattformschicht betreiben wollen.
+
+Gerade deshalb darf Routing nicht unsichtbar bleiben. Ein produktiver Pilot braucht pro Aufgabe einen erlaubten Modellpool, Kostenobergrenzen, eine dokumentierte Fallback-Reihenfolge und Telemetrie fuer Fehler und Latenz. Auch mit mehreren Providern bleibt ein Ausfallplan notwendig: Ein Fallback kann andere Qualitaet, andere Datenbedingungen oder ein anderes Antwortformat bedeuten.
 
 OpenRouter ist eine API- und Routing-Plattform für den Zugriff auf verschiedene KI-Modelle über eine einheitliche Schnittstelle. Der Wert liegt in Flexibilität: Teams können Modelle vergleichen, wechseln und je nach Aufgabe anders routen.
 

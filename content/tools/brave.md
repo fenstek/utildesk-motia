@@ -4,9 +4,9 @@ slug: "brave"
 title: "Brave"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-07-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-07-19-product-update"
 category: "Produktivität"
 price_model: "Free"
 tags: [browser,privacy,web,ai]
@@ -14,10 +14,16 @@ official_url: "https://brave.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-16"
-updated_at: "2026-07-17"
+updated_at: "2026-07-19"
 ---
 
 # Brave
+
+## Stand vom 19. Juli 2026
+
+Brave ist inzwischen nicht nur ein Browser mit eingebautem Tracking-Schutz. Das Unternehmen testet agentisches Browsing ueber Leo in den regulären Browser-Kanaelen und baut seine Suchschnittstellen fuer KI-Anwendungen weiter aus. Fuer Nutzer sind das zwei unterschiedliche Dinge: Leo im Browser kann Arbeitsschritte auf Websites vorbereiten, waehrend die Search-APIs fuer eigene Produkte und Agenten gedacht sind.
+
+Der produktive Gewinn entsteht nur mit klaren Grenzen. Ein Browser-Agent darf keine unklaren Logins, Zahlungen, Formularversand oder Rechteaenderungen stillschweigend erledigen. Teams sollten Leo deshalb zuerst mit einem abgegrenzten Rechercheauftrag, einer separaten Testidentitaet und sichtbarer menschlicher Freigabe testen. Fuer eine eigene KI-Suche gehoeren Quellen, Rate Limits, Kosten und die Weitergabe von Nutzeranfragen in dieselbe Architekturentscheidung.
 
 Brave ist ein moderner Webbrowser, der besonderen Wert auf Datenschutz, Geschwindigkeit und Sicherheit legt. Er blockiert standardmäßig Tracker und Werbung, was die Ladezeiten von Webseiten deutlich verkürzt und gleichzeitig die Privatsphäre der Nutzer schützt. Darüber hinaus integriert Brave innovative Funktionen wie eine optionale Belohnungsfunktion für das Ansehen von datenschutzfreundlicher Werbung und unterstützt moderne Webtechnologien inklusive KI-Tools.
 

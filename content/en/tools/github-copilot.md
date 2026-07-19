@@ -2,22 +2,29 @@
 slug: github-copilot
 title: GitHub Copilot
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
+editorial_batch: "2026-07-19-product-update"
+category: Entwickler-Tools
+description: "GitHub Copilot supports code, review, and agentic tasks but still needs tests, security checks, and human approval."
 price_model: Freemium
 tags: null
 official_url: 'https://github.com/features/copilot/'
 affiliate_url: 'https://github.com/features/copilot/'
 created_at: 2026-02-02T00:00:00.000Z
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 source_language: de
 translation: full
 ---
 # GitHub Copilot
+
+## Status on 19 July 2026
+
+GitHub Copilot now includes parallel sessions, an integrated browser, synchronized history, model choice, and clearer usage and cost data. The coding agent can also incorporate security checks such as code scanning, secret scanning, and dependency-vulnerability checks into its workflow. That broadens the value, but it does not make pull-request acceptance optional.
+
+The robust team flow is still unglamorous: an issue with acceptance criteria, a bounded agent assignment, tests and security checks, followed by human review of the diff and release impact. Parallel work helps with clearly separated tasks; for migrations, permissions, and shared files it can increase risk faster than speed without coordination.
 
 GitHub Copilot is a code-assisted AI tool that helps developers write code faster and more efficiently. By integrating with popular code editors like Visual Studio Code, Copilot provides context-dependent code completions and suggestions based on millions of open-source code examples. This tool supports a wide range of programming languages and frameworks and is ideal for automating routine tasks, implementing new features, or developing complex algorithms.
 
@@ -114,13 +121,13 @@ The exact prices may vary depending on the region and provider. For more informa
 
 👉 **To the provider:** https://github.com/features/copilot/
 
-## Alternatives to GitHub Copilot
+## Alternatives
 
-- [Tabnine](/tools/tabnine/): AI-powered code-assistant with broad language support and local mode.
-- **Kite:** Offers intelligent auto-completion and documentation assistance, particularly for Python.
-- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): AI code generator with a focus on AWS integration and cloud services.
-- **Codex (OpenAI):** Based on the GitHub Copilot technology, available directly from OpenAI.
-- [Visual Studio IntelliCode](/tools/visual-studio-intellicode/): Microsoft's AI-powered code completion, integrated into Visual Studio.
+- [Cursor](/en/tools/cursor/): for codebase chat and agentic work inside a dedicated editor.
+- [OpenAI Codex](/en/tools/openai-codex/): for controlled agent runs with tests and visible diffs.
+- [Windsurf](/en/tools/windsurf/): for another agentic editor workflow.
+- [Tabnine](/en/tools/tabnine/): for narrower editor-centric completion.
+- [Amazon CodeWhisperer](/en/tools/amazon-codewhisperer/): for development workflows close to AWS.
 ## FAQ
 
 **1. Does GitHub Copilot support all programming languages?**

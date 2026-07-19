@@ -2,11 +2,11 @@
 slug: kimi
 title: Kimi
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: "2026-07-19-product-update"
+category: "AI Chatbots"
 price_model: "Freemium"
 tags:
   - ai
@@ -16,8 +16,15 @@ official_url: 'https://www.kimi.com/'
 popularity: 0
 translation: full
 description: "Kimi is a AI assistant for AI assistant with a strong focus on long context, research, and document-heavy tasks."
+updated_at: "2026-07-19"
 ---
 # Kimi
+
+## Status on 19 July 2026
+
+Kimi now needs to be evaluated by separating the chat product from specific model and API versions. The official platform has announced end-of-maintenance for parts of the K2 series, so model names, context limits, and availability should never be copied from an old comparison. Its practical role remains long-document work, research, and agentic tasks, but only after testing the exact version being adopted.
+
+A durable pilot uses a fixed source pack and a reviewable output: a decision note, comparison table, or code review. Check which sources were actually used, whether results remain stable across runs, and whether uploaded material fits the chosen data and retention rules. For sensitive or long-lived workflows, an interchangeable model interface is safer than a hard dependency on one Kimi endpoint.
 
 In practice, Kimi is not defined by the feature list alone. It matters whether the tool closes a small but persistent workflow gap: AI assistant with a strong focus on long context, research, and document-heavy tasks.
 
@@ -73,7 +80,7 @@ In the catalog, Kimi is marked with the pricing model **Freemium**. For a real d
 
 **Provider:** https://www.kimi.com/
 
-## Alternatives to Kimi
+## Alternatives
 
 - [Claude](/en/tools/claude/): useful comparison point if workflow, pricing, or specialization should differ.
 - [ChatGPT](/en/tools/chatgpt/): useful comparison point if workflow, pricing, or specialization should differ.

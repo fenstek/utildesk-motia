@@ -2,11 +2,12 @@
 slug: elevenlabs
 title: ElevenLabs
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Audio
+editorial_batch: "2026-07-19-product-update"
+category: "Audio & Video"
+description: "ElevenLabs provides speech, dubbing, and voice-agent workflows that require consent and operational controls."
 price_model: Freemium
 tags:
   - ai
@@ -14,12 +15,18 @@ tags:
 official_url: 'https://elevenlabs.io/'
 affiliate_url: 'https://elevenlabs.io/'
 created_at: '2026-02-07'
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 0
 source_language: de
 translation: full
 ---
 # ElevenLabs
+
+## Status on 19 July 2026
+
+ElevenLabs is no longer only a text-to-speech product. Dubbing v2, music and audio capabilities, procedures for ElevenAgents, and audio detection extend it toward localization, automated conversations, and media production. Those are different risk profiles: a convincing voice is not automatically a reliable support agent, and a technically possible clone is not automatically authorized.
+
+A useful pilot separates the jobs. For dubbing, approve pronunciation, timing, and final output for each language; for voice agents, use bounded dialog paths, human escalation, and an answer log. Before any voice cloning, document consent, purpose, access, and deletion path.
 
 ElevenLabs is a cutting-edge AI-based audio platform specializing in the creation and editing of speech content. With modern text-to-speech technologies, ElevenLabs enables natural and expressive speech synthesis that can be used in various applications. The platform offers both a free entry-level version and paid plans with enhanced features.
 
@@ -68,13 +75,12 @@ ElevenLabs is suitable for a wide range of users, including content creators, po
 
 ElevenLabs offers a freemium model, allowing a free entry-level version with basic features. Paid plans offer expanded functionality, including unlimited usage, voice cloning, commercial licenses, and API access. Prices vary depending on the provider and plan. A detailed overview is available on the official website and should be reviewed before booking.
 
-## Alternatives to ElevenLabs
+## Alternatives
 
-- **Google Text-to-Speech:** Widely used solution with broad language support and easy integration.
-- [Amazon Polly](/tools/amazon-polly/): AI-based speech synthesis with numerous voices and extensive API.
-- [IBM Watson Text to Speech](/tools/ibm-watson-text-to-speech/): Professional platform with customization options and good scalability.
-- [Microsoft Azure Speech Service](/tools/microsoft-azure-speech-service/): Varied text-to-speech options with strong developer support.
-- [Descript Overdub](/tools/descript-overdub/): Focus on voice cloning and audio editing for content creators.
+- [Descript Overdub](/en/tools/descript-overdub/): when voice cloning and audio editing belong in one content workflow.
+- [Amazon Polly](/en/tools/amazon-polly/): for API-first speech synthesis in AWS-oriented systems.
+- [IBM Watson Text to Speech](/en/tools/ibm-watson-text-to-speech/): for an enterprise platform with customization controls.
+- [Microsoft Azure Speech Service](/en/tools/microsoft-azure-speech-service/): for teams operating in the Azure ecosystem.
 
 ## What really matters in daily use
 

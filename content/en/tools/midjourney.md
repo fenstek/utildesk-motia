@@ -2,17 +2,17 @@
 slug: midjourney
 title: Midjourney
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-19-product-update"
 category: "Design"
-price_model: "Subscription"
+price_model: "Abonnement"
 tags: ["ai", "design", "image", "creative", "visual"]
 official_url: "https://www.midjourney.com/"
 affiliate_url: "https://www.midjourney.com/"
 created_at: 2026-02-02
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 37
 source_language: de
 translation: full
@@ -20,6 +20,12 @@ description: "AI image generator for high-quality concept images, illustrations,
 ---
 
 # Midjourney
+
+## Status on 19 July 2026
+
+With V8.1, Midjourney is faster and supports HD outputs directly in its web workflow. For editorial and brand work, the useful shift is not the version label but treating prompt, references, moodboard, and selection as a traceable series. HD consumes more compute time, while editing features such as inpainting or outpainting can return an image to standard definition.
+
+Start with a few fixed visual principles instead of a hundred random prompts: subject, visual language, exclusions, approval criterion, and storage. Test a small set against the same reference and develop only the strongest direction. Before publishing, brand rights, likeness, text inside imagery, and licence terms still require human review.
 
 Midjourney is an AI image generator for high-quality visual concepts, illustrations, moods, and image experiments.
 
@@ -81,7 +87,7 @@ Midjourney uses paid plans. Trial availability, limits, and usage rights can cha
 
 **Go to provider:** https://www.midjourney.com/
 
-## Alternatives to Midjourney
+## Alternatives
 
 - [DALL-E](/en/tools/dall-e/): for image generation in the OpenAI ecosystem.
 - [Stable Diffusion](/en/tools/stable-diffusion/): for open and self-hostable image models.
@@ -106,3 +112,7 @@ Sometimes, but reliable typography usually needs post-processing.
 **Can I use images commercially?**
 
 That depends on the plan and terms. Review them before campaign use.
+
+**When is Midjourney HD worth using?**
+
+HD is worthwhile for selected images that need a larger final output without heavy editing. For rapid concept variations, standard output is often the faster and less expensive intermediate step.

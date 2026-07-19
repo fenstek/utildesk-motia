@@ -3,9 +3,9 @@ slug: "brave"
 title: "Brave"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-07-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-07-19-product-update"
 category: "Produktivität"
 price_model: "Free"
 tags:
@@ -16,10 +16,16 @@ tags:
 official_url: "https://brave.com/"
 description: "Brave is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
 translation: "full"
-updated_at: "2026-07-17"
+updated_at: "2026-07-19"
 ---
 
 # Brave
+
+## Status on 19 July 2026
+
+Brave is no longer only a browser with tracker blocking. The company is testing agentic browsing through Leo in the regular browser channels and is expanding search interfaces for AI applications. Those are distinct products in practice: Leo can prepare work on websites, while the Search APIs are for building products and agents.
+
+The useful boundary is operational, not promotional. A browser agent should not silently handle ambiguous logins, payments, form submissions, or permission changes. Teams should first try Leo on a narrow research task, with a separate test identity and explicit human approval. When using Brave Search in a product, source provenance, rate limits, cost, and the handling of user queries belong in the same design review.
 
 Brave is a modern web browser that places special emphasis on privacy, speed, and security. It blocks trackers and advertisements by default, which considerably shortens webpage loading times while simultaneously protecting users' privacy. Moreover, Brave integrates innovative features such as an optional rewards system for watching privacy-friendly ads and supports modern web technologies including AI tools.
 

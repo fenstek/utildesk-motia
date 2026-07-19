@@ -2,24 +2,30 @@
 slug: chatgpt
 title: ChatGPT
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update
 category: AI Chatbots
 price_model: Freemium
 tags: ["ai", "chatbot", "llm"]
 official_url: "https://chatgpt.com/"
 affiliate_url: "https://chatgpt.com/"
 tier: A
-lastReviewed: 2026-05-28
+lastReviewed: 2026-07-19
 mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "chatgpt-claude-gemini", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 created_at: 2026-01-26
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 63
 description: KI-Assistent von OpenAI für Schreiben, Recherche, Code, Datenanalyse, Bilder und alltägliche Wissensarbeit.
 ---
 # ChatGPT
+
+## Stand vom 19. Juli 2026
+
+Die aktuelle Desktop-Oberflaeche trennt kurze Chats von laengerer Work-Arbeit und macht Projekte sowie die Suche ueber Chats, Dateien und Bilder sichtbarer. Arbeit kann zwischen Web, Mobilgeraet und Desktop fortgesetzt werden; lokale Unterhaltungen bleiben dagegen auf dem jeweiligen Rechner. Das ist fuer Teams wichtiger als eine weitere Modellrangliste, weil Kontext und Ablage nun Teil des Workflows werden.
+
+Praktisch empfiehlt sich eine kleine Arbeitsordnung: Projektkontext nur fuer ein klares Vorhaben freigeben, Dateien nach Vertraulichkeit trennen und wichtige Ergebnisse ausserhalb des Chats versionieren. Wer Apps oder angeschlossene Dienste nutzt, sollte Berechtigungen je Verbindung pruefen und Ausfuehrungen mit Wirkung nach aussen bewusst bestaetigen.
 
 ChatGPT ist der KI-Assistent von OpenAI für Menschen, die schnell von einer Frage zu einem brauchbaren Entwurf kommen wollen. Das Tool schreibt, erklärt, strukturiert, übersetzt, analysiert Dateien, hilft beim Programmieren und kann je nach Plan auch mit Websuche, Bildern, Sprache, Canvas und agentischen Funktionen arbeiten.
 
@@ -103,7 +109,7 @@ ChatGPT hat kostenlose Einstiegsmöglichkeiten und kostenpflichtige Pläne für 
 
 **Zum Anbieter:** https://chatgpt.com/
 
-## Alternativen zu ChatGPT
+## Alternativen
 
 - [Claude](/tools/claude/): Besonders stark für lange Texte, Analyse, Schreiben und vorsichtiges Schlussfolgern.
 - [Gemini](/tools/gemini/): Interessant für Nutzer im Google-Ökosystem und multimodale Aufgaben.
