@@ -99,12 +99,6 @@ Neben dem Listenpreis sollte bei D-ID auch der Einführungsaufwand berücksichti
 - [Pictory](/tools/pictory/): für text- und long-form-basierte Videozusammenfassungen.
 - [CapCut](/tools/capcut/): wenn ein menschlich geschnittenes Social-Format die passendere Lösung ist.
 
-- **Synthesia**: KI-basierte Videoplattform mit Fokus auf personalisierte Avatare und Unternehmensvideos.
-- **Rephrase.ai**: Automatisierte Videoerstellung mit realistischen Sprecheranimationen.
-- **DeepBrain**: Plattform zur Erstellung von KI-gestützten Video-Avataren für Marketing und Bildung.
-- **Lumen5**: Tool zur Umwandlung von Texten in Videos, geeignet für Social Media Content.
-- **Pictory**: Automatisierte Videoerstellung aus langen Texten oder Blogbeiträgen.
-
 Beim Vergleich lohnt es sich, D-ID nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch CRM-, E-Mail-, Social-, Analytics- und Sales-Engagement-Tools die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
 
 ## FAQ

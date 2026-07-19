@@ -82,7 +82,7 @@ LiteLLM is listed as Open Source. Costs come from gateway hosting, observability
 
 **Provider:** https://www.litellm.ai/
 
-## Alternatives To LiteLLM
+## Alternatives
 
 - [OpenRouter](/en/tools/openrouter/): when an external model marketplace is desired.
 - [Anthropic API](/en/tools/anthropic-api/): when Claude should be used directly.

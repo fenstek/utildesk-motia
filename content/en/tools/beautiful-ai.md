@@ -77,12 +77,6 @@ Beautiful.ai offers a Freemium model: The basic functions are free to use, but w
 - [Gamma](/en/tools/gamma/): when AI-supported narrative documents and presentations are the focus.
 - [Visme](/en/tools/visme/): for presentations and infographics with stronger visual data treatment.
 
-- **Canva**: A versatile design tool with extensive presentation templates and easy-to-use interface.
-- **Microsoft PowerPoint**: Classic presentation program with extensive features and wide adoption.
-- **Google Slides**: Free, cloud-based presentation tool with team collaboration.
-- **Prezi**: Presentations with dynamic zoom effects and unconventional layouts.
-- **Visme**: Tool for presentations and infographics with a focus on visual storytelling elements.
-
 ## What really matters in daily use
 
 Beautiful.ai helps presentations look clean faster because layout rules and design logic absorb much of the manual work. The story still matters most: an automatically tidy deck only persuades when the message, sequence, and purpose of each slide are clear.

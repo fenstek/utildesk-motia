@@ -82,7 +82,7 @@ Salesforce Lightning is listed as Subscription. Costs depend on edition, users, 
 
 **Provider:** https://www.salesforce.com/products/platform/overview/
 
-## Alternatives To Salesforce Lightning
+## Alternatives
 
 - [HubSpot CRM](/en/tools/hubspot-crm/): when a lighter CRM start with marketing and sales focus is desired.
 - [Pipedrive](/en/tools/pipedrive/): when pipeline management is enough for a smaller sales team.
