@@ -2,10 +2,10 @@
 slug: manus
 title: Manus
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-11
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-11-hype-tools-human-polish-2
+editorial_batch: 2026-07-19-product-update
 category: AI Agents
 price_model: Je nach Plan
 tags: [ai, agent, automation, research]
@@ -14,9 +14,15 @@ popularity: 0
 description: Manus steht für agentische KI-Workflows, bei denen Aufgaben über mehrere Schritte geplant, ausgeführt und zusammengeführt werden.
 tier: C
 generated_at: 2026-05-27
-updated_at: 2026-06-11
+updated_at: 2026-07-19
 ---
 # Manus
+
+## Stand vom 19. Juli 2026
+
+Manus entwickelt seine Arbeitsweise rund um parallele Bearbeitung, Artefakte und veroeffentlichbare Ergebnisse weiter. Fuer den Einsatz im Team ist entscheidend, ob ein Ergebnis einen nachvollziehbaren Auftrag, Quellen, Grenzen und einen Besitzer hat. Ein autonom wirkender Ablauf ohne diese Kette ist nur schwer zu pruefen.
+
+Startet mit einem Auftrag, der klar abgeschlossen werden kann: Recherche mit Quellenliste, ein Entwurf fuer eine Landingpage oder eine interne Analyse. Legt vorher fest, welche Aktionen verboten sind, wie Ergebnisse exportiert werden und wer die letzte Entscheidung trifft.
 
 Manus gehört zur neuen Generation von KI-Agenten, die nicht nur antworten, sondern Aufgaben selbstständig strukturieren und bearbeiten sollen. Für Unternehmen ist entscheidend, ob solche Läufe kontrollierbar, prüfbar und wiederholbar werden.
 
@@ -78,7 +84,7 @@ Die Kosten sollten gegen echte Arbeitsersparnis gerechnet werden. Ein langer Age
 
 **Zum Anbieter:** https://manus.im/
 
-## Alternativen zu Manus
+## Alternativen
 
 - [Adept](/tools/adept/): relevanter Vergleich für Agenten, die Software- und Bedienoberflächen steuern sollen.
 - [Devin](/tools/devin/): spezieller auf Softwareentwicklung und Coding-Aufgaben ausgerichtet.
@@ -103,3 +109,7 @@ Manus lohnt sich bei Aufgaben, die mehrere Schritte kombinieren: recherchieren, 
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Datenzugriff, erlaubte Aktionen, Protokollierung, Freigabepunkte und Abbruchregeln. Agenten sollten nie unbemerkt in kritische Systeme schreiben oder externe Kommunikation auslösen.
+
+**Wie sollte ein Team Manus pilotieren?**
+
+Waehlt eine Aufgabe mit klarer Ausgabe und einem verantwortlichen Reviewer. Vergleicht Ergebnisqualitaet, Nacharbeit, Quellenlage und die Anzahl notwendiger Eingriffe, bevor ihr weitere Datenquellen oder Aktionen oeffnet.

@@ -2,12 +2,12 @@
 slug: manus
 title: Manus
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-06-11
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: 2026-06-11-hype-tools-human-polish-2
+editorial_batch: 2026-07-19-product-update
 category: AI Agents
-price_model: null
+price_model: Je nach Plan
 tags:
   - ai
   - agent
@@ -17,9 +17,15 @@ official_url: 'https://manus.im/'
 popularity: 0
 translation: full
 description: "Manus represents agentic AI workflows where tasks are planned, executed, and assembled across multiple steps."
-updated_at: 2026-06-11
+updated_at: 2026-07-19
 ---
 # Manus
+
+## Status as of July 19, 2026
+
+Manus is extending workflows around parallel work, artifacts and publishable outputs. For team use, the important question is whether every result has a traceable brief, sources, boundaries and an owner. An apparently autonomous run without that chain is difficult to review.
+
+Start with a task that can be clearly completed: research with a source list, a landing-page draft or an internal analysis. Define prohibited actions, export expectations and the person making the final decision before the run begins.
 
 Manus belongs to the new generation of AI agents that should not only answer, but structure and work through tasks. For companies, the key question is whether such runs become controllable, reviewable, and repeatable.
 
@@ -73,7 +79,7 @@ In the catalog, Manus is marked with the pricing model **Plan-based**. For a rea
 
 **Provider:** https://manus.im/
 
-## Alternatives to Manus
+## Alternatives
 
 - [Adept](/en/tools/adept/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Devin](/en/tools/devin/): useful comparison point for adjacent workflows, pricing, or team fit.
@@ -98,3 +104,7 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+**How should a team pilot Manus?**
+
+Choose a task with a defined output and a responsible reviewer. Compare output quality, rework, source coverage and the number of required interventions before opening more data sources or actions.

@@ -2,11 +2,11 @@
 slug: n8n
 title: n8n
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: "Automation"
+editorial_batch: 2026-07-19-product-update
+category: Automatisierung
 price_model: "Freemium"
 tags: ["automation", "workflow", "integration", "developer", "api"]
 official_url: "https://n8n.io"
@@ -15,10 +15,16 @@ popularity: 35
 source_language: de
 translation: full
 description: "Workflow automation for API-oriented integrations, self-hostable automation, and AI-agent workflows."
-updated_at: 2026-06-12
+updated_at: 2026-07-19
 ---
 
 # n8n
+
+## Status as of July 19, 2026
+
+n8n is moving from a connector builder towards an orchestration layer for automation with AI steps. The meaningful change is not another prompt node. It is the surrounding discipline: structured outputs, narrowly scoped tools, failure paths and permissions that match the task.
+
+A useful pilot starts with a process that has a measurable beginning and end, such as qualifying incoming requests. Every outward-facing action needs approval or a safe fallback. That makes it clear whether value comes from real automation rather than a convincing demo.
 
 n8n is a workflow automation platform for people who want to connect SaaS tools, APIs, data flows, and custom logic.
 
@@ -81,7 +87,7 @@ n8n offers cloud plans and self-hostable options. The right choice depends on pr
 
 **Go to provider:** https://n8n.io
 
-## Alternatives to n8n
+## Alternatives
 
 - [Zapier](/en/tools/zapier/): for fast SaaS automations.
 - [Pipedream](/en/tools/pipedream/): for developer-oriented integration workflows.
@@ -112,6 +118,10 @@ If control and technical depth matter, often yes. For simple automations, Zapier
 **Can n8n build AI workflows?**
 
 Yes, n8n is often used for LLM and agent-like workflows.
+
+**How should a team pilot n8n?**
+
+Choose one workflow with a clear metric and build the read-only or preparatory part first. Only let it write data or trigger external actions once logs, failure paths and approvals work as intended.
 
 ## Editorial cluster update June 2026
 

@@ -2,22 +2,29 @@
 slug: mistral-ocr
 title: Mistral OCR
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update
 category: Entwickler-Tools
 price_model: Nutzungsbasiert
-tags: 
+tags: [ocr, document-ai, api, ai, data-extraction]
 official_url: "https://docs.mistral.ai/capabilities/document_ai/basic_ocr/"
 description: Mistral OCR ist eine Dokument-KI-Funktion für Entwickler, die OCR-Ergebnisse in LLM- und Agenten-Workflows weiterverarbeiten möchten.
 created_at: 2026-05-10
 popularity: 0
 tier: A
-lastReviewed: 2026-05-27
+lastReviewed: 2026-07-19
+updated_at: 2026-07-19
 mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr", "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
 # Mistral OCR
+
+## Stand vom 19. Juli 2026
+
+Mistral OCR ist vor allem dann interessant, wenn Dokumente nicht nur lesbar, sondern fuer nachfolgende Systeme strukturiert nutzbar werden sollen. In der Praxis entscheidet deshalb weniger ein einzelner Erkennungswert als die gesamte Kette aus Dokumentqualitaet, Extraktion, Plausibilitaetspruefung und sauberem Umgang mit sensiblen Dateien.
+
+Ein guter Pilot nimmt einen begrenzten Bestand mit typischen Scans, Tabellen und Sonderfaellen. Vergleicht werden sollten nicht nur erkannte Zeichen, sondern fehlende Felder, falsche Struktur, Korrekturzeit und die Frage, ob Menschen die extrahierten Daten vor einer Weitergabe pruefen koennen.
 
 Mistral OCR ist eine Dokument-KI-Funktion für Entwickler, die OCR-Ergebnisse in LLM- und Agenten-Workflows weiterverarbeiten möchten. Im Utildesk-Kontext ist diese Karte vor allem für OCR-, PDF- und Rechnungsautomatisierung relevant: Welche Rolle übernimmt das Werkzeug im Prozess, wo braucht es zusätzliche Prüfung, und wann ist ein anderes Modell sinnvoller?
 
@@ -98,7 +105,7 @@ Mistral OCR ist stark, wenn Dokumente als kontrollierter Fachprozess behandelt w
 
 Preismodell: **Nutzungsbasiert**. Für Mistral OCR zählt im Vergleich nicht nur der Einstiegspreis. Relevant sind Seitenvolumen, Dokumenttypen, API-Aufrufe, Nutzerplätze, Review-Funktionen, Speicherfristen sowie Aufwand für Einrichtung, Betrieb und Support.
 
-## Alternativen im Utildesk-Kontext
+## Alternativen
 
 Mistral OCR sollte vor allem gegen Loesungen verglichen werden, die entweder mehr Dokumentprozess oder mehr lokalen Betrieb bieten:
 

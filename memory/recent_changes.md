@@ -1608,3 +1608,10 @@ _Last updated: 2026-07-19_
 - Added four verified internal tool links (Claude, LangGraph, GitHub Copilot and ChatGPT) and generated their Ratgeber backlinks in both languages.
 - Added two distinct direct Codex-generated WebP illustrations: an inked mechanical signal map and a tactile torn-paper routing collage. Both exclude photorealistic office scenes, people, logos, UI, readable text and watermarks.
 - Published both locale rows to production D1, deployed the Ratgeber runtime and verified live DE/EN canonicals plus both images as HTTP 200. IndexNow accepted the two article canonicals and the updated Ratgeber/home surfaces.
+
+## 2026-07-19 - Editorial updates for eight established AI tools
+
+- Refreshed the DE/EN cards for Claude, n8n, UiPath, Adobe Firefly, Canva, Figma, Manus and Mistral OCR with a dated product-use update rather than a generic feature list.
+- Added repeatable pilot criteria and completed short FAQ sections to four questions where required; preserved existing illustrations and official URLs.
+- Normalized recognized internal alternatives in both languages and corrected legacy English alternative routes so they point to `/en/tools/`.
+- Updated only the 16 affected `content-lastmod` records. Publication is a single bounded D1/R2 runtime release without an Astro rebuild.

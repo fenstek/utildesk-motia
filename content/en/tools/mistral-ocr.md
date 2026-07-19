@@ -2,11 +2,11 @@
 slug: mistral-ocr
 title: Mistral OCR
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
+editorial_batch: 2026-07-19-product-update
+category: Entwickler-Tools
 price_model: Usage-based
 tags:
   - ocr
@@ -19,8 +19,15 @@ source_language: de
 translation: full
 description: Mistral OCR is a document AI capability for developers who want to feed OCR results into LLM and agent workflows.
 created_at: '2026-05-10'
+updated_at: 2026-07-19
 ---
 # Mistral OCR
+
+## Status as of July 19, 2026
+
+Mistral OCR matters most when documents must become structured inputs for later systems rather than merely readable text. In practice, a single recognition score is less important than the full chain of document quality, extraction, plausibility checks and safe handling of sensitive files.
+
+A useful pilot uses a bounded set of typical scans, tables and edge cases. Compare not only recognised characters, but missing fields, incorrect structure, correction time and whether people can review extracted data before it moves downstream.
 
 Mistral OCR is a document AI capability for developers who want to feed OCR results into LLM and agent workflows. In the Utildesk context, this card is mainly relevant for OCR, PDF, and invoice automation: what role does the tool play in the process, where does it need review, and when is another model a better fit?
 
@@ -101,16 +108,16 @@ Mistral OCR is strongest when document handling is treated as a controlled busin
 
 Pricing model: **Usage-based**. For Mistral OCR, the real comparison should include page volume, document types, API calls, user seats, review features, retention, setup effort, operations, and support.
 
-## Alternatives in the Utildesk Context
+## Alternatives
 
 Mistral OCR should mainly be compared with tools that offer either more document-process control or more local operation:
 
-- [AWS Textract](/tools/aws-textract/): cloud service for structured extraction in AWS environments.
-- [Google Document AI](/tools/google-document-ai/): Google Cloud alternative with processors and workflows for document types.
-- [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/): Microsoft-aligned option for forms and document intelligence.
-- [OCRmyPDF](/tools/ocrmypdf/): local PDF OCR pipeline for teams that do not want to send files to a cloud.
-- [PaddleOCR](/tools/paddleocr/): open-source OCR toolkit for technical teams building their own pipeline.
-- [Tesseract OCR](/tools/tesseract-ocr/): classic open-source building block for controllable OCR setups.
+- [AWS Textract](/en/tools/aws-textract/): cloud service for structured extraction in AWS environments.
+- [Google Document AI](/en/tools/google-document-ai/): Google Cloud alternative with processors and workflows for document types.
+- [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/): Microsoft-aligned option for forms and document intelligence.
+- [OCRmyPDF](/en/tools/ocrmypdf/): local PDF OCR pipeline for teams that do not want to send files to a cloud.
+- [PaddleOCR](/en/tools/paddleocr/): open-source OCR toolkit for technical teams building their own pipeline.
+- [Tesseract OCR](/en/tools/tesseract-ocr/): classic open-source building block for controllable OCR setups.
 
 ## Related Guides
 

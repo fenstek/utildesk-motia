@@ -2,11 +2,11 @@
 slug: claude
 title: Claude
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: AI
+editorial_batch: 2026-07-19-product-update
+category: AI Coding
 price_model: Freemium
 tags:
   - ai
@@ -15,13 +15,19 @@ tags:
 official_url: "https://claude.ai/"
 affiliate_url: "https://claude.ai/"
 created_at: 2026-02-08T00:00:00.000Z
-updated_at: 2026-06-12
+updated_at: 2026-07-19
 popularity: 76
 source_language: de
 translation: full
 description: "Claude is an AI assistant for writing, analysis, code, research support, and long document contexts."
 ---
 # Claude
+
+## Status as of July 19, 2026
+
+Anthropic is positioning the current Sonnet generation more clearly for agentic work: long-running tasks, repeated tool calls and reviewable intermediate steps are the focus. That does not make every task a candidate for delegation. It is a reason to define inputs, permissions and human review before a workflow reaches production.
+
+Claude is strongest when a draft, analysis or code review must connect several documents without losing the thread. Before a wider rollout, teams should measure one repeatable case: elapsed time, correction effort, permitted data and the person accountable for release.
 
 Claude is a general AI assistant with a strong focus on text understanding, long contexts, and careful responses. For teams, the important question is not one prompt, but whether Claude fits into real review, writing, and analysis workflows.
 
@@ -74,7 +80,7 @@ In the catalog, Claude is marked with the pricing model **Freemium**. For a real
 
 **Provider:** https://claude.ai/
 
-## Alternatives to Claude
+## Alternatives
 
 - [Chatgpt](/en/tools/chatgpt/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Gemini](/en/tools/gemini/): useful comparison point for adjacent workflows, pricing, or team fit.
@@ -99,6 +105,10 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+**How should a team pilot Claude?**
+
+Use one recurring case, a permitted document set and a clear baseline. Record time saved, corrections and the cases where a person had to intervene before granting broader permissions or automation.
 
 ## Editorial cluster update June 2026
 

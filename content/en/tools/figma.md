@@ -2,24 +2,30 @@
 slug: figma
 title: Figma
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: 2026-07-19-product-update
+category: AI Image
 price_model: Freemium
 tags:
   - ai
   - design
 official_url: "https://figma.com"
 created_at: 2026-02-12T00:00:00.000Z
-updated_at: 2026-05-21
+updated_at: 2026-07-19
 popularity: 66
 source_language: de
 translation: full
 description: "Figma is a collaborative design platform for UI design, prototyping, design systems, and product teams."
 ---
 # Figma
+
+## Status as of July 19, 2026
+
+Figma continues to extend Make, Dev Mode and AI-assisted work steps. The central question for product teams remains the same: do ideas become testable screens and traceable decisions faster, or do they create more drafts detached from components, content and implementation?
+
+A useful pilot uses an existing flow with a design system, real requirements and developer review. Measure not only the speed of the first screen, but whether variants, components and handoffs remain reusable afterwards.
 
 Figma has become the workspace for many product teams because design, feedback, prototyping, and design systems meet in the browser. Its real value is not only drawing tools, but shared product communication.
 
@@ -72,7 +78,7 @@ In the catalog, Figma is marked with the pricing model **Freemium**. For a real 
 
 **Provider:** https://figma.com
 
-## Alternatives to Figma
+## Alternatives
 
 - [Canva](/en/tools/canva/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Adobe Illustrator](/en/tools/adobe-illustrator/): useful comparison point for adjacent workflows, pricing, or team fit.
@@ -97,3 +103,7 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+**How should a team pilot Figma?**
+
+Use one real existing screen and have design and engineering review the handoff together. The test should show reusable components, traceable comments and whether implementation produces fewer follow-up questions.
