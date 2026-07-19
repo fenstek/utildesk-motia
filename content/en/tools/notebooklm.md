@@ -1,12 +1,12 @@
 ---
 slug: notebooklm
 title: NotebookLM
-updated_at: 2026-06-12
+updated_at: 2026-07-19
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
+editorial_batch: 2026-07-19-product-update-echelon
 category: Productivity
 price_model: Freemium
 tags:
@@ -20,9 +20,15 @@ description: "NotebookLM is a research and note assistant that derives answers f
 ---
 # NotebookLM
 
-NotebookLM is most interesting when an AI assistant should not talk freely about everything, but work inside a defined source space. Users add documents, links, or notes and derive summaries, questions, outlines, and study material from them.
+Since July 2026, NotebookLM is called **Gemini Notebook**. The old name still matters for existing users and links, but the product remains the same standalone, source-grounded research workspace. It is most useful when an AI assistant should not talk freely about everything, but work inside a defined source space. Users add documents, links, or notes and derive summaries, questions, outlines, and study material from them.
 
 Good for research, learning, briefings, editorial preparation, and internal knowledge collections.
+
+## Editorial update July 2026
+
+The rename is more than a label change: Google is connecting Gemini Notebook more closely with the Gemini app and Google Search. For Pro users, a secure cloud computer for code and data analysis is also rolling out; depending on the account, this can produce charts, spreadsheets, and other working artefacts. The central review point remains unchanged: every answer is shaped by the quality and selection of the notebook's sources.
+
+For a real workflow, keep three stages separate: collect sources, work with the notebook, and approve the resulting material. Tighter Google integration can make handoffs easier, but it does not replace source criticism or a privacy review.
 
 ## Who is NotebookLM for?
 
@@ -66,7 +72,7 @@ In the catalog, NotebookLM is marked with the pricing model **Freemium**. For a 
 
 **Provider:** https://notebooklm.google/
 
-## Alternatives to NotebookLM
+## Alternatives
 
 - [Perplexity](/en/tools/perplexity/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Elicit](/en/tools/elicit/): useful comparison point for adjacent workflows, pricing, or team fit.
@@ -91,6 +97,14 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+**What does the Gemini Notebook name change?**
+
+The rename connects the standalone notebook more closely with Gemini, the Gemini app, and Google Search. The old name still matters as a practical search and continuity anchor for existing notebooks and links.
+
+**Can NotebookLM analyse data?**
+
+Depending on the account and rollout, its secure cloud computer can run code and produce analyses or files. That adds a useful working stage, not a free pass: inputs, permissions, and outputs still need review.
 
 ## Editorial cluster update June 2026
 

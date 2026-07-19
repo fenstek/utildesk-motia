@@ -1,13 +1,13 @@
 ---
 slug: notebooklm
 title: NotebookLM
-updated_at: 2026-06-12
+updated_at: 2026-07-19
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: Produktivität
+editorial_batch: 2026-07-19-product-update-echelon
+category: Productivity
 price_model: Freemium
 tags: [ai, research, notes]
 official_url: "https://notebooklm.google/"
@@ -18,9 +18,15 @@ generated_at: 2026-05-28
 ---
 # NotebookLM
 
-NotebookLM ist besonders interessant, wenn ein KI-Assistent nicht frei über alles reden soll, sondern auf einem klaren Quellenraum arbeitet. Nutzer laden Dokumente, Links oder Notizen ein und können daraus Zusammenfassungen, Fragen, Gliederungen und Lernmaterial ableiten.
+NotebookLM heißt seit Juli 2026 **Gemini Notebook**. Der frühere Name bleibt für viele Nutzer und bestehende Links relevant, gemeint ist aber dasselbe eigenständige, quellengebundene Rechercheprodukt. Es ist besonders interessant, wenn ein KI-Assistent nicht frei über alles reden soll, sondern auf einem klaren Quellenraum arbeitet. Nutzer laden Dokumente, Links oder Notizen ein und können daraus Zusammenfassungen, Fragen, Gliederungen und Lernmaterial ableiten.
 
 Gut geeignet für Recherche, Lernen, Briefings, redaktionelle Vorbereitung und interne Wissenssammlungen.
+
+## Redaktionelles Update Juli 2026
+
+Die Umbenennung ist mehr als neue Oberfläche: Google verbindet Gemini Notebook enger mit der Gemini-App und der Google-Suche. Für Pro-Nutzer rollt außerdem ein sicherer Cloud-Computer für Code und Datenanalyse aus; je nach Konto können daraus Diagramme, Tabellen oder andere Arbeitsartefakte entstehen. Das ändert nicht den wichtigsten Prüfpunkt: Jede Antwort bleibt an die Auswahl und Qualität des Quellenraums gebunden.
+
+Für den praktischen Einsatz sollte ein Team deshalb drei Ebenen trennen: Quellen sammeln, mit dem Notebook arbeiten und Ergebnisse redaktionell freigeben. Die neue Nähe zum Google-Ökosystem macht Übergaben bequemer, ersetzt aber weder Quellenkritik noch Datenschutzprüfung.
 
 ## Für wen ist NotebookLM geeignet?
 
@@ -68,7 +74,7 @@ Im Katalog ist NotebookLM mit dem Preismodell **Freemium** geführt. Entscheiden
 
 **Zum Anbieter:** https://notebooklm.google/
 
-## Alternativen zu NotebookLM
+## Alternativen
 
 - [Perplexity](/tools/perplexity/): besser für offene Webrecherche mit sichtbaren Quellen und aktuellen Fundstellen.
 - [Elicit](/tools/elicit/): stärker auf wissenschaftliche Paper, Literaturrecherche und Extraktionstabellen fokussiert.
@@ -93,6 +99,14 @@ NotebookLM lohnt sich, wenn man wiederholt mit denselben Quellen arbeitet: Semin
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Quellenqualität, Datenschutz, Freigabe interner Dokumente, Zitatprüfung und Exportwege. NotebookLM kann Material erklären, aber nicht garantieren, dass die ausgewählten Quellen vollständig oder objektiv sind.
+
+**Was ändert der Name Gemini Notebook?**
+
+Die Umbenennung verbindet das eigenständige Notebook enger mit Gemini, der Gemini-App und der Google-Suche. Für bestehende Notebooks und Links bleibt der bisherige Name als Such- und Verständnisanker wichtig.
+
+**Kann NotebookLM Daten analysieren?**
+
+Je nach Konto und Rollout kann der sichere Cloud-Computer Code ausführen und Analysen oder Dateien erzeugen. Das ist eine zusätzliche Arbeitsstufe, aber kein Freibrief: Eingaben, Berechtigungen und Ergebnisse müssen weiterhin geprüft werden.
 
 ## Ratgeber-Cluster-Update Juni 2026
 
