@@ -2,10 +2,10 @@
 slug: adobe-firefly
 title: Adobe Firefly
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-06-11
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: 2026-06-11-hype-tools-human-polish-2
+editorial_batch: 2026-07-19-product-update
 category: Design
 price_model: Freemium
 tags:
@@ -17,9 +17,15 @@ created_at: 2026-02-02T00:00:00.000Z
 popularity: 0
 source_language: de
 translation: full
-updated_at: 2026-06-11
+updated_at: 2026-07-19
 ---
 # Adobe Firefly
+
+## Status as of July 19, 2026
+
+Adobe continues to place Firefly inside Creative Cloud workflows and describes its newer agentic capabilities as help for preparing, varying and handing off creative work. The practical gain is not the largest possible number of variants. It is a reliable path from an idea to an editable asset.
+
+For teams, Firefly is therefore a workflow question: brand rules, rights to input material, approvals and which steps continue in Photoshop, Premiere or another tool. Judge a pilot on a real asset process rather than a single generated image.
 
 Adobe Firefly is an innovative design tool from Adobe that is based on artificial intelligence and supports creative processes. It enables the rapid creation of impressive graphics, illustrations, and visual effects through simple text input or adjustments. Firefly is designed for designers, creatives, and marketing professionals who want to streamline their projects and make them more creative.
 
@@ -79,13 +85,13 @@ Adobe Firefly offers a freemium model. The basic functions are free to use, idea
 
 n  <a href="https://firefly.adobe.com/?media=featured">Click here to visit the provider</a>
 
-## Alternatives to Adobe Firefly
+## Alternatives
 
-- [Canva](/tools/canva/): A user-friendly online design tool with many templates and easy editing features.
-- [DALLÂ·E 2 (OpenAI)](/tools/dall-e/): AI-based image generation through text input, specialized in creative image creation.
-- [Figma](/tools/figma/): Collaborative design tool with a focus on UI/UX design and prototyping.
-- [Midjourney](/tools/midjourney/): AI-powered creative image generation with a focus on artistic styles.
-- [Affinity Designer](/tools/affinity-designer/): Powerful design software as an alternative to Adobe products, without a subscription model.
+  - [Canva](/en/tools/canva/): A user-friendly online design tool with many templates and easy editing features.
+  - [DALLÂ·E 2 (OpenAI)](/en/tools/dall-e/): AI-based image generation through text input, specialized in creative image creation.
+  - [Figma](/en/tools/figma/): Collaborative design tool with a focus on UI/UX design and prototyping.
+  - [Midjourney](/en/tools/midjourney/): AI-powered creative image generation with a focus on artistic styles.
+  - [Affinity Designer](/en/tools/affinity-designer/): Powerful design software as an alternative to Adobe products, without a subscription model.
 ## What really matters in daily use
 
 Adobe Firefly is most useful when generative assets flow into an existing creative stack such as Photoshop, Express, or Illustrator. The practical question is not whether one prompt looks impressive, but whether variants, rights handling, style consistency, and manual finishing can be managed in a repeatable review process.

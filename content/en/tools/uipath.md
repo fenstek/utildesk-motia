@@ -1,13 +1,13 @@
 ---
 slug: uipath
 title: UiPath
-updated_at: 2026-06-12
+updated_at: 2026-07-19
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: AI
+editorial_batch: 2026-07-19-product-update
+category: AI Agents
 price_model: "Plan-based"
 tags:
   - automation
@@ -19,6 +19,12 @@ translation: full
 description: "UiPath is an enterprise platform for robotic process automation, process automation, and AI-assisted business workflows."
 ---
 # UiPath
+
+## Status as of July 19, 2026
+
+UiPath is increasingly connecting classic process automation with agentic components and orchestration. This matters most where bots, documents, rules and approvals already belong to a controlled business process. An agent does not replace process ownership.
+
+The best test case is a bounded exception in an existing flow, not an entire back-office process at once. Teams should define data access, escalation, logging and the human approval role before starting.
 
 UiPath automates processes that often sit between legacy applications, forms, spreadsheets, and back-office systems. The platform is far more than a macro recorder: it includes bots, orchestration, monitoring, and governance.
 
@@ -67,7 +73,7 @@ In the catalog, UiPath is marked with the pricing model **Plan-based**. For a re
 
 **Provider:** https://www.uipath.com/
 
-## Alternatives to UiPath
+## Alternatives
 
 - [Kofax Rpa](/en/tools/kofax-rpa/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Automation Anywhere](/en/tools/automation-anywhere/): useful comparison point for adjacent workflows, pricing, or team fit.
@@ -96,6 +102,10 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+**How should a team pilot UiPath?**
+
+Start with a clearly documented exception in an existing process. The pilot needs test data, a fallback to the previous flow and a named person who evaluates failures and approves expansion.
 
 ## Editorial cluster update June 2026
 

@@ -2,24 +2,30 @@
 slug: claude
 title: Claude
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-12
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
+editorial_batch: 2026-07-19-product-update
 category: AI Coding
 price_model: Freemium
 tags: ["ai", "assistant", "automation"]
 official_url: "https://claude.ai/"
 affiliate_url: "https://claude.ai/"
 tier: A
-lastReviewed: 2026-05-28
+lastReviewed: 2026-07-19
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "chatgpt-claude-gemini", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-02-08
-updated_at: 2026-06-12
+updated_at: 2026-07-19
 popularity: 0
 description: Claude ist ein KI-Assistent für Schreiben, Analyse, Code, Rechercheunterstützung und lange Dokumentkontexte.
 ---
 # Claude
+
+## Stand vom 19. Juli 2026
+
+Anthropic positioniert die aktuelle Sonnet-Generation klarer fuer agentische Arbeit: lange Aufgaben, wiederholte Tool-Aufrufe und nachvollziehbare Zwischenschritte stehen im Vordergrund. Fuer Teams ist das kein Grund, jedes Problem an ein Modell zu delegieren. Es ist ein Anlass, Aufgaben mit klarer Eingabe, begrenzten Rechten und einem sichtbaren Review zu schneiden.
+
+Claude passt besonders gut, wenn ein Entwurf, eine Analyse oder eine Code-Revision mehrere Dokumente zusammenbringen muss. Vor einem breiteren Rollout sollten Teams einen kleinen, wiederholbaren Fall messen: Bearbeitungszeit, Korrekturaufwand, erlaubte Daten und die Frage, wer das Ergebnis freigibt.
 
 Claude ist ein allgemeiner KI-Assistent mit starkem Fokus auf Textverständnis, längere Kontexte und saubere Antworten. Für Teams ist weniger der einzelne Prompt entscheidend, sondern ob Claude in echte Review-, Schreib- und Analyseprozesse eingebettet wird.
 
@@ -77,7 +83,7 @@ Im Katalog ist Claude mit dem Preismodell **Freemium** geführt. Für die Auswah
 
 **Zum Anbieter:** https://claude.ai/
 
-## Alternativen zu Claude
+## Alternativen
 
 - [Chatgpt](/tools/chatgpt/): breiter Allzweck-Assistent für Schreiben, Code, Datenanalyse, Bilder und flexible Alltagsarbeit.
 - [Gemini](/tools/gemini/): interessant für Nutzer im Google-Ökosystem und für multimodale Aufgaben mit Workspace-Nähe.
@@ -102,6 +108,10 @@ Claude lohnt sich besonders bei langen Texten, mehreren Dokumenten, komplexen Ar
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Datenschutz, erlaubte Dokumenttypen, Teamrechte, Modell- und Kontextlimits sowie der Review-Prozess. Bei Fakten, rechtlichen Aussagen, Codeänderungen und Veröffentlichungen sollte Claude nie die letzte Instanz sein.
+
+**Wie sollte ein Team Claude pilotieren?**
+
+Mit einem wiederkehrenden Fall, einer erlaubten Dokumentenmenge und einer klaren Vergleichsbasis. Notiert Zeitgewinn, Korrekturen und Fälle, in denen der Mensch eingreifen musste, bevor ihr weitere Rechte oder Automatisierung freigebt.
 
 ## Ratgeber-Cluster-Update Juni 2026
 

@@ -2,10 +2,10 @@
 slug: adobe-firefly
 title: Adobe Firefly
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-11
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-11-hype-tools-human-polish-2
+editorial_batch: 2026-07-19-product-update
 category: Design
 price_model: Freemium
 tags: ["ai", "design"]
@@ -15,9 +15,15 @@ tier: C
 generated_at: 2026-05-28
 created_at: 2026-02-02
 popularity: 0
-updated_at: 2026-06-11
+updated_at: 2026-07-19
 ---
 # Adobe Firefly
+
+## Stand vom 19. Juli 2026
+
+Adobe baut Firefly weiter in Creative-Cloud-Workflows ein und beschreibt die neuen agentischen Funktionen als Hilfe beim Vorbereiten, Variieren und Weitergeben kreativer Arbeit. Der praktische Gewinn entsteht nicht durch moeglichst viele Varianten, sondern durch einen belastbaren Weg von der Idee zur editierbaren Datei.
+
+Fuer Teams ist Firefly deshalb vor allem ein Workflow-Thema: Markenregeln, Rechte an Eingabematerial, Freigaben und die Frage, welche Schritte in Photoshop, Premiere oder anderen Werkzeugen weiterbearbeitet werden. Einen Pilot sollte man anhand eines echten Asset-Prozesses bewerten, nicht anhand eines Einzelbilds.
 
 Adobe Firefly ist Adobes KI-Werkzeug für generative Bild- und Designarbeit. Es eignet sich vor allem, wenn Bildideen, Varianten, Hintergründe oder visuelle Richtungen schnell entstehen und anschließend in einem Adobe-Workflow weiterbearbeitet werden sollen.
 
@@ -73,7 +79,7 @@ Adobe Firefly bietet ein Freemium-Modell an. Die Basisfunktionen sind kostenlos 
 
 👉 **Zum Anbieter:** https://firefly.adobe.com/?media=featured
 
-## Alternativen zu Adobe Firefly
+## Alternativen
 
 - [Canva](/tools/canva/): Ein benutzerfreundliches Online-Design-Tool mit vielen Vorlagen und einfachen Bearbeitungsfunktionen.
 - [DALL·E](/tools/dall-e/): KI-basierte Bildgenerierung durch Texteingabe, besonders für freie Bildideen und Varianten.
