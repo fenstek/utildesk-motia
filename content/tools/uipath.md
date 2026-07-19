@@ -8,7 +8,7 @@ editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update
 category: AI Agents
-price_model: Je nach Plan
+price_model: Plan-based
 tags: ["automation", "workflow", "data"]
 official_url: "https://www.uipath.com/"
 popularity: 0

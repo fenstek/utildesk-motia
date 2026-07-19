@@ -83,7 +83,7 @@ In the catalog, Figma is marked with the pricing model **Freemium**. For a real 
 - [Canva](/en/tools/canva/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Adobe Illustrator](/en/tools/adobe-illustrator/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Sketch](/en/tools/sketch/): useful comparison point for adjacent workflows, pricing, or team fit.
-- Lunacy: useful comparison point for adjacent workflows, pricing, or team fit.
+  - [Framer](/en/tools/framer/): useful comparison point for interactive prototypes and a bridge from design work to a publishable web surface.
 - [Marvel](/en/tools/marvel/): useful comparison point for adjacent workflows, pricing, or team fit.
 
 ## Editorial assessment

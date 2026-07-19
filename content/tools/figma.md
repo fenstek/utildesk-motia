@@ -86,7 +86,7 @@ Im Katalog ist Figma mit dem Preismodell **Freemium** geführt. Für Teams sind 
 - [Canva](/tools/canva/): besser für schnelle Marketinggrafiken, Präsentationen und Vorlagenarbeit ohne UI-Design-Tiefe.
 - [Adobe Illustrator](/tools/adobe-illustrator/): stärker für Vektorillustrationen, Logos und präzise Markenassets.
 - [Sketch](/tools/sketch/): klassische Mac-nahe Alternative für UI-Design und Symbolbibliotheken.
-- Lunacy: interessante Option für UI-Design mit anderem Lizenz- und Plattformansatz.
+  - [Framer](/tools/framer/): Alternative fuer interaktive Prototypen und die Verbindung von Designarbeit mit einer veroeffentlichbaren Weboberflaeche.
 - [Marvel](/tools/marvel/): stärker auf einfache Prototypen, Präsentation und frühe UX-Validierung ausgerichtet.
 
 ## Redaktionelle Einschätzung

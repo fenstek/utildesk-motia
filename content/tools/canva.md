@@ -88,9 +88,9 @@ Im Katalog ist Canva mit dem Preismodell **Freemium** geführt. Für die Entsche
 - [Adobe Illustrator](/tools/adobe-illustrator/): stärker für präzise Vektorarbeit, Logos, Illustrationen und professionelle Markenassets.
 - [Coreldraw](/tools/coreldraw/): Alternative für klassische Grafik-, Print- und Vektor-Workflows.
 - [Gimp](/tools/gimp/): kostenlose Option für Pixelbearbeitung und Retusche, aber weniger vorlagenorientiert.
-- Vista Create: ähnlich niedrigschwellige Plattform für Social- und Marketingdesigns mit anderem Vorlagenangebot.
+  - [Adobe Express](/tools/adobe-express/): Alternative fuer schnelle Markenformate, einfache Layouts und Social-Media-Varianten.
 
-## Einordnung für die Auswahl
+## Redaktionelle Einschätzung
 
 Canva ist stark, weil es Gestaltung für Nicht-Designer operationalisiert. Genau deshalb sollte man es nicht mit einem vollwertigen Designsystem verwechseln: Für Kampagnen, Vorlagen und schnelle Varianten ist es hervorragend, für komplexe Marken- und Produktgestaltung braucht es klare Grenzen.
 
