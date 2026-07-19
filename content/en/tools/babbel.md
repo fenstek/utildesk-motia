@@ -16,7 +16,6 @@ price_model: Subscription
 tags: [education, language, learning, mobile]
 official_url: "https://www.babbel.com/"
 description: "Subscription language-learning platform for short lessons, vocabulary, grammar, listening, writing, and practical speaking practice."
-updated_at: 2026-07-19
 translation: full
 ---
 # Babbel
