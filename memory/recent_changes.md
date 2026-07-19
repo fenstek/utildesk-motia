@@ -1642,3 +1642,8 @@ _Last updated: 2026-07-19_
 
 - Replaced `content/images/tools/kiro-editorial.webp` with the user-approved raster illustration, converted to the shared 1260x800 WebP card format.
 - Kept the existing DE/EN card references and illustration registry path unchanged; the replacement is therefore a content-addressed asset delta only.
+
+## 2026-07-19 - ChatGPT German text correction
+
+- Corrected the newly added German ChatGPT update paragraphs from ASCII transliterations such as `ueber`, `fuer` and `pruefen` to proper German umlauts and ß-compatible spelling.
+- No links, frontmatter, English content or card assets were changed.

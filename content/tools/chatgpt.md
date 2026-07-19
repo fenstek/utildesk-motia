@@ -23,9 +23,9 @@ description: KI-Assistent von OpenAI für Schreiben, Recherche, Code, Datenanaly
 
 ## Stand vom 19. Juli 2026
 
-Die aktuelle Desktop-Oberflaeche trennt kurze Chats von laengerer Work-Arbeit und macht Projekte sowie die Suche ueber Chats, Dateien und Bilder sichtbarer. Arbeit kann zwischen Web, Mobilgeraet und Desktop fortgesetzt werden; lokale Unterhaltungen bleiben dagegen auf dem jeweiligen Rechner. Das ist fuer Teams wichtiger als eine weitere Modellrangliste, weil Kontext und Ablage nun Teil des Workflows werden.
+Die aktuelle Desktop-Oberfläche trennt kurze Chats von längerer Work-Arbeit und macht Projekte sowie die Suche über Chats, Dateien und Bilder sichtbarer. Arbeit kann zwischen Web, Mobilgerät und Desktop fortgesetzt werden; lokale Unterhaltungen bleiben dagegen auf dem jeweiligen Rechner. Das ist für Teams wichtiger als eine weitere Modellrangliste, weil Kontext und Ablage nun Teil des Workflows werden.
 
-Praktisch empfiehlt sich eine kleine Arbeitsordnung: Projektkontext nur fuer ein klares Vorhaben freigeben, Dateien nach Vertraulichkeit trennen und wichtige Ergebnisse ausserhalb des Chats versionieren. Wer Apps oder angeschlossene Dienste nutzt, sollte Berechtigungen je Verbindung pruefen und Ausfuehrungen mit Wirkung nach aussen bewusst bestaetigen.
+Praktisch empfiehlt sich eine kleine Arbeitsordnung: Projektkontext nur für ein klares Vorhaben freigeben, Dateien nach Vertraulichkeit trennen und wichtige Ergebnisse außerhalb des Chats versionieren. Wer Apps oder angeschlossene Dienste nutzt, sollte Berechtigungen je Verbindung prüfen und Ausführungen mit Wirkung nach außen bewusst bestätigen.
 
 ChatGPT ist der KI-Assistent von OpenAI für Menschen, die schnell von einer Frage zu einem brauchbaren Entwurf kommen wollen. Das Tool schreibt, erklärt, strukturiert, übersetzt, analysiert Dateien, hilft beim Programmieren und kann je nach Plan auch mit Websuche, Bildern, Sprache, Canvas und agentischen Funktionen arbeiten.
 
