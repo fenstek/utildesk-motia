@@ -1586,9 +1586,10 @@ _Last updated: 2026-07-17_
 - Added four verified internal tool links plus related Ratgeber links on observability and agent security.
 - Added two visually distinct, direct Codex-generated WebP illustrations: a non-photorealistic observatory-and-source-map cover and a tactile evidence-routing collage. Neither contains people, offices, UI, logos, readable text or watermarks.
 
-## 2026-07-19 - Mozaik Ratgeber publication preparation
+## 2026-07-19 - Mozaik Ratgeber publication
 
-- Prepared the NotebookLM-first candidate `Mozaik: Wenn Agenten nicht nach Plan, sondern auf Ereignisse reagieren` for publication after a full manual DE/EN editorial rewrite and fact check against Mozaik's official concepts and runtime documentation.
+- Published the NotebookLM-first candidate `Mozaik: Wenn Agenten nicht nach Plan, sondern auf Ereignisse reagieren` after a full manual DE/EN editorial rewrite and fact check against Mozaik's official concepts and runtime documentation.
 - Reframed the draft around event-driven coordination, durable context, error boundaries, observability and a bounded pilot; unsupported performance and vendor claims were removed or qualified.
 - Added four verified internal tool links (Claude, LangGraph, GitHub Copilot and ChatGPT) and generated their Ratgeber backlinks in both languages.
 - Added two distinct direct Codex-generated WebP illustrations: an inked mechanical signal map and a tactile torn-paper routing collage. Both exclude photorealistic office scenes, people, logos, UI, readable text and watermarks.
+- Published both locale rows to production D1, deployed the Ratgeber runtime and verified live DE/EN canonicals plus both images as HTTP 200. IndexNow accepted the two article canonicals and the updated Ratgeber/home surfaces.
