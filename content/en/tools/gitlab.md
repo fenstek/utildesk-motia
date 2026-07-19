@@ -7,12 +7,12 @@ tags: ["devops", "git", "ci-cd", "developer-tools"]
 official_url: "https://about.gitlab.com/"
 affiliate_url: ""
 created_at: "2026-06-14"
-updated_at: "2026-06-14"
+updated_at: "2026-07-19"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-10-human-publish"
+editorial_batch: "2026-07-19-product-update-priority-two"
 tier: "D"
 popularity: 0
 translation: "full"
@@ -39,6 +39,13 @@ GitLab should be judged by operating reality: setup, permissions, data flow, fai
 <figure class="tool-editorial-figure">
   <img src="/images/tools/gitlab-editorial.webp" alt="Illustration for GitLab: a software supply-chain workshop where code, tests, and security checks converge on separate tracks" loading="lazy" decoding="async" />
 </figure>
+
+
+## Current State
+
+GitLab is no longer just a repository and CI/CD layer. GitLab Duo and its agentic capabilities now reach into planning, review, security, and delivery; with GitLab 19.2, Duo CLI is also relevant to developer workflows. That makes the platform more compelling for teams that need central DevSecOps governance, but it also makes permissions, credit usage, and traceability of AI actions more important.
+
+Before standardising, run a pilot against a real repository with bounded runner and data access, measuring delivery time, false positives, and review effort separately.
 
 ## Key Features
 

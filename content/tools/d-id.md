@@ -1,11 +1,12 @@
 ---
+updated_at: 2026-07-19
 slug: d-id
 title: D-ID
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update-priority-two
 category: AI Image
 price_model: Je nach Plan
 tags: [video, automation, marketing, design, content]
@@ -39,6 +40,13 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 <figure class="tool-editorial-figure">
   <img src="/images/tools/d-id-editorial.webp" alt="Illustration zu D-ID: Videoteam erstellt generische Presenter mit Stimme und Storyboard" loading="lazy" decoding="async" />
 </figure>
+
+
+## Aktueller Stand
+
+D-ID verbindet Avatar- und Videoerstellung mit Studio- und API-Workflows. Das ist für lokalisierte Erklärungen, Schulungsmaterial oder wiederholbare Sprecher-Varianten interessant, aber nicht automatisch ein Freibrief für synthetische Personen. Ein sauberer Einsatz braucht Einwilligung, geklärte Nutzungsrechte, Kennzeichnung und eine menschliche Freigabe vor Veröffentlichung.
+
+Bewertet werden sollten getrennt die Bild- und Sprachqualität, Übersetzungsfehler, Moderation, Exportrechte und die Frage, ob sensible Skripte an einen externen Dienst gehen.
 
 ## Hauptfunktionen
 
@@ -83,7 +91,7 @@ Die Preisgestaltung von D-ID ist je nach Anbieter und gewähltem Abonnement unte
 
 Neben dem Listenpreis sollte bei D-ID auch der Einführungsaufwand berücksichtigt werden. Relevant sind Kontaktvolumen, Automationen, Reporting, Integrationen und Datenpflege. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
 
-## Alternativen zu D-ID
+## Alternativen
 
 - [Synthesia](/tools/synthesia/): für Unternehmensvideos mit AI-Avataren und Lerninhalten.
 - [HeyGen](/tools/heygen/): für Avatar-, Übersetzungs- und lokalisierte Video-Workflows.

@@ -1,11 +1,12 @@
 ---
+updated_at: "2026-07-19"
 slug: magma
 title: Magma
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-19-product-update-priority-two"
 category: AI
 price_model: "Freemium"
 tags:
@@ -32,6 +33,13 @@ Magma is strongest for illustrators, concept teams, creative groups, and worksho
 <figure class="tool-editorial-figure">
   <img src="/images/tools/magma-editorial.webp" alt="Illustration for Magma: shared creative canvas connects sketches, brush strokes, and layers" loading="lazy" decoding="async" />
 </figure>
+
+
+## Current State
+
+Magma is useful as a shared digital drawing and work space when several people need to edit sketches, references, and feedback together. Its value comes from shared context, not from an automatic quality guarantee. Before using it for client work, verify export, versioning, rights for imported assets, and privacy of boards.
+
+A small team, one hand-off point, and an archived export are enough for a pilot. That makes it clear whether collaboration becomes faster or merely produces more material.
 
 ## Typical use cases
 
@@ -73,7 +81,7 @@ In the catalog, Magma is marked with the pricing model **Freemium**. For a real 
 
 **Provider:** https://magma.com/
 
-## Alternatives to Magma
+## Alternatives
 
 - [Figma](/en/tools/figma/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Milanote](/en/tools/milanote/): useful comparison point if workflow, pricing, or specialization should differ.

@@ -1,11 +1,12 @@
 ---
+updated_at: 2026-07-19
 slug: speechmatics
 title: Speechmatics
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update-priority-two
 category: AI Audio
 price_model: Freemium
 tags: [ai,audio]
@@ -40,6 +41,13 @@ Für einzelne kurze Aufnahmen reicht oft ein einfaches Transkriptionswerkzeug. S
 - **Produktintegration:** Speech-to-Text über API in Apps, Plattformen oder interne Workflows einbinden.
 - **Forschung und Auswertung:** Audioaufnahmen für qualitative Analyse oder Dokumentation vorbereiten.
 
+
+## Aktueller Stand
+
+Speechmatics sollte als Spracherkennungsplattform für Echtzeit- und Batch-Transkription bewertet werden, nicht nur als Diktierfunktion. Für die Auswahl zählen Sprachabdeckung, Latenz, Sprechertrennung, Fachvokabular, Streaming-Schnittstelle und die Datenaufbewahrung. Ergebnisse bleiben prüfpflichtig, besonders bei Dialekten, Namen und rechtlich relevanten Mitschriften.
+
+Ein belastbarer Test nutzt eigene Audiodaten, misst Wortfehler und Zeitstempel und prüft, welche Nachbearbeitung vor Veröffentlichung oder CRM-Import nötig ist.
+
 ## Stärken
 
 - Starker Fokus auf Spracherkennung
@@ -68,12 +76,12 @@ Im Katalog ist Speechmatics mit dem Preismodell **Freemium** geführt. Für die 
 
 **Zum Anbieter:** https://www.speechmatics.com/
 
-## Alternativen zu Speechmatics
+## Alternativen
 
 - [Whisper](/tools/whisper/): interessant, wenn Open-Source-nahe oder selbst betriebene Transkription wichtig ist.
 - [Otter AI](/tools/otter-ai/): stärker für Meetings, Notizen und kollaborative Gesprächszusammenfassungen.
 - [Descript Overdub](/tools/descript-overdub/): relevanter für Audio- und Video-Editing mit Transkript-Workflow.
-- Trint: Alternative für redaktionelle Transkription, Untertitel und Medienarbeit.
+- [Trint](/tools/trint/): Alternative für redaktionelle Transkription, Untertitel und Medienarbeit.
 - [Rev](/tools/rev/): interessant, wenn automatische und menschliche Transkription kombiniert werden sollen.
 
 ## Redaktionelle Einschätzung
@@ -93,3 +101,8 @@ Speechmatics lohnt sich bei wiederkehrendem Audio- oder Videovolumen, mehreren S
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Audioqualität, Sprache, Fachvokabular, Datenschutz, Löschfristen, Exportformate und menschliche Kontrolle bei Zitaten oder Untertiteln.
+
+
+**Wie sollte ein Transkript vor der Veröffentlichung geprüft werden?**
+
+Namen, Zahlen, Zitate, Sprecherwechsel und sensible Passagen gehören in eine menschliche Stichprobe; ein hoher Konfidenzwert ersetzt diese Prüfung nicht.

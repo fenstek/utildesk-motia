@@ -7,12 +7,12 @@ tags: ["devops", "git", "ci-cd", "developer-tools"]
 official_url: "https://about.gitlab.com/"
 affiliate_url: 
 created_at: 2026-06-14
-updated_at: 2026-06-14
+updated_at: 2026-07-19
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-14
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-14-sheet-new-hype-10-human-publish
+editorial_batch: 2026-07-19-product-update-priority-two
 tier: D
 popularity: 0
 ---
@@ -38,6 +38,13 @@ GitLab sollte im Betrieb bewertet werden: Einrichtung, Rechte, Datenfluss, Fehle
 <figure class="tool-editorial-figure">
   <img src="/images/tools/gitlab-editorial.webp" alt="Illustration zu GitLab: eine Werkstatt für Software-Lieferketten, in der Code, Tests und Sicherheitsprüfungen auf getrennten Spuren zusammenlaufen" loading="lazy" decoding="async" />
 </figure>
+
+
+## Aktueller Stand
+
+GitLab ist inzwischen nicht mehr nur Repository plus CI/CD. GitLab Duo und die agentischen Funktionen greifen in Planung, Review, Security und Delivery ein; mit GitLab 19.2 ist auch die Duo CLI ein relevanter Teil des Entwickler-Workflows. Das macht die Plattform interessanter für Teams mit zentraler DevSecOps-Governance, erhöht aber die Bedeutung von Berechtigungen, Credit-Verbrauch und nachvollziehbaren KI-Aktionen.
+
+Vor einer Standardisierung sollte ein Pilot mit einem echten Repository, einem klar begrenzten Runner- und Datenzugriff sowie getrennten Messwerten für Durchlaufzeit, Fehlalarme und Review-Aufwand laufen.
 
 ## Hauptfunktionen
 
@@ -74,7 +81,7 @@ GitLab ist als Freemium geführt. Die realen Kosten hängen von Seats, Nutzung, 
 
 **Zum Anbieter:** https://about.gitlab.com/
 
-## Alternativen zu GitLab
+## Alternativen
 
 - [GitHub Copilot](/tools/github-copilot/): wenn KI-Coding direkt im Entwicklereditor im Fokus steht.
 - [OpenAI Codex](/tools/openai-codex/): wenn agentische Code-Arbeit und CLI-Workflows wichtiger sind.
