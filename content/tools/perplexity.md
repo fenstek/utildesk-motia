@@ -109,6 +109,10 @@ Perplexity lohnt sich besonders bei aktuellen Fragen, Marktüberblicken, Produkt
 
 Entscheidend sind Quellenqualität, Aktualität, Datenschutz bei Suchanfragen und der Umgang mit unsicheren Aussagen. Perplexity kann Recherche beschleunigen, aber nicht entscheiden, welche Quelle belastbar genug für eine Veröffentlichung oder Geschäftsentscheidung ist.
 
+**Wie prüfe ich eine Perplexity-Recherche vor einer Entscheidung?**
+
+Öffne die wichtigsten Originalquellen, halte Datum und Autor fest und trenne belegte Aussagen von Schlussfolgerungen der KI. Bei Markt-, Rechts- oder Kaufentscheidungen sollte eine Person die Quellenliste freigeben, nicht nur die Zusammenfassung.
+
 ## Ratgeber-Cluster-Update Juni 2026
 
 Perplexity ist im AI-Search-Cluster der wichtigste Vergleichspunkt fuer Antwortsuche mit Quellen, Recherchemodus und zunehmend agentischen Oberflaechen.
@@ -126,7 +130,3 @@ Quellen muessen geprueft, Zitate gelesen und Schlussfolgerungen getrennt bewerte
 ### Interne Vergleichspunkte
 
 Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [ChatGPT](/tools/chatgpt/), [Gemini](/tools/gemini/), [You.com](/tools/you-com/), [Poe](/tools/poe/). Diese Links helfen, Perplexity nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
-
-**Wie pruefe ich eine Perplexity-Recherche vor einer Entscheidung?**
-
-Oeffne die wichtigsten Originalquellen, halte Datum und Autor fest und trenne belegte Aussagen von Schlussfolgerungen der KI. Bei Markt-, Rechts- oder Kaufentscheidungen sollte eine Person die Quellenliste freigeben, nicht nur die Zusammenfassung.

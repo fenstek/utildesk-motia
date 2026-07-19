@@ -103,6 +103,10 @@ When the recurring value is greater than setup, cost, and review effort. For one
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
 
+**How should I validate Perplexity research before a decision?**
+
+Open the most important primary sources, record their date and author, and separate sourced facts from the AI's inferences. For market, legal, or purchasing decisions, a person should approve the source list rather than only the summary.
+
 ## Editorial cluster update June 2026
 
 Perplexity is the central comparison point in the AI search cluster for answer search with sources, research mode and increasingly agentic surfaces.
@@ -120,7 +124,3 @@ Sources must be checked, citations read and conclusions evaluated separately. Fo
 ### Internal comparison points
 
 Useful comparison points in the Utildesk catalogue are [ChatGPT](/en/tools/chatgpt/), [Gemini](/en/tools/gemini/), [You.com](/en/tools/you-com/), [Poe](/en/tools/poe/). These links keep Perplexity connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
-
-**How should I validate Perplexity research before a decision?**
-
-Open the most important primary sources, record their date and author, and separate sourced facts from the AI's inferences. For market, legal, or purchasing decisions, a person should approve the source list rather than only the summary.
