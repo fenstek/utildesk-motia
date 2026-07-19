@@ -6,13 +6,14 @@ editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
 editorial_batch: "2026-07-19-product-update-priority"
-category: Audio
+category: Audio & Video
 price_model: Freemium
+description: "Browser-based speech recording and enhancement workspace for interviews, podcasts, lessons, and clear working cuts."
 tags: [audio, podcast, speech-enhancement, ai]
 official_url: "https://podcast.adobe.com/"
 popularity: 0
 translation: full
-lastReviewed: 2026-07-13
+updated_at: 2026-07-19
 ---
 # Adobe Podcast
 
@@ -62,10 +63,10 @@ Rights to music, voices, interviews, and consent remain with the publishing team
 
 ## Alternatives
 
-- [Descript](/en/tools/descript/) is a better fit when transcript-led editing and editorial text workflow are central.
-- [Podcastle](/en/tools/podcastle/) is an alternative for browser-centred podcast recording, editing, and production.
-- [ocenaudio](/en/tools/ocenaudio/) suits lightweight local audio editing without a cloud workflow.
-- [ElevenLabs](/en/tools/elevenlabs/) becomes relevant when speech synthesis or AI voices are needed alongside recording cleanup.
+- [Descript](/en/tools/descript/): is a better fit when transcript-led editing and editorial text workflow are central.
+- [Podcastle](/en/tools/podcastle/): is an alternative for browser-centred podcast recording, editing, and production.
+- [ocenaudio](/en/tools/ocenaudio/): suits lightweight local audio editing without a cloud workflow.
+- [ElevenLabs](/en/tools/elevenlabs/): becomes relevant when speech synthesis or AI voices are needed alongside recording cleanup.
 
 ## FAQ
 

@@ -6,7 +6,7 @@ editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
 editorial_batch: "2026-07-19-product-update-priority"
-lastReviewed: 2026-07-13
+updated_at: 2026-07-19
 editorial_verdict: recommend
 editorial_verdict_headline: "Recommend for a sustainable learning habit, not as a language exam."
 editorial_verdict_text: "Strong for short, regular lessons and active speaking; workplace confidence still needs real conversations and expert feedback alongside the app."
@@ -15,6 +15,8 @@ category: Productivity
 price_model: Subscription
 tags: [education, language, learning, mobile]
 official_url: "https://www.babbel.com/"
+description: "Subscription language-learning platform for short lessons, vocabulary, grammar, listening, writing, and practical speaking practice."
+updated_at: 2026-07-19
 translation: full
 ---
 # Babbel

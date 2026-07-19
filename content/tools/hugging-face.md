@@ -13,7 +13,6 @@ official_url: "https://huggingface.co/"
 popularity: 42
 description: "Hugging Face verbindet einen offenen Hub für Modelle, Datensätze und Demos mit Bibliotheken und produktiven Inferenzdiensten. Entscheidend sind Modellprüfung, Lizenzklarheit und ein bewusst gewählter Betriebsweg."
 updated_at: 2026-07-19
-lastReviewed: 2026-07-19
 tier: "C"
 generated_at: "2026-05-21"
 ---

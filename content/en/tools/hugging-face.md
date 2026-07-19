@@ -14,7 +14,6 @@ popularity: 0
 description: "Hugging Face combines an open hub for models, datasets, and demos with developer libraries and production inference services. Model evaluation, license clarity, and the deployment path matter more than catalog size."
 translation: full
 updated_at: 2026-07-19
-lastReviewed: 2026-07-19
 ---
 # Hugging Face
 

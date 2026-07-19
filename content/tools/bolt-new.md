@@ -14,7 +14,7 @@ popularity: 66
 description: Bolt.new ist ein browserbasiertes KI-Entwicklungstool für schnelle Web-Prototypen, App-Ideen und iterative Code-Experimente.
 tier: C
 generated_at: 2026-05-28
-updated_at: 2026-06-11
+updated_at: 2026-07-19
 ---
 # Bolt.new
 
@@ -75,7 +75,7 @@ Im Katalog ist Bolt.new mit dem Preismodell **Je nach Plan** geführt. Relevant 
 
 **Zum Anbieter:** https://bolt.new
 
-## Alternativen zu Bolt.new
+## Alternativen
 
 - [Openhands](/tools/openhands/): offener Coding-Agent für kontrollierbare Entwicklungsumgebungen und Repository-Arbeit.
 - [Devin](/tools/devin/): stärker auf delegierte Softwareaufgaben und agentische Entwicklerarbeit ausgerichtet.
@@ -88,6 +88,10 @@ Im Katalog ist Bolt.new mit dem Preismodell **Je nach Plan** geführt. Relevant 
 Bolt.new ist ein produktiver Beschleuniger für frühe Web-App-Ideen, aber kein Ersatz für Engineering-Verantwortung. Besonders nützlich ist es, wenn Prototyp, Codebasis und Deploy-Idee schnell sichtbar werden sollen; vor Produktion braucht es trotzdem Review, Tests, Secrets-Handling und Architekturentscheidungen.
 
 ## FAQ
+
+**Was gehoert vor dem Teilen eines Bolt-Prototyps dazu?**
+
+Secrets entfernen, Abhaengigkeiten und Build pruefen, mobile Ansichten testen und einen kurzen Sicherheitscheck durchführen. Ein sichtbarer Prototyp ist noch kein produktionsreifes System.
 
 **Ist Bolt.new für Einsteiger geeignet?**
 

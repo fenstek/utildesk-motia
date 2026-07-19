@@ -10,9 +10,11 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [data, integration, etl, open-source]
 official_url: "https://airbyte.com/"
+description: "Open data-movement platform for replicating business data into warehouses, lakes, operational systems, and AI workflows."
 popularity: 95
 tier: B
 generated_at: 2026-05-16
+updated_at: 2026-07-19
 ---
 # Airbyte
 
@@ -67,7 +69,7 @@ Dokumentiere pro Verbindung Zweck, Datenklassen, Eigentümer, Ziel, Aufbewahrung
 
 Die Open-Source-Variante senkt Lizenzkosten, nicht automatisch Betriebskosten. Cloud- und Enterprise-Angebote rechnen je nach Nutzung, Service und Funktionsumfang. Starte mit zwei kritischen, aber überschaubaren Verbindungen und vergleiche Ausfälle, Wartungszeit und Aktualität mit dem bisherigen Prozess, bevor du den Connector-Katalog ausrollst.
 
-## Alternativen zu Airbyte
+## Alternativen
 
 - [n8n](/tools/n8n/): wenn Geschäftsautomatisierung und einzelne API-Schritte wichtiger sind als ein Data-Replication-Stack.
 - [Pipedream](/tools/pipedream/): wenn Entwickler schnelle, codeorientierte Integrationsworkflows bauen wollen.
@@ -79,6 +81,10 @@ Die Open-Source-Variante senkt Lizenzkosten, nicht automatisch Betriebskosten. C
 Airbyte ist überzeugend, wenn Datenbewegung ein Produktbestandteil wird und nicht ein nächtlicher Export bleiben darf. Die Plattform belohnt Teams, die Verbindungen wie Software betreiben: mit Tests, Ownership, Monitoring und klaren Berechtigungen. Wer nur zwei Apps zusammenklicken möchte, findet leichtere Alternativen; wer Daten zuverlässig für BI oder KI bereitstellen muss, bekommt einen ernstzunehmenden Unterbau.
 
 ## FAQ
+
+**Was sollte vor einer Agenten-Anbindung begrenzt werden?**
+
+Zuerst nur lesende Quellen und klar definierte Tabellen freigeben. OAuth-Scopes, personenbezogene Daten, Kostenlimits und jede Schreibaktion brauchen eine gesonderte Prüfung.
 
 **Ist Airbyte ein ETL- oder ELT-Tool?**
 

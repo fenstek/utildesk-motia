@@ -8,11 +8,13 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: Entwickler-Tools
 price_model: Je nach Plan
+description: "Terminal-first AI coding tool for repository-aware edits, refactoring, tests, and Git-based review with configurable model providers."
 tags: [ai, coding, cli, developer]
 official_url: "https://aider.chat/"
 popularity: 81
 tier: A
-lastReviewed: 2026-05-10
+lastReviewed: 2026-07-19
+updated_at: 2026-07-19
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 ---
 # Aider
@@ -86,13 +88,15 @@ Die Preisgestaltung von Aider hängt vom jeweiligen Anbieter und dem gewählten 
 
 Bei Aider lohnt sich ein Blick auf die Betriebskosten hinter dem Preisschild: Einrichtung, CI-Ressourcen, Wartung, Integrationen, Dokumentation und technisches Onboarding. Diese Punkte entscheiden oft stärker über den ROI als der Startpreis.
 
-## Alternativen zu Aider
+## Alternativen
 
 - [OpenAI Codex](/tools/openai-codex/): wenn agentische Coding-Aufgaben über CLI und Cloud-Umgebung bearbeitet werden sollen.
 - [GitHub Copilot](/tools/github-copilot/): wenn der Schwerpunkt auf IDE-Integration und Team-Standardisierung liegt.
 - [Cline](/tools/cline/): wenn ein offener Coding-Agent mit expliziten Tool-Freigaben im Editor gesucht wird.
 - [OpenHands](/tools/openhands/): wenn Repository-Aufgaben von einem stärker autonomen Software-Agenten bearbeitet werden sollen.
 - [Cursor](/tools/cursor/): wenn ein AI-nativer Editor statt eines Terminal-first-Workflows besser zum Team passt.
+
+## Weitere Vergleichspunkte
 
 - **GitHub Copilot** – Ein KI-gestützter Code-Assistent, der direkt in Entwicklungsumgebungen integriert werden kann.
 - **Tabnine** – Bietet KI-basierte Autovervollständigung für verschiedene Programmiersprachen.

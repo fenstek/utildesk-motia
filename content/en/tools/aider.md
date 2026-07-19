@@ -6,8 +6,9 @@ editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-19-product-update-priority"
-category: Developer
-price_model: Plan-based
+category: Entwickler-Tools
+price_model: Je nach Plan
+description: "Terminal-first AI coding tool for repository-aware edits, refactoring, tests, and Git-based review with configurable model providers."
 tags:
   - ai
   - coding
@@ -17,6 +18,7 @@ official_url: 'https://aider.chat/'
 popularity: 0
 source_language: de
 translation: full
+updated_at: 2026-07-19
 ---
 # Aider
 
@@ -97,13 +99,15 @@ The pricing of Aider depends on the provider and the chosen plan. There are ofte
 
 A fair cost check for Aider should include setup, CI resources, maintenance, integrations, documentation, and technical onboarding. Otherwise the tool can look cheaper at the start than it is in productive use.
 
-## Alternatives to Aider
+## Alternatives
 
 - [OpenAI Codex](/en/tools/openai-codex/): when agentic coding tasks should run through CLI and a cloud environment.
 - [GitHub Copilot](/en/tools/github-copilot/): when IDE integration and team standardisation are the priority.
 - [Cline](/en/tools/cline/): when an open coding agent with explicit tool approvals in the editor is wanted.
 - [OpenHands](/en/tools/openhands/): when repository work should be handled by a more autonomous software agent.
 - [Cursor](/en/tools/cursor/): when an AI-native editor fits the team better than a terminal-first workflow.
+
+## Additional comparison points
 
 - **GitHub Copilot** – A code-assistant powered by AI that can be integrated directly into development environments.
 - **Tabnine** – Offers AI-based auto-completion for various programming languages.
