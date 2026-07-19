@@ -14,9 +14,9 @@ tags:
   - notes
   - assistant
 official_url: "https://www.granola.ai/"
+description: "AI meeting notepad that combines personal notes, transcript context, search, and reviewed follow-up without joining calls as a bot."
 description: "AI meeting notepad that combines your rough notes with transcript and context, without joining the video call as a visible meeting bot."
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-19
 popularity: 0
 tier: "D"
 generated_at: "2026-05-12"

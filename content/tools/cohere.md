@@ -8,8 +8,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: AI Infrastructure
 price_model: Freemium
+description: "Enterprise-oriented language models, embeddings, and reranking tools for grounded search and AI workflows."
 tags: [chatbot, data]
 official_url: "https://cohere.com/"
+updated_at: 2026-07-19
 popularity: 61
 tier: B
 generated_at: 2026-05-11
@@ -61,7 +63,7 @@ Für Unternehmensdaten sind Mandantentrennung, Aufbewahrung, Protokollierung, Sc
 
 Cohere bietet verschiedene Zugangs- und Enterprise-Modelle; Kosten hängen unter anderem von Modell, Volumen, Deployment und Support ab. Ein belastbarer Pilot braucht deshalb ein Tokenbudget, eine repräsentative Testmenge und klare Abbruchkriterien. Die teuerste Überraschung ist oft nicht die Inferenz, sondern eine Wissensbasis, die niemand pflegt.
 
-## Alternativen zu Cohere
+## Alternativen
 
 - [Anthropic API](/tools/anthropic-api/): wenn Claude-Modelle und deren Entwickler-Ökosystem zum Produktstack passen.
 - [OpenAI GPT](/tools/openai-gpt/): wenn breite Modell- und Tooling-Unterstützung über eine etablierte Plattform gefragt ist.
@@ -73,6 +75,10 @@ Cohere bietet verschiedene Zugangs- und Enterprise-Modelle; Kosten hängen unter
 Cohere ist interessant, weil die Plattform den Unternehmensfall ernst nimmt: Suche, Quellenbezug, mehrsprachige Daten und kontrollierte Einbettung statt eines generischen Chatfensters. Sie ist am stärksten für Teams, die Evaluation und Datenzugriff selbst verantworten können. Ohne kuratierte Inhalte und klare Entscheidungsschwellen wird sie jedoch genauso leicht zur glaubwürdig klingenden Black Box wie jede andere Modell-API.
 
 ## FAQ
+
+**Wie bewertet man Cohere in einem eigenen RAG-Pilot?**
+
+Mit einem festen Fragenkatalog, bekannten Quellen und Negativfällen. Messen sollte man Quellenbindung, nicht beantwortbare Fragen, Latenz, Kosten und Eskalationen.
 
 **Ist Cohere ein fertiger KI-Chat für Mitarbeitende?**
 

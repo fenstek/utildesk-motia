@@ -6,7 +6,7 @@ editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-19-product-update-priority"
-category: Video
+category: Audio & Video
 price_model: Freemium
 tags:
   - ai
@@ -92,7 +92,7 @@ CapCut works best as a production tool for repeatable clips, not as a replacemen
 
 CapCut offers a freemium model. The basic version is free and includes many video editing features. For extended access to premium features such as additional effects, ad-free use, higher-quality export, and cloud storage, a paid subscription is required. Prices vary depending on the region and selected plan and may be billed monthly or annually.
 
-## Alternatives to CapCut
+## Alternatives
 
 - [InShot](/en/tools/inshot/): for very fast mobile edits and format adjustments.
 - [KineMaster](/en/tools/kinemaster/): for a deeper mobile timeline and layer workflow.
@@ -100,11 +100,15 @@ CapCut offers a freemium model. The basic version is free and includes many vide
 - [Filmora](/en/tools/filmora/): for accessible consumer and creator editing with templates.
 - [VN Video Editor](/en/tools/vn-video-editor/): for a mobile editor with more manual control.
 
+## Additional comparison points
+
 - **InShot:** A popular mobile app for video and photo editing with a similar feature set.
 - **KineMaster:** A professional video editing app with extensive tools and multi-layer support.
 - **Adobe Premiere Rush:** A cross-platform Adobe solution for simple and fast video editing.
 - **FilmoraGo:** A user-friendly app with many effects and templates, ideal for social media.
 - **VN Video Editor:** A powerful app focused on ease of use and creative features.
+
+## Additional comparison points
 
 ## FAQ
 

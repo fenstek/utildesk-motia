@@ -10,9 +10,10 @@ category: Audio & Video
 price_model: Usage-based
 tags: [audio, transcription, api, voice-ai]
 official_url: "https://deepgram.com/"
+description: "Voice-AI infrastructure for speech-to-text, text-to-speech, audio intelligence, and real-time voice-agent applications."
 popularity: 55
 tier: C
-lastReviewed: 2026-07-13
+updated_at: 2026-07-19
 ---
 # Deepgram
 
@@ -79,7 +80,7 @@ Wir würden den Pilot nicht an einem Demo-Dialog messen, sondern an echten, schw
 - Kosten entstehen über Audio, Modelle und nachgelagerte Systeme, nicht nur über Transkriptminuten.
 - Self-hosting reduziert nicht automatisch Governance- und Sicherheitsarbeit.
 
-## Alternativen zu Deepgram
+## Alternativen
 
 - [AssemblyAI](/tools/assemblyai/): für einen direkten Vergleich von Entwickler-APIs für Transkription und Voice-AI.
 - [Amazon Transcribe](/tools/amazon-transcribe/): wenn AWS der primäre Cloud-Stack ist.
@@ -87,6 +88,10 @@ Wir würden den Pilot nicht an einem Demo-Dialog messen, sondern an echten, schw
 - [Trint](/tools/trint/): wenn kollaborative Transkriptionsarbeit für Redaktionen statt API-Produktentwicklung gesucht wird.
 
 ## FAQ
+
+**Welche Daten braucht ein Voice-Agent-Pilot?**
+
+Ein kleiner Satz repräsentativer Aufnahmen mit Einwilligung, bekannten Fachbegriffen und klaren Abbruchfällen. Neben der Erkennung sollten Latenz, Unterbrechungen und die Übergabe an Menschen gemessen werden.
 
 **Ist Deepgram ein vollständiger Voice-Agent?**
 

@@ -1629,3 +1629,4 @@ _Last updated: 2026-07-19_
 - Added short July product-context sections grounded in official product documentation or current official product positioning; each update includes a practical pilot, governance or quality-control criterion instead of unsupported feature claims.
 - Preserved the existing editorial structure, alternatives, FAQ content and illustrations. No new image assets were created.
 - Marked all 32 locale files with the 2026-07-19 editorial batch and updated their `content-lastmod` records. Release is intended as one bounded tool-runtime upsert without an Astro/Pages rebuild.
+- Ran the strict card guard across all 16 slugs and repaired legacy parity issues found in the same cards: descriptions, category/price parity, valid internal alternatives, FAQ minimums, review dates, and duplicate legacy alternative lists. No card content or illustration was discarded.

@@ -6,15 +6,16 @@ editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
-lastReviewed: 2026-07-13
+updated_at: 2026-07-19
 editorial_verdict: recommend
 editorial_verdict_headline: Empfehlen - fuer eine tragfaehige Lernroutine, nicht als Sprachpruefung.
 editorial_verdict_text: Stark bei kurzen, regelmaessigen Lektionen und aktivem Sprechen; fuer berufliche Sicherheit braucht es reale Gespraeche und fachliches Feedback dazu.
 editorial_trust_label: 4 / 5 - klarer Alltagsnutzen
-category: Produktivität
-price_model: Abonnement
+category: Productivity
+price_model: Subscription
 tags: [education, language, learning, mobile]
 official_url: "https://www.babbel.com/"
+description: "Subscription language-learning platform for short lessons, vocabulary, grammar, listening, writing, and practical speaking practice."
 popularity: 94
 tier: D
 generated_at: 2026-05-27
