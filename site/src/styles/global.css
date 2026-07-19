@@ -5642,6 +5642,13 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
   }
 }
 
+/* Four related guides form a complete desktop block instead of exposing empty cells. */
+@media (min-width: 700px) {
+  .akte-alts-grid.akte-guide-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .akte-alt-card {
   background: var(--akte-paper);
   padding: 22px 24px 20px;
