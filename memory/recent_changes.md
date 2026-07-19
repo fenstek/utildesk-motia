@@ -1637,3 +1637,8 @@ _Last updated: 2026-07-19_
 - Preserved the existing editorial structure, alternatives, FAQ content and illustrations. No new image assets were created.
 - Marked all 32 locale files with the 2026-07-19 editorial batch and updated their `content-lastmod` records. Release is intended as one bounded tool-runtime upsert without an Astro/Pages rebuild.
 - Ran the strict card guard across all 16 slugs and repaired legacy parity issues found in the same cards: descriptions, category/price parity, valid internal alternatives, FAQ minimums, review dates, and duplicate legacy alternative lists. No card content or illustration was discarded.
+
+## 2026-07-19 - Kiro illustration replacement
+
+- Replaced `content/images/tools/kiro-editorial.webp` with the user-approved raster illustration, converted to the shared 1260x800 WebP card format.
+- Kept the existing DE/EN card references and illustration registry path unchanged; the replacement is therefore a content-addressed asset delta only.
