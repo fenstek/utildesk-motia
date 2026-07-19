@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-17_
 
+## 2026-07-19 - Hype16 intake and editorial package
+
+- Added 16 verified high-interest candidates to the Google Sheet source of truth (rows 1777-1792) as `NEW`: ComfyUI, Dify, Langfuse, Kiro, GitHub Agentic Workflows, Amazon Bedrock AgentCore Browser, IBM Bob, Oracle AI Agent Studio, Flowise, Langflow, Google ADK, MCP Inspector, Qwen Code, Firebase Studio, Windsurf and SWE-agent.
+- Created paired DE/EN full-card editorial source for all sixteen: independent localized copy, factual official URLs, editorial assessment, internal alternatives and FAQ coverage.
+- Generated and normalized sixteen distinct 1600x900 WebP editorial illustrations with Codex subscription image generation, without Gemini or external image API usage; registered the batch for one figure per paired card.
+- Runtime publication and final Sheet status transition remain pending until the package passes the batch guard and bounded production delta verification.
+
 ## 2026-07-17 - Focused search recovery release
 
 - Replaced every homepage fallback guide count with the live collection total; production now shows `39 Ratgeber` and contains no stale `25` counter.
