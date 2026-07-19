@@ -1653,3 +1653,11 @@ _Last updated: 2026-07-19_
 - Fixed the empty gray area in the related Ratgeber block on runtime tool pages: the four guide backlinks now use a dedicated two-column desktop grid and form a complete 2x2 block.
 - Tool alternatives keep their existing three-column desktop layout; mobile remains a single column.
 - This is a renderer/CSS-only change. No tool content, images, sitemap, or broad Astro/Pages rebuild was changed.
+
+## 2026-07-19 - KI agents in Office documents Ratgeber publication
+
+- Published the NotebookLM-first candidate `KI-Agenten in Office-Dokumenten: Wie Word, Excel und PowerPoint agentenfähig werden` after a full manual DE/EN editorial rewrite.
+- Replaced unsupported Reddit-derived certainty and broad benchmark conclusions with current Microsoft documentation, a bounded OfficeCLI description, concrete Word/Excel/PowerPoint workflows, permissions, provenance and approval criteria.
+- Added two distinct direct Codex-generated WebP illustrations: a restrained document-architecture print composition and a blue cut-paper approval workflow. Both exclude people, offices, UI, logos, readable text and watermarks.
+- Added verified internal links to ChatGPT, Claude and Gemini; OfficeCLI and Microsoft 365 Copilot remain external links because no matching internal tool cards exist.
+- Local build produced both locale pages, canonical/JSON-LD, 41 Ratgeber entries and both compact sitemaps. The unrelated global tool-quality guard still reports its pre-existing 138 catalog findings.
