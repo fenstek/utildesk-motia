@@ -95,4 +95,3 @@ As a historical reference: Sora's development helps explain why current video pr
 
 **5. What should be checked in a replacement?**
 Rights, brand approval, likeness, export formats, cost, data access, and the actual approval workflow.
-
