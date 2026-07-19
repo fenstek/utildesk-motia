@@ -2,10 +2,10 @@
 slug: aider
 title: Aider
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update-priority
 category: Entwickler-Tools
 price_model: Je nach Plan
 tags: [ai, coding, cli, developer]
@@ -18,6 +18,10 @@ mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-n
 # Aider
 
 Aider ist ein KI-Coding-Werkzeug für Entwickler, die lieber im Terminal und im Git-Workflow bleiben, statt Code-Fragen in ein separates Chatfenster auszulagern. Das Tool arbeitet mit Repository-Kontext, kann Änderungen als Diff vorbereiten und eignet sich besonders für kleine, klar beschriebene Aufgaben, Tests und Refactorings.
+
+## Redaktionelles Update Juli 2026
+
+Aider bleibt als terminal- und Git-zentrierter Coding-Agent besonders interessant, weil Teams Modelle und Anbieter austauschen können, ohne den gesamten Workflow neu zu bauen. Die aktuelle Praxisfrage ist daher weniger ein einzelner Benchmark als die Kombination aus `ask`, `code` und `architect`, Repository-Rechten, Review-Schritt und Kosten pro erledigter Änderung. Vor dem Rollout mit einem echten, kleinen Repository testen und jede Änderung über Diff und Tests prüfen.
 
 ## Für wen ist Aider geeignet?
 

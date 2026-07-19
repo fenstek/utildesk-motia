@@ -2,10 +2,10 @@
 slug: open-webui
 title: Open WebUI
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-02
+editorial_batch: 2026-07-19-product-update-priority
 category: AI
 price_model: Open Source
 tags: [assistant, chatbot]
@@ -18,6 +18,16 @@ translation: full
 Open WebUI is a self-hosted interface for language models and AI tools. It can connect local models through Ollama as well as OpenAI-compatible APIs and other cloud providers. Unlike an individual chat account, it lets a team decide which models, knowledge sources, roles, and extensions sit behind a shared interface.
 
 That is appealing for teams that want a governable route to local and external models rather than a one-off experiment. It is not, however, a simple "ChatGPT clone to install." Value depends on operating the service, keeping it updated, managing permissions, and deciding exactly which data may leave the environment.
+
+## Editorial update July 2026
+
+The current Open WebUI line moves the centre of gravity from chat interface to operable agent platform: skills, events, structured output, knowledge spaces, and Open Terminal can connect local models to concrete work. The update documentation also makes version compatibility and breaking changes worth checking before an upgrade.
+
+Before upgrading, a team should back up its instance, review roles and tool permissions, and test its extensions against the target version. The right pilot is an isolated agent run with allowed tools, visible logs, and a clear rollback path.
+
+## Editorial update July 2026
+
+The current Open WebUI line moves the centre of gravity from chat interface to operable agent platform: skills, events, structured output, knowledge spaces, and Open Terminal can connect local models to concrete work. Before upgrading, review backups, roles, tool permissions, and extension compatibility.
 
 ## Who is Open WebUI for?
 

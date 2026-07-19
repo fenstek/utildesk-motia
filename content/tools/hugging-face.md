@@ -3,17 +3,17 @@ slug: hugging-face
 title: Hugging Face
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-exemplar"
+editorial_batch: "2026-07-19-product-update-priority"
 category: "AI Infrastructure"
 price_model: Freemium
 tags: [ai, machine-learning, model-hub, inference, open-source]
 official_url: "https://huggingface.co/"
 popularity: 42
 description: "Hugging Face verbindet einen offenen Hub für Modelle, Datensätze und Demos mit Bibliotheken und produktiven Inferenzdiensten. Entscheidend sind Modellprüfung, Lizenzklarheit und ein bewusst gewählter Betriebsweg."
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-19
+lastReviewed: 2026-07-19
 tier: "C"
 generated_at: "2026-05-21"
 ---
@@ -22,6 +22,10 @@ generated_at: "2026-05-21"
 Hugging Face ist weniger ein einzelnes KI-Tool als ein Arbeitsökosystem für Modelle, Datensätze und Anwendungen. Auf dem Hub finden Teams offene und kommerzielle Modelle, dokumentieren eigene Artefakte in versionierten Repositories und zeigen Prototypen über Spaces. Dazu kommen Bibliotheken wie Transformers und Datasets sowie mehrere Wege, Modelle per API oder dediziertem Endpoint zu betreiben.
 
 Der praktische Wert liegt nicht darin, möglichst viele Modelle auszuprobieren. Hugging Face lohnt sich, wenn ein Team Auswahl, Evaluation und Betrieb in einen nachvollziehbaren Prozess bringt. Ohne diesen Prozess wird der große Katalog schnell zur unübersichtlichen Modellbörse, in der Lizenz, Datenherkunft und Folgekosten erst kurz vor dem Produktivstart auffallen.
+
+## Redaktionelles Update Juli 2026
+
+Hugging Face ist stärker als Ausführungs- und Agentenplattform relevant: Inference Providers, Spaces mit ZeroGPU und MCP-fähige Demos verkürzen den Weg vom Modelltest zum Prototyp. Provider, Quoten, Lizenz und Datenweg unterscheiden sich je Modell und Space und müssen vor dem Rollout dokumentiert werden.
 
 ## Hub, Modelle und Datensätze
 

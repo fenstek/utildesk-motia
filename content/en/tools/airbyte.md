@@ -2,10 +2,10 @@
 slug: airbyte
 title: Airbyte
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-01
+editorial_batch: 2026-07-19-product-update-priority
 category: Developer Tools
 price_model: Freemium
 tags: [data, integration, etl, open-source]
@@ -18,9 +18,19 @@ translation: full
 
 Airbyte is a data-movement platform for teams that need to operate sources, destinations, and ownership over time, rather than run a one-off export. It connects SaaS products, databases, warehouses, and data lakes through connectors and can be used as a cloud service or self-managed. Its open-source core and Connector Builder are particularly useful when standard integrations are not enough.
 
+## Editorial update July 2026
+
+Airbyte is extending its role from data replication toward a context layer for agents. Airbyte Agents, MCP, SDK, and CLI let teams connect sources once and use them from Claude, ChatGPT, Cursor, or their own agent workflows. The important question is not connector count, but which data an agent may read or change.
+
+Before rollout, review OAuth, service accounts, PII filters, cost limits, and a read-only pilot. Only grant write access after answers have traceable data provenance and a clear access trail.
+
 <figure class="tool-editorial-figure">
   <img src="/images/tools/airbyte-editorial.webp" alt="a paper-cut harbor with data cargo routes between islands" loading="lazy" decoding="async" />
 </figure>
+
+## Editorial update July 2026
+
+Airbyte is extending its role from data replication toward a context layer for agents. Agents, MCP, SDK, and CLI let teams connect sources once and use them from ChatGPT, Claude, Cursor, or their own workflows. Before granting write access, review OAuth, PII filters, cost limits, and a read-only pilot.
 
 ## Who is Airbyte for?
 

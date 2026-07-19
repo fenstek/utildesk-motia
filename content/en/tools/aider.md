@@ -2,10 +2,10 @@
 slug: aider
 title: Aider
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-19-product-update-priority"
 category: Developer
 price_model: Plan-based
 tags:
@@ -21,6 +21,10 @@ translation: full
 # Aider
 
 Aider is an innovative tool designed specifically for developers to optimize the programming process using Artificial Intelligence (AI). It combines a powerful command-line interface (CLI) with intelligent features that facilitate writing, understanding, and improving code. Aider helps developers work more productively and tackle complex tasks more efficiently.
+
+## Editorial update July 2026
+
+Aider remains most interesting as a terminal- and Git-centred coding agent because teams can change models and providers without rebuilding the whole workflow. The practical question is therefore not one benchmark, but how `ask`, `code`, and `architect` fit with repository permissions, review, tests, and cost per accepted change. Start with a real but small repository, and require a diff and test result for every proposed edit.
 
 ## For Who is Aider Suitable?
 

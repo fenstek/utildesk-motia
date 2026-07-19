@@ -1622,3 +1622,10 @@ _Last updated: 2026-07-19_
 - Refreshed `NotebookLM`, `OpenHands` and `Sora` in DE and EN with current product context, practical workflow criteria, five internal alternatives and five FAQ answers each.
 - NotebookLM now explains the July 2026 Gemini Notebook rename and source-grounded cloud analysis; OpenHands now includes a bounded pilot and full-cost review; Sora is clearly marked as unavailable since April 26, 2026 and no longer presents stale editor, export or pricing claims as current.
 - Updated only the six affected tool `content-lastmod` records. No illustrations were added or changed.
+
+## 2026-07-19 - Product updates for both editorial priority echelons
+
+- Refreshed the DE/EN cards for Open WebUI, Playwright, Apify, Airbyte, Deepgram, Groq, Hugging Face, Copy.ai, Adobe Podcast, Granola, Cohere, Bolt.new, Aider, Babbel, CapCut and Zoho Writer.
+- Added short July product-context sections grounded in official product documentation or current official product positioning; each update includes a practical pilot, governance or quality-control criterion instead of unsupported feature claims.
+- Preserved the existing editorial structure, alternatives, FAQ content and illustrations. No new image assets were created.
+- Marked all 32 locale files with the 2026-07-19 editorial batch and updated their `content-lastmod` records. Release is intended as one bounded tool-runtime upsert without an Astro/Pages rebuild.

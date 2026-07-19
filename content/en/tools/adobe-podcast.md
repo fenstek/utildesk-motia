@@ -2,10 +2,10 @@
 slug: adobe-podcast
 title: Adobe Podcast
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
+editorial_batch: "2026-07-19-product-update-priority"
 category: Audio
 price_model: Freemium
 tags: [audio, podcast, speech-enhancement, ai]
@@ -23,6 +23,10 @@ Its best-known tool, Enhance Speech, can process spoken audio so a weak webcam o
 <figure class="tool-editorial-figure">
   <img src="/images/tools/adobe-podcast-editorial.webp" alt="a warm analogue recording studio with a microphone and reel-to-reel tape machine" loading="lazy" decoding="async" />
 </figure>
+
+## Editorial update July 2026
+
+Adobe Podcast remains a fast browser path from a speech recording to a usable working cut. Enhance Speech is not a complete audio-production suite: artefacts, names, source rights, and final listening review remain editorial responsibilities.
 
 ## Who is it for?
 

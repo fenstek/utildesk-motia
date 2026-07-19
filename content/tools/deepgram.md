@@ -2,10 +2,10 @@
 slug: deepgram
 title: Deepgram
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
+editorial_batch: 2026-07-19-product-update-priority
 category: Audio & Video
 price_model: Usage-based
 tags: [audio, transcription, api, voice-ai]
@@ -19,6 +19,16 @@ lastReviewed: 2026-07-13
 Deepgram ist Voice-AI-Infrastruktur für Entwicklerteams. Die Plattform umfasst Speech-to-Text, Text-to-Speech, Audio Intelligence und eine Voice-Agent-API. Sie kann Audio in Echtzeit oder als Batch verarbeiten und ist laut Anbieter sowohl als Cloud- als auch als Self-hosted-Option verfügbar. Damit ist Deepgram kein fertiges Callcenter oder Meeting-Produkt, sondern ein Baukasten für Anwendungen, die Sprache verstehen, beantworten oder auswerten sollen.
 
 Der entscheidende technische Punkt ist die Latenz über die gesamte Gesprächskette. Ein schnelles Transkript hilft wenig, wenn Turn-Erkennung, LLM, Business-Logik oder Sprachausgabe den Dialog unnatürlich machen. Ebenso muss ein Call-Analytics-Workflow zwischen Hypothesen aus einem Modell und nachvollziehbaren Aussagen über einen Kundenanruf unterscheiden.
+
+## Redaktionelles Update Juli 2026
+
+Mit der Voice Agent API bündelt Deepgram die Sprachkette aus Zuhören, Denken und Sprechen in einem Echtzeit-Workflow. Das ist für Telefon- und Support-Agenten interessant, verschiebt die Prüfung aber vom einzelnen Speech-to-Text-Modell auf Turn-Taking, Unterbrechungen, Eskalation, Kosten und die Qualität des vollständigen Dialogs.
+
+Ein seriöser Pilot läuft zunächst mit aufgezeichneten Gesprächen und menschlicher Abnahme. Erst danach sollten Telefonie, Kundendaten oder automatische Aktionen dazukommen; für regulierte Bereiche gehören Aufbewahrung, Einwilligung und Audit-Logs in den Scope.
+
+## Redaktionelles Update Juli 2026
+
+Mit der Voice Agent API bündelt Deepgram die Sprachkette aus Zuhören, Denken und Sprechen in einem Echtzeit-Workflow. Ein seriöser Pilot startet mit aufgezeichneten Gesprächen und menschlicher Abnahme; Telefonie, Kundendaten und automatische Aktionen kommen erst danach.
 
 ## Für wen eignet sich Deepgram?
 

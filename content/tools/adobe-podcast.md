@@ -2,10 +2,10 @@
 slug: adobe-podcast
 title: Adobe Podcast
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
+editorial_batch: 2026-07-19-product-update-priority
 category: Audio & Video
 price_model: Freemium
 tags: [audio, podcast, speech-enhancement, ai]
@@ -24,6 +24,10 @@ Das prominenteste Werkzeug ist Enhance Speech: Es kann gesprochene Sprache so au
 <figure class="tool-editorial-figure">
   <img src="/images/tools/adobe-podcast-editorial.webp" alt="Warmes analoges Aufnahmestudio mit Mikrofon und Bandmaschine" loading="lazy" decoding="async" />
 </figure>
+
+## Redaktionelles Update Juli 2026
+
+Adobe Podcast bleibt ein schneller Browser-Weg von einer Sprachaufnahme zu einer brauchbaren Arbeitsfassung. Enhance Speech ist aber keine vollständige Audioproduktion: Artefakte, Eigennamen, Quellenrechte und die finale Hörprüfung bleiben redaktionelle Aufgaben.
 
 ## Für wen eignet sich Adobe Podcast?
 

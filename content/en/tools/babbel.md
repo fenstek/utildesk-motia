@@ -2,10 +2,10 @@
 slug: babbel
 title: Babbel
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
+editorial_batch: "2026-07-19-product-update-priority"
 lastReviewed: 2026-07-13
 editorial_verdict: recommend
 editorial_verdict_headline: "Recommend for a sustainable learning habit, not as a language exam."
@@ -20,6 +20,10 @@ translation: full
 # Babbel
 
 Babbel is a subscription language-learning platform built around short lessons structured by level and goal. It combines vocabulary, grammar, listening, writing and speaking in everyday contexts. That is useful for regular practice, but it is not a replacement for real conversation, human correction or specialist language training.
+
+## Editorial update July 2026
+
+Babbel remains most convincing when learning is built around short, regular sessions and real everyday situations. For a current assessment, the key question is less one new feature than whether the app, web experience, speaking practice, and review loop form a habit that lasts. Test it for a week with concrete goals, then check whether active speaking and free comprehension improve beyond completing lessons.
 
 ## How the learning path works
 

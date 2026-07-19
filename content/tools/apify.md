@@ -9,16 +9,26 @@ affiliate_url:
 created_at: 2026-06-14
 updated_at: 2026-06-14
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-14
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+editorial_batch: 2026-07-19-product-update-priority
 tier: D
 popularity: 74
 ---
 # Apify
 
 Apify ist eine Plattform für Web-Scraping, Browser-Automation und Datenextraktion. Spannend ist sie nicht nur für klassische Scraper, sondern auch für Teams, die Webdaten wiederholbar in Recherche, Monitoring, Lead-Listen oder KI-Pipelines bringen müssen.
+
+## Redaktionelles Update Juli 2026
+
+Apify rückt seine Actor- und Browser-Infrastruktur weiter in Richtung agentischer Nutzung: MCP-Konnektoren und ein `webServerSchema` in `actor.json` erleichtern es, Actors als beschreibbare Werkzeuge bereitzustellen. Verbesserungen bei wiederverwendbaren Datensätzen helfen, strukturierte Ergebnisse an nachgelagerte Pipelines zu übergeben.
+
+Das erhöht zugleich die Verantwortung für Quellen, robots.txt, Nutzungsrechte, Laufzeitkosten und Secrets. Vor dem Ausbau sollte ein einzelner Actor mit begrenzter Seitenzahl, nachvollziehbarem Output und einem Kostenlimit beweisen, dass die Datenpipeline stabil bleibt.
+
+## Redaktionelles Update Juli 2026
+
+Apify rückt seine Actor- und Browser-Infrastruktur weiter in Richtung agentischer Nutzung: MCP-Konnektoren und ein `webServerSchema` in `actor.json` erleichtern es, Actors als beschreibbare Werkzeuge bereitzustellen. Vor dem Ausbau sollten Quellen, robots.txt, Nutzungsrechte, Laufzeitkosten und Secrets mit einem begrenzten Actor-Pilot geprüft werden.
 
 ## Für wen ist das geeignet?
 
