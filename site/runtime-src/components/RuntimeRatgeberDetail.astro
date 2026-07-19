@@ -82,6 +82,13 @@ const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.
     {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>}
   </Fragment>
 
+  <style>
+    html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar > *,
+    html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump {
+      width: 100%;
+    }
+  </style>
+
   <main class="ratgeber-detail-shell runtime-ratgeber-detail">
     <nav class="ratgeber-breadcrumb" aria-label={isEnglish ? "Breadcrumb" : "Brotkrümel"}>
       <a href={isEnglish ? "/en/ratgeber/" : "/ratgeber/"}>{isEnglish ? "Guides" : "Ratgeber"}</a>
