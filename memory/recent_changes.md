@@ -1615,3 +1615,10 @@ _Last updated: 2026-07-19_
 - Added repeatable pilot criteria and completed short FAQ sections to four questions where required; preserved existing illustrations and official URLs.
 - Normalized recognized internal alternatives in both languages and corrected legacy English alternative routes so they point to `/en/tools/`.
 - Updated only the 16 affected `content-lastmod` records. Publication is a single bounded D1/R2 runtime release without an Astro rebuild.
+
+## 2026-07-19 - First and second editorial echelons
+
+- Audited the requested 16 high-interest cards against the current `origin/master`; 13 already had fresh July editorial passes and were intentionally left unchanged.
+- Refreshed `NotebookLM`, `OpenHands` and `Sora` in DE and EN with current product context, practical workflow criteria, five internal alternatives and five FAQ answers each.
+- NotebookLM now explains the July 2026 Gemini Notebook rename and source-grounded cloud analysis; OpenHands now includes a bounded pilot and full-cost review; Sora is clearly marked as unavailable since April 26, 2026 and no longer presents stale editor, export or pricing claims as current.
+- Updated only the six affected tool `content-lastmod` records. No illustrations were added or changed.

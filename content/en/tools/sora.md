@@ -2,93 +2,64 @@
 slug: sora
 title: Sora
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-06-11
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: 2026-06-11-hype-tools-human-polish-2
+editorial_batch: 2026-07-19-product-update-echelon
 category: Video
-price_model: null
+price_model: Discontinued
 tags:
   - video
 official_url: 'https://openai.com/sora'
 popularity: 0
-description: 'A flexible video software for creating, editing, and managing video content, with tools for timelines, effects, collaboration, and multi-format export.'
+description: "Sora was OpenAI's generative video project for visual drafts. OpenAI says the product has not been available since April 26, 2026."
 translation: full
-updated_at: 2026-06-11
+updated_at: 2026-07-19
 ---
 # Sora
 
-Sora is a versatile video software designed specifically for creating, editing, and managing video content. Whether for professional video producers, content creators, or businesses, Sora offers a range of tools that efficiently support the entire video workflow. The intuitive user interface makes it easy to get started, while powerful features also make complex projects possible.
+Sora was OpenAI's generative video project for short visual drafts and storyboard ideas. This card is now mainly a historical comparison point: OpenAI states that the Sora product has not been available since April 26, 2026. Teams choosing AI video today should not plan around Sora; they should evaluate active alternatives and their rights, export, and approval models instead.
 
 
-## Editorial update June 2026
+## Editorial update July 2026
 
-Sora remains a signal for how quickly AI video is moving from visual trick to real pre-production. For brands, agencies, and product teams, the key question is not one impressive clip, but whether scenes, style, timing, and variants can become a repeatable creative process.
+Sora remains a signal for how quickly AI video moved from visual trick to real pre-production. For a current decision, however, availability is the decisive fact: a historically impressive service is not a reliable building block for a new production workflow.
 
-Before publication, rights, brand approval, likeness, music, subtitles, and product truth matter. Sora is strong for storyboards and visual exploration, but it needs clear editorial control.
+For any replacement, rights, brand approval, likeness, music, subtitles, and product truth still matter. Sora itself should no longer be treated as an active recommendation.
 
-## Who is Sora suitable for?
+## Who is this card useful for today?
 
-Sora is aimed at a broad range of users. The software is especially suitable for:
-
-- Content creators and YouTubers who want to edit their videos quickly and professionally.
-- Marketing teams and businesses that produce video content for advertising and social media.
-- Educational institutions and trainers who create and manage instructional videos.
-- Video professionals looking for a flexible and powerful solution that can adapt to different requirements.
-
-Depending on the use case, Sora offers different functions and customization options that optimize the workflow.
-
-Sora becomes especially relevant when several roles are involved. Then usability matters, but so do handoffs, reviews, and traceable decisions around visual production, feedback, variants, and handoff to other roles.
-
-Before rollout, Sora should pass a small reality check: who owns the result, who reviews it, and what improvement would the team actually notice?
+This card is for teams that need to understand Sora's historical place in the AI video cluster or update an existing comparison. Sora is not a reliable choice for a new production because the product is no longer available. Current projects should compare active video services with clear rights, export, and approval terms instead.
 
 ## Editorial assessment
 
-The practical value of Sora becomes visible through repeated use, not a polished first impression. Teams should check whether editing time, visual quality, approval loops, and reusability become more stable after real runs.
+Sora's practical value is now mainly historical: the project shaped expectations for generative video pre-production. For a current decision, a team should test an active service with one concrete asset, briefing, rights review, feedback round, and final handoff.
 
-A useful evaluation starts with one concrete asset or mockup with briefing, versions, feedback, and final handoff. Only then can a team decide whether Sora is just a nice add-on or a dependable part of the workflow.
+A useful replacement evaluation starts with one concrete asset or mockup. Only then can a team decide whether an active service is a dependable part of the workflow.
 
 - **What to watch:** Sora is useful only if editing time, visual quality, approval loops, and reusability can be compared after a real run and reviewed by someone else.
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Sora.
 - **Common pitfall:** Sora disappoints when briefing, rights, brand rules, and export formats remain vague.
 
-## Key features
+## Status and practical context
 
-- **Video editing:** Cut, trim, merge, and adjust video clips with a user-friendly timeline.
-- **Effects and transitions:** A wide range of visual effects, filters, and transitions for creative editing.
-- **Audio editing:** Integration of soundtracks, voice-over, and sound effects with customization options.
-- **Templates and presets:** Ready-made templates for fast video production, ideal for social media formats.
-- **Multi-format export:** Support for numerous video formats and resolutions, including HD and 4K.
-- **Cloud integration:** Option to store and collaborate in the cloud (depending on the plan).
-- **Team features:** Shared project editing and approval options for teams.
-- **Automated features:** Intelligent tools such as automatic scene detection or subtitle generation (depending on the provider).
-
-- **Practical workflow:** Sora should be tested against one concrete asset or mockup with briefing, versions, feedback, and final handoff, not only against a polished demo.
-- **Quality control:** In operation, Sora should leave enough context to explain how editing time, visual quality, approval loops, and reusability were judged and corrected.
-- **Team handoff:** Sora becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+- **Availability:** OpenAI states that the product has not been available since April 26, 2026.
+- **Historical value:** Sora marks the move from text-to-video demos toward storyboards and visual pre-production.
+- **What to check today:** Compare active providers for rights, exports, costs, and approval workflows.
+- **Do not start a new project around it:** Treating old feature or pricing descriptions as current would be misleading.
 
 ## Pros and cons
 
 ### Pros
 
-- Intuitive and clear user interface, suitable even for beginners.
-- Extensive features for a variety of video-related needs.
-- Flexible through customization options and templates.
-- Supports team collaboration and cloud storage.
-- Regular updates and improvements.
-
-- Stronger in daily work when Sora is used for clearly bounded tasks rather than every possible side problem.
-- Helps most where the work around visual production, feedback, variants, and handoff to other roles still depends on individual people, private routines, or improvised handoffs. For Sora, it is a useful checkpoint for the first retrospective.
+- Historically important for the development of generative video workflows.
+- A useful reference point when assessing current storyboard and pre-production products.
 
 ### Cons
 
-- Full functionality may be limited depending on the selected plan.
-- Some advanced features require time to learn.
-- Pricing may vary depending on the provider and usage.
-- For very complex film projects, specialized tools may be better suited.
-
-- Becomes harder to run when Sora enters the workflow while briefing, rights, brand rules, and export formats remain vague and the team only discovers that gap later.
-- The setup matters less than whether the team keeps Sora reviewed, cleaned up, and tied to real working rules.
+- No longer available as an active product.
+- Old claims about interface, exports, cloud features, or pricing must not be read as current promises.
+- New projects need an active alternative with verifiable terms.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sora-editorial.webp" alt="Illustration for Sora: cloud cinema shaping video sequences from storyboards" loading="lazy" decoding="async" />
@@ -96,54 +67,32 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 
 ## Pricing & costs
 
-Sora's pricing varies depending on the provider and selected plan. Typically, there are:
+Sora no longer has a current pricing decision. For a replacement, check the active provider's licensing model, storage, export options, team approvals, and training requirements.
 
-- A free basic plan with limited features.
-- Monthly or annual subscriptions with expanded features.
-- Enterprise solutions with custom pricing and additional support.
+## Alternatives
 
-You can find pricing details directly with the provider or in the respective plan overviews.
-
-Beyond the list price, Sora should be evaluated by the cost of adoption. Relevant factors include licensing model, storage, export options, templates, team approvals, and training. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
-
-## Alternatives to Sora
-
-- [Adobe Premiere Pro](/tools/adobe-premiere-pro/): Professional video editing with extensive features, suitable for demanding projects.
-- **Final Cut Pro:** A Mac-exclusive solution with high performance and intuitive operation.
-- **DaVinci Resolve:** Free and paid versions with a strong focus on color correction and post-production.
-- [Filmora](/tools/filmora/): Beginner-friendly software with many templates and effects.
-- **HitFilm Express:** A combination of video editor and visual effects, ideal for more creative projects.
+- [Runway](/en/tools/runway/): active AI video workflow for generative clips and visual exploration.
+- [Kling AI](/en/tools/kling-ai/): comparison point for generative video and variants.
+- [Adobe Firefly](/en/tools/adobe-firefly/): useful when generative media belongs inside a broader Adobe workflow.
+- [Adobe Premiere Pro](/en/tools/adobe-premiere-pro/): professional post-production for active projects.
+- [Filmora](/en/tools/filmora/): a simpler starting point with templates and conventional editing.
 
 When comparing options, Sora should not only be measured against very similar products. Depending on the goal, design, image, video, and prototyping tools may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
-**1. What are the system requirements for Sora?**
-The requirements depend on the provider; in most cases, current Windows or macOS versions with sufficient RAM are recommended.
+**1. Is Sora still available?**
+No. OpenAI gives April 26, 2026 as the date after which the Sora product was no longer available.
 
-**2. Is there a free trial?**
-Many Sora providers offer a free trial or a basic plan with limited features.
+**2. Can Sora be planned for a new project?**
+No. New projects need an active provider with verifiable terms.
 
-**3. Can I edit and export videos in 4K?**
-Depending on the plan and software version, editing and export in 4K are possible.
+**3. Which alternatives should be checked first?**
+For AI video, Runway, Kling AI, and Adobe Firefly are useful comparisons; for post-production, Adobe Premiere Pro is the closer fit.
 
-**4. Does Sora support teamwork and cloud storage?**
-Yes, some plans include collaboration and cloud integration features.
+**4. Why keep Sora in the catalogue?**
+As a historical reference: Sora's development helps explain why current video products focus on storyboards and pre-production.
 
-**5. Which export formats are supported?**
-Typically, common formats such as MP4, MOV, AVI, and others are supported.
+**5. What should be checked in a replacement?**
+Rights, brand approval, likeness, export formats, cost, data access, and the actual approval workflow.
 
-**6. Is Sora suitable for beginners?**
-Yes, the user interface is designed so that beginners can get up to speed quickly.
-
-**7. Are there mobile versions or apps?**
-That depends on the provider; some offer companion mobile apps for video editing.
-
-**8. How secure is my data when using Sora?**
-Privacy and security depend on the respective provider and its policies. It is recommended to review these before use.
-
-**9. How should a team test Sora?**
-A narrow pilot is enough: real task, clear acceptance point, and a short retrospective on what Sora improved and what stayed manual.
-
-**10. When is Sora a poor fit?**
-When briefing, rights, brand rules, and export formats remain vague, or when nobody has time for setup, review, and maintenance. In that case Sora becomes another stop in the process rather than real relief.
