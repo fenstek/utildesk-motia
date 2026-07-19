@@ -258,6 +258,11 @@
         "excerpt": "Die Goldgräberstimmung am KI-Markt ist einem harten Verdrängungswettbewerb gewichen, in dem Nuancen über den produktiven Erfolg entscheiden."
       },
       {
+        "slug": "ki-agenten-in-office-dokumenten-word-excel-powerpoint",
+        "title": "KI-Agenten in Office-Dokumenten: Word, Excel und PowerPoint sinnvoll automatisieren",
+        "excerpt": "Word, Excel und PowerPoint bekommen immer mehr agentische Funktionen. Entscheidend ist nicht die längste Automatisierung, sondern die richtige Grenze zwischen Entwurf, Prüfung und Freigabe."
+      },
+      {
         "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
         "title": "KI-Tools ohne Anmeldung: bequem, aber selten wirklich privat",
         "excerpt": "KI-Tools ohne Anmeldung sparen Zeit, sind aber kein Datenschutzsiegel. Wann No-Login sinnvoll ist — und wann Teams besser kontrollierte Tools nutzen."
@@ -340,6 +345,11 @@
         "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
         "title": "Coding-Agenten 2026: Codex CLI, Claude Code und Gemini CLI im Entwickler-Workflow",
         "excerpt": "Codex CLI, Claude Code und Gemini CLI verschieben KI-Coding vom Autocomplete zur delegierten Aufgabe. Der Vergleich zeigt, wo welches Werkzeug in den Workflow passt."
+      },
+      {
+        "slug": "ki-agenten-in-office-dokumenten-word-excel-powerpoint",
+        "title": "KI-Agenten in Office-Dokumenten: Word, Excel und PowerPoint sinnvoll automatisieren",
+        "excerpt": "Word, Excel und PowerPoint bekommen immer mehr agentische Funktionen. Entscheidend ist nicht die längste Automatisierung, sondern die richtige Grenze zwischen Entwurf, Prüfung und Freigabe."
       },
       {
         "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
@@ -439,6 +449,11 @@
         "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
         "title": "Ist deine Website bereit für KI-Agenten?: So gelingt der Einsatz in der Praxis",
         "excerpt": "Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht Cloudflare AI Crawl Control heute eine präzise Identifikation und Steuerung von KI-Agenten wie ChatGPT oder Anthropic in Echtzeit."
+      },
+      {
+        "slug": "ki-agenten-in-office-dokumenten-word-excel-powerpoint",
+        "title": "KI-Agenten in Office-Dokumenten: Word, Excel und PowerPoint sinnvoll automatisieren",
+        "excerpt": "Word, Excel und PowerPoint bekommen immer mehr agentische Funktionen. Entscheidend ist nicht die längste Automatisierung, sondern die richtige Grenze zwischen Entwurf, Prüfung und Freigabe."
       },
       {
         "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
@@ -1686,6 +1701,11 @@
         "excerpt": "The gold-rush mood in the AI market has given way to a hard-fought battle for attention, where small differences decide who actually gets productive work done."
       },
       {
+        "slug": "ki-agenten-in-office-dokumenten-word-excel-powerpoint",
+        "title": "AI Agents in Office Documents: Automating Word, Excel and PowerPoint with Control",
+        "excerpt": "Word, Excel and PowerPoint are gaining more agentic features. The practical question is not how much automation a team can add, but where drafting must stop and review must begin."
+      },
+      {
         "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
         "title": "AI Tools Without Signup: Convenient, But Rarely Truly Private",
         "excerpt": "AI tools without signup remove friction, but they are not a privacy seal. When no-login tools are useful — and when teams need controlled workflows."
@@ -1768,6 +1788,11 @@
         "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
         "title": "Coding agents 2026: Codex CLI, Claude Code and Gemini CLI in the developer workflow",
         "excerpt": "Codex CLI, Claude Code and Gemini CLI move AI coding from autocomplete to delegated work. This comparison shows where each tool fits."
+      },
+      {
+        "slug": "ki-agenten-in-office-dokumenten-word-excel-powerpoint",
+        "title": "AI Agents in Office Documents: Automating Word, Excel and PowerPoint with Control",
+        "excerpt": "Word, Excel and PowerPoint are gaining more agentic features. The practical question is not how much automation a team can add, but where drafting must stop and review must begin."
       },
       {
         "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
@@ -1867,6 +1892,11 @@
         "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
         "title": "Is Your Website Ready for AI Agents? How to Make It Work in Practice",
         "excerpt": "Classic SEO tools often cannot tell who is consuming server resources. AI crawl control makes crawler identity and behavior visible."
+      },
+      {
+        "slug": "ki-agenten-in-office-dokumenten-word-excel-powerpoint",
+        "title": "AI Agents in Office Documents: Automating Word, Excel and PowerPoint with Control",
+        "excerpt": "Word, Excel and PowerPoint are gaining more agentic features. The practical question is not how much automation a team can add, but where drafting must stop and review must begin."
       },
       {
         "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
