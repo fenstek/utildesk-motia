@@ -7,12 +7,12 @@ tags: ["crm", "platform", "developer-tools", "automation"]
 official_url: "https://www.salesforce.com/products/platform/overview/"
 affiliate_url: 
 created_at: 2026-06-14
-updated_at: 2026-06-14
+updated_at: 2026-07-19
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-14
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+editorial_batch: 2026-07-19-product-update-priority-two
 tier: D
 popularity: 0
 ---
@@ -38,6 +38,13 @@ Im Alltag entscheidet die Qualität des Salesforce-Datenmodells. Lightning kann 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/salesforce-lightning-editorial.webp" alt="Illustration zu Salesforce Lightning: Kundenmomente flie?en durch schnelle Workflow-Schienen in einen gemeinsamen Hub" loading="lazy" decoding="async" />
 </figure>
+
+
+## Aktueller Stand
+
+Salesforce Lightning ist die Arbeitsoberfläche innerhalb einer deutlich breiteren CRM-Plattform. Für die aktuelle Einordnung gehören Einstein-Funktionen, Agentforce und Data Cloud in die Prüfung, nicht nur Seitenlayouts und Automationen. Entscheidend ist, ob Datenmodell, Berechtigungen, Grounding und Freigaben so eingerichtet sind, dass KI keine unkontrollierten CRM-Aktionen ausführt.
+
+Ein Pilot sollte einen begrenzten Service- oder Vertriebsprozess abbilden und jede agentische Aktion, Datenquelle, Eskalation und Kostenstelle nachvollziehbar machen.
 
 ## Hauptfunktionen
 
@@ -74,7 +81,7 @@ Salesforce Lightning ist als Abonnement geführt. Kosten hängen von Salesforce-
 
 **Zum Anbieter:** https://www.salesforce.com/products/platform/overview/
 
-## Alternativen zu Salesforce Lightning
+## Alternativen
 
 - [HubSpot CRM](/tools/hubspot-crm/): wenn ein leichterer CRM-Start mit Marketing- und Sales-Fokus gesucht wird.
 - [Pipedrive](/tools/pipedrive/): wenn Pipeline-Steuerung für kleinere Vertriebsteams reicht.

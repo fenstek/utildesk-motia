@@ -7,6 +7,13 @@ _Last updated: 2026-07-19_
 - Added concrete July-2026 operating guidance instead of duplicate cards: agent/browser boundaries, model-routing controls, current workspaces and connected data, agentic coding safeguards, voice-consent checks, image-production limits and production ownership.
 - Kept the existing single illustrations and FAQ inventories intact; synchronized editorial and last-modified metadata for all 22 language files and normalized the alternatives heading so the existing internal links render as tool alternatives.
 
+## 2026-07-19 - Product-update priority refresh, second echelon
+
+- Updated the remaining active cards from both product-update priority echelons in German and English: GitLab, LiteLLM, PhantomBuster, 8x8, D-ID, Beautiful.ai, Salesforce Lightning, Magma, Speechmatics, and Later.
+- Added current-state editorial guidance, practical pilot checks, product-boundary notes, privacy and governance cautions, and refreshed paired review metadata and content-lastmod entries.
+- Normalized alternatives sections to the audited internal-link format, removed duplicate legacy alternative blocks, and added missing FAQ answers without removing existing FAQ content or illustrations.
+- The strict editorial coverage audit reported 1244 active cards scanned, 0 flagged, and 0 new issues from this batch. No shared layouts, generators, sitemap rules, or image assets were changed.
+
 ## 2026-07-19 - Hype16 intake and editorial package
 
 - Added 16 verified high-interest candidates to the Google Sheet source of truth (rows 1777-1792) as `NEW`: ComfyUI, Dify, Langfuse, Kiro, GitHub Agentic Workflows, Amazon Bedrock AgentCore Browser, IBM Bob, Oracle AI Agent Studio, Flowise, Langflow, Google ADK, MCP Inspector, Qwen Code, Firebase Studio, Windsurf and SWE-agent.

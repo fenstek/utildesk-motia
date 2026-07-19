@@ -1,11 +1,12 @@
 ---
+updated_at: "2026-07-19"
 slug: speechmatics
 title: Speechmatics
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-19-product-update-priority-two"
 category: AI
 price_model: Freemium
 tags:
@@ -40,6 +41,13 @@ Speechmatics is most useful for teams and individuals that treat a speech-to-tex
 - Create subtitles and searchable archives
 - Integrate speech-to-text into products
 
+
+## Current State
+
+Speechmatics should be evaluated as a speech-recognition platform for real-time and batch transcription, not merely as dictation. Selection depends on language coverage, latency, speaker separation, domain vocabulary, streaming interfaces, and retention. Outputs still require review, especially for accents, names, and legally relevant transcripts.
+
+A meaningful test uses representative audio, measures word errors and timestamps, and checks how much post-editing is needed before publication or CRM import.
+
 ## Strengths
 
 - Strong focus on speech recognition
@@ -66,12 +74,12 @@ In the catalog, Speechmatics is marked with the pricing model **Freemium**. For 
 
 **Provider:** https://www.speechmatics.com/
 
-## Alternatives to Speechmatics
+## Alternatives
 
 - [Whisper](/en/tools/whisper/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Otter AI](/en/tools/otter-ai/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Descript Overdub](/en/tools/descript-overdub/): useful comparison point for adjacent workflows, pricing, or team fit.
-- Trint: useful comparison point for adjacent workflows, pricing, or team fit.
+- [Trint](/en/tools/trint/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Rev](/en/tools/rev/): useful comparison point for adjacent workflows, pricing, or team fit.
 
 ## Editorial assessment
@@ -91,3 +99,8 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+
+**How should a transcript be checked before publication?**
+
+Names, numbers, quotes, speaker changes, and sensitive passages need a human sample review; a high confidence score is not a substitute for it.

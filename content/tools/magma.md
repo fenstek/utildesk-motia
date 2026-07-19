@@ -1,11 +1,12 @@
 ---
+updated_at: 2026-07-19
 slug: magma
 title: Magma
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-19-product-update-priority-two
 category: AI Image
 price_model: Freemium
 tags: [design, image, productivity]
@@ -30,6 +31,13 @@ Bei Illustratoren, Konzeptteams, Kreativgruppen und Workshops mit gemeinsamem vi
 <figure class="tool-editorial-figure">
   <img src="/images/tools/magma-editorial.webp" alt="Illustration zu Magma: gemeinsame Kreativleinwand verbindet Skizzen, Pinselspuren und Ebenen" loading="lazy" decoding="async" />
 </figure>
+
+
+## Aktueller Stand
+
+Magma ist als gemeinsamer digitaler Zeichen- und Arbeitsraum interessant, wenn mehrere Personen gleichzeitig Skizzen, Referenzen und Feedback bearbeiten. Der Wert entsteht durch den gemeinsamen Kontext, nicht durch eine automatische Qualitätsgarantie. Vor der Nutzung für Kundenmaterial müssen Export, Versionierung, Rechte an importierten Assets und der Umgang mit privaten Boards geklärt werden.
+
+Für einen Pilot reichen ein kleines Team, ein klarer Übergabepunkt und ein archivierter Export; so wird sichtbar, ob die Zusammenarbeit wirklich schneller wird oder nur mehr Material produziert.
 
 ## Typische Einsatzszenarien
 
@@ -73,7 +81,7 @@ Im Katalog ist Magma mit dem Preismodell **Freemium** geführt. Für eine belast
 
 **Zum Anbieter:** https://magma.com/
 
-## Alternativen zu Magma
+## Alternativen
 
 - [Figma](/tools/figma/): stärker, wenn UI-Design, Prototyping, Designsysteme und Produktteams gefragt ist.
 - [Milanote](/tools/milanote/): passender, wenn der Schwerpunkt auf visuelle Planung, Moodboards und Projektstruktur für kreative und konzeptionelle Arbeit liegt.

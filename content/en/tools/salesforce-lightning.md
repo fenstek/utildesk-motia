@@ -7,12 +7,12 @@ tags: ["crm", "platform", "developer-tools", "automation"]
 official_url: "https://www.salesforce.com/products/platform/overview/"
 affiliate_url: ""
 created_at: "2026-06-14"
-updated_at: "2026-06-14"
+updated_at: "2026-07-19"
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-20-human-polish"
+editorial_batch: "2026-07-19-product-update-priority-two"
 tier: "D"
 popularity: 0
 translation: "full"
@@ -39,6 +39,13 @@ Daily success depends on the Salesforce data model. Lightning is productive when
 <figure class="tool-editorial-figure">
   <img src="/images/tools/salesforce-lightning-editorial.webp" alt="Illustration for Salesforce Lightning: customer moments flow through fast workflow tracks into a shared hub" loading="lazy" decoding="async" />
 </figure>
+
+
+## Current State
+
+Salesforce Lightning is the working interface inside a much broader CRM platform. A current assessment should include Einstein capabilities, Agentforce, and Data Cloud rather than focusing only on page layouts and automation. The key question is whether the data model, permissions, grounding, and approvals prevent uncontrolled CRM actions.
+
+A pilot should cover one bounded service or sales process and make every agent action, source, escalation, and cost centre traceable.
 
 ## Key Features
 

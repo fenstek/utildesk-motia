@@ -1,11 +1,12 @@
 ---
+updated_at: "2026-07-19"
 slug: d-id
 title: D-ID
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-19-product-update-priority-two"
 category: AI
 price_model: Plan-based
 tags:
@@ -44,6 +45,13 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 <figure class="tool-editorial-figure">
   <img src="/images/tools/d-id-editorial.webp" alt="Illustration for D-ID: video team creates generic presenters with voice and storyboard" loading="lazy" decoding="async" />
 </figure>
+
+
+## Current State
+
+D-ID combines avatar and video creation with studio and API workflows. That can help with localised explainers, training material, or repeatable presenter variants, but it is not a blanket licence for synthetic people. A responsible deployment needs consent, clear usage rights, disclosure, and human approval before publication.
+
+Evaluate visual and voice quality separately from translation errors, moderation, export rights, and whether sensitive scripts are sent to an external service.
 
 ## Key Features
 
@@ -88,7 +96,7 @@ The pricing of D-ID varies depending on the provider and the chosen subscription
 
 Beyond the list price, D-ID should be evaluated by the cost of adoption. Relevant factors include contact volume, automations, reporting, integrations, and data maintenance. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to D-ID
+## Alternatives
 
 - [Synthesia](/en/tools/synthesia/): for enterprise videos with AI avatars and learning content.
 - [HeyGen](/en/tools/heygen/): for avatar, translation, and localised video workflows.
