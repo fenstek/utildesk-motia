@@ -1647,3 +1647,9 @@ _Last updated: 2026-07-19_
 
 - Corrected the newly added German ChatGPT update paragraphs from ASCII transliterations such as `ueber`, `fuer` and `pruefen` to proper German umlauts and ß-compatible spelling.
 - No links, frontmatter, English content or card assets were changed.
+
+## 2026-07-19 - Balanced related-guide grid on tool detail pages
+
+- Fixed the empty gray area in the related Ratgeber block on runtime tool pages: the four guide backlinks now use a dedicated two-column desktop grid and form a complete 2x2 block.
+- Tool alternatives keep their existing three-column desktop layout; mobile remains a single column.
+- This is a renderer/CSS-only change. No tool content, images, sitemap, or broad Astro/Pages rebuild was changed.

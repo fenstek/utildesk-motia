@@ -160,7 +160,7 @@ const priceModel = view.priceModel;
 
     {view.guideBacklinks.length > 0 && <section class="akte-alts tool-akte" aria-label={en ? "Guides featuring this tool" : "Ratgeber mit diesem Tool"}>
       <div class="akte-alts-head"><div class="akte-alts-head-left"><div class="akte-alts-kicker">{en ? "Editorial context" : "Im redaktionellen Kontext"}</div><h2 class="akte-alts-title">{en ? `Guides about ${view.title}` : `Ratgeber zu ${view.title}`}<span class="akte-mast-dot">.</span></h2></div><a class="akte-alts-all" href={guidesHref}>{en ? "All guides" : "Alle Ratgeber"}</a></div>
-      <div class="akte-alts-grid">{view.guideBacklinks.slice(0, 4).map((guide) => <a class="akte-alt-card" href={`${en ? "/en" : ""}/ratgeber/${guide.slug}/`}><div class="akte-alt-card-name">{guide.title}</div><p class="akte-alt-card-tone">{guide.excerpt}</p></a>)}</div>
+      <div class="akte-alts-grid akte-guide-grid">{view.guideBacklinks.slice(0, 4).map((guide) => <a class="akte-alt-card" href={`${en ? "/en" : ""}/ratgeber/${guide.slug}/`}><div class="akte-alt-card-name">{guide.title}</div><p class="akte-alt-card-tone">{guide.excerpt}</p></a>)}</div>
     </section>}
 
     {view.alternativesTop.length > 0 && <section class="akte-alts tool-akte" aria-label={en ? "Related files" : "Verwandte Akten"}>
