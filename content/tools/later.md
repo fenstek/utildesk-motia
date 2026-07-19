@@ -90,9 +90,7 @@ Für die Budgetplanung sollte Later nicht nur nach Listenpreis bewertet werden. 
 
 - [Buffer](/tools/buffer/): Ein weiteres beliebtes Tool zur Social-Media-Planung mit Fokus auf einfache Bedienung und Team-Features.
 - [Hootsuite](/tools/hootsuite/): Umfangreiche Plattform für Social-Media-Management mit vielen Analyse- und Automatisierungsoptionen.
-- [Zoho Social](/tools/zoho-social/): passend, wenn Social Publishing in eine breitere Business-Suite eingebettet werden soll.
 - [Planoly](/tools/planoly/): sinnvoll, wenn visuelle Instagram-Planung und ein engerer Content-Workflow im Mittelpunkt stehen.
-- [Zoho Social](/tools/zoho-social/): Integriert in die Zoho-Produktpalette, bietet umfassende Social-Media-Management-Tools.
 
 Bei der Auswahl der Alternativen lohnt sich ein Vergleich entlang des konkreten Engpasses. Wenn Social-Media-Planung mit Kalender und visueller Vorschau im Mittelpunkt stehen, zählen andere Kriterien als bei einem allgemeinen Toolvergleich: Datenkontrolle, Lernkurve, Integrationen und die Qualität der Ergebnisse im eigenen Material.
 

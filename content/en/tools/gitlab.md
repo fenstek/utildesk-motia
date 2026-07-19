@@ -82,7 +82,7 @@ GitLab is listed as Freemium. Real cost depends on seats, usage, infrastructure,
 
 **Provider:** https://about.gitlab.com/
 
-## Alternatives To GitLab
+## Alternatives
 
 - [GitHub Copilot](/en/tools/github-copilot/): wenn KI-Coding direkt im Entwicklereditor im Fokus steht.
 - [OpenAI Codex](/en/tools/openai-codex/): wenn agentische Code-Arbeit und CLI-Workflows wichtiger sind.
