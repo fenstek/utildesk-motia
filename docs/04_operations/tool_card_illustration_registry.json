@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16",
+  "last_updated": "2026-07-19",
   "purpose": "Persistent registry of tool cards that already received editorial mid-article illustrations. Check this file before adding future tool-card artwork so the same page is not illustrated twice.",
   "selection_rule": "Exclude every slug listed in batches[].slugs unless the user explicitly asks to replace or revise an existing illustration.",
   "batches": [
@@ -3235,7 +3235,10 @@
       "id": "2026-07-16-codex-chat-style-variety-9",
       "status": "implemented",
       "date": "2026-07-16",
-      "languages": ["de", "en"],
+      "languages": [
+        "de",
+        "en"
+      ],
       "generation_source": "OpenAI Codex built-in image generation via ChatGPT subscription",
       "agents": 1,
       "items_per_agent": 9,
@@ -3274,6 +3277,67 @@
       ],
       "visual_direction": "Nine distinct narrative editorial styles: cubist office collaboration, surreal social-media city, stencil street-art telephony, elongated modernist HR scene, geometric data abstraction, expressive post-impressionist workplace, nineteenth-century literary writing room, luminous impressionist AI guidance, and vintage cabaret communications stage.",
       "note": "Created in-chat with Codex image generation; all outputs normalized to the shared tool-card format and inserted once in each DE/EN card."
+    },
+    {
+      "id": "2026-07-19-hype16-editorial-illustrations",
+      "status": "implemented",
+      "date": "2026-07-19",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "generation_source": "OpenAI Codex built-in image generation via ChatGPT subscription",
+      "agents": 1,
+      "items_per_agent": 16,
+      "constraints": {
+        "image_format": "webp",
+        "width_px": 1600,
+        "height_px": 900,
+        "gemini": false,
+        "external_api": false,
+        "svg_placeholder": false,
+        "readable_text": false,
+        "logos": false,
+        "watermarks": false
+      },
+      "slugs": [
+        "comfyui",
+        "dify",
+        "langfuse",
+        "kiro",
+        "github-agentic-workflows",
+        "amazon-bedrock-agentcore-browser",
+        "ibm-bob",
+        "oracle-ai-agent-studio",
+        "flowise",
+        "langflow",
+        "google-adk",
+        "mcp-inspector",
+        "qwen-code",
+        "firebase-studio",
+        "windsurf",
+        "swe-agent"
+      ],
+      "images": [
+        "content/images/tools/comfyui-editorial.webp",
+        "content/images/tools/dify-editorial.webp",
+        "content/images/tools/langfuse-editorial.webp",
+        "content/images/tools/kiro-editorial.webp",
+        "content/images/tools/github-agentic-workflows-editorial.webp",
+        "content/images/tools/amazon-bedrock-agentcore-browser-editorial.webp",
+        "content/images/tools/ibm-bob-editorial.webp",
+        "content/images/tools/oracle-ai-agent-studio-editorial.webp",
+        "content/images/tools/flowise-editorial.webp",
+        "content/images/tools/langflow-editorial.webp",
+        "content/images/tools/google-adk-editorial.webp",
+        "content/images/tools/mcp-inspector-editorial.webp",
+        "content/images/tools/qwen-code-editorial.webp",
+        "content/images/tools/firebase-studio-editorial.webp",
+        "content/images/tools/windsurf-editorial.webp",
+        "content/images/tools/swe-agent-editorial.webp"
+      ],
+      "visual_direction": "Sixteen distinct narrative editorial illustrations: risograph pipeline, cut-paper orchestration delta, observatory trace, architectural checkpoint, linocut workflow, paper-theatre browser routes, charcoal atelier, Renaissance labyrinth, Bauhaus flow, watercolor landscape, woodblock agent route, etched inspection cabinet, miniature code loom, geometric builder city, wind-driven code sails, and a clockwork repair beetle.",
+      "note": "Created in-chat with Codex image generation; outputs were normalized to the shared 16:9 WebP tool-card format and linked once in each DE/EN card."
     }
   ]
 }
