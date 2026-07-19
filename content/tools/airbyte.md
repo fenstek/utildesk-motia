@@ -2,10 +2,10 @@
 slug: airbyte
 title: Airbyte
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-01
+editorial_batch: 2026-07-19-product-update-priority
 category: Entwickler-Tools
 price_model: Freemium
 tags: [data, integration, etl, open-source]
@@ -18,9 +18,19 @@ generated_at: 2026-05-16
 
 Airbyte ist eine Datenbewegungsplattform für Teams, die Daten nicht nur einmal exportieren, sondern Quellen, Ziele und Zuständigkeiten dauerhaft betreiben müssen. Sie verbindet SaaS-Anwendungen, Datenbanken, Warehouses und Daten-Lakes über Konnektoren und lässt sich als Cloud-Service oder selbst verwaltet einsetzen. Der Open-Source-Kern und der Connector-Builder sind besonders interessant, wenn Standardanschlüsse nicht reichen.
 
+## Redaktionelles Update Juli 2026
+
+Airbyte erweitert seine Rolle vom Datenreplikationsdienst zur Context-Schicht für Agenten. Airbyte Agents, MCP, SDK und CLI sollen Quellen einmal anbinden und anschließend in Claude, ChatGPT, Cursor oder eigenen Agenten-Workflows nutzbar machen. Entscheidend ist dabei nicht die Zahl der Konnektoren, sondern die Kontrolle darüber, welche Daten ein Agent lesen oder verändern darf.
+
+Vor dem Rollout gehören OAuth, Servicekonten, PII-Filter, Kostenlimits und ein Read-only-Pilot in die Prüfung. Erst wenn Antworten mit nachvollziehbarer Datenherkunft und klarer Zugriffsspur funktionieren, sollte ein Agent Schreibrechte erhalten.
+
 <figure class="tool-editorial-figure">
   <img src="/images/tools/airbyte-editorial.webp" alt="Papierhafen mit Datenfrachtrouten zwischen Inseln" loading="lazy" decoding="async" />
 </figure>
+
+## Redaktionelles Update Juli 2026
+
+Airbyte erweitert seine Rolle vom Datenreplikationsdienst zur Context-Schicht für Agenten. Agents, MCP, SDK und CLI sollen Quellen einmal anbinden und anschließend in ChatGPT, Claude, Cursor oder eigenen Workflows nutzbar machen. Vor Schreibrechten gehören OAuth, PII-Filter, Kostenlimits und ein Read-only-Pilot in die Prüfung.
 
 ## Für wen ist Airbyte geeignet?
 

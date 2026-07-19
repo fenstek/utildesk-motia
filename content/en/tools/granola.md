@@ -3,9 +3,9 @@ slug: granola
 title: Granola
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-19
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_batch: "2026-07-19-product-update-priority"
 category: Productivity
 price_model: "Plan-based"
 tags:
@@ -25,6 +25,10 @@ translation: full
 # Granola
 
 Granola is an AI meeting notepad that combines your rough notes with conversation context and a transcript to produce structured follow-up. It runs on desktop or iPhone, is started manually for a meeting, and captures device audio instead of placing a visible meeting bot in Zoom, Google Meet, or Microsoft Teams. That makes it useful for personal, reviewable meeting notes, but it does not remove the need to notify participants, obtain any required consent, or check AI-generated claims before acting on them.
+
+## Editorial update July 2026
+
+Granola is moving from a personal meeting notepad towards a more connected work surface: chat over meeting history, Briefs, MCP access, and broader integrations make handoff into downstream systems more useful. A fair pilot should therefore test more than summary quality. Check whether decisions, sources, permissions, and approvals survive export correctly, and verify the current integration and platform availability before rollout.
 
 ## Who is Granola for?
 

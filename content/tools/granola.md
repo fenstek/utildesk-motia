@@ -3,9 +3,9 @@ slug: granola
 title: Granola
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-tool-card-editorial
+editorial_batch: 2026-07-19-product-update-priority
 category: Productivity
 price_model: Plan-based
 tags: [ai, meeting, notes, assistant]
@@ -20,6 +20,10 @@ generated_at: 2026-05-12
 # Granola
 
 Granola ist ein KI-Notizbuch für Meetings, das eigene Stichpunkte mit dem Gesprächskontext und einer Transkription zu einer strukturierten Nachbereitung verbindet. Es läuft auf Desktop oder iPhone, wird für ein Meeting manuell gestartet und nimmt über das Gerät-Audio auf, statt einen sichtbaren Meeting-Bot in Zoom, Google Meet oder Microsoft Teams zu platzieren. Das ist praktisch für persönliche Gesprächsnotizen, ersetzt aber weder die Zustimmung der Beteiligten noch die Prüfung von KI-generierten Aussagen.
+
+## Redaktionelles Update Juli 2026
+
+Granola entwickelt sich vom persönlichen Meeting-Notizbuch zu einer stärker vernetzten Arbeitsoberfläche: Chat über die eigene Gesprächshistorie, Briefs, MCP-Zugriff und mehr Integrationen machen die Übergabe in nachgelagerte Systeme interessanter. Für einen fairen Test sollte ein Team deshalb nicht nur die Zusammenfassung bewerten, sondern auch prüfen, ob Aufgaben, Quellen, Berechtigungen und Freigaben beim Export korrekt bleiben. Die aktuellen Integrationen, Verfügbarkeit von Briefs und Plattformen gehören vor dem Rollout in den eigenen Testplan.
 
 ## Für wen eignet sich Granola?
 

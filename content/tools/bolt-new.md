@@ -2,10 +2,10 @@
 slug: bolt-new
 title: Bolt.new
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-11
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-06-11-hype-tools-human-polish-2
+editorial_batch: 2026-07-19-product-update-priority
 category: Entwickler-Tools
 price_model: Je nach Plan
 tags: ["coding", "developer-tools"]
@@ -23,7 +23,7 @@ Bolt.new macht aus einer Idee schnell einen sichtbaren Web-Prototypen. Chat, Dat
 Besonders nützlich ist Bolt.new für MVPs, Landingpages, Lernprojekte und technische Demos.
 
 
-## Redaktionelles Update Juni 2026
+## Redaktionelles Update Juli 2026
 
 Bolt.new bleibt einer der auffälligsten Vertreter der Prompt-to-App-Welle: Im Browser entsteht sehr schnell ein lauffähiger Prototyp, ohne dass ein lokales Setup den ersten Versuch ausbremst. Das ist besonders wertvoll, wenn eine Idee, ein UI-Flow oder eine kleine interne App schnell sichtbar werden soll.
 

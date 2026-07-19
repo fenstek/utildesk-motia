@@ -2,10 +2,10 @@
 slug: cohere
 title: Cohere
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-01
+editorial_batch: "2026-07-19-product-update-priority"
 category: AI Infrastructure
 price_model: Freemium
 tags: [chatbot, data]
@@ -21,6 +21,10 @@ Cohere is aimed at organisations using language models for more than drafting te
 <figure class="tool-editorial-figure">
   <img src="/images/tools/cohere-editorial.webp" alt="Illustration for Cohere: a team organises documents, embeddings, and search paths for grounded AI retrieval" loading="lazy" decoding="async" />
 </figure>
+
+## Editorial update July 2026
+
+Command A+ places Cohere more clearly in multimodal and agentic enterprise work: text generation now sits alongside tool use, RAG, translation, and private deployment options. That is not a reason to swap models blindly. A useful pilot should measure your own documents, languages, source grounding, latency, and data residency, while current model and contract limits are checked with the provider.
 
 ## Who is Cohere for?
 

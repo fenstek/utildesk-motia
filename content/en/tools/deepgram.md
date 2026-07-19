@@ -2,10 +2,10 @@
 slug: deepgram
 title: Deepgram
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
+editorial_batch: 2026-07-19-product-update-priority
 category: Audio & Video
 price_model: Usage-based
 tags: [audio, transcription, api, voice-ai]
@@ -20,6 +20,16 @@ translation: full
 Deepgram is voice-AI infrastructure for development teams. The platform covers speech-to-text, text-to-speech, audio intelligence, and a Voice Agent API. It can process audio in real time or batch, and the provider offers both cloud and self-hosted paths. Deepgram is therefore not a finished call-centre or meeting product; it is a toolkit for applications that need to understand, respond to, or analyse speech.
 
 The decisive technical issue is latency across the entire conversation chain. A fast transcript does not help if turn detection, an LLM, business logic, or speech output makes dialogue feel unnatural. A call-analytics workflow also needs to distinguish a model hypothesis from an attributable claim about a customer conversation.
+
+## Editorial update July 2026
+
+Deepgram's Voice Agent API bundles listening, thinking, and speaking into a real-time workflow. That is relevant for phone and support agents, but it moves evaluation beyond one speech-to-text model: teams must test turn-taking, interruptions, escalation, cost, and the quality of the complete dialogue.
+
+A serious pilot starts with recorded conversations and human approval. Telephony, customer data, and automatic actions should come later; regulated use also needs retention, consent, and audit logs in scope.
+
+## Editorial update July 2026
+
+Deepgram's Voice Agent API bundles listening, thinking, and speaking into a real-time workflow. A serious pilot starts with recorded conversations and human approval; telephony, customer data, and automatic actions should come later, with consent and audit logs in scope for regulated use.
 
 ## Who is Deepgram for?
 

@@ -2,10 +2,10 @@
 slug: playwright
 title: Playwright
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-03
+editorial_batch: 2026-07-19-product-update-priority
 category: Entwickler-Tools
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
@@ -18,9 +18,19 @@ generated_at: 2026-05-17
 
 Playwright ist ein Open-Source-Framework für End-to-End-Tests moderner Webanwendungen. Es bringt Test-Runner, Assertions, Browser-Isolation, Parallelisierung und Diagnosewerkzeuge zusammen und testet Chromium, Firefox und WebKit unter Windows, Linux und macOS. Damit ist es nicht nur eine Browserbibliothek, sondern ein vollständiger Arbeitsrahmen für reproduzierbare UI-Qualität.
 
+## Redaktionelles Update Juli 2026
+
+Die aktuelle Playwright-Linie bringt für reale Testumgebungen unter anderem einen virtuellen WebAuthn-Authenticator für Passkey-Flows, bequemere Storage-State-APIs und laufend aktualisierte Browser-Versionen. Das ist besonders relevant für Login-, Rollen- und Checkout-Tests.
+
+Beim Upgrade sollten CI-Images, Browsermatrix, Testdaten und Trace-Artefakte gemeinsam geprüft werden. Ein guter Pilot misst nicht nur grüne Tests, sondern auch Flakiness, Laufzeit und Diagnoseaufwand.
+
 <figure class="tool-editorial-figure">
   <img src="/images/tools/playwright-editorial.webp" alt="Theaterteam prüft dieselbe Szene auf drei Miniaturbühnen" loading="lazy" decoding="async" />
 </figure>
+
+## Redaktionelles Update Juli 2026
+
+Die aktuelle Playwright-Linie bringt für reale Testumgebungen unter anderem einen virtuellen WebAuthn-Authenticator für Passkey-Flows, bequemere Storage-State-APIs und laufend aktualisierte Browser-Versionen. Beim Upgrade sollten CI-Images, Browsermatrix, Testdaten und Trace-Artefakte gemeinsam geprüft werden.
 
 ## Für wen ist Playwright geeignet?
 

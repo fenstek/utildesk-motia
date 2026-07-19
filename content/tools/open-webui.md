@@ -2,10 +2,10 @@
 slug: open-webui
 title: Open WebUI
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-02
+editorial_batch: 2026-07-19-product-update-priority
 category: AI Chatbots
 price_model: Open Source
 tags: ["assistant", "chatbot"]
@@ -19,6 +19,16 @@ generated_at: 2026-05-16
 Open WebUI ist eine selbst betreibbare Oberfläche für Sprachmodelle und KI-Werkzeuge. Sie kann lokale Modelle über Ollama ebenso anbinden wie OpenAI-kompatible APIs und andere Cloud-Anbieter. Der wichtige Unterschied zu einem einzelnen Chat-Account: Ein Team kann selbst bestimmen, welche Modelle, Wissensquellen, Rollen und Erweiterungen hinter einer gemeinsamen Oberfläche stehen.
 
 Das ist attraktiv für Teams, die KI nicht nur ausprobieren, sondern einen kontrollierbaren Zugang zu lokalen und externen Modellen bereitstellen wollen. Es ist aber kein einfacher "ChatGPT-Klon zum Installieren". Der Nutzen hängt an Betrieb, Updates, Berechtigungen und einer sauberen Entscheidung darüber, welche Daten die Instanz verlassen dürfen.
+
+## Redaktionelles Update Juli 2026
+
+Die aktuelle Open-WebUI-Linie verschiebt den Schwerpunkt deutlich von der Chat-Oberfläche zur betreibbaren Agentenplattform: Skills, Ereignisse, strukturierte Ausgaben, Wissensräume und ein Open Terminal können lokale Modelle mit konkreten Arbeitsabläufen verbinden. Die Update-Dokumentation weist zugleich auf mögliche Änderungen zwischen den Versionen hin.
+
+Vor einem Upgrade sollte ein Team Backups, Rollen, Tool-Berechtigungen und die Kompatibilität eigener Erweiterungen prüfen. Der richtige Test ist ein isolierter Agentenlauf mit erlaubten Werkzeugen, sichtbaren Logs und einem klaren Rollback.
+
+## Redaktionelles Update Juli 2026
+
+Die aktuelle Open-WebUI-Linie verschiebt den Schwerpunkt von der Chat-Oberfläche zur betreibbaren Agentenplattform: Skills, Ereignisse, strukturierte Ausgaben, Wissensräume und Open Terminal können lokale Modelle mit konkreten Arbeitsabläufen verbinden. Vor einem Upgrade sollten Backups, Rollen, Tool-Berechtigungen und Erweiterungen geprüft werden.
 
 ## Für wen ist Open WebUI geeignet?
 

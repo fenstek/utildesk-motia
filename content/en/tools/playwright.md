@@ -2,10 +2,10 @@
 slug: playwright
 title: Playwright
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-03
+editorial_batch: 2026-07-19-product-update-priority
 category: Developer
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
@@ -17,9 +17,19 @@ translation: full
 
 Playwright is an open-source framework for end-to-end testing modern web applications. It combines a test runner, assertions, browser isolation, parallel execution, and diagnostic tools, and tests Chromium, Firefox, and WebKit on Windows, Linux, and macOS. It is therefore more than a browser library: it is a working framework for repeatable UI quality.
 
+## Editorial update July 2026
+
+The current Playwright line adds practical value for real test environments, including a virtual WebAuthn authenticator for passkey flows, more convenient storage-state APIs, and continuously updated browser versions. That matters for login, permissions, and checkout tests.
+
+When upgrading, review CI images, the browser matrix, test data, and trace artefacts together. A useful pilot measures more than green tests: include flakiness, runtime, and the time needed to diagnose a failed run.
+
 <figure class="tool-editorial-figure">
   <img src="/images/tools/playwright-editorial.webp" alt="Theater crew testing the same scene across three miniature stages" loading="lazy" decoding="async" />
 </figure>
+
+## Editorial update July 2026
+
+The current Playwright line adds practical value for real test environments, including a virtual WebAuthn authenticator for passkey flows, convenient storage-state APIs, and updated browser versions. When upgrading, review CI images, the browser matrix, test data, and trace artefacts together.
 
 ## Who is Playwright for?
 
