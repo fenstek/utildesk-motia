@@ -1,0 +1,35 @@
+{
+  "batch_date": "2026-07-19",
+  "generation_source": "codex-subscription-imagegen",
+  "status": "implemented",
+  "dimensions": {
+    "width": 1600,
+    "height": 900
+  },
+  "constraints": {
+    "gemini": false,
+    "external_api": false,
+    "readable_text": false,
+    "logos": false,
+    "watermarks": false,
+    "photorealistic_office_briefings": false
+  },
+  "items": [
+    {"slug": "comfyui", "path": "content/images/tools/comfyui-editorial.webp", "style": "risograph modular generative pipeline"},
+    {"slug": "dify", "path": "content/images/tools/dify-editorial.webp", "style": "cut-paper orchestration delta"},
+    {"slug": "langfuse", "path": "content/images/tools/langfuse-editorial.webp", "style": "observatory trace"},
+    {"slug": "kiro", "path": "content/images/tools/kiro-editorial.webp", "style": "architectural checkpoint"},
+    {"slug": "github-agentic-workflows", "path": "content/images/tools/github-agentic-workflows-editorial.webp", "style": "linocut workflow conveyor"},
+    {"slug": "amazon-bedrock-agentcore-browser", "path": "content/images/tools/amazon-bedrock-agentcore-browser-editorial.webp", "style": "paper-theatre browser routes"},
+    {"slug": "ibm-bob", "path": "content/images/tools/ibm-bob-editorial.webp", "style": "charcoal automation atelier"},
+    {"slug": "oracle-ai-agent-studio", "path": "content/images/tools/oracle-ai-agent-studio-editorial.webp", "style": "Renaissance labyrinth"},
+    {"slug": "flowise", "path": "content/images/tools/flowise-editorial.webp", "style": "Bauhaus flow system"},
+    {"slug": "langflow", "path": "content/images/tools/langflow-editorial.webp", "style": "watercolor river route"},
+    {"slug": "google-adk", "path": "content/images/tools/google-adk-editorial.webp", "style": "woodblock agent route"},
+    {"slug": "mcp-inspector", "path": "content/images/tools/mcp-inspector-editorial.webp", "style": "etched inspection cabinet"},
+    {"slug": "qwen-code", "path": "content/images/tools/qwen-code-editorial.webp", "style": "miniature code loom"},
+    {"slug": "firebase-studio", "path": "content/images/tools/firebase-studio-editorial.webp", "style": "geometric builder city"},
+    {"slug": "windsurf", "path": "content/images/tools/windsurf-editorial.webp", "style": "wind-driven code sails"},
+    {"slug": "swe-agent", "path": "content/images/tools/swe-agent-editorial.webp", "style": "clockwork repair beetle"}
+  ]
+}
