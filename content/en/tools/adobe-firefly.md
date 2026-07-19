@@ -18,6 +18,7 @@ popularity: 0
 source_language: de
 translation: full
 updated_at: 2026-07-19
+description: Adobe Firefly connects generative image and design work with editable Creative Cloud workflows and reviewable approval steps.
 ---
 # Adobe Firefly
 
@@ -88,11 +89,11 @@ n  <a href="https://firefly.adobe.com/?media=featured">Click here to visit the p
 ## Alternatives
 
   - [Canva](/en/tools/canva/): A user-friendly online design tool with many templates and easy editing features.
-  - [DALLÂ·E 2 (OpenAI)](/en/tools/dall-e/): AI-based image generation through text input, specialized in creative image creation.
+  - [DALL-E (OpenAI)](/en/tools/dall-e/): AI-based image generation through text input, specialized in creative image creation.
   - [Figma](/en/tools/figma/): Collaborative design tool with a focus on UI/UX design and prototyping.
   - [Midjourney](/en/tools/midjourney/): AI-powered creative image generation with a focus on artistic styles.
   - [Affinity Designer](/en/tools/affinity-designer/): Powerful design software as an alternative to Adobe products, without a subscription model.
-## What really matters in daily use
+## Editorial Assessment
 
 Adobe Firefly is most useful when generative assets flow into an existing creative stack such as Photoshop, Express, or Illustrator. The practical question is not whether one prompt looks impressive, but whether variants, rights handling, style consistency, and manual finishing can be managed in a repeatable review process.
 

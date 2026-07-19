@@ -85,9 +85,9 @@ In the catalog, Canva is marked with the pricing model **Freemium**. For a real 
 - [Adobe Illustrator](/en/tools/adobe-illustrator/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Coreldraw](/en/tools/coreldraw/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Gimp](/en/tools/gimp/): useful comparison point for adjacent workflows, pricing, or team fit.
-- Vista Create: useful comparison point for adjacent workflows, pricing, or team fit.
+  - [Adobe Express](/en/tools/adobe-express/): useful comparison point for quick branded formats, simple layouts and social media variants.
 
-## Editorial assessment
+## Editorial Assessment
 
 Canva is excellent for speed and breadth. Distinctive brand work still needs clear design rules.
 
