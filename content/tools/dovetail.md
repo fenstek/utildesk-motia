@@ -10,7 +10,7 @@ category: Product Research
 price_model: Freemium
 tags: [customer-intelligence, research, feedback, ai]
 official_url: "https://dovetail.com/"
-popularity: 51
+popularity: 52
 tier: C
 lastReviewed: 2026-07-13
 ---

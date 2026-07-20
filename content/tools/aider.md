@@ -8,10 +8,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: Entwickler-Tools
 price_model: Je nach Plan
-description: "Terminal-first AI coding tool for repository-aware edits, refactoring, tests, and Git-based review with configurable model providers."
+description: Terminal-first AI coding tool for repository-aware edits, refactoring, tests, and Git-based review with configurable model providers.
 tags: [ai, coding, cli, developer]
 official_url: "https://aider.chat/"
-popularity: 81
+popularity: 79
 tier: A
 lastReviewed: 2026-07-19
 updated_at: 2026-07-19

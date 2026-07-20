@@ -12,7 +12,7 @@ tags: [education, courses, career, learning]
 official_url: "https://www.coursera.org/"
 description: Online-Lernplattform mit Kursen, Guided Projects, Professional Certificates und akademischen Programmen von Hochschulen und Unternehmen.
 updated_at: 2026-07-14
-popularity: 59
+popularity: 60
 tier: C
 generated_at: 2026-05-15
 ---

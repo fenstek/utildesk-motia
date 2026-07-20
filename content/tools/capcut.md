@@ -8,10 +8,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: Audio & Video
 price_model: Freemium
-description: "Versatile mobile video editor for social clips, captions, templates, effects, audio, and fast AI-assisted publishing workflows."
+description: Versatile mobile video editor for social clips, captions, templates, effects, audio, and fast AI-assisted publishing workflows.
 tags: [ai, video, editing]
 official_url: "https://www.capcut.com/nl-nl/"
-popularity: 64
+popularity: 63
 updated_at: 2026-07-19
 tier: C
 generated_at: 2026-05-27
