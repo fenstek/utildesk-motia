@@ -12,6 +12,7 @@ tags:
   - coding
   - developer tools
 official_url: 'https://bolt.new'
+affiliate_url: 'https://bolt.cello.so/eklVpuKzmDu'
 popularity: 86
 translation: full
 description: "Bolt.new is a browser-based AI development tool for fast web prototypes, app ideas, and iterative coding experiments."
@@ -69,7 +70,7 @@ AI coding tools may process source code, prompts, and product ideas. Sensitive r
 
 In the catalog, Bolt.new is marked with the pricing model **Plan-based**. For a real decision, check the current provider pricing, limits, team features, and export options directly.
 
-**Provider:** https://bolt.new
+**Provider:** https://bolt.cello.so/eklVpuKzmDu
 
 ## Alternatives
 

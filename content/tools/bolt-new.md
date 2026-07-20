@@ -10,6 +10,7 @@ category: Entwickler-Tools
 price_model: Je nach Plan
 tags: ["coding", "developer-tools"]
 official_url: "https://bolt.new"
+affiliate_url: "https://bolt.cello.so/eklVpuKzmDu"
 popularity: 66
 description: Bolt.new ist ein browserbasiertes KI-Entwicklungstool für schnelle Web-Prototypen, App-Ideen und iterative Code-Experimente.
 tier: C
@@ -73,7 +74,7 @@ Bei KI-Coding-Tools können Quellcode, Prompts und Produktideen verarbeitet werd
 
 Im Katalog ist Bolt.new mit dem Preismodell **Je nach Plan** geführt. Relevant sind Prompt- und Nutzungslimits, Projektgröße, Exportmöglichkeiten, Integrationen, Deployment-Wege und Teamfunktionen. Bei intensiver Nutzung sollte man zusätzlich kalkulieren, wie viel Nacharbeit nötig ist, um Prototypen in wartbaren Code zu überführen.
 
-**Zum Anbieter:** https://bolt.new
+**Zum Anbieter:** https://bolt.cello.so/eklVpuKzmDu
 
 ## Alternativen
 
