@@ -8,10 +8,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: AI Chatbots
 price_model: Open Source
-description: "Self-hosted AI workspace for local and API-connected models, shared knowledge, roles, tools, and governed team access."
+description: Self-hosted AI workspace for local and API-connected models, shared knowledge, roles, tools, and governed team access.
 tags: ["assistant", "chatbot"]
 official_url: "https://openwebui.com"
-popularity: 90
+popularity: 89
 tier: C
 generated_at: 2026-05-16
 updated_at: 2026-07-19

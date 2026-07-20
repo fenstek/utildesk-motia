@@ -1,20 +1,20 @@
 ---
-description: "OpenAI Codex ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "openai-codex"
-title: "OpenAI Codex"
+description: OpenAI Codex ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: openai-codex
+title: OpenAI Codex
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Coding"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Coding
+price_model: Freemium
 tags: [ai, devtools, coding, workflow]
 official_url: "https://openai.com/codex"
-popularity: 0
+popularity: 33
 tier: A
 mentionedIn: ["coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen"]
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # OpenAI Codex

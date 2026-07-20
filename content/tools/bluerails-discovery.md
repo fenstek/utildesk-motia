@@ -1,20 +1,20 @@
 ---
-description: "Bluerails Discovery ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "bluerails-discovery"
-title: "Bluerails Discovery"
-category: "Marketing & Vertrieb"
-price_model: "Je nach Plan"
+description: Bluerails Discovery ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: bluerails-discovery
+title: Bluerails Discovery
+category: Marketing & Vertrieb
+price_model: Je nach Plan
 tags: [agentic-commerce, ai-search, commerce, agents, visibility]
 official_url: "https://discovery.bluerails.com/"
 tier: D
 generated_at: 2026-06-24
-popularity: 68
-updated_at: "2026-07-17"
+popularity: 66
+updated_at: 2026-07-17
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
 ---
 
 # Bluerails Discovery

@@ -8,11 +8,11 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: AI Infrastructure
 price_model: Freemium
-description: "Enterprise-oriented language models, embeddings, and reranking tools for grounded search and AI workflows."
+description: Enterprise-oriented language models, embeddings, and reranking tools for grounded search and AI workflows.
 tags: [chatbot, data]
 official_url: "https://cohere.com/"
 updated_at: 2026-07-19
-popularity: 61
+popularity: 62
 tier: B
 generated_at: 2026-05-11
 ---

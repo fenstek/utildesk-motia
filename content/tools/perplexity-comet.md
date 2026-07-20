@@ -1,20 +1,20 @@
 ---
-description: "Perplexity Comet ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "perplexity-comet"
-title: "Perplexity Comet"
+description: Perplexity Comet ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: perplexity-comet
+title: Perplexity Comet
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
 editorial_verdict: recommend
-category: "Produktivität"
-price_model: "Freemium"
+category: Produktivität
+price_model: Freemium
 tags: [ai, browser, search, assistant]
 official_url: "https://www.perplexity.ai/comet"
-popularity: 29
+popularity: 28
 tier: B
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 generated_at: 2026-05-31
 ---
 

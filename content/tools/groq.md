@@ -8,10 +8,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: AI Coding
 price_model: Usage-based
-description: "Inference infrastructure and accelerator platform for fast AI model serving, with performance and cost determined by workload and provider plan."
+description: Inference infrastructure and accelerator platform for fast AI model serving, with performance and cost determined by workload and provider plan.
 tags: ["developer-tools", "api"]
 official_url: "https://groq.com"
-popularity: 43
+popularity: 44
 tier: C
 generated_at: 2026-05-27
 updated_at: 2026-07-19

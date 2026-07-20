@@ -8,10 +8,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: AI Writing
 price_model: Freemium
-description: "Collaborative cloud document editor with templates, review, automation, Zoho integrations, and Zia-assisted writing support."
+description: Collaborative cloud document editor with templates, review, automation, Zoho integrations, and Zia-assisted writing support.
 tags: [ai, writing]
 official_url: "https://www.zoho.com/writer/"
-popularity: 84
+popularity: 82
 tier: B
 generated_at: 2026-05-13
 updated_at: 2026-07-19

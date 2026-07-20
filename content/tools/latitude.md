@@ -1,20 +1,20 @@
 ---
-description: "Latitude ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "latitude"
-title: "Latitude"
-category: "AI Infrastructure"
-price_model: "Freemium"
+description: Latitude ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: latitude
+title: Latitude
+category: AI Infrastructure
+price_model: Freemium
 tags: [ai-agents, observability, evaluation, llmops, developer-tools]
 official_url: "https://latitude.so/"
 tier: D
 generated_at: 2026-06-24
-popularity: 35
-updated_at: "2026-07-17"
+popularity: 36
+updated_at: 2026-07-17
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
 ---
 
 # Latitude

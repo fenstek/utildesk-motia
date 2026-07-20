@@ -1,21 +1,21 @@
 ---
-description: "Speechify ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "speechify"
-title: "Speechify"
+description: Speechify ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: speechify
+title: Speechify
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Audio"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Audio
+price_model: Freemium
 tags: [ai, audio]
 official_url: "https://speechify.com/"
 created_at: 2026-02-15
-popularity: 16
+popularity: 15
 tier: C
 generated_at: 2026-05-17
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Speechify

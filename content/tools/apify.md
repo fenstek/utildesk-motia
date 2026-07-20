@@ -14,8 +14,8 @@ editorial_reviewed_at: 2026-07-19
 editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 tier: D
-description: "Web-scraping and browser-automation platform built from Actors, datasets, and scheduled runs, with practical paths into agent workflows."
-popularity: 74
+description: Web-scraping and browser-automation platform built from Actors, datasets, and scheduled runs, with practical paths into agent workflows.
+popularity: 73
 ---
 # Apify
 
