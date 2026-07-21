@@ -11,7 +11,7 @@ category: AI Coding
 price_model: Abonnement
 tags: [api, workflow]
 official_url: "https://altair.com/altair-rapidminer"
-popularity: 23
+popularity: 22
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-17

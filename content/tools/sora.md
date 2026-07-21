@@ -11,7 +11,7 @@ price_model: Discontinued
 tags: ["video"]
 official_url: "https://openai.com/sora"
 description: Sora war OpenAIs generatives Videoprojekt für kurze visuelle Entwürfe. Seit dem 26. April 2026 ist das Produkt laut OpenAI nicht mehr verfügbar.
-popularity: 17
+popularity: 16
 tier: C
 generated_at: 2026-05-17
 updated_at: 2026-07-19

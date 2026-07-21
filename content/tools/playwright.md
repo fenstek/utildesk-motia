@@ -11,7 +11,7 @@ price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://playwright.dev/"
 description: Open-source end-to-end testing framework for modern web applications, with browser isolation, parallel runs, assertions, and diagnostics.
-popularity: 84
+popularity: 85
 tier: D
 generated_at: 2026-05-17
 updated_at: 2026-07-19
