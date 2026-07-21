@@ -238,6 +238,11 @@
         "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
       },
       {
+        "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
+        "title": "Agentic Traffic: Warum Websites echte KI-Agenten von Scraping und Spoofing unterscheiden müssen",
+        "excerpt": "KI-Agenten, Suchcrawler und Trainingsbots erzeugen nicht denselben Webverkehr. Dieser Leitfaden zeigt, welche Signale belastbar sind, wo robots.txt endet und wie Publisher und Agent-Teams einen fairen, ausfallsicheren Zugang bauen."
+      },
+      {
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
         "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
@@ -401,6 +406,11 @@
     ],
     "claude": [
       {
+        "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
+        "title": "Agentic Traffic: Warum Websites echte KI-Agenten von Scraping und Spoofing unterscheiden müssen",
+        "excerpt": "KI-Agenten, Suchcrawler und Trainingsbots erzeugen nicht denselben Webverkehr. Dieser Leitfaden zeigt, welche Signale belastbar sind, wo robots.txt endet und wie Publisher und Agent-Teams einen fairen, ausfallsicheren Zugang bauen."
+      },
+      {
         "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
         "title": "AI-Launch und Distribution: Die neue Tool-Schicht für den Erfolg nach dem Build",
         "excerpt": "Der Goldrausch bei der Entwicklung von KI-Anwendungen hat eine neue Phase erreicht."
@@ -524,6 +534,25 @@
         "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
         "title": "Wispr Flow im Vergleich: Welche Diktier-App passt wirklich zu deinem Workflow?",
         "excerpt": "Die Ära des mühsamen Tippens neigt sich dem Ende zu, während eine neue Generation von KI-gestützten Sprachwerkzeugen den Arbeitsalltag revolutioniert."
+      }
+    ],
+    "apify": [
+      {
+        "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
+        "title": "Agentic Traffic: Warum Websites echte KI-Agenten von Scraping und Spoofing unterscheiden müssen",
+        "excerpt": "KI-Agenten, Suchcrawler und Trainingsbots erzeugen nicht denselben Webverkehr. Dieser Leitfaden zeigt, welche Signale belastbar sind, wo robots.txt endet und wie Publisher und Agent-Teams einen fairen, ausfallsicheren Zugang bauen."
+      },
+      {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: Wenn Suche zu laufenden Beobachtern wird",
+        "excerpt": "Always-on Research Agents beobachten Quellen über Zeit, verdichten Veränderungen und liefern überprüfbare Briefings. Dieser Leitfaden zeigt, wo sie helfen, wo sie scheitern und wie Teams klein starten."
+      }
+    ],
+    "firecrawl": [
+      {
+        "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
+        "title": "Agentic Traffic: Warum Websites echte KI-Agenten von Scraping und Spoofing unterscheiden müssen",
+        "excerpt": "KI-Agenten, Suchcrawler und Trainingsbots erzeugen nicht denselben Webverkehr. Dieser Leitfaden zeigt, welche Signale belastbar sind, wo robots.txt endet und wie Publisher und Agent-Teams einen fairen, ausfallsicheren Zugang bauen."
       }
     ],
     "github-copilot": [
@@ -777,13 +806,6 @@
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
         "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
-      }
-    ],
-    "apify": [
-      {
-        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
-        "title": "Always-on Research Agents: Wenn Suche zu laufenden Beobachtern wird",
-        "excerpt": "Always-on Research Agents beobachten Quellen über Zeit, verdichten Veränderungen und liefern überprüfbare Briefings. Dieser Leitfaden zeigt, wo sie helfen, wo sie scheitern und wie Teams klein starten."
       }
     ],
     "zapier": [
@@ -1681,6 +1703,11 @@
         "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
       },
       {
+        "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
+        "title": "Agentic Traffic: Why Websites Must Distinguish Real AI Agents from Scraping and Spoofing",
+        "excerpt": "AI agents, search crawlers and training bots do not create the same kind of web traffic. This guide explains which signals are useful, where robots.txt stops and how publishers and agent teams can build a fair, resilient access path."
+      },
+      {
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
         "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
@@ -1844,6 +1871,11 @@
     ],
     "claude": [
       {
+        "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
+        "title": "Agentic Traffic: Why Websites Must Distinguish Real AI Agents from Scraping and Spoofing",
+        "excerpt": "AI agents, search crawlers and training bots do not create the same kind of web traffic. This guide explains which signals are useful, where robots.txt stops and how publishers and agent teams can build a fair, resilient access path."
+      },
+      {
         "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
         "title": "AI Launch and Distribution: The New Tool Layer for Success After the Build",
         "excerpt": "AI products no longer win through the build alone. A new launch and distribution layer is deciding which tools actually reach users."
@@ -1967,6 +1999,25 @@
         "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
         "title": "Wispr Flow Compared: Which Dictation App Really Fits Your Workflow?",
         "excerpt": "AI dictation is moving from simple transcription to workflow software: the best tool is the one that turns speech into usable text without taking control away from you."
+      }
+    ],
+    "apify": [
+      {
+        "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
+        "title": "Agentic Traffic: Why Websites Must Distinguish Real AI Agents from Scraping and Spoofing",
+        "excerpt": "AI agents, search crawlers and training bots do not create the same kind of web traffic. This guide explains which signals are useful, where robots.txt stops and how publishers and agent teams can build a fair, resilient access path."
+      },
+      {
+        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
+        "title": "Always-on Research Agents: When Search Becomes Ongoing Observation",
+        "excerpt": "Always-on research agents watch defined sources over time, surface meaningful changes and produce reviewable briefings. This guide explains where they help, where they fail and how teams can start safely."
+      }
+    ],
+    "firecrawl": [
+      {
+        "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
+        "title": "Agentic Traffic: Why Websites Must Distinguish Real AI Agents from Scraping and Spoofing",
+        "excerpt": "AI agents, search crawlers and training bots do not create the same kind of web traffic. This guide explains which signals are useful, where robots.txt stops and how publishers and agent teams can build a fair, resilient access path."
       }
     ],
     "github-copilot": [
@@ -2220,13 +2271,6 @@
         "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
         "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
         "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
-      }
-    ],
-    "apify": [
-      {
-        "slug": "always-on-research-agents-wenn-suche-zu-laufenden-beobachtern-wird",
-        "title": "Always-on Research Agents: When Search Becomes Ongoing Observation",
-        "excerpt": "Always-on research agents watch defined sources over time, surface meaningful changes and produce reviewable briefings. This guide explains where they help, where they fail and how teams can start safely."
       }
     ],
     "zapier": [
