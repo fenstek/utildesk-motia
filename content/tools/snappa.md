@@ -1,20 +1,20 @@
 ---
-description: "Snappa ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "snappa"
-title: "Snappa"
+description: Snappa ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: snappa
+title: Snappa
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Image"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Image
+price_model: Freemium
 tags: ["design", "image", "social-media"]
 official_url: "https://snappa.com/"
-popularity: 19
+popularity: 18
 tier: D
 generated_at: 2026-05-28
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Snappa

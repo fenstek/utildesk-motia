@@ -11,7 +11,7 @@ category: AI Image
 price_model: Je nach Plan
 tags: [video, automation, marketing, design, content]
 official_url: "https://www.d-id.com/"
-popularity: 58
+popularity: 59
 tier: C
 generated_at: 2026-05-11
 ---

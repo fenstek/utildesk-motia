@@ -1,20 +1,20 @@
 ---
-description: "Rasa ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "rasa"
-title: "Rasa"
+description: Rasa ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: rasa
+title: Rasa
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Coding"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Coding
+price_model: Freemium
 tags: ["chatbot", "developer-tools", "api"]
 official_url: "https://rasa.com/docs"
-popularity: 22
+popularity: 21
 tier: C
 generated_at: 2026-05-13
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Rasa

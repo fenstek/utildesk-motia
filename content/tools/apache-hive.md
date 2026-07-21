@@ -2,20 +2,20 @@
 slug: apache-hive
 title: Apache Hive
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-apache-hive-editorial"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-apache-hive-editorial
+category: AI Infrastructure
 price_model: Open Source
 tags: [developer-tools,data,cloud]
 official_url: "https://hive.apache.org/"
 description: "Apache Hive bringt SQL auf verteilte Daten: ein praxisnaher Überblick zu HiveQL, Metastore, Batch-ETL, Partitionen, ORC, Betriebskosten und den Grenzen gegenüber Echtzeit- und OLTP-Systemen."
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+popularity: 74
+tier: C
+generated_at: 2026-05-14
 ---
 # Apache Hive
 
