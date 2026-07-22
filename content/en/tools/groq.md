@@ -27,10 +27,6 @@ Groq now presents itself more clearly as an inference cloud: GroqCloud, purpose-
 
 Before migrating, run the same prompt and load test against the current provider. Measure time to first token, total latency, error rate, context limits, and cost per completed task rather than relying on one benchmark number.
 
-## Editorial update July 2026
-
-Groq now presents itself more clearly as an inference cloud: GroqCloud and purpose-built accelerators target fast model inference at scale. A fair decision should measure time to first token, total latency, error rate, context limits, and cost per completed task rather than one benchmark number.
-
 ## Who is Groq suitable for?
 
 Groq is suitable for companies and organizations that develop and operate demanding AI models. Users in autonomous driving, robotics, healthcare, finance, and telecommunications especially benefit from the high computing power and low latency. Developers and data scientists who want to train complex deep learning models or run them in real time will also find Groq to be a flexible and scalable infrastructure. The platform is ideal for users looking for an alternative to traditional GPU-based systems and who value efficiency and performance.

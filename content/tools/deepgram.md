@@ -27,10 +27,6 @@ Mit der Voice Agent API bündelt Deepgram die Sprachkette aus Zuhören, Denken u
 
 Ein seriöser Pilot läuft zunächst mit aufgezeichneten Gesprächen und menschlicher Abnahme. Erst danach sollten Telefonie, Kundendaten oder automatische Aktionen dazukommen; für regulierte Bereiche gehören Aufbewahrung, Einwilligung und Audit-Logs in den Scope.
 
-## Redaktionelles Update Juli 2026
-
-Mit der Voice Agent API bündelt Deepgram die Sprachkette aus Zuhören, Denken und Sprechen in einem Echtzeit-Workflow. Ein seriöser Pilot startet mit aufgezeichneten Gesprächen und menschlicher Abnahme; Telefonie, Kundendaten und automatische Aktionen kommen erst danach.
-
 ## Für wen eignet sich Deepgram?
 
 - Produktteams, die Echtzeit-Transkription oder Sprachdialoge in ein eigenes Produkt integrieren.

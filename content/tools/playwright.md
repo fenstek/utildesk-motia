@@ -30,10 +30,6 @@ Beim Upgrade sollten CI-Images, Browsermatrix, Testdaten und Trace-Artefakte gem
   <img src="/images/tools/playwright-editorial.webp" alt="Theaterteam prüft dieselbe Szene auf drei Miniaturbühnen" loading="lazy" decoding="async" />
 </figure>
 
-## Redaktionelles Update Juli 2026
-
-Die aktuelle Playwright-Linie bringt für reale Testumgebungen unter anderem einen virtuellen WebAuthn-Authenticator für Passkey-Flows, bequemere Storage-State-APIs und laufend aktualisierte Browser-Versionen. Beim Upgrade sollten CI-Images, Browsermatrix, Testdaten und Trace-Artefakte gemeinsam geprüft werden.
-
 ## Für wen ist Playwright geeignet?
 
 Playwright passt zu Produkt- und QA-Teams, deren Anwendung in mehreren Browsern und Releases zuverlässig funktionieren muss. Besonders nützlich ist es für SPAs, Login- und Zahlungsflüsse, komplexe Formulare, Rollenrechte und visuelle Regressionen. Teams mit JavaScript/TypeScript, Python, Java oder .NET können es nutzen. Für reine Chromium-Skripte oder PDF-Erzeugung kann [Puppeteer](/tools/puppeteer/) schlanker sein.

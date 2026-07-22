@@ -28,10 +28,6 @@ When upgrading, review CI images, the browser matrix, test data, and trace artef
   <img src="/images/tools/playwright-editorial.webp" alt="Theater crew testing the same scene across three miniature stages" loading="lazy" decoding="async" />
 </figure>
 
-## Editorial update July 2026
-
-The current Playwright line adds practical value for real test environments, including a virtual WebAuthn authenticator for passkey flows, convenient storage-state APIs, and updated browser versions. When upgrading, review CI images, the browser matrix, test data, and trace artefacts together.
-
 ## Who is Playwright for?
 
 Playwright suits product and QA teams whose application must work reliably across browsers and releases. It is especially useful for SPAs, login and payment flows, complex forms, role permissions, and visual regression checks. JavaScript/TypeScript, Python, Java, and .NET teams can use it. For focused Chromium scripts or PDF generation, [Puppeteer](/en/tools/puppeteer/) can be leaner.

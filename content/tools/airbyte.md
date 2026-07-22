@@ -30,10 +30,6 @@ Vor dem Rollout gehören OAuth, Servicekonten, PII-Filter, Kostenlimits und ein 
   <img src="/images/tools/airbyte-editorial.webp" alt="Papierhafen mit Datenfrachtrouten zwischen Inseln" loading="lazy" decoding="async" />
 </figure>
 
-## Redaktionelles Update Juli 2026
-
-Airbyte erweitert seine Rolle vom Datenreplikationsdienst zur Context-Schicht für Agenten. Agents, MCP, SDK und CLI sollen Quellen einmal anbinden und anschließend in ChatGPT, Claude, Cursor oder eigenen Workflows nutzbar machen. Vor Schreibrechten gehören OAuth, PII-Filter, Kostenlimits und ein Read-only-Pilot in die Prüfung.
-
 ## Für wen ist Airbyte geeignet?
 
 Airbyte passt zu Data- und Engineering-Teams, die wiederkehrende Replikation zwischen operativen Systemen und Analytics- oder KI-Stacks aufbauen. Ein guter Anwendungsfall ist etwa: CRM- und Supportdaten landen verlässlich im Warehouse, oder freigegebene Unternehmensdaten werden als Kontext für einen internen Agenten bereitgestellt.
