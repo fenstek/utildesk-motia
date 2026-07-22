@@ -12,7 +12,7 @@ description: Enterprise-oriented language models, embeddings, and reranking tool
 tags: [chatbot, data]
 official_url: "https://cohere.com/"
 updated_at: 2026-07-19
-popularity: 62
+popularity: 63
 tier: B
 generated_at: 2026-05-11
 ---
