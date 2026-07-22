@@ -11,7 +11,7 @@ category: AI Coding
 price_model: Kostenlos
 tags: ["data", "analytics", "developer-tools", "education", "chatbot"]
 official_url: "https://pair-code.github.io/what-if-tool/"
-popularity: 47
+popularity: 48
 tier: C
 generated_at: 2026-05-12
 updated_at: 2026-07-17

@@ -2,19 +2,19 @@
 slug: kimi
 title: Kimi
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-product-update"
-category: "AI Chatbots"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-product-update
+category: AI Chatbots
+price_model: Freemium
 tags: [ai, assistant, chatbot]
 official_url: "https://www.kimi.com/"
-popularity: 0
-description: "Kimi ist ein KI-Assistent für KI-Assistent mit starkem Fokus auf lange Kontexte, Recherche und dokumentnahe Aufgaben."
-tier: "C"
-generated_at: "2026-05-12"
-updated_at: "2026-07-19"
+popularity: 42
+description: Kimi ist ein KI-Assistent für KI-Assistent mit starkem Fokus auf lange Kontexte, Recherche und dokumentnahe Aufgaben.
+tier: C
+generated_at: 2026-05-12
+updated_at: 2026-07-19
 ---
 # Kimi
 
