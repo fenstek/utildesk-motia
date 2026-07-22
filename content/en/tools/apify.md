@@ -28,10 +28,6 @@ Apify is moving its Actor and browser infrastructure further toward agentic use:
 
 That makes Apify useful for agents, but increases responsibility for sources, robots.txt, usage rights, runtime cost, and secrets. Before scaling up, run one Actor with a bounded page count, traceable output, and a cost ceiling to prove the pipeline is stable.
 
-## Editorial update July 2026
-
-Apify is moving its Actor and browser infrastructure further toward agentic use: MCP connectors and a `webServerSchema` in `actor.json` make it easier to expose Actors as describable tools. Before scaling up, test sources, robots.txt, usage rights, runtime cost, and secrets with one bounded Actor.
-
 ## Who Is It For?
 
 It fits data, growth, research, and engineering teams with recurring web data tasks. It is less appropriate when sources provide stable official APIs or when legal use is unclear.
