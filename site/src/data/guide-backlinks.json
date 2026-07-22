@@ -1456,6 +1456,20 @@
         "excerpt": "Shared AI Workspaces holen KI-Arbeit aus privaten Chats. Der Beitrag zeigt, wie Teams Kontext, Agenten-State, Freigaben und belastbare Ergebnisse gemeinsam organisieren."
       }
     ],
+    "playwright": [
+      {
+        "slug": "slack-agent-driven-end-to-end-testing-ui-test-automation-resilience",
+        "title": "Slack und agentisches End-to-End-Testing: Wie UI-Tests resilienter werden",
+        "excerpt": "Slack hat agentisches Testing nicht als Ersatz fÃ¼r CI-Tests gebaut, sondern als zusÃ¤tzliche Explorationsschicht. Der Praxischeck zeigt, wo adaptive Browser-Agenten helfen, wo sie teuer werden und welche Leitplanken unverzichtbar sind."
+      }
+    ],
+    "cypress": [
+      {
+        "slug": "slack-agent-driven-end-to-end-testing-ui-test-automation-resilience",
+        "title": "Slack und agentisches End-to-End-Testing: Wie UI-Tests resilienter werden",
+        "excerpt": "Slack hat agentisches Testing nicht als Ersatz fÃ¼r CI-Tests gebaut, sondern als zusÃ¤tzliche Explorationsschicht. Der Praxischeck zeigt, wo adaptive Browser-Agenten helfen, wo sie teuer werden und welche Leitplanken unverzichtbar sind."
+      }
+    ],
     "google-search-console": [
       {
         "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
@@ -2919,6 +2933,20 @@
         "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
         "title": "Shared AI Workspaces: How Teams Can Share Context and Agent Work",
         "excerpt": "Shared AI workspaces move useful AI work out of private chats. This guide explains how teams can share context, agent state, approvals and durable outcomes without creating a memory landfill."
+      }
+    ],
+    "playwright": [
+      {
+        "slug": "slack-agent-driven-end-to-end-testing-ui-test-automation-resilience",
+        "title": "Slack’s Agent-Driven End-to-End Testing: Making UI Automation More Resilient",
+        "excerpt": "Slack did not present agentic testing as a replacement for CI. Its 200-plus-run experiment treats browser agents as an exploratory layer for brittle UI flows, with clear costs, boundaries and evidence requirements."
+      }
+    ],
+    "cypress": [
+      {
+        "slug": "slack-agent-driven-end-to-end-testing-ui-test-automation-resilience",
+        "title": "Slack’s Agent-Driven End-to-End Testing: Making UI Automation More Resilient",
+        "excerpt": "Slack did not present agentic testing as a replacement for CI. Its 200-plus-run experiment treats browser agents as an exploratory layer for brittle UI flows, with clear costs, boundaries and evidence requirements."
       }
     ],
     "google-search-console": [
