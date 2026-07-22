@@ -28,10 +28,6 @@ Die aktuelle Open-WebUI-Linie verschiebt den Schwerpunkt deutlich von der Chat-O
 
 Vor einem Upgrade sollte ein Team Backups, Rollen, Tool-Berechtigungen und die Kompatibilität eigener Erweiterungen prüfen. Der richtige Test ist ein isolierter Agentenlauf mit erlaubten Werkzeugen, sichtbaren Logs und einem klaren Rollback.
 
-## Redaktionelles Update Juli 2026
-
-Die aktuelle Open-WebUI-Linie verschiebt den Schwerpunkt von der Chat-Oberfläche zur betreibbaren Agentenplattform: Skills, Ereignisse, strukturierte Ausgaben, Wissensräume und Open Terminal können lokale Modelle mit konkreten Arbeitsabläufen verbinden. Vor einem Upgrade sollten Backups, Rollen, Tool-Berechtigungen und Erweiterungen geprüft werden.
-
 ## Für wen ist Open WebUI geeignet?
 
 Open WebUI passt besonders zu:

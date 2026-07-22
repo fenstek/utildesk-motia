@@ -29,10 +29,6 @@ Before rollout, review OAuth, service accounts, PII filters, cost limits, and a 
   <img src="/images/tools/airbyte-editorial.webp" alt="a paper-cut harbor with data cargo routes between islands" loading="lazy" decoding="async" />
 </figure>
 
-## Editorial update July 2026
-
-Airbyte is extending its role from data replication toward a context layer for agents. Agents, MCP, SDK, and CLI let teams connect sources once and use them from ChatGPT, Claude, Cursor, or their own workflows. Before granting write access, review OAuth, PII filters, cost limits, and a read-only pilot.
-
 ## Who is Airbyte for?
 
 Airbyte fits data and engineering teams building recurring replication between operational systems and analytics or AI stacks. A useful case might be keeping CRM and support data current in a warehouse, or exposing approved business data as context for an internal agent.

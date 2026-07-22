@@ -27,10 +27,6 @@ The current Open WebUI line moves the centre of gravity from chat interface to o
 
 Before upgrading, a team should back up its instance, review roles and tool permissions, and test its extensions against the target version. The right pilot is an isolated agent run with allowed tools, visible logs, and a clear rollback path.
 
-## Editorial update July 2026
-
-The current Open WebUI line moves the centre of gravity from chat interface to operable agent platform: skills, events, structured output, knowledge spaces, and Open Terminal can connect local models to concrete work. Before upgrading, review backups, roles, tool permissions, and extension compatibility.
-
 ## Who is Open WebUI for?
 
 Open WebUI is particularly relevant for:

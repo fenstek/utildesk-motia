@@ -28,10 +28,6 @@ Deepgram's Voice Agent API bundles listening, thinking, and speaking into a real
 
 A serious pilot starts with recorded conversations and human approval. Telephony, customer data, and automatic actions should come later; regulated use also needs retention, consent, and audit logs in scope.
 
-## Editorial update July 2026
-
-Deepgram's Voice Agent API bundles listening, thinking, and speaking into a real-time workflow. A serious pilot starts with recorded conversations and human approval; telephony, customer data, and automatic actions should come later, with consent and audit logs in scope for regulated use.
-
 ## Who is Deepgram for?
 
 - Product teams embedding real-time transcription or speech interactions into their own product.
