@@ -27,10 +27,6 @@ Apify rückt seine Actor- und Browser-Infrastruktur weiter in Richtung agentisch
 
 Das erhöht zugleich die Verantwortung für Quellen, robots.txt, Nutzungsrechte, Laufzeitkosten und Secrets. Vor dem Ausbau sollte ein einzelner Actor mit begrenzter Seitenzahl, nachvollziehbarem Output und einem Kostenlimit beweisen, dass die Datenpipeline stabil bleibt.
 
-## Redaktionelles Update Juli 2026
-
-Apify rückt seine Actor- und Browser-Infrastruktur weiter in Richtung agentischer Nutzung: MCP-Konnektoren und ein `webServerSchema` in `actor.json` erleichtern es, Actors als beschreibbare Werkzeuge bereitzustellen. Vor dem Ausbau sollten Quellen, robots.txt, Nutzungsrechte, Laufzeitkosten und Secrets mit einem begrenzten Actor-Pilot geprüft werden.
-
 ## Für wen ist das geeignet?
 
 Geeignet ist Apify für Data-, Growth-, Research- und Engineering-Teams mit wiederkehrenden Webdaten-Aufgaben. Weniger passend ist es, wenn Datenquellen stabile offizielle APIs anbieten oder rechtliche Nutzung ungeklärt ist.
