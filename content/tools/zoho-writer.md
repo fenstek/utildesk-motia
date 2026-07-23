@@ -11,7 +11,7 @@ price_model: Freemium
 description: Collaborative cloud document editor with templates, review, automation, Zoho integrations, and Zia-assisted writing support.
 tags: [ai, writing]
 official_url: "https://www.zoho.com/writer/"
-popularity: 83
+popularity: 82
 tier: B
 generated_at: 2026-05-13
 updated_at: 2026-07-19

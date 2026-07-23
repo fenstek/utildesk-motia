@@ -11,7 +11,7 @@ price_model: Usage-based
 description: Inference infrastructure and accelerator platform for fast AI model serving, with performance and cost determined by workload and provider plan.
 tags: ["developer-tools", "api"]
 official_url: "https://groq.com"
-popularity: 44
+popularity: 45
 tier: C
 generated_at: 2026-05-27
 updated_at: 2026-07-19
