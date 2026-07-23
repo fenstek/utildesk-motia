@@ -8,7 +8,7 @@ updated_at: 2026-07-13
 lastReviewed: 2026-07-13
 editorial_status: manual_polished
 editorial_batch: 2026-07-13-apache-hbase-editorial
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://hbase.apache.org/"

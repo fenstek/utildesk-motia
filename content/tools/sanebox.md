@@ -6,7 +6,7 @@ editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-13-full-tool-card-editorial"
-category: AI
+category: "Produktivität"
 price_model: Subscription
 tags: [productivity, automation, workflow]
 official_url: "https://www.sanebox.com/"

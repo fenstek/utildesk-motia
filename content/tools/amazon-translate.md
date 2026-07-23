@@ -6,7 +6,7 @@ editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-13-amazon-translate-editorial"
-category: AI
+category: "AI Writing"
 price_model: Usage-based
 tags: [ai, translation, api]
 official_url: "https://aws.amazon.com/translate/"
