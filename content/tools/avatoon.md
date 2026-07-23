@@ -7,7 +7,7 @@ editorial_reviewed_at: 2026-07-13
 editorial_status: manual_polished
 editorial_batch: 2026-07-13-full-editorial-coverage
 lastReviewed: 2026-07-13
-category: Design & Kreativität
+category: "Design"
 price_model: Kostenpflichtig
 tags: [avatar, illustration, portrait, branding]
 official_url: "https://avatoon.net/"

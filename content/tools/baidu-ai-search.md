@@ -8,7 +8,7 @@ updated_at: 2026-07-13
 lastReviewed: 2026-07-13
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-13-baidu-ai-search-editorial"
-category: AI
+category: "AI Research"
 price_model: Freemium
 tags: [ai, assistant, search]
 official_url: "https://cloud.baidu.com/product/ai-search.html"

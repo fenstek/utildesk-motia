@@ -6,7 +6,7 @@ editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-13-full-tool-card-editorial"
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [education, authoring, content, open-source]
 official_url: "https://www.adaptlearning.org/"

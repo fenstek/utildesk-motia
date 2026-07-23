@@ -6,7 +6,7 @@ editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-13-full-tool-card-editorial"
-category: "AI"
+category: "AI Image"
 price_model: "Open Source"
 official_url: "https://faceswap.dev/"
 description: "Lokale Open-Source-Software für trainierte Gesichtsübertragung in Bildern und Videos – mit eigener Datenkontrolle, aber hohem GPU-, Zeit- und Prüfaufwand."

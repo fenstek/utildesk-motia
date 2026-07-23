@@ -8,7 +8,7 @@ editorial_status: "manual_polished"
 editorial_batch: "2026-07-14-clearscope-editorial-rewrite"
 lastReviewed: 2026-07-14
 updated_at: 2026-07-14
-category: AI
+category: "AI Writing"
 price_model: Subscription
 tags: [seo, content, marketing, automation]
 official_url: "https://www.clearscope.io/"

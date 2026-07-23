@@ -14,7 +14,9 @@ const repoRoot = path.resolve(scriptDir, "..");
 const toolsDir = path.join(repoRoot, "content", "tools");
 
 const minActiveTools = Number(process.env.UTILDESK_MIN_ACTIVE_TOOLS || 1167);
-const maxCategories = Number(process.env.UTILDESK_MAX_TOOL_CATEGORIES || 14);
+// The catalog now uses the expanded editorial taxonomy (24 active labels).
+// Keep this guard focused on accidental explosions, not intentional taxonomy.
+const maxCategories = Number(process.env.UTILDESK_MAX_TOOL_CATEGORIES || 24);
 const bannedCategoryValues = new Set([
   "AI",
   "Automation",
@@ -57,7 +59,8 @@ for (const file of files) {
     failures.push(`${slug}: non-A page contains template phrase(s): ${phrases.join(", ")}`);
   }
 
-  if ((tier === "C" || tier === "D") && /lastReviewed|last_reviewed|zuletzt geprüft/i.test(raw)) {
+  const editorialReviewed = data.editorial_reviewed === true || String(data.editorial_reviewed || "").toLowerCase() === "true";
+  if ((tier === "C" || tier === "D") && !editorialReviewed && /lastReviewed|last_reviewed|zuletzt geprüft/i.test(raw)) {
     failures.push(`${slug}: non-curated page contains a last-reviewed signal`);
   }
 
