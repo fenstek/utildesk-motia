@@ -11,7 +11,7 @@ category: AI Image
 price_model: Freemium
 tags: [automation, marketing]
 official_url: "https://later.com/"
-popularity: 38
+popularity: 37
 tier: C
 generated_at: 2026-05-12
 ---

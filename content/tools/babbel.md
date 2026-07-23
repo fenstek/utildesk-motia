@@ -15,8 +15,8 @@ category: Productivity
 price_model: Subscription
 tags: [education, language, learning, mobile]
 official_url: "https://www.babbel.com/"
-description: "Subscription language-learning platform for short lessons, vocabulary, grammar, listening, writing, and practical speaking practice."
-popularity: 94
+description: Subscription language-learning platform for short lessons, vocabulary, grammar, listening, writing, and practical speaking practice.
+popularity: 93
 tier: D
 generated_at: 2026-05-27
 ---
