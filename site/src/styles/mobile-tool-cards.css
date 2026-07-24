@@ -1,0 +1,42 @@
+/* Separate mobile bundle: guarantees that the grid/card mode never retains
+   desktop poster tracks when Safari has a previously cached main stylesheet. */
+@media (max-width: 760px) {
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row {
+    min-height: 0 !important;
+    grid-template-columns: 42px minmax(0, 1fr) !important;
+    grid-template-rows: auto auto auto auto !important;
+    grid-auto-flow: row !important;
+    column-gap: 12px !important;
+    row-gap: 9px !important;
+    padding: 15px !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-art {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-no {
+    grid-column: 1 !important;
+    grid-row: 1 / span 4 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .tool-header {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-verdict {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-tags {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-meta {
+    grid-column: 2 !important;
+    grid-row: 4 !important;
+  }
+}
