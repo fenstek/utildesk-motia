@@ -479,6 +479,56 @@ html[data-design="decision"] #load-more-btn {
     display: none !important;
   }
 
+  /* On phones the editorial illustration is deliberately hidden. Reset the
+     desktop poster grid as well: otherwise its reserved art track leaves a
+     large, empty block above every illustrated tool card. */
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row.has-editorial-art {
+    min-height: 0 !important;
+    grid-template-rows: auto auto auto auto !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .has-editorial-art .inv-row-no,
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .has-editorial-art .inv-row-verdict {
+    grid-row: 1 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .has-editorial-art .tool-header {
+    grid-row: 2 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .has-editorial-art .inv-row-tags {
+    grid-row: 3 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .has-editorial-art .inv-row-meta {
+    grid-row: 4 !important;
+  }
+
+  /* The small tool directory on the home page follows the same mobile
+     density: its destination card contains the full teaser, so one line is
+     enough for scanning without creating tall repeated panels. */
+  html[data-design="decision"] .ds-index-row {
+    gap: 8px !important;
+    padding: 12px !important;
+  }
+
+  html[data-design="decision"] .ds-index-tool {
+    gap: 8px !important;
+  }
+
+  html[data-design="decision"] .ds-index-tool em {
+    margin-top: 3px !important;
+    -webkit-line-clamp: 1 !important;
+  }
+
+  html[data-design="decision"] .ds-index-verdict {
+    margin-top: 4px !important;
+  }
+
+  html[data-design="decision"] .ds-index-tags {
+    margin-top: 4px !important;
+  }
+
   .rg-loadmore {
     padding: 4px 10px 44px;
   }
