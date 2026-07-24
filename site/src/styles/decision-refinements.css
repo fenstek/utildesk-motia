@@ -529,6 +529,33 @@ html[data-design="decision"] #load-more-btn {
     margin-top: 4px !important;
   }
 
+  /* The mobile methodology footer becomes a light card. Its desktop palette
+     is light-on-dark, so reset every inherited foreground and action colour
+     here instead of leaving the consequence statement almost invisible. */
+  html[data-design="decision"] .sheet-foot {
+    color: #0c0c0a !important;
+  }
+
+  html[data-design="decision"] .sheet-foot-kicker {
+    color: #5d5b53 !important;
+  }
+
+  html[data-design="decision"] .sheet-foot-line {
+    color: #0c0c0a !important;
+  }
+
+  html[data-design="decision"] .sheet-foot-actions .akte-action-primary {
+    border-color: #0c0c0a !important;
+    background: #0c0c0a !important;
+    color: #fffdf6 !important;
+  }
+
+  html[data-design="decision"] .sheet-foot-actions .akte-action-ghost {
+    border-color: #b6b1a0 !important;
+    background: transparent !important;
+    color: #0c0c0a !important;
+  }
+
   .rg-loadmore {
     padding: 4px 10px 44px;
   }
