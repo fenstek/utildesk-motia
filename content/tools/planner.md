@@ -10,7 +10,7 @@ category: Productivity
 price_model: Freemium
 tags: [project-management,tasks,planning,collaboration]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner"
-popularity: 24
+popularity: 23
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-07-17
