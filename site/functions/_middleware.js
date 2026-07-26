@@ -141,6 +141,18 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
   try {
     const response = await fetch(new Request(upstream, context.request));
     const intentionalRouteState = response.headers.get("X-Utildesk-Route-State");
+    // A runtime miss can be returned as a redirect to /404 rather than a
+    // plain 404. Let a freshly deployed static article serve as the safe
+    // fallback while preserving a real 404 when the static route is absent.
+    if (
+      cluster === "ratgeber" &&
+      response.status >= 300 &&
+      response.status < 400 &&
+      new URL(response.headers.get("location") || "", upstream).pathname === "/404"
+    ) {
+      const fallback = await context.next();
+      if (fallback.ok) return fallback;
+    }
     // Keep a static fallback for a path which has not been imported into D1.
     if ((response.status === 404 && !intentionalRouteState && !url.pathname.startsWith("/runtime-assets/") && !isToolAssetPath(url.pathname)) || response.status >= 500) {
       return cluster === "tools" ? frozenToolFallback(context) : context.next();
