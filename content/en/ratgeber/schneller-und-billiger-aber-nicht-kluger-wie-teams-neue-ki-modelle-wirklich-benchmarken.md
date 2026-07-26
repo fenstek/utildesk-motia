@@ -1,7 +1,7 @@
 ---
 slug: "schneller-und-billiger-aber-nicht-kluger-wie-teams-neue-ki-modelle-wirklich-benchmarken"
 title: "Faster and Cheaper, but Not Smarter: How Teams Should Benchmark New AI Models"
-date: 2026-07-26
+date: "2026-07-26T22:52:00+02:00"
 category: "Analysis"
 eyebrow: "AI Benchmarking"
 excerpt: "Model rankings say little about a concrete workflow. This guide shows how teams can separate quality, cost, latency and failure rates with their own evaluations."
@@ -81,8 +81,6 @@ Ploy offers a useful example in its own report about migrating a production agen
 
 The same caution applies to Anthropic’s much-discussed orchestrator-worker pattern. Anthropic describes Fable 5 as a planning and evaluation model and Sonnet 5 as the cheaper executor. The published numbers are interesting, but they apply to the tested tasks and configuration. Your own workflow must measure whether passing context and intermediate results back and forth erases the advantage.
 
-![Editorial print illustration of three different test paths for speed, cost and task quality](/images/ratgeber/schneller-und-billiger-aber-nicht-kluger-wie-teams-neue-ki-modelle-cover.webp)
-
 ## An internal eval can be small
 
 A useful starting point does not need to be a research programme. Take ten to thirty real tasks from daily work and freeze them for a comparison. Include not only success cases, but also boundaries: incomplete context, wrong file formats, missing permissions and answers that require human review.
@@ -105,7 +103,7 @@ It also creates new failure modes. Every handoff can lose context. A worker may 
 
 Use a hard division of labour: the expensive agent plans, flags risks and reviews the final result. Workers receive small, checkable assignments with bounded context. Between steps, use schemas, tests or acceptance criteria, not another open-ended prompt.
 
-![Handmade paper collage of an orchestrator, specialised workers and a sturdy evaluation bridge](/images/ratgeber/schneller-und-billiger-aber-nicht-kluger-wie-teams-neue-ki-modelle-workflow.webp)
+![Handmade test canal with identical parcels for speed, cost, reliability and decision quality](/images/ratgeber/schneller-und-billiger-aber-nicht-kluger-wie-teams-neue-ki-modelle-workflow.webp)
 
 ## Four common measurement mistakes
 

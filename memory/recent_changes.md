@@ -1674,3 +1674,10 @@ _Last updated: 2026-07-19_
 - Added two distinct direct Codex-generated WebP illustrations: a linocut laptop gate and an isometric paper security-boundary route. No people, office briefing, dashboard, logos, readable text or watermark.
 - Added verified internal links to Cursor, Claude, Hugging Face, Gemini and Snowflake; the secondary workflow image appears once in the body and the cover appears only in the article header.
 - Editorial, English parity, tool-quality and strict package preflight passed. The clean static build generated 45 DE/EN Ratgeber pages, canonical/JSON-LD and compact sitemaps.
+
+## 2026-07-26 - Benchmarking Ratgeber ordering and illustration correction
+
+- Gave `Schneller und billiger, aber nicht klüger: Wie Teams neue KI-Modelle wirklich benchmarken` an explicit ISO publication timestamp in DE and EN so it sorts first on both homepages and both Ratgeber archives when another article shares the same calendar date.
+- Replaced the two visually repetitive collage assets with two deliberately distinct story illustrations: a restrained engraving of a common calibration gate and a tactile colour paper test canal.
+- Rejected the previous pair because both used nearly the same cut-paper robot language. The replacement pair contains no office briefing, UI, readable text, logo or watermark.
+- Added a publication-skill gate requiring the new article to be the first item on DE/EN home and archive surfaces, not merely present somewhere in the collection.
