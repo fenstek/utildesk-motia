@@ -3,7 +3,7 @@
 ## 2026-07-26 - Benchmarking ratgeber publication
 
 - Published the DE/EN article `Schneller und billiger, aber nicht klüger: Wie Teams neue KI-Modelle wirklich benchmarken` with two distinct editorial WebP illustrations, internal tool links, and `lastmod` entries.
-- The Pages production build was deployed from commit `905dca49`; the runtime D1 publisher credential was unavailable, so Pages middleware now safely falls back to a matching static Ratgeber page when the runtime returns its `/404` redirect. A real missing route remains a 404.
+- The Pages production build was deployed from commit `905dca49`; the runtime D1 publisher credential was unavailable, so Pages middleware now safely falls back to matching static Ratgeber pages when the runtime returns its `/404` redirect and serves the fresh static sitemap surfaces. A real missing route remains a 404.
 _Last updated: 2026-07-19_
 
 ## 2026-07-19 - Editorial product-update pass for established AI tools
