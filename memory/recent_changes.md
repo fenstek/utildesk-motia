@@ -1661,3 +1661,11 @@ _Last updated: 2026-07-19_
 - Added two distinct direct Codex-generated WebP illustrations: a restrained document-architecture print composition and a blue cut-paper approval workflow. Both exclude people, offices, UI, logos, readable text and watermarks.
 - Added verified internal links to ChatGPT, Claude and Gemini; OfficeCLI and Microsoft 365 Copilot remain external links because no matching internal tool cards exist.
 - Local build produced both locale pages, canonical/JSON-LD, 41 Ratgeber entries and both compact sitemaps. The unrelated global tool-quality guard still reports its pre-existing 138 catalog findings.
+
+## 2026-07-26 - Endpoint Security for local AI agents Ratgeber publication
+
+- Published the NotebookLM-first candidate `Agenten am Arbeitsplatz absichern: Wie Endpoint Security auf lokale KI-Tools reagieren muss` with a full manual DE/EN rewrite.
+- Fact-checked the Hugging Face model-evaluation incident against official OpenAI and Hugging Face disclosures and npm install-script behavior against npm documentation; removed unsupported Jscrambler and Glow claims from the candidate draft.
+- Added two distinct direct Codex-generated WebP illustrations: a linocut laptop gate and an isometric paper security-boundary route. No people, office briefing, dashboard, logos, readable text or watermark.
+- Added verified internal links to Cursor, Claude, Hugging Face, Gemini and Snowflake; the secondary workflow image appears once in the body and the cover appears only in the article header.
+- Editorial, English parity, tool-quality and strict package preflight passed. The clean static build generated 45 DE/EN Ratgeber pages, canonical/JSON-LD and compact sitemaps.
