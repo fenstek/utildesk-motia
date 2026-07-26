@@ -82,9 +82,7 @@ const sortRuntimeRatgeberIndex = (html, isEnglish) => html.replace(
   },
 );
 const isRatgeberRuntimePath = (pathname) =>
-  pathname === "/ratgeber" ||
   pathname.startsWith("/ratgeber/") ||
-  pathname === "/en/ratgeber" ||
   pathname.startsWith("/en/ratgeber/") ||
   pathname.startsWith("/runtime-assets/");
 
@@ -324,7 +322,7 @@ export async function onRequest(context) {
   }
 
   const runtimeToolShell = toolShellRoute(url.pathname);
-  if (runtimeToolShell && !url.search && await toolShellRuntimeIsEnabled(context)) {
+  if (runtimeToolShell && runtimeToolShell.kind !== "homepage" && !url.search && await toolShellRuntimeIsEnabled(context)) {
     return proxyRuntime(context, "tool-shell");
   }
 
