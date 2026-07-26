@@ -82,8 +82,8 @@ const sortRuntimeRatgeberIndex = (html, isEnglish) => html.replace(
   },
 );
 const isRatgeberRuntimePath = (pathname) =>
-  pathname.startsWith("/ratgeber/") ||
-  pathname.startsWith("/en/ratgeber/") ||
+  /^\/ratgeber\/[^/]+\/?$/.test(pathname) ||
+  /^\/en\/ratgeber\/[^/]+\/?$/.test(pathname) ||
   pathname.startsWith("/runtime-assets/");
 
 export const toolDetailSlug = (pathname) => {
