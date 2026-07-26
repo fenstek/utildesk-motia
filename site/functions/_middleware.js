@@ -86,9 +86,6 @@ const isRatgeberRuntimePath = (pathname) =>
   pathname.startsWith("/ratgeber/") ||
   pathname === "/en/ratgeber" ||
   pathname.startsWith("/en/ratgeber/") ||
-  pathname === "/sitemap.xml" ||
-  pathname === "/sitemap-focus.xml" ||
-  pathname === "/sitemap-bing.xml" ||
   pathname.startsWith("/runtime-assets/");
 
 export const toolDetailSlug = (pathname) => {
