@@ -2,16 +2,16 @@
 slug: firebase-studio
 title: Firebase Studio
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
+category: AI Infrastructure
 price_model: Freemium
 tags: [ai, app-builder, cloud-development, firebase]
 official_url: "https://firebase.studio/"
-description: "Cloud-Entwicklungsumgebung mit Gemini und Firebase-Anbindung für bestehende Workspaces; Neuanlage ist gesperrt und die Abschaltung für März 2027 angekündigt."
-popularity: 0
+description: Cloud-Entwicklungsumgebung mit Gemini und Firebase-Anbindung für bestehende Workspaces; Neuanlage ist gesperrt und die Abschaltung für März 2027 angekündigt.
+popularity: 53
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19
