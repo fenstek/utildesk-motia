@@ -1,7 +1,7 @@
 ---
 slug: "schneller-und-billiger-aber-nicht-kluger-wie-teams-neue-ki-modelle-wirklich-benchmarken"
 title: "Schneller und billiger, aber nicht klüger: Wie Teams neue KI-Modelle wirklich benchmarken"
-date: 2026-07-26
+date: "2026-07-26T22:52:00+02:00"
 category: "Einordnung"
 eyebrow: "KI-Mythencheck"
 excerpt: "Modellrankings sagen wenig über einen konkreten Workflow. Dieser Ratgeber zeigt, wie Teams Qualität, Kosten, Latenz und Fehlerraten mit eigenen Evals auseinanderhalten."
@@ -81,8 +81,6 @@ Ein anschauliches Beispiel liefert Ploy in einem eigenen Erfahrungsbericht zur M
 
 Ähnlich sollte man die viel diskutierte Orchestrator-Worker-Architektur von Anthropic lesen. Anthropic beschreibt Fable 5 als Planungs- und Bewertungsmodell und Sonnet 5 als günstigeren Ausführer. Die veröffentlichten Vergleichswerte sind interessant, gelten aber für die dort getesteten Aufgaben und Konfigurationen. Für einen eigenen Workflow muss man messen, ob die zusätzliche Übergabe von Kontext und Ergebnissen den Vorteil wieder auffrisst.
 
-![Editoriale Druckgrafik über drei unterschiedliche Prüfpfade für Tempo, Kosten und Aufgabenqualität](/images/ratgeber/schneller-und-billiger-aber-nicht-kluger-wie-teams-neue-ki-modelle-cover.webp)
-
 ## Ein eigener Eval ist kleiner, als viele denken
 
 Ein brauchbarer Start braucht kein großes Forschungsprogramm. Nimm zehn bis dreißig echte Aufgaben aus dem Arbeitsalltag und friere sie für einen Vergleich ein. Dazu gehören nicht nur Erfolgsfälle, sondern auch typische Grenzfälle: unvollständiger Kontext, falsche Dateiformate, fehlende Berechtigungen und Antworten, die eine menschliche Prüfung brauchen.
@@ -105,7 +103,7 @@ Es hat aber eigene Fehlerquellen. Jeder Übergang kann Kontext verlieren. Ein Wo
 
 Praktisch lohnt sich deshalb eine harte Aufgabenverteilung: Der teure Agent darf planen, Risiken markieren und final prüfen. Worker erhalten kleine, überprüfbare Aufträge mit begrenztem Kontext. Zwischen den Schritten stehen Schemas, Tests oder Akzeptanzkriterien, nicht nur ein weiterer freier Prompt.
 
-![Handgemachte Papiercollage über einen Orchestrator, spezialisierte Worker und eine belastbare Prüfbrücke](/images/ratgeber/schneller-und-billiger-aber-nicht-kluger-wie-teams-neue-ki-modelle-workflow.webp)
+![Handgefertigter Testkanal mit identischen Paketen für Tempo, Kosten, Zuverlässigkeit und Entscheidungsqualität](/images/ratgeber/schneller-und-billiger-aber-nicht-kluger-wie-teams-neue-ki-modelle-workflow.webp)
 
 ## Vier typische Messfehler
 
