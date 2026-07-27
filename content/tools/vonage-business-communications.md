@@ -1,20 +1,20 @@
 ---
-description: "Vonage Business Communications ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "vonage-business-communications"
-title: "Vonage Business Communications"
+description: Vonage Business Communications ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: vonage-business-communications
+title: Vonage Business Communications
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Produktivität"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Produktivität
+price_model: Abonnement
 tags: [phone, communication, meetings, customer-support]
 official_url: "https://www.vonage.com/unified-communications/"
-popularity: 6
+popularity: 5
 tier: D
 generated_at: 2026-05-26
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Vonage Business Communications

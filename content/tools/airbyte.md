@@ -10,8 +10,8 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [data, integration, etl, open-source]
 official_url: "https://airbyte.com/"
-description: "Open data-movement platform for replicating business data into warehouses, lakes, operational systems, and AI workflows."
-popularity: 95
+description: Open data-movement platform for replicating business data into warehouses, lakes, operational systems, and AI workflows.
+popularity: 96
 tier: B
 generated_at: 2026-05-16
 updated_at: 2026-07-19

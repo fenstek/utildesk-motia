@@ -8,14 +8,14 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-19-product-update-priority
 category: Produktivität
 price_model: Freemium
-description: "GTM workspace for repeatable marketing, sales, revenue operations, content, research, and data-enrichment workflows with human approval."
+description: GTM workspace for repeatable marketing, sales, revenue operations, content, research, and data-enrichment workflows with human approval.
 tags: ["ai", "productivity", "writing"]
 official_url: "https://www.copy.ai"
 affiliate_url: "https://www.copy.ai"
 tier: C
 generated_at: 2026-05-15
 created_at: 2026-02-08
-popularity: 98
+popularity: 99
 updated_at: 2026-07-19
 ---
 # Copy.ai

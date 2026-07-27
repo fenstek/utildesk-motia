@@ -12,7 +12,7 @@ price_model: Freemium
 tags: [ai, audio]
 official_url: "https://speechify.com/"
 created_at: 2026-02-15
-popularity: 15
+popularity: 14
 tier: C
 generated_at: 2026-05-17
 updated_at: 2026-07-17

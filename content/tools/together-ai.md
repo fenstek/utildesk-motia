@@ -1,20 +1,20 @@
 ---
-description: "Together AI ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "together-ai"
-title: "Together AI"
+description: Together AI ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: together-ai
+title: Together AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Coding"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Coding
 price_model: "tags: [\"developer-tools\", \"api\"]"
 tags: ["developer-tools", "api"]
 official_url: "https://www.together.ai"
-popularity: 9
-tier: "D"
-generated_at: "2026-05-25"
-updated_at: "2026-07-17"
+popularity: 8
+tier: D
+generated_at: 2026-05-25
+updated_at: 2026-07-17
 ---
 
 # Together AI

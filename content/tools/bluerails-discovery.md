@@ -8,7 +8,7 @@ tags: [agentic-commerce, ai-search, commerce, agents, visibility]
 official_url: "https://discovery.bluerails.com/"
 tier: D
 generated_at: 2026-06-24
-popularity: 66
+popularity: 67
 updated_at: 2026-07-17
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
