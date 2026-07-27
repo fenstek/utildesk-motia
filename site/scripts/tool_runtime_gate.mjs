@@ -2,6 +2,7 @@
 import { execFile } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { basename, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
 import { inspectToolHtml } from "./capture_tool_runtime_baseline.mjs";
 import { compareToolRuntimeManifests } from "./check_tool_runtime_parity.mjs";
@@ -199,7 +200,7 @@ export async function runGate(argv = process.argv.slice(2), { now = new Date() }
     : runProductionDelta(options, slugs, budget);
 }
 
-if (process.argv[1] === new URL(import.meta.url).pathname) {
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   runGate().then((result) => console.log(JSON.stringify(result, null, 2))).catch((error) => {
     console.error(error.message);
     process.exitCode = 1;
