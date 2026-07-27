@@ -1,11 +1,12 @@
 ---
 slug: "ki-agenten-in-office-dokumenten-word-excel-powerpoint"
-title: "AI Agents in Office Documents: Automating Word, Excel and PowerPoint with Control"
+title: "The Most Dangerous Office Command Is Not “Write,” but “Send”"
 date: 2026-07-19
+updated: 2026-07-28
 category: "Comparison"
 eyebrow: "Document Work"
-excerpt: "Word, Excel and PowerPoint are gaining more agentic features. The practical question is not how much automation a team can add, but where drafting must stop and review must begin."
-readTime: 11
+excerpt: "A short Office request hides four different permissions: read, draft, overwrite, and send. Separating them is what makes agentic document work controllable."
+readTime: 6
 coverImage: /images/ratgeber/ki-agenten-in-office-dokumenten-word-excel-powerpoint-cover.webp
 secondaryImage: /images/ratgeber/ki-agenten-in-office-dokumenten-word-excel-powerpoint-workflow.webp
 tags:
@@ -47,77 +48,39 @@ decisionAvoid:
   - "treating RAG as a quality guarantee: bad permissions, stale sources and incorrect spreadsheet definitions remain dangerous"
 decisionNote: "The production unit is not the agent alone, but a controlled document workflow: source, change, visual check, subject review and only then final export."
 ---
+The request sounds harmless: “Update the quarterly figures, revise the presentation, and send it to the executive team.” For a person, that is one sentence. For an Office agent, it contains at least four different interventions: reading data, creating a draft, overwriting existing files, and sending the result. Only a few invisible clicks separate useful automation from an embarrassing or expensive mistake.
 
-A team meeting ends with three files: a Word brief, an Excel analysis and a PowerPoint for the next decision. Until recently, the content often moved through several chat windows, was copied, reformatted and checked by hand for broken layouts. Those handoffs are now becoming more agentic.
+The example is deliberately hypothetical. It shows why the usual question about the “best model” misses the real problem. What matters is not whether Copilot or an external agent can write good prose. What matters is which action the system may perform without asking again. What permissions does an Office agent need to remove work without becoming the publisher?
 
-That sounds like a model choice. In practice, it is a boundary choice: may a system create a draft, may it change cells and slides, or may it also send the finished file? Without that boundary, a team does not automate the workflow. It automates its exposure to mistakes.
+## Four verbs, four permissions
 
-## Three approaches that are not the same thing
+Read, draft, overwrite, and send must not disappear inside one blanket permission. Reading opens the context. Drafting creates a new, still reversible version. Overwriting changes the authoritative file. Sending carries the result outside the controlled workspace. Each step increases the possible impact and therefore requires its own technical boundary.
 
-**Microsoft 365 Copilot** lives where the files already are. Microsoft describes Copilot as a combination of Microsoft 365 apps, language models and Microsoft Graph. Its responses are intended to use only content the user is already allowed to access. In Word, Copilot can draft, summarize and rewrite; in Excel it works with formulas, tables, charts and insights; in PowerPoint it can derive a draft from a prompt or Word document and edit slides.
+This separation initially sounds bureaucratic. In practice, it is what makes automation usable. An agent can update a hundred slides without touching the original. It can propose formulas without declaring them the new truth of the workbook. It can prepare a finished email without choosing the recipients.
 
-This is a strong starting point for teams with an existing Microsoft identity, templates and SharePoint structure. It is not a blanket safety guarantee: visibility in Graph is a permissions issue, the output remains a model response, and features depend on licensing, app versions and organizational policy. Microsoft notes that Copilot availability in Word, Excel and PowerPoint depends on the plan and configuration.
+## Copilot knows access, not truth
 
-**OfficeCLI** takes a different route. The open-source iOfficeAI project is designed as a single binary that can read and modify Office files without an installed Office application and render them to HTML or PNG. For an agent, that matters because a pipeline step does not have to end with free-form text: it can change a file, render the result and inspect it.
+Microsoft 365 Copilot works where many organisations already manage documents: Word, Excel, PowerPoint, Outlook, and Microsoft Graph. Microsoft states that Copilot exposes only organisational data the current user is authorised to access. Reusing that identity and permission model is a major advantage. The agent does not need to create a second shadow environment full of copied files beside the tenant.
 
-That does not make OfficeCLI production-safe by default. A team should test which Word layouts, formulas, pivot structures, embedded objects and PowerPoint masters survive reliably. Every write operation needs a copy, a diff or change report, and a way back to the original.
+But permission answers only an access question. It does not establish whether an Excel formula defines a metric correctly, whether a paragraph reflects the current contract, or whether a presentation uses the approved number instead of an old draft. A user can be fully authorised to read the wrong file. Copilot inherits permitted context, not the truth of that context.
 
-**An external agent workflow** separates research, context preparation and Office output. One agent can read sources, another can check data, a script can fill a template and a person can approve the final file. This route is more flexible but adds architecture: authentication, file access, source rights and state handoffs become the team's responsibility.
+## OfficeCLI gives the agent eyes
 
-## What Word, Excel and PowerPoint each need
-
-**Word is a structure problem.** A useful agent must distinguish headings, tables, citations, comments and styles. For a customer brief, it should create a draft in a copy, mark missing evidence and leave the previous version untouched. A practical acceptance test is simple: can a reviewer trace every major change in less than two minutes?
-
-**Excel is a calculation and permission problem.** Copilot can work with formulas, tables, charts and worksheets. The difficult question is not whether a formula is syntactically valid, but whether it matches the team's definition of the metric. Start with a known monthly report: lock inputs, keep formulas visible, compare totals against a reference calculation and log changes to named ranges.
-
-**PowerPoint is a layout and evidence problem.** An agent can turn a Word brief into a deck or add slides. The final review still needs to cover narrative, sources, readability and the approved template. A deck is not correct just because every slide is full. For a pilot, use a short decision deck with a defined audience, no more than seven slides and a fixed subject-matter review.
-
-![Three physical document systems connected by a red control thread](/images/ratgeber/ki-agenten-in-office-dokumenten-word-excel-powerpoint-cover.webp)
-
-## RAG helps only when context is trustworthy
-
-The NotebookLM draft was right about the weakness of blind copy and paste: an agent needs context. That does not mean every RAG pipeline will produce reliable Office files. Retrieval can find a relevant document, but it cannot decide whether it is the current version, whether the user is allowed to use it or whether a spreadsheet definition is still valid.
-
-For document work, four metadata fields matter more than an oversized context window:
-
-- **Provenance:** where did this number, passage or slide come from?
-- **Validity:** which period and version does it cover?
-- **Permission:** may this user include it in the draft?
-- **Use:** was it quoted, changed or used in a calculation?
-
-[ChatGPT](/en/tools/chatgpt/), [Claude](/en/tools/claude/) and [Gemini](/en/tools/gemini/) can serve as research and review surfaces in such workflows. They are not the source of truth. The source remains the approved document or controlled data store; the model proposes language or a transformation.
-
-## A pilot that does not approve everything at once
-
-Start small and measure the actual work:
-
-1. **Choose one file class:** for example, a weekly sales report with fixed Word, Excel and PowerPoint templates.
-2. **Read before write:** in week one, allow extraction, summarization and contradiction flags only.
-3. **Edit copies:** in the next phase, the agent writes only to a new file or branch. Originals remain unchanged.
-4. **Define reference cases:** use five known documents and measure wrong numbers, broken formatting, missing sources and unnecessary edits.
-5. **Separate approval:** only after the error rate and review effort are acceptable may the workflow move a file into a shared folder. Sending, publishing or booking a financial entry stays protected separately.
-
-The choice of architecture becomes clearer through this pilot. If a team needs Graph permissions, SharePoint context and minimal change, Microsoft 365 Copilot is the natural first test. If it needs reproducible local file operations without Office installed, OfficeCLI is worth evaluating. If it needs a multi-stage process with its own sources and approvals, an external agent workflow offers more control but requires more operations work.
+OfficeCLI uses a different control model. The open-source tool runs as a single binary without an installed Office application and can read, modify, and create Word, Excel, and PowerPoint files. Its built-in rendering step is especially useful: documents can be rendered to HTML or PNG. An agent can therefore inspect not only file structure, but also whether a title overflows or two elements overlap.
 
 ![A paper bridge, approval mark and magnifying glass showing a controlled path from draft to approved file](/images/ratgeber/ki-agenten-in-office-dokumenten-word-excel-powerpoint-workflow.webp)
 
-## Where the boundary should remain
+That closes an important gap in the usual agent workflow. Without rendering, a system can produce a technically valid presentation that is still a visual wreck. Yet this is also where the argument turns: seeing is not subject-matter approval. A neatly aligned revenue chart may rely on the wrong table. A perfectly formatted clause may be obsolete. OfficeCLI makes technical inspection visible; responsibility for the content remains with the operator.
 
-Business-critical documents do not necessarily need less AI. They need better stop signs. An agent should not make a contract clause final, overwrite a financial number without a reference or share a deck with external recipients just because a prompt sounds plausible. The robust sequence is: read, plan, edit a copy, render, review, approve.
+## The decision chain
 
-Technical checking is editorial work too. A rendered PNG can reveal a clipped table or an overflowing slide. It cannot prove that a formula is meaningful. Every document type therefore needs two checks: visual and substantive.
+A defensible rule can be surprisingly simple. The agent reads only approved sources. It writes its draft to a new file. Two independent reviews follow: a technical review of structure, formulas, file integrity, and rendering, and a subject review of numbers, claims, sources, and recipients.
 
-## Conclusion
+Only after both reviews pass may an existing file be replaced. Sending and publishing still remain separate, deliberately triggered steps. A person may own that decision, or a tightly defined rule may specify the version, destination, and recipients. What is not acceptable is for the agent to assess its own draft, declare it correct, and then send it under the same blanket approval.
 
-AI agents do not turn Word, Excel and PowerPoint into interchangeable text surfaces. Word needs structure and evidence control, Excel needs calculation and permission clarity, and PowerPoint needs visual and narrative review. Microsoft 365 Copilot shortens the path for existing M365 teams; OfficeCLI offers a local, pipeline-friendly angle; external agents provide flexibility at the cost of more operational responsibility.
-
-The sensible choice is therefore not the loudest agent feature. It is the one that fits the file type, data access, reversibility and point at which a human can still review the result meaningfully.
+This answers the opening question. An Office agent may take on a great deal of work: searching, combining, writing, calculating, designing, and preparing. It may even build an almost finished file. The final step, however, does not automatically belong to it. The most important safeguard is not a better prompt, but an unglamorous separation of verbs. The agent may execute “write.” The system must make a new decision about “send.”
 
 ## Sources
 
-- [Microsoft 365 Copilot overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview)
-- [Microsoft 365 Copilot service description](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot)
-- [Get started editing with Copilot in Office](https://support.microsoft.com/en-us/Office/copilot-frontier/get-started-editing-with-copilot-in-office)
-- [Copilot Dynamic Action Button in Word, Excel and PowerPoint](https://support.microsoft.com/en-us/Office/foundations-experiences/copilot-dab/the-copilot-dynamic-action-button-in-word-excel-and-powerpoint)
+- [Microsoft 365 Copilot overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-overview)
 - [OfficeCLI on GitHub](https://github.com/iOfficeAI/OfficeCLI)
-- [Benchmarking KV-Cache Optimizations](https://arxiv.org/abs/2607.05399)
