@@ -3201,6 +3201,83 @@
         "https://www.bing.com/indexnow"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-27T20:20:28.083Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 9,
+        "pagesAssets": 0,
+        "total": 13
+      },
+      "worstCaseRequests": 13,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-27T20:20:59.818Z",
+      "mode": "production-indexnow-delta",
+      "command": "indexnow_submit.py submit-batch [changed canonical HTML only]",
+      "estimate": {
+        "indexNow": 2,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.indexnow.org/indexnow",
+        "https://www.bing.com/indexnow"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-27T20:23:31.189Z",
+      "mode": "production-delta",
+      "command": "production-delta --slugs-file C:\\Users\\sserg\\AppData\\Local\\Temp\\utildesk-gsc-four-20260727-slugs.json --operation upsert --ledger C:\\projects\\utildesk-gsc-four-20260727\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --out C:\\Users\\sserg\\AppData\\Local\\Temp\\utildesk-runtime-releases\\2026-07-27-gsc-four\\live-delta-manual --execute",
+      "estimate": {
+        "html": 8,
+        "json": 8,
+        "markdown": 8,
+        "assets": 4,
+        "control": 0,
+        "indexNow": 0,
+        "total": 28
+      },
+      "worstCaseRequests": 28,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/clara/",
+        "https://tools.utildesk.de/api/tools/clara.json",
+        "https://tools.utildesk.de/markdown/tools/clara.md",
+        "https://tools.utildesk.de/en/tools/clara/",
+        "https://tools.utildesk.de/en/api/tools/clara.json",
+        "https://tools.utildesk.de/en/markdown/tools/clara.md",
+        "https://tools.utildesk.de/tools/cursor/",
+        "https://tools.utildesk.de/api/tools/cursor.json",
+        "https://tools.utildesk.de/markdown/tools/cursor.md",
+        "https://tools.utildesk.de/en/tools/cursor/",
+        "https://tools.utildesk.de/en/api/tools/cursor.json",
+        "https://tools.utildesk.de/en/markdown/tools/cursor.md",
+        "https://tools.utildesk.de/tools/krisp/",
+        "https://tools.utildesk.de/api/tools/krisp.json",
+        "https://tools.utildesk.de/markdown/tools/krisp.md",
+        "https://tools.utildesk.de/en/tools/krisp/",
+        "https://tools.utildesk.de/en/api/tools/krisp.json",
+        "https://tools.utildesk.de/en/markdown/tools/krisp.md",
+        "https://tools.utildesk.de/tools/notion-ai/",
+        "https://tools.utildesk.de/api/tools/notion-ai.json",
+        "https://tools.utildesk.de/markdown/tools/notion-ai.md",
+        "https://tools.utildesk.de/en/tools/notion-ai/",
+        "https://tools.utildesk.de/en/api/tools/notion-ai.json",
+        "https://tools.utildesk.de/en/markdown/tools/notion-ai.md",
+        "https://tools.utildesk.de/tool-assets/2bccc9ef5a411643317da2f03a3a3e0af8db2fdf0822566065cb41d64c9b88bb/cursor-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/ab391127c28b040f81be439cf1f96bf23cb98465e402ba2188d50d0cafecea26/notion-ai-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/d10966107be7762ad16517424e3cbf039dfac705d9d8099f33ff02eb656c60f0/clara-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/ed361743f8fc1a99b3338832680697b89fa9d7610b64fe2dd737a30b51376c28/krisp-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
