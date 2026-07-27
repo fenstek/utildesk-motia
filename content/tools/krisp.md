@@ -1,148 +1,126 @@
 ---
-description: "Krisp ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+description: "Krisp kombiniert Echtzeit-Geräuschunterdrückung mit Transkription, Meeting-Notizen und Aufzeichnung. Lokale Audiofilter und Cloud-Inhalte müssen getrennt bewertet werden."
 slug: "krisp"
 title: "Krisp"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-07-27"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-07-27-gsc-recovery-editorial"
 category: "Audio & Video"
-price_model: "Freemium"
+price_model: "Abonnement"
 tags:
   - ai
   - audio
-official_url: "'https://krisp.ai/'"
-affiliate_url: 'https://krisp.ai/'
+  - meetings
+  - transcription
+official_url: "https://krisp.ai/"
+affiliate_url: "https://krisp.ai/"
 tier: "C"
 generated_at: "2026-05-12"
 created_at: "2026-02-07"
 popularity: 0
-updated_at: "2026-07-17"
+updated_at: "2026-07-27"
 ---
 
 # Krisp
 
-Krisp ist eine KI-basierte Audio-Software, die Hintergrundgeräusche in Echtzeit herausfiltert und so für klaren Klang bei Telefonaten, Videokonferenzen und Aufnahmen sorgt. Die Anwendung ist kompatibel mit vielen gängigen Kommunikations- und Aufnahme-Tools und eignet sich besonders für Nutzer, die in lauten Umgebungen arbeiten oder Wert auf professionelle Audioqualität legen.
+Krisp begann als Echtzeit-Geräuschunterdrückung für Online-Gespräche. Inzwischen ist das Produkt breiter: Es filtert Lärm, Echo und fremde Stimmen, kann Besprechungen transkribieren und aufzeichnen, erstellt Zusammenfassungen sowie Aufgaben und bietet Funktionen wie AI Chat und Akzentanpassung. Für Callcenter und Entwickler führt Krisp zusätzlich eigene Produktlinien.
+
+Diese Breite ist nützlich, verlangt aber eine saubere Unterscheidung. Die klassische Geräuschunterdrückung verarbeitet Audio laut Krisp lokal auf dem Gerät. Transkripte, Meeting-Notizen und Aufzeichnungen sind dagegen Inhalte, die in der Krisp-Cloud gespeichert und geteilt werden können. Wer pauschal behauptet, bei Krisp verlasse kein Audio den Rechner, beschreibt nur einen Teil des heutigen Produkts.
 
 ## Für wen ist Krisp geeignet?
 
-Krisp richtet sich an Berufstätige, Remote-Worker, Podcaster, Lehrer und alle, die häufig Online-Meetings oder Audioaufnahmen durchführen. Besonders nützlich ist Krisp für Menschen, die in offenen Büros, Cafés oder anderen lauten Umgebungen arbeiten, wo Hintergrundgeräusche stören können. Auch für Gamer, Streamer und Content Creator bietet Krisp eine praktische Lösung, um störende Geräusche auszublenden und die Audioqualität zu verbessern.
+Krisp passt zu Menschen, deren Arbeitsqualität von verständlicher Sprache abhängt: Remote-Teams, Vertrieb, Support, Beratung, Interviews und Unterricht. Besonders wertvoll ist es in offenen Büros, unterwegs oder bei wechselnder Mikrofonqualität. Die botfreie Meeting-Erfassung ist zudem interessant für Teams, die keinen sichtbaren Notiz-Bot in jeden Anruf einladen möchten.
 
-Besonders interessant wird Krisp, wenn mehrere Rollen beteiligt sind. Dann zählt nicht nur die Bedienung, sondern ob Übergaben, Reviews und Entscheidungen rund um Kundenkommunikation, Erreichbarkeit und saubere Übergaben zwischen Kanälen nachvollziehbar bleiben.
-
-Vor dem Rollout sollte Krisp eine kleine Probe bestehen: Wer entscheidet am Ende, wer prüft nach, und welche Veränderung wäre im Alltag wirklich sichtbar?
-
-## Redaktionelle Einschätzung
-
-Der praktische Wert von Krisp zeigt sich weniger in einer Demo als in wiederholbarer Nutzung. Ein Team sollte prüfen, ob Antwortzeit, Übergabequalität und Kundenzufriedenheit nach einigen echten Durchläufen tatsächlich stabiler werden.
-
-Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung. Erst danach sollte entschieden werden, ob Krisp nur ein nettes Zusatzwerkzeug ist oder wirklich ein belastbarer Teil des Workflows werden kann.
-
-- **Worauf achten:** Für Krisp zählen Antwortzeit, Übergabequalität und Kundenzufriedenheit erst dann als Fortschritt, wenn sie im Test nachvollziehbar dokumentiert werden.
-- **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Krisp breiter ausgerollt wird.
-- **Häufiger Stolperstein:** Krisp enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
+Für reine Podcast-Nachbearbeitung ist Krisp nicht die erste Wahl. Der Anbieter beschreibt die Geräuschunterdrückung als Echtzeitprodukt, nicht als spezialisierten Editor für bereits aufgezeichnete Audiodateien. Auch ein Callcenter-Rollout sollte getrennt vom normalen Meeting-Abo bewertet werden.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/krisp-editorial.webp" alt="Illustration zu Krisp: Meeting-Audio wird von Stoergeraeuschen getrennt und sauber ausgegeben" loading="lazy" decoding="async" />
+  <img src="/images/tools/krisp-editorial.webp" alt="Illustration zu Krisp: Ein Sprachsignal wird von Lärm getrennt und als klare Meeting-Spur ausgegeben" loading="lazy" decoding="async" />
 </figure>
 
 ## Hauptfunktionen
 
-- **Echtzeit-Geräuschunterdrückung:** Filtert Hintergrundgeräusche während Anrufen oder Aufnahmen automatisch heraus.
-- **Kompatibilität:** Funktioniert mit gängigen Apps wie Zoom, Microsoft Teams, Skype, Discord, Google Meet u.v.m.
-- **Bidirektionale Geräuschunterdrückung:** Entfernt sowohl die eigenen als auch die Geräusche der Gesprächspartner.
-- **Einfache Bedienung:** Intuitive Benutzeroberfläche mit minimalem Konfigurationsaufwand.
-- **Plattformübergreifend:** Verfügbar für Windows, macOS, iOS und als Chrome-Erweiterung.
-- **Datenschutz:** Lokale Verarbeitung der Audiodaten ohne Cloud-Upload.
-- **Freemium-Modell:** Kostenlose Grundversion mit begrenzter Nutzung, erweiterte Funktionen im kostenpflichtigen Abo.
+- **Echtzeit-Geräuschunterdrückung:** Reduziert Hintergrundlärm, Echo und störende Nebenstimmen.
+- **Virtuelle Audiogeräte:** Lässt sich als Mikrofon und Lautsprecher in verbreiteten Meeting-Apps auswählen.
+- **Meeting-Transkription:** Erstellt mehrsprachige Gesprächsprotokolle.
+- **Notizen und Aufgaben:** Fasst Kernaussagen zusammen und extrahiert nächste Schritte.
+- **Aufzeichnung:** Speichert je nach Plan Audio und Video für spätere Wiedergabe oder Freigabe.
+- **AI Chat:** Durchsucht Meeting-Inhalte über Fragen.
+- **Akzentanpassung:** Verändert Sprache in Echtzeit, um Verständlichkeit zu verbessern; Umfang und Sprachen hängen vom Plan ab.
+- **Integrationen:** Verbindet unter anderem Kalender, Slack, Notion, Zapier und CRM-Systeme.
 
-- **Praxis-Workflow:** Für Krisp sollte der erste Test mit eine kleine Änderung in einem echten Projekt mit Review, Testlauf und Rollback-Pfad laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
-- **Qualitätssicherung:** Im Betrieb braucht Krisp klare Notizen dazu, wie Antwortzeit, Übergabequalität und Kundenzufriedenheit bewertet und bei Problemen nachgebessert werden.
-- **Team-Übergabe:** Nützlich wird Krisp besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
+## Ein sinnvoller Praxisworkflow
 
-## Vorteile und Nachteile
+Ein guter Pilot beginnt nicht mit dem lautesten Café, sondern mit drei wiederkehrenden Gesprächssituationen: ruhiges Homeoffice, offenes Büro und schlechter Ton eines Gegenübers. Das Team zeichnet jeweils auf, ob Sprache verständlicher wird, Wörter im Transkript fehlen und der Filter die Stimme hörbar verfremdet.
 
-### Vorteile
-- Effektive und zuverlässige Geräuschunterdrückung durch KI.
-- Unterstützt zahlreiche Kommunikations- und Aufnahmeprogramme.
-- Einfache Einrichtung und Bedienung, auch für technisch weniger versierte Nutzer.
-- Plattformübergreifend nutzbar.
-- Datenschutzfreundlich, da Audio lokal verarbeitet wird.
-- Kostenlose Basisversion verfügbar.
+Für Meeting Notes sollte zusätzlich ein kontrollierter Ablauf gelten:
 
-- Stärker im Alltag, wenn Krisp für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Hilft Teams besonders dort, wo Kundenkommunikation, Erreichbarkeit und saubere Übergaben zwischen Kanälen heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Für Krisp sollte das Team diesen Punkt vor dem Rollout schriftlich klären.
+1. Teilnehmer vor Beginn über Transkription oder Aufzeichnung informieren.
+2. Nur die benötigten Aufnahme- und Freigabefunktionen aktivieren.
+3. Zusammenfassung und Aufgaben direkt nach dem Termin gegen das Gespräch prüfen.
+4. Verantwortliche und Fristen im Zielsystem bestätigen, statt sie blind zu synchronisieren.
+5. Unnötige Aufnahmen nach der vereinbarten Frist löschen.
 
-### Nachteile
-- Kostenpflichtige Versionen können je nach Plan teuer sein.
-- Begrenzte kostenlose Nutzungszeit pro Woche im Freemium-Modell.
-- Funktionalität hängt von der Qualität der Mikrofone und Hardware ab.
-- In sehr komplexen oder extrem lauten Umgebungen kann die Filterung eingeschränkt sein.
+So werden Audioqualität und Meeting-Gedächtnis getrennt bewertet, statt beides in einer Demo zu vermischen.
 
-- Wird schnell zäh, wenn Krisp eingeführt wird, obwohl Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind und das Team diese Lücke erst im Betrieb bemerkt.
-- Entscheidend ist nicht nur die Einrichtung, sondern ob das Team Krisp regelmäßig prüft, aufräumt und an reale Arbeitsregeln bindet.
+## Stärken
 
-## Preise & Kosten
+- Die Echtzeitfilter funktionieren anwendungsübergreifend über virtuelle Audiogeräte.
+- Krisp bündelt Tonverbesserung und Meeting-Dokumentation in einem Produkt.
+- Botfreie Transkription stört den Gesprächsraum weniger.
+- Lokale Verarbeitung der Geräuschunterdrückung reduziert für diesen Teil den Cloud-Datenfluss.
+- Team- und Enterprise-Pläne bieten Verwaltungs-, Integrations- und Sicherheitsfunktionen.
 
-Krisp bietet ein Freemium-Modell mit einer kostenlosen Version, die eine begrenzte Anzahl an Minuten pro Woche für die Geräuschunterdrückung umfasst. Für Nutzer, die Krisp intensiver oder beruflich einsetzen möchten, gibt es verschiedene kostenpflichtige Abonnements. Diese unterscheiden sich je nach Anbieter und Plan in Bezug auf die Anzahl der nutzbaren Minuten, zusätzliche Funktionen und unterstützte Geräte. Genauere Preise sind auf der offiziellen Webseite oder bei autorisierten Vertriebspartnern zu finden.
+## Grenzen und typische Fehler
 
-Neben dem Listenpreis sollte bei Krisp auch der Einführungsaufwand berücksichtigt werden. Relevant sind Einrichtung, Rufnummern, Integrationen, Schulung und laufende Administration. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
+- Aggressive Filter können leise Sprecher, Musik oder wichtige Umgebungsgeräusche abschneiden.
+- Gute Transkripte hängen weiterhin von Sprache, Akzent, Mikrofon und Überschneidungen ab.
+- Zusammenfassungen können Entscheidungen falsch gewichten oder Aufgaben einer falschen Person zuordnen.
+- Akzentanpassung ist nicht neutral: Teams sollten Verständlichkeit, Einwilligung und Wirkung auf Sprecher gemeinsam prüfen.
+- Meeting-Aufnahmen erzeugen Speicher-, Lösch- und Zugriffsaufwand, der bei reinem Noise Cancelling nicht entsteht.
 
-## FAQ
+## Datenschutz und Sicherheit
 
-**1. Wie funktioniert die Geräuschunterdrückung bei Krisp?**
+Krisp nennt für sein Meeting-Produkt Verschlüsselung bei Übertragung und Speicherung, SOC 2 Type II sowie Unterstützung für GDPR- und je nach Enterprise-Konstellation HIPAA-Anforderungen. Der Anbieter erklärt außerdem, Meeting-Daten nicht zum Training eigener Modelle zu verwenden. Enterprise-Funktionen umfassen unter anderem SSO/SCIM und weitergehende Administrationskontrollen.
 
-**Wie sollte ein Pilot mit Krisp aussehen?**
+Entscheidend bleibt die konkrete Funktion: Noise Cancellation kann lokal laufen, während Transkripte und Aufzeichnungen in der Cloud liegen. Vor einem Rollout sollten daher Kalenderrechte, automatische Freigaben, Speicherregion, Aufbewahrung, Löschung und Zugriff auf geteilte Links geprüft werden. In Deutschland und der EU kann eine Aufnahme zudem arbeits- und datenschutzrechtliche Zustimmung erfordern.
 
-Für Krisp: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+## Preise und Kosten
 
-**Welche Daten sollten nicht ungeprüft in Krisp verarbeitet werden?**
+Die offizielle Preisseite nannte am 27. Juli 2026 eine siebentägige Testphase ohne Kreditkarte. Core lag bei 16 US-Dollar monatlich beziehungsweise 8 US-Dollar pro Nutzer und Monat bei jährlicher Zahlung. Advanced lag bei 30 beziehungsweise 15 US-Dollar. Enterprise wird individuell kalkuliert. Preise, enthaltene Speichergrößen und Nutzungsgrenzen können sich ändern.
 
-Krisp: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
-
-**Wann ist eine Alternative zu Krisp sinnvoll?**
-
-Bei Krisp ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
-
-Krisp nutzt künstliche Intelligenz, um Hintergrundgeräusche in Echtzeit zu erkennen und zu filtern, ohne dabei die Stimme des Nutzers zu beeinträchtigen.
-
-**2. Ist Krisp mit allen Kommunikationsprogrammen kompatibel?**
-Krisp unterstützt die meisten gängigen Programme wie Zoom, Microsoft Teams, Skype, Google Meet und weitere. Es lässt sich als virtuelle Audioquelle in der Systemsteuerung einrichten.
-
-**3. Wie viel kostet Krisp?**
-Es gibt eine kostenlose Version mit begrenzter Nutzung und verschiedene kostenpflichtige Abonnements. Die Preise variieren je nach Plan und Anbieter.
-
-**4. Benötigt Krisp eine Internetverbindung?**
-Die Verarbeitung der Audiodaten erfolgt lokal auf dem Gerät, daher ist keine ständige Internetverbindung für die Geräuschunterdrückung erforderlich.
-
-**5. Kann Krisp auch Hintergrundgeräusche von anderen Teilnehmern filtern?**
-Ja, Krisp bietet bidirektionale Geräuschunterdrückung, die sowohl eigene als auch fremde Hintergrundgeräusche reduziert.
-
-**6. Auf welchen Plattformen ist Krisp verfügbar?**
-Krisp ist für Windows, macOS, iOS und als Chrome-Erweiterung verfügbar.
-
-**7. Wie einfach ist die Einrichtung von Krisp?**
-Die Installation und Einrichtung sind benutzerfreundlich gestaltet und erfordern keine besonderen technischen Kenntnisse.
-
-**8. Gibt es eine kostenlose Testversion?**
-Ja, die kostenlose Version von Krisp ermöglicht es, die Grundfunktionen mit einer begrenzten Anzahl von Minuten pro Woche zu testen.
-
----
-
-**9. Wie testet man Krisp sinnvoll im Team?**
-Für den Einstieg reicht ein enger Pilot mit echter Aufgabe, klarer Abnahme und kurzer Retrospektive: Was wurde mit Krisp besser, was blieb Handarbeit?
-
-**10. Wann passt Krisp eher nicht?**
-Wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind oder wenn niemand Zeit für Einrichtung, Prüfung und Pflege einplant. Dann wird Krisp eher zur zusätzlichen Station im Prozess als zur echten Entlastung.
-
-## Arbeitsablauf und Einführung
-
-Ein sinnvoller Start mit Krisp beginnt mit einem konkreten Ablauf und einem kleinen Kreis von Nutzern. Definiere Eingang, erwartetes Ergebnis und den manuellen Kontrollpunkt, bevor weitere Automatisierungen oder Berechtigungen dazukommen. Dokumentiere, wer Inhalte freigibt und wie ein Fehler zurückgerollt wird. So zeigt ein Pilot schnell, ob Krisp im Alltag trägt oder nur in einer Demo überzeugt.
+Neben dem Sitzpreis zählen Aufbewahrung, Integrationen und der Aufwand für Einwilligung sowie Qualitätskontrolle. Wer nur gelegentlich Lärm filtern muss, sollte prüfen, ob ein dauerhaftes Meeting-Abo wirtschaftlich ist.
 
 ## Alternativen
 
-- [fotor](/tools/fotor/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
-- [freepik](/tools/freepik/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [kapwing](/tools/kapwing/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [flexclip](/tools/flexclip/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Otter.ai](/tools/otter-ai/): wenn Transkription, Meeting-Suche und Notizen wichtiger sind als Echtzeitfilter.
+- [Adobe Enhance Speech](/tools/adobe-enhance-speech/): für browserbasierte Verbesserung bereits aufgenommener Sprache.
+- [Cleanvoice AI](/tools/cleanvoice-ai/): für automatische Nachbearbeitung von Podcasts und Sprachaufnahmen.
+- [Descript](/tools/descript/): wenn Transkript, Audio- und Videoschnitt in einer Produktionsoberfläche zusammenkommen sollen.
+
+## Redaktionelle Einschätzung
+
+Krisp ist stark, wenn schlechte Gesprächsbedingungen ein tägliches, messbares Problem sind. Der Ausbau zum Meeting-Assistenten kann ein zweites Werkzeug ersetzen, erhöht aber zugleich die Datenschutz- und Prüfpflicht. Unser Urteil: empfehlenswert nach einem kurzen Test mit echten Mikrofonen und klarer Aufnahmeordnung; unnötig, wenn nur gelegentlich eine Audiodatei nachbearbeitet werden soll.
+
+## FAQ
+
+**Funktioniert Krisp mit Zoom, Teams und Google Meet?**
+
+Krisp stellt virtuelle Audioein- und -ausgänge bereit und ist dadurch mit vielen Anrufanwendungen nutzbar. Vor dem Rollout sollte die konkrete Desktop- und Betriebssystemkombination getestet werden.
+
+**Bleibt das gesamte Audio auf meinem Gerät?**
+
+Die Echtzeit-Geräuschunterdrückung wird laut Anbieter lokal verarbeitet. Meeting-Transkripte, Notizen und Aufzeichnungen können dagegen in der Cloud gespeichert werden.
+
+**Ist Krisp für Podcast-Nachbearbeitung geeignet?**
+
+Nur eingeschränkt. Für bereits aufgezeichnetes Material bieten Adobe Enhance Speech, Cleanvoice AI oder Descript gezieltere Bearbeitungsabläufe.
+
+**Muss ich Teilnehmer über die Aufnahme informieren?**
+
+Ja. Rechtliche Anforderungen unterscheiden sich, aber eine transparente Einwilligung sollte vor Transkription oder Aufzeichnung selbstverständlich sein.
+
+**Wie misst man den Nutzen?**
+
+Vergleiche Verständlichkeit, Transkriptfehler, Zahl manueller Korrekturen und Zeit bis zu bestätigten Aufgaben über mehrere echte Meetings, nicht nur über eine Beispieldatei.
