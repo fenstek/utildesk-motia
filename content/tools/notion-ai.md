@@ -1,116 +1,127 @@
 ---
-description: "Notion AI ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+description: "Notion AI verbindet Workspace-Suche, Agenten, Meeting-Notizen und Textarbeit. Gute Ergebnisse hängen von gepflegten Quellen, Rechten und klarer Abnahme ab."
 slug: "notion-ai"
 title: "Notion AI"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-07-27"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-07-27-gsc-recovery-editorial"
 category: "Produktivität"
-price_model: "Freemium"
+price_model: "Abonnement"
 tags:
   - ai
-  - produktivitat
-official_url: "'https://www.notion.so/product/ai'"
-affiliate_url: 'https://www.notion.so/product/ai'
+  - productivity
+  - knowledge-management
+  - meetings
+official_url: "https://www.notion.com/product/ai"
+affiliate_url: "https://www.notion.com/product/ai"
 tier: "C"
 generated_at: "2026-05-21"
 created_at: "2026-02-08"
-updated_at: "2026-07-17"
+updated_at: "2026-07-27"
 popularity: 0
 ---
 
 # Notion AI
 
-Notion AI ist eine innovative Erweiterung der beliebten Notion-Plattform, die künstliche Intelligenz nutzt, um die Produktivität zu steigern und kreative Prozesse zu unterstützen. Mit Notion AI können Nutzer Texte schneller verfassen, Ideen strukturieren und Routineaufgaben automatisieren – alles innerhalb einer einzigen, flexiblen Arbeitsumgebung.
+Notion AI ist 2026 deutlich mehr als eine Schreibhilfe in einer Notiz-App. Die Produktfamilie umfasst den Notion Agent für mehrstufige Aufgaben, Custom Agents für wiederkehrende Abläufe, Enterprise Search über den eigenen Workspace und verbundene Dienste, AI Meeting Notes sowie Research Mode. Hinzu kommen klassische Funktionen wie Zusammenfassen, Übersetzen, Entwürfe, Datenbank-Autofill und Formelhilfe.
 
-## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
-
-Notion AI ist 2026 vor allem als Wissens- und Projektassistent innerhalb bestehender Notion-Workspaces relevant. Zusammenfassungen, Suche, Q&A über Seiten, Entwürfe, Projektstruktur und automatische Statusarbeit helfen besonders dann, wenn die zugrunde liegenden Datenbanken und Seiten sauber gepflegt sind.
-
-Der wichtigste Hebel liegt nicht im einzelnen generierten Absatz, sondern in Workspace-Hygiene. Wer Eigentümer, Status, Datenbanken, Vorlagen und Berechtigungen klar hält, bekommt aus Notion AI deutlich bessere Antworten und weniger riskante Vermischung von Entwürfen und verbindlichem Wissen.
+Diese Nähe zu Seiten, Datenbanken und Berechtigungen ist der wichtigste Vorteil gegenüber einem separaten Chatbot. Sie ist zugleich die größte Schwäche: Notion AI kann nur so verlässlich arbeiten wie der Workspace, den es vorfindet. Veraltete Projektseiten, doppelte Begriffe und zu breite Rechte werden durch einen Agenten nicht repariert, sondern schneller weiterverwendet.
 
 ## Für wen ist Notion AI geeignet?
 
-Notion AI richtet sich an Einzelpersonen und Teams, die ihre Arbeitsabläufe optimieren möchten. Besonders nützlich ist das Tool für:
+Notion AI passt zu Teams, die Notion bereits als Wissensbasis, Projektarbeitsraum oder Dokumentationssystem betreiben. Produkt-, Operations-, Marketing- und interne Supportteams können wiederkehrende Statusberichte, Meeting-Nachbereitung, Recherche und Wissenssuche näher an den vorhandenen Quellen erledigen.
 
-- Kreative, die beim Brainstorming und Schreiben unterstützt werden wollen.
-- Projektmanager, die komplexe Informationen effizient organisieren müssen.
-- Studierende und Forschende, die umfangreiche Notizen und Dokumentationen erstellen.
-- Unternehmen, die kollaboratives Arbeiten und Wissensmanagement verbessern möchten.
-
-Je nach Anwendungsfall und Umfang der Nutzung kann Notion AI sowohl für Einzelanwender als auch für größere Teams sinnvoll sein.
-
-## Typische Einsatzszenarien
-
-- **Gezielter Einstieg:** Notion AI eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um ai, produktivitat nicht mehr improvisieren wollen.
-- **Betrieb statt Demo:** Nützlich wird das Tool vor allem dann, wenn Prompts, Modelle, Ausgaben und Freigaben sauber dokumentiert und nicht nur einmalig ausprobiert werden.
-- **Übergaben im Team:** Notion AI kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
-- **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
-
-## Redaktionelle Einordnung
-
-Bei Notion AI zeigt sich der Wert an einem wiederkehrenden Ablauf: Werden Aufgaben, Übergaben und Entscheidungen klarer? Ein sinnvoller Pilot misst Rückfragen, Doppelarbeit und Nachvollziehbarkeit nach einigen echten Durchläufen.
-
-Notion AI ist nützlich, wenn es bestehende Arbeit ordnet. Es bleibt schwach, wenn ein unklarer Prozess nur digitalisiert wird und niemand Regeln oder Verantwortung festlegt.
+Wer Notion nur für private Kurznotizen nutzt, braucht das gesamte Paket meist nicht. Auch Unternehmen mit einem anderen führenden Dokumenten- oder Ticketsystem sollten prüfen, ob eine zusätzliche KI-Schicht in Notion tatsächlich Übergaben verkürzt oder nur eine zweite Wissensbasis erzeugt.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/notion-ai-editorial.webp" alt="Illustration zu Notion AI: redaktionelle Workflow-Szene zu Notion AI mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+  <img src="/images/tools/notion-ai-editorial.webp" alt="Illustration zu Notion AI: Ein Team ordnet Dokumente, Meeting-Notizen und Aufgaben in einem gemeinsamen Workspace" loading="lazy" decoding="async" />
 </figure>
 
-## Hauptfunktionen
+## Die wichtigsten Funktionen 2026
 
-- **Automatisches Verfassen von Texten:** Unterstützung bei der Erstellung von Artikeln, E-Mails, Berichten und mehr.
-- **Zusammenfassungen:** Schnelles Generieren von Zusammenfassungen langer Dokumente oder Notizen.
-- **Ideenfindung und Brainstorming:** Vorschläge und Inspirationen für kreative Prozesse.
-- **Sprachstil-Optimierung:** Verbesserung von Grammatik, Stil und Lesbarkeit.
-- **Übersetzungen:** Unterstützung bei der Übersetzung von Texten in verschiedene Sprachen.
-- **Aufgabenautomatisierung:** Automatisches Erstellen von To-Do-Listen oder Erinnerungen basierend auf Notizen.
-- **Integration in Notion-Workspace:** Nahtlose Einbindung in bestehende Notion-Datenbanken und Seiten.
-- **Anpassbare KI-Einstellungen:** Möglichkeit, den Ton und die Art der Unterstützung individuell anzupassen.
+- **Notion Agent:** Erstellt und bearbeitet Seiten oder Datenbanken anhand des Workspace-Kontexts und verbundener Quellen.
+- **Custom Agents:** Führen wiederkehrende Aufgaben nach Zeitplan oder Ereignis aus, etwa Statusupdates oder Routing.
+- **Enterprise Search:** Sucht in Notion und je nach Verbindung unter anderem in Slack, Google Drive und GitHub.
+- **AI Meeting Notes:** Transkribiert Gespräche, fasst Entscheidungen zusammen und extrahiert nächste Schritte.
+- **Research Mode:** Erstellt ausführlichere Berichte aus einer Fragestellung und zugänglichen Quellen.
+- **AI Blocks:** Entwirft, überarbeitet, übersetzt und strukturiert Texte direkt auf einer Seite.
+- **Datenbankhilfe:** Befüllt Eigenschaften, erzeugt Formeln und unterstützt beim Aufbau strukturierter Arbeitsbereiche.
 
-## Vorteile und Nachteile
+Nicht jede Funktion ist in jedem Plan oder für jeden Workspace verfügbar. Verbindungen und Agenten sollten deshalb anhand der aktuellen Administrations- und Tarifseiten geprüft werden.
 
-### Vorteile
-- Erhöht die Effizienz beim Schreiben und Organisieren von Inhalten.
-- Integration in eine vielseitige Plattform mit umfangreichen Kollaborationsfunktionen.
-- Flexibler Einsatz für verschiedene Branchen und Aufgabenbereiche.
-- Freemium-Modell ermöglicht den Einstieg ohne Kosten.
-- Regelmäßige Updates und Verbesserungen durch aktives Entwicklerteam.
+## Ein sinnvoller Praxisworkflow
 
-### Nachteile
-- Einige Funktionen sind nur in kostenpflichtigen Plänen verfügbar.
-- Die KI-Unterstützung kann je nach Komplexität der Aufgabe variieren.
-- Datenschutzbedenken können bei sensiblen Daten auftreten, da KI-Modelle cloudbasiert arbeiten.
-- Lernkurve für Nutzer, die neu in der Notion-Plattform sind.
-- Nicht alle Sprachen und Fachgebiete werden gleich gut unterstützt.
+Ein guter Einstieg ist kein allgemeiner „Firmenassistent“, sondern ein wiederkehrender Wochenstatus:
 
-## Redaktionelle Einschätzung
+1. Lege fest, welche Projektdatenbank und welche verifizierten Seiten als Quellen gelten.
+2. Begrenze den Agenten auf diese Bereiche und einen klaren Ausgabetyp.
+3. Lass offene Entscheidungen, Blocker und überfällige Aufgaben mit Quellverweisen zusammenfassen.
+4. Ein benannter Projektverantwortlicher prüft Status, Eigentümer und Termine.
+5. Erst danach wird der Bericht veröffentlicht oder an Slack weitergegeben.
+6. Falsche Ergebnisse werden nicht nur im Prompt korrigiert, sondern an der fehlerhaften Quellseite.
 
-Notion AI ist vor allem dann eine tragfähige Wahl, wenn ein klarer Prozess, eine benannte Verantwortung und ein begrenzter Pilot zusammenkommen. Für die Entscheidung zählt weniger die Funktionsliste als die Frage, ob das Team Ergebnisse zuverlässig prüfen, übergeben und bei Änderungen nachsteuern kann. Unser Verdict: empfehlenswert für wiederkehrende Aufgaben mit passendem Verantwortlichen; für einen einzelnen, seltenen Zweck ist eine schlankere Alternative meist vernünftiger.
+So verbessert der Pilot gleichzeitig die Wissensbasis. Bei Meeting Notes kommt eine Aufnahme- und Löschregel hinzu; bei Custom Agents außerdem ein Protokoll, wann und mit welchen Rechten sie liefen.
 
-## FAQ
+## Stärken
 
-**Für wen eignet sich Notion AI?**
+- KI arbeitet direkt an bestehenden Seiten, Datenbanken und Teamkontext.
+- Suche über verbundene Dienste kann Wechsel zwischen mehreren Anwendungen reduzieren.
+- Meeting-Ergebnis, Aufgabe und Dokumentation können im selben System landen.
+- Custom Agents eignen sich für klar definierte, wiederkehrende Wissensarbeit.
+- Berechtigungen und verifizierte Seiten können die Qualität der Antwortbasis verbessern.
 
-Notion AI eignet sich für Teams, die den beschriebenen Ablauf regelmäßig nutzen und die Einführung sowie die Qualitätskontrolle verantworten können.
+## Grenzen und typische Fehler
 
-**Wie sollte ein Pilot mit Notion AI aussehen?**
+- Schlechte Workspace-Hygiene führt zu überzeugend formulierten, aber veralteten Antworten.
+- Ein Agent kann Informationen nur sehen, die seine Verbindungen und Rechte freigeben.
+- Automatisch erzeugte Seiten erhöhen die Menge an Wissen, ohne dessen Verbindlichkeit zu klären.
+- Meeting-Transkripte und Zusammenfassungen können Namen, Entscheidungen oder Aufgaben falsch erfassen.
+- Teams können durch Agents und Credits zusätzliche variable Kosten erzeugen.
+- Notion AI ersetzt keine fachliche Freigabe, Records-Management-Strategie oder Rechtsprüfung.
 
-Für Notion AI: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+## Datenschutz, Rechte und Governance
 
-**Welche Daten sollten nicht ungeprüft in Notion AI verarbeitet werden?**
+Notion erklärt, Kundendaten standardmäßig weder selbst noch durch AI-Subprozessoren zum Modelltraining zu verwenden. Für die Bereitstellung der KI-Funktionen werden Daten jedoch an diese Subprozessoren übermittelt. Deshalb sollten Teams nicht nur die Trainingserklärung, sondern auch Auftragsverarbeitung, Speicherorte, Verbindungen, Aufbewahrung und Löschung prüfen.
 
-Notion AI: Sensible oder vertrauliche Inhalte gehören erst nach Prüfung von Vertrag, Zugriffen, Speicherort und Löschmöglichkeiten in den Prozess. Bei Unsicherheit sollte der Datenschutzverantwortliche entscheiden.
+Besonders wichtig ist das Berechtigungsmodell. Enterprise Search und Agents dürfen keine Abkürzung um bestehende Zugriffsregeln werden. Vor einem Rollout sollten Administratoren Testkonten mit verschiedenen Rollen verwenden und kontrollieren, welche Seiten, Slack-Kanäle oder Drive-Dateien in Antworten auftauchen. Meeting Notes benötigen zusätzlich transparente Zustimmung aller Beteiligten.
 
-**Wann ist eine Alternative zu Notion AI sinnvoll?**
+## Preise und Kosten
 
-Bei Notion AI ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auftritt, die nötige Integration fehlt oder Administration und Kosten den Nutzen übersteigen.
+Laut offizieller Produkt- und Hilfeseite ist Notion AI am 27. Juli 2026 in den Business- und Enterprise-Plänen enthalten. Free- und Plus-Workspaces erhalten nur begrenzte Testnutzung. Custom Agents werden nach einer Testphase separat über Credits abgerechnet; die Produktseite nennt 10 US-Dollar je 1.000 Credits. Tarife, faire Nutzung und enthaltene Funktionen können sich ändern.
+
+Zur Kostenrechnung gehören daher nicht nur Sitze. Relevant sind Agentenläufe, verbundene Dienste, Pflege der Wissensbasis und die Zeit für Freigaben.
 
 ## Alternativen
 
-- [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
-- [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [Coda](/tools/coda/): wenn Dokumente, Tabellenlogik und Automationen stärker miteinander verschmelzen sollen.
+- [ClickUp](/tools/clickup/): wenn Aufgaben- und Projektsteuerung das führende System bleiben soll.
+- [Asana](/tools/asana/): für strukturierte Arbeitspakete, Verantwortlichkeiten und Portfolio-Übersicht.
+- [ChatGPT](/tools/chatgpt/): wenn ein eigenständiger Assistent wichtiger ist als die tiefe Einbettung in Notion.
+
+## Redaktionelle Einschätzung
+
+Notion AI ist eine starke Erweiterung für einen bereits disziplinierten Notion-Workspace. Agenten, Suche und Meeting Notes können echte Reibung entfernen, wenn Quellen, Rechte und Abnahme vorher feststehen. In einem ungepflegten Workspace beschleunigt das Produkt dagegen vor allem die Verbreitung unklarer Informationen. Unser Urteil: mit einem einzigen, messbaren Wissensworkflow starten und erst nach geprüften Ergebnissen automatisieren.
+
+## FAQ
+
+**Ist Notion AI im kostenlosen Plan enthalten?**
+
+Free und Plus erhalten laut Notion eine begrenzte Testnutzung. Der reguläre Zugriff auf die Kernfunktionen gehört zu Business und Enterprise.
+
+**Durchsucht Notion AI auch andere Anwendungen?**
+
+Enterprise Search und Connectors können je nach Plan und Einrichtung Quellen wie Slack, Google Drive oder GitHub einbeziehen. Zugriffe müssen administrativ freigegeben werden.
+
+**Werden Workspace-Daten zum Training verwendet?**
+
+Notion sagt, Kundendaten standardmäßig nicht für das Training eigener oder angebundener Modelle zu verwenden. Daten werden zur Ausführung der Funktion dennoch an AI-Subprozessoren übertragen.
+
+**Kann Notion AI Meetings ohne Bot transkribieren?**
+
+Notion bewirbt AI Meeting Notes als botfreien Ablauf. Ein technischer Komfort ändert nichts daran, dass Teilnehmer vor der Aufnahme informiert werden müssen.
+
+**Wie testet man Notion AI sinnvoll?**
+
+Mit einem begrenzten Prozess und einer bekannten Quellenmenge. Gemessen werden Zeitgewinn, falsche Quellen, notwendige Korrekturen und der Anteil wirklich übernommener Ergebnisse.
