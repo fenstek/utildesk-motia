@@ -11,7 +11,7 @@ category: AI Image
 price_model: Freemium
 tags: [presentations, design, ai]
 official_url: "https://www.beautiful.ai/"
-popularity: 68
+popularity: 69
 tier: C
 generated_at: 2026-05-11
 ---
