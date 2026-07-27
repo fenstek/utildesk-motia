@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-07-27 - GSC four-card editorial recovery
+
+- Rewrote the paired DE/EN `cursor` card from current official product, pricing and security material: removed duplicate legacy copy and the false arbitrary-IDE integration claim, then added a bounded agent workflow, current Cloud Agent/CLI/team surfaces, exact dated pricing context and Privacy Mode guidance.
+- Reworked paired DE/EN `clara` as a voice learning assistant without inventing undocumented features. The card now makes the provider's thin public documentation, institutional privacy questions and active-learning verification workflow explicit; alternatives and FAQ coverage were completed.
+- Replaced the contaminated paired DE/EN `krisp` copy with a product-specific evaluation of real-time noise cancellation, Meeting Notes, transcription, recording and accent conversion. The card now distinguishes local noise processing from cloud-stored meeting content and links relevant audio alternatives.
+- Rebuilt paired DE/EN `notion-ai` around the current Notion Agent, Custom Agents, Enterprise Search, AI Meeting Notes and Research Mode product surface, with workspace-hygiene, permissions, subprocessors, credits and approval guidance. All eight language files keep their existing single WebP illustration and have synchronized `2026-07-27` last-modified metadata.
+
 ## 2026-07-26 - Benchmarking ratgeber publication
 
 - Published the DE/EN article `Schneller und billiger, aber nicht klüger: Wie Teams neue KI-Modelle wirklich benchmarken` with two distinct editorial WebP illustrations, internal tool links, and `lastmod` entries.
