@@ -3,120 +3,125 @@ slug: cursor
 title: Cursor
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-27
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-product-update"
+editorial_batch: "2026-07-27-gsc-recovery-editorial"
 category: "Entwickler-Tools"
-description: "Cursor is an agentic code editor for refactoring, tests, and reviewable repository changes."
-price_model: Freemium
+description: "Cursor combines a code editor, agent, CLI, and cloud tasks. Small assignments, reviewable diffs, and strict access boundaries determine whether it helps."
+price_model: "Freemium"
 tags:
   - ai
   - developer
-official_url: 'https://www.cursor.com'
-affiliate_url: 'https://www.cursor.com'
-created_at: '2026-02-07'
-updated_at: 2026-07-19
+official_url: "https://cursor.com"
+affiliate_url: "https://cursor.com"
+created_at: "2026-02-07"
+updated_at: 2026-07-27
 popularity: 0
 source_language: de
 translation: full
 ---
 # Cursor
 
-## Status on 19 July 2026
+Cursor is not a plug-in for any IDE. It is a code editor with a built-in coding agent, combining repository context, chat, multi-step changes, terminal work, and code review in one workspace. Cursor CLI, Cloud Agents, Slack tasks, GitHub pull-request reviews, and recurring automations extend that workspace beyond the desktop. In 2026, Cursor is better understood as an environment for delegated development work than as smarter autocomplete.
 
-Cursor should now be assessed as a workspace for multiple agentic coding tasks. Recent additions cover parallel sessions, searchable side chats, cloud-agent hooks, a team MCP marketplace, and Slack-based work intake. That speeds up handoffs, but it also widens a project's security and control surface.
+Its practical value does not come from generating the largest possible amount of code. It comes from handing over a narrow task, checking the plan, running tests, and understanding the resulting diff. A vague assignment, broad repository access, and weak review turn the same agent into a source of hard-to-audit changes.
 
-Do not start an agent against an unconstrained repository. A safer setup uses a small issue scope, blocked production secrets, an allowed tool and MCP set, mandatory tests, and a review before every merge. For cloud tasks, cost, runtime, and access to connected services belong in the same pull-request check as the code.
+## Status on 27 July 2026
 
-Cursor is an innovative developer tool that utilizes artificial intelligence to ease and accelerate programming work. It supports developers in code creation, error correction, and optimization by providing context-based suggestions and automations. As a Freemium model, Cursor offers both free basic functions and enhanced features in paid plans.
+Cursor can work locally in the desktop editor or CLI. Cloud Agents run on provider-managed computers and can execute several tasks in parallel. The official product pages also list Slack collaboration, GitHub reviews, skills, hooks, MCP connections, and automations triggered by schedules or events. Team plans add a private marketplace and central administration.
 
-## 2026 update: what to review now
+These surfaces do not carry equal risk. A local edit suggestion, a Cloud Agent with network access, and an always-on automation should receive different permissions and review rules.
 
-Cursor in 2026 should be evaluated as an agentic code editor, not just a chat window beside code. Codebase chat, multi-step changes, repository context, terminal proximity, and Composer or agent workflows help especially with refactoring, feature slices, and quick orientation in unfamiliar projects.
+## Who is Cursor for?
 
-Good use requires small work packages and strict verification. Cursor can speed up changes, but tests, diff review, security checks, and clean commits remain essential so agentic editing does not create hidden side effects.
+Cursor suits developers who regularly navigate existing codebases, isolate bugs, add tests, or implement clearly bounded feature slices. It works best when the repository already has reproducible tests, linting, written development instructions, and a pull-request process.
 
-## For whom is Cursor suitable?
-
-Cursor is primarily aimed at software developers who want to increase their productivity and automate routine tasks. The tool is of interest to both beginners and experienced programmers, as it provides intelligent support in code creation. It is particularly useful for developers who spend a lot of time with debugging and code reviews or want to learn new programming languages. Teams seeking a collaborative development environment can also benefit from its features.
+It is a weaker fit for teams that push changes directly to production, lack automated checks, or cannot send source context to external model providers. Beginners can use it to explain code, but should not confuse a coherent answer with a correct implementation.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/cursor-editorial.webp" alt="Illustration for Cursor: developer navigates a codebase, tests, and AI suggestions" loading="lazy" decoding="async" />
+  <img src="/images/tools/cursor-editorial.webp" alt="Illustration for Cursor: a developer reviews code, tests, and an AI agent's diff" loading="lazy" decoding="async" />
 </figure>
 
-## Main Functions
+## What Cursor handles in daily work
 
-- **AI-based Code Completion:** Cursor suggests context-dependent code snippets and helps with faster programming.
-- **Automated Error Detection:** The tool identifies potential errors and provides improvement suggestions.
-- **Code Optimization:** Recommendations for improving code quality and performance.
-- **Support for Multiple Programming Languages:** Cursor is compatible with popular languages such as Python, JavaScript, Java, C++, and others.
-- **Integration with Development Environments:** Can be integrated into popular IDEs and editors.
-- **Version Control and Team Collaboration:** Features for collaboration and version management are integrated.
-- **Learning Mode:** Helps users understand new concepts and best practices.
-- **Freemium Access:** Basic functions are free, with enhanced features available for payment.
+- **Repository questions:** Trace relationships, call paths, and affected files in a codebase.
+- **Targeted changes:** Prepare a reviewable patch for a bug, refactor, or missing test.
+- **Agent tasks:** Plan several steps, edit files, run commands, and return the result for approval.
+- **CLI and cloud work:** Start tasks in the terminal or delegate them to isolated cloud environments.
+- **Review and automation:** Review pull requests or run recurring maintenance under defined rules.
+- **Team context:** Distribute approved rules, skills, plug-ins, and MCP tools centrally.
 
-## Advantages and Disadvantages
+Cursor does not replace version control or tests. It shortens the path between task, context, change, and verification.
 
-### Advantages
-- Increases productivity through intelligent automation.
-- Supports a wide range of programming languages.
-- Improves code quality through AI-driven analysis.
-- Easy to integrate into existing development environments.
-- Free entry with the option to upgrade.
+## A practical workflow
 
-### Disadvantages
-- Expanded features are paid for.
-- AI suggestions may not be perfect depending on the complexity of the project.
-- Requires an internet connection for AI services.
-- Steep learning curve for users with little experience with AI tools.
+1. Describe an observable problem and explicitly state what must remain unchanged.
+2. Ask Cursor to identify relevant files and propose a plan before editing.
+3. Limit the assignment to a small diff in a separate branch or worktree.
+4. Require suitable tests, linting, and a list of assumptions.
+5. Read the diff independently from the agent's summary and check security or migration effects.
+6. Move only understood changes into a pull request; split larger follow-up work into new tasks.
 
-## Pricing & Costs
+For Cloud Agents, add runtime, spend, allowed domains, secrets, and MCP servers to the acceptance checklist.
 
-Cursor offers a Freemium model. The free version includes basic functions such as simple code completion and basic error detection. Paid plans offer expanded features like deeper code analysis, team functions, and priority support. Prices vary depending on the provider and chosen package, and can be billed monthly or annually.
+## Strengths
+
+- Editor, agent, terminal, and repository context are close together.
+- Parallel agents can reduce waiting time for clearly separated tasks.
+- Teams can choose models according to the job.
+- Higher plans add central access rules, governance, and usage information.
+- Small refactors and test additions become faster in a well-tested codebase.
+
+## Limits and common mistakes
+
+- A plausible diff can still be logically wrong or miss rare edge cases.
+- Large runs create review debt instead of saving time.
+- Cloud Agents and automations increase exposure through tools, networks, and secrets.
+- Model usage and cloud work can produce variable costs.
+- Cursor is its own editor; describing it as an integration for arbitrary IDEs is misleading.
+
+## Privacy, security, and governance
+
+Cursor offers Privacy Mode to free and paid users. According to the provider, data is not used for training when Privacy Mode is enabled, and teams can enforce it. Cursor also states that it has a SOC 2 Type II attestation. Depending on plan, organizations can add model, repository, MCP, browser, and network controls, audit logs, SSO, and SCIM.
+
+Those controls do not replace internal data classification. Production keys should stay out of prompts, and an agent should reach only the folders, commands, and services required by its task. MCP servers and hooks need explicit approval because they connect the agent to outside systems.
+
+## Pricing and cost
+
+On 27 July 2026, the Hobby plan is free and includes limited Agent requests plus Composer. The official pricing page lists Individual plans from USD 20 per month and Teams from USD 40 per user per month; Enterprise is custom-priced. Model limits, Cloud Agents, Bugbot, and automations can add plan- or usage-based cost.
+
+A useful pilot therefore records model spend and agent runtime alongside any reduction in implementation or review time.
 
 ## Alternatives
 
-- [GitHub Copilot](/en/tools/github-copilot/): for teams that want repository, pull-request, and platform integration.
-- [OpenAI Codex](/en/tools/openai-codex/): for controlled agent runs with terminal, tests, and repository context.
-- [Windsurf](/en/tools/windsurf/): for a different agentic editor workflow.
-- [Tabnine](/en/tools/tabnine/): for editor-centric code completion with a narrower scope.
-- [Amazon CodeWhisperer](/en/tools/amazon-codewhisperer/): for development workflows close to AWS.
+- [GitHub Copilot](/en/tools/github-copilot/): when GitHub, pull requests, and the existing IDE are central.
+- [OpenAI Codex](/en/tools/openai-codex/): for controlled agent runs across terminal, app, and repository.
+- [Windsurf](/en/tools/windsurf/): when another agentic editor workflow fits the team better.
+- [Tabnine](/en/tools/tabnine/): for more narrowly scoped, editor-centric coding assistance.
+- [Amazon CodeWhisperer](/en/tools/amazon-codewhisperer/): for development work closely tied to AWS.
 
-## What really matters in daily use
+## Editorial assessment
 
-Cursor is interesting for developers because AI assistance works directly inside the editor, repository, and live code context. Its value depends on whether suggestions are reviewed, tests are run, and architecture decisions remain deliberate.
-
-## Workflow Fit
-
-- Good for refactoring, code navigation, boilerplate, tests, small features, and explaining unfamiliar code areas.
-- Risky for security-sensitive changes, migrations, or large patches when reviews and tests are skipped.
-
-## Editorial Assessment
-
-Cursor can noticeably speed up development when used as a pairing partner. It becomes dangerous when generated code receives more trust than verification.
+Cursor is compelling when used as a delegable pairing partner with a clear acceptance gate. Desktop, CLI, and Cloud Agents can remove genuine waiting time, but they make engineering discipline more important rather than obsolete. Our verdict: recommended for teams with tests, branch protection, and consistent diff review; risky as an autonomous substitute for those controls.
 
 ## FAQ
 
-**1. Is Cursor suitable for beginners?**
-Yes, Cursor supports developers of all skill levels and helps particularly with routine tasks and learning new concepts.
+**Is Cursor just code autocomplete?**
 
-**2. Which programming languages are supported?**
-Cursor supports a wide range of languages, including Python, JavaScript, Java, C++, and others, depending on the version and plan.
+No. Autocomplete is one part of a broader system that includes an agent, CLI, Cloud Agents, code review, and automations.
 
-**3. Does a stable internet connection require?**
-For AI-based functions, a stable internet connection is generally required, as processing often occurs in the cloud.
+**Can Cursor be installed inside Visual Studio Code or IntelliJ?**
 
-**4. How does the free version differ from the paid version?**
-The free version offers basic functions, while paid plans include expanded features like team collaboration, deeper analysis, and priority support.
+Cursor is its own editor, not a universal extension for other IDEs. Teams that must keep their current IDE should compare Copilot, Tabnine, or a CLI agent.
 
-**5. Can Cursor be integrated into existing development environments?**
-Yes, Cursor can be integrated into many popular IDEs and code editors.
+**Should Cursor receive production secrets?**
 
-**6. Is there a demo or trial period?**
-Depending on the provider, there is usually a free trial or limited free use to test the tool.
+Normally, no. Secrets should be exposed through separate, least-privilege runtime environments and never stored in prompts, rule files, or the repository.
 
-**7. How secure are the data when using Cursor?**
-Data security depends on the provider; in general, standards for protecting user data are followed.
+**Is customer data used for training?**
 
-**8. Does Cursor support team collaboration?**
-Yes, in the expanded plans, features for collaboration and version control are included.
+Cursor says it does not train on customer data when Privacy Mode is enabled. Organizations should enforce that setting and also review contracts and subprocessors.
+
+**How should a team evaluate Cursor?**
+
+Use several real but small tasks: one bug fix, one test addition, and one contained refactor. Measure elapsed time, correction count, review effort, and defects found afterward.
