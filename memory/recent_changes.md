@@ -1681,3 +1681,10 @@ _Last updated: 2026-07-19_
 - Replaced the two visually repetitive collage assets with two deliberately distinct story illustrations: a restrained engraving of a common calibration gate and a tactile colour paper test canal.
 - Rejected the previous pair because both used nearly the same cut-paper robot language. The replacement pair contains no office briefing, UI, readable text, logo or watermark.
 - Added a publication-skill gate requiring the new article to be the first item on DE/EN home and archive surfaces, not merely present somewhere in the collection.
+
+## 2026-07-27 - Buzz, Slack and AI Rooms Ratgeber publication
+
+- Published `Menschen und Agenten im selben Team-Chat: Was Buzz, Slack und AI Rooms verändern` as a NotebookLM-first candidate after a full manual DE/EN editorial rewrite and official-source fact check.
+- Reframed unsupported product claims: Buzz is described from the Block repository and support pages; Slack agent behavior is grounded in Slack and Salesforce documentation; AI Rooms is explicitly treated as a design pattern, not an unverified product.
+- Added two distinct editorial WebP illustrations: a gouache/linocut communication map and a paper-cut permission-bridge diorama. Both exclude office briefings, UI, readable text, logos and watermarks.
+- Local editorial, English parity, tool-quality and full static build gates passed. The new article is first on the DE/EN home and Ratgeber archive in the generated output, with exactly two visible article image tags per locale.
