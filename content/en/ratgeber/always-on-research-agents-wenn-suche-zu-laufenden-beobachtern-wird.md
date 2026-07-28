@@ -58,7 +58,7 @@ This is not a documented incident. It is the typical false alarm produced by bad
 
 [Gemini Deep Research](/en/tools/gemini/) shows how far agentic research has advanced. Through the API, the agent can plan an investigation, search sources, and connect its findings into a report. Google explicitly treats this as a long-running process: the task starts in the background, while an application polls its status or receives intermediate steps as a stream. One prompt therefore launches a loop of planning, searching, reading, and reasoning.
 
-Chroma's Context-1 tackles a different bottleneck. During multi-step research, the working context quickly fills with useful, incidental, and duplicate findings. Context-1 decomposes questions, searches iteratively, and removes passages that are no longer needed for the next step. Chroma describes a 20-billion-parameter model trained on more than 8,000 synthetic tasks that, in the company's own evaluations, performs inference up to ten times faster than the larger models it compared.
+[Chroma Context-1](https://www.trychroma.com/research/context-1) tackles a different bottleneck. During multi-step research, the working context quickly fills with useful, incidental, and duplicate findings. Context-1 decomposes questions, searches iteratively, and removes passages that are no longer needed for the next step. Chroma describes a 20-billion-parameter model trained on more than 8,000 synthetic tasks that, in the company's own evaluations, performs inference up to ten times faster than the larger models it compared.
 
 Both approaches improve search. Neither yet answers the question raised by Monday's inbox. An agent can research faster and more deeply while still mistaking every reworded product page for news.
 

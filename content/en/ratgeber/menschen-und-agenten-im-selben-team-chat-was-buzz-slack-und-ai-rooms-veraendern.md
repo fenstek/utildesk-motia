@@ -21,7 +21,7 @@ sidebarPoints:
   - "AI Rooms work only when people can see who triggered, reviewed, and approved an action."
 relatedTools:
   - title: "Slack"
-    href: "/en/tools/slack/"
+    href: "https://slack.com/"
   - title: "Google Chat"
     href: "/en/tools/google-chat/"
   - title: "Microsoft Teams"
@@ -34,7 +34,7 @@ relatedTools:
     href: "/en/tools/github-codespaces/"
 decisionTools:
   - title: "Slack"
-    href: "/en/tools/slack/"
+    href: "https://slack.com/"
     note: "the pragmatic choice when agents need to fit existing channels, approvals, and enterprise integrations"
     score: "8.5"
     kind: "recommend"
@@ -54,7 +54,7 @@ decisionAvoid:
   - "confusing an open agent room with an unattended automation account"
 decisionNote: "The key architecture decision is not the chat brand. It is which actions an agent may trigger, how its sources are exposed, and who stops a write operation before it happens."
 ---
-It is two in the morning. The same failure has returned, and nobody remembers how it was fixed last time. In the future scenario presented by the open-source project Buzz, one question in the project channel is enough: an agent searches six months of history, retrieves the earlier cause and repair, and offers to alert the person involved. Buzz is describing a product vision, not a verified customer incident. Even so, the scene identifies a real weakness in modern AI work: the knowledge exists, but it is scattered across chats, Git, CI, and private assistant windows.
+It is two in the morning. The same failure has returned, and nobody remembers how it was fixed last time. In the future scenario presented by the open-source project [Buzz](https://github.com/block/buzz), one question in the project channel is enough: an agent searches six months of history, retrieves the earlier cause and repair, and offers to alert the person involved. Buzz is describing a product vision, not a verified customer incident. Even so, the scene identifies a real weakness in modern AI work: the knowledge exists, but it is scattered across chats, Git, CI, and private assistant windows.
 
 That is why Block is not building Buzz as another bot in a side panel. Humans and agents are meant to inhabit the same rooms. The decisive question is no longer, “How well does the bot answer?” It is this: what changes when the agent sits where work is decided, and can do more than write messages—opening repositories, sending patches, starting workflows, and calling in other agents?
 
@@ -64,7 +64,7 @@ That addresses a genuine problem. Work performed in private AI chats is invisibl
 
 ![An editorial collage shows humans and abstract agent symbols sharing one communication path between an archive, a city, and a repository](/images/ratgeber/menschen-und-agenten-im-selben-team-chat-was-buzz-slack-und-ai-rooms-veraendern-workflow.webp)
 
-[Slack](/en/tools/slack/) is approaching a similar destination from the opposite direction. Agents arrive as apps inside existing conversations and channels and remain subject to the workspace's app and administration rules. Buzz instead tries to place chat, agent, workflow, and Git on the same protocol from the beginning. One model moves agents into an established house; the other rebuilds the house around them.
+[Slack](https://slack.com/) is approaching a similar destination from the opposite direction. Agents arrive as apps inside existing conversations and channels and remain subject to the workspace's app and administration rules. Buzz instead tries to place chat, agent, workflow, and Git on the same protocol from the beginning. One model moves agents into an established house; the other rebuilds the house around them.
 
 Up to this point, the shared surface almost sounds like the solution. Then comes the catch: visibility is not the same as authority. A signed event shows which key performed an action. It does not prove that the key was entitled to perform it, or that a person understood the consequences. A perfectly recorded mistake is still a mistake.
 
