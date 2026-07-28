@@ -1,11 +1,12 @@
 ---
 slug: chatgpt-claude-gemini
-title: "ChatGPT, Claude and Gemini: Three AI Assistants, Three Very Different Strengths"
+title: "ChatGPT, Claude and Gemini: Three AI Assistants, Three Different Jobs"
 date: 2026-04-13
-category: Comparison
-eyebrow: AI Comparison
-excerpt: A practical comparison of the three major AI assistants for writing, research, coding and privacy-sensitive work.
-readTime: 7
+updated: 2026-07-28
+category: "Comparison"
+eyebrow: "AI comparison"
+excerpt: "The useful question is not which assistant wins. It is where the work lives, what it may access, and what still needs a deliberate review."
+readTime: 8
 coverImage: /images/ratgeber/chatgpt-claude-gemini-cover.webp
 secondaryImage: /images/ratgeber/chatgpt-claude-gemini-workflow.webp
 tags:
@@ -14,11 +15,10 @@ tags:
   - Gemini
   - AI assistants
   - Productivity
-sidebarTitle: Key takeaways
+sidebarTitle: "Key takeaways"
 sidebarPoints:
-  - ChatGPT is the broadest all-rounder for quick drafts, flexible workflows and everyday problem solving.
-  - Claude is strongest when long context, tone and careful argumentation matter.
-  - Gemini fits best when your work already lives inside the Google ecosystem.
+  - "Do not choose from a model leaderboard. Start with the working context and the cost of a wrong move."
+  - "For most teams, one primary assistant plus a purposeful counter-check works better than frantic switching between three tools."
 relatedTools:
   - title: ChatGPT
     href: /en/tools/chatgpt/
@@ -30,65 +30,44 @@ relatedTools:
     href: /en/tools/perplexity/
 ---
 
-AI assistants now sit inside everyday work: writing, research, coding, planning and decision support. [ChatGPT](/en/tools/chatgpt/), [Claude](/en/tools/claude/) and [Gemini](/en/tools/gemini/) may look similar at first glance, but they feel different once they become part of a real workflow. The useful question is not which model is universally "best". The better question is which assistant fits the task, the risk profile and the working style.
+A team goes looking for “the best AI assistant” and ends up with three browser tabs, three half-written prompts, and no reliable way of working. The trouble is not that [ChatGPT](/en/tools/chatgpt/), [Claude](/en/tools/claude/), and [Gemini](/en/tools/gemini/) are too similar. It is that people treat them as interchangeable text machines even though they attach to different parts of a working day.
 
-## One market, three philosophies
+The more useful question is: **Where does this task live, what information may the assistant see, and what has to be checked after it answers?** Answer that first and the endless comparison table becomes far less important.
 
-All three assistants can summarize, explain, rewrite and generate text. Their differences show up in how they behave under pressure.
+## An assistant is more than a writing tool
 
-**[ChatGPT](/en/tools/chatgpt/)** is the broadest generalist. It is quick, flexible and comfortable across many formats: emails, outlines, code snippets, debugging, brainstorming and structured planning. That makes it a strong default choice for people who need one assistant for many different jobs.
+All three can rephrase an email, outline a plan, or explain a code error. The difference appears when the assistant touches working context. [ChatGPT](/en/tools/chatgpt/), for example, can search connected apps or prepare actions; OpenAI separates permissions for reading from permissions for consequential changes. [Claude](/en/tools/claude/) is often chosen for sustained writing and analytical work. [Gemini](/en/tools/gemini/) is a natural fit when documents, files, and collaboration already sit in Google.
 
-**[Claude](/en/tools/claude/)** is often calmer and more deliberate. It is especially useful for long documents, careful reasoning, tone-sensitive writing and tasks where nuance matters. When you need a draft to feel less generic and more controlled, [Claude](/en/tools/claude/) is often the more comfortable partner.
+This is not a ranking. It is three kinds of friction. An assistant that fits an existing work context can save more time than a supposedly stronger model whose output must constantly be copied, explained, and re-filed.
 
-**[Gemini](/en/tools/gemini/)** is strongest when the surrounding work already depends on Google. Its advantage is not only the model itself, but the proximity to search, documents, productivity tools and the wider Google account context.
+![Three differently organised workspaces show that AI assistants are chosen by context and control point, not by a model ranking](/images/ratgeber/chatgpt-claude-gemini-workflow.webp)
 
-## Everyday writing and thinking
+## Choose the workplace before the model
 
-For simple prompts, the output can look similar. The difference becomes visible when a text has to be useful, structured and human-readable.
+For repeatable work, a small decision matrix is enough.
 
-[ChatGPT](/en/tools/chatgpt/) is usually the fastest route to a usable first draft. It is good at turning a vague idea into a working structure and can quickly switch between formats. The weakness is that the output can become generic if the prompt does not add enough context or taste.
+**The job starts as open exploration.** You need to organise ideas, develop a plan, connect several sources or formats, and perhaps later use another service. [ChatGPT](/en/tools/chatgpt/) is a sensible starting point. But connected tools can turn an answer into a possible action. Review the connection itself: may it read, prepare, or actually change something?
 
-[Claude](/en/tools/claude/) is often better when the task is not just to produce words, but to preserve a line of thought. It handles long context well, keeps a steadier tone and is helpful for concept texts, essays, policy drafts and editorial work.
+**The job needs a long, focused thinking space.** You are working through an argument, a concept, a brief, or a demanding document. [Claude](/en/tools/claude/) may be the better primary workspace. A well-written answer is still not proof: factual claims need sources, conditions, and a real review.
 
-[Gemini](/en/tools/gemini/) becomes attractive when research, documents and daily productivity are connected. If your work already moves through Google Search, Docs, Gmail or Drive, the assistant can feel less like a separate chatbot and more like a layer inside the workflow.
+**The job already lives in Google files and routines.** When the decisive documents, calendars, and collaboration are there, [Gemini](/en/tools/gemini/) reduces the amount of context that has to travel between systems. That proximity also makes clean permissions more important: what may move from which document into a prompt or an action?
 
-| Tool | Best fit | Typical strength |
-| --- | --- | --- |
-| [ChatGPT](/en/tools/chatgpt/) | quick drafts, ideation, flexible workflows | broad all-rounder |
-| [Claude](/en/tools/claude/) | long text, analysis, careful argumentation | context depth |
-| [Gemini](/en/tools/gemini/) | Google-heavy workflows, search, daily productivity | ecosystem integration |
+## A counter-check matters more than a second subscription
 
-## Research and context
+Teams often answer uncertainty by buying three subscriptions. That creates comparison material, not quality. A better pattern is one clear primary assistant for normal work and a limited counter-check for risky cases.
 
-Serious research is not just about finding an answer. It is about weighing information, keeping sources in context and turning raw material into a usable result.
+For example, let the primary assistant draft a customer email or technical proposal. Give the counter-check a different task: “Which assumption is unsupported?”, “What consequence is missing?”, or “Which sentence could a recipient misunderstand?” A second system can help, but so can a person with a well-scoped review brief.
 
-[Gemini](/en/tools/gemini/) benefits from Google's infrastructure and is naturally interesting for current topics and search-adjacent work. [ChatGPT](/en/tools/chatgpt/) is strong when research needs to become a clear explanation, plan or text. [Claude](/en/tools/claude/) is useful when a lot of material has to remain coherent over a longer reasoning chain.
+Research benefits from the same separation. A chat assistant explains and condenses. A research product such as [Perplexity](/en/tools/perplexity/) can help surface sources. Neither replaces opening the important original source. Mix these roles together and you can get a polished answer with no dependable foundation.
 
-![Typical usage scenarios for the three assistants](/images/ratgeber/chatgpt-claude-gemini-workflow.webp)
+## Run a pilot that can teach you something
 
-## Coding and productive work
+Do not “try” three tools for a week. Pick a recurring task, such as turning a project update into a decision brief. Define which data may enter, what output is expected, and what counts as failure. Have two people run the same task with different assistants. Judge not just prose quality, but rework, source quality, errors, and handover into real work.
 
-There is no single winner for coding either. [ChatGPT](/en/tools/chatgpt/) is a flexible helper for quick ideas, debugging and experiments. [Claude](/en/tools/claude/) is often appreciated as a precise coding partner when refactoring, architecture and larger code context matter. [Gemini](/en/tools/gemini/) is useful where coding, documentation and Google-based productivity workflows overlap.
-
-If you want research with visible sources, [Perplexity](/en/tools/perplexity/) is also worth comparing. It is less of a universal assistant and more of a research interface with source-oriented answers.
-
-## Privacy and trust
-
-Privacy is not a decorative detail in AI work. These systems often see drafts, strategy, code, personal notes and business context.
-
-[Claude](/en/tools/claude/) is frequently perceived as the more conservative option for sensitive long-form work. [Gemini](/en/tools/gemini/) offers strong controls inside the Google account, but it is also close to a very large data ecosystem. [ChatGPT](/en/tools/chatgpt/) remains the flexible mainstream assistant, where users should actively review data controls and team settings.
-
-## Which assistant should you choose?
-
-Choose **[ChatGPT](/en/tools/chatgpt/)** if you want one fast and flexible assistant for many everyday tasks. Choose **[Claude](/en/tools/claude/)** if long context, language quality and careful reasoning matter most. Choose **[Gemini](/en/tools/gemini/)** if the Google ecosystem is already your operational home.
-
-The best setup for many teams is not one model forever. It is a small, explicit tool policy: which assistant is used for drafting, which one for analysis, which one for coding, and which workflows are too sensitive for any external assistant without additional controls.
+The choice is usually less glamorous afterwards, but clearer. The winner is not the assistant with the loudest demo. It is the one whose strengths fit the workplace and whose weaknesses the team can reliably catch.
 
 ## Sources
 
-1. OpenAI: [ChatGPT | AI Chatbot to Discover, Learn & Create](https://openai.com/chatgpt/overview)
-2. Anthropic: [Claude by Anthropic](https://www.anthropic.com/claude)
-3. Google: [Gemini](https://gemini.google.com/)
-4. Tom's Guide: [Gemini vs ChatGPT vs Claude comparisons](https://www.tomsguide.com/)
-
-> Editorial note: This English version is adapted from the German Utildesk guide for an international audience.
+1. [OpenAI: Apps in ChatGPT and permissions](https://help.openai.com/en/articles/11487775)
+2. [Anthropic: Claude platform documentation](https://platform.claude.com/docs/en/intro)
+3. [Google: Gemini API documentation](https://ai.google.dev/gemini-api/docs)
