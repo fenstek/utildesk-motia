@@ -1,11 +1,12 @@
 ---
 slug: "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow"
-title: "Coding agents 2026: Codex CLI, Claude Code and Gemini CLI in the developer workflow"
+title: "Coding agents in 2026: the best workflow beats the best prompt"
 date: 2026-05-19
+updated: 2026-07-28
 category: "Comparison"
 eyebrow: "Coding agents"
-excerpt: "Codex CLI, Claude Code and Gemini CLI move AI coding from autocomplete to delegated work. This comparison shows where each tool fits."
-readTime: 7
+excerpt: "Codex CLI, Claude Code and Gemini CLI are not three candidates for the same job. The useful choice starts with work a team can bound, verify and own."
+readTime: 8
 coverImage: /images/ratgeber/coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow-cover-story-v1.webp
 secondaryImage: /images/ratgeber/coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow-workflow-story-v1.webp
 tags:
@@ -15,71 +16,66 @@ tags:
   - "Gemini CLI"
 sidebarTitle: "Short take"
 sidebarPoints:
-  - "The new boundary is no longer single-line suggestions, but safely delegating whole units of engineering work."
-  - "Teams should choose CLI agents by context handling, execution model, review gates and integration risk."
+  - "The useful comparison is not a model leaderboard. It is which unit of work a team can delegate while keeping the resulting change understandable to a human reviewer."
+  - "A good pilot gives an agent small reproducible tasks, known commands and a hard boundary before risky actions."
 relatedTools:
   - title: "OpenAI Codex"
-    href: "/tools/openai-codex/"
+    href: "/en/tools/openai-codex/"
   - title: "Claude"
-    href: "/tools/claude/"
+    href: "/en/tools/claude/"
   - title: "Gemini"
-    href: "/tools/gemini/"
+    href: "/en/tools/gemini/"
   - title: "GitHub Copilot"
-    href: "/tools/github-copilot/"
+    href: "/en/tools/github-copilot/"
   - title: "Cursor"
-    href: "/tools/cursor/"
+    href: "/en/tools/cursor/"
 ---
-Coding agents in 2026 are no longer just a smarter autocomplete bar. They read repositories, plan changes, edit files, run tests and explain why a diff should be accepted. That is why the old question — “Which model writes the nicest code?” — is no longer enough. The real question is which tool fits the engineering workflow around it.
 
-Three names now show up on many shortlists: [OpenAI Codex CLI](/tools/openai-codex/), [Anthropic](/tools/anthropic/) [Claude Code](/tools/claude/) and Google [Gemini CLI](/tools/gemini/). All three promise a shift from assistance to delegation. In practice, they differ in how they absorb context, how transparently they act and how easily teams can wrap them in review and CI gates.
+At 4:40 pm, the ticket sounds modest: a broken exception path in an import screen, probably two files. Twenty-five minutes later an agent has prepared a twelve-file diff, renamed a helper, added tests and proposed a cleanup. It all looks sensible. That is exactly why the moment is difficult.
 
-## From suggestion to delegated task
+The serious question is no longer *which coding agent is smartest?* It is *who can explain, review and own this result tomorrow morning?* [OpenAI Codex](/en/tools/openai-codex/), [Claude Code](/en/tools/claude/) and [Gemini CLI](/en/tools/gemini/) can all take work inside a repository. They are not interchangeable autocomplete windows. Each one forces a team to make a position on task scope, context and risk.
 
-The jump from [GitHub Copilot](/tools/github-copilot/)-style suggestions to agentic CLI tools is bigger than most demos suggest. A classic assistant completes a function. A coding agent receives an objective: reproduce a bug, find the cause, prepare a patch, update tests and justify the result.
+## Compare the job before you compare the model
 
-That feels fast, but it also changes responsibility. Giving an agent write access does not just delegate typing. It delegates part of the technical decision chain. The workflow around the agent becomes more important than the model alone.
+An agent becomes useful when it receives a work order rather than a wish: reproduce a defect, inspect a bounded module, prepare a narrow patch and run known checks. That sounds unglamorous. It is the difference between delegation and hope.
 
-![Engineering team comparing several coding agents around a shared repository table](/images/ratgeber/coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow-workflow-story-v1.webp)
+GitHub's own review guidance still starts with small, focused pull requests, reviewer context, self-review and tests. Agents do not retire that discipline. They make it more valuable, because an agent can touch more code, faster, than a human author normally would. A huge impressive diff is rarely a strong first pilot.
 
-## [Codex CLI](/tools/openai-codex/): strong when Git and tests already carry the process
+![Development team comparing several coding agents around a shared repository table](/images/ratgeber/coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow-workflow-story-v1.webp)
 
-[Codex CLI](/tools/openai-codex/) is most useful for teams that already split work into small, testable pieces. Its strength is not magic, but proximity to the terminal: tasks can be tied to existing project commands, test suites and review conventions.
+## Codex works when the work order is already testable
 
-The catch is simple: an agent is only as reliable as the rails around it. If the test suite is slow, flaky or shallow, [Codex](/tools/openai-codex/) also gets a weak safety net. Production use therefore needs clear task descriptions, small diffs and explicit stop points: no hidden deploy steps, no unapproved migrations and no merge without human review.
+[OpenAI Codex](/en/tools/openai-codex/) fits teams whose repository contains more than source files: runnable scripts, reliable tests, linters, previews and clear contributor guidance. OpenAI positions Codex around understanding codebases, building, testing, reviewing and shipping focused changes. The practical benefit is not a clever prompt. It is a chain a team can inspect: ticket, constrained diff, named checks, human decision.
 
-## [Claude Code](/tools/claude/): strong for long context and explanatory work
+That does not make Codex safe by default. If the test command is flaky or nobody knows which migration is dangerous, the agent inherits that uncertainty. Early work should be reproducible bugs, narrow UI or test tasks and documentation. Production access, secrets and irreversible data changes are not starter assignments.
 
-[Claude Code](/tools/claude/) is attractive when a change needs to be understood, not merely produced. Longer refactorings, architecture trade-offs and legacy codebases benefit from an assistant that can explain assumptions and ask useful follow-up questions.
+## Claude Code works when rules live outside one person's head
 
-That works best when teams document project rules: architecture decisions, coding standards, forbidden dependencies and preferred test patterns. The better these rules live in the repository, the less the agent has to guess.
+[Claude Code](/en/tools/claude/) is valuable where an assignment needs explanation as well as edits: understanding an old component, laying out a refactoring choice or making a plan before touching code. The point is not to encourage a bigger rewrite. It is to turn architectural rules into material the whole team can inspect.
 
-## [Gemini CLI](/tools/gemini/): strong for broad context and Google-adjacent workflows
+Its CLI documentation treats permissions as an explicit control surface and labels bypassing them as dangerous. That is a useful operational cue. Speed does not come from silently removing safeguards. It comes from deciding in advance which commands are safe, where an agent must stop and who resolves uncertainty.
 
-[Gemini CLI](/tools/gemini/) becomes interesting when a task needs a lot of surrounding material: monorepos, long documentation, several services or DevOps-heavy workflows. Its advantage is the ability to look across more context that smaller workflows may have to gather iteratively.
+## Gemini CLI works when context has a shape
 
-Broad context is not the same as safe output. Large repositories still need hard limits on the allowed change surface. Good prompts therefore constrain not only the goal, but also which files may be touched and which checks must pass.
+[Gemini CLI](/en/tools/gemini/) is compelling for work that crosses several levels of a project. Its `GEMINI.md` documentation describes hierarchical instructions and modular imports. In practical terms, a rule can apply to a repository, become more specific in a subdirectory, and load only where needed.
 
-## Four questions before choosing a tool
+That can help with monorepos and long-lived systems, provided the structure is maintained. Broad context is not permission to make broad changes. An agent that can read the whole repository should not therefore be allowed to rewrite it.
 
-A practical selection matrix starts with four questions:
+## Run a pilot that can actually answer something
 
-1. **How well is project context documented?** Without README files, ADRs and clear conventions, every agent has to infer too much.
-2. **Which commands may the agent run?** Tests and linters are useful; deployments, secrets and production data need hard boundaries.
-3. **How small do diffs remain?** Good agent workflows produce reviewable steps, not impressive giant patches.
-4. **Where is the human in the loop?** Human approval belongs before risky file changes, external tool calls and every merge.
+Do not compare three agents through three demos. Run one week of the same task class: reproducible defects in a low-risk module, or tests around known failure cases. Before each task, record four things: the allowed files and systems; the commands that count as evidence; the decisions that remain human; and whether a reviewer can understand the diff in one bounded pass.
 
-If those questions remain unanswered, a coding agent becomes a faster source of mistakes rather than a productivity system.
+Then judge the handoff, not the chat transcript. Was the change smaller than necessary or larger? Were assumptions visible? Could a reviewer explain it, or merely hope that green tests were enough? Those answers reveal whether an agent fits a team's way of working.
 
-## Conclusion: the frame matters more than the agent
+## The winning agent is a bounded process
 
-[Codex CLI](/tools/openai-codex/), [Claude Code](/tools/claude/) and [Gemini CLI](/tools/gemini/) show three versions of the same shift: AI is moving from writing helper to acting team member. The useful difference comes from clear tasks, isolation, tests and a review culture that treats AI output like any other production code.
+Coding agents move work from typing toward deciding. That can remove real friction when delegation stays small enough to review. [GitHub Copilot](/en/tools/github-copilot/) and [Cursor](/en/tools/cursor/) can remain the fast partner in the editor; CLI agents can take a more complete task. Neither role owns the merge.
 
-For small, testable changes, [Codex CLI](/tools/openai-codex/) is a natural fit. For explanation-heavy refactorings, [Claude Code](/tools/claude/) can be strong. For very large context windows, [Gemini CLI](/tools/gemini/) is worth evaluating. In every case, the best coding agent is not the one that writes the most. It is the one whose work can be checked most reliably.
+The right final question for Codex, Claude Code or Gemini CLI is therefore not “Who wins?” It is “What clear, reversible unit of work are we prepared to entrust to this tool next?” When a team can answer that, agent enthusiasm becomes an engineering practice.
 
 ## Sources
 
-1. [OpenAI Codex](https://help.openai.com/en/articles/11096431)
-2. [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code)
-3. [Gemini CLI documentation](https://geminicli.com/docs/)
-4. [Google Cloud Blog: Gemini CLI DevOps Extension](https://cloud.google.com/blog/topics/developers-practitioners/ship-code-within-minutes-with-the-gemini-cli-devops-extension)
-5. [Agentic AI in the Software Development Lifecycle – arXiv](https://arxiv.org/pdf/2604.26275)
+- [GitHub Docs: reviewing and preparing focused pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/helping-others-review-your-changes)
+- [OpenAI: Codex for understanding, building, testing and reviewing](https://developers.openai.com/)
+- [Anthropic: Claude Code CLI permissions](https://docs.anthropic.com/en/docs/claude-code/cli-usage)
+- [Gemini CLI: project context with GEMINI.md](https://geminicli.com/docs/cli/gemini-md/)

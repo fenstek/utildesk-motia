@@ -1,11 +1,12 @@
 ---
 slug: "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen"
-title: "Vibe coding after the hype: how teams test and review AI code"
+title: "Vibe coding after the hype: when a prototype acquires responsibility"
 date: 2026-05-19
+updated: 2026-07-28
 category: "Practice"
 eyebrow: "AI code review"
-excerpt: "Vibe coding speeds up prototypes, but production teams need verification: tests, small diffs, architecture rules and serious reviews."
-readTime: 7
+excerpt: "A working AI prototype is not a bad beginning. It becomes risky only when nobody decides under which rules it moves into a maintained product."
+readTime: 8
 coverImage: /images/ratgeber/vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen-cover-story-v1.webp
 secondaryImage: /images/ratgeber/vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen-workflow-story-v1.webp
 tags:
@@ -15,84 +16,59 @@ tags:
   - "Testing"
 sidebarTitle: "Short take"
 sidebarPoints:
-  - "Vibe coding is powerful for exploration, but risky when it moves into production without verification."
-  - "The bottleneck shifts from writing to checking: tests, review gates and architecture rules matter more."
+  - "Vibe coding is a strong method for exploration. It becomes production work only when a team deliberately moves from an experiment into a maintainable change process."
+  - "Before that move, a working screen is not enough: ownership, tests, data and permission boundaries, and a route back must be clear."
 relatedTools:
   - title: "GitHub Copilot"
-    href: "/tools/github-copilot/"
+    href: "/en/tools/github-copilot/"
   - title: "Cursor"
-    href: "/tools/cursor/"
+    href: "/en/tools/cursor/"
   - title: "Claude"
-    href: "/tools/claude/"
+    href: "/en/tools/claude/"
   - title: "OpenAI Codex"
-    href: "/tools/openai-codex/"
+    href: "/en/tools/openai-codex/"
 ---
-Vibe coding was the perfect phrase for the first rush: describe an idea, let an agent work in [Cursor](/tools/cursor/), [GitHub Copilot](/tools/github-copilot/), [Claude Code](/tools/claude/) or [OpenAI Codex](/tools/openai-codex/), then admire the result. For prototypes, that can be wonderful. For production software, it is only the beginning.
 
-The hype can hide a simple fact: AI-generated code is not automatically more maintainable, more secure or more correct. It arrives faster — and that shifts the bottleneck. Teams write less by hand, but they must verify, explain and constrain more. The real productivity question is not “How much code can AI generate?” It is “How reliably can we turn that code into a reviewable change?”
+At 5:30 pm, the demo works. The new flow displays the right data, the button responds, and the colleague from the business side can recognise her idea. With [Cursor](/en/tools/cursor/), [GitHub Copilot](/en/tools/github-copilot/), [Claude Code](/en/tools/claude/) or [OpenAI Codex](/en/tools/openai-codex/), a team has made something visible in hours that might previously have taken several rounds.
 
-## The new bottleneck is verification
+The next morning, the question changes. The same flow now has to live with real roles, partial data, a slow integration and a teammate who never saw the original chat. The prototype has not failed. Its status has changed. An exploration has become software that someone will need to understand and change.
 
-When an agent changes several files in minutes, it feels like a breakthrough. The review starts afterwards. Are the assumptions correct? Are edge cases covered? Did the change violate an existing pattern? Are tests green because they are meaningful, or because they are too shallow?
+## Vibe coding is a working mode, not a production approval
 
-That checking work costs time and attention. Some teams call it the verification tax: the speed gain in writing creates additional work in proving. This is not an argument against AI coding. It is an argument against unchecked AI code.
+The term is often used as either an accusation or a promise. Both miss the point. Vibe coding is good at making a possibility tangible: trying an interface, exposing a product question, sketching a data flow or testing a hypothesis against reality.
+
+It becomes risky when a team mistakes that strength for approval. The fact that a path works does not tell us how it behaves with missing permissions, duplicate data, unusual input or a changed requirement. An early experiment often has no complete answer to those questions by design. That is fine while it is an experiment. In production it becomes an unowned debt.
 
 ![Team sorting glowing code fragments into tests and review cards after a vibe-coding sprint](/images/ratgeber/vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen-workflow-story-v1.webp)
 
-## Small diffs beat big magic
+## Give the transition its own moment
 
-The most important practice is unspectacular: cut tasks into small pieces. An agent should not receive “build the new billing system.” It should receive a bounded step with a clear success condition.
+The worst transition happens by accident: a prototype becomes popular, gains real users and stays in the same branch because “it already works”. A short, deliberate handover is better. Not as ceremony, but as a change of status.
 
-Good prompts therefore include not only the goal, but the allowed change surface: which files may be touched, which tests must run, which architecture rules apply and which risks must not be decided automatically. Vibe coding becomes a controlled engineering assignment.
+In that conversation, answer five questions. What problem has the prototype genuinely validated? Who owns the code after the demo? What data and permissions does it touch? What needs an independent test: a happy path, a failure path, an unpleasant edge? And how do we get back if the idea does not hold up: a flag, a rollback or a clear removal route?
 
-## Tests need to harden against AI patterns
+An unanswered question is not a rejection of the idea. It is evidence that the idea is still in exploration mode.
 
-Many AI mistakes are not syntax errors. They live in assumptions: wrong defaults, missed side effects, missing authorization checks or optimistic error handling. Unit tests catch only part of that.
+## Replace the prompt with a work order
 
-Production teams combine several layers: fast unit tests, integration or contract tests for interfaces, static analysis, security checks and a preview environment for visible changes. The agent may add tests, but it should not be the only judge of its own work.
+An agent can turn a broad idea into a surprising amount of working code. Production work needs different rails from the first sketch. State not only the visible goal, but also the change boundary: which files belong to the task, which dependencies are off limits, which tests must run, and which decision must not happen automatically.
 
-## Reviews need a different checklist
+That may sound less creative. In practice it protects creativity where it matters. The team can keep using the agent for tests, documentation, narrow repairs and clearly bounded UI work without letting every request quietly become an architecture decision.
 
-AI code often looks clean. That is part of the risk: it can be stylistically convincing while choosing the wrong abstraction. Reviews should therefore ask less “does it look tidy?” and more “what proves that this is correct?”
+## What happens to speed
 
-A useful checklist is:
+Moving into a governed process costs a little speed at first. There are fewer spectacular demos and more questions about tests, interfaces and ownership. But this is not the price of productivity. It is what stops a fast prototype becoming an expensive mystery later.
 
-- Which concrete problem does the diff solve?
-- Which assumptions did the agent make?
-- Which tests prove the change?
-- Which file or layer should not have been touched?
-- Are there new dependencies, permissions or data flows?
-- Can a human explain the patch in five minutes?
+GitHub's review guidance emphasises small, focused changes, reviewer context and self-checking before a pull request. That is how a vibe-coding project matures: not by denying its experimental origin, but by turning its best idea into a series of small, explainable changes.
 
-If the last answer is no, the diff is probably too large.
+## The exit test is not “it looks finished”
 
-## Relevant tools on Utildesk
+Before prototype code enters a maintained part of a product, it should pass a simple maturity test. A person can explain its purpose and main assumptions. A new teammate can find relevant rules and commands in the repository. Tests cover more than the demo case. Permissions, data access and external side effects are named. And there is a route back if the idea fails in practice.
 
-In practice, the roles differ. [GitHub Copilot](/tools/github-copilot/) remains strong inside the editor, [Cursor](/tools/cursor/) ties AI coding closely to project context, [Claude Code](/tools/claude/) is useful for explanation-heavy agent sessions, and [OpenAI Codex](/tools/openai-codex/) fits terminal-oriented work with tests and Git discipline. The important point is not the tool name, but whether the workflow forces small diffs, reproducible tests and real review.
-
-## The workflow after the hype
-
-A stable AI-coding workflow looks more like a workshop than a magic trick:
-
-1. **Bound the task:** Define goal, files, risks and non-goals.
-2. **Isolate the agent:** Use a branch or worktree so experiments do not block daily work.
-3. **Force tests:** Run the same commands before and after the change.
-4. **Require explanation:** The agent must state assumptions, alternatives and open risks.
-5. **Review as a human:** No merge without a real look at diff, tests and architecture impact.
-
-That keeps vibe coding useful without turning it into faster technical debt.
-
-## Conclusion: less rush, more craft
-
-Vibe coding will not disappear. The term is simply growing up. The productive teams will not be the ones that generate the most AI code. They will be the ones that contain AI output best: small tasks, clear tests, hard reviews and traceable decisions.
-
-The right stance is neither hype nor rejection. It is craft: AI may bring speed, but it must pass through the same quality corridor as any other code. Only then does a good feeling become a reliable engineering process.
+This does not tame vibe coding until nothing useful remains. It preserves its best property: learning quickly. The only change is that a team consciously decides when it is still learning and when it is taking responsibility.
 
 ## Sources
 
-1. [Google DORA: ROI of AI-assisted Software Development](https://services.google.com/fh/files/misc/dora-roi-of-ai-assisted-software-development-2026.pdf)
-2. [Debt Behind the AI Boom – arXiv](https://arxiv.org/pdf/2603.28592)
-3. [JetBrains: AI tool switching is stealth friction](https://blog.jetbrains.com/ai/2026/02/ai-tool-switching-is-stealth-friction-beat-it-at-the-access-layer/)
-4. [Martin Fowler: Patterns for Reducing Friction in AI-Assisted Development](https://martinfowler.com/articles/reduce-friction-ai/)
-5. [Automated Code Review in Practice – arXiv](https://arxiv.org/pdf/2412.18531)
-6. [Sonar: State of Code Developer Survey](https://www.sonarsource.com/state-of-code-developer-survey-report.pdf)
+- [GitHub Docs: context and focused pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/helping-others-review-your-changes)
+- [GitHub Docs: reviewing changes in a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request?tool=webui)
+- [Martin Fowler: internal quality while coding with an agent](https://martinfowler.com/articles/exploring-gen-ai/ccmenu-quality.html)
