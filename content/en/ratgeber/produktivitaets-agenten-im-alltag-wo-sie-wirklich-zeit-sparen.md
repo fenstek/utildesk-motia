@@ -60,7 +60,7 @@ Productivity agents promise a simple outcome: less admin, more focus. In practic
 
 That is the difference between a pleasant AI assistant and a real productivity tool. An assistant answers questions. A productivity agent observes context, calls tools, prepares decisions, drafts responses, updates systems and hands control back to a human at the right moment.
 
-The NotebookLM draft behind this article had the right core: the market is messy, and classic chatbots often do not produce measurable relief. The human selection question is therefore not: **Which agent is smartest?** It is: **Which work loop should become shorter, and how much control may the agent receive inside it?**
+The market is messy, and classic chatbots often do not produce measurable relief. The selection question is therefore not: **Which agent is smartest?** It is: **Which work loop should become shorter, and how much control may the agent receive inside it?**
 
 ## Three layers: personal assistant, workflow agent, agent framework
 

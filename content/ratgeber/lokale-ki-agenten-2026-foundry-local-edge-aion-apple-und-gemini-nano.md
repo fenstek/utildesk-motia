@@ -56,7 +56,7 @@ Lokale KI-Agenten klingen 2026 plötzlich wieder vernünftig. Nicht, weil kleine
 
 Eine kurze Vertragszusammenfassung, ein Formularentwurf, eine lokale Übersetzung, eine Sprachtranskription, eine Suche in privaten Notizen oder eine erste Klassifikation von Supportfällen muss nicht automatisch durch eine externe API. Wenn die Aufgabe begrenzt ist, die Daten sensibel sind und das Ergebnis überprüft wird, ist lokale Inferenz oft die bessere erste Schicht.
 
-Der NotebookLM-Entwurf zu diesem Artikel hatte den richtigen Kern: Foundry Local, Edge Aion, Apple Foundation Models und Gemini Nano zeigen, dass On-device AI nicht mehr nur Bastelthema ist. In der Redaktion haben wir aber einige überhitzte Aussagen gestrichen. Lokale KI ist keine Souveränitätsmagie. Sie ist ein Architekturbaustein: weniger Latenz, weniger laufende Tokenkosten, bessere Offlinefähigkeit und ein stärkeres Datenschutzargument, aber nur mit sauberem Geräte-, Update- und Governance-Modell.
+Foundry Local, Edge Aion, Apple Foundation Models und Gemini Nano zeigen, dass On-device AI nicht mehr nur Bastelthema ist. Lokale KI ist keine Souveränitätsmagie. Sie ist ein Architekturbaustein: weniger Latenz, weniger laufende Tokenkosten, bessere Offlinefähigkeit und ein stärkeres Datenschutzargument, aber nur mit sauberem Geräte-, Update- und Governance-Modell.
 
 Die praktische Frage lautet deshalb nicht: **Cloud oder lokal?** Sondern: **Welcher Teil des Agenten-Workflows gehört auf das Gerät, welcher in den Browser, welcher in die App und welcher weiterhin in eine kontrollierte Cloud?**
 

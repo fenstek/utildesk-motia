@@ -56,7 +56,7 @@ Local AI agents suddenly feel reasonable again in 2026. Not because small models
 
 A short contract summary, a form draft, a local translation, speech transcription, search across private notes or first-pass support classification does not automatically need an external API. If the task is narrow, the data is sensitive and the output is reviewed, local inference is often the better first layer.
 
-The NotebookLM draft behind this article had the right core: Foundry Local, Edge Aion, Apple Foundation Models and Gemini Nano show that on-device AI is no longer just a hobbyist topic. During the editorial pass we removed several overconfident claims. Local AI is not sovereignty magic. It is an architecture component: lower latency, fewer recurring token costs, stronger offline behavior and a better privacy argument, but only with a clean device, update and governance model.
+Foundry Local, Edge Aion, Apple Foundation Models and Gemini Nano show that on-device AI is no longer just a hobbyist topic. Local AI is not sovereignty magic. It is an architecture component: lower latency, fewer recurring token costs, stronger offline behavior and a better privacy argument, but only with a clean device, update and governance model.
 
 The practical question is therefore not: **cloud or local?** It is: **which part of an agent workflow belongs on the device, which part belongs in the browser, which part belongs in the app and which part still needs a controlled cloud?**
 

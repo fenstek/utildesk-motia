@@ -83,7 +83,7 @@ Für Teams ist die wichtigste Unterscheidung: Atlas wirkt näher am persönliche
 
 ## WebMCP: Websites sollen nicht mehr erraten werden
 
-Der NotebookLM-Entwurf hat WebMCP zu Recht als wichtigen Gegenpol zur reinen visuellen Bedienung markiert. Heute müssen viele Browser-Agenten eine Seite wie ein Mensch benutzen: Screenshot ansehen, DOM prüfen, Button deuten, klicken, Ergebnis beobachten. Das funktioniert in Demos, wird aber bei dynamischen Single-Page-Apps, versteckten Zuständen und mehrstufigen Formularen schnell spröde.
+WebMCP ist ein wichtiger Gegenpol zur reinen visuellen Bedienung. Heute müssen viele Browser-Agenten eine Seite wie ein Mensch benutzen: Screenshot ansehen, DOM prüfen, Button deuten, klicken, Ergebnis beobachten. Das funktioniert in Demos, wird aber bei dynamischen Single-Page-Apps, versteckten Zuständen und mehrstufigen Formularen schnell spröde.
 
 WebMCP will diese Lücke schließen. Die Idee: Eine Website kann dem Browser-Agenten strukturierte Tools anbieten. Statt zu raten, welcher Button den Supportfall anlegt, deklariert die Seite eine Aktion wie `create_ticket` mit Beschreibung, Eingaben und Rückgabeformat. Chrome for Developers beschreibt WebMCP als frühen Preview-Ansatz, mit dem Websites eine aktive Rolle in der Interaktion mit Agenten bekommen sollen.
 

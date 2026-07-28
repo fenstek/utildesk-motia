@@ -58,7 +58,7 @@ The most uncomfortable AI-agent failure can look healthy in monitoring. The serv
 
 Still, the agent may have treated an external webpage as an internal instruction, misclassified a customer note, called a tool with overly broad permissions or presented an unfinished research step as a safe decision. That is where agent observability starts. It is not simply "more logs for AI". It is the attempt to make an agent's decision path visible enough that a team can inspect, compare and improve it.
 
-The NotebookLM draft behind this article had the right core: agents become production-ready only when their behavior becomes traceable. During the editorial pass we made the piece more concrete. No benchmark magic, no claim that observability solves everything. The more useful truth is narrower: traces help a lot, but only when they connect model calls, tools, source provenance, permissions and human approvals.
+Agents become production-ready only when their behavior becomes traceable. No benchmark magic, no claim that observability solves everything: traces help a lot, but only when they connect model calls, tools, source provenance, permissions and human approvals.
 
 ## Why normal monitoring is not enough
 

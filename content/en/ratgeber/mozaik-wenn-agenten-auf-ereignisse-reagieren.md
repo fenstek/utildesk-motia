@@ -54,7 +54,7 @@ One agent searches a repository, another writes a patch, and a third is meant to
 
 [Mozaik](https://mozaik.jigjoy.ai/) approaches that problem not as another prompt wrapper but as a TypeScript runtime for reactive agents. Participants can see a shared environment and react to messages, tool results, model streaming and error events. That is an interesting direction for engineering teams, but it is not permission to let agents loose without a plan. The benefit appears only when events, states and responsibility are designed as carefully as APIs.
 
-The NotebookLM draft behind this guide had the right core: parallel agent work moves the bottleneck from writing to understanding and verification. The editorial version turns that into a practical question: **when is a reactive bus more useful than a well-bounded workflow?**
+Parallel agent work moves the bottleneck from writing to understanding and verification. The practical question is: **when is a reactive bus more useful than a well-bounded workflow?**
 
 ## What Mozaik models differently
 

@@ -83,7 +83,7 @@ For teams, the useful distinction is this: Atlas feels closer to a personal assi
 
 ## WebMCP: websites should stop being guessed
 
-The NotebookLM draft was right to treat WebMCP as an important counterweight to purely visual browser control. Today many browser agents have to use a site like a human: look at a screenshot, inspect the DOM, infer the button, click, observe the result. That works in demos, but it becomes brittle in dynamic single-page apps, hidden states and multi-step forms.
+WebMCP is an important counterweight to purely visual browser control. Today many browser agents have to use a site like a human: look at a screenshot, inspect the DOM, infer the button, click, observe the result. That works in demos, but it becomes brittle in dynamic single-page apps, hidden states and multi-step forms.
 
 WebMCP tries to close that gap. The idea: a website can expose structured tools to the browser agent. Instead of guessing which button creates a support case, the page can declare an action such as `create_ticket` with a description, inputs and return shape. Chrome for Developers describes WebMCP as an early-preview approach that lets websites play an active role in how agents interact with them.
 
