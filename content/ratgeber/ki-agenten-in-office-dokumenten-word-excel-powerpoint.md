@@ -50,7 +50,7 @@ decisionNote: "Die produktive Einheit ist nicht der Agent allein, sondern ein ko
 ---
 Der Auftrag klingt harmlos: „Aktualisiere die Quartalszahlen, passe die Präsentation an und schicke sie an die Geschäftsführung.“ Für einen Menschen ist das ein Satz. Für einen Office-Agenten sind es mindestens vier verschiedene Eingriffe: Daten lesen, einen Entwurf erzeugen, bestehende Dateien überschreiben und das Ergebnis versenden. In dieser Kette liegen zwischen einer hilfreichen Automatisierung und einem peinlichen oder teuren Fehler nur wenige unsichtbare Klicks.
 
-Das Beispiel ist bewusst hypothetisch. Es zeigt aber, warum die übliche Frage nach dem „besten Modell“ am Problem vorbeigeht. Entscheidend ist nicht, ob Copilot oder ein externer Agent einen guten Text formuliert. Entscheidend ist, welche Handlung das System ohne erneute Freigabe ausführen darf. Welche Rechte braucht ein Office-Agent also, damit er Arbeit abnimmt, ohne selbst zum Herausgeber zu werden?
+Das Beispiel ist bewusst hypothetisch. Es zeigt aber, warum die übliche Frage nach dem „besten Modell“ am Problem vorbeigeht. Entscheidend ist nicht, ob [Microsoft Copilot](/tools/microsoft-copilot/) oder ein externer Agent einen guten Text formuliert. Entscheidend ist, welche Handlung das System ohne erneute Freigabe ausführen darf. Welche Rechte braucht ein Office-Agent also, damit er Arbeit abnimmt, ohne selbst zum Herausgeber zu werden?
 
 ## Vier Verben, vier Rechte
 
@@ -60,13 +60,13 @@ Diese Trennung klingt zunächst bürokratisch. Tatsächlich macht sie Automatisi
 
 ## Copilot kennt den Zugriff, nicht die Wahrheit
 
-Microsoft 365 Copilot arbeitet dort, wo viele Unternehmen ihre Dokumente ohnehin verwalten: in Word, Excel, PowerPoint, Outlook und Microsoft Graph. Microsoft beschreibt, dass Copilot nur Organisationsdaten zeigt, auf die der jeweilige Nutzer zugreifen darf. Diese bestehende Identitäts- und Berechtigungslogik ist ein großer Vorteil. Der Agent muss nicht neben dem Tenant eine zweite Schattenwelt mit kopierten Dateien aufbauen.
+[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365-copilot) arbeitet dort, wo viele Unternehmen ihre Dokumente ohnehin verwalten: in Word, Excel, PowerPoint, Outlook und Microsoft Graph. Microsoft beschreibt, dass Copilot nur Organisationsdaten zeigt, auf die der jeweilige Nutzer zugreifen darf. Diese bestehende Identitäts- und Berechtigungslogik ist ein großer Vorteil. Der Agent muss nicht neben dem Tenant eine zweite Schattenwelt mit kopierten Dateien aufbauen.
 
 Doch die Berechtigung beantwortet nur eine Zugriffsfrage. Sie sagt nicht, ob eine Excel-Formel die Kennzahl korrekt definiert, ob ein Absatz die aktuelle Vertragslage wiedergibt oder ob eine Präsentation die freigegebene Zahl statt eines alten Entwurfs verwendet. Ein Nutzer kann vollkommen berechtigt sein, eine falsche Datei zu lesen. Copilot erbt dann den erlaubten Kontext – nicht automatisch dessen Wahrheit.
 
 ## OfficeCLI gibt dem Agenten Augen
 
-OfficeCLI wählt ein anderes Kontrollmodell. Das Open-Source-Werkzeug arbeitet als einzelnes Binary ohne installierte Office-Anwendung und kann Dateien aus Word, Excel und PowerPoint lesen, verändern und neu erzeugen. Besonders interessant ist der eingebaute Rendering-Schritt: Dokumente lassen sich als HTML oder PNG darstellen. Ein Agent kann dadurch nicht nur die Dateistruktur prüfen, sondern auch sehen, ob ein Titel überläuft oder zwei Elemente übereinanderliegen.
+[OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) wählt ein anderes Kontrollmodell. Das Open-Source-Werkzeug arbeitet als einzelnes Binary ohne installierte Office-Anwendung und kann Dateien aus Word, Excel und PowerPoint lesen, verändern und neu erzeugen. Besonders interessant ist der eingebaute Rendering-Schritt: Dokumente lassen sich als HTML oder PNG darstellen. Ein Agent kann dadurch nicht nur die Dateistruktur prüfen, sondern auch sehen, ob ein Titel überläuft oder zwei Elemente übereinanderliegen.
 
 ![Papierbrücke, Prüfmarke und Lupe als kontrollierter Weg vom Agentenentwurf zur freigegebenen Datei](/images/ratgeber/ki-agenten-in-office-dokumenten-word-excel-powerpoint-workflow.webp)
 

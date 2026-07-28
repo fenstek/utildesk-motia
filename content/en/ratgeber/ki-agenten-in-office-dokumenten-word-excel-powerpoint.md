@@ -50,7 +50,7 @@ decisionNote: "The production unit is not the agent alone, but a controlled docu
 ---
 The request sounds harmless: “Update the quarterly figures, revise the presentation, and send it to the executive team.” For a person, that is one sentence. For an Office agent, it contains at least four different interventions: reading data, creating a draft, overwriting existing files, and sending the result. Only a few invisible clicks separate useful automation from an embarrassing or expensive mistake.
 
-The example is deliberately hypothetical. It shows why the usual question about the “best model” misses the real problem. What matters is not whether Copilot or an external agent can write good prose. What matters is which action the system may perform without asking again. What permissions does an Office agent need to remove work without becoming the publisher?
+The example is deliberately hypothetical. It shows why the usual question about the “best model” misses the real problem. What matters is not whether [Microsoft Copilot](/en/tools/microsoft-copilot/) or an external agent can write good prose. What matters is which action the system may perform without asking again. What permissions does an Office agent need to remove work without becoming the publisher?
 
 ## Four verbs, four permissions
 
@@ -60,13 +60,13 @@ This separation initially sounds bureaucratic. In practice, it is what makes aut
 
 ## Copilot knows access, not truth
 
-Microsoft 365 Copilot works where many organisations already manage documents: Word, Excel, PowerPoint, Outlook, and Microsoft Graph. Microsoft states that Copilot exposes only organisational data the current user is authorised to access. Reusing that identity and permission model is a major advantage. The agent does not need to create a second shadow environment full of copied files beside the tenant.
+[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365-copilot) works where many organisations already manage documents: Word, Excel, PowerPoint, Outlook, and Microsoft Graph. Microsoft states that Copilot exposes only organisational data the current user is authorised to access. Reusing that identity and permission model is a major advantage. The agent does not need to create a second shadow environment full of copied files beside the tenant.
 
 But permission answers only an access question. It does not establish whether an Excel formula defines a metric correctly, whether a paragraph reflects the current contract, or whether a presentation uses the approved number instead of an old draft. A user can be fully authorised to read the wrong file. Copilot inherits permitted context, not the truth of that context.
 
 ## OfficeCLI gives the agent eyes
 
-OfficeCLI uses a different control model. The open-source tool runs as a single binary without an installed Office application and can read, modify, and create Word, Excel, and PowerPoint files. Its built-in rendering step is especially useful: documents can be rendered to HTML or PNG. An agent can therefore inspect not only file structure, but also whether a title overflows or two elements overlap.
+[OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) uses a different control model. The open-source tool runs as a single binary without an installed Office application and can read, modify, and create Word, Excel, and PowerPoint files. Its built-in rendering step is especially useful: documents can be rendered to HTML or PNG. An agent can therefore inspect not only file structure, but also whether a title overflows or two elements overlap.
 
 ![A paper bridge, approval mark and magnifying glass showing a controlled path from draft to approved file](/images/ratgeber/ki-agenten-in-office-dokumenten-word-excel-powerpoint-workflow.webp)
 
