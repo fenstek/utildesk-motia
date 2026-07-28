@@ -58,7 +58,7 @@ Der unangenehmste Fehler eines KI-Agenten sieht im Monitoring oft gesund aus. De
 
 Trotzdem hat der Agent vielleicht eine externe Webseite als interne Anweisung gelesen, eine Kundennotiz falsch klassifiziert, ein Tool mit zu breiten Rechten ausgeführt oder eine halbfertige Recherche als sichere Entscheidung verkauft. Genau hier beginnt Agent Observability. Sie ist nicht die KI-Version von "mehr Logs". Sie ist der Versuch, den Entscheidungsweg eines Agenten so sichtbar zu machen, dass ein Team ihn prüfen, vergleichen und verbessern kann.
 
-Der NotebookLM-Entwurf zu diesem Artikel hatte den richtigen Kern: Agenten werden erst dann produktionsreif, wenn ihr Verhalten nachvollziehbar wird. In der Redaktion haben wir den Text stärker geerdet. Keine Benchmark-Magie, keine "Observability löst alles"-Erzählung. Die nüchterne Wahrheit ist besser: Traces helfen enorm, aber nur, wenn sie Modellaufrufe, Tools, Datenherkunft, Rechte und menschliche Freigaben zusammenführen.
+Agenten werden erst dann produktionsreif, wenn ihr Verhalten nachvollziehbar wird. Keine Benchmark-Magie, keine "Observability löst alles"-Erzählung: Traces helfen enorm, aber nur, wenn sie Modellaufrufe, Tools, Datenherkunft, Rechte und menschliche Freigaben zusammenführen.
 
 ## Warum normales Monitoring nicht reicht
 

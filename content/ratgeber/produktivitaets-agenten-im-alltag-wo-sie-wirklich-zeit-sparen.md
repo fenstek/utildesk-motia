@@ -60,7 +60,7 @@ Produktivitäts-Agenten klingen nach einem einfachen Versprechen: weniger Kleink
 
 Das ist der Unterschied zwischen einem netten KI-Assistenten und einem echten Produktivitätswerkzeug. Ein Assistent beantwortet Fragen. Ein Produktivitäts-Agent beobachtet einen Kontext, ruft Werkzeuge auf, bereitet Entscheidungen vor, schreibt Entwürfe, aktualisiert Systeme und gibt an der richtigen Stelle zurück an den Menschen.
 
-Der NotebookLM-Entwurf dieser Analyse hatte den richtigen Kern: Der Markt ist unübersichtlich, und klassische Chatbots reichen für messbare Entlastung oft nicht. Die menschliche Auswahlfrage lautet deshalb nicht: **Welcher Agent ist am schlauesten?** Sondern: **Welche Arbeitsschleife soll kürzer werden, und wie viel Kontrolle darf der Agent darin bekommen?**
+Der Markt ist unübersichtlich, und klassische Chatbots reichen für messbare Entlastung oft nicht. Die Auswahlfrage lautet deshalb nicht: **Welcher Agent ist am schlauesten?** Sondern: **Welche Arbeitsschleife soll kürzer werden, und wie viel Kontrolle darf der Agent darin bekommen?**
 
 ## Drei Ebenen: persönlicher Assistent, Workflow-Agent, Agenten-Framework
 

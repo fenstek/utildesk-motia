@@ -54,7 +54,7 @@ Ein Agent sucht im Repository, ein zweiter schreibt einen Patch, ein dritter sol
 
 [Mozaik](https://mozaik.jigjoy.ai/) versucht dieses Problem nicht mit einem weiteren Prompt-Wrapper zu loesen, sondern mit einer TypeScript-Runtime fuer reaktive Agenten. Teilnehmer sehen einen gemeinsamen Umgebungszustand und reagieren auf Nachrichten, Tool-Ergebnisse, Modell-Streaming und Fehlerereignisse. Das ist ein spannender Ansatz fuer Engineering-Teams, aber keine Lizenz, Agenten ohne Ablaufplan loszulassen. Der Gewinn entsteht erst, wenn Ereignisse, Zustaende und Verantwortlichkeiten genauso sorgfaeltig entworfen werden wie APIs.
 
-Der NotebookLM-Entwurf zu diesem Beitrag hatte die richtige Kernidee: Bei paralleler Agentenarbeit verschiebt sich der Engpass vom Schreiben zum Verstehen und Absichern. In der Redaktion haben wir daraus keine Produktverheissung, sondern eine praktische Frage gemacht: **Wann ist ein reaktiver Bus hilfreicher als ein gut begrenzter Workflow?**
+Bei paralleler Agentenarbeit verschiebt sich der Engpass vom Schreiben zum Verstehen und Absichern. Die praktische Frage lautet: **Wann ist ein reaktiver Bus hilfreicher als ein gut begrenzter Workflow?**
 
 ## Was Mozaik konkret anders modelliert
 
