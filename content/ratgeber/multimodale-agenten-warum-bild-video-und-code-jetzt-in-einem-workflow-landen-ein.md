@@ -1,126 +1,94 @@
 ---
 slug: "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"
-title: "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen"
+title: "Multimodale Agenten: Wenn ein Screenshot mehr sagt als ein Prompt"
 date: 2026-05-11
+updated: 2026-07-28
 category: "Einordnung"
 eyebrow: "KI-Einordnung"
-excerpt: "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
-readTime: 6
+excerpt: "Multimodale Agenten können Text, Screenshots, Dokumente und Code zusammen lesen. Nützlich werden sie nicht durch das Sehen allein, sondern durch einen überprüfbaren Arbeitsablauf."
+readTime: 7
 coverImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-cover.webp
 secondaryImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.webp
 tags:
   - "Multimodal"
   - "KI-Agenten"
   - "Workflows"
-  - "Explainer"
+  - "Einordnung"
 sidebarTitle: "Kurzfazit"
 sidebarPoints:
-  - "Die Ära der reinen Text-KI neigt sich ihrem Ende zu."
-  - "Der entscheidende Unterschied zu früheren Systemen liegt in der Architektur der zugrunde liegenden Modelle."
+  - "Ein Bild macht einen Agenten nicht zuverlässig: Er braucht einen klaren Auftrag und eine prüfbare Ausgabe."
+  - "Multimodalität lohnt sich dort, wo Text allein den Arbeitsgegenstand nicht beschreibt."
+  - "Die Freigabe für Änderungen gehört bei Menschen, nicht bei einem Screenshot-Interpreter."
 relatedTools:
   - title: "Claude"
     href: "/tools/claude/"
-  - title: "GitHub Copilot"
-    href: "/tools/github-copilot/"
   - title: "Cursor"
     href: "/tools/cursor/"
-  - title: "Aider"
-    href: "/tools/aider/"
-  - title: "Vyrill"
-    href: "/tools/vyrill/"
-  - title: "Naoma AI"
-    href: "/tools/naoma-ai/"
-  - title: "Hera"
-    href: "/tools/hera/"
+  - title: "GitHub Copilot"
+    href: "/tools/github-copilot/"
+  - title: "Playwright"
+    href: "/tools/playwright/"
   - title: "LangChain"
     href: "/tools/langchain/"
   - title: "CrewAI"
     href: "/tools/crew-ai/"
 ---
-Die Ära der reinen Text-KI neigt sich ihrem Ende zu. Während wir uns in den letzten Jahren daran gewöhnt haben, dass Sprachmodelle exzellente Texte verfassen oder Code-Fragmente korrigieren, findet derzeit ein fundamentaler Paradigmenwechsel statt.
 
-Wir beobachten den Aufstieg multimodaler Agenten, die nicht mehr nur lesen und schreiben, sondern sehen, hören und eigenständig in komplexen visuellen Umgebungen handeln können. Es geht nicht mehr um isolierte Tools für verschiedene Medientypen, sondern um eine nahtlose Integration, bei der Bild, Video und Code in einem einzigen, kohärenten Workflow verschmelzen.
+Eine Produktseite ist auf dem Laptop geöffnet. Im Ticket steht nur: „Der Preis wirkt auf Mobilgeräten abgeschnitten.“ Ein reines Sprachmodell kann den Satz umformulieren. Ein multimodaler Agent kann Screenshot, DOM-Struktur, CSS-Datei und Testbericht nebeneinander halten. Das ist der interessante Teil der Entwicklung: nicht, dass ein Modell Bilder sehen kann, sondern dass es zwischen verschiedenen Belegen einen Arbeitsweg baut.
 
-## Relevante Tools auf Utildesk
+Genau hier wird der Begriff oft zu groß. „Multimodal“ heißt zunächst nur, dass ein System mehr als Text verarbeitet: Bilder, Audio, Video, PDFs oder Oberflächen. Daraus folgt noch nicht, dass es eine Aufgabe sicher plant, Änderungen richtig ausführt oder das Ergebnis versteht. Für Teams ist deshalb nicht die Modell-Demo entscheidend, sondern die Frage: **Wo ergänzt das zusätzliche Signal eine Entscheidung, die mit Text allein zu unsicher wäre?**
 
-Wenn du das Thema nicht nur einordnen, sondern praktisch vergleichen willst, sind diese Werkzeuge und Frameworks ein guter Startpunkt:
+## Der Unterschied zwischen Sehen und Arbeiten
 
-- [Claude](/tools/claude/) - wenn du agentische Coding-Sessions im Terminal oder in der IDE praktisch gegen den Alltag prüfen willst.
-- [GitHub Copilot](/tools/github-copilot/) - als Referenz für den produktiven Copilot-Layer direkt im Editor.
-- [Cursor](/tools/cursor/) - wenn du einen stärker agentischen IDE-Workflow mit eigenem Arbeitskontext vergleichen willst.
-- [Aider](/tools/aider/) - falls du Git-nahe Coding-Sessions lieber direkt im Terminal steuerst.
-- [LangChain](/tools/langchain/) - wenn du die Orchestrierungslogik und den Framework-Layer hinter Agenten verstehen willst.
-- [CrewAI](/tools/crew-ai/) - wenn dich kollaborative Multi-Agent-Flows mit Guardrails und Observability interessieren.
+Ein Screenshot kann einen Fehler zeigen, aber selten seine Ursache. Ein Agent, der einen Screenshot liest, kann etwa erkennen, dass ein Button am rechten Rand fehlt. Um daraus eine brauchbare Arbeitseinheit zu machen, braucht er weitere Schritte: die betroffene URL, den Zustand des Browsers, relevante Dateien, einen reproduzierbaren Test und ein Zielbild.
 
-## Der technische Kern: Native Multimodalität statt Hilfsschnittstellen
+Das gilt genauso für Dokumente. Eine Rechnung als PDF enthält Tabellen, Stempel, handschriftliche Notizen und manchmal eine mehrdeutige Position. Ein Modell kann die Seite einordnen; die Buchung wird erst verlässlich, wenn Felder extrahiert, gegen Regeln geprüft und bei Unsicherheit zur Freigabe vorgelegt werden. Multimodalität ist damit kein Ersatz für Struktur. Sie liefert Kontext, den die Struktur anschliessend verarbeiten muss.
 
-Der entscheidende Unterschied zu früheren Systemen liegt in der Architektur der zugrunde liegenden Modelle. Lange Zeit fungierte die visuelle Wahrnehmung lediglich als vorgeschaltetes Modul, das Informationen für ein Sprachmodell übersetzte. Neue Ansätze wie das Modell GLM-5V-Turbo brechen mit diesem Prinzip: Hier ist die multimodale Perzeption ein nativer Kernbestandteil der Logik, Planung und Ausführung.
+Ein guter Arbeitsablauf trennt deshalb vier Dinge:
 
-Das Modell "sieht" die Benutzeroberfläche oder ein Video direkt als Teil seines Denkprozesses, anstatt auf eine externe Beschreibung angewiesen zu sein.
+1. **Wahrnehmung:** Was ist im Bild, Dokument oder Browser tatsächlich sichtbar?
+2. **Behauptung:** Welche Erklärung leitet der Agent daraus ab?
+3. **Aktion:** Was darf er als Nächstes lesen, testen oder vorbereiten?
+4. **Nachweis:** Woran erkennt ein Mensch oder ein Test, dass das Ergebnis stimmt?
 
-Diese native Integration ermöglicht es Agenten, heterogene Kontexte wie Webseiten, Dokumente, GUIs und Videos unmittelbar zu interpretieren. In der Praxis bedeutet das eine deutlich höhere Zuverlässigkeit bei der Werkzeugnutzung (Tool Use) und der Ausführung von Aufgaben, die visuelles Feedback erfordern.
+Wenn diese Ebenen in einem langen Chat verschwimmen, wirkt der Agent beeindruckend und bleibt doch schwer kontrollierbar.
 
-Wenn ein Agent eine komplexe Software bedienen soll, muss er verstehen, wie sich die grafische Oberfläche bei einer Interaktion verändert – eine Fähigkeit, die GLM-5V-Turbo durch integriertes Reinforcement Learning und hierarchische Optimierung gezielt schult.
+## Ein sinnvoller erster Einsatz: visuelle Regression mit Code-Kontext
 
-## Werkzeuge im Einsatz: Von Video-Commerce bis zu automatisierten Demos
+Für Produktteams ist UI-Qualität ein gutes Pilotfeld. Der Agent erhält eine feste Teststrecke, Referenz-Screenshots und Zugriff auf ein begrenztes Repository. Er darf Unterschiede beschreiben, die betroffene Komponente suchen und einen Patch **vorschlagen**. Der Build, der Screenshot-Vergleich und die Freigabe bleiben getrennte Stationen.
 
-Die theoretische Reife dieser Technologie spiegelt sich bereits in einer Vielzahl spezialisierter Anwendungen wider. Wir sehen derzeit eine Welle von Werkzeugen, die multimodale Fähigkeiten für sehr spezifische Geschäftsprozesse nutzbar machen.
+Hier ergänzen sich Werkzeuge mit unterschiedlichen Aufgaben. [Playwright](/tools/playwright/) kann Zustände reproduzierbar im Browser erzeugen. [Cursor](/tools/cursor/) oder [GitHub Copilot](/tools/github-copilot/) helfen beim Lesen und Entwerfen einer Code-Änderung. [Claude](/tools/claude/) eignet sich, um Belege, Anforderungen und offene Fragen in einer längeren Untersuchung zusammenzuführen. Keines dieser Werkzeuge macht aus einem unscharfen Ticket automatisch eine sichere Änderung. Zusammen können sie aber die Zeit zwischen Fund und überprüfbarem Vorschlag verkürzen.
 
-* **[Vyrill](/tools/vyrill/):** Diese Plattform nutzt agentische Infrastruktur, um die Suche und Monetarisierung von Video-Inhalten zu automatisieren. Es geht hierbei nicht nur um das bloße Abspielen, sondern um ein tiefes Verständnis des Videoinhalts für den E-Commerce.
-* **[Naoma AI](/tools/naoma-ai/):** Ein spezialisierter Video-KI-Agent für den B2B-SaaS-Bereich. Er erstellt sofortige Demos, was den Vertriebsprozess massiv beschleunigt, indem er Produktfunktionen visuell und inhaltlich korrekt präsentiert.
-* **[Hera](/tools/hera/):** Dieses Tool zielt auf die Erstellung von Launch-Videos in Studioqualität ab. Es kombiniert KI-gestützte Videoproduktion mit einem agentischen Ansatz, um professionelles Marketingmaterial effizienter zu gestalten.
+Wichtig ist die Reihenfolge: Der visuelle Befund darf eine Untersuchung auslösen, nicht die Produktion verändern. Ein Agent, der „Button fehlt“ sieht, sollte zuerst die viewport-Grösse, den Zustand und den Vergleichsstand dokumentieren. Erst danach ist ein Patch sinnvoll.
 
-Für Entwickler und Power-User bieten Frameworks wie MiniMax CLI die Möglichkeit, eigenen Agenten native multimodale Fähigkeiten zu verleihen. Gleichzeitig drängen Schwergewichte wie Xiaomi mit den MiMo-V2-Pro- und Omni-Modellen auf den Markt, um Flaggschiff-Lösungen für omnimodale Anwendungen zu etablieren.
+![Multimodaler Workflow für Bild, Dokument und Code](/images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.webp)
 
-Auch spezialisierte Hochgeschwindigkeitsmodelle wie GLM-5-Turbo, die für Frameworks wie [OpenClaw](/tools/openclaw/) optimiert sind, zeigen, dass die Latenzzeiten bei der Verarbeitung visueller Daten drastisch sinken.
+## Wo Video und Audio wirklich helfen
 
-## Praktische Bewertung: Was das für Teams und Workflows bedeutet
+Bei Video ist die Versuchung besonders gross, alles zu automatisieren. Für Support, Forschung oder Compliance kann ein Agent lange Aufzeichnungen in Abschnitte teilen, Sprecherwechsel markieren und zu einer konkreten Stelle springen. Das spart Suchzeit. Eine Zusammenfassung darf aber nicht stillschweigend als Protokoll gelten, wenn später Entscheidungen, Zusagen oder Risiken davon abhängen.
 
-Für Teams, die KI-Workflows in ihre Prozesse integrieren, verschiebt sich der Fokus von der reinen Texterstellung hin zur Prozessautomatisierung in visuellen Umgebungen.
+Die robuste Variante arbeitet mit Verweisen: Zeitstempel, Originalausschnitt, Transkript und eine Kennzeichnung, ob es sich um eine Beobachtung oder eine Interpretation handelt. Bei Audio gilt das Gleiche. Namen, Zahlen und Negationen sind genau die Details, bei denen eine flüssige Zusammenfassung am teuersten irren kann.
 
-Ein klassisches Szenario wäre die Software-Qualitätssicherung: Ein Agent könnte nicht nur den Code einer Web-App analysieren, sondern die App tatsächlich im Browser öffnen, visuelle Fehler identifizieren und gleichzeitig den Fix im Code-Repository vorschlagen.
+## Drei Grenzen, die man vor dem Pilot setzen sollte
 
-Entscheidend für die Auswahl der Tools ist dabei die Tiefe der Integration. Teams sollten prüfen, ob ein Tool lediglich ein "Wrapper" um ein Sprachmodell ist oder ob es auf nativen multimodalen Modellen basiert, die visuelle Daten ohne Informationsverlust verarbeiten können.
+**Erstens: Nicht jeder Bildschirm ist ein Arbeitsauftrag.** Persönliche Daten, Kundendaten oder Zugangsdaten können in Screenshots stecken. Der kleinste notwendige Bildausschnitt, eine definierte Aufbewahrung und ein Verbot für geheime Bereiche gehören vor die Modellwahl.
 
-Die Fähigkeit zur hierarchischen Planung und zur verlässlichen End-to-End-Verifikation, wie sie bei GLM-5V-Turbo hervorgehoben wird, ist ein wichtiges Qualitätsmerkmal für stabile Workflows. Ein Agent, der seine eigenen Handlungsschritte visuell überprüft, produziert deutlich weniger Fehler als ein System, das blind Befehlsketten abarbeitet.
+**Zweitens: Ein Modell kann UI-Zustände verwechseln.** Ladeindikatoren, A/B-Tests, Lokalisierung und responsive Ansichten erzeugen Unterschiede, die kein Fehler sind. Deshalb braucht der Pilot eine feste Umgebung und einen Rückkanal: „unsicher“ ist ein zulässiges Ergebnis.
 
-![KI-gestützte Videoproduktion mit multimodalem Workflow](/images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.webp)
+**Drittens: Werkzeugzugriff ist mächtiger als Bilderkennung.** Sobald ein Agent klicken, Dateien ändern oder Daten exportieren darf, sind Rollen, Freigaben und ein nachvollziehbares Log wichtiger als die Qualität seiner Bildbeschreibung. Für Orchestrierung können Frameworks wie [LangChain](/tools/langchain/) oder [CrewAI](/tools/crew-ai/) helfen; sie ersetzen aber weder Berechtigungen noch Tests.
 
-## Grenzen, Risiken und notwendige Guardrails
+## So testet ein Team ohne Theater
 
-Trotz der beeindruckenden Fortschritte ist der Einsatz multimodaler Agenten mit spezifischen Trade-offs verbunden. Die Verarbeitung von Bild- und Videodaten in Echtzeit erfordert enorme Rechenressourcen, was sich in höheren Kosten und potenziellen Latenzproblemen niederschlagen kann.
+Nimm einen wiederkehrenden Vorgang mit sichtbarem Ergebnis: zehn mobile UI-Prüfungen, zwanzig eingehende PDFs oder eine klar begrenzte Videoanalyse. Messe nicht nur Geschwindigkeit. Zähle falsche Befunde, ungeklärte Fälle, nötige Nacharbeit und Fälle, in denen der Agent zu selbstsicher war.
 
-Zudem steigt die Komplexität der Fehlerquellen: Ein Agent könnte eine Benutzeroberfläche aufgrund eines fehlerhaften UI-Renderings missinterpretieren, was zu unvorhersehbaren Aktionen führt.
+Der Erfolg eines multimodalen Piloten ist nicht, dass der Agent viel „sehen“ konnte. Er liegt darin, dass ein Mensch schneller zu einer belegbaren Entscheidung kommt und jederzeit nachvollziehen kann, warum der nächste Schritt vorgeschlagen wurde.
 
-Ein weiteres Risiko liegt in der Verifikation. Während Textantworten relativ leicht automatisiert geprüft werden können, ist die Validierung einer Kette von visuellen Interaktionen deutlich anspruchsvoller. Hier sind robuste Guardrails und Monitoring-Systeme unerlässlich.
+## Fazit
 
-Entwickler müssen sicherstellen, dass Agenten in geschlossenen Umgebungen agieren, besonders wenn sie Zugriff auf sensible GUIs oder produktive Datenquellen haben. Die Abhängigkeit von der Qualität der visuellen Perzeption bedeutet auch, dass kleine Änderungen am Design einer Webseite die Leistung des Agenten beeinträchtigen können, sofern dieser nicht auf hohe Generalisierung trainiert wurde.
-
-## Fazit: Die Verschmelzung ist unumkehrbar
-
-Die Entwicklung zeigt klar, dass die Trennung zwischen Text-KI, Bild-KI und Video-KI künstlich war und nun durch native multimodale Architekturen überwunden wird. Modelle wie GLM-5V-Turbo belegen, dass die Integration von Wahrnehmung und Denken zu mächtigeren, autonomeren Agenten führt.
-
-Für Unternehmen bedeutet dies eine enorme Chance: Komplexe Aufgaben, die bisher menschliches "Draufschauen" erforderten, rücken in den Bereich des Automatisierbaren.
-
-Wir stehen am Anfang einer Entwicklung, in der KI-Agenten zu echten Partnern in visuellen und technischen Workflows werden. Die Fähigkeit, Code zu schreiben und gleichzeitig das visuelle Ergebnis in Echtzeit zu bewerten, wird zum neuen Standard für produktive KI-Systeme.
-
-Wer heute die richtigen Weichen stellt und multimodale Strategien in seine Workflows integriert, wird von einer Effizienzsteigerung profitieren, die weit über das hinausgeht, was mit reinen Text-Agenten möglich war.
-
-## Was du als Nächstes tun solltest
-
-Um den Anschluss an diese Entwicklung nicht zu verlieren, empfiehlt sich ein stufenweises Vorgehen. Beginne damit, deine aktuellen Text-basierten Workflows auf visuelle Engpässe zu prüfen. Überall dort, wo Mitarbeiter derzeit zwischen Screenshots, Videos und Textbeschreibungen hin- und herwechseln, liegt das größte Potenzial für multimodale Agenten.
-
-Experimentiere mit spezifischen Frameworks wie der MiniMax CLI, um ein Gefühl für die Steuerung multimodaler Funktionen zu bekommen. Falls dein Fokus auf Marketing oder Vertrieb liegt, bieten Tools wie [Naoma AI](/tools/naoma-ai/) oder [Hera](/tools/hera/) einen schnellen Einstieg, ohne dass eine eigene Modell-Infrastruktur aufgebaut werden muss.
-
-Behalte dabei stets die Entwicklung nativer Modelle wie GLM-5V-Turbo im Blick, da diese die technologische Basis für die nächsten Jahre definieren werden. Evaluierung und Verifikation sollten von Anfang an Teil deines Setups sein, um die Zuverlässigkeit deiner automatisierten Prozesse sicherzustellen.
+Multimodale Agenten werden wertvoll, wenn sie den tatsächlichen Arbeitsgegenstand mitlesen dürfen: Oberfläche, Dokument, Aufnahme und Code. Sie sind aber kein magisches Auge über dem Workflow. Gib ihnen einen eng begrenzten Bereich, verlange Belege statt Behauptungen und halte jede Änderung hinter einer überprüfbaren Freigabe. Dann wird aus einer eindrucksvollen Demo ein Werkzeug, das im Alltag nicht mehr Verwirrung als Arbeit erzeugt.
 
 ## Quellen
 
-1. [GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents](https://arxiv.org/abs/2604.26752)
-2. [Vyrill Agentic Video Commerce Platform](https://www.producthunt.com/products/vyrill)
-3. [Naoma AI Demo Agent](https://www.producthunt.com/products/naoma)
-4. [Everybody wants to rule the AI world](https://www.theverge.com/podcast/926707/openai-ceo-murati-musk-trial-vergecast)
-5. [MiniMax CLI](https://www.producthunt.com/products/minimax)
-6. [Hera Launch](https://www.producthunt.com/products/hera-6)
-7. [GLM-5-Turbo](https://www.producthunt.com/products/z-ai)
-8. [MiMo-V2-Pro & Omni](https://www.producthunt.com/products/mimo-3)
+- [Anthropic: Vision](https://docs.anthropic.com/en/docs/build-with-claude/vision)
+- [OpenAI: Images and vision](https://platform.openai.com/docs/guides/images-vision)
+- [Playwright: Visual comparisons](https://playwright.dev/docs/test-snapshots)
