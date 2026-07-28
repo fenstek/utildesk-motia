@@ -1,10 +1,11 @@
 ---
 slug: "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"
-title: "Read Invoices Automatically from Emails: Tools and Workflows"
+title: "Automating Invoices from Email: Where the Workflow Must Stop"
 date: 2026-05-11
+updated: 2026-07-28
 category: "Automation"
 eyebrow: "Email to Accounting"
-excerpt: "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+excerpt: "Fetching an invoice from an inbox is easy. A dependable process keeps OCR, duplicates, review and accounting as separate states."
 readTime: 11
 coverImage: /images/ratgeber/email-rechnung-automatisierung-workflow.webp
 secondaryImage: /images/ratgeber/email-rechnung-toolwahl-decision-tree.webp
