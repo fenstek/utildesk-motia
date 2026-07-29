@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-07-30 - Claude full editorial rewrite
+
+- Rebuilt the paired DE/EN `claude` card as a coherent, practical decision file rather than retaining the uneven product-update and cluster appendices.
+- Added a concrete source-to-decision workflow, current Projects, Research, Artifacts, connector and memory boundaries, explicit non-fit cases, data and permission controls, seven useful FAQ items per locale, and five task-specific internal alternatives.
+- Corrected the general Claude assistant from the narrow `AI Coding` category to the existing `AI Chatbots` taxonomy, while keeping Claude Code and repository agents clearly separated in the copy.
+- Preserved the existing `claude-editorial.webp` illustration and Ratgeber relationships, added an explicit localized `recommend` verdict, and synchronized editorial plus last-modified metadata to `2026-07-30`.
+
 ## 2026-07-29 - OpenAI Codex full editorial rewrite
 
 - Rebuilt the paired DE/EN `openai-codex` card from current official OpenAI product, security, pricing, and workflow material instead of the inherited autocomplete-era copy.
