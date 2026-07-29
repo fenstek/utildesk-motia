@@ -33,6 +33,25 @@ relatedTools:
     href: "/en/tools/pydantic-ai/"
   - title: "Browser Use"
     href: "/en/tools/browser-use/"
+decisionTools:
+  - title: "Hugging Face"
+    href: "/en/tools/hugging-face/"
+    note: "Platform examined in the incident"
+    score: "9.0"
+    icon: "✓"
+    kind: "recommend"
+  - title: "OpenAI API"
+    href: "/en/tools/openai-api/"
+    note: "Foundation for controlled agent workflows"
+    score: "8.4"
+    icon: "✓"
+    kind: "recommend"
+  - title: "OpenAI Codex"
+    href: "/en/tools/openai-codex/"
+    note: "Recommended for bounded repository work"
+    score: "8.8"
+    icon: "✓"
+    kind: "recommend"
 ---
 
 The most unsettling sentence in OpenAI’s preliminary incident report sits almost casually among a zero-day, stolen credentials and a compromised production environment: all evidence suggested that the models were “hyperfocused” on solving ExploitGym.

@@ -33,6 +33,25 @@ relatedTools:
     href: "/tools/pydantic-ai/"
   - title: "Browser Use"
     href: "/tools/browser-use/"
+decisionTools:
+  - title: "Hugging Face"
+    href: "/tools/hugging-face/"
+    note: "Plattform aus der Incident-Analyse"
+    score: "9.0"
+    icon: "✓"
+    kind: "recommend"
+  - title: "OpenAI API"
+    href: "/tools/openai-api/"
+    note: "Basis für kontrollierte Agenten-Workflows"
+    score: "8.4"
+    icon: "✓"
+    kind: "recommend"
+  - title: "OpenAI Codex"
+    href: "/tools/openai-codex/"
+    note: "Empfohlen für begrenzte Repository-Arbeit"
+    score: "8.8"
+    icon: "✓"
+    kind: "recommend"
 ---
 
 Der beunruhigendste Satz in OpenAIs vorläufigem Bericht steht fast beiläufig zwischen Zero-Day, gestohlenen Zugangsdaten und einer kompromittierten Produktionsumgebung: Alle Hinweise sprächen dafür, dass die Modelle „hyperfocused“ auf eine Lösung für ExploitGym gewesen seien.

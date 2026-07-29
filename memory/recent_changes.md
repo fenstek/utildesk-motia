@@ -5,6 +5,7 @@
 - Rebuilt the paired DE/EN `openai-codex` card from current official OpenAI product, security, pricing, and workflow material instead of the inherited autocomplete-era copy.
 - Added a concrete issue-to-diff workflow, current app/CLI/IDE/cloud roles, worktree and sandbox guidance, evaluation criteria, cost drivers, explicit non-fit cases, eleven answered FAQ items per locale, and five task-specific internal alternatives.
 - Preserved the existing `openai-codex-editorial.webp` illustration, set an explicit `recommend` verdict in both locales, and synchronized editorial plus last-modified metadata to `2026-07-29`.
+- Added explicit localized `decisionTools` to the current homepage guide so OpenAI Codex is no longer assigned the third-position fallback caution icon and `7.8`; the homepage now shows the deliberate `recommend` verdict and `8.8`.
 
 ## 2026-07-27 - GSC four-card editorial recovery
 
