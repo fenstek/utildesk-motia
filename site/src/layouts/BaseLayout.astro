@@ -465,15 +465,15 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
     <nav class="ki-blatt-topbar" aria-label={locale === "en" ? "Edition context" : "Ausgabe-Kontext"}>
       <a class={isDecisionHome ? "active" : undefined} href={homeHref} data-mobile-label={locale === "en" ? "Issue" : "Ausgabe"}>&#x21B3; {decisionIssueNavLabel}</a>
-      {isToolDetail ? (
-        <span class="active" aria-current="page" data-mobile-label={locale === "en" ? "Tool" : "Tool"}>&#x21B3; {locale === "en" ? "Current tool file" : "Diese Tool-Akte"}</span>
-      ) : (
-        <a class={isToolInventory ? "active" : undefined} href={toolsHref} data-mobile-label={locale === "en" ? "Tools" : "Tools"}>&#x21B3; {locale === "en" ? "Inventory" : "Inventar"}</a>
-      )}
       {isRatgeberDetail ? (
         <span class="active" aria-current="page" data-mobile-label={locale === "en" ? "Guide" : "Artikel"}>&#x21B3; {locale === "en" ? "Current decision" : "Diese Entscheidung"}</span>
       ) : (
         <a class={isRatgeberIndex ? "active" : undefined} href={ratgeberHref} data-mobile-label={locale === "en" ? "Guides" : "Ratgeber"}>&#x21B3; {locale === "en" ? "Guide archive" : "Ratgeber-Archiv"}</a>
+      )}
+      {isToolDetail ? (
+        <span class="active" aria-current="page" data-mobile-label={locale === "en" ? "Tool" : "Tool"}>&#x21B3; {locale === "en" ? "Current tool file" : "Diese Tool-Akte"}</span>
+      ) : (
+        <a class={isToolInventory ? "active" : undefined} href={toolsHref} data-mobile-label={locale === "en" ? "Tools" : "Tools"}>&#x21B3; {locale === "en" ? "Inventory" : "Inventar"}</a>
       )}
       <a class={isMethodologySection ? "active" : undefined} href={methodologyHref} data-mobile-label={locale === "en" ? "Rules" : "Methodik"}>&#x21B3; {locale === "en" ? "Rules" : "Methodik"}</a>
     </nav>
