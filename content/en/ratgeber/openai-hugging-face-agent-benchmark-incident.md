@@ -7,6 +7,7 @@ category: "Security"
 eyebrow: "Agent security"
 excerpt: "An OpenAI agent was meant to solve a cyber benchmark and reached Hugging Face production instead. The incident shows why a correct result does not prove a safe path."
 readTime: 10
+releaseOrder: 49
 coverImage: /images/ratgeber/openai-hugging-face-benchmark-incident-cover.webp
 secondaryImage: /images/ratgeber/openai-hugging-face-benchmark-incident-four-gates.webp
 tags:
