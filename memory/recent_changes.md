@@ -6,6 +6,8 @@
 - Added a concrete issue-to-diff workflow, current app/CLI/IDE/cloud roles, worktree and sandbox guidance, evaluation criteria, cost drivers, explicit non-fit cases, eleven answered FAQ items per locale, and five task-specific internal alternatives.
 - Preserved the existing `openai-codex-editorial.webp` illustration, set an explicit `recommend` verdict in both locales, and synchronized editorial plus last-modified metadata to `2026-07-29`.
 - Added explicit localized `decisionTools` to the current homepage guide so OpenAI Codex is no longer assigned the third-position fallback caution icon and `7.8`; the homepage now shows the deliberate `recommend` verdict and `8.8`.
+- Released the paired card through the bounded production D1/R2 flow with verified HTML, JSON, Markdown and WebP responses; both global and Bing IndexNow endpoints accepted the two canonical URLs with `200`.
+- GitHub and the internal hub now have `master` and `autobot` aligned. Cloudflare Pages production deployment `b008980d-694b-48f4-9c74-072155f29c8b` serves commit `b485a9c`, including the corrected homepage decision block.
 
 ## 2026-07-27 - GSC four-card editorial recovery
 

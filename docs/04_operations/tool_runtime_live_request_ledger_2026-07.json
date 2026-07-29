@@ -3430,6 +3430,23 @@
         "https://www.bing.com/indexnow"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-29T21:50:32.481Z",
+      "mode": "production-pages-deploy",
+      "command": "Pages account discovery and production verification; Git integration deployed commit b485a9c",
+      "estimate": {
+        "manifestAndProjectReads": 5,
+        "assetUploadBatches": 35,
+        "deploymentAndFunctionUpload": 5,
+        "statusAndCliOverhead": 5,
+        "total": 50
+      },
+      "worstCaseRequests": 50,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
