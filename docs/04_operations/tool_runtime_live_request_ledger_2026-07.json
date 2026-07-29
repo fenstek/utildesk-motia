@@ -3374,6 +3374,62 @@
         "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-29T21:48:31.721Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 3,
+        "pagesAssets": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-29T21:48:37.318Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\tmp\\utildesk-tool-runtime-release-2026-07-29T21-48-29-933Z\\slugs.json --out C:\\tmp\\utildesk-tool-runtime-release-2026-07-29T21-48-29-933Z\\live-delta --ledger C:\\projects\\utildesk-codex-card-20260729\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/openai-codex/",
+        "https://tools.utildesk.de/api/tools/openai-codex.json",
+        "https://tools.utildesk.de/markdown/tools/openai-codex.md",
+        "https://tools.utildesk.de/en/tools/openai-codex/",
+        "https://tools.utildesk.de/en/api/tools/openai-codex.json",
+        "https://tools.utildesk.de/en/markdown/tools/openai-codex.md",
+        "https://tools.utildesk.de/tool-assets/105d450a1e68229e35860f4da03be548e3e86c28f748782b94cbb02f64fa13f9/openai-codex-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-29T21:48:41.745Z",
+      "mode": "production-indexnow-delta",
+      "command": "indexnow_submit.py submit-batch [changed canonical HTML only]",
+      "estimate": {
+        "indexNow": 2,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.indexnow.org/indexnow",
+        "https://www.bing.com/indexnow"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
