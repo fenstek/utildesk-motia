@@ -6,6 +6,7 @@
 - Added a concrete source-to-decision workflow, current Projects, Research, Artifacts, connector and memory boundaries, explicit non-fit cases, data and permission controls, seven useful FAQ items per locale, and five task-specific internal alternatives.
 - Corrected the general Claude assistant from the narrow `AI Coding` category to the existing `AI Chatbots` taxonomy, while keeping Claude Code and repository agents clearly separated in the copy.
 - Preserved the existing `claude-editorial.webp` illustration and Ratgeber relationships, added an explicit localized `recommend` verdict, and synchronized editorial plus last-modified metadata to `2026-07-30`.
+- Published the paired card through the bounded production D1/R2 runtime from source commit `0a94129d`; the production delta verified both HTML, JSON and Markdown locales plus the content-addressed WebP, and both IndexNow endpoints accepted the two canonical URLs with `200`.
 
 ## 2026-07-29 - OpenAI Codex full editorial rewrite
 
