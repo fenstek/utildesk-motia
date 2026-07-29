@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
 
+## 2026-07-29 - OpenAI Codex full editorial rewrite
+
+- Rebuilt the paired DE/EN `openai-codex` card from current official OpenAI product, security, pricing, and workflow material instead of the inherited autocomplete-era copy.
+- Added a concrete issue-to-diff workflow, current app/CLI/IDE/cloud roles, worktree and sandbox guidance, evaluation criteria, cost drivers, explicit non-fit cases, eleven answered FAQ items per locale, and five task-specific internal alternatives.
+- Preserved the existing `openai-codex-editorial.webp` illustration, set an explicit `recommend` verdict in both locales, and synchronized editorial plus last-modified metadata to `2026-07-29`.
+
 ## 2026-07-27 - GSC four-card editorial recovery
 
 - Rewrote the paired DE/EN `cursor` card from current official product, pricing and security material: removed duplicate legacy copy and the false arbitrary-IDE integration claim, then added a bounded agent workflow, current Cloud Agent/CLI/team surfaces, exact dated pricing context and Privacy Mode guidance.
