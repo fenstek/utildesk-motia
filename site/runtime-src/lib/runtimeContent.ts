@@ -210,6 +210,8 @@ export async function listRuntimeContentEntries(
     const safeLeftTime = Number.isFinite(leftTime) ? leftTime : 0;
     const safeRightTime = Number.isFinite(rightTime) ? rightTime : 0;
     if (safeRightTime !== safeLeftTime) return safeRightTime - safeLeftTime;
+    const orderDelta = Number(right.metadata.releaseOrder ?? 0) - Number(left.metadata.releaseOrder ?? 0);
+    if (Number.isFinite(orderDelta) && orderDelta !== 0) return orderDelta;
     return left.title.localeCompare(right.title, locale);
   });
 }
@@ -268,6 +270,8 @@ export async function listRuntimeShellEntries(
       const safeLeftTime = Number.isFinite(leftTime) ? leftTime : 0;
       const safeRightTime = Number.isFinite(rightTime) ? rightTime : 0;
       if (safeRightTime !== safeLeftTime) return safeRightTime - safeLeftTime;
+      const orderDelta = Number(right.metadata.releaseOrder ?? 0) - Number(left.metadata.releaseOrder ?? 0);
+      if (Number.isFinite(orderDelta) && orderDelta !== 0) return orderDelta;
       return left.title.localeCompare(right.title, locale);
     }));
   shellEntryCache.set(cacheKey, { revision: collection.revision, entries });

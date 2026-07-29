@@ -18,6 +18,7 @@ export interface RatgeberEntryData {
   updated?: string;
   excerpt?: string;
   readTime?: number;
+  releaseOrder?: number;
   category?: string;
   eyebrow?: string;
   coverImage?: string;
@@ -70,6 +71,7 @@ const parseEntry = async (file: string, locale: Locale = "de"): Promise<Ratgeber
       slug,
       title,
       readTime: parsed.data.readTime ? Number(parsed.data.readTime) : undefined,
+      releaseOrder: parsed.data.releaseOrder ? Number(parsed.data.releaseOrder) : undefined,
       tags: parseStringArray(parsed.data.tags),
       sidebarPoints: parseStringArray(parsed.data.sidebarPoints),
       relatedTools: parseRelatedTools(parsed.data.relatedTools),
@@ -91,6 +93,8 @@ export async function listRatgeberEntries(locale: Locale = "de") {
       const aTime = a.data.date ? Date.parse(a.data.date) : 0;
       const bTime = b.data.date ? Date.parse(b.data.date) : 0;
       if (bTime !== aTime) return bTime - aTime;
+      const orderDelta = (b.data.releaseOrder ?? 0) - (a.data.releaseOrder ?? 0);
+      if (orderDelta !== 0) return orderDelta;
       return a.data.title!.localeCompare(b.data.title!, locale);
     });
 }
