@@ -217,10 +217,6 @@ const fallbackTestRows = isEn
       { title: "GitHub Copilot", slug: "github-copilot", note: "sicherer Standard", score: "8.4", icon: "\u2713", kind: "recommend" },
       { title: "Cursor", slug: "cursor", note: "nur mit Review-Pilot", score: "7.0", icon: "\u25d0", kind: "caution" },
     ];
-const fallbackFrontNote = isEn
-  ? "We had three teams work with Cursor, Copilot and Claude Code for a week. What began as a speed test ended as a discussion about responsibility: who reviews what an agent commits?"
-  : "Wir haben drei Teams je eine Woche lang mit Cursor, Copilot und Claude Code arbeiten lassen. Was als Geschwindigkeitstest begann, endete als Diskussion \u00fcber Verantwortung: Wer reviewt, was ein Agent committet?";
-
 const slugFromHref = (href?: string) => {
   if (!href) return null;
   const match = href.match(/\/tools\/([^/]+)\/?$/);
@@ -267,7 +263,6 @@ const avoidRows = primaryGuide?.data.decisionAvoid?.length
   : primaryGuide?.data.sidebarPoints?.length
     ? primaryGuide.data.sidebarPoints.slice(0, 2)
     : [copy.avoidOne, copy.avoidTwo];
-const frontNote = primaryGuide?.data.decisionNote || primaryGuide?.data.excerpt || fallbackFrontNote;
 copy.avoidOne = avoidRows[0] ?? copy.avoidOne;
 copy.avoidTwo = avoidRows[1] ?? copy.avoidTwo;
 
@@ -388,7 +383,6 @@ const categoryRows = categories.slice(0, 8);
             <p>• {copy.avoidOne}</p>
             <p>• {copy.avoidTwo}</p>
           </div>
-          <p class="ds-front-note"><span>{isEn ? "W" : "W"}</span>{frontNote.slice(1)}</p>
         </aside>
       </section>
 
