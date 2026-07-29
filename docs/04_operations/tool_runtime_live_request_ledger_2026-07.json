@@ -3463,6 +3463,62 @@
         "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-29T22:25:59.229Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 3,
+        "pagesAssets": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-29T22:26:09.474Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\Users\\sserg\\AppData\\Local\\Temp\\utildesk-runtime-releases\\claude-20260730T0026\\slugs.json --out C:\\Users\\sserg\\AppData\\Local\\Temp\\utildesk-runtime-releases\\claude-20260730T0026\\live-delta --ledger C:\\projects\\utildesk-codex-card-20260729\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/claude/",
+        "https://tools.utildesk.de/api/tools/claude.json",
+        "https://tools.utildesk.de/markdown/tools/claude.md",
+        "https://tools.utildesk.de/en/tools/claude/",
+        "https://tools.utildesk.de/en/api/tools/claude.json",
+        "https://tools.utildesk.de/en/markdown/tools/claude.md",
+        "https://tools.utildesk.de/tool-assets/2001000e25e1d743cfe40ac3fdf6578749ca868751644b6ff5739e04ecd1b315/claude-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-29T22:26:15.828Z",
+      "mode": "production-indexnow-delta",
+      "command": "indexnow_submit.py submit-batch [changed canonical HTML only]",
+      "estimate": {
+        "indexNow": 2,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.indexnow.org/indexnow",
+        "https://www.bing.com/indexnow"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
