@@ -2,14 +2,14 @@
 slug: claude
 title: Claude
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-30
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-30-full-tool-card-editorial"
-editorial_verdict: "recommend"
-editorial_verdict_headline: "Empfehlen - für anspruchsvolle Wissensarbeit mit klaren Quellen- und Freigaberegeln."
-editorial_verdict_text: "Claude ist unsere Empfehlung, wenn lange Dokumente, Recherche, Schreiben und Analyse in einem nachvollziehbaren Arbeitsraum zusammenlaufen sollen. Der Nutzen entsteht durch guten Kontext und menschliche Prüfung, nicht durch ungeprüfte Antworten oder pauschalen Zugriff auf interne Systeme."
-editorial_trust_label: "4,5 / 5 · hoch"
+editorial_status: manual_polished
+editorial_batch: 2026-07-30-full-tool-card-editorial
+editorial_verdict: recommend
+editorial_verdict_headline: Empfehlen - für anspruchsvolle Wissensarbeit mit klaren Quellen- und Freigaberegeln.
+editorial_verdict_text: Claude ist unsere Empfehlung, wenn lange Dokumente, Recherche, Schreiben und Analyse in einem nachvollziehbaren Arbeitsraum zusammenlaufen sollen. Der Nutzen entsteht durch guten Kontext und menschliche Prüfung, nicht durch ungeprüfte Antworten oder pauschalen Zugriff auf interne Systeme.
+editorial_trust_label: 4,5 / 5 · hoch
 category: AI Chatbots
 price_model: Freemium
 tags: ["ai", "assistant", "research", "writing", "analysis", "collaboration"]
@@ -20,8 +20,8 @@ lastReviewed: 2026-07-30
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "chatgpt-claude-gemini", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-02-08
 updated_at: 2026-07-30
-popularity: 0
-description: "Claude verbindet Schreiben, Recherche, Analyse und lange Dokumentkontexte in einem KI-Arbeitsraum mit Projects, Artifacts und optionalen Connectors."
+popularity: 64
+description: Claude verbindet Schreiben, Recherche, Analyse und lange Dokumentkontexte in einem KI-Arbeitsraum mit Projects, Artifacts und optionalen Connectors.
 ---
 # Claude
 
