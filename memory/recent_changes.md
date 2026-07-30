@@ -1712,3 +1712,17 @@ _Last updated: 2026-07-19_
 - Reframed unsupported product claims: Buzz is described from the Block repository and support pages; Slack agent behavior is grounded in Slack and Salesforce documentation; AI Rooms is explicitly treated as a design pattern, not an unverified product.
 - Added two distinct editorial WebP illustrations: a gouache/linocut communication map and a paper-cut permission-bridge diorama. Both exclude office briefings, UI, readable text, logos and watermarks.
 - Local editorial, English parity, tool-quality and full static build gates passed. The new article is first on the DE/EN home and Ratgeber archive in the generated output, with exactly two visible article image tags per locale.
+
+## 2026-07-31 - Story-led refresh for ten high-interest tool cards
+
+- `openclaw`: replaced the abstract opening with a bounded weekly-planning scenario and a traceable chat-to-approval workflow; preserved all six source alternatives and the existing illustration.
+- `anyword`: reframed the card around choosing one challenger for a controlled campaign test; preserved four alternatives and added a fourth practical FAQ.
+- `phantombuster`: aligned the weak English version with German and added a bounded public-data-to-CRM workflow, provenance checks and explicit compliance stop rules; preserved three alternatives and four FAQ.
+- `playwright`: added a cross-browser checkout failure as the narrative spine and expanded the first-test workflow without reducing technical coverage, four alternatives or four FAQ.
+- `apify`: added a scheduled product-monitoring Dataset workflow with completeness checks and maintenance ownership; replaced the generic English FAQ with five product-specific questions.
+- `bolt-new`: added a returns-dashboard prototype and an explicit repository hand-off decision; expanded the English version and preserved five alternatives and four FAQ.
+- `adobe-podcast`: reframed the card around deciding whether a noisy interview can be rescued, with a three-passage listening test; preserved four alternatives and four FAQ.
+- `airbyte`: added a failed overnight CRM sync and a deliberate failure-recovery pilot; preserved four alternatives and four FAQ.
+- `aide`: added a governed delivery-address intent with explicit escalation boundaries; normalized DE/EN metadata, preserved the three alternatives visible on production and added a fourth FAQ. The broken, non-rendered `gorgias` source link was removed because no such local card exists.
+- `algolia`: added a wrong-result product-search scenario and a measurable index pilot; normalized DE/EN metadata, preserved the three alternatives visible on production and added a fourth FAQ. The broken, non-rendered `meilisearch` source link was removed because no such local card exists.
+- No tool illustration, official URL, slug, runtime relationship, sitemap, robots policy, shared layout or CSS was changed.

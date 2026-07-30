@@ -1,11 +1,13 @@
 ---
 slug: aide
 title: Aide
+description: "Aide automatisiert klar begrenzte Supportfälle und Aktionen auf bestehenden Helpdesks. Entscheidend sind geprüfte Intents, minimale Rechte und sichere Eskalation."
+updated_at: 2026-07-31
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-05
+editorial_batch: 2026-07-31-story-card-refresh
 category: AI Agents
 price_model: Usage-based
 tags: [customer-support, automation, productivity, workflow]
@@ -16,7 +18,9 @@ generated_at: 2026-05-10
 ---
 # Aide
 
-Aide ist eine agentische KI-Plattform für Customer Experience. Sie wird auf bestehenden Helpdesks eingesetzt, beantwortet nicht nur Tickets, sondern kann innerhalb vorher freigegebener Abläufe Aktionen ausführen, etwa Informationen abfragen, Tickets routen oder definierte Account- und Commerce-Vorgänge anstoßen. Der entscheidende Begriff ist Governance: jede Fähigkeit soll vor dem Livegang getestet und bei Unsicherheit an Menschen eskaliert werden.
+Eine Kundin möchte die Lieferadresse ändern. Die Bestellung ist bezahlt, aber möglicherweise bereits im Versand. Ein gewöhnlicher Bot formuliert eine freundliche Antwort; ein Support-Agent muss dagegen den Bestellstatus prüfen, die erlaubte Aktion kennen und im falschen Moment bewusst nichts verändern. Für genau diese kontrollierte Strecke ist Aide gedacht.
+
+Aide ist eine agentische Plattform für Customer Experience, die auf bestehenden Helpdesks arbeitet. Sie kann Informationen abfragen, Tickets routen und innerhalb freigegebener Workflows definierte Account- oder Commerce-Aktionen anstoßen. Ihr Wert liegt nicht in möglichst vielen automatischen Antworten, sondern in Governance: Jede Fähigkeit wird als eigener Intent getestet, erhält begrenzte Rechte und eskaliert bei Unsicherheit an einen Menschen.
 
 ## Für wen ist Aide geeignet?
 
@@ -26,9 +30,13 @@ Aide passt zu CX- und Supportteams auf Zendesk, Front oder Gorgias, besonders be
   <img src="/images/tools/aide-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Aide" loading="lazy" decoding="async" />
 </figure>
 
-## Mit einem Intent starten
+## Eine Adressänderung mit klarer Stopp-Regel
 
-Starten Sie nicht mit dem Anspruch, den gesamten Support zu automatisieren. Nehmen Sie einen klaren Intent wie „Status einer Bestellung erklären“, definieren Sie erlaubte Daten und Aktionen, testen Sie historische Fälle und prüfen Sie Grenzfälle. Erst wenn Fehlerrate, Escalation und Kundenwirkung verstanden sind, sollte der nächste Intent folgen.
+Der erste Intent könnte lauten: „Lieferadresse vor Versand ändern.“ Aide darf Bestellnummer und Status lesen, die neue Adresse auf Vollständigkeit prüfen und eine Änderung nur vorbereiten, solange das Lager noch nicht übernommen hat. Bei abweichendem Namen, bereits gestarteter Lieferung oder nicht erreichbarem Commerce-System geht das Ticket mit allen gefundenen Informationen an einen Menschen.
+
+Vor dem Livegang läuft dieser Intent gegen historische Fälle und absichtlich schwierige Beispiele: unvollständige Adressen, doppelte Bestellungen, Auslandslieferung und ein Kunde, der gleichzeitig stornieren möchte. Das Supportteam prüft nicht nur die Antwort, sondern jede vorgeschlagene Aktion und die Qualität der Übergabe.
+
+Erst wenn Fehlerquote, Eskalationsrate und Kundenwirkung verstanden sind, darf Aide den begrenzten Schritt selbst ausführen. So wächst Automatisierung Intent für Intent, statt den gesamten Support in einem großen Bot-Projekt zu verstecken.
 
 ## Agent, Copilot und Workflow
 
@@ -46,16 +54,17 @@ Ein produktiver Einsatz braucht Szenarientests, klar erlaubte Tools, Confidence-
 
 Supportverläufe enthalten häufig personenbezogene, Vertrags- und Bestelldaten. Klären Sie Verarbeitung, Aufbewahrung, Rollen, Datenregion, DPA und die Weitergabe an verbundene Systeme. Aide beschreibt sein Modell als Plattformgebühr plus aufgelöste Fälle und Implementierung; aktuelle Konditionen müssen direkt geprüft werden. Rechnen Sie auch Review, Wissenspflege und Testfälle ein.
 
-## Alternativen zu Aide
+## Alternativen
 
 - [Zendesk](/tools/zendesk/): breites Ticketing-Ökosystem mit eigenen Automatisierungs- und KI-Funktionen.
 - [Intercom](/tools/intercom/): Customer Messaging und AI-Support für SaaS-Teams.
-- [Gorgias](/tools/gorgias/): Helpdesk mit E-Commerce-Fokus.
 - [Freshdesk](/tools/freshdesk/): Helpdesk-Suite für Multi-Channel-Support.
 
 ## Redaktionelle Einschätzung
 
-Aide ist interessant, weil es Autonomie an Governance koppelt statt bloß Antworttexte zu generieren. Das Versprechen muss dennoch im eigenen Daten- und Supportprozess bewiesen werden. Ein gut dokumentierter Intent mit echter menschlicher Eskalation ist der richtige Start; pauschale Bot-Automatisierung ist es nicht.
+Wir empfehlen Aide für CX-Teams mit hohem, wiederholbarem Anfragevolumen, einem gepflegten Helpdesk und klaren Regeln für erlaubte Aktionen. Besonders interessant ist es, wenn nicht nur Antworten, sondern eng begrenzte Service-Schritte automatisiert werden sollen und Action Traces kontrolliert werden.
+
+Nicht wählen würden wir Aide für seltene, stark regulierte oder fachlich offene Fälle. Wenn zuerst ein Helpdesk und Wissensprozess aufgebaut werden müssen, sind [Zendesk](/tools/zendesk/), [Intercom](/tools/intercom/) oder [Freshdesk](/tools/freshdesk/) häufig die sinnvollere Grundlage.
 
 ## FAQ
 
@@ -70,3 +79,7 @@ Durch enge Szenarien, Tests vor dem Livegang, minimale Toolrechte, Confidence-Gr
 **Welche Integration ist für den Start nötig?**
 
 Mindestens der vorhandene Helpdesk und eine geprüfte Wissensquelle. Weitere CRM-, Commerce- oder API-Zugriffe erst ergänzen, wenn der erste Intent zuverlässig läuft.
+
+**Wann sollte Aide zwingend an einen Menschen übergeben?**
+
+Bei widersprüchlichen Kundendaten, nicht erreichbaren Systemen, irreversiblen Änderungen, rechtlich sensiblen Anliegen oder sobald der Fall außerhalb des getesteten Intents liegt.
