@@ -30,7 +30,7 @@ Algolia is a good fit when search is part of the product experience or revenue p
 - Product and engineering teams wanting an API-first service instead of operating Elasticsearch or OpenSearch themselves.
 - Merchandising teams that need to steer campaigns, boosts, and search rules transparently.
 
-A small blog with a few dozen pages rarely needs this platform. Static search or [Meilisearch](/en/tools/meilisearch/) is often simpler. Algolia becomes worthwhile when relevance, latency, and analysis are genuinely business-critical.
+A small blog with a few dozen pages rarely needs this platform. Static search or [Typesense](/en/tools/typesense/) is often simpler. Algolia becomes worthwhile when relevance, latency, and analysis are genuinely business-critical.
 
 ## From the wrong result to a testable index
 

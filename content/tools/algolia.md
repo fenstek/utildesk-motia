@@ -31,7 +31,7 @@ Algolia passt gut, wenn Suche Teil des Produkterlebnisses oder Umsatzpfads ist:
 - Produkt- und Entwicklerteams, die eine API-first-Lösung integrieren möchten, statt Elasticsearch oder OpenSearch selbst zu betreiben.
 - Merchandising-Teams, die Kampagnen, Boosts und Suchregeln nachvollziehbar steuern wollen.
 
-Ein kleiner Blog mit wenigen Dutzend Seiten braucht diese Plattform meist nicht. Dort ist eine statische Suche oder [Meilisearch](/tools/meilisearch/) oft einfacher. Algolia lohnt sich, wenn Relevanz, Latenz und Auswertung tatsächlich geschäftskritisch sind.
+Ein kleiner Blog mit wenigen Dutzend Seiten braucht diese Plattform meist nicht. Dort ist eine statische Suche oder [Typesense](/tools/typesense/) oft einfacher. Algolia lohnt sich, wenn Relevanz, Latenz und Auswertung tatsächlich geschäftskritisch sind.
 
 ## Vom falschen Treffer zum prüfbaren Index
 
