@@ -7,16 +7,19 @@ tags: ["crm", "ai", "sales", "analytics"]
 official_url: "https://www.salesforce.com/artificial-intelligence/"
 affiliate_url: ""
 created_at: "2026-06-14"
-updated_at: "2026-06-14"
+updated_at: 2026-07-31
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-10-human-publish"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 tier: "D"
 popularity: 0
+description: "Salesforce Einstein ergänzt CRM-Abläufe um Vorhersagen und Assistenzfunktionen, deren Wert von Datenqualität, Rechten und Evaluation abhängt."
 ---
 # Salesforce Einstein
+
+Ein Vertriebsteam möchte erkennen, welche offenen Vorgänge wirklich Aufmerksamkeit brauchen. Es bereinigt zuerst Pflichtfelder und Zugriffsrechte, führt Einstein-Zusammenfassungen oder Prognosen in einer kleinen Gruppe ein und misst, ob Entscheidungen schneller und besser dokumentiert werden. Vorschläge bleiben begründet und überprüfbar; automatische Kundenentscheidungen sind tabu. Salesforce Einstein kann Signale im bestehenden CRM nutzbar machen, aber schlechte Daten werden durch KI nicht vertrauenswürdig.
 
 Salesforce Einstein ist die KI-Schicht innerhalb des Salesforce-Ökosystems für CRM, Sales, Service, Marketing und Agentforce-Workflows. Der Nutzen entsteht nicht aus einem isolierten Modell, sondern aus der Verbindung mit CRM-Daten, Prozessen und Berechtigungen.
 
@@ -74,8 +77,7 @@ Salesforce Einstein ist als Subscription geführt. Die realen Kosten hängen von
 
 **Zum Anbieter:** https://www.salesforce.com/artificial-intelligence/
 
-## Alternativen zu Salesforce Einstein
-
+## Alternativen
 - [Salesforce Sales Cloud](/tools/salesforce-sales-cloud/): wenn die CRM-Basis zuerst bewertet werden soll.
 - [HubSpot CRM](/tools/hubspot-crm/): wenn ein leichterer CRM-Start wichtiger ist.
 - [Microsoft Copilot](/tools/microsoft-copilot/): wenn Microsoft-365-Workflows im Vordergrund stehen.
