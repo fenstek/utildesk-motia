@@ -3,25 +3,26 @@ slug: adapt-learning
 title: Adapt Learning
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_batch: 2026-07-31-story-card-refresh-next50
 category: "Entwickler-Tools"
 price_model: Open Source
 tags: [education, authoring, content, open-source]
 official_url: "https://www.adaptlearning.org/"
 description: "Open-Source-Werkzeuge für responsive HTML5-E-Learning: Authoring Tool für visuelle Kurserstellung und Framework für Entwickler, mit kontrollierbaren Erweiterungen und LMS-Auslieferung."
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
 popularity: 0
 tier: "C"
 generated_at: "2026-05-14"
 ---
 # Adapt Learning
 
-Adapt Learning ist kein einzelner Kurseditor mit einer fertigen Cloud-Laufzeit, sondern ein Open-Source-Projekt mit zwei deutlich unterschiedlichen Arbeitswegen. Das Adapt Authoring Tool richtet sich an Content-Teams, die responsive HTML5-Kurse visuell zusammenstellen möchten. Das Adapt Framework ist der Entwickler-Baukasten darunter: Teams können Kurse, Themes und Komponenten per Code anpassen und anschließend für Webserver oder LMS bauen.
+Eine Hilfsorganisation muss denselben Sicherheitskurs in mehreren Sprachen auf schwachen Mobilgeräten bereitstellen und später selbst aktualisieren können. Adapt Learning bietet dafür ein responsives Open-Source-Framework und einen Authoring-Weg. Die Freiheit bringt Verantwortung mit: Komponenten, Hosting, Barrierefreiheit, Übersetzungen und langfristige Wartung müssen einem realen Team gehören.
 
-Das macht Adapt interessant für Organisationen, die eine eigene Lernoberfläche kontrollieren und nicht bei jeder Design- oder Interaktionsänderung auf einen proprietären Editor warten wollen. Der Preis dafür ist technische Verantwortung. Hosting, Versionen, Erweiterungen, Tests und die Entscheidung, welche Tracking-Standards tatsächlich eingesetzt werden, gehören in den eigenen Prozess.
+## Praxisbild: ein begrenzter Durchlauf
+
+Baue ein zehnminütiges Modul mit Text, Bild, Frage, Abschluss und einer echten LMS- beziehungsweise Web-Ausgabe. Teste es auf dem ältesten Zielgerät, per Tastatur und Screenreader sowie mit einer zweiten Sprache. Dokumentiere Plugin-Versionen und den vollständigen Build. Wenn nur eine Person das Projekt neu erzeugen kann oder Updates Barrierefreiheit beziehungsweise Tracking brechen, ist der Betrieb noch nicht freigabefähig.
 
 ## Für wen eignet sich Adapt Learning?
 
@@ -72,7 +73,8 @@ Für einen Pilot sollten Teams nicht nur die Installationszeit messen. Aussagekr
 
 ## Redaktionelle Einschätzung
 
-Adapt Learning ist eine gute Wahl für Teams, die responsive E-Learning-Inhalte selbst kontrollieren, wiederverwendbare Bausteine pflegen und technische Verantwortung übernehmen wollen. Der stärkste Anwendungsfall ist ein kuratiertes Kurs-Ökosystem mit klarer Trennung zwischen Redaktion, Entwicklung und LMS-Betrieb.
+Adapt Learning empfehlen wir technisch betreuten Lernteams, die responsive Inhalte und ihre Auslieferung langfristig selbst kontrollieren möchten. Für schnelle Fachbereichsproduktion ohne Entwicklungsressourcen, fertigen Herstellersupport oder komplexe Simulationen ist eine kommerzielle Authoring-Suite oft geeigneter.
+
 
 Ich würde mit einem realen Pilotkurs beginnen: eine kurze Schulung, ein echtes Zielgerät-Set, ein echter LMS-Test und eine dokumentierte Export- und Freigabekette. Wenn schon dieser Kurs nur mit vielen manuellen Sonderlösungen stabil wird, ist ein stärker betreuter kommerzieller Editor wahrscheinlich die vernünftigere Wahl.
 
