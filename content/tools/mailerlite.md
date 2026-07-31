@@ -2,22 +2,23 @@
 slug: mailerlite
 title: MailerLite
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: "AI Agents"
 price_model: Freemium
 tags: [email-marketing, automation, newsletter, marketing]
 official_url: "https://www.mailerlite.com/"
-description: "MailerLite bündelt Newsletter, Formulare, Landingpages, Segmente und visuelle E-Mail-Automationen für kleine und mittlere Marketing-Setups."
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+description: "MailerLite verbindet Newsletter, Formulare und einfache Automationen für kleine Teams, die Zustimmung, Zustellung und Inhalte selbst verantworten."
+updated_at: 2026-07-31
 popularity: 0
 tier: "D"
 generated_at: "2026-05-12"
 ---
 # MailerLite
+
+Ein Newsletter soll neue Abonnenten nicht sofort mit fünf Mails überrollen. Die Redaktion verbindet Formular, bestätigte Einwilligung, eine kleine Segmentierung und eine kurze Willkommensfolge, prüft jede Nachricht auf Mobilgeräten und beobachtet Zustellung, Abmeldungen sowie abgeschlossene Einführungen. MailerLite macht diesen Ablauf zugänglich; gute Beziehungen entstehen trotzdem durch relevante Inhalte, saubere Listen und maßvolle Frequenz, nicht durch möglichst viele Automationen.
 
 MailerLite ist eine E-Mail-Marketing-Plattform für Newsletter, Formulare, Landingpages, Websites und automatisierte Kampagnen. Sie passt vor allem zu kleinen Unternehmen, Creators, Vereinen und Shops, die einen wiederholbaren Versandprozess aufbauen wollen, ohne sofort ein schweres CRM einzuführen. Die wichtige Grenze: MailerLite ersetzt weder eine saubere Einwilligungsstrategie noch die redaktionelle Prüfung von Kampagnen.
 
@@ -67,7 +68,6 @@ MailerLite führt ein Freemium-Modell. Laut Anbieter umfasst der Free-Plan bei d
 Die Rechnung besteht nicht nur aus dem Tarif: Kontaktvolumen, Versandmenge, zusätzliche Nutzer, Domains, Integrationen, redaktionelle Pflege, Consent-Management und spätere Migration zählen ebenfalls. Wer bezahlt, sollte automatische Hochstufungen, Limits pro Plan und die Kosten eines sauberen Listen- und Template-Umzugs prüfen.
 
 ## Alternativen
-
 - [Mailchimp](/tools/mailchimp/): sinnvoll, wenn ein sehr bekanntes Newsletter-Ökosystem und breitere Marketingfunktionen wichtiger sind als ein möglichst schlanker Ablauf.
 - [Brevo](/tools/brevo/): naheliegend, wenn E-Mail mit SMS oder transaktionalen Nachrichten in einem Kanal-Mix zusammenlaufen soll.
 - [ConvertKit](/tools/convertkit/): stärker auf Creator, Newsletter-Business und digitale Produkte ausgerichtet.
