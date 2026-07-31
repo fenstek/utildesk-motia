@@ -10,6 +10,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/impressum/" />
     <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="bingbot" content="noindex,nofollow,noarchive,nosnippet" />
   </Fragment>
 
   <article class="tool-akte sheet-wrap legal-sheet legal-sheet-plain imprint-sheet">
@@ -22,9 +23,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <header class="sheet-head">
       <div class="sheet-head-kicker">↳ rechtliches · anbieterkennzeichnung</div>
       <h1 class="sheet-head-h1">Impressum<span class="akte-mast-dot">.</span></h1>
-      <p class="sheet-head-dek">Angaben gemäß §5 TMG und §18 MStV.</p>
+      <p class="sheet-head-dek">Angaben gemäß § 5 DDG und § 18 MStV.</p>
       <div class="sheet-head-meta">
-        <span><strong>Bereich:</strong> Utildesk</span>
+        <span><strong>Stand:</strong> 31. Juli 2026</span>
         <span>·</span>
         <span>Kontaktangaben sind gegen einfaches Scraping geschützt.</span>
       </div>
@@ -34,18 +35,41 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="akte-article-body legal-prose">
         <div>
           <h2>Betreiber</h2>
-          <p>
-            <span id="impressum-name" data-b1="Uy4gU2" data-b2="tvcnlr" data-b3="b3Y="></span>
+          <p data-nosnippet>
+            <span data-obfuscated-contact data-b1="Uy4gU2" data-b2="tvcnlr" data-b3="b3Y="></span>
           </p>
 
           <h2>Anschrift</h2>
-          <p>
-            <span id="impressum-address" data-b1="QWRlcnNzdHJhw59lIDY4LC" data-b2="A0MDIxNSBEw7xzc2VsZG9y" data-b3="ZiwgRGV1dHNjaGxhbmQ="></span>
+          <p data-nosnippet>
+            <span data-obfuscated-contact data-b1="QWRlcnNzdHJhw59lIDY4LC" data-b2="A0MDIxNSBEw7xzc2VsZG9y" data-b3="ZiwgRGV1dHNjaGxhbmQ="></span>
           </p>
 
           <h2>E-Mail</h2>
+          <p data-nosnippet>
+            <span data-obfuscated-contact data-contact-type="email" data-b1="b3V0Y29tZV93YX" data-b2="NoZWQ4MjhAc2ltc" data-b3="GxlbG9naW4uY29t"></span>
+          </p>
+
+          <h2>Verantwortlich für journalistisch-redaktionelle Inhalte</h2>
           <p>
-            <span id="impressum-email" data-b1="b3V0Y29tZV93YX" data-b2="NoZWQ4MjhAc2ltc" data-b3="GxlbG9naW4uY29t"></span>
+            Verantwortlich gemäß § 18 Abs. 2 MStV ist der vorstehend genannte Betreiber
+            unter der vorstehend genannten Anschrift.
+          </p>
+
+          <h2>Verbraucherstreitbeilegung</h2>
+          <p>
+            Der Betreiber ist weder verpflichtet noch bereit, an Streitbeilegungsverfahren
+            vor einer Verbraucherschlichtungsstelle teilzunehmen.
+          </p>
+
+          <h2>Redaktioneller Hinweis</h2>
+          <p>
+            Utildesk ist ein unabhängiges Informations- und Vergleichsangebot. Trotz sorgfältiger
+            Recherche können Angaben zu Funktionen, Preisen und Verfügbarkeit externer Angebote
+            veralten oder Fehler enthalten. Maßgeblich sind die aktuellen Angaben des jeweiligen
+            Anbieters. Gesetzliche Haftungsansprüche bleiben unberührt.
+          </p>
+          <p>
+            Genannte Marken, Logos und Produktnamen sind Eigentum der jeweiligen Rechteinhaber.
           </p>
         </div>
       </div>
@@ -69,13 +93,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       }
     };
 
-    const nameEl = document.getElementById("impressum-name");
-    if (nameEl) nameEl.textContent = decode(nameEl);
-
-    const addressEl = document.getElementById("impressum-address");
-    if (addressEl) addressEl.textContent = decode(addressEl);
-
-    const emailEl = document.getElementById("impressum-email");
-    if (emailEl) emailEl.textContent = decode(emailEl);
+    document.querySelectorAll("[data-obfuscated-contact]").forEach((el) => {
+      const value = decode(el);
+      el.textContent = value;
+      if (el.dataset.contactType === "email" && value) {
+        const link = document.createElement("a");
+        link.href = `mailto:${value}`;
+        link.textContent = value;
+        el.replaceChildren(link);
+      }
+    });
   </script>
 </BaseLayout>

@@ -1,5 +1,23 @@
 # Handoff
 
+## 2026-07-31 Legal and consent update
+
+- Branch: `codex/update-legal-pages-20260731`, based on
+  `origin/master` at `258c7e14`.
+- Updated routes: `/impressum/`, `/datenschutz/`, `/en/imprint/` and
+  `/en/privacy/`.
+- `BaseLayout.astro` gates the existing self-hosted Umami tracker behind
+  explicit consent stored in `utildesk-analytics-consent-v1`. Visitors can
+  reopen the choice through the footer.
+- `site/public/_headers` adds legal-route `X-Robots-Tag` rules. Static pages
+  continue to contain noindex meta directives.
+- Full Astro build passed with 1,088 pages. Headless browser checks confirmed:
+  no request to `stats.utildesk.de` before consent, script and event request
+  after consent, persisted denial after withdrawal, human-readable obfuscated
+  provider details, zero console errors and no horizontal overflow at 390 px.
+- Deploy through the normal PR/Pages route; do not overwrite the unrelated
+  untracked files in the main checkout.
+
 ## 2026-06-07 NotebookLM on jgdus-OptiPlex-3000
 
 - The physical OptiPlex GUI contour is `jgdus@jgdus-OptiPlex-3000`, reachable over Tailscale as `jgdus@100.98.97.98`.

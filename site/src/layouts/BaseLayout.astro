@@ -298,6 +298,21 @@ const UMAMI_WEBSITE_ID =
   import.meta.env.PUBLIC_UMAMI_WEBSITE_ID || "1cb00ebe-8e55-45c6-ad41-e34ff8e28e18";
 
 const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
+const analyticsConsentLabels = locale === "en"
+  ? {
+      title: "Optional audience measurement",
+      text: "With your consent, Utildesk uses self-hosted, cookie-free Umami analytics. You can change this choice at any time in the privacy settings.",
+      reject: "Necessary only",
+      accept: "Allow statistics",
+      settings: "Privacy settings",
+    }
+  : {
+      title: "Optionale Reichweitenmessung",
+      text: "Mit Ihrer Einwilligung nutzt Utildesk die selbst gehostete, cookielose Webanalyse Umami. Diese Auswahl können Sie jederzeit in den Datenschutz-Einstellungen ändern.",
+      reject: "Nur notwendige",
+      accept: "Statistik erlauben",
+      settings: "Datenschutz-Einstellungen",
+    };
 
 ---
 
@@ -393,11 +408,6 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <slot name="head" />
 
     {shouldLoadUmami && (
-
-      <script defer src={UMAMI_SRC} data-website-id={UMAMI_WEBSITE_ID}></script>
-
-    )}
-    {shouldLoadUmami && (
       <script is:inline>
         (() => {
           let readingTimePassed = false;
@@ -410,9 +420,17 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             : location.pathname.includes("/tools/")
               ? "tool"
               : "hub";
+          const hasAnalyticsConsent = () => {
+            try {
+              return localStorage.getItem("utildesk-analytics-consent-v1") === "granted";
+            } catch {
+              return false;
+            }
+          };
           const sendWhenReady = () => {
             if (
               sent ||
+              !hasAnalyticsConsent() ||
               !readingTimePassed ||
               !scrollDepthReached ||
               !humanInteraction ||
@@ -432,6 +450,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             humanInteraction = true;
             sendWhenReady();
           };
+          window.addEventListener("utildesk:analytics-ready", sendWhenReady);
 
           window.setTimeout(() => {
             readingTimePassed = true;
@@ -570,6 +589,33 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
     </main>
 
+    {shouldLoadUmami && (
+      <aside
+        class="privacy-consent"
+        data-privacy-consent
+        data-umami-src={UMAMI_SRC}
+        data-umami-website-id={UMAMI_WEBSITE_ID}
+        aria-labelledby="privacy-consent-title"
+        hidden
+      >
+        <div class="privacy-consent-inner">
+          <div>
+            <strong id="privacy-consent-title">{analyticsConsentLabels.title}</strong>
+            <p>
+              {analyticsConsentLabels.text}
+              <a href={privacyHref}>{decisionFooterPrivacy}</a>
+            </p>
+          </div>
+          <div class="privacy-consent-actions">
+            <button type="button" data-privacy-reject>{analyticsConsentLabels.reject}</button>
+            <button type="button" class="privacy-consent-accept" data-privacy-accept>
+              {analyticsConsentLabels.accept}
+            </button>
+          </div>
+        </div>
+      </aside>
+    )}
+
 
 
     <footer class="site-footer">
@@ -604,6 +650,12 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
             <a href={imprintHref} rel="nofollow">{ui.footerImprint}</a>
 
+            {shouldLoadUmami && (
+              <button type="button" class="footer-privacy-settings" data-privacy-settings>
+                {analyticsConsentLabels.settings}
+              </button>
+            )}
+
             <a href={feedXmlHref}>Feed</a>
 
           </div>
@@ -615,6 +667,69 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
       </div>
 
     </footer>
+
+    {shouldLoadUmami && (
+      <script is:inline>
+        (() => {
+          const storageKey = "utildesk-analytics-consent-v1";
+          const banner = document.querySelector("[data-privacy-consent]");
+          if (!(banner instanceof HTMLElement)) return;
+
+          const readChoice = () => {
+            try {
+              const value = localStorage.getItem(storageKey);
+              return value === "granted" || value === "denied" ? value : null;
+            } catch {
+              return null;
+            }
+          };
+
+          const loadAnalytics = () => {
+            if (document.querySelector("script[data-utildesk-analytics]")) return;
+            const source = banner.dataset.umamiSrc;
+            const websiteId = banner.dataset.umamiWebsiteId;
+            if (!source || !websiteId) return;
+
+            const script = document.createElement("script");
+            script.defer = true;
+            script.src = source;
+            script.dataset.websiteId = websiteId;
+            script.dataset.utildeskAnalytics = "true";
+            script.addEventListener("load", () => {
+              window.dispatchEvent(new CustomEvent("utildesk:analytics-ready"));
+            });
+            document.head.append(script);
+          };
+
+          const saveChoice = (choice) => {
+            try {
+              localStorage.setItem(storageKey, choice);
+            } catch {
+              // The current page can still honor the choice when storage is unavailable.
+            }
+            banner.hidden = true;
+            if (choice === "granted") loadAnalytics();
+          };
+
+          banner.querySelector("[data-privacy-accept]")?.addEventListener("click", () => {
+            saveChoice("granted");
+          });
+          banner.querySelector("[data-privacy-reject]")?.addEventListener("click", () => {
+            saveChoice("denied");
+          });
+          document.querySelectorAll("[data-privacy-settings]").forEach((button) => {
+            button.addEventListener("click", () => {
+              banner.hidden = false;
+              banner.querySelector("button")?.focus();
+            });
+          });
+
+          const choice = readChoice();
+          if (choice === "granted") loadAnalytics();
+          else if (choice !== "denied") banner.hidden = false;
+        })();
+      </script>
+    )}
 
 
 
