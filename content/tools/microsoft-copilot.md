@@ -1,12 +1,12 @@
 ---
-description: "Microsoft Copilot ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+description: "Microsoft Copilot unterstützt Arbeit in Microsoft 365 und Copilot Studio; Datenberechtigungen, Agentenidentitäten und klare Freigaben bestimmen den tatsächlichen Nutzen."
 slug: "microsoft-copilot"
 title: "Microsoft Copilot"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-07-31"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing"]
@@ -15,13 +15,15 @@ affiliate_url: "https://copilot.microsoft.com/"
 tier: "A"
 mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast"]
 created_at: 2026-02-02
-updated_at: "2026-07-17"
+updated_at: "2026-07-31"
 popularity: 0
 ---
 
 # Microsoft Copilot
 
-Microsoft Copilot bündelt KI-Funktionen für den Microsoft-Kontext: Chat, Office-Dokumente, Meetings, Tabellen, Präsentationen und je nach Lizenz auch eigene Agenten oder Workflows. Der Nutzen hängt stark davon ab, wie sauber Microsoft 365 im Unternehmen bereits genutzt wird.
+Vor einer Bereichssitzung liegen ein Teams-Transkript, drei Word-Dateien, eine Excel-Auswertung und zwanzig E-Mails vor. Microsoft Copilot kann daraus einen Entwurf mit offenen Entscheidungen und Quellenhinweisen vorbereiten. Ob das hilfreich oder gefährlich ist, entscheidet der bestehende Microsoft-365-Unterbau: falsche Freigaben machen auch für Copilot zu viel sichtbar, unklare Kennzahlen bleiben unklar und eine erzeugte Aufgabe darf nicht ohne verantwortliche Person im Prozess verschwinden.
+
+Microsoft Copilot bezeichnet mehrere verbundene Angebote rund um Chat, Microsoft 365 und den Bau eigener Agenten in Copilot Studio. Die Karte betrachtet deshalb nicht nur Textgenerierung, sondern den Weg von vorhandenen Arbeitsdaten über Berechtigungen und Grounding bis zu einer überprüften Aktion.
 
 ## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
 
@@ -147,7 +149,8 @@ Copilot ist speziell auf die Integration und Optimierung der Microsoft 365 Suite
 
 ## Alternativen
 
-- [OpenAI API](/tools/openai-api/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
-- [Anthropic](/tools/anthropic/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [Mistral](/tools/mistral/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [DeepSeek](/tools/deepseek/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [ChatGPT](/tools/chatgpt/): passt zu Teams, die einen providerseitigen Arbeitsraum für Recherche, Dateien und Entwürfe außerhalb des Microsoft-365-Schwerpunkts suchen.
+- [Claude](/tools/claude/): eignet sich für sorgfältige Dokumentarbeit, lange Kontexte und kontrollierte Research- oder Review-Prozesse.
+- [Gemini](/tools/gemini/): ist die naheliegende Alternative in Google Workspace mit Gmail-, Drive- und Docs-bezogenen Abläufen.
+- [Notion AI](/tools/notion-ai/): verbindet Wissensbasis, Dokumente und Agenten direkt mit einem Notion-Arbeitsraum.
+- [Microsoft Power Automate](/tools/microsoft-power-automate/): ist besser, wenn deterministische Connector- und Freigabeflüsse wichtiger sind als generative Assistenz.
