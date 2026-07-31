@@ -2,19 +2,22 @@
 slug: apigee
 title: Apigee (Google Cloud)
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
-category: Developer
-price_model: Usage-based
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Entwickler-Tools
+price_model: Nutzungsbasiert
 tags: [api, api-management, security, gateway, cloud]
 official_url: "https://cloud.google.com/apigee"
 popularity: 0
 translation: full
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
+description: "Apigee manages APIs through policies, access, quotas, analytics, and developer onboarding while business logic should remain in its owning services."
 ---
 # Apigee (Google Cloud)
+
+A retailer wants to expose order status and returns to selected partners. The team does not rebuild the domain logic; it uses Apigee to add authentication, keys, quotas, versioning, monitoring, and a usable developer portal around the existing service. One test partner completes the full contract before access expands. Apigee is strong as a controlled API layer; putting business rules in the gateway instead would blur ownership and make failures harder to diagnose.
 
 Apigee is Google Cloud's API-management platform. It places API proxies in front of backends and microservices so teams can centrally govern traffic, authentication, quotas, transformations, analytics, and developer access. That is more than a lightweight gateway: Apigee is aimed at API programmes where product, security, operations, and external users need to share a consistent contract.
 
@@ -59,12 +62,11 @@ Google offers evaluation, pay-as-you-go, and subscription models. In usage prici
 Security is operated as policy and process: OAuth/JWT validation, mTLS or key management, least privilege to backends, secret rotation, a WAF/DDoS strategy, and an audit of proxy configuration. The gateway should not log sensitive data unnecessarily, and every team needs a tested way to roll back a faulty proxy.
 
 ## Alternatives
-
-- [Microsoft Azure API Management](/en/tools/microsoft-azure-api-management/) is the natural enterprise alternative in an Azure-centred architecture.
-- [MuleSoft Anypoint Platform](/en/tools/mulesoft-anypoint-platform/) fits where API management needs to be tightly coupled to broad enterprise integration.
-- [IBM API Connect](/en/tools/ibm-api-connect/) is an option for regulated or IBM-oriented API estates.
-- [Postman](/en/tools/postman/) does not solve the gateway problem, but is important for API design, collaboration, and contract testing.
-- [Insomnia](/en/tools/insomnia/) is a leaner developer alternative for testing and exploring APIs.
+- [Microsoft Azure API Management](/en/tools/microsoft-azure-api-management/): is the natural enterprise alternative in an Azure-centred architecture.
+- [MuleSoft Anypoint Platform](/en/tools/mulesoft-anypoint-platform/): fits where API management needs to be tightly coupled to broad enterprise integration.
+- [IBM API Connect](/en/tools/ibm-api-connect/): is an option for regulated or IBM-oriented API estates.
+- [Postman](/en/tools/postman/): does not solve the gateway problem, but is important for API design, collaboration, and contract testing.
+- [Insomnia](/en/tools/insomnia/): is a leaner developer alternative for testing and exploring APIs.
 
 ## FAQ
 
