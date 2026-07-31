@@ -3,9 +3,9 @@ slug: brainscape
 title: Brainscape
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
-editorial_reviewed_at: 2026-07-14
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-14-brainscape-editorial
+editorial_batch: 2026-07-31-story-card-refresh-next50
 category: Education
 price_model: Freemium
 tags: [education, flashcards, spaced-repetition, study]
@@ -13,13 +13,16 @@ official_url: "https://www.brainscape.com/"
 popularity: 0
 tier: C
 description: "Brainscape ist eine Lernplattform für digitale Karteikarten. Confidence-Based Repetition, eigene oder geprüfte Inhalte und gemeinsame Klassen helfen beim regelmäßigen Abruftraining; die Qualität der Karten bleibt Aufgabe der Lernenden."
-updated_at: 2026-07-14
-lastReviewed: 2026-07-14
+updated_at: 2026-07-31
 generated_at: 2026-05-15
 ---
 # Brainscape
 
-Brainscape ist eine Lernplattform für digitale Karteikarten, nicht einfach ein KI-Chatbot. Lernende legen Inhalte in Klassen und Decks ab, rufen Antworten aktiv ab und bewerten anschließend ihre Sicherheit auf einer Skala von 1 bis 5. Diese Selbsteinschätzung steuert die Wiederholungsplanung der Confidence-Based Repetition (CBR). Das ist ein nachvollziehbarer Lernmechanismus, aber keine Garantie, dass eine Karte fachlich richtig oder eine Prüfung damit vollständig abgedeckt ist.
+Eine Pflegefachkraft muss bis zur Prüfung Medikamentenregeln sicher abrufen können, nicht nur beim Lesen wiedererkennen. Brainscape organisiert kurze Karten und wiederholte Selbstbewertung für genau diesen Lernkreislauf. Der Algorithmus kann jedoch keine missverständliche Karte reparieren und keine praktische Kompetenz bestätigen, die außerhalb des Karteikartensystems beobachtet werden muss.
+
+## Praxisbild: ein begrenzter Durchlauf
+
+Erstelle zwanzig Karten aus einer freigegebenen Quelle, jeweils mit einer eindeutigen Frage und einer prüfbaren Antwort. Eine zweite Fachperson kontrolliert Inhalt und Formulierung. Lernende bearbeiten das Deck über zwei Wochen; falsch beantwortete Karten werden nicht nur häufiger gezeigt, sondern auf Ursache geprüft. Wenn hohe Selbsteinschätzung nicht mit einem separaten Test übereinstimmt, werden Karten und Bewertungsverhalten überarbeitet.
 
 ## Für wen ist Brainscape geeignet?
 
@@ -70,7 +73,8 @@ Der Aufwand liegt nicht nur im Abonnement: Karten müssen erstellt, fachlich gep
 
 ## Redaktionelle Einschätzung
 
-Brainscape ist eine gute Wahl, wenn ein konkretes Lernziel in kurze Fragen und Antworten übersetzt werden kann und regelmäßiges Abrufen das Problem ist. Besonders überzeugend ist die Verbindung aus 1–5-Selbsteinschätzung, Wiederholungsplanung und gemeinsam nutzbaren Decks.
+Brainscape passt zu klar abgrenzbarem Faktenwissen und Teams, die Kartenqualität sowie Quellen verantworten. Für offene Problemlösung, motorische Fertigkeiten, längere Erklärungen oder institutionelle Prüfungsverwaltung ist ein Kurs-, Praxis- oder LMS-Workflow geeigneter.
+
 
 Wir würden mit einem einzigen Deck aus 30 bis 50 realen Lernzielen starten, zehn typische Fehlkarten absichtlich testen und nach zwei Wochen prüfen: Werden Antworten sicherer, bleibt die tägliche Lernlast realistisch und bestehen die Lernenden auch Aufgaben außerhalb der Karten? Wenn nicht, sollte das Material überarbeitet oder ein umfassenderes Lernformat gewählt werden. Brainscape ist ein gutes Übungsmodul, aber kein Ersatz für Unterricht, praktische Prüfung oder fachliche Quellen.
 
