@@ -2,18 +2,21 @@
 slug: amazon-msk
 title: Amazon MSK
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
-lastReviewed: 2026-07-13
-category: Developer
-price_model: Usage-based
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Entwickler-Tools
+price_model: Nutzungsbasiert
 tags: [data, streaming, kafka, cloud]
 official_url: "https://aws.amazon.com/msk/"
 translation: full
+updated_at: 2026-07-31
+description: "Amazon MSK operates Apache Kafka infrastructure as an AWS service while topics, schemas, consumers, and data contracts remain team responsibilities."
 ---
 # Amazon MSK
+
+A commerce system distributes order events to fulfilment, billing, and notifications. The platform team defines topics and schemas, tests recovery and duplicate delivery, and observes consumer lag under load. Amazon MSK removes much of the broker operation. It does not remove the Kafka work around data contracts, partitioning, permissions, and consumers that remain correct when events are repeated.
 
 Amazon MSK is AWS's managed Apache Kafka service. AWS handles cluster control-plane operations while applications continue using normal Kafka clients to create topics and produce or consume records. That removes broker administration, not the harder work of an event system: contracts, partitioning, retention, access and replay.
 
@@ -58,12 +61,11 @@ Amazon MSK is a sound choice for AWS teams with a real Kafka requirement. It rem
 We would first validate the business boundary and one small event. If it grows into independent consumers, replay requirements and persistent streams, MSK is credible. For ordinary job queues, a smaller service is usually the better choice.
 
 ## Alternatives
-
-- [Apache Kafka](/en/tools/apache-kafka/) offers full control with self-managed ownership.
-- [Confluent Platform](/en/tools/confluent-platform/) adds a broad Kafka ecosystem and governance tooling.
-- [AWS Kinesis](/en/tools/aws-kinesis/) is better for AWS-native streaming where Kafka compatibility is not required.
-- [Google Cloud Pub/Sub](/en/tools/google-cloud-pub-sub/) is a managed pub/sub route for Google Cloud teams.
-- [Redpanda](/en/tools/redpanda/) is a Kafka-compatible alternative with a different operating architecture.
+- [Apache Kafka](/en/tools/apache-kafka/): offers full control with self-managed ownership.
+- [Confluent Platform](/en/tools/confluent-platform/): adds a broad Kafka ecosystem and governance tooling.
+- [AWS Kinesis](/en/tools/aws-kinesis/): is better for AWS-native streaming where Kafka compatibility is not required.
+- [Google Cloud Pub/Sub](/en/tools/google-cloud-pub-sub/): is a managed pub/sub route for Google Cloud teams.
+- [Redpanda](/en/tools/redpanda/): is a Kafka-compatible alternative with a different operating architecture.
 
 ## FAQ
 
