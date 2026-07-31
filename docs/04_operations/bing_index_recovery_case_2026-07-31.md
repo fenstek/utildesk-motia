@@ -58,15 +58,39 @@ from post-crawl exclusion:
 | `https://tools.utildesk.de/ratgeber/openai-hugging-face-agent-benchmark-incident/` | discovered as a page, not yet crawled |
 | `https://tools.utildesk.de/ratgeber/qcon-ai-boston-production-ai-moves-beyond-prompts-to-platforms-harnesses-and-eva/` | discovered as a page, not yet crawled |
 
-The public API does not expose the detailed exclusion reason shown in Bing
-Webmaster URL Inspection. The portal-only inspection and AI Performance report
-still require an authenticated UI session.
+The authenticated URL Inspection UI reports the same exclusion on every
+manually checked focus URL: `Discovered, but content crawl not performed` and
+`URL cannot appear on Bing`. This was confirmed for the homepage, Ratgeber
+hub, Methodik, ChatGPT, OpenAI Codex, and the Agentic Commerce guide. The
+portal therefore treats the current index record as unavailable even where
+the API retains historical crawl metadata or a stored document.
+
+Three bounded manual indexing requests were submitted successfully on
+2026-07-31: the homepage, the Ratgeber hub, and the Agentic Commerce guide.
+Do not repeat these requests during the observation window.
+
+## AI Performance
+
+Bing AI Performance is a separate and materially healthier surface than
+blue-link search. For the three-month view ending 2026-07-30 it reports 121
+citations across 28 Utildesk pages. The leading cited pages include Adobe
+Enhance Speech (24), FotoJet (12), Research Rabbit (11), Workday HCM (8),
+DaVinci Resolve (6), Zotero (6), Continue (5), Talon (5), and Remove.bg (5).
+The visible activity is concentrated in late April and early May; the report
+shows no subsequent citation activity in the displayed chart.
+
+The IndexNow UI also reports 840 submitted URLs in the latest 15 hours and
+about 15,400 submissions in total. This is much broader than the 146-URL focus
+sitemap and is caused by runtime editorial batch releases. During recovery,
+mass tool-card IndexNow submissions should stop: submit only changed Ratgeber,
+hub, and explicitly selected focus URLs.
 
 ## Diagnosis
 
 The evidence does not match a fetch, robots, canonical, `5xx`, or sitemap
-availability failure. It is consistent with a sitewide index-quality or trust
-reassessment:
+availability failure. The portal's exact message identifies a current Bing
+indexing-pipeline exclusion rather than a transport failure. The broader
+pattern remains consistent with a sitewide quality/trust reassessment:
 
 1. Bing keeps crawling while the indexed count collapses.
 2. Already crawled, technically valid pages disappear from the searchable
@@ -128,15 +152,16 @@ expects.
 
 1. Keep the registered feed at `Success` with `UrlCount = 146`; do not resubmit
    it again without a real sitemap change.
-2. Inspect the representative URLs in the authenticated URL Inspection UI and
-   record the exact exclusion strings.
-3. Check AI Performance separately; blue-link search and AI citations are
-   different surfaces.
-4. Submit the support case now: the earlier compact-feed recovery check is more
+2. Do not repeat the three manual indexing requests submitted on 2026-07-31.
+3. Preserve AI Performance separately; 121 citations across 28 pages confirm
+   that Bing AI can use Utildesk even while blue-link indexing is collapsed.
+4. Stop bulk IndexNow submissions for non-focus tool-card batches during the
+   observation window.
+5. Submit the support case now: the earlier compact-feed recovery check is more
    than two weeks old and `InIndex` has continued to fall.
-5. Re-check `InIndex`, impressions, crawl issues, feed status, and Bing-visible
+6. Re-check `InIndex`, impressions, crawl issues, feed status, and Bing-visible
    backlinks on 2026-08-14.
-6. Do not add more tool URLs to the focus sitemap during this observation
+7. Do not add more tool URLs to the focus sitemap during this observation
    window.
 
 ## Content And Authority Work

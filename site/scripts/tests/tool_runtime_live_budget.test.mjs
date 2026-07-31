@@ -164,6 +164,26 @@ test("bounded one-card release dry-run invokes no Astro build and mutates no sou
     assert.equal(report.distUnchanged, true);
     assert.equal(report.slugs.length, 1);
     assert.equal(report.assets, 1);
+    assert.equal(report.indexNowPolicy, "focus-tools-only");
+    assert.deepEqual(report.indexNowCanonicalUrls, []);
+    assert.deepEqual(report.skippedIndexNowSlugs, ["dell-boomi"]);
+    assert.equal(report.estimates.indexNow.total, 0);
+
+    await writeFile(slugFile, "chatgpt\n");
+    const { stdout: focusStdout } = await execFileAsync(process.execPath, [
+      resolve(import.meta.dirname, "../tool_runtime_release.mjs"),
+      "--slugs-file", slugFile,
+      "--ledger", ledger,
+      "--max-live-requests", "10000",
+      "--asset-bucket", "utildesk-tool-assets",
+    ], { cwd: siteDir, maxBuffer: 4 * 1024 * 1024 });
+    const focusReport = JSON.parse(focusStdout);
+    assert.deepEqual(focusReport.indexNowCanonicalUrls, [
+      "https://tools.utildesk.de/tools/chatgpt/",
+      "https://tools.utildesk.de/en/tools/chatgpt/",
+    ]);
+    assert.deepEqual(focusReport.skippedIndexNowSlugs, []);
+    assert.equal(focusReport.estimates.indexNow.total, 2);
     assert.equal(await fingerprintTree(join(repoDir, "content")), contentBefore);
     assert.equal(await fingerprintTree(join(siteDir, "dist")), distBefore);
   } finally {
