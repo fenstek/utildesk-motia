@@ -3,20 +3,22 @@ slug: firebase-studio
 title: Firebase Studio
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: "AI Infrastructure"
 price_model: Freemium
 tags: [ai, app-builder, cloud-development, firebase]
 official_url: "https://firebase.studio/"
 description: "A cloud development environment with Gemini and Firebase integration for existing workspaces; creation is disabled and shutdown is scheduled for March 2027."
 translation: full
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 ---
 # Firebase Studio
 
-Firebase Studio is a browser-based cloud development environment with a code editor, terminal, previews, Gemini assistance, and Firebase deployment paths. Its product status is now the defining boundary: new sign-ups and workspaces were disabled on June 22, 2026, and the environment is scheduled to shut down on March 22, 2027. This card is therefore relevant to operating and migrating existing workspaces, not to selecting a platform for a new project.
+An existing workspace contains a functioning prototype, two undocumented secrets and a Firebase database, but nobody can start it locally. For this team, Firebase Studio is no longer a new platform decision. It is a migration project with a deadline. The useful sequence is to secure the repository and dependencies, document configuration, export data, reproduce the application locally and only then choose the replacement.
+
+Firebase Studio is a browser-based cloud development environment with a code editor, terminal, previews, Gemini assistance and Firebase deployment paths. Product status is now the defining boundary: new sign-ups and workspaces are disabled, and the environment is scheduled to shut down in March 2027. This card therefore supports operation and orderly migration of existing workspaces, not selection for a new project.
 
 ## What Firebase Studio is and who can still use it
 
