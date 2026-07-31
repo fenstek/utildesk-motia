@@ -2,10 +2,10 @@
 slug: apache-beam
 title: Apache Beam
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: Entwickler-Tools
 price_model: Open Source
 tags: [data, streaming, batch, etl, open-source]
@@ -13,9 +13,12 @@ official_url: "https://beam.apache.org/"
 popularity: 0
 tier: D
 generated_at: 2026-05-16
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
+description: "Apache Beam bietet ein gemeinsames Programmiermodell für Batch- und Streaming-Pipelines, die auf unterschiedlichen Runnern ausgeführt werden können."
 ---
 # Apache Beam
+
+Ein Datenprodukt soll dieselben Ereignisse täglich nachberechnen und nahezu in Echtzeit auswerten. Das Team modelliert deshalb Event-Zeit, Fenster, Watermarks und verspätete Daten einmal in Apache Beam und prüft die Pipeline mit festen Testdaten auf zwei Runnern. Erst danach werden Kosten und Betriebsverhalten verglichen. Beam vereinheitlicht das Programmiermodell; Portabilität ist aber kein Freifahrtschein, denn Runner unterscheiden sich bei Leistung, Funktionen und Fehlersuche.
 
 Apache Beam ist ein Open-Source-Programmiermodell für Datenpipelines, die endliche Batch-Daten und unendliche Streams mit denselben Grundkonzepten verarbeiten. Der Code wird über einen Runner auf eine Ausführungsplattform wie Apache Flink, Apache Spark oder Google Cloud Dataflow übersetzt. Beam ist damit weder ein eigener Cluster noch eine fertige Datenplattform, sondern die Schicht zwischen Pipeline-Code und dem gewählten Rechen-Backend.
 
@@ -59,12 +62,11 @@ Beam selbst ist kostenlos; Kosten entstehen durch den Runner, Cluster, Cloud-Ser
 Definieren Sie außerdem Idempotenz, Duplikatbehandlung, Datenaufbewahrung und Wiederholung von Jobs. Bei Streaming gilt: "exactly once" ist keine pauschale Eigenschaft des Python- oder Java-Codes, sondern hängt von Runner, Senke und gesamter Architektur ab.
 
 ## Alternativen
-
-- [Apache Flink](/tools/apache-flink/) ist sinnvoll, wenn Streaming-Ausführung und State direkt im Fokus stehen und ein eigener Flink-Betrieb akzeptiert wird.
-- [Apache Spark](/tools/apache-spark/) passt zu Teams mit bestehendem Spark-Ökosystem und breit angelegter Batch-Analyse.
-- [Google Cloud Dataflow](/tools/google-cloud-dataflow/) ist der gemanagte Runner für Beam-Pipelines auf Google Cloud.
-- [Apache Kafka](/tools/apache-kafka/) ist die zentrale Ereignisplattform, wenn der Schwerpunkt zunächst auf Transport und Event-Log liegt.
-- [Kafka Streams](/tools/kafka-streams/) ist oft einfacher für stream-nahe Java-Anwendungen, die ohnehin direkt in Kafka arbeiten.
+- [Apache Flink](/tools/apache-flink/): ist sinnvoll, wenn Streaming-Ausführung und State direkt im Fokus stehen und ein eigener Flink-Betrieb akzeptiert wird.
+- [Apache Spark](/tools/apache-spark/): passt zu Teams mit bestehendem Spark-Ökosystem und breit angelegter Batch-Analyse.
+- [Google Cloud Dataflow](/tools/google-cloud-dataflow/): ist der gemanagte Runner für Beam-Pipelines auf Google Cloud.
+- [Apache Kafka](/tools/apache-kafka/): ist die zentrale Ereignisplattform, wenn der Schwerpunkt zunächst auf Transport und Event-Log liegt.
+- [Kafka Streams](/tools/kafka-streams/): ist oft einfacher für stream-nahe Java-Anwendungen, die ohnehin direkt in Kafka arbeiten.
 
 ## FAQ
 
