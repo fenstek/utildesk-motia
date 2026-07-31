@@ -53,6 +53,7 @@
 - `audo`: added a conservative remote-interview cleanup workflow, listening FAQ and fully linked audio alternatives in DE/EN.
 - `narrato`: replaced the excluded BeFunky candidate, added a bounded editorial workflow, proper assessment heading, fourth FAQ and active alternatives in DE/EN.
 - Selection used the strict per-card guard rather than legacy `manual_polished` flags. All fifty paired cards pass the source guard individually; existing WebP illustrations, popularity, slugs and compact sitemap membership were preserved.
+- The single full build completed with 1,088 pages and the compact sitemap surfaces unchanged at 146 URLs. The bounded runtime release from source commit `e98c7f70` published 100 locale projections, verified 50 existing content-addressed WebP assets, and passed all 350 HTML/JSON/Markdown/asset checks with zero failures. Both IndexNow endpoints accepted all 100 changed canonical URLs with `200`; the private D1 backup is `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-backups\2026-07-31\before-story50.sql` and the report is `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-releases\2026-07-31-story50-production`.
 
 ## 2026-07-31 - Twenty story-led tool-card refreshes
 
