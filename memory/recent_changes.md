@@ -1,5 +1,13 @@
 # Recent Changes — utildesk-motia
 
+## 2026-07-31 - Bing index-collapse recovery baseline
+
+- Re-submitted the existing compact `https://tools.utildesk.de/sitemap-focus.xml` exactly once. Bing accepted it and changed the only registered feed to `Pending`; the previous `UrlCount = 126` remains visible until Bing re-reads the current 146-URL file.
+- Live Bing data now reports `InIndex = 5` on 2026-07-30, down from the recorded 173 on 2026-07-10 and 1909 on 2026-06-09, despite continuing crawl activity, no active crawl issues, no robots-blocked days and no `5xx` days.
+- Ten representative URLs were checked through `GetUrlInfo`: established hubs and tools are recognized and crawled; two fresh Ratgeber URLs are discovered but not yet crawled; two already crawled strong pages report document size 0. Bing's backlink API still exposes no inbound-link targets.
+- Added `docs/04_operations/bing_index_recovery_case_2026-07-31.md` with the bounded evidence packet, representative URL set, support-case text, 2026-08-14 checkpoint and the explicit rule not to expand the compact sitemap.
+- Bing URL Inspection and AI Performance remain portal-only for this workflow. No personal data, API credentials, broad sitemap, global long-tail `noindex`, or mass URL submission was added.
+
 ## 2026-07-31 - Fifty strict-audit story-led tool-card refreshes
 
 - `google-patents`: added a reproducible prior-art scenario, legal boundary, fourth FAQ and corrected internal alternatives in DE/EN.
