@@ -5,7 +5,7 @@ import { tagHref } from "../../lib/tagRoutes";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 import { compareToolsByNewest } from "../../lib/toolAddedAt";
 import { listDisplayTools, type DisplayTool } from "../../lib/toolDisplay";
-import { getToolEditorialVerdict } from "../../lib/toolVerdict";
+import { getToolEditorialVerdict, getUnratedToolVerdict } from "../../lib/toolVerdict";
 import { selectSearchFocusTools } from "../../lib/searchFocus.mjs";
 import {
   buildBreadcrumbSchema,
@@ -52,16 +52,10 @@ const verdictOptions = [
   { value: "caution", icon: "◐", label: "Mit Vorbehalt" },
   { value: "overrated", icon: "⊘", label: "Überbewertet" },
   { value: "reject", icon: "×", label: "Nicht empfehlen" },
+  { value: "unrated", icon: "—", label: "Noch nicht bewertet" },
 ];
-const getToolVerdict = (index: number) => {
-  const position = index + 1;
-  if (position % 17 === 0) return verdictOptions[3];
-  if (position % 11 === 0) return verdictOptions[2];
-  if (position % 7 === 0) return verdictOptions[1];
-  return verdictOptions[0];
-};
-const getDisplayToolVerdict = (tool: DisplayTool, index: number) =>
-  tool.editorialVerdict ? getToolEditorialVerdict(tool.editorialVerdict, "de") : getToolVerdict(index);
+const getDisplayToolVerdict = (tool: DisplayTool) =>
+  tool.editorialVerdict ? getToolEditorialVerdict(tool.editorialVerdict, "de") : getUnratedToolVerdict("de");
 const getToolLetter = (title: string) => {
   const first = title
     .trim()
@@ -71,8 +65,8 @@ const getToolLetter = (title: string) => {
     .toUpperCase();
   return /^[A-Z]$/.test(first) ? first : "#";
 };
-const verdictCounts = enabledTools.reduce((map, _tool, index) => {
-  const verdict = getDisplayToolVerdict(_tool, index).value;
+const verdictCounts = enabledTools.reduce((map, tool) => {
+  const verdict = getDisplayToolVerdict(tool).value;
   map.set(verdict, (map.get(verdict) || 0) + 1);
   return map;
 }, new Map<string, number>());
@@ -286,7 +280,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
   <!-- Tools Grid -->
   <div class="tools-grid inv-register inv-view-register" id="tools-grid" data-inventory-api="/api/tools.json" data-inventory-locale="de">
     {initialTools.map((tool, idx) => {
-      const verdict = getDisplayToolVerdict(tool, idx);
+      const verdict = getDisplayToolVerdict(tool);
       const categoryValue = (tool.category || "Unsortiert").toLowerCase();
       return (
       <a

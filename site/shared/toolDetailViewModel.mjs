@@ -199,19 +199,20 @@ const publisher = () => ({
   logo: { "@type": "ImageObject", url: `${TOOL_SITE_URL}/logo-grid.svg` },
 });
 
-const verdict = (value, locale, fallback) => {
+const verdict = (value, locale) => {
   const normalized = asString(value).toLowerCase();
   const kind = /(reject|not[-_\s]?recommended|nicht\s+empfohlen|ablehnen)/i.test(normalized) ? "reject"
     : /(overrated|ueberbewertet|überbewertet|oversold)/i.test(normalized) ? "overrated"
       : /(caution|caveat|reservation|vorbehalt|guardrail|prüfen|pruefen)/i.test(normalized) ? "caution"
         : /(recommend|recommended|empfehlen|empfohlen)/i.test(normalized) ? "recommend"
-          : fallback;
+          : "unrated";
   const en = locale === "en";
   return {
     recommend: { kind, icon: "✓", detailKicker: en ? "Recommend" : "Empfehlen", detailHeadline: en ? "Recommend — as a tool, not as autopilot." : "Empfehlen — als Werkzeug, nicht als Autopilot.", detailText: en ? "Good starting point with a clear task, human review and traceable data flows." : "Sicherer Start mit klarer Aufgabe, menschlicher Prüfung und nachvollziehbaren Datenflüssen.", trustLabel: en ? "4 / 5 · high" : "4 / 5 · hoch" },
     caution: { kind, icon: "◐", detailKicker: en ? "With caveat" : "Mit Vorbehalt", detailHeadline: en ? "With caveat — check first, then use in production." : "Mit Vorbehalt — erst prüfen, dann produktiv nutzen.", detailText: en ? "Useful in a bounded pilot, but data, permissions, review and fallback must be clear." : "Nützlich in einem begrenzten Pilot, aber Daten, Rechte, Review und Rückweg müssen klar sein.", trustLabel: en ? "3 / 5 · check" : "3 / 5 · prüfen" },
     overrated: { kind, icon: "⊘", detailKicker: en ? "Overrated" : "Überbewertet", detailHeadline: en ? "Overrated — promise is stronger than proof." : "Überbewertet — Versprechen stärker als Belege.", detailText: en ? "Only use after a narrow test with evidence, alternatives and a clear exit path." : "Nur nach engem Praxistest mit Belegen, Alternativen und klarem Ausstiegspfad einsetzen.", trustLabel: en ? "2 / 5 · weak" : "2 / 5 · schwach" },
     reject: { kind, icon: "×", detailKicker: en ? "Not recommended" : "Nicht empfehlen", detailHeadline: en ? "Not recommended — do not use as a decision basis." : "Nicht empfehlen — nicht als Entscheidungsgrundlage nutzen.", detailText: en ? "The risk, quality gap or missing evidence is too large for a recommendation." : "Risiko, Qualitätslücke oder fehlende Belege sind zu groß für eine Empfehlung.", trustLabel: en ? "1 / 5 · avoid" : "1 / 5 · meiden" },
+    unrated: { kind, icon: "—", detailKicker: en ? "Not yet rated" : "Noch nicht bewertet", detailHeadline: en ? "No editorial recommendation has been issued yet." : "Noch keine redaktionelle Empfehlung ausgesprochen.", detailText: en ? "The entry provides orientation, but it does not yet carry an explicitly reviewed recommendation." : "Der Eintrag bietet Orientierung, trägt aber noch keine ausdrücklich geprüfte Empfehlung.", trustLabel: en ? "pending" : "offen" },
   }[kind];
 };
 
@@ -365,10 +366,11 @@ export function buildToolDetailViewModel({
     ?? data.editorial_reviewed_at ?? data.editorialReviewedAt
     ?? (quality.tier === "A" ? contentLastmod[`content/tools/${slug}.md`] : "");
   const generatedAtSource = contentLastmod[`content/tools/${slug}.md`] ?? data.generatedAt ?? data.generated_at ?? data.created_at ?? data.createdAt ?? data.date;
-  const editorialVerdict = verdict(data.editorial_verdict, locale, isCuratedTool ? "recommend" : "caution");
-  const editorialVerdictHeadline = asString(data.editorial_verdict_headline) || editorialVerdict.detailHeadline;
-  const editorialVerdictText = asString(data.editorial_verdict_text) || editorialVerdict.detailText;
-  const editorialTrustLabel = asString(data.editorial_trust_label) || editorialVerdict.trustLabel;
+  const hasExplicitEditorialVerdict = Boolean(asString(data.editorial_verdict));
+  const editorialVerdict = verdict(data.editorial_verdict, locale);
+  const editorialVerdictHeadline = (hasExplicitEditorialVerdict && asString(data.editorial_verdict_headline)) || editorialVerdict.detailHeadline;
+  const editorialVerdictText = (hasExplicitEditorialVerdict && asString(data.editorial_verdict_text)) || editorialVerdict.detailText;
+  const editorialTrustLabel = (hasExplicitEditorialVerdict && asString(data.editorial_trust_label)) || editorialVerdict.trustLabel;
   const mentionedInCount = new Set([
     ...(Array.isArray(data.mentionedIn) ? data.mentionedIn.map(String) : []),
     ...guideBacklinks.map((guide) => guide.slug),

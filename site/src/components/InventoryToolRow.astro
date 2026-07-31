@@ -1,6 +1,6 @@
 ---
 import type { DisplayTool } from "../lib/toolDisplay";
-import { getToolEditorialVerdict, type ToolVerdictLocale } from "../lib/toolVerdict";
+import { getToolEditorialVerdict, getUnratedToolVerdict, type ToolVerdictLocale } from "../lib/toolVerdict";
 
 type Props = {
   tool: DisplayTool;
@@ -20,15 +20,9 @@ const {
   categoryFallback = locale === "en" ? "Unsorted" : "Unsortiert",
 } = Astro.props as Props;
 
-const fallbackVerdictValue = (() => {
-  const position = index + 1;
-  if (position % 17 === 0) return "reject";
-  if (position % 11 === 0) return "overrated";
-  if (position % 7 === 0) return "caution";
-  return "recommend";
-})();
-
-const verdict = getToolEditorialVerdict(tool.editorialVerdict ?? fallbackVerdictValue, locale, fallbackVerdictValue);
+const verdict = tool.editorialVerdict
+  ? getToolEditorialVerdict(tool.editorialVerdict, locale)
+  : getUnratedToolVerdict(locale);
 const category = tool.category || categoryFallback;
 const priceModel = tool.priceModel || tool.price_model;
 const toolTags = tool.tags || [];

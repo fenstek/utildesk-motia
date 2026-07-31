@@ -221,7 +221,7 @@ test("Pages proxy does not hide source-revision changes behind a second cache", 
 test("tool kill switch does not disable the existing Ratgeber runtime", async () => {
   globalThis.fetch = async () => new Response("ratgeber runtime", { status: 200, headers: { "Content-Type": "text/plain" } });
   const fixture = contextFor({
-    pathname: "/ratgeber/",
+    pathname: "/ratgeber/example/",
     values: { "content-runtime:tools": "off" },
   });
   const response = await onRequest(fixture.context);

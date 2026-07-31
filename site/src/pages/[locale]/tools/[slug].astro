@@ -238,7 +238,7 @@ const {
       <div class="akte-feature-visual" set:html={sharedView.editorialFigureHtml}></div>
     ) : null}
 
-    <section class="akte-verdict-card" aria-label="Editorial verdict">
+    <section class:list={["akte-verdict-card", `akte-verdict-card-${editorialVerdict.kind}`]} aria-label="Editorial verdict">
       <span class="akte-verdict-tab">Editorial verdict</span>
       <div class="akte-verdict-main">
         <span class="akte-verdict-glyph">{editorialVerdict.icon}</span>

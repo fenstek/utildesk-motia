@@ -1873,3 +1873,11 @@ _Last updated: 2026-07-19_
 - Verification: all 50 slugs passed the strict per-card guard from committed state (`50/50`), including DE/EN length, heading, alternative, FAQ, illustration, review-metadata and lastmod contracts. Each card has its own atomic content commit; no image asset was changed.
 - Production runtime release completed from clean source commit `20aaa1fb`: 100 localized rows were published in 25 paired D1 statements, source-hash verification passed, all 350 bounded HTML/JSON/Markdown/asset checks passed with zero failures, and both IndexNow endpoints accepted all 100 canonical URLs with HTTP `200`. The normal Astro build passed once, while the release itself left `site/dist` unchanged and did not redeploy Pages.
 - The private pre-release D1 export is `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-backups\2026-07-31\before-story-next50.sql`, SHA-256 `30b46dc2e7c18774d53861d7dfc032252bab256084d270b4b685768ac7a46d82`.
+
+## 2026-07-31 - Explicit-only editorial verdicts
+
+- Removed every positional, modulo and keyword fallback that previously assigned `Empfehlen`, `Mit Vorbehalt`, `Ueberbewertet` or `Nicht empfehlen` without an explicit source decision. Tool indexes, home selections, client filtering and DE/EN detail pages now render the neutral `Noch nicht bewertet` / `Not yet rated` state when `editorial_verdict` is absent.
+- Kept the four public editorial verdicts available only for canonical `editorial_verdict` values. At the time of the change, 23 of 1,244 active DE/EN tool pairs had an explicit verdict and 1,221 remained deliberately unrated.
+- Strengthened `scripts/check_tool_quality_guard.mjs` and the local `utildesk-tool-editorial` skill guard: explicit verdicts must be valid, identical in DE/EN, paired with `editorial_reviewed: true`, and supported by matching German and English editorial text. Orphaned custom verdict copy without a source field is rejected.
+- Added exact DE/EN textual verdict markers to the 20 explicit cards that previously relied only on their metadata; `babbel`, `claude` and `openai-codex` already contained matching custom verdict text.
+- The full editorial, English-parity, tool-quality, static build and 77-test runtime suite passed; the runtime deployment bundle check also passed.

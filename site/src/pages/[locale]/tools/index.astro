@@ -4,7 +4,7 @@ import { getDecisionIssueNumber } from "../../../lib/contentIssue";
 import { listRatgeberEntries } from "../../../lib/ratgeber";
 import { compareToolsByNewest } from "../../../lib/toolAddedAt";
 import { listDisplayTools, type DisplayTool } from "../../../lib/toolDisplay";
-import { getToolEditorialVerdict } from "../../../lib/toolVerdict";
+import { getToolEditorialVerdict, getUnratedToolVerdict } from "../../../lib/toolVerdict";
 import { selectSearchFocusTools } from "../../../lib/searchFocus.mjs";
 import {
   buildBreadcrumbSchema,
@@ -41,16 +41,10 @@ const verdictOptions = [
   { value: "caution", icon: "!", label: "With caveat" },
   { value: "overrated", icon: "~", label: "Overrated" },
   { value: "reject", icon: "x", label: "Not recommended" },
+  { value: "unrated", icon: "—", label: "Not yet rated" },
 ];
-const getToolVerdict = (index: number) => {
-  const position = index + 1;
-  if (position % 17 === 0) return verdictOptions[3];
-  if (position % 11 === 0) return verdictOptions[2];
-  if (position % 7 === 0) return verdictOptions[1];
-  return verdictOptions[0];
-};
-const getDisplayToolVerdict = (tool: DisplayTool, index: number) =>
-  tool.editorialVerdict ? getToolEditorialVerdict(tool.editorialVerdict, "en") : getToolVerdict(index);
+const getDisplayToolVerdict = (tool: DisplayTool) =>
+  tool.editorialVerdict ? getToolEditorialVerdict(tool.editorialVerdict, "en") : getUnratedToolVerdict("en");
 const getToolLetter = (title: string) => {
   const first = title
     .trim()
@@ -65,8 +59,8 @@ const getToolMonogram = (title: string) =>
     .replace(/[^A-Za-z]/g, "")
     .charAt(0)
     .toUpperCase() || "#";
-const verdictCounts = enabledTools.reduce((map, tool, index) => {
-  const verdict = getDisplayToolVerdict(tool, index).value;
+const verdictCounts = enabledTools.reduce((map, tool) => {
+  const verdict = getDisplayToolVerdict(tool).value;
   map.set(verdict, (map.get(verdict) || 0) + 1);
   return map;
 }, new Map<string, number>());
@@ -283,7 +277,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 
     <div class="tools-grid inv-register inv-view-register" id="tools-grid" data-inventory-api="/en/api/tools.json" data-inventory-locale="en">
       {initialTools.map((tool, idx) => {
-        const verdict = getDisplayToolVerdict(tool, idx);
+        const verdict = getDisplayToolVerdict(tool);
         const categoryValue = (tool.category || "Unsorted").toLowerCase();
         const priceModel = tool.priceModel || tool.price_model;
         return (

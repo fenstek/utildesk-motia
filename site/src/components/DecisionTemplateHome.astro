@@ -1,5 +1,5 @@
 ---
-import { getToolEditorialVerdict, type ToolEditorialVerdictValue } from "../lib/toolVerdict";
+import { getToolEditorialVerdict, getUnratedToolVerdict, type ToolEditorialVerdictValue } from "../lib/toolVerdict";
 import { getLatestContentDateLabels } from "../lib/contentFreshness";
 import { getDecisionIssueCount, getDecisionIssueNumber } from "../lib/contentIssue";
 
@@ -289,19 +289,9 @@ const shortCategory = (category?: string | null) => {
   return value;
 };
 
-const indexVerdictFor = (tool: ToolItem, index: number) => {
-  if (tool.editorialVerdict) return getToolEditorialVerdict(tool.editorialVerdict, locale);
-  const haystack = `${tool.title} ${(tool.tags || []).join(" ")} ${tool.excerpt || ""}`.toLowerCase();
-  if (haystack.includes("detector") || haystack.includes("autogpt") || haystack.includes("agent")) {
-    return index % 2 === 0
-      ? { kind: "caution", icon: "\u25d0", label: isEn ? "With caveat" : "Mit Vorbehalt" }
-      : { kind: "overrated", icon: "\u2298", label: isEn ? "Overrated" : "\u00dcberbewertet" };
-  }
-  if (haystack.includes("privacy") || haystack.includes("research") || haystack.includes("search") || haystack.includes("perplexity")) {
-    return { kind: "caution", icon: "\u25d0", label: isEn ? "With caveat" : "Mit Vorbehalt" };
-  }
-  return { kind: "recommend", icon: "\u2713", label: isEn ? "Recommend" : "Empfehlen" };
-};
+const indexVerdictFor = (tool: ToolItem) => tool.editorialVerdict
+  ? getToolEditorialVerdict(tool.editorialVerdict, locale)
+  : getUnratedToolVerdict(locale);
 const fallbackTasks = isEn
   ? [
       { title: "Compare privacy risk", desc: "Check hosting, retention and auditability before sensitive prompts.", href: `${prefix}/ratgeber/` },
@@ -457,7 +447,7 @@ const categoryRows = categories.slice(0, 8);
             <span>{copy.tableOpen}</span>
           </div>
           {indexRows.map((tool, index) => {
-            const verdict = indexVerdictFor(tool, index);
+            const verdict = indexVerdictFor(tool);
             const tagsForRow = (tool.tags || []).slice(0, 3);
             return (
               <a class="ds-index-row" href={`${prefix}/tools/${tool.slug}/`} role="row">
