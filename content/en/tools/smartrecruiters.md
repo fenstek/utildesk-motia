@@ -2,18 +2,21 @@
 slug: smartrecruiters
 title: SmartRecruiters
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-04
-category: Productivity
-price_model: Subscription
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Produktivität
+price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, ai]
 official_url: "https://www.smartrecruiters.com/"
-description: "SmartRecruiters is an applicant tracking platform for recruiting workflows, interviews, feedback, and hiring."
+description: "SmartRecruiters organises recruiting pipelines, collaboration, and candidate communication without replacing human hiring decisions."
 translation: full
+updated_at: 2026-07-31
 ---
 # SmartRecruiters
+
+A company is hiring for 40 roles at once, but every team evaluates applicants differently. SmartRecruiters is used to create one intake, traceable stages, role-specific scorecards, and clear access rights. HR also checks retention and deletion rules. The system can make the process consistent; suitability, fairness, and the final decision must not be delegated to a workflow or an automatically generated score.
 
 SmartRecruiters is a recruiting and applicant-tracking platform for job postings, applications, interviews, feedback, and hiring. Its value is organising a traceable selection process across recruiters, hiring teams, and candidates. It does not automatically make an unclear hiring practice fair or legally compliant.
 
@@ -41,8 +44,7 @@ Candidate data is particularly sensitive. Roles should restrict recruiters, hiri
 
 Start with one job family and observe time to review, cycle time, candidate experience, feedback completeness, and drop-off points. Do not optimise time to hire alone: a fast process with poor records or unclear criteria creates new long-term risk.
 
-## Alternatives to SmartRecruiters
-
+## Alternatives
 - [Greenhouse](/en/tools/greenhouse/): for structured interviewing and data-driven recruiting.
 - [Lever](/en/tools/lever/): an ATS/CRM approach focused on recruiting relationships.
 - [BambooHR](/en/tools/bamboohr/): an HR platform with recruiting capabilities for smaller and mid-sized teams.
@@ -65,3 +67,7 @@ Only what they need for their role and assessment. Broad access to all candidate
 **How should AI features be tested in recruiting?**
 
 With explicit human approval, documented criteria, error sampling, and a way to correct or reject recommendations.
+
+**Should an automated score decide a hire?**
+
+No. Scores can help organise attention, but they require reviewed data, transparency, and human decision-making. Fairness and exceptions cannot be delegated to a workflow.
