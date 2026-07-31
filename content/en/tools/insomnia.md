@@ -2,12 +2,12 @@
 slug: insomnia
 title: Insomnia
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer Tools
-price_model: Plan-based
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Entwickler-Tools
+price_model: Je nach Plan
 tags:
   - api
   - developer
@@ -15,9 +15,12 @@ tags:
 official_url: 'https://insomnia.rest/'
 popularity: 0
 translation: full
-description: "Insomnia is an API client for REST, GraphQL, and gRPC that helps developers test, document, and debug requests."
+description: "Insomnia organises API requests, environments, and specifications for development and review without replacing load or full contract testing."
+updated_at: 2026-07-31
 ---
 # Insomnia
+
+Before changing a payments API, the team imports the specification into Insomnia, separates local, test, and production environments, and defines authentication and repeatable example requests. Destructive production requests are disabled, and secrets are not stored in the shared workspace. That turns a loose collection of calls into a reviewable workflow. Load testing, full contract verification, and complex CI gates still require complementary tools.
 
 Insomnia helps developers test APIs directly, manage environments, and store requests in a traceable way. It is useful when backend, frontend, and external integrations need careful checking.
 
@@ -64,14 +67,12 @@ In the catalog, Insomnia is marked with the pricing model **Plan-based**. For a 
 
 **Provider:** https://insomnia.rest/
 
-## Alternatives to Insomnia
+## Alternatives
 
-- [Postman](/en/tools/postman/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Hoppscotch](/en/tools/hoppscotch/): useful comparison point for adjacent workflows, pricing, or team fit.
-- Bruno: useful comparison point for adjacent workflows, pricing, or team fit.
-- Curl: useful comparison point for adjacent workflows, pricing, or team fit.
-- Paw: useful comparison point for adjacent workflows, pricing, or team fit.
-
+- [Postman](/en/tools/postman/): for a broader API ecosystem with team, mocking, and platform features.
+- [Hoppscotch](/en/tools/hoppscotch/): for lightweight, browser-oriented API checks.
+- [Bruno](/en/tools/bruno/): for local, Git-oriented API collections.
+- [Curl](/en/tools/curl/): for reproducible terminal calls, scripts, and minimal tests.
 ## Editorial assessment
 
 Insomnia is strong as a daily API work tool. For quality assurance, it belongs next to automated tests, not instead of them.
@@ -89,3 +90,7 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+**Where should API secrets be stored?**
+
+Not in shared request files or Git. Keep them in secure local variables or a secret store, with separate values for test and production.
