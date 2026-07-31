@@ -3,23 +3,24 @@ slug: tableau
 title: Tableau
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-tool-card-editorial
+editorial_batch: 2026-07-31-story-card-refresh-next20
 category: AI Infrastructure
 price_model: Freemium
 tags: [ai, analytics, data-visualization, enterprise, productivity]
 official_url: "https://www.tableau.com/"
 description: Tableau verbindet Datenquellen, interaktive Visualisierungen und veröffentlichte Analysen für kontrollierte BI-Arbeit in Teams.
 popularity: 11
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
 tier: D
 generated_at: 2026-05-21
 ---
 # Tableau
 
-Tableau ist eine Business-Intelligence- und Analyseplattform für interaktive Arbeitsmappen, Dashboards und veröffentlichte Datenquellen. Teams verbinden Daten aus Datenbanken, Dateien oder Cloud-Diensten, untersuchen sie in Tableau Desktop oder im Web und teilen die Ergebnisse über Tableau Cloud oder Tableau Server. Der entscheidende Vorbehalt: Tableau macht aus unklaren Kennzahlen kein verlässliches Datenmodell. Wer Definitionen, Aktualisierung, Berechtigungen und Verantwortung nicht vorab klärt, bekommt vor allem schönere Oberflächen für dieselben Datenprobleme.
+Die Kündigungsquote scheint im Juni zu steigen. Im Dashboard sieht das dramatisch aus, doch ein Analyst entdeckt, dass Testkonten erstmals in den Nenner geraten sind. Tableau hilft in diesem Moment nicht durch ein weiteres Diagramm, sondern durch den Weg vom auffälligen Muster über Filter und Quelldaten zu einer überprüfbaren Definition. Erst wenn diese Definition geteilt und versioniert ist, darf der Befund in eine Entscheidung einfließen.
+
+Tableau ist eine Business-Intelligence- und Analyseplattform für interaktive Arbeitsmappen, Dashboards und veröffentlichte Datenquellen. Teams verbinden Datenbanken, Dateien oder Cloud-Dienste, untersuchen sie in Tableau Desktop oder im Web und teilen Ergebnisse über Tableau Cloud oder Tableau Server. Der entscheidende Vorbehalt: Tableau macht aus unklaren Kennzahlen kein verlässliches Datenmodell. Ohne Definitionen, Aktualisierung, Berechtigungen und Verantwortung entstehen schönere Oberflächen für dieselben Datenprobleme.
 
 ## Redaktionelle Einschätzung
 
