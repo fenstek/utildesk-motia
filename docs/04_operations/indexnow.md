@@ -43,6 +43,10 @@ its own telemetry path.
 - It submits only canonical HTML URLs derived from the latest git range.
 - It waits until the key file and changed URLs are live before notifying the protocol endpoint.
 - The post-deploy hook is now called from the actual synced-publish path, not only from the tail of the script.
+- During the Bing recovery window, `site/scripts/tool_runtime_release.mjs` submits
+  only changed tool slugs present in `site/src/lib/searchFocus.mjs`. Non-focus
+  editorial batches are published and verified normally but do not emit
+  IndexNow notifications.
 
 Important:
 

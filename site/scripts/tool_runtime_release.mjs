@@ -18,6 +18,7 @@ import {
   reserveLiveRequests,
   usedLiveRequests,
 } from "./lib/tool-runtime-live-budget.mjs";
+import { FOCUS_TOOL_SLUGS } from "../src/lib/searchFocus.mjs";
 
 const execFileAsync = promisify(execFile);
 const argv = process.argv.slice(2);
@@ -37,13 +38,16 @@ const ledgerPath = resolve(valueFor("--ledger") || join(repoDir, "docs/04_operat
 const maxLiveRequests = Number(valueFor("--max-live-requests") ?? DEFAULT_MAX_LIVE_REQUESTS);
 const slugs = valueFor("--git-range") ? changedToolSlugs(valueFor("--git-range"), repoDir) : readSlugFile(valueFor("--slugs-file"));
 if (!slugs.length) throw new Error("Release contains no changed tool slugs");
+const focusToolSlugs = new Set(FOCUS_TOOL_SLUGS);
+const indexNowSlugs = slugs.filter((slug) => focusToolSlugs.has(slug));
+const skippedIndexNowSlugs = slugs.filter((slug) => !focusToolSlugs.has(slug));
 
 const release = operation === "upsert" ? await loadToolRelease(slugs, null) : { entries: [] };
 const assets = operation === "upsert" ? toolAssetsForEntries(release.entries, repoDir) : [];
 const assetMode = valueFor("--asset-bucket") ? "r2" : has("--allow-pages-fallback-assets") ? "pages-fallback" : "none";
 const publishEstimate = estimateProductionPublish({ assets: assets.length, assetMode });
 const deltaEstimate = estimateProductionDelta({ slugs, assetPaths: assets.map((asset) => `/tool-assets/${asset.hash}/${asset.fallbackPath.split("/").pop()}`), includeIndexNow: false });
-const indexNowEstimate = { indexNow: 2, total: 2 };
+const indexNowEstimate = { indexNow: indexNowSlugs.length ? 2 : 0, total: indexNowSlugs.length ? 2 : 0 };
 const totalEstimate = publishEstimate.total + deltaEstimate.total + indexNowEstimate.total;
 const ledger = await readLiveRequestLedger(ledgerPath);
 const usedBefore = usedLiveRequests(ledger);
@@ -66,7 +70,20 @@ const fingerprintDirectory = async (directory) => {
 };
 const distBefore = await fingerprintDirectory(join(siteDir, "dist"));
 const canonicalUrls = slugs.flatMap((slug) => [`https://tools.utildesk.de/tools/${slug}/`, `https://tools.utildesk.de/en/tools/${slug}/`]);
-const preflight = { operation, slugs, localeEntries: slugs.length * 2, assets: assets.length, canonicalUrls, estimates: { publish: publishEstimate, validation: deltaEstimate, indexNow: indexNowEstimate, total: totalEstimate }, ledger: { usedBefore, remainingAfterWorstCase: maxLiveRequests - usedBefore - totalEstimate }, astroBuild: false };
+const indexNowCanonicalUrls = indexNowSlugs.flatMap((slug) => [`https://tools.utildesk.de/tools/${slug}/`, `https://tools.utildesk.de/en/tools/${slug}/`]);
+const preflight = {
+  operation,
+  slugs,
+  localeEntries: slugs.length * 2,
+  assets: assets.length,
+  canonicalUrls,
+  indexNowPolicy: "focus-tools-only",
+  indexNowCanonicalUrls,
+  skippedIndexNowSlugs,
+  estimates: { publish: publishEstimate, validation: deltaEstimate, indexNow: indexNowEstimate, total: totalEstimate },
+  ledger: { usedBefore, remainingAfterWorstCase: maxLiveRequests - usedBefore - totalEstimate },
+  astroBuild: false,
+};
 
 if (!has("--execute")) {
   const distAfter = await fingerprintDirectory(join(siteDir, "dist"));
@@ -104,20 +121,25 @@ const gateArgs = [
 ];
 await execFileAsync(process.execPath, gateArgs, { cwd: siteDir, maxBuffer: 8 * 1024 * 1024 });
 
-const indexNowBudget = await reserveLiveRequests({
-  ledgerPath,
-  mode: "production-indexnow-delta",
-  command: "indexnow_submit.py submit-batch [changed canonical HTML only]",
-  estimate: indexNowEstimate,
-  urls: ["https://api.indexnow.org/indexnow", "https://www.bing.com/indexnow"],
-  maxLiveRequests,
-});
-const indexNowArgs = [resolve(repoDir, "scripts/indexnow_submit.py"), "submit-batch"];
-for (const url of canonicalUrls) indexNowArgs.push("--url", url);
-const indexNow = await execFileAsync("python3", indexNowArgs, { cwd: repoDir, maxBuffer: 4 * 1024 * 1024 });
+let indexNowBudget = { skipped: true, reason: "no-focus-tool-slugs" };
+let indexNow = { ok: true, skipped: true, reason: "no-focus-tool-slugs", count: 0, urls: [] };
+if (indexNowCanonicalUrls.length) {
+  indexNowBudget = await reserveLiveRequests({
+    ledgerPath,
+    mode: "production-indexnow-focus-delta",
+    command: "indexnow_submit.py submit-batch [changed focus-tool canonicals only]",
+    estimate: indexNowEstimate,
+    urls: ["https://api.indexnow.org/indexnow", "https://www.bing.com/indexnow"],
+    maxLiveRequests,
+  });
+  const indexNowArgs = [resolve(repoDir, "scripts/indexnow_submit.py"), "submit-batch"];
+  for (const url of indexNowCanonicalUrls) indexNowArgs.push("--url", url);
+  const indexNowResult = await execFileAsync("python3", indexNowArgs, { cwd: repoDir, maxBuffer: 4 * 1024 * 1024 });
+  indexNow = JSON.parse(indexNowResult.stdout);
+}
 
 const distAfter = await fingerprintDirectory(join(siteDir, "dist"));
 if (distAfter !== distBefore) throw new Error("Content-only release mutated site/dist; refusing completion");
-const finalReport = { ...preflight, completedAt: new Date().toISOString(), publisherReport: join(reportDir, "publisher.json"), deltaReport: join(reportDir, "live-delta/result.json"), indexNow: JSON.parse(indexNow.stdout), indexNowBudget, distUnchanged: true };
+const finalReport = { ...preflight, completedAt: new Date().toISOString(), publisherReport: join(reportDir, "publisher.json"), deltaReport: join(reportDir, "live-delta/result.json"), indexNow, indexNowBudget, distUnchanged: true };
 await writeFile(join(reportDir, "release.json"), `${JSON.stringify(finalReport, null, 2)}\n`);
 console.log(JSON.stringify(finalReport, null, 2));
