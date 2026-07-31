@@ -23,8 +23,9 @@ requests:
 - the only registered Bing feed is `sitemap-focus.xml`;
 - the registered feed still reported the previous `UrlCount = 126` before the
   refresh;
-- the focus feed was submitted once on 2026-07-31 and immediately moved to
-  `Pending` while retaining the previous count until Bing re-reads it;
+- the focus feed was submitted exactly once on 2026-07-31, briefly moved to
+  `Pending`, then returned to `Success` with `UrlCount = 146` after Bing read
+  the current file;
 - latest Bing crawl statistics report `InIndex = 5` on 2026-07-30;
 - earlier recorded snapshots were `InIndex = 1909` on 2026-06-09 and
   `InIndex = 173` on 2026-07-10;
@@ -125,8 +126,8 @@ expects.
 
 ## Next Checks
 
-1. Wait for the submitted feed to return from `Pending` to `Success` and verify
-   that `UrlCount` updates from 126 to 146.
+1. Keep the registered feed at `Success` with `UrlCount = 146`; do not resubmit
+   it again without a real sitemap change.
 2. Inspect the representative URLs in the authenticated URL Inspection UI and
    record the exact exclusion strings.
 3. Check AI Performance separately; blue-link search and AI citations are
