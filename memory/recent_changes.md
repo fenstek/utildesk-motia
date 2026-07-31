@@ -1816,3 +1816,58 @@ _Last updated: 2026-07-19_
 - `otter-ai`: replaced mismatched image-editor alternatives and duplicated cluster prose with a product-meeting record that catches a wrong speaker assignment, verifies action items at their transcript source and governs Notetaker access; linked five meeting/transcription alternatives, eleven FAQ and the existing illustration.
 - `descript`: corrected the category and replaced generic AI-copy plus unrelated LLM alternatives with a transcript-led podcast edit that marks Regenerate passages, reviews Studio Sound and protects voice consent; linked five media alternatives, eleven FAQ and the existing illustration.
 - Production runtime release for the 20-card story refresh completed from source `3c8ecf86`: 40 DE/EN rows passed source-hash verification, 20 content-addressed R2 WebP objects and all 140 bounded HTML/JSON/Markdown/asset checks returned successfully, and 40 canonical URLs were accepted with HTTP 200 by both IndexNow endpoints. The pre-release D1 export was retained privately with SHA-256 `a3421a52f6ca7b8f752ad9fd2d6fee1d61f31537ac831fe923ce2baeb6703c93`.
+
+## 2026-07-31 - Story-led refresh for fifty additional tool cards
+
+- Selection rule: chose lower-narrative-quality established cards rather than already polished high-profile cards; every DE/EN pair received a concrete opening situation, a bounded practical pilot and a sharper decision-oriented editorial verdict while preserving verified facts, FAQ, internal alternatives and its existing illustration.
+- `orbit-intelligence`: reframed the card around a disputed pipeline forecast, separating account signals from management judgement; repaired metadata parity, alternatives and the missing figure reference.
+- `meldaproduction-mlimiter`: turned a generic limiter description into a mastering handoff and listening-test decision; corrected the official product URL.
+- `canva-video`: built the story around producing three approved channel formats from one master video, including captions, reframing, rights and phone review.
+- `luminar-neo`: focused the photo workflow on selecting and consistently finishing a bounded client set rather than accumulating one-click effects.
+- `planner`: added a real task-board pilot with ownership, exit criteria and a test for whether the board reduces coordination work.
+- `axure-rp`: framed the prototype around resolving an expensive product-flow disagreement before implementation.
+- `bamboohr`: moved the card from HR feature marketing to a controlled onboarding record and accountable data handoff.
+- `bandlab`: centred the copy on a remote song draft with version, rights and final-export boundaries.
+- `beautycam`: added a portrait-production scenario with consent, naturalness and disclosure checks.
+- `biteable`: reframed template video creation as a short approved explainer with a measurable review loop.
+- `bitmoji`: grounded avatar use in a bounded communication case with identity, brand and privacy limits.
+- `kinemaster`: rebuilt the mobile-editing decision around an on-location event recap; completed reviewer metadata, descriptions, five alternatives and four FAQ.
+- `photoroom`: focused the workflow on a consistent marketplace image batch with edge, shadow and product-truth review.
+- `proto-io`: added a prototype test that must answer a specific interaction question before design handoff.
+- `snagit`: turned capture features into a support-resolution story; repaired category and price parity, descriptions, English routes and five exact alternatives.
+- `stability-ai`: framed generative-image infrastructure around a controlled visual batch with model, prompt and rights provenance.
+- `vista-create`: focused the card on repeatable local-campaign variants under brand and approval constraints.
+- `zoho-notebook`: added a bounded research-note workflow with retrieval and handoff criteria instead of generic note-taking claims.
+- `adobe-fresco`: centred the decision on moving an expressive sketch through a controlled illustration handoff.
+- `adobe-lightroom`: added a client-photo selection and batch-finishing story with consistency and export review.
+- `adobe-photoshop-elements`: reframed the consumer editor around completing a finite family archive rather than browsing automated effects.
+- `airbrush`: grounded portrait retouching in an approval-sensitive public profile set with authenticity limits.
+- `amazon-translate`: added an AWS document-translation handoff with terminology, data-control and human-review gates; repaired category parity.
+- `artbreeder`: focused exploration on producing and documenting a bounded set of usable visual directions.
+- `articulate-storyline`: centred authoring on a compliance-learning module that must survive SME review and LMS delivery.
+- `brainscape`: added a study-deck pilot that tests recall quality rather than card volume.
+- `chai`: framed character chat around a bounded entertainment use case with privacy and expectation controls.
+- `clickhouse-cloud`: centred the database decision on a production analytics query path with ingestion, latency and cost evidence.
+- `engine`: replaced abstract platform copy with a scoped workflow whose handoffs and failure state can be observed.
+- `loom`: added an asynchronous handoff that is successful only when the recipient can act without another meeting.
+- `metabase`: framed the BI choice around one recurring operating question, governed metrics and a decision-ready dashboard.
+- `mindmeister`: moved from generic brainstorming to a workshop map that must end in named decisions and owners.
+- `moxo`: grounded the client portal in one document-and-approval journey with access and escalation rules.
+- `on1-photo-raw`: added a complete RAW selection-to-export workflow with catalogue, colour and delivery criteria.
+- `procreate`: focused the drawing app on a commissioned illustration handoff with layers, format and revision boundaries.
+- `ranorex-studio`: centred test automation on a brittle business path whose selectors, evidence and maintenance cost can be measured.
+- `seeing-ai`: added an everyday accessibility scenario while making uncertainty and independent confirmation explicit.
+- `suno-ai`: reframed music generation as a bounded concept-demo process with rights, attribution and replacement decisions.
+- `whimsical`: focused the workspace on turning an ambiguous process discussion into an owned flow and explicit open questions.
+- `you-com`: grounded AI search in a source-checked research brief that separates evidence from synthesis.
+- `avid-media-composer`: built the card around a multi-editor shoot handoff; repaired metadata, descriptions and five exact DE/EN alternatives.
+- `adapt-learning`: added a responsive course-module pilot with device, accessibility and LMS acceptance criteria; aligned category metadata.
+- `adobe-express`: centred the tool on approved brand variants for a time-boxed campaign rather than a generic design catalogue.
+- `ai-dungeon`: framed interactive storytelling around a bounded session with expectation, privacy and content-control limits.
+- `aira`: added a concrete remote visual-assistance handoff with consent and situational-verification boundaries.
+- `apache-cassandra`: grounded the distributed-database choice in an access-pattern and failure-domain pilot; aligned category metadata.
+- `apache-hbase`: added a row-key and region-behaviour test tied to a real large-table access pattern; aligned category metadata.
+- `apache-hive`: centred the warehouse layer on a reproducible batch-query and table-governance decision.
+- `apache-impala`: framed the query engine around interactive latency evidence on the team's actual data and concurrency.
+- `apache-kafka`: built the narrative around a producer-to-consumer event path with schema, replay and failure handling.
+- Verification: all 50 slugs passed the strict per-card guard from committed state (`50/50`), including DE/EN length, heading, alternative, FAQ, illustration, review-metadata and lastmod contracts. Each card has its own atomic content commit; no image asset was changed.
