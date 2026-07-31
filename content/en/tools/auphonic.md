@@ -2,12 +2,12 @@
 slug: auphonic
 title: Auphonic
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: AI Audio
+price_model: Je nach Plan
 tags:
   - audio
   - automation
@@ -18,8 +18,12 @@ official_url: 'https://auphonic.com/'
 popularity: 0
 source_language: de
 translation: full
+updated_at: 2026-07-31
+description: "Auphonic automates loudness and conservative speech processing without replacing good recording conditions or a final listening review."
 ---
 # Auphonic
+
+A weekly podcast is recorded through three different remote microphones. After editing, the producer uploads a copy, applies a fixed loudness target and conservative noise processing, then listens through transitions and suspect passages. The originals remain archived. Auphonic saves repetitive levelling work, but it cannot reliably rescue a clipped sentence, severe room echo, or a poor editorial recording decision.
 
 Auphonic is a AI-powered tool for automated audio production and optimization. It helps users to quickly improve, transcribe, and prepare audio and video files for various platforms. Auphonic is particularly suitable for podcasters, journalists, content creators, and anyone who values high-quality sound without spending a lot of time on manual editing.
 
@@ -101,16 +105,13 @@ Auphonic offers various pricing plans, which differ mainly in the monthly or yea
 
 Beyond the list price, Auphonic should be evaluated by the cost of adoption. Relevant factors include licensing model, storage, export options, templates, team approvals, and training. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to Auphonic
+## Alternatives
 
-- **Adobe Audition**: Professional audio editing with extensive features, more manual.
-- [Descript](/tools/descript/): Combines audio editing with transcription and video editing, focusing on easy-to-use interface.
-- [Otter.ai](/tools/otter-ai/): Specialized transcription software with collaborative features.
-- [Hindenburg Journalist](/tools/hindenburg-journalist/): Podcast and radio production tool with a focus on storytelling.
-- **Alitu**: Automated podcast production tool with simple user interface.
-
-When comparing options, Auphonic should not only be measured against very similar products. Depending on the goal, design, image, video, and prototyping tools may fit better if they are closer to the existing process or require less maintenance.
-
+- [Descript](/en/tools/descript/): when transcript, editing, and media production should live in one interface.
+- [Otter.ai](/en/tools/otter-ai/): when transcription and collaboration matter more than audio finishing.
+- [Hindenburg Journalist](/en/tools/hindenburg-journalist/): for journalistic podcast and radio production with a stronger editing focus.
+- [Alitu](/en/tools/alitu/): for a guided podcast production workflow with less technical overhead.
+- [Adobe Podcast](/en/tools/adobe-podcast/): for quick browser-based speech enhancement and recording support.
 ## FAQ
 
 **How does the automatic audio editing work in Auphonic?**
