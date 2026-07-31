@@ -2,11 +2,10 @@
 slug: amazon-msk
 title: Amazon MSK
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
-lastReviewed: 2026-07-13
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [data, streaming, kafka, cloud]
@@ -14,8 +13,12 @@ official_url: "https://aws.amazon.com/msk/"
 popularity: 0
 tier: D
 generated_at: 2026-05-16
+updated_at: 2026-07-31
+description: "Amazon MSK betreibt Apache-Kafka-Infrastruktur als AWS-Dienst, während Topics, Schemas, Consumer und Datenverträge beim Anwendungsteam bleiben."
 ---
 # Amazon MSK
+
+Ein Handelssystem verteilt Bestellereignisse an Lager, Abrechnung und Benachrichtigungen. Das Plattformteam definiert Topics und Schemas, testet Wiederanlauf und doppelte Zustellung und beobachtet Consumer-Lag unter Last. Amazon MSK nimmt den Betrieb der Broker weitgehend ab. Es nimmt dem Team jedoch nicht die Kafka-Arbeit an Datenverträgen, Partitionierung, Berechtigungen und fehlerfesten Consumern ab.
 
 Amazon MSK ist der verwaltete AWS-Dienst für Apache Kafka. AWS übernimmt den Cluster-Control-Plane-Betrieb, während Anwendungen weiter mit den üblichen Kafka-Clients Topics erzeugen sowie Nachrichten produzieren und konsumieren. Das spart Broker-Betrieb, löst aber nicht die schwierigeren Entscheidungen eines Event-Systems: Ereignisvertrag, Partitionierung, Retention, Zugriff und Wiederholung.
 
@@ -60,12 +63,11 @@ Amazon MSK ist eine solide Wahl für AWS-Teams mit einem echten Kafka-Bedarf. De
 Wir würden zuerst die fachliche Grenze und ein kleines Ereignis testen. Wenn daraus mehrere unabhängige Consumer, Replay-Anforderungen und dauerhafte Datenströme entstehen, ist MSK plausibel. Für bloße Job-Queues ist eine kleinere Lösung meist die bessere Redaktionsempfehlung.
 
 ## Alternativen
-
-- [Apache Kafka](/tools/apache-kafka/) ist die Wahl für volle Kontrolle und eigenes Cluster-Ownership.
-- [Confluent Platform](/tools/confluent-platform/) ergänzt Kafka um ein breites Streaming-Ökosystem und Governance-Werkzeuge.
-- [AWS Kinesis](/tools/aws-kinesis/) passt besser zu AWS-nativen Streams, wenn Kafka-Kompatibilität nicht verlangt wird.
-- [Google Cloud Pub/Sub](/tools/google-cloud-pub-sub/) ist ein verwalteter Pub/Sub-Weg im Google-Cloud-Ökosystem.
-- [Redpanda](/tools/redpanda/) ist eine Kafka-kompatible Alternative mit anderer Betriebsarchitektur.
+- [Apache Kafka](/tools/apache-kafka/): ist die Wahl für volle Kontrolle und eigenes Cluster-Ownership.
+- [Confluent Platform](/tools/confluent-platform/): ergänzt Kafka um ein breites Streaming-Ökosystem und Governance-Werkzeuge.
+- [AWS Kinesis](/tools/aws-kinesis/): passt besser zu AWS-nativen Streams, wenn Kafka-Kompatibilität nicht verlangt wird.
+- [Google Cloud Pub/Sub](/tools/google-cloud-pub-sub/): ist ein verwalteter Pub/Sub-Weg im Google-Cloud-Ökosystem.
+- [Redpanda](/tools/redpanda/): ist eine Kafka-kompatible Alternative mit anderer Betriebsarchitektur.
 
 ## FAQ
 
