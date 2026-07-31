@@ -7,16 +7,19 @@ tags: ["transcription", "video", "audio", "ai"]
 official_url: "https://trint.com/"
 affiliate_url: 
 created_at: 2026-06-14
-updated_at: 2026-06-14
+updated_at: 2026-07-31
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-14
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+editorial_batch: 2026-07-31-story-card-refresh-50
 tier: D
 popularity: 0
+description: "Trint transkribiert und organisiert Audio- und Videointerviews für redaktionelle Arbeit, bei der Zitate stets gegen das Original geprüft werden."
 ---
 # Trint
+
+Eine Journalistin transkribiert ein langes Interview, um schnell die relevanten Passagen zu finden. In Trint korrigiert sie Sprecher und Eigennamen, markiert Zitate und springt über Timecodes zurück ins Audio. Jede veröffentlichte Aussage wird gegen die Originalaufnahme geprüft; das Transkript bleibt Arbeitsmaterial, kein Beweis. Trint spart Such- und Rohtextarbeit, doch Akzent, Überlagerung und sensible Inhalte verlangen weiterhin sorgfältige Redaktion und passende Zugriffsregeln.
 
 Trint ist ein Transkriptions- und Editing-Werkzeug für Audio- und Videomaterial. Interessant ist es besonders für Redaktionen, Content-Teams, Research und Kommunikation, wenn aus Gesprächen schnell prüfbarer Text werden muss.
 
@@ -74,8 +77,7 @@ Trint ist als Abonnement geführt. Entscheidend sind Stundenvolumen, Teamfunktio
 
 **Zum Anbieter:** https://trint.com/
 
-## Alternativen zu Trint
-
+## Alternativen
 - [Descript](/tools/descript/): wenn Transkription und Audio-/Video-Editing eng zusammengehören.
 - [Otter.ai](/tools/otter-ai/): wenn Meeting-Notizen und Live-Zusammenfassungen im Fokus stehen.
 - [Whisper](/tools/whisper/): wenn Open-Source-Transkription oder eigener Betrieb gewünscht ist.
