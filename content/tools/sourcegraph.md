@@ -2,10 +2,10 @@
 slug: sourcegraph
 title: Sourcegraph
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: "AI Coding"
 price_model: Je nach Plan
 tags: [code-search, developer-tools, code-intelligence]
@@ -13,8 +13,12 @@ official_url: "https://sourcegraph.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-17"
+updated_at: 2026-07-31
+description: "Sourcegraph erschließt große Codebestände über Suche und Code-Zusammenhänge, damit Änderungen mit mehr Kontext geplant werden können."
 ---
 # Sourcegraph
+
+In einem gewachsenen Monorepo muss eine unsichere Hilfsfunktion ersetzt werden. Ein Entwickler sucht mit Sourcegraph nach Definition, Aufrufen, Varianten und Codebesitzern, verfolgt den Pfad durch mehrere Dienste und erstellt daraus eine überprüfbare Änderungsliste. Anschließend bestätigen Tests und zuständige Teams die Migration. Sourcegraph verkürzt das Verstehen großer Codebasen; ob eine Stelle fachlich sicher geändert werden kann, entscheidet weiterhin der Kontext des Systems.
 
 Sourcegraph sollte man weniger über die reine Featureliste lesen als über den konkreten Arbeitsablauf: Code-Suche, Navigation und Kontext über große Repositories. Der praktische Wert entsteht dort, wo es darum geht, verteilte Codebasen schneller zu verstehen und Änderungen sicherer vorzubereiten, ohne jede Entscheidung wieder in Nebentools auszulagern.
 
@@ -74,8 +78,7 @@ Sourcegraph bietet verschiedene Preismodelle, die je nach Anbieter und Plan vari
 
 Für die Budgetplanung sollte Sourcegraph nicht nur nach Listenpreis bewertet werden. Wichtiger sind Betriebsaufwand, Schulung, Integrationen und die Frage, welche Repositories indexiert werden und wie Suchergebnisse in Reviews münden.
 
-## Alternativen zu Sourcegraph
-
+## Alternativen
 - [GitHub Copilot](/tools/github-copilot/): stärker für KI-gestützte Codevorschläge direkt im Editor.
 - [Cursor](/tools/cursor/): gute Alternative, wenn Codekontext, Chat und Bearbeitung in einer IDE zusammenlaufen sollen.
 - [Tabnine](/tools/tabnine/): fokussierter auf Code-Completion und Team-/Enterprise-Kontrolle.

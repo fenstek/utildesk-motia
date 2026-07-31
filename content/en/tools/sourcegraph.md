@@ -2,12 +2,12 @@
 slug: sourcegraph
 title: Sourcegraph
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: "AI Coding"
+price_model: Je nach Plan
 tags:
   - code search
   - developer tools
@@ -15,8 +15,12 @@ tags:
 official_url: 'https://sourcegraph.com/'
 popularity: 0
 translation: full
+updated_at: 2026-07-31
+description: "Sourcegraph exposes large codebases through search and code relationships so changes can be planned with more context."
 ---
 # Sourcegraph
+
+An unsafe helper needs to be replaced inside a mature monorepo. A developer uses Sourcegraph to find its definition, calls, variants, and code owners, follows the path across services, and turns that map into a reviewable change list. Tests and responsible teams then confirm the migration. Sourcegraph shortens the work of understanding large codebases; whether a location can be changed safely still depends on the system's business and operational context.
 
 Sourcegraph is best understood less as a feature list and more as a concrete workflow: code search, navigation, and context across large repositories. Its practical value appears where teams need to understand distributed codebases faster and prepare changes more safely without pushing every decision into side tools.
 
@@ -76,13 +80,12 @@ Sourcegraph offers various pricing models that can vary depending on the provide
 
 For budget planning, Sourcegraph should not be judged only by list price. More important are operational overhead, training, integrations, and the question of which repositories are indexed and how search results feed into reviews.
 
-## Alternatives to Sourcegraph
-
-- [GitHub Copilot](/tools/github-copilot/): stronger for AI-assisted code suggestions directly in the editor.
-- [Cursor](/tools/cursor/): useful when code context, chat, and editing should live in one IDE.
-- [Tabnine](/tools/tabnine/): more focused on code completion and team or enterprise control.
-- [Continue](/tools/continue/): open-source route for custom LLM-assisted coding workflows in IDEs.
-- [OpenAI Codex](/tools/openai-codex/): more relevant when agentic coding tasks matter more than pure code search.
+## Alternatives
+- [GitHub Copilot](/en/tools/github-copilot/): stronger for AI-assisted code suggestions directly in the editor.
+- [Cursor](/en/tools/cursor/): useful when code context, chat, and editing should live in one IDE.
+- [Tabnine](/en/tools/tabnine/): more focused on code completion and team or enterprise control.
+- [Continue](/en/tools/continue/): open-source route for custom LLM-assisted coding workflows in IDEs.
+- [OpenAI Codex](/en/tools/openai-codex/): more relevant when agentic coding tasks matter more than pure code search.
 
 When choosing alternatives, it is worth comparing them against the specific bottleneck. If code search, navigation, and context across large repositories are the focus, different criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of results in your own material.
 
