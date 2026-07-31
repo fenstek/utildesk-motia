@@ -2,6 +2,7 @@
 slug: playwright
 title: Playwright
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -72,6 +73,8 @@ A green browser test does not prove a process is correct. Check accessibility, d
 - [WebdriverIO](/en/tools/webdriverio/): when WebDriver, Appium, or an existing JavaScript testing ecosystem sets the frame.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 For new web E2E suites, Playwright is often the pragmatic default: cross-browser coverage, debugging artefacts, and test isolation belong together. Adoption succeeds only if the suite starts small, controls test data, and does not hide failures behind arbitrary waits.
 

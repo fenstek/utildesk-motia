@@ -4,6 +4,7 @@ title: OpenClaw
 description: OpenClaw verbindet einen selbst betriebenen Agenten mit Chat-Kanälen, Skills und lokalen Diensten. Entscheidend sind enge Rechte und klare Freigaben.
 updated_at: 2026-07-31
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -49,6 +50,8 @@ Der Mensch prüft anschließend, ob Aufgaben fehlen, Termine verwechselt wurden 
 So entsteht ein messbarer Test. Man kann vergleichen, wie lange die Vorbereitung vorher dauerte, wie viele Korrekturen nötig waren und wie viel Pflege der Agent selbst verursacht. OpenClaw lohnt sich nicht, weil es „autonom“ wirkt, sondern wenn eine eng begrenzte Routine über mehrere Wochen zuverlässig weniger Handarbeit erzeugt.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Mit Vorbehalt.**
 
 OpenClaw ist spannend, weil es die übliche Grenze zwischen Chat, Automatisierung und lokalem Rechner bewusst aufweicht. Genau das ist aber auch der Kern des Risikos. Ein Agent, der über einen Messenger erreichbar ist und Zugriff auf Dienste erhält, verarbeitet unzuverlässige Eingaben aus der Außenwelt. Eine freundlich formulierte Nachricht darf deshalb nicht automatisch zu einer weitreichenden Aktion werden.
 

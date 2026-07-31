@@ -2,6 +2,7 @@
 slug: groq
 title: Groq
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -102,6 +103,8 @@ Groq charges for API usage according to model and volume; current prices and lim
 - [Runpod](/en/tools/runpod/): more infrastructure control through serverless or dedicated GPU workloads.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 Groq deserves attention wherever people feel the pause between question and answer. A fair test does not stop at the first fast token. It includes load, quality, tool safety, rate limits and the moment the preferred endpoint is unavailable.
 

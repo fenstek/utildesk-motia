@@ -3,6 +3,7 @@ description: "Stability AI ist ein Werkzeug für den beschriebenen Arbeitsablauf
 slug: "stability-ai"
 title: "Stability AI"
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -44,6 +45,8 @@ Durch das Freemium-Preismodell ist Stability AI auch für Einsteiger zugänglich
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
 ## Redaktionelle Einordnung
+
+**Redaktionelles Verdikt: Mit Vorbehalt.**
 
 Bei Stability AI sollte ein Test mit echtem Rohmaterial beginnen: Briefing, Rechte, Qualität, Varianten und finale Abnahme. Einzelne Demo-Beispiele sagen wenig über den Produktionsalltag.
 

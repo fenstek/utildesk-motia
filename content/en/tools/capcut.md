@@ -2,6 +2,7 @@
 slug: capcut
 title: CapCut
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -103,6 +104,8 @@ CapCut offers free and paid capabilities; plans, allowances and regional availab
 - [VN Video Editor](/en/tools/vn-video-editor/): mobile editing with more manual control.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 CapCut is good when publishing speed and low entry cost are real requirements. It becomes poor when a template replaces the idea or Auto Captions are treated as finished copy-editing. A short clip is not a small quality obligation.
 

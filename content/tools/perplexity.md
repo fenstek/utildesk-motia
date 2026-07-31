@@ -2,6 +2,7 @@
 slug: perplexity
 title: Perplexity
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -107,6 +108,8 @@ Es gibt einen kostenlosen Einstieg und bezahlte Pläne mit höheren Kontingenten
 - [You.com](/tools/you-com/): Weiterer Vergleichspunkt für KI-gestützte Suche und Webantworten.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Mit Vorbehalt.**
 
 Perplexity ist eine sehr gute Maschine, um schneller zu den relevanten Dokumenten zu gelangen. Es ist keine Maschine, die automatisch weiß, welche davon eine Entscheidung tragen. Wer Quellen öffnet, Widersprüche sucht und Unsicherheit stehen lässt, gewinnt viel Zeit. Wer nur die Antwortbox kopiert, automatisiert oberflächliche Recherche.
 

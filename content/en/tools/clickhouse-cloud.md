@@ -2,6 +2,7 @@
 slug: clickhouse-cloud
 title: ClickHouse Cloud
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -70,6 +71,8 @@ Spend is not determined by stored volume alone. Compute and runtime, storage, re
 For a fair comparison, record ingestion volume, storage growth, query mix, and peak behavior during the pilot. Apply sleep or scaling controls where the workload allows them, and budget for backfills and unoptimized queries. One fast demo query is not a reliable cost forecast.
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend ClickHouse Cloud to data and platform teams with large event, log, or product-analytics workloads and the skills to operate models and queries. A few tables, classic transactions, or occasional BI questions are often simpler in PostgreSQL, BigQuery, or a lighter analytics tool.
 

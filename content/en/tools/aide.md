@@ -4,6 +4,7 @@ title: Aide
 description: "Aide automates tightly scoped support cases and actions on existing helpdesks. Tested intents, least-privilege access, and reliable escalation are essential."
 updated_at: 2026-07-31
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -61,6 +62,8 @@ Support history commonly contains personal, contract, and order data. Clarify pr
 - [Freshdesk](/en/tools/freshdesk/): a multi-channel support suite.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 We recommend Aide to CX teams with high volumes of repeatable requests, a maintained helpdesk, and explicit rules for permitted actions. It is most interesting when tightly bounded service steps, not just replies, should be automated and action traces are reviewed.
 

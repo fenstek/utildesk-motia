@@ -2,6 +2,7 @@
 slug: airbyte
 title: Airbyte
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -76,6 +77,8 @@ The open-source version lowers licence cost, not necessarily operating cost. Clo
 - [Zapier](/en/tools/zapier/): when a handful of SaaS automations are sufficient without data engineering.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 Airbyte is convincing when data movement becomes a product capability rather than a nightly export. It rewards teams that operate connections like software: with tests, ownership, monitoring, and explicit permissions. Teams that only need to connect two apps will find lighter options; teams that must provide reliable data for BI or AI get a serious foundation.
 

@@ -2,6 +2,7 @@
 slug: capcut
 title: CapCut
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -101,6 +102,8 @@ CapCut bietet kostenlose und kostenpflichtige Funktionen; Pläne, Kontingente un
 - [VN Video Editor](/tools/vn-video-editor/): mobile Bearbeitung mit stärkerer manueller Kontrolle.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Mit Vorbehalt.**
 
 CapCut ist gut, wenn Veröffentlichungsgeschwindigkeit und niedrige Einstiegshürde echte Anforderungen sind. Es wird schlecht, wenn die Vorlage die Idee ersetzt oder Auto Captions als fertiges Lektorat behandelt werden. Ein kurzer Clip ist kein kleiner Qualitätsanspruch.
 

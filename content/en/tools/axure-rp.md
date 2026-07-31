@@ -2,6 +2,7 @@
 slug: axure-rp
 title: Axure RP
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -88,6 +89,8 @@ Axure RP 11 is offered on monthly or annual subscriptions according to the offic
 - [Whimsical](/en/tools/whimsical/): good for quick flows, diagrams, and lightweight alignment, not for Axure’s deeper interaction simulation.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend Axure RP to UX and product teams whose risk lies in complex interactions, rules, or state changes. It earns its place when a realistic test confirms or rejects an expensive implementation assumption. Figma, Balsamiq, or a lighter prototype is usually faster for early information architecture, simple click paths, or shared visual design.
 

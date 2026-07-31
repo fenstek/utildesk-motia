@@ -4,6 +4,7 @@ slug: "otter-ai"
 title: "Otter.ai"
 updated_at: "2026-07-31"
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: "2026-07-31"
 editorial_status: "manual_polished"
@@ -104,6 +105,8 @@ Otter bietet einen begrenzten Einstieg und kostenpflichtige Pakete mit unterschi
 - [Descript](/tools/descript/): verbindet Transkript mit Audio- und Videoschnitt statt primär Meeting-Nachbereitung.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Mit Vorbehalt.**
 
 Otter.ai ist dann wertvoll, wenn ein flüchtiges Gespräch in einen überprüfbaren Arbeitsstand überführt wird. Der entscheidende Schritt ist nicht die Aufnahme, sondern die menschliche Korrektur und eindeutige Übergabe. Ohne sie sieht ein fehlerhaftes Protokoll nur professioneller aus.
 

@@ -3,6 +3,7 @@ slug: algolia
 title: Algolia
 updated_at: 2026-07-31
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -84,6 +85,8 @@ A durable launch includes a relevance backlog, dashboard alerts for zero-result 
 - [Typesense](/en/tools/typesense/): a leaner open-source option for fast typo-tolerant search.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 Algolia is a compelling choice when search is a central product capability and a team can continually measure and own relevance. It speeds integration and scaling considerably, but cannot correct incomplete product data or unresolved business rules.
 

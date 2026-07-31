@@ -3,6 +3,7 @@ description: "Adobe Lightroom ist ein Werkzeug für den beschriebenen Arbeitsabl
 slug: "adobe-lightroom"
 title: "Adobe Lightroom"
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -86,6 +87,8 @@ Lightroom sitzt sinnvoll zwischen Kamera, Archiv und Veröffentlichung. Ein saub
 Fotos können Personen, Orte, Metadaten und Kundeninformationen enthalten. Vor allem bei Event-, Bewerbungs- oder Unternehmensfotografie sollten Zugriffsrechte, Cloud-Synchronisation, Löschfristen und Freigaben geklärt sein. Auch Presets und Kataloge sind Arbeitsvermögen und sollten nicht nur auf einem privaten Gerät liegen.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Empfehlen.**
 
 Lightroom empfehlen wir Fotografen mit großen Serien und wiederkehrender RAW-Entwicklung, die Katalogpflege als Teil der Arbeit behandeln. Für pixelgenaue Retusche, aufwendige Compositings oder streng getrennte lokale Teamarchive braucht es ergänzende Werkzeuge beziehungsweise einen anderen DAM-Workflow.
 

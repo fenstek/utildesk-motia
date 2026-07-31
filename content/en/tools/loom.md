@@ -2,6 +2,7 @@
 slug: loom
 title: Loom
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -31,6 +32,8 @@ Prepare a test account, close unrelated windows, and note the expected state, st
 </figure>
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend Loom to distributed teams for short explanations, bug handoffs, and decisions where motion and voice carry more than text. It is not a knowledge base or a substitute for searchable requirements. Long-term documentation still needs the core finding, decision, and outcome in writing.
 

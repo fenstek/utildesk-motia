@@ -2,6 +2,7 @@
 slug: hugging-face
 title: Hugging Face
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -104,6 +105,8 @@ Viele Hub-Funktionen und Artefakte sind kostenlos zugänglich. Kosten entstehen 
 - [OpenAI API](/tools/openai-api/): Kuratierter proprietärer Modellzugang, wenn ein offener Hub nicht benötigt wird.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Empfehlen.**
 
 Hugging Face ist für offene KI ungefähr Bibliothek, Git-Plattform, Labor und Schaufenster zugleich. Diese Breite ist einzigartig, aber sie verlagert Entscheidungen zum Nutzer. Die gute Auswahl beginnt mit einem eigenen Testset und endet mit einer festgeschriebenen Modellrevision, nicht mit der Zahl der Likes.
 

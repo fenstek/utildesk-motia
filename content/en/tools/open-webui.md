@@ -2,6 +2,7 @@
 slug: open-webui
 title: Open WebUI
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -102,6 +103,8 @@ Open WebUI is open source. Hardware, model operation, external APIs, storage, ad
 - [Hugging Face Spaces](/en/tools/hugging-face-spaces/): For publishing and sharing model demos rather than running an internal chat service.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 Open WebUI is a strong control surface, not an out-of-the-box security product. Its greatest strength, extensibility, is also its largest risk. A small restrictive rollout with separated data paths is much more convincing than an instance that immediately opens every model, Knowledge Base, and community tool.
 

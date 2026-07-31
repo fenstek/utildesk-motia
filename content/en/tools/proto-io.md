@@ -2,6 +2,7 @@
 slug: proto-io
 title: Proto.io
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -75,6 +76,8 @@ Proto.io uses a subscription model with plans shaped by usage, projects, users, 
 </figure>
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend Proto.io to product teams that need realistic mobile interaction testing before engineering begins. It creates value when the test answers a specific risk assumption and findings return to requirements. Rough ideas, design-system work, or developer handoff with real components are often handled more efficiently by lighter wireframes or Figma.
 

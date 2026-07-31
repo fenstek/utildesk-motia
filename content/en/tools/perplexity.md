@@ -2,6 +2,7 @@
 slug: perplexity
 title: Perplexity
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -106,6 +107,8 @@ There is a free entry tier and paid plans with higher allowances, more models, R
 - [You.com](/en/tools/you-com/): Another comparison point for AI-assisted search and web answers.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 Perplexity is a very good machine for reaching relevant documents faster. It is not a machine that automatically knows which documents can support a decision. Users who open sources, seek contradictions, and preserve uncertainty save substantial time. Users who copy the answer box automate shallow research.
 

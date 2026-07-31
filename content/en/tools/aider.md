@@ -2,6 +2,7 @@
 slug: aider
 title: Aider
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -108,6 +109,8 @@ Aider itself is open source. Running costs usually come from the chosen model ac
 - [Cursor](/en/tools/cursor/): When an AI-native editor fits the team better than a terminal-first workflow.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 Aider is convincing because it does not hide the control surfaces. Repository context, files, diff, tests, and commits remain visible. That does not make it error-free, but it makes the tool compatible with sensible engineering. The ideal Aider task is small enough for a person to understand fully and large enough for the saved search and typing to matter.
 

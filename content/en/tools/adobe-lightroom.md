@@ -2,6 +2,7 @@
 slug: "adobe-lightroom"
 title: "Adobe Lightroom"
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -88,6 +89,8 @@ Lightroom sits between the camera, the archive, and publication. A good workflow
 Photos may contain people, places, metadata, and client information. For event, hiring, or corporate photography, access rights, cloud sync, retention periods, and release rules should be clear. Presets and catalogs are also work assets and should not live only on a private device.
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend Lightroom to photographers handling large sets and repeatable RAW development who treat catalogue maintenance as part of the job. Pixel-level retouching, elaborate composites, or strictly separated local team archives require complementary tools or a different DAM workflow.
 

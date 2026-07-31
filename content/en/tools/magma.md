@@ -3,6 +3,7 @@ updated_at: "2026-07-31"
 slug: magma
 title: Magma
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: "2026-07-31"
 editorial_status: "manual_polished"
@@ -103,6 +104,8 @@ Magma provides a limited entry point and paid options; capabilities and team ter
 - [Canva](/en/tools/canva/): more suitable for templates, quick marketing assets and non-designers.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 Magma addresses a small but underestimated problem directly: creatives do not have to explain where a shape, colour or pose feels wrong; they can show an alternative. That makes review more concrete. Without moderation, however, the result is simply a very large canvas full of well-intentioned interventions.
 

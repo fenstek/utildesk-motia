@@ -2,6 +2,7 @@
 slug: amazon-translate
 title: Amazon Translate
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -101,6 +102,8 @@ Für einen realistischen Kostenversuch zählen nicht nur Zeichen: S3-Speicher, L
 - [SYSTRAN Translate](/tools/systran-translate/): interessant für Organisationen, die Enterprise-Lokalisierung, Terminologie und kontrollierte Deployment-Optionen vergleichen.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Empfehlen.**
 
 Amazon Translate empfehlen wir AWS-nahen Teams mit hohem, wiederkehrendem Übersetzungsvolumen und einem klaren Review- und Glossarprozess. Für einzelne redaktionelle Texte, Markenkommunikation oder sensible Fachübersetzungen ist eine professionelle menschliche Übersetzung beziehungsweise ein interaktives CAT-System geeigneter.
 

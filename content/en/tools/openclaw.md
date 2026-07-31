@@ -4,6 +4,7 @@ title: OpenClaw
 description: "OpenClaw connects a self-hosted agent with chat channels, skills, and local services. Tight permissions and explicit approval boundaries are essential."
 updated_at: 2026-07-31
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -49,6 +50,8 @@ A person then checks whether tasks are missing, dates were confused, or a chat m
 This produces a measurable pilot. You can compare preparation time before and after, count corrections, and record how much maintenance the agent itself creates. OpenClaw earns its place not because it looks autonomous, but when one tightly scoped routine produces less manual work over several weeks.
 
 ## Editorial Assessment
+
+**Editorial verdict: With caveat.**
 
 OpenClaw is compelling because it deliberately blurs the usual boundary between chat, automation, and a local computer. That is also the central risk. An agent reachable through a messenger and connected to services receives unreliable input from the outside world. A politely worded incoming message must not automatically turn into a consequential action.
 
