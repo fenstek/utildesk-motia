@@ -3,112 +3,141 @@ slug: open-webui
 title: Open WebUI
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-19-product-update-priority
+editorial_batch: 2026-07-31-story-card-refresh-20
 category: AI Chatbots
 price_model: Open Source
-description: Self-hosted AI workspace for local and API-connected models, shared knowledge, roles, tools, and governed team access.
+description: Self-hosted AI workspace for local and API-connected models, scoped knowledge, roles, tools, and governed team access.
 tags: ["assistant", "chatbot"]
 official_url: "https://openwebui.com"
 popularity: 84
 tier: C
 generated_at: 2026-05-16
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 ---
 # Open WebUI
 
-Open WebUI ist eine selbst betreibbare Oberfläche für Sprachmodelle und KI-Werkzeuge. Sie kann lokale Modelle über Ollama ebenso anbinden wie OpenAI-kompatible APIs und andere Cloud-Anbieter. Der wichtige Unterschied zu einem einzelnen Chat-Account: Ein Team kann selbst bestimmen, welche Modelle, Wissensquellen, Rollen und Erweiterungen hinter einer gemeinsamen Oberfläche stehen.
+## Kurzurteil
 
-Das ist attraktiv für Teams, die KI nicht nur ausprobieren, sondern einen kontrollierbaren Zugang zu lokalen und externen Modellen bereitstellen wollen. Es ist aber kein einfacher "ChatGPT-Klon zum Installieren". Der Nutzen hängt an Betrieb, Updates, Berechtigungen und einer sauberen Entscheidung darüber, welche Daten die Instanz verlassen dürfen.
+Ein internes Support-Team soll technische Handbücher durchsuchen. Allgemeine Fragen dürfen an ein starkes Cloud-Modell gehen, vertrauliche Produktnotizen nur an ein lokales Modell. Open WebUI kann beide Zugänge unter einer gemeinsamen Oberfläche anbieten, pro Gruppe Knowledge Bases freigeben und Websuche oder Code Interpreter gezielt aktivieren. Der gefährlichste Schalter ist dabei nicht das Modell: Wer Workspace Tools erstellen darf, erhält praktisch die Möglichkeit, Python-Code mit den Rechten des Backends auszuführen.
 
-## Redaktionelles Update Juli 2026
+Open WebUI ist deshalb mehr als eine hübsche Oberfläche für lokale Modelle. Es kann ein selbst betriebener KI-Arbeitsplatz für Teams werden. Wir **empfehlen** es für Organisationen mit technischem Betreiber, klaren Datenzonen und bewusstem Berechtigungsmodell. Ohne Admin, Updates und Backups ist Self-Hosting keine Datenschutzstrategie, sondern nur zusätzlicher Betrieb.
 
-Die aktuelle Open-WebUI-Linie verschiebt den Schwerpunkt deutlich von der Chat-Oberfläche zur betreibbaren Agentenplattform: Skills, Ereignisse, strukturierte Ausgaben, Wissensräume und ein Open Terminal können lokale Modelle mit konkreten Arbeitsabläufen verbinden. Die Update-Dokumentation weist zugleich auf mögliche Änderungen zwischen den Versionen hin.
+## Was Open WebUI heute ist
 
-Vor einem Upgrade sollte ein Team Backups, Rollen, Tool-Berechtigungen und die Kompatibilität eigener Erweiterungen prüfen. Der richtige Test ist ein isolierter Agentenlauf mit erlaubten Werkzeugen, sichtbaren Logs und einem klaren Rollback.
+Open WebUI ist eine Open-Source-Weboberfläche für lokale und API-kompatible Modelle. Nutzer können Chats, Modelle, Prompts, Knowledge Bases und je nach Freigabe weitere Funktionen verwenden. Rollen- und Gruppenrechte steuern, welche Arbeitsbereiche und Features zugänglich sind.
+
+Knowledge speichert Dokumente und Sammlungen für Retrieval. Ein Modell kann auf angehängte Wissensbestände begrenzt werden; Zugriff auf das Modell allein umgeht nicht die Rechte der zugrunde liegenden Dateien. Für neue Erweiterungen setzt das Projekt auf Tools und Functions. Ältere Pipelines gelten in der aktuellen Dokumentation als Legacy und sollten nicht die Basis eines neuen Deployments sein.
+
+## Ein realistischer Team-Rollout
+
+Der Pilot startet mit einem nicht vertraulichen Handbuchbestand und zwei Gruppen. Support darf die freigegebene Knowledge Base lesen, aber keine Modelle, Prompts oder Tools importieren. Administratoren konfigurieren ein lokales Modell für interne Dokumentfragen und einen getrennten Cloud-Zugang für allgemeine Formulierungsarbeit.
+
+Das Team testet konkrete Fragen mit erwarteten Quellen. Antworten müssen relevante Passagen nennen und dürfen bei fehlendem Beleg nicht improvisieren. Danach werden Rechtefälle geprüft: Kann ein Nutzer eine nicht freigegebene Knowledge Base finden? Bleiben Cloud- und lokale Datenwege getrennt? Was steht im Backup?
+
+Tools werden zunächst vollständig deaktiviert. Später erhält nur eine kleine Admin-Gruppe Zugriff auf geprüfte Erweiterungen. Community-Code wird wie Servercode behandelt: Revision prüfen, in einer Testinstanz ausführen und Netzwerk- sowie Dateirechte begrenzen.
 
 ## Für wen ist Open WebUI geeignet?
 
-Open WebUI passt besonders zu:
+- Teams, die lokale und mehrere externe Modelle in einer Oberfläche bündeln
+- Organisationen mit eigener Infrastruktur und technischem Betriebsverantwortlichen
+- Interne Wissensassistenten mit gruppenbasierten Dokumentrechten
+- Entwickler und Power User, die Modelle, Prompts und Funktionen kontrolliert testen
+- Umgebungen, die Datenwege und Anbieterwahl nicht vollständig einem SaaS-Chat überlassen wollen
 
-- technischen Teams, die Ollama, vLLM oder OpenAI-kompatible Endpunkte mit einer einheitlichen Oberfläche nutzbar machen möchten;
-- Organisationen, die verschiedene Modellanbieter vergleichen wollen, ohne jedem Mitarbeitenden einzelne Zugänge zu geben;
-- Teams mit internen Dokumenten, die einen begrenzten RAG-Pilot für Suche und Antworten aufbauen möchten;
-- Admins, die Rollen, Gruppen und Zugriffsrechte für KI-Nutzung selbst kontrollieren müssen.
-
-Für eine Person, die nur mit einem Cloud-Chat arbeiten möchte, ist der Betriebsaufwand oft unnötig. Für Teams, die bereits ein Modell- oder Server-Setup besitzen, kann Open WebUI dagegen die fehlende Bedien-, Rechte- und Wissensschicht sein.
-
-## Ein sinnvoller erster Einsatz
-
-Der beste Pilot beginnt klein: eine interne FAQ oder ein klar abgegrenzter Dokumentenbestand, eine Nutzergruppe und ein oder zwei zugelassene Modelle. Legen Sie vorher fest, welche Antwortarten erlaubt sind, wie Quellen sichtbar werden und wer fehlerhafte Antworten korrigiert. Erst wenn dieser Pfad funktioniert, lohnen sich Agenten, Web-Suche oder breite Tool-Anbindungen.
-
-Ein praktisches Beispiel ist ein Support- oder Enablement-Team. Es erhält einen separaten Arbeitsbereich mit geprüften Handbüchern, einem lokalen Modell für allgemeine Fragen und einem Cloud-Modell für schwierigere Formulierungen. Antworten bleiben Entwürfe: Ein Support-Mitarbeiter prüft Produktversion, Quelle und Kundenkontext vor dem Versand.
-
-## Wichtige Funktionen
-
-### Lokale und externe Modelle hinter einer Oberfläche
-
-Open WebUI unterstützt lokale Modellrunner wie Ollama und OpenAI-kompatible APIs. Dadurch lassen sich lokale, private und cloudbasierte Modelle nebeneinander einsetzen. Offline arbeiten kann die Plattform nur dort, wo Modell und Daten lokal bereitstehen; sobald ein Cloud-Anbieter verbunden ist, gelten dessen Daten- und Netzbedingungen.
-
-### Dokumente, RAG und Wissenszugriff
-
-Für dokumentengestützte Antworten bringt Open WebUI eine RAG-Schicht mit. Sie kann Dateien und Wissensbestände nutzbar machen; die tatsächliche Qualität hängt jedoch an Extraktion, Chunking, Berechtigungen und der gepflegten Quelle. Ein RAG-Chat ist kein Beweis, dass jede Antwort korrekt zitiert oder vollständig ist.
-
-### Rollen, Gruppen und Authentifizierung
-
-Mehrbenutzerbetrieb mit Rollen und Gruppen ist für Teams einer der großen Gründe für Open WebUI. Für größere Umgebungen gibt es Integrationen wie LDAP/Active Directory, SSO und SCIM. Diese Funktionen machen die Instanz nicht automatisch sicher: Zugangsdaten, Reverse Proxy, Updates und Rechte für Tools müssen weiterhin betrieben werden.
-
-### Erweiterungen, Tools und Agenten
-
-Filters, Actions, Pipes, Tools und Skills erweitern die Plattform; externe Dienste können über OpenAPI- oder MCP-nahe Wege angebunden werden. Genau hier steigt das Risiko. Jede neue Aktion braucht einen klaren Zweck, minimale Berechtigungen und gegebenenfalls eine Bestätigung durch den Nutzer.
+Weniger geeignet ist Open WebUI für Teams, die keinen Dienst patchen, überwachen, sichern und bei Sicherheitsupdates kurzfristig warten können.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/open-webui-editorial.webp" alt="Illustration zu Open WebUI: ein geschütztes Berghaus ordnet lokale Modellkapseln und private Datenwege" loading="lazy" decoding="async" />
 </figure>
 
-## Betrieb, Sicherheit und Kosten
+## Typische Einsatzszenarien
 
-Die Open-Source-Software selbst ersetzt keine Infrastruktur. Rechnen Sie mit Server oder Arbeitsplatz, Speicher für Modelle und Dokumente, Backups, Monitoring, Update-Fenstern und gegebenenfalls GPU-Kapazität. Cloud-Modelle verursachen zusätzlich nutzungsabhängige Kosten. Ein scheinbar kostenloser lokaler Chat kann teuer werden, wenn große Modelle, mehrere gleichzeitige Nutzer oder unklare Support-Verantwortung hinzukommen.
+- **Lokaler Modellchat:** Modelle auf eigener Hardware über eine zugängliche Oberfläche nutzen.
+- **Multi-Provider-Arbeitsplatz:** Lokale und API-basierte Modelle nach Aufgabe auswählen.
+- **Interne Knowledge Bases:** Dokumente für semantische und genaue Suche bereitstellen.
+- **Teamzugang:** Gruppen, Features und Freigaben zentral steuern.
+- **Geprüfte Tools:** Modelle kontrolliert um interne Funktionen erweitern.
+- **Modellvergleich:** Dasselbe Testset über mehrere Modelle und Konfigurationen prüfen.
 
-Bei der Sicherheit geht es nicht nur um Verschlüsselung. Prüfen Sie, ob die Instanz öffentlich erreichbar ist, wie Admin-Zugänge geschützt werden, welche Plugins installiert sind und ob hochgeladene Dokumente innerhalb der erwarteten Umgebung bleiben. Eine Testinstanz sollte keine echte Personal-, Vertrags- oder Kundendatenbank als Wissensquelle erhalten.
+## Stärken
 
-## Typische Fehler beim Rollout
+- Self-hosted Oberfläche mit großer Modellfreiheit
+- Gruppen- und Feature-Rechte unterstützen getrennte Nutzerrollen
+- Knowledge kann auf freigegebene Bestände und Modelle zugeschnitten werden
+- Lokale und Cloud-Modelle lassen sich in einer Arbeitsumgebung kombinieren
+- Aktive Open-Source-Entwicklung und umfangreiche Konfiguration
 
-- Alle Modelle und Plugins sofort freizugeben, ohne Verantwortliche und erlaubte Anwendungsfälle zu definieren.
-- Dokumente ohne Rechtekonzept in eine gemeinsame Wissensbasis zu laden.
-- Lokales Hosting mit vollständiger Compliance gleichzusetzen, obwohl Backups, Logs oder angebundene Cloud-APIs Daten weitergeben können.
-- Updates aufzuschieben: Bei einem internetfähigen Webdienst sind Wartung und Sicherheitsmeldungen Teil des Produkts.
+## Grenzen und Risiken
 
-Ein guter Start dokumentiert Modellquellen, Datenklassen, Admin-Verantwortung und einen Rückfallweg, falls ein Tool oder ein Provider ausfällt.
+- Betreiber verantworten Updates, Backups, Verfügbarkeit und sichere Konfiguration
+- Tools und Functions können beliebigen Python-Code mit Backend-Rechten ausführen
+- Ein angebundenes Cloud-Modell macht den jeweiligen Datenweg nicht lokal
+- RAG kann relevante Passagen verfehlen oder falsch zusammenfassen
+- Schnelle Versionsentwicklung verlangt kontrollierte Upgrades und Migrationstests
+
+## Workflow-Fit
+
+Ein vernünftiger Start besteht aus einem Modell, einer Knowledge Base, einer Gruppe und einem klaren Fragenkatalog. Erst wenn Quellenqualität, Rechte und Betrieb funktionieren, kommen weitere Modelle oder Features hinzu. Default Permissions sollten restriktiv sein; zusätzliche Rechte werden gruppenweise vergeben.
+
+Besonders wichtig ist die Trennung zwischen „Tool verwenden“ und „Tool erstellen“. Letzteres ist administrativer Codezugriff und gehört nicht an normale Nutzer.
+
+## Datenschutz & Betrieb
+
+Self-Hosting hält nur jene Daten lokal, die nicht an externe Modell-, Such-, OCR- oder andere Dienste weitergegeben werden. Jede Verbindung muss einzeln dokumentiert werden. Logs, Chatverläufe, Dokumente, Embeddings und Backups gehören in das Lösch- und Berechtigungskonzept.
+
+Die Instanz braucht TLS, sichere Authentifizierung, minimale Container- und Dateirechte, Datenbank-Backups und einen Updatepfad. Öffentliche Erreichbarkeit sollte nicht der Standard eines internen Piloten sein.
+
+## Preise & Kosten
+
+Open WebUI ist Open Source. Kosten entstehen durch Hardware, Modellbetrieb, externe APIs, Speicher, Administration und Ausfallsicherheit. Ein lokales Modell kann API-Kosten senken, dafür aber GPU, Strom und Wartung erfordern.
+
+**Zum Anbieter:** https://openwebui.com
 
 ## Alternativen
 
-- [Jan AI](/tools/jan-ai/): eine lokale Alternative für Modelltests und persönliche Arbeitsabläufe ohne umfassende Teamoberfläche.
-- [LM Studio](/tools/lm-studio/): geeignet für lokale Modelltests am Einzelplatz mit grafischer Bedienung.
-- [ChatGPT](/tools/chatgpt/): passend, wenn ein gehosteter allgemeiner Assistent statt einer selbst betriebenen Oberfläche gesucht wird.
-- [Hugging Face Spaces](/tools/hugging-face-spaces/): sinnvoll, wenn Modelle und Demos veröffentlicht oder geteilt werden sollen, statt eine interne Chat-Instanz zu betreiben.
+- [Jan AI](/tools/jan-ai/): Lokale Alternative für persönliche Modelltests und Einzelplatz-Workflows.
+- [LM Studio](/tools/lm-studio/): Grafische lokale Modellverwaltung am Arbeitsplatz.
+- [ChatGPT](/tools/chatgpt/): Gehostete allgemeine Arbeitsumgebung ohne eigenen Plattformbetrieb.
+- [Hugging Face Spaces](/tools/hugging-face-spaces/): Für das Veröffentlichen und Teilen von Modell-Demos statt eines internen Chatdienstes.
 
 ## Redaktionelle Einschätzung
 
-Open WebUI ist eine starke Option für Teams, die Modellwahl, Datenwege und Zugriffsregeln nicht vollständig an einen einzelnen SaaS-Chat abgeben möchten. Seine Flexibilität ist real, aber sie verlagert Verantwortung auf den Betreiber. Für einen sauberen Einsatz braucht es mindestens einen zuständigen Admin, ein Update-Konzept und einen streng begrenzten ersten Wissensbestand.
+Open WebUI ist eine starke Kontrollfläche, aber kein Sicherheitsprodukt aus der Schachtel. Seine größte Stärke, die Erweiterbarkeit, ist zugleich sein größtes Risiko. Ein kleiner, restriktiver Rollout mit sauber getrennten Datenwegen ist wesentlich überzeugender als eine Instanz, die sofort jedes Modell, jede Knowledge Base und jedes Community-Tool öffnet.
 
-Unsere Empfehlung: erst mit einem internen, risikoarmen Arbeitsbereich starten und den Betrieb zwei bis vier Wochen beobachten. Wenn Berechtigungen, Antwortqualität und Pflege funktionieren, kann die Plattform schrittweise für weitere Modelle und Teams geöffnet werden.
+**Redaktioneller Verdict:** Empfohlen für selbst betriebene Team-Arbeitsplätze mit accountable Admin. Mit Vorbehalt für ungeprüfte Plugins, breite Tool-Rechte und die Annahme, Self-Hosting mache jede Verbindung automatisch privat.
 
 ## FAQ
 
-**Welche Daten sollte ein erster Open-WebUI-Pilot enthalten?**
+**Kann Open WebUI vollständig lokal laufen?**
 
-Am besten ein begrenzter interner Bestand ohne besonders sensible Daten. Rollen, Quellen, Tool-Rechte, Backups und ein klarer Eskalationsweg sollten vor dem ersten Teamzugang getestet werden.
+Ja, wenn Instanz, Modelle, Suche, Knowledge und alle Zusatzdienste lokal betrieben werden.
 
-**Kann Open WebUI vollständig lokal und offline laufen?**
+**Kann es Cloud-Modelle anbinden?**
 
-Ja, wenn die Instanz, die verwendeten Modelle und die Wissensquellen lokal betrieben werden. Die Oberfläche kann aber auch Cloud-APIs anbinden; dann ist der jeweilige Datenfluss nicht mehr offline.
+Ja. Dann verlassen die entsprechenden Anfragen die lokale Umgebung gemäß dem jeweiligen Anbieter.
 
-**Ist Open WebUI für ein Team ohne Admin-Erfahrung geeignet?**
+**Was ist Knowledge?**
 
-Für einen privaten Test ist der Einstieg vergleichsweise leicht. Für einen Teamdienst mit Authentifizierung, Datenrechten, Backups und Updates sollte mindestens eine technisch verantwortliche Person vorhanden sein.
+Ein Bereich für Dokumente und Sammlungen, die Modelle über Retrieval durchsuchen können.
 
-**Ersetzt RAG die Prüfung interner Dokumente?**
+**Ersetzt RAG die Quellenprüfung?**
 
-Nein. RAG kann relevante Abschnitte auffindbar machen, garantiert aber weder Vollständigkeit noch korrekte Schlussfolgerungen. Quellen, Gültigkeit und Freigabe von Antworten müssen im Prozess bleiben.
+Nein. Retrieval kann Passagen finden, garantiert aber weder Vollständigkeit noch richtige Schlussfolgerungen.
+
+**Wie funktionieren Rechte?**
+
+Default- und Gruppenrechte steuern Arbeitsbereiche, Teilen, Chatfunktionen und Features. Dokumentzugriff bleibt zusätzlich relevant.
+
+**Warum ist Tools Access gefährlich?**
+
+Er erlaubt das Erstellen oder Importieren von Code, der mit Backend-Rechten läuft. Diese Berechtigung ist praktisch root-äquivalent.
+
+**Sollte man Pipelines neu einsetzen?**
+
+Nein. Die aktuelle Dokumentation bezeichnet Pipelines als Legacy und empfiehlt integrierte Pipe- oder Filter-Functions.
+
+**Was braucht ein Team für den Betrieb?**
+
+Einen verantwortlichen Admin, Authentifizierung, TLS, Backups, Monitoring, Update- und Wiederherstellungsplan.
