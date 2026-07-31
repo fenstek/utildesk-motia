@@ -3,16 +3,16 @@ slug: midjourney
 title: Midjourney
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-product-update"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: "Design"
 price_model: "Abonnement"
 tags: ["ai", "design", "image", "creative", "visual"]
 official_url: "https://www.midjourney.com/"
 affiliate_url: "https://www.midjourney.com/"
 created_at: 2026-02-02
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 popularity: 37
 source_language: de
 translation: full
@@ -20,6 +20,8 @@ description: "AI image generator for high-quality concept images, illustrations,
 ---
 
 # Midjourney
+
+A brand team does not need a finished campaign by the afternoon. It needs a decision between three visual worlds. Midjourney can turn a shared moodboard, a few fixed design rules and purposeful variants into credible directions quickly. The value is not the prettiest random image but a traceable selection: which references were cleared, which option carries the message and which details must be rebuilt before publication?
 
 ## Status on 19 July 2026
 
