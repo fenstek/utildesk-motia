@@ -2,10 +2,10 @@
 slug: puppeteer
 title: Puppeteer
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-03
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: Entwickler-Tools
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
@@ -13,8 +13,12 @@ official_url: "https://pptr.dev/"
 popularity: 0
 tier: D
 generated_at: 2026-05-17
+updated_at: 2026-07-31
+description: "Puppeteer automatisiert Chromium für Tests, Screenshots und kontrollierte Browserabläufe, wenn API, Berechtigungen und Nutzungsbedingungen passen."
 ---
 # Puppeteer
+
+Jede Nacht müssen Rechnungen aus einem Partnerportal heruntergeladen werden, das keine passende API bietet. Ein Puppeteer-Job meldet sich mit einem technischen Konto an, wartet auf stabile Selektoren, speichert Dateien atomar und legt bei Fehlern Screenshot und Ablaufspur ab. Wiederholungen sind begrenzt, Zugangsdaten bleiben im Secret Store. Die Automation ist nur vertretbar, wenn Nutzungsbedingungen und Zugriff das erlauben; CAPTCHA oder wechselnde Prozesse sind ein Stoppsignal.
 
 Puppeteer ist eine JavaScript-Bibliothek zur Steuerung von Chrome oder Firefox über das DevTools Protocol beziehungsweise WebDriver BiDi. Sie wird häufig für Browser-Tests, Screenshots, PDF-Ausgaben, Datenerfassung und wiederholbare Browserabläufe eingesetzt. Standardmäßig startet sie ohne sichtbares Browserfenster; für Fehlersuche kann derselbe Ablauf sichtbar laufen.
 
@@ -42,8 +46,7 @@ Der häufigste Fehler sind feste Sleeps. Warten Sie stattdessen auf eine klare N
 
 Puppeteer ist keine Berechtigung, fremde Dienste aggressiv zu crawlen oder Browser-Logins unbegrenzt zu automatisieren. Beachten Sie Nutzungsbedingungen, Rate Limits und Datenschutz. Secrets gehören in den CI-Secret-Store, nicht in Testcode oder Screenshots. Bei Aktionen mit Geld, Kundenkonten oder Löschungen sind Testumgebung und explizite Freigaben Pflicht.
 
-## Alternativen zu Puppeteer
-
+## Alternativen
 - [Playwright](/tools/playwright/): für ein umfassendes E2E-Framework mit Chromium, Firefox und WebKit.
 - [Selenium](/tools/selenium/): wenn bestehende WebDriver-Infrastruktur oder viele Sprachen entscheidend sind.
 - [Cypress](/tools/cypress/): für frontendnahe Tests mit eigener Developer Experience.
@@ -66,3 +69,7 @@ Nein. Headless ist der Standard. Für Debugging kann ein sichtbarer Browser gest
 **Wann ist Playwright die bessere Wahl?**
 
 Wenn Cross-Browser-Tests, integrierter Test-Runner, Trace-Auswertung und ein breiteres E2E-Werkzeug im Mittelpunkt stehen.
+
+**Wann sollte eine Browser-Automation gestoppt werden?**
+
+Wenn Nutzungsbedingungen oder Berechtigungen unklar sind, ein CAPTCHA umgangen werden müsste oder der Ablauf dauerhaft instabil ist. Dann ist eine offizielle API oder Prozessänderung der bessere Weg.

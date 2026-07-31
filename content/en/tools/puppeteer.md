@@ -2,18 +2,22 @@
 slug: puppeteer
 title: Puppeteer
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-03
-category: Developer
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Entwickler-Tools
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://pptr.dev/"
 popularity: 0
 translation: full
+updated_at: 2026-07-31
+description: "Puppeteer automates Chromium for testing, screenshots, and controlled browser workflows when APIs, permissions, and terms allow it."
 ---
 # Puppeteer
+
+Every night, invoices must be downloaded from a partner portal that offers no suitable API. A Puppeteer job signs in with a service account, waits for stable selectors, stores files atomically, and records a screenshot and trace when it fails. Retries are bounded and credentials stay in a secret store. The automation is defensible only when the terms and access permit it; a CAPTCHA or frequently changing process is a signal to stop and seek another route.
 
 Puppeteer is a JavaScript library for controlling Chrome or Firefox through the DevTools Protocol or WebDriver BiDi. Teams commonly use it for browser tests, screenshots, PDF output, controlled data collection, and repeatable browser flows. It runs without a visible browser window by default, while the same flow can run headed for debugging.
 
@@ -41,8 +45,7 @@ Fixed sleeps are the usual source of flaky tests. Wait instead for explicit navi
 
 Puppeteer is not permission to crawl third-party services aggressively or automate browser logins without limits. Respect terms, rate limits, and privacy. Put secrets in the CI secret store, not test code or screenshots. For money, customer accounts, or deletion actions, a test environment and explicit approvals are essential.
 
-## Alternatives to Puppeteer
-
+## Alternatives
 - [Playwright](/en/tools/playwright/): for a full E2E framework across Chromium, Firefox, and WebKit.
 - [Selenium](/en/tools/selenium/): when existing WebDriver infrastructure or many languages are decisive.
 - [Cypress](/en/tools/cypress/): for frontend-centred testing with its own developer experience.
@@ -65,3 +68,7 @@ No. Headless is the default. A visible browser can be launched for debugging.
 **When is Playwright the better choice?**
 
 When cross-browser testing, an integrated runner, trace inspection, and a broader E2E toolset are the priority.
+
+**When should browser automation be stopped?**
+
+Stop when terms or permissions are unclear, a CAPTCHA would need bypassing, or the flow remains persistently unstable. An official API or process change is then the better route.
