@@ -2,22 +2,25 @@
 slug: looker
 title: Looker
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: "AI Infrastructure"
+price_model: Je nach Plan
 tags:
   - analytics
   - data
   - automation
 official_url: 'https://cloud.google.com/looker'
 popularity: 0
-description: 'Looker is a modern business intelligence and data analytics platform that helps organizations bring together data from multiple sources, analyze it, and present it visually. It is designed for data-driven decision-making, with powerful tools for visualization, exploration, dashboards, and real-time analysis.'
+description: "Looker connects a semantic data model with analysis and dashboards so teams can use governed metrics consistently."
 translation: full
+updated_at: 2026-07-31
 ---
 # Looker
+
+Sales and finance report two different revenue numbers for the same month. Instead of building another dashboard, the data team defines the metric in the semantic model, documents exclusions, applies row-level access, and reconciles the result with the source system. Views for each group come only after that. Looker can create a shared language for metrics; broken data contracts or unclear ownership do not become true through visualisation.
 
 Looker is a modern business intelligence and data analytics platform that helps companies bring together data from different sources, analyze it, and present it visually. With a focus on data-driven decision-making, Looker provides powerful tools for data visualization and exploration, making it especially suitable for organizations with large data sets.
 
@@ -87,16 +90,13 @@ Looker’s pricing varies depending on the provider, company size, and selected 
 
 Beyond the list price, Looker should be evaluated by the cost of adoption. Relevant factors include infrastructure, operations, monitoring, training, and maintenance of data models. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
-## Alternatives to Looker
+## Alternatives
 
-- [Tableau](/tools/tableau/): Known for its user-friendly visualizations and broad integration.
-- [Power BI](/tools/power-bi/): Microsoft’s BI solution with strong Office integration.
-- [Qlik Sense](/tools/qlik-sense/): A data visualization platform with a focus on associative data modeling.
-- **Mode Analytics:** Collaborative analytics platform that combines SQL and Python.
-- [Sisense](/tools/sisense/): BI platform with a focus on embedded analytics and scalability.
-
-When comparing options, Looker should not only be measured against very similar products. Depending on the goal, databases, BI tools, pipeline systems, and open frameworks may fit better if they are closer to the existing process or require less maintenance.
-
+- [Tableau](/en/tools/tableau/): for broad visual analysis and exploratory dashboards.
+- [Power BI](/en/tools/power-bi/): for Microsoft-oriented BI work and Office integration.
+- [Qlik Sense](/en/tools/qlik-sense/): for associative data analysis and interactive exploration.
+- [Mode Analytics](/en/tools/mode-analytics/): for collaborative analysis combining SQL and data-science notebooks.
+- [Sisense](/en/tools/sisense/): for embedded analytics inside customer-facing applications.
 ## FAQ
 
 **1. What is LookML?**
