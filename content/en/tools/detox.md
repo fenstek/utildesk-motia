@@ -2,11 +2,11 @@
 slug: detox
 title: Detox
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: "AI Agents"
 price_model: Open Source
 tags:
   - detox
@@ -16,9 +16,12 @@ official_url: 'https://www.detox.com/'
 popularity: 0
 source_language: de
 translation: full
-description: "Detox is an end-to-end testing framework for mobile apps, especially React Native-oriented development and QA workflows."
+description: "Detox tests mobile applications end to end with synchronised actions and is suited to a focused set of business-critical user journeys."
+updated_at: 2026-07-31
 ---
 # Detox
+
+After an update, mobile login fails only in CI and not on a developer machine. The team builds a small Detox test with controlled fixtures, unambiguous actions, and business assertions, runs it against the same app and emulator configuration, and stores logs and video on failure. Flakiness becomes measurable rather than something to rerun away. Detox is useful for genuine end-to-end risk; faster tests are a better layer for component logic.
 
 Detox helps test mobile apps automatically in the way users would operate them. For React Native teams, it is interesting because tests run closer to real interactions than pure unit tests.
 
@@ -65,13 +68,12 @@ In the catalog, Detox is marked with the pricing model **Open Source**. For a re
 
 **Provider:** https://www.detox.com/
 
-## Alternatives to Detox
+## Alternatives
 
-- [Appium](/en/tools/appium/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Selenium](/en/tools/selenium/): useful comparison point for adjacent workflows, pricing, or team fit.
-- Playwright: useful comparison point for adjacent workflows, pricing, or team fit.
-- [Cypress](/en/tools/cypress/): useful comparison point for adjacent workflows, pricing, or team fit.
-
+- [Appium](/en/tools/appium/): for native and hybrid mobile apps across different frameworks.
+- [Selenium](/en/tools/selenium/): for established browser automation with a broad ecosystem.
+- [Playwright](/en/tools/playwright/): for modern web end-to-end testing and detailed traces.
+- [Cypress](/en/tools/cypress/): for developer-oriented frontend and web application testing.
 ## Editorial assessment
 
 Detox is valuable when core mobile flows need real protection. It requires disciplined test architecture.
@@ -89,3 +91,7 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+**How can Detox test flakiness be reduced?**
+
+Use controlled data, stable selectors, unambiguous states, and identical build environments. Investigate failures with logs and video instead of blindly rerunning them.
