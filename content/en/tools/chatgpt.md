@@ -3,9 +3,9 @@ slug: chatgpt
 title: ChatGPT
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-product-update"
+editorial_batch: "2026-07-31-story-card-refresh-20"
 category: "AI Chatbots"
 price_model: Freemium
 tags:
@@ -15,42 +15,43 @@ tags:
 official_url: "https://chatgpt.com/"
 affiliate_url: "https://chatgpt.com/"
 created_at: 2026-01-26T00:00:00.000Z
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 popularity: 0
 source_language: de
 translation: full
-description: "OpenAI's general-purpose AI workspace for research, writing, coding, file analysis, images and repeatable knowledge-work workflows."
+description: "OpenAI's AI workspace for research, writing, coding, files, images, and repeatable knowledge work."
 ---
-
 # ChatGPT
 
-## Status on 19 July 2026
+## Quick verdict
 
-The current desktop experience separates quick chats from longer Work tasks and makes Projects plus search across chats, files, and images more visible. Work can continue across web, mobile, and desktop, while local conversations remain on the originating computer. That makes context and storage part of the workflow, rather than a secondary detail after model choice.
+Monday morning, a new project: twelve PDFs, scattered interview notes, and a request for a defensible briefing by noon. This is where ChatGPT shows more of its value than it does in the famous empty prompt box. A Project can hold the sources and working instructions, research can be planned in dialogue, a longer draft can move into Canvas, and the final pass can leave a visible list of claims that still need human verification.
 
-Use a simple operating rule: share Project context only for a defined initiative, separate files by sensitivity, and version important results outside the chat. When using apps or connected services, review permissions per connection and keep actions with external effects behind deliberate confirmation.
+The result is not automatically true or publication-ready. But the path from messy material to a reviewable working draft becomes much shorter. Our recommendation is therefore to **use it** when ChatGPT is treated as a workbench with explicit source, data, and approval rules. We do not recommend it as an invisible autopilot for consequential decisions.
 
-ChatGPT is OpenAI's AI assistant for people who want to get from a question to a usable draft quickly. The tool writes, explains, structures, translates, analyzes files, helps with programming, and can work with web search, images, voice, Canvas, and agentic features depending on the plan.
+## What ChatGPT is today
 
-Its real value is not that ChatGPT always gives the perfect answer immediately. It becomes strong when users treat it as a working surface: collect ideas first, then refine them, check sources, shorten text, test code, and make decisions deliberately.
+ChatGPT is OpenAI's general AI workspace. Depending on the plan, the product combines the familiar conversation with web search, file and data analysis, image and voice input, image generation, Canvas, Projects, apps, and agentic tasks. That allows one interface to hold several steps that previously moved between search, an editor, a spreadsheet, and a chat.
 
-## 2026 update: what to review now
+Projects are more than folders. They bring together conversations, files, and project-specific instructions. Project-only memory can keep context within one initiative; teams should still decide exactly which material belongs in a shared Project. Canvas separates longer writing or coding work from the transient chat and supports direct edits, comments, and iterative revisions.
 
-In 2026, ChatGPT is less a single chat box and more a working environment: projects, Canvas, file analysis, web search, voice, image capabilities, and agentic tasks are increasingly connected depending on the plan. Teams should therefore review roles, data-sharing rules, and approval workflows, not only which model is currently strongest.
+## A realistic workflow
 
-The practical point: judging ChatGPT only as a text generator misses much of its current value. The bigger lift comes when long documents, code, spreadsheets, research, and repeatable workflows are handled together. Source checks, data protection, and clear ownership still matter because the interface increasingly behaves like a production workspace.
+Consider a product team deciding whether to build a feature. It first puts interview notes, usage data, and technical constraints into a dedicated Project. ChatGPT is not asked for an immediate verdict. Instead, it must identify contradictions, list missing evidence, and propose a research plan. A person corrects that plan before any search begins.
+
+The team then builds a decision memo in Canvas with three deliberately separate layers: supported facts, plausible assumptions, and open questions. Tables or CSV files can be explored alongside it, but important calculations are reproduced outside the chat. Only after sources, numbers, and owners are clear does the draft become a meeting document.
+
+This is less spectacular than “AI does everything,” but far more reliable. ChatGPT speeds up sorting, drafting, and challenge; the decision, approval, and accountability remain visibly human.
 
 ## Who is ChatGPT for?
 
-ChatGPT is especially useful for:
+- Knowledge workers turning mixed source material into briefings, emails, concepts, or summaries
+- Developers explaining code, drafting tests, narrowing bugs, or preparing technical documentation
+- Product, marketing, sales, and support teams iterating on variants and working templates
+- Learners and teachers breaking a topic into questions, examples, and understandable steps
+- Small teams that want to combine several media and tasks without operating a specialized AI stack
 
-- Knowledge workers who want to prepare texts, emails, concepts, briefings, or summaries faster
-- Developers who want to explain, refactor, test, or sketch small automations
-- Marketing, sales, and support teams that need variants, FAQs, campaign ideas, or internal templates
-- Students, teachers, and learners who want to break complex topics into understandable learning steps
-- Founders and product teams that need to structure ideas, requirements, roadmaps, and user feedback
-
-ChatGPT is less suitable as the sole source for legal, medical, financial, or security-critical decisions. It can prepare, explain, and organize questions, but it does not replace a reliable expert review.
+ChatGPT is less suitable as the sole authority for legal, medical, financial, or security-critical decisions. It can organize questions and prepare work, but it does not replace qualified review.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/chatgpt-editorial.webp" alt="Illustration for ChatGPT: questions and ideas connecting into a helpful conversation constellation" loading="lazy" decoding="async" />
@@ -58,102 +59,91 @@ ChatGPT is less suitable as the sole source for legal, medical, financial, or se
 
 ## Typical use cases
 
-- **Writing and editing:** Turn rough notes into clear emails, landing page copy, presentation notes, or documentation.
-- **Prepare research:** Structure search questions, hypotheses, comparison criteria, and source lists.
-- **Code and automation:** Draft scripts, explain error messages, formulate tests, and understand API examples.
-- **Data work:** Analyze tables, CSV files, or notes, find patterns, and derive chart ideas.
-- **Learning:** Summarize material, create quizzes, explain terms, and build study plans.
-- **Creative work:** Vary names, claims, image ideas, storylines, or product positioning.
+- **Research and briefings:** Develop search questions, compare sources, and expose uncertainty.
+- **Writing and editing:** Turn notes into a draft, test tone and structure, and compare alternatives.
+- **Code and automation:** Explain errors, sketch small scripts, formulate tests, and discuss changes.
+- **File and data work:** Connect PDFs, spreadsheets, and transcripts, look for patterns, and derive review questions.
+- **Learning:** Request explanations, generate counter-questions, and work deliberately on knowledge gaps.
+- **Visual work:** Analyze images, develop motifs, and refine concepts through dialogue.
 
-## Core features
+## Strengths
 
-- **Conversational assistance:** Questions, drafts, and corrections can be refined in natural language.
-- **Text work:** Write, shorten, rewrite, translate, outline, and adjust tone.
-- **Coding help:** Explain code, create examples, narrow down bugs, and clarify technical concepts.
-- **File and data analysis:** Depending on the plan, files can be uploaded, summarized, and analyzed.
-- **Web and source work:** For current topics, ChatGPT can use web information depending on the available feature set.
-- **Image and voice input:** Discuss images, visualize ideas, or work by voice when supported by the plan.
-- **Canvas and projects:** Longer texts or code can be edited iteratively in a dedicated workspace.
-- **Apps and integrations:** ChatGPT can be used in selected services or integrated into custom workflows through the OpenAI API.
+- Very broad scope in a comparatively approachable interface
+- Projects and Canvas give longer work more structure than an endless chat history
+- Strong combination of text, code, files, data, image, and voice
+- Iterative work is useful even without a custom technical integration
+- Team and enterprise plans can add administration and data controls
 
-## Pros and cons
+## Limits and risks
 
-### Pros
-
-- Very broad range from everyday tasks to professional knowledge work
-- Easy to start: users can begin with a simple question and improve iteratively
-- Strong for drafts, structure, variants, and explanations
-- Useful for text, code, analysis, image understanding, and learning workflows
-- OpenAI continuously develops the product, models, and integrations
-
-### Cons
-
-- Answers can sound plausible while still being wrong or incomplete
-- Good results depend heavily on context, prompt quality, and verification
-- Sensitive data, customer data, and internal secrets should not be pasted into prompts without a reviewed policy
-- Costs, limits, and available features differ by plan
-- Complex expert decisions still need human responsibility
+- Responses can sound convincing while being wrong, incomplete, or out of date
+- A long Project context can preserve errors as effectively as useful information
+- Features, models, limits, and prices change frequently and differ by plan
+- Connected apps increase both utility and the permission and data surface
+- Agentic actions need explicit confirmation boundaries; a good result does not prove that the execution path was safe
 
 ## Workflow fit
 
-ChatGPT works best as a first and second thinking partner: it speeds up drafts, makes options visible, and helps break unclear tasks into workable steps. After that, the user should review, choose, and finalize.
+ChatGPT fits well at the beginning and in the middle of knowledge work: organizing material, drafting, finding counterarguments, exploring data, and phrasing unresolved issues. The end of the process should deliberately move to verified sources, versioned files, and a responsible person.
 
-In teams, a clear frame helps: Which data may be entered? Which tasks may ChatGPT prepare? Where is review mandatory? With those rules, ChatGPT becomes less of a toy and more of a productive building block in the work process.
+A simple team rule helps: define which data may enter each Project, which claims require a source, and which actions require confirmation. That turns a versatile assistant into a controllable tool rather than a hard-to-audit shadow process.
 
-## Privacy & data notes
+## Privacy and operations
 
-Be careful with confidential information. Do not enter passwords, API keys, personal customer data, internal contracts, or unpublished business secrets unless there is a reviewed company policy allowing it.
+Passwords, API keys, unapproved customer data, internal contracts, and business secrets should not be pasted into prompts without review. Before a broad rollout, organizations should examine plan terms, data use, retention, admin controls, and permissions for connected apps.
 
-For companies, workspace, business, or enterprise rules matter more than a single chat session: data policies, admin control, permissions, and review processes should be clarified before broad use.
+Important results should be versioned outside ChatGPT. This is particularly true for code, decision records, contracts, and data analyses: the chat can document the thinking, but it is not a system of record.
 
 ## Pricing & costs
 
-ChatGPT has free entry options and paid plans for higher limits, additional features, team administration, or enterprise requirements. Exact prices, model access, and feature limits change regularly and should be checked directly on the official pricing page.
+There is a free entry tier and paid plans with higher limits, additional features, and team or enterprise administration. OpenAI changes models, bundles, and limits regularly, so current pricing and entitlements should be checked directly with the provider.
 
 **Go to provider:** https://chatgpt.com/
 
 ## Alternatives
 
-- [Claude](/en/tools/claude/): Especially strong for long text, analysis, writing, and careful reasoning.
-- [Gemini](/en/tools/gemini/): Interesting for users in the Google ecosystem and multimodal tasks.
-- [Perplexity](/en/tools/perplexity/): Better when search-like answers with visible sources are the priority.
-- [Microsoft Copilot](/en/tools/microsoft-copilot/): A natural fit for Microsoft 365 workflows and Office context.
-- [Jasper](/en/tools/jasper/): More specialized for marketing and content production.
+- [Claude](/en/tools/claude/): Strong for long-form text, careful analysis, and calm editorial work.
+- [Gemini](/en/tools/gemini/): Especially relevant when Google Workspace and multimodal tasks are central.
+- [Perplexity](/en/tools/perplexity/): More search-oriented when visible sources and fast web research are the priority.
+- [Microsoft Copilot](/en/tools/microsoft-copilot/): A natural fit for Microsoft 365 workflows and managed Office environments.
+- [Jasper](/en/tools/jasper/): More specialized for brand governance and scaled marketing production.
 
 ## Editorial assessment
 
-ChatGPT is not a single-purpose tool, but a universal working surface. That is both its strength and its risk: used with context, review rules, and concrete tasks, it gives a lot of leverage. Used without verification, it only makes mistakes faster.
+ChatGPT is not the best specialist for every task, but it is one of the most complete general AI workspaces. Its biggest productivity gain does not come from the longest prompt. It comes from a clean process: constrain context, demand sources, review intermediate results, and preserve the approved outcome outside the chat.
+
+**Editorial verdict:** Recommended for varied knowledge work with defined review boundaries. Use with caution for autonomous actions, confidential data, and decisions where mistakes have real consequences.
 
 ## FAQ
 
 **Is ChatGPT free to use?**
 
-Yes, free use is available. Paid plans may be needed for higher limits, selected models, team features, or additional tools.
+Yes. A free entry tier is available; higher limits, selected features, and administrative controls may require a paid plan.
+
+**What do Projects add compared with ordinary chats?**
+
+Projects keep related chats, files, and instructions together. That maintains continuity without repeatedly explaining the same context.
+
+**What is Canvas useful for?**
+
+Canvas is a separate workspace for longer text and code. It supports direct edits, comments, and iterative revision instead of describing every change in chat.
 
 **Can ChatGPT provide current information?**
 
-Depending on available features, ChatGPT can use web search or other current sources. Important facts should still be checked.
+Available search and research features can incorporate current web sources. Important claims should still be checked against the original sources.
 
-**Can I use ChatGPT for code?**
+**Can I use ChatGPT for production code?**
 
-Yes. It is useful for explaining, drafting, debugging, and testing code. Production code should still be reviewed, run, and versioned.
+Yes, as support for drafting, debugging, and testing. Changes still belong in a normal review, test, and version-control workflow.
 
-**Is ChatGPT suitable for companies?**
+**What should I not enter?**
 
-Yes, if data policies, roles, admin settings, and review processes are clearly defined.
+Do not enter passwords, API keys, unapproved personal data, or internal secrets. Organizations should follow their own privacy and approval policies.
 
-**What should I not enter into ChatGPT?**
+**Does ChatGPT replace specialists?**
 
-Do not enter passwords, API keys, confidential customer data, or internal secrets unless an approved company framework exists.
+No. It shortens preparation and makes options visible, but it does not assume professional responsibility or liability.
 
-**How do I get better answers?**
+**How is it different from Claude or Gemini?**
 
-Provide the goal, context, example, desired format, and clear constraints. Good prompts describe not only the task, but also the standard for a good result.
-
-**Does ChatGPT replace experts?**
-
-No. It accelerates preparation, variants, and explanations, but it does not replace responsibility for important decisions.
-
-**How is ChatGPT different from Claude or Gemini?**
-
-ChatGPT is positioned as a very broad general-purpose assistant. Claude is often strong with long text and analysis, while Gemini is closely connected to Google services.
+ChatGPT is positioned as a particularly broad general workspace. Claude emphasizes different strengths in writing and analysis, while Gemini is more tightly connected to Google's product ecosystem.
