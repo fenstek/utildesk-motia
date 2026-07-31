@@ -3,18 +3,20 @@ slug: windsurf
 title: Windsurf
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: Entwickler-Tools
 price_model: Freemium
 tags: [ai, coding, ide, developer-tools]
 official_url: "https://windsurf.com/"
 description: "An agentic code editor with Cascade, code completion, and local and cloud agent coordination inside the current Devin platform."
 translation: full
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 ---
 # Windsurf
+
+A defect crosses a React form, API validation and a database migration. Windsurf can search the repository, propose a multi-part plan, make changes and run tests. That is useful only when the developer limits the scope, reviews the diff in sections and stops any unexpected migration. A fast agent loop does not replace architectural understanding or independent CI.
 
 Windsurf is an agentic code editor that combines context-aware completion, the Cascade agent, and coordination of local and cloud development agents. Since becoming part of the Cognition and Devin platform, selection has to cover more than an editor: IDE work, cloud agents, repository access, and shared usage allowances now form a connected operating model.
 
