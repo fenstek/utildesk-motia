@@ -2,18 +2,21 @@
 slug: postgresql
 title: PostgreSQL
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-04
-category: Developer
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Entwickler-Tools
 price_model: Open Source
 tags: [database, open-source, developer-tools, sql]
 official_url: "https://www.postgresql.org/"
-description: "PostgreSQL is an open-source relational database for transactional applications, complex queries, and extensible data models."
+description: "PostgreSQL is a capable open-source database for transactional applications, analytical queries, and maintainable long-lived data systems."
 translation: full
+updated_at: 2026-07-31
 ---
 # PostgreSQL
+
+A subscription service needs to introduce a new billing rule without damaging payments already in flight. The team first extends the schema in a backward-compatible way, turns the backfill query into a repeatable job, and tests transactions and locking against a realistic copy. Cutover happens only after backup and rollback have been rehearsed. PostgreSQL provides a dependable foundation, but safety comes from the migration plan, observability, and a route back, not from the database name alone.
 
 PostgreSQL is an open-source relational database for applications needing reliable transactions, data integrity, and complex queries. It handles classic business entities alongside JSON data, full-text search, and extensions such as PostGIS. Its strength is a solid data core, not solving every data problem without modelling.
 
@@ -41,8 +44,7 @@ Every schema change needs a tested forward path and, where possible, a rollback 
 
 The application should not connect as a superuser. Separate migration, application, reporting, and operations roles; keep credentials as secrets. Monitor connections, storage pressure, long transactions, error rates, and backup state. Managed PostgreSQL reduces infrastructure work, not responsibility for model, access, or cost.
 
-## Alternatives to PostgreSQL
-
+## Alternatives
 - [CockroachDB](/en/tools/cockroachdb/): when distributed SQL and horizontal scale matter more than exact PostgreSQL compatibility.
 - [DuckDB](/en/tools/duckdb/): for local analytical processing and embedded OLAP queries rather than a transactional application server.
 - [MongoDB](/en/tools/mongodb/): when document-centred data and access patterns are genuinely primary.
@@ -65,3 +67,7 @@ Only a restore test proves that data, keys, permissions, and the operational pro
 **When is managed PostgreSQL useful?**
 
 When a team wants to reduce infrastructure work. Migration, permissions, cost, and data responsibility still remain with the customer.
+
+**How should a risky schema change be introduced?**
+
+Start backward-compatible, test with realistic data, rehearse backup and rollback, and only then cut over gradually. The application must tolerate both states during the transition.
