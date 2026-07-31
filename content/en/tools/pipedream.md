@@ -3,9 +3,9 @@ slug: pipedream
 title: Pipedream
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-pipedream-editorial"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: "AI Agents"
 price_model: Freemium
 tags: [automation, integrations, workflows, ai-agents]
@@ -13,12 +13,13 @@ official_url: "https://pipedream.com/"
 popularity: 0
 description: "Pipedream combines API integrations, triggers, prebuilt actions, and custom code in executable workflows. Its practical value is traceable event handling, not an endlessly long integration list."
 translation: full
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
 ---
 # Pipedream
 
-Pipedream is a cloud platform for integrations and executable workflows. A workflow starts with a trigger, such as an HTTP event, and then processes the input with prebuilt actions or custom code steps. Later steps can consume data from earlier steps, while logs, errors, and execution timing are visible for each run.
+A payment provider sends the same successful webhook twice. A naive workflow creates two invoices and two CRM activities. In Pipedream, the team can receive the event, verify its signature and idempotency key, normalise data with custom code and only then execute controlled actions. The platform makes the flow quick to build; protection against duplicate or partial execution still has to be designed deliberately.
+
+Pipedream is a cloud platform for integrations and executable workflows. A workflow starts with a trigger, such as an HTTP event, and then processes the input with prebuilt actions or custom code steps. Later steps can consume data from earlier steps, while logs, errors and execution timing are visible for each run.
 
 That makes Pipedream useful for teams that need to connect APIs, SaaS services, and application logic without building a separate service for every small integration. It is not a substitute for process design: authentication, failure paths, retries, data minimization, and an accountable owner still need to be decided before production use.
 
