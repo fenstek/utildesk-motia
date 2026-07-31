@@ -1733,3 +1733,4 @@ _Last updated: 2026-07-19_
 ## 2026-07-31 - Story-led refresh for twenty established tool cards
 
 - `chatgpt`: replaced the layered product-update opening with a source-aware project workflow from mixed files to a reviewed Canvas decision memo; preserved five alternatives, eight FAQ and the existing illustration in DE/EN.
+- `gemini`: rebuilt the generic Workspace summary around a bounded Drive, Gmail and Deep Research proposal workflow; preserved five alternatives and the existing illustration while expanding the practical DE/EN review guidance.
