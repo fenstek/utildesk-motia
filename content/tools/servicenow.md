@@ -7,16 +7,19 @@ tags: ["workflow", "automation", "enterprise", "ai"]
 official_url: "https://www.servicenow.com/"
 affiliate_url: 
 created_at: 2026-06-14
-updated_at: 2026-06-14
+updated_at: 2026-07-31
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-14
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+editorial_batch: 2026-07-31-story-card-refresh-50
 tier: D
 popularity: 0
+description: "ServiceNow digitalisiert Service-, Anfrage- und Freigabeprozesse mit Auditpfad, Verantwortlichkeiten und Integrationen für große Organisationen."
 ---
 # ServiceNow
+
+Ein neuer Mitarbeiter benötigt Zugriff auf drei interne Systeme. Statt E-Mails weiterzuleiten, stellt ServiceNow einen Katalogeintrag mit Pflichtangaben, Genehmigungen, automatisierbaren Schritten und vollständigem Auditpfad bereit. Ausnahmen landen bewusst bei einem zuständigen Menschen. So wird ein wiederkehrender Vorgang messbar und nachvollziehbar. Wenn der zugrunde liegende Prozess unnötig kompliziert ist, sollte er jedoch vereinfacht werden, bevor die Plattform ihn dauerhaft zementiert.
 
 ServiceNow ist keine kleine Automations-App, sondern eine Enterprise-Plattform für Serviceprozesse, Workflows und zunehmend KI-gestützte Arbeit über Abteilungen hinweg. Interessant wird sie dort, wo IT, HR, Customer Service, Security und Operations gemeinsame Prozesslogik brauchen.
 
@@ -74,8 +77,7 @@ ServiceNow ist als Abonnement geführt. Der reale Aufwand umfasst Lizenzen, Impl
 
 **Zum Anbieter:** https://www.servicenow.com/
 
-## Alternativen zu ServiceNow
-
+## Alternativen
 - [Microsoft Power Automate](/tools/microsoft-power-automate/): wenn Microsoft-nahe Automatisierung im Vordergrund steht.
 - [UiPath](/tools/uipath/): wenn RPA und Prozessautomatisierung stärker gewichtet werden.
 - [Salesforce Lightning](/tools/salesforce-lightning/): wenn CRM- und Vertriebsprozesse das Zentrum bilden.
