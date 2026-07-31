@@ -1,5 +1,23 @@
 # Project State
 
+## 2026-07-31 Legal and privacy refresh
+
+- German and English legal pages were updated from the repealed TMG reference
+  to the current provider-information basis in § 5 DDG and the editorial
+  responsibility in § 18 Abs. 2 MStV.
+- The privacy notice now describes the actual Cloudflare, self-hosted Umami,
+  external font/favicon, local preference, protected review and contact data
+  flows, including legal bases, recipients, transfers, retention criteria,
+  rights and the competent NRW authority.
+- Umami is no longer loaded before consent. The public UI stores a
+  `granted`/`denied` choice in `utildesk-analytics-consent-v1`, exposes a
+  persistent footer settings control and continues to send the existing
+  `qualified-reader` event only after consent.
+- Legal routes keep HTML `noindex,nofollow,noarchive,nosnippet` directives and
+  now also receive the equivalent Cloudflare `X-Robots-Tag`.
+- Provider details remain absent from static HTML and are rendered from split
+  encoded fragments in the browser with `data-nosnippet`.
+
 ## 2026-07-31 Fifty-card story-led runtime release
 
 - Fifty older strict-failing tool cards were refreshed in paired DE/EN form with concrete workflows, explicit decision boundaries, synchronized editorial metadata, complete descriptions, at least four FAQ items, and valid internal alternatives.
