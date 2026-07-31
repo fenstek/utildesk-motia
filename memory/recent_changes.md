@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-07-31 - Twenty story-led tool-card refreshes
+
+- Refreshed the paired DE/EN cards for Midjourney, ElevenLabs, Runway, Replit, Windsurf, Stable Diffusion, DALL-E, Microsoft Copilot, Google AI Studio, Anthropic API, Linear, Beautiful.ai, Cohere, AssemblyAI, Deepgram, Granola, Firebase Studio, Pipedream, Tableau and Power BI.
+- Added short, practical decision stories and realistic workflows without turning the catalog entries into long Ratgeber articles; preserved every existing editorial illustration and kept or expanded the previous FAQ depth.
+- Repaired product-specific defects uncovered during the pass: Runway and Google AI Studio were fully rebuilt, incorrect generic alternatives were replaced with internal task-fit links, DE/EN category and pricing metadata were aligned, tier C/D review-date conflicts were removed, and all forty source last-modified entries were synchronized to `2026-07-31`.
+- All twenty pairs pass the strict per-card editorial guard with zero errors or warnings. The shared editorial, English-translation and tool-quality checks pass, and the full Astro build completes with 1088 pages and the compact 146-URL sitemap unchanged in scope.
+
 ## 2026-07-30 - Claude full editorial rewrite
 
 - Rebuilt the paired DE/EN `claude` card as a coherent, practical decision file rather than retaining the uneven product-update and cluster appendices.
