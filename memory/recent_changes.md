@@ -1729,3 +1729,7 @@ _Last updated: 2026-07-19_
 - Published all 20 localized projections through the bounded D1/R2 runtime from source commit `98c9dce1`. The production delta returned zero failures across 20 HTML, 20 JSON, 20 Markdown and ten content-addressed WebP checks, while all source hashes matched the committed Markdown.
 - Confirmed that the existing DE/EN production alternative blocks remain intact for every refreshed card. The strict publisher additionally replaced Algolia's hidden body link to the absent local `meilisearch` route with the already active `typesense` alternative.
 - Both global and Bing IndexNow endpoints accepted the 20 changed canonical HTML URLs with HTTP `200`. The pre-release D1 export is stored outside Git at `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-backups\2026-07-31\before-story10.sql`.
+
+## 2026-07-31 - Story-led refresh for twenty established tool cards
+
+- `chatgpt`: replaced the layered product-update opening with a source-aware project workflow from mixed files to a reviewed Canvas decision memo; preserved five alternatives, eight FAQ and the existing illustration in DE/EN.
