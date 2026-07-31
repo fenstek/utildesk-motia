@@ -3,9 +3,9 @@ slug: replit
 title: Replit
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-product-update"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: Entwickler-Tools
 price_model: Freemium
 tags:
@@ -14,12 +14,14 @@ tags:
 official_url: 'https://repl.it'
 affiliate_url: 'https://repl.it'
 created_at: '2026-02-07'
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 popularity: 0
 description: 'Web-based development platform for coding, running, and sharing projects directly in the browser, with collaboration and AI-assisted tools for faster development.'
 translation: full
 ---
 # Replit
+
+An operations team needs a small returns app that brings photos, order numbers and approvals together. Replit Agent can build the scaffold, data model and first tests in a shared cloud environment, then deploy the prototype. The critical moment comes next: does the team own the code, secrets, database and domain; do tests run outside the agent; and can another developer take over without the chat history?
 
 ## Status on 19 July 2026
 
