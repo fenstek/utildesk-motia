@@ -1,23 +1,26 @@
 ---
 slug: "servicenow"
 title: "ServiceNow"
-category: "Automatisierung"
-price_model: "Subscription"
+category: Automatisierung
+price_model: Abonnement
 tags: ["workflow", "automation", "enterprise", "ai"]
 official_url: "https://www.servicenow.com/"
 affiliate_url: ""
 created_at: "2026-06-14"
-updated_at: "2026-06-14"
+updated_at: 2026-07-31
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-20-human-polish"
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 tier: "D"
 popularity: 0
 translation: "full"
+description: "ServiceNow digitises service, request, and approval processes with audit trails, ownership, and integrations for large organisations."
 ---
 # ServiceNow
+
+A new employee needs access to three internal systems. Instead of forwarding emails, ServiceNow provides a catalogue request with required information, approvals, automatable steps, and a complete audit trail. Exceptions deliberately go to an accountable person. That makes a recurring process measurable and traceable. If the underlying process is needlessly complicated, however, it should be simplified before the platform turns it into a permanent workflow.
 
 ServiceNow is not a small automation app; it is an enterprise platform for service processes, workflows, and increasingly AI-assisted work across departments. It becomes interesting when IT, HR, customer service, security, and operations need shared process logic.
 
@@ -75,8 +78,7 @@ ServiceNow is listed as Subscription. Real cost includes licenses, implementatio
 
 **Provider:** https://www.servicenow.com/
 
-## Alternatives To ServiceNow
-
+## Alternatives
 - [Microsoft Power Automate](/en/tools/microsoft-power-automate/): when Microsoft-centric automation is the priority.
 - [UiPath](/en/tools/uipath/): when RPA and process automation matter more.
 - [Salesforce Lightning](/en/tools/salesforce-lightning/): when CRM and sales processes are central.
