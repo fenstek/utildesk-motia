@@ -2,10 +2,10 @@
 slug: smartrecruiters
 title: SmartRecruiters
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-04
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: Produktivität
 price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, ai]
@@ -13,8 +13,12 @@ official_url: "https://www.smartrecruiters.com/"
 popularity: 0
 tier: D
 generated_at: 2026-05-17
+updated_at: 2026-07-31
+description: "SmartRecruiters organisiert Recruiting-Pipelines, Zusammenarbeit und Bewerberkommunikation, ohne die menschliche Einstellungsentscheidung zu ersetzen."
 ---
 # SmartRecruiters
+
+Ein Unternehmen besetzt gleichzeitig 40 Rollen, doch jedes Team bewertet Bewerbungen anders. In SmartRecruiters werden deshalb ein gemeinsamer Eingang, nachvollziehbare Stufen, rollenbezogene Scorecards und klare Zugriffsrechte eingerichtet. Die Personalabteilung prüft außerdem Aufbewahrung und Löschung. Das System schafft einen konsistenten Prozess; Eignung, Fairness und die endgültige Entscheidung dürfen trotzdem nicht an einen Workflow oder einen automatisch erzeugten Wert delegiert werden.
 
 SmartRecruiters ist eine Recruiting- und Applicant-Tracking-Plattform (ATS) für Stellenausschreibungen, Bewerbungen, Interviewprozesse, Feedback und Einstellungen. Ihr Nutzen liegt darin, einen nachvollziehbaren Auswahlprozess über Recruiter, Fachbereiche und Kandidaten hinweg zu organisieren. Sie macht eine unklare Auswahlpraxis nicht automatisch fairer oder rechtskonform.
 
@@ -42,8 +46,7 @@ Bewerberdaten sind besonders sensibel. Rollen müssen Recruiter, Hiring Manager 
 
 Starten Sie mit einer Rollenfamilie und beobachten Sie Time-to-Review, Durchlaufzeit, Candidate Experience, Vollständigkeit des Feedbacks und Abbruchpunkte. Nicht allein „Time-to-Hire“ optimieren: Ein schneller Prozess mit schlechter Dokumentation oder unklaren Auswahlkriterien schafft langfristig neue Risiken.
 
-## Alternativen zu SmartRecruiters
-
+## Alternativen
 - [Greenhouse](/tools/greenhouse/): für strukturierte Interviews und datengetriebenes Recruiting.
 - [Lever](/tools/lever/): ATS/CRM-Ansatz mit Fokus auf Recruiting-Beziehungen.
 - [BambooHR](/tools/bamboohr/): HR-Plattform mit Recruiting-Funktionen für kleinere und mittlere Teams.
@@ -66,3 +69,7 @@ Nur das, was sie für ihre Rolle und Bewertung brauchen. Breite Zugriffe auf all
 **Wie prüft man KI-Funktionen im Recruiting?**
 
 Mit klarer menschlicher Freigabe, dokumentierten Kriterien, Stichproben auf Fehler und einem Weg, Vorschläge zu korrigieren oder abzulehnen.
+
+**Darf ein automatischer Wert über eine Einstellung entscheiden?**
+
+Nein. Scores können Aufmerksamkeit strukturieren, brauchen aber geprüfte Daten, Transparenz und menschliche Entscheidung. Fairness und Ausnahmefälle lassen sich nicht an einen Workflow delegieren.
