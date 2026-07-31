@@ -3638,6 +3638,73 @@
         "https://www.bing.com/indexnow"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-31T05:26:14.258Z",
+      "mode": "production-editorial-baseline-20",
+      "command": "bounded DE/EN live alternative snapshot before editorial rewrite",
+      "estimate": {
+        "html": 40,
+        "total": 40
+      },
+      "worstCaseRequests": 40,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/chatgpt/",
+        "https://tools.utildesk.de/en/tools/chatgpt/",
+        "https://tools.utildesk.de/tools/gemini/",
+        "https://tools.utildesk.de/en/tools/gemini/",
+        "https://tools.utildesk.de/tools/github-copilot/",
+        "https://tools.utildesk.de/en/tools/github-copilot/",
+        "https://tools.utildesk.de/tools/aider/",
+        "https://tools.utildesk.de/en/tools/aider/",
+        "https://tools.utildesk.de/tools/langchain/",
+        "https://tools.utildesk.de/en/tools/langchain/",
+        "https://tools.utildesk.de/tools/crew-ai/",
+        "https://tools.utildesk.de/en/tools/crew-ai/",
+        "https://tools.utildesk.de/tools/perplexity/",
+        "https://tools.utildesk.de/en/tools/perplexity/",
+        "https://tools.utildesk.de/tools/n8n/",
+        "https://tools.utildesk.de/en/tools/n8n/",
+        "https://tools.utildesk.de/tools/zapier/",
+        "https://tools.utildesk.de/en/tools/zapier/",
+        "https://tools.utildesk.de/tools/microsoft-power-automate/",
+        "https://tools.utildesk.de/en/tools/microsoft-power-automate/",
+        "https://tools.utildesk.de/tools/openai-api/",
+        "https://tools.utildesk.de/en/tools/openai-api/",
+        "https://tools.utildesk.de/tools/hugging-face/",
+        "https://tools.utildesk.de/en/tools/hugging-face/",
+        "https://tools.utildesk.de/tools/open-webui/",
+        "https://tools.utildesk.de/en/tools/open-webui/",
+        "https://tools.utildesk.de/tools/copy-ai/",
+        "https://tools.utildesk.de/en/tools/copy-ai/",
+        "https://tools.utildesk.de/tools/8x8/",
+        "https://tools.utildesk.de/en/tools/8x8/",
+        "https://tools.utildesk.de/tools/magma/",
+        "https://tools.utildesk.de/en/tools/magma/",
+        "https://tools.utildesk.de/tools/capcut/",
+        "https://tools.utildesk.de/en/tools/capcut/",
+        "https://tools.utildesk.de/tools/groq/",
+        "https://tools.utildesk.de/en/tools/groq/",
+        "https://tools.utildesk.de/tools/otter-ai/",
+        "https://tools.utildesk.de/en/tools/otter-ai/",
+        "https://tools.utildesk.de/tools/descript/",
+        "https://tools.utildesk.de/en/tools/descript/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-07-31T05:26:31.504Z",
+      "mode": "production-editorial-baseline-parser-sample",
+      "command": "inspect one bounded tool HTML sample to validate alternative snapshot parser",
+      "estimate": {
+        "html": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/chatgpt/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
