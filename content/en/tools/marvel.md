@@ -2,22 +2,25 @@
 slug: marvel
 title: Marvel
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Design"
-price_model: "Plan-based"
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Design
+price_model: Je nach Plan
 tags: ["design", "ui", "ux", "prototyping", "collaboration"]
 official_url: "https://marvelapp.com/"
 affiliate_url: "https://marvelapp.com/"
 popularity: 42
 source_language: de
 translation: full
-description: "Design and prototyping platform for wireframes, clickable prototypes, testing, and handoff."
+description: "Marvel creates clickable product prototypes for early user testing before design systems, accessibility, and production are fully implemented."
+updated_at: 2026-07-31
 ---
 
 # Marvel
+
+Before developing a new returns flow, the product team builds five decisive screens in Marvel and links them into a clickable journey. The usability session does not ask whether people like it; it observes where they stop or form the wrong expectation. Copy and sequence are then revised. Marvel makes ideas testable early, but it is neither a production interface nor a replacement for a design system, accessibility testing, or technical feasibility.
 
 Marvel is a platform for prototyping, wireframes, design collaboration, user testing, and handoff.
 
@@ -74,13 +77,12 @@ Marvel offers different plans for individuals and teams. The key factors are pro
 
 **Go to provider:** https://marvelapp.com/
 
-## Alternatives to Marvel
+## Alternatives
 
-- [Figma](/en/tools/figma/): as the broad standard for UI, design systems, and collaboration.
-- [Sketch](/en/tools/sketch/): for Mac-centered design work.
-- [Adobe XD](/en/tools/adobe-xd/): for Adobe-oriented prototyping workflows.
-- [Miro](/en/tools/miro/): when workshops, whiteboards, and product thinking matter more.
-
+- [Figma](/en/tools/figma/): for UI design, design systems, and broad collaboration.
+- [Sketch](/en/tools/sketch/): for Mac-centred product and interface design.
+- [Framer](/en/tools/framer/): for interactive web prototypes with a direct path to publishing.
+- [Miro](/en/tools/miro/): when workshops, whiteboards, and early product thinking matter most.
 ## Editorial assessment
 
 Marvel is useful when the first clickable prototype needs to exist quickly. For long-term design-system management, Figma is usually the stronger comparison.
@@ -98,3 +100,7 @@ Not generally. Figma is broader; Marvel can be leaner for simple prototyping wor
 **Can Marvel support user testing?**
 
 Yes, testing-oriented features are part of the value proposition.
+
+**What should a prototype test measure?**
+
+Not taste, but whether people understand the intended journey, form the right expectations, and complete the central task without explanation.
