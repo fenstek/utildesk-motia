@@ -30,6 +30,8 @@ Perplexity Comet connects browser work with the idea of bringing questions, sour
 
 ## Editorial assessment
 
+**Editorial verdict: Recommend.**
+
 Our editorial question for Perplexity Comet is simple: does work become easier to understand, check and hand over — or does the tool merely add another impressive surface that later needs maintenance? For Utildesk, the important signal is not the loudest product promise, but whether Perplexity Comet makes boundaries, ownership and output quality visible in daily work.
 
 Perplexity Comet belongs in a test that defines the task, the allowed data and the review standard before the first serious run. Without that discipline, even a good AI browser for research becomes another unmanaged process.

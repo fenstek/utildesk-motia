@@ -227,7 +227,7 @@ const schemaDescription = sharedView.description;
       <div class="akte-feature-visual" set:html={sharedView.editorialFigureHtml}></div>
     ) : null}
 
-    <section class="akte-verdict-card" aria-label="Verdikt der Redaktion">
+    <section class:list={["akte-verdict-card", `akte-verdict-card-${editorialVerdict.kind}`]} aria-label="Verdikt der Redaktion">
       <span class="akte-verdict-tab">Verdikt der Redaktion</span>
       <div class="akte-verdict-main">
         <span class="akte-verdict-glyph">{editorialVerdict.icon}</span>

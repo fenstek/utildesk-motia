@@ -29,12 +29,15 @@ if (grid) {
     const first = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().charAt(0).toUpperCase();
     return /^[A-Z]$/.test(first) ? first : "#";
   };
-  const verdictFor = (item: InventoryItem, index: number) => {
-    const value = item.editorialVerdict || ((index + 1) % 17 === 0 ? "reject" : (index + 1) % 11 === 0 ? "overrated" : (index + 1) % 7 === 0 ? "caution" : "recommend");
+  const verdictFor = (item: InventoryItem) => {
+    const allowedVerdicts = new Set(["recommend", "caution", "overrated", "reject"]);
+    const value = item.editorialVerdict && allowedVerdicts.has(item.editorialVerdict)
+      ? item.editorialVerdict
+      : "unrated";
     const labels = locale === "en"
-      ? { recommend: "Recommend", caution: "With caveats", overrated: "Overrated", reject: "Not recommended" }
-      : { recommend: "Empfehlen", caution: "Mit Vorbehalt", overrated: "\u00dcberbewertet", reject: "Nicht empfehlen" };
-    return { value, label: labels[value as keyof typeof labels] || labels.recommend };
+      ? { recommend: "Recommend", caution: "With caveat", overrated: "Overrated", reject: "Not recommended", unrated: "Not yet rated" }
+      : { recommend: "Empfehlen", caution: "Mit Vorbehalt", overrated: "\u00dcberbewertet", reject: "Nicht empfehlen", unrated: "Noch nicht bewertet" };
+    return { value, label: labels[value as keyof typeof labels] || labels.unrated };
   };
   const span = (className: string, value?: string) => {
     const node = document.createElement("span");
@@ -43,7 +46,7 @@ if (grid) {
     return node;
   };
   const buildCard = (item: InventoryItem, index: number) => {
-    const verdict = verdictFor(item, index);
+    const verdict = verdictFor(item);
     const category = text(item.category || (locale === "en" ? "Unsorted" : "Unsortiert"));
     const tags = Array.isArray(item.tags) ? item.tags : [];
     const card = document.createElement("a");

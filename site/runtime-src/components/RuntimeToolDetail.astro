@@ -135,7 +135,7 @@ const priceModel = view.priceModel;
       </header>
 
       {view.editorialFigureHtml && <div class="akte-feature-visual" set:html={view.editorialFigureHtml}></div>}
-      <section class="akte-verdict-card" aria-label={en ? "Editorial verdict" : "Redaktionelles Verdikt"}>
+      <section class:list={["akte-verdict-card", `akte-verdict-card-${view.editorialVerdict.kind}`]} aria-label={en ? "Editorial verdict" : "Redaktionelles Verdikt"}>
         <span class="akte-verdict-tab">{en ? "Editorial verdict" : "Verdikt der Redaktion"}</span>
         <div class="akte-verdict-main"><span class="akte-verdict-glyph">{view.editorialVerdict.icon}</span><div class="akte-verdict-copy">
           <p class="akte-verdict-kicker">{view.editorialVerdict.detailKicker}</p><h2>{view.editorialVerdictHeadline}</h2><p>{view.editorialVerdictText}</p>

@@ -30,6 +30,8 @@ OpenCode appeals to developers who prefer agentic work close to the shell, repos
 
 ## Editorial assessment
 
+**Editorial verdict: With caveat.**
+
 Our editorial question for OpenCode is simple: does work become easier to understand, check and hand over — or does the tool merely add another impressive surface that later needs maintenance? For Utildesk, the important signal is not the loudest product promise, but whether OpenCode makes boundaries, ownership and output quality visible in daily work.
 
 OpenCode belongs in a test that defines the task, the allowed data and the review standard before the first serious run. Without that discipline, even a good terminal-oriented coding agent becomes another unmanaged process.

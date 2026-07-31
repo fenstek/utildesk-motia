@@ -28,6 +28,8 @@ Skyvern automatisiert Web-Workflows dort, wo klassische Skripte wegen wechselnde
 
 ## Redaktionelle Einordnung
 
+**Redaktionelles Verdikt: Mit Vorbehalt.**
+
 Unsere redaktionelle Frage bei Skyvern lautet: Wird Arbeit verständlicher, überprüfbarer und besser übergebbar — oder entsteht nur eine weitere Oberfläche, die kurzfristig beeindruckt und langfristig Pflege braucht? Für unsere Bewertung zählt deshalb nicht die lauteste Produktankündigung, sondern ob Skyvern im Arbeitsalltag Grenzen, Zuständigkeit und Ergebnisqualität sichtbar macht.
 
 Skyvern gehört in einen Test, der vorab definiert, welche Aufgabe gelöst wird, welche Daten erlaubt sind und wann ein Ergebnis als ausreichend geprüft gilt. Ohne diese Disziplin bleibt selbst ein gutes Werkzeug dieser Art ein weiterer offener Prozess.

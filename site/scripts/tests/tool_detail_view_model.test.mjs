@@ -74,10 +74,46 @@ test("buildToolDetailViewModel produces the shared DE delivery contract", () => 
   assert.match(view.articleHtml, /Compare Inactive before rollout/);
   assert.equal(view.articleHtml.includes("<h1"), false);
   assert.equal(view.editorialFigureHtml, "");
+  assert.equal(view.editorialVerdict.kind, "unrated");
+  assert.equal(view.editorialVerdict.detailKicker, "Noch nicht bewertet");
+  assert.equal(view.editorialVerdictHeadline, "Noch keine redaktionelle Empfehlung ausgesprochen.");
   assert.equal(view.faqSchema["@type"], "FAQPage");
   assert.equal(view.softwareApplicationSchema.url, view.canonicalUrl);
   assert.equal(view.breadcrumbSchema.itemListElement.length, 3);
   assert.equal(view.mentionedInCount, 1);
+});
+
+test("explicit verdicts render while orphaned verdict copy cannot override the neutral state", () => {
+  const explicit = buildToolDetailViewModel({
+    entry: {
+      ...entry,
+      data: {
+        ...entry.data,
+        editorial_verdict: "recommend",
+        editorial_verdict_headline: "Empfehlen - nach einem begrenzten Praxistest.",
+      },
+    },
+    locale: "de",
+    displayTools,
+  });
+  assert.equal(explicit.editorialVerdict.kind, "recommend");
+  assert.equal(explicit.editorialVerdictHeadline, "Empfehlen - nach einem begrenzten Praxistest.");
+
+  const orphanedCopy = buildToolDetailViewModel({
+    entry: {
+      ...entry,
+      data: {
+        ...entry.data,
+        editorial_verdict_headline: "Empfehlen - this must not be shown.",
+        editorial_verdict_text: "Recommended.",
+      },
+    },
+    locale: "en",
+    displayTools,
+  });
+  assert.equal(orphanedCopy.editorialVerdict.kind, "unrated");
+  assert.equal(orphanedCopy.editorialVerdictHeadline, "No editorial recommendation has been issued yet.");
+  assert.equal(orphanedCopy.editorialVerdictText.includes("explicitly reviewed recommendation"), true);
 });
 
 test("buildToolDetailViewModel produces localized EN routes and filters inactive alternatives", () => {

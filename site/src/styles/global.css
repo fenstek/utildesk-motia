@@ -4859,6 +4859,8 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
 .ds-index-verdict-recommend { color: #00784c; }
 .ds-index-verdict-caution { color: #b66a00; }
 .ds-index-verdict-overrated { color: #7b3cff; }
+.ds-index-verdict-reject { color: #c5251c; }
+.ds-index-verdict-unrated { color: #68675f; }
 
 .ds-index-tags {
   display: flex;
@@ -6987,6 +6989,35 @@ html[data-design="decision"]:not(:has(.ds-template)) .akte-mast-oneliner {
   font-size: 11px;
 }
 
+.akte-verdict-card-caution .akte-verdict-glyph,
+.akte-verdict-card-caution .akte-verdict-kicker {
+  color: #b66a00;
+}
+
+.akte-verdict-card-overrated .akte-verdict-glyph,
+.akte-verdict-card-overrated .akte-verdict-kicker {
+  color: #7b3cff;
+}
+
+.akte-verdict-card-reject .akte-verdict-glyph,
+.akte-verdict-card-reject .akte-verdict-kicker {
+  color: #c5251c;
+}
+
+.akte-verdict-card-unrated {
+  background: #efede5;
+}
+
+.akte-verdict-card-unrated .akte-verdict-glyph,
+.akte-verdict-card-unrated .akte-verdict-kicker,
+.akte-verdict-card-unrated .akte-verdict-trust strong {
+  color: #68675f;
+}
+
+.akte-verdict-card-unrated .akte-trust-bars i {
+  background: transparent;
+}
+
 html[data-design="decision"]:not(:has(.ds-template)) .akte-tldr-always {
   margin: 0 0 40px;
   border: 0;
@@ -7715,6 +7746,11 @@ html[data-design="decision"] .inv-row-verdict-overrated .inv-row-verdict strong:
 html[data-design="decision"] .inv-row-verdict-reject .inv-row-verdict strong::before {
   content: "\00D7" !important;
   color: var(--vermillion) !important;
+}
+
+html[data-design="decision"] .inv-row-verdict-unrated .inv-row-verdict strong::before {
+  content: "\2014" !important;
+  color: #77746a !important;
 }
 
 html[data-design="decision"] .inv-row-tags {

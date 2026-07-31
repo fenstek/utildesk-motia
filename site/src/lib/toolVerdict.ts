@@ -1,9 +1,10 @@
 export type ToolEditorialVerdictValue = "recommend" | "caution" | "overrated" | "reject";
+export type ToolVerdictDisplayValue = ToolEditorialVerdictValue | "unrated";
 export type ToolVerdictLocale = "de" | "en";
 
 export type ToolEditorialVerdict = {
-  value: ToolEditorialVerdictValue;
-  kind: ToolEditorialVerdictValue;
+  value: ToolVerdictDisplayValue;
+  kind: ToolVerdictDisplayValue;
   icon: string;
   label: string;
   detailKicker: string;
@@ -92,4 +93,24 @@ export const getToolEditorialVerdict = (
   };
 
   return copy[verdict];
+};
+
+export const getUnratedToolVerdict = (
+  locale: ToolVerdictLocale = "de",
+): ToolEditorialVerdict => {
+  const isEn = locale === "en";
+  return {
+    value: "unrated",
+    kind: "unrated",
+    icon: "—",
+    label: isEn ? "Not yet rated" : "Noch nicht bewertet",
+    detailKicker: isEn ? "Not yet rated" : "Noch nicht bewertet",
+    detailHeadline: isEn
+      ? "No editorial recommendation has been issued yet."
+      : "Noch keine redaktionelle Empfehlung ausgesprochen.",
+    detailText: isEn
+      ? "The entry provides orientation, but it does not yet carry an explicitly reviewed recommendation."
+      : "Der Eintrag bietet Orientierung, trägt aber noch keine ausdrücklich geprüfte Empfehlung.",
+    trustLabel: isEn ? "pending" : "offen",
+  };
 };
