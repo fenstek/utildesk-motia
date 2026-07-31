@@ -3,9 +3,9 @@ slug: granola
 title: Granola
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-product-update-priority"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: Productivity
 price_model: "Plan-based"
 tags:
@@ -15,7 +15,7 @@ tags:
   - assistant
 official_url: "https://www.granola.ai/"
 description: "AI meeting notepad that combines your rough notes with transcript and context, without joining the video call as a visible meeting bot."
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 popularity: 0
 tier: "D"
 generated_at: "2026-05-12"
@@ -23,7 +23,9 @@ translation: full
 ---
 # Granola
 
-Granola is an AI meeting notepad that combines your rough notes with conversation context and a transcript to produce structured follow-up. It runs on desktop or iPhone, is started manually for a meeting, and captures device audio instead of placing a visible meeting bot in Zoom, Google Meet, or Microsoft Teams. That makes it useful for personal, reviewable meeting notes, but it does not remove the need to notify participants, obtain any required consent, or check AI-generated claims before acting on them.
+During a customer call, the project lead writes only three notes: “budget open”, “September pilot” and “privacy review”. Granola combines those anchors with the conversation context and prepares structured follow-up. Before sending it, she compares every commitment with the transcript and marks what was discussed but not decided. The value lies in that combination of human attention and machine reconstruction.
+
+Granola is an AI meeting notepad that combines rough notes with conversation context and a transcript. It runs on desktop or iPhone, is started manually and captures device audio instead of placing a visible bot in Zoom, Google Meet or Microsoft Teams. That is useful for personal, reviewable notes, but it does not remove the need to inform participants, obtain any required consent or check generated claims before acting.
 
 ## Editorial update July 2026
 
