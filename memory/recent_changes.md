@@ -6,6 +6,7 @@
 - Added short, practical decision stories and realistic workflows without turning the catalog entries into long Ratgeber articles; preserved every existing editorial illustration and kept or expanded the previous FAQ depth.
 - Repaired product-specific defects uncovered during the pass: Runway and Google AI Studio were fully rebuilt, incorrect generic alternatives were replaced with internal task-fit links, DE/EN category and pricing metadata were aligned, tier C/D review-date conflicts were removed, and all forty source last-modified entries were synchronized to `2026-07-31`.
 - All twenty pairs pass the strict per-card editorial guard with zero errors or warnings. The shared editorial, English-translation and tool-quality checks pass, and the full Astro build completes with 1088 pages and the compact 146-URL sitemap unchanged in scope.
+- Published all forty locale projections and twenty existing content-addressed WebP objects through the bounded production D1/R2 runtime from source commit `67800400`. The 140 HTML/JSON/Markdown/asset checks passed with zero failures, source hashes were verified, both IndexNow endpoints accepted all forty canonical URLs with `200`, and `site/dist` stayed unchanged. The private pre-release D1 export is `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-backups\2026-07-31\before-story-next20.sql`; the release report is under `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-releases\2026-07-31-story-next20-0953`.
 
 ## 2026-07-30 - Claude full editorial rewrite
 

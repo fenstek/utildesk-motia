@@ -1,5 +1,11 @@
 # Project State
 
+## 2026-07-31 Story-led tool-card runtime release
+
+- Twenty established tool cards were refreshed in paired DE/EN form and published through the bounded D1/R2 runtime from source commit `67800400`.
+- Production verification covered 40 HTML pages, 40 JSON endpoints, 40 Markdown endpoints and 20 content-addressed WebP assets; all 140 checks passed and both IndexNow endpoints accepted the forty changed canonical URLs with HTTP `200`.
+- The release did not rebuild or mutate Pages output and did not expand the compact sitemap. The tracked live-request reservation is now `5238/10000`, leaving `4762` worst-case requests.
+
 ## 2026-07-17 Focused search recovery
 
 - Production homepage uses the live Ratgeber collection count (`39` at release time); the previous hardcoded `25` fallback is gone.
