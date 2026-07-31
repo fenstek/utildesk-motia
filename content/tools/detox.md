@@ -2,20 +2,23 @@
 slug: detox
 title: Detox
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: "AI Agents"
 price_model: Open Source
 tags: [detox, qa, test-automation]
 official_url: "https://www.detox.com/"
 popularity: 0
-description: "Detox ist ein End-to-End-Testframework für mobile Apps, besonders für React-Native-nahe Entwicklungs- und QA-Workflows."
+description: "Detox testet mobile Anwendungen Ende-zu-Ende mit synchronisierten Aktionen und eignet sich für wenige geschäftskritische Nutzerabläufe."
 tier: "C"
 generated_at: "2026-05-11"
+updated_at: 2026-07-31
 ---
 # Detox
+
+Nach einem Update scheitert der mobile Login nur im CI, lokal aber nicht. Das Team baut deshalb einen kleinen Detox-Test mit kontrollierten Fixtures, eindeutigen Aktionen und fachlichen Assertions, lässt ihn auf derselben App-Version und Emulator-Konfiguration laufen und speichert bei Fehlern Logs sowie Video. So wird Flakiness messbar statt weggeklickt. Detox hilft bei echten End-to-End-Risiken; für reine Komponentenlogik wären schnellere Tests die bessere Ebene.
 
 Detox hilft, mobile Apps automatisiert so zu testen, wie Nutzer sie bedienen würden. Für React-Native-Teams ist es interessant, weil Tests näher an realen Interaktionen laufen als reine Unit-Tests.
 
@@ -70,13 +73,12 @@ Teams sollten einkalkulieren, dass E2E-Tests laufend gewartet werden müssen. De
 
 **Zum Anbieter:** https://www.detox.com/
 
-## Alternativen zu Detox
+## Alternativen
 
-- [Appium](/tools/appium/): breiter für native und hybride Mobile-Apps über verschiedene Frameworks hinweg.
-- [Selenium](/tools/selenium/): eher Web- und Browser-Automation, weniger fokussiert auf moderne Mobile-E2E-Setups.
-- Playwright: stark für Web-End-to-End-Tests, aber nicht derselbe Schwerpunkt wie mobile App-Flows.
-- [Cypress](/tools/cypress/): gut für Frontend- und Web-App-Tests, weniger für echte mobile Runtime-Szenarien.
-
+- [Appium](/tools/appium/): für native und hybride Mobile-Apps über verschiedene Frameworks hinweg.
+- [Selenium](/tools/selenium/): für etablierte Browser-Automation mit breitem Ökosystem.
+- [Playwright](/tools/playwright/): für moderne Web-End-to-End-Tests und detaillierte Traces.
+- [Cypress](/tools/cypress/): für entwicklernahe Frontend- und Web-App-Tests.
 ## Redaktionelle Einschätzung
 
 Detox ist wertvoll, wenn mobile Kernflows wirklich abgesichert werden müssen. Es braucht aber disziplinierte Testarchitektur.
@@ -94,3 +96,7 @@ Detox lohnt sich, wenn App-Releases regelmäßig Regressionen in Kernflows riski
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind stabile Test-IDs, kontrollierte Testaccounts, reproduzierbare Builds, CI-Ressourcen und klare Regeln, welche Flows wirklich E2E getestet werden. Echte Kundendaten gehören nicht in diese Tests.
+
+**Wie reduziert man Flakiness bei Detox-Tests?**
+
+Kontrollierte Testdaten, stabile Selektoren, eindeutige Zustände und identische Build-Umgebungen verwenden. Fehler sollten mit Logs und Video untersucht statt blind wiederholt werden.
