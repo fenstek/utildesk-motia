@@ -3,9 +3,9 @@ slug: apache-cassandra
 title: Apache Cassandra
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-apache-cassandra-editorial
+editorial_batch: 2026-07-31-story-card-refresh-next50
 category: "Entwickler-Tools"
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
@@ -14,14 +14,16 @@ popularity: 0
 tier: C
 description: "Apache Cassandra ist eine verteilte Open-Source-Datenbank für hochverfügbare, schreibintensive Workloads mit planbaren Zugriffsmustern über viele Knoten oder Regionen."
 generated_at: 2026-05-27
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
+
 ---
 # Apache Cassandra
 
-Apache Cassandra ist eine verteilte Open-Source-Datenbank für große, ausfallsensitive Workloads. Sie nutzt ein partitioniertes Wide-Column-Modell und verteilt Replikate über mehrere Knoten und Rechenzentren. Das Ziel ist nicht, eine relationale Datenbank möglichst ähnlich nachzubauen, sondern Schreib- und Lesezugriffe über viele Maschinen und Regionen verfügbar zu halten.
+Ein IoT-Dienst empfängt Messwerte aus mehreren Regionen und darf bei Ausfall eines Rechenzentrums nicht aufhören zu schreiben. Apache Cassandra kann solche verteilten, vorhersehbaren Zugriffsmuster mit Replikation und hoher Verfügbarkeit tragen. Der Preis dafür ist ein Datenmodell, das von Abfragen aus gedacht wird, und ein Betrieb, der Repair, Compaction und Konsistenz nicht dem Zufall überlässt.
 
-Cassandra passt deshalb zu Anwendungen mit bekannten Zugriffsmustern, hohem Schreibvolumen und dem Wunsch nach horizontalem Wachstum. Sie ist kein universeller Speicher für spontane Abfragen. Der wichtigste Designschritt passiert vor dem ersten `CREATE TABLE`: Das Team muss wissen, welche Abfragen eine Tabelle schnell beantworten soll.
+## Praxisbild: ein begrenzter Durchlauf
+
+Modelliere nur drei echte Abfragen und lade ein repräsentatives Zeitfenster mit kontrollierten Duplikaten sowie verspäteten Daten. Führe Last- und Knotenausfalltests durch, prüfe Ergebnisse gegen bekannte Summen und beobachte Latenz, Tombstones, Speicher sowie Repair. Wenn eine neue Produktfrage einen Vollscan oder ständige Tabellenumbauten erzwingt, passt das Modell beziehungsweise die Datenbank nicht zum Workload.
 
 ## Für wen ist Apache Cassandra geeignet?
 
@@ -78,7 +80,8 @@ Für einen Vergleich sollte das Team einen repräsentativen Workload mit realist
 
 ## Redaktionelle Einschätzung
 
-Apache Cassandra ist eine gute Wahl, wenn hohe Verfügbarkeit, verteiltes Schreiben und planbare Zugriffsmuster wichtiger sind als flexible Joins. Die Architektur belohnt Teams, die Datenmodell, Treiberverhalten und Betrieb gemeinsam entwerfen. Sie bestraft den Ansatz „wir migrieren erst einmal und optimieren später“.
+Cassandra empfehlen wir erfahrenen Plattformteams mit hoher Schreiblast, klaren Zugriffsmustern und echten Verfügbarkeitsanforderungen über Knoten oder Regionen. Für relationale Transaktionen, flexible Ad-hoc-Abfragen oder kleine Teams ohne verteilten Datenbankbetrieb ist PostgreSQL oder ein verwalteter Dienst meist vernünftiger.
+
 
 Unsere Empfehlung: mit einem begrenzten, aber echten Workload starten. Erfolgskriterien sollten Partitionsgröße, p99-Latenz, Repair-Zeit, Wiederherstellungsdauer, Kosten pro Vorgang und das Verhalten bei Knoten- oder Regionsausfall enthalten. Wenn das Team diese Zahlen nicht messen oder den Cluster nicht zuverlässig reparieren und wiederherstellen kann, ist eine weniger anspruchsvolle Alternative wahrscheinlich die bessere Entscheidung.
 
