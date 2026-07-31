@@ -2,18 +2,21 @@
 slug: pusher
 title: Pusher
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-04
-category: Developer
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Entwickler-Tools
 price_model: Freemium
 tags: [messaging, realtime, developer-tools, api]
 official_url: "https://pusher.com/"
-description: "Pusher provides hosted realtime events and channels for web and mobile applications."
+description: "Pusher delivers real-time events to web and app interfaces while authoritative application state should remain in the backend."
 translation: full
+updated_at: 2026-07-31
 ---
 # Pusher
+
+A delivery portal needs to show status changes immediately. The backend still stores the authoritative state in its database and uses Pusher only to send an event to the browser. After a disconnect, the interface reloads the current order instead of blindly replaying stale events. That creates a responsive UI without creating a second source of truth. Treating Pusher as the database, by contrast, produces inconsistencies that are difficult to explain.
 
 Pusher is a hosted service for realtime events in web and mobile applications. Instead of building and scaling WebSocket infrastructure, backend services publish events to channels and connected clients receive them immediately. Common uses include notifications, live dashboards, chat, collaboration, and status indicators.
 
@@ -41,13 +44,12 @@ Plan for reconnects, idempotent event handling, ordering, and fallback polling. 
 
 The freemium/usage model normally depends on connections, messages, and product capabilities. Model peaks, not averages alone. Do not send unnecessary personal content or tokens in event payloads; they may appear in browser logs, monitoring, or third-party infrastructure. Sensitive applications require review of data flow, retention, and processing terms.
 
-## Alternatives to Pusher
+## Alternatives
 
-- [Ably](/en/tools/ably/): a hosted realtime alternative with a similar scope.
-- [Socket.IO](/en/tools/socket-io/): when a team wants to operate and shape its own realtime infrastructure.
-- [Supabase](/en/tools/supabase/): relevant when realtime is closely tied to a Supabase database and authentication.
-- [Firebase](/en/tools/firebase/): useful for applications already using Google's backend services.
-
+- [Socket.IO](/en/tools/socket-io/): when the team wants to operate the transport and real-time infrastructure itself.
+- [Firebase Realtime Database](/en/tools/firebase-realtime-database/): when live updates are closely tied to a synchronised cloud database.
+- [Apache Kafka](/en/tools/apache-kafka/): for durable backend event streams rather than direct browser messaging.
+- [Amazon MSK](/en/tools/amazon-msk/): when Kafka events should be operated as a managed service on AWS.
 ## Editorial assessment
 
 Pusher is a sound shortcut to realtime UX when a team clearly separates an event signal from the business source of truth. It saves infrastructure work, not responsibility for authorisation, reconnection, and cost control. Begin with one private channel and an authoritative API before rolling out chat or collaborative screens widely.
@@ -65,3 +67,7 @@ Use server-side channel authorisation and minimal payloads. The browser must not
 **When is self-hosting a better fit?**
 
 When special data residency, unusually high load, custom protocol requirements, or an existing operations team justify the additional work.
+
+**Should Pusher store authoritative application state?**
+
+No. Authoritative state belongs in the backend. After a disconnect, the client should reload and treat events as notifications that something changed.
