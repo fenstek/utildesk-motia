@@ -2,7 +2,7 @@
 slug: "anthropic-api"
 title: "Anthropic API"
 category: "AI Infrastructure"
-price_model: "Usage-based"
+price_model: "Nutzungsbasiert"
 tags: ["ai", "api", "llm", "developer-tools"]
 official_url: "https://docs.anthropic.com/"
 affiliate_url: ""
