@@ -1734,3 +1734,4 @@ _Last updated: 2026-07-19_
 
 - `chatgpt`: replaced the layered product-update opening with a source-aware project workflow from mixed files to a reviewed Canvas decision memo; preserved five alternatives, eight FAQ and the existing illustration in DE/EN.
 - `gemini`: rebuilt the generic Workspace summary around a bounded Drive, Gmail and Deep Research proposal workflow; preserved five alternatives and the existing illustration while expanding the practical DE/EN review guidance.
+- `github-copilot`: replaced the old autocomplete-first copy with an issue-to-pull-request story, repository-instruction guidance and explicit CI, security and human-review boundaries; preserved five alternatives, eight FAQ and the existing illustration.
