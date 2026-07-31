@@ -3,21 +3,22 @@ slug: pipedream
 title: Pipedream
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-pipedream-editorial
+editorial_batch: 2026-07-31-story-card-refresh-next20
 category: AI Agents
 price_model: Freemium
 tags: [automation, integrations, workflows, ai-agents]
 official_url: "https://pipedream.com/"
 popularity: 25
 description: Pipedream verbindet API-Integrationen, Trigger, fertige Actions und eigenen Code in ausfuehrbaren Workflows. Der praktische Wert liegt in nachvollziehbaren Event-Flows, nicht in einer beliebig langen Integrationsliste.
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
 tier: C
 generated_at: 2026-05-16
 ---
 # Pipedream
+
+Ein Zahlungsanbieter sendet denselben erfolgreichen Webhook zweimal. Ein naiver Workflow erzeugt daraufhin zwei Rechnungen und zwei CRM-Aktivitäten. In Pipedream kann das Team den Event empfangen, Signatur und Idempotency-Key prüfen, Daten mit eigenem Code normalisieren und erst danach kontrollierte Actions ausführen. Die Plattform macht den Ablauf schnell baubar; die Garantie gegen doppelte oder teilweise Ausführung muss trotzdem bewusst entworfen werden.
 
 Pipedream ist eine cloudbasierte Plattform fuer Integrationen und ausfuehrbare Workflows. Ein Workflow beginnt mit einem Trigger, zum Beispiel einem HTTP-Event, und verarbeitet die Eingabe anschliessend mit vorgefertigten Actions oder eigenen Code-Schritten. Ergebnisse eines Schritts koennen an nachfolgende Schritte weitergegeben werden; Logs, Fehler und Laufzeiten sind pro Ausfuehrung sichtbar.
 
