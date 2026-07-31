@@ -2,6 +2,7 @@
 slug: n8n
 title: n8n
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -111,6 +112,8 @@ n8n offers a cloud service and a self-hostable Community option; additional capa
 - [AI Tools with EU Data Processing: What Small Businesses Should Check](/en/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 n8n is one of the strongest tools when automation should be understood and operated, not merely clicked together quickly. Its freedom is not free: error paths, idempotency, credentials, and monitoring are part of the product. Teams that plan for them get a very capable platform.
 

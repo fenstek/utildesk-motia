@@ -2,6 +2,7 @@
 slug: kinemaster
 title: KineMaster
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: Utildesk Editorial
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -40,6 +41,8 @@ KineMaster provides multi-layer editing, a full-screen timeline, colour and audi
 AI features work best as a first pass. Auto Captions need correction for names, numbers, and specialist terms. AI Voice needs clear labelling if it resembles a person or functions as an apparent narrator. With asset libraries, teams should also check what use is permitted for the particular channel and client work.
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend KineMaster to mobile reporters, educators, and creators editing short multitrack projects where the footage is captured. Long-form work, shared media management, demanding colour and sound work, or repeatable broadcast delivery is better handled by a desktop NLE.
 

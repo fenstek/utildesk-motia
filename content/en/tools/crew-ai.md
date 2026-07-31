@@ -3,6 +3,7 @@ description: "Open-source framework for specialized AI agents, crews, and contro
 slug: "crew-ai"
 title: "CrewAI"
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: "2026-07-31"
 editorial_status: "manual_polished"
@@ -103,6 +104,8 @@ The framework is open source. Models, tools, storage, hosting, and the managed C
 - [DeepSeek](/en/tools/deepseek/): When model cost and open integration options receive different weight.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 CrewAI makes multi-agent systems understandable to model, but not automatically worthwhile. The productive core is usually a controlled flow with a few tightly bounded agent roles. If one agent solves the task equally well, it is almost always easier to test and operate.
 

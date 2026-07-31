@@ -4,6 +4,7 @@ title: Aide
 description: Aide automatisiert klar begrenzte Supportfälle und Aktionen auf bestehenden Helpdesks. Entscheidend sind geprüfte Intents, minimale Rechte und sichere Eskalation.
 updated_at: 2026-07-31
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -61,6 +62,8 @@ Supportverläufe enthalten häufig personenbezogene, Vertrags- und Bestelldaten.
 - [Freshdesk](/tools/freshdesk/): Helpdesk-Suite für Multi-Channel-Support.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Mit Vorbehalt.**
 
 Wir empfehlen Aide für CX-Teams mit hohem, wiederholbarem Anfragevolumen, einem gepflegten Helpdesk und klaren Regeln für erlaubte Aktionen. Besonders interessant ist es, wenn nicht nur Antworten, sondern eng begrenzte Service-Schritte automatisiert werden sollen und Action Traces kontrolliert werden.
 

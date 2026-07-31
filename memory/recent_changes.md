@@ -1881,3 +1881,10 @@ _Last updated: 2026-07-19_
 - Strengthened `scripts/check_tool_quality_guard.mjs` and the local `utildesk-tool-editorial` skill guard: explicit verdicts must be valid, identical in DE/EN, paired with `editorial_reviewed: true`, and supported by matching German and English editorial text. Orphaned custom verdict copy without a source field is rejected.
 - Added exact DE/EN textual verdict markers to the 20 explicit cards that previously relied only on their metadata; `babbel`, `claude` and `openai-codex` already contained matching custom verdict text.
 - The full editorial, English-parity, tool-quality, static build and 77-test runtime suite passed; the runtime deployment bundle check also passed.
+
+## 2026-07-31 - Fifty explicit editorial verdicts
+
+- Added honest, explicit DE/EN verdict metadata and matching visible verdict markers to 50 recently fact-checked, story-led tool cards that previously remained unrated. No card body, alternative, FAQ, illustration, category, price or official URL was removed or rewritten in this pass.
+- `recommend` (35): `chatgpt`, `gemini`, `github-copilot`, `aider`, `n8n`, `zapier`, `microsoft-power-automate`, `openai-api`, `hugging-face`, `8x8`, `magma`, `groq`, `descript`, `playwright`, `apify`, `adobe-podcast`, `airbyte`, `algolia`, `canva-video`, `planner`, `axure-rp`, `bamboohr`, `bandlab`, `kinemaster`, `photoroom`, `proto-io`, `snagit`, `adobe-lightroom`, `amazon-translate`, `articulate-storyline`, `clickhouse-cloud`, `loom`, `metabase`, `procreate`, `apache-kafka`.
+- `caution` (15): `langchain`, `crew-ai`, `perplexity`, `open-webui`, `copy-ai`, `capcut`, `otter-ai`, `openclaw`, `anyword`, `phantombuster`, `bolt-new`, `aide`, `luminar-neo`, `biteable`, `stability-ai`. These are conditional decisions based on material operating, data, rights, maintenance or fit boundaries already documented in the paired cards; no artificial `overrated` or `reject` quota was introduced.
+- Project editorial, English parity, textual-verdict and quality gates passed with 73 explicit verdicts and 1,171 deliberately unrated active tool pairs.

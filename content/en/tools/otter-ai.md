@@ -4,6 +4,7 @@ slug: "otter-ai"
 title: "Otter.ai"
 updated_at: "2026-07-31"
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: "2026-07-31"
 editorial_status: "manual_polished"
@@ -105,6 +106,8 @@ Otter offers a limited entry tier and paid plans with different minute, import, 
 - [Descript](/en/tools/descript/): connects transcripts with audio and video editing rather than primarily meeting follow-up.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 Otter.ai is valuable when a fleeting conversation becomes a verifiable working record. The decisive step is not recording, but human correction and unambiguous handover. Without that step, an inaccurate record merely looks more professional.
 

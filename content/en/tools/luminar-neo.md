@@ -3,6 +3,7 @@ description: "Luminar Neo is a tool for the workflow described here. Before adop
 slug: "luminar-neo"
 title: "Luminar Neo"
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -35,6 +36,8 @@ When evaluating Luminar Neo, the better question is not how many features it has
 The decision becomes clearer when owners, review steps, and success criteria are written down before Luminar Neo enters the workflow.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 Luminar Neo suits photographers who want to augment an existing RAW workflow with fast masks and creative variants while reviewing every export. It is less suitable as the sole archive or team platform, or for work requiring strict colour and reproducibility controls. Lightroom, Capture One, or a pixel-precise editor will usually be more dependable there.
 

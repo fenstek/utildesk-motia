@@ -3,6 +3,7 @@ description: "Text-based audio and video editor for interviews, podcasts, traini
 slug: "descript"
 title: "Descript"
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: "2026-07-31"
 editorial_status: "manual_polished"
@@ -112,6 +113,8 @@ Descript provides a limited entry tier and paid plans with different media, tran
 - [Sonix](/en/tools/sonix/): more focused on transcription, subtitles and editorial text handling.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 Descript is not interesting because it makes editing “automatic.” It is interesting because subject-matter editors can work directly on speech and meaning while the technical timeline remains available. The final quality decision cannot end in the transcript.
 

@@ -3,6 +3,7 @@ updated_at: 2026-07-31
 slug: phantombuster
 title: PhantomBuster
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -87,6 +88,8 @@ Bei Growth-Automation sollte man auch Fehlerkosten einrechnen: gesperrte Account
 - [N8n](/tools/n8n/): interessant für selbst kontrollierte, technischere Workflow-Automation.
 
 ## Redaktionelle Einschätzung
+
+**Redaktionelles Verdikt: Mit Vorbehalt.**
 
 Wir empfehlen PhantomBuster für Growth-, Sales-Ops- und Research-Teams, die einen wiederkehrenden, erlaubten Rechercheweg mit kleinen Volumina und klarer Prüfung automatisieren wollen. Es lohnt sich, wenn vorbereitete Phantoms schneller ans Ziel führen als ein eigener Scraper und die Ergebnisse vor jeder weiteren Nutzung kontrolliert werden.
 

@@ -2,6 +2,7 @@
 slug: bandlab
 title: BandLab
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -77,6 +78,8 @@ BandLab explains that content starts as private and that sharing settings contro
 BandLab offers a free entry tier and optional Membership plans. The exact features, allowances, and prices change; current paid plans can include additional Studio, effects, mastering, sound, or artist-service capabilities. The real budget therefore includes more than a subscription: rights administration, uploads, exports, backups, review time, and possibly a separate desktop DAW. Before buying, rebuild one real project with the current free and paid limits instead of budgeting from a generic feature list.
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend BandLab for song sketches, teaching, and distributed early collaboration when accessibility matters more than maximum technical control. It shortens the route from idea to shared listening copy. Large sessions, demanding recording, formal archiving, or professional mixing are better served by a local DAW and managed file exchange.
 

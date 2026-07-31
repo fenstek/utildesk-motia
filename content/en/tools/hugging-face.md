@@ -2,6 +2,7 @@
 slug: hugging-face
 title: Hugging Face
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -103,6 +104,8 @@ Many Hub functions and artifacts are free to access. Pro, Team, or Enterprise ca
 - [OpenAI API](/en/tools/openai-api/): Curated proprietary model access when an open hub is not required.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 For open AI, Hugging Face is library, Git platform, laboratory, and showroom at once. That breadth is unusual, but it pushes decisions to the user. Good selection begins with an owned test set and ends with a pinned model revision, not a like count.
 

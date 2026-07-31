@@ -2,6 +2,7 @@
 slug: apache-kafka
 title: Apache Kafka
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -62,6 +63,8 @@ For sensitive data, classification, topic naming, TLS, authentication, and ACLs 
 Apache Kafka software is open source. That does not make production operation free: compute, SSD storage, networking, backups, monitoring, on-call work, and platform maintenance remain costs. A managed offering usually reduces cluster operations but charges according to the provider's resources, traffic, retention, and support model. The useful cost questions are not only "How many events per second?" but also "How long must they remain available, how many consumers read them, and who responds when lag grows overnight?" For a short-lived, low-volume workflow, a simpler queue or managed ingestion service may be the more economical choice.
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend Kafka to teams with multiple independent consumers, a real need for replay, and enough platform expertise for schema, security, and operations. Simple background jobs, a few point-to-point messages, or a small system are usually cheaper with a managed queue or direct integration.
 

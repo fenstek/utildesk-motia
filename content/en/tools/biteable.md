@@ -2,6 +2,7 @@
 slug: biteable
 title: Biteable
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -80,6 +81,8 @@ The exact exports, permissions, video duration, AI allowances, and analytics dep
 - Plan-dependent limits for exports, duration, users, branding, and AI can change the real cost.
 
 ## Editorial Assessment
+
+**Editorial verdict: With caveat.**
 
 We recommend Biteable to teams that regularly produce short template-based explainers or announcements and can organise subject review. Individual storytelling, complex animation, precise editing, or long training content calls for a more flexible video editor or an e-learning authoring tool.
 

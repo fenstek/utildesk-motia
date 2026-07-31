@@ -2,6 +2,7 @@
 slug: "stability-ai"
 title: "Stability AI"
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -93,6 +94,8 @@ Before adopting Stability AI, clarify which data will enter the tool and whether
 For European teams evaluating Stability AI, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Stability AI before the data path is understood.
 
 ## Editorial Assessment
+
+**Editorial verdict: With caveat.**
 
 Stability AI is relevant to technical creative teams that deliberately evaluate open or self-hostable image models and can own operations. A more guided service is often faster for reliably producing occasional marketing assets. Sensitive brand work requires licence review, documented inputs, and human approval.
 

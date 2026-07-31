@@ -2,6 +2,7 @@
 slug: metabase
 title: Metabase
 editorial_reviewed: "true"
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
@@ -89,6 +90,8 @@ Before adopting Metabase, clarify which data will enter the tool and whether mod
 For European teams evaluating Metabase, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Metabase before the data path is understood.
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend Metabase to teams making SQL-oriented analysis accessible to business users while deliberately maintaining models and access. Complex enterprise governance, pixel-perfect management reporting, or very large semantic layers may be better served by Power BI, Tableau, or Looker.
 

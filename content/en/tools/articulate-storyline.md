@@ -2,6 +2,7 @@
 slug: articulate-storyline
 title: Articulate Storyline
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -89,6 +90,8 @@ Storyline 360 is licensed as part of an Articulate 360 subscription. Pricing var
 - Large media files, many language versions, and frequent updates increase review, storage, and maintenance work.
 
 ## Editorial Assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend Storyline to teams repeatedly producing interactive, branching, or simulation-heavy learning modules with owned review and LMS operations. Linear information pages, quick video instructions, or collaboratively maintained responsive courses may be more economical in Rise or a lighter authoring tool.
 

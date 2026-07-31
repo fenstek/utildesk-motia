@@ -2,6 +2,7 @@
 slug: bolt-new
 title: Bolt.new
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -85,6 +86,8 @@ In the catalog, Bolt.new is marked with the pricing model **Plan-based**. Check 
 - [Replit](/en/tools/replit/): a browser development environment with hosting and learning workflows.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 We recommend Bolt.new when a web idea needs to become visible in hours rather than days and somebody is already responsible for reviewing the resulting code. That speed is valuable for workshops, MVP decisions, and small internal demos.
 

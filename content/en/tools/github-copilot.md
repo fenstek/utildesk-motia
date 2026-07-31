@@ -2,6 +2,7 @@
 slug: github-copilot
 title: GitHub Copilot
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -106,6 +107,8 @@ GitHub offers a bounded free entry tier and paid plans for individuals and organ
 - [Amazon CodeWhisperer](/en/tools/amazon-codewhisperer/): For development workflows close to AWS services.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 GitHub Copilot is now less a single code generator than a family of intervention points in the development process. That makes it useful, not automatically safe. Its best outcome is the boringly good pull request: small, tested, traceable, and understood by a person.
 

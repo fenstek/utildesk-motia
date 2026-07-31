@@ -3,6 +3,7 @@ updated_at: "2026-07-31"
 slug: phantombuster
 title: PhantomBuster
 editorial_reviewed: true
+editorial_verdict: caution
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: "2026-07-31"
 editorial_status: "manual_polished"
@@ -87,6 +88,8 @@ Include failure costs as well. A restricted account, poor data, or unlawful outr
 - [N8n](/en/tools/n8n/): a stronger fit for technically controlled, self-hostable workflow automation.
 
 ## Editorial assessment
+
+**Editorial verdict: With caveat.**
 
 We recommend PhantomBuster to growth, sales-operations, and research teams that want to automate one recurring and permitted research route with small volumes and explicit review. It earns its place when prepared Phantoms reach a reliable result faster than maintaining a custom scraper.
 

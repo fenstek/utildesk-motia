@@ -2,6 +2,7 @@
 slug: amazon-translate
 title: Amazon Translate
 editorial_reviewed: true
+editorial_verdict: recommend
 editorial_reviewed_by: "Utildesk Editorial"
 editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
@@ -105,6 +106,8 @@ The real cost is not just characters: include S3 storage, Lambda, monitoring, re
 - [SYSTRAN Translate](/en/tools/systran-translate/): relevant for organizations comparing enterprise localization, terminology, and controlled deployment options.
 
 ## Editorial assessment
+
+**Editorial verdict: Recommend.**
 
 We recommend Amazon Translate to AWS-oriented teams with high recurring volume and a clear glossary and review process. Individual editorial pieces, brand communication, or sensitive specialist translation are better handled by professional human translators or an interactive CAT system.
 
