@@ -3,9 +3,9 @@ slug: dall-e
 title: DALL·E
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-dall-e-full-card-editorial"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: Design
 price_model: Usage-based
 tags: ["ai", "design", "image", "creative", "visual"]
@@ -14,14 +14,15 @@ affiliate_url: "https://openai.com/dall-e"
 tier: D
 generated_at: 2026-05-28
 created_at: 2026-02-03
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
 popularity: 0
 source_language: de
 translation: full
 description: "OpenAI model for text-based image generation, visual concepts, and API-driven image production with human quality and rights review."
 ---
 # DALL·E
+
+An editorial team needs a cover illustration for an abstract topic, without a brand logo, identifiable person or invented lettering. DALL·E can turn a precise brief into four directions and iteratively modify the selected composition. Before publication, a human reviews the subject, artefacts, possible resemblance and editorial meaning. Image generation shortens the sketch phase; it does not transfer responsibility for the final image.
 
 DALL·E is OpenAI's model family for creating images from natural-language descriptions. For a team, its practical role is to move quickly from a brief to several visual directions; it does not replace art direction or checks for brand, identity, and usage rights. Teams also need to distinguish the older DALL·E 3 API model from the current image features available in ChatGPT or the OpenAI platform.
 
