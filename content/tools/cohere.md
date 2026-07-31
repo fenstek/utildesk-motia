@@ -3,22 +3,24 @@ slug: cohere
 title: Cohere
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-19-product-update-priority
+editorial_batch: 2026-07-31-story-card-refresh-next20
 category: AI Infrastructure
 price_model: Freemium
-description: Enterprise-oriented language models, embeddings, and reranking tools for grounded search and AI workflows.
+description: "Cohere kombiniert Unternehmensmodelle, Embeddings und Reranking für beleggebundene Suche und kontrollierte KI-Workflows."
 tags: [chatbot, data]
 official_url: "https://cohere.com/"
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 popularity: 63
 tier: B
 generated_at: 2026-05-11
 ---
 # Cohere
 
-Cohere richtet sich an Unternehmen, die Sprachmodelle nicht nur zum Schreiben einsetzen, sondern in Suche, Retrieval und agentische Prozesse einbauen wollen. Das Portfolio verbindet generative Command-Modelle mit Embeddings und Reranking. Damit lässt sich zum Beispiel eine interne Suche aufbauen, die nicht nur Treffer findet, sondern sie nach Relevanz sortiert und Antworten an nachvollziehbare Quellen bindet.
+Eine Mitarbeiterin fragt nach der aktuellen Reiserichtlinie. Die interne Suche findet fünf ähnlich benannte PDFs, darunter zwei veraltete Versionen. Ein Cohere-Workflow kann Dokumente einbetten, Kandidaten suchen, mit Reranking neu ordnen und eine Antwort an die gültige Quelle binden. Er ist aber nur so zuverlässig wie Versionierung, Zugriffsfilter und die Regel, bei widersprüchlichen Belegen keine eindeutige Antwort zu erfinden.
+
+Cohere richtet sich an Unternehmen, die Sprachmodelle nicht nur zum Schreiben einsetzen, sondern in Suche, Retrieval und agentische Prozesse einbauen wollen. Das Portfolio verbindet generative Command-Modelle mit Embeddings, Reranking und inzwischen auch Sprachverarbeitung. Die Bausteine sind interessant, wenn Datenzugriff und Evaluation wichtiger sind als ein allgemeiner Chat.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/cohere-editorial.webp" alt="Illustration zu Cohere: Ein Team ordnet Dokumente, Embeddings und Suchpfade für eine nachvollziehbare KI-Suche" loading="lazy" decoding="async" />
