@@ -42,5 +42,17 @@
 /en/markdown/*
   X-Robots-Tag: noindex
 
+/impressum/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/datenschutz/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/en/imprint/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/en/privacy/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
 /tools/*
   Cache-Control: public, max-age=0, must-revalidate
