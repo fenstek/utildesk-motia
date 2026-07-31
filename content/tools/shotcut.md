@@ -2,20 +2,23 @@
 slug: shotcut
 title: Shotcut
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: "AI Coding"
 price_model: Kostenlos
 tags: [video-editing, open-source, post-production]
 official_url: "https://shotcut.org/"
 popularity: 0
-description: "Shotcut ist ein kostenloser Open-Source-Videoeditor für Schnitt, Formate, Filter und einfache Postproduktion."
+description: "Shotcut ist ein lokaler Open-Source-Videoeditor für Schnitt, Ton und Export mit viel Kontrolle und ohne verpflichtenden Cloud-Workflow."
 tier: "C"
 generated_at: "2026-05-17"
+updated_at: 2026-07-31
 ---
 # Shotcut
+
+Ein einstündiges Interview soll lokal zu einem klaren Zehn-Minuten-Video werden. Die Redakteurin sichert das Original, arbeitet bei Bedarf mit Proxy-Dateien, baut zuerst die Aussage auf der Timeline und kümmert sich danach um Ton, Untertitel und Exporttest. Shotcut bietet dafür viel Kontrolle ohne Cloud-Zwang. Wer gleichzeitig mit mehreren Personen schneiden, kommentieren und Assets verwalten muss, stößt mit einem lokalen Einzelplatz-Workflow jedoch früher an Grenzen.
 
 Shotcut ist ein freier Videoeditor für Nutzer, die Videos schneiden und exportieren möchten, ohne ein Abo für professionelle Schnittsoftware abzuschließen. Er ist praktisch für einfache bis mittlere Projekte.
 
@@ -70,14 +73,12 @@ Für einfache Projekte ist das sehr attraktiv. Wenn Schnittgeschwindigkeit, Team
 
 **Zum Anbieter:** https://shotcut.org/
 
-## Alternativen zu Shotcut
+## Alternativen
 
-- Kdenlive: ebenfalls kostenlos und offen, oft stärker für klassischere Schnittworkflows.
-- Openshot: einfacher Einstieg für sehr grundlegende Videoprojekte.
-- [Adobe Premiere Pro](/tools/adobe-premiere-pro/): professioneller für Teamproduktion, Plugins und Agenturprozesse.
-- [Filmora](/tools/filmora/): zugänglicher für Creator mit Vorlagen, Effekten und schneller Social-Produktion.
-- [Davinci Resolve](/tools/davinci-resolve/): deutlich stärker bei Farbkorrektur, Audio-Postproduktion und Finishing.
-
+- [Adobe Premiere Pro](/tools/adobe-premiere-pro/): für professionelle Teamproduktion, Plugins und Agenturprozesse.
+- [Filmora](/tools/filmora/): für zugänglichen Schnitt mit Vorlagen und Creator-Funktionen.
+- [DaVinci Resolve](/tools/davinci-resolve/): für anspruchsvolle Farbkorrektur, Audio und Finishing.
+- [Clipchamp](/tools/clipchamp/): für einfache Alltagsvideos und einen leichteren Einstieg.
 ## Redaktionelle Einschätzung
 
 Shotcut ist eine solide kostenlose Wahl für einfachen Schnitt. Für Teamproduktion und High-End-Postproduktion sind andere Tools stärker.
@@ -95,3 +96,7 @@ Shotcut lohnt sich, wenn lokale, kostenlose Bearbeitung und Formatflexibilität 
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Exportcodec, Auflösung, Framerate, Projektablage und Backup der Rohdateien. Vor Veröffentlichung sollte die exportierte Datei komplett geprüft werden.
+
+**Warum sollte das Originalmaterial erhalten bleiben?**
+
+Bearbeitung und Export können Qualität oder Synchronität verändern. Ein unverändertes Original ermöglicht neue Schnitte, Fehlerkorrektur und einen belastbaren Vergleich.
