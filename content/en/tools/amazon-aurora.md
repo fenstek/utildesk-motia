@@ -2,19 +2,22 @@
 slug: amazon-aurora
 title: Amazon Aurora
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
-category: Developer
-price_model: Usage-based
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Entwickler-Tools
+price_model: Nutzungsbasiert
 tags: [database, cloud, postgresql, mysql, aws]
 official_url: "https://aws.amazon.com/rds/aurora/"
 popularity: 0
 translation: full
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
+description: "Amazon Aurora is a managed relational database service for scalable applications with an emphasis on availability and AWS integration."
 ---
 # Amazon Aurora
+
+A SaaS team sees high I/O wait during load tests and also wants to rehearse database failover. It creates an isolated copy, runs representative queries, checks driver compatibility, and measures recovery time and cost. Restore and fallback are documented before production cutover. Amazon Aurora can remove a substantial amount of operational work, but it does not replace a suitable data model, load testing, or cost control.
 
 Amazon Aurora is AWS's managed relational database service for MySQL- and PostgreSQL-compatible workloads. It is intended for applications that need a relational database without owning all of the underlying infrastructure, backups, replication, and failover. Aurora is not a universal replacement for every database: adopting it is an architecture, operations, cost, and AWS-commitment decision at the same time.
 
@@ -59,11 +62,10 @@ For production data, document IAM and network access, encryption, secrets, backu
 
 ## Alternatives
 
-- [PostgreSQL](/en/tools/postgresql/) is the reference choice when full control or self-managed operation matters more than AWS-managed features.
-- [Supabase](/en/tools/supabase/) combines PostgreSQL with authentication, APIs, and a product-focused developer platform.
-- [CockroachDB](/en/tools/cockroachdb/) is worth evaluating for teams comparing distributed SQL and multi-region resilience independently of Aurora.
-- [MongoDB Atlas](/en/tools/mongodb-atlas/) is an alternative when the actual problem suits a document-oriented data model better.
-
+- [PostgreSQL](/en/tools/postgresql/): for teams that prefer full control and a more portable operating model.
+- [CockroachDB](/en/tools/cockroachdb/): for distributed SQL and multi-region architecture outside the Aurora model.
+- [MongoDB Atlas](/en/tools/mongodb-atlas/): when a document-oriented data model is a better business fit.
+- [Snowflake](/en/tools/snowflake/): for analytical data work rather than transactional application load.
 ## FAQ
 
 **Is Aurora identical to PostgreSQL or MySQL?**
