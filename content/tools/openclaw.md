@@ -1,7 +1,7 @@
 ---
 slug: openclaw
 title: OpenClaw
-description: "OpenClaw verbindet einen selbst betriebenen Agenten mit Chat-Kanälen, Skills und lokalen Diensten. Entscheidend sind enge Rechte und klare Freigaben."
+description: OpenClaw verbindet einen selbst betriebenen Agenten mit Chat-Kanälen, Skills und lokalen Diensten. Entscheidend sind enge Rechte und klare Freigaben.
 updated_at: 2026-07-31
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
@@ -12,7 +12,7 @@ category: AI Agents
 price_model: Open Source
 tags: ["ai-agents", "automation", "self-hosting", "messaging"]
 official_url: "https://openclaw.ai/"
-popularity: 0
+popularity: 30
 tier: A
 lastReviewed: 2026-07-31
 mentionedIn: ["multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"]

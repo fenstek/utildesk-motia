@@ -1,7 +1,7 @@
 ---
 slug: anyword
 title: Anyword
-description: "Anyword hilft Marketingteams, Copy-Varianten mit Markenregeln und Performance-Hypothesen zu entwickeln. Entscheidend bleibt der reale Test gegen eine Kontrollversion."
+description: Anyword hilft Marketingteams, Copy-Varianten mit Markenregeln und Performance-Hypothesen zu entwickeln. Entscheidend bleibt der reale Test gegen eine Kontrollversion.
 updated_at: 2026-07-31
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
@@ -13,7 +13,7 @@ price_model: Freemium
 tags: [writing, content, marketing]
 official_url: "https://www.anyword.com/"
 created_at: 2026-02-15
-popularity: 77
+popularity: 93
 tier: C
 generated_at: 2026-05-10
 ---

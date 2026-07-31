@@ -1,7 +1,7 @@
 ---
 slug: aide
 title: Aide
-description: "Aide automatisiert klar begrenzte Supportfälle und Aktionen auf bestehenden Helpdesks. Entscheidend sind geprüfte Intents, minimale Rechte und sichere Eskalation."
+description: Aide automatisiert klar begrenzte Supportfälle und Aktionen auf bestehenden Helpdesks. Entscheidend sind geprüfte Intents, minimale Rechte und sichere Eskalation.
 updated_at: 2026-07-31
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
@@ -12,7 +12,7 @@ category: AI Agents
 price_model: Usage-based
 tags: [customer-support, automation, productivity, workflow]
 official_url: "https://aide.app/"
-popularity: 81
+popularity: 96
 tier: D
 generated_at: 2026-05-10
 ---

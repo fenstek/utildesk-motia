@@ -11,7 +11,7 @@ price_model: Usage-based
 tags: [audio, transcription, api, voice-ai]
 official_url: "https://deepgram.com/"
 description: Voice-AI infrastructure for speech-to-text, text-to-speech, audio intelligence, and real-time voice-agent applications.
-popularity: 56
+popularity: 57
 tier: C
 updated_at: 2026-07-19
 ---

@@ -1,21 +1,21 @@
 ---
-description: "OpenAI Codex bearbeitet klar begrenzte Aufgaben direkt im Repository, führt Befehle und Tests aus und übergibt einen prüfbaren Diff statt nur eines Codevorschlags."
+description: OpenAI Codex bearbeitet klar begrenzte Aufgaben direkt im Repository, führt Befehle und Tests aus und übergibt einen prüfbaren Diff statt nur eines Codevorschlags.
 slug: openai-codex
 title: OpenAI Codex
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-29
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-29-full-tool-card-editorial"
-editorial_verdict: "recommend"
-editorial_verdict_headline: "Empfehlen – für klar begrenzte Repository-Arbeit mit Tests und Review."
-editorial_verdict_text: "Codex ist unsere Empfehlung für Teams, die dem Agenten echte, überschaubare Aufgaben geben und jeden Lauf über Diff, Tests und menschlichen Review abnehmen. Ohne Git-Disziplin, begrenzte Rechte und eine stopbare Aufgabe wird aus Tempo schnell schwer prüfbare Nacharbeit."
-editorial_trust_label: "4,5 / 5 · hoch"
+editorial_status: manual_polished
+editorial_batch: 2026-07-29-full-tool-card-editorial
+editorial_verdict: recommend
+editorial_verdict_headline: Empfehlen – für klar begrenzte Repository-Arbeit mit Tests und Review.
+editorial_verdict_text: Codex ist unsere Empfehlung für Teams, die dem Agenten echte, überschaubare Aufgaben geben und jeden Lauf über Diff, Tests und menschlichen Review abnehmen. Ohne Git-Disziplin, begrenzte Rechte und eine stopbare Aufgabe wird aus Tempo schnell schwer prüfbare Nacharbeit.
+editorial_trust_label: 4,5 / 5 · hoch
 category: AI Coding
 price_model: Freemium
 tags: [ai, devtools, coding, agents, cli, workflow]
 official_url: "https://openai.com/codex/"
-popularity: 32
+popularity: 33
 tier: A
 mentionedIn: ["coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen"]
 updated_at: 2026-07-29

@@ -10,8 +10,8 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://playwright.dev/"
-description: "Playwright prüft kritische Webabläufe in Chromium, Firefox und WebKit. Besonders wertvoll sind Isolation, belastbare Assertions und nachvollziehbare Fehlerartefakte."
-popularity: 84
+description: Playwright prüft kritische Webabläufe in Chromium, Firefox und WebKit. Besonders wertvoll sind Isolation, belastbare Assertions und nachvollziehbare Fehlerartefakte.
+popularity: 80
 tier: D
 generated_at: 2026-05-17
 updated_at: 2026-07-31

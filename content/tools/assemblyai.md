@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Usage-based
 tags: [audio, transcription, voice-ai, developer-tools]
 official_url: "https://www.assemblyai.com/"
-popularity: 72
+popularity: 71
 tier: C
 lastReviewed: 2026-07-13
 ---
