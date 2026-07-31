@@ -2,18 +2,21 @@
 slug: aws-bedrock
 title: AWS Bedrock
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
-lastReviewed: 2026-07-13
-category: AI
-price_model: Usage-based
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: AI Coding
+price_model: Nutzungsbasiert
 tags: [ai, developer tools, cloud, api]
 official_url: "https://aws.amazon.com/bedrock/"
 translation: full
+updated_at: 2026-07-31
+description: "AWS Bedrock provides managed access to generative models and AI application components with AWS permissions and controlled evaluation."
 ---
 # AWS Bedrock
+
+An internal assistant needs to answer questions from approved manuals. The team compares several models with the same test set, evaluates retrieval separately from answer quality, limits data access with IAM, and checks guardrails, cost, and failure cases. Access begins with a small user group. AWS Bedrock simplifies access to models and infrastructure; a dependable application still comes from evaluation, permissions, and a clear escalation path.
 
 AWS Bedrock is AWS's managed platform for building generative-AI applications with foundation models from multiple providers. Its value is not a promise that every model behaves identically. It is the ability to run model access, permissions, deployment and cost allocation inside an AWS operating model a company already knows.
 
@@ -59,12 +62,10 @@ We would recommend it when there is a concrete AWS workflow and a team owns moni
 
 ## Alternatives
 
-- [OpenAI API](/en/tools/openai-api/) is more direct when one provider's product API is the deliberate choice.
-- [Anthropic API](/en/tools/anthropic-api/) suits teams centred on Claude without the AWS layer.
-- [Google Vertex AI](/en/tools/google-vertex-ai/) is the comparable platform choice for Google Cloud organisations.
-- [Amazon SageMaker](/en/tools/amazon-sagemaker/) goes further into custom ML workflows, training and MLOps.
-- [LangChain](/en/tools/langchain/) is not a cloud substitute, but helps orchestrate applications, retrieval and tools across providers.
-
+- [OpenAI API](/en/tools/openai-api/): for direct model access outside the AWS operating model.
+- [Anthropic API](/en/tools/anthropic-api/): for direct Claude access with an owned platform integration.
+- [Google Vertex AI](/en/tools/google-vertex-ai/): for managed generative AI in the Google Cloud ecosystem.
+- [Google AI](/en/tools/google-ai/): for a lighter entry point to Google models and prototyping.
 ## FAQ
 
 **Is Bedrock a single LLM?**
