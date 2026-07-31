@@ -3,9 +3,9 @@ slug: dall-e
 title: DALL·E
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-dall-e-full-card-editorial"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: Design
 price_model: Usage-based
 tags: ["ai", "design", "image", "creative", "visual"]
@@ -14,12 +14,13 @@ affiliate_url: "https://openai.com/dall-e"
 tier: D
 generated_at: 2026-05-28
 created_at: 2026-02-03
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
 popularity: 0
 description: "OpenAI-Modell für textbasierte Bildgenerierung, visuelle Entwürfe und API-gestützte Bildproduktion mit menschlicher Qualitäts- und Rechteprüfung."
 ---
 # DALL·E
+
+Eine Redaktion braucht eine Titelillustration zu einem abstrakten Thema, ohne Markenlogo, erkennbare Person oder erfundene Beschriftung. DALL·E kann aus einem präzisen Briefing vier Richtungen erzeugen und eine ausgewählte Komposition iterativ verändern. Vor der Veröffentlichung prüft ein Mensch Motiv, Artefakte, mögliche Ähnlichkeiten und die redaktionelle Aussage. Die Bildgenerierung verkürzt die Skizzenphase, nicht die Verantwortung für das fertige Bild.
 
 DALL·E ist OpenAIs Modellfamilie für die Erzeugung von Bildern aus natürlichsprachlichen Beschreibungen. Für ein Team ist es vor allem ein schneller Weg von einem Briefing zu mehreren visuellen Entwürfen; es ersetzt weder Art Direction noch die Prüfung von Marken-, Personen- und Nutzungsrechten. In der Praxis muss außerdem zwischen dem älteren DALL·E-3-API-Modell und den jeweils aktuellen Bildfunktionen in ChatGPT oder der OpenAI-Plattform unterschieden werden.
 
