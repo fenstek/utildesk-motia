@@ -1,5 +1,59 @@
 # Recent Changes — utildesk-motia
 
+## 2026-07-31 - Fifty strict-audit story-led tool-card refreshes
+
+- `google-patents`: added a reproducible prior-art scenario, legal boundary, fourth FAQ and corrected internal alternatives in DE/EN.
+- `axis-camera-station`: added a warehouse incident workflow and aligned review, category, pricing and description metadata in DE/EN.
+- `postgresql`: added a transaction-safe billing migration scenario, rollback boundary and fourth practical FAQ in DE/EN.
+- `sistrix`: added a template-release traffic diagnosis using first-party validation and a fourth practical FAQ in DE/EN.
+- `prometheus`: added an SLO/RED-metrics incident workflow, cardinality boundary and repaired observability alternatives in DE/EN.
+- `amazon-aurora`: added a load, failover and restore evaluation scenario and rebuilt task-specific database alternatives in DE/EN.
+- `pusher`: added an authoritative-state/reconnect workflow and replaced missing alternatives with valid internal event-system links in DE/EN.
+- `smartrecruiters`: added a structured hiring-pipeline scenario with retention, access and human-decision boundaries in DE/EN.
+- `avatoon`: added a consented conference-portrait workflow and replaced weak avatar links with active creative alternatives in DE/EN.
+- `apache-beam`: added an event-time, watermark and runner-comparison scenario while preserving the existing data-pipeline depth in DE/EN.
+- `ibm-watson-studio`: added a reproducible churn-model handover and rebuilt active ML-platform alternatives in DE/EN.
+- `deep-ai`: added a fixed-fixture API evaluation scenario and replaced plain vendor names with active internal model-platform links in DE/EN.
+- `ginger`: added a sensitive support-reply workflow, data boundary and fully linked writing alternatives in DE/EN.
+- `respeecher`: added a consent, rights and voice-direction production scenario with active synthetic-voice alternatives in DE/EN.
+- `auphonic`: added a multi-microphone podcast finishing workflow and repaired all audio-production alternatives in DE/EN.
+- `c3-ai`: added a bounded predictive-maintenance pilot and replaced plain enterprise-AI names with active internal alternatives in DE/EN.
+- `frase`: added a source-checked content-refresh workflow and converted every alternative into a relevant internal link in DE/EN.
+- `apigee`: added a partner API publication scenario with gateway/business-logic boundaries and strict alternative formatting in DE/EN.
+- `mailerlite`: added a consented newsletter-onboarding workflow and aligned paired editorial metadata without reducing existing FAQ depth.
+- `aws-bedrock`: added a model-evaluated document assistant pilot and rebuilt provider alternatives with strict DE/EN parity.
+- `amazon-msk`: added an order-event platform scenario with schema, replay and consumer-operability boundaries in DE/EN.
+- `thunkable`: added a field-inspection pilot and replaced unlinked no-code names with active task-fit alternatives in DE/EN.
+- `looker`: added a reconciled revenue-metric workflow and rebuilt semantic-BI alternatives with exact localized links.
+- `puppeteer`: added a bounded invoice-download automation with terms, CAPTCHA, secrets and failure-trace boundaries in DE/EN.
+- `clipchamp`: added a reviewed HR training-video workflow and repaired localized video-editor alternatives in DE/EN.
+- `wrike`: added a cross-agency campaign workflow, fourth practical FAQ and deduplicated active project alternatives in DE/EN.
+- `hemingway-editor`: added a policy-readability workflow with subject-review boundary and fully linked editing alternatives in DE/EN.
+- `ink-by-inkle`: added a branching training-story workflow, path-testing FAQ and active narrative-tool alternatives in DE/EN.
+- `theia`: added a custom cloud-IDE ownership scenario, non-fit boundary and active development-environment alternatives in DE/EN.
+- `invideo`: added a rights-checked social-video workflow and rebuilt all video-production alternatives as localized internal links.
+- `insomnia`: added a safe payments-API change workflow, secrets FAQ and active API-client alternatives in DE/EN.
+- `detox`: added a reproducible CI login-regression workflow, flakiness FAQ and active testing alternatives in DE/EN.
+- `sas`: added a regulated credit-model governance scenario and rebuilt active analytics-platform alternatives in DE/EN.
+- `google-tasks`: added a personal meeting-follow-up workflow, team-project boundary and active productivity alternatives in DE/EN.
+- `shotcut`: added a local interview-editing workflow, source-preservation FAQ and active video-editor alternatives in DE/EN.
+- `webdriverio`: added a browser/mobile checkout testing workflow, test-pyramid boundary and fourth practical FAQ in DE/EN.
+- `atlas-ti`: added a pseudonymised interview-coding workflow with second-coder and interpretation boundaries in DE/EN.
+- `snowflake`: added a governed sales/finance warehouse scenario, cost FAQ and corrected paired official-URL parity.
+- `marvel`: added a task-based returns prototype test and replaced the inactive Adobe XD link with active design alternatives in DE/EN.
+- `rytr`: added a tightly briefed product-copy workflow, direct-publishing boundary and fourth practical FAQ in DE/EN.
+- `salesforce-einstein`: added a permissioned sales-pipeline pilot with data-quality and human-decision boundaries in DE/EN.
+- `trint`: added a journalist interview workflow with timecoded quote verification and controlled transcript handling in DE/EN.
+- `trino`: added a cross-source query workflow with catalog, identity and resource-control boundaries in DE/EN.
+- `servicenow`: added an employee-access request workflow with approvals, audit trail and explicit exception ownership in DE/EN.
+- `streamlit`: added an authenticated forecasting-demo workflow with caching, validation and product-architecture boundaries in DE/EN.
+- `sourcegraph`: added a legacy-code security migration workflow and aligned active coding alternatives across DE/EN.
+- `obsidian`: added a source-linked research-vault workflow with backup, plugin and team-governance boundaries in DE/EN.
+- `nvidia-rtx-6000-ada-generation`: added a workload-based workstation evaluation covering VRAM, drivers, power and value in DE/EN.
+- `audo`: added a conservative remote-interview cleanup workflow, listening FAQ and fully linked audio alternatives in DE/EN.
+- `narrato`: replaced the excluded BeFunky candidate, added a bounded editorial workflow, proper assessment heading, fourth FAQ and active alternatives in DE/EN.
+- Selection used the strict per-card guard rather than legacy `manual_polished` flags. All fifty paired cards pass the source guard individually; existing WebP illustrations, popularity, slugs and compact sitemap membership were preserved.
+
 ## 2026-07-31 - Twenty story-led tool-card refreshes
 
 - Refreshed the paired DE/EN cards for Midjourney, ElevenLabs, Runway, Replit, Windsurf, Stable Diffusion, DALL-E, Microsoft Copilot, Google AI Studio, Anthropic API, Linear, Beautiful.ai, Cohere, AssemblyAI, Deepgram, Granola, Firebase Studio, Pipedream, Tableau and Power BI.
