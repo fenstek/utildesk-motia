@@ -2,18 +2,21 @@
 slug: prometheus
 title: Prometheus
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-04
-category: Developer
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: Entwickler-Tools
 price_model: Open Source
 tags: [monitoring, metrics, observability, developer-tools]
 official_url: "https://prometheus.io/"
-description: "Prometheus is an open-source metrics and monitoring system for time-series data, queries, and alerting."
+description: "Prometheus collects time-series metrics and triggers alerts for observable systems, while requiring disciplined labels, SLOs, and runbooks."
 translation: full
+updated_at: 2026-07-31
 ---
 # Prometheus
+
+Short checkout latency spikes disappear inside the averages. The platform team therefore records rate, errors, and duration for each service, defines an SLO, and ties the alert to a specific runbook. It deliberately limits labels so customer IDs or request IDs do not create exploding cardinality. Prometheus makes the behaviour measurable; without meaningful metrics, ownership, and a response, even a technically perfect alert is only noise.
 
 Prometheus is an open-source metrics and monitoring system, not an AI assistant or workflow automator. It collects timestamped measurements, stores them as time series, and supports querying and alerting. Common signals include request rate, error rate, latency, resource consumption, and queue depth.
 
@@ -41,13 +44,12 @@ PromQL supports flexible queries; frequent or expensive calculations can be prep
 
 Plan scrape interval, retention, storage, backups, and high availability around expected load. Prometheus is not an unlimited long-term archive; remote storage or compatible systems may be needed for larger scale or longer retention. Protect metrics endpoints because they can reveal internal names, capacity, or error detail.
 
-## Alternatives to Prometheus
+## Alternatives
 
-- [Grafana](/en/tools/grafana/): a visualisation and alerting complement, not a replacement for the metric source.
-- [Datadog](/en/tools/datadog/): a hosted observability platform with a broader SaaS offering.
-- [New Relic](/en/tools/new-relic/): an alternative APM and observability platform.
-- [Elastic Stack](/en/tools/elastic-stack/): when logs and search are more central.
-
+- [Grafana](/en/tools/grafana/): visualisation and alerting as a complement to an existing metric source.
+- [Datadog](/en/tools/datadog/): hosted observability with a broader SaaS and integration scope.
+- [New Relic](/en/tools/new-relic/): APM and full-stack monitoring as a managed platform.
+- [Elasticsearch](/en/tools/elasticsearch/): stronger when search and log analysis are at the centre of the problem.
 ## Editorial assessment
 
 Prometheus is an excellent standard for technical metrics when a team takes cardinality, alert hygiene, and operational ownership seriously. The best early result is not a pretty dashboard but an alert that fires rarely, reaches the right person, and speeds a clear diagnosis.
@@ -65,3 +67,7 @@ Every unique label combination creates a separate time series. Unbounded IDs or 
 **What makes a good alert?**
 
 It describes a relevant, sustained user or system impact, has an owner and a short runbook. Mere fluctuations belong on a dashboard.
+
+**Which labels should be avoided?**
+
+Unbounded values such as request IDs, customer numbers, or free-form URLs create high cardinality. Labels should represent a known, controlled set of useful dimensions.

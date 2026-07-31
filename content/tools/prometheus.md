@@ -2,10 +2,10 @@
 slug: prometheus
 title: Prometheus
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-tool-quality-campaign-04
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: Entwickler-Tools
 price_model: Open Source
 tags: [monitoring, metrics, observability, developer-tools]
@@ -13,8 +13,12 @@ official_url: "https://prometheus.io/"
 popularity: 0
 tier: D
 generated_at: 2026-05-13
+updated_at: 2026-07-31
+description: "Prometheus sammelt Zeitreihenmetriken und löst Alarme für beobachtbare Systeme aus, verlangt aber disziplinierte Labels, SLOs und Runbooks."
 ---
 # Prometheus
+
+Im Checkout treten kurze Latenzspitzen auf, die in Durchschnittswerten verschwinden. Das Plattformteam erfasst deshalb Rate, Fehler und Dauer pro Dienst, formuliert ein SLO und verbindet den Alarm mit einem konkreten Runbook. Bei der Instrumentierung begrenzt es Labels bewusst, damit Kundennummern oder Request-IDs keine explodierende Kardinalität erzeugen. Prometheus macht das Verhalten messbar; ohne sinnvolle Metriken, Zuständigkeit und Reaktion bleibt auch ein perfekter Alarm nur Lärm.
 
 Prometheus ist ein Open-Source-System für Metriken und Monitoring, kein KI-Assistent und kein Workflow-Automatisierer. Es sammelt zeitbasierte Messwerte, speichert sie als Zeitreihen und erlaubt Abfragen sowie Alarme. Typische Signale sind Request-Rate, Fehlerrate, Latenz, Ressourcenverbrauch und Queue-Tiefe.
 
@@ -42,13 +46,12 @@ PromQL erlaubt flexible Abfragen; häufige oder teure Berechnungen lassen sich a
 
 Planen Sie Scrape-Intervalle, Aufbewahrungszeit, Speicher, Backups und Hochverfügbarkeit passend zur Last. Prometheus ist nicht als unbegrenztes Langzeitarchiv gedacht; für größere oder längere Aufbewahrung können Remote Storage oder kompatible Systeme nötig sein. Schützen Sie Metrik-Endpunkte, weil sie interne Namen, Kapazitäten oder Fehlerdetails verraten können.
 
-## Alternativen zu Prometheus
+## Alternativen
 
-- [Grafana](/tools/grafana/): Visualisierung und Alerting-Ergänzung, nicht Ersatz für die Metrikdatenquelle.
-- [Datadog](/tools/datadog/): gehostete Observability-Plattform mit breiterem SaaS-Angebot.
-- [New Relic](/tools/new-relic/): alternative APM- und Observability-Plattform.
-- [Elastic Stack](/tools/elastic-stack/): wenn Logs und Suche stärker im Vordergrund stehen.
-
+- [Grafana](/tools/grafana/): Visualisierung und Alerting als Ergänzung zu einer vorhandenen Metrikquelle.
+- [Datadog](/tools/datadog/): gehostete Observability mit breiterem SaaS- und Integrationsumfang.
+- [New Relic](/tools/new-relic/): APM und Full-Stack-Beobachtung als verwaltete Plattform.
+- [Elasticsearch](/tools/elasticsearch/): stärker, wenn Suche und Loganalyse den Kern des Problems bilden.
 ## Redaktionelle Einschätzung
 
 Prometheus ist ein sehr guter Standard für technische Metriken, sofern das Team Cardinality, Alarmhygiene und Betriebsverantwortung ernst nimmt. Der beste erste Erfolg ist nicht ein schönes Dashboard, sondern ein Alarm, der selten feuert, den richtigen Menschen erreicht und eine klare Diagnose beschleunigt.
@@ -66,3 +69,7 @@ Jede einzigartige Labelkombination erzeugt eine eigene Zeitreihe. Unbegrenzte ID
 **Was macht einen guten Alert aus?**
 
 Er zeigt einen relevanten, anhaltenden Nutzer- oder Systemschaden, hat einen Verantwortlichen und ein kurzes Runbook. Reine Schwankungen sind besser im Dashboard aufgehoben.
+
+**Welche Labels sollte man vermeiden?**
+
+Unbegrenzte Werte wie Request-IDs, Kundennummern oder freie URLs erzeugen hohe Kardinalität. Labels sollten eine bekannte, kontrollierte Menge sinnvoller Dimensionen abbilden.
