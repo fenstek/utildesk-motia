@@ -17,6 +17,7 @@ official_url: 'https://www.beautiful.ai/'
 popularity: 0
 source_language: de
 translation: full
+description: "Beautiful.ai turns a clear outline into consistent presentation slides, while teams remain responsible for facts, narrative and decision logic."
 ---
 # Beautiful.ai
 
