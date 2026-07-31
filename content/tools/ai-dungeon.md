@@ -3,9 +3,9 @@ slug: ai-dungeon
 title: AI Dungeon
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_batch: 2026-07-31-story-card-refresh-next50
 category: "AI Writing"
 price_model: Freemium
 tags: ["writing", "design"]
@@ -16,12 +16,16 @@ generated_at: "2026-05-14"
 created_at: 2026-02-03
 popularity: 0
 description: "KI-gestütztes Textadventure für verzweigte Geschichten, eigene Szenarien und gemeinsames Rollenspiel."
-updated_at: 2026-07-13
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
+
 ---
 # AI Dungeon
 
-AI Dungeon ist ein textbasiertes Rollenspiel, in dem ein Sprachmodell auf Eingaben reagiert und die nächste Szene einer offenen Geschichte erzeugt. Du kannst ein fertiges Scenario starten, ein eigenes Setting mit Figuren und Regeln anlegen oder im Story-Modus selbst Text vorgeben. Der wichtige Unterschied zu einem normalen Schreibassistenten: Das Ergebnis ist kein fertiger Roman, sondern ein fortlaufendes Spiel, dessen Richtung du in jedem Zug nachschärfst.
+Eine Rollenspielrunde möchte vor dem nächsten Abend ausprobieren, wie sich eine verlassene Raumstation auf unerwartete Entscheidungen der Gruppe reagiert. AI Dungeon kann aus kurzen Eingaben sofort neue Szenen und Abzweigungen improvisieren. Diese Offenheit ist der Reiz, aber auch die Grenze: Kontinuität, Ton und sensible Inhalte müssen aktiv gesteuert werden, und vertrauliche Manuskripte gehören nicht automatisch in den Dienst.
+
+## Praxisbild: ein begrenzter Durchlauf
+
+Definiere Setting, drei feste Fakten, Inhaltsgrenzen und ein klares Ende für eine zwanzigminütige Testsitzung. Eine Person führt, eine zweite notiert Widersprüche und verwertbare Ideen. Bei Grenzverletzung, wiederholter Kontinuitätsstörung oder zu viel Prompt-Reparatur wird beendet. Gute Einfälle werden anschließend in eigenen Worten in das echte Kampagnendokument übernommen und dort redaktionell geprüft.
 
 ## Für wen eignet sich AI Dungeon?
 
@@ -62,7 +66,8 @@ AI Dungeon hat einen kostenlosen Einstieg und kostenpflichtige Mitgliedschaften.
 
 ## Redaktionelle Einschätzung
 
-AI Dungeon ist eine gute Wahl für offene, spielerische Erzählung, wenn Überraschung wichtiger ist als vollständige Plotkontrolle. Der konkrete Wert entsteht bei einem klar begrenzten Setting, gepflegten Story Cards und einer Person, die Kontinuitätsfehler aktiv korrigiert. Für einen privaten Kreativtest oder eine kleine Rollenspielrunde ist das ein plausibler Start; für eine öffentliche Community oder ein kommerzielles Schreibprojekt braucht es zusätzlich Moderation, Rechteprüfung und einen Export- beziehungsweise Archivplan. Wähle eine Alternative, wenn du primär fertige Prosa, deterministische Verzweigungen oder eine echte Multiplayer-Welt mit festen Regeln brauchst.
+AI Dungeon empfehlen wir für offene spielerische Improvisation und unverbindliche Ideensuche, wenn Überraschung wichtiger als kanonische Kontrolle ist. Für veröffentlichungsreife Fiktion, Arbeit mit sensiblen Gruppen oder konsistente Welten sind klassische Schreib- und Game-Master-Werkzeuge mit menschlicher Redaktion geeigneter.
+
 
 ## Alternativen
 
