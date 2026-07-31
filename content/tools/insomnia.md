@@ -2,20 +2,23 @@
 slug: insomnia
 title: Insomnia
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: Entwickler-Tools
 price_model: Je nach Plan
 tags: [api, developer, testing]
 official_url: "https://insomnia.rest/"
 popularity: 0
-description: "Insomnia ist ein API-Client für REST, GraphQL und gRPC, mit dem Entwickler Requests testen, dokumentieren und debuggen."
+description: "Insomnia organisiert API-Anfragen, Umgebungen und Spezifikationen für Entwicklung und Prüfung, ohne Last- oder vollständige Vertragstests zu ersetzen."
 tier: "C"
 generated_at: "2026-05-12"
+updated_at: 2026-07-31
 ---
 # Insomnia
+
+Vor einer Änderung an der Zahlungs-API importiert das Team die Spezifikation in Insomnia, trennt lokale, Test- und Produktionsumgebungen und legt Authentifizierung sowie wiederholbare Beispielaufrufe an. Destruktive Requests sind in Produktion gesperrt, Secrets liegen nicht im geteilten Workspace. So wird aus einer losen Request-Sammlung ein prüfbarer Arbeitsablauf. Für Lasttests, vollständige Vertragsprüfung oder komplexe CI-Gates braucht es dennoch ergänzende Werkzeuge.
 
 Insomnia hilft Entwicklern, APIs direkt zu testen, Umgebungen zu verwalten und Requests nachvollziehbar zu speichern. Es ist besonders nützlich, wenn Backend, Frontend und externe Integrationen sauber geprüft werden müssen.
 
@@ -70,14 +73,12 @@ Einzelne Entwickler können oft schlank starten. Für Teams sind Rechte, Auditie
 
 **Zum Anbieter:** https://insomnia.rest/
 
-## Alternativen zu Insomnia
+## Alternativen
 
-- [Postman](/tools/postman/): breiteres Ökosystem für Teams, Dokumentation, Mocking und API-Plattformfunktionen.
-- [Hoppscotch](/tools/hoppscotch/): leichter und browsernah für schnelle API-Checks.
-- Bruno: interessant für Git-native Collections und lokale API-Workflows.
-- Curl: unschlagbar für Skripte, Minimaltests und reproduzierbare Terminal-Beispiele.
-- Paw: relevant für macOS-orientierte API-Workflows, sofern das Team damit arbeitet.
-
+- [Postman](/tools/postman/): für ein breiteres API-Ökosystem mit Team-, Mocking- und Plattformfunktionen.
+- [Hoppscotch](/tools/hoppscotch/): für leichte, browsernahe API-Prüfungen.
+- [Bruno](/tools/bruno/): für lokale, Git-nahe API-Collections.
+- [Curl](/tools/curl/): für reproduzierbare Terminalaufrufe, Skripte und Minimaltests.
 ## Redaktionelle Einschätzung
 
 Insomnia ist stark als tägliches Werkzeug für API-Arbeit. Für Qualitätssicherung gehört es neben automatisierte Tests, nicht statt ihnen.
@@ -95,3 +96,7 @@ Insomnia lohnt sich, wenn APIs regelmäßig manuell geprüft, Fehler reproduzier
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Secret-Management, Environment-Trennung, Exportregeln und die Frage, welche Requests in automatisierte Tests überführt werden sollten. Produktive Tokens gehören nicht ungeschützt in Sammlungen.
+
+**Wo sollten API-Secrets gespeichert werden?**
+
+Nicht in geteilten Request-Dateien oder Git. Sie gehören in lokale sichere Variablen oder einen Secret Store mit getrennten Werten für Test und Produktion.
