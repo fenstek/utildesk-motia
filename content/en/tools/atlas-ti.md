@@ -2,12 +2,12 @@
 slug: atlas-ti
 title: Atlas.ti
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: "Plan-based"
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
+category: AI Infrastructure
+price_model: Je nach Plan
 tags:
   - data
   - analytics
@@ -18,9 +18,12 @@ official_url: 'https://atlasti.com/'
 popularity: 0
 source_language: de
 translation: full
-description: "Atlas.ti is a research and analysis tool for qualitative data analysis, coding, and analysis of interviews, texts, and research data."
+description: "Atlas.ti organises qualitative data, codes, memos, and relationships for traceable research that remains dependent on human interpretation."
+updated_at: 2026-07-31
 ---
 # Atlas.ti
+
+A research team is analysing 30 interviews about a new service. It imports pseudonymised transcripts, develops a shared codebook first, links codes to memos, and asks a second researcher to review disputed passages. Networks support interpretation rather than serving as automatic proof. Atlas.ti makes extensive qualitative material traceable; analytical quality still depends on the research question, coding discipline, and privacy practice.
 
 Atlas.ti is easy to either underestimate or overhype. Neither helps. The better question is whether qualitative data analysis, coding, and analysis of interviews, texts, and research data happens often enough in your work to justify a dedicated tool.
 
@@ -76,8 +79,7 @@ In the catalog, Atlas.ti is marked with the pricing model **Plan-based**. For a 
 
 **Provider:** https://atlasti.com/
 
-## Alternatives to Atlas.ti
-
+## Alternatives
 - [Dedoose](/en/tools/dedoose/): useful comparison point if workflow, pricing, or specialization should differ.
 - [NVivo](/en/tools/nvivo/): useful comparison point if workflow, pricing, or specialization should differ.
 - [MAXQDA](/en/tools/maxqda/): useful comparison point if workflow, pricing, or specialization should differ.

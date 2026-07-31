@@ -2,20 +2,23 @@
 slug: atlas-ti
 title: Atlas.ti
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: AI Infrastructure
 price_model: Je nach Plan
 tags: [data, analytics, productivity, automation, education]
 official_url: "https://atlasti.com/"
 popularity: 0
-description: Atlas.ti ist ein Recherche- und Analysewerkzeug für qualitative Datenanalyse, Codierung und Auswertung von Interviews, Texten und Forschungsdaten.
+description: "Atlas.ti organisiert qualitative Daten, Codes, Memos und Beziehungen für nachvollziehbare Forschung mit menschlicher Interpretation."
 tier: C
 generated_at: 2026-05-10
+updated_at: 2026-07-31
 ---
 # Atlas.ti
+
+Ein Forschungsteam wertet 30 Interviews zu einem neuen Service aus. Es importiert pseudonymisierte Transkripte, entwickelt zunächst ein gemeinsames Codebuch, verknüpft Codes mit Memos und lässt eine zweite Person strittige Passagen prüfen. Netzwerke dienen anschließend der Interpretation, nicht als automatischer Beweis. Atlas.ti schafft Nachvollziehbarkeit in umfangreichem Material; die Qualität der Analyse hängt weiterhin von Fragestellung, Kodierdisziplin und Datenschutz ab.
 
 Man kann Atlas.ti sehr schnell unterschätzen oder überschätzen. Beides ist unpraktisch. Sinnvoller ist die Frage, ob qualitative Datenanalyse, Codierung und Auswertung von Interviews, Texten und Forschungsdaten im eigenen Alltag regelmäßig genug vorkommt, um ein eigenes Werkzeug zu rechtfertigen.
 
@@ -73,8 +76,7 @@ Im Katalog ist Atlas.ti mit dem Preismodell **Je nach Plan** geführt. Für eine
 
 **Zum Anbieter:** https://atlasti.com/
 
-## Alternativen zu Atlas.ti
-
+## Alternativen
 - [Dedoose](/tools/dedoose/): stärker, wenn Dedoose unterstützt qualitative und Mixed-Methods-Forschung mit Codierung, Analyse, Teamarbeit und Datenvisualisierung gefragt ist.
 - [NVivo](/tools/nvivo/): passender, wenn ein anderer Schwerpunkt als bei Atlas.ti im Vordergrund steht.
 - [MAXQDA](/tools/maxqda/): prüfen, wenn ein anderer Schwerpunkt als bei Atlas.ti relevant ist.
