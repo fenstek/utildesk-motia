@@ -2,19 +2,22 @@
 slug: google-patents
 title: Google Patents
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-07-13
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-13-full-editorial-coverage
+editorial_batch: 2026-07-31-story-card-refresh-50
 category: AI Research
 price_model: Kostenlos
 tags: [research, patents, search, innovation]
 official_url: "https://patents.google.com/"
 popularity: 48
 tier: C
-lastReviewed: 2026-07-13
+updated_at: 2026-07-31
+description: "Google Patents erschließt Patentveröffentlichungen für nachvollziehbare Vorrecherche, ersetzt aber keine rechtliche Patent- oder FTO-Prüfung."
 ---
 # Google Patents
+
+Ein Produktteam entwickelt einen leiseren Kühlmechanismus und möchte vor dem Prototypenbau wissen, welche technischen Wege bereits beschrieben wurden. In Google Patents sammelt es zuerst Synonyme, CPC-Klassen, einschlägige Anmelder und Zitationsketten. Die Treffer landen mit Suchabfrage und Prioritätsdatum in einer Shortlist. Erst danach prüft eine Patentanwältin die Ansprüche und den Rechtsstand. Genau in dieser Rollenverteilung ist das Werkzeug stark: Es macht Vorrecherche schnell und nachvollziehbar, ohne juristische Gewissheit vorzutäuschen.
 
 Google Patents ist eine frei zugängliche Suchoberfläche für Patentveröffentlichungen und wissenschaftliche Verweise. Sie eignet sich hervorragend, um schnell Begriffe, Erfinder:innen, Anmelder, Klassen und ähnliche Dokumente zu finden. Für Gründer:innen, Produktteams und Forschende ist das oft der sinnvollste erste Blick auf den Stand der Technik.
 
@@ -71,8 +74,7 @@ Dieser Ablauf ist auch für kleine Teams wertvoll: Er verhindert, dass eine einz
 - Kein Ersatz für Portfolio-Management, belastbare FTO-Analysen oder professionelle Alerting-Workflows.
 - Ein öffentlicher Suchdienst ersetzt keine dokumentierte Recherchemethodik.
 
-## Alternativen zu Google Patents
-
+## Alternativen
 - [Espacenet](/tools/espacenet/): für amtlich nahe europäische Patentdaten und Recherche.
 - [WIPO PATENTSCOPE](/tools/wipo-patentscope/): für internationale PCT-Recherche.
 - [Lens.org](/tools/lens-org/): wenn Patente und wissenschaftliche Literatur gemeinsam untersucht werden sollen.
@@ -92,3 +94,7 @@ Nicht bei einem Keyword stehen bleiben. Synonyme, Fachbegriffe, Klassen, Anmelde
 **Muss ein Patenttreffer ein Produktproblem bedeuten?**
 
 Nein. Ein Dokument kann abgelaufen, nicht erteilt, auf eine andere Jurisdiktion begrenzt oder für den konkreten Ansatz nicht relevant sein. Die Einordnung verlangt mehr als einen Treffer.
+
+**Wie dokumentiert man eine Suche so, dass sie später nachvollziehbar bleibt?**
+
+Suchfrage, verwendete Begriffe und Klassen, Datum, relevante Treffer und Ausschlussgründe gehören zusammen in ein Rechercheprotokoll. Ein späterer Review kann dann erkennen, was tatsächlich geprüft wurde.
