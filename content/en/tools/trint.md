@@ -1,23 +1,26 @@
 ---
 slug: "trint"
 title: "Trint"
-category: "AI Audio"
-price_model: "Subscription"
+category: AI Audio
+price_model: Abonnement
 tags: ["transcription", "video", "audio", "ai"]
 official_url: "https://trint.com/"
 affiliate_url: ""
 created_at: "2026-06-14"
-updated_at: "2026-06-14"
+updated_at: 2026-07-31
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-20-human-polish"
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 tier: "D"
 popularity: 0
 translation: "full"
+description: "Trint transcribes and organises audio and video interviews for editorial work where quotations must always be checked against the recording."
 ---
 # Trint
+
+A journalist transcribes a long interview to find the relevant passages quickly. In Trint, she corrects speakers and proper names, marks potential quotations, and uses timecodes to return to the audio. Every published statement is checked against the original recording; the transcript remains working material, not evidence. Trint saves search and rough-text work, but accents, overlapping speech, and sensitive material still require careful editing and appropriate access rules.
 
 Trint is a transcription and editing tool for audio and video material. It is especially useful for editorial, content, research, and communications teams that need conversations turned into checkable text quickly.
 
@@ -75,8 +78,7 @@ Trint is listed as Subscription. Key cost drivers are hour volume, team features
 
 **Provider:** https://trint.com/
 
-## Alternatives To Trint
-
+## Alternatives
 - [Descript](/en/tools/descript/): when transcription and audio/video editing should be tightly linked.
 - [Otter.ai](/en/tools/otter-ai/): when meeting notes and live summaries are central.
 - [Whisper](/en/tools/whisper/): when open-source transcription or self-hosting is desired.
