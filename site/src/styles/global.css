@@ -1820,6 +1820,115 @@ main.container {
   }
 }
 
+/* Consent for optional audience measurement. The band stays compact and does
+   not load analytics until the visitor has made an explicit choice. */
+.privacy-consent {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 1200;
+  border-top: 1px solid var(--line-2);
+  background: var(--bg-2);
+  color: var(--fg);
+  box-shadow: 0 -12px 28px rgb(0 0 0 / 16%);
+}
+
+.privacy-consent[hidden] {
+  display: none;
+}
+
+.privacy-consent-inner {
+  width: min(calc(100% - 32px), var(--container));
+  margin: 0 auto;
+  padding: 18px 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.privacy-consent strong {
+  display: block;
+  margin-bottom: 5px;
+  font-family: var(--display);
+  font-size: 1rem;
+}
+
+.privacy-consent p {
+  max-width: 72rem;
+  margin: 0;
+  color: var(--fg-2);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.privacy-consent a {
+  margin-left: 0.45rem;
+  color: var(--accent);
+}
+
+.privacy-consent-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.privacy-consent-actions button,
+.footer-privacy-settings {
+  appearance: none;
+  border: 0;
+  font: inherit;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.privacy-consent-actions button {
+  min-height: 42px;
+  padding: 9px 14px;
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.privacy-consent-actions .privacy-consent-accept {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.privacy-consent-actions button:hover,
+.privacy-consent-actions button:focus-visible {
+  border-color: var(--accent);
+}
+
+.footer-privacy-settings {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer-privacy-settings:hover,
+.footer-privacy-settings:focus-visible {
+  color: var(--accent);
+}
+
+@media (max-width: 760px) {
+  .privacy-consent-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .privacy-consent-actions {
+    width: 100%;
+  }
+
+  .privacy-consent-actions button {
+    flex: 1;
+  }
+}
+
 /* =====================================================
    Optional design from utildesk1.zip: Entscheidungsblatt.
    Default is the new paper/decision-desk design; the header

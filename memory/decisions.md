@@ -1,5 +1,23 @@
 # Decisions
 
+## 2026-07-31 Legal pages and analytics consent
+
+- Use § 5 DDG, not the repealed § 5 TMG, for German provider information.
+  Explicitly identify the operator as responsible for the
+  journalistically-edited Ratgeber content under § 18 Abs. 2 MStV.
+- Keep legal pages directly reachable from the footer while excluding them
+  from search with both page-level robot directives and an HTTP
+  `X-Robots-Tag`.
+- Do not load Umami merely because it is cookieless. Optional audience
+  measurement reads browser/device information and therefore requires explicit
+  consent under § 25 Abs. 1 TDDDG and Art. 6 Abs. 1 lit. a DSGVO.
+- Store only the visitor's consent state locally. A denial must prevent future
+  Umami loads; a withdrawal must also block the custom qualified-reader event
+  on the current page.
+- Keep provider details out of static HTML and render them client-side from
+  split fragments. This is a scraping deterrent, not a substitute for making
+  the legal information human-readable and continuously available.
+
 ## 2026-07-14 Generic concepts and unsafe guessed domains
 
 - Generic concepts such as `Deepfake` are not publishable tools unless a concrete, independently verified product entity exists.
