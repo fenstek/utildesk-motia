@@ -393,3 +393,10 @@
 - The first normal R2 content delta published ten new tool illustrations and 20 DE/EN entries from source commit `e19b950c`. The bounded 70-check HTML/JSON/Markdown/asset gate passed, IndexNow accepted the 20 canonical URLs, Astro/Pages were not rebuilt, and the request ledger now stands at 448/500. The active DE/EN illustration gap is 72 paired cards.
 - The second normal R2 content delta published 63 new tool illustrations and 126 DE/EN entries from source commit `6aa676f1`. The full 441-check HTML/JSON/Markdown/asset delta passed, both IndexNow endpoints accepted all 126 canonical URLs, and `dist` remained unchanged without an Astro/Pages rebuild. The request ledger stands at 1,076/10,000, leaving nine active paired cards without illustrations.
 - The third normal R2 content delta published the final nine tool illustrations and 18 DE/EN entries from source commit `c05d478c`. The bounded 63-check HTML/JSON/Markdown/asset delta passed, both IndexNow endpoints accepted all 18 canonical URLs, and `dist` remained unchanged without an Astro/Pages rebuild. The request ledger stands at 1,169/10,000 and no active paired cards remain without illustrations.
+
+## 2026-07-31 Fifty-card story refresh production state
+
+- Fifty additional established tool cards now have story-led DE/EN openings, bounded practical pilots and decision-oriented editorial verdicts. The strict card guard passed `50/50`; the active catalogue remains `1,244` paired tools and all existing illustrations were preserved.
+- Production D1 was updated from clean source commit `20aaa1fb` with 100 localized rows in 25 paired statements. Source hashes matched, the 350-request live delta completed with zero failures, and both IndexNow endpoints accepted the 100 changed canonical HTML URLs.
+- The single normal Astro build passed with 1,088 pages, 49 Ratgeber and zero generated tool-detail routes. The runtime content release did not rebuild or redeploy Pages and proved `site/dist` unchanged.
+- A fresh private pre-release D1 export was retained outside Git with SHA-256 `30b46dc2e7c18774d53861d7dfc032252bab256084d270b4b685768ac7a46d82`.
