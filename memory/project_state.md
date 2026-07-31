@@ -1,5 +1,14 @@
 # Project State
 
+## 2026-07-31 Fifty-card story-led runtime release
+
+- Fifty older strict-failing tool cards were refreshed in paired DE/EN form with concrete workflows, explicit decision boundaries, synchronized editorial metadata, complete descriptions, at least four FAQ items, and valid internal alternatives.
+- All fifty pairs pass the strict per-card source guard. Shared editorial, English translation and tool-quality checks pass; the single Astro build completed with 1,088 pages and all three compact sitemap surfaces unchanged at 146 URLs.
+- The bounded D1/R2 runtime release from source commit `e98c7f70` published 100 locale projections and verified 50 existing content-addressed WebP assets. All 350 live HTML/JSON/Markdown/asset checks passed with zero failures, and source hashes matched.
+- Both global IndexNow and Bing accepted all 100 changed canonical HTML URLs with HTTP `200`. No Pages deployment or sitemap expansion was needed.
+- The private pre-release D1 export is `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-backups\2026-07-31\before-story50.sql`, SHA-256 `7d950399d9cde6039a91b627ed25db2f6b493f14b9f8af61b8be78b51cdd4b82`. The release report is `C:\Users\sserg\AppData\Local\Temp\utildesk-runtime-releases\2026-07-31-story50-production`.
+- The tracked live-request reservation is now `5695/10000`, leaving `4305` worst-case requests.
+
 ## 2026-07-31 Story-led tool-card runtime release
 
 - Twenty established tool cards were refreshed in paired DE/EN form and published through the bounded D1/R2 runtime from source commit `67800400`.
