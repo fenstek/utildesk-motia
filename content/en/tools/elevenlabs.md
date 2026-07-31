@@ -3,9 +3,9 @@ slug: elevenlabs
 title: ElevenLabs
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-product-update"
+editorial_batch: "2026-07-31-story-card-refresh-next20"
 category: "Audio & Video"
 description: "ElevenLabs provides speech, dubbing, and voice-agent workflows that require consent and operational controls."
 price_model: Freemium
@@ -15,12 +15,14 @@ tags:
 official_url: 'https://elevenlabs.io/'
 affiliate_url: 'https://elevenlabs.io/'
 created_at: '2026-02-07'
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 popularity: 0
 source_language: de
 translation: full
 ---
 # ElevenLabs
+
+A podcast team wants to localise a twelve-minute interview for three markets. The speaker should remain recognisable, product names must sound right and no translation may strengthen the original claim. ElevenLabs can accelerate transcription, dubbing and synthetic voice, but production quality still comes from documented consent, a pronunciation glossary, comparison with the source and human approval of every language version.
 
 ## Status on 19 July 2026
 
