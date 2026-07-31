@@ -3,111 +3,140 @@ slug: open-webui
 title: Open WebUI
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Editorial
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-07-19-product-update-priority
+editorial_batch: 2026-07-31-story-card-refresh-20
 category: AI Chatbots
 price_model: Open Source
-description: "A self-hosted AI workspace for local and API-connected models, shared knowledge, roles, tools, and governed team access."
+description: "A self-hosted AI workspace for local and API-connected models, scoped knowledge, roles, tools, and governed team access."
 tags: [assistant, chatbot]
 official_url: "https://openwebui.com"
 popularity: 93
 translation: full
-updated_at: 2026-07-19
+updated_at: 2026-07-31
 ---
 # Open WebUI
 
-Open WebUI is a self-hosted interface for language models and AI tools. It can connect local models through Ollama as well as OpenAI-compatible APIs and other cloud providers. Unlike an individual chat account, it lets a team decide which models, knowledge sources, roles, and extensions sit behind a shared interface.
+## Quick verdict
 
-That is appealing for teams that want a governable route to local and external models rather than a one-off experiment. It is not, however, a simple "ChatGPT clone to install." Value depends on operating the service, keeping it updated, managing permissions, and deciding exactly which data may leave the environment.
+An internal support team needs to search technical manuals. General questions may go to a strong cloud model; confidential product notes must stay with a local model. Open WebUI can offer both through one interface, grant Knowledge Bases by group, and selectively enable web search or a code interpreter. The most dangerous switch is not the model: permission to create Workspace Tools is effectively permission to execute Python with the backend's privileges.
 
-## Editorial update July 2026
+Open WebUI is therefore more than a pleasant front end for local models. It can become a self-operated AI workspace for teams. We **recommend** it for organizations with a technical operator, explicit data zones, and deliberate access control. Without an administrator, updates, and backups, self-hosting is not a privacy strategy; it is only more operations.
 
-The current Open WebUI line moves the centre of gravity from chat interface to operable agent platform: skills, events, structured output, knowledge spaces, and Open Terminal can connect local models to concrete work. The update documentation also makes version compatibility and breaking changes worth checking before an upgrade.
+## What Open WebUI is today
 
-Before upgrading, a team should back up its instance, review roles and tool permissions, and test its extensions against the target version. The right pilot is an isolated agent run with allowed tools, visible logs, and a clear rollback path.
+Open WebUI is an open-source web interface for local and API-compatible models. Users can work with chats, models, prompts, Knowledge Bases, and additional functions when permitted. Role and group permissions control access to workspaces and features.
+
+Knowledge stores documents and collections for retrieval. A model can be scoped to attached knowledge; access to the model itself does not bypass rights on the underlying files. New extensions should use Tools and Functions. The current documentation labels older Pipelines as legacy and advises against basing new deployments on them.
+
+## A realistic team rollout
+
+The pilot starts with a non-confidential manual collection and two groups. Support may read the approved Knowledge Base but cannot import models, prompts, or tools. Administrators configure one local model for internal document questions and a separate cloud connection for general writing.
+
+The team tests concrete questions with expected sources. Answers must point to relevant passages and must not improvise when evidence is absent. Permission cases follow: Can a user discover an unapproved Knowledge Base? Are cloud and local data paths separate? What is included in backup?
+
+Tools remain disabled initially. Later, only a small admin group receives access to reviewed extensions. Community code is treated as server code: pin the revision, inspect it, test it outside production, and limit network and file privileges.
 
 ## Who is Open WebUI for?
 
-Open WebUI is particularly relevant for:
+- Teams combining local and multiple external models in one interface
+- Organizations with owned infrastructure and a technical operator
+- Internal knowledge assistants with group-based document permissions
+- Developers and power users testing models, prompts, and functions under control
+- Environments that do not want to hand every data path and model decision to one SaaS chat
 
-- technical teams exposing Ollama, vLLM, or OpenAI-compatible endpoints through one consistent interface;
-- organisations comparing model providers without handing every employee separate accounts;
-- teams running a bounded RAG pilot over internal documents;
-- administrators who need to control roles, groups, and access to AI use.
-
-For one person who only wants to chat with a cloud model, the operational work is usually unnecessary. For teams that already have a model or server setup, Open WebUI can provide the missing interaction, permissions, and knowledge layer.
-
-## A sensible first deployment
-
-Start small: one internal FAQ or tightly defined document collection, one user group, and one or two approved models. Decide in advance which answer types are allowed, how sources should appear, and who corrects wrong answers. Only after that path works should you consider agents, web search, or broad tool connections.
-
-For example, a support or enablement team could receive a separate workspace containing approved manuals, a local model for routine questions, and a cloud model for more difficult wording. Answers remain drafts: a support specialist checks product version, source, and customer context before anything is sent.
-
-## Important capabilities
-
-### Local and external models behind one interface
-
-Open WebUI supports local runners such as Ollama and OpenAI-compatible APIs. That allows local, private, and cloud-hosted models to sit side by side. The platform can only work offline where both the model and data are local; once a cloud provider is connected, that provider's network and data conditions apply.
-
-### Documents, RAG, and knowledge access
-
-Open WebUI includes a RAG layer for document-grounded answers. It can make files and knowledge collections available, but quality still depends on extraction, chunking, permissions, and maintained source material. A RAG chat is not proof that every answer is fully correct or correctly sourced.
-
-### Roles, groups, and authentication
-
-Multi-user roles and groups are a major reason teams choose Open WebUI. Larger deployments can integrate LDAP/Active Directory, SSO, and SCIM. These capabilities do not make an instance secure by themselves: credentials, reverse proxy, updates, and permissions for tools still need to be operated.
-
-### Extensions, tools, and agents
-
-Filters, Actions, Pipes, Tools, and Skills extend the platform; external services can be connected through OpenAPI- and MCP-adjacent paths. This is where risk rises. Each new action needs a clear purpose, least-privilege access, and, where appropriate, user approval.
+Open WebUI is less suitable for teams unable to patch, monitor, back up, and rapidly maintain a service after security updates.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/open-webui-editorial.webp" alt="Illustration for Open WebUI: a protected mountain lodge organising local model capsules and private data routes" loading="lazy" decoding="async" />
 </figure>
 
-## Operations, security, and cost
+## Typical use cases
 
-The open-source software does not replace infrastructure. Budget for a server or workstation, model and document storage, backups, monitoring, update windows, and potentially GPU capacity. Cloud models add consumption-based charges. A seemingly free local chat can become costly with large models, concurrent users, or unclear support ownership.
+- **Local model chat:** Use models on owned hardware through an approachable interface.
+- **Multi-provider workspace:** Select local and API models by task.
+- **Internal Knowledge Bases:** Provide documents for semantic and exact search.
+- **Team access:** Govern groups, features, and sharing centrally.
+- **Reviewed tools:** Extend models with approved internal functions.
+- **Model comparison:** Run the same test set across models and configurations.
 
-Security is not just encryption. Check whether the instance is publicly reachable, how administrator access is protected, which plugins are installed, and whether uploaded documents remain in the expected environment. A test instance should not receive real HR, contract, or customer repositories as its knowledge base.
+## Strengths
 
-## Common rollout mistakes
+- Self-hosted interface with broad model choice
+- Group and feature permissions support separated user roles
+- Knowledge can be scoped to approved collections and models
+- Local and cloud models can coexist in one work environment
+- Active open-source development and extensive configuration
 
-- Enabling every model and plugin immediately without owners or approved use cases.
-- Loading documents into a shared knowledge base without a permissions model.
-- Treating local hosting as full compliance while backups, logs, or connected cloud APIs still expose data.
-- Deferring updates: an internet-capable web service requires maintenance and attention to security notices.
+## Limits and risks
 
-A good first deployment documents model sources, data classes, admin ownership, and a fallback path when a tool or provider fails.
+- Operators own updates, backups, availability, and secure configuration
+- Tools and Functions can execute arbitrary Python with backend privileges
+- A connected cloud model makes that data path non-local
+- RAG can miss relevant passages or synthesize them incorrectly
+- Rapid releases require controlled upgrades and migration tests
+
+## Workflow fit
+
+A sensible start consists of one model, one Knowledge Base, one group, and a defined question set. Add models and features only after source quality, access, and operations work. Default Permissions should remain restrictive; groups receive additional rights deliberately.
+
+Separating “use a tool” from “create a tool” is essential. The latter is administrative code access, not an ordinary user feature.
+
+## Privacy & operations
+
+Self-hosting keeps only those data local that are not sent to external model, search, OCR, or other services. Document every connection separately. Logs, chats, documents, embeddings, and backups belong in the retention and access design.
+
+The instance needs TLS, secure authentication, minimal container and file privileges, database backups, and an update path. Public exposure should not be the default for an internal pilot.
+
+## Pricing & costs
+
+Open WebUI is open source. Hardware, model operation, external APIs, storage, administration, and availability add cost. A local model may reduce API spend while requiring GPU, power, and maintenance.
+
+**Go to provider:** https://openwebui.com
 
 ## Alternatives
 
-- [Jan AI](/en/tools/jan-ai/): a local alternative for model testing and personal workflows without a broad team interface.
-- [LM Studio](/en/tools/lm-studio/): suitable for graphical local-model testing on an individual workstation.
-- [ChatGPT](/en/tools/chatgpt/): a better fit when a hosted general assistant is wanted instead of a self-operated interface.
-- [Hugging Face Spaces](/en/tools/hugging-face-spaces/): useful when models and demos should be published or shared rather than run as an internal chat service.
+- [Jan AI](/en/tools/jan-ai/): A local alternative for personal model tests and desktop workflows.
+- [LM Studio](/en/tools/lm-studio/): Graphical local-model management for one workstation.
+- [ChatGPT](/en/tools/chatgpt/): A hosted general workspace without operating the platform.
+- [Hugging Face Spaces](/en/tools/hugging-face-spaces/): For publishing and sharing model demos rather than running an internal chat service.
 
 ## Editorial assessment
 
-Open WebUI is a strong option for teams that do not want to hand all model choice, data paths, and access rules to a single SaaS chat. Its flexibility is genuine, but moves responsibility to the operator. A serious deployment needs at least one accountable admin, an update plan, and a strictly limited first knowledge collection.
+Open WebUI is a strong control surface, not an out-of-the-box security product. Its greatest strength, extensibility, is also its largest risk. A small restrictive rollout with separated data paths is much more convincing than an instance that immediately opens every model, Knowledge Base, and community tool.
 
-Our recommendation is to begin with a low-risk internal workspace and observe operations for two to four weeks. If permissions, answer quality, and upkeep hold up, expand gradually to additional models and teams.
+**Editorial verdict:** Recommended for self-operated team workspaces with an accountable administrator. Use with caution around unreviewed plugins, broad tool permissions, and the assumption that self-hosting makes every connection private.
 
 ## FAQ
 
-**What data should a first Open WebUI pilot contain?**
+**Can Open WebUI run entirely locally?**
 
-Start with a bounded internal collection without especially sensitive material. Test roles, sources, tool permissions, backups, and an escalation path before wider team access.
+Yes, if the instance, models, search, Knowledge, and all supporting services run locally.
 
-**Can Open WebUI run entirely locally and offline?**
+**Can it connect cloud models?**
 
-Yes, when the instance, models, and knowledge sources are operated locally. The interface can also connect cloud APIs; then the data flow is no longer offline.
+Yes. Those requests then leave the local environment according to the provider's data path.
 
-**Is Open WebUI suitable for a team without admin experience?**
+**What is Knowledge?**
 
-It is relatively approachable for a private test. For a team service with authentication, data rights, backups, and updates, at least one technically accountable person should operate it.
+A workspace for documents and collections that models can search through retrieval.
 
-**Does RAG replace review of internal documents?**
+**Does RAG replace source review?**
 
-No. RAG can make relevant passages easier to find, but it guarantees neither completeness nor correct conclusions. Source validity and approval of answers must remain part of the process.
+No. Retrieval can find passages but does not guarantee completeness or correct conclusions.
+
+**How do permissions work?**
+
+Default and group permissions govern workspaces, sharing, chat, and features. Document access remains an additional control.
+
+**Why is Tools Access dangerous?**
+
+It permits creation or import of code that runs with backend privileges. The documentation treats that permission as root-equivalent.
+
+**Should a new deployment use Pipelines?**
+
+No. Current documentation labels Pipelines as legacy and recommends integrated Pipe or Filter Functions.
+
+**What does a team need for operations?**
+
+An accountable admin, authentication, TLS, backups, monitoring, and update and recovery plans.
