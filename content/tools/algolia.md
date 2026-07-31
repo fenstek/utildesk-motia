@@ -1,7 +1,7 @@
 ---
 slug: algolia
 title: Algolia
-description: "Algolia liefert gehostete Suche für Shops, Apps und Dokumentation. Ein sauberer Index, echte Testanfragen und verantwortete Ranking-Regeln entscheiden über die Qualität."
+description: Algolia liefert gehostete Suche für Shops, Apps und Dokumentation. Ein sauberer Index, echte Testanfragen und verantwortete Ranking-Regeln entscheiden über die Qualität.
 updated_at: 2026-07-31
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
@@ -12,7 +12,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [search, api, developer-tools, commerce]
 official_url: "https://www.algolia.com/"
-popularity: 78
+popularity: 76
 tier: C
 generated_at: 2026-05-14
 ---
