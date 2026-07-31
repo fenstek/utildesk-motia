@@ -7,16 +7,19 @@ tags: ["notes", "knowledge-management", "writing", "productivity"]
 official_url: "https://obsidian.md/"
 affiliate_url: 
 created_at: 2026-06-14
-updated_at: 2026-06-14
+updated_at: 2026-07-31
 editorial_reviewed: true
-editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-14
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
-editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+editorial_batch: 2026-07-31-story-card-refresh-50
 tier: D
 popularity: 0
+description: "Obsidian verbindet lokale Markdown-Notizen zu einem flexiblen Wissensraum, dessen Sicherung, Plugins und Teamregeln bewusst verwaltet werden müssen."
 ---
 # Obsidian
+
+Für ein mehrmonatiges Rechercheprojekt legt eine Redakteurin Quellen, Gesprächsnotizen und Entscheidungen in einem lokalen Vault ab. Statt eine riesige Ordnerhierarchie zu bauen, verbindet sie Notizen über Links und wenige Properties, trennt Primärquelle von eigener Schlussfolgerung und sichert den Bestand versioniert. Obsidian unterstützt diese persönliche Wissensarbeit sehr gut. Gemeinsame Governance, Rechte und Plugin-Risiken müssen Teams jedoch bewusst außerhalb des einzelnen Notizbuchs organisieren.
 
 Obsidian ist ein Notizsystem für Menschen, die Wissen als eigenes Arbeitsarchiv pflegen wollen. Der Kern ist nicht eine schicke Oberfläche, sondern lokale Markdown-Dateien, Links, Backlinks und ein Ökosystem, das aus Notizen ein persönliches oder teamnahes Wissensnetz macht.
 
@@ -74,8 +77,7 @@ Obsidian ist als Freemium geführt. Kosten können durch Sync, Publish, kommerzi
 
 **Zum Anbieter:** https://obsidian.md/
 
-## Alternativen zu Obsidian
-
+## Alternativen
 - [Roam Research](/tools/roam-research/): wenn blockbasierte Vernetzung und tägliches Denken im Vordergrund stehen.
 - [Notion AI](/tools/notion-ai/): wenn Team-Wiki, Datenbanken und KI-Hilfe in einem SaaS-Workspace gebraucht werden.
 - [NotebookLM](/tools/notebooklm/): wenn Quellenanalyse und KI-gestützte Zusammenfassungen wichtiger sind als ein dauerhaftes Notizsystem.

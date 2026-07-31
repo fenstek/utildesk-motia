@@ -1,23 +1,26 @@
 ---
 slug: "obsidian"
 title: "Obsidian"
-category: "Produktivität"
-price_model: "Freemium"
+category: Produktivität
+price_model: Freemium
 tags: ["notes", "knowledge-management", "writing", "productivity"]
 official_url: "https://obsidian.md/"
 affiliate_url: ""
 created_at: "2026-06-14"
-updated_at: "2026-06-14"
+updated_at: 2026-07-31
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-20-human-polish"
+editorial_reviewed_by: Utildesk Editorial
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-50
 tier: "D"
 popularity: 0
 translation: "full"
+description: "Obsidian connects local Markdown notes into a flexible knowledge space whose backups, plugins, and team rules need deliberate management."
 ---
 # Obsidian
+
+For a research project lasting several months, an editor keeps sources, interview notes, and decisions in a local vault. Instead of building a huge folder hierarchy, she connects notes with links and a small set of properties, separates primary evidence from her own conclusions, and maintains versioned backups. Obsidian is excellent for this kind of personal knowledge work. Teams still need to organise shared governance, permissions, and plugin risk beyond one person's notebook.
 
 Obsidian is a note system for people who treat knowledge as a durable working archive. Its core is not a flashy interface but local Markdown files, links, backlinks, and an ecosystem that can turn notes into a personal knowledge network.
 
@@ -75,8 +78,7 @@ Obsidian is listed as Freemium. Costs may come from sync, publishing, commercial
 
 **Provider:** https://obsidian.md/
 
-## Alternatives To Obsidian
-
+## Alternatives
 - [Roam Research](/en/tools/roam-research/): when block-based networked thinking is central.
 - [Notion AI](/en/tools/notion-ai/): when a team wiki, databases, and AI help should live in one SaaS workspace.
 - [NotebookLM](/en/tools/notebooklm/): when source analysis and AI summaries matter more than a permanent note system.
