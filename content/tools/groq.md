@@ -9,10 +9,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-20
 category: AI Coding
 price_model: Usage-based
-description: "Inference-Plattform für latenzkritische Sprach-, Text- und Agentenanwendungen mit API, Streaming und Produktionskontrollen."
+description: Inference-Plattform für latenzkritische Sprach-, Text- und Agentenanwendungen mit API, Streaming und Produktionskontrollen.
 tags: ["developer-tools", "api"]
 official_url: "https://groq.com/"
-popularity: 44
+popularity: 43
 tier: C
 generated_at: 2026-05-27
 updated_at: 2026-07-31

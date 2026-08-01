@@ -2,7 +2,7 @@
 slug: assemblyai
 title: AssemblyAI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next20
@@ -10,9 +10,9 @@ category: Audio & Video
 price_model: Usage-based
 tags: [audio, transcription, voice-ai, developer-tools]
 official_url: "https://www.assemblyai.com/"
-popularity: 71
+popularity: 70
 tier: C
-description: "AssemblyAI liefert Speech-to-Text- und Voice-AI-APIs für eigene Produkte; echte Aufnahmen, Zeitstempel und kontrollierte Folgeaktionen entscheiden über die Qualität."
+description: AssemblyAI liefert Speech-to-Text- und Voice-AI-APIs für eigene Produkte; echte Aufnahmen, Zeitstempel und kontrollierte Folgeaktionen entscheiden über die Qualität.
 updated_at: 2026-07-31
 ---
 # AssemblyAI

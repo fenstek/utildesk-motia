@@ -9,10 +9,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh
 category: Audio & Video
 price_model: Freemium
-description: "Adobe Podcast bereitet Sprachaufnahmen im Browser auf und hilft bei der Entscheidung, ob ein Interview rettbar ist. Original und menschlicher Hörtest bleiben Pflicht."
+description: Adobe Podcast bereitet Sprachaufnahmen im Browser auf und hilft bei der Entscheidung, ob ein Interview rettbar ist. Original und menschlicher Hörtest bleiben Pflicht.
 tags: [audio, podcast, speech-enhancement, ai]
 official_url: "https://podcast.adobe.com/"
-popularity: 97
+popularity: 76
 tier: D
 generated_at: 2026-05-16
 updated_at: 2026-07-31
