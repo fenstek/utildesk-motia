@@ -11,7 +11,7 @@ category: AI Image
 price_model: Freemium
 tags: ["design", "image", "social-media"]
 official_url: "https://snappa.com/"
-popularity: 17
+popularity: 15
 tier: D
 generated_at: 2026-05-28
 updated_at: 2026-07-17

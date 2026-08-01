@@ -10,11 +10,11 @@ category: AI Research
 price_model: Abonnement
 tags: [research, patents, analytics, enterprise]
 official_url: "https://www.questel.com/patent/ip-intelligence-software/orbit-intelligence/"
-popularity: 83
+popularity: 28
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-31
-description: "Orbit Intelligence unterstützt professionelle Patentrecherche, Patentfamilien-Analyse und dokumentierte Technologielandschaften für F&E- und IP-Teams."
+description: Orbit Intelligence unterstützt professionelle Patentrecherche, Patentfamilien-Analyse und dokumentierte Technologielandschaften für F&E- und IP-Teams.
 ---
 # Orbit Intelligence
 

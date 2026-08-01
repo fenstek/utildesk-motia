@@ -8,11 +8,11 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next20
 category: AI Infrastructure
 price_model: Freemium
-description: "Cohere kombiniert Unternehmensmodelle, Embeddings und Reranking für beleggebundene Suche und kontrollierte KI-Workflows."
+description: Cohere kombiniert Unternehmensmodelle, Embeddings und Reranking für beleggebundene Suche und kontrollierte KI-Workflows.
 tags: [chatbot, data]
 official_url: "https://cohere.com/"
 updated_at: 2026-07-31
-popularity: 63
+popularity: 62
 tier: B
 generated_at: 2026-05-11
 ---

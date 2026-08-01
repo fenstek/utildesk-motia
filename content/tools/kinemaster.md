@@ -11,10 +11,10 @@ category: Audio & Video
 price_model: Freemium
 tags: [video-editing, mobile, creative-tools, ai-video]
 official_url: "https://www.kinemaster.com/"
-popularity: 40
+popularity: 39
 tier: D
 updated_at: 2026-07-31
-description: "KineMaster bringt mehrspurigen Videoschnitt aufs Mobilgerät, wenn kurze Formate schnell entstehen und trotzdem sauber geprüft werden müssen."
+description: KineMaster bringt mehrspurigen Videoschnitt aufs Mobilgerät, wenn kurze Formate schnell entstehen und trotzdem sauber geprüft werden müssen.
 ---
 # KineMaster
 

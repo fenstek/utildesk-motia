@@ -9,10 +9,10 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-20
 category: Audio & Video
 price_model: Freemium
-description: "Zugänglicher Videoeditor für mobile und Desktop-Produktion, automatische Untertitel, textbasierten Schnitt und Social-Formate."
+description: Zugänglicher Videoeditor für mobile und Desktop-Produktion, automatische Untertitel, textbasierten Schnitt und Social-Formate.
 tags: [ai, video, editing]
 official_url: "https://www.capcut.com/"
-popularity: 64
+popularity: 0
 updated_at: 2026-07-31
 tier: C
 generated_at: 2026-05-27
