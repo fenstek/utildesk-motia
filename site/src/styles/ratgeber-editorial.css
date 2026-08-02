@@ -636,20 +636,6 @@ html[data-design="decision"] .sheet-lead .sheet-cover-btn img {
   object-fit: cover;
 }
 
-html[data-design="decision"] .sheet-lead .sheet-cover figcaption {
-  margin: 10px 0 0;
-  padding: 0 !important;
-  border: 0;
-  color: #716d63;
-  font: 500 10px/1.45 "JetBrains Mono", ui-monospace, monospace;
-  font-style: normal;
-}
-
-html[data-design="decision"] .sheet-lead .sheet-cover-tag {
-  font-size: 9px;
-  margin-right: 6px;
-}
-
 html[data-design="decision"] .sheet-body {
   display: grid !important;
   grid-template-columns: minmax(0, 760px) minmax(280px, 320px) !important;

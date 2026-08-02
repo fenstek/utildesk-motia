@@ -6380,28 +6380,6 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
   background: var(--akte-parchment);
 }
 
-.sheet-cover figcaption {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid var(--akte-rule);
-  font-family: var(--akte-serif);
-  font-style: italic;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--akte-ink-soft);
-}
-
-.sheet-cover-tag {
-  font-family: var(--akte-mono);
-  font-style: normal;
-  font-size: 10px;
-  font-weight: 700;
-  color: var(--akte-vermillion);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-right: 10px;
-}
-
 .sheet-body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
@@ -10711,12 +10689,6 @@ html[data-design="decision"] .rg-head .inv-head-deck {
     width: calc(100% - 20px) !important;
     max-width: calc(100% - 20px) !important;
     margin: 12px auto !important;
-  }
-
-  html[data-design="decision"] .sheet-cover figcaption {
-    padding: 10px 2px 0 !important;
-    font-size: 11px !important;
-    line-height: 1.4 !important;
   }
 
   html[data-design="decision"] .sheet-body {
