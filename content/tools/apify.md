@@ -16,7 +16,7 @@ editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh
 tier: D
 description: Apify betreibt wiederholbare Webdaten- und Browserabläufe als Actors. Der Nutzen entsteht durch prüfbare Datensätze, Wartung und klare Nutzungsrechte.
-popularity: 91
+popularity: 93
 ---
 # Apify
 

@@ -12,7 +12,7 @@ price_model: Open Source
 description: Self-hosted AI workspace for local and API-connected models, scoped knowledge, roles, tools, and governed team access.
 tags: ["assistant", "chatbot"]
 official_url: "https://openwebui.com"
-popularity: 83
+popularity: 82
 tier: C
 generated_at: 2026-05-16
 updated_at: 2026-07-31

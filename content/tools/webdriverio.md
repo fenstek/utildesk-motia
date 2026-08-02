@@ -10,11 +10,11 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://webdriver.io/"
-popularity: 4
+popularity: 3
 tier: D
 generated_at: 2026-05-17
 updated_at: 2026-07-31
-description: "WebdriverIO automatisiert Browser- und mobile Oberflächentests für wiederholbare End-to-End-Prüfungen in lokalen und CI-Umgebungen."
+description: WebdriverIO automatisiert Browser- und mobile Oberflächentests für wiederholbare End-to-End-Prüfungen in lokalen und CI-Umgebungen.
 ---
 # WebdriverIO
 
