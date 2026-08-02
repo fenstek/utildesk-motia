@@ -12,7 +12,7 @@ description: Cohere kombiniert Unternehmensmodelle, Embeddings und Reranking fü
 tags: [chatbot, data]
 official_url: "https://cohere.com/"
 updated_at: 2026-07-31
-popularity: 62
+popularity: 0
 tier: B
 generated_at: 2026-05-11
 ---
