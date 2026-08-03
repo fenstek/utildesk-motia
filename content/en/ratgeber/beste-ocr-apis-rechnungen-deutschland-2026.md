@@ -36,6 +36,8 @@ An invoice arrives at 4:47 on a Friday: a tilted scan, two pages, a discount not
 
 That is why “which invoice OCR is best?” is the wrong opening question. An API does not process invoices on its own. The real operation combines intake, extraction, plausibility checks, human exception handling and export. The product matters; the place where it is allowed to stop matters more.
 
+For a one-off, non-confidential document test without an API, you can use the [free Utildesk OCR test service](https://ocr.utildesk.de/). Check the result before booking data or feeding it into a downstream workflow.
+
 ## Decide first: extract data or operate an invoice flow?
 
 For a small workflow, an API that turns a PDF into structured JSON can be enough. [Mindee](/en/tools/mindee/) and [Veryfi](/en/tools/veryfi/) fit that pattern: code sends a document, receives fields and owns the business rules. It works well for a limited set of document types when someone is prepared to own error paths.

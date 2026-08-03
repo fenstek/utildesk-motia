@@ -48,6 +48,8 @@ PaddleOCR fits workflows where local files or internal folders should not be typ
 
 For PaddleOCR, start the pilot with real documents rather than polished samples. Skewed scans, multi-page PDFs, mixed languages, changing supplier layouts, and missing required fields show whether preprocessing, runtime environment, and in-house quality assurance fit the intended workflow.
 
+If you only need to check one file first, you can [use Utildesk OCR for a free PDF or image test](https://ocr.utildesk.de/); PaddleOCR remains the more flexible option for a custom developer pipeline.
+
 ## Main Features
 
 - OCR or document recognition for digital and scanned files.

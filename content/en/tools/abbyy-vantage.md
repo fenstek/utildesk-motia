@@ -60,6 +60,8 @@ A reliable ABBYY Vantage workflow starts at file intake and ends only when check
 
 For ABBYY Vantage, business teams should look closely at transparent error lists, traceable corrections, and a clean review step. In invoice workflows, a reliable exception path is often more valuable than a marginal OCR accuracy gain.
 
+For occasional non-confidential files, the [free Utildesk OCR test service](https://ocr.utildesk.de/) can provide a lightweight comparison; enterprise workflows with review and governance remain ABBYY Vantage's main use case.
+
 ## What to Check Before Choosing
 
 - Does the tool support the relevant document types and languages in your own material?

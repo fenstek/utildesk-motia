@@ -31,6 +31,8 @@ A table from a PDF arrives neatly in Excel, except the units column has shifted 
 
 The choice therefore does not begin with a vendor list. It begins with a question: do you need readable text, structured fields or a record that a process can trust?
 
+For a one-off, non-confidential test without an account, [Utildesk OCR](https://ocr.utildesk.de/) can extract text from scanned PDFs and images or create a Word-oriented result. It is not a replacement for a validated extraction or accounting pipeline; check the output before further use.
+
 ## Three documents, three jobs
 
 A native PDF usually contains real text. A converter or library can read it without AI. A scan is an image, so OCR becomes necessary. An invoice or form adds meaning: which value is the total, which date applies, which row belongs to which item? That is Document AI, and it still does not guarantee correctness.

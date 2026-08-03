@@ -57,6 +57,8 @@ Ein belastbarer OCRmyPDF-Workflow beginnt beim Eingang der Datei und endet erst,
 
 Bei OCRmyPDF sollten Entwickler früh prüfen, wie stabil API, Antwortschema, Fehlercodes, Rate Limits und Batch-Verarbeitung sind. Logging, Wiederholbarkeit und nachvollziehbare Fehlerzustände sind wichtig, damit fehlgeschlagene Dokumente nicht still verloren gehen.
 
+Für einen einzelnen, nicht vertraulichen Test ohne eigene Installation bietet [Utildesk OCR ein durchsuchbares PDF im kostenlosen Testbetrieb](https://ocr.utildesk.de/searchable-pdf). Für wiederkehrende oder sensible Dokumente ersetzt das keinen eigenen, kontrollierten OCRmyPDF-Workflow.
+
 ## Worauf vor der Auswahl achten?
 
 - Unterstützt das Werkzeug die relevanten Dokumenttypen und Sprachen im eigenen Material?

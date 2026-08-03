@@ -38,6 +38,8 @@ Bei CloudConvert sollte ein Test mit echtem Rohmaterial beginnen: Briefing, Rech
 
 CloudConvert ist stark, wenn Medienarbeit schneller wird und trotzdem Freigabe, Lizenzen und Nachbearbeitung klar bleiben. Offen gelassene Rechte oder Exportregeln werden später teuer.
 
+Wenn nicht nur das Format, sondern der Text aus einem Scan zählt, kannst du [Utildesk OCR mit einer nicht vertraulichen Testdatei ausprobieren](https://ocr.utildesk.de/).
+
 <figure class="tool-editorial-figure">
   <img src="/images/tools/cloudconvert-editorial.webp" alt="Illustration zu CloudConvert: Wolkenmaschine verwandelt Medien und Dateien in neue Formate" loading="lazy" decoding="async" />
 </figure>

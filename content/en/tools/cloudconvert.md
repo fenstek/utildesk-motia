@@ -28,6 +28,8 @@ CloudConvert is a versatile online tool for file and document conversion. It sup
 
 CloudConvert is suitable for a wide range of users, including individuals who occasionally need to convert files, as well as professionals in fields such as graphic design, media production, or office work. It is particularly useful for people who work platform-agnostic or do not want to install complex programs. Businesses also benefit from automation features and the ability to convert large volumes of files efficiently.
 
+When the goal is not only a format change but text from a scan, you can [try Utildesk OCR with a non-confidential test file](https://ocr.utildesk.de/).
+
 <figure class="tool-editorial-figure">
   <img src="/images/tools/cloudconvert-editorial.webp" alt="Illustration for CloudConvert: cloud machine converting media and files into new formats" loading="lazy" decoding="async" />
 </figure>

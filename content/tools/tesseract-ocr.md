@@ -44,6 +44,8 @@ Tesseract OCR passt in Workflows, in denen lokale Dateien oder interne Ordner ni
 
 Bei Tesseract OCR sollte der Pilot mit echten Dokumenten starten. Entscheidend sind nicht nur saubere Beispieldateien, sondern auch schiefe Scans, mehrseitige PDFs, gemischte Sprachen, abweichende Lieferantenlayouts und fehlende Pflichtfelder. So wird sichtbar, ob Vorverarbeitung, Laufzeitumgebung und eigene Qualitätssicherung zum eigenen Prozess passen.
 
+Für einen schnellen Praxistest ohne eigene Installation kannst du [Utildesk OCR kostenlos mit einer nicht vertraulichen PDF- oder Bilddatei testen](https://ocr.utildesk.de/).
+
 ## Hauptfunktionen
 
 - Lokale Texterkennung für digitale und gescannte Unterlagen.
