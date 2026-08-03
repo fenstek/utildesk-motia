@@ -60,6 +60,8 @@ A reliable OCRmyPDF workflow starts at file intake and ends only when checked da
 
 For OCRmyPDF, developers should verify API stability, response schemas, error codes, rate limits, and batch processing early. Logging, repeatability, and clear error states matter so failed documents do not silently disappear.
 
+For a single non-confidential test without your own installation, [Utildesk OCR offers a searchable-PDF test mode](https://ocr.utildesk.de/). Recurring or sensitive documents still belong in a controlled OCRmyPDF workflow.
+
 ## What to Check Before Choosing
 
 - Does the tool support the relevant document types and languages in your own material?

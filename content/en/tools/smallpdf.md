@@ -70,6 +70,8 @@ Smallpdf offers a freemium model:
 - Business and team plans with expanded administration and collaboration features
 Exact prices vary depending on subscription length (monthly or yearly) and region.
 
+For a reverse one-off conversion from Word, text, or an image to PDF, [Utildesk PDF Converter](https://ocr.utildesk.de/to-pdf) is available in free test mode. Use only non-confidential test files and check the result before sharing or further processing.
+
 ## Related Guides
 
 - [Extract PDF Data with AI: Tools, APIs and Cost Comparison](/en/ratgeber/pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich/)

@@ -64,6 +64,8 @@ Convertio richtet sich an eine breite Zielgruppe: von Privatpersonen, die gelege
 
 Convertio wirkt schnell nützlich, aber der Alltagstest ist konkreter: Passt Browserbasierte Dateikonvertierung für viele Formate und schnelle Einzelaufgaben in bestehende Daten, Rollen und Freigaben? Gute Evaluation heißt hier Praxistests mit Originaldateien, Layouttreue, Datenschutz und Batch-Grenzen, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Hilfreich für einfache Umwandlungen, aber keine sichere Produktionspipeline für sensible Dokumente.
 
+Für einen einzelnen OCR-Test ohne Installation gibt es den [kostenlosen Utildesk-OCR-Dienst](https://ocr.utildesk.de/); bei sensiblen Dokumenten sollte die Online-Verarbeitung vorher geprüft werden.
+
 ## Ratgeber-Cluster-Update Juni 2026
 
 Convertio ist im Ratgeber-Kontext ein leichter Konverter fuer schnelle Formatwechsel, besonders wenn ein einzelnes Dokument vor OCR, Versand oder Upload angepasst werden muss.

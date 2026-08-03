@@ -67,6 +67,8 @@ A reliable Mistral OCR workflow starts at file intake and ends only when checked
 
 For Mistral OCR, developers should verify API stability, response schemas, error codes, rate limits, and batch processing early. Logging, repeatability, and clear error states matter so failed documents do not silently disappear.
 
+For a one-off, non-confidential test without API integration, you can use the [free Utildesk OCR test service](https://ocr.utildesk.de/); recurring structured workflows are still the API-oriented Mistral OCR use case.
+
 ## What to Check Before Choosing
 
 - Does the tool support the relevant document types and languages in your own material?

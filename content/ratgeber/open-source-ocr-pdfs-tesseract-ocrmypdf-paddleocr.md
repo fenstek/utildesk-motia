@@ -33,6 +33,8 @@ Ein gescanntes PDF soll nur durchsuchbar werden. Dafür ist lokale OCR oft genau
 
 Open-source OCR ist kein schwacher Ersatz für eine Dokumenten-KI. Es ist ein anderer Baustein. [Tesseract OCR](/tools/tesseract-ocr/) liefert eine OCR-Engine und Kommandozeilenwerkzeuge; [OCRmyPDF](/tools/ocrmypdf/) macht gescannte PDFs mit einer Textebene durchsuchbar. [PaddleOCR](/tools/paddleocr/) deckt weitergehende Erkennungsbausteine ab. Die passende Wahl hängt deshalb am Ergebnis, das nach der Erkennung sicher genug sein muss.
 
+Für einen einzelnen, nicht vertraulichen Test ohne eigene Installation kannst du [Utildesk OCR im kostenlosen Testbetrieb ausprobieren](https://ocr.utildesk.de/). Für Archive, Stapelverarbeitung oder sensible Unterlagen bleibt eine kontrollierte lokale Pipeline die passendere Wahl.
+
 ## Erst Textschicht, dann Datenentscheidung
 
 Für Archive, interne Suche und Akten, die Menschen später lesen, ist eine durchsuchbare Textschicht oft der größte Gewinn. OCRmyPDF kann dafür ein sehr pragmatischer Anfang sein: Es verbindet PDF-Verarbeitung und OCR, damit ein Scan nicht länger nur ein Bild bleibt. Tesseract unterstützt viele Sprachen und verschiedene Ausgabeformate; zugleich weist die Projekt-Dokumentation darauf hin, dass bessere Ergebnisse häufig bessere Eingabebilder brauchen.

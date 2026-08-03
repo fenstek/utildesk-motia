@@ -57,6 +57,8 @@ Ein belastbarer ABBYY Vantage-Workflow beginnt beim Eingang der Datei und endet 
 
 Bei ABBYY Vantage sollten Fachabteilungen besonders auf transparente Fehlerlisten, nachvollziehbare Korrekturen und einen klaren Review-Schritt achten. In Rechnungsprozessen ist ein sauberer Ausnahmeweg oft wertvoller als ein marginal besserer OCR-Wert.
 
+Für gelegentliche, nicht vertrauliche Einzeldateien kann der [kostenlose Utildesk-OCR-Testbetrieb](https://ocr.utildesk.de/) eine leichte Gegenprobe sein; Enterprise-Workflows mit Review und Governance bleiben der eigentliche ABBYY-Vantage-Anwendungsfall.
+
 ## Worauf vor der Auswahl achten?
 
 - Unterstützt das Werkzeug die relevanten Dokumenttypen und Sprachen im eigenen Material?

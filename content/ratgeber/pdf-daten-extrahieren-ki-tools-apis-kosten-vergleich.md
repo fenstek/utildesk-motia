@@ -31,6 +31,8 @@ Eine Tabelle aus einem PDF landet sauber in Excel. Nur die Spalte mit den Einhei
 
 Die Wahl beginnt deshalb nicht bei einer Liste von Anbietern. Sie beginnt bei der Frage: Brauche ich lesbaren Text, strukturierte Felder oder einen Datensatz, dem ein Prozess vertrauen darf?
 
+Für einen einzelnen, nicht vertraulichen Test ohne Konto bietet [Utildesk OCR](https://ocr.utildesk.de/) Texterkennung für gescannte PDFs und Bilder sowie Word-orientierte Ergebnisse. Das ersetzt keine geprüfte Extraktions- oder Buchhaltungspipeline; vor der Weiterverwendung muss das Ergebnis kontrolliert werden.
+
 ## Drei Dokumente, drei Aufgaben
 
 Ein natives PDF enthält meist echten Text. Ein Konverter oder eine Bibliothek kann ihn auslesen, ohne dass KI nötig ist. Ein Scan ist ein Bild; hier beginnt OCR. Eine Rechnung oder ein Formular enthält zusätzlich Bedeutung: Welche Zahl ist der Gesamtbetrag, welches Datum gilt, welche Zeile gehört zu welcher Position? Das ist Document AI - und immer noch keine Garantie auf Richtigkeit.

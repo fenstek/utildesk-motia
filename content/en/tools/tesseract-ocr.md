@@ -48,6 +48,8 @@ Tesseract OCR fits workflows where local files or internal folders should not be
 
 For Tesseract OCR, start the pilot with real documents rather than polished samples. Skewed scans, multi-page PDFs, mixed languages, changing supplier layouts, and missing required fields show whether preprocessing, runtime environment, and in-house quality assurance fit the intended workflow.
 
+For a quick hands-on check without installing a pipeline, you can [try Utildesk OCR for free with a non-confidential PDF or image](https://ocr.utildesk.de/).
+
 ## Main Features
 
 - OCR or document recognition for digital and scanned files.

@@ -44,6 +44,8 @@ PaddleOCR passt in Workflows, in denen lokale Dateien oder interne Ordner nicht 
 
 Bei PaddleOCR sollte der Pilot mit echten Dokumenten starten. Entscheidend sind nicht nur saubere Beispieldateien, sondern auch schiefe Scans, mehrseitige PDFs, gemischte Sprachen, abweichende Lieferantenlayouts und fehlende Pflichtfelder. So wird sichtbar, ob Vorverarbeitung, Laufzeitumgebung und eigene Qualitätssicherung zum eigenen Prozess passen.
 
+Wer erst eine einzelne Datei prüfen möchte, kann [Utildesk OCR kostenlos für einen PDF- oder Bildtest nutzen](https://ocr.utildesk.de/); für eigene Pipelines bleibt PaddleOCR die flexiblere Entwickleroption.
+
 ## Hauptfunktionen
 
 - OCR beziehungsweise Dokumentenerkennung für digitale und gescannte Unterlagen.

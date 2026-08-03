@@ -34,6 +34,8 @@ Sometimes a scanned PDF only needs to become searchable. Local OCR is often exac
 
 Open-source OCR is not an inferior substitute for document AI. It is a different component. [Tesseract OCR](/en/tools/tesseract-ocr/) provides an OCR engine and command-line tools; [OCRmyPDF](/en/tools/ocrmypdf/) adds a searchable text layer to scanned PDFs. [PaddleOCR](/en/tools/paddleocr/) offers broader recognition components. The right choice therefore depends on how dependable the result needs to be after recognition.
 
+If you do not want to set up a local pipeline and only need to check one non-confidential file, you can [try Utildesk OCR in the free test mode](https://ocr.utildesk.de/). For archives, batch work or sensitive material, a controlled local installation remains the better fit.
+
 ## Start with a text layer, then make a data decision
 
 For archives, internal search, and files people will read later, a searchable text layer is often the largest gain. OCRmyPDF can be a practical beginning because it combines PDF processing and OCR so that a scan stops being only an image. Tesseract supports many languages and output formats; its project documentation also notes that better input images often produce better results.

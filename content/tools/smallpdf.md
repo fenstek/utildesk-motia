@@ -62,6 +62,8 @@ Smallpdf passt zu Büroarbeit, Studium, kleinen Unternehmen und Menschen, die re
 
 Smallpdf eignet sich für Einzelfälle: Datei prüfen, Aufgabe erledigen, Ergebnis herunterladen und sensible Uploads vermeiden, wenn keine Freigabe besteht. Für wiederkehrende Unternehmensprozesse sollte ein kontrollierter PDF-Workflow definiert werden.
 
+Für eine umgekehrte Einzelkonvertierung von Word, Text oder Bild zu PDF steht [Utildesk PDF-Konverter](https://ocr.utildesk.de/to-pdf) als kostenloser Testbetrieb bereit. Auch dort gehören nur nicht vertrauliche Testdateien hinein; vor dem Teilen oder Weiterverarbeiten muss das Ergebnis geprüft werden.
+
 ## Datenschutz & Daten
 
 PDFs enthalten oft Verträge, Ausweise, Rechnungen oder Kundendaten. Vor Online-Verarbeitung sind Datenschutz, Löschung, Speicherort und interne Richtlinien entscheidend.

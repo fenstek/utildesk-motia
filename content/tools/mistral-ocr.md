@@ -64,6 +64,8 @@ Ein belastbarer Mistral OCR-Workflow beginnt beim Eingang der Datei und endet er
 
 Bei Mistral OCR sollten Entwickler früh prüfen, wie stabil API, Antwortschema, Fehlercodes, Rate Limits und Batch-Verarbeitung sind. Logging, Wiederholbarkeit und nachvollziehbare Fehlerzustände sind wichtig, damit fehlgeschlagene Dokumente nicht still verloren gehen.
 
+Für einen einzelnen, nicht vertraulichen Test ohne API-Integration bietet sich der [kostenlose Utildesk-OCR-Testbetrieb](https://ocr.utildesk.de/) an; für wiederkehrende strukturierte Abläufe bleibt Mistral OCR die API-orientierte Option.
+
 ## Worauf vor der Auswahl achten?
 
 - Unterstützt das Werkzeug die relevanten Dokumenttypen und Sprachen im eigenen Material?

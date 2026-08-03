@@ -36,6 +36,8 @@ Eine Rechnung kommt am Freitag um 16:47 Uhr herein: schiefer Scan, zwei Seiten, 
 
 Darum ist die Frage nach der besten Rechnungs-OCR falsch gestellt. Nicht eine API bearbeitet Rechnungen, sondern ein Ablauf aus Eingang, Extraktion, Plausibilitätsprüfung, menschlicher Ausnahmebehandlung und Export. Das Tool ist wichtig. Die Stelle, an der es stoppen darf, ist wichtiger.
 
+Für einen einzelnen, nicht vertraulichen Dokumenttest ohne API gibt es den [kostenlosen Utildesk-OCR-Testbetrieb](https://ocr.utildesk.de/). Das Ergebnis sollte vor einer Buchung oder weiteren Verarbeitung geprüft werden.
+
 ## Erst entscheiden: Daten herausziehen oder Rechnungen verarbeiten?
 
 Für einen kleinen Workflow reicht oft eine API, die eine PDF in strukturiertes JSON verwandelt. [Mindee](/tools/mindee/) oder [Veryfi](/tools/veryfi/) passen in dieses Bild: Ein Entwickler sendet ein Dokument, erhält Felder zurück und baut die Regeln selbst. Das ist gut, wenn es um wenige klar definierte Belegtypen geht und jemand die Fehlerpfade verantwortet.

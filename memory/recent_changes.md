@@ -1,5 +1,10 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-03 - OCR service internal-link cluster
+
+- Added contextual links to `https://ocr.utildesk.de/` across the three OCR/PDF Ratgeber articles and the German/English cards for Tesseract OCR, OCRmyPDF, PaddleOCR, Smallpdf, CloudConvert, Convertio, Mistral OCR and ABBYY Vantage.
+- Kept the copy informational and limited to non-confidential test files; the OCR service remains a separate production site.
+
 ## 2026-07-31 - Bing index-collapse recovery baseline
 
 - Re-submitted the existing compact `https://tools.utildesk.de/sitemap-focus.xml` exactly once. Bing briefly changed the only registered feed to `Pending`, then returned it to `Success` with `UrlCount = 146`, exactly matching the live file.
