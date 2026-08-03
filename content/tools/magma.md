@@ -12,7 +12,7 @@ category: AI Image
 price_model: Freemium
 tags: [design, image, productivity]
 official_url: "https://magma.com/"
-popularity: 84
+popularity: 31
 description: Gemeinsame digitale Zeichenfläche für Illustration, Concept Art, visuelle Workshops und direktes Art-Direction-Feedback.
 tier: C
 generated_at: 2026-05-12

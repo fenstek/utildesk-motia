@@ -8,7 +8,7 @@ tags: ["ai-video", "creative-tools", "director", "storytelling", "video-generati
 official_url: "https://openart.ai/whats-new"
 tier: D
 generated_at: 2026-06-24
-popularity: 29
+popularity: 28
 updated_at: 2026-07-17
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
