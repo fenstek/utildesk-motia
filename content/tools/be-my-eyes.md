@@ -10,7 +10,7 @@ category: Accessibility
 price_model: Kostenlos
 tags: [accessibility, visual-assistance, ai, volunteer]
 official_url: "https://www.bemyeyes.com/"
-popularity: 68
+popularity: 0
 tier: C
 lastReviewed: 2026-07-13
 ---

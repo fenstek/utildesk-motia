@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [assistant, automation]
 official_url: "https://later.com/"
-popularity: 35
+popularity: 40
 ---
 
 # Later

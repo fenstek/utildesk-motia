@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, assistant, chatbot]
 official_url: "https://www.kimi.com/"
-popularity: 41
+popularity: 44
 description: Kimi ist ein KI-Assistent für KI-Assistent mit starkem Fokus auf lange Kontexte, Recherche und dokumentnahe Aufgaben.
 tier: C
 generated_at: 2026-05-12
