@@ -12,7 +12,7 @@ price_model: Freemium
 tags: ["chatbot", "video"]
 official_url: "https://opencv.org/"
 created_at: 2026-02-13
-popularity: 26
+popularity: 28
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-17

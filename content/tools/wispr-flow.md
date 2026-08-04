@@ -1,22 +1,22 @@
 ---
-slug: "wispr-flow"
-title: "Wispr Flow"
+slug: wispr-flow
+title: Wispr Flow
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Audio & Video"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Audio & Video
+price_model: Freemium
 tags: [ai, audio, voice, dictation, speech, productivity, writing]
-description: "Wispr Flow ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+description: Wispr Flow ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
 official_url: "https://wisprflow.ai/"
 affiliate_url: "https://wisprflow.ai/r?SSERGEJ1"
 tier: A
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-04-25
-popularity: 1
-updated_at: "2026-07-17"
+popularity: 3
+updated_at: 2026-07-17
 ---
 
 # Wispr Flow
