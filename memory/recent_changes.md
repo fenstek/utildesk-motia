@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-05 - Invoice automation Art Nouveau illustrations
+
+- Replaced the two slide-like images in the paired DE/EN article `make-vs-n8n-vs-zapier-rechnungsautomatisierung` with distinct narrative scenes inspired by early Art Nouveau poster illustration and the public-domain visual language associated with Alphonse Mucha.
+- The cover turns the comparison into three graceful routes for one invoice: quick, branching and controlled.
+- The secondary scene focuses on human review, approval and returning a faulty document, with an ornate botanical archive rather than a software diagram.
+- Both assets use new cache-busting `-art-nouveau-v2.webp` filenames; DE/EN references and descriptive alternative text remain synchronized.
+
 ## 2026-08-05 - EU data-processing French caricature illustrations
 
 - Replaced both slide-like illustrations in the paired DE/EN article `ki-tools-eu-datenverarbeitung-kleine-unternehmen` with two distinct narrative scenes in the visual language of early-20th-century French satirical press.

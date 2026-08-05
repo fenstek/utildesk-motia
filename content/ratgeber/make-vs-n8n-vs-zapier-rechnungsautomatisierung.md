@@ -7,8 +7,8 @@ category: "Automatisierung"
 eyebrow: "Toolvergleich"
 excerpt: "Bei Rechnungsautomatisierung entscheidet nicht die schönste Demo. Entscheidend sind der Ausnahmefall, die Korrektur und die Person, die den Ablauf in sechs Monaten versteht."
 readTime: 9
-coverImage: /images/ratgeber/make-n8n-zapier-rechnungsautomatisierung.webp
-secondaryImage: /images/ratgeber/make-n8n-zapier-vergleichsmatrix.webp
+coverImage: /images/ratgeber/make-n8n-zapier-art-nouveau-routes-v2.webp
+secondaryImage: /images/ratgeber/make-n8n-zapier-art-nouveau-review-v2.webp
 tags:
   - "n8n"
   - "Make"
@@ -43,7 +43,7 @@ Darum ist die Frage „Make, n8n oder Zapier?“ zu klein. Die bessere Frage lau
 
 Keines dieser Werkzeuge löst aber die Kernentscheidung: Wann wird aus einem gefundenen Wert ein buchungsrelevanter Wert? Diese Grenze gehört in den Prozess, nicht in ein Marketingversprechen.
 
-![Ein Rechnungsprozess zeigt eine klare Trennung zwischen automatischem Eingang, unsicherer Extraktion, menschlicher Korrektur und freigegebener Übergabe](/images/ratgeber/make-n8n-zapier-vergleichsmatrix.webp)
+![Eine Art-Nouveau-Szene zeigt die menschliche Prüfung eines Rechnungsdokuments, die Freigabe und den Rückweg bei einem Fehler](/images/ratgeber/make-n8n-zapier-art-nouveau-review-v2.webp)
 
 ## Baue zuerst den Fehlerweg
 
