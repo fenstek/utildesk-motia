@@ -1,20 +1,20 @@
 ---
-description: "AnythingLLM ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "anything-llm"
-title: "AnythingLLM"
+description: AnythingLLM ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: anything-llm
+title: AnythingLLM
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Chatbots"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Chatbots
 price_model: "tags: [\"assistant\", \"chatbot\", \"api\"]"
 tags: ["assistant", "chatbot", "api"]
 official_url: "https://anythingllm.com"
-popularity: 0
+popularity: 36
 tier: C
 generated_at: 2026-05-10
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # AnythingLLM

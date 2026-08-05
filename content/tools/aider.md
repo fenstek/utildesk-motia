@@ -12,7 +12,7 @@ price_model: Je nach Plan
 description: Terminal-first Coding-Agent für repository-bewusste Änderungen, Refactoring, Tests und Git-basiertes Review mit frei wählbaren Modellen.
 tags: [ai, coding, cli, developer]
 official_url: "https://aider.chat/"
-popularity: 0
+popularity: 47
 tier: A
 lastReviewed: 2026-07-31
 updated_at: 2026-07-31

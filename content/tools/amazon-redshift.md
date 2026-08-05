@@ -2,16 +2,16 @@
 slug: amazon-redshift
 title: Amazon Redshift
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-amazon-redshift-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-amazon-redshift-editorial
 category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [data-warehouse, analytics, aws]
 official_url: "https://aws.amazon.com/redshift/"
-description: "Verwaltetes Cloud-Data-Warehouse für SQL-Analysen, BI und Abfragen über strukturierte Daten und ausgewählte Data-Lake-Quellen."
-popularity: 0
+description: Verwaltetes Cloud-Data-Warehouse für SQL-Analysen, BI und Abfragen über strukturierte Daten und ausgewählte Data-Lake-Quellen.
+popularity: 39
 tier: C
 generated_at: 2026-05-14
 updated_at: 2026-07-13

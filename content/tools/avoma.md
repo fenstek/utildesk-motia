@@ -1,20 +1,20 @@
 ---
-description: "Avoma ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "avoma"
-title: "Avoma"
+description: Avoma ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: avoma
+title: Avoma
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Audio"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Audio
+price_model: Abonnement
 tags: [meetings, sales, transcription]
 official_url: "https://www.avoma.com/"
-popularity: 0
+popularity: 17
 tier: C
 generated_at: 2026-05-10
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Avoma

@@ -3,20 +3,19 @@ slug: bandlab
 title: BandLab
 editorial_reviewed: true
 editorial_verdict: recommend
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next50
 category: Audio
-price_model: "Freemium"
+price_model: Freemium
 tags: [assistant, automation]
 official_url: "https://www.bandlab.com/"
-description: "Cloudbasierte Musikproduktion für Aufnahmen, Beats, Mehrspurprojekte und Zusammenarbeit im Browser oder auf Mobilgeräten."
-popularity: 0
-tier: "D"
-generated_at: "2026-05-11"
+description: Cloudbasierte Musikproduktion für Aufnahmen, Beats, Mehrspurprojekte und Zusammenarbeit im Browser oder auf Mobilgeräten.
+popularity: 13
+tier: D
+generated_at: 2026-05-11
 updated_at: 2026-07-31
-
 ---
 # BandLab
 

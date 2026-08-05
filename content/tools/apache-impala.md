@@ -2,19 +2,19 @@
 slug: apache-impala
 title: Apache Impala
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 updated_at: 2026-07-31
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next50
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Open Source
 tags: [sql, data, analytics, open-source]
 official_url: "https://impala.apache.org/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
-description: "Open-Source-SQL-Engine für interaktive Analysen auf Hadoop-nahen Datenplattformen mit verteilten Abfragen und kontrollierbarem Clusterbetrieb."
+popularity: 31
+tier: C
+generated_at: 2026-05-14
+description: Open-Source-SQL-Engine für interaktive Analysen auf Hadoop-nahen Datenplattformen mit verteilten Abfragen und kontrollierbarem Clusterbetrieb.
 ---
 # Apache Impala
 

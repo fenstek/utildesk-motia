@@ -6,16 +6,15 @@ editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next50
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://cassandra.apache.org/_/index.html"
-popularity: 0
+popularity: 34
 tier: C
-description: "Apache Cassandra ist eine verteilte Open-Source-Datenbank für hochverfügbare, schreibintensive Workloads mit planbaren Zugriffsmustern über viele Knoten oder Regionen."
+description: Apache Cassandra ist eine verteilte Open-Source-Datenbank für hochverfügbare, schreibintensive Workloads mit planbaren Zugriffsmustern über viele Knoten oder Regionen.
 generated_at: 2026-05-27
 updated_at: 2026-07-31
-
 ---
 # Apache Cassandra
 

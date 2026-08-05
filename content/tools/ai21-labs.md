@@ -2,18 +2,18 @@
 slug: ai21-labs
 title: AI21 Labs
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-ai21-labs-full-tool-card-editorial"
-category: "AI Writing"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-ai21-labs-full-tool-card-editorial
+category: AI Writing
 price_model: usage_based
 tags: ["ai", "writing", "creative", "productivity"]
 official_url: "https://www.ai21.com/"
-popularity: 0
+popularity: 48
 tier: C
 generated_at: 2026-05-14
-description: "Developer-Plattform für Jamba-Sprachmodelle und AI21 Maestro, mit API, Playground, Batch-Verarbeitung und privaten Deployment-Optionen."
+description: Developer-Plattform für Jamba-Sprachmodelle und AI21 Maestro, mit API, Playground, Batch-Verarbeitung und privaten Deployment-Optionen.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
 ---

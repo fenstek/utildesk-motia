@@ -1,20 +1,20 @@
 ---
-description: "Base44 ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "base44"
-title: "Base44"
+description: Base44 ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: base44
+title: Base44
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
 editorial_verdict: recommend
-category: "Produktivität"
-price_model: "Freemium"
+category: Produktivität
+price_model: Freemium
 tags: [ai-app-builder, no-code, vibe-coding, saas]
 official_url: "https://base44.com/"
-popularity: 0
+popularity: 12
 tier: B
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 generated_at: 2026-05-31
 ---
 

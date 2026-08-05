@@ -2,17 +2,17 @@
 slug: apache-spark-structured-streaming
 title: Apache Spark Structured Streaming
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-editorial-coverage"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-editorial-coverage
 category: Developer Tools
 price_model: Open Source
 tags: [data, streaming, batch, etl, open-source]
 official_url: "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+popularity: 29
+tier: C
+generated_at: 2026-05-14
 lastReviewed: 2026-07-13
 updated_at: 2026-07-13
 description: "Praxisleitfaden für Spark Structured Streaming: DataFrames, Micro-Batches, Watermarks, Checkpoints, Sinks, Kosten und Betriebsgrenzen."

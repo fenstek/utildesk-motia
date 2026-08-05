@@ -1,9 +1,9 @@
 ---
 slug: apache-spark-sql
 title: Apache Spark SQL
-description: "SQL- und DataFrame-Schnittstelle für verteilte Verarbeitung strukturierter Daten, Batch-Pipelines und ausgewählte Streaming-Szenarien mit Apache Spark."
+description: SQL- und DataFrame-Schnittstelle für verteilte Verarbeitung strukturierter Daten, Batch-Pipelines und ausgewählte Streaming-Szenarien mit Apache Spark.
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
 editorial_status: manual_polished
 editorial_batch: 2026-07-13-apache-spark-sql-full-editorial
@@ -11,7 +11,7 @@ category: AI Infrastructure
 price_model: Open Source
 tags: [data, workflow]
 official_url: "https://spark.apache.org/sql/"
-popularity: 0
+popularity: 30
 tier: C
 generated_at: 2026-05-14
 updated_at: 2026-07-13

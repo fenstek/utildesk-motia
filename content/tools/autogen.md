@@ -1,20 +1,20 @@
 ---
 slug: autogen
-title: "AutoGen"
+title: AutoGen
 updated_at: 2026-07-17
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
-editorial_batch: "2026-07-17-editorial-100"
+editorial_batch: 2026-07-17-editorial-100
 category: AI Infrastructure
 price_model: null
 tags: ["automation"]
 official_url: "https://github.com/microsoft/autogen"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-10"
-description: "AutoGen ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+popularity: 18
+tier: D
+generated_at: 2026-05-10
+description: AutoGen ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # AutoGen
 

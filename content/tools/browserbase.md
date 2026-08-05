@@ -1,20 +1,20 @@
 ---
-description: "Browserbase ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "browserbase"
-title: "Browserbase"
+description: Browserbase ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: browserbase
+title: Browserbase
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
 editorial_verdict: recommend
-category: "Automatisierung"
-price_model: "Nutzungsbasiert"
+category: Automatisierung
+price_model: Nutzungsbasiert
 tags: [browser, agents, automation, developer-tools]
 official_url: "https://www.browserbase.com/"
-popularity: 0
+popularity: 82
 tier: B
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 generated_at: 2026-05-31
 ---
 

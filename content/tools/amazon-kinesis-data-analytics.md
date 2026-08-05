@@ -2,16 +2,16 @@
 slug: amazon-kinesis-data-analytics
 title: Amazon Kinesis Data Analytics
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
 category: AI Infrastructure
 price_model: Usage-based
 tags: [data, analytics]
 official_url: "https://aws.amazon.com/managed-service-apache-flink/"
-description: "Managed Service für Apache Flink verarbeitet Streaming-Daten fortlaufend, ist aber kein günstiger Ersatz für jede Batch- oder SQL-Analytics-Pipeline."
-popularity: 0
+description: Managed Service für Apache Flink verarbeitet Streaming-Daten fortlaufend, ist aber kein günstiger Ersatz für jede Batch- oder SQL-Analytics-Pipeline.
+popularity: 41
 tier: C
 generated_at: 2026-05-26
 updated_at: 2026-07-13

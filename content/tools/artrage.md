@@ -1,20 +1,20 @@
 ---
-description: "ArtRage ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "artrage"
-title: "ArtRage"
+description: ArtRage ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: artrage
+title: ArtRage
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Design"
-price_model: "Kostenpflichtig, Einmalzahlung"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Design
+price_model: Kostenpflichtig, Einmalzahlung
 tags: [design,painting,illustration,desktop]
 official_url: "https://www.artrage.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-10"
-updated_at: "2026-07-17"
+popularity: 22
+tier: C
+generated_at: 2026-05-10
+updated_at: 2026-07-17
 ---
 
 # ArtRage
