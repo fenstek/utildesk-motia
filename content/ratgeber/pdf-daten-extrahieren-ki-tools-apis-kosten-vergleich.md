@@ -7,8 +7,8 @@ category: "PDF"
 eyebrow: "Dokumentenprozesse"
 excerpt: "Der richtige PDF-Workflow hängt nicht an einem Toolnamen. Er beginnt mit der Frage, ob Text genügt, Felder geprüft werden müssen oder eine Entscheidung auf den Daten folgt."
 readTime: 8
-coverImage: /images/ratgeber/pdf-daten-extraktion-ki-workflow.webp
-secondaryImage: /images/ratgeber/pdf-dokumenttypen-erkennen.webp
+coverImage: /images/ratgeber/pdf-daten-extraktion-klimt-pipeline-v2.webp
+secondaryImage: /images/ratgeber/pdf-daten-extraktion-klimt-review-v2.webp
 tags: ["PDF", "OCR", "Document AI", "API", "Open Source"]
 sidebarTitle: "Kurzfazit"
 sidebarPoints:
@@ -39,7 +39,7 @@ Ein natives PDF enthält meist echten Text. Ein Konverter oder eine Bibliothek k
 
 Der schnellste erste Test nimmt 30 echte Dateien: gute und schlechte Scans, mehrseitige PDFs, Tabellen, Sonderfälle. Für jede Datei wird vorab festgelegt, welche Ausgabe benötigt wird: Volltext, durchsuchbares PDF, CSV, JSON-Felder oder ein geprüfter Export. Erst dann wird klar, welche Toolklasse Sinn ergibt.
 
-![Übersicht über PDF-Typen: natives PDF, Scan, Formular, Tabelle und Rechnung](/images/ratgeber/pdf-dokumenttypen-erkennen.webp)
+![Eine Klimt-inspirierte Szene zeigt den Weg vom Papierchaos über Text, Felder und Prüfung zu einem verlässlichen PDF-Datensatz](/images/ratgeber/pdf-daten-extraktion-klimt-review-v2.webp)
 
 ## Der einfache Weg: Text und durchsuchbare Scans
 

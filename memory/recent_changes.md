@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-05 - PDF data extraction Klimt illustrations
+
+- Replaced both illustrations in the paired DE/EN article `pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich` with distinct narrative scenes in a decorative visual language associated with Gustav Klimt.
+- The cover follows a document from paper chaos through readable text, structured fields and human verification to a sealed data folio.
+- The secondary scene focuses on inspection, rejected fragments and the cost of approving only a correct record.
+- Both assets use cache-busting `-klimt-v2.webp` filenames; DE/EN references and descriptive alternative text remain synchronized.
+
 ## 2026-08-05 - Open-source OCR Pop Art illustrations
 
 - Replaced the two instructional images in the paired DE/EN article `open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr` with distinct narrative scenes inspired by 1960s Pop Art screenprint language associated with Andy Warhol.

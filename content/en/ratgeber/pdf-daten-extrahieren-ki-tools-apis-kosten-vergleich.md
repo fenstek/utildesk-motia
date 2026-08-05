@@ -7,8 +7,8 @@ category: "PDF"
 eyebrow: "Document Operations"
 excerpt: "The right PDF workflow is not a product name. It starts with whether text is enough, fields need verification, or a decision will rely on the data."
 readTime: 8
-coverImage: /images/ratgeber/pdf-daten-extraktion-ki-workflow.webp
-secondaryImage: /images/ratgeber/pdf-dokumenttypen-erkennen.webp
+coverImage: /images/ratgeber/pdf-daten-extraktion-klimt-pipeline-v2.webp
+secondaryImage: /images/ratgeber/pdf-daten-extraktion-klimt-review-v2.webp
 tags: ["PDF", "OCR", "Document AI", "API", "Open Source"]
 sidebarTitle: "Key takeaways"
 sidebarPoints:
@@ -39,7 +39,7 @@ A native PDF usually contains real text. A converter or library can read it with
 
 Test thirty real files first: good and poor scans, multi-page PDFs, tables and exceptions. Define the required output before testing: full text, searchable PDF, CSV, JSON fields or a verified export. Only then does the useful tool class become clear.
 
-![Overview of PDF types: native PDF, scan, form, table and invoice](/images/ratgeber/pdf-dokumenttypen-erkennen.webp)
+![A Klimt-inspired scene shows the path from paper chaos through text, fields and review to a dependable PDF data record](/images/ratgeber/pdf-daten-extraktion-klimt-review-v2.webp)
 
 ## The simple route: text and searchable scans
 
