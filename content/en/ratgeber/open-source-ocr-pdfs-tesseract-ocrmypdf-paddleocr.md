@@ -7,8 +7,8 @@ category: "Open Source"
 eyebrow: "Local OCR"
 excerpt: "Open-source OCR is strong when the goal is a verifiable text layer. Fields, tables, and accounting decisions need additional rules around the pipeline."
 readTime: 8
-coverImage: /images/ratgeber/open-source-ocr-pipeline.webp
-secondaryImage: /images/ratgeber/open-source-ocr-toolvergleich.webp
+coverImage: /images/ratgeber/open-source-ocr-pop-art-pipeline-v2.webp
+secondaryImage: /images/ratgeber/open-source-ocr-pop-art-review-v2.webp
 tags:
   - Open Source
   - OCR
@@ -42,7 +42,7 @@ For archives, internal search, and files people will read later, a searchable te
 
 That is the crucial turn: OCR quality often begins before the model. Skewed pages, low contrast, poor resolution, and mixed layouts do not merely make a result a little worse. They create errors in names, amounts, and references that may have consequences later.
 
-![A local OCR pipeline separates scan preparation, searchable text layer, field checks, and the clearly marked handover to richer document processing](/images/ratgeber/open-source-ocr-toolvergleich.webp)
+![A Pop Art scene shows a local scan becoming a searchable text layer while difficult fragments land in a review tray](/images/ratgeber/open-source-ocr-pop-art-review-v2.webp)
 
 ## Three goals, three appropriate boundaries
 

@@ -7,8 +7,8 @@ category: "Open Source"
 eyebrow: "Lokale OCR"
 excerpt: "Open-source OCR ist stark, wenn das Ziel eine prüfbare Textschicht ist. Für Felder, Tabellen und Buchungsentscheidungen braucht die Pipeline zusätzliche Regeln."
 readTime: 8
-coverImage: /images/ratgeber/open-source-ocr-pipeline.webp
-secondaryImage: /images/ratgeber/open-source-ocr-toolvergleich.webp
+coverImage: /images/ratgeber/open-source-ocr-pop-art-pipeline-v2.webp
+secondaryImage: /images/ratgeber/open-source-ocr-pop-art-review-v2.webp
 tags:
   - "Open Source"
   - "OCR"
@@ -41,7 +41,7 @@ Für Archive, interne Suche und Akten, die Menschen später lesen, ist eine durc
 
 Das ist die zentrale Wendung: OCR-Qualität beginnt oft vor dem Modell. Schiefe Seiten, niedriger Kontrast, schlechte Auflösung oder gemischte Layouts führen nicht zu einem „etwas schlechteren“ Ergebnis, sondern zu Fehlern, die bei Namen, Beträgen und Referenzen folgenreich sein können.
 
-![Eine lokale OCR-Pipeline trennt Scan-Aufbereitung, durchsuchbare Textschicht, Feldprüfung und den klar markierten Übergang zu einer weitergehenden Dokumentenverarbeitung](/images/ratgeber/open-source-ocr-toolvergleich.webp)
+![Eine Pop-Art-Szene zeigt, wie ein lokaler Scan zur durchsuchbaren Textschicht wird und schwierige Fragmente in einer Prüfschale landen](/images/ratgeber/open-source-ocr-pop-art-review-v2.webp)
 
 ## Drei Ziele, drei passende Grenzen
 

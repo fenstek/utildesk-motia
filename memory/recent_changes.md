@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-05 - Open-source OCR Pop Art illustrations
+
+- Replaced the two instructional images in the paired DE/EN article `open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr` with distinct narrative scenes inspired by 1960s Pop Art screenprint language associated with Andy Warhol.
+- The cover uses a four-colour sequence from a rough scan to a text layer, structured fields and an archive drawer.
+- The secondary image shows a difficult scan under review, with uncertain fragments diverted before the cleaned document reaches the archive.
+- Both assets use new cache-busting `-pop-art-v2.webp` filenames; DE/EN references and descriptive alternative text remain synchronized.
+
 ## 2026-08-05 - Invoice automation Art Nouveau illustrations
 
 - Replaced the two slide-like images in the paired DE/EN article `make-vs-n8n-vs-zapier-rechnungsautomatisierung` with distinct narrative scenes inspired by early Art Nouveau poster illustration and the public-domain visual language associated with Alphonse Mucha.
