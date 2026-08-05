@@ -1902,6 +1902,7 @@ _Last updated: 2026-07-19_
 - Added optional on-image labelling with the official EU AI symbol for realistic generated or manipulated imagery, plus IPTC-compatible `digitalSourceType` data in article schema.
 - Added HTML data attributes and `editorialTransparency` fields to machine-readable Ratgeber catalog output, documented the policy on DE/EN methodology pages and added a prebuild metadata guard.
 - Updated the local `utildesk-ratgeber-publish` skill so future publication runs cannot mark AI output as human-reviewed before the final human pass.
+- Deployed source commit `c1fd5416` to Pages preview `3935591b` and the generated runtime bundle to Worker version `a67e9e13-c987-42c1-9290-7a4cb888f1a5`. Bounded live checks passed for DE/EN runtime articles, both methodology pages, the EU AI symbol and the Ratgeber JSON catalog; no broad production crawl was run.
 
 ## 2026-07-31 - Fifty explicit editorial verdicts
 
