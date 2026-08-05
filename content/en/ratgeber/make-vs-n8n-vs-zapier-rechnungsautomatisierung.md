@@ -7,8 +7,8 @@ category: "Automation"
 eyebrow: "Tool comparison"
 excerpt: "The prettiest demo does not decide an invoice workflow. The exception, the correction, and the person who can understand it six months later do."
 readTime: 9
-coverImage: /images/ratgeber/make-n8n-zapier-rechnungsautomatisierung.webp
-secondaryImage: /images/ratgeber/make-n8n-zapier-vergleichsmatrix.webp
+coverImage: /images/ratgeber/make-n8n-zapier-art-nouveau-routes-v2.webp
+secondaryImage: /images/ratgeber/make-n8n-zapier-art-nouveau-review-v2.webp
 tags:
   - n8n
   - Make
@@ -44,7 +44,7 @@ That is why “Make, n8n, or Zapier?” is too small a question. The better one 
 
 None of these tools answers the core question: when does a detected value become a value that may affect accounting? That boundary belongs in the process, not in a marketing claim.
 
-![An invoice process clearly separates automatic intake, uncertain extraction, human correction, and approved handover](/images/ratgeber/make-n8n-zapier-vergleichsmatrix.webp)
+![An Art Nouveau scene shows human review, approval and the return path for an invoice that needs correction](/images/ratgeber/make-n8n-zapier-art-nouveau-review-v2.webp)
 
 ## Build the error path first
 
