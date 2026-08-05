@@ -114,6 +114,28 @@ const FORCE_INDEX_TOOL_SLUGS = new Set([
   "zoho-crm",
 ]);
 
+// A small, explicit proof set for Google. These cards have a completed
+// editorial pass and represent strategic clusters, but their popularity or
+// affiliate metadata is not reliable enough to qualify them automatically.
+// Keep the set deliberately small; the long tail remains staged for Google.
+const GOOGLE_PROOF_TOOL_SLUGS = new Set([
+  "anthropic-api",
+  "browser-use",
+  "claude-tag",
+  "figjam",
+  "google-jules",
+  "gradio",
+  "hermes-agent",
+  "litellm",
+  "microsoft-agent-framework",
+  "obsidian",
+  "openai-codex",
+  "openart-director",
+  "roam-research",
+  "servicenow",
+  "streamlit",
+]);
+
 const normalizeBooleanLike = (value) => {
   if (typeof value === "boolean") return value;
   const normalized = String(value ?? "").trim().toLowerCase();
@@ -201,6 +223,15 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
       robots: ROBOTS_INDEX_FOLLOW,
       googlebotRobots: null,
       reason: "frontmatter_index",
+    };
+  }
+
+  if (GOOGLE_PROOF_TOOL_SLUGS.has(slug)) {
+    return {
+      indexable: true,
+      robots: ROBOTS_INDEX_FOLLOW,
+      googlebotRobots: null,
+      reason: "google_proof_set",
     };
   }
 
