@@ -7,8 +7,8 @@ category: "Data protection"
 eyebrow: "EU data processing"
 excerpt: "EU data processing is not a logo on a pricing page. Small businesses need to explain the data flow, the roles, and the off switch for an AI workflow."
 readTime: 8
-coverImage: /images/ratgeber/ki-tools-eu-datenverarbeitung-checkliste.webp
-secondaryImage: /images/ratgeber/ki-tools-eu-checkliste.webp
+coverImage: /images/ratgeber/ki-tools-eu-data-railway-french-caricature-v2.webp
+secondaryImage: /images/ratgeber/ki-tools-eu-data-theatre-french-caricature-v2.webp
 tags:
   - GDPR
   - EU
@@ -50,7 +50,7 @@ Only then do the questions a product page cannot answer become visible:
 
 A system such as [n8n](/en/tools/n8n/) can give a team more technical control when it can and wants to run it itself. [Microsoft Power Automate](/en/tools/microsoft-power-automate/) may fit when identity, files, and permissions are already managed in a Microsoft tenant. Document tools such as [Rossum](/en/tools/rossum/), [ABBYY Vantage](/en/tools/abbyy-vantage/), and [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/) handle different parts of a flow. None makes a data-flow map unnecessary.
 
-![A traceable data flow shows which AI station sees which document, what it decides, and where a team can stop the process](/images/ratgeber/ki-tools-eu-checkliste.webp)
+![A French newspaper caricature shows a sealed document passing through several hidden stations while the proprietor keeps hold of the emergency cord](/images/ratgeber/ki-tools-eu-data-theatre-french-caricature-v2.webp)
 
 ## The most useful check is concrete
 
