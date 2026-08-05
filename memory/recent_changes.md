@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-05 - Production D1 upsert for invoice workflow Frida illustrations
+
+- Published the paired DE/EN runtime rows for `rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows` to production D1 `utildesk-content-runtime-production` (`259ed703-ba7c-4aba-a269-e167d391eae6`).
+- The working Cloudflare credential is the process credential for account `1e2548f3d1cdf6784b1f4dde9141a742`; do not override it with the Pages account ID `f95e0a354dedfcd2eb4f6213e8af207d` when running the runtime publisher.
+- Live DE and EN checks returned `200` with `X-Utildesk-Content-Runtime: ratgeber-v1`; the three `-frida-v2.webp` assets are live and the legacy invoice-image paths are absent.
+
 ## 2026-08-05 - Invoice email workflow Frida Kahlo illustrations
 
 - Replaced all three narrative illustrations in the paired DE/EN article `rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows` with distinct scenes in a visual language associated with Frida Kahlo and Mexican folk-art symbolism.
