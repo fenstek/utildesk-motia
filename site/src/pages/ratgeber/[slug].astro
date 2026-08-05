@@ -216,7 +216,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         {published && <span>· {published}</span>}
         {updated && updated !== published && <span>· aktualisiert {updated}</span>}
         {data.readTime && <span>· {data.readTime} Min. Lesen</span>}
-        <EditorialPassport locale="de" transparency={transparency} />
+        {(!transparency.reviewed || transparency.disclosureMode === "required-text") && (
+          <EditorialPassport locale="de" transparency={transparency} />
+        )}
       </div>
 
       {(data.category || data.relatedTools?.length || data.tags?.length) && (
@@ -255,6 +257,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 
     <div class="sheet-body">
       <aside class="sheet-sidecar" aria-label="Artikelübersicht">
+        {transparency.reviewed && transparency.disclosureMode === "editorial-passport" && (
+          <EditorialPassport locale="de" transparency={transparency} />
+        )}
+
         {data.sidebarPoints?.length ? (
           <section class="sheet-summary" aria-label={data.sidebarTitle || "Kurzfazit"}>
             <div class="sheet-summary-tab">{data.sidebarTitle || "Kurzfazit"}</div>

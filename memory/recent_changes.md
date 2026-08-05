@@ -1926,3 +1926,9 @@ _Last updated: 2026-07-19_
 - Restored the complete 51/51 Ratgeber issue manifest by adding the two previously omitted published guides plus the new release, preventing the runtime shell from regressing its issue number.
 - Production publication completed through D1, Pages deployment `97db6e8c` and Worker version `77aa3046-a145-4287-8d10-ba9a2ec1bb72`. Live DE/EN detail, home, archive, API, images and compact sitemap checks passed; the new guide is first on all four collection surfaces and both IndexNow endpoints accepted exactly the two canonical article URLs with HTTP `200`.
 - Reconciled the OptiPlex Newsman registry with the live 51-entry manifest and moved the source job `20260731-mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-how_to-4d52ec21` from `done` to `published` so it is no longer offered as a candidate.
+
+## 2026-08-05 - Ratgeber editorial passport placement
+
+- Moved the compact reviewed-content passport out of the article hero metadata and into the DE/EN article utility sidebar, before the summary and table of contents. The passport now expands in place without covering the headline or prose; mobile keeps the same in-flow order after the cover image.
+- Kept the prominent required-text disclosure in the hero for unreviewed AI-generated public-interest content, so the visual refinement does not weaken the transparency policy.
+- Applied the placement to static and D1 runtime Ratgeber templates and verified the closed/open states at 1440 px and 390 px after successful static and runtime builds.
