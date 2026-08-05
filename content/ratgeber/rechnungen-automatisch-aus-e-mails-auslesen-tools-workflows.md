@@ -7,8 +7,8 @@ category: "Automatisierung"
 eyebrow: "E-Mail zu Buchhaltung"
 excerpt: "Eine Rechnung aus dem Postfach zu holen ist einfach. Verlässlich wird der Prozess erst, wenn OCR, Dubletten, Review und Buchhaltung getrennt bleiben."
 readTime: 11
-coverImage: /images/ratgeber/email-rechnung-automatisierung-workflow.webp
-secondaryImage: /images/ratgeber/email-rechnung-toolwahl-decision-tree.webp
+coverImage: /images/ratgeber/rechnungen-email-frida-pipeline-v2.webp
+secondaryImage: /images/ratgeber/rechnungen-email-frida-choice-v2.webp
 tags:
   - "Rechnungen"
   - "E-Mail"
@@ -72,7 +72,7 @@ Mit [n8n](/tools/n8n/) lässt sich derselbe Prozess näher an eigener Infrastruk
 
 Der Vorteil liegt in der Flexibilität. Teams können eigene Validierungslogik bauen, etwa Dubletten über Rechnungsnummer und Lieferant erkennen oder Beträge gegen Bestellnummern prüfen. Der Preis ist Betriebsverantwortung: Secrets, Backups, Updates, Logging, Fehlerbenachrichtigungen und Zugriffskontrolle müssen ernst genommen werden.
 
-![Decision Tree zur Auswahl von n8n, Make, Zapier oder Power Automate für Rechnungsautomatisierung](/images/ratgeber/email-rechnung-toolwahl-decision-tree.webp)
+![Eine Frida-Kahlo-inspirierte Szene zeigt drei Wege für einen Rechnungsworkflow und eine Hand mit dem roten Notstopp-Band](/images/ratgeber/rechnungen-email-frida-choice-v2.webp)
 
 ## Szenario 3: Microsoft- oder Enterprise-Workflow
 
@@ -86,7 +86,7 @@ Der häufigste Fehler in Rechnungsautomatisierung ist ein fehlender Fehlerpfad. 
 
 Die manuelle Prüfung sollte nicht als Scheitern gelten. Sie ist der Sicherheitsmechanismus, der Automatisierung produktionsfähig macht. Gute Workflows protokollieren Korrekturen, speichern das Originaldokument und exportieren erst nach Freigabe.
 
-![Fehlerpfad bei niedriger OCR-Confidence mit manueller Prüfung und korrigiertem Export](/images/ratgeber/email-rechnung-fehlerpfad-review.webp)
+![Eine Frida-Kahlo-inspirierte Szene zeigt die Reparatur eines fehlerhaften Rechnungsdokuments und das Abfangen von Dubletten vor dem Export](/images/ratgeber/rechnungen-email-frida-review-v2.webp)
 
 ## Für wen geeignet?
 

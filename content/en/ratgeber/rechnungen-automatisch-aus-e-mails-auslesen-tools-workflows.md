@@ -7,8 +7,8 @@ category: "Automation"
 eyebrow: "Email to Accounting"
 excerpt: "Fetching an invoice from an inbox is easy. A dependable process keeps OCR, duplicates, review and accounting as separate states."
 readTime: 11
-coverImage: /images/ratgeber/email-rechnung-automatisierung-workflow.webp
-secondaryImage: /images/ratgeber/email-rechnung-toolwahl-decision-tree.webp
+coverImage: /images/ratgeber/rechnungen-email-frida-pipeline-v2.webp
+secondaryImage: /images/ratgeber/rechnungen-email-frida-choice-v2.webp
 tags:
   - "Rechnungen"
   - "E-Mail"
@@ -74,7 +74,7 @@ With [n8n](/en/tools/n8n/), the same process can run closer to your own infrastr
 
 The advantage is flexibility. Teams can add custom validation such as duplicate checks by invoice number and supplier. The cost is operational responsibility: secrets, backups, updates, logs, alerts and access control must be maintained.
 
-![Decision tree for choosing n8n, Make, Zapier or Power Automate for invoice automation](/images/ratgeber/email-rechnung-toolwahl-decision-tree.webp)
+![A Frida Kahlo-inspired scene shows three invoice-workflow paths and a hand holding a red emergency-stop ribbon](/images/ratgeber/rechnungen-email-frida-choice-v2.webp)
 
 ## Scenario 3: Microsoft or Enterprise Workflow
 
@@ -88,7 +88,7 @@ The most common mistake is a missing error path. OCR is treated as a magic step 
 
 Manual review is not a failure. It is the safety mechanism that makes automation production-ready. Good workflows log corrections, keep the original document and export only after approval.
 
-![Error path for low OCR confidence with manual review and corrected export](/images/ratgeber/email-rechnung-fehlerpfad-review.webp)
+![A Frida Kahlo-inspired scene shows a damaged invoice being repaired while duplicates are caught before export](/images/ratgeber/rechnungen-email-frida-review-v2.webp)
 
 ## Suitable For
 
