@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ContentJump from "../../../components/ContentJump.astro";
+import UnreviewedToolNotice from "../../../components/UnreviewedToolNotice.astro";
 import { CATEGORIES } from "../../../lib/categories";
 import contentLastmodManifest from "../../../data/content-lastmod.json";
 import guideBacklinkManifest from "../../../data/guide-backlinks.json";
@@ -288,12 +289,7 @@ const {
 
   <article class="card article akte-article">
     <div class="article-body akte-article-body">
-      {!isCuratedTool ? (
-        <blockquote class="tool-disclosure">
-          This entry was generated automatically from public provider information and has not been editorially reviewed.
-          For curated context, see our <a href="/en/ratgeber/">guides</a>.
-        </blockquote>
-      ) : null}
+      {!isCuratedTool ? <UnreviewedToolNotice locale="en" category={meta.category} tags={meta.tags} /> : null}
 
       <div set:html={sharedView.articleHtml}></div>
     </div>

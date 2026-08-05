@@ -28,6 +28,13 @@ export interface RatgeberEntryData {
   sidebarPoints?: string[];
   decisionNote?: string;
   relatedTools?: RatgeberRelatedTool[];
+  editorialReviewed?: boolean;
+  editorialReviewedAt?: string;
+  finalHumanApprovalAt?: string;
+  editorialReviewScope?: string;
+  aiAssistance?: boolean;
+  aiDisclosureMode?: "editorial-passport" | "required-text" | "none";
+  coverDisclosure?: "ai-generated" | "ai-modified" | "none";
 }
 
 export interface RatgeberEntry {
@@ -75,6 +82,13 @@ const parseEntry = async (file: string, locale: Locale = "de"): Promise<Ratgeber
       tags: parseStringArray(parsed.data.tags),
       sidebarPoints: parseStringArray(parsed.data.sidebarPoints),
       relatedTools: parseRelatedTools(parsed.data.relatedTools),
+      editorialReviewed: parsed.data.editorialReviewed ?? parsed.data.editorial_reviewed ?? true,
+      editorialReviewedAt: parsed.data.editorialReviewedAt ?? parsed.data.editorial_reviewed_at,
+      finalHumanApprovalAt: parsed.data.finalHumanApprovalAt ?? parsed.data.final_human_approval_at,
+      editorialReviewScope: parsed.data.editorialReviewScope ?? parsed.data.editorial_review_scope,
+      aiAssistance: parsed.data.aiAssistance ?? parsed.data.ai_assistance ?? true,
+      aiDisclosureMode: parsed.data.aiDisclosureMode ?? parsed.data.ai_disclosure_mode,
+      coverDisclosure: parsed.data.coverDisclosure ?? parsed.data.cover_disclosure,
     },
     content: parsed.content,
   };

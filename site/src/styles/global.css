@@ -5545,6 +5545,76 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
   color: var(--akte-ink-soft);
 }
 
+html[data-design="decision"] .akte-article-body .tool-disclosure--compact {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 5px 14px;
+  margin: 0 0 24px;
+  padding: 11px 14px;
+  border: 1px solid #bbb5a5;
+  border-left: 4px solid #777267;
+  border-radius: 2px;
+  background: #f7f4eb;
+  color: #3a3a35;
+  font: 500 12px/1.45 "Bricolage Grotesque", sans-serif;
+  font-style: normal;
+}
+
+html[data-design="decision"] .akte-article-body .tool-disclosure--sensitive {
+  border-color: #c5251c;
+  border-left-color: #c5251c;
+  background: #fff8ef;
+}
+
+.tool-disclosure-kicker {
+  grid-row: 1 / span 2;
+  color: #777267;
+  font: 800 9px/1.35 "JetBrains Mono", monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.tool-disclosure--sensitive .tool-disclosure-kicker { color: #c5251c; }
+
+html[data-design="decision"] .akte-article-body .tool-disclosure--compact strong {
+  color: #292820;
+  font-weight: 750;
+}
+
+html[data-design="decision"] .akte-article-body .tool-disclosure--compact p {
+  grid-column: 2;
+  margin: 0;
+  color: #5d584d;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+html[data-design="decision"] .akte-article-body .tool-disclosure--compact a {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  color: #c5251c;
+  font: 800 9px/1.35 "JetBrains Mono", monospace;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+  html[data-design="decision"] .akte-article-body .tool-disclosure--compact {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tool-disclosure-kicker,
+  html[data-design="decision"] .akte-article-body .tool-disclosure--compact p,
+  html[data-design="decision"] .akte-article-body .tool-disclosure--compact a {
+    grid-column: 1;
+    grid-row: auto;
+    writing-mode: horizontal-tb;
+  }
+}
+
 @media (max-width: 767px) {
   .akte-article {
     padding-top: 28px;

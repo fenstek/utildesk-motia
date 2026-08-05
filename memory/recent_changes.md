@@ -1895,6 +1895,14 @@ _Last updated: 2026-07-19_
 - Added exact DE/EN textual verdict markers to the 20 explicit cards that previously relied only on their metadata; `babbel`, `claude` and `openai-codex` already contained matching custom verdict text.
 - The full editorial, English-parity, tool-quality, static build and 77-test runtime suite passed; the runtime deployment bundle check also passed.
 
+## 2026-08-05 - Editorial AI transparency system
+
+- Added a compact DE/EN Ratgeber editorial passport with human-review date, review scope, methodology link and an explicit AI-assistance statement; mobile uses a single bottom sheet without nested scrolling.
+- Added a prominent fallback notice for unreviewed AI-generated public-interest text and a quieter but stronger notice for unreviewed automated tool records, including sensitive-category wording.
+- Added optional on-image labelling with the official EU AI symbol for realistic generated or manipulated imagery, plus IPTC-compatible `digitalSourceType` data in article schema.
+- Added HTML data attributes and `editorialTransparency` fields to machine-readable Ratgeber catalog output, documented the policy on DE/EN methodology pages and added a prebuild metadata guard.
+- Updated the local `utildesk-ratgeber-publish` skill so future publication runs cannot mark AI output as human-reviewed before the final human pass.
+
 ## 2026-07-31 - Fifty explicit editorial verdicts
 
 - Added honest, explicit DE/EN verdict metadata and matching visible verdict markers to 50 recently fact-checked, story-led tool cards that previously remained unrated. No card body, alternative, FAQ, illustration, category, price or official URL was removed or rewritten in this pass.
