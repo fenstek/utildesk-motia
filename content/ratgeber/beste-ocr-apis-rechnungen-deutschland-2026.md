@@ -7,8 +7,8 @@ category: "OCR"
 eyebrow: "Rechnungs-OCR"
 excerpt: "Eine OCR-API spart erst dann Zeit, wenn falsche Beträge nicht unbemerkt weiterlaufen. So testen Teams Erkennung, Review und Export als einen Rechnungsprozess."
 readTime: 9
-coverImage: /images/ratgeber/rechnung-ocr-api-vergleich-2026.webp
-secondaryImage: /images/ratgeber/rechnung-ocr-toolklassen-matrix.webp
+coverImage: /images/ratgeber/rechnung-ocr-american-gothic-2026.webp
+secondaryImage: /images/ratgeber/rechnung-ocr-american-gothic-choice.webp
 tags:
   - "OCR"
   - "Rechnungen"
@@ -57,7 +57,7 @@ Dann lohnt sich ein Blick auf vier Werte:
 - **Korrekturzeit:** Eine gute Erkennung nützt wenig, wenn Mitarbeitende für jede Ausnahme zwischen drei Oberflächen wechseln.
 - **Export stimmt:** JSON, CSV, Webhook oder ERP-Anbindung sind erst bestanden, wenn die Daten im Zielsystem plausibel ankommen.
 
-![Matrix der Toolklassen für Rechnungs-OCR: API, Enterprise-IDP, Open Source und No-Code](/images/ratgeber/rechnung-ocr-toolklassen-matrix.webp)
+![Eine streng komponierte Regionalismus-Szene zeigt die Wahl zwischen API, Enterprise-Plattform und lokaler OCR-Pipeline](/images/ratgeber/rechnung-ocr-american-gothic-choice.webp)
 
 ## Was automatisch laufen darf - und was nicht
 

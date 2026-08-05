@@ -7,8 +7,8 @@ category: "OCR"
 eyebrow: "Invoice OCR"
 excerpt: "An OCR API saves time only when wrong values cannot silently travel downstream. Here is how teams test recognition, review and export as one invoice operation."
 readTime: 9
-coverImage: /images/ratgeber/rechnung-ocr-api-vergleich-2026.webp
-secondaryImage: /images/ratgeber/rechnung-ocr-toolklassen-matrix.webp
+coverImage: /images/ratgeber/rechnung-ocr-american-gothic-2026.webp
+secondaryImage: /images/ratgeber/rechnung-ocr-american-gothic-choice.webp
 tags:
   - "OCR"
   - "Invoices"
@@ -57,7 +57,7 @@ Then measure four things:
 - **Correction time is low:** good extraction is wasted if reviewers must jump across three systems for every exception.
 - **The export holds up:** JSON, CSV, a webhook or an ERP integration pass only when the target system receives coherent data.
 
-![Matrix of invoice OCR tool classes: API, enterprise IDP, open source and no-code](/images/ratgeber/rechnung-ocr-toolklassen-matrix.webp)
+![A carefully composed Regionalist scene about choosing between an API, an enterprise platform and a local OCR pipeline](/images/ratgeber/rechnung-ocr-american-gothic-choice.webp)
 
 ## What may run automatically, and what should not
 
