@@ -7,8 +7,8 @@ category: "Datenschutz"
 eyebrow: "EU-Datenverarbeitung"
 excerpt: "EU-Datenverarbeitung ist kein Logo im Preisblatt. Für kleine Unternehmen zählt, ob sie den Datenfluss, die Rollen und den Abschaltweg eines KI-Workflows erklären können."
 readTime: 8
-coverImage: /images/ratgeber/ki-tools-eu-datenverarbeitung-checkliste.webp
-secondaryImage: /images/ratgeber/ki-tools-eu-checkliste.webp
+coverImage: /images/ratgeber/ki-tools-eu-data-railway-french-caricature-v2.webp
+secondaryImage: /images/ratgeber/ki-tools-eu-data-theatre-french-caricature-v2.webp
 tags:
   - "GDPR"
   - "EU"
@@ -49,7 +49,7 @@ Erst dadurch werden die Fragen sichtbar, die eine Produktseite nicht beantwortet
 
 Ein System wie [n8n](/tools/n8n/) kann Teams mehr technische Kontrolle geben, wenn sie es selbst betreiben können und wollen. [Microsoft Power Automate](/tools/microsoft-power-automate/) kann sinnvoll sein, wenn Identität, Dateien und Berechtigungen ohnehin in einem Microsoft-Tenant geregelt sind. Dokumentenwerkzeuge wie [Rossum](/tools/rossum/), [ABBYY Vantage](/tools/abbyy-vantage/) oder [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/) lösen jeweils andere Teile des Flows. Keines macht die Datenflusskarte überflüssig.
 
-![Ein nachvollziehbarer Datenfluss macht sichtbar, welche KI-Station welche Dokumente sieht, welche Entscheidung trifft und wo ein Team den Prozess stoppen kann](/images/ratgeber/ki-tools-eu-checkliste.webp)
+![Eine französische Zeitungskarikatur zeigt, wie ein versiegeltes Dokument durch mehrere verborgene Stationen wandert, während der Inhaber den Abschaltzug in der Hand behält](/images/ratgeber/ki-tools-eu-data-theatre-french-caricature-v2.webp)
 
 ## Die nützlichste Prüfung ist konkret
 

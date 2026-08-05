@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-05 - EU data-processing French caricature illustrations
+
+- Replaced both slide-like illustrations in the paired DE/EN article `ki-tools-eu-datenverarbeitung-kleine-unternehmen` with two distinct narrative scenes in the visual language of early-20th-century French satirical press.
+- The cover follows a sealed invoice through a deliberately overcomplicated customs railway while the small-business owner retains a visible emergency brake.
+- The secondary illustration turns the hidden sub-processor chain into a theatrical cutaway of mechanical operators, messenger birds, a stop cord and a deletion furnace.
+- Both assets use new cache-busting `-french-caricature-v2.webp` filenames; DE/EN image references and descriptive alternative text remain synchronized.
+
 ## 2026-08-05 - Personal AI agents lubok illustrations
 
 - Replaced both illustrations for the paired DE/EN article `meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext` with two distinct narrative scenes in the visual language of late-19th/early-20th-century Russian lubok prints.
