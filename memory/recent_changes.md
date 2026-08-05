@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-05 - Invoice email workflow Frida Kahlo illustrations
+
+- Replaced all three narrative illustrations in the paired DE/EN article `rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows` with distinct scenes in a visual language associated with Frida Kahlo and Mexican folk-art symbolism.
+- The cover follows an invoice from the mailbox through extraction and field checks to a dependable ledger.
+- The second scene presents the three automation routes and a deliberate emergency stop; the third shows manual repair and duplicate interception before export.
+- All three assets use cache-busting `-frida-v2.webp` filenames; DE/EN references and descriptive alternative text remain synchronized.
+
 ## 2026-08-05 - PDF data extraction Klimt illustrations
 
 - Replaced both illustrations in the paired DE/EN article `pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich` with distinct narrative scenes in a decorative visual language associated with Gustav Klimt.
