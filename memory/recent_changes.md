@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-05 - Personal AI agents lubok illustrations
+
+- Replaced both illustrations for the paired DE/EN article `meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext` with two distinct narrative scenes in the visual language of late-19th/early-20th-century Russian lubok prints.
+- The cover now stages the agent's conflict of interest as a traveller choosing between home and a merchant fair beside a clockwork firebird carrying a locked memory chest.
+- The secondary illustration shows a craftswoman retaining control over memory, permissions, action and emergency-stop gates before a mechanical messenger can leave the workshop.
+- Both assets use new `-lubok-v2.webp` filenames to avoid stale CDN cache collisions; DE/EN image references and alternative text remain synchronized.
+
 ## 2026-08-03 - OCR service internal-link cluster
 
 - Added contextual links to `https://ocr.utildesk.de/` across the three OCR/PDF Ratgeber articles and the German/English cards for Tesseract OCR, OCRmyPDF, PaddleOCR, Smallpdf, CloudConvert, Convertio, Mistral OCR and ABBYY Vantage.
