@@ -14,8 +14,8 @@ final_human_approval_at: 2026-08-05
 editorial_review_scope: "Quellen, Tatsachenbehauptungen, Einordnung und Endfassung"
 ai_assistance: true
 ai_disclosure_mode: editorial-passport
-coverImage: /images/ratgeber/meta-persoenliche-ki-agenten-kontext-cover-editorial-v1.webp
-secondaryImage: /images/ratgeber/meta-persoenliche-ki-agenten-kontrolltore-editorial-v1.webp
+coverImage: /images/ratgeber/meta-persoenliche-ki-agenten-kontext-cover-lubok-v2.webp
+secondaryImage: /images/ratgeber/meta-persoenliche-ki-agenten-kontrolltore-lubok-v2.webp
 tags:
   - "KI-Agenten"
   - "Meta AI"
@@ -66,7 +66,7 @@ Für den Agenten ist das nützlich. Wer weiß, dass ich morgens keine Termine m�
 
 Das ist kein Beweis für Missbrauch. Es ist ein Interessenkonflikt, der sich nicht durch eine freundliche Stimme auflösen lässt. Der Agent kann eine Reise nach meinen Vorgaben planen und trotzdem in einer Umgebung arbeiten, die an bestimmten Buchungen, Empfehlungen oder längerer Nutzung verdient. Sobald Agenten Angebote auswählen, Käufe vorbereiten oder Aufmerksamkeit steuern, muss sichtbar werden, **welches Ziel gerade optimiert wird**.
 
-![Eine helle Bildmetapher zeigt Erinnerungen, die durch vier Kontrolltore zu einem handlungsfähigen mechanischen Vogel fließen.](/images/ratgeber/meta-persoenliche-ki-agenten-kontrolltore-editorial-v1.webp)
+![Im Stil eines alten russischen Lubok führt eine Handwerkerin einen mechanischen Vogel durch vier kontrollierbare Tore für Erinnerung, Berechtigungen, Handlungen und Notstopp.](/images/ratgeber/meta-persoenliche-ki-agenten-kontrolltore-lubok-v2.webp)
 
 ## Privat ist bei Meta ein eigener Modus
 

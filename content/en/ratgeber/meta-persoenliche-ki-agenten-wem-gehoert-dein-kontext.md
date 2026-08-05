@@ -14,8 +14,8 @@ final_human_approval_at: 2026-08-05
 editorial_review_scope: "Sources, factual claims, interpretation and final version"
 ai_assistance: true
 ai_disclosure_mode: editorial-passport
-coverImage: /images/ratgeber/meta-persoenliche-ki-agenten-kontext-cover-editorial-v1.webp
-secondaryImage: /images/ratgeber/meta-persoenliche-ki-agenten-kontrolltore-editorial-v1.webp
+coverImage: /images/ratgeber/meta-persoenliche-ki-agenten-kontext-cover-lubok-v2.webp
+secondaryImage: /images/ratgeber/meta-persoenliche-ki-agenten-kontrolltore-lubok-v2.webp
 tags:
   - "AI agents"
   - "Meta AI"
@@ -66,7 +66,7 @@ For an agent, that is useful. A helper that knows I avoid morning appointments, 
 
 This does not prove abuse. It is a conflict of interest that a friendly voice cannot dissolve. An agent may plan a trip according to my constraints while operating in an environment that earns money from certain bookings, recommendations or additional engagement. Once agents select offers, prepare purchases or steer attention, users need to see **which objective is being optimized**.
 
-![A bright visual metaphor shows memories passing through four control gates before reaching a mechanical bird that can act.](/images/ratgeber/meta-persoenliche-ki-agenten-kontrolltore-editorial-v1.webp)
+![In the style of an old Russian lubok, a craftswoman guides a mechanical bird through four controllable gates for memory, permissions, actions and emergency stop.](/images/ratgeber/meta-persoenliche-ki-agenten-kontrolltore-lubok-v2.webp)
 
 ## Privacy is a separate mode at Meta
 
