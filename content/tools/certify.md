@@ -1,21 +1,21 @@
 ---
 slug: certify
-updated_at: "2026-07-14"
-lastReviewed: "2026-07-14"
+updated_at: 2026-07-14
+lastReviewed: 2026-07-14
 title: Certify
 description: Emburse Professional, früher Certify, bündelt Belege, Spesenberichte, Freigaben und Erstattungen für Unternehmen. Die Karte erklärt reale Abläufe, Integrationen, Grenzen und sinnvolle Alternativen.
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-certify-editorial"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-14
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-certify-editorial
 category: Expense Management
 price_model: Individuelles Angebot
 tags: [expense-management, travel-management, finance, compliance]
 official_url: "https://www.emburse.com/products/professional"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 1
+tier: C
+generated_at: 2026-05-15
 ---
 # Certify
 

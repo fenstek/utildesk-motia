@@ -1,20 +1,20 @@
 ---
-description: "Any.do ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "any-do"
-title: "Any.do"
+description: Any.do ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: any-do
+title: Any.do
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Coding"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Coding
+price_model: Freemium
 tags: [todo,productivity,task-management]
 official_url: "https://www.any.do/"
-popularity: 0
+popularity: 37
 tier: C
 generated_at: 2026-05-10
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Any.do

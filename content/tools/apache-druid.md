@@ -10,10 +10,10 @@ category: AI Infrastructure
 price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://druid.apache.org/"
-description: "Open-Source-Analysedatenbank für schnelle OLAP-Abfragen auf zeitbezogenen Batch- und Streaming-Daten."
+description: Open-Source-Analysedatenbank für schnelle OLAP-Abfragen auf zeitbezogenen Batch- und Streaming-Daten.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 0
+popularity: 33
 tier: C
 generated_at: 2026-05-14
 ---

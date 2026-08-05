@@ -1,20 +1,20 @@
 ---
-description: "Apache Storm ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "apache-storm"
-title: "Apache Storm"
+description: Apache Storm ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: apache-storm
+title: Apache Storm
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Agents"
-price_model: "Open Source"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Agents
+price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://storm.apache.org/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-10"
-updated_at: "2026-07-17"
+popularity: 28
+tier: C
+generated_at: 2026-05-10
+updated_at: 2026-07-17
 ---
 
 # Apache Storm

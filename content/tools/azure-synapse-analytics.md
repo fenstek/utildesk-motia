@@ -2,16 +2,16 @@
 slug: azure-synapse-analytics
 title: Azure Synapse Analytics
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
 category: AI Infrastructure
 price_model: Usage-based
 tags: [analytics, data-warehouse, azure]
 official_url: "https://azure.microsoft.com/en-us/products/synapse-analytics/"
-description: "Azure-Arbeitsumgebung für Data Warehouse, Lake-Abfragen, Spark-Verarbeitung und orchestrierte Datenpipelines mit getrennten Kosten- und Betriebsmodellen."
-popularity: 0
+description: Azure-Arbeitsumgebung für Data Warehouse, Lake-Abfragen, Spark-Verarbeitung und orchestrierte Datenpipelines mit getrennten Kosten- und Betriebsmodellen.
+popularity: 14
 tier: C
 generated_at: 2026-05-18
 updated_at: 2026-07-13

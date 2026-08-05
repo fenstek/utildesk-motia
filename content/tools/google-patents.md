@@ -10,7 +10,7 @@ category: AI Research
 price_model: Kostenlos
 tags: [research, patents, search, innovation]
 official_url: "https://patents.google.com/"
-popularity: 53
+popularity: 73
 tier: C
 updated_at: 2026-07-31
 description: Google Patents erschließt Patentveröffentlichungen für nachvollziehbare Vorrecherche, ersetzt aber keine rechtliche Patent- oder FTO-Prüfung.

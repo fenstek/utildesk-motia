@@ -2,20 +2,20 @@
 slug: articulate-360
 title: Articulate 360
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
 category: Produktivität
 price_model: Abonnement
 tags: [education, authoring, content, design]
 official_url: "https://www.articulate.com/360/"
-description: "Articulate 360 bündelt Storyline, Rise, Review und Content Library für die Erstellung, Abstimmung und Ausspielung professioneller E-Learning-Kurse."
+description: Articulate 360 bündelt Storyline, Rise, Review und Content Library für die Erstellung, Abstimmung und Ausspielung professioneller E-Learning-Kurse.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+popularity: 23
+tier: C
+generated_at: 2026-05-14
 ---
 # Articulate 360
 

@@ -2,20 +2,20 @@
 slug: calendly
 title: Calendly
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-full-tool-card-editorial
 category: Produktivität
 price_model: Freemium
 tags: [meeting, workflow, productivity]
 official_url: "https://calendly.com/"
-description: "Calendly bündelt Kalenderverfügbarkeit, Buchungsseiten und Routing für planbare Meetings, ersetzt aber weder Kalenderpflege noch CRM-Prozesse."
+description: Calendly bündelt Kalenderverfügbarkeit, Buchungsseiten und Routing für planbare Meetings, ersetzt aber weder Kalenderpflege noch CRM-Prozesse.
 updated_at: 2026-07-14
 lastReviewed: 2026-07-14
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 81
+tier: C
+generated_at: 2026-05-15
 ---
 # Calendly
 

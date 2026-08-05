@@ -10,8 +10,8 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: [data, analytics, productivity, automation, education]
 official_url: "https://atlasti.com/"
-popularity: 0
-description: "Atlas.ti organisiert qualitative Daten, Codes, Memos und Beziehungen für nachvollziehbare Forschung mit menschlicher Interpretation."
+popularity: 20
+description: Atlas.ti organisiert qualitative Daten, Codes, Memos und Beziehungen für nachvollziehbare Forschung mit menschlicher Interpretation.
 tier: C
 generated_at: 2026-05-10
 updated_at: 2026-07-31

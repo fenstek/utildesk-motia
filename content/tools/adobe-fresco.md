@@ -1,17 +1,17 @@
 ---
-description: "Adobe Fresco ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "adobe-fresco"
-title: "Adobe Fresco"
+description: Adobe Fresco ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: adobe-fresco
+title: Adobe Fresco
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next50
-category: "Design"
-price_model: "Freemium"
+category: Design
+price_model: Freemium
 tags: [design, illustration, painting, mobile]
 official_url: "https://www.adobe.com/products/fresco.html"
-popularity: 0
+popularity: 51
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-07-31

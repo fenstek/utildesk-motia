@@ -1,18 +1,18 @@
 ---
-description: "Adobe Lightroom ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "adobe-lightroom"
-title: "Adobe Lightroom"
+description: Adobe Lightroom ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: adobe-lightroom
+title: Adobe Lightroom
 editorial_reviewed: true
 editorial_verdict: recommend
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next50
-category: "Design"
-price_model: "Abonnement"
+category: Design
+price_model: Abonnement
 tags: [photo, editing, design, ai]
 official_url: "https://www.adobe.com/products/photoshop-lightroom.html"
-popularity: 0
+popularity: 50
 tier: C
 generated_at: 2026-05-15
 updated_at: 2026-07-31

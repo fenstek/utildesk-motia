@@ -1,20 +1,20 @@
 ---
-description: "BeautyPlus ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "beautyplus"
-title: "BeautyPlus"
+description: BeautyPlus ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: beautyplus
+title: BeautyPlus
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Design"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Design
+price_model: Freemium
 tags: [ai,design,image]
 official_url: "https://www.beautyplus.com/"
-popularity: 0
+popularity: 11
 tier: C
 generated_at: 2026-05-11
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # BeautyPlus

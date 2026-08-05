@@ -1,20 +1,20 @@
 ---
-description: "Amazon Alexa ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "amazon-alexa"
-title: "Amazon Alexa"
+description: Amazon Alexa ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: amazon-alexa
+title: Amazon Alexa
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Image"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Image
+price_model: Freemium
 tags: [assistant, voice, smart-home]
 official_url: "https://developer.amazon.com/en/alexa"
-popularity: 0
+popularity: 43
 tier: C
 generated_at: 2026-05-10
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Amazon Alexa

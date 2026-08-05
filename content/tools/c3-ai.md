@@ -6,16 +6,16 @@ editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-50
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Freemium
 tags: ["data", "analytics", "automation"]
 official_url: "http://www.c3.ai/"
 created_at: 2026-02-15
-popularity: 0
-tier: "C"
-generated_at: "2026-05-11"
+popularity: 2
+tier: C
+generated_at: 2026-05-11
 updated_at: 2026-07-31
-description: "C3.ai unterstützt Unternehmen beim Aufbau daten- und modellgestützter Anwendungen, deren Nutzen von Datenqualität und klaren Betriebsprozessen abhängt."
+description: C3.ai unterstützt Unternehmen beim Aufbau daten- und modellgestützter Anwendungen, deren Nutzen von Datenqualität und klaren Betriebsprozessen abhängt.
 ---
 # C3.ai
 

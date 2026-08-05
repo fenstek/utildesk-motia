@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium
 tags: [automation, integrations, workflows, ai-agents]
 official_url: "https://pipedream.com/"
-popularity: 24
+popularity: 64
 description: Pipedream verbindet API-Integrationen, Trigger, fertige Actions und eigenen Code in ausfuehrbaren Workflows. Der praktische Wert liegt in nachvollziehbaren Event-Flows, nicht in einer beliebig langen Integrationsliste.
 updated_at: 2026-07-31
 tier: C

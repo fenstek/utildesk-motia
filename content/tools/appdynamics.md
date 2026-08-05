@@ -3,19 +3,19 @@ slug: appdynamics
 title: AppDynamics
 description: AppDynamics ist eine APM- und Observability-Plattform für verteilte Anwendungen. Diese Einordnung zeigt, welche Daten, Agenten und Betriebsprozesse Unternehmen vor einer Einführung wirklich planen müssen.
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-appdynamics-editorial"
-category: "AI Infrastructure"
-price_model: "Subscription, Custom Offer"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-appdynamics-editorial
+category: AI Infrastructure
+price_model: Subscription, Custom Offer
 tags: [monitoring, analytics, observability, enterprise]
 official_url: "https://www.splunk.com/en_us/appdynamics-joins-splunk.html?301=appdynamics"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+popularity: 86
+tier: C
+generated_at: 2026-05-14
 ---
 # AppDynamics
 

@@ -2,18 +2,18 @@
 slug: audiotool
 title: Audiotool
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
-category: "Audio & Video"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
+category: Audio & Video
+price_model: Freemium
 tags: [music-production, audio, browser-based]
 official_url: "https://www.audiotool.com/"
-description: "Audiotool ist eine browserbasierte DAW für elektronische Musik mit virtuellen Geräten, Samples, Audio- und MIDI-Aufnahme sowie gemeinsamer Projektarbeit."
-popularity: 0
+description: Audiotool ist eine browserbasierte DAW für elektronische Musik mit virtuellen Geräten, Samples, Audio- und MIDI-Aufnahme sowie gemeinsamer Projektarbeit.
+popularity: 19
 tier: C
 generated_at: 2026-05-14
 ---

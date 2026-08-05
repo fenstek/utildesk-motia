@@ -11,11 +11,11 @@ category: Video
 price_model: Plan-based
 tags: [video, marketing, ai-video]
 official_url: "https://biteable.com/"
-popularity: 0
+popularity: 7
 tier: D
 generated_at: 2026-05-11
 updated_at: 2026-07-31
-description: "Browserbasierter Video-Editor für kurze Marketing-, Erklär- und Teamvideos mit Vorlagen, AI-Unterstützung, Branding und Zusammenarbeit."
+description: Browserbasierter Video-Editor für kurze Marketing-, Erklär- und Teamvideos mit Vorlagen, AI-Unterstützung, Branding und Zusammenarbeit.
 ---
 # Biteable
 

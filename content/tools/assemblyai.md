@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Usage-based
 tags: [audio, transcription, voice-ai, developer-tools]
 official_url: "https://www.assemblyai.com/"
-popularity: 71
+popularity: 21
 tier: C
 description: AssemblyAI liefert Speech-to-Text- und Voice-AI-APIs für eigene Produkte; echte Aufnahmen, Zeitstempel und kontrollierte Folgeaktionen entscheiden über die Qualität.
 updated_at: 2026-07-31

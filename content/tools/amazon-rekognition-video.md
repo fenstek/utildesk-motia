@@ -2,18 +2,18 @@
 slug: amazon-rekognition-video
 title: Amazon Rekognition Video
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
-category: "Audio & Video"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
+category: Audio & Video
 price_model: Nutzungsbasiert
 tags: [video, workflow]
 official_url: "https://aws.amazon.com/rekognition/video-features/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
-description: "Cloud-API von AWS für zeitcodierte Videoanalyse, Labels, Text, Gesichter und Moderation mit S3- und Ereignis-Workflows."
+popularity: 38
+tier: C
+generated_at: 2026-05-14
+description: Cloud-API von AWS für zeitcodierte Videoanalyse, Labels, Text, Gesichter und Moderation mit S3- und Ereignis-Workflows.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
 ---

@@ -1,20 +1,20 @@
 ---
-description: "Acuity Scheduling ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "acuity-scheduling"
-title: "Acuity Scheduling"
+description: Acuity Scheduling ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: acuity-scheduling
+title: Acuity Scheduling
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Coding"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Coding
+price_model: Abonnement
 tags: [scheduling,appointments,booking]
 official_url: "https://acuityscheduling.com/"
-popularity: 0
+popularity: 54
 tier: D
 generated_at: 2026-05-10
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Acuity Scheduling

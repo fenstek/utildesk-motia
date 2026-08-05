@@ -2,10 +2,10 @@
 slug: amazon-lex
 title: Amazon Lex
 category: AI
-price_model: "Nutzungsbasiert"
+price_model: Nutzungsbasiert
 tags: []
 official_url: "https://aws.amazon.com/lex/"
-popularity: 0
+popularity: 40
 ---
 
 # Amazon Lex

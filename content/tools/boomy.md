@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Freemium
 tags: [audio, automation, productivity]
 official_url: "https://boomy.com/"
-popularity: 0
+popularity: 4
 description: Boomy ist ein Audio- und Musikwerkzeug für KI-Musikerzeugung für schnelle Songskizzen, Hintergrundmusik und kreative Audio-Experimente.
 tier: C
 generated_at: 2026-05-11
