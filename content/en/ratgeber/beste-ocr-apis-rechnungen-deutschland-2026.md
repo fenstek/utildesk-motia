@@ -9,6 +9,12 @@ excerpt: "An OCR API saves time only when wrong values cannot silently travel do
 readTime: 9
 coverImage: /images/ratgeber/rechnung-ocr-american-gothic-2026.webp
 secondaryImage: /images/ratgeber/rechnung-ocr-american-gothic-choice.webp
+editorial_reviewed: true
+editorial_reviewed_at: 2026-08-05
+final_human_approval_at: 2026-08-05
+editorial_review_scope: "Sources, factual claims, framing and final copy"
+ai_assistance: true
+ai_disclosure_mode: editorial-passport
 tags:
   - "OCR"
   - "Invoices"

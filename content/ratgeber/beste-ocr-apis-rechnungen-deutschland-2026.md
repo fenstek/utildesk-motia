@@ -9,6 +9,12 @@ excerpt: "Eine OCR-API spart erst dann Zeit, wenn falsche Beträge nicht unbemer
 readTime: 9
 coverImage: /images/ratgeber/rechnung-ocr-american-gothic-2026.webp
 secondaryImage: /images/ratgeber/rechnung-ocr-american-gothic-choice.webp
+editorial_reviewed: true
+editorial_reviewed_at: 2026-08-05
+final_human_approval_at: 2026-08-05
+editorial_review_scope: "Quellen, Tatsachenbehauptungen, Einordnung und Endfassung"
+ai_assistance: true
+ai_disclosure_mode: editorial-passport
 tags:
   - "OCR"
   - "Rechnungen"
