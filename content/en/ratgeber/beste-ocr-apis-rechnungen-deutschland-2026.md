@@ -2,7 +2,7 @@
 slug: "beste-ocr-apis-rechnungen-deutschland-2026"
 title: "Invoice OCR in 2026: The Test Starts Where the Demo Ends"
 date: 2026-05-11
-updated: 2026-07-28
+updated: 2026-08-05
 category: "OCR"
 eyebrow: "Invoice OCR"
 excerpt: "An OCR API saves time only when wrong values cannot silently travel downstream. Here is how teams test recognition, review and export as one invoice operation."

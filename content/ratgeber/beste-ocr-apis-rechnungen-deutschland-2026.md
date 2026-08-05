@@ -2,7 +2,7 @@
 slug: "beste-ocr-apis-rechnungen-deutschland-2026"
 title: "Rechnungs-OCR 2026: Der Test beginnt dort, wo die Demo endet"
 date: 2026-05-11
-updated: 2026-07-28
+updated: 2026-08-05
 category: "OCR"
 eyebrow: "Rechnungs-OCR"
 excerpt: "Eine OCR-API spart erst dann Zeit, wenn falsche Beträge nicht unbemerkt weiterlaufen. So testen Teams Erkennung, Review und Export als einen Rechnungsprozess."
