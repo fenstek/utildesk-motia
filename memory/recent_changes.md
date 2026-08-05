@@ -1918,3 +1918,11 @@ _Last updated: 2026-07-19_
 - Submitted exactly three manual indexing requests: the homepage, Ratgeber hub and Agentic Commerce guide. All three were accepted; do not repeat them during the observation window.
 - Bing AI Performance reported 121 citations across 28 Utildesk pages in the three-month view, confirming that the AI citation surface still uses Utildesk despite the collapse of blue-link search.
 - Bing IndexNow reported 840 submitted URLs in the latest 15 hours and about 15,400 in total. This conflicts with the compact 146-URL recovery strategy; future recovery-window IndexNow signals should be restricted to changed Ratgeber, hubs and explicitly selected focus URLs rather than full tool-card batches.
+
+## 2026-08-05 - Personal AI agents Ratgeber release
+
+- Published the new DE/EN guide `meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext` as release order 51 with a reviewed narrative, verified primary/secondary sources, six linked catalog tools and exactly two distinct editorial WebP illustrations.
+- Applied the editorial AI transparency contract in both locales: final human approval, review scope, AI-assistance metadata and the compact visible editorial passport; no image-level label was needed because both illustrations are clearly artistic rather than deceptively realistic.
+- Restored the complete 51/51 Ratgeber issue manifest by adding the two previously omitted published guides plus the new release, preventing the runtime shell from regressing its issue number.
+- Production publication completed through D1, Pages deployment `97db6e8c` and Worker version `77aa3046-a145-4287-8d10-ba9a2ec1bb72`. Live DE/EN detail, home, archive, API, images and compact sitemap checks passed; the new guide is first on all four collection surfaces and both IndexNow endpoints accepted exactly the two canonical article URLs with HTTP `200`.
+- Reconciled the OptiPlex Newsman registry with the live 51-entry manifest and moved the source job `20260731-mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-how_to-4d52ec21` from `done` to `published` so it is no longer offered as a candidate.
