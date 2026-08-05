@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ContentJump from "../../../components/ContentJump.astro";
+import AiImageDisclosure from "../../../components/AiImageDisclosure.astro";
+import EditorialPassport from "../../../components/EditorialPassport.astro";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { marked } from "marked";
@@ -17,6 +19,7 @@ import {
 } from "../../../lib/siteMeta";
 import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../../lib/schema";
 import { addContentHeadingIds, wrapFaqSection } from "../../../lib/contentNavigation";
+import { resolveEditorialTransparency } from "../../../lib/editorialTransparency";
 
 export async function getStaticPaths() {
   const entries = await listRatgeberEntries("en");
@@ -69,6 +72,11 @@ const published = data.date
 const updated = data.updated
   ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(data.updated))
   : "";
+const transparency = resolveEditorialTransparency(data as unknown as Record<string, unknown>, {
+  reviewed: true,
+  aiAssisted: true,
+  reviewedAt: String(data.updated ?? data.date ?? ""),
+});
 const decisionNumber = String(Math.abs(slug.length * 7 + 41) % 999 + 1).padStart(3, "0");
 
 const normalizeMetaLabel = (value: string) =>
@@ -113,7 +121,18 @@ const articleSchema = {
   description,
   datePublished: data.date,
   dateModified: data.updated ?? data.date,
-  image: imageUrls.length ? imageUrls : undefined,
+  image: imageUrls.length
+    ? transparency.coverDisclosure !== "none" && safeCoverImage
+      ? [{
+          "@type": "ImageObject",
+          url: toAbsoluteUrl(safeCoverImage),
+          creditText: transparency.coverDisclosure === "ai-modified" ? "Modified with AI" : "AI-generated depiction",
+          digitalSourceType: transparency.coverDisclosure === "ai-modified"
+            ? "https://cv.iptc.org/newscodes/digitalsourcetype/compositeWithTrainedAlgorithmicMedia"
+            : "https://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+        }, ...imageUrls.slice(1)]
+      : imageUrls
+    : undefined,
   mainEntityOfPage: canonicalUrl,
   inLanguage: SITE_LANGUAGE_EN,
   articleSection: data.category ? String(data.category) : undefined,
@@ -148,7 +167,12 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
 
-  <div class="tool-akte sheet-wrap">
+  <div
+    class="tool-akte sheet-wrap"
+    data-editorial-reviewed={String(transparency.reviewed)}
+    data-ai-assisted={String(transparency.aiAssisted)}
+    data-ai-disclosure={transparency.disclosureMode}
+  >
     <nav class="akte-crumb" aria-label="Breadcrumb">
       <a href="/en/">&#x2190; Directory</a>
       <span class="akte-crumb-sep">/</span>
@@ -174,7 +198,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         {published && <span>· {published}</span>}
         {updated && updated !== published && <span>· updated {updated}</span>}
         {data.readTime && <span>· {data.readTime} min read</span>}
-        <span>· <a href="/en/methodology/">Methodology</a></span>
+        <EditorialPassport locale="en" transparency={transparency} />
       </div>
 
       {(data.category || data.relatedTools?.length || data.tags?.length) && (
@@ -206,6 +230,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         >
           <img src={safeCoverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
         </button>
+        <AiImageDisclosure locale="en" mode={transparency.coverDisclosure} />
       </figure>
     ) : null}
     </div>

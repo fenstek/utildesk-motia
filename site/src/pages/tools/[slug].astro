@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContentJump from "../../components/ContentJump.astro";
+import UnreviewedToolNotice from "../../components/UnreviewedToolNotice.astro";
 import { CATEGORIES } from "../../lib/categories";
 import { listDisplayTools } from "../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
@@ -279,12 +280,7 @@ const schemaDescription = sharedView.description;
   <!-- Article Content -->
   <article class="card article akte-article">
   <div class="article-body akte-article-body">
-    {!isCuratedTool ? (
-      <blockquote class="tool-disclosure">
-        Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und nicht redaktionell geprüft.
-        Für eine kuratierte Einordnung siehe unsere <a href="/ratgeber/">Ratgeber</a>.
-      </blockquote>
-    ) : null}
+    {!isCuratedTool ? <UnreviewedToolNotice locale="de" category={category} tags={tags} /> : null}
 
     {/* Keep the rendered markdown body intact so all template sections remain visible. */}
     <div set:html={sharedView.articleHtml}></div>

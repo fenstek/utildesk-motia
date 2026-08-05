@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../src/layouts/BaseLayout.astro";
 import ContentJump from "../../src/components/ContentJump.astro";
+import UnreviewedToolNotice from "../../src/components/UnreviewedToolNotice.astro";
 import { CATEGORIES } from "../../src/lib/categories";
 import { tagHref } from "../../src/lib/tagRoutes";
 import { buildToolDetailViewModel } from "../../shared/toolDetailViewModel.mjs";
@@ -154,7 +155,7 @@ const priceModel = view.priceModel;
     </div>
 
     <article class="card article akte-article"><div class="article-body akte-article-body">
-      {!view.isCuratedTool && <blockquote class="tool-disclosure">{en ? "This entry was generated automatically from public provider information and has not been editorially reviewed." : "Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und ist nicht redaktionell kuratiert."}</blockquote>}
+      {!view.isCuratedTool && <UnreviewedToolNotice locale={locale} category={view.category} tags={view.tags} />}
       <div set:html={view.articleHtml}></div>
     </div></article>
 

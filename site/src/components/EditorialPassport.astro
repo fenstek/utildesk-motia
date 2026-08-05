@@ -1,0 +1,73 @@
+---
+import type { EditorialTransparency } from "../lib/editorialTransparency";
+
+interface Props {
+  locale?: "de" | "en";
+  transparency: EditorialTransparency;
+  methodologyHref?: string;
+}
+
+const {
+  locale = "de",
+  transparency,
+  methodologyHref = locale === "en" ? "/en/methodology/" : "/methodologie/",
+} = Astro.props;
+const isEnglish = locale === "en";
+const isRequiredNotice = !transparency.reviewed || transparency.disclosureMode === "required-text";
+const reviewDate = transparency.reviewedAt ? new Date(transparency.reviewedAt) : null;
+const formattedDate = reviewDate && Number.isFinite(reviewDate.getTime())
+  ? new Intl.DateTimeFormat(isEnglish ? "en-GB" : "de-DE", { dateStyle: "medium" }).format(reviewDate)
+  : "";
+const defaultScope = isEnglish
+  ? "Sources, factual claims, interpretation and the final version were reviewed and approved by Utildesk Editorial."
+  : "Quellen, Tatsachenbehauptungen, Einordnung und Endfassung wurden von der Utildesk Redaktion geprüft und verantwortet.";
+---
+
+{transparency.disclosureMode !== "none" && (
+  isRequiredNotice ? (
+    <aside class="editorial-transparency-alert" role="note" aria-label={isEnglish ? "AI content disclosure" : "Hinweis zu KI-Inhalten"}>
+      <span class="editorial-transparency-alert-kicker">{isEnglish ? "AI DISCLOSURE" : "KI-HINWEIS"}</span>
+      <strong>{isEnglish ? "AI-generated text · not editorially reviewed" : "KI-generierter Text · nicht redaktionell geprüft"}</strong>
+      <p>
+        {isEnglish
+          ? "This publication informs the public without completed human editorial review. Treat its claims as provisional."
+          : "Diese Veröffentlichung informiert die Öffentlichkeit ohne abgeschlossene menschliche Redaktionsprüfung. Aussagen sind daher als vorläufig zu behandeln."}
+      </p>
+      <a href={methodologyHref}>{isEnglish ? "How Utildesk labels AI-supported content" : "Wie Utildesk KI-unterstützte Inhalte kennzeichnet"} →</a>
+    </aside>
+  ) : (
+    <details class="editorial-passport">
+      <summary>
+        <span class="editorial-passport-check" aria-hidden="true">✓</span>
+        <span>{isEnglish ? "Editorially reviewed" : "Redaktionell geprüft"}</span>
+        <span class="editorial-passport-info" aria-hidden="true">i</span>
+      </summary>
+      <div class="editorial-passport-panel" role="note">
+        <button class="editorial-passport-close" type="button" aria-label={isEnglish ? "Close editorial note" : "Redaktionsvermerk schließen"}>×</button>
+        <p class="editorial-passport-kicker">{isEnglish ? "EDITORIAL NOTE" : "REDAKTIONSVERMERK"}</p>
+        {transparency.aiAssisted ? (
+          <p>
+            {isEnglish
+              ? "AI tools supported this article in research, drafting and/or illustrations."
+              : "KI-Werkzeuge haben diesen Beitrag bei Recherche, Entwurf und/oder Illustrationen unterstützt."}
+          </p>
+        ) : (
+          <p>{isEnglish ? "No generative AI assistance is recorded for this article." : "Für diesen Beitrag ist keine generative KI-Unterstützung vermerkt."}</p>
+        )}
+        <p>{transparency.reviewScope || defaultScope}</p>
+        <div class="editorial-passport-foot">
+          {formattedDate && <span>{isEnglish ? "Reviewed" : "Geprüft"}: <time datetime={transparency.reviewedAt}>{formattedDate}</time></span>}
+          <a href={methodologyHref}>{isEnglish ? "Methodology" : "Methodologie"} →</a>
+        </div>
+      </div>
+    </details>
+  )
+)}
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>(".editorial-passport-close").forEach((button) => {
+    if (button.dataset.bound === "true") return;
+    button.dataset.bound = "true";
+    button.addEventListener("click", () => button.closest("details")?.removeAttribute("open"));
+  });
+</script>

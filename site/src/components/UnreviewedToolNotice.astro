@@ -1,0 +1,28 @@
+---
+interface Props {
+  locale?: "de" | "en";
+  category?: string | null;
+  tags?: string[];
+}
+
+const { locale = "de", category = "", tags = [] } = Astro.props;
+const isEnglish = locale === "en";
+const context = [category, ...tags].join(" ").toLowerCase();
+const isSensitive = /(health|medical|medizin|finance|finanz|legal|recht|security|sicherheit|cyber|therapy|therapie|diagnos)/i.test(context);
+const methodologyHref = isEnglish ? "/en/methodology/" : "/methodologie/";
+---
+
+<aside class:list={["tool-disclosure", "tool-disclosure--compact", isSensitive && "tool-disclosure--sensitive"]} role="note">
+  <span class="tool-disclosure-kicker">{isEnglish ? "AUTOMATIC RECORD" : "AUTOMATISCH ERFASST"}</span>
+  <strong>{isEnglish ? "Editorial review pending" : "Redaktionell noch nicht geprüft"}</strong>
+  <p>
+    {isSensitive
+      ? (isEnglish
+          ? "Provider information has not yet been independently verified. Do not use this entry as medical, legal, financial or security advice."
+          : "Anbieterangaben wurden noch nicht unabhängig verifiziert. Dieser Eintrag ist keine medizinische, rechtliche, finanzielle oder sicherheitsbezogene Beratung.")
+      : (isEnglish
+          ? "This entry was prepared automatically from public provider information. Treat features, pricing and limitations as provisional until editorial review."
+          : "Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen vorbereitet. Funktionen, Preise und Grenzen gelten bis zur redaktionellen Prüfung als vorläufig.")}
+  </p>
+  <a href={methodologyHref}>{isEnglish ? "Review rules" : "Prüfregeln"} →</a>
+</aside>

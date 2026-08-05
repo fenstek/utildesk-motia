@@ -1,4 +1,5 @@
 import { SITE_LANGUAGE, SITE_NAME, SITE_URL, toAbsoluteUrl } from "./siteMeta";
+import { resolveEditorialTransparency } from "./editorialTransparency";
 
 export function stripMarkdown(text: string) {
   return String(text ?? "")
@@ -156,6 +157,11 @@ export function buildRatgeberCatalogItem(entry: {
         }))
         .filter((tool) => tool.title && tool.href)
     : [];
+  const transparency = resolveEditorialTransparency(entry.data, {
+    reviewed: true,
+    aiAssisted: true,
+    reviewedAt: String(entry.data.updated ?? entry.data.date ?? ""),
+  });
 
   return {
     slug,
@@ -175,6 +181,13 @@ export function buildRatgeberCatalogItem(entry: {
     wordCount: getWordCountFromMarkdown(entry.content),
     inLanguage: SITE_LANGUAGE,
     publisher: SITE_NAME,
+    editorialTransparency: {
+      reviewed: transparency.reviewed,
+      reviewedAt: transparency.reviewedAt || null,
+      aiAssisted: transparency.aiAssisted,
+      disclosureMode: transparency.disclosureMode,
+      coverDisclosure: transparency.coverDisclosure,
+    },
   };
 }
 

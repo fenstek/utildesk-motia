@@ -1,0 +1,21 @@
+---
+import type { ImageDisclosureMode } from "../lib/editorialTransparency";
+
+interface Props {
+  locale?: "de" | "en";
+  mode: ImageDisclosureMode;
+}
+
+const { locale = "de", mode } = Astro.props;
+const isEnglish = locale === "en";
+const label = mode === "ai-modified"
+  ? (isEnglish ? "Modified with AI" : "Mit KI bearbeitet")
+  : (isEnglish ? "AI-generated depiction" : "KI-generierte Darstellung");
+---
+
+{mode !== "none" && (
+  <span class="ai-image-disclosure" role="note" aria-label={label}>
+    <img src="/images/ui/eu-ai-label-black.svg" alt="" aria-hidden="true" />
+    <span>{label}</span>
+  </span>
+)}

@@ -229,5 +229,12 @@
 - Production commands permanently reject `--all`; machine endpoints stay fetchable but `noindex`; Google/Bing/focus sitemaps remain compact and long-tail Googlebot staging is not replaced by global noindex.
 - Tool details, tool shells and Ratgeber retain independent KV switches. Roll back only the failing cluster; intentional disabled/tombstone states must never be resurrected from the frozen fallback.
 - R2 enablement is an explicit account-owner/billing decision. It was approved and completed on 2026-07-16; production now uses `TOOL_ASSETS` -> `utildesk-tool-assets` for new or changed illustration bytes. Keep exact hash verification and the Pages/frozen fallback for unchanged historical assets; never bulk-copy or weaken verification merely to finish a release.
+
+## 2026-08-05 - AI-assisted content transparency
+
+- Reviewed Ratgeber use a compact, always-visible editorial passport in the article metadata. Its expandable note discloses AI assistance and states the scope and date of final human review without interrupting the reading flow.
+- AI-generated public-interest text without completed human editorial review must use the prominent `required-text` notice. An explicit `editorial_reviewed: false` can never be hidden by another content flag.
+- Realistic AI-generated or AI-modified images that could be mistaken for authentic receive an on-image plain-language label with the official EU AI symbol. Evidently artistic editorial illustrations are disclosed in the article passport unless a stronger label is required.
+- Ratgeber published or updated from 2026-08-05 onward must explicitly record editorial review, final human approval, review scope, AI assistance and disclosure mode; the build guard blocks incomplete metadata.
 # 2026-07-19 - Runtime tool-image live verification
 - The tool runtime deliberately rewrites a Markdown source image such as `/images/tools/<slug>-editorial.webp` to a content-addressed `/tool-assets/<sha>/<file>.webp` R2 URL in live HTML. For runtime releases, validate the rendered editorial figure and its R2 response, not a literal static source path in production HTML. The legacy static batch guard remains useful for source and alternatives, but its image-path comparison is not a release blocker for D1/R2 content.
