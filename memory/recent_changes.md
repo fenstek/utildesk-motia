@@ -1,5 +1,13 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-05 - AI video Ratgeber archive rewrite and silent-cinema artwork
+
+- Reworked the paired DE/EN article `ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly` under its existing slug and archive position; the new story follows the Tuesday-to-Friday handoff from source material to approved export.
+- Fact-checked the current product framing against official OpenAI, Google, Runway and Adobe sources, including OpenAI's notice that Sora has not been available since 2026-04-26.
+- Added the editorial passport metadata in both locales (`editorial_reviewed`, approval date, review scope, `ai_assistance` and `editorial-passport`) so the unreviewed AI banner is not shown.
+- Replaced both illustrations with distinct grayscale silent-cinema scenes: an editing-room production line and a railway-set handoff; final cache-busting WebP assets are stored under `content/images/ratgeber/`.
+- Static editorial, transparency and Astro build checks passed with 1,092 pages; the rendered DE/EN pages contain one cover and one secondary story image, no old artwork paths and no required-text AI banner.
+
 ## 2026-08-05 - Production D1 upsert for invoice workflow Frida illustrations
 
 - Published the paired DE/EN runtime rows for `rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows` to production D1 `utildesk-content-runtime-production` (`259ed703-ba7c-4aba-a269-e167d391eae6`).
