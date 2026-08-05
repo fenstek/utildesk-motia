@@ -19,6 +19,21 @@ export const FOCUS_TOOL_SLUGS = [
   "openclaw",
   "openai-codex",
   "langchain",
+  // Small proof set: manually edited cards that should be evaluated by Google.
+  "anthropic-api",
+  "browser-use",
+  "claude-tag",
+  "figjam",
+  "google-jules",
+  "gradio",
+  "hermes-agent",
+  "litellm",
+  "microsoft-agent-framework",
+  "obsidian",
+  "openart-director",
+  "roam-research",
+  "servicenow",
+  "streamlit",
 ];
 
 const focusRank = new Map(FOCUS_TOOL_SLUGS.map((slug, index) => [slug, index]));
