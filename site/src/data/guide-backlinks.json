@@ -233,6 +233,11 @@
     ],
     "chatgpt": [
       {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Metas persönlicher KI-Agent kennt dein Ziel. Aber wessen Interessen verfolgt er?",
+        "excerpt": "Mark Zuckerberg will persönliche KI-Agenten für Milliarden Menschen bauen. Doch ein Helfer, der Termine, Beziehungen und Finanzen versteht, braucht genau den Kontext, mit dem Meta schon heute Empfehlungen und Werbung personalisiert."
+      },
+      {
         "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
         "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
         "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
@@ -290,6 +295,11 @@
     ],
     "perplexity": [
       {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Metas persönlicher KI-Agent kennt dein Ziel. Aber wessen Interessen verfolgt er?",
+        "excerpt": "Mark Zuckerberg will persönliche KI-Agenten für Milliarden Menschen bauen. Doch ein Helfer, der Termine, Beziehungen und Finanzen versteht, braucht genau den Kontext, mit dem Meta schon heute Empfehlungen und Werbung personalisiert."
+      },
+      {
         "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
         "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
         "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
@@ -321,6 +331,11 @@
       }
     ],
     "gemini": [
+      {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Metas persönlicher KI-Agent kennt dein Ziel. Aber wessen Interessen verfolgt er?",
+        "excerpt": "Mark Zuckerberg will persönliche KI-Agenten für Milliarden Menschen bauen. Doch ein Helfer, der Termine, Beziehungen und Finanzen versteht, braucht genau den Kontext, mit dem Meta schon heute Empfehlungen und Werbung personalisiert."
+      },
       {
         "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
         "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
@@ -384,6 +399,11 @@
     ],
     "microsoft-copilot": [
       {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Metas persönlicher KI-Agent kennt dein Ziel. Aber wessen Interessen verfolgt er?",
+        "excerpt": "Mark Zuckerberg will persönliche KI-Agenten für Milliarden Menschen bauen. Doch ein Helfer, der Termine, Beziehungen und Finanzen versteht, braucht genau den Kontext, mit dem Meta schon heute Empfehlungen und Werbung personalisiert."
+      },
+      {
         "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
         "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
         "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
@@ -405,6 +425,11 @@
       }
     ],
     "claude": [
+      {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Metas persönlicher KI-Agent kennt dein Ziel. Aber wessen Interessen verfolgt er?",
+        "excerpt": "Mark Zuckerberg will persönliche KI-Agenten für Milliarden Menschen bauen. Doch ein Helfer, der Termine, Beziehungen und Finanzen versteht, braucht genau den Kontext, mit dem Meta schon heute Empfehlungen und Werbung personalisiert."
+      },
       {
         "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
         "title": "Agentic Traffic: Warum Websites echte KI-Agenten von Scraping und Spoofing unterscheiden müssen",
@@ -1475,6 +1500,13 @@
         "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
         "title": "Warum Google neue Tool-Kataloge ignoriert: Was ein technischer SEO-Check nicht löst",
         "excerpt": "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
+      }
+    ],
+    "meta-ai": [
+      {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Metas persönlicher KI-Agent kennt dein Ziel. Aber wessen Interessen verfolgt er?",
+        "excerpt": "Mark Zuckerberg will persönliche KI-Agenten für Milliarden Menschen bauen. Doch ein Helfer, der Termine, Beziehungen und Finanzen versteht, braucht genau den Kontext, mit dem Meta schon heute Empfehlungen und Werbung personalisiert."
       }
     ]
   },
@@ -1712,6 +1744,11 @@
     ],
     "chatgpt": [
       {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Meta's personal AI agent knows your goal. But whose interests does it serve?",
+        "excerpt": "Mark Zuckerberg wants to build personal AI agents for billions of people. Yet a helper that understands schedules, relationships and finances needs the same context Meta already uses to personalize recommendations and advertising."
+      },
+      {
         "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
         "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
         "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
@@ -1769,6 +1806,11 @@
     ],
     "perplexity": [
       {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Meta's personal AI agent knows your goal. But whose interests does it serve?",
+        "excerpt": "Mark Zuckerberg wants to build personal AI agents for billions of people. Yet a helper that understands schedules, relationships and finances needs the same context Meta already uses to personalize recommendations and advertising."
+      },
+      {
         "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
         "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
         "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
@@ -1800,6 +1842,11 @@
       }
     ],
     "gemini": [
+      {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Meta's personal AI agent knows your goal. But whose interests does it serve?",
+        "excerpt": "Mark Zuckerberg wants to build personal AI agents for billions of people. Yet a helper that understands schedules, relationships and finances needs the same context Meta already uses to personalize recommendations and advertising."
+      },
       {
         "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
         "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
@@ -1863,6 +1910,11 @@
     ],
     "microsoft-copilot": [
       {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Meta's personal AI agent knows your goal. But whose interests does it serve?",
+        "excerpt": "Mark Zuckerberg wants to build personal AI agents for billions of people. Yet a helper that understands schedules, relationships and finances needs the same context Meta already uses to personalize recommendations and advertising."
+      },
+      {
         "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
         "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
         "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
@@ -1884,6 +1936,11 @@
       }
     ],
     "claude": [
+      {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Meta's personal AI agent knows your goal. But whose interests does it serve?",
+        "excerpt": "Mark Zuckerberg wants to build personal AI agents for billions of people. Yet a helper that understands schedules, relationships and finances needs the same context Meta already uses to personalize recommendations and advertising."
+      },
       {
         "slug": "agentic-traffic-warum-websites-echte-ki-agenten-von-scraping-und-spoofing-unterscheiden-muessen",
         "title": "Agentic Traffic: Why Websites Must Distinguish Real AI Agents from Scraping and Spoofing",
@@ -2954,6 +3011,13 @@
         "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
         "title": "Why Google Ignores New Tool Directories: What a Technical SEO Check Cannot Fix",
         "excerpt": "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."
+      }
+    ],
+    "meta-ai": [
+      {
+        "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
+        "title": "Meta's personal AI agent knows your goal. But whose interests does it serve?",
+        "excerpt": "Mark Zuckerberg wants to build personal AI agents for billions of people. Yet a helper that understands schedules, relationships and finances needs the same context Meta already uses to personalize recommendations and advertising."
       }
     ]
   }
