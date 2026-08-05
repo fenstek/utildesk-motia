@@ -126,7 +126,9 @@ const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.
       <header class="ratgeber-article-header">
         <div class="ratgeber-article-meta">
           <span>{eyebrow}</span><span aria-hidden="true">·</span><time datetime={updatedAt}>{dateLabel}</time><span aria-hidden="true">·</span><span>{readTime} {isEnglish ? "min read" : "Min. Lesezeit"}</span>
-          <EditorialPassport locale={locale} transparency={transparency} />
+          {(!transparency.reviewed || transparency.disclosureMode === "required-text") && (
+            <EditorialPassport locale={locale} transparency={transparency} />
+          )}
         </div>
         <h1>{title}</h1>
         <p class="ratgeber-article-lead">{excerpt}</p>
@@ -153,6 +155,10 @@ const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.
         </div>
 
         <aside class="ratgeber-sidebar" aria-label={isEnglish ? "Guide details" : "Ratgeberdetails"}>
+          {transparency.reviewed && transparency.disclosureMode === "editorial-passport" && (
+            <EditorialPassport locale={locale} transparency={transparency} />
+          )}
+
           <ContentJump headings={headings} label={isEnglish ? "On this page" : "Auf dieser Seite"} />
           {sidebarPoints.length > 0 && (
             <section class="ratgeber-sidebar-card">

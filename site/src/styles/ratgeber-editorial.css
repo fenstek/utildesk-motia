@@ -898,6 +898,39 @@ html[data-design="decision"] .sheet-sidecar {
   align-self: start;
 }
 
+/* The reviewed marker belongs to the article utilities, not the headline. */
+html[data-design="decision"] .sheet-sidecar > .editorial-passport,
+html[data-design="decision"] .ratgeber-sidebar > .editorial-passport {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+html[data-design="decision"] .sheet-sidecar > .editorial-passport > summary,
+html[data-design="decision"] .ratgeber-sidebar > .editorial-passport > summary {
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 12px;
+  border-color: #bbb5a5;
+  background: #f7f7ed;
+}
+
+html[data-design="decision"] .sheet-sidecar > .editorial-passport .editorial-passport-info,
+html[data-design="decision"] .ratgeber-sidebar > .editorial-passport .editorial-passport-info {
+  margin-left: auto;
+}
+
+html[data-design="decision"] .sheet-sidecar > .editorial-passport .editorial-passport-panel,
+html[data-design="decision"] .ratgeber-sidebar > .editorial-passport .editorial-passport-panel {
+  position: static;
+  width: 100%;
+  margin-top: 6px;
+  border-color: #bbb5a5;
+  border-top-color: #315f16;
+  box-shadow: none;
+}
+
 html[data-design="decision"] .sheet-sidecar .sheet-summary,
 html[data-design="decision"] .sheet-editorial-note,
 html[data-design="decision"] .sheet-dossier,
