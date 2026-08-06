@@ -7965,23 +7965,24 @@ html[data-design="decision"] .akte-article-body .inline-provider-link p::first-l
 
 /* KI-Blatt footer normalization: homepage and interior pages use one exact footer. */
 html[data-design="decision"] .site-footer {
-  background: transparent !important;
+  background: #1a1a18 !important;
   border-top: 0 !important;
 }
 
 html[data-design="decision"] .site-footer .container {
   width: 1376px !important;
   max-width: calc(100% - 64px) !important;
-  margin: 0 auto 56px !important;
-  padding: 40px 56px 56px !important;
+  margin: 0 auto 18px !important;
+  padding: 18px 0 20px !important;
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) max-content !important;
-  align-items: flex-start !important;
-  gap: 48px !important;
-  background: #0c0c0a !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  align-items: stretch !important;
+  gap: 14px !important;
+  background: transparent !important;
   color: #f6f4ee !important;
   border-left: 0 !important;
   border-right: 0 !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
   font: 12px/1.45 "JetBrains Mono", monospace !important;
 }
@@ -7992,7 +7993,10 @@ html[data-design="decision"] .footer-content {
 
 html[data-design="decision"] .footer-brand {
   display: grid !important;
-  gap: 14px !important;
+  grid-template-columns: max-content minmax(0, 1fr) max-content !important;
+  align-items: center !important;
+  gap: 20px !important;
+  min-width: 0 !important;
   max-width: none !important;
   color: #f6f4ee !important;
   font: inherit !important;
@@ -8015,15 +8019,24 @@ html[data-design="decision"] .footer-links a:focus-visible {
 }
 
 html[data-design="decision"] .footer-note {
-  display: grid !important;
-  gap: 4px !important;
+  display: flex !important;
+  min-width: 0 !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 2px 14px !important;
   color: #b6b1a0 !important;
   font: inherit !important;
 }
 
 html[data-design="decision"] .footer-note span {
-  display: block !important;
-  white-space: nowrap !important;
+  display: inline !important;
+  white-space: normal !important;
+}
+
+html[data-design="decision"] .footer-note span + span::before {
+  content: "·" !important;
+  margin-right: 14px !important;
+  color: #e0261d !important;
 }
 
 html[data-design="decision"] .footer-copyright {
@@ -8038,8 +8051,8 @@ html[data-design="decision"] .footer-copy {
 html[data-design="decision"] .footer-links {
   display: grid !important;
   grid-template-columns: repeat(4, minmax(9.5rem, 1fr)) !important;
-  width: min(100%, 56rem) !important;
-  justify-self: end !important;
+  width: 100% !important;
+  justify-self: stretch !important;
   align-items: stretch !important;
   gap: 0 !important;
   border-block: 1px solid rgb(246 244 238 / 22%) !important;
@@ -8052,8 +8065,8 @@ html[data-design="decision"] .footer-links .footer-privacy-settings {
   box-sizing: border-box !important;
   display: flex !important;
   min-width: 0 !important;
-  min-height: 48px !important;
-  padding: 10px 14px !important;
+  min-height: 44px !important;
+  padding: 8px 14px !important;
   align-items: center !important;
   justify-content: center !important;
   border-left: 1px solid rgb(246 244 238 / 16%) !important;
@@ -8091,7 +8104,7 @@ html[data-design="decision"] .footer-links .footer-privacy-settings:focus-visibl
 @media (max-width: 1280px) {
   html[data-design="decision"] .site-footer .container {
     grid-template-columns: 1fr !important;
-    gap: 28px !important;
+    gap: 14px !important;
   }
 
   html[data-design="decision"] .footer-links {
@@ -11011,22 +11024,31 @@ html[data-design="decision"] .rg-head .inv-head-deck {
   html[data-design="decision"] .site-footer .container {
     width: calc(100% - 20px) !important;
     max-width: calc(100% - 20px) !important;
-    margin: 0 auto 24px !important;
-    padding: 28px 18px calc(34px + env(safe-area-inset-bottom)) !important;
+    margin: 0 auto 10px !important;
+    padding: 18px 18px calc(18px + env(safe-area-inset-bottom)) !important;
     grid-template-columns: 1fr !important;
     justify-items: center !important;
-    gap: 24px !important;
+    gap: 18px !important;
+    background: transparent !important;
+    border-radius: 0 !important;
     text-align: center !important;
   }
 
   html[data-design="decision"] .footer-brand {
     width: min(100%, 32rem) !important;
+    grid-template-columns: 1fr !important;
     justify-items: center !important;
+    gap: 7px !important;
     text-align: center !important;
   }
 
   html[data-design="decision"] .footer-note {
+    justify-content: center !important;
     justify-items: center !important;
+  }
+
+  html[data-design="decision"] .footer-note span + span::before {
+    content: none !important;
   }
 
   html[data-design="decision"] .footer-note span,
