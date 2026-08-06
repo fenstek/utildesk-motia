@@ -7964,6 +7964,10 @@ html[data-design="decision"] .akte-article-body .inline-provider-link p::first-l
 }
 
 /* KI-Blatt footer normalization: homepage and interior pages use one exact footer. */
+html[data-design="decision"]:has(.ds-template) .ds-stage {
+  padding-bottom: 20px !important;
+}
+
 html[data-design="decision"] .site-footer {
   background: #1a1a18 !important;
   border-top: 0 !important;
@@ -7972,12 +7976,12 @@ html[data-design="decision"] .site-footer {
 html[data-design="decision"] .site-footer .container {
   width: 1376px !important;
   max-width: calc(100% - 64px) !important;
-  margin: 0 auto 18px !important;
-  padding: 18px 0 20px !important;
+  margin: 0 auto !important;
+  padding: 8px 0 12px !important;
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) !important;
   align-items: stretch !important;
-  gap: 14px !important;
+  gap: 10px !important;
   background: transparent !important;
   color: #f6f4ee !important;
   border-left: 0 !important;
@@ -7992,6 +7996,7 @@ html[data-design="decision"] .footer-content {
 }
 
 html[data-design="decision"] .footer-brand {
+  order: 2 !important;
   display: grid !important;
   grid-template-columns: max-content minmax(0, 1fr) max-content !important;
   align-items: center !important;
@@ -8049,6 +8054,7 @@ html[data-design="decision"] .footer-copy {
 }
 
 html[data-design="decision"] .footer-links {
+  order: 1 !important;
   display: grid !important;
   grid-template-columns: repeat(4, minmax(9.5rem, 1fr)) !important;
   width: 100% !important;
@@ -8104,7 +8110,7 @@ html[data-design="decision"] .footer-links .footer-privacy-settings:focus-visibl
 @media (max-width: 1280px) {
   html[data-design="decision"] .site-footer .container {
     grid-template-columns: 1fr !important;
-    gap: 14px !important;
+    gap: 10px !important;
   }
 
   html[data-design="decision"] .footer-links {
@@ -10991,6 +10997,10 @@ html[data-design="decision"] .rg-head .inv-head-deck {
 /* Mobile polish: keep utility labels inside their pills and stop the footer
    from hugging the viewport edge on phones. */
 @media (max-width: 760px) {
+  html[data-design="decision"]:has(.ds-template) .ds-stage {
+    padding-bottom: 16px !important;
+  }
+
   html[data-design="decision"] .ki-blatt-header .ds-nav-right {
     align-items: center !important;
     justify-content: flex-end !important;
@@ -11024,11 +11034,11 @@ html[data-design="decision"] .rg-head .inv-head-deck {
   html[data-design="decision"] .site-footer .container {
     width: calc(100% - 20px) !important;
     max-width: calc(100% - 20px) !important;
-    margin: 0 auto 10px !important;
-    padding: 18px 18px calc(18px + env(safe-area-inset-bottom)) !important;
+    margin: 0 auto !important;
+    padding: 8px 18px calc(12px + env(safe-area-inset-bottom)) !important;
     grid-template-columns: 1fr !important;
     justify-items: center !important;
-    gap: 18px !important;
+    gap: 12px !important;
     background: transparent !important;
     border-radius: 0 !important;
     text-align: center !important;
