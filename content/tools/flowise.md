@@ -2,16 +2,16 @@
 slug: flowise
 title: Flowise
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
-category: "AI Infrastructure"
-price_model: "Open Source, Abonnement"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
+category: AI Infrastructure
+price_model: Open Source, Abonnement
 tags: [ai-agents, llm-workflows, low-code, orchestration]
 official_url: "https://flowiseai.com/"
-description: "Flowise ist eine visuelle Open-Source-Plattform für LLM-Workflows und Agenten, deren produktiver Einsatz Modellkosten, Zugriffsschutz, Evaluation und belastbaren Betrieb erfordert."
-popularity: 0
+description: Flowise ist eine visuelle Open-Source-Plattform für LLM-Workflows und Agenten, deren produktiver Einsatz Modellkosten, Zugriffsschutz, Evaluation und belastbaren Betrieb erfordert.
+popularity: 29
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

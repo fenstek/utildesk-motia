@@ -1,21 +1,21 @@
 ---
-description: "H2O AutoML ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "h2o-automl"
-title: "H2O AutoML"
+description: H2O AutoML ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: h2o-automl
+title: H2O AutoML
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Infrastructure"
-price_model: "Open Source"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Infrastructure
+price_model: Open Source
 tags: [automl,machine-learning,data,automation]
 official_url: "https://h2o.ai/platform/h2o-automl/"
 created_at: 2026-05-14
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
-updated_at: "2026-07-17"
+popularity: 14
+tier: C
+generated_at: 2026-05-15
+updated_at: 2026-07-17
 ---
 
 # H2O AutoML

@@ -2,10 +2,10 @@
 slug: dall-e
 title: DALL·E
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-31-story-card-refresh-next20"
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-next20
 category: Design
 price_model: Usage-based
 tags: ["ai", "design", "image", "creative", "visual"]
@@ -15,8 +15,8 @@ tier: D
 generated_at: 2026-05-28
 created_at: 2026-02-03
 updated_at: 2026-07-31
-popularity: 0
-description: "OpenAI-Modell für textbasierte Bildgenerierung, visuelle Entwürfe und API-gestützte Bildproduktion mit menschlicher Qualitäts- und Rechteprüfung."
+popularity: 40
+description: OpenAI-Modell für textbasierte Bildgenerierung, visuelle Entwürfe und API-gestützte Bildproduktion mit menschlicher Qualitäts- und Rechteprüfung.
 ---
 # DALL·E
 

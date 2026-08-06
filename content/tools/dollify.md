@@ -2,18 +2,18 @@
 slug: dollify
 title: Dollify.AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-full-tool-card-editorial"
-category: "AI Image"
-price_model: "Usage-based"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-full-tool-card-editorial
+category: AI Image
+price_model: Usage-based
 tags: ["image-generation", "video-generation", "creative-tools"]
 official_url: "https://dollify.ai/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
-description: "Dollify.AI bündelt mehrere Bild- und Videomodelle in einer Webstudie und rechnet Generierungen über nicht verfallende Credits statt über ein Abonnement ab."
+popularity: 35
+tier: C
+generated_at: 2026-05-15
+description: Dollify.AI bündelt mehrere Bild- und Videomodelle in einer Webstudie und rechnet Generierungen über nicht verfallende Credits statt über ein Abonnement ab.
 updated_at: 2026-07-14
 ---
 # Dollify.AI

@@ -2,19 +2,19 @@
 slug: kodex
 title: Kodex
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-editorial-100"
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-editorial-100
 category: Developer Tools
 price_model: Freemium
 tags: [code-editor, ios, developer-tools, productivity]
 official_url: "https://www.kodex.app/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-18"
+popularity: 2
+tier: D
+generated_at: 2026-05-18
 updated_at: 2026-07-17
-description: "Kodex ist ein Werkzeug für developer tools, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+description: Kodex ist ein Werkzeug für developer tools, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # Kodex
 

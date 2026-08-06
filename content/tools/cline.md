@@ -1,20 +1,20 @@
 ---
-description: "Cline ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "cline"
-title: "Cline"
+description: Cline ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: cline
+title: Cline
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-editorial_verdict: "caution"
-category: "Entwickler-Tools"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+editorial_verdict: caution
+category: Entwickler-Tools
+price_model: Freemium
 tags: [ai, coding, developer-tools, agents]
 official_url: "https://cline.bot/"
-popularity: 0
+popularity: 48
 tier: B
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 generated_at: 2026-05-31
 ---
 

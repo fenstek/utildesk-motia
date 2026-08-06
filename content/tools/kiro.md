@@ -1,20 +1,20 @@
 ---
-slug: "kiro"
-title: "Kiro"
-category: "Entwickler-Tools"
-price_model: "Freemium"
+slug: kiro
+title: Kiro
+category: Entwickler-Tools
+price_model: Freemium
 tags: [coding, agentic-ide, specs, automation, developer-tools]
 official_url: "https://kiro.dev/"
 tier: D
 generated_at: 2026-07-19
-popularity: 0
-description: "Agentische Entwicklungsumgebung mit Specs, Steering, Hooks und MCP-Anbindung, die Planung und Umsetzung verbindet, aber klare Berechtigungen und konsequentes Code-Review benötigt."
+popularity: 3
+description: Agentische Entwicklungsumgebung mit Specs, Steering, Hooks und MCP-Anbindung, die Planung und Umsetzung verbindet, aber klare Berechtigungen und konsequentes Code-Review benötigt.
 updated_at: 2026-07-19
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
 ---
 
 # Kiro

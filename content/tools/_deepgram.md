@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://deepgram.com/"
-popularity: 78
+popularity: 88
 ---
 
 # Deepgram

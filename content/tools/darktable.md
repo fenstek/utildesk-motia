@@ -1,19 +1,19 @@
 ---
 slug: darktable
 title: Darktable
-description: "Lokaler Open-Source-Workflow für RAW-Entwicklung, Bildverwaltung und kontrollierten Export mit nicht-destruktiver Bearbeitung, XMP-Sidecars und Styles."
+description: Lokaler Open-Source-Workflow für RAW-Entwicklung, Bildverwaltung und kontrollierten Export mit nicht-destruktiver Bearbeitung, XMP-Sidecars und Styles.
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-full-tool-card-editorial
 category: Design
 price_model: Open Source
 tags: [photo, editing, raw, open-source]
 official_url: "https://www.darktable.org/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 39
+tier: C
+generated_at: 2026-05-15
 updated_at: 2026-07-14
 ---
 # Darktable

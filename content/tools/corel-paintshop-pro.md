@@ -1,20 +1,20 @@
 ---
-description: "Corel PaintShop Pro ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "corel-paintshop-pro"
-title: "Corel PaintShop Pro"
+description: Corel PaintShop Pro ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: corel-paintshop-pro
+title: Corel PaintShop Pro
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Design"
-price_model: "One-time purchase"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Design
+price_model: One-time purchase
 tags: [photo, editing, design, desktop]
 official_url: "https://www.paintshoppro.com/en/products/paintshop-pro/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-11"
-updated_at: "2026-07-17"
+popularity: 43
+tier: C
+generated_at: 2026-05-11
+updated_at: 2026-07-17
 ---
 
 # Corel PaintShop Pro

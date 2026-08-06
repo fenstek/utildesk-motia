@@ -13,7 +13,7 @@ official_url: "https://calendly.com/"
 description: Calendly bündelt Kalenderverfügbarkeit, Buchungsseiten und Routing für planbare Meetings, ersetzt aber weder Kalenderpflege noch CRM-Prozesse.
 updated_at: 2026-07-14
 lastReviewed: 2026-07-14
-popularity: 81
+popularity: 90
 tier: C
 generated_at: 2026-05-15
 ---

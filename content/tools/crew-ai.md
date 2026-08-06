@@ -1,22 +1,22 @@
 ---
-description: "Open-Source-Framework für spezialisierte KI-Agenten, Crews und kontrollierte Flows mit Zustand, Guardrails und Beobachtbarkeit."
-slug: "crew-ai"
-title: "CrewAI"
+description: Open-Source-Framework für spezialisierte KI-Agenten, Crews und kontrollierte Flows mit Zustand, Guardrails und Beobachtbarkeit.
+slug: crew-ai
+title: CrewAI
 editorial_reviewed: true
 editorial_verdict: caution
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-31"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-31-story-card-refresh-20"
-category: "AI Agents"
-price_model: "Open Source"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-20
+category: AI Agents
+price_model: Open Source
 tags: ["automation"]
 official_url: "https://www.crewai.com/"
-popularity: 0
+popularity: 42
 tier: A
-lastReviewed: "2026-07-31"
+lastReviewed: 2026-07-31
 mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen", "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
-updated_at: "2026-07-31"
+updated_at: 2026-07-31
 ---
 # CrewAI
 

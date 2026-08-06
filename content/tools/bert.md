@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [nlp, machine-learning, transformer, developer]
 official_url: "https://research.google/pubs/bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding/"
-popularity: 8
+popularity: 56
 tier: D
 generated_at: 2026-05-11
 ---

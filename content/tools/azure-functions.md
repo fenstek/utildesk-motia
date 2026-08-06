@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [serverless, cloud, developer-tools, api]
 official_url: "https://azure.microsoft.com/en-us/products/functions"
-popularity: 15
+popularity: 59
 tier: D
 generated_at: 2026-05-18
 ---

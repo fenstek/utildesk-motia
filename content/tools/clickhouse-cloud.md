@@ -3,17 +3,17 @@ slug: clickhouse-cloud
 title: ClickHouse Cloud
 editorial_reviewed: true
 editorial_verdict: recommend
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next50
 category: AI Infrastructure
 price_model: Je nach Plan
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://clickhouse.com/cloud"
-description: "ClickHouse Cloud ist ein verwalteter Dienst für schnelle SQL-Analysen großer und laufend eintreffender Datenmengen, nicht für beliebige Transaktionsanwendungen."
+description: ClickHouse Cloud ist ein verwalteter Dienst für schnelle SQL-Analysen großer und laufend eintreffender Datenmengen, nicht für beliebige Transaktionsanwendungen.
 updated_at: 2026-07-31
-popularity: 0
+popularity: 48
 tier: C
 generated_at: 2026-05-15
 ---

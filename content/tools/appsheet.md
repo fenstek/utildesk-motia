@@ -13,7 +13,7 @@ official_url: "https://about.appsheet.com/home/"
 description: No-Code-Plattform von Google für datengetriebene Apps, Formulare und Automatisierungen mit klaren Grenzen bei Governance, Synchronisation und individueller Logik.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 25
+popularity: 0
 tier: C
 generated_at: 2026-05-14
 ---

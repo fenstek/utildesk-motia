@@ -11,7 +11,7 @@ category: AI Image
 price_model: Freemium
 tags: [design, image, collage, marketing]
 official_url: "https://www.befunky.com/"
-popularity: 10
+popularity: 57
 tier: D
 generated_at: 2026-05-11
 ---

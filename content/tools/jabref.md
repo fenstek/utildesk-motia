@@ -2,18 +2,18 @@
 slug: jabref
 title: JabRef
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Research"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Research
+price_model: Open Source
 tags: [reference-management, research, writing]
 official_url: "https://www.jabref.org/"
-popularity: 0
-description: "JabRef ist ein Open-Source-Referenzmanager für BibTeX, LaTeX-nahe Workflows und wissenschaftliches Schreiben."
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 4
+description: JabRef ist ein Open-Source-Referenzmanager für BibTeX, LaTeX-nahe Workflows und wissenschaftliches Schreiben.
+tier: C
+generated_at: 2026-05-12
 ---
 # JabRef
 

@@ -2,19 +2,19 @@
 slug: google-t5
 title: Google T5 (Text-to-Text Transfer Transformer)
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-optiplex-editorial-50"
-category: "AI Infrastructure"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-optiplex-editorial-50
+category: AI Infrastructure
+price_model: Open Source
 tags: [llm, developer-tools, api, education]
 official_url: "https://github.com/google-research/text-to-text-transfer-transformer"
-popularity: 0
-description: "Google T5 ist ein quelloffener Encoder-Decoder-Modellansatz für klar definierte Text-zu-Text-Aufgaben, der eigene Inferenz-, Daten- und Evaluationsarbeit voraussetzt."
+popularity: 18
+description: Google T5 ist ein quelloffener Encoder-Decoder-Modellansatz für klar definierte Text-zu-Text-Aufgaben, der eigene Inferenz-, Daten- und Evaluationsarbeit voraussetzt.
 updated_at: 2026-07-14
-tier: "D"
-generated_at: "2026-05-12"
+tier: D
+generated_at: 2026-05-12
 ---
 # Google T5 (Text-to-Text Transfer Transformer)
 

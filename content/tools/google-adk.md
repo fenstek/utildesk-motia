@@ -2,16 +2,16 @@
 slug: google-adk
 title: Google Agent Development Kit
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
-category: "AI Infrastructure"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
+category: AI Infrastructure
+price_model: Open Source
 tags: [ai-agents, framework, evaluation, orchestration]
 official_url: "https://google.github.io/adk-docs/"
-description: "Google Agent Development Kit ist ein code-first Open-Source-Framework zum Bauen, Evaluieren und Bereitstellen von Agenten; Modelle, Infrastruktur und sichere Tool-Rechte bleiben eigene Entscheidungen."
-popularity: 0
+description: Google Agent Development Kit ist ein code-first Open-Source-Framework zum Bauen, Evaluieren und Bereitstellen von Agenten; Modelle, Infrastruktur und sichere Tool-Rechte bleiben eigene Entscheidungen.
+popularity: 23
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

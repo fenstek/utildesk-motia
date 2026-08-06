@@ -1,20 +1,20 @@
 ---
-description: "Genetec Clearance ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "genetec-clearance"
-title: "Genetec Clearance"
+description: Genetec Clearance ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: genetec-clearance
+title: Genetec Clearance
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Audio & Video"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Audio & Video
+price_model: Abonnement
 tags: [evidence, video, security, collaboration]
 official_url: "https://www.genetec.com/products/operations/clearance"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
-updated_at: "2026-07-17"
+popularity: 27
+tier: C
+generated_at: 2026-05-15
+updated_at: 2026-07-17
 ---
 
 # Genetec Clearance

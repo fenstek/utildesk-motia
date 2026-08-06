@@ -2,18 +2,18 @@
 slug: confluent-platform
 title: Confluent Platform
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-full-tool-card-editorial"
-category: "AI Agents"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-full-tool-card-editorial
+category: AI Agents
 price_model: Plan-based
 tags: [assistant, automation, workflow]
 official_url: "https://www.confluent.io/product/confluent-platform/"
-description: "Selbstverwaltete Kafka-Distribution für belastbares Event-Streaming mit Konnektoren, Schemas, Stream-Processing und klarer Betriebsverantwortung."
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+description: Selbstverwaltete Kafka-Distribution für belastbares Event-Streaming mit Konnektoren, Schemas, Stream-Processing und klarer Betriebsverantwortung.
+popularity: 45
+tier: C
+generated_at: 2026-05-15
 updated_at: 2026-07-14
 ---
 # Confluent Platform

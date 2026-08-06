@@ -12,7 +12,7 @@ category: Audio & Video
 price_model: Freemium
 tags: [ai, audio]
 official_url: "https://podcast.adobe.com/enhance"
-popularity: 52
+popularity: 0
 tier: D
 generated_at: 2026-05-10
 updated_at: 2026-07-17

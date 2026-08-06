@@ -2,18 +2,18 @@
 slug: eagle
 title: Eagle
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-optiplex-editorial-50"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-optiplex-editorial-50
 category: Design
 price_model: One-time purchase
 tags: [design, asset-management, productivity, organization]
 official_url: "https://en.eagle.cool/"
-description: "Eagle ist eine Desktop-Bibliothek für Bilder, Videos, Audio, Fonts und andere Design-Assets mit Tags, Smart Folders, Vorschau und Browser-Sammlung."
-popularity: 0
-tier: "D"
-generated_at: "2026-05-18"
+description: Eagle ist eine Desktop-Bibliothek für Bilder, Videos, Audio, Fonts und andere Design-Assets mit Tags, Smart Folders, Vorschau und Browser-Sammlung.
+popularity: 34
+tier: D
+generated_at: 2026-05-18
 updated_at: 2026-07-14
 ---
 # Eagle

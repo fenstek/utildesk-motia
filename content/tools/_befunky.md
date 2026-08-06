@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://www.befunky.com/"
-popularity: 10
+popularity: 57
 ---
 
 # BeFunky

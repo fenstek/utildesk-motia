@@ -2,16 +2,16 @@
 slug: langflow
 title: Langflow
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
-category: "AI Infrastructure"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
+category: AI Infrastructure
+price_model: Open Source
 tags: [ai-agents, rag, low-code, mcp]
 official_url: "https://www.langflow.org/"
-description: "Langflow ist ein visueller Open-Source-Builder für Agenten- und RAG-Flows, der APIs und MCP-Tools erzeugt, aber Codeausführung, Isolation und Produktionsbetrieb bewusst beim Betreiber lässt."
-popularity: 0
+description: Langflow ist ein visueller Open-Source-Builder für Agenten- und RAG-Flows, der APIs und MCP-Tools erzeugt, aber Codeausführung, Isolation und Produktionsbetrieb bewusst beim Betreiber lässt.
+popularity: 1
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

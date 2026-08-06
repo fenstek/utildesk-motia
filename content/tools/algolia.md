@@ -13,7 +13,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [search, api, developer-tools, commerce]
 official_url: "https://www.algolia.com/"
-popularity: 45
+popularity: 72
 tier: C
 generated_at: 2026-05-14
 ---

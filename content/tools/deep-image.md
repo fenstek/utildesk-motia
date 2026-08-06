@@ -2,19 +2,19 @@
 slug: deep-image
 title: Deep Image
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-full-tool-card-editorial"
-category: "AI Image"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-full-tool-card-editorial
+category: AI Image
 price_model: Subscription, Pay-as-you-go
 tags: [image, photo, upscaling, editing]
 official_url: "https://deep-image.ai/"
-description: "Deep Image verarbeitet und vergrößert Bilder im Web oder per API; Credits, Cloud-Speicherung und Rechteprüfung sind Teil des Produktions-Workflows."
+description: Deep Image verarbeitet und vergrößert Bilder im Web oder per API; Credits, Cloud-Speicherung und Rechteprüfung sind Teil des Produktions-Workflows.
 updated_at: 2026-07-14
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 38
+tier: C
+generated_at: 2026-05-15
 ---
 # Deep Image
 

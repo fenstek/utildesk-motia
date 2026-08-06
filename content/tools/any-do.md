@@ -11,7 +11,7 @@ category: AI Coding
 price_model: Freemium
 tags: [todo,productivity,task-management]
 official_url: "https://www.any.do/"
-popularity: 37
+popularity: 0
 tier: C
 generated_at: 2026-05-10
 updated_at: 2026-07-17

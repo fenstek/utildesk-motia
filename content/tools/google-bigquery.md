@@ -1,18 +1,18 @@
 ---
 slug: google-bigquery
-title: "Google BigQuery"
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+title: Google BigQuery
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Nutzungsbasiert
 official_url: "https://cloud.google.com/bigquery"
 description: "Google BigQuery im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[data-warehouse, analytics, google-cloud]"
-popularity: 0
+tags: [data-warehouse, analytics, google-cloud]
+popularity: 22
 tier: C
 generated_at: 2026-05-15
 ---

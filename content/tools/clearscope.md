@@ -2,20 +2,20 @@
 slug: clearscope
 title: Clearscope
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-clearscope-editorial-rewrite"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-clearscope-editorial-rewrite
 lastReviewed: 2026-07-14
 updated_at: 2026-07-14
-category: "AI Writing"
+category: AI Writing
 price_model: Subscription
 tags: [seo, content, marketing, automation]
 official_url: "https://www.clearscope.io/"
-description: "SEO- und Content-Plattform für SERP-basierte Briefs, Themenabdeckung, redaktionelle Optimierung und die Pflege bestehender Inhalte."
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+description: SEO- und Content-Plattform für SERP-basierte Briefs, Themenabdeckung, redaktionelle Optimierung und die Pflege bestehender Inhalte.
+popularity: 49
+tier: C
+generated_at: 2026-05-15
 ---
 # Clearscope
 

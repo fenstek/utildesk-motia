@@ -12,7 +12,7 @@ category: Automatisierung
 price_model: Nutzungsbasiert
 tags: [browser, agents, automation, developer-tools]
 official_url: "https://www.browserbase.com/"
-popularity: 82
+popularity: 53
 tier: B
 updated_at: 2026-07-17
 generated_at: 2026-05-31

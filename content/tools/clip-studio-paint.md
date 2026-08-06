@@ -1,20 +1,20 @@
 ---
-description: "Clip Studio Paint ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "clip-studio-paint"
-title: "Clip Studio Paint"
+description: Clip Studio Paint ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: clip-studio-paint
+title: Clip Studio Paint
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Audio & Video"
-price_model: "Abonnement, Einmalzahlung"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Audio & Video
+price_model: Abonnement, Einmalzahlung
 tags: [design, painting, illustration, animation]
 official_url: "https://www.clipstudio.net/en/"
-popularity: 0
+popularity: 47
 tier: D
 generated_at: 2026-05-28
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Clip Studio Paint

@@ -2,18 +2,18 @@
 slug: google-bigtable
 title: Google Bigtable
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-optiplex-editorial-50"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-optiplex-editorial-50
 category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [database, cloud, developer-tools, analytics]
 official_url: "https://cloud.google.com/bigtable"
-description: "Verwalteter Key-Value-Speicher für sehr große Datenmengen und niedrige Latenz, dessen Nutzen von einem passenden Row-Key- und Kostenmodell abhängt."
-popularity: 0
-tier: "D"
-generated_at: "2026-05-16"
+description: Verwalteter Key-Value-Speicher für sehr große Datenmengen und niedrige Latenz, dessen Nutzen von einem passenden Row-Key- und Kostenmodell abhängt.
+popularity: 21
+tier: D
+generated_at: 2026-05-16
 updated_at: 2026-07-14
 ---
 # Google Bigtable

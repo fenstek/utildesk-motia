@@ -10,7 +10,7 @@ category: AI Writing
 price_model: usage_based
 tags: ["ai", "writing", "creative", "productivity"]
 official_url: "https://www.ai21.com/"
-popularity: 48
+popularity: 0
 tier: C
 generated_at: 2026-05-14
 description: Developer-Plattform für Jamba-Sprachmodelle und AI21 Maestro, mit API, Playground, Batch-Verarbeitung und privaten Deployment-Optionen.

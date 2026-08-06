@@ -2,18 +2,18 @@
 slug: ionic-framework
 title: Ionic Framework
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-optiplex-editorial-50"
-category: "AI Coding"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-optiplex-editorial-50
+category: AI Coding
 price_model: Open Source
 tags: [developer-tools,mobile,web,open-source]
 official_url: "https://ionicframework.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
-description: "Open-Source-UI-Toolkit für mobile Apps und PWAs, das Web Components mit Angular, React oder Vue und einem nativen Runtime-Bridge-Workflow verbindet."
+popularity: 5
+tier: D
+generated_at: 2026-05-12
+description: Open-Source-UI-Toolkit für mobile Apps und PWAs, das Web Components mit Angular, React oder Vue und einem nativen Runtime-Bridge-Workflow verbindet.
 updated_at: 2026-07-14
 ---
 # Ionic Framework

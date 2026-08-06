@@ -1,20 +1,20 @@
 ---
-description: "Inform 7 ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "inform-7"
-title: "Inform 7"
+description: Inform 7 ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: inform-7
+title: Inform 7
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Agents"
-price_model: "Kostenlos, Open Source"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Agents
+price_model: Kostenlos, Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://ganelson.github.io/inform-website/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
-updated_at: "2026-07-17"
+popularity: 9
+tier: D
+generated_at: 2026-05-12
+updated_at: 2026-07-17
 ---
 
 # Inform 7
