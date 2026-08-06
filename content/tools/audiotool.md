@@ -13,7 +13,7 @@ price_model: Freemium
 tags: [music-production, audio, browser-based]
 official_url: "https://www.audiotool.com/"
 description: Audiotool ist eine browserbasierte DAW für elektronische Musik mit virtuellen Geräten, Samples, Audio- und MIDI-Aufnahme sowie gemeinsamer Projektarbeit.
-popularity: 19
+popularity: 0
 tier: C
 generated_at: 2026-05-14
 ---

@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://cassandra.apache.org/_/index.html"
-popularity: 34
+popularity: 68
 tier: C
 description: Apache Cassandra ist eine verteilte Open-Source-Datenbank für hochverfügbare, schreibintensive Workloads mit planbaren Zugriffsmustern über viele Knoten oder Regionen.
 generated_at: 2026-05-27

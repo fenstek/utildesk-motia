@@ -1,18 +1,18 @@
 ---
 slug: frameforge
 title: FrameForge
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Image"
-price_model: "Je nach Plan"
+category: AI Image
+price_model: Je nach Plan
 official_url: "https://www.storyboardsmarter.com/"
 description: "FrameForge im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[design, video, productivity, automation]"
-popularity: 0
+tags: [design, video, productivity, automation]
+popularity: 28
 tier: C
 generated_at: 2026-05-15
 ---

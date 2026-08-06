@@ -1,20 +1,20 @@
 ---
-slug: "comfyui"
-title: "ComfyUI"
-category: "Design"
-price_model: "Freemium"
+slug: comfyui
+title: ComfyUI
+category: Design
+price_model: Freemium
 tags: [generative-ai, image, workflow, nodes, open-source]
 official_url: "https://www.comfy.org/"
 tier: D
 generated_at: 2026-07-19
-popularity: 0
-description: "Node-basierte Oberfläche und Inference Engine für reproduzierbare generative Medien-Workflows, deren Modelle, Erweiterungen und Rechenressourcen bewusst betrieben werden müssen."
+popularity: 46
+description: Node-basierte Oberfläche und Inference Engine für reproduzierbare generative Medien-Workflows, deren Modelle, Erweiterungen und Rechenressourcen bewusst betrieben werden müssen.
 updated_at: 2026-07-19
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
 ---
 
 # ComfyUI

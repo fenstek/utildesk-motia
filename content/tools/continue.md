@@ -1,20 +1,20 @@
 ---
-description: "Continue ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "continue"
-title: "Continue"
+description: Continue ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: continue
+title: Continue
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Entwickler-Tools"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Entwickler-Tools
 price_model: "tags: [ai, coding, developer, assistant]"
 tags: [ai, coding, developer, assistant]
 official_url: "https://www.continue.dev/"
-popularity: 0
+popularity: 44
 tier: C
 generated_at: 2026-05-28
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Continue

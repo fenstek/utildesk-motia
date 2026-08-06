@@ -6,15 +6,15 @@ editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-50
-category: "Audio & Video"
-price_model: "Je nach Plan"
+category: Audio & Video
+price_model: Je nach Plan
 tags: [video,workflow]
 official_url: "https://invideo.io/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 6
+tier: C
+generated_at: 2026-05-12
 updated_at: 2026-07-31
-description: "InVideo beschleunigt Skript, Storyboard und Rohschnitt kurzer Videos, deren Aussagen, Medienrechte und Markenwirkung redaktionell geprüft werden müssen."
+description: InVideo beschleunigt Skript, Storyboard und Rohschnitt kurzer Videos, deren Aussagen, Medienrechte und Markenwirkung redaktionell geprüft werden müssen.
 ---
 # InVideo
 

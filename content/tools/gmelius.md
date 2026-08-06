@@ -1,18 +1,18 @@
 ---
 slug: gmelius
 title: Gmelius
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Agents"
+category: AI Agents
 price_model: Abonnement
 official_url: "https://gmelius.com/"
 description: "Gmelius im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[productivity, automation, workflow, crm]"
-popularity: 0
+tags: [productivity, automation, workflow, crm]
+popularity: 25
 tier: C
 generated_at: 2026-05-15
 ---

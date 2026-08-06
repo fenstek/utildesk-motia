@@ -11,7 +11,7 @@ category: Video
 price_model: Plan-based
 tags: [video, marketing, ai-video]
 official_url: "https://biteable.com/"
-popularity: 7
+popularity: 55
 tier: D
 generated_at: 2026-05-11
 updated_at: 2026-07-31

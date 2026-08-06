@@ -1,18 +1,18 @@
 ---
 slug: google-palm
-title: "Google PaLM"
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+title: Google PaLM
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Coding"
-price_model: "Je nach Plan"
+category: AI Coding
+price_model: Je nach Plan
 official_url: "https://blog.google/innovation-and-ai/products/google-palm-2-ai-large-language-model/"
 description: "Google PaLM im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[automation, productivity, developer-tools]"
-popularity: 0
+tags: [automation, productivity, developer-tools]
+popularity: 20
 tier: C
 generated_at: 2026-05-15
 ---

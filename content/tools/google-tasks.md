@@ -6,14 +6,14 @@ editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-50
-category: "AI Agents"
+category: AI Agents
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://workspace.google.com/products/tasks/"
-popularity: 0
-description: "Google Tasks ist eine schlanke persönliche Aufgabenliste mit Kalendernähe, aber kein Ersatz für gemeinsame Projekt- und Abhängigkeitsplanung."
-tier: "C"
-generated_at: "2026-05-18"
+popularity: 18
+description: Google Tasks ist eine schlanke persönliche Aufgabenliste mit Kalendernähe, aber kein Ersatz für gemeinsame Projekt- und Abhängigkeitsplanung.
+tier: C
+generated_at: 2026-05-18
 updated_at: 2026-07-31
 ---
 # Google Tasks

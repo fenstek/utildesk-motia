@@ -11,7 +11,7 @@ price_model: Nutzungsbasiert
 tags: [data-warehouse, analytics, aws]
 official_url: "https://aws.amazon.com/redshift/"
 description: Verwaltetes Cloud-Data-Warehouse für SQL-Analysen, BI und Abfragen über strukturierte Daten und ausgewählte Data-Lake-Quellen.
-popularity: 39
+popularity: 0
 tier: C
 generated_at: 2026-05-14
 updated_at: 2026-07-13

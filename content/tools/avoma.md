@@ -11,7 +11,7 @@ category: AI Audio
 price_model: Abonnement
 tags: [meetings, sales, transcription]
 official_url: "https://www.avoma.com/"
-popularity: 17
+popularity: 0
 tier: C
 generated_at: 2026-05-10
 updated_at: 2026-07-17

@@ -2,19 +2,19 @@
 slug: fujitsu-a64fx
 title: Fujitsu A64FX
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
+category: AI Infrastructure
 price_model: Individuelles Angebot
 official_url: "https://global.fujitsu/en-global/capabilities/computer-platform"
-description: "Arm-basierter HPC-Prozessor mit SVE und integriertem HBM2 für speicherintensive wissenschaftliche Berechnungen und große Cluster."
+description: Arm-basierter HPC-Prozessor mit SVE und integriertem HBM2 für speicherintensive wissenschaftliche Berechnungen und große Cluster.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 28
+tier: C
+generated_at: 2026-05-15
 ---
 # Fujitsu A64FX
 

@@ -2,20 +2,20 @@
 slug: character-ai
 title: Character AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-optiplex-editorial-50"
-category: "AI Chatbots"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-optiplex-editorial-50
+category: AI Chatbots
+price_model: Freemium
 tags: ["chatbot"]
 official_url: "https://character.ai/"
 affiliate_url: "https://character.ai/"
 tier: D
 generated_at: 2026-05-11
 created_at: 2026-02-03
-popularity: 0
-description: "Plattform für interaktive KI-Charaktere, Rollenspiele und kreative Dialoge mit klaren Grenzen bei Fakten, Datenschutz und professioneller Nutzung."
+popularity: 51
+description: Plattform für interaktive KI-Charaktere, Rollenspiele und kreative Dialoge mit klaren Grenzen bei Fakten, Datenschutz und professioneller Nutzung.
 updated_at: 2026-07-14
 ---
 # Character AI

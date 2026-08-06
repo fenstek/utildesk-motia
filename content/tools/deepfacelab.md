@@ -2,17 +2,17 @@
 slug: deepfacelab
 title: DeepFaceLab
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-optiplex-editorial-50"
-category: "Audio & Video"
-price_model: "Open Source"
-description: "Lokale GPL-3.0-Software für trainierte Gesichts- und Kopfersetzung in Video-Frames – leistungsfähig, aber archiviert und mit hohem Prüfaufwand."
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-optiplex-editorial-50
+category: Audio & Video
+price_model: Open Source
+description: Lokale GPL-3.0-Software für trainierte Gesichts- und Kopfersetzung in Video-Frames – leistungsfähig, aber archiviert und mit hohem Prüfaufwand.
 official_url: "https://github.com/iperov/DeepFaceLab"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-11"
+popularity: 37
+tier: D
+generated_at: 2026-05-11
 updated_at: 2026-07-14
 tags: [deepfakes, video, open-source]
 ---

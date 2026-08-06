@@ -1,18 +1,18 @@
 ---
 slug: ibm-db2-warehouse
-title: "IBM Db2 Warehouse"
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+title: IBM Db2 Warehouse
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Infrastructure"
-price_model: "Individuelles Angebot"
+category: AI Infrastructure
+price_model: Individuelles Angebot
 official_url: "https://www.ibm.com/products/db2-warehouse"
 description: "IBM Db2 Warehouse im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[data-warehouse, analytics, ibm]"
-popularity: 0
+tags: [data-warehouse, analytics, ibm]
+popularity: 11
 tier: C
 generated_at: 2026-05-15
 ---

@@ -2,18 +2,18 @@
 slug: fl-studio
 title: FL Studio
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Audio & Video"
-price_model: "Je nach Plan"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Audio & Video
+price_model: Je nach Plan
 tags: [audio, workflow]
 official_url: "https://www.image-line.com/"
-popularity: 0
-description: "FL Studio ist ein Audio- und Musikwerkzeug für DAW für Beatmaking, elektronische Musik, Recording und komplette Musikproduktion."
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 30
+description: FL Studio ist ein Audio- und Musikwerkzeug für DAW für Beatmaking, elektronische Musik, Recording und komplette Musikproduktion.
+tier: C
+generated_at: 2026-05-12
 ---
 # FL Studio
 

@@ -2,18 +2,18 @@
 slug: inciteful
 title: Inciteful
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Research"
-price_model: "Je nach Plan"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Research
+price_model: Je nach Plan
 tags: [research, citation-analysis, literature-review]
 official_url: "https://incitefulmed.com/academic/"
-popularity: 0
-description: "Inciteful hilft dabei, wissenschaftliche Literatur als Netzwerk aus Zitierungen, ähnlichen Arbeiten und thematischen Nachbarschaften zu erkunden."
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 9
+description: Inciteful hilft dabei, wissenschaftliche Literatur als Netzwerk aus Zitierungen, ähnlichen Arbeiten und thematischen Nachbarschaften zu erkunden.
+tier: C
+generated_at: 2026-05-12
 ---
 # Inciteful
 

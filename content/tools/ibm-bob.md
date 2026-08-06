@@ -2,16 +2,16 @@
 slug: ibm-bob
 title: IBM Bob
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
 category: Entwickler-Tools
 price_model: Freemium
 tags: [ibm, coding-agent, software-development, modernization]
 official_url: "https://bob.ibm.com/"
-description: "Agentischer Entwicklungspartner für Codeanalyse, Änderungen, Shell-Aufgaben und Modernisierung mit Modi, Skills, MCP und kontrollierbaren Werkzeugfreigaben."
-popularity: 0
+description: Agentischer Entwicklungspartner für Codeanalyse, Änderungen, Shell-Aufgaben und Modernisierung mit Modi, Skills, MCP und kontrollierbaren Werkzeugfreigaben.
+popularity: 12
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

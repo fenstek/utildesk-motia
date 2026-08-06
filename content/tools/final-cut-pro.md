@@ -1,20 +1,20 @@
 ---
-description: "Final Cut Pro ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "final-cut-pro"
-title: "Final Cut Pro"
+description: Final Cut Pro ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: final-cut-pro
+title: Final Cut Pro
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Coding"
-price_model: "Einmalzahlung"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Coding
+price_model: Einmalzahlung
 tags: [video-editing, post-production, apple]
 official_url: "https://www.apple.com/final-cut-pro/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
-updated_at: "2026-07-17"
+popularity: 31
+tier: D
+generated_at: 2026-05-12
+updated_at: 2026-07-17
 ---
 
 # Final Cut Pro

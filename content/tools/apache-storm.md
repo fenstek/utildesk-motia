@@ -11,7 +11,7 @@ category: AI Agents
 price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://storm.apache.org/"
-popularity: 28
+popularity: 66
 tier: C
 generated_at: 2026-05-10
 updated_at: 2026-07-17

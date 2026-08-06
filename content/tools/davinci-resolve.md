@@ -1,20 +1,20 @@
 ---
-description: "DaVinci Resolve ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "davinci-resolve"
-title: "DaVinci Resolve"
+description: DaVinci Resolve ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: davinci-resolve
+title: DaVinci Resolve
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Coding"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Coding
+price_model: Freemium
 tags: [video-editing,color-grading,post-production]
 official_url: "https://www.blackmagicdesign.com/products/davinciresolve"
-popularity: 0
+popularity: 39
 tier: D
 generated_at: 2026-05-28
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # DaVinci Resolve

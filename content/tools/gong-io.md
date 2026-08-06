@@ -1,20 +1,20 @@
 ---
-description: "Gong.io ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "gong-io"
-title: "Gong.io"
+description: Gong.io ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: gong-io
+title: Gong.io
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Chatbots"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Chatbots
+price_model: Abonnement
 tags: [sales,conversation-intelligence,analytics,ai]
 official_url: "https://www.gong.io/"
-popularity: 0
+popularity: 24
 tier: C
 generated_at: 2026-05-12
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Gong.io

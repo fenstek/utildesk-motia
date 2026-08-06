@@ -6,14 +6,14 @@ editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
 editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-50
-category: "AI Agents"
+category: AI Agents
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://www.inklestudios.com/ink/"
-popularity: 0
-description: "Ink by Inkle modelliert verzweigte interaktive Erzählungen mit Zuständen und Variablen für Spiele, Schulungen und narrative Prototypen."
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 8
+description: Ink by Inkle modelliert verzweigte interaktive Erzählungen mit Zuständen und Variablen für Spiele, Schulungen und narrative Prototypen.
+tier: C
+generated_at: 2026-05-12
 updated_at: 2026-07-31
 ---
 # Ink by Inkle

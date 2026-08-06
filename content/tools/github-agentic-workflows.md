@@ -2,16 +2,16 @@
 slug: github-agentic-workflows
 title: GitHub Agentic Workflows
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
 category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [github, actions, coding-agents, automation]
 official_url: "https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows"
-description: "GitHub-Automatisierung, die natürlichsprachliche Aufgaben als gehärtete Actions-Workflows mit begrenzten Rechten und kontrollierten Ausgaben ausführt."
-popularity: 0
+description: GitHub-Automatisierung, die natürlichsprachliche Aufgaben als gehärtete Actions-Workflows mit begrenzten Rechten und kontrollierten Ausgaben ausführt.
+popularity: 25
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

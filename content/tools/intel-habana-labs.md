@@ -2,18 +2,18 @@
 slug: intel-habana-labs
 title: Intel Habana Labs
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Entwickler-Tools
 price_model: Je nach Plan
 tags: ["developer", "ai", "hardware", "ml", "training"]
 official_url: "https://habana.ai/"
 affiliate_url: "https://habana.ai/"
-tier: "C"
-generated_at: "2026-05-15"
-popularity: 0
+tier: C
+generated_at: 2026-05-15
+popularity: 7
 description: Intel-Gaudi-Beschleuniger und Software-Stack für KI-Training und Inferenz in professioneller Infrastruktur.
 ---
 # Intel Habana Labs

@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["data", "analytics", "automation"]
 official_url: "http://www.c3.ai/"
 created_at: 2026-02-15
-popularity: 2
+popularity: 52
 tier: C
 generated_at: 2026-05-11
 updated_at: 2026-07-31

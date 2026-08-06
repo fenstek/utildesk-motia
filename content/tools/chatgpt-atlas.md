@@ -1,20 +1,20 @@
 ---
-description: "ChatGPT Atlas ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "chatgpt-atlas"
-title: "ChatGPT Atlas"
+description: ChatGPT Atlas ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: chatgpt-atlas
+title: ChatGPT Atlas
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
 editorial_verdict: caution
-category: "Produktivität"
-price_model: "Freemium"
+category: Produktivität
+price_model: Freemium
 tags: [ai, browser, assistant, research]
 official_url: "https://openai.com/index/introducing-chatgpt-atlas/"
-popularity: 0
+popularity: 50
 tier: B
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 generated_at: 2026-05-31
 ---
 

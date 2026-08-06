@@ -2,19 +2,19 @@
 slug: google-scholar
 title: Google Scholar
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-optiplex-editorial-50"
-category: "AI Research"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-optiplex-editorial-50
+category: AI Research
 price_model: Free
 official_url: "https://scholar.google.com/"
-description: "Kostenlose Suchmaschine für wissenschaftliche Literatur mit Zitationsverfolgung, Alerts, Bibliothek und Links zu verfügbaren Volltexten."
+description: Kostenlose Suchmaschine für wissenschaftliche Literatur mit Zitationsverfolgung, Alerts, Bibliothek und Links zu verfügbaren Volltexten.
 updated_at: 2026-07-14
 tags: [research, academic-search, citations]
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
+popularity: 19
+tier: D
+generated_at: 2026-05-12
 ---
 # Google Scholar
 
