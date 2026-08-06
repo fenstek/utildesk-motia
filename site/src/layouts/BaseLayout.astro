@@ -636,7 +636,7 @@ const analyticsConsentLabels = locale === "en"
 
           </div>
 
-          <div class="footer-links">
+          <nav class="footer-links" aria-label={locale === "en" ? "Footer navigation" : "Navigation im Seitenfuß"}>
 
             <a href={toolsHref}>{decisionNavTools}</a>
 
@@ -645,6 +645,8 @@ const analyticsConsentLabels = locale === "en"
             <a href={categoryHref}>{ui.footerCategories}</a>
 
             <a href={methodologyHref}>{ui.footerMethodology}</a>
+
+            <a href={feedXmlHref}>Feed</a>
 
             <a href={privacyHref} rel="nofollow">{decisionFooterPrivacy}</a>
 
@@ -656,9 +658,7 @@ const analyticsConsentLabels = locale === "en"
               </button>
             )}
 
-            <a href={feedXmlHref}>Feed</a>
-
-          </div>
+          </nav>
 
         </div>
 

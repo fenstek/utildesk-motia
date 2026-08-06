@@ -1905,8 +1905,7 @@ main.container {
   padding: 0;
   background: transparent;
   color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+  text-decoration: none;
 }
 
 .footer-privacy-settings:hover,
@@ -8038,25 +8037,66 @@ html[data-design="decision"] .footer-copy {
 
 html[data-design="decision"] .footer-links {
   display: grid !important;
-  grid-template-columns: repeat(7, max-content) !important;
-  justify-content: flex-end !important;
-  align-items: start !important;
-  gap: 14px 22px !important;
-  text-align: right !important;
+  grid-template-columns: repeat(4, minmax(9.5rem, 1fr)) !important;
+  width: min(100%, 56rem) !important;
+  justify-self: end !important;
+  align-items: stretch !important;
+  gap: 0 !important;
+  border-block: 1px solid rgb(246 244 238 / 22%) !important;
+  text-align: center !important;
   font: inherit !important;
 }
 
-html[data-design="decision"] .footer-links a {
+html[data-design="decision"] .footer-links a,
+html[data-design="decision"] .footer-links .footer-privacy-settings {
+  box-sizing: border-box !important;
+  display: flex !important;
+  min-width: 0 !important;
+  min-height: 48px !important;
+  padding: 10px 14px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-left: 1px solid rgb(246 244 238 / 16%) !important;
+  background: transparent !important;
   color: #f6f4ee !important;
   font: inherit !important;
-  white-space: nowrap !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  text-wrap: balance !important;
+}
+
+html[data-design="decision"] .footer-links > :nth-child(4n + 1) {
+  border-left: 0 !important;
+}
+
+html[data-design="decision"] .footer-links > :nth-child(n + 5) {
+  border-top: 1px solid rgb(246 244 238 / 16%) !important;
+}
+
+html[data-design="decision"] .footer-links a:hover,
+html[data-design="decision"] .footer-links a:focus-visible,
+html[data-design="decision"] .footer-links .footer-privacy-settings:hover,
+html[data-design="decision"] .footer-links .footer-privacy-settings:focus-visible {
+  background: rgb(246 244 238 / 7%) !important;
+  color: #e0261d !important;
+}
+
+html[data-design="decision"] .footer-links a:focus-visible,
+html[data-design="decision"] .footer-links .footer-privacy-settings:focus-visible {
+  outline: 2px solid #e0261d !important;
+  outline-offset: -3px !important;
 }
 
 @media (max-width: 1280px) {
+  html[data-design="decision"] .site-footer .container {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
   html[data-design="decision"] .footer-links {
-    grid-auto-flow: column !important;
-    grid-template-columns: repeat(2, max-content) !important;
-    grid-template-rows: repeat(4, auto) !important;
+    width: 100% !important;
+    justify-self: stretch !important;
   }
 }
 
@@ -10997,19 +11037,34 @@ html[data-design="decision"] .rg-head .inv-head-deck {
 
   html[data-design="decision"] .footer-links {
     width: min(100%, 32rem) !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 10px 14px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    justify-self: center !important;
+    align-items: stretch !important;
+    gap: 0 !important;
     text-align: center !important;
   }
 
-  html[data-design="decision"] .footer-links a {
-    display: inline-flex !important;
+  html[data-design="decision"] .footer-links a,
+  html[data-design="decision"] .footer-links .footer-privacy-settings {
+    display: flex !important;
+    min-height: 52px !important;
+    padding: 10px 8px !important;
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
+  }
+
+  html[data-design="decision"] .footer-links > :nth-child(4n + 1) {
+    border-left: 1px solid rgb(246 244 238 / 16%) !important;
+  }
+
+  html[data-design="decision"] .footer-links > :nth-child(2n + 1) {
+    border-left: 0 !important;
+  }
+
+  html[data-design="decision"] .footer-links > :nth-child(n + 3) {
+    border-top: 1px solid rgb(246 244 238 / 16%) !important;
   }
 }
 
@@ -11018,6 +11073,19 @@ html[data-design="decision"] .rg-head .inv-head-deck {
   html[data-design="decision"] .ki-blatt-header .ds-nav-right button {
     height: 36px !important;
     min-height: 36px !important;
+  }
+
+  html[data-design="decision"] .footer-links {
+    grid-template-columns: 1fr !important;
+  }
+
+  html[data-design="decision"] .footer-links > a,
+  html[data-design="decision"] .footer-links > .footer-privacy-settings {
+    border-left: 0 !important;
+  }
+
+  html[data-design="decision"] .footer-links > :nth-child(n + 2) {
+    border-top: 1px solid rgb(246 244 238 / 16%) !important;
   }
 }
 
