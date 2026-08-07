@@ -12,7 +12,7 @@ official_url: "https://scholar.google.com/"
 description: Kostenlose Suchmaschine für wissenschaftliche Literatur mit Zitationsverfolgung, Alerts, Bibliothek und Links zu verfügbaren Volltexten.
 updated_at: 2026-07-14
 tags: [research, academic-search, citations]
-popularity: 19
+popularity: 0
 tier: D
 generated_at: 2026-05-12
 ---

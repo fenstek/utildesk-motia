@@ -1,20 +1,20 @@
 ---
-description: "Microsoft Azure Face API ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "microsoft-azure-face-api"
-title: "Microsoft Azure Face API"
+description: Microsoft Azure Face API ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: microsoft-azure-face-api
+title: Microsoft Azure Face API
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Entwickler-Tools"
-price_model: "Nutzungsbasiert"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Entwickler-Tools
+price_model: Nutzungsbasiert
 tags: [ai,api,computer-vision,cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/face/overview-identity"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-16"
-updated_at: "2026-07-17"
+popularity: 5
+tier: C
+generated_at: 2026-05-16
+updated_at: 2026-07-17
 ---
 
 # Microsoft Azure Face API

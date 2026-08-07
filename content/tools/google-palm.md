@@ -12,7 +12,7 @@ official_url: "https://blog.google/innovation-and-ai/products/google-palm-2-ai-l
 description: "Google PaLM im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [automation, productivity, developer-tools]
-popularity: 20
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

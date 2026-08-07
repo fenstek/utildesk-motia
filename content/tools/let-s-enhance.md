@@ -1,18 +1,18 @@
 ---
 slug: let-s-enhance
-title: "Let’s Enhance"
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+title: Let’s Enhance
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Image"
+category: AI Image
 price_model: Freemium
 official_url: "https://letsenhance.io/"
 description: "Let’s Enhance im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"design\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"]"
-popularity: 0
+tags: [\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"image\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"design\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"]
+popularity: 13
 tier: C
 generated_at: 2026-05-12
 ---

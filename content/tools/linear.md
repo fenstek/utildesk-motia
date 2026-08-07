@@ -2,19 +2,19 @@
 slug: linear
 title: Linear
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-31-story-card-refresh-next20"
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-next20
 category: Productivity
 price_model: Subscription
 tags: [project-management, developer-tools, planning, productivity]
 official_url: "https://linear.app/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-18"
+popularity: 12
+tier: D
+generated_at: 2026-05-18
 updated_at: 2026-07-31
-description: "Linear verbindet Produktentscheidungen, Issues, Projekte und Release-Fortschritt für Softwareteams; klare Intake- und Abschlussregeln verhindern ein schnelleres Ticketlager."
+description: Linear verbindet Produktentscheidungen, Issues, Projekte und Release-Fortschritt für Softwareteams; klare Intake- und Abschlussregeln verhindern ein schnelleres Ticketlager.
 ---
 # Linear
 

@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Open Source
 tags: [llm, developer-tools, api, education]
 official_url: "https://github.com/google-research/text-to-text-transfer-transformer"
-popularity: 18
+popularity: 31
 description: Google T5 ist ein quelloffener Encoder-Decoder-Modellansatz für klar definierte Text-zu-Text-Aufgaben, der eigene Inferenz-, Daten- und Evaluationsarbeit voraussetzt.
 updated_at: 2026-07-14
 tier: D

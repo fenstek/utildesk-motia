@@ -13,7 +13,7 @@ official_url: "https://www.descript.com/regenerate"
 affiliate_url: "https://www.descript.com/regenerate"
 tier: C
 generated_at: 2026-05-26
-popularity: 37
+popularity: 47
 description: Descript-Sprachfunktion für Voice-Cloning, Sprachkorrektur und textbasiertes Audio-Editing.
 ---
 # Descript Overdub

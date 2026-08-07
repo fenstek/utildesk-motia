@@ -12,7 +12,7 @@ price_model: Freemium
 description: Zugänglicher Videoeditor für mobile und Desktop-Produktion, automatische Untertitel, textbasierten Schnitt und Social-Formate.
 tags: [ai, video, editing]
 official_url: "https://www.capcut.com/"
-popularity: 90
+popularity: 61
 updated_at: 2026-07-31
 tier: C
 generated_at: 2026-05-27

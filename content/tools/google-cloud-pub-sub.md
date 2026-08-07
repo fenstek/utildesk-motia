@@ -11,7 +11,7 @@ category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [data,messaging,cloud,developer-tools]
 official_url: "https://cloud.google.com/pubsub"
-popularity: 21
+popularity: 33
 tier: C
 generated_at: 2026-05-12
 updated_at: 2026-07-17

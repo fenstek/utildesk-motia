@@ -1,18 +1,18 @@
 ---
 slug: microsoft-azure-computer-vision
-title: "Microsoft Azure Computer Vision"
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+title: Microsoft Azure Computer Vision
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Coding"
+category: AI Coding
 price_model: Freemium
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision"
 description: "Microsoft Azure Computer Vision im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"education\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"automation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"]"
-popularity: 0
+tags: [\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"education\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"automation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"]
+popularity: 5
 tier: C
 generated_at: 2026-05-12
 ---

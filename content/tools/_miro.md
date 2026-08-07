@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://miro.com/"
-popularity: 0
+popularity: 3
 ---
 
 # Miro

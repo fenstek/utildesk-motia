@@ -12,7 +12,7 @@ official_url: "https://cloud.google.com/bigquery"
 description: "Google BigQuery im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [data-warehouse, analytics, google-cloud]
-popularity: 22
+popularity: 34
 tier: C
 generated_at: 2026-05-15
 ---

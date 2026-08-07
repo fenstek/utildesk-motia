@@ -12,7 +12,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://ai.google/"
-popularity: 23
+popularity: 35
 tier: A
 mentionedIn: ["perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 ---

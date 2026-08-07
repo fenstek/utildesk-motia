@@ -14,7 +14,7 @@ price_model: Freemium
 tags: [writing, content, marketing]
 official_url: "https://www.anyword.com/"
 created_at: 2026-02-15
-popularity: 95
+popularity: 96
 tier: C
 generated_at: 2026-05-10
 ---

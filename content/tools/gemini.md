@@ -17,7 +17,7 @@ lastReviewed: 2026-07-31
 mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "chatgpt-claude-gemini", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 created_at: 2026-02-02
 updated_at: 2026-07-31
-popularity: 86
+popularity: 89
 description: Googles multimodaler KI-Assistent für Recherche, Schreiben, Analyse und Workspace-nahe Arbeitsabläufe.
 ---
 # Gemini

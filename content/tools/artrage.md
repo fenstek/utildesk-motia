@@ -11,7 +11,7 @@ category: Design
 price_model: Kostenpflichtig, Einmalzahlung
 tags: [design,painting,illustration,desktop]
 official_url: "https://www.artrage.com/"
-popularity: 63
+popularity: 71
 tier: C
 generated_at: 2026-05-10
 updated_at: 2026-07-17

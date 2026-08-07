@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [research, curation, knowledge-management, collaboration]
 official_url: "https://www.are.na/"
-popularity: 64
+popularity: 72
 tier: D
 generated_at: 2026-05-18
 lastReviewed: 2026-07-13

@@ -11,7 +11,7 @@ category: AI Image
 price_model: Freemium
 tags: [presentations, design, ai]
 official_url: "https://www.beautiful.ai/"
-popularity: 92
+popularity: 65
 tier: C
 generated_at: 2026-05-11
 description: Beautiful.ai verwandelt eine klare Gliederung in konsistente Präsentationsfolien; Inhalt, Zahlen und Entscheidungslogik müssen Teams weiterhin selbst prüfen.

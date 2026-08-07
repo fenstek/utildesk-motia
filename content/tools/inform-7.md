@@ -11,7 +11,7 @@ category: AI Agents
 price_model: Kostenlos, Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://ganelson.github.io/inform-website/"
-popularity: 9
+popularity: 22
 tier: D
 generated_at: 2026-05-12
 updated_at: 2026-07-17

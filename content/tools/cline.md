@@ -12,7 +12,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [ai, coding, developer-tools, agents]
 official_url: "https://cline.bot/"
-popularity: 48
+popularity: 56
 tier: B
 updated_at: 2026-07-17
 generated_at: 2026-05-31

@@ -11,7 +11,7 @@ price_model: One-time purchase
 tags: [design, asset-management, productivity, organization]
 official_url: "https://en.eagle.cool/"
 description: Eagle ist eine Desktop-Bibliothek für Bilder, Videos, Audio, Fonts und andere Design-Assets mit Tags, Smart Folders, Vorschau und Browser-Sammlung.
-popularity: 34
+popularity: 44
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-07-14

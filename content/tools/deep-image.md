@@ -12,7 +12,7 @@ tags: [image, photo, upscaling, editing]
 official_url: "https://deep-image.ai/"
 description: Deep Image verarbeitet und vergrößert Bilder im Web oder per API; Credits, Cloud-Speicherung und Rechteprüfung sind Teil des Produktions-Workflows.
 updated_at: 2026-07-14
-popularity: 38
+popularity: 49
 tier: C
 generated_at: 2026-05-15
 ---
