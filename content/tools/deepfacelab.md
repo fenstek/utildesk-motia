@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Open Source
 description: Lokale GPL-3.0-Software für trainierte Gesichts- und Kopfersetzung in Video-Frames – leistungsfähig, aber archiviert und mit hohem Prüfaufwand.
 official_url: "https://github.com/iperov/DeepFaceLab"
-popularity: 37
+popularity: 48
 tier: D
 generated_at: 2026-05-11
 updated_at: 2026-07-14

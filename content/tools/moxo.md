@@ -2,19 +2,19 @@
 slug: moxo
 title: Moxo
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-31
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-07-31-story-card-refresh-next50
 category: Productivity
 price_model: Subscription
 tags: [workflow, collaboration, customer-support, automation]
 official_url: "https://www.moxo.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-16"
+popularity: 2
+tier: D
+generated_at: 2026-05-16
 updated_at: 2026-07-31
-description: "Moxo ist ein Werkzeug für productivity, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+description: Moxo ist ein Werkzeug für productivity, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # Moxo
 

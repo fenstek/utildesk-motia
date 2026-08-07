@@ -12,7 +12,7 @@ description: Browserbasierte Video- und Voiceover-Produktion aus Skripten, Ideen
 tags: ["video", "audio", "content"]
 official_url: "https://fliki.ai/"
 created_at: 2026-02-15
-popularity: 30
+popularity: 0
 tier: D
 generated_at: 2026-05-12
 updated_at: 2026-07-14

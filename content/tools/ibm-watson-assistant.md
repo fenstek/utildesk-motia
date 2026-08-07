@@ -11,7 +11,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, chatbot]
 official_url: "https://www.ibm.com/products/watsonx-orchestrate"
-popularity: 11
+popularity: 24
 tier: C
 generated_at: 2026-05-12
 updated_at: 2026-07-17

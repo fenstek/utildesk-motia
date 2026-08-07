@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: [data, automation, developer-tools, open-source]
 official_url: "https://nifi.apache.org/"
-popularity: 67
+popularity: 74
 description: Apache NiFi ist ein Daten- und Automatisierungswerkzeug für visuelle Datenfluss-Automatisierung für Ingestion, Routing, Transformation und Systemintegration.
 tier: C
 generated_at: 2026-05-10

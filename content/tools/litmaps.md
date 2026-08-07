@@ -1,21 +1,21 @@
 ---
-description: "Litmaps ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "litmaps"
+description: Litmaps ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: litmaps
 search_index: true
-title: "Litmaps"
+title: Litmaps
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Research"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Research
+price_model: Abonnement
 tags: [research, data, writing]
 official_url: "https://www.litmaps.com/"
-popularity: 0
+popularity: 11
 tier: D
 generated_at: 2026-05-18
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # Litmaps

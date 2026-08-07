@@ -11,7 +11,7 @@ price_model: Usage-based
 tags: [analytics, data-warehouse, azure]
 official_url: "https://azure.microsoft.com/en-us/products/synapse-analytics/"
 description: Azure-Arbeitsumgebung für Data Warehouse, Lake-Abfragen, Spark-Verarbeitung und orchestrierte Datenpipelines mit getrennten Kosten- und Betriebsmodellen.
-popularity: 58
+popularity: 0
 tier: C
 generated_at: 2026-05-18
 updated_at: 2026-07-13

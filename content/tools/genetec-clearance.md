@@ -11,7 +11,7 @@ category: Audio & Video
 price_model: Abonnement
 tags: [evidence, video, security, collaboration]
 official_url: "https://www.genetec.com/products/operations/clearance"
-popularity: 27
+popularity: 39
 tier: C
 generated_at: 2026-05-15
 updated_at: 2026-07-17

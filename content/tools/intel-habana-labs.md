@@ -13,7 +13,7 @@ official_url: "https://habana.ai/"
 affiliate_url: "https://habana.ai/"
 tier: C
 generated_at: 2026-05-15
-popularity: 7
+popularity: 20
 description: Intel-Gaudi-Beschleuniger und Software-Stack für KI-Training und Inferenz in professioneller Infrastruktur.
 ---
 # Intel Habana Labs

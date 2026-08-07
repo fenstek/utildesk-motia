@@ -12,7 +12,7 @@ official_url: "https://www.goto.com/meeting"
 description: "GoToMeeting im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [meetings, video, communication, productivity]
-popularity: 16
+popularity: 29
 tier: C
 generated_at: 2026-05-15
 ---

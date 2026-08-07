@@ -13,7 +13,7 @@ category: Expense Management
 price_model: Individuelles Angebot
 tags: [expense-management, travel-management, finance, compliance]
 official_url: "https://www.emburse.com/products/professional"
-popularity: 51
+popularity: 60
 tier: C
 generated_at: 2026-05-15
 ---

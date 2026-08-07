@@ -2,16 +2,16 @@
 slug: mcp-inspector
 title: MCP Inspector
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
-category: "Entwickler-Tools"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
+category: Entwickler-Tools
+price_model: Open Source
 tags: [mcp, developer-tools, testing, debugging]
 official_url: "https://github.com/modelcontextprotocol/inspector"
-description: "MCP Inspector ist ein lokales Open-Source-Werkzeug zum interaktiven und skriptbaren Testen von MCP-Servern; sein Prozess-Proxy gehört niemals ungeschützt in ein fremdes Netz."
-popularity: 0
+description: MCP Inspector ist ein lokales Open-Source-Werkzeug zum interaktiven und skriptbaren Testen von MCP-Servern; sein Prozess-Proxy gehört niemals ungeschützt in ein fremdes Netz.
+popularity: 7
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

@@ -2,19 +2,19 @@
 slug: mailbird
 title: Mailbird
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
-editorial_batch: "2026-07-17-editorial-100"
+editorial_batch: 2026-07-17-editorial-100
 category: AI Infrastructure
 price_model: Plan-based
 tags: [email-productivity,communication,inbox]
 official_url: "https://www.getmailbird.com/"
-popularity: 0
+popularity: 9
 tier: D
 generated_at: 2026-05-28
 updated_at: 2026-07-17
-description: "Mailbird ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+description: Mailbird ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # Mailbird
 

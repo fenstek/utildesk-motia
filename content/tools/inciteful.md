@@ -10,7 +10,7 @@ category: AI Research
 price_model: Je nach Plan
 tags: [research, citation-analysis, literature-review]
 official_url: "https://incitefulmed.com/academic/"
-popularity: 9
+popularity: 23
 description: Inciteful hilft dabei, wissenschaftliche Literatur als Netzwerk aus Zitierungen, ähnlichen Arbeiten und thematischen Nachbarschaften zu erkunden.
 tier: C
 generated_at: 2026-05-12

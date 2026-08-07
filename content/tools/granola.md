@@ -12,7 +12,7 @@ tags: [ai, meeting, notes, assistant]
 official_url: "https://www.granola.ai/"
 description: "KI-Notizbuch für Meetings: Granola verbindet eigene Stichpunkte mit Transkript und Kontext, ohne als Bot am Videoanruf teilzunehmen."
 updated_at: 2026-07-31
-popularity: 84
+popularity: 88
 tier: D
 generated_at: 2026-05-12
 ---

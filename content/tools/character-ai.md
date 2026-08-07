@@ -14,7 +14,7 @@ affiliate_url: "https://character.ai/"
 tier: D
 generated_at: 2026-05-11
 created_at: 2026-02-03
-popularity: 51
+popularity: 59
 description: Plattform für interaktive KI-Charaktere, Rollenspiele und kreative Dialoge mit klaren Grenzen bei Fakten, Datenschutz und professioneller Nutzung.
 updated_at: 2026-07-14
 ---

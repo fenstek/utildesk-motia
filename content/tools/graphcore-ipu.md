@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Plan-based
 tags: ["data", "analytics", "developer-tools", "chatbot"]
 official_url: "https://www.graphcore.ai/products/ipu"
-popularity: 15
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 description: Spezialisierter Beschleuniger fuer Machine-Learning-Training und Inferenz mit IPU-Hardware, Poplar SDK und Profiling-Werkzeugen.

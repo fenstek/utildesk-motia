@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://www.inklestudios.com/ink/"
-popularity: 8
+popularity: 22
 description: Ink by Inkle modelliert verzweigte interaktive Erzählungen mit Zuständen und Variablen für Spiele, Schulungen und narrative Prototypen.
 tier: C
 generated_at: 2026-05-12

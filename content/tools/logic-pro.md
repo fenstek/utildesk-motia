@@ -1,18 +1,18 @@
 ---
 slug: logic-pro
-title: "Logic Pro"
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+title: Logic Pro
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Chatbots"
-price_model: "Auf Anfrage"
+category: AI Chatbots
+price_model: Auf Anfrage
 official_url: "https://logic-users-group.com/"
 description: "Logic Pro im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[assistant, automation]"
-popularity: 0
+tags: [assistant, automation]
+popularity: 10
 tier: C
 generated_at: 2026-05-15
 ---

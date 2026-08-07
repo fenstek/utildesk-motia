@@ -12,7 +12,7 @@ price_model: Freemium
 tags: [assistant, automation]
 official_url: "https://www.bandlab.com/"
 description: Cloudbasierte Musikproduktion für Aufnahmen, Beats, Mehrspurprojekte und Zusammenarbeit im Browser oder auf Mobilgeräten.
-popularity: 58
+popularity: 66
 tier: D
 generated_at: 2026-05-11
 updated_at: 2026-07-31

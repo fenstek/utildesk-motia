@@ -12,7 +12,7 @@ price_model: Usage-based
 description: Inference-Plattform für latenzkritische Sprach-, Text- und Agentenanwendungen mit API, Streaming und Produktionskontrollen.
 tags: ["developer-tools", "api"]
 official_url: "https://groq.com/"
-popularity: 14
+popularity: 28
 tier: C
 generated_at: 2026-05-27
 updated_at: 2026-07-31

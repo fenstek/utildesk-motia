@@ -1,20 +1,20 @@
 ---
-description: "Miro ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "miro"
-title: "Miro"
+description: Miro ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: miro
+title: Miro
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Image"
-price_model: "Je nach Plan"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Image
+price_model: Je nach Plan
 tags: [assistant, automation, productivity, design]
 official_url: "https://miro.com/"
-popularity: 0
-updated_at: "2026-07-17"
-tier: "C"
-generated_at: "2026-05-21"
+popularity: 3
+updated_at: 2026-07-17
+tier: C
+generated_at: 2026-05-21
 ---
 
 # Miro

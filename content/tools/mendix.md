@@ -2,19 +2,19 @@
 slug: mendix
 title: Mendix
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-editorial-100"
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-editorial-100
 category: Productivity
 price_model: Plan-based
 tags: [no-code, automation, developer]
 official_url: "https://www.mendix.com/platform/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
+popularity: 7
+tier: D
+generated_at: 2026-05-12
 updated_at: 2026-07-17
-description: "Mendix ist ein Werkzeug für productivity, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+description: Mendix ist ein Werkzeug für productivity, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # Mendix
 

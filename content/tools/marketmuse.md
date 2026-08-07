@@ -1,18 +1,18 @@
 ---
 slug: marketmuse
 title: MarketMuse
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Writing"
+category: AI Writing
 price_model: Abonnement
 official_url: "https://www.marketmuse.com/"
 description: "MarketMuse im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[assistant, automation, writing, content, marketing]"
-popularity: 0
+tags: [assistant, automation, writing, content, marketing]
+popularity: 8
 tier: C
 generated_at: 2026-05-15
 ---

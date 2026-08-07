@@ -8,7 +8,7 @@ tags: [ai, assistant, slack, workplace, agents, collaboration]
 official_url: "https://www.anthropic.com/news/introducing-claude-tag"
 tier: D
 generated_at: 2026-06-24
-popularity: 50
+popularity: 58
 updated_at: 2026-07-17
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion

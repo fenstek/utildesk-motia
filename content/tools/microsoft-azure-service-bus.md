@@ -1,20 +1,20 @@
 ---
-description: "Microsoft Azure Service Bus ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "microsoft-azure-service-bus"
-title: "Microsoft Azure Service Bus"
+description: Microsoft Azure Service Bus ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: microsoft-azure-service-bus
+title: Microsoft Azure Service Bus
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Entwickler-Tools"
-price_model: "Nutzungsbasiert"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Entwickler-Tools
+price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, automation]
 official_url: "https://azure.microsoft.com/en-us/products/service-bus"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-16"
-updated_at: "2026-07-17"
+popularity: 4
+tier: C
+generated_at: 2026-05-16
+updated_at: 2026-07-17
 ---
 
 # Microsoft Azure Service Bus

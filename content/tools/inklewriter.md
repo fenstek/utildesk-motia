@@ -12,7 +12,7 @@ official_url: "https://www.inklestudios.com/inklewriter/"
 description: "Inklewriter im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [ai, produktivitat, writing]
-popularity: 7
+popularity: 21
 tier: C
 generated_at: 2026-05-15
 ---
