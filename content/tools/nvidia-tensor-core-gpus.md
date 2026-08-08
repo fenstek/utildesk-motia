@@ -2,18 +2,18 @@
 slug: nvidia-tensor-core-gpus
 title: NVIDIA Tensor Core GPUs
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
-category: "AI Coding"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
+category: AI Coding
 price_model: Je nach Plan
 tags: [hardware,gpu,ai-accelerators,developer-tools]
 official_url: "https://www.nvidia.com/en-us/data-center/tensor-cores/"
-description: "NVIDIA Tensor Core GPUs beschleunigen Matrixoperationen für Training und Inferenz, verlangen aber eine passende GPU-Generation, Softwarekette und belastbare Auslastung."
-popularity: 0
-tier: "C"
-generated_at: "2026-05-13"
+description: NVIDIA Tensor Core GPUs beschleunigen Matrixoperationen für Training und Inferenz, verlangen aber eine passende GPU-Generation, Softwarekette und belastbare Auslastung.
+popularity: 31
+tier: C
+generated_at: 2026-05-13
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
 ---

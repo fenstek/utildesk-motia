@@ -1,20 +1,20 @@
 ---
-description: "Surfer SEO ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "surfer-seo"
-title: "Surfer SEO"
+description: Surfer SEO ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: surfer-seo
+title: Surfer SEO
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Writing"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Writing
+price_model: Abonnement
 tags: [seo, marketing, content, analytics]
 official_url: "https://surferseo.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-18"
-updated_at: "2026-07-17"
+popularity: 10
+tier: C
+generated_at: 2026-05-18
+updated_at: 2026-07-17
 ---
 
 # Surfer SEO

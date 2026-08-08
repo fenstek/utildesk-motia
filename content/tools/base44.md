@@ -12,7 +12,7 @@ category: Produktivität
 price_model: Freemium
 tags: [ai-app-builder, no-code, vibe-coding, saas]
 official_url: "https://base44.com/"
-popularity: 66
+popularity: 74
 tier: B
 updated_at: 2026-07-17
 generated_at: 2026-05-31

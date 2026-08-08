@@ -1,22 +1,22 @@
 ---
-description: "SaaS-Automation für schnelle App-Workflows, Datenübergaben und Agenten-Schritte mit menschlicher Freigabe."
-slug: "zapier"
-title: "Zapier"
+description: SaaS-Automation für schnelle App-Workflows, Datenübergaben und Agenten-Schritte mit menschlicher Freigabe.
+slug: zapier
+title: Zapier
 editorial_reviewed: true
 editorial_verdict: recommend
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-31"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-31-story-card-refresh-20"
-category: "AI Agents"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-20
+category: AI Agents
+price_model: Freemium
 tags: [ai, devtools, automation]
 official_url: "https://zapier.com"
 created_at: 2026-02-13
-updated_at: "2026-07-31"
-popularity: 0
+updated_at: 2026-07-31
+popularity: 2
 tier: A
-lastReviewed: "2026-07-31"
+lastReviewed: 2026-07-31
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # Zapier

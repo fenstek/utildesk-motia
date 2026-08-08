@@ -2,16 +2,16 @@
 slug: qwen-code
 title: Qwen Code
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
 category: Entwickler-Tools
 price_model: Open Source
 tags: [ai, coding, cli, developer-tools]
 official_url: "https://github.com/QwenLM/qwen-code"
-description: "Open-Source-Coding-Agent für Terminal, IDE und Automatisierung, dessen Nutzen von Modellwahl, Berechtigungen, Sandbox und konsequenter Codeprüfung abhängt."
-popularity: 0
+description: Open-Source-Coding-Agent für Terminal, IDE und Automatisierung, dessen Nutzen von Modellwahl, Berechtigungen, Sandbox und konsequenter Codeprüfung abhängt.
+popularity: 21
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

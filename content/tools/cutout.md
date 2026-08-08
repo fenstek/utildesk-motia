@@ -11,7 +11,7 @@ category: Design
 price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.cutout.pro/"
-popularity: 91
+popularity: 62
 tier: C
 generated_at: 2026-05-11
 updated_at: 2026-07-17

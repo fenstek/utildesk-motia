@@ -10,7 +10,7 @@ category: Developer Tools
 price_model: Freemium
 tags: [code-editor, ios, developer-tools, productivity]
 official_url: "https://www.kodex.app/"
-popularity: 16
+popularity: 0
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-07-17

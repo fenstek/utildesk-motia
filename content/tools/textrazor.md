@@ -1,20 +1,20 @@
 ---
-description: "TextRazor ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "textrazor"
-title: "TextRazor"
+description: TextRazor ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: textrazor
+title: TextRazor
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Entwickler-Tools"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Entwickler-Tools
+price_model: Freemium
 tags: [nlp, api, text-analysis, developer-tools]
 official_url: "https://www.textrazor.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-25"
-updated_at: "2026-07-17"
+popularity: 7
+tier: C
+generated_at: 2026-05-25
+updated_at: 2026-07-17
 ---
 
 # TextRazor

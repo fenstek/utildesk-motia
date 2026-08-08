@@ -2,20 +2,20 @@
 slug: vsco
 title: VSCO
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-vsco-full-tool-card-editorial"
-category: "AI Image"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-vsco-full-tool-card-editorial
+category: AI Image
 price_model: Freemium
 tags: [photo-editing, photography, creative-tools]
 official_url: "https://www.vsco.co/"
-description: "VSCO verbindet Foto- und Videobearbeitung mit Presets, Recipes und kreativen Veröffentlichungsfunktionen; professionelle Web- und Business-Funktionen hängen von Membership und Plattform ab."
+description: VSCO verbindet Foto- und Videobearbeitung mit Presets, Recipes und kreativen Veröffentlichungsfunktionen; professionelle Web- und Business-Funktionen hängen von Membership und Plattform ab.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 0
-tier: "D"
-generated_at: "2026-05-26"
+popularity: 5
+tier: D
+generated_at: 2026-05-26
 ---
 # VSCO
 

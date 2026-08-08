@@ -5,7 +5,7 @@ category: AI
 price_model: Nutzungsbasiert
 tags: []
 official_url: "https://aws.amazon.com/lex/"
-popularity: 77
+popularity: 0
 ---
 
 # Amazon Lex

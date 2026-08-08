@@ -11,7 +11,7 @@ price_model: Usage-based
 tags: [data, analytics]
 official_url: "https://aws.amazon.com/managed-service-apache-flink/"
 description: Managed Service für Apache Flink verarbeitet Streaming-Daten fortlaufend, ist aber kein günstiger Ersatz für jede Batch- oder SQL-Analytics-Pipeline.
-popularity: 77
+popularity: 0
 tier: C
 generated_at: 2026-05-26
 updated_at: 2026-07-13

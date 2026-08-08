@@ -1,20 +1,20 @@
 ---
-description: "Tailor Brands ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "tailor-brands"
-title: "Tailor Brands"
+description: Tailor Brands ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: tailor-brands
+title: Tailor Brands
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Image"
-price_model: "Abonnement, Je nach Plan"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Image
+price_model: Abonnement, Je nach Plan
 tags: [design, branding, logo, marketing]
 official_url: "https://www.tailorbrands.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-21"
-updated_at: "2026-07-17"
+popularity: 8
+tier: C
+generated_at: 2026-05-21
+updated_at: 2026-07-17
 ---
 
 # Tailor Brands

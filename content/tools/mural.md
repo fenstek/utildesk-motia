@@ -11,7 +11,7 @@ category: AI Image
 price_model: Je nach Plan
 tags: [whiteboard, collaboration, brainstorming]
 official_url: "https://www.mural.co/"
-popularity: 1
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 updated_at: 2026-07-17

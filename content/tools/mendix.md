@@ -10,7 +10,7 @@ category: Productivity
 price_model: Plan-based
 tags: [no-code, automation, developer]
 official_url: "https://www.mendix.com/platform/"
-popularity: 7
+popularity: 0
 tier: D
 generated_at: 2026-05-12
 updated_at: 2026-07-17

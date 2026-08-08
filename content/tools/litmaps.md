@@ -12,7 +12,7 @@ category: AI Research
 price_model: Abonnement
 tags: [research, data, writing]
 official_url: "https://www.litmaps.com/"
-popularity: 11
+popularity: 0
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-07-17

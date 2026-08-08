@@ -12,7 +12,7 @@ official_url: "https://logic-users-group.com/"
 description: "Logic Pro im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [assistant, automation]
-popularity: 10
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

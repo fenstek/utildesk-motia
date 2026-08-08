@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: "tags: [ai, coding, developer, assistant]"
 tags: [ai, coding, developer, assistant]
 official_url: "https://www.continue.dev/"
-popularity: 53
+popularity: 65
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-07-17

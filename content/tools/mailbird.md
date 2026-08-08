@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Plan-based
 tags: [email-productivity,communication,inbox]
 official_url: "https://www.getmailbird.com/"
-popularity: 9
+popularity: 0
 tier: D
 generated_at: 2026-05-28
 updated_at: 2026-07-17

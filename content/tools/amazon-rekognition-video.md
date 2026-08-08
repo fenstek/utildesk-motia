@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Nutzungsbasiert
 tags: [video, workflow]
 official_url: "https://aws.amazon.com/rekognition/video-features/"
-popularity: 76
+popularity: 0
 tier: C
 generated_at: 2026-05-14
 description: Cloud-API von AWS für zeitcodierte Videoanalyse, Labels, Text, Gesichter und Moderation mit S3- und Ereignis-Workflows.

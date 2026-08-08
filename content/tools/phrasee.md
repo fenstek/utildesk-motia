@@ -1,22 +1,22 @@
 ---
-description: "Phrasee ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "phrasee"
-title: "Phrasee"
+description: Phrasee ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: phrasee
+title: Phrasee
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Writing"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Writing
+price_model: Freemium
 tags: ["writing", "marketing"]
 official_url: "'http://www.phraseexpress.com/'"
-affiliate_url: 'http://www.phraseexpress.com/'
-tier: "C"
-generated_at: "2026-05-16"
-created_at: "2026-02-03"
-popularity: 0
-updated_at: "2026-07-17"
+affiliate_url: "http://www.phraseexpress.com/"
+tier: C
+generated_at: 2026-05-16
+created_at: 2026-02-03
+popularity: 25
+updated_at: 2026-07-17
 ---
 
 # Phrasee

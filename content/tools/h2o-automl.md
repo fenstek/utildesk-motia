@@ -12,7 +12,7 @@ price_model: Open Source
 tags: [automl,machine-learning,data,automation]
 official_url: "https://h2o.ai/platform/h2o-automl/"
 created_at: 2026-05-14
-popularity: 27
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 updated_at: 2026-07-17

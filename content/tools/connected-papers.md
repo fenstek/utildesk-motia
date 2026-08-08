@@ -10,7 +10,7 @@ category: AI Research
 price_model: Freemium
 tags: [research, academic-search, citations]
 official_url: "https://www.connectedpapers.com/"
-popularity: 54
+popularity: 66
 tier: C
 generated_at: 2026-05-15
 description: Connected Papers visualisiert wissenschaftliche Literatur als Ähnlichkeitsgraph und hilft, verwandte, frühere und nachfolgende Arbeiten rund um ein Ausgangspaper zu finden.

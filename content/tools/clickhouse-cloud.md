@@ -13,7 +13,7 @@ tags: [data, analytics, cloud, developer-tools]
 official_url: "https://clickhouse.com/cloud"
 description: ClickHouse Cloud ist ein verwalteter Dienst für schnelle SQL-Analysen großer und laufend eintreffender Datenmengen, nicht für beliebige Transaktionsanwendungen.
 updated_at: 2026-07-31
-popularity: 57
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

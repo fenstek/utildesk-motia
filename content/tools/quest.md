@@ -2,18 +2,18 @@
 slug: quest
 title: Quest
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
+price_model: Open Source
 tags: [developer-tools,gaming,open-source,writing]
 official_url: "https://github.com/textadventures/quest"
-popularity: 0
-description: "Quest ist ein Open-Source-Werkzeug für Textadventures, interaktive Fiction und einfache spielbare Geschichten."
-tier: "C"
-generated_at: "2026-05-13"
+popularity: 22
+description: Quest ist ein Open-Source-Werkzeug für Textadventures, interaktive Fiction und einfache spielbare Geschichten.
+tier: C
+generated_at: 2026-05-13
 ---
 # Quest
 

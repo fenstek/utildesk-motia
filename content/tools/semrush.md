@@ -1,20 +1,20 @@
 ---
-description: "SEMrush ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "semrush"
-title: "SEMrush"
+description: SEMrush ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: semrush
+title: SEMrush
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Agents"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Agents
+price_model: Abonnement
 tags: [marketing, seo, automation, analytics]
 official_url: "https://www.semrush.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
-updated_at: "2026-07-17"
+popularity: 15
+tier: C
+generated_at: 2026-05-14
+updated_at: 2026-07-17
 ---
 
 # SEMrush

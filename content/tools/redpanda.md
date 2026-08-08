@@ -1,20 +1,20 @@
 ---
-description: "Redpanda ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "redpanda"
-title: "Redpanda"
+description: Redpanda ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: redpanda
+title: Redpanda
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Coding"
-price_model: "Je nach Plan"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Coding
+price_model: Je nach Plan
 tags: [data, streaming, cloud, developer-tools]
 official_url: "https://www.redpanda.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-13"
-updated_at: "2026-07-17"
+popularity: 20
+tier: C
+generated_at: 2026-05-13
+updated_at: 2026-07-17
 ---
 
 # Redpanda

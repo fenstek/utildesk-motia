@@ -11,7 +11,7 @@ category: AI Image
 price_model: Je nach Plan
 tags: [assistant, automation, productivity, design]
 official_url: "https://miro.com/"
-popularity: 3
+popularity: 0
 updated_at: 2026-07-17
 tier: C
 generated_at: 2026-05-21

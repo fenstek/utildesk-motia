@@ -11,11 +11,11 @@ price_model: Freemium
 tags: [ai,audio]
 official_url: "https://www.respeecher.com/"
 created_at: 2026-02-14
-popularity: 0
+popularity: 17
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-31
-description: "Respeecher erzeugt synthetische Sprachaufnahmen für professionelle Produktionen, bei denen Zustimmung, Rechte und Sprachregie zentral bleiben."
+description: Respeecher erzeugt synthetische Sprachaufnahmen für professionelle Produktionen, bei denen Zustimmung, Rechte und Sprachregie zentral bleiben.
 ---
 # Respeecher
 

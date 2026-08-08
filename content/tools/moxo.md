@@ -10,7 +10,7 @@ category: Productivity
 price_model: Subscription
 tags: [workflow, collaboration, customer-support, automation]
 official_url: "https://www.moxo.com/"
-popularity: 2
+popularity: 0
 tier: D
 generated_at: 2026-05-16
 updated_at: 2026-07-31

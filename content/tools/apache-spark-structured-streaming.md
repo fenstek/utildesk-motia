@@ -10,7 +10,7 @@ category: Developer Tools
 price_model: Open Source
 tags: [data, streaming, batch, etl, open-source]
 official_url: "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html"
-popularity: 74
+popularity: 0
 tier: C
 generated_at: 2026-05-14
 lastReviewed: 2026-07-13

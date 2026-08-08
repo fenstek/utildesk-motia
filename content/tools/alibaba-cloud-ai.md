@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Usage-based
 tags: [machine-learning, cloud, enterprise-ai]
 official_url: "https://www.alibabacloud.com/en/product/machine-learning?_p_lc=1"
-popularity: 78
+popularity: 0
 description: Alibaba Cloud AI combines Platform for AI for machine learning with Model Studio for generative applications, model evaluation, training, and deployment. The right starting point depends on the use case, region, data path, and operating budget.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13

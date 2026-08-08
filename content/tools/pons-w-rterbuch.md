@@ -2,18 +2,18 @@
 slug: pons-w-rterbuch
 title: PONS Wörterbuch
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Writing"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Writing
+price_model: Freemium
 tags: [translation,language,reference,productivity]
 official_url: "https://de.pons.com/%C3%BCbersetzung"
-popularity: 0
-description: "PONS Wörterbuch ist eine Sprachreferenz für Übersetzungen, Bedeutungen, Beispielsätze und alltägliche Wortfragen."
-tier: "C"
-generated_at: "2026-05-13"
+popularity: 88
+description: PONS Wörterbuch ist eine Sprachreferenz für Übersetzungen, Bedeutungen, Beispielsätze und alltägliche Wortfragen.
+tier: C
+generated_at: 2026-05-13
 ---
 # PONS Wörterbuch
 

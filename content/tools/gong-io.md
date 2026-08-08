@@ -11,7 +11,7 @@ category: AI Chatbots
 price_model: Abonnement
 tags: [sales,conversation-intelligence,analytics,ai]
 official_url: "https://www.gong.io/"
-popularity: 36
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 updated_at: 2026-07-17

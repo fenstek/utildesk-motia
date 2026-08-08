@@ -1,20 +1,20 @@
 ---
-slug: "storymapjs"
-title: "StoryMapJS"
+slug: storymapjs
+title: StoryMapJS
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Image"
-price_model: "Kostenlos"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Image
+price_model: Kostenlos
 tags: [storytelling, maps, journalism]
 official_url: "https://storymap.knightlab.com/"
-popularity: 0
-description: "StoryMapJS ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-tier: "C"
-generated_at: "2026-05-17"
-updated_at: "2026-07-17"
+popularity: 10
+description: StoryMapJS ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+tier: C
+generated_at: 2026-05-17
+updated_at: 2026-07-17
 ---
 
 # StoryMapJS

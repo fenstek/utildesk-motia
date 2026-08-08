@@ -12,7 +12,7 @@ official_url: "https://www.ibm.com/products/db2-warehouse"
 description: "IBM Db2 Warehouse im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [data-warehouse, analytics, ibm]
-popularity: 25
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

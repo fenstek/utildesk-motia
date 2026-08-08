@@ -2,19 +2,19 @@
 slug: reply-io
 title: Reply.io
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-editorial-100"
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-editorial-100
 category: Marketing & Vertrieb
 price_model: Subscription
 tags: [sales,email-marketing,outreach,automation]
 official_url: "https://reply.io/sales-engagement-platform/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-18"
+popularity: 18
+tier: D
+generated_at: 2026-05-18
 updated_at: 2026-07-17
-description: "Reply.io ist ein Werkzeug für marketing, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+description: Reply.io ist ein Werkzeug für marketing, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # Reply.io
 

@@ -11,7 +11,7 @@ category: Design
 price_model: One-time purchase
 tags: [photo, editing, design, desktop]
 official_url: "https://www.paintshoppro.com/en/products/paintshop-pro/"
-popularity: 52
+popularity: 0
 tier: C
 generated_at: 2026-05-11
 updated_at: 2026-07-17

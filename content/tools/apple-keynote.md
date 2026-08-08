@@ -11,7 +11,7 @@ category: AI Agents
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://support.apple.com/keynote"
-popularity: 72
+popularity: 81
 tier: C
 generated_at: 2026-05-10
 updated_at: 2026-07-17
