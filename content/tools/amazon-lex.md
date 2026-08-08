@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Nutzungsbasiert
 tags: [chatbot, voice, conversational-ai, aws, customer-support]
 official_url: "https://aws.amazon.com/lex/"
-popularity: 77
+popularity: 0
 tier: D
 generated_at: 2026-05-10
 lastReviewed: 2026-07-13

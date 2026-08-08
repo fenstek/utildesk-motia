@@ -12,7 +12,7 @@ official_url: "https://global.fujitsu/en-global/capabilities/computer-platform"
 description: Arm-basierter HPC-Prozessor mit SVE und integriertem HBM2 für speicherintensive wissenschaftliche Berechnungen und große Cluster.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 40
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

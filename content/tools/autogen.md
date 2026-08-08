@@ -11,7 +11,7 @@ category: AI Infrastructure
 price_model: null
 tags: ["automation"]
 official_url: "https://github.com/microsoft/autogen"
-popularity: 69
+popularity: 78
 tier: D
 generated_at: 2026-05-10
 description: AutoGen ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.

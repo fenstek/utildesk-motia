@@ -10,7 +10,7 @@ category: Productivity
 price_model: Freemium
 tags: [mind-mapping, collaboration, planning, productivity]
 official_url: "https://www.mindmeister.com/"
-popularity: 4
+popularity: 33
 tier: D
 generated_at: 2026-05-16
 updated_at: 2026-07-31

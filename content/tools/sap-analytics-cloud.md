@@ -1,20 +1,20 @@
 ---
-description: "SAP Analytics Cloud ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "sap-analytics-cloud"
-title: "SAP Analytics Cloud"
+description: SAP Analytics Cloud ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: sap-analytics-cloud
+title: SAP Analytics Cloud
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Infrastructure"
-price_model: "Je nach Plan"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Infrastructure
+price_model: Je nach Plan
 tags: ["data", "analytics", "productivity", "automation"]
 official_url: "https://www.sap.com/products/data-cloud/cloud-analytics.html"
-popularity: 0
+popularity: 16
 tier: C
 generated_at: 2026-05-13
-updated_at: "2026-07-17"
+updated_at: 2026-07-17
 ---
 
 # SAP Analytics Cloud

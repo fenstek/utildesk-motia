@@ -1,20 +1,20 @@
 ---
 slug: writerduet
-title: "WriterDuet"
+title: WriterDuet
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-editorial-100"
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-editorial-100
 category: Productivity
 price_model: Freemium
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://www.writerduet.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-06"
+popularity: 2
+tier: D
+generated_at: 2026-05-06
 updated_at: 2026-07-17
-description: "WriterDuet ist ein Werkzeug für productivity, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+description: WriterDuet ist ein Werkzeug für productivity, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # WriterDuet
 

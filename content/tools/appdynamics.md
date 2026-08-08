@@ -13,7 +13,7 @@ category: AI Infrastructure
 price_model: Subscription, Custom Offer
 tags: [monitoring, analytics, observability, enterprise]
 official_url: "https://www.splunk.com/en_us/appdynamics-joins-splunk.html?301=appdynamics"
-popularity: 94
+popularity: 81
 tier: C
 generated_at: 2026-05-14
 ---

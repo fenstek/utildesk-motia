@@ -2,19 +2,19 @@
 slug: mxnet
 title: MXNet
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
-editorial_batch: "2026-07-17-editorial-100"
+editorial_batch: 2026-07-17-editorial-100
 category: AI Infrastructure
 price_model: Open Source
 tags: [machine-learning, developer-tools, open-source]
 official_url: "https://mxnet.apache.org/versions/1.9.1/"
-popularity: 0
+popularity: 33
 tier: D
 generated_at: 2026-05-12
 updated_at: 2026-07-17
-description: "MXNet ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+description: MXNet ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # MXNet
 

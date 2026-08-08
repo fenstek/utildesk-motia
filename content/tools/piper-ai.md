@@ -1,20 +1,20 @@
 ---
-description: "Piper AI ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "piper-ai"
-title: "Piper AI"
+description: Piper AI ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: piper-ai
+title: Piper AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Chatbots"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Chatbots
+price_model: Freemium
 tags: [ai, assistant, automation, crm]
 official_url: "https://www.piperai.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-16"
-updated_at: "2026-07-17"
+popularity: 24
+tier: C
+generated_at: 2026-05-16
+updated_at: 2026-07-17
 ---
 
 # Piper AI

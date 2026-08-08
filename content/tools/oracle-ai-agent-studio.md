@@ -2,16 +2,16 @@
 slug: oracle-ai-agent-studio
 title: Oracle AI Agent Studio
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-19
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-19-full-tool-card-editorial
 category: AI Infrastructure
 price_model: Im Abonnement enthalten
 tags: [oracle, fusion-applications, ai-agents, enterprise-automation]
 official_url: "https://www.oracle.com/ch-de/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/"
-description: "Fusion-native Entwicklungs- und Laufzeitumgebung für Agententeams, Geschäftsdaten, Workflows, Freigaben, Tests und kontrollierte Aktionen."
-popularity: 0
+description: Fusion-native Entwicklungs- und Laufzeitumgebung für Agententeams, Geschäftsdaten, Workflows, Freigaben, Tests und kontrollierte Aktionen.
+popularity: 28
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

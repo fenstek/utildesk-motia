@@ -1,20 +1,20 @@
 ---
-description: "SEMrush Writing Assistant ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "semrush-writing-assistant"
-title: "SEMrush Writing Assistant"
+description: SEMrush Writing Assistant ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: semrush-writing-assistant
+title: SEMrush Writing Assistant
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "Marketing & Vertrieb"
-price_model: "Abonnement"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: Marketing & Vertrieb
+price_model: Abonnement
 tags: [seo, writing, content]
 official_url: "https://www.semrush.com/swa/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
-updated_at: "2026-07-17"
+popularity: 14
+tier: C
+generated_at: 2026-05-17
+updated_at: 2026-07-17
 ---
 
 # SEMrush Writing Assistant

@@ -1,22 +1,22 @@
 ---
-description: "Replika ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "replika"
-title: "Replika"
+description: Replika ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: replika
+title: Replika
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Chatbots"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Chatbots
+price_model: Freemium
 tags: ["chatbot", "design"]
 official_url: "'https://replika.com/'"
-affiliate_url: 'https://replika.com/'
-tier: "C"
-generated_at: "2026-05-13"
-created_at: "2026-02-03"
-popularity: 0
-updated_at: "2026-07-17"
+affiliate_url: "https://replika.com/"
+tier: C
+generated_at: 2026-05-13
+created_at: 2026-02-03
+popularity: 19
+updated_at: 2026-07-17
 ---
 
 # Replika

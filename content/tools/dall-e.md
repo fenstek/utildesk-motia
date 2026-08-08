@@ -15,7 +15,7 @@ tier: D
 generated_at: 2026-05-28
 created_at: 2026-02-03
 updated_at: 2026-07-31
-popularity: 51
+popularity: 0
 description: OpenAI-Modell für textbasierte Bildgenerierung, visuelle Entwürfe und API-gestützte Bildproduktion mit menschlicher Qualitäts- und Rechteprüfung.
 ---
 # DALL·E

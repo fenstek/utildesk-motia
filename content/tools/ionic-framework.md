@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: [developer-tools,mobile,web,open-source]
 official_url: "https://ionicframework.com/"
-popularity: 20
+popularity: 43
 tier: D
 generated_at: 2026-05-12
 description: Open-Source-UI-Toolkit für mobile Apps und PWAs, das Web Components mit Angular, React oder Vue und einem nativen Runtime-Bridge-Workflow verbindet.

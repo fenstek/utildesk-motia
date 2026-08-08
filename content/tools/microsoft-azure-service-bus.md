@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, automation]
 official_url: "https://azure.microsoft.com/en-us/products/service-bus"
-popularity: 4
+popularity: 34
 tier: C
 generated_at: 2026-05-16
 updated_at: 2026-07-17

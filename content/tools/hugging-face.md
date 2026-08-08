@@ -11,7 +11,7 @@ category: AI Infrastructure
 price_model: Freemium
 tags: [ai, machine-learning, model-hub, inference, open-source]
 official_url: "https://huggingface.co/"
-popularity: 87
+popularity: 91
 description: Offener Hub für Modelle, Datensätze und Spaces sowie Bibliotheken und Inferenzdienste; entscheidend sind Evaluation, Lizenz und Betriebsweg.
 updated_at: 2026-07-31
 tier: C

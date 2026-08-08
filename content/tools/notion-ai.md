@@ -1,26 +1,22 @@
 ---
-description: "Notion AI verbindet Workspace-Suche, Agenten, Meeting-Notizen und Textarbeit. Gute Ergebnisse hängen von gepflegten Quellen, Rechten und klarer Abnahme ab."
-slug: "notion-ai"
-title: "Notion AI"
+description: Notion AI verbindet Workspace-Suche, Agenten, Meeting-Notizen und Textarbeit. Gute Ergebnisse hängen von gepflegten Quellen, Rechten und klarer Abnahme ab.
+slug: notion-ai
+title: Notion AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-27"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-27-gsc-recovery-editorial"
-category: "Produktivität"
-price_model: "Abonnement"
-tags:
-  - ai
-  - productivity
-  - knowledge-management
-  - meetings
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-27
+editorial_status: manual_polished
+editorial_batch: 2026-07-27-gsc-recovery-editorial
+category: Produktivität
+price_model: Abonnement
+tags: 
 official_url: "https://www.notion.com/product/ai"
 affiliate_url: "https://www.notion.com/product/ai"
-tier: "C"
-generated_at: "2026-05-21"
-created_at: "2026-02-08"
-updated_at: "2026-07-27"
-popularity: 0
+tier: C
+generated_at: 2026-05-21
+created_at: 2026-02-08
+updated_at: 2026-07-27
+popularity: 32
 ---
 
 # Notion AI

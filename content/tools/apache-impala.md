@@ -11,7 +11,7 @@ category: AI Infrastructure
 price_model: Open Source
 tags: [sql, data, analytics, open-source]
 official_url: "https://impala.apache.org/"
-popularity: 75
+popularity: 0
 tier: C
 generated_at: 2026-05-14
 description: Open-Source-SQL-Engine für interaktive Analysen auf Hadoop-nahen Datenplattformen mit verteilten Abfragen und kontrollierbarem Clusterbetrieb.

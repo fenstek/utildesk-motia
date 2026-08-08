@@ -11,7 +11,7 @@ category: AI Coding
 price_model: Einmalzahlung
 tags: [video-editing, post-production, apple]
 official_url: "https://www.apple.com/final-cut-pro/"
-popularity: 42
+popularity: 0
 tier: D
 generated_at: 2026-05-12
 updated_at: 2026-07-17

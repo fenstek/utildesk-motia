@@ -11,7 +11,7 @@ category: AI Coding
 price_model: Je nach Plan
 tags: [video,machine-learning]
 official_url: "https://www.envision.ai/"
-popularity: 44
+popularity: 58
 tier: C
 generated_at: 2026-05-11
 updated_at: 2026-07-17

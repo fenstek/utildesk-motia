@@ -12,7 +12,7 @@ official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services/comput
 description: "Microsoft Azure Computer Vision im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"education\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"automation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"]
-popularity: 5
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 ---

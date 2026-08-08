@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [ai,api,computer-vision,cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/face/overview-identity"
-popularity: 5
+popularity: 0
 tier: C
 generated_at: 2026-05-16
 updated_at: 2026-07-17

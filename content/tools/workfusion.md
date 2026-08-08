@@ -1,20 +1,20 @@
 ---
 slug: workfusion
-title: "WorkFusion"
+title: WorkFusion
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-editorial-100"
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-editorial-100
 category: AI Infrastructure
 price_model: null
 tags: [assistant, automation]
 official_url: "https://www.workfusion.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-13"
+popularity: 3
+tier: C
+generated_at: 2026-05-13
 updated_at: 2026-07-17
-description: "WorkFusion ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte."
+description: WorkFusion ist ein Werkzeug für ai agents, dessen Nutzen im konkreten Arbeitsablauf und in klaren Zuständigkeiten bewertet werden sollte.
 ---
 # WorkFusion
 

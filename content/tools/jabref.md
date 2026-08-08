@@ -10,7 +10,7 @@ category: AI Research
 price_model: Open Source
 tags: [reference-management, research, writing]
 official_url: "https://www.jabref.org/"
-popularity: 19
+popularity: 0
 description: JabRef ist ein Open-Source-Referenzmanager für BibTeX, LaTeX-nahe Workflows und wissenschaftliches Schreiben.
 tier: C
 generated_at: 2026-05-12
