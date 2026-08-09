@@ -11,7 +11,7 @@ price_model: Je nach Plan
 tags: [hardware,gpu,ai-accelerators,developer-tools]
 official_url: "https://www.nvidia.com/en-us/data-center/tensor-cores/"
 description: NVIDIA Tensor Core GPUs beschleunigen Matrixoperationen für Training und Inferenz, verlangen aber eine passende GPU-Generation, Softwarekette und belastbare Auslastung.
-popularity: 31
+popularity: 27
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-13

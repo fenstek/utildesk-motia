@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Freemium
 tags: [translation,language,reference,productivity]
 official_url: "https://de.pons.com/%C3%BCbersetzung"
-popularity: 88
+popularity: 17
 description: PONS Wörterbuch ist eine Sprachreferenz für Übersetzungen, Bedeutungen, Beispielsätze und alltägliche Wortfragen.
 tier: C
 generated_at: 2026-05-13

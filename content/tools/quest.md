@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: [developer-tools,gaming,open-source,writing]
 official_url: "https://github.com/textadventures/quest"
-popularity: 22
+popularity: 16
 description: Quest ist ein Open-Source-Werkzeug für Textadventures, interaktive Fiction und einfache spielbare Geschichten.
 tier: C
 generated_at: 2026-05-13

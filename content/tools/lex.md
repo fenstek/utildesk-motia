@@ -11,7 +11,7 @@ category: AI Writing
 price_model: Freemium
 tags: [ai, writing, productivity, creative]
 official_url: "https://lex.page/"
-popularity: 38
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 updated_at: 2026-07-17

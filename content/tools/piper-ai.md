@@ -11,7 +11,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, assistant, automation, crm]
 official_url: "https://www.piperai.com/"
-popularity: 24
+popularity: 0
 tier: C
 generated_at: 2026-05-16
 updated_at: 2026-07-17

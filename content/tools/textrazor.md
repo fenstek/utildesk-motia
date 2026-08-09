@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [nlp, api, text-analysis, developer-tools]
 official_url: "https://www.textrazor.com/"
-popularity: 7
+popularity: 0
 tier: C
 generated_at: 2026-05-25
 updated_at: 2026-07-17

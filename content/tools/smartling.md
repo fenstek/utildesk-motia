@@ -11,7 +11,7 @@ category: AI Chatbots
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://www.smartling.com/"
-popularity: 12
+popularity: 0
 tier: C
 generated_at: 2026-05-17
 updated_at: 2026-07-17

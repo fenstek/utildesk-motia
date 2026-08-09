@@ -10,7 +10,7 @@ category: Productivity
 price_model: Freemium
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://www.writerduet.com/"
-popularity: 2
+popularity: 0
 tier: D
 generated_at: 2026-05-06
 updated_at: 2026-07-17

@@ -11,7 +11,7 @@ category: AI Image
 price_model: Abonnement, Je nach Plan
 tags: [design, branding, logo, marketing]
 official_url: "https://www.tailorbrands.com/"
-popularity: 8
+popularity: 0
 tier: C
 generated_at: 2026-05-21
 updated_at: 2026-07-17

@@ -12,7 +12,7 @@ official_url: "https://www.lookout.com/"
 description: "Lookout im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [security, mobile, enterprise, ai]
-popularity: 36
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

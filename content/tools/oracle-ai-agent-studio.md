@@ -11,7 +11,7 @@ price_model: Im Abonnement enthalten
 tags: [oracle, fusion-applications, ai-agents, enterprise-automation]
 official_url: "https://www.oracle.com/ch-de/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/"
 description: Fusion-native Entwicklungs- und Laufzeitumgebung für Agententeams, Geschäftsdaten, Workflows, Freigaben, Tests und kontrollierte Aktionen.
-popularity: 28
+popularity: 22
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

@@ -11,7 +11,7 @@ category: Design
 price_model: Freemium
 tags: [design, illustration, painting, mobile]
 official_url: "https://www.adobe.com/products/fresco.html"
-popularity: 84
+popularity: 71
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-07-31

@@ -11,7 +11,7 @@ price_model: Plan-based
 tags: [assistant, automation, workflow]
 official_url: "https://www.confluent.io/product/confluent-platform/"
 description: Selbstverwaltete Kafka-Distribution für belastbares Event-Streaming mit Konnektoren, Schemas, Stream-Processing und klarer Betriebsverantwortung.
-popularity: 66
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 updated_at: 2026-07-14

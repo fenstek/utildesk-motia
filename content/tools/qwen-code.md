@@ -11,7 +11,7 @@ price_model: Open Source
 tags: [ai, coding, cli, developer-tools]
 official_url: "https://github.com/QwenLM/qwen-code"
 description: Open-Source-Coding-Agent für Terminal, IDE und Automatisierung, dessen Nutzen von Modellwahl, Berechtigungen, Sandbox und konsequenter Codeprüfung abhängt.
-popularity: 21
+popularity: 15
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

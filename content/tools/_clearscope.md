@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://www.clearscope.io/"
-popularity: 68
+popularity: 63
 ---
 
 # Clearscope

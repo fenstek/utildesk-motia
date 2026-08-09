@@ -11,7 +11,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [phone, communication, meetings, customer-support]
 official_url: "https://www.vonage.com/unified-communications/"
-popularity: 6
+popularity: 0
 tier: D
 generated_at: 2026-05-26
 updated_at: 2026-07-17

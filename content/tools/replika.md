@@ -15,7 +15,7 @@ affiliate_url: "https://replika.com/"
 tier: C
 generated_at: 2026-05-13
 created_at: 2026-02-03
-popularity: 19
+popularity: 0
 updated_at: 2026-07-17
 ---
 

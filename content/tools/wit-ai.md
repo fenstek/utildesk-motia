@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Plan-based
 tags: [ai, nlp, api, chatbot]
 official_url: "https://wit.ai/"
-popularity: 4
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-17

@@ -15,7 +15,7 @@ affiliate_url: "http://www.phraseexpress.com/"
 tier: C
 generated_at: 2026-05-16
 created_at: 2026-02-03
-popularity: 25
+popularity: 0
 updated_at: 2026-07-17
 ---
 

@@ -13,7 +13,7 @@ official_url: "https://www.articulate.com/360/"
 description: Articulate 360 bündelt Storyline, Rise, Review und Content Library für die Erstellung, Abstimmung und Ausspielung professioneller E-Learning-Kurse.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 79
+popularity: 0
 tier: C
 generated_at: 2026-05-14
 ---
