@@ -11,7 +11,7 @@ price_model: Nutzungsbasiert
 tags: [database, cloud, developer-tools, analytics]
 official_url: "https://cloud.google.com/bigtable"
 description: Verwalteter Key-Value-Speicher für sehr große Datenmengen und niedrige Latenz, dessen Nutzen von einem passenden Row-Key- und Kostenmodell abhängt.
-popularity: 52
+popularity: 0
 tier: D
 generated_at: 2026-05-16
 updated_at: 2026-07-14

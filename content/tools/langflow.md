@@ -11,7 +11,7 @@ price_model: Open Source
 tags: [ai-agents, rag, low-code, mcp]
 official_url: "https://www.langflow.org/"
 description: Langflow ist ein visueller Open-Source-Builder für Agenten- und RAG-Flows, der APIs und MCP-Tools erzeugt, aber Codeausführung, Isolation und Produktionsbetrieb bewusst beim Betreiber lässt.
-popularity: 40
+popularity: 34
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

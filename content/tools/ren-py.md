@@ -11,7 +11,7 @@ category: AI Agents
 price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://www.renpy.org/"
-popularity: 20
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-17

@@ -11,7 +11,7 @@ category: Marketing & Vertrieb
 price_model: Abonnement
 tags: [seo, writing, content]
 official_url: "https://www.semrush.com/swa/"
-popularity: 14
+popularity: 0
 tier: C
 generated_at: 2026-05-17
 updated_at: 2026-07-17

@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: []
 official_url: "https://surferseo.com/"
-popularity: 10
+popularity: 0
 ---
 
 # Surfer SEO

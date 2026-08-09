@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.sophos.com/en-us/products/endpoint-security"
-popularity: 12
+popularity: 0
 tier: C
 generated_at: 2026-05-17
 updated_at: 2026-07-17

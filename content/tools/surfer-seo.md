@@ -11,7 +11,7 @@ category: AI Writing
 price_model: Abonnement
 tags: [seo, marketing, content, analytics]
 official_url: "https://surferseo.com/"
-popularity: 10
+popularity: 0
 tier: C
 generated_at: 2026-05-18
 updated_at: 2026-07-17

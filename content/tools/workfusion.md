@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: null
 tags: [assistant, automation]
 official_url: "https://www.workfusion.com/"
-popularity: 3
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-17

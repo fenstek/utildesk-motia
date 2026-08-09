@@ -11,7 +11,7 @@ category: AI Coding
 price_model: Freemium
 tags: [data, analytics, coding, developer-tools]
 official_url: "https://scikit-learn.org"
-popularity: 15
+popularity: 11
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-17
