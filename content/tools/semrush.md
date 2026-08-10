@@ -11,7 +11,7 @@ category: AI Agents
 price_model: Abonnement
 tags: [marketing, seo, automation, analytics]
 official_url: "https://www.semrush.com/"
-popularity: 9
+popularity: 8
 tier: C
 generated_at: 2026-05-14
 updated_at: 2026-07-17

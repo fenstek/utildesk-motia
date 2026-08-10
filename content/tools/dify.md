@@ -7,7 +7,7 @@ tags: [llmops, workflow, rag, agents, self-hosted]
 official_url: "https://dify.ai/"
 tier: D
 generated_at: 2026-07-19
-popularity: 55
+popularity: 54
 description: Plattform für Entwicklung und Betrieb von LLM-Anwendungen mit visuellen Workflows, Wissensbasen, Modellanbindung und APIs, deren Qualität und Governance das Team selbst verantwortet.
 updated_at: 2026-07-19
 editorial_reviewed: true
