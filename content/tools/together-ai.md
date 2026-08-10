@@ -11,7 +11,7 @@ category: AI Coding
 price_model: "tags: [\"developer-tools\", \"api\"]"
 tags: ["developer-tools", "api"]
 official_url: "https://www.together.ai"
-popularity: 5
+popularity: 4
 tier: D
 generated_at: 2026-05-25
 updated_at: 2026-07-17

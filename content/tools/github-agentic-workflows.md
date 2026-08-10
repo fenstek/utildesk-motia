@@ -11,7 +11,7 @@ price_model: Nutzungsbasiert
 tags: [github, actions, coding-agents, automation]
 official_url: "https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows"
 description: GitHub-Automatisierung, die natürlichsprachliche Aufgaben als gehärtete Actions-Workflows mit begrenzten Rechten und kontrollierten Ausgaben ausführt.
-popularity: 49
+popularity: 48
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

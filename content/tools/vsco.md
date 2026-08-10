@@ -13,7 +13,7 @@ official_url: "https://www.vsco.co/"
 description: VSCO verbindet Foto- und Videobearbeitung mit Presets, Recipes und kreativen Veröffentlichungsfunktionen; professionelle Web- und Business-Funktionen hängen von Membership und Plattform ab.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 4
+popularity: 0
 tier: D
 generated_at: 2026-05-26
 ---
