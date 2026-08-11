@@ -11,7 +11,7 @@ category: Design
 price_model: Open Source
 tags: [photo, editing, raw, open-source]
 official_url: "https://www.darktable.org/"
-popularity: 56
+popularity: 54
 tier: C
 generated_at: 2026-05-15
 updated_at: 2026-07-14

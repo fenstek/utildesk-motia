@@ -10,7 +10,7 @@ category: AI Image
 price_model: Kostenlos
 tags: [storytelling, maps, journalism]
 official_url: "https://storymap.knightlab.com/"
-popularity: 7
+popularity: 0
 description: StoryMapJS ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
 tier: C
 generated_at: 2026-05-17
