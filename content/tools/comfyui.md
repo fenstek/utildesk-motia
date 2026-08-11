@@ -7,7 +7,7 @@ tags: [generative-ai, image, workflow, nodes, open-source]
 official_url: "https://www.comfy.org/"
 tier: D
 generated_at: 2026-07-19
-popularity: 62
+popularity: 60
 description: Node-basierte Oberfläche und Inference Engine für reproduzierbare generative Medien-Workflows, deren Modelle, Erweiterungen und Rechenressourcen bewusst betrieben werden müssen.
 updated_at: 2026-07-19
 editorial_reviewed: true

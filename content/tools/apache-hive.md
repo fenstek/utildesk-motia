@@ -12,7 +12,7 @@ price_model: Open Source
 tags: [developer-tools,data,cloud]
 official_url: "https://hive.apache.org/"
 description: "Apache Hive bringt SQL auf verteilte Daten: ein praxisnaher Überblick zu HiveQL, Metastore, Batch-ETL, Partitionen, ORC, Betriebskosten und den Grenzen gegenüber Echtzeit- und OLTP-Systemen."
-popularity: 93
+popularity: 92
 tier: C
 generated_at: 2026-05-14
 ---
