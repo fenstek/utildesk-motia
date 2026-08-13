@@ -13,7 +13,7 @@ price_model: Subscription
 tags: [seo, content, marketing, automation]
 official_url: "https://www.clearscope.io/"
 description: SEO- und Content-Plattform für SERP-basierte Briefs, Themenabdeckung, redaktionelle Optimierung und die Pflege bestehender Inhalte.
-popularity: 62
+popularity: 63
 tier: C
 generated_at: 2026-05-15
 ---

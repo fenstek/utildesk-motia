@@ -15,7 +15,7 @@ affiliate_url: "https://wisprflow.ai/r?SSERGEJ1"
 tier: A
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-04-25
-popularity: 3
+popularity: 1
 updated_at: 2026-07-17
 ---
 

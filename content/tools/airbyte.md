@@ -12,7 +12,7 @@ price_model: Freemium
 tags: [data, integration, etl, open-source]
 official_url: "https://airbyte.com/"
 description: Airbyte bewegt Geschäftsdaten wiederholbar zwischen Quellen und Zielen. Entscheidend sind Schema-Kontrolle, Ownership und ein sicherer Umgang mit Agentenzugriffen.
-popularity: 70
+popularity: 77
 tier: B
 generated_at: 2026-05-16
 updated_at: 2026-07-31
