@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://www.semrush.com/"
-popularity: 7
+popularity: 6
 ---
 
 # SEMrush

@@ -16,7 +16,7 @@ price_model: Subscription
 tags: [education, language, learning, mobile]
 official_url: "https://www.babbel.com/"
 description: Subscription language-learning platform for short lessons, vocabulary, grammar, listening, writing, and practical speaking practice.
-popularity: 89
+popularity: 68
 tier: D
 generated_at: 2026-05-27
 ---

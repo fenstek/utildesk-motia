@@ -11,7 +11,7 @@ category: Audio & Video
 price_model: Je nach Plan
 tags: [audio,music,editing]
 official_url: "https://www.ableton.com/en/live/"
-popularity: 74
+popularity: 0
 tier: C
 generated_at: 2026-05-11
 updated_at: 2026-07-17
