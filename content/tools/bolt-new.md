@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Je nach Plan
 tags: ["coding", "developer-tools"]
 official_url: "https://bolt.new"
-popularity: 66
+popularity: 70
 description: Bolt.new macht Webideen im Browser schnell klickbar. Entscheidend ist der geplante Übergang vom überzeugenden Prototyp zu geprüftem, wartbarem Produktcode.
 tier: C
 generated_at: 2026-05-28

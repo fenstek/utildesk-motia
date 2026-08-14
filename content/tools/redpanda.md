@@ -11,7 +11,7 @@ category: AI Coding
 price_model: Je nach Plan
 tags: [data, streaming, cloud, developer-tools]
 official_url: "https://www.redpanda.com/"
-popularity: 9
+popularity: 5
 tier: C
 generated_at: 2026-05-13
 updated_at: 2026-07-17

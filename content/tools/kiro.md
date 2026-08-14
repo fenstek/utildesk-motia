@@ -7,7 +7,7 @@ tags: [coding, agentic-ide, specs, automation, developer-tools]
 official_url: "https://kiro.dev/"
 tier: D
 generated_at: 2026-07-19
-popularity: 36
+popularity: 35
 description: Agentische Entwicklungsumgebung mit Specs, Steering, Hooks und MCP-Anbindung, die Planung und Umsetzung verbindet, aber klare Berechtigungen und konsequentes Code-Review benötigt.
 updated_at: 2026-07-19
 editorial_reviewed: true

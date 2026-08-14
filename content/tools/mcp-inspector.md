@@ -11,7 +11,7 @@ price_model: Open Source
 tags: [mcp, developer-tools, testing, debugging]
 official_url: "https://github.com/modelcontextprotocol/inspector"
 description: MCP Inspector ist ein lokales Open-Source-Werkzeug zum interaktiven und skriptbaren Testen von MCP-Servern; sein Prozess-Proxy gehört niemals ungeschützt in ein fremdes Netz.
-popularity: 28
+popularity: 25
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19
