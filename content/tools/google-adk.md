@@ -11,7 +11,7 @@ price_model: Open Source
 tags: [ai-agents, framework, evaluation, orchestration]
 official_url: "https://google.github.io/adk-docs/"
 description: Google Agent Development Kit ist ein code-first Open-Source-Framework zum Bauen, Evaluieren und Bereitstellen von Agenten; Modelle, Infrastruktur und sichere Tool-Rechte bleiben eigene Entscheidungen.
-popularity: 46
+popularity: 49
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

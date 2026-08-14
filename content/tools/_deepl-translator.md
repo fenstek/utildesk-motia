@@ -2,12 +2,12 @@
 slug: deepl-translator
 title: DeepL Translator
 category: Produktivität
-price_model: "Freemium"
+price_model: Freemium
 tags: [translation, writing, productivity]
 official_url: "https://www.deepl.com/en/translator"
 disabled: true
-reason: "Duplicate of deepl"
-popularity: 0
+reason: Duplicate of deepl
+popularity: 60
 ---
 
 # DeepL Translator

@@ -15,7 +15,7 @@ category: AI Coding
 price_model: Freemium
 tags: [ai, devtools, coding, agents, cli, workflow]
 official_url: "https://openai.com/codex/"
-popularity: 23
+popularity: 21
 tier: A
 mentionedIn: ["coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen"]
 updated_at: 2026-07-29

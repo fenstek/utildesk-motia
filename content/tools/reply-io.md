@@ -10,7 +10,7 @@ category: Marketing & Vertrieb
 price_model: Subscription
 tags: [sales,email-marketing,outreach,automation]
 official_url: "https://reply.io/sales-engagement-platform/"
-popularity: 8
+popularity: 3
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-07-17
