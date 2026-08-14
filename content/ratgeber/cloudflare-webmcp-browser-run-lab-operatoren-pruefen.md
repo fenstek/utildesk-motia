@@ -36,8 +36,6 @@ relatedTools:
     href: "/tools/langchain/"
 ---
 
-# Cloudflare WebMCP im Browser-Run-Lab: Was Operatoren vor dem ersten Tool-Aufruf prüfen sollten
-
 ## Warum das Lab keine Produktionsfreigabe ist
 
 Cloudflare stellt WebMCP in Browser Run als Beta-Funktion in einer experimentellen Laborumgebung bereit. Das klingt nach einem einfachen Weg, Websites für KI-Agenten zugänglicher zu machen. Die wichtigste Einschränkung steht jedoch in derselben Dokumentation: Lab-Sitzungen sind zum Testen gedacht und nicht für Produktions-Workloads. Wer hier bereits einen allgemeinen Edge-Rollout oder eine automatische Umrüstung beliebiger Domains liest, geht über die belegte Aussage hinaus. [Cloudflares WebMCP-Dokumentation](https://developers.cloudflare.com/browser-run/features/webmcp/) beschreibt zunächst einen kontrollierten Versuchsraum.

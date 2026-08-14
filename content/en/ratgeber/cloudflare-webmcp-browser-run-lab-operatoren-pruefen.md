@@ -36,8 +36,6 @@ relatedTools:
     href: "/en/tools/langchain/"
 ---
 
-# Cloudflare WebMCP in Browser Run Lab: What operators should check before the first tool call
-
 ## Why the lab is not production approval
 
 Cloudflare presents WebMCP in Browser Run as a beta feature inside an experimental lab environment. That sounds like a convenient way to make sites easier for AI agents to use. The more important qualification is in the same documentation: lab sessions are for testing and should not be used for production workloads. Reading this as a general edge rollout, or as an automatic conversion of any domain, would go beyond the evidence. [Cloudflare's WebMCP documentation](https://developers.cloudflare.com/browser-run/features/webmcp/) describes a controlled test surface first.

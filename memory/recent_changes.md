@@ -1993,3 +1993,8 @@ _Last updated: 2026-07-19_
 
 - Imported the approved DE/EN package `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` at release order 52 with the two approved pop-art WebP illustrations. Sergey (human) approved the DE/EN text and both illustrations at `2026-08-14T15:10:11+02:00`.
 - Strict package preflight passed with zero errors and zero warnings; this is a publication candidate only. No commit, push, deploy or IndexNow submission was performed.
+
+## 2026-08-14 - WebMCP title duplication fix
+
+- Removed the redundant Markdown H1 from the published DE/EN WebMCP guide; the article template already renders the frontmatter title below the cover.
+- Rebuilt and verified one article H1 per locale, then redeployed Pages and confirmed the live detail pages remain 200 with the approved illustrations.
