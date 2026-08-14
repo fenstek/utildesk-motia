@@ -1988,3 +1988,8 @@ _Last updated: 2026-07-19_
 - Moved the compact reviewed-content passport out of the article hero metadata and into the DE/EN article utility sidebar, before the summary and table of contents. The passport now expands in place without covering the headline or prose; mobile keeps the same in-flow order after the cover image.
 - Kept the prominent required-text disclosure in the hero for unreviewed AI-generated public-interest content, so the visual refinement does not weaken the transparency policy.
 - Applied the placement to static and D1 runtime Ratgeber templates and verified the closed/open states at 1440 px and 390 px after successful static and runtime builds.
+
+## 2026-08-14 - Cloudflare WebMCP Ratgeber publication candidate
+
+- Imported the approved DE/EN package `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` at release order 52 with the two approved pop-art WebP illustrations. Sergey (human) approved the DE/EN text and both illustrations at `2026-08-14T15:10:11+02:00`.
+- Strict package preflight passed with zero errors and zero warnings; this is a publication candidate only. No commit, push, deploy or IndexNow submission was performed.
