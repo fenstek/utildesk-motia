@@ -12,7 +12,7 @@ price_model: Freemium
 description: Adobe Podcast bereitet Sprachaufnahmen im Browser auf und hilft bei der Entscheidung, ob ein Interview rettbar ist. Original und menschlicher Hörtest bleiben Pflicht.
 tags: [audio, podcast, speech-enhancement, ai]
 official_url: "https://podcast.adobe.com/"
-popularity: 78
+popularity: 0
 tier: D
 generated_at: 2026-05-16
 updated_at: 2026-07-31
