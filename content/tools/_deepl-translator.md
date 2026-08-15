@@ -7,7 +7,7 @@ tags: [translation, writing, productivity]
 official_url: "https://www.deepl.com/en/translator"
 disabled: true
 reason: Duplicate of deepl
-popularity: 60
+popularity: 63
 ---
 
 # DeepL Translator
