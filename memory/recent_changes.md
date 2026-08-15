@@ -1998,3 +1998,9 @@ _Last updated: 2026-07-19_
 
 - Removed the redundant Markdown H1 from the published DE/EN WebMCP guide; the article template already renders the frontmatter title below the cover.
 - Rebuilt and verified one article H1 per locale, then redeployed Pages and confirmed the live detail pages remain 200 with the approved illustrations.
+
+## 2026-08-15 - Cloudflare WebMCP archive rewrite approved
+
+- Replaced the DE/EN article under the existing slug `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` with the human-approved hotel-booking storyline: typed WebMCP improves tool discovery and execution, but application authorization and human confirmation still govern the final mutation.
+- Preserved archive date `2026-08-14`, release order 52, canonical URLs, related tools and the approved pop-art cover/workflow WebP assets; no new slug or archive reorder was introduced.
+- Sergey approved the complete DE/EN rewrite on 2026-08-15 after the strict package preflight passed with zero errors and zero warnings; build, deployment, live checks and IndexNow remain the next release gates.
