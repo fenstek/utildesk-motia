@@ -10,7 +10,7 @@ category: AI Image
 price_model: Usage-based
 tags: ["image-generation", "video-generation", "creative-tools"]
 official_url: "https://dollify.ai/"
-popularity: 53
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 description: Dollify.AI bündelt mehrere Bild- und Videomodelle in einer Webstudie und rechnet Generierungen über nicht verfallende Credits statt über ein Abonnement ab.

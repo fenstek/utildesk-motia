@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://workspace.google.com/products/tasks/"
-popularity: 45
+popularity: 48
 description: Google Tasks ist eine schlanke persönliche Aufgabenliste mit Kalendernähe, aber kein Ersatz für gemeinsame Projekt- und Abhängigkeitsplanung.
 tier: C
 generated_at: 2026-05-18
