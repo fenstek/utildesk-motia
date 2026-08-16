@@ -2009,3 +2009,6 @@ _Last updated: 2026-07-19_
 - Replaced the DE/EN article under the existing slug `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` with the human-approved hotel-booking storyline: typed WebMCP improves tool discovery and execution, but application authorization and human confirmation still govern the final mutation.
 - Preserved archive date `2026-08-14`, release order 52, canonical URLs, related tools and the approved pop-art cover/workflow WebP assets; no new slug or archive reorder was introduced.
 - Sergey approved the complete DE/EN rewrite on 2026-08-15 after the strict package preflight passed with zero errors and zero warnings. The Astro build passed, Pages deployment completed at `25f57b4c`, live DE/EN/article-image/sitemap checks returned `200`, and both IndexNow endpoints accepted the five changed canonical/hub URLs with `200`.
+# 2026-08-16 - Swarm article narrative illustrations
+
+- The user rejected the abstract illustrations for `autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen`; both DE/EN images were replaced with the approved narrative scenes. Article text and publication metadata were not changed.

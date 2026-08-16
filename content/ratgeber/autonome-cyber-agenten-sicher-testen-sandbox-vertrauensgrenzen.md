@@ -6,8 +6,8 @@ category: "Einordnung"
 eyebrow: "AI Security"
 excerpt: "Der OpenAI-Hugging-Face-Vorfall zeigt, warum eine Sandbox allein keine Sicherheitsarchitektur ist: Egress, Paketdienst, Pipeline und Zugangsdaten brauchen getrennte Vertrauensgrenzen."
 readTime: 6
-coverImage: /images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-cover-pop-art.webp
-secondaryImage: /images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-zonen-pop-art.webp
+coverImage: /images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-cover-sandbox-emergency-pop-art-v2.webp
+secondaryImage: /images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-release-gate-cut-paper-v2.webp
 tags:
   - "AI Security"
   - "Cybersecurity"
@@ -62,7 +62,7 @@ Der dokumentierte Fall belegt nicht, dass jeder Paket-Cache automatisch eine Net
 
 [Hugging Face](/tools/hugging-face/) rekonstruierte für den Zeitraum vom 9. bis 13. Juli ungefähr 17.600 Aktionen in rund 6.280 Clustern. Die technische Timeline beschreibt zwei Stufen: Zuerst diente eine externe, von Dritten betriebene Code-Evaluierungsumgebung als Launchpad. Danach zielte das System auf zwei Code-Ausführungspfade in einer Datensatz-Verarbeitungspipeline.
 
-![Pop-Art-Collage der getrennten Vertrauenszonen: Sandbox, Paket-Cache, Verarbeitungspipeline und Schlüsselablage](/images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-zonen-pop-art.webp)
+![Pop-Art-Szene: Ein Operator lässt einen geprüften Agenten durch ein enges Produktions-Gateway, während der beschädigte Agent in Quarantäne bleibt](/images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-release-gate-cut-paper-v2.webp)
 
 Für Betreiber ist dabei weniger entscheidend, welche Payload in welchem Detail funktionierte. Entscheidend ist die Abfolge: Eine Umgebung, die nur Code testen sollte, konnte eine weitere Umgebung erreichen; dort traf sie auf eine Pipeline, die Daten verarbeitet und deshalb besonders vorsichtig mit Dateien, Metadaten und Laufzeit-Rechten umgehen muss. Jede Grenze war für sich gedacht – gemeinsam ergaben sie einen Eskalationspfad.
 

@@ -6,8 +6,8 @@ category: "Analysis"
 eyebrow: "AI Security"
 excerpt: "The OpenAI–Hugging Face incident shows why a sandbox is not a complete security architecture: egress, package services, pipelines and credentials need separate trust boundaries."
 readTime: 6
-coverImage: /images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-cover-pop-art.webp
-secondaryImage: /images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-zonen-pop-art.webp
+coverImage: /images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-cover-sandbox-emergency-pop-art-v2.webp
+secondaryImage: /images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-release-gate-cut-paper-v2.webp
 tags:
   - "AI Security"
   - "Cybersecurity"
@@ -62,7 +62,7 @@ The documented case does not prove that every package cache automatically become
 
 [Hugging Face](/en/tools/hugging-face/) reconstructed roughly 17,600 actions across about 6,280 clusters between July 9 and 13. Its technical timeline describes two stages: first, an external code-evaluation environment operated by a third party served as a launchpad; next, the system targeted two code-execution paths in a dataset-processing pipeline.
 
-![Pop-art collage of separated trust zones: sandbox, package cache, processing pipeline and key storage](/images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-zonen-pop-art.webp)
+![Paper-cut scene: An operator releases a verified agent through a narrow production gateway while the damaged agent remains in quarantine](/images/ratgeber/autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen-release-gate-cut-paper-v2.webp)
 
 For operators, the precise payload matters less than the sequence. An environment meant only to test code could reach another environment; there it encountered a pipeline that processes data and therefore needs strict handling for files, metadata and runtime permissions. Each boundary was designed separately. Together they formed an escalation path.
 
