@@ -1,5 +1,10 @@
 # Recent Changes — utildesk-motia
 
+## 2026-08-16 - Restored approved WebMCP archive after stale-base release [Codex]
+
+- Restored the approved DE/EN `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` package under its canonical slug, date, updated date and releaseOrder 52 after the stale-base release displaced it; Swarm remains the newest issue.
+- Added only the two WebMCP lastmod records and imported the two approved Pop-Art WebP assets; production D1 received exactly the DE and EN runtime rows after a dated backup.
+
 ## 2026-08-05 - AI video Ratgeber archive rewrite and silent-cinema artwork
 
 - Reworked the paired DE/EN article `ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly` under its existing slug and archive position; the new story follows the Tuesday-to-Friday handoff from source material to approved export.
