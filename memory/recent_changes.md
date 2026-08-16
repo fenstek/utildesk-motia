@@ -1993,3 +1993,19 @@ _Last updated: 2026-07-19_
 - Moved the compact reviewed-content passport out of the article hero metadata and into the DE/EN article utility sidebar, before the summary and table of contents. The passport now expands in place without covering the headline or prose; mobile keeps the same in-flow order after the cover image.
 - Kept the prominent required-text disclosure in the hero for unreviewed AI-generated public-interest content, so the visual refinement does not weaken the transparency policy.
 - Applied the placement to static and D1 runtime Ratgeber templates and verified the closed/open states at 1440 px and 390 px after successful static and runtime builds.
+
+## 2026-08-14 - Cloudflare WebMCP Ratgeber publication candidate
+
+- Imported the approved DE/EN package `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` at release order 52 with the two approved pop-art WebP illustrations. Sergey (human) approved the DE/EN text and both illustrations at `2026-08-14T15:10:11+02:00`.
+- Strict package preflight passed with zero errors and zero warnings; this is a publication candidate only. No commit, push, deploy or IndexNow submission was performed.
+
+## 2026-08-14 - WebMCP title duplication fix
+
+- Removed the redundant Markdown H1 from the published DE/EN WebMCP guide; the article template already renders the frontmatter title below the cover.
+- Rebuilt and verified one article H1 per locale, then redeployed Pages and confirmed the live detail pages remain 200 with the approved illustrations.
+
+## 2026-08-15 - Cloudflare WebMCP archive rewrite approved
+
+- Replaced the DE/EN article under the existing slug `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` with the human-approved hotel-booking storyline: typed WebMCP improves tool discovery and execution, but application authorization and human confirmation still govern the final mutation.
+- Preserved archive date `2026-08-14`, release order 52, canonical URLs, related tools and the approved pop-art cover/workflow WebP assets; no new slug or archive reorder was introduced.
+- Sergey approved the complete DE/EN rewrite on 2026-08-15 after the strict package preflight passed with zero errors and zero warnings. The Astro build passed, Pages deployment completed at `25f57b4c`, live DE/EN/article-image/sitemap checks returned `200`, and both IndexNow endpoints accepted the five changed canonical/hub URLs with `200`.
