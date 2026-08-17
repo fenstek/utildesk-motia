@@ -77,7 +77,6 @@ Für ein neues allgemeines Deep-Learning-Projekt würden wir zuerst PyTorch, Ten
 - [PyTorch](/tools/pytorch/): Flexiblere Modelllogik und ein aktiveres Ökosystem für Forschung, Training und neue Architekturen.
 - [TensorFlow](/tools/tensorflow/): Breiterer Produktions- und Deployment-Stack, wenn Training, Serving und Plattformintegration zusammengehören.
 - [Keras](/tools/keras/): Höhere Abstraktion für schnelle Experimente und Teams, die weniger Build- und Graphdetails pflegen wollen.
-- [MXNet](/tools/mxnet/): Ähnliche historische Framework-Alternative für ältere oder verteilte ML-Bestände; den Wartungsstatus vorab genau prüfen.
 - [OpenCV](/tools/opencv/): Die passendere Wahl für klassische Bildverarbeitung und Computer-Vision-Pipelines ohne eigenes Deep-Learning-Training.
 
 ## FAQ

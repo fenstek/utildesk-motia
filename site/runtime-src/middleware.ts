@@ -1,6 +1,7 @@
 import { defineMiddleware } from "astro:middleware";
 import { RENDERER_CACHE_VERSION } from "./generated/cacheVersion";
 import { getRuntimeCacheIdentity } from "./lib/runtimeContent";
+import { applyToolRoutePolicy } from "../shared/toolRoutePolicy.mjs";
 
 // Route keys include both renderer and D1 source revisions, so a long edge TTL
 // cannot serve stale content after a publish. It keeps the full long-tail set
@@ -9,6 +10,9 @@ const EDGE_CACHE_CONTROL = "public, max-age=0, s-maxage=86400, stale-while-reval
 
 export const onRequest = defineMiddleware(async (context, next) => {
   if (context.request.method !== "GET") return next();
+
+  const policyResponse = applyToolRoutePolicy(context.request);
+  if (policyResponse) return policyResponse;
 
   let identity;
   try {

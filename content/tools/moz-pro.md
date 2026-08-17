@@ -96,7 +96,7 @@ Bei Moz Pro ist eine Alternative sinnvoll, wenn der Bedarf nur gelegentlich auft
 
 ## Alternativen
 
-- [HubSpot Sales](/tools/hubspot-sales/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
+- [HubSpot Sales](/tools/hubspot-sales-hub/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
 - [hubspot-marketing-hub](/tools/hubspot-marketing-hub/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
 - [mailchimp](/tools/mailchimp/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
 - [ActiveCampaign](/tools/activecampaign/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

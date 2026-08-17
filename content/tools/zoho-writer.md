@@ -66,7 +66,7 @@ Zoho Writer hat einen kostenlosen Einstieg; weitergehende Automatisierung, Admin
 ## Alternativen
 
 - [OnlyOffice](/tools/onlyoffice/): wenn Selbsthosting, Office-Kompatibilität oder ein eigener Dokumentenserver wichtiger sind.
-- [Microsoft Office 365](/tools/microsoft-office-365/): wenn Word, SharePoint und Teams bereits den verbindlichen Standard setzen.
+- [Microsoft Office 365](/tools/microsoft-365/): wenn Word, SharePoint und Teams bereits den verbindlichen Standard setzen.
 - [Grammarly](/tools/grammarly/): wenn hauptsächlich sprachliche Vorschläge in bestehenden Editoren gebraucht werden.
 - [LanguageTool](/tools/languagetool/): wenn mehrsprachige Rechtschreib- und Stilprüfung vor der Freigabe im Vordergrund steht.
 
