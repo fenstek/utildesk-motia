@@ -77,8 +77,8 @@ This process matters even for small teams: it stops a single quick search being 
 
 ## Alternatives
 - [Espacenet](/en/tools/espacenet/): for European patent data and research close to official sources.
-- [WIPO PATENTSCOPE](/en/tools/wipo-patentscope/): for international PCT research.
-- [Lens.org](/en/tools/lens-org/): for studying patents alongside scientific literature.
+- WIPO PATENTSCOPE: for international PCT research.
+- Lens.org: for studying patents alongside scientific literature.
 - [PatSnap](/en/tools/patsnap/): for commercial patent and innovation analysis.
 - [Derwent Innovation](/en/tools/derwent-innovation/): for professional research and competitive analysis.
 

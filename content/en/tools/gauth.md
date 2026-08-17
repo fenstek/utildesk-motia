@@ -93,7 +93,7 @@ Gauth offers a Freemium model, where basic functions can be used for free. For e
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Gauth before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Gauth before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Gauth before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Gauth before moving data or ownership.
 
 ## FAQ

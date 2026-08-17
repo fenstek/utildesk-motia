@@ -99,7 +99,7 @@ Detailed and current pricing can be found on the official website, as it may be 
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Hootsuite before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Hootsuite before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Hootsuite before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Hootsuite before moving data or ownership.
 
 ## FAQ

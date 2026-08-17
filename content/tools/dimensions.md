@@ -63,7 +63,7 @@ Dimensions empfehle ich Forschungs- und Innovationsteams, die wiederkehrend übe
 ## Alternativen
 
 - [Semantic Scholar](/tools/semantic-scholar/): Kostenlose, KI-gestützte Literatursuche für schnelle Paper-Discovery und Zitationskontext ohne den vollständigen Dimensions-Datenverbund.
-- [Lens.org](/tools/lens-org/): Geeignet, wenn wissenschaftliche Publikationen und Patente gemeinsam durchsucht und für IP-Fragen verbunden werden sollen.
+- Lens.org: Geeignet, wenn wissenschaftliche Publikationen und Patente gemeinsam durchsucht und für IP-Fragen verbunden werden sollen.
 - [Scopus](/tools/scopus/): Kommerzielle bibliometrische Datenbank für institutionelle Evaluation, Zitationsanalyse und standardisierte Reports.
 - [Clarivate Analytics (Web of Science)](/tools/clarivate-analytics/): Sinnvoll für Organisationen, die Web of Science und etablierte Analyse- und Evaluationsworkflows bereits lizenziert haben.
 - [Google Scholar](/tools/google-scholar/): Niedrigschwellige, breite Literatursuche für Einzelpersonen, aber mit weniger kontrollierbaren Filtern und bibliometrischen Workflows.

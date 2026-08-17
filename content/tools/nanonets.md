@@ -1,129 +1,82 @@
 ---
 slug: nanonets
-title: Nanonets
+title: "Nanonets"
+updated_at: 2026-08-17
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Automatisierung
-price_model: Je nach Plan
-tags:
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-08-17
+editorial_status: manual_polished
+editorial_batch: 2026-08-17-ocr-document-rewrite
+category: "Automatisierung"
+price_model: "Je nach Plan"
+tags: [ocr, invoice, document-ai, workflow, api]
 official_url: "https://nanonets.com/"
-description: Nanonets verbindet OCR, Feldextraktion und Workflow-Automatisierung, damit Dokumente nicht nur erkannt, sondern auch geprüft und weitergeleitet werden.
+description: "Nanonets verbindet OCR, Feldextraktion und nachgelagerte Workflow-Schritte für Rechnungen, Belege und andere Geschäftsdokumente. Die Stärke liegt im Übergang von erkannter Information zu Prüfung und Weiterleitung."
 created_at: 2026-05-10
 popularity: 0
-tier: "A"
-lastReviewed: "2026-05-14"
-mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
+tier: A
+lastReviewed: 2026-08-17
+translation: full
 ---
 # Nanonets
 
-Nanonets verbindet OCR, Feldextraktion und Workflow-Automatisierung, damit Dokumente nicht nur erkannt, sondern auch geprüft und weitergeleitet werden. Im Utildesk-Kontext ist diese Karte vor allem für OCR-, PDF- und Rechnungsautomatisierung relevant: Welche Rolle übernimmt das Werkzeug im Prozess, wo braucht es zusätzliche Prüfung, und wann ist ein anderes Modell sinnvoller?
+Nanonets verbindet Dokument-OCR mit konfigurierbaren Workflows. Besonders charakteristisch sind Modelle beziehungsweise Workflows, die Felder und Tabellen liefern, sowie die Möglichkeit, Dokumente zu klassifizieren und an unterschiedliche OCR-Modelle zu routen. Die Plattform ist damit eher ein Prozessbaustein für eingehende Geschäftsdokumente als ein reiner Texterkennungs-Endpunkt.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/nanonets-editorial.webp" alt="Illustration zu Nanonets: technische Prozessgrafik für Dokumenteingang, OCR, Validierung und Export" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/nanonets-editorial.webp" alt="Nanonets Workflow mit Dokumentklassifikation und Feldprüfung" loading="lazy" decoding="async" /></figure>
 
-## Für wen ist Nanonets geeignet?
+## Geeigneter Anwendungsfall
 
-- Finanz-, Einkauf- und Operations-Teams mit regelmäßigem Dokumentvolumen
-- Unternehmen mit Prüf-, Freigabe- und Ausnahmeprozessen
-- Teams, die OCR als Dokumentenworkflow statt als Einzel-API einführen
+Nanonets passt zu Accounts Payable, Belegen, Bestellungen, Claims oder Lieferantenunterlagen, wenn erkannte Werte anschließend freigegeben oder zurückgewiesen werden müssen. Ein Team sollte zuerst festlegen, welche Dokumentklasse welches Modell erhält und welche Felder eine menschliche Prüfung auslösen.
 
-## Für wen ist Nanonets nicht geeignet?
+## Modelle und Routing
 
-- sehr kleine Teams mit wenigen PDFs pro Monat
-- rein lokale Verarbeitung ohne Cloud- oder Plattformbetrieb
-- schnelle Einmal-Konvertierungen
+Die API kann OCR-Modelle für Dateien oder öffentlich erreichbare URLs synchron oder asynchron ansprechen. Für größere Dateien ist ein asynchroner Ablauf sinnvoll, weil Ergebnisabholung und Fehlerbehandlung getrennt werden. Ein Document-Classification-Model kann beispielsweise Belege, Rechnungen und Bestellungen labeln und sie den passenden OCR-Modellen zuordnen.
 
-## Typische Einsatzfälle
+## Einrichten und Lernen
 
-Nanonets passt in Workflows, in denen PDFs, Scans oder Dokumenten-Uploads nicht manuell abgetippt werden sollen. Häufig geht es um Rechnungen, Belege, Bestellungen, Formulare, Lieferscheine oder Tabellen in PDFs. Der Zielzustand ist nicht einfach ein durchsuchbarer Text, sondern strukturierte Felder, Prüfstatus und Exportdaten, die anschließend in Buchhaltung, Tabellen, Datenbanken, Ticketsysteme oder Automatisierungstools weiterlaufen.
+Lege für jede Klasse Beispiele mit unterschiedlichen Lieferanten, Scans und Seitenlayouts ab. Konfiguriere Felder und Tabellen, trainiere oder verbessere das Modell und prüfe Vorhersagen gegen eine markierte Referenz. Korrekturen dürfen erst dann in ein Lern- oder Automatisierungsverfahren eingehen, wenn ihre fachliche Ursache dokumentiert ist.
 
-Bei Nanonets sollte der Pilot mit echten Dokumenten starten. Entscheidend sind nicht nur saubere Beispieldateien, sondern auch schiefe Scans, mehrseitige PDFs, gemischte Sprachen, abweichende Lieferantenlayouts und fehlende Pflichtfelder. So wird sichtbar, ob Review-Queue, Rollenmodell und Ausnahmebearbeitung zum eigenen Prozess passen.
+## API und Integrationen
 
-## Hauptfunktionen
+Die Nanonets-API verwendet einen API-Schlüssel über Basic Authentication und liefert JSON. Plane Upload, Prediction-ID, Page- beziehungsweise File-Ergebnis, Polling oder Webhook sowie die Zuordnung zu einer internen Dokument-ID. Export in ein Zielsystem ist ein eigener Schritt; das OCR-Ergebnis sollte nicht die einzige Belegkopie sein.
 
-- OCR beziehungsweise Dokumentenerkennung für digitale und gescannte Unterlagen.
-- Extraktion wiederkehrender Felder wie Rechnungsnummer, Datum, Betrag, Lieferant oder Tabellenpositionen.
-- Übergabe der Ergebnisse per API, Export, Webhook oder Workflow-Schritt.
-- Möglichkeiten zur Validierung, Nachprüfung oder Weiterverarbeitung abhängig vom gewählten Setup.
-- Einbindung in Automatisierungsketten, etwa mit n8n, Make, Zapier, Power Automate oder eigenen Services.
+## Review und Grenzen
 
-## Workflow in der Praxis
+Ein Feld kann syntaktisch plausibel und fachlich falsch sein. Vergleiche Währung, Summen, Lieferant, Bestellnummer und Seitenzusammenhang mit Regeln außerhalb des Modells. Bei niedriger Konfidenz, unbekannter Klasse oder fehlendem Feld muss ein Reviewer entscheiden; ein Routing-Modell ersetzt keine Ausnahmebearbeitung.
 
-Ein belastbarer Nanonets-Workflow beginnt beim Eingang der Datei und endet erst, wenn geprüfte Daten exportiert sind. Dazwischen liegen Vorverarbeitung, OCR, Feldextraktion, Plausibilitätsprüfung und Ausnahmebehandlung. Bei Rechnungen sollten Lieferant, Rechnungsdatum, Steuerbetrag, Gesamtbetrag, Währung und Zahlungsziel nicht blind übernommen, sondern mit klaren Regeln validiert werden.
+## Betrieb und Daten
 
-Bei Nanonets sollten Fachabteilungen besonders auf transparente Fehlerlisten, nachvollziehbare Korrekturen und einen klaren Review-Schritt achten. In Rechnungsprozessen ist ein sauberer Ausnahmeweg oft wertvoller als ein marginal besserer OCR-Wert.
+Definiere Schlüsselrotation, Rollen, Aufbewahrung und erlaubte Datenregionen für die Dokumente. Überwache API-Limits, asynchrone Jobs, doppelte Uploads und Modellversionen. Bei sensiblen Rechnungen oder Identitätsdokumenten sollte die Speicherung von Original und JSON-Ergebnis getrennt und begründet werden.
 
-## Worauf vor der Auswahl achten?
+## Kosten und Entscheidung
 
-- Unterstützt das Werkzeug die relevanten Dokumenttypen und Sprachen im eigenen Material?
-- Gibt es eine klare Exportform: JSON, CSV, Webhook, API oder direkte Integration?
-- Wie werden niedrige Confidence-Werte, Dubletten und unvollständige Felder behandelt?
-- Welche Datenschutzdokumente, Datenstandorte, Aufbewahrungsfristen und Löschoptionen gibt es?
-- Wie kalkulierbar sind Kosten bei vielen Seiten, Anhängen oder API-Aufrufen?
-
-## Vorteile und Grenzen
-
-### Vorteile
-
-- Kann manuelle Datenerfassung reduzieren und Durchlaufzeiten verkürzen.
-- Eignet sich als Baustein für Rechnungs-, PDF- und Dokumentenautomatisierung.
-- Macht strukturierte Folgeprozesse möglich, wenn Validierung und Export sauber geplant sind.
-
-### Grenzen
-
-- Schlechte Scans, wechselnde Layouts und handschriftliche Ergänzungen bleiben Fehlerquellen.
-- Ohne Review-Regeln können falsche Felder unbemerkt in Buchhaltung oder Datenbanken landen.
-- Datenschutz, AVV/DPA, Datenstandort und Löschung müssen vor Produktivbetrieb geprüft werden.
-
-
-## Redaktionelle Einordnung
-
-Bei Nanonets sollte der Test an einem echten Arbeitsfall hängen: Eingabe, Ergebnis, Verantwortung und Folgekosten müssen sichtbar werden.
-
-Nanonets ist sinnvoll, wenn es Arbeit klarer, schneller oder überprüfbarer macht. Wenn Zweck und Zuständigkeit offen bleiben, entsteht eher ein weiterer Account als ein besserer Prozess.
-
-## Workflow-Fit
-
-Nanonets passt am besten, wenn Rechnungen, Bestellungen, Leads oder Formulare in ähnlichen Formaten eintreffen und nach der Prüfung an operative Systeme übergeben werden. Vor dem Rollout sollten Rollen, Rechte, Exportwege und Qualitätskontrolle feststehen; sonst entsteht schnell ein weiterer Ablageort neben dem eigentlichen Prozess.
+Prüfe das aktuelle Nanonets-Angebot für Modell, Volumen und gewünschte Workflow-Funktionen. Realistische Kosten entstehen nicht nur durch Requests, sondern auch durch Review, Fehlklassifikation, Nachtraining und die eigene Integration. Ein Pilot sollte die Quote korrekt gerouteter Dokumente und den manuellen Aufwand je Klasse messen.
 
 ## Redaktionelle Einschätzung
 
-Nanonets lohnt sich vor allem für wiederholbare Extraktionsaufgaben mit klaren Feldern, Besitzern und Korrekturwegen. Wenn jedes Dokument ein neues Layout hat oder die Zielsysteme noch nicht feststehen, sollte zuerst ein schlankerer oder spezialisierterer Ansatz geprüft werden.
+Nanonets ist interessant, wenn Klassifikation, Extraktion und Review in einem geschäftlichen Eingangskanal zusammenlaufen. Für eine Entwickler-API mit schlanker eigener Anwendung sind [mindee](/tools/mindee/) oder [veryfi](/tools/veryfi/) fokussierter; für visuelle Regeln bei stabilen Layouts ist [docparser](/tools/docparser/) transparenter.
 
-## Preise & Kosten
+## Alternativen
 
-Preismodell: **Je nach Plan**. Für Nanonets zählt im Vergleich nicht nur der Einstiegspreis. Relevant sind Seitenvolumen, Dokumenttypen, API-Aufrufe, Nutzerplätze, Review-Funktionen, Speicherfristen sowie Aufwand für Einrichtung, Betrieb und Support.
-
-## Alternativen im Utildesk-Kontext
-
-Nanonets liegt zwischen API-naher Extraktion und operativer Dokumentautomatisierung. Fuer die Auswahl sind diese Vergleiche am hilfreichsten:
-
-- [Rossum](/tools/rossum/): staerkerer Enterprise-IDP-Fokus mit Review-Queue und Fachprozess.
-- [Mindee](/tools/mindee/): API-naeher, wenn klar definierte Dokumenttypen im Mittelpunkt stehen.
-- [Veryfi](/tools/veryfi/): spezialisiert auf Belege, Rechnungen und Finanzdokumente.
-- [ABBYY Vantage](/tools/abbyy-vantage/): groessere Plattform fuer Governance und kontrollierte Dokumentautomatisierung.
-- [Google Document AI](/tools/google-document-ai/): Cloud-Alternative fuer Google-zentrierte Workflows.
-- [Docparser](/tools/docparser/): schlanker, wenn regelbasierte Extraktion aus festen Layouts reicht.
-
-## Passende Ratgeber
-
-- [Beste OCR-APIs für Rechnungen in Deutschland 2026](/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/)
-- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [mindee](/tools/mindee/): API- und SDK-zentrierte Extraktion für eine eigene Anwendung.
+- [veryfi](/tools/veryfi/): Finanzdokumente mit starkem Fokus auf Belege und Rechnungsfelder.
+- [docparser](/tools/docparser/): Sichtbare Zonen-, Keyword- und Tabellenregeln für bekannte Layouts.
+- [rossum](/tools/rossum/): Queue- und Review-orientierter Betrieb von Geschäftsdokumenten.
 
 ## FAQ
 
-**Ist Nanonets ein reines OCR-Tool?**
-Nicht nur. Der praktische Nutzen entsteht meist erst, wenn OCR mit Feldextraktion, Validierung und Export kombiniert wird.
+**Wann ist die asynchrone OCR-API sinnvoll?**
 
-**Kann Nanonets Rechnungen automatisch auslesen?**
-Für Rechnungsprozesse ist Nanonets relevant, aber die Qualität hängt von Scanqualität, Layout, Sprache, Pflichtfeldern und Nachprüfung ab. Vor einem Rollout sollte ein Testset mit echten deutschen Rechnungen geprüft werden.
+Bei längeren oder mehrseitigen Dateien, wenn Upload, Ergebnisabholung und Fehlerbehandlung nicht an eine offene Anfrage gebunden sein sollen. Die Anwendung braucht dann eine belastbare Job-ID.
 
-**Braucht man Entwickler?**
-Bei Nanonets hängt das vom Zielbild ab: einfache Tests sind schneller möglich, ein stabiler Produktivprozess braucht aber Verantwortliche für Integration, Datenqualität, Monitoring und Fehlerbehandlung.
+**Kann Nanonets verschiedene Dokumentklassen automatisch verteilen?**
 
-**Worauf sollte man beim Datenschutz achten?**
-Vor dem Einsatz von Nanonets sollten AVV/DPA, Datenstandort, Aufbewahrungsfristen, Subprozessoren, Löschoptionen und eine mögliche Nutzung von Kundendaten für Training geprüft werden.
+Ja, ein Classification-and-Routing-Modell kann Klassen erkennen und Dokumente an zugeordnete OCR-Modelle senden. Die Klassen und Fehlerrouten müssen mit echten Eingangsdaten getestet werden.
+
+**Was sollte ein Reviewer kontrollieren?**
+
+Nicht nur das einzelne Feld, sondern auch Dokumenttyp, Lieferant, Summen, Währung, Seiten und die Verbindung zur internen Beleg-ID. So werden plausible, aber falsch geroutete Ergebnisse sichtbar.
+
+**Welche Kosten gehören in den Pilot?**
+
+Modell- und Volumenkosten, API-Betrieb, Review-Zeit, Nachtraining und die Speicherung der Quelldokumente. Ein Preis pro erfolgreicher Prüfung ist aussagekräftiger als ein Preis pro Upload.

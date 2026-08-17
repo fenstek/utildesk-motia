@@ -94,7 +94,7 @@ Clipchamp offers a freemium model with the following typical pricing categories 
 Depending on the selected plan, features such as 4K export, brand customization, and advanced AI tools may be included or not.
 
 ## Alternatives
-- [WeVideo](/en/tools/wevideo/): Cloud-based video editing with similar features and team tools.
+- WeVideo: Cloud-based video editing with similar features and team tools.
 - [InVideo](/en/tools/invideo/): Focuses on video templates and marketing videos, also with AI-powered tools.
 - [Adobe Premiere Rush](/en/tools/adobe-premiere-rush/): Beginner-friendly Adobe solution for quick video editing across different devices.
 - [Kapwing](/en/tools/kapwing/): Easy-to-use online video platform with collaborative features.

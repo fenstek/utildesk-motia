@@ -75,7 +75,7 @@ In the catalog, Trelby is marked with the pricing model **Open Source**. For a r
 ## Alternatives to Trelby
 
 - [Celtx](/en/tools/celtx/): useful comparison point if workflow, pricing, or specialization should differ.
-- [WriterDuet](/en/tools/writerduet/): useful comparison point if workflow, pricing, or specialization should differ.
+- WriterDuet: useful comparison point if workflow, pricing, or specialization should differ.
 - [Final Draft](/en/tools/final-draft/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Ink by Inkle](/en/tools/ink-by-inkle/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Twine](/en/tools/twine/): useful comparison point if workflow, pricing, or specialization should differ.

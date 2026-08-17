@@ -23,8 +23,6 @@ relatedTools:
     href: "/en/tools/microsoft-edge/"
   - title: "Gemini"
     href: "/en/tools/gemini/"
-  - title: "LM Studio"
-    href: "/en/tools/lm-studio/"
   - title: "Google AI Studio"
     href: "/en/tools/google-ai-studio/"
   - title: "Microsoft Copilot"
@@ -41,11 +39,6 @@ decisionTools:
     href: "/en/tools/microsoft-edge/"
     note: "promising for browser and extension workflows, but still a developer/preview topic in 2026"
     score: "8.0"
-    kind: "recommend"
-  - title: "LM Studio"
-    href: "/en/tools/lm-studio/"
-    note: "a practical entry point for local model tests, demos and developer workstations"
-    score: "8.3"
     kind: "recommend"
 decisionAvoid:
   - "selling local models as an automatic compliance guarantee"
@@ -69,9 +62,9 @@ A sober map helps.
 | App runtime | Microsoft Foundry Local | embedding models directly into desktop or client apps | device diversity, model maintenance, support |
 | Browser runtime | Microsoft Edge Aion, Translator API, Language Detector API | websites, extensions, translation, speech, local browser assistance | preview status, browser lock-in, security model |
 | OS/device model | Apple Foundation Models, Gemini Nano through AICore | private app features on iOS/macOS/Android | platform lock-in, device availability, model limits |
-| Developer/prototyping layer | [LM Studio](/en/tools/lm-studio/), Ollama, local OpenAI-compatible servers | tests, demos, internal workbenches, model comparison | not a complete enterprise governance system |
+| Developer/prototyping layer | LM Studio, Ollama, local OpenAI-compatible servers | tests, demos, internal workbenches, model comparison | not a complete enterprise governance system |
 
-These layers are not direct substitutes. [LM Studio](/en/tools/lm-studio/) is a useful workstation for local models. Foundry Local is closer to a runtime developers embed into applications. Edge Aion brings local AI into web APIs. Apple and Google are trying to make foundation models available as system capabilities for apps.
+These layers are not direct substitutes. LM Studio is a useful workstation for local models. Foundry Local is closer to a runtime developers embed into applications. Edge Aion brings local AI into web APIs. Apple and Google are trying to make foundation models available as system capabilities for apps.
 
 Mixing those layers is how teams build a demo instead of an architecture.
 
@@ -124,7 +117,7 @@ Still, Gemini Nano is not “Gemini Pro, but smaller.” On-device models are be
 
 ## Ollama and LM Studio: the practical workshop mode
 
-Alongside the platform stacks, there is the workshop mode: developers and small teams test local models through tools such as Ollama or [LM Studio](/en/tools/lm-studio/). LM Studio positions itself clearly as a desktop environment for running local LLMs privately on your own hardware; it also offers SDKs, local server options and an OpenAI-compatible API mode.
+Alongside the platform stacks, there is the workshop mode: developers and small teams test local models through tools such as Ollama or LM Studio. LM Studio positions itself clearly as a desktop environment for running local LLMs privately on your own hardware; it also offers SDKs, local server options and an OpenAI-compatible API mode.
 
 For many Utildesk readers, this is the fastest entry point. You can try a model locally, test prompts, send small workflows against a local endpoint and feel the actual speed, memory footprint and quality. For prototypes, that is more useful than a slide about “AI sovereignty.”
 
@@ -165,7 +158,7 @@ Decentralized AI makes inventory more important, not less. If 200 laptops run di
 
 **Week 1: inventory tasks.** Do not start with tools. Collect recurring tasks that contain sensitive data but are narrow enough to review.
 
-**Week 2: build a local prototype.** Use [LM Studio](/en/tools/lm-studio/), Ollama or Foundry Local for a small process: summary, classification, form draft or translation.
+**Week 2: build a local prototype.** Use LM Studio, Ollama or Foundry Local for a small process: summary, classification, form draft or translation.
 
 **Week 3: define the cloud fallback.** Local is the default, cloud is the exception. But the exception needs rules: only after approval, only with reduced data, only for tasks local models cannot handle well.
 
@@ -186,13 +179,13 @@ Microsoft positions Aion as a smaller, more efficient model intended to reach mo
 Apple describes on-device inference for apps as carrying no additional inference cost. Development, device requirements and platform lock-in are still real costs.
 
 **What is the best starting point for a small team?**  
-A local prototype with [LM Studio](/en/tools/lm-studio/) or Ollama plus one clear workflow. After that, decide whether Foundry Local, Apple, Android or browser APIs are the production path.
+A local prototype with LM Studio or Ollama plus one clear workflow. After that, decide whether Foundry Local, Apple, Android or browser APIs are the production path.
 
 ## Bottom line: local first, but not local blind
 
 Local AI agents in 2026 are not a return to model tinkering for its own sake. They are a practical answer to a real architecture question: which AI work should happen near the user?
 
-Foundry Local makes local inference easier to embed in apps. Edge Aion and local web APIs bring AI into the browser. Apple Foundation Models and Gemini Nano move it closer to the operating system and app context. [LM Studio](/en/tools/lm-studio/) and Ollama give teams a workbench for testing models without a long procurement cycle.
+Foundry Local makes local inference easier to embed in apps. Edge Aion and local web APIs bring AI into the browser. Apple Foundation Models and Gemini Nano move it closer to the operating system and app context. LM Studio and Ollama give teams a workbench for testing models without a long procurement cycle.
 
 The productive path is hybrid: local for private, fast, repeatable preparation; cloud for heavy tasks; humans for approval, responsibility and edge cases. Teams that draw those boundaries well get more than a privacy story. They get a more robust agent architecture.
 

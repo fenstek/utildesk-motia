@@ -68,7 +68,7 @@ In the catalog, Intercom is marked with the pricing model **Freemium**. For a re
 - [Zendesk](/en/tools/zendesk/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Freshdesk](/en/tools/freshdesk/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Liveperson](/en/tools/liveperson/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Drift](/en/tools/drift/): useful comparison point for adjacent workflows, pricing, or team fit.
+- Drift: useful comparison point for adjacent workflows, pricing, or team fit.
 - Hubspot Service Hub: useful comparison point for adjacent workflows, pricing, or team fit.
 
 ## Editorial assessment

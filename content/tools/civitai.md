@@ -75,7 +75,7 @@ Für sensible Kundendaten, streng markengeführte Serien oder Teams ohne Zeit f�
 ## Alternativen
 
 - [Stable Diffusion](/tools/stable-diffusion/): Mehr Kontrolle über lokale Modelle und eigene Pipelines, wenn Hardware, Lizenzen und Betrieb selbst verantwortet werden sollen.
-- [Leonardo AI](/tools/leonardo-ai/): Geführtere Bildproduktion für Kreativteams, die weniger Modellrecherche und mehr Oberfläche für schnelle Entwürfe brauchen.
+- Leonardo AI: Geführtere Bildproduktion für Kreativteams, die weniger Modellrecherche und mehr Oberfläche für schnelle Entwürfe brauchen.
 - [Midjourney](/tools/midjourney/): Stil- und Konzeptbilder in einem stärker kuratierten Dienst, wenn Community-Modellverwaltung nicht der Kern des Workflows ist.
 - [Adobe Firefly](/tools/adobe-firefly/): Naheliegender für Teams, die generative Funktionen in einen bestehenden Adobe- und Markenprozess einordnen wollen.
 - [Hugging Face](/tools/hugging-face/): Besser für Modell-, Datensatz- und Inferenzarbeit, wenn Entwicklerzugriff und reproduzierbare technische Abläufe wichtiger sind als eine Kreativ-Community.

@@ -97,7 +97,7 @@ Fade In is typically offered as a paid software. The pricing is usually a one-ti
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Fade In before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Fade In before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Fade In before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Fade In before moving data or ownership.
 
 ## FAQ

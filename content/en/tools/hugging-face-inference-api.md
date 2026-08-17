@@ -94,7 +94,7 @@ The Hugging Face Inference API is billed on a usage-based model. Costs depend on
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Hugging Face Inference API before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Hugging Face Inference API before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Hugging Face Inference API before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Hugging Face Inference API before moving data or ownership.
 
 ## FAQ

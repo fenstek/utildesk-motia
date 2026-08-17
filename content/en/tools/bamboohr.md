@@ -87,8 +87,8 @@ It is a weaker fit when the organisation needs payroll across many countries, co
 
 ## Alternatives
 
-- [Workday](/en/tools/workday/): Broader enterprise HCM for complex global structures, with more implementation and governance overhead.
-- [Zoho People](/en/tools/zoho-people/): A modular, lighter starting point when the priority is employee administration, leave, and workflows.
+- Workday: Broader enterprise HCM for complex global structures, with more implementation and governance overhead.
+- Zoho People: A modular, lighter starting point when the priority is employee administration, leave, and workflows.
 - [SAP SuccessFactors](/en/tools/sap-successfactors/): Better suited to large organisations needing extensive talent, compliance, and enterprise integration.
 - [ADP Workforce Now](/en/tools/adp-workforce-now/): Worth comparing when US payroll and workforce administration are more important than a lightweight HR core.
 

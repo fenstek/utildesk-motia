@@ -96,7 +96,7 @@ Microsoft Dynamics 365 Sales is generally offered as a subscription. Prices vary
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Microsoft Dynamics 365 Sales before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Microsoft Dynamics 365 Sales before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Microsoft Dynamics 365 Sales before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Microsoft Dynamics 365 Sales before moving data or ownership.
 
 ## FAQ

@@ -62,7 +62,7 @@ Firestore empfehlen wir Produktteams mit einem klaren, dokumentenorientierten On
 ## Alternativen
 
 - [Amazon DynamoDB](/tools/amazon-dynamodb/): Verwaltete AWS-NoSQL-Datenbank für stark zugriffsorientierte Schlüsselmodelle ohne Firestore- beziehungsweise Firebase-Bindung.
-- [MongoDB Atlas](/tools/mongodb-atlas/): Dokumentdatenbank mit anderer Abfrage- und Betriebslogik, wenn ein breiteres MongoDB-Ökosystem im Vordergrund steht.
+- MongoDB Atlas: Dokumentdatenbank mit anderer Abfrage- und Betriebslogik, wenn ein breiteres MongoDB-Ökosystem im Vordergrund steht.
 - [Firebase Realtime Database](/tools/firebase-realtime-database/): Einfacheres JSON-Echtzeitmodell für Firebase-Szenarien, in denen Firestores Collections und Queries überdimensioniert sind.
 - [CockroachDB](/tools/cockroachdb/): Verteilte SQL-Datenbank für relationale Transaktionen und bewusst geplante regionale Datenverteilung.
 - [Couchbase](/tools/couchbase/): Dokument- und Mobile-Plattform mit eigenem Betriebs- und Synchronisationsmodell für Teams, die diese Kontrolle benötigen.

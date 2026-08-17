@@ -76,7 +76,6 @@ MALLET is open source. Costs come from infrastructure, data preparation, and tec
 
 ## Alternatives to MALLET
 
-- [MeaningCloud](/en/tools/meaningcloud/): for API-based text analysis.
 - [Google Cloud Natural Language](/en/tools/google-cloud-natural-language/): for managed NLP APIs.
 - [InterpretML](/en/tools/interpretml/): when model interpretation is the focus.
 - [Marian NMT](/en/tools/marian-nmt/): for machine translation instead of topic modeling.

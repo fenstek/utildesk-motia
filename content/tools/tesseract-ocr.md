@@ -152,11 +152,11 @@ Die Grenzen liegen bei Layouts, schlechten Scans, Handschrift und strukturierten
 
 ### Interne Vergleichspunkte
 
-Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [PaddleOCR](/tools/paddleocr/), [OCRmyPDF](/tools/ocrmypdf/), [AWS Textract](/tools/aws-textract/), [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/). Diese Links helfen, Tesseract OCR nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich PaddleOCR, OCRmyPDF, AWS Textract, Azure AI Document Intelligence. Diese Links helfen, Tesseract OCR nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
 
 ## Alternativen
 
 - [Rossum](/tools/rossum/): ist sinnvoll zu vergleichen, wenn ein anderer Dokumenten- oder Teamworkflow besser passt.
 - [Veryfi](/tools/veryfi/): ist sinnvoll zu vergleichen, wenn sich Umfang, Zusammenarbeit oder Administration unterscheiden.
 - [Mindee](/tools/mindee/): ist sinnvoll zu vergleichen, wenn sich Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/): ist sinnvoll zu vergleichen, wenn sich Umfang, Zusammenarbeit oder Administration unterscheiden.
+- Azure AI Document Intelligence: ist sinnvoll zu vergleichen, wenn sich Umfang, Zusammenarbeit oder Administration unterscheiden.

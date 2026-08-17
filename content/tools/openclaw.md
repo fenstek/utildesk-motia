@@ -98,7 +98,7 @@ Praktisch helfen getrennte Konten für Tests, ein eingeschränkter Arbeitsordner
 - [Hermes Agent](/tools/hermes-agent/): wenn ein offener Assistent für Recherche und Entwicklerarbeit gesucht wird.
 - [OpenHands](/tools/openhands/): wenn Code-Änderungen und Repository-Arbeit im Mittelpunkt stehen.
 - [Cline](/tools/cline/): wenn der Agent direkt im IDE-Workflow mit engen Freigaben arbeiten soll.
-- [AutoGen](/tools/autogen/): wenn Multi-Agent-Rollen und deren Zusammenarbeit experimentell modelliert werden.
+- AutoGen: wenn Multi-Agent-Rollen und deren Zusammenarbeit experimentell modelliert werden.
 - [LangGraph](/tools/langgraph/): wenn Agentenabläufe als kontrollierbare Zustandsgraphen gebaut werden sollen.
 - [CrewAI](/tools/crew-ai/): wenn spezialisierte Agenten als Team orchestriert werden sollen.
 

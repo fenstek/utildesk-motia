@@ -15,14 +15,8 @@ sidebarPoints:
   - "A native PDF, a scan and an invoice are three different technical tasks."
   - "Compare cost per correct record, not merely cost per page."
 relatedTools:
-  - title: "OCRmyPDF"
-    href: "/en/tools/ocrmypdf/"
-  - title: "Azure AI Document Intelligence"
-    href: "/en/tools/azure-ai-document-intelligence/"
   - title: "Google Document AI"
     href: "/en/tools/google-document-ai/"
-  - title: "AWS Textract"
-    href: "/en/tools/aws-textract/"
   - title: "Docparser"
     href: "/en/tools/docparser/"
 ---
@@ -43,13 +37,13 @@ Test thirty real files first: good and poor scans, multi-page PDFs, tables and e
 
 ## The simple route: text and searchable scans
 
-For one-off conversions, a service such as [CloudConvert](/en/tools/cloudconvert/) may be enough. When sensitive scans need to become searchable, [OCRmyPDF](/en/tools/ocrmypdf/) is a useful building block: it preserves the original while adding a text layer. [Tesseract OCR](/en/tools/tesseract-ocr/) and [PaddleOCR](/en/tools/paddleocr/) suit teams that can operate a local stack.
+For one-off conversions, a service such as [CloudConvert](/en/tools/cloudconvert/) may be enough. When sensitive scans need to become searchable, OCRmyPDF is a useful building block: it preserves the original while adding a text layer. [Tesseract OCR](/en/tools/tesseract-ocr/) and PaddleOCR suit teams that can operate a local stack.
 
 Those tools do not determine whether a recognized number has the right business meaning. If the goal is reading, the job is done. If data continues downstream, another step is needed.
 
 ## The robust route: fields, uncertainty and review
 
-[Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/), [Google Document AI](/en/tools/google-document-ai/) and [AWS Textract](/en/tools/aws-textract/) can produce structure, tables and trained document outputs. [Docparser](/en/tools/docparser/) and [Parseur](/en/tools/parseur/) are useful when recurring uploads or email attachments enter a defined flow.
+Azure AI Document Intelligence, [Google Document AI](/en/tools/google-document-ai/) and AWS Textract can produce structure, tables and trained document outputs. [Docparser](/en/tools/docparser/) and [Parseur](/en/tools/parseur/) are useful when recurring uploads or email attachments enter a defined flow.
 
 The difference is not only output format. A production flow keeps the original, extracted fields, confidence, correction and export status together. A missing mandatory field, inconsistent total or unknown layout moves to review. That keeps OCR from becoming a silent error source.
 

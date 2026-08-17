@@ -59,7 +59,7 @@ Sketch separates Workspace subscriptions from a Mac-only license for local, priv
 - [Figma](/en/tools/figma/): The stronger starting point when designers, developers, and stakeholders must co-edit in the browser without a Mac requirement.
 - [Framer](/en/tools/framer/): A better fit when design and prototyping should move quickly toward a publishable web experience.
 - [Affinity Designer](/en/tools/affinity-designer/): More appropriate for general vector and graphic work outside a product UI design system.
-- [Lunacy](/en/tools/lunacy/): Useful for teams seeking a cross-platform desktop alternative with a stronger local-work bias.
+- Lunacy: Useful for teams seeking a cross-platform desktop alternative with a stronger local-work bias.
 - [Balsamiq](/en/tools/balsamiq/): Better for deliberately simple early wireframes where speed and structure matter more than visual fidelity.
 
 ## Editorial Assessment

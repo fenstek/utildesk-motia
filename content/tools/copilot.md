@@ -75,7 +75,7 @@ Assembly arbeitet mit einem Freemium- beziehungsweise Abo-Modell. Fuer die Entsc
 
 ## Alternativen zu Assembly
 
-- [Moxo](/tools/moxo/): wenn sichere Kundenkommunikation und digitale Workflows im Vordergrund stehen.
+- Moxo: wenn sichere Kundenkommunikation und digitale Workflows im Vordergrund stehen.
 - [HoneyBook](/tools/honeybook/): wenn Angebote, Rechnungen und Kundenverwaltung fuer Kreativdienstleister wichtig sind.
 - [Monday.com](/tools/monday-com/): wenn interne Projektsteuerung wichtiger ist als ein Kundenportal.
 - [ClickUp](/tools/clickup/): wenn Aufgaben, Dokumente und Teamarbeit in einer breiteren Arbeitsplattform liegen sollen.

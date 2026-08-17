@@ -79,7 +79,7 @@ Im Katalog ist OBS Studio mit dem Preismodell **Kostenlos** geführt. Für eine 
 - [Camtasia](/tools/camtasia/): passender, wenn der Schwerpunkt auf Screen Recording, Tutorial-Schnitt und Lernvideo-Produktion für verständliche Schritt-für-Schritt-Inhalte liegt.
 - ScreenFlow: guter Vergleich für macOS-nahe Screencasts mit komfortabler Nachbearbeitung.
 - XSplit: prüfen, wenn kommerzielles Streaming und Recording mit klassischer Desktop-App gesucht wird.
-- [Zoom](/tools/zoom/): naheliegend, wenn Meeting-Aufzeichnung wichtiger ist als Szenensteuerung.
+- Zoom: naheliegend, wenn Meeting-Aufzeichnung wichtiger ist als Szenensteuerung.
 
 ## Katalognotiz
 

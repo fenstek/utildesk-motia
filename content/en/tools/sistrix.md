@@ -26,7 +26,7 @@ Sistrix is an SEO platform for visibility, keywords, competitors, links, and tec
 
 ## Who is Sistrix for?
 
-Sistrix suits SEO teams, content owners, and agencies comparing markets and competitors over time. It is especially useful for larger domains, international directories, and structured content programmes. For a small site with few pages, [Google Search Console](/en/tools/google-search-console/) and sound web analytics are often enough at first.
+Sistrix suits SEO teams, content owners, and agencies comparing markets and competitors over time. It is especially useful for larger domains, international directories, and structured content programmes. For a small site with few pages, Google Search Console and sound web analytics are often enough at first.
 
 ## Reading visibility correctly
 
@@ -47,7 +47,7 @@ Sistrix is subscription software with capability varying by plan. Before buying,
 ## Alternatives
 - [Serpstat](/en/tools/serpstat/): combines keyword, competitor, and site-audit research in one SEO suite.
 - [Semrush](/en/tools/semrush/): a broad suite for SEO, PPC, and content workflows.
-- [Google Search Console](/en/tools/google-search-console/): the primary source for your own Google search performance.
+- Google Search Console: the primary source for your own Google search performance.
 - [Moz Pro](/en/tools/moz-pro/): an SEO suite with keyword, link, and site-audit capabilities.
 
 ## Editorial assessment

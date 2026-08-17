@@ -85,7 +85,7 @@ For solo users with one channel, heavily native creative production, or organisa
 - [Hootsuite](/en/tools/hootsuite/): Broad social suite for teams comparing publishing, monitoring, and analytics in an established workspace.
 - [Buffer](/en/tools/buffer/): Lighter planning and publishing approach when an agency-grade workflow is unnecessary.
 - [Later](/en/tools/later/): Visual planning option for brands where Instagram, TikTok, and visual calendars are central.
-- [Sendible](/en/tools/sendible/): Agency-oriented alternative with client and reporting workflows for multiple managed brands.
+- Sendible: Agency-oriented alternative with client and reporting workflows for multiple managed brands.
 - [Agorapulse](/en/tools/agorapulse/): Better suited when social inbox, community management, and moderation matter more than content discovery.
 
 ## FAQ

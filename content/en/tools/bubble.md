@@ -65,7 +65,7 @@ Bubble offers a Freemium model that allows entry and development of simpler appl
 - [Webflow](/tools/webflow/): Another no-code platform focusing on web design and CMS functionalities.
 - [Adalo](/tools/adalo/): Specifically designed for the development of mobile apps without programming.
 - [OutSystems](/tools/outsystems/): Low-code platform for quickly developing corporate applications.
-- [Wix with Velo](/tools/wix-mit-velo/): Website builder with extended development options for individual web apps.
+- Wix with Velo: Website builder with extended development options for individual web apps.
 - [Glide](/tools/glide/): No-code app builder that uses Google Sheets as a data source.
 
 ## What really matters in daily use

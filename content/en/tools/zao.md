@@ -78,7 +78,7 @@ In the catalog, Zao is marked with the pricing model **Plan-based**. For a real 
 - [Remini](/en/tools/remini/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Deep Dream Generator](/en/tools/deep-dream-generator/): useful comparison point if workflow, pricing, or specialization should differ.
 - [PixVerse](/en/tools/pixverse/): useful comparison point if workflow, pricing, or specialization should differ.
-- [Higgsfield](/en/tools/higgsfield/): useful comparison point if workflow, pricing, or specialization should differ.
+- Higgsfield: useful comparison point if workflow, pricing, or specialization should differ.
 
 ## Editorial assessment
 

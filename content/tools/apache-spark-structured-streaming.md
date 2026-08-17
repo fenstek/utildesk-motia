@@ -96,7 +96,7 @@ Wir würden mit einem kleinen, replaybaren End-to-End-Job beginnen und die Betri
 
 - [Apache Flink](/tools/apache-flink/): die naheliegende Vergleichsoption, wenn kontinuierliches Stream-Processing, Event Time und State im Zentrum stehen.
 - [Apache Beam](/tools/apache-beam/): ein portables Pipeline-Modell, wenn derselbe Code auf unterschiedlichen Runnern wie Spark, Flink oder Dataflow geprüft werden soll.
-- [Kafka Streams](/tools/kafka-streams/): eine leichtere Bibliothek für Java/Scala-Anwendungen, die eng an Kafka-Topics und Microservices gebunden sind.
+- Kafka Streams: eine leichtere Bibliothek für Java/Scala-Anwendungen, die eng an Kafka-Topics und Microservices gebunden sind.
 - [Apache Kafka](/tools/apache-kafka/): die passendere erste Wahl, wenn Transport, Partitionierung und Event-Log wichtiger sind als verteilte Transformation.
 - [Google Cloud Dataflow](/tools/google-cloud-dataflow/): ein gemanagter Cloud-Ansatz für Batch- und Streaming-Pipelines, besonders im Beam-Ökosystem.
 

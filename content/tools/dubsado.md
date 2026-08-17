@@ -80,7 +80,7 @@ Wer vor allem interne Projekte, Teamkapazität, Abhängigkeiten oder eine tiefer
 - [Asana](/tools/asana/): Besser für interne Projekte, Verantwortlichkeiten, Abhängigkeiten und teamübergreifende Planung; kundenseitige Verträge und Zahlungen sind nicht der Schwerpunkt.
 - [ClickUp](/tools/clickup/): Geeignet, wenn Aufgaben, Dokumente, Chat und interne Automationen den Hauptarbeitsraum bilden und Dubsados Client-Workflow zu eng wäre.
 - [Setmore](/tools/setmore/): Die schlankere Wahl für reine Terminbuchung und Erinnerungen, ohne eine komplette Angebots-, Vertrags- und Rechnungsstrecke aufzubauen.
-- [Zoho CRM](/tools/zoho-crm/): Passender für strukturierte Vertriebs- und CRM-Prozesse mit mehreren Pipelines und stärkerem Fokus auf Kundendaten als auf gebrandeten Serviceformularen.
+- Zoho CRM: Passender für strukturierte Vertriebs- und CRM-Prozesse mit mehreren Pipelines und stärkerem Fokus auf Kundendaten als auf gebrandeten Serviceformularen.
 
 ## FAQ
 

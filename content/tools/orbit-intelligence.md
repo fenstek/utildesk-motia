@@ -96,7 +96,7 @@ Neben dem Listenpreis sollte bei Orbit Intelligence auch der Einführungsaufwand
 - [Innography](/tools/innography/): wenn der Schwerpunkt auf Patentlandschaft und Wettbewerbsbeobachtung liegt.
 - [Google Patents](/tools/google-patents/): wenn eine frei zugängliche Recherchebasis für den ersten Suchlauf genügt.
 - [Espacenet](/tools/espacenet/): wenn amtliche europäische Patentdaten und eine offene Rechercheoberfläche im Vordergrund stehen.
-- [Lens.org](/tools/lens-org/): wenn Patente mit wissenschaftlicher Literatur und offenen Analysewegen kombiniert werden sollen.
+- Lens.org: wenn Patente mit wissenschaftlicher Literatur und offenen Analysewegen kombiniert werden sollen.
 
 Beim Vergleich lohnt es sich, Orbit Intelligence nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch Datenbanken, BI-Tools, Pipeline-Systeme und offene Frameworks die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
 

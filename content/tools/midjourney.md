@@ -97,7 +97,7 @@ Midjourney arbeitet mit kostenpflichtigen Plänen. Testmöglichkeiten, Limits un
 
 - [DALL-E](/tools/dall-e/): für Bildgenerierung im OpenAI-Umfeld.
 - [Stable Diffusion](/tools/stable-diffusion/): für offene und selbst betreibbare Bildmodelle.
-- [Leonardo AI](/tools/leonardo-ai/): für Creator- und Game-nahe Visuals.
+- Leonardo AI: für Creator- und Game-nahe Visuals.
 - [Runway](/tools/runway/): wenn Bild und Video zusammen gedacht werden.
 - [Canva](/tools/canva/): wenn Generierung direkt in Designs und Templates landen soll.
 

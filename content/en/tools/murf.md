@@ -76,7 +76,7 @@ In the catalog, Murf is marked with the pricing model **Freemium**. For a real d
 ## Alternatives to Murf
 
 - [ElevenLabs](/en/tools/elevenlabs/): useful comparison point if workflow, pricing, or specialization should differ.
-- [WellSaid Labs](/en/tools/wellsaid-labs/): useful comparison point if workflow, pricing, or specialization should differ.
+- WellSaid Labs: useful comparison point if workflow, pricing, or specialization should differ.
 - [Speechify](/en/tools/speechify/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Descript Overdub](/en/tools/descript-overdub/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Acapela Group](/en/tools/acapela-group/): useful comparison point if workflow, pricing, or specialization should differ.

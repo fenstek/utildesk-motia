@@ -137,7 +137,7 @@ The tool is web-based and only requires a current browser and, if needed, the in
 
 ## Alternatives
 
-- [HubSpot Sales](/en/tools/hubspot-sales/): is worth comparing when another existing workflow or ecosystem fits better.
+- [HubSpot Sales](/en/tools/hubspot-sales-hub/): is worth comparing when another existing workflow or ecosystem fits better.
 - [hubspot-marketing-hub](/en/tools/hubspot-marketing-hub/): is worth comparing when the scope, collaboration model or administration needs differ.
 - [mailchimp](/en/tools/mailchimp/): is worth comparing when the scope, collaboration model or administration needs differ.
 - [ActiveCampaign](/en/tools/activecampaign/): is worth comparing when the scope, collaboration model or administration needs differ.

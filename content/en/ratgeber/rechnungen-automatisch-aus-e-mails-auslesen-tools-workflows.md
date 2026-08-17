@@ -78,7 +78,7 @@ The advantage is flexibility. Teams can add custom validation such as duplicate 
 
 ## Scenario 3: Microsoft or Enterprise Workflow
 
-In Microsoft environments, [Microsoft Power Automate](/en/tools/microsoft-power-automate/) is often the natural entry point. Outlook, SharePoint, Teams, Excel and approvals are close to the tenant. A typical flow stores attachments in SharePoint, calls [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/) or another OCR API, sends uncertain invoices into approval, and exports checked fields.
+In Microsoft environments, [Microsoft Power Automate](/en/tools/microsoft-power-automate/) is often the natural entry point. Outlook, SharePoint, Teams, Excel and approvals are close to the tenant. A typical flow stores attachments in SharePoint, calls Azure AI Document Intelligence or another OCR API, sends uncertain invoices into approval, and exports checked fields.
 
 For larger operations, [UiPath](/en/tools/uipath/) may join the process, especially where legacy interfaces, RPA steps or human task queues are involved. It is usually too heavy for a first small invoice folder.
 

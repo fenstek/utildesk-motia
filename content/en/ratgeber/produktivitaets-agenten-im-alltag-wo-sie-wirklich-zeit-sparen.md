@@ -19,8 +19,6 @@ sidebarPoints:
   - "The best choice depends less on the model than on the workflow type: personal assistant, no-code agent, classic automation or custom agent framework."
   - "Real time savings only appear once permissions, review points, logs and stop rules are clear."
 relatedTools:
-  - title: "Lindy"
-    href: "/en/tools/lindy/"
   - title: "Zapier"
     href: "/en/tools/zapier/"
   - title: "n8n"
@@ -36,11 +34,6 @@ relatedTools:
   - title: "Manus"
     href: "/en/tools/manus/"
 decisionTools:
-  - title: "Lindy"
-    href: "/en/tools/lindy/"
-    note: "strong when inbox, calendar, meetings and follow-ups create the daily drag"
-    score: "8.6"
-    kind: "recommend"
   - title: "Zapier Agents"
     href: "/en/tools/zapier/"
     note: "a good entry point when existing SaaS tools need to be connected through observable agents"
@@ -68,7 +61,7 @@ A simple map helps in daily work.
 
 | Layer | Typical tools | Where time is saved | Main risk |
 | --- | --- | --- | --- |
-| Personal work assistant | [Lindy](/en/tools/lindy/), [Microsoft Copilot](/en/tools/microsoft-copilot/), [ChatGPT](/en/tools/chatgpt/) | inbox, meeting prep, calendar, summaries, drafts | too much context, too little review |
+| Personal work assistant | Lindy, [Microsoft Copilot](/en/tools/microsoft-copilot/), [ChatGPT](/en/tools/chatgpt/) | inbox, meeting prep, calendar, summaries, drafts | too much context, too little review |
 | No-/low-code workflow agent | [Zapier](/en/tools/zapier/), [n8n](/en/tools/n8n/), [Gumloop](/en/tools/gumloop/) | handoffs between apps, lead qualification, research, data cleanup | unstable rules, shadow automations |
 | Engineering and orchestration framework | [CrewAI](/en/tools/crew-ai/), [LangGraph](/en/tools/langgraph/), [Manus](/en/tools/manus/) | multi-step processes, custom roles, long-lived state, human-in-the-loop | complexity, debugging, permission management |
 
@@ -80,7 +73,7 @@ Mixing these categories is how teams buy the wrong tool. A founder with a crowde
 
 The best first use case is almost never a strategic decision. It is a small, annoying handoff.
 
-Take the daily inbox loop. A request arrives, context lives in previous emails, a meeting has to be scheduled, a CRM field is missing, and a follow-up note is needed afterwards. A person can do that quickly, but loses focus while doing it. [Lindy](/en/tools/lindy/) positions itself exactly there: inbox, meetings, calendar and follow-ups should not just be answered, but prepared and partly executed.
+Take the daily inbox loop. A request arrives, context lives in previous emails, a meeting has to be scheduled, a CRM field is missing, and a follow-up note is needed afterwards. A person can do that quickly, but loses focus while doing it. Lindy positions itself exactly there: inbox, meetings, calendar and follow-ups should not just be answered, but prepared and partly executed.
 
 The value is not magic. It comes from bundling small steps: prioritize, summarize, prepare a draft, check scheduling logic, suggest the next action. If the human only needs to approve or correct the result, the workday becomes lighter.
 
@@ -130,7 +123,7 @@ That may sound unromantic. It is where real productivity appears. Not in the pro
 
 ## Four good starting scenarios
 
-**1. Meeting preparation and follow-up.** An agent gathers context from calendar, CRM, earlier notes and open tasks. It creates a briefing, drafts follow-up emails and creates tasks. The human reviews before anything is sent. Good candidates: [Lindy](/en/tools/lindy/), [Microsoft Copilot](/en/tools/microsoft-copilot/), [Notion AI](/en/tools/notion-ai/).
+**1. Meeting preparation and follow-up.** An agent gathers context from calendar, CRM, earlier notes and open tasks. It creates a briefing, drafts follow-up emails and creates tasks. The human reviews before anything is sent. Good candidates: Lindy, [Microsoft Copilot](/en/tools/microsoft-copilot/), [Notion AI](/en/tools/notion-ai/).
 
 **2. Lead and customer triage.** New leads are enriched, categorized and assigned a next step. The agent may research and prepare, but not promise discounts or commitments on its own. Good candidates: [Zapier](/en/tools/zapier/), [Gumloop](/en/tools/gumloop/), [n8n](/en/tools/n8n/).
 
@@ -186,7 +179,7 @@ No. Many teams should start with a narrow workflow agent. Frameworks pay off onl
 
 ## Conclusion: saving time means setting boundaries
 
-Productivity agents are no longer just demo material in 2026. [Lindy](/en/tools/lindy/) can smooth personal work, [Zapier](/en/tools/zapier/) and [n8n](/en/tools/n8n/) connect agents to existing apps, [Gumloop](/en/tools/gumloop/) brings business teams closer to AI-native automation, and [CrewAI](/en/tools/crew-ai/) plus [LangGraph](/en/tools/langgraph/) provide architecture for more complex agent systems.
+Productivity agents are no longer just demo material in 2026. Lindy can smooth personal work, [Zapier](/en/tools/zapier/) and [n8n](/en/tools/n8n/) connect agents to existing apps, [Gumloop](/en/tools/gumloop/) brings business teams closer to AI-native automation, and [CrewAI](/en/tools/crew-ai/) plus [LangGraph](/en/tools/langgraph/) provide architecture for more complex agent systems.
 
 But the most important productivity rule remains old-fashioned: bound the job before automating it. An agent that shortens a clear loop saves time. An agent thrown into an unclear process only produces faster disorder.
 

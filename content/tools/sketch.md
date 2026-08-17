@@ -58,7 +58,7 @@ Sketch bietet Abonnements für Workspace-Funktionen und eine separate Mac-only-L
 - [Figma](/tools/figma/): Browser-first-Zusammenarbeit ist die bessere Ausgangslage, wenn Designer, Entwickler und Stakeholder ohne Mac im selben Dokument arbeiten sollen.
 - [Framer](/tools/framer/): Geeigneter, wenn aus Design und Prototyp schnell eine veröffentlichbare Web-Erfahrung werden soll.
 - [Affinity Designer](/tools/affinity-designer/): Die naheliegendere Wahl für allgemeine Vektor- und Grafikarbeit jenseits eines UI-Designsystems.
-- [Lunacy](/tools/lunacy/): Praktisch für Teams, die eine plattformübergreifende Desktop-Alternative mit lokalem Arbeitsanteil suchen.
+- Lunacy: Praktisch für Teams, die eine plattformübergreifende Desktop-Alternative mit lokalem Arbeitsanteil suchen.
 - [Balsamiq](/tools/balsamiq/): Besser für frühe, bewusst einfache Wireframes, bei denen visuelle Präzision noch nicht das Ziel ist.
 
 ## Redaktionelle Einschätzung

@@ -98,7 +98,7 @@ In practice, separate test accounts, a restricted working directory, explicit sk
 - [Hermes Agent](/en/tools/hermes-agent/): when an open assistant for research and developer work is needed.
 - [OpenHands](/en/tools/openhands/): when code changes and repository work are the main goal.
 - [Cline](/en/tools/cline/): when the agent should work inside an IDE with close human approval.
-- [AutoGen](/en/tools/autogen/): when teams are experimenting with multi-agent roles and collaboration.
+- AutoGen: when teams are experimenting with multi-agent roles and collaboration.
 - [LangGraph](/en/tools/langgraph/): when agent workflows should be built as controllable state graphs.
 - [CrewAI](/en/tools/crew-ai/): when specialised agents should be orchestrated as a team.
 

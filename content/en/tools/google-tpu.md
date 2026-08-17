@@ -102,7 +102,7 @@ Google TPU pricing is based on consumption and usage within Google Cloud Platfor
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Google TPU (Tensor Processing Unit) before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Google TPU (Tensor Processing Unit) before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Google TPU (Tensor Processing Unit) before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Google TPU (Tensor Processing Unit) before moving data or ownership.
 
 ## FAQ

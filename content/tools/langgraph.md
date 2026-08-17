@@ -90,7 +90,7 @@ Das Preismodell von LangGraph sollte direkt beim Anbieter geprüft werden, weil 
 
 ## Naheliegende Alternativen
 
-Als Vergleichspunkt lohnen sich [LangChain](/tools/langchain/), [AutoGen](/tools/autogen/), [Pydantic AI](/tools/pydantic-ai/). Entscheidend ist, welches Werkzeug im vorhandenen Team die wenigsten neuen Blindstellen erzeugt und den konkreten Ablauf rund um LangGraph am besten absichert.
+Als Vergleichspunkt lohnen sich [LangChain](/tools/langchain/), AutoGen, [Pydantic AI](/tools/pydantic-ai/). Entscheidend ist, welches Werkzeug im vorhandenen Team die wenigsten neuen Blindstellen erzeugt und den konkreten Ablauf rund um LangGraph am besten absichert.
 
 ## FAQ
 
@@ -123,7 +123,7 @@ Ein guter Test misst nicht nur Geschwindigkeit. Wichtig sind weniger Rückfragen
 Der häufigste Fehler ist ein zu breiter Einstieg. LangGraph sollte zuerst an einer engen, realen Aufgabe geprüft werden, bevor mehrere Teams, sensible Daten oder verbindliche Aktionen dazukommen.
 
 **6. Welche Alternativen sollte man vergleichen?**
-Als Vergleich lohnen sich [LangChain](/tools/langchain/), [AutoGen](/tools/autogen/), [Pydantic AI](/tools/pydantic-ai/). Der Vergleich sollte am konkreten Workflow rund um LangGraph erfolgen, nicht nur anhand von Funktionslisten.
+Als Vergleich lohnen sich [LangChain](/tools/langchain/), AutoGen, [Pydantic AI](/tools/pydantic-ai/). Der Vergleich sollte am konkreten Workflow rund um LangGraph erfolgen, nicht nur anhand von Funktionslisten.
 
 **7. Welche Kosten werden leicht übersehen?**
 Neben dem Preisplan zählen Einrichtung, Schulung, Monitoring, Review-Zeit, spätere Migration und mögliche Modell- oder Nutzungslimits. Bei LangGraph sollte deshalb nicht nur der Monatsbetrag bewertet werden.
@@ -143,5 +143,5 @@ LangGraph ist vor allem dann eine tragfähige Wahl, wenn ein klarer Prozess, ein
 
 - [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
 - [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- zoom: ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
 - [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

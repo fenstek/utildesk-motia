@@ -60,7 +60,7 @@ Datadog empfehle ich Teams mit mehreren produktiven Services, einer echten On-Ca
 
 ## Alternativen
 
-- [New Relic](/tools/new-relic/): Breite SaaS-Observability mit ähnlichem APM- und Log-Fokus; sinnvoll, wenn die vorhandenen Teams bereits New-Relic-Erfahrung haben.
+- New Relic: Breite SaaS-Observability mit ähnlichem APM- und Log-Fokus; sinnvoll, wenn die vorhandenen Teams bereits New-Relic-Erfahrung haben.
 - [Dynatrace](/tools/dynatrace/): Stärker auf automatische Topologie- und Ursachenanalyse in großen Umgebungen ausgerichtet, mit eigener Kosten- und Komplexitätskurve.
 - [Prometheus](/tools/prometheus/): Open-Source-Metrikmonitoring für Teams, die Kubernetes-nahe Metriken selbst betreiben und Logs/APM separat wählen wollen.
 - [Grafana](/tools/grafana/): Flexible Visualisierung und Observability über verschiedene Datenquellen, passend zu einem bewusst modularen Stack.

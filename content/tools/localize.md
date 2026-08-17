@@ -75,7 +75,7 @@ Im Katalog ist Localize mit dem Preismodell **Freemium** geführt. Für eine bel
 
 ## Alternativen zu Localize
 
-- [Phrase](/tools/phrase/): prüfen, wenn ein anderer Schwerpunkt als bei Localize relevant ist.
+- Phrase: prüfen, wenn ein anderer Schwerpunkt als bei Localize relevant ist.
 - [Lokalise](/tools/lokalise/): passender, wenn ein anderer Schwerpunkt als bei Localize im Vordergrund steht.
 - [Transifex](/tools/transifex/): prüfen, wenn ein anderer Schwerpunkt als bei Localize relevant ist.
 - [Smartling](/tools/smartling/): prüfen, wenn ein anderer Schwerpunkt als bei Localize relevant ist.

@@ -76,7 +76,7 @@ In the catalog, FL Studio is marked with the pricing model **Plan-based**. For a
 ## Alternatives to FL Studio
 
 - [Ableton Live](/en/tools/ableton-live/): useful comparison point if workflow, pricing, or specialization should differ.
-- [Logic Pro](/en/tools/logic-pro/): useful comparison point if workflow, pricing, or specialization should differ.
+- Logic Pro: useful comparison point if workflow, pricing, or specialization should differ.
 - [GarageBand](/en/tools/garageband/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Soundtrap](/en/tools/soundtrap/): useful comparison point if workflow, pricing, or specialization should differ.
 - [LANDR](/en/tools/landr/): useful comparison point if workflow, pricing, or specialization should differ.

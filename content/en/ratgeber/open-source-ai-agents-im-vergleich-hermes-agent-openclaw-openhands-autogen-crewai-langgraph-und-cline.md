@@ -31,8 +31,6 @@ relatedTools:
     href: "/tools/crew-ai/"
   - title: "LangGraph"
     href: "/tools/langgraph/"
-  - title: "AutoGen"
-    href: "/tools/autogen/"
 decisionTools:
   - title: "Hermes Agent"
     href: "/tools/hermes-agent/"
@@ -68,7 +66,7 @@ The landscape becomes easier to read when the tools are grouped by their main ro
 | [OpenClaw](/tools/openclaw/) | self-hosted gateway across many chat channels | WhatsApp, Signal, Matrix, Telegram, WebChat, mobile nodes | routing, allowlists and group rules need real care |
 | [Cline](/tools/cline/) | agentic coding inside editor and terminal | VS Code, JetBrains, CLI, Kanban | works best with small diffs, tests and explicit approvals |
 | [OpenHands](/tools/openhands/) | platform for AI-driven development and SDLC automation | Agent Canvas, Cloud, Enterprise, SDK | not every task should become a central agent run |
-| [AutoGen](/tools/autogen/) | historically important multi-agent framework | Python/.NET agents, research, existing setups | new projects must consider maintenance status and migration path |
+| AutoGen | historically important multi-agent framework | Python/.NET agents, research, existing setups | new projects must consider maintenance status and migration path |
 | [CrewAI](/tools/crew-ai/) | fast modeling of roles, crews, tasks and flows | business automation, research, repeatable processes | high abstraction can hide failure paths |
 | [LangGraph](/tools/langgraph/) | stateful, controllable agent graphs | custom agent apps, LangChain-adjacent stacks | more architecture work, less instant magic |
 
@@ -98,7 +96,7 @@ The advantage is platform logic. Teams can control, integrate and scale agent ru
 
 ## AutoGen, CrewAI and LangGraph: frameworks, not finished assistants
 
-[AutoGen](/tools/autogen/) deserves respect because it popularized many multi-agent patterns early. Still, new projects should look carefully. The Microsoft repository now states that AutoGen is in maintenance mode and that new users should start with Microsoft Agent Framework. For existing AutoGen projects, that does not mean "throw it away immediately", but it changes the investment calculation: migration, support path and long-term maintenance belong on the checklist.
+AutoGen deserves respect because it popularized many multi-agent patterns early. Still, new projects should look carefully. The Microsoft repository now states that AutoGen is in maintenance mode and that new users should start with Microsoft Agent Framework. For existing AutoGen projects, that does not mean "throw it away immediately", but it changes the investment calculation: migration, support path and long-term maintenance belong on the checklist.
 
 [CrewAI](/tools/crew-ai/) sits at another abstraction layer. It models agents, crews, tasks, processes and flows, with memory, knowledge, guardrails, human-in-the-loop triggers and observability. That is attractive when business processes should be decomposed quickly into roles and tasks: research, reporting, campaign preparation, back-office runs or structured content production.
 
@@ -114,7 +112,7 @@ For solo developers, a small combination is often better than a large stack. [Cl
 
 For teams, [OpenHands](/tools/openhands/) becomes more interesting once agent runs are treated as a shared engineering process. [CrewAI](/tools/crew-ai/) can complement it for clearly defined business automations. The critical line is between "the agent prepares work" and "a human or CI decides".
 
-For platform and AI engineering teams, a framework decision is unavoidable. [LangGraph](/tools/langgraph/) fits when state, debugging and resumption are central. [AutoGen](/tools/autogen/) remains relevant for existing projects and research, but new Microsoft-adjacent multi-agent setups should also evaluate the Agent Framework path.
+For platform and AI engineering teams, a framework decision is unavoidable. [LangGraph](/tools/langgraph/) fits when state, debugging and resumption are central. AutoGen remains relevant for existing projects and research, but new Microsoft-adjacent multi-agent setups should also evaluate the Agent Framework path.
 
 ## Safety check before the first production run
 
@@ -130,7 +128,7 @@ The rule is simple: the closer an agent gets to production systems, the less it 
 
 ## Conclusion: choose the workplace, not the hype
 
-The best open-source agent is rarely "the smartest one". It is the one whose workplace matches your process. [Hermes Agent](/tools/hermes-agent/) is compelling as a long-running personal agent. [OpenClaw](/tools/openclaw/) brings agents into messaging channels under your control. [Cline](/tools/cline/) is strong when coding stays in small, testable diffs. [OpenHands](/tools/openhands/) makes agent runs more team- and SDLC-friendly. [CrewAI](/tools/crew-ai/) speeds up role-based process automation. [LangGraph](/tools/langgraph/) provides the robust state machine for demanding agent systems. [AutoGen](/tools/autogen/) remains historically important, but new projects should not choose it without checking the official future path.
+The best open-source agent is rarely "the smartest one". It is the one whose workplace matches your process. [Hermes Agent](/tools/hermes-agent/) is compelling as a long-running personal agent. [OpenClaw](/tools/openclaw/) brings agents into messaging channels under your control. [Cline](/tools/cline/) is strong when coding stays in small, testable diffs. [OpenHands](/tools/openhands/) makes agent runs more team- and SDLC-friendly. [CrewAI](/tools/crew-ai/) speeds up role-based process automation. [LangGraph](/tools/langgraph/) provides the robust state machine for demanding agent systems. AutoGen remains historically important, but new projects should not choose it without checking the official future path.
 
 If you only want an experiment, start with a tightly scoped Cline or OpenHands use case. If you are building an agent architecture, start with state and safety, not with the model. That is where the difference between a demo and productive agent work becomes visible in 2026.
 

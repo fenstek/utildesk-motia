@@ -79,7 +79,7 @@ Im Katalog ist Deep Dream Generator mit dem Preismodell **Je nach Plan** geführ
 - [Stable Diffusion](/tools/stable-diffusion/): passender, wenn ein anderer Schwerpunkt als bei Deep Dream Generator im Vordergrund steht.
 - [DALL·E](/tools/dall-e/): prüfen, wenn ein anderer Schwerpunkt als bei Deep Dream Generator relevant ist.
 - [Prisma](/tools/prisma/): prüfen, wenn KI-nahe Bildbearbeitung und visuelle Effekte für schnelle, auffällige Bildvarianten wichtiger ist.
-- [Higgsfield](/tools/higgsfield/): naheliegend, falls KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen im Vordergrund steht.
+- Higgsfield: naheliegend, falls KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen im Vordergrund steht.
 
 ## Redaktionelle Einschätzung
 

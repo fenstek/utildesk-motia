@@ -58,8 +58,8 @@ Greenhouse empfehlen wir Recruiting-Organisationen mit wiederkehrendem Hiring, m
 
 ## Alternativen
 
-- [Lever](/tools/lever/): ATS und Recruiting-CRM mit stärkerem Fokus auf Talent-Pipelines und Beziehungsarbeit, wenn Sourcing und Nurturing im Zentrum stehen.
-- [Workable](/tools/workable/): Einfacher zugängliche Recruiting-Plattform für Teams, die Stellen schnell veröffentlichen und mit weniger Prozesskomplexität arbeiten möchten.
+- Lever: ATS und Recruiting-CRM mit stärkerem Fokus auf Talent-Pipelines und Beziehungsarbeit, wenn Sourcing und Nurturing im Zentrum stehen.
+- Workable: Einfacher zugängliche Recruiting-Plattform für Teams, die Stellen schnell veröffentlichen und mit weniger Prozesskomplexität arbeiten möchten.
 - [SmartRecruiters](/tools/smartrecruiters/): Breiter Talent-Acquisition-Ansatz für Unternehmen, die internationale Ausschreibungen und ein größeres Integrationsökosystem benötigen.
 - [BambooHR](/tools/bamboohr/): HR-Suite mit Recruiting-Modul, passend wenn Bewerbermanagement eng mit Personalstammdaten und HR-Administration verbunden werden soll.
 
