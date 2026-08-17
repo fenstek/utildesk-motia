@@ -83,7 +83,7 @@ Our recommendation is to start with one reviewable case type and one site, not w
 - [Genetec Clearance](/en/tools/genetec-clearance/): is a better fit for case- and evidence-oriented collection, collaboration and release of video material.
 - [Amazon Rekognition Video](/en/tools/amazon-rekognition-video/): is an API-oriented option when a development team wants to build recognition into its own process.
 - [Google Cloud Video Intelligence](/en/tools/google-cloud-video-intelligence/): fits cloud video analysis inside an existing Google Cloud workflow, not automatically a complete VMS.
-- [Clarifai Video Recognition](/en/tools/clarifai-video-recognition/): is relevant when custom models and an adaptable computer-vision pipeline matter more than a ready-made security platform.
+- [Clarifai Video Recognition](/en/tools/clarifai/): is relevant when custom models and an adaptable computer-vision pipeline matter more than a ready-made security platform.
 
 ## FAQ
 

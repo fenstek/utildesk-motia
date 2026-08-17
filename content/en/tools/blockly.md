@@ -64,7 +64,7 @@ We recommend Blockly when a team can embed a bounded visual editor in its own we
 
 - [MakeCode](/en/tools/makecode/): A more complete learning and programming environment with block and text views; useful when hardware or course materials need a faster start.
 - [Code.org](/en/tools/code-org/): A course and classroom platform with ready-made learning paths; better when teachers want to use content rather than build an editor.
-- [AppInventor](/en/tools/appinventor/): A visual mobile-app development environment; suitable when the output should be an Android app rather than a general embedded editor.
+- [AppInventor](/en/tools/mit-app-inventor/): A visual mobile-app development environment; suitable when the output should be an Android app rather than a general embedded editor.
 - [Thunkable](/en/tools/thunkable/): A hosted no-code approach to mobile applications; worth considering when publishing and platform services matter more than owning block and generator logic.
 - [Codecademy](/en/tools/codecademy/): An interactive learning platform with exercises; a better fit for structured coding courses than for operating Blockly infrastructure.
 

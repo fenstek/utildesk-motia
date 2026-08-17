@@ -65,7 +65,7 @@ Writer has a free entry point; broader automation, administration, or suite feat
 ## Alternatives
 
 - [OnlyOffice](/en/tools/onlyoffice/): when self-hosting, office compatibility, or a controlled document server matters most.
-- [Microsoft Office 365](/en/tools/microsoft-office-365/): when Word, SharePoint, and Teams are already the organisation's standard.
+- [Microsoft Office 365](/en/tools/microsoft-365/): when Word, SharePoint, and Teams are already the organisation's standard.
 - [Grammarly](/en/tools/grammarly/): when language suggestions inside existing editors are the main requirement.
 - [LanguageTool](/en/tools/languagetool/): when multilingual spelling and style review is the primary need.
 

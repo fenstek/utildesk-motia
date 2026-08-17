@@ -1,9 +1,9 @@
 ---
 slug: wombo-ai
-title: "Wombo AI"
+title: "Dream by WOMBO"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: 2026-07-17
+editorial_reviewed_at: 2026-08-17
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-17-editorial-100"
 category: AI Infrastructure
@@ -12,11 +12,11 @@ tags:
   - ai-art
   - image-generation
   - mobile
-official_url: "https://w.ai/"
+official_url: "https://dream.ai/"
 popularity: 0
 translation: full
-updated_at: 2026-07-17
-description: "Wombo AI is a ai agents tool whose value should be judged in a concrete workflow with clear ownership and review."
+updated_at: 2026-08-17
+description: "Dream by WOMBO generates images and short visual variations from prompts; selection, rights checks and commercial use remain workflow responsibilities."
 ---
 # Wombo AI
 

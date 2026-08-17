@@ -79,7 +79,6 @@ For a new general deep-learning project, start by comparing PyTorch, TensorFlow,
 - [PyTorch](/en/tools/pytorch/): More flexible model code and a more active ecosystem for research, training, and new architectures.
 - [TensorFlow](/en/tools/tensorflow/): A broader production and deployment stack when training, serving, and platform integration belong together.
 - [Keras](/en/tools/keras/): A higher-level API for fast experiments and teams that want fewer graph and build details to maintain.
-- [MXNet](/en/tools/mxnet/): A similar historical framework option for older or distributed ML estates; verify its maintenance implications first.
 - [OpenCV](/en/tools/opencv/): A tighter fit for classical image processing and vision pipelines without owning deep-learning training.
 
 ## FAQ
