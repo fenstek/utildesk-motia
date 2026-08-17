@@ -76,7 +76,7 @@ Microsoft Azure Computer Vision offers a freemium pricing model, with a limited 
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Microsoft Azure Computer Vision before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Microsoft Azure Computer Vision before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Microsoft Azure Computer Vision before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Microsoft Azure Computer Vision before moving data or ownership.
 
 ## FAQ

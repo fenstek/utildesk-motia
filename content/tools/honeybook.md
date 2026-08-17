@@ -75,7 +75,7 @@ Weniger passend ist HoneyBook für Teams mit tiefem Vertriebsreporting, komplexe
 ## Alternativen
 
 - [Dubsado](/tools/dubsado/): Ähnlicher Clientflow für Angebote, Verträge und Automations, wenn stärker konfigurierbare Formulare und Workflows wichtiger sind.
-- [Zoho CRM](/tools/zoho-crm/): CRM mit breiterem Vertriebs- und Datenmodell, wenn Leads, Pipelines und teamübergreifendes Reporting im Vordergrund stehen.
+- Zoho CRM: CRM mit breiterem Vertriebs- und Datenmodell, wenn Leads, Pipelines und teamübergreifendes Reporting im Vordergrund stehen.
 - [Asana](/tools/asana/): Work-Management für Aufgaben, Projekte und Verantwortlichkeiten, wenn Rechnungs- und Zahlungsabwicklung nicht im selben System liegen muss.
 - [Calendly](/tools/calendly/): Spezialisierte Terminbuchung, wenn nur Scheduling und Kalenderabgleich gebraucht werden.
 

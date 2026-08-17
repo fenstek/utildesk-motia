@@ -67,15 +67,15 @@ Die eigentlichen Betriebskosten liegen häufig in Moderationszeit, Onboarding, B
 
 Discord wird empfohlen für Communities und kleine, dialogorientierte Teams, die Text-, Voice- und Video-Kommunikation mit Rollen und moderiertem Zugang verbinden wollen. Wert entsteht, wenn ein klarer Serverzweck, verantwortliche Moderation und ein definierter Übergang von Chat zu verbindlichen Ergebnissen vorhanden sind.
 
-Für formale Unternehmenskommunikation, sensible Daten, revisionsnahe Abläufe oder stark in Microsoft 365 integrierte Arbeit sollte man zuerst [Microsoft Teams](/tools/microsoft-teams/) prüfen. [Mattermost](/tools/mattermost/) und [Rocket.Chat](/tools/rocket-chat/) sind die naheliegenderen Alternativen, wenn Hosting- und Kontrollfragen stärker wiegen. Discord ist dann die richtige Entscheidung, wenn Community-Dynamik und niedrige Einstiegshürden den Ausschlag geben und das Team die Grenzen bewusst betreibt.
+Für formale Unternehmenskommunikation, sensible Daten, revisionsnahe Abläufe oder stark in Microsoft 365 integrierte Arbeit sollte man zuerst [Microsoft Teams](/tools/microsoft-teams/) prüfen. Mattermost und [Rocket.Chat](/tools/rocket-chat/) sind die naheliegenderen Alternativen, wenn Hosting- und Kontrollfragen stärker wiegen. Discord ist dann die richtige Entscheidung, wenn Community-Dynamik und niedrige Einstiegshürden den Ausschlag geben und das Team die Grenzen bewusst betreibt.
 
 ## Alternativen
 
 - [Microsoft Teams](/tools/microsoft-teams/): Besser, wenn Chat, Meetings, Dateien und Identitäten eng mit Microsoft 365 verbunden sein sollen.
-- [Mattermost](/tools/mattermost/): Geeigneter, wenn eine kontrolliertere, teamorientierte Plattform mit stärkerem Fokus auf Governance und eigener Betriebsverantwortung gesucht wird.
+- Mattermost: Geeigneter, wenn eine kontrolliertere, teamorientierte Plattform mit stärkerem Fokus auf Governance und eigener Betriebsverantwortung gesucht wird.
 - [Rocket.Chat](/tools/rocket-chat/): Sinnvoll für Organisationen, die anpassbaren Teamchat und mögliche Self-Hosting-Optionen priorisieren.
 - [Telegram](/tools/telegram/): Praktischer für große Broadcast-Kanäle und mobile Messenger-Kommunikation, nicht für komplexe Arbeitsräume.
-- [Zoom](/tools/zoom/): Die passendere Wahl, wenn Videokonferenzen, Webinare und Terminabläufe der Hauptzweck sind.
+- Zoom: Die passendere Wahl, wenn Videokonferenzen, Webinare und Terminabläufe der Hauptzweck sind.
 
 ## FAQ
 

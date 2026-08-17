@@ -78,7 +78,7 @@ For a small code-first system governed by strict pull requests, or a high-risk t
 
 - [LangGraph](/en/tools/langgraph/): Code-first graphs with explicit state and transitions when repository review matters more than a visual builder.
 - [LangChain](/en/tools/langchain/): A broad framework for models, retrieval, and tools that fits teams building their own application architecture.
-- [AutoGen](/en/tools/autogen/): Oriented toward programmatic multi-agent communication and experimentation rather than a low-code canvas.
+- AutoGen: Oriented toward programmatic multi-agent communication and experimentation rather than a low-code canvas.
 - [n8n](/en/tools/n8n/): Stronger for general business automation and SaaS integration when LLM orchestration is only one part of the workflow.
 
 ## FAQ

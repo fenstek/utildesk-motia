@@ -62,7 +62,7 @@ We recommend Datadog to teams with several production services, real on-call or 
 
 ## Alternatives
 
-- [New Relic](/en/tools/new-relic/): Broad SaaS observability with a similar APM and logging focus; a practical choice when the team already has New Relic experience.
+- New Relic: Broad SaaS observability with a similar APM and logging focus; a practical choice when the team already has New Relic experience.
 - [Dynatrace](/en/tools/dynatrace/): More oriented toward automated topology and root-cause analysis in large environments, with its own cost and complexity curve.
 - [Prometheus](/en/tools/prometheus/): Open-source metrics monitoring for teams that want to operate Kubernetes-oriented metrics themselves and choose logs or APM separately.
 - [Grafana](/en/tools/grafana/): Flexible visualization and observability across data sources, suitable for a deliberately modular stack.

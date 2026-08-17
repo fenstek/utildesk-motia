@@ -61,7 +61,7 @@ We recommend Dollify.AI to freelancers, small creative teams, and marketing prac
 ## Alternatives
 
 - [Runway](/en/tools/runway/): A better fit when the team needs a more established video and media-production environment rather than a shared model-comparison balance.
-- [Leonardo AI](/en/tools/leonardo-ai/): More focused on image creation, visual assets, and style variations in a dedicated image workflow.
+- Leonardo AI: More focused on image creation, visual assets, and style variations in a dedicated image workflow.
 - [Stable Diffusion](/en/tools/stable-diffusion/): Preferable when local or self-controlled deployment, model freedom, and technical customisation outweigh the convenience of a hosted studio.
 - [Adobe Firefly](/en/tools/adobe-firefly/): A natural choice for teams that need generative features closer to Adobe workflows and brand production.
 - [Canva](/en/tools/canva/): More practical for fast social and marketing layouts where templates, editing, and publishing matter more than access to many underlying models.

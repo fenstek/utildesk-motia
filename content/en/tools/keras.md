@@ -95,7 +95,7 @@ Keras itself is open source and available for free. Use follows a freemium model
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Keras before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Keras before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Keras before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Keras before moving data or ownership.
 
 ## FAQ

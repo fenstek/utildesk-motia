@@ -65,7 +65,7 @@ Also define idempotency, duplicate handling, retention, and job replay. In strea
 - [Apache Spark](/en/tools/apache-spark/): fits teams with an existing Spark ecosystem and broad batch analytics needs.
 - [Google Cloud Dataflow](/en/tools/google-cloud-dataflow/): is the managed Google Cloud runner for Beam pipelines.
 - [Apache Kafka](/en/tools/apache-kafka/): is the central event platform when transport and the event log are the initial priority.
-- [Kafka Streams](/en/tools/kafka-streams/): is often simpler for stream-adjacent Java applications already working directly with Kafka.
+- Kafka Streams: is often simpler for stream-adjacent Java applications already working directly with Kafka.
 
 ## FAQ
 

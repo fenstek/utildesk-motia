@@ -74,7 +74,7 @@ Für einen einzelnen Integrationsjob, kleine Lasten oder ein Team ohne Kafka-Ber
 - [Redpanda](/tools/redpanda/): Kafka-kompatible Streaming-Plattform mit anderem Betriebsmodell, interessant für Teams, die einen schlankeren Cluster evaluieren.
 - [Apache Pulsar](/tools/apache-pulsar/): Verteiltes Messaging und Streaming mit eigener Architektur, passend wenn Multi-Tenancy und Storage-Trennung zentrale Kriterien sind.
 - [Apache Flink](/tools/apache-flink/): Ergänzung oder Alternative für zustandsbehaftete Berechnungen, wenn komplexe Stream-Processing-Logik wichtiger ist als eine komplette Kafka-Distribution.
-- [Kafka Streams](/tools/kafka-streams/): Bibliotheksbasierter Ansatz für Stream-Processing in Anwendungen, wenn kein separates Processing-System eingeführt werden soll.
+- Kafka Streams: Bibliotheksbasierter Ansatz für Stream-Processing in Anwendungen, wenn kein separates Processing-System eingeführt werden soll.
 
 ## FAQ
 

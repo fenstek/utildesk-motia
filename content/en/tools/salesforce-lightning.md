@@ -85,8 +85,8 @@ Salesforce Lightning is listed as Subscription. Costs depend on edition, users, 
 ## Alternatives
 
 - [HubSpot CRM](/en/tools/hubspot-crm/): when a lighter CRM start with marketing and sales focus is desired.
-- [Pipedrive](/en/tools/pipedrive/): when pipeline management is enough for a smaller sales team.
-- [Zoho CRM](/en/tools/zoho-crm/): when a broad, cost-conscious business suite matters.
+- Pipedrive: when pipeline management is enough for a smaller sales team.
+- Zoho CRM: when a broad, cost-conscious business suite matters.
 - [ServiceNow](/en/tools/servicenow/): when service and enterprise workflows matter more than CRM.
 
 ## Editorial Assessment

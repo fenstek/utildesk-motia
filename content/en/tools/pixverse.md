@@ -75,7 +75,7 @@ In the catalog, PixVerse is marked with the pricing model **Freemium**. For a re
 
 ## Alternatives to PixVerse
 
-- [Higgsfield](/en/tools/higgsfield/): useful comparison point if workflow, pricing, or specialization should differ.
+- Higgsfield: useful comparison point if workflow, pricing, or specialization should differ.
 - [Kaiber](/en/tools/kaiber/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Runway](/en/tools/runway/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Pika](/en/tools/pika/): useful comparison point if workflow, pricing, or specialization should differ.

@@ -70,7 +70,7 @@ Choose this tool when its documented scope matches a recurring workflow and an o
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Dropbox Business before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Dropbox Business before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Dropbox Business before moving data or ownership.
 - [Asana](/en/tools/asana/): Asana takes a different approach; compare the actual workflow with Dropbox Business before moving data or ownership.
 
 ## FAQ

@@ -76,7 +76,7 @@ Im Katalog ist Kaiber mit dem Preismodell **Freemium** geführt. Für eine belas
 ## Alternativen zu Kaiber
 
 - [PixVerse](/tools/pixverse/): stärker, wenn KI-Video-Generierung aus Prompts, Bildern oder Ideen für kurze kreative Clips gefragt ist.
-- [Higgsfield](/tools/higgsfield/): passender, wenn der Schwerpunkt auf KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen liegt.
+- Higgsfield: passender, wenn der Schwerpunkt auf KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen liegt.
 - [Runway](/tools/runway/): prüfen, wenn ein anderer Schwerpunkt als bei Kaiber relevant ist.
 - [Sora](/tools/sora/): prüfen, wenn ein anderer Schwerpunkt als bei Kaiber relevant ist.
 - [Deep Dream Generator](/tools/deep-dream-generator/): naheliegend, falls KI-Bildexperimente, stilisierte Motive und kreative Bildvarianten mit surrealem Charakter im Vordergrund steht.

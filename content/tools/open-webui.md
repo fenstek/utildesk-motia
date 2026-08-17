@@ -99,7 +99,7 @@ Open WebUI ist Open Source. Kosten entstehen durch Hardware, Modellbetrieb, exte
 ## Alternativen
 
 - [Jan AI](/tools/jan-ai/): Lokale Alternative für persönliche Modelltests und Einzelplatz-Workflows.
-- [LM Studio](/tools/lm-studio/): Grafische lokale Modellverwaltung am Arbeitsplatz.
+- LM Studio: Grafische lokale Modellverwaltung am Arbeitsplatz.
 - [ChatGPT](/tools/chatgpt/): Gehostete allgemeine Arbeitsumgebung ohne eigenen Plattformbetrieb.
 - [Hugging Face Spaces](/tools/hugging-face-spaces/): Für das Veröffentlichen und Teilen von Modell-Demos statt eines internen Chatdienstes.
 

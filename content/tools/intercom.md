@@ -76,7 +76,7 @@ Bei wachsender Nutzung können Kosten deutlich steigen. Deshalb sollte man vorab
 - [Zendesk](/tools/zendesk/): stärker als klassisches Support- und Ticketing-System für größere Service-Teams.
 - [Freshdesk](/tools/freshdesk/): oft pragmatischer für Helpdesk, E-Mail-Support und kostenbewusste Teams.
 - [Liveperson](/tools/liveperson/): eher Enterprise-orientiert für Messaging und Conversational AI im großen Maßstab.
-- [Drift](/tools/drift/): stärker auf Conversational Marketing und Sales-Pipeline ausgerichtet.
+- Drift: stärker auf Conversational Marketing und Sales-Pipeline ausgerichtet.
 - Hubspot Service Hub: sinnvoll, wenn CRM, Marketing und Service bereits in HubSpot laufen.
 
 ## Redaktionelle Einschätzung

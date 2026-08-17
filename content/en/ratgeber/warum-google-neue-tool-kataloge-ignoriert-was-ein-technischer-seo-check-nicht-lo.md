@@ -20,8 +20,6 @@ sidebarPoints:
   - "Technical work prevents errors; it does not create distinct relevance."
   - "New directories grow better through a few strong topics than many similar pages."
 relatedTools:
-  - title: "Google Search Console"
-    href: "/en/tools/google-search-console/"
   - title: "Bing Webmaster Tools"
     href: "/en/tools/bing-webmaster-tools/"
   - title: "Ahrefs"
@@ -36,7 +34,7 @@ That distinction is uncomfortable for new tool directories. They often launch wi
 
 ## Establish the base, then diagnose
 
-The basics are non-negotiable: one canonical URL, a `200` response, no accidental `noindex`, useful internal links, and a sitemap free of redirects and errors. [Google Search Console](/en/tools/google-search-console/) helps inspect those signals. It is not a button for instant indexing.
+The basics are non-negotiable: one canonical URL, a `200` response, no accidental `noindex`, useful internal links, and a sitemap free of redirects and errors. Google Search Console helps inspect those signals. It is not a button for instant indexing.
 
 Once the base is sound, ask a better question: what makes this page more useful than a generic product description? An entry for a transcription tool should not simply repeat features. It should explain whether speaker separation, privacy, export, or team workflow matters for the use case, and when an alternative is better.
 

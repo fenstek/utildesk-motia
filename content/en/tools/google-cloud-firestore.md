@@ -70,7 +70,7 @@ We recommend Firestore to product teams with a clear document-oriented online wo
 ## Alternatives
 
 - [Amazon DynamoDB](/en/tools/amazon-dynamodb/): A managed AWS NoSQL service for access-pattern-driven key models without a Firestore or Firebase dependency.
-- [MongoDB Atlas](/en/tools/mongodb-atlas/): A document database with a different query and operations model for teams centered on the MongoDB ecosystem.
+- MongoDB Atlas: A document database with a different query and operations model for teams centered on the MongoDB ecosystem.
 - [Firebase Realtime Database](/en/tools/firebase-realtime-database/): A simpler JSON realtime model for Firebase use cases where Firestore collections and queries are unnecessary.
 - [CockroachDB](/en/tools/cockroachdb/): A distributed SQL database for relational transactions and deliberately planned regional placement.
 - [Couchbase](/en/tools/couchbase/): A document and mobile platform with its own operations and synchronization model for teams that need that control.

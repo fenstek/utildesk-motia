@@ -74,7 +74,7 @@ AppDynamics is a strong candidate for teams that need a connected view from a bu
 ## Alternatives
 
 - [Dynatrace](/en/tools/dynatrace/): A broad observability suite for teams comparing another highly automated enterprise-scale option.
-- [New Relic](/en/tools/new-relic/): A developer-oriented APM and telemetry choice when a faster entry and broad instrumentation matter most.
+- New Relic: A developer-oriented APM and telemetry choice when a faster entry and broad instrumentation matter most.
 - [Datadog](/en/tools/datadog/): A cloud-centered platform for infrastructure, logs, and applications when many SaaS and cloud integrations are central.
 - [Splunk Observability](/en/tools/splunk-observability/): A natural option in the Splunk ecosystem when metrics, traces, and logs should be brought together.
 - [Elastic Observability](/en/tools/elastic-observability/): A practical fit when an organization already relies on Elastic for search and logs and wants to add APM.

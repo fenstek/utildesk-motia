@@ -79,7 +79,7 @@ For a quick visual prototype or a small chat feature without complex actions, AD
 
 - [LangGraph](/en/tools/langgraph/): State-oriented graphs and transitions for controlled agent workflows in the LangChain ecosystem.
 - [LangChain](/en/tools/langchain/): A broad integration toolkit for models, retrieval, and tools with fewer assumptions about the full architecture.
-- [AutoGen](/en/tools/autogen/): Role- and conversation-oriented multi-agent development, especially for experiments and research prototypes.
+- AutoGen: Role- and conversation-oriented multi-agent development, especially for experiments and research prototypes.
 - [n8n](/en/tools/n8n/): Visual business automation with broad connectors when deterministic integration steps matter more than an agent framework.
 
 ## FAQ

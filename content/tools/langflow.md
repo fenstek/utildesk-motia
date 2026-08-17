@@ -78,7 +78,7 @@ Für eine offene Multi-Tenant-Baukastenplattform oder Workloads mit untrusted Co
 
 - [LangGraph](/tools/langgraph/): Explizite Zustandsgraphen im Code, wenn Review, Tests und kontrollierter Kontrollfluss im Repository im Vordergrund stehen.
 - [LangChain](/tools/langchain/): Breiter Python- und JavaScript-Baukasten für eigene Anwendungen ohne verpflichtende visuelle Laufzeit.
-- [AutoGen](/tools/autogen/): Programmatische Multi-Agent-Experimente mit Gesprächs- und Rollenmodellen statt visueller Komponentenfläche.
+- AutoGen: Programmatische Multi-Agent-Experimente mit Gesprächs- und Rollenmodellen statt visueller Komponentenfläche.
 - [n8n](/tools/n8n/): Allgemeine Workflow-Automation mit vielen Geschäftsintegrationen, wenn AI nur ein Baustein unter mehreren ist.
 
 ## FAQ

@@ -99,7 +99,7 @@ Beyond the list price, Orbit Intelligence should be evaluated by the cost of ado
 - [Innography](/en/tools/innography/): when patent landscape and competitive intelligence are the main focus.
 - [Google Patents](/en/tools/google-patents/): when a freely accessible research base is enough for the first search pass.
 - [Espacenet](/en/tools/espacenet/): when official European patent data and an open research interface matter most.
-- [Lens.org](/en/tools/lens-org/): when patents should be viewed alongside scientific literature and open analytical paths.
+- Lens.org: when patents should be viewed alongside scientific literature and open analytical paths.
 
 When comparing options, Orbit Intelligence should not only be measured against very similar products. Depending on the goal, databases, BI tools, pipeline systems, and open frameworks may fit better if they are closer to the existing process or require less maintenance.
 

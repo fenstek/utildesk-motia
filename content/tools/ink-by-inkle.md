@@ -77,7 +77,7 @@ Für kleine Prototypen ist der Einstieg sehr günstig. Für Teams entstehen Kost
 
 - [Twine](/tools/twine/): für zugängliches visuelles Prototyping interaktiver Erzählungen.
 - [Renpy](/tools/ren-py/): für Visual Novels mit kompletter Präsentations- und Engine-Umgebung.
-- [Yarn Spinner](/tools/yarn-spinner/): für dialoglastige Spiele und narrative Integration in Game-Engines.
+- Yarn Spinner: für dialoglastige Spiele und narrative Integration in Game-Engines.
 - [StoryMapJS](/tools/storymapjs/): für orts- und medienbasierte Erzählungen ohne komplexe Spiellogik.
 ## Redaktionelle Einschätzung
 

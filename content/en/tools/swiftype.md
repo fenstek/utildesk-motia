@@ -137,5 +137,5 @@ Indexes are automatically and continuously updated so that new or modified conte
 
 - [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
 - [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
-- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- zoom: is worth comparing when the scope, collaboration model or administration needs differ.
 - [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

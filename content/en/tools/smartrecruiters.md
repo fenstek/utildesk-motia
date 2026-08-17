@@ -46,9 +46,9 @@ Start with one job family and observe time to review, cycle time, candidate expe
 
 ## Alternatives
 - [Greenhouse](/en/tools/greenhouse/): for structured interviewing and data-driven recruiting.
-- [Lever](/en/tools/lever/): an ATS/CRM approach focused on recruiting relationships.
+- Lever: an ATS/CRM approach focused on recruiting relationships.
 - [BambooHR](/en/tools/bamboohr/): an HR platform with recruiting capabilities for smaller and mid-sized teams.
-- [Workday](/en/tools/workday/): for organisations with a broad Workday HR landscape.
+- Workday: for organisations with a broad Workday HR landscape.
 
 ## Editorial assessment
 

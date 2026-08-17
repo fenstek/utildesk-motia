@@ -97,7 +97,7 @@ Dynatrace offers various pricing options that vary depending on company size, mo
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Dynatrace before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Dynatrace before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Dynatrace before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Dynatrace before moving data or ownership.
 
 ## FAQ

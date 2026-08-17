@@ -79,7 +79,7 @@ In the catalog, OBS Studio is marked with the pricing model **Free**. For a real
 - [Camtasia](/en/tools/camtasia/): useful comparison point if workflow, pricing, or specialization should differ.
 - Screenflow: useful comparison point if workflow, pricing, or specialization should differ.
 - Xsplit: useful comparison point if workflow, pricing, or specialization should differ.
-- [Zoom](/en/tools/zoom/): useful comparison point if workflow, pricing, or specialization should differ.
+- Zoom: useful comparison point if workflow, pricing, or specialization should differ.
 
 ## Editorial assessment
 

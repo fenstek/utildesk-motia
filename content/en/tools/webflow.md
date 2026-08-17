@@ -75,7 +75,7 @@ Webflow is sold through different Site, Workspace, and Enterprise models. The re
 
 - [Framer](/en/tools/framer/): A good fit when a design-led marketing site should be published quickly and less CMS or operational logic is needed.
 - [Bubble](/en/tools/bubble/): Better suited to a visual web app with data models, workflows, and business logic rather than mainly editorial pages.
-- [Wix with Velo](/en/tools/wix-mit-velo/): Useful when a website builder should be combined with more embedded functionality and development options in the Wix ecosystem.
+- Wix with Velo: Useful when a website builder should be combined with more embedded functionality and development options in the Wix ecosystem.
 - [Squarespace](/en/tools/squarespace/): Practical for smaller conventional sites where a tighter system and less bespoke frontend control are sufficient.
 
 ## Editorial Assessment

@@ -61,7 +61,7 @@ Blockly empfehlen wir, wenn ein Team einen begrenzten visuellen Editor in eine e
 
 ## Alternativen
 
-- [MakeCode](/tools/makecode/): Eine stärker fertige Lern- und Programmierumgebung mit Block- und Textansicht; sinnvoll, wenn Hardware- oder Kursmaterialien schneller starten sollen.
+- MakeCode: Eine stärker fertige Lern- und Programmierumgebung mit Block- und Textansicht; sinnvoll, wenn Hardware- oder Kursmaterialien schneller starten sollen.
 - [Code.org](/tools/code-org/): Kurs- und Unterrichtsplattform mit fertigen Lernpfaden; besser, wenn Lehrkräfte Inhalte nutzen möchten, statt einen Editor selbst zu bauen.
 - [AppInventor](/tools/mit-app-inventor/): Visuelle Entwicklungsumgebung für mobile Apps; passend, wenn das Ergebnis eine Android-App und nicht ein eingebetteter allgemeiner Editor sein soll.
 - [Thunkable](/tools/thunkable/): Gehosteter No-Code-Ansatz für mobile Anwendungen; prüfenswert, wenn Publishing und Plattformdienste wichtiger sind als eigene Block- und Generatorlogik.

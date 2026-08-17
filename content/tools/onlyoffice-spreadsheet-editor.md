@@ -145,5 +145,5 @@ Ja, OnlyOffice unterstützt die Integration mit verschiedenen Cloud-Diensten und
 
 - [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
 - [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- [zoom](/tools/zoom/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- zoom: ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
 - [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

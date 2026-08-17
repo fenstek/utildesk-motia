@@ -70,7 +70,7 @@ In the catalog, Derwent Innovation is marked with the pricing model **Custom quo
 
 - [Patsnap](/en/tools/patsnap/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Innography](/en/tools/innography/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Wipo Patentscope](/en/tools/wipo-patentscope/): useful comparison point for adjacent workflows, pricing, or team fit.
+- Wipo Patentscope: useful comparison point for adjacent workflows, pricing, or team fit.
 - [Google Patents](/en/tools/google-patents/): useful comparison point for adjacent workflows, pricing, or team fit.
 
 ## Editorial assessment

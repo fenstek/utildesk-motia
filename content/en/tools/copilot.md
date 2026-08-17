@@ -74,7 +74,7 @@ Assembly uses a freemium or subscription-style model. The real cost is not only 
 
 ## Alternatives to Assembly
 
-- [Moxo](/en/tools/moxo/): useful when secure client communication and digital workflows are central.
+- Moxo: useful when secure client communication and digital workflows are central.
 - [HoneyBook](/en/tools/honeybook/): useful for proposals, invoices, and client management in creative services.
 - [Monday.com](/en/tools/monday-com/): better when internal project management matters more than a client portal.
 - [ClickUp](/en/tools/clickup/): useful when tasks, docs, and team collaboration should live in a broader work platform.

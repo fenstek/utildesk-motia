@@ -75,7 +75,7 @@ In the catalog, Kaiber is marked with the pricing model **Freemium**. For a real
 ## Alternatives to Kaiber
 
 - [PixVerse](/en/tools/pixverse/): useful comparison point if workflow, pricing, or specialization should differ.
-- [Higgsfield](/en/tools/higgsfield/): useful comparison point if workflow, pricing, or specialization should differ.
+- Higgsfield: useful comparison point if workflow, pricing, or specialization should differ.
 - [Runway](/en/tools/runway/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Sora](/en/tools/sora/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Deep Dream Generator](/en/tools/deep-dream-generator/): useful comparison point if workflow, pricing, or specialization should differ.

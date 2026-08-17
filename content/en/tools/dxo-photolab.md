@@ -65,7 +65,7 @@ PhotoLab is recommended for photographers and small studios when RAW quality, op
 - [Adobe Lightroom](/en/tools/adobe-lightroom/): Broader catalogue and cloud workflow with a subscription model, suited to synchronised libraries and handoffs.
 - [Capture One](/en/tools/capture-one/): Strong colour control and tethering for studios where capture, selection, and colour decisions are closely linked.
 - [darktable](/en/tools/darktable/): Free, open-source RAW processing when local control and licensing matter more than DxO Modules.
-- [RawTherapee](/en/tools/rawtherapee/): Technically detailed RAW conversion for individual images and experimental processing without a commercial license.
+- RawTherapee: Technically detailed RAW conversion for individual images and experimental processing without a commercial license.
 - [ON1 Photo RAW](/en/tools/on1-photo-raw/): Puts RAW editing and management closer together when PhotoLab alone is too narrow.
 
 ## FAQ

@@ -98,7 +98,7 @@ Je nach gewähltem Plan sind Funktionen wie 4K-Export, Markenanpassungen und erw
 Neben dem Listenpreis sollte bei Clipchamp auch der Einführungsaufwand berücksichtigt werden. Relevant sind Lizenzmodell, Speicher, Exportoptionen, Vorlagen, Teamfreigaben und Schulung. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
 
 ## Alternativen
-- [WeVideo](/tools/wevideo/): Cloud-basierte Videobearbeitung mit ähnlichen Funktionen und Team-Features.
+- WeVideo: Cloud-basierte Videobearbeitung mit ähnlichen Funktionen und Team-Features.
 - [InVideo](/tools/invideo/): Fokus auf Videovorlagen und Marketingvideos, ebenfalls mit KI-gestützten Tools.
 - [Adobe Premiere Rush](/tools/adobe-premiere-rush/): Einsteigerfreundliche Adobe-Lösung für schnelle Videobearbeitung auf verschiedenen Geräten.
 - [Kapwing](/tools/kapwing/): Einfach zu bedienende Online-Videoplattform mit kollaborativen Funktionen.

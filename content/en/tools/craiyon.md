@@ -63,7 +63,7 @@ Craiyon is a reasonable choice for fast moodboards, classroom experiments, and e
 - [Adobe Firefly](/en/tools/adobe-firefly/): A better fit when a team wants Adobe workflows, generative editing, and a more production-oriented creative environment.
 - [Midjourney](/en/tools/midjourney/): Better for highly stylised visual exploration and community-driven iteration when its additional workflow complexity is acceptable.
 - [Stable Diffusion](/en/tools/stable-diffusion/): The stronger direction for technical teams that need more control over models or want to consider self-hosted execution.
-- [Leonardo AI](/en/tools/leonardo-ai/): Useful when a team needs a broader set of asset and variation tools in a specialised creative workspace.
+- Leonardo AI: Useful when a team needs a broader set of asset and variation tools in a specialised creative workspace.
 - [Canva](/en/tools/canva/): Preferable when generated visuals need to move directly into templates, layouts, and collaborative content production.
 
 ## FAQ

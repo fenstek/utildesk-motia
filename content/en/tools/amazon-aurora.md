@@ -64,7 +64,7 @@ For production data, document IAM and network access, encryption, secrets, backu
 
 - [PostgreSQL](/en/tools/postgresql/): for teams that prefer full control and a more portable operating model.
 - [CockroachDB](/en/tools/cockroachdb/): for distributed SQL and multi-region architecture outside the Aurora model.
-- [MongoDB Atlas](/en/tools/mongodb-atlas/): when a document-oriented data model is a better business fit.
+- MongoDB Atlas: when a document-oriented data model is a better business fit.
 - [Snowflake](/en/tools/snowflake/): for analytical data work rather than transactional application load.
 ## FAQ
 

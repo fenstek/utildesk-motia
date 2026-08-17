@@ -69,15 +69,15 @@ The less visible costs are moderation time, onboarding, bot review, privacy docu
 
 Discord is recommended for communities and small, conversation-led teams that need text, voice, and video with roles and moderated access. It creates value when the server has a clear purpose, accountable moderators, and an explicit handoff from conversation to durable work.
 
-For formal business communication, sensitive data, audit-oriented processes, or work deeply tied to Microsoft 365, start by assessing [Microsoft Teams](/en/tools/microsoft-teams/). [Mattermost](/en/tools/mattermost/) and [Rocket.Chat](/en/tools/rocket-chat/) are stronger candidates when hosting and operational control matter more. Discord is the right decision when community energy and low entry friction matter, and the team is prepared to operate within its boundaries.
+For formal business communication, sensitive data, audit-oriented processes, or work deeply tied to Microsoft 365, start by assessing [Microsoft Teams](/en/tools/microsoft-teams/). Mattermost and [Rocket.Chat](/en/tools/rocket-chat/) are stronger candidates when hosting and operational control matter more. Discord is the right decision when community energy and low entry friction matter, and the team is prepared to operate within its boundaries.
 
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Better when chat, meetings, files, and identities should connect closely to Microsoft 365.
-- [Mattermost](/en/tools/mattermost/): Better for teams seeking a more controlled, team-oriented platform with stronger governance and operational ownership.
+- Mattermost: Better for teams seeking a more controlled, team-oriented platform with stronger governance and operational ownership.
 - [Rocket.Chat](/en/tools/rocket-chat/): A fit for organisations prioritising adaptable team chat and possible self-hosting options.
 - [Telegram](/en/tools/telegram/): More practical for large broadcast channels and mobile messenger communication than for structured workspaces.
-- [Zoom](/en/tools/zoom/): The better choice when video meetings, webinars, and scheduling are the primary job.
+- Zoom: The better choice when video meetings, webinars, and scheduling are the primary job.
 
 ## FAQ
 

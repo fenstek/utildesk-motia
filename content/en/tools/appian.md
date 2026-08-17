@@ -67,7 +67,7 @@ We recommend Appian to teams that need to run a complex, regulated, or system-sp
 ## Alternatives
 
 - [OutSystems](/en/tools/outsystems/): more focused on rapidly building custom low-code applications when the app experience matters more than a central process layer.
-- [Mendix](/en/tools/mendix/): a useful model-driven business-app comparison when business and development teams need to iterate together.
+- Mendix: a useful model-driven business-app comparison when business and development teams need to iterate together.
 - [Pega](/en/tools/pega/): a relevant comparison for case management, customer operations, and rule-heavy work with CRM context.
 - [ServiceNow](/en/tools/servicenow/): a natural choice when IT service, asset, or employee workflows already live on ServiceNow.
 - [UiPath](/en/tools/uipath/): more focused when the primary need is desktop and back-office RPA rather than a full process application.

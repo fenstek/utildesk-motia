@@ -74,7 +74,7 @@ Für den Einstieg ist das Preis-Leistungs-Verhältnis sehr stark. Wer plattform�
 
 - [Fl Studio](/tools/fl-studio/): stärker für Beatmaking, Pattern-basierte Produktion und elektronische Musik.
 - [Ableton Live](/tools/ableton-live/): besser für Performance, Loop-basierte Arbeit und professionelle elektronische Workflows.
-- [Logic Pro](/tools/logic-pro/): naheliegender nächster Schritt für Apple-Nutzer mit mehr Mixing- und Produktionsbedarf.
+- Logic Pro: naheliegender nächster Schritt für Apple-Nutzer mit mehr Mixing- und Produktionsbedarf.
 - [Soundtrap](/tools/soundtrap/): interessanter für browserbasierte Kollaboration und Unterrichtsszenarien.
 - [Audacity](/tools/audacity/): schlanker für reine Aufnahme, Schnitt und einfache Audio-Korrekturen.
 

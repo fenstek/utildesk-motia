@@ -156,7 +156,7 @@ Without tool boundaries, logging and evaluation, an agent quickly becomes an inv
 
 ### Internal comparison points
 
-Useful comparison points in the Utildesk catalogue are [OpenAI API](/en/tools/openai-api/), [LangChain](/en/tools/langchain/), [CrewAI](/en/tools/crew-ai/), [AutoGen](/en/tools/autogen/). These links keep OpenAI GPT Agents connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
+Useful comparison points in the Utildesk catalogue are [OpenAI API](/en/tools/openai-api/), [LangChain](/en/tools/langchain/), [CrewAI](/en/tools/crew-ai/), AutoGen. These links keep OpenAI GPT Agents connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
 
 ## Alternatives
 

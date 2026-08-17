@@ -97,7 +97,7 @@ Die realen Kosten von Ernie Bot bestehen nicht nur aus einem möglichen Tarif. B
 ## Alternativen
 
 - [Microsoft Teams](/tools/microsoft-teams/): Microsoft Teams setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Ernie Bot, bevor Daten oder Zuständigkeiten verlagert werden.
-- [Zoom](/tools/zoom/): Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Ernie Bot, bevor Daten oder Zuständigkeiten verlagert werden.
+- Zoom: Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Ernie Bot, bevor Daten oder Zuständigkeiten verlagert werden.
 - [Dropbox Business](/tools/dropbox-business/): Dropbox Business setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Ernie Bot, bevor Daten oder Zuständigkeiten verlagert werden.
 
 ## FAQ

@@ -66,7 +66,7 @@ SaneBox bietet ein zeitlich begrenztes Probeangebot und abonnementbasierte Plän
 
 - [Boomerang for Gmail](/tools/boomerang-for-gmail/): Gmail-Fokus für geplanten Versand und Follow-ups statt primär automatischer Inbox-Sortierung.
 - [Mailbutler](/tools/mailbutler/): Mail-Produktivität mit Notizen, Tracking und Nachfassroutinen, wenn Kommunikation aktiv verfolgt werden soll.
-- [Mailbird](/tools/mailbird/): Vollwertiger Mailclient für mehrere Konten, wenn eine neue Oberfläche wichtiger ist als ein Filterdienst über dem bestehenden Client.
+- Mailbird: Vollwertiger Mailclient für mehrere Konten, wenn eine neue Oberfläche wichtiger ist als ein Filterdienst über dem bestehenden Client.
 - [RightInbox](/tools/rightinbox/): Gmail-zentrierte Versandplanung, Vorlagen und Follow-ups für Vertriebs- oder Recruiting-Abläufe.
 
 ## Redaktionelle Einschätzung

@@ -65,7 +65,7 @@ Für produktive Datenbanken müssen IAM- und Netzwerkzugänge, Verschlüsselung,
 
 - [PostgreSQL](/tools/postgresql/): für Teams, die volle Kontrolle und einen portableren Betrieb bevorzugen.
 - [CockroachDB](/tools/cockroachdb/): für verteiltes SQL und Mehrregionen-Architekturen außerhalb des Aurora-Modells.
-- [MongoDB Atlas](/tools/mongodb-atlas/): wenn ein dokumentorientiertes Datenmodell fachlich besser passt.
+- MongoDB Atlas: wenn ein dokumentorientiertes Datenmodell fachlich besser passt.
 - [Snowflake](/tools/snowflake/): für analytische Datenarbeit statt transaktionaler Anwendungslast.
 ## FAQ
 

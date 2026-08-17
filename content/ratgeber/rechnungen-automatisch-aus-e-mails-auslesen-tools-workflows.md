@@ -76,7 +76,7 @@ Der Vorteil liegt in der Flexibilität. Teams können eigene Validierungslogik b
 
 ## Szenario 3: Microsoft- oder Enterprise-Workflow
 
-In Microsoft-Umgebungen ist [Microsoft Power Automate](/tools/microsoft-power-automate/) oft der natürlichste Einstieg. Outlook, SharePoint, Teams, Excel und Genehmigungen sind nah am Tenant. Ein typischer Ablauf speichert Anhänge in SharePoint, ruft [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/) oder eine externe OCR-API auf, schickt unsichere Rechnungen in eine Genehmigung und exportiert geprüfte Felder an die Buchhaltung.
+In Microsoft-Umgebungen ist [Microsoft Power Automate](/tools/microsoft-power-automate/) oft der natürlichste Einstieg. Outlook, SharePoint, Teams, Excel und Genehmigungen sind nah am Tenant. Ein typischer Ablauf speichert Anhänge in SharePoint, ruft Azure AI Document Intelligence oder eine externe OCR-API auf, schickt unsichere Rechnungen in eine Genehmigung und exportiert geprüfte Felder an die Buchhaltung.
 
 Bei großen Prozessen kann [UiPath](/tools/uipath/) dazukommen, besonders wenn Legacy-Oberflächen, RPA-Schritte oder menschliche Aufgabenlisten beteiligt sind. Das lohnt sich, wenn mehrere Abteilungen, Berechtigungen und Audit-Anforderungen im Spiel sind. Für einen ersten kleinen Rechnungsordner ist es meistens zu schwer.
 

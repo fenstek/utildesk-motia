@@ -68,7 +68,7 @@ SaneBox offers a time-limited trial and subscription plans. The price structure 
 
 - [Boomerang for Gmail](/en/tools/boomerang-for-gmail/): Gmail-focused scheduling and follow-ups when the main problem is sending and tracking replies rather than inbox triage.
 - [Mailbutler](/en/tools/mailbutler/): Notes, tracking, and follow-up workflows for communication that needs active relationship management.
-- [Mailbird](/en/tools/mailbird/): A full email client for multiple accounts when a new interface is preferable to a filtering layer.
+- Mailbird: A full email client for multiple accounts when a new interface is preferable to a filtering layer.
 - [RightInbox](/en/tools/rightinbox/): Gmail-based scheduling, templates, and follow-ups for sales or recruiting processes.
 
 ## Editorial Assessment

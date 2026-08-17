@@ -77,7 +77,7 @@ Im Katalog ist PatSnap mit dem Preismodell **Individuelles Angebot** geführt. F
 
 - [Innography](/tools/innography/): stärker, wenn Patent- und Innovationsanalyse für IP-Teams, Wettbewerbsbeobachtung und Technologielandschaften gefragt ist.
 - [Derwent Innovation](/tools/derwent-innovation/): passender, wenn der Schwerpunkt auf IP-Analyse, Technologiebeobachtung und Wettbewerbsinformationen liegt.
-- [WIPO PATENTSCOPE](/tools/wipo-patentscope/): prüfen, wenn ein anderer Schwerpunkt als bei PatSnap relevant ist.
+- WIPO PATENTSCOPE: prüfen, wenn ein anderer Schwerpunkt als bei PatSnap relevant ist.
 - [VOSviewer](/tools/vosviewer/): prüfen, wenn VOSviewer visualisiert bibliometrische Netzwerke, Zitationen, Co-Autorschaften und Forschungslandschaften wichtiger ist.
 
 ## Redaktionelle Einschätzung

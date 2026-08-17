@@ -92,7 +92,7 @@ The pricing model of Mem0 should be checked directly with the vendor because pla
 
 ## Nearby alternatives
 
-Useful comparisons include [Pinecone](/en/tools/pinecone/), [Weaviate](/en/tools/weaviate/), [LangChain](/en/tools/langchain/). The best choice is the tool that creates the fewest new blind spots for the existing team and protects the concrete workflow best.
+Useful comparisons include [Pinecone](/en/tools/pinecone/), Weaviate, [LangChain](/en/tools/langchain/). The best choice is the tool that creates the fewest new blind spots for the existing team and protects the concrete workflow best.
 
 ## FAQ
 
@@ -125,7 +125,7 @@ A useful test measures more than speed. Look for fewer follow-up questions, bett
 The common mistake is starting too broadly. Mem0 should first be tested on one narrow real task before several teams, sensitive data or binding actions are added.
 
 **6. Which alternatives are worth comparing?**
-Useful comparisons include [Pinecone](/en/tools/pinecone/), [Weaviate](/en/tools/weaviate/), [LangChain](/en/tools/langchain/). The comparison should happen on the actual workflow, not only on feature lists.
+Useful comparisons include [Pinecone](/en/tools/pinecone/), Weaviate, [LangChain](/en/tools/langchain/). The comparison should happen on the actual workflow, not only on feature lists.
 
 **7. Which costs are easy to miss?**
 Beyond the subscription price, consider setup, training, monitoring, review time, later migration and possible model or usage limits. Mem0 should therefore not be judged only by a monthly fee.
@@ -141,5 +141,5 @@ Recommended with privacy review: Mem0 is strong when memory is deliberately boun
 
 - [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
 - [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
-- [zoom](/en/tools/zoom/): is worth comparing when the scope, collaboration model or administration needs differ.
+- zoom: is worth comparing when the scope, collaboration model or administration needs differ.
 - [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

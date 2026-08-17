@@ -100,7 +100,7 @@ Magma provides a limited entry point and paid options; capabilities and team ter
 - [Figma](/en/tools/figma/): stronger for UI design, components, prototypes and design systems.
 - [Milanote](/en/tools/milanote/): better for moodboards, visual planning and asynchronous concept work.
 - [Krita](/en/tools/krita/): open-source painting software for illustration, comics and final local work.
-- [Procreate](/en/tools/procreate/): a strong iPad drawing environment for individual sketching and painting.
+- Procreate: a strong iPad drawing environment for individual sketching and painting.
 - [Canva](/en/tools/canva/): more suitable for templates, quick marketing assets and non-designers.
 
 ## Editorial assessment

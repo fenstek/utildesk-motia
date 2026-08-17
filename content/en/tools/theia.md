@@ -72,7 +72,7 @@ In the catalog, Theia is marked with the pricing model **Open Source**. For a re
 ## Alternatives
 
 - [Visual Studio Code mit Remote-Extensions](/en/tools/visual-studio-code-mit-remote-extensions/): for a ready-made editor with remote development capabilities.
-- [Eclipse Che](/en/tools/eclipse-che/): for Kubernetes-oriented cloud workspaces and developer platforms.
+- Eclipse Che: for Kubernetes-oriented cloud workspaces and developer platforms.
 - [Replit](/en/tools/replit/): for a ready-made browser development experience with hosting.
 - [GitHub Codespaces](/en/tools/github-codespaces/): for repository-centred cloud workspaces in the GitHub ecosystem.
 ## Editorial assessment

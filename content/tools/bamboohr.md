@@ -84,8 +84,8 @@ Weniger passend ist die Plattform, wenn ein Unternehmen internationale Payroll i
 
 ## Alternativen
 
-- [Workday](/tools/workday/): Breiteres Enterprise-HCM für komplexe globale Strukturen, aber mit höherem Einführungs- und Governance-Aufwand.
-- [Zoho People](/tools/zoho-people/): Modularer und oft leichterer Einstieg für Teams, die primär Personalverwaltung, Urlaub und Workflows benötigen.
+- Workday: Breiteres Enterprise-HCM für komplexe globale Strukturen, aber mit höherem Einführungs- und Governance-Aufwand.
+- Zoho People: Modularer und oft leichterer Einstieg für Teams, die primär Personalverwaltung, Urlaub und Workflows benötigen.
 - [SAP SuccessFactors](/tools/sap-successfactors/): Geeignet für große Organisationen mit ausgebauter Talent-, Compliance- und Konzernintegration.
 - [ADP Workforce Now](/tools/adp-workforce-now/): Naheliegend, wenn US-orientierte Payroll und Workforce-Administration stärker im Mittelpunkt stehen.
 

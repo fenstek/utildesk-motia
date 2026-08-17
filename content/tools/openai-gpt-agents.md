@@ -92,7 +92,7 @@ Ohne Tool-Grenzen, Logging und Evaluierung wird ein Agent schnell zu einem unsic
 
 ### Interne Vergleichspunkte
 
-Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [OpenAI API](/tools/openai-api/), [LangChain](/tools/langchain/), [CrewAI](/tools/crew-ai/), [AutoGen](/tools/autogen/). Diese Links helfen, OpenAI GPT Agents nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [OpenAI API](/tools/openai-api/), [LangChain](/tools/langchain/), [CrewAI](/tools/crew-ai/), AutoGen. Diese Links helfen, OpenAI GPT Agents nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
 
 ## FAQ
 

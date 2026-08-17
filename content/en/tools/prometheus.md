@@ -48,7 +48,7 @@ Plan scrape interval, retention, storage, backups, and high availability around 
 
 - [Grafana](/en/tools/grafana/): visualisation and alerting as a complement to an existing metric source.
 - [Datadog](/en/tools/datadog/): hosted observability with a broader SaaS and integration scope.
-- [New Relic](/en/tools/new-relic/): APM and full-stack monitoring as a managed platform.
+- New Relic: APM and full-stack monitoring as a managed platform.
 - [Elasticsearch](/en/tools/elasticsearch/): stronger when search and log analysis are at the centre of the problem.
 ## Editorial assessment
 

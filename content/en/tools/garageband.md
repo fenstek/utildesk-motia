@@ -68,7 +68,7 @@ In the catalog, GarageBand is marked with the pricing model **Freemium**. For a 
 
 - [Fl Studio](/en/tools/fl-studio/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Ableton Live](/en/tools/ableton-live/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Logic Pro](/en/tools/logic-pro/): useful comparison point for adjacent workflows, pricing, or team fit.
+- Logic Pro: useful comparison point for adjacent workflows, pricing, or team fit.
 - [Soundtrap](/en/tools/soundtrap/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Audacity](/en/tools/audacity/): useful comparison point for adjacent workflows, pricing, or team fit.
 

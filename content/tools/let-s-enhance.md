@@ -87,7 +87,7 @@ Die Entscheidung für Let’s Enhance sollte an einem konkreten Prozess, überpr
 ## Alternativen
 
 - [Microsoft Teams](/tools/microsoft-teams/): Microsoft Teams setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Let’s Enhance, bevor Daten oder Zuständigkeiten verlagert werden.
-- [Zoom](/tools/zoom/): Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Let’s Enhance, bevor Daten oder Zuständigkeiten verlagert werden.
+- Zoom: Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Let’s Enhance, bevor Daten oder Zuständigkeiten verlagert werden.
 - [Dropbox Business](/tools/dropbox-business/): Dropbox Business setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Let’s Enhance, bevor Daten oder Zuständigkeiten verlagert werden.
 
 ## FAQ

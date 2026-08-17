@@ -82,7 +82,7 @@ In the catalog, Deep Dream Generator is marked with the pricing model **Plan-bas
 - [Stable Diffusion](/en/tools/stable-diffusion/): useful comparison point if workflow, pricing, or specialization should differ.
 - [DALL·E](/en/tools/dall-e/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Prisma](/en/tools/prisma/): useful comparison point if workflow, pricing, or specialization should differ.
-- [Higgsfield](/en/tools/higgsfield/): useful comparison point if workflow, pricing, or specialization should differ.
+- Higgsfield: useful comparison point if workflow, pricing, or specialization should differ.
 
 ## Editorial assessment
 
