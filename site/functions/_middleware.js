@@ -1,4 +1,4 @@
-import { applyToolRoutePolicy } from "../shared/toolRoutePolicy.mjs";
+import { applyToolRoutePolicy, TOOL_REDIRECTS, TOOL_TOMBSTONES } from "../shared/toolRoutePolicy.mjs";
 
 const PUBLIC_SECTION_PREFIXES = [
   "/tools",
@@ -103,6 +103,44 @@ export const toolMachineRoute = (pathname) => {
   return null;
 };
 
+const isRetiredCatalogSlug = (slug) =>
+  typeof slug === "string" &&
+  (TOOL_TOMBSTONES.has(slug) || Object.hasOwn(TOOL_REDIRECTS, slug));
+
+export const filterToolCatalogResponse = async (response) => {
+  const headers = new Headers(response.headers);
+  let payload;
+
+  try {
+    payload = JSON.parse(await response.clone().text());
+    if (
+      !payload ||
+      typeof payload !== "object" ||
+      Array.isArray(payload) ||
+      !Array.isArray(payload.items) ||
+      typeof payload.count !== "number"
+    ) {
+      throw new Error("unexpected catalog shape");
+    }
+  } catch {
+    return response;
+  }
+
+  const items = payload.items.filter((item) => !isRetiredCatalogSlug(item?.slug));
+  const changed = items.length !== payload.items.length || payload.count !== items.length;
+  if (changed) {
+    payload.items = items;
+    payload.count = items.length;
+    headers.delete("content-length");
+    headers.delete("content-encoding");
+  }
+  headers.set("X-Utildesk-Catalog-Policy", "retired-filter-v1");
+  return new Response(changed ? JSON.stringify(payload) : response.body, {
+    status: response.status,
+    headers,
+  });
+};
+
 export const toolShellRoute = (pathname) => {
   if (pathname === "/" || pathname === "/en" || pathname === "/en/") return { kind: "homepage" };
   if (/^\/(?:en\/)?tools\/?$/.test(pathname)) return { kind: "index" };
@@ -190,6 +228,19 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
         orderedResponse.headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
         return orderedResponse;
       }
+    }
+
+    if (
+      context.request.method === "GET" &&
+      cluster === "tools" &&
+      response.ok &&
+      response.headers.get("content-type")?.includes("application/json") &&
+      toolMachineRoute(url.pathname)?.kind === "catalog"
+    ) {
+      const catalogResponse = await filterToolCatalogResponse(response);
+      const headers = new Headers(catalogResponse.headers);
+      headers.set("X-Utildesk-Content-Runtime", "tools-v1");
+      return new Response(catalogResponse.body, { status: catalogResponse.status, headers });
     }
 
     const headers = new Headers(response.headers);

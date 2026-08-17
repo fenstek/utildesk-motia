@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { frozenToolFallback, onRequest, toolDetailSlug, toolMachineRoute, toolRuntimeIsEnabled, toolShellRoute, toolShellRuntimeIsEnabled } from "../../functions/_middleware.js";
+import { filterToolCatalogResponse, frozenToolFallback, onRequest, toolDetailSlug, toolMachineRoute, toolRuntimeIsEnabled, toolShellRoute, toolShellRuntimeIsEnabled } from "../../functions/_middleware.js";
 import { listRuntimeEntries } from "../runtime-content.mjs";
 
 const originalFetch = globalThis.fetch;
@@ -153,6 +153,93 @@ test("all-route mode proxies tool machine endpoints while off mode keeps the sta
   }
   const staticResponse = await onRequest(contextFor({ pathname: "/api/tools/chatgpt.json", values: { "content-runtime:tools": "off" } }).context);
   assert.equal(await staticResponse.text(), "static");
+});
+
+test("catalog policy removes tombstones and redirects while preserving canonical order and fields", async () => {
+  const source = {
+    count: 4,
+    generatedAt: "fixture",
+    items: [
+      { slug: "canonical-first", title: "First" },
+      { slug: "xamarin", title: "Retired tombstone" },
+      { slug: "appinventor", title: "Retired redirect" },
+      { slug: "canonical-last", title: "Last" },
+    ],
+  };
+  const response = await filterToolCatalogResponse(new Response(JSON.stringify(source), {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Content-Length": "999",
+      "Content-Encoding": "gzip",
+    },
+  }));
+  const body = await response.json();
+  assert.deepEqual(body, {
+    count: 2,
+    generatedAt: "fixture",
+    items: [
+      { slug: "canonical-first", title: "First" },
+      { slug: "canonical-last", title: "Last" },
+    ],
+  });
+  assert.equal(response.headers.get("X-Utildesk-Catalog-Policy"), "retired-filter-v1");
+  assert.equal(response.headers.get("content-length"), null);
+  assert.equal(response.headers.get("content-encoding"), null);
+});
+
+test("catalog policy is fail-open for malformed JSON and unexpected shapes", async () => {
+  for (const body of ["not-json", JSON.stringify({ count: 1, items: "not-an-array" })]) {
+    const sourceResponse = new Response(body, {
+      status: 200,
+      headers: { "Content-Type": "application/json", "Content-Length": "8", "Content-Encoding": "gzip" },
+    });
+    const response = await filterToolCatalogResponse(sourceResponse);
+    assert.strictEqual(response, sourceResponse);
+    assert.equal(await sourceResponse.text(), body);
+    assert.equal(sourceResponse.headers.get("content-length"), "8");
+    assert.equal(sourceResponse.headers.get("content-encoding"), "gzip");
+    assert.equal(sourceResponse.headers.get("X-Utildesk-Catalog-Policy"), null);
+  }
+});
+
+test("catalog policy keeps an unchanged catalog body stream and headers", async () => {
+  const body = JSON.stringify({
+    count: 2,
+    generatedAt: "fixture",
+    items: [{ slug: "canonical-first" }, { slug: "canonical-last" }],
+  });
+  const sourceResponse = new Response(body, {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json",
+      "Content-Length": String(body.length),
+      "Content-Encoding": "gzip",
+    },
+  });
+  const response = await filterToolCatalogResponse(sourceResponse);
+  assert.deepEqual(await response.json(), {
+    count: 2,
+    generatedAt: "fixture",
+    items: [{ slug: "canonical-first" }, { slug: "canonical-last" }],
+  });
+  assert.equal(response.headers.get("X-Utildesk-Catalog-Policy"), "retired-filter-v1");
+  assert.equal(response.headers.get("content-length"), String(body.length));
+  assert.equal(response.headers.get("content-encoding"), "gzip");
+});
+
+test("catalog policy is scoped away from tool detail JSON", async () => {
+  globalThis.fetch = async () => new Response(JSON.stringify({ slug: "xamarin", title: "detail" }), {
+    status: 200,
+    headers: { "Content-Type": "application/json", "Content-Length": "42", "Content-Encoding": "gzip" },
+  });
+  const response = await onRequest(contextFor({
+    pathname: "/api/tools/chatgpt.json",
+    values: { "content-runtime:tools": "on" },
+  }).context);
+  assert.deepEqual(await response.json(), { slug: "xamarin", title: "detail" });
+  assert.equal(response.headers.get("X-Utildesk-Catalog-Policy"), null);
+  assert.equal(response.headers.get("content-length"), "42");
 });
 
 test("tool upstream 404, 5xx and exception fail open to the static route", async () => {
