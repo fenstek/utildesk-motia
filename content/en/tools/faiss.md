@@ -78,7 +78,7 @@ FAISS is listed as Open Source. Real cost depends on seats, usage, infrastructur
 ## Alternatives To FAISS
 
 - [Pinecone](/en/tools/pinecone/): wenn eine gehostete Vektordatenbank mit weniger Betriebsaufwand gebraucht wird.
-- [Weaviate](/en/tools/weaviate/): wenn Vektorsuche, Metadaten und APIs stärker als Produkt gebündelt sein sollen.
+- Weaviate: wenn Vektorsuche, Metadaten und APIs stärker als Produkt gebündelt sein sollen.
 - [Qdrant](/en/tools/qdrant/): wenn Open-Source-Vektordatenbank und Betriebspaket wichtiger sind.
 - [Elasticsearch](/en/tools/elasticsearch/): wenn klassische Suche und Vektorsuche kombiniert werden sollen.
 

@@ -90,7 +90,7 @@ Für eine faire Bewertung sollte Hermes nicht nur gegen den Preis eines Chat-Abo
 
 - [OpenHands](/tools/openhands/): stärker auf agentische Coding-Arbeit in Repositories und Sandbox-Läufen fokussiert.
 - [Aider](/tools/aider/): schlanker Terminal-Assistent für Pair-Programming und Codeänderungen direkt im Repository.
-- [AutoGen](/tools/autogen/): Framework-orientierter Ansatz für mehrteilige Agenten-Workflows und Experimente.
+- AutoGen: Framework-orientierter Ansatz für mehrteilige Agenten-Workflows und Experimente.
 - [CrewAI](/tools/crew-ai/): interessant, wenn Agentenrollen und Prozessautomatisierung im Vordergrund stehen.
 - [AnythingLLM](/tools/anything-llm/): besser passend, wenn der Kern vor allem ein kontrollierbarer Wissensassistent mit Dokumentenbasis ist.
 

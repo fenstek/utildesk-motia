@@ -75,7 +75,7 @@ In the catalog, Localize is marked with the pricing model **Freemium**. For a re
 
 ## Alternatives to Localize
 
-- [Phrase](/en/tools/phrase/): useful comparison point if workflow, pricing, or specialization should differ.
+- Phrase: useful comparison point if workflow, pricing, or specialization should differ.
 - [Lokalise](/en/tools/lokalise/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Transifex](/en/tools/transifex/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Smartling](/en/tools/smartling/): useful comparison point if workflow, pricing, or specialization should differ.

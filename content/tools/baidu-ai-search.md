@@ -77,7 +77,7 @@ Gib keine personenbezogenen, vertraulichen oder geschuetzten Inhalte in Suchanfr
 
 - [Google AI](/tools/google-ai/): breiterer globaler Recherche- und Assistentenkontext, wenn Baidu-Abdeckung nicht der Schwerpunkt ist.
 - [Perplexity](/tools/perplexity/): naheliegend fuer quellenorientierte Webantworten ohne eigene Retrieval-Integration.
-- [YouChat](/tools/youchat/): sinnvoll fuer einen niedrigschwelligen Chat- und Suchtest im Browser.
+- YouChat: sinnvoll fuer einen niedrigschwelligen Chat- und Suchtest im Browser.
 - [ChatGPT](/tools/chatgpt/): besser, wenn Recherche mit einem allgemeinen Assistenten und weiteren Arbeitsfaehigkeiten verbunden werden soll.
 - [Gemini](/tools/gemini/): passend, wenn Google-Kontext, mehrsprachige Recherche und Workspace-Naehe wichtiger sind.
 

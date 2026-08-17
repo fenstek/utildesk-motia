@@ -76,7 +76,7 @@ Im Katalog ist FL Studio mit dem Preismodell **Je nach Plan** geführt. Für ein
 ## Alternativen zu FL Studio
 
 - [Ableton Live](/tools/ableton-live/): prüfen, wenn ein anderer Schwerpunkt als bei FL Studio relevant ist.
-- [Logic Pro](/tools/logic-pro/): passender, wenn ein anderer Schwerpunkt als bei FL Studio im Vordergrund steht.
+- Logic Pro: passender, wenn ein anderer Schwerpunkt als bei FL Studio im Vordergrund steht.
 - [GarageBand](/tools/garageband/): guter Vergleich für Teams, die Aufnahmen, virtuelle Instrumente, Loops und einfache Songs brauchen.
 - [Soundtrap](/tools/soundtrap/): prüfen, wenn browserbasierte Musikproduktion und Audio-Kollaboration für Songs, Podcasts und Unterricht wichtiger ist.
 - [LANDR](/tools/landr/): naheliegend, falls Mastering, Musikdistribution und Audio-Workflows für unabhängige Musiker und Creator im Vordergrund steht.

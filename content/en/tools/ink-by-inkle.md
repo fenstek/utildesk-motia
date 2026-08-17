@@ -71,7 +71,7 @@ In the catalog, Ink by Inkle is marked with the pricing model **Plan-based**. Fo
 
 - [Twine](/en/tools/twine/): for accessible visual prototyping of interactive stories.
 - [Renpy](/en/tools/ren-py/): for visual novels with a complete presentation and engine environment.
-- [Yarn Spinner](/en/tools/yarn-spinner/): for dialogue-heavy games and narrative integration into game engines.
+- Yarn Spinner: for dialogue-heavy games and narrative integration into game engines.
 - [StoryMapJS](/en/tools/storymapjs/): for location- and media-based stories without complex game logic.
 ## Editorial assessment
 

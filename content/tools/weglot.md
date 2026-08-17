@@ -63,7 +63,7 @@ Die Abrechnung richtet sich nach dem gewählten Paket und dem Umfang des überse
 - [DeepL](/tools/deepl/) ist die passende Ergänzung oder Alternative, wenn primär hochwertige Textübersetzung und ein eigener Integrationsprozess gefragt sind.
 - [Lokalise](/tools/lokalise/) eignet sich stärker für Produktlokalisierung mit Softwarestrings, Übersetzungsprojekten und Entwickler-Workflows.
 - [Crowdin](/tools/crowdin/) ist eine Option für Teams, die Lokalisierung über viele Inhalte, Mitwirkende und Releases koordinieren müssen.
-- [Phrase](/tools/phrase/) richtet sich an größere Lokalisierungsprogramme mit zentralem Translation Management und Governance.
+- Phrase richtet sich an größere Lokalisierungsprogramme mit zentralem Translation Management und Governance.
 
 ## FAQ
 

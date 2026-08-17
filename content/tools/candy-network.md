@@ -67,8 +67,8 @@ Für Therapie, Krisenhilfe, Kinder und Jugendliche, vertrauliche Arbeitsinhalte 
 - [Character AI](/tools/character-ai/): Größere Community- und Charakterorientierung für offene Rollenspiele; weniger passend, wenn der Schwerpunkt auf privaten Premium-Medien liegt.
 - [Replika](/tools/replika/): Stärker als persönlicher Begleiter mit Beziehungs- und Gewohnheitsfokus positioniert; passend für kontinuierliche Interaktion statt Charaktervielfalt.
 - [Chai](/tools/chai/): Viele community-erstellte Bots und schnelle Chats; eine Option für Entdeckung, wenn weniger kuratierte Erfahrungen akzeptabel sind.
-- [Woebot](/tools/woebot/): Strukturierte Gespräche mit Schwerpunkt auf mentalem Wohlbefinden; kein Ersatz für Therapie und kein erotischer Companion-Dienst.
-- [Wysa](/tools/wysa/): Übungen und unterstützende Dialoge rund um Wohlbefinden; besser, wenn ein klareres Selbsthilfe-Format statt Rollenspiel gesucht wird.
+- Woebot: Strukturierte Gespräche mit Schwerpunkt auf mentalem Wohlbefinden; kein Ersatz für Therapie und kein erotischer Companion-Dienst.
+- Wysa: Übungen und unterstützende Dialoge rund um Wohlbefinden; besser, wenn ein klareres Selbsthilfe-Format statt Rollenspiel gesucht wird.
 
 ## FAQ
 

@@ -72,7 +72,7 @@ In the catalog, Innography is marked with the pricing model **Plan-based**. For 
 
 - [PatSnap](/en/tools/patsnap/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Derwent Innovation](/en/tools/derwent-innovation/): useful comparison point if workflow, pricing, or specialization should differ.
-- [WIPO PATENTSCOPE](/en/tools/wipo-patentscope/): useful comparison point if workflow, pricing, or specialization should differ.
+- WIPO PATENTSCOPE: useful comparison point if workflow, pricing, or specialization should differ.
 - [Google Patents](/en/tools/google-patents/): useful comparison point if workflow, pricing, or specialization should differ.
 
 ## Editorial assessment

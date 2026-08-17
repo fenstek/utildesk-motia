@@ -92,7 +92,7 @@ Die realen Kosten von FabFilter Pro-L 2 bestehen nicht nur aus einem möglichen 
 ## Alternativen
 
 - [Microsoft Teams](/tools/microsoft-teams/): Microsoft Teams setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit FabFilter Pro-L 2, bevor Daten oder Zuständigkeiten verlagert werden.
-- [Zoom](/tools/zoom/): Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit FabFilter Pro-L 2, bevor Daten oder Zuständigkeiten verlagert werden.
+- Zoom: Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit FabFilter Pro-L 2, bevor Daten oder Zuständigkeiten verlagert werden.
 - [Dropbox Business](/tools/dropbox-business/): Dropbox Business setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit FabFilter Pro-L 2, bevor Daten oder Zuständigkeiten verlagert werden.
 
 ## FAQ

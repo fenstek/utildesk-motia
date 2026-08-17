@@ -50,7 +50,7 @@ Planen Sie Scrape-Intervalle, Aufbewahrungszeit, Speicher, Backups und Hochverf�
 
 - [Grafana](/tools/grafana/): Visualisierung und Alerting als Ergänzung zu einer vorhandenen Metrikquelle.
 - [Datadog](/tools/datadog/): gehostete Observability mit breiterem SaaS- und Integrationsumfang.
-- [New Relic](/tools/new-relic/): APM und Full-Stack-Beobachtung als verwaltete Plattform.
+- New Relic: APM und Full-Stack-Beobachtung als verwaltete Plattform.
 - [Elasticsearch](/tools/elasticsearch/): stärker, wenn Suche und Loganalyse den Kern des Problems bilden.
 ## Redaktionelle Einschätzung
 

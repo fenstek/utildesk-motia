@@ -28,10 +28,6 @@ sidebarPoints:
 relatedTools:
   - title: "Rossum"
     href: "/en/tools/rossum/"
-  - title: "Azure AI Document Intelligence"
-    href: "/en/tools/azure-ai-document-intelligence/"
-  - title: "ABBYY Vantage"
-    href: "/en/tools/abbyy-vantage/"
   - title: "Google Document AI"
     href: "/en/tools/google-document-ai/"
   - title: "Mindee"
@@ -48,9 +44,9 @@ For a one-off, non-confidential document test without an API, you can use the [f
 
 For a small workflow, an API that turns a PDF into structured JSON can be enough. [Mindee](/en/tools/mindee/) and [Veryfi](/en/tools/veryfi/) fit that pattern: code sends a document, receives fields and owns the business rules. It works well for a limited set of document types when someone is prepared to own error paths.
 
-Once invoices arrive from many sources, OCR becomes an operational problem. [Rossum](/en/tools/rossum/) and [ABBYY Vantage](/en/tools/abbyy-vantage/) put more emphasis on review, roles and recurring document work. That can require more setup, but it prevents correction work from disappearing into inboxes and spreadsheets.
+Once invoices arrive from many sources, OCR becomes an operational problem. [Rossum](/en/tools/rossum/) and ABBYY Vantage put more emphasis on review, roles and recurring document work. That can require more setup, but it prevents correction work from disappearing into inboxes and spreadsheets.
 
-Teams already invested in a cloud platform often look at [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/), [Google Document AI](/en/tools/google-document-ai/) or [AWS Textract](/en/tools/aws-textract/). The attraction is not merely model quality: identities, logs, storage and queues may already be in place. It is an operating-model decision about who monitors the pipeline, where documents live and how corrections return to the process.
+Teams already invested in a cloud platform often look at Azure AI Document Intelligence, [Google Document AI](/en/tools/google-document-ai/) or AWS Textract. The attraction is not merely model quality: identities, logs, storage and queues may already be in place. It is an operating-model decision about who monitors the pipeline, where documents live and how corrections return to the process.
 
 ## Four checks a demo rarely shows
 

@@ -48,9 +48,9 @@ Starten Sie mit einer Rollenfamilie und beobachten Sie Time-to-Review, Durchlauf
 
 ## Alternativen
 - [Greenhouse](/tools/greenhouse/): für strukturierte Interviews und datengetriebenes Recruiting.
-- [Lever](/tools/lever/): ATS/CRM-Ansatz mit Fokus auf Recruiting-Beziehungen.
+- Lever: ATS/CRM-Ansatz mit Fokus auf Recruiting-Beziehungen.
 - [BambooHR](/tools/bamboohr/): HR-Plattform mit Recruiting-Funktionen für kleinere und mittlere Teams.
-- [Workday](/tools/workday/): für Unternehmen mit umfassender Workday-HR-Landschaft.
+- Workday: für Unternehmen mit umfassender Workday-HR-Landschaft.
 
 ## Redaktionelle Einschätzung
 

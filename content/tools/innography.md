@@ -77,7 +77,7 @@ Im Katalog ist Innography mit dem Preismodell **Abonnement** geführt. Für eine
 
 - [PatSnap](/tools/patsnap/): stärker, wenn Innovation Intelligence, Patentdaten und Marktinformationen für forschungsnahe Strategiearbeit gefragt ist.
 - [Derwent Innovation](/tools/derwent-innovation/): passender, wenn der Schwerpunkt auf IP-Analyse, Technologiebeobachtung und Wettbewerbsinformationen liegt.
-- [WIPO PATENTSCOPE](/tools/wipo-patentscope/): prüfen, wenn ein anderer Schwerpunkt als bei Innography relevant ist.
+- WIPO PATENTSCOPE: prüfen, wenn ein anderer Schwerpunkt als bei Innography relevant ist.
 - [Google Patents](/tools/google-patents/): prüfen, wenn ein anderer Schwerpunkt als bei Innography relevant ist.
 
 ## Redaktionelle Einschätzung

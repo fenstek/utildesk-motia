@@ -75,8 +75,8 @@ A narrower alternative is better when the need is only pipeline management, deep
 
 ## Alternatives
 
-- [Pipedrive](/en/tools/pipedrive/): A narrower sales-pipeline and deal focus when marketing and service hubs are unnecessary.
-- [Zoho CRM](/en/tools/zoho-crm/): A broad CRM and suite environment when several business functions and cost-conscious expansion need to fit together.
+- Pipedrive: A narrower sales-pipeline and deal focus when marketing and service hubs are unnecessary.
+- Zoho CRM: A broad CRM and suite environment when several business functions and cost-conscious expansion need to fit together.
 - [Freshsales](/en/tools/freshsales/): A sales-oriented option with lead and selling features for teams that prefer a tighter sales scope.
 - [Salesforce Lightning](/en/tools/salesforce-lightning/): A platform foundation for deeper customization, permission models, and connected enterprise processes.
 - [monday.com](/en/tools/monday-com/): A flexible visual work platform when cross-team workflow matters more than a deep CRM data model.

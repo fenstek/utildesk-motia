@@ -60,9 +60,9 @@ Es gibt eine kostenlose Basisnutzung sowie kostenpflichtige Angebote mit erweite
 ## Alternativen zu LanguageTool
 
 - [Grammarly](/tools/grammarly/): wenn Englisch und Tonalitätsvorschläge im Vordergrund stehen.
-- [Microsoft Editor](/tools/microsoft-editor/): wenn die Prüfung eng an Microsoft-365-Arbeit angebunden sein soll.
+- Microsoft Editor: wenn die Prüfung eng an Microsoft-365-Arbeit angebunden sein soll.
 - [ProWritingAid](/tools/prowritingaid/): wenn Autoren ausführlichere Stil- und Manuskriptanalysen benötigen.
-- [Wordtune](/tools/wordtune/): wenn Umschreiben und Variantenbildung wichtiger sind als regelbasierte Korrektur.
+- Wordtune: wenn Umschreiben und Variantenbildung wichtiger sind als regelbasierte Korrektur.
 
 ## Redaktionelle Einschätzung
 

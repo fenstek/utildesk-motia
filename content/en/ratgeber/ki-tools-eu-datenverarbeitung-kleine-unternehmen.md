@@ -26,10 +26,6 @@ relatedTools:
     href: /en/tools/microsoft-power-automate/
   - title: Rossum
     href: /en/tools/rossum/
-  - title: ABBYY Vantage
-    href: /en/tools/abbyy-vantage/
-  - title: Azure AI Document Intelligence
-    href: /en/tools/azure-ai-document-intelligence/
 ---
 
 A vendor puts “EU data processing” on its website and a small business relaxes: it sounds like a quick privacy answer. But as soon as a workflow passes an invoice, contract, or customer email through several services, location is only one part of the picture. The more important question is: **Can the company explain this data's path and stop it when needed?**
@@ -48,7 +44,7 @@ Only then do the questions a product page cannot answer become visible:
 - Do contents remain in logs, backups, or support tickets?
 - How is an unwanted or incorrect run stopped and cleaned up?
 
-A system such as [n8n](/en/tools/n8n/) can give a team more technical control when it can and wants to run it itself. [Microsoft Power Automate](/en/tools/microsoft-power-automate/) may fit when identity, files, and permissions are already managed in a Microsoft tenant. Document tools such as [Rossum](/en/tools/rossum/), [ABBYY Vantage](/en/tools/abbyy-vantage/), and [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/) handle different parts of a flow. None makes a data-flow map unnecessary.
+A system such as [n8n](/en/tools/n8n/) can give a team more technical control when it can and wants to run it itself. [Microsoft Power Automate](/en/tools/microsoft-power-automate/) may fit when identity, files, and permissions are already managed in a Microsoft tenant. Document tools such as [Rossum](/en/tools/rossum/), ABBYY Vantage, and Azure AI Document Intelligence handle different parts of a flow. None makes a data-flow map unnecessary.
 
 ![A French newspaper caricature shows a sealed document passing through several hidden stations while the proprietor keeps hold of the emergency cord](/images/ratgeber/ki-tools-eu-data-theatre-french-caricature-v2.webp)
 

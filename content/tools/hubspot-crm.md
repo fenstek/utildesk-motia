@@ -74,8 +74,8 @@ Besser passt eine fokussiertere Alternative, wenn nur Pipeline-Management gebrau
 
 ## Alternativen
 
-- [Pipedrive](/tools/pipedrive/): Schlankerer Fokus auf Vertriebspipeline und Deals, wenn Marketing- und Service-Hubs nicht benötigt werden.
-- [Zoho CRM](/tools/zoho-crm/): Breites CRM mit stärkerem Suite-Umfeld, wenn viele Geschäftsbereiche und ein preisbewusster Ausbau zusammenpassen sollen.
+- Pipedrive: Schlankerer Fokus auf Vertriebspipeline und Deals, wenn Marketing- und Service-Hubs nicht benötigt werden.
+- Zoho CRM: Breites CRM mit stärkerem Suite-Umfeld, wenn viele Geschäftsbereiche und ein preisbewusster Ausbau zusammenpassen sollen.
 - [Freshsales](/tools/freshsales/): Vertriebsorientierte Alternative mit Lead- und Sales-Funktionen für Teams, die einen engeren Sales-Fokus bevorzugen.
 - [Salesforce Lightning](/tools/salesforce-lightning/): Plattformbasis für komplexere Anpassungen, Rollenmodelle und verbundene Unternehmensprozesse.
 - [monday.com](/tools/monday-com/): Flexiblere visuelle Arbeitsplattform, wenn ein teamübergreifender Workflow wichtiger ist als ein tiefes CRM-Datenmodell.

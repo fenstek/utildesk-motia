@@ -69,7 +69,7 @@ Service Hub is a good recommendation for teams that deliberately manage support 
 
 - [Zendesk](/en/tools/zendesk/): A mature helpdesk-first option with broad ticketing and support controls when CRM unification is secondary.
 - [Freshdesk](/en/tools/freshdesk/): An approachable cloud helpdesk for teams that want to start quickly with tickets and multiple channels.
-- [Zoho Desk](/en/tools/zoho-desk/): A cost-conscious service option within the Zoho ecosystem when its CRM and automation model fits better.
+- Zoho Desk: A cost-conscious service option within the Zoho ecosystem when its CRM and automation model fits better.
 - [Intercom](/en/tools/intercom/): More focused on in-product communication, messaging, and proactive customer conversations.
 
 ## FAQ

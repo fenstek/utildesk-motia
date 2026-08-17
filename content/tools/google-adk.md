@@ -78,7 +78,7 @@ Für einen schnellen visuellen Fachbereichs-Prototyp oder ein kleines Chat-Featu
 
 - [LangGraph](/tools/langgraph/): Zustandsorientierte Graphen und Übergänge für Teams, die kontrollierte Agentenabläufe im LangChain-Ökosystem bauen.
 - [LangChain](/tools/langchain/): Breiter Integrationsbaukasten für Modelle, Retrieval und Tools mit weniger Vorgaben für die Gesamtarchitektur.
-- [AutoGen](/tools/autogen/): Rollen- und gesprächsorientierte Multi-Agent-Entwicklung, besonders für Experimente und Research-Prototypen.
+- AutoGen: Rollen- und gesprächsorientierte Multi-Agent-Entwicklung, besonders für Experimente und Research-Prototypen.
 - [n8n](/tools/n8n/): Visuelle Geschäftsautomation mit vielen Konnektoren, wenn deterministische Integrationsschritte wichtiger als ein Agentenframework sind.
 
 ## FAQ

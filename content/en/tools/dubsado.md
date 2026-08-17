@@ -81,7 +81,7 @@ Choose a narrower or complementary alternative when the real problem is internal
 - [Asana](/en/tools/asana/): Better for internal projects, ownership, dependencies, and cross-team planning; client contracts and payments are not its center.
 - [ClickUp](/en/tools/clickup/): A fit when tasks, documents, chat, and internal automations should be the main workspace and Dubsado’s client workflow is too narrow.
 - [Setmore](/en/tools/setmore/): The leaner choice for appointment booking and reminders when a full proposal, contract, and invoice journey is unnecessary.
-- [Zoho CRM](/en/tools/zoho-crm/): Better for structured sales and CRM processes with multiple pipelines and a stronger focus on customer records than branded service forms.
+- Zoho CRM: Better for structured sales and CRM processes with multiple pipelines and a stronger focus on customer records than branded service forms.
 
 ## FAQ
 

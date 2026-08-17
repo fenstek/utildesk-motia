@@ -90,7 +90,7 @@ For budget planning, Buffer should not be evaluated only by list price. Operatin
 - **Sprout Social:** Offers advanced reporting and CRM features for professional social media strategies.
 - [Later](/tools/later/): Optimized especially for visual platforms such as Instagram and Pinterest, with a focus on visual planning.
 - **SocialBee:** Automation and content curation with flexible scheduling options.
-- [Zoho Social](/tools/zoho-social/): Integration into the Zoho ecosystem with comprehensive marketing tools.
+- Zoho Social: Integration into the Zoho ecosystem with comprehensive marketing tools.
 
 When choosing alternatives, it is worth comparing them against the specific bottleneck. If social media planning and cross-channel publishing are the focus, different criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of results in your own material.
 

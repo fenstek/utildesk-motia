@@ -72,7 +72,7 @@ In the catalog, Google Tasks is marked with the pricing model **Free**. For a re
 - [Microsoft To Do](/en/tools/microsoft-to-do/): for personal tasks in a Microsoft 365 environment.
 - [Todoist](/en/tools/todoist/): for priorities, projects, and stronger personal task organisation.
 - [TickTick](/en/tools/ticktick/): for tasks, calendar proximity, habits, and focus features.
-- [Notion Calendar](/en/tools/notion-calendar/): when scheduling and calendar views are central.
+- Notion Calendar: when scheduling and calendar views are central.
 - [Trello mit Butler](/en/tools/trello-mit-butler/): for shared visual boards with explicit workflow columns.
 ## Editorial assessment
 

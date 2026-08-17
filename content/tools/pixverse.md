@@ -75,7 +75,7 @@ Im Katalog ist PixVerse mit dem Preismodell **Freemium** geführt. Für eine bel
 
 ## Alternativen zu PixVerse
 
-- [Higgsfield](/tools/higgsfield/): stärker, wenn KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen gefragt ist.
+- Higgsfield: stärker, wenn KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen gefragt ist.
 - [Kaiber](/tools/kaiber/): passender, wenn der Schwerpunkt auf KI-Video und kreative Motion-Ästhetik für Musik, Social Clips und visuelle Experimente liegt.
 - [Runway](/tools/runway/): prüfen, wenn ein anderer Schwerpunkt als bei PixVerse relevant ist.
 - [Pika](/tools/pika/): prüfen, wenn ein anderer Schwerpunkt als bei PixVerse relevant ist.

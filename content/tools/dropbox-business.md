@@ -89,7 +89,7 @@ Die realen Kosten von Dropbox Business bestehen nicht nur aus einem möglichen T
 ## Alternativen
 
 - [Microsoft Teams](/tools/microsoft-teams/): Microsoft Teams setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Dropbox Business, bevor Daten oder Zuständigkeiten verlagert werden.
-- [Zoom](/tools/zoom/): Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Dropbox Business, bevor Daten oder Zuständigkeiten verlagert werden.
+- Zoom: Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Dropbox Business, bevor Daten oder Zuständigkeiten verlagert werden.
 - [Asana](/tools/asana/): Asana setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit Dropbox Business, bevor Daten oder Zuständigkeiten verlagert werden.
 
 ## FAQ

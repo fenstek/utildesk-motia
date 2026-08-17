@@ -22,16 +22,10 @@ sidebarPoints:
 relatedTools:
   - title: "Tesseract OCR"
     href: "/tools/tesseract-ocr/"
-  - title: "OCRmyPDF"
-    href: "/tools/ocrmypdf/"
-  - title: "PaddleOCR"
-    href: "/tools/paddleocr/"
-  - title: "Azure AI Document Intelligence"
-    href: "/tools/azure-ai-document-intelligence/"
 ---
 Ein gescanntes PDF soll nur durchsuchbar werden. Dafür ist lokale OCR oft genau richtig: keine komplizierte SaaS-Einführung, keine Dokumente in eine fremde Cloud laden, ein klarer technischer Zweck. Der Fehler beginnt, wenn aus diesem guten Start stillschweigend die Erwartung wird, dass dieselbe Pipeline auch Beträge, Tabellen und Geschäftsdaten zuverlässig verstehen wird.
 
-Open-source OCR ist kein schwacher Ersatz für eine Dokumenten-KI. Es ist ein anderer Baustein. [Tesseract OCR](/tools/tesseract-ocr/) liefert eine OCR-Engine und Kommandozeilenwerkzeuge; [OCRmyPDF](/tools/ocrmypdf/) macht gescannte PDFs mit einer Textebene durchsuchbar. [PaddleOCR](/tools/paddleocr/) deckt weitergehende Erkennungsbausteine ab. Die passende Wahl hängt deshalb am Ergebnis, das nach der Erkennung sicher genug sein muss.
+Open-source OCR ist kein schwacher Ersatz für eine Dokumenten-KI. Es ist ein anderer Baustein. [Tesseract OCR](/tools/tesseract-ocr/) liefert eine OCR-Engine und Kommandozeilenwerkzeuge; OCRmyPDF macht gescannte PDFs mit einer Textebene durchsuchbar. PaddleOCR deckt weitergehende Erkennungsbausteine ab. Die passende Wahl hängt deshalb am Ergebnis, das nach der Erkennung sicher genug sein muss.
 
 Für einen einzelnen, nicht vertraulichen Test ohne eigene Installation kannst du [Utildesk OCR im kostenlosen Testbetrieb ausprobieren](https://ocr.utildesk.de/). Für Archive, Stapelverarbeitung oder sensible Unterlagen bleibt eine kontrollierte lokale Pipeline die passendere Wahl.
 
@@ -49,7 +43,7 @@ Das ist die zentrale Wendung: OCR-Qualität beginnt oft vor dem Modell. Schiefe 
 
 **Text-Extraktion für einen Menschen.** Ein Team möchte Inhalte lokal in einen Entwurf oder eine Prüfung überführen. Dann sind Seitenrotation, Sprache, Qualitätswarnungen und eine sichtbare Zuordnung zum Original wichtiger als eine einzelne Erfolgsquote.
 
-**Strukturierte Felder für Folgesysteme.** Betrag, Datum, Lieferant oder Tabellenposition sollen automatisch in ein System wandern. Hier reicht „Text wurde erkannt“ nicht. Jedes Feld braucht eine Regel, einen Abgleich oder eine Korrekturqueue. Wenn Tabellen, wechselnde Layouts, Handschrift oder fertige API-Felder im Mittelpunkt stehen, können spezialisierte Dienste wie [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/) sinnvoller sein als eine aufwendig selbst gebaute OCR-Kette.
+**Strukturierte Felder für Folgesysteme.** Betrag, Datum, Lieferant oder Tabellenposition sollen automatisch in ein System wandern. Hier reicht „Text wurde erkannt“ nicht. Jedes Feld braucht eine Regel, einen Abgleich oder eine Korrekturqueue. Wenn Tabellen, wechselnde Layouts, Handschrift oder fertige API-Felder im Mittelpunkt stehen, können spezialisierte Dienste wie Azure AI Document Intelligence sinnvoller sein als eine aufwendig selbst gebaute OCR-Kette.
 
 PaddleOCR ist dort interessant, wo das Team über die reine PDF-Textschicht hinausgeht und einzelne Erkennungskomponenten gezielt einsetzen möchte. Das ist kein Grund, es automatisch für jedes Archiv einzuführen. Mehr Bausteine bedeuten auch mehr Modelle, Abhängigkeiten und Qualitätssicherung.
 

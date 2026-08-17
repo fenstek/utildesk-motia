@@ -62,7 +62,7 @@ Amazon Comprehend verwendet ein nutzungsabhängiges Preismodell, das sich nach d
 
 - **Google Cloud Natural Language API**: Bietet ähnliche NLP-Funktionen mit Fokus auf Integration in Google Cloud.
 - [Microsoft Azure Text Analytics](/tools/microsoft-azure-text-analytics/): Umfassender Dienst für Textanalyse innerhalb der Azure-Plattform.
-- [IBM Watson Natural Language Understanding](/tools/ibm-watson-natural-language-understanding/): Leistungsfähige NLP-Services mit umfangreichen Analyseoptionen.
+- IBM Watson Natural Language Understanding: Leistungsfähige NLP-Services mit umfangreichen Analyseoptionen.
 - [spaCy](/tools/spacy/): Open-Source-Bibliothek für NLP, geeignet für Entwickler mit Programmierkenntnissen.
 - **MeaningCloud**: Cloudbasierte Textanalyse mit Fokus auf individuelle Anpassungen und Branchenlösungen.
 

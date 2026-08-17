@@ -110,7 +110,7 @@ For exact pricing, it is best to consult the official Azure pricing page or cont
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Microsoft Azure Speech to Text before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Microsoft Azure Speech to Text before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Microsoft Azure Speech to Text before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Microsoft Azure Speech to Text before moving data or ownership.
 
 ## FAQ

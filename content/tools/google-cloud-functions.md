@@ -60,7 +60,7 @@ Google Cloud Functions ist für Teams empfehlenswert, die bereits Google Cloud b
 
 - [AWS Lambda](/tools/aws-lambda/): Naheliegende Wahl für ereignisgetriebene Funktionen im AWS-Ökosystem oder bei bestehender IAM-, EventBridge- und Deployment-Infrastruktur.
 - [Azure Functions](/tools/azure-functions/): Passt besser zu Teams, die Azure, Microsoft Entra ID und Azure-Servicebus bereits als Betriebsumgebung einsetzen.
-- [OpenFaaS](/tools/openfaas/): Interessant, wenn Funktionen auf eigener Kubernetes-Infrastruktur laufen und Portabilität wichtiger ist als ein vollständig verwalteter Cloud-Dienst.
+- OpenFaaS: Interessant, wenn Funktionen auf eigener Kubernetes-Infrastruktur laufen und Portabilität wichtiger ist als ein vollständig verwalteter Cloud-Dienst.
 - [AWS AppSync](/tools/aws-appsync/): Für ein verwaltetes GraphQL-API mit Resolvern und Datenquellen passender als selbst zusammengesetzte HTTP-Funktionen.
 - [Firebase Realtime Database](/tools/firebase-realtime-database/): Für synchronisierte Clientdaten und einfache Firebase-nahe Anwendungen direkter, aber kein allgemeiner Ersatz für Backend-Funktionen.
 

@@ -70,8 +70,8 @@ Choose something else for therapy, crisis support, minors, confidential work, or
 - [Character AI](/en/tools/character-ai/): More community- and character-discovery oriented for open roleplay; less suitable when private premium media is the main requirement.
 - [Replika](/en/tools/replika/): More focused on an ongoing personal companion and relationship framing; a better fit than character variety for continuous interaction.
 - [Chai](/en/tools/chai/): A large selection of community-created bots for quick discovery, if a less curated experience is acceptable.
-- [Woebot](/en/tools/woebot/): Structured conversations focused on mental wellbeing; not a therapy replacement and not an erotic companion service.
-- [Wysa](/en/tools/wysa/): Wellbeing exercises and supportive dialogues for people seeking a self-help format rather than roleplay.
+- Woebot: Structured conversations focused on mental wellbeing; not a therapy replacement and not an erotic companion service.
+- Wysa: Wellbeing exercises and supportive dialogues for people seeking a self-help format rather than roleplay.
 
 ## FAQ
 

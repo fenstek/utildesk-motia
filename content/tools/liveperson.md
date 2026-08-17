@@ -75,7 +75,7 @@ Vor einer Entscheidung sollte man ein realistisches Szenario mit Anfragevolumen,
 - [Intercom](/tools/intercom/): stärker für produktnahen SaaS-Support, In-App-Kommunikation und Help Center.
 - [Zendesk](/tools/zendesk/): breiter Helpdesk- und Ticketing-Standard für Service-Organisationen.
 - [Freshdesk](/tools/freshdesk/): oft leichter und kosteneffizienter für klassische Support-Teams.
-- [Drift](/tools/drift/): stärker auf Sales- und Conversational-Marketing-Szenarien ausgerichtet.
+- Drift: stärker auf Sales- und Conversational-Marketing-Szenarien ausgerichtet.
 - Ada: guter Vergleich für AI-first Support-Automatisierung und Self-Service-Bots.
 
 ## Redaktionelle Einschätzung

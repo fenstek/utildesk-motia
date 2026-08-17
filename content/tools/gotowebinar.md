@@ -58,7 +58,7 @@ Wir empfehlen GoToWebinar Marketing- und Enablement-Teams, die regelmäßig stru
 
 ## Alternativen
 
-- [Zoom](/tools/zoom/): Die naheliegende Wahl, wenn neben Webinaren auch Meetings und eine breitere Konferenzumgebung gebraucht werden.
+- Zoom: Die naheliegende Wahl, wenn neben Webinaren auch Meetings und eine breitere Konferenzumgebung gebraucht werden.
 - [Microsoft Teams](/tools/microsoft-teams/): Passt besser, wenn Identitäten, Zusammenarbeit und Governance bereits im Microsoft-365-Tenant liegen.
 - [Google Meet](/tools/google-meet/): Sinnvoll für schlanke browserbasierte Sitzungen in einer Google-Workspace-Organisation, sofern Webinarfunktionen und Limits ausreichen.
 - [GoToMeeting](/tools/gotomeeting/): Geeigneter für kleinere, dialogorientierte Online-Meetings statt registrierungsgetriebener Broadcasts.

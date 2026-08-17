@@ -23,8 +23,6 @@ relatedTools:
     href: "/tools/microsoft-edge/"
   - title: "Gemini"
     href: "/tools/gemini/"
-  - title: "LM Studio"
-    href: "/tools/lm-studio/"
   - title: "Google AI Studio"
     href: "/tools/google-ai-studio/"
   - title: "Microsoft Copilot"
@@ -41,11 +39,6 @@ decisionTools:
     href: "/tools/microsoft-edge/"
     note: "spannend für Browser- und Extension-Workflows, aber 2026 noch klar als Developer-/Preview-Thema zu behandeln"
     score: "8.0"
-    kind: "recommend"
-  - title: "LM Studio"
-    href: "/tools/lm-studio/"
-    note: "praktischer Einstieg für lokale Modelltests, Demos und Entwicklerarbeitsplätze"
-    score: "8.3"
     kind: "recommend"
 decisionAvoid:
   - "lokale Modelle als automatische Compliance-Garantie verkaufen"
@@ -69,9 +62,9 @@ Für die Auswahl hilft eine nüchterne Karte.
 | App-Runtime | Microsoft Foundry Local | Modelle direkt in Desktop- oder Client-Apps einbetten | Gerätevielfalt, Modellpflege, Support |
 | Browser-Runtime | Microsoft Edge Aion, Translator API, Language Detector API | Webseiten, Extensions, Übersetzung, Sprache, lokale Assistenz im Browser | Preview-Status, Browserbindung, Sicherheitsmodell |
 | Betriebssystem-/Device-Modell | Apple Foundation Models, Gemini Nano über AICore | private App-Funktionen auf iOS/macOS/Android | Plattformbindung, Geräteverfügbarkeit, Modellgrenzen |
-| Entwickler- und Prototyping-Layer | [LM Studio](/tools/lm-studio/), Ollama, lokale OpenAI-kompatible Server | Tests, Demos, interne Workbenches, Modellvergleich | kein vollständiges Enterprise-Governance-System |
+| Entwickler- und Prototyping-Layer | LM Studio, Ollama, lokale OpenAI-kompatible Server | Tests, Demos, interne Workbenches, Modellvergleich | kein vollständiges Enterprise-Governance-System |
 
-Diese Schichten konkurrieren nicht einfach miteinander. Sie leben an unterschiedlichen Stellen im Stack. [LM Studio](/tools/lm-studio/) ist ein guter Arbeitsplatz für lokale Modelle. Foundry Local ist eher eine Runtime, die Entwickler in Anwendungen einbetten. Edge Aion bringt lokale KI in Web-APIs. Apple und Google versuchen, Foundation Models als Systemfähigkeit für Apps bereitzustellen.
+Diese Schichten konkurrieren nicht einfach miteinander. Sie leben an unterschiedlichen Stellen im Stack. LM Studio ist ein guter Arbeitsplatz für lokale Modelle. Foundry Local ist eher eine Runtime, die Entwickler in Anwendungen einbetten. Edge Aion bringt lokale KI in Web-APIs. Apple und Google versuchen, Foundation Models als Systemfähigkeit für Apps bereitzustellen.
 
 Wer das verwechselt, baut schnell eine Demo, aber keine belastbare Architektur.
 
@@ -124,7 +117,7 @@ Trotzdem gilt auch hier: Gemini Nano ist kein “Gemini Pro in klein”. On-devi
 
 ## Ollama und LM Studio: der praktische Werkstattmodus
 
-Neben den Plattform-Stacks gibt es den Werkstattmodus: Entwickler und kleine Teams testen lokale Modelle mit Tools wie Ollama oder [LM Studio](/tools/lm-studio/). LM Studio positioniert sich klar als Desktop-Umgebung, um lokale LLMs privat auf eigener Hardware zu nutzen; dazu kommen SDKs, lokale Server-Optionen und ein OpenAI-kompatibler API-Modus.
+Neben den Plattform-Stacks gibt es den Werkstattmodus: Entwickler und kleine Teams testen lokale Modelle mit Tools wie Ollama oder LM Studio. LM Studio positioniert sich klar als Desktop-Umgebung, um lokale LLMs privat auf eigener Hardware zu nutzen; dazu kommen SDKs, lokale Server-Optionen und ein OpenAI-kompatibler API-Modus.
 
 Das ist für Utildesk-Leser oft der schnellste Einstieg. Man kann ein Modell lokal ausprobieren, Prompts testen, kleine Workflows gegen einen lokalen Endpunkt schicken und ein Gefühl für Geschwindigkeit, Speicherbedarf und Qualität bekommen. Für Prototypen ist das wertvoller als eine PowerPoint-Folie über “AI sovereignty”.
 
@@ -165,7 +158,7 @@ Gerade dezentrale KI macht Inventar wichtiger. Wenn auf 200 Laptops unterschiedl
 
 **Woche 1: Aufgaben inventarisieren.** Nicht mit dem Tool starten. Sammeln: Welche wiederkehrenden Aufgaben enthalten sensible Daten, sind aber fachlich eng begrenzt?
 
-**Woche 2: lokalen Prototyp bauen.** Mit [LM Studio](/tools/lm-studio/), Ollama oder Foundry Local einen schmalen Prozess testen: Zusammenfassung, Klassifikation, Formularentwurf, Übersetzung.
+**Woche 2: lokalen Prototyp bauen.** Mit LM Studio, Ollama oder Foundry Local einen schmalen Prozess testen: Zusammenfassung, Klassifikation, Formularentwurf, Übersetzung.
 
 **Woche 3: Cloud-Fallback definieren.** Lokal ist Standard, Cloud ist Ausnahme. Aber die Ausnahme muss sauber sein: nur nach Freigabe, nur mit reduzierten Daten, nur für Aufgaben, die lokal zu schwach sind.
 
@@ -186,13 +179,13 @@ Microsoft positioniert Aion als kleineres, effizienteres Modell, das mehr Gerät
 Apple beschreibt die On-device-Inferenz für Apps als ohne zusätzliche Inferenzkosten. Das heißt aber nicht, dass Entwicklung, Geräteanforderungen und Plattformbindung kostenlos wären.
 
 **Was ist der beste Einstieg für ein kleines Team?**  
-Ein lokaler Prototyp mit [LM Studio](/tools/lm-studio/) oder Ollama plus ein klarer Workflow. Danach kann man entscheiden, ob Foundry Local, Apple, Android oder Browser-APIs produktionsnäher sind.
+Ein lokaler Prototyp mit LM Studio oder Ollama plus ein klarer Workflow. Danach kann man entscheiden, ob Foundry Local, Apple, Android oder Browser-APIs produktionsnäher sind.
 
 ## Fazit: lokal zuerst, aber nicht lokal blind
 
 Lokale KI-Agenten sind 2026 kein Rückschritt in die Modellbastelkammer. Sie sind eine vernünftige Antwort auf eine reale Architekturfrage: Welche KI-Arbeit sollte nah beim Nutzer passieren?
 
-Foundry Local macht lokale Inferenz für Apps greifbarer. Edge Aion und lokale Web-APIs bringen KI in den Browser. Apple Foundation Models und Gemini Nano bringen sie näher an Betriebssystem und App-Kontext. [LM Studio](/tools/lm-studio/) und Ollama geben Teams eine Werkbank, um Modelle ohne lange Beschaffung zu testen.
+Foundry Local macht lokale Inferenz für Apps greifbarer. Edge Aion und lokale Web-APIs bringen KI in den Browser. Apple Foundation Models und Gemini Nano bringen sie näher an Betriebssystem und App-Kontext. LM Studio und Ollama geben Teams eine Werkbank, um Modelle ohne lange Beschaffung zu testen.
 
 Der produktive Weg ist hybrid: lokal für private, schnelle, wiederholbare Vorarbeit; Cloud für schwere Aufgaben; Menschen für Freigaben, Verantwortung und Grenzfälle. Wer diese Grenzen sauber zieht, bekommt nicht nur ein besseres Datenschutzargument. Er bekommt eine robustere Agentenarchitektur.
 

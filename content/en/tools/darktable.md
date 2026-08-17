@@ -64,7 +64,7 @@ We recommend Darktable to photographers and small teams that want local control 
 
 ## Alternatives
 
-- [RawTherapee](/en/tools/rawtherapee/): A similarly focused RAW developer when catalog and workflow features matter less.
+- RawTherapee: A similarly focused RAW developer when catalog and workflow features matter less.
 - [GIMP](/en/tools/gimp/): Better suited to pixel retouching, compositing, and manual image manipulation after RAW development.
 - [Adobe Lightroom](/en/tools/adobe-lightroom/): A more integrated commercial photography workflow when cloud synchronization and guided catalog management justify the subscription.
 - [Krita](/en/tools/krita/): Better for digital painting, illustration, and manual raster work than for catalog-oriented RAW development.

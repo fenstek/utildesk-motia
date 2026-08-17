@@ -63,7 +63,7 @@ Calendly ist empfehlenswert, wenn ein klar abgegrenzter Terminprozess regelmäß
 ## Alternativen
 
 - [Microsoft Bookings](/tools/microsoft-bookings/): Sinnvoll, wenn Termine, Mitarbeitende und Kalender bereits in Microsoft 365 verwaltet werden sollen.
-- [Doodle](/tools/doodle/): Besser für unverbindliche Gruppenabstimmungen, bei denen zunächst ein gemeinsamer Zeitpunkt gefunden werden muss.
+- Doodle: Besser für unverbindliche Gruppenabstimmungen, bei denen zunächst ein gemeinsamer Zeitpunkt gefunden werden muss.
 - [Acuity Scheduling](/tools/acuity-scheduling/): Stärker für dienstleistungsorientierte Buchungen mit Kundendetails, Zahlungen oder Paketen.
 - [YouCanBook.me](/tools/youcanbook-me/): Eine schlanke Alternative, wenn individuelle Buchungsseiten und Kalenderregeln im Vordergrund stehen.
 - [Google Calendar](/tools/google-calendar/): Naheliegend für Teams, die im Google-Workspace-Kalender bleiben und keine separate Routing-Schicht benötigen.

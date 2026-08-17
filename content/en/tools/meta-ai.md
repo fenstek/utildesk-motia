@@ -93,7 +93,7 @@ Meta AI offers a freemium model that allows users to get started without financi
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Meta AI before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Meta AI before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Meta AI before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Meta AI before moving data or ownership.
 
 ## FAQ

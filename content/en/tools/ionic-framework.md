@@ -62,7 +62,7 @@ Ionic is recommended for web-experienced product teams that value one UI layer a
 - [React Native](/en/tools/react-native/): Uses React for a more native UI approach and fits teams already invested in React and platform-specific optimization.
 - [Flutter (Google)](/en/tools/flutter/): Provides a Dart and controlled rendering ecosystem when a non-web-first UI stack is preferred.
 - [Framework7](/en/tools/framework7/): Stays closer to web and hybrid interfaces, making it a candidate for smaller PWA or mobile projects with an HTML/CSS workflow.
-- [NativeScript](/en/tools/nativescript/): Targets native APIs from JavaScript or TypeScript when native widgets matter more than Ionic's Web Component model.
+- NativeScript: Targets native APIs from JavaScript or TypeScript when native widgets matter more than Ionic's Web Component model.
 
 ## FAQ
 

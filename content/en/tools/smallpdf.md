@@ -131,7 +131,7 @@ Convenience must not hide privacy questions. Internal contracts, applications an
 
 ### Internal comparison points
 
-Useful comparison points in the Utildesk catalogue are [CloudConvert](/en/tools/cloudconvert/), [AnyConv](/en/tools/anyconv/), [Convertio](/en/tools/convertio/), [OCRmyPDF](/en/tools/ocrmypdf/). These links keep Smallpdf connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
+Useful comparison points in the Utildesk catalogue are [CloudConvert](/en/tools/cloudconvert/), [AnyConv](/en/tools/anyconv/), [Convertio](/en/tools/convertio/), OCRmyPDF. These links keep Smallpdf connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
 
 ## Editorial Assessment
 

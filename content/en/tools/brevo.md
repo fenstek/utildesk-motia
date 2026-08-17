@@ -61,7 +61,7 @@ We recommend Brevo to teams that want to combine email campaigns, straightforwar
 
 ## Alternatives
 
-- [Klaviyo](/en/tools/klaviyo/): Better suited to ecommerce data, event-driven journeys, and revenue-focused segmentation.
+- Klaviyo: Better suited to ecommerce data, event-driven journeys, and revenue-focused segmentation.
 - [ActiveCampaign](/en/tools/activecampaign/): A fit when multi-step lead nurturing and CRM-adjacent automation are central.
 - [MailerLite](/en/tools/mailerlite/): A leaner option for newsletters, forms, and manageable automations without a broad CRM.
 - [HubSpot Marketing Hub](/en/tools/hubspot-marketing-hub/): Useful when marketing must connect closely to a larger HubSpot CRM and reporting setup.

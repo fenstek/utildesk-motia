@@ -124,7 +124,7 @@ Der Komfort darf Datenschutz nicht verdecken. Interne Verträge, Bewerbungen und
 
 ### Interne Vergleichspunkte
 
-Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [CloudConvert](/tools/cloudconvert/), [AnyConv](/tools/anyconv/), [Convertio](/tools/convertio/), [OCRmyPDF](/tools/ocrmypdf/). Diese Links helfen, Smallpdf nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [CloudConvert](/tools/cloudconvert/), [AnyConv](/tools/anyconv/), [Convertio](/tools/convertio/), OCRmyPDF. Diese Links helfen, Smallpdf nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
 
 ## Alternativen
 

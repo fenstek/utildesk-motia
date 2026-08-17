@@ -75,7 +75,7 @@ Für Künstlerinnen, die regelmäßig malerisch arbeiten, kann eine Einmallizenz
 - [Krita](/tools/krita/): kostenlose, starke Alternative für digitale Illustration und Painting.
 - [Corel Painter](/tools/corel-painter/): sehr spezialisiert auf natürliche Medien und professionelle Malworkflows.
 - [Clip Studio Paint](/tools/clip-studio-paint/): besser für Comics, Manga, Linienarbeit und Panel-Produktion.
-- [Procreate](/tools/procreate/): besonders attraktiv für iPad-basierte Illustration und schnelle Skizzen.
+- Procreate: besonders attraktiv für iPad-basierte Illustration und schnelle Skizzen.
 - Adobe Photoshop: breiter für Retusche, Compositing und Agentur-Ökosysteme.
 
 ## Redaktionelle Einschätzung

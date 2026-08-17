@@ -1,21 +1,17 @@
 [
   "10to8",
   "8x8",
-  "abbyy-vantage",
   "ableton-live",
   "activecampaign",
   "adobe-firefly",
   "aider",
   "airbyte",
   "anyconv",
-  "autogen",
-  "aws-textract",
   "base44",
   "browserbase",
   "chatgpt",
   "cohere",
   "crisp",
-  "google-search-console",
   "hermes-agent",
   "hugging-face",
   "ren-py",
@@ -98,5 +94,9 @@
   "adobe-connect",
   "adobe-creative-agent",
   "adobe-enhance-speech",
-  "adobe-express"
+  "adobe-express",
+  "adobe-fresco",
+  "adobe-illustrator",
+  "adobe-lightroom",
+  "adobe-photoshop-cc"
 ]

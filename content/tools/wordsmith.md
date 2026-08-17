@@ -80,7 +80,7 @@ Im Katalog ist Wordsmith mit dem Preismodell **Freemium** geführt. Für eine be
 - [Jasper](/tools/jasper/): stärker, wenn KI-Content-Plattform für Marketingtexte, Kampagnenvarianten und skalierbare Markenkommunikation gefragt ist.
 - [AISEO](/tools/aiseo/): passender, wenn der Schwerpunkt auf Content-Entwürfe, Optimierung, Paraphrasen und suchorientierte Texte liegt.
 - [Narrato](/tools/narrato/): guter Vergleich für Teams, die Planung, KI-Schreiben, Redaktion und Marketingproduktion brauchen.
-- [Writer](/tools/writer/): prüfen, wenn ein anderer Schwerpunkt als bei Wordsmith relevant ist.
+- Writer: prüfen, wenn ein anderer Schwerpunkt als bei Wordsmith relevant ist.
 - [Copy.ai](/tools/copy-ai/): naheliegend, falls ein anderer Schwerpunkt als bei Wordsmith im Vordergrund steht.
 
 ## Redaktionelle Einschätzung

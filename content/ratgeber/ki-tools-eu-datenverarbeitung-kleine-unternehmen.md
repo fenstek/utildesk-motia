@@ -26,10 +26,6 @@ relatedTools:
     href: "/tools/microsoft-power-automate/"
   - title: "Rossum"
     href: "/tools/rossum/"
-  - title: "ABBYY Vantage"
-    href: "/tools/abbyy-vantage/"
-  - title: "Azure AI Document Intelligence"
-    href: "/tools/azure-ai-document-intelligence/"
 ---
 Ein Anbieter schreibt „EU data processing“ auf seine Webseite, und eine kleine Firma atmet auf: Das klingt nach einer schnellen Datenschutzantwort. Doch sobald ein Workflow eine Rechnung, einen Vertrag oder eine Kundenmail an mehrere Dienste weiterreicht, ist der Standort nur ein Ausschnitt. Die wichtigere Frage lautet: **Kann das Unternehmen den Weg dieser Daten erklären und bei Bedarf stoppen?**
 
@@ -47,7 +43,7 @@ Erst dadurch werden die Fragen sichtbar, die eine Produktseite nicht beantwortet
 - Bleiben Inhalte in Protokollen, Backups oder Support-Tickets zurück?
 - Wie wird ein falscher oder unerwünschter Lauf gestoppt und bereinigt?
 
-Ein System wie [n8n](/tools/n8n/) kann Teams mehr technische Kontrolle geben, wenn sie es selbst betreiben können und wollen. [Microsoft Power Automate](/tools/microsoft-power-automate/) kann sinnvoll sein, wenn Identität, Dateien und Berechtigungen ohnehin in einem Microsoft-Tenant geregelt sind. Dokumentenwerkzeuge wie [Rossum](/tools/rossum/), [ABBYY Vantage](/tools/abbyy-vantage/) oder [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/) lösen jeweils andere Teile des Flows. Keines macht die Datenflusskarte überflüssig.
+Ein System wie [n8n](/tools/n8n/) kann Teams mehr technische Kontrolle geben, wenn sie es selbst betreiben können und wollen. [Microsoft Power Automate](/tools/microsoft-power-automate/) kann sinnvoll sein, wenn Identität, Dateien und Berechtigungen ohnehin in einem Microsoft-Tenant geregelt sind. Dokumentenwerkzeuge wie [Rossum](/tools/rossum/), ABBYY Vantage oder Azure AI Document Intelligence lösen jeweils andere Teile des Flows. Keines macht die Datenflusskarte überflüssig.
 
 ![Eine französische Zeitungskarikatur zeigt, wie ein versiegeltes Dokument durch mehrere verborgene Stationen wandert, während der Inhaber den Abschaltzug in der Hand behält](/images/ratgeber/ki-tools-eu-data-theatre-french-caricature-v2.webp)
 

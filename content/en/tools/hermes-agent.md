@@ -94,7 +94,7 @@ A fair evaluation should not compare Hermes only against the price of a chat sub
 
 - [OpenHands](/en/tools/openhands/): more focused on agentic coding work in repositories and sandboxed runs.
 - [Aider](/en/tools/aider/): a lean terminal assistant for pair programming and repository-level code changes.
-- [AutoGen](/en/tools/autogen/): a framework-oriented route for multi-agent workflows and experiments.
+- AutoGen: a framework-oriented route for multi-agent workflows and experiments.
 - [CrewAI](/en/tools/crew-ai/): relevant when agent roles and process automation are the main focus.
 - [AnythingLLM](/en/tools/anything-llm/): better when the core need is a controllable knowledge assistant over documents.
 

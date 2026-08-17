@@ -156,16 +156,16 @@ Its limits are layouts, poor scans, handwriting and structured fields. Invoice e
 
 ### Internal comparison points
 
-Useful comparison points in the Utildesk catalogue are [PaddleOCR](/en/tools/paddleocr/), [OCRmyPDF](/en/tools/ocrmypdf/), [AWS Textract](/en/tools/aws-textract/), [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/). These links keep Tesseract OCR connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
+Useful comparison points in the Utildesk catalogue are PaddleOCR, OCRmyPDF, AWS Textract, Azure AI Document Intelligence. These links keep Tesseract OCR connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
 
 ## Alternatives
 
 - [Rossum](/en/tools/rossum/): is worth comparing when another document or OCR workflow fits better.
 - [Veryfi](/en/tools/veryfi/): is worth comparing when scope, collaboration or administration needs differ.
 - [Mindee](/en/tools/mindee/): is worth comparing when scope, collaboration or administration needs differ.
-- [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/): is worth comparing when scope, collaboration or administration needs differ.
+- Azure AI Document Intelligence: is worth comparing when scope, collaboration or administration needs differ.
 
 - [Asana](/en/tools/asana/): is a useful comparison when the workflow or scope differs.
 - [Microsoft Teams](/en/tools/microsoft-teams/): is a useful comparison when the workflow or scope differs.
-- [Zoom](/en/tools/zoom/): is a useful comparison when the workflow or scope differs.
+- Zoom: is a useful comparison when the workflow or scope differs.
 - [Dropbox Business](/en/tools/dropbox-business/): is a useful comparison when the workflow or scope differs.

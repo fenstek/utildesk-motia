@@ -66,7 +66,7 @@ Calendly is a good recommendation when a well-defined scheduling process repeate
 ## Alternatives
 
 - [Microsoft Bookings](/en/tools/microsoft-bookings/): A natural fit when staff, appointments, and calendars already live inside Microsoft 365.
-- [Doodle](/en/tools/doodle/): Better for informal group polls where the first job is finding a common time.
+- Doodle: Better for informal group polls where the first job is finding a common time.
 - [Acuity Scheduling](/en/tools/acuity-scheduling/): More service-oriented when bookings need client details, payments, or packages.
 - [YouCanBook.me](/en/tools/youcanbook-me/): A focused option when customizable booking pages and calendar rules matter most.
 - [Google Calendar](/en/tools/google-calendar/): A simpler route for Google Workspace teams that do not need a separate routing layer.

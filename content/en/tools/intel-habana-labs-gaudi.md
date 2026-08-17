@@ -103,7 +103,7 @@ Pricing for Intel Habana Labs Gaudi is generally based on custom quotes, as it d
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Intel Habana Labs Gaudi before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Intel Habana Labs Gaudi before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Intel Habana Labs Gaudi before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Intel Habana Labs Gaudi before moving data or ownership.
 
 ## FAQ
