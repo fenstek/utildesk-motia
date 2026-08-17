@@ -1,132 +1,82 @@
 ---
 slug: nanonets
-title: Nanonets
+title: "Nanonets"
+updated_at: 2026-08-17
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Automation
-price_model: Plan-based
-tags:
-  - ocr
-  - invoice
-  - document-ai
-  - workflow
-  - api
-official_url: 'https://nanonets.com/'
-source_language: de
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-08-17
+editorial_status: manual_polished
+editorial_batch: 2026-08-17-ocr-document-rewrite
+category: "Automatisierung"
+price_model: "Je nach Plan"
+tags: [ocr, invoice, document-ai, workflow, api]
+official_url: "https://nanonets.com/"
+description: "Nanonets combines OCR, field extraction and downstream workflow steps for invoices, receipts and other business documents. Its value lies in moving from recognition to review and routing."
+created_at: 2026-05-10
+popularity: 0
+tier: A
+lastReviewed: 2026-08-17
 translation: full
-description: 'Nanonets combines OCR, field extraction, and workflow automation so documents can be recognized, reviewed, and routed onward.'
-created_at: '2026-05-10'
 ---
 # Nanonets
 
-Nanonets combines OCR, field extraction, and workflow automation so documents can be recognized, reviewed, and routed onward. In the Utildesk context, this card is mainly relevant for OCR, PDF, and invoice automation: what role does the tool play in the process, where does it need review, and when is another model a better fit?
+Nanonets combines document OCR with configurable workflows. Its distinctive shape is the combination of models or workflows that return fields and tables with document classification that can route different classes to different OCR models. That makes it a process component for incoming business documents rather than a plain text-only endpoint.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/nanonets-editorial.webp" alt="Illustration for Nanonets: technical process graphic for document intake, OCR, validation, and export" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/nanonets-editorial.webp" alt="Nanonets workflow routing classified documents to OCR models" loading="lazy" decoding="async" /></figure>
 
-## Who is Nanonets suitable for?
+## Where it fits
 
-- Finance, procurement, and operations teams with recurring document volume
-- Companies with review, approval, and exception workflows
-- Teams adopting OCR as a document workflow rather than a single API
+Nanonets can suit accounts payable, receipts, purchase orders, claims, or supplier documents when extracted values still need approval or rejection. Before building automation, define which class goes to which model and which fields must send a file to a human reviewer.
 
-## Who is Nanonets not suitable for?
+## Models and routing
 
-- Very small teams with a few PDFs per month
-- Strictly local processing without cloud or platform operations
-- Quick one-off conversions
+The API supports OCR predictions for uploaded files or publicly reachable file URLs, with synchronous and asynchronous variants. Longer inputs benefit from an asynchronous job because result retrieval and failures are handled separately. A classification model can label receipts, invoices, and purchase orders, then route them to their respective OCR models.
 
-## Typical Use Cases
+## Training and fixtures
 
-Nanonets fits workflows where PDFs, scans, or document uploads should not be typed manually. Common use cases include invoices, receipts, purchase orders, forms, delivery notes, or tables inside PDFs. The goal is usually not just searchable text, but structured fields, review status, and export data that can continue into accounting, spreadsheets, databases, ticketing systems, or automation tools.
+Build a fixture set for each class with different vendors, scan qualities, and page layouts. Configure fields and tables, train or improve the model, and compare predictions with labelled references. Do not feed corrections into learning or automation until the business reason for each correction is recorded.
 
-For Nanonets, start the pilot with real documents rather than polished samples. Skewed scans, multi-page PDFs, mixed languages, changing supplier layouts, and missing required fields show whether review queues, role models, and exception handling fit the intended workflow.
+## API integration
 
-## Main Features
+Nanonets documents its API around an API key sent through Basic Authentication and JSON responses. Your integration needs upload handling, prediction or file identifiers, page-level results, polling or webhook delivery, and a link to an internal document ID. Exporting to a system of record is a separate controlled action.
 
-- OCR or document recognition for digital and scanned files.
-- Extraction of recurring fields such as invoice number, date, amount, supplier, or table rows.
-- Handover through API, export, webhook, or workflow step.
-- Validation, review, or downstream processing depending on the setup.
-- Integration into automation chains such as n8n, Make, Zapier, Power Automate, or custom services.
+## Review and failure modes
 
-## Workflow in Practice
+A value can be syntactically plausible while being wrong for the transaction. Check currency, totals, supplier, purchase-order number, and page context outside the model. Low confidence, an unknown class, or a missing field should create a review task; routing alone is not exception management.
 
-A reliable Nanonets workflow starts at file intake and ends only when checked data has been exported. The chain should include preprocessing, OCR, field extraction, plausibility checks, and exception handling. For invoices, supplier, invoice date, tax amount, total amount, currency, and payment terms should be validated before posting.
+## Operations and data
 
-For Nanonets, business teams should look closely at transparent error lists, traceable corrections, and a clean review step. In invoice workflows, a reliable exception path is often more valuable than a marginal OCR accuracy gain.
+Document key rotation, roles, retention, and permitted regions before sending invoices or identity material. Monitor API limits, asynchronous jobs, duplicate uploads, and model changes. Keep source files and extracted JSON under deliberate retention rules instead of treating the prediction as the only record.
 
-## What to Check Before Choosing
+## Pricing and choice
 
-- Does the tool support the relevant document types and languages in your own material?
-- Is there a clear export path: JSON, CSV, webhook, API, or direct integration?
-- How are low confidence values, duplicates, and incomplete fields handled?
-- Which DPA, data location, retention, and deletion options are available?
-- How predictable are costs with many pages, attachments, or API calls?
+Check the current Nanonets offer for the model, volume, and workflow features required. Request volume is only one cost driver: review, misclassification, retraining, and integration maintenance also matter. A useful pilot reports correct routing and human minutes per document class.
 
-## Advantages and Limits
+## Editorial assessment
 
-### Advantages
+Nanonets is a good candidate when classification, extraction, and review belong to one incoming-document operation. A developer-owned API surface may be better served by [mindee](/en/tools/mindee/) or [veryfi](/en/tools/veryfi/), while stable layouts with visible rules point toward [docparser](/en/tools/docparser/).
 
-- Can reduce manual data entry and shorten processing time.
-- Works as a building block for invoice, PDF, and document automation.
-- Enables structured downstream workflows when validation and export are planned well.
+## Alternatives
 
-### Limits
-
-- Poor scans, changing layouts, and handwritten additions remain error sources.
-- Without review rules, wrong fields can silently flow into accounting or databases.
-- Privacy, DPA, data location, and deletion requirements must be checked before production use.
-
-
-## What Really Matters in Daily Use
-
-With Nanonets, the longest feature list matters less than whether the tool gets a clear place in the existing workflow. The value appears when recurring document types are modeled well and exceptions do not get stuck in an inbox.
-
-For Nanonets, start with a small pilot using real material: who provides the inputs, who reviews the result, and where does the output go next?
-
-## Workflow Fit
-
-Nanonets fits best when invoices, orders, leads, or forms arrive in similar formats and are handed to operational systems after review. Before rollout, roles, permissions, export paths, and quality control should be explicit; otherwise the tool quickly becomes another storage place beside the real process.
-
-## Editorial Assessment
-
-Nanonets is most useful for repeatable extraction tasks with clear fields, owners, and correction paths. If every document has a new layout or the downstream systems are not defined yet, start with a lighter or more specialized approach first.
-
-## Pricing & Costs
-
-Pricing model: **Plan-based**. For Nanonets, the real comparison should include page volume, document types, API calls, user seats, review features, retention, setup effort, operations, and support.
-
-## Alternatives in the Utildesk Context
-
-Nanonets sits between API-oriented extraction and operational document automation. For selection, these comparisons are the most useful:
-
-- [Rossum](/tools/rossum/): stronger enterprise IDP focus with review queue and business process.
-- [Mindee](/tools/mindee/): more API-oriented when clearly defined document types are the center of the work.
-- [Veryfi](/tools/veryfi/): specialized in receipts, invoices, and finance documents.
-- [ABBYY Vantage](/tools/abbyy-vantage/): larger platform for governance and controlled document automation.
-- [Google Document AI](/tools/google-document-ai/): cloud alternative for Google-centered workflows.
-- [Docparser](/tools/docparser/): lighter when rule-based extraction from fixed layouts is enough.
-
-## Related Guides
-
-- [Best OCR APIs for Invoices in Germany 2026](/en/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/)
-- [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [mindee](/en/tools/mindee/): API- and SDK-centred extraction for a custom application.
+- [veryfi](/en/tools/veryfi/): A financial-document route focused on receipts and invoice fields.
+- [docparser](/en/tools/docparser/): Visible zone, keyword, and table rules for known layouts.
+- [rossum](/en/tools/rossum/): Queue and review operations for recurring business documents.
 
 ## FAQ
 
-**Is Nanonets only an OCR tool?**
-Not only. The real value usually comes from combining OCR with field extraction, validation, and export.
+**When should a team use asynchronous OCR?**
 
-**Can Nanonets read invoices automatically?**
-Nanonets is relevant for invoice workflows, but quality depends on scan quality, layout, language, required fields, and review rules. Test with real German invoices before rollout.
+Use it for longer or multi-page files when upload, result retrieval, and failure handling should not depend on one open request. The application then needs a durable job identifier.
 
-**Do you need developers?**
-For Nanonets, it depends on the target workflow: simple tests are easier, but stable production use needs ownership for integration, data quality, monitoring, and error handling.
+**Can Nanonets distribute different document classes automatically?**
 
-**What should teams check for privacy?**
-Before using Nanonets, teams should review the DPA, data location, retention, subprocessors, deletion options, and any use of customer data for training.
+Yes. A classification and routing model can identify classes and send them to assigned OCR models. Test both normal documents and the incorrect-class route with real incoming samples.
+
+**What should a reviewer inspect?**
+
+Inspect the class, supplier, totals, currency, page context, and internal document identifier, not just one extracted field. This exposes plausible values attached to the wrong workflow.
+
+**What belongs in the pilot budget?**
+
+Include model and volume charges, API operations, review time, retraining, and source-document storage. Cost per successfully approved document is more useful than cost per upload.

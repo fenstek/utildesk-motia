@@ -60,9 +60,9 @@ There is a free base offering and paid options with broader checks and team feat
 ## Alternatives to LanguageTool
 
 - [Grammarly](/en/tools/grammarly/): when English and tone suggestions are the primary concern.
-- [Microsoft Editor](/en/tools/microsoft-editor/): when review should stay closely connected to Microsoft 365 work.
+- Microsoft Editor: when review should stay closely connected to Microsoft 365 work.
 - [ProWritingAid](/en/tools/prowritingaid/): when writers need more detailed style and manuscript analysis.
-- [Wordtune](/en/tools/wordtune/): when rewriting and generating variants matter more than rule-based correction.
+- Wordtune: when rewriting and generating variants matter more than rule-based correction.
 
 ## Editorial assessment
 

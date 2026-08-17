@@ -75,7 +75,7 @@ Für die Entscheidung zählt deshalb nicht nur der Monatspreis. Einplanen sollte
 ## Alternativen
 
 - [Khan Academy](/tools/khan-academy/): Strukturierte, kostenlose Lernpfade und Übungen sind besser, wenn ein Thema von Grund auf aufgebaut werden soll.
-- [Photomath](/tools/photomath/): Foto-basierte Schritt-für-Schritt-Hilfe passt besonders zu einzelnen Mathematikaufgaben, nicht zu allen Schulfächern.
+- Photomath: Foto-basierte Schritt-für-Schritt-Hilfe passt besonders zu einzelnen Mathematikaufgaben, nicht zu allen Schulfächern.
 - [Duolingo](/tools/duolingo/): Kurze, spielerische Sprachlektionen und Wiederholung sind geeigneter für regelmäßiges Sprachtraining.
 - [Coursera](/tools/coursera/): Kurse mit längeren Lernpfaden passen besser zu Hochschul-, Berufs- und Zertifikatsthemen.
 - [Busuu](/tools/busuu/): Sprachkurse mit Übungen und Feedback sind fokussierter als eine offene Frage-Antwort-Community.

@@ -22,17 +22,11 @@ sidebarPoints:
 relatedTools:
   - title: Tesseract OCR
     href: /en/tools/tesseract-ocr/
-  - title: OCRmyPDF
-    href: /en/tools/ocrmypdf/
-  - title: PaddleOCR
-    href: /en/tools/paddleocr/
-  - title: Azure AI Document Intelligence
-    href: /en/tools/azure-ai-document-intelligence/
 ---
 
 Sometimes a scanned PDF only needs to become searchable. Local OCR is often exactly the right answer: no complicated SaaS rollout, no need to upload documents to another cloud, and one clear technical purpose. The mistake starts when that sensible first step quietly becomes an expectation that the same pipeline will reliably understand amounts, tables, and business data as well.
 
-Open-source OCR is not an inferior substitute for document AI. It is a different component. [Tesseract OCR](/en/tools/tesseract-ocr/) provides an OCR engine and command-line tools; [OCRmyPDF](/en/tools/ocrmypdf/) adds a searchable text layer to scanned PDFs. [PaddleOCR](/en/tools/paddleocr/) offers broader recognition components. The right choice therefore depends on how dependable the result needs to be after recognition.
+Open-source OCR is not an inferior substitute for document AI. It is a different component. [Tesseract OCR](/en/tools/tesseract-ocr/) provides an OCR engine and command-line tools; OCRmyPDF adds a searchable text layer to scanned PDFs. PaddleOCR offers broader recognition components. The right choice therefore depends on how dependable the result needs to be after recognition.
 
 If you do not want to set up a local pipeline and only need to check one non-confidential file, you can [try Utildesk OCR in the free test mode](https://ocr.utildesk.de/). For archives, batch work or sensitive material, a controlled local installation remains the better fit.
 
@@ -50,7 +44,7 @@ That is the crucial turn: OCR quality often begins before the model. Skewed page
 
 **Text extraction for a person.** A team wants to move content locally into a draft or review. Page rotation, language choice, quality warnings, and a visible link back to the original matter more than one headline success rate.
 
-**Structured fields for downstream systems.** An amount, date, supplier, or table entry should move automatically into a system. “Text was recognised” is not enough. Every field needs a rule, a cross-check, or a correction queue. If tables, changing layouts, handwriting, or ready-made API fields are central, a specialised service such as [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/) may be more suitable than an elaborate self-built OCR chain.
+**Structured fields for downstream systems.** An amount, date, supplier, or table entry should move automatically into a system. “Text was recognised” is not enough. Every field needs a rule, a cross-check, or a correction queue. If tables, changing layouts, handwriting, or ready-made API fields are central, a specialised service such as Azure AI Document Intelligence may be more suitable than an elaborate self-built OCR chain.
 
 PaddleOCR becomes interesting when a team goes beyond a simple PDF text layer and wants to use individual recognition components deliberately. That is not a reason to introduce it for every archive. More components also mean more models, dependencies, and quality assurance.
 

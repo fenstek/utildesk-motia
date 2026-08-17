@@ -63,8 +63,8 @@ Greenhouse is recommended for recruiting organizations with recurring hiring, se
 
 ## Alternatives
 
-- [Lever](/en/tools/lever/): An ATS and recruiting CRM with a stronger emphasis on talent pipelines and relationship work when sourcing and nurturing are central.
-- [Workable](/en/tools/workable/): A more approachable recruiting platform for teams that need to publish jobs quickly without as much process complexity.
+- Lever: An ATS and recruiting CRM with a stronger emphasis on talent pipelines and relationship work when sourcing and nurturing are central.
+- Workable: A more approachable recruiting platform for teams that need to publish jobs quickly without as much process complexity.
 - [SmartRecruiters](/en/tools/smartrecruiters/): A broader talent-acquisition approach for organizations needing international hiring and a large integration ecosystem.
 - [BambooHR](/en/tools/bamboohr/): An HR suite with recruiting capabilities when applicant tracking should connect closely to employee records and HR administration.
 

@@ -1,3 +1,5 @@
+import { applyToolRoutePolicy } from "../shared/toolRoutePolicy.mjs";
+
 const PUBLIC_SECTION_PREFIXES = [
   "/tools",
   "/category",
@@ -291,6 +293,8 @@ export async function onRequest(context) {
   }
 
   const url = new URL(request.url);
+  const policyResponse = applyToolRoutePolicy(request);
+  if (policyResponse) return policyResponse;
   if (RETIRED_ASSET_PATHS.has(url.pathname)) {
     return new Response(null, {
       status: 410,

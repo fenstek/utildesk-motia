@@ -76,7 +76,7 @@ It is a weaker choice for teams that need deep sales reporting, complex permissi
 ## Alternatives
 
 - [Dubsado](/en/tools/dubsado/): A similar clientflow for proposals, contracts, and automations when more configurable forms and workflows matter.
-- [Zoho CRM](/en/tools/zoho-crm/): A broader CRM and sales data model for lead pipelines, account management, and team reporting.
+- Zoho CRM: A broader CRM and sales data model for lead pipelines, account management, and team reporting.
 - [Asana](/en/tools/asana/): Work management for tasks, projects, and ownership when invoicing and payment processing can remain elsewhere.
 - [Calendly](/en/tools/calendly/): A focused scheduling tool when the actual requirement is booking and calendar coordination.
 

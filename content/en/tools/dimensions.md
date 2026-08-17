@@ -68,7 +68,7 @@ Dimensions is recommended for research and innovation teams that repeatedly need
 ## Alternatives
 
 - [Semantic Scholar](/en/tools/semantic-scholar/): A free, AI-supported literature search for fast paper discovery and citation context without the full Dimensions data graph.
-- [Lens.org](/en/tools/lens-org/): A good fit when scholarly publications and patents need to be searched together for intellectual-property research.
+- Lens.org: A good fit when scholarly publications and patents need to be searched together for intellectual-property research.
 - [Scopus](/en/tools/scopus/): A commercial bibliometric database for institutional evaluation, citation analysis and standardized reporting.
 - [Clarivate Analytics (Web of Science)](/en/tools/clarivate-analytics/): Relevant for organizations already using Web of Science for established analysis and evaluation workflows.
 - [Google Scholar](/en/tools/google-scholar/): A low-friction, broad literature search for individuals, with less controlled filtering and bibliometric workflow support.

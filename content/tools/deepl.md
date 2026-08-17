@@ -113,7 +113,7 @@ DeepL bietet ein Freemium-Modell an. Die kostenlose Version ermöglicht grundleg
 - [Microsoft Translator](/tools/microsoft-translator/): Bietet Übersetzungen in Echtzeit und API-Zugang für Unternehmen.
 - [Reverso](/tools/reverso/): Übersetzer mit Fokus auf Kontextbeispiele und Synonyme.
 - [Linguee](/tools/linguee/): Kombination aus Wörterbuch und Übersetzungssuche mit Beispielsätzen.
-- [Mate Translate](/tools/mate-translate/): Browser- und App-basierter Übersetzer mit Offline-Funktion.
+- Mate Translate: Browser- und App-basierter Übersetzer mit Offline-Funktion.
 
 ## FAQ
 

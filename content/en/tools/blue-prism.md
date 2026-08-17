@@ -91,7 +91,7 @@ For small volumes, a single Microsoft workflow, or an API-first integration prob
 - [Automation Anywhere](/en/tools/automation-anywhere/): A cloud-oriented enterprise automation option when centralized control and browser-based delivery are priorities.
 - [Microsoft Power Automate](/en/tools/microsoft-power-automate/): A natural fit for teams already using Microsoft 365, Dataverse, and Power Platform who want smaller flows to be built quickly.
 - [Kofax RPA](/en/tools/kofax-rpa/): Worth considering when document-heavy work, desktop applications, and rules-based case handling dominate.
-- [WorkFusion](/en/tools/workfusion/): More relevant for document-intensive, knowledge-heavy operations with a stronger intelligent-automation emphasis.
+- WorkFusion: More relevant for document-intensive, knowledge-heavy operations with a stronger intelligent-automation emphasis.
 
 ## FAQ
 

@@ -5,6 +5,71 @@
 
 # Duplicate tool redirects (301)
 # Specific rules must come BEFORE any wildcard rules
+# Catalog cleanup 2026-08-17: current-brand canonical redirects. The shared
+# route policy also covers JSON and Markdown endpoints; these Pages rules keep
+# the static fallback aligned for HTML requests.
+/tools/appinventor    /tools/mit-app-inventor/    301
+/en/tools/appinventor    /en/tools/mit-app-inventor/    301
+/tools/appinventor/*    /tools/mit-app-inventor/:splat    301
+/en/tools/appinventor/*    /en/tools/mit-app-inventor/:splat    301
+/tools/sendinblue    /tools/brevo/    301
+/en/tools/sendinblue    /en/tools/brevo/    301
+/tools/sendinblue/*    /tools/brevo/:splat    301
+/en/tools/sendinblue/*    /en/tools/brevo/:splat    301
+/tools/crello-jetzt-vistacreate    /tools/vista-create/    301
+/en/tools/crello-jetzt-vistacreate    /en/tools/vista-create/    301
+/tools/crello-jetzt-vistacreate/*    /tools/vista-create/:splat    301
+/en/tools/crello-jetzt-vistacreate/*    /en/tools/vista-create/:splat    301
+/tools/renpy    /tools/ren-py/    301
+/en/tools/renpy    /en/tools/ren-py/    301
+/tools/renpy/*    /tools/ren-py/:splat    301
+/en/tools/renpy/*    /en/tools/ren-py/:splat    301
+/tools/rev-com    /tools/rev/    301
+/en/tools/rev-com    /en/tools/rev/    301
+/tools/rev-com/*    /tools/rev/:splat    301
+/en/tools/rev-com/*    /en/tools/rev/:splat    301
+/tools/veed-io    /tools/veed/    301
+/en/tools/veed-io    /en/tools/veed/    301
+/tools/veed-io/*    /tools/veed/:splat    301
+/en/tools/veed-io/*    /en/tools/veed/:splat    301
+/tools/vn    /tools/vn-video-editor/    301
+/en/tools/vn    /en/tools/vn-video-editor/    301
+/tools/vn/*    /tools/vn-video-editor/:splat    301
+/en/tools/vn/*    /en/tools/vn-video-editor/:splat    301
+/tools/streak-crm    /tools/streak/    301
+/en/tools/streak-crm    /en/tools/streak/    301
+/tools/streak-crm/*    /tools/streak/:splat    301
+/en/tools/streak-crm/*    /en/tools/streak/:splat    301
+/tools/systran-translation-api    /tools/systran-translate-api/    301
+/en/tools/systran-translation-api    /en/tools/systran-translate-api/    301
+/tools/systran-translation-api/*    /tools/systran-translate-api/:splat    301
+/en/tools/systran-translation-api/*    /en/tools/systran-translate-api/:splat    301
+/tools/hubspot-sales    /tools/hubspot-sales-hub/    301
+/en/tools/hubspot-sales    /en/tools/hubspot-sales-hub/    301
+/tools/hubspot-sales/*    /tools/hubspot-sales-hub/:splat    301
+/en/tools/hubspot-sales/*    /en/tools/hubspot-sales-hub/:splat    301
+/tools/luminar    /tools/luminar-neo/    301
+/en/tools/luminar    /en/tools/luminar-neo/    301
+/tools/luminar/*    /tools/luminar-neo/:splat    301
+/en/tools/luminar/*    /en/tools/luminar-neo/:splat    301
+/tools/clarifai-video-recognition    /tools/clarifai/    301
+/en/tools/clarifai-video-recognition    /en/tools/clarifai/    301
+/tools/clarifai-video-recognition/*    /tools/clarifai/:splat    301
+/en/tools/clarifai-video-recognition/*    /en/tools/clarifai/:splat    301
+/tools/cohere-api    /tools/cohere/    301
+/en/tools/cohere-api    /en/tools/cohere/    301
+/tools/cohere-api/*    /tools/cohere/:splat    301
+/en/tools/cohere-api/*    /en/tools/cohere/:splat    301
+/tools/tensorflow-keras    /tools/keras/    301
+/en/tools/tensorflow-keras    /en/tools/keras/    301
+/tools/tensorflow-keras/*    /tools/keras/:splat    301
+/en/tools/tensorflow-keras/*    /en/tools/keras/:splat    301
+/tools/microsoft-office-365    /tools/microsoft-365/    301
+/en/tools/microsoft-office-365    /en/tools/microsoft-365/    301
+/tools/microsoft-office-365/*    /tools/microsoft-365/:splat    301
+/en/tools/microsoft-office-365/*    /en/tools/microsoft-365/:splat    301
+# Tombstones are returned by the shared middleware with HTTP 410 and
+# X-Robots-Tag: noindex, nofollow; Pages _redirects has no valid 410 syntax.
 # Vendor duplicate redirects (SEO cleanup 2026-05-18)
 /tools/amazon-sagemaker    /tools/aws-sagemaker/   301
 /tools/amazon-sagemaker/   /tools/aws-sagemaker/   301
@@ -69,9 +134,3 @@
 # transformers disabled (covered by Hugging Face Transformers)
 /tools/transformers   /tools/hugging-face-transformers/   301
 /tools/transformers/  /tools/hugging-face-transformers/   301
-
-# deepfake BLACKLIST (generic concept; guessed domain is an adult creator platform)
-/tools/deepfake      /tools/      301
-/tools/deepfake/     /tools/      301
-/en/tools/deepfake   /en/tools/   301
-/en/tools/deepfake/  /en/tools/   301

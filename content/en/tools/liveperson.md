@@ -68,7 +68,7 @@ In the catalog, LivePerson is marked with the pricing model **Plan-based**. For 
 - [Intercom](/en/tools/intercom/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Zendesk](/en/tools/zendesk/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Freshdesk](/en/tools/freshdesk/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Drift](/en/tools/drift/): useful comparison point for adjacent workflows, pricing, or team fit.
+- Drift: useful comparison point for adjacent workflows, pricing, or team fit.
 - Ada: useful comparison point for adjacent workflows, pricing, or team fit.
 
 ## Editorial assessment

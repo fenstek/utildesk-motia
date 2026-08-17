@@ -98,7 +98,7 @@ Magma bietet einen Einstieg mit begrenztem Umfang und kostenpflichtige Optionen;
 - [Figma](/tools/figma/): stärker für UI-Design, Komponenten, Prototyping und Designsysteme.
 - [Milanote](/tools/milanote/): passender für Moodboards, visuelle Planung und asynchrone Konzeptarbeit.
 - [Krita](/tools/krita/): Open-Source-Malsoftware für Illustration, Comics und finale lokale Arbeit.
-- [Procreate](/tools/procreate/): starke iPad-Zeichenumgebung für individuelles Skizzieren und Malen.
+- Procreate: starke iPad-Zeichenumgebung für individuelles Skizzieren und Malen.
 - [Canva](/tools/canva/): geeigneter für schnelle Marketingassets, Vorlagen und Nicht-Designer.
 
 ## Redaktionelle Einschätzung

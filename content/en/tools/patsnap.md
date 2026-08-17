@@ -78,7 +78,7 @@ In the catalog, PatSnap is marked with the pricing model **Custom quote**. For a
 
 - [Innography](/en/tools/innography/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Derwent Innovation](/en/tools/derwent-innovation/): useful comparison point if workflow, pricing, or specialization should differ.
-- [WIPO PATENTSCOPE](/en/tools/wipo-patentscope/): useful comparison point if workflow, pricing, or specialization should differ.
+- WIPO PATENTSCOPE: useful comparison point if workflow, pricing, or specialization should differ.
 - [VOSviewer](/en/tools/vosviewer/): useful comparison point if workflow, pricing, or specialization should differ.
 
 ## Editorial assessment

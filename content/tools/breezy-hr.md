@@ -63,9 +63,9 @@ Breezy HR ist für kleine bis mittlere Recruiting-Teams empfehlenswert, die eine
 
 ## Alternativen
 
-- [Workable](/tools/workable/): Breiteres Recruiting-System für Teams, die internationale Ausschreibungen und skalierbare Recruiting-Funktionen vergleichen wollen.
+- Workable: Breiteres Recruiting-System für Teams, die internationale Ausschreibungen und skalierbare Recruiting-Funktionen vergleichen wollen.
 - [Greenhouse](/tools/greenhouse/): Strukturierteres, stärker enterprise-orientiertes ATS mit umfangreicherem Recruiting- und Reporting-Governance-Fokus.
-- [Lever](/tools/lever/): Verbindet ATS- und Talent-Relationship-Management für Teams, die Beziehungen zu Kandidaten über einzelne Stellen hinaus pflegen.
+- Lever: Verbindet ATS- und Talent-Relationship-Management für Teams, die Beziehungen zu Kandidaten über einzelne Stellen hinaus pflegen.
 - [SmartRecruiters](/tools/smartrecruiters/): Plattform für größere Organisationen mit komplexeren Talent-Acquisition-Prozessen und Integrationsanforderungen.
 
 ## FAQ

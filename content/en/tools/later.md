@@ -92,7 +92,7 @@ For budget planning, Later should not be evaluated only by list price. More impo
 
 - [Buffer](/en/tools/buffer/): Another popular tool for social media planning with a focus on ease of use and team features.
 - [Hootsuite](/en/tools/hootsuite/): A comprehensive social media management platform with many analytics and automation options.
-- [Zoho Social](/en/tools/zoho-social/): useful when social publishing should sit inside a broader business suite.
+- Zoho Social: useful when social publishing should sit inside a broader business suite.
 - [Planoly](/en/tools/planoly/): useful when visual Instagram planning and a narrower content workflow are the priority.
 
 When choosing alternatives, it is worth comparing them against the specific bottleneck. If social media planning with a calendar and visual preview is the main focus, different criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of results with your own material.

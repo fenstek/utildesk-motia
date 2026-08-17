@@ -66,7 +66,7 @@ Definieren Sie außerdem Idempotenz, Duplikatbehandlung, Datenaufbewahrung und W
 - [Apache Spark](/tools/apache-spark/): passt zu Teams mit bestehendem Spark-Ökosystem und breit angelegter Batch-Analyse.
 - [Google Cloud Dataflow](/tools/google-cloud-dataflow/): ist der gemanagte Runner für Beam-Pipelines auf Google Cloud.
 - [Apache Kafka](/tools/apache-kafka/): ist die zentrale Ereignisplattform, wenn der Schwerpunkt zunächst auf Transport und Event-Log liegt.
-- [Kafka Streams](/tools/kafka-streams/): ist oft einfacher für stream-nahe Java-Anwendungen, die ohnehin direkt in Kafka arbeiten.
+- Kafka Streams: ist oft einfacher für stream-nahe Java-Anwendungen, die ohnehin direkt in Kafka arbeiten.
 
 ## FAQ
 

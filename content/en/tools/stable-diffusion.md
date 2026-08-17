@@ -90,7 +90,7 @@ For budget planning, Stable Diffusion should not be evaluated only by list price
 - [Midjourney](/en/tools/midjourney/): is an alternative for rapid art-directed image concepts with less infrastructure responsibility.
 - [Adobe Firefly](/en/tools/adobe-firefly/): suits Creative Cloud teams placing generation inside an existing Adobe production path.
 - [Runway](/en/tools/runway/): fits better when motion, reference control and video editing matter more than local model operations.
-- [Leonardo AI](/en/tools/leonardo-ai/): provides a hosted creative environment for image variants, assets and production workflows.
+- Leonardo AI: provides a hosted creative environment for image variants, assets and production workflows.
 
 When choosing alternatives, it is worth comparing them against the specific bottleneck. If open image generation with high control over models and workflows is the focus, different criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of results on your own material.
 

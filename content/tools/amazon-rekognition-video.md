@@ -73,7 +73,7 @@ Amazon Rekognition Video ist eine brauchbare Baustein-API für AWS-Teams mit kla
 ## Alternativen
 
 - [Google Cloud Video Intelligence](/tools/google-cloud-video-intelligence/): naheliegend, wenn Videoanalyse, Shot-Erkennung und gesprochene Inhalte in Google Cloud zusammengehören.
-- [Clarifai Video Recognition](/tools/clarifai-video-recognition/): interessant, wenn eigene Modelle und eine anbieterunabhängigere API-Schicht wichtiger sind als tiefe AWS-Integration.
+- [Clarifai Video Recognition](/tools/clarifai/): interessant, wenn eigene Modelle und eine anbieterunabhängigere API-Schicht wichtiger sind als tiefe AWS-Integration.
 - [IBM Watson Video Analytics](/tools/ibm-watson-video-analytics/): eher für überwachte Betriebs- und Sicherheitsfälle mit Ereignislogik und Dashboards.
 - [Amazon Rekognition](/tools/amazon-rekognition/): passend für Bildanalyse und Face-Workflows, wenn kein zeitcodierter Videojob benötigt wird.
 - [OpenCV](/tools/opencv/): sinnvoll, wenn Verarbeitung lokal kontrolliert und die eigene Engineering-Leistung höher als der Wunsch nach einem Managed Service ist.

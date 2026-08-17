@@ -64,7 +64,7 @@ Wir empfehlen Appian Teams, die einen komplexen, regulierten oder systemübergre
 ## Alternativen
 
 - [OutSystems](/tools/outsystems/): stärker auf die schnelle Entwicklung eigener Low-Code-Anwendungen ausgerichtet, wenn die App-Oberfläche und nicht die zentrale Prozesssteuerung im Vordergrund steht.
-- [Mendix](/tools/mendix/): passende Option für modellgetriebene Business-Apps, wenn Fachbereich und Entwicklung gemeinsam Anwendungen iterieren wollen.
+- Mendix: passende Option für modellgetriebene Business-Apps, wenn Fachbereich und Entwicklung gemeinsam Anwendungen iterieren wollen.
 - [Pega](/tools/pega/): sinnvoller Vergleich für Case Management, Customer Operations und regelintensive Vorgänge mit CRM-Nähe.
 - [ServiceNow](/tools/servicenow/): naheliegend, wenn IT-Service-, Asset- und Employee-Workflows bereits auf der ServiceNow-Plattform liegen.
 - [UiPath](/tools/uipath/): fokussierter, wenn der Hauptbedarf Desktop- und Backoffice-Automatisierung über RPA statt eine umfassende Prozessanwendung ist.

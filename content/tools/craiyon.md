@@ -62,7 +62,7 @@ Craiyon empfiehlt sich für schnelle Moodboards, Unterrichtsexperimente und frü
 - [Adobe Firefly](/tools/adobe-firefly/): Sinnvoller, wenn ein Team Adobe-Workflows, generative Bearbeitung und eine stärker auf kommerzielle Kreativproduktion ausgerichtete Umgebung verbinden will.
 - [Midjourney](/tools/midjourney/): Geeigneter für stark stilisierte Bildwelten und eine Community-orientierte Exploration, wenn die zusätzliche Bedien- und Freigabekomplexität akzeptiert wird.
 - [Stable Diffusion](/tools/stable-diffusion/): Die passendere Richtung für technische Teams, die Modelle und Ausführung stärker selbst kontrollieren oder lokal betreiben möchten.
-- [Leonardo AI](/tools/leonardo-ai/): Praktisch für Teams, die mehr Werkzeuge für Assets, Varianten und kreative Produktion in einer spezialisierten Oberfläche suchen.
+- Leonardo AI: Praktisch für Teams, die mehr Werkzeuge für Assets, Varianten und kreative Produktion in einer spezialisierten Oberfläche suchen.
 - [Canva](/tools/canva/): Besser, wenn generierte Bilder direkt in Vorlagen, Layouts und einen kollaborativen Content-Workflow münden sollen.
 
 ## FAQ

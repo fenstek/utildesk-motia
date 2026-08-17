@@ -19,8 +19,6 @@ sidebarPoints:
   - "Die beste Wahl hängt weniger vom Modell ab als vom Workflow-Typ: persönlicher Assistent, No-Code-Agent, klassische Automation oder eigenes Agenten-Framework."
   - "Echte Zeitersparnis entsteht erst, wenn Rechte, Review-Punkte, Logs und Abbruchregeln vorher klar sind."
 relatedTools:
-  - title: "Lindy"
-    href: "/tools/lindy/"
   - title: "Zapier"
     href: "/tools/zapier/"
   - title: "n8n"
@@ -36,11 +34,6 @@ relatedTools:
   - title: "Manus"
     href: "/tools/manus/"
 decisionTools:
-  - title: "Lindy"
-    href: "/tools/lindy/"
-    note: "stark, wenn Inbox, Kalender, Meetings und Follow-ups die tägliche Reibung erzeugen"
-    score: "8.6"
-    kind: "recommend"
   - title: "Zapier Agents"
     href: "/tools/zapier/"
     note: "guter Einstieg, wenn vorhandene SaaS-Tools schnell mit beobachtbaren Agenten verbunden werden sollen"
@@ -68,7 +61,7 @@ Für den Alltag hilft eine einfache Einteilung.
 
 | Ebene | Typische Werkzeuge | Wo Zeit gespart wird | Hauptgefahr |
 | --- | --- | --- | --- |
-| Persönlicher Arbeitsassistent | [Lindy](/tools/lindy/), [Microsoft Copilot](/tools/microsoft-copilot/), [ChatGPT](/tools/chatgpt/) | Inbox, Meeting-Vorbereitung, Kalender, Zusammenfassungen, Entwürfe | zu viel Kontext, zu wenig Prüfung |
+| Persönlicher Arbeitsassistent | Lindy, [Microsoft Copilot](/tools/microsoft-copilot/), [ChatGPT](/tools/chatgpt/) | Inbox, Meeting-Vorbereitung, Kalender, Zusammenfassungen, Entwürfe | zu viel Kontext, zu wenig Prüfung |
 | No-/Low-Code-Workflow-Agent | [Zapier](/tools/zapier/), [n8n](/tools/n8n/), [Gumloop](/tools/gumloop/) | Übergaben zwischen Apps, Lead-Qualifizierung, Recherche, Datenpflege | instabile Regeln, Schattenautomationen |
 | Engineering- und Orchestrierungs-Framework | [CrewAI](/tools/crew-ai/), [LangGraph](/tools/langgraph/), [Manus](/tools/manus/) | mehrstufige Prozesse, eigene Rollen, langlebiger Zustand, Human-in-the-loop | Komplexität, Debugging, Rechteverwaltung |
 
@@ -80,7 +73,7 @@ Wer diese Kategorien vermischt, kauft leicht das falsche Werkzeug. Ein Founder m
 
 Die beste erste Einsatzstelle ist fast nie die strategische Entscheidung. Sie liegt in den kleinen, nervigen Übergaben.
 
-Ein gutes Beispiel ist die tägliche Inbox-Schleife. Eine Anfrage kommt rein, der Kontext liegt in früheren Mails, ein Termin muss gefunden werden, ein CRM-Feld fehlt, danach braucht es eine Follow-up-Notiz. Ein Mensch kann das schnell, aber er verliert dabei Fokus. [Lindy](/tools/lindy/) positioniert sich genau an dieser Stelle: Inbox, Meetings, Kalender und Follow-ups sollen nicht nur beantwortet, sondern vorbereitet und teilweise ausgeführt werden.
+Ein gutes Beispiel ist die tägliche Inbox-Schleife. Eine Anfrage kommt rein, der Kontext liegt in früheren Mails, ein Termin muss gefunden werden, ein CRM-Feld fehlt, danach braucht es eine Follow-up-Notiz. Ein Mensch kann das schnell, aber er verliert dabei Fokus. Lindy positioniert sich genau an dieser Stelle: Inbox, Meetings, Kalender und Follow-ups sollen nicht nur beantwortet, sondern vorbereitet und teilweise ausgeführt werden.
 
 Der Nutzen entsteht nicht aus Magie. Er entsteht, weil der Agent mehrere kleine Schritte bündelt: priorisieren, zusammenfassen, Entwurf vorbereiten, Terminlogik prüfen, nächste Aktion vorschlagen. Wenn am Ende ein Mensch nur noch bestätigt oder korrigiert, ist der Arbeitstag spürbar leichter.
 
@@ -130,7 +123,7 @@ Das klingt unromantisch. Genau dort entsteht aber die echte Produktivität. Nich
 
 ## Vier gute Start-Szenarien
 
-**1. Meeting-Vorbereitung und Follow-up.** Ein Agent sammelt Kontext aus Kalender, CRM, früheren Notizen und offenen Aufgaben. Er erstellt ein Briefing, formuliert Nachfassmails und legt Aufgaben an. Der Mensch prüft vor dem Versand. Gute Kandidaten: [Lindy](/tools/lindy/), [Microsoft Copilot](/tools/microsoft-copilot/), [Notion AI](/tools/notion-ai/).
+**1. Meeting-Vorbereitung und Follow-up.** Ein Agent sammelt Kontext aus Kalender, CRM, früheren Notizen und offenen Aufgaben. Er erstellt ein Briefing, formuliert Nachfassmails und legt Aufgaben an. Der Mensch prüft vor dem Versand. Gute Kandidaten: Lindy, [Microsoft Copilot](/tools/microsoft-copilot/), [Notion AI](/tools/notion-ai/).
 
 **2. Lead- und Kunden-Triage.** Neue Leads werden angereichert, kategorisiert und mit einem nächsten Schritt versehen. Der Agent darf recherchieren und vorbereiten, aber nicht eigenmächtig Rabatte oder Zusagen geben. Gute Kandidaten: [Zapier](/tools/zapier/), [Gumloop](/tools/gumloop/), [n8n](/tools/n8n/).
 
@@ -186,7 +179,7 @@ Nein. Viele Teams sollten mit einem schmalen Workflow-Agenten beginnen. Framewor
 
 ## Fazit: Zeit sparen heißt Grenzen setzen
 
-Produktivitäts-Agenten sind 2026 nicht mehr nur Demo-Material. [Lindy](/tools/lindy/) kann persönliche Arbeitslast glätten, [Zapier](/tools/zapier/) und [n8n](/tools/n8n/) verbinden Agenten mit bestehenden Apps, [Gumloop](/tools/gumloop/) bringt Fachabteilungen näher an AI-native Automatisierung, und [CrewAI](/tools/crew-ai/) sowie [LangGraph](/tools/langgraph/) liefern die Architektur für komplexere Agentensysteme.
+Produktivitäts-Agenten sind 2026 nicht mehr nur Demo-Material. Lindy kann persönliche Arbeitslast glätten, [Zapier](/tools/zapier/) und [n8n](/tools/n8n/) verbinden Agenten mit bestehenden Apps, [Gumloop](/tools/gumloop/) bringt Fachabteilungen näher an AI-native Automatisierung, und [CrewAI](/tools/crew-ai/) sowie [LangGraph](/tools/langgraph/) liefern die Architektur für komplexere Agentensysteme.
 
 Aber die wichtigste Produktivitätsregel bleibt altmodisch: Begrenze den Job, bevor du ihn automatisierst. Ein Agent, der eine klare Schleife verkürzt, spart Zeit. Ein Agent, der in einen unklaren Prozess geworfen wird, produziert nur schnellere Unordnung.
 

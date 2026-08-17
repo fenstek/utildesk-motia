@@ -61,8 +61,8 @@ Freshsales is recommended for a small or mid-sized sales team whose contacts, de
 ## Alternatives
 
 - [HubSpot CRM](/en/tools/hubspot-crm/): A better fit when CRM, marketing, and content should sit in a broader HubSpot ecosystem.
-- [Pipedrive](/en/tools/pipedrive/): A more focused option for teams that mainly need a clear deal pipeline and fewer automation layers.
-- [Zoho CRM](/en/tools/zoho-crm/): Worth comparing when a configurable CRM inside a larger Zoho landscape is the priority.
+- Pipedrive: A more focused option for teams that mainly need a clear deal pipeline and fewer automation layers.
+- Zoho CRM: Worth comparing when a configurable CRM inside a larger Zoho landscape is the priority.
 - [Salesforce Sales Cloud](/en/tools/salesforce-sales-cloud/): Better suited to complex enterprise processes, deep customization, and established Salesforce governance.
 - [Microsoft Dynamics 365 Sales](/en/tools/microsoft-dynamics-365-sales/): A natural candidate where sales must connect closely to Microsoft 365, Teams, and Dataverse.
 

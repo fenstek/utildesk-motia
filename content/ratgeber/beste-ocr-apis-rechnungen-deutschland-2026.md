@@ -28,10 +28,6 @@ sidebarPoints:
 relatedTools:
   - title: "Rossum"
     href: "/tools/rossum/"
-  - title: "Azure AI Document Intelligence"
-    href: "/tools/azure-ai-document-intelligence/"
-  - title: "ABBYY Vantage"
-    href: "/tools/abbyy-vantage/"
   - title: "Google Document AI"
     href: "/tools/google-document-ai/"
   - title: "Mindee"
@@ -48,9 +44,9 @@ Für einen einzelnen, nicht vertraulichen Dokumenttest ohne API gibt es den [kos
 
 Für einen kleinen Workflow reicht oft eine API, die eine PDF in strukturiertes JSON verwandelt. [Mindee](/tools/mindee/) oder [Veryfi](/tools/veryfi/) passen in dieses Bild: Ein Entwickler sendet ein Dokument, erhält Felder zurück und baut die Regeln selbst. Das ist gut, wenn es um wenige klar definierte Belegtypen geht und jemand die Fehlerpfade verantwortet.
 
-Sobald Rechnungen aus vielen Quellen kommen, wird OCR zum Prozessproblem. [Rossum](/tools/rossum/) und [ABBYY Vantage](/tools/abbyy-vantage/) zielen stärker auf Review, Rollen und wiederkehrende Dokumentenabläufe. Das kann mehr Einrichtung bedeuten, verhindert aber, dass die Korrekturarbeit unsichtbar in E-Mail-Postfächern und Tabellen verschwindet.
+Sobald Rechnungen aus vielen Quellen kommen, wird OCR zum Prozessproblem. [Rossum](/tools/rossum/) und ABBYY Vantage zielen stärker auf Review, Rollen und wiederkehrende Dokumentenabläufe. Das kann mehr Einrichtung bedeuten, verhindert aber, dass die Korrekturarbeit unsichtbar in E-Mail-Postfächern und Tabellen verschwindet.
 
-Cloud-nahe Teams wählen oft [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/), [Google Document AI](/tools/google-document-ai/) oder [AWS Textract](/tools/aws-textract/), weil Rechte, Logging und Speicher bereits in der vorhandenen Plattform liegen. Das ist kein Qualitätsurteil über die Erkennung. Es ist eine Betriebsentscheidung: Wer überwacht die Verarbeitung, wo liegen die Dokumente und wie gelangen Korrekturen zurück in den Ablauf?
+Cloud-nahe Teams wählen oft Azure AI Document Intelligence, [Google Document AI](/tools/google-document-ai/) oder AWS Textract, weil Rechte, Logging und Speicher bereits in der vorhandenen Plattform liegen. Das ist kein Qualitätsurteil über die Erkennung. Es ist eine Betriebsentscheidung: Wer überwacht die Verarbeitung, wo liegen die Dokumente und wie gelangen Korrekturen zurück in den Ablauf?
 
 ## Die vier Prüfungen, die eine Demo nicht zeigt
 

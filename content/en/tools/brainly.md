@@ -77,7 +77,7 @@ The decision is therefore not only about the monthly price. Allow time for check
 ## Alternatives
 
 - [Khan Academy](/en/tools/khan-academy/): Structured, free learning paths and exercises are a better fit for building a topic from the foundations.
-- [Photomath](/en/tools/photomath/): Photo-based, step-by-step help is especially suited to individual math problems rather than all school subjects.
+- Photomath: Photo-based, step-by-step help is especially suited to individual math problems rather than all school subjects.
 - [Duolingo](/en/tools/duolingo/): Short, game-like lessons and repetition are better for regular language practice.
 - [Coursera](/en/tools/coursera/): Longer courses fit university, professional, and certificate-oriented learning paths more closely.
 - [Busuu](/en/tools/busuu/): Focused language courses with exercises and feedback are more predictable than an open question-and-answer community.

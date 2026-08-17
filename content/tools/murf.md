@@ -77,7 +77,7 @@ Im Katalog ist Murf mit dem Preismodell **Freemium** geführt. Für eine belastb
 ## Alternativen zu Murf
 
 - [ElevenLabs](/tools/elevenlabs/): prüfen, wenn ein anderer Schwerpunkt als bei Murf relevant ist.
-- [WellSaid Labs](/tools/wellsaid-labs/): passender, wenn ein anderer Schwerpunkt als bei Murf im Vordergrund steht.
+- WellSaid Labs: passender, wenn ein anderer Schwerpunkt als bei Murf im Vordergrund steht.
 - [Speechify](/tools/speechify/): prüfen, wenn ein anderer Schwerpunkt als bei Murf relevant ist.
 - [Descript Overdub](/tools/descript-overdub/): prüfen, wenn Voice-Cloning, Sprachkorrektur und textbasiertes Audio-Editing wichtiger ist.
 - [Acapela Group](/tools/acapela-group/): naheliegend, falls ein anderer Schwerpunkt als bei Murf im Vordergrund steht.

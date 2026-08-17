@@ -91,7 +91,7 @@ H5P is open source. Depending on the setup, costs may come from hosting, LMS int
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with H5P before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with H5P before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with H5P before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with H5P before moving data or ownership.
 
 ## FAQ

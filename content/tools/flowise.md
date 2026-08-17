@@ -77,7 +77,7 @@ Für eine kleine Codebasis mit strenger Pull-Request-Logik oder für hochkritisc
 
 - [LangGraph](/tools/langgraph/): Code-first Graphen mit explizitem Zustand und Übergängen, wenn Kontrollfluss und Review im Repository wichtiger als ein visueller Builder sind.
 - [LangChain](/tools/langchain/): Breiter Framework-Baukasten für Modelle, Retrieval und Tools, passend für Teams mit eigener Anwendungsarchitektur.
-- [AutoGen](/tools/autogen/): Fokus auf programmatische Multi-Agent-Kommunikation und Experimente statt auf einen Low-Code-Canvas.
+- AutoGen: Fokus auf programmatische Multi-Agent-Kommunikation und Experimente statt auf einen Low-Code-Canvas.
 - [n8n](/tools/n8n/): Stärker auf allgemeine Geschäftsautomation und SaaS-Integrationen ausgerichtet, wenn LLM-Orchestrierung nur ein Teil des Workflows ist.
 
 ## FAQ

@@ -58,7 +58,7 @@ Brevo empfehlen wir Teams, die E-Mail-Kampagnen, einfache Kontaktprozesse und tr
 
 ## Alternativen
 
-- [Klaviyo](/tools/klaviyo/): Stärker auf E-Commerce-Daten, Ereignisse und umsatzorientierte Segmentierung ausgerichtet.
+- Klaviyo: Stärker auf E-Commerce-Daten, Ereignisse und umsatzorientierte Segmentierung ausgerichtet.
 - [ActiveCampaign](/tools/activecampaign/): Geeignet, wenn mehrstufiges Lead-Nurturing und CRM-nahe Automationen im Mittelpunkt stehen.
 - [MailerLite](/tools/mailerlite/): Schlankere Wahl für Newsletter, Formulare und überschaubare Automationen ohne breites CRM.
 - [HubSpot Marketing Hub](/tools/hubspot-marketing-hub/): Sinnvoll, wenn Marketing eng mit einem größeren HubSpot-CRM und Reporting verzahnt werden soll.

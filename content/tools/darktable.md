@@ -62,7 +62,7 @@ Darktable empfehlen wir Fotograf:innen und kleinen Teams, die RAW-Entwicklung lo
 
 ## Alternativen
 
-- [RawTherapee](/tools/rawtherapee/): Ebenfalls auf RAW-Entwicklung spezialisiert und eine naheliegende Wahl, wenn Katalogfunktionen weniger wichtig sind.
+- RawTherapee: Ebenfalls auf RAW-Entwicklung spezialisiert und eine naheliegende Wahl, wenn Katalogfunktionen weniger wichtig sind.
 - [GIMP](/tools/gimp/): Geeigneter für pixelbasierte Retusche, Compositing und manuelle Bildmontage nach der RAW-Entwicklung.
 - [Adobe Lightroom](/tools/adobe-lightroom/): Bietet einen stärker integrierten kommerziellen Foto-Workflow, wenn Cloud-Synchronisation und geführte Katalogverwaltung wichtiger sind.
 - [Krita](/tools/krita/): Passt besser zu digitalem Malen, Illustration und manueller Rasterbearbeitung als zur katalogorientierten RAW-Entwicklung.

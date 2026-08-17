@@ -65,7 +65,7 @@ Google Cloud Functions is recommended for teams already operating on Google Clou
 
 - [AWS Lambda](/en/tools/aws-lambda/): A natural fit for event-driven functions in AWS or for teams already invested in IAM, EventBridge, and AWS deployment tooling.
 - [Azure Functions](/en/tools/azure-functions/): Better aligned with teams that already use Azure, Microsoft Entra ID, and Azure messaging as their operating environment.
-- [OpenFaaS](/en/tools/openfaas/): Worth considering when functions must run on owned Kubernetes infrastructure and portability outweighs a fully managed cloud service.
+- OpenFaaS: Worth considering when functions must run on owned Kubernetes infrastructure and portability outweighs a fully managed cloud service.
 - [AWS AppSync](/en/tools/aws-appsync/): More direct for a managed GraphQL API with resolvers and data sources than assembling a set of HTTP functions.
 - [Firebase Realtime Database](/en/tools/firebase-realtime-database/): More direct for synchronized client data and simple Firebase-oriented applications, but not a general backend-function replacement.
 

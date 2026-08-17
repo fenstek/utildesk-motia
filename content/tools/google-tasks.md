@@ -78,7 +78,7 @@ Die eigentliche Frage ist Funktionsumfang: Wenn Erinnerungen, Wiederholungen und
 - [Microsoft To Do](/tools/microsoft-to-do/): für persönliche Aufgaben in einer Microsoft-365-Umgebung.
 - [Todoist](/tools/todoist/): für Prioritäten, Projekte und stärkere persönliche Aufgabenorganisation.
 - [TickTick](/tools/ticktick/): für Aufgaben, Kalendernähe, Gewohnheiten und Fokusfunktionen.
-- [Notion Calendar](/tools/notion-calendar/): wenn Zeitplanung und Kalenderansicht den Kern bilden.
+- Notion Calendar: wenn Zeitplanung und Kalenderansicht den Kern bilden.
 - [Trello mit Butler](/tools/trello-mit-butler/): für visuelle gemeinsame Boards mit Statusspalten.
 ## Redaktionelle Einschätzung
 

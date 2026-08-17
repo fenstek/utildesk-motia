@@ -106,7 +106,7 @@ Exact prices vary depending on region, plan, and usage. For accurate and up-to-d
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Microsoft Azure Text Analytics before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Microsoft Azure Text Analytics before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Microsoft Azure Text Analytics before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Microsoft Azure Text Analytics before moving data or ownership.
 
 ## FAQ

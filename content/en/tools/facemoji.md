@@ -93,7 +93,7 @@ Facemoji offers a freemium model. The basic version of the app is free to use an
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with Facemoji before moving data or ownership.
-- [Zoom](/en/tools/zoom/): Zoom takes a different approach; compare the actual workflow with Facemoji before moving data or ownership.
+- Zoom: Zoom takes a different approach; compare the actual workflow with Facemoji before moving data or ownership.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with Facemoji before moving data or ownership.
 
 ## FAQ

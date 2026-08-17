@@ -74,7 +74,7 @@ Für die Entscheidung sollte man nicht nur den Lizenzpreis betrachten. Schulung,
 
 - [Patsnap](/tools/patsnap/): starker Vergleich für Patentintelligenz, Wettbewerbsanalysen und produktnahe IP-Insights.
 - [Innography](/tools/innography/): relevant für IP-Strategie, Portfolioanalyse und kommerzielle Patentbewertung.
-- [Wipo Patentscope](/tools/wipo-patentscope/): gute öffentliche Quelle für internationale Patentrecherche.
+- Wipo Patentscope: gute öffentliche Quelle für internationale Patentrecherche.
 - [Google Patents](/tools/google-patents/): schneller, kostenloser Einstieg für einfache Suchen und erste Orientierung.
 
 ## Redaktionelle Einschätzung

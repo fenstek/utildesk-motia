@@ -75,7 +75,7 @@ Im Katalog ist Trelby mit dem Preismodell **Open Source** geführt. Für eine be
 ## Alternativen zu Trelby
 
 - [Celtx](/tools/celtx/): prüfen, wenn ein anderer Schwerpunkt als bei Trelby relevant ist.
-- [WriterDuet](/tools/writerduet/): passender, wenn ein anderer Schwerpunkt als bei Trelby im Vordergrund steht.
+- WriterDuet: passender, wenn ein anderer Schwerpunkt als bei Trelby im Vordergrund steht.
 - [Final Draft](/tools/final-draft/): prüfen, wenn ein anderer Schwerpunkt als bei Trelby relevant ist.
 - [Ink by Inkle](/tools/ink-by-inkle/): prüfen, wenn interaktive Geschichten, Dialoge und narrative Spiele wichtiger ist.
 - [Twine](/tools/twine/): naheliegend, falls ein anderer Schwerpunkt als bei Trelby im Vordergrund steht.

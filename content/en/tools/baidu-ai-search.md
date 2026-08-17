@@ -80,7 +80,7 @@ Do not send personal, confidential, or copyrighted material in queries without a
 
 - [Google AI](/en/tools/google-ai/): a broader global research and assistant context when Baidu coverage is not the priority.
 - [Perplexity](/en/tools/perplexity/): a natural choice for source-oriented web answers without building retrieval integration first.
-- [YouChat](/en/tools/youchat/): useful for a low-friction browser test of chat and search.
+- YouChat: useful for a low-friction browser test of chat and search.
 - [ChatGPT](/en/tools/chatgpt/): better when research needs to connect to a general assistant and broader work capabilities.
 - [Gemini](/en/tools/gemini/): worth comparing when Google context, multilingual research, and Workspace proximity matter.
 

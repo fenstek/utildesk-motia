@@ -64,7 +64,7 @@ Empfehlenswert ist Service Hub für Teams, die Support und CRM bewusst aus derse
 
 - [Zendesk](/tools/zendesk/): Reifer Helpdesk-Fokus mit umfangreichen Ticket- und Supportfunktionen, wenn CRM-Verzahnung weniger wichtig ist.
 - [Freshdesk](/tools/freshdesk/): Zugänglicher cloudbasierter Helpdesk für Teams, die schnell mit Supporttickets und Kanälen starten möchten.
-- [Zoho Desk](/tools/zoho-desk/): Preisbewusste Serviceoption mit Zoho-Ökosystem, wenn ein anderes CRM- und Automationsmodell besser passt.
+- Zoho Desk: Preisbewusste Serviceoption mit Zoho-Ökosystem, wenn ein anderes CRM- und Automationsmodell besser passt.
 - [Intercom](/tools/intercom/): Stärker auf In-App-Kommunikation, Messaging und proaktive Kundeninteraktion ausgerichtet.
 
 ## FAQ

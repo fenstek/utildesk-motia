@@ -78,7 +78,7 @@ In the catalog, Wordsmith is marked with the pricing model **Freemium**. For a r
 - [Jasper](/en/tools/jasper/): useful comparison point if workflow, pricing, or specialization should differ.
 - [AISEO](/en/tools/aiseo/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Narrato](/en/tools/narrato/): useful comparison point if workflow, pricing, or specialization should differ.
-- [Writer](/en/tools/writer/): useful comparison point if workflow, pricing, or specialization should differ.
+- Writer: useful comparison point if workflow, pricing, or specialization should differ.
 - [Copy.ai](/en/tools/copy-ai/): useful comparison point if workflow, pricing, or specialization should differ.
 
 ## Editorial assessment

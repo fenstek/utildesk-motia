@@ -20,8 +20,6 @@ sidebarPoints:
   - "Technik verhindert Fehler; sie erzeugt keine eigenständige Relevanz."
   - "Neue Kataloge wachsen besser über wenige starke Themen als über viele ähnliche Seiten."
 relatedTools:
-  - title: "Google Search Console"
-    href: "/tools/google-search-console/"
   - title: "Bing Webmaster Tools"
     href: "/tools/bing-webmaster-tools/"
   - title: "Ahrefs"
@@ -36,7 +34,7 @@ Für neue Tool-Kataloge ist diese Trennung unbequem. Sie starten oft mit vielen 
 
 ## Erst die Grundlage, dann die Diagnose
 
-Die Basis ist nicht verhandelbar: eine kanonische URL, `200`-Antwort, kein versehentliches `noindex`, sinnvolle interne Links und eine Sitemap ohne Weiterleitungen oder Fehler. Die [Google Search Console](/tools/google-search-console/) hilft, diese Signale zu prüfen. Sie ist aber kein Knopf für sofortige Indexierung.
+Die Basis ist nicht verhandelbar: eine kanonische URL, `200`-Antwort, kein versehentliches `noindex`, sinnvolle interne Links und eine Sitemap ohne Weiterleitungen oder Fehler. Die Google Search Console hilft, diese Signale zu prüfen. Sie ist aber kein Knopf für sofortige Indexierung.
 
 Wenn die Basis stimmt, ist die bessere Frage: Welche Seite ist für einen konkreten Suchenden nützlicher als eine generische Produktbeschreibung? Ein Eintrag über ein Transkriptions-Tool sollte nicht nur Features wiederholen. Er sollte erklären, ob Sprechertrennung, Datenschutz, Export oder Team-Workflow für den jeweiligen Einsatzfall zählen und wann eine Alternative besser passt.
 

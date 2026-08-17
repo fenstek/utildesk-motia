@@ -71,7 +71,7 @@ Webflow wird über verschiedene Site-, Workspace- und Enterprise-Modelle abgerec
 
 - [Framer](/tools/framer/): Geeignet, wenn eine designorientierte Marketingseite besonders schnell veröffentlicht werden soll und weniger CMS- oder Betriebslogik nötig ist.
 - [Bubble](/tools/bubble/): Die bessere Richtung für eine visuelle Web-App mit Datenmodellen, Workflows und eigener Geschäftslogik statt primär redaktioneller Seiten.
-- [Wix mit Velo](/tools/wix-mit-velo/): Sinnvoll, wenn Website-Bau mit stärker eingebundenen Funktionen und Entwicklungsoptionen im Wix-Ökosystem kombiniert werden soll.
+- Wix mit Velo: Sinnvoll, wenn Website-Bau mit stärker eingebundenen Funktionen und Entwicklungsoptionen im Wix-Ökosystem kombiniert werden soll.
 - [Squarespace](/tools/squarespace/): Praktisch für kleinere, klassische Websites, bei denen ein engeres System und weniger individuelle Frontend-Kontrolle ausreichen.
 
 ## Redaktionelle Einschätzung

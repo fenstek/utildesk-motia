@@ -62,7 +62,7 @@ Pricing depends on the plan and the amount of translatable content. Before signi
 - [DeepL](/en/tools/deepl/) is a strong complement or alternative when high-quality text translation and a self-managed integration are the main requirements.
 - [Lokalise](/en/tools/lokalise/) is more focused on product localisation, software strings, translation projects, and developer workflows.
 - [Crowdin](/en/tools/crowdin/) is an option for teams coordinating localisation across many contributors, content types, and releases.
-- [Phrase](/en/tools/phrase/) is aimed at larger localisation programmes that need central translation management and governance.
+- Phrase is aimed at larger localisation programmes that need central translation management and governance.
 
 ## FAQ
 

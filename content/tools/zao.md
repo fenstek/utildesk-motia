@@ -79,7 +79,7 @@ Im Katalog ist Zao mit dem Preismodell **Je nach Plan** geführt. Für eine bela
 - [Remini](/tools/remini/): passender, wenn ein anderer Schwerpunkt als bei Zao im Vordergrund steht.
 - [Deep Dream Generator](/tools/deep-dream-generator/): guter Vergleich für Teams, die KI-Bildexperimente, stilisierte Motive und kreative Bildvarianten mit surrealem Charakter brauchen.
 - [PixVerse](/tools/pixverse/): prüfen, wenn KI-Video-Generierung aus Prompts, Bildern oder Ideen für kurze kreative Clips wichtiger ist.
-- [Higgsfield](/tools/higgsfield/): naheliegend, falls KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen im Vordergrund steht.
+- Higgsfield: naheliegend, falls KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen im Vordergrund steht.
 
 ## Redaktionelle Einschätzung
 

@@ -63,7 +63,7 @@ In the catalog, Rebelle is marked with the pricing model **Plan-based**. For a r
 - [Krita](/en/tools/krita/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Corel Painter](/en/tools/corel-painter/): useful comparison point for adjacent workflows, pricing, or team fit.
 - [Clip Studio Paint](/en/tools/clip-studio-paint/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Procreate](/en/tools/procreate/): useful comparison point for adjacent workflows, pricing, or team fit.
+- Procreate: useful comparison point for adjacent workflows, pricing, or team fit.
 - Adobe Photoshop: useful comparison point for adjacent workflows, pricing, or team fit.
 
 ## Editorial assessment

@@ -79,7 +79,7 @@ For an open multi-tenant builder or workloads that execute untrusted code withou
 
 - [LangGraph](/en/tools/langgraph/): Explicit state graphs in code when repository review, tests, and controlled transitions are the priority.
 - [LangChain](/en/tools/langchain/): A broad Python and JavaScript toolkit for custom applications without requiring a visual runtime.
-- [AutoGen](/en/tools/autogen/): Programmatic multi-agent experiments based on roles and conversations rather than a component canvas.
+- AutoGen: Programmatic multi-agent experiments based on roles and conversations rather than a component canvas.
 - [n8n](/en/tools/n8n/): General workflow automation with broad business integrations when AI is only one step in a larger process.
 
 ## FAQ
