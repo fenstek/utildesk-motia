@@ -190,15 +190,42 @@ test("catalog policy removes tombstones and redirects while preserving canonical
 
 test("catalog policy is fail-open for malformed JSON and unexpected shapes", async () => {
   for (const body of ["not-json", JSON.stringify({ count: 1, items: "not-an-array" })]) {
-    const response = await filterToolCatalogResponse(new Response(body, {
+    const sourceResponse = new Response(body, {
       status: 200,
       headers: { "Content-Type": "application/json", "Content-Length": "8", "Content-Encoding": "gzip" },
-    }));
-    assert.equal(await response.text(), body);
-    assert.equal(response.headers.get("content-length"), "8");
-    assert.equal(response.headers.get("content-encoding"), "gzip");
-    assert.equal(response.headers.get("X-Utildesk-Catalog-Policy"), null);
+    });
+    const response = await filterToolCatalogResponse(sourceResponse);
+    assert.strictEqual(response, sourceResponse);
+    assert.equal(await sourceResponse.text(), body);
+    assert.equal(sourceResponse.headers.get("content-length"), "8");
+    assert.equal(sourceResponse.headers.get("content-encoding"), "gzip");
+    assert.equal(sourceResponse.headers.get("X-Utildesk-Catalog-Policy"), null);
   }
+});
+
+test("catalog policy keeps an unchanged catalog body stream and headers", async () => {
+  const body = JSON.stringify({
+    count: 2,
+    generatedAt: "fixture",
+    items: [{ slug: "canonical-first" }, { slug: "canonical-last" }],
+  });
+  const sourceResponse = new Response(body, {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json",
+      "Content-Length": String(body.length),
+      "Content-Encoding": "gzip",
+    },
+  });
+  const response = await filterToolCatalogResponse(sourceResponse);
+  assert.deepEqual(await response.json(), {
+    count: 2,
+    generatedAt: "fixture",
+    items: [{ slug: "canonical-first" }, { slug: "canonical-last" }],
+  });
+  assert.equal(response.headers.get("X-Utildesk-Catalog-Policy"), "retired-filter-v1");
+  assert.equal(response.headers.get("content-length"), String(body.length));
+  assert.equal(response.headers.get("content-encoding"), "gzip");
 });
 
 test("catalog policy is scoped away from tool detail JSON", async () => {

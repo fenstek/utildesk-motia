@@ -110,11 +110,9 @@ const isRetiredCatalogSlug = (slug) =>
 export const filterToolCatalogResponse = async (response) => {
   const headers = new Headers(response.headers);
   let payload;
-  let rawBody;
 
   try {
-    rawBody = await response.text();
-    payload = JSON.parse(rawBody);
+    payload = JSON.parse(await response.clone().text());
     if (
       !payload ||
       typeof payload !== "object" ||
@@ -125,7 +123,7 @@ export const filterToolCatalogResponse = async (response) => {
       throw new Error("unexpected catalog shape");
     }
   } catch {
-    return new Response(rawBody, { status: response.status, headers });
+    return response;
   }
 
   const items = payload.items.filter((item) => !isRetiredCatalogSlug(item?.slug));
@@ -137,7 +135,7 @@ export const filterToolCatalogResponse = async (response) => {
     headers.delete("content-encoding");
   }
   headers.set("X-Utildesk-Catalog-Policy", "retired-filter-v1");
-  return new Response(changed ? JSON.stringify(payload) : rawBody, {
+  return new Response(changed ? JSON.stringify(payload) : response.body, {
     status: response.status,
     headers,
   });
