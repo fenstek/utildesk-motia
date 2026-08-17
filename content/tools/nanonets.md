@@ -20,65 +20,63 @@ translation: full
 ---
 # Nanonets
 
-Nanonets verbindet OCR, Feldextraktion und nachgelagerte Workflow-Schritte für Rechnungen, Belege und andere Geschäftsdokumente. Die Stärke liegt im Übergang von erkannter Information zu Prüfung und Weiterleitung.
+Nanonets verbindet Dokument-OCR mit konfigurierbaren Workflows. Besonders charakteristisch sind Modelle beziehungsweise Workflows, die Felder und Tabellen liefern, sowie die Möglichkeit, Dokumente zu klassifizieren und an unterschiedliche OCR-Modelle zu routen. Die Plattform ist damit eher ein Prozessbaustein für eingehende Geschäftsdokumente als ein reiner Texterkennungs-Endpunkt.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/nanonets-editorial.webp" alt="Dokumentverarbeitungs-Workflow für Nanonets" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/nanonets-editorial.webp" alt="Nanonets Workflow mit Dokumentklassifikation und Feldprüfung" loading="lazy" decoding="async" /></figure>
 
-## Für wen und welches Problem?
+## Geeigneter Anwendungsfall
 
-Für Nanonets passen Teams, die wiederkehrende Dokumente digital annehmen und die Ausgabe in einen überprüfbaren Prozess einbauen. Entscheidend ist nicht die Demo-Erkennung, sondern die Frage, wer Eingang, Extraktion, Ausnahme und Freigabe verantwortet. Extraktion und Routing ersetzen keine Prüfung von Beträgen, Lieferanten oder Buchungsregeln.
+Nanonets passt zu Accounts Payable, Belegen, Bestellungen, Claims oder Lieferantenunterlagen, wenn erkannte Werte anschließend freigegeben oder zurückgewiesen werden müssen. Ein Team sollte zuerst festlegen, welche Dokumentklasse welches Modell erhält und welche Felder eine menschliche Prüfung auslösen.
 
-## Kernfunktionen im Prozess
+## Modelle und Routing
 
-Die relevanten Bausteine sind Dokumentmodelle und extrahierte Felder für wiederkehrende Geschäftsdokumente, Review- und Routing-Schritte statt blindem Schreiben in ein Zielsystem und API- und Integrationsplanung mit kontrollierter Fehlerbehandlung. Beginne mit zwei oder drei Dokumentfamilien und definiere Pflichtfelder, erlaubte Werte und einen Zustand für unvollständige Ergebnisse. So bleibt sichtbar, ob ein Fehler aus dem Dokument, dem Modell oder der eigenen Nachbearbeitung stammt.
+Die API kann OCR-Modelle für Dateien oder öffentlich erreichbare URLs synchron oder asynchron ansprechen. Für größere Dateien ist ein asynchroner Ablauf sinnvoll, weil Ergebnisabholung und Fehlerbehandlung getrennt werden. Ein Document-Classification-Model kann beispielsweise Belege, Rechnungen und Bestellungen labeln und sie den passenden OCR-Modellen zuordnen.
 
-## Praktischer Workflow
+## Einrichten und Lernen
 
-Lege ein Referenzset mit guten, schlechten und ungewöhnlichen Beispielen an. Lass Nanonets zunächst in eine isolierte Testablage schreiben, protokolliere Dokument-ID und Modellantwort und vergleiche die Felder mit einer geprüften Referenz. Erst danach sollte die Ausgabe an ERP, CRM, Tabelle oder Automatisierung weitergehen. Wiederholungen müssen idempotent behandelt werden.
+Lege für jede Klasse Beispiele mit unterschiedlichen Lieferanten, Scans und Seitenlayouts ab. Konfiguriere Felder und Tabellen, trainiere oder verbessere das Modell und prüfe Vorhersagen gegen eine markierte Referenz. Korrekturen dürfen erst dann in ein Lern- oder Automatisierungsverfahren eingehen, wenn ihre fachliche Ursache dokumentiert ist.
 
-## Integration und Betrieb
+## API und Integrationen
 
-Plane Eingang, API-Authentifizierung, Webhook oder Batch, Retries und die sichere Ablage von Original und Ergebnis. API- und Integrationsplanung mit kontrollierter Fehlerbehandlung Für den laufenden Betrieb gehören Quoten, Versionsänderungen, Fehlerschlangen und ein manueller Fallback in die Dokumentation.
+Die Nanonets-API verwendet einen API-Schlüssel über Basic Authentication und liefert JSON. Plane Upload, Prediction-ID, Page- beziehungsweise File-Ergebnis, Polling oder Webhook sowie die Zuordnung zu einer internen Dokument-ID. Export in ein Zielsystem ist ein eigener Schritt; das OCR-Ergebnis sollte nicht die einzige Belegkopie sein.
 
-## Qualität und Grenzen
+## Review und Grenzen
 
-Prüfe Feldgenauigkeit getrennt von Dokumentklassifikation und Durchlaufzeit. Nutze reale Layouts, Scanqualitäten, Sprachen und Seitenzahlen. Extraktion und Routing ersetzen keine Prüfung von Beträgen, Lieferanten oder Buchungsregeln. Niedrige Konfidenz, fehlende Pflichtfelder und widersprüchliche Werte müssen sichtbar in einen Review-Pfad gelangen.
+Ein Feld kann syntaktisch plausibel und fachlich falsch sein. Vergleiche Währung, Summen, Lieferant, Bestellnummer und Seitenzusammenhang mit Regeln außerhalb des Modells. Bei niedriger Konfidenz, unbekannter Klasse oder fehlendem Feld muss ein Reviewer entscheiden; ein Routing-Modell ersetzt keine Ausnahmebearbeitung.
 
-## Daten, Privacy und Governance
+## Betrieb und Daten
 
-nanonets: Vor dem Einsatz sind Region, Aufbewahrung, Zugriff, Verschlüsselung, Unterauftragnehmer und Löschung mit dem Schutzbedarf abzugleichen. Personen-, Finanz- oder Identitätsdaten dürfen nur in freigegebenen Projekten verarbeitet werden. Protokolle sollten den Bearbeitungsweg zeigen, ohne mehr Rohdaten als nötig zu vervielfältigen.
+Definiere Schlüsselrotation, Rollen, Aufbewahrung und erlaubte Datenregionen für die Dokumente. Überwache API-Limits, asynchrone Jobs, doppelte Uploads und Modellversionen. Bei sensiblen Rechnungen oder Identitätsdokumenten sollte die Speicherung von Original und JSON-Ergebnis getrennt und begründet werden.
 
 ## Kosten und Entscheidung
 
-nanonets: Die Kostenlogik hängt vom Anbieter und der Nutzung ab: mögliche Treiber sind Seiten, Dokumente, API-Aufrufe, Speicher, Integrationen und menschliche Nacharbeit. Prüfe das aktuelle Angebot des Anbieters statt Preise aus alten Vergleichen zu übernehmen. Ein sinnvoller Pilot misst Kosten pro erfolgreich geprüftem Dokument, nicht nur pro API-Aufruf.
+Prüfe das aktuelle Nanonets-Angebot für Modell, Volumen und gewünschte Workflow-Funktionen. Realistische Kosten entstehen nicht nur durch Requests, sondern auch durch Review, Fehlklassifikation, Nachtraining und die eigene Integration. Ein Pilot sollte die Quote korrekt gerouteter Dokumente und den manuellen Aufwand je Klasse messen.
 
 ## Redaktionelle Einschätzung
 
-Nanonets ist eine gute Prüfoption, wenn Dokumentklassen, Review-Verantwortung und Integrationsgrenze klar sind. Der Dienst ersetzt keine Buchungskontrolle und keine menschliche Freigabe. Wähle einen lokalen Parser oder eine spezialisierte API, wenn Cloud-Governance, Layoutvielfalt oder Betriebskosten dagegen sprechen.
+Nanonets ist interessant, wenn Klassifikation, Extraktion und Review in einem geschäftlichen Eingangskanal zusammenlaufen. Für eine Entwickler-API mit schlanker eigener Anwendung sind [mindee](/tools/mindee/) oder [veryfi](/tools/veryfi/) fokussierter; für visuelle Regeln bei stabilen Layouts ist [docparser](/tools/docparser/) transparenter.
 
 ## Alternativen
 
-- [parseur](/tools/parseur/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [docparser](/tools/docparser/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [mindee](/tools/mindee/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [veryfi](/tools/veryfi/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
+- [mindee](/tools/mindee/): API- und SDK-zentrierte Extraktion für eine eigene Anwendung.
+- [veryfi](/tools/veryfi/): Finanzdokumente mit starkem Fokus auf Belege und Rechnungsfelder.
+- [docparser](/tools/docparser/): Sichtbare Zonen-, Keyword- und Tabellenregeln für bekannte Layouts.
+- [rossum](/tools/rossum/): Queue- und Review-orientierter Betrieb von Geschäftsdokumenten.
 
 ## FAQ
 
-**Was sollte ein erster Pilot messen?**
+**Wann ist die asynchrone OCR-API sinnvoll?**
 
-Miss Feldgenauigkeit, Ausnahmequote, Laufzeit und Kosten pro geprüftem Dokument.
+Bei längeren oder mehrseitigen Dateien, wenn Upload, Ergebnisabholung und Fehlerbehandlung nicht an eine offene Anfrage gebunden sein sollen. Die Anwendung braucht dann eine belastbare Job-ID.
 
-**Dürfen extrahierte Felder ungeprüft gebucht werden?**
+**Kann Nanonets verschiedene Dokumentklassen automatisch verteilen?**
 
-nanonets: Nein. Freigabe- und Abgleichregeln gehören in den nachgelagerten Prozess; unsichere oder widersprüchliche Werte brauchen Review.
+Ja, ein Classification-and-Routing-Modell kann Klassen erkennen und Dokumente an zugeordnete OCR-Modelle senden. Die Klassen und Fehlerrouten müssen mit echten Eingangsdaten getestet werden.
 
-**Welche Dokumente gehören in den Testdatensatz?**
+**Was sollte ein Reviewer kontrollieren?**
 
-Nimm reale Formate, Layouts, schlechte Scans, Sprachen und mehrseitige Fälle aus dem späteren Betrieb auf.
+Nicht nur das einzelne Feld, sondern auch Dokumenttyp, Lieferant, Summen, Währung, Seiten und die Verbindung zur internen Beleg-ID. So werden plausible, aber falsch geroutete Ergebnisse sichtbar.
 
-**Wann sollte ein Team ein anderes Tool wählen?**
+**Welche Kosten gehören in den Pilot?**
 
-Wähle ein anderes Tool, wenn Dokumentumfang, Datenschutzgrenze oder Betriebsmodell deutlich enger sind.
+Modell- und Volumenkosten, API-Betrieb, Review-Zeit, Nachtraining und die Speicherung der Quelldokumente. Ein Preis pro erfolgreicher Prüfung ist aussagekräftiger als ein Preis pro Upload.

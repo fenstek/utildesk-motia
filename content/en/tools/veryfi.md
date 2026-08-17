@@ -20,65 +20,59 @@ translation: full
 ---
 # Veryfi
 
-Veryfi is an API-first service for receipts, invoices and accounting data. It targets structured business data that applications can validate, reconcile and route onward.
+Veryfi is an API-first service for receipts, invoices, and related financial documents. Its practical centre is not a general document catalogue, but quickly delivering structured output to an expense, accounting, or reconciliation application. Source files and JSON responses still need a traceable relationship.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/veryfi-editorial.webp" alt="Document processing workflow for Veryfi" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/veryfi-editorial.webp" alt="Veryfi API extracting merchant and amount fields for a finance review" loading="lazy" decoding="async" /></figure>
 
-## Who it is for and the problem
+## Receipts versus invoices
 
-Veryfi fits teams that receive recurring documents and need to place extracted data inside a reviewable process. The important question is who owns intake, extraction, exceptions and approval. A structured JSON result is not the same as a verified accounting entry.
+Keep receipt and invoice fixtures separate. A receipt may need merchant, date, amount, tax, and line items; an invoice adds supplier, invoice number, payment terms, and often a larger table. The receiving reconciliation process determines which fields are mandatory.
 
-## Core functions in context
+## Upload and response handling
 
-The useful building blocks are API-Extraktion für Rechnungen, Belege und verwandte Finanzdokumente, Strukturierte Felder für Weitergabe an Buchhaltung oder eigene Anwendungen and Review, Dublettenprüfung, Lieferantenabgleich und Löschkonzept bleiben Anwendungspflichten. Start with a small document set and define required fields, valid values and an explicit state for incomplete results. This separates document, model and downstream errors.
+Your application submits an image or PDF, records its internal document ID, and processes the structured response. Add status, timeout, retry, and duplicate detection before writing to expense or ERP software. A successful API response is not an accounting approval.
 
-## A practical workflow
+## Reconciliation controls
 
-Create a reference set containing clean, poor and unusual examples. Send Veryfi output to an isolated test destination, record document identifiers and compare fields with a reviewed reference. Only then route data to an ERP, CRM, spreadsheet or automation. Reprocessing should be idempotent.
+Match merchant or supplier to master data and compare totals with lines and tax. Route unknown currencies, unusual amounts, and missing required values to review. Mobile receipt photos need explicit handling for cropped, skewed, or poorly lit inputs.
 
-## Integration and operations
+## Developer operations
 
-Plan intake, API authentication, webhooks or batch jobs, retries and safe storage of source and result. Review, Dublettenprüfung, Lieferantenabgleich und Löschkonzept bleiben Anwendungspflichten Quotas, version changes, exception queues and a manual fallback belong in the runbook.
+Plan key storage, request limits, observability, and a small replay store for failures. Keep source, API response, and final correction connected. If the accounting system has a different schema, map fields deliberately instead of passing through an unverified payload.
 
-## Quality and limits
+## Quality and review
 
-Measure field accuracy separately from classification and throughput. Use real layouts, scan quality, languages and page counts. A structured JSON result is not the same as a verified accounting entry. Low confidence, missing required fields and contradictions should enter a visible review path.
+Build fixtures covering merchants, countries, tax formats, currencies, and common line layouts. Report field errors and correction time by document type. A reviewer should see the source image beside extracted values; a confidence number alone is not enough for a payment decision.
 
-## Data, privacy and governance
+## Data and pricing
 
-Align region, retention, access, encryption, subprocessors and deletion with the sensitivity of the documents. Personal, financial and identity data require an approved project and access model. Logs should explain the processing path without multiplying raw documents unnecessarily.
+Financial files contain personal and commercial information. Check region, retention, access, deletion, and processing terms. Current Veryfi pricing may depend on document type and volume; include mobile capture, storage, review, and accounting integration in the budget.
 
-## Costs and decision boundary
+## Editorial assessment
 
-Cost may depend on pages, documents, API calls, storage, integrations and human rework. Check the provider's current offer rather than copying prices from an old comparison. A useful pilot measures cost per successfully reviewed document, not only cost per API request.
-
-## Editorial Assessment
-
-Veryfi is worth evaluating when its document classes, review ownership and integration boundary are explicit. It is not a substitute for accounting controls or human approval. Choose a narrower local parser or a specialized API when cloud governance, layout diversity or operating cost makes this platform disproportionate.
+Veryfi is a good candidate for developers who need receipt and invoice data inside an owned finance workflow. Broader documents may favour [google-document-ai](/en/tools/google-document-ai/) or [mindee](/en/tools/mindee/), while a human AP queue is more directly addressed by [rossum](/en/tools/rossum/).
 
 ## Alternatives
 
-- [mindee](/en/tools/mindee/): A different scope or operating model for document extraction.
-- [nanonets](/en/tools/nanonets/): A different scope or operating model for document extraction.
-- [rossum](/en/tools/rossum/): A different scope or operating model for document extraction.
-- [parseur](/en/tools/parseur/): A different scope or operating model for document extraction.
+- [mindee](/en/tools/mindee/): API and SDK approach for custom document applications.
+- [nanonets](/en/tools/nanonets/): Workflow, classification, and routing before extraction.
+- [rossum](/en/tools/rossum/): Operational exception queue for accounts-payable documents.
+- [google-document-ai](/en/tools/google-document-ai/): Multiple processor types for OCR, layout, and custom extraction.
 
 ## FAQ
 
-**What should the first pilot measure?**
+**What should a Veryfi pilot contain?**
 
-Measure field accuracy, exception rate, processing time and cost per reviewed document.
+Use real receipts and invoices from different merchants, countries, currencies, tax formats, and photo conditions. Report the two document types separately.
 
-**Can extracted fields be posted without review?**
+**Can the API approve a payment?**
 
-No. Define approval and reconciliation rules downstream; uncertain or contradictory results need a review path.
+No. Merchant matching, total checks, policy rules, and human or deterministic approval belong to the finance process.
 
-**Which input documents belong in the test set?**
+**How should duplicate uploads be handled?**
 
-Include representative formats, layouts, poor scans, languages and multi-page cases that occur in production.
+Assign a stable document ID and store a hash or source reference in your application. A retry should continue the same case rather than create a second expense.
 
-**When should a team choose another tool?**
+**When is a broader document platform preferable?**
 
-Choose another tool when the required document scope, data boundary or operating model is narrower than this service.
+When contracts, forms, classification, or custom entities matter as much as invoices. A general processor platform may then simplify the model portfolio.

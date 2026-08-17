@@ -20,65 +20,59 @@ translation: full
 ---
 # Rossum
 
-Rossum ist eine Document-AI-Plattform für wiederkehrende Geschäftsdokumente wie Rechnungen, Bestellungen und Lieferscheine. Der Schwerpunkt liegt auf Extraktion, Ausnahmebehandlung und einem operativen Review-Prozess.
+Rossum ist eine Document-Automation-Plattform für operative Dokumentströme, besonders Accounts Payable. Ihre Eigenheit ist der Queue- und Review-Ansatz: Dokumente werden aufgenommen, klassifiziert, extrahiert und bei Ausnahmen in einer Arbeitsoberfläche vorgelegt. Das Ergebnis muss trotzdem gegen ERP-Regeln und Freigaben geprüft werden.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/rossum-editorial.webp" alt="Dokumentverarbeitungs-Workflow für Rossum" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/rossum-editorial.webp" alt="Rossum-Queue mit extrahierten Rechnungsfeldern und Review-Ausnahme" loading="lazy" decoding="async" /></figure>
 
-## Für wen und welches Problem?
+## Dokumentstrom und Queue
 
-Für Rossum passen Teams, die wiederkehrende Dokumente digital annehmen und die Ausgabe in einen überprüfbaren Prozess einbauen. Entscheidend ist nicht die Demo-Erkennung, sondern die Frage, wer Eingang, Extraktion, Ausnahme und Freigabe verantwortet. Ein Review-Workflow ist weiterhin nötig, wenn Dokumente geschäftliche Verpflichtungen auslösen.
+Definiere zuerst, welche Dokumente in welche Queue gelangen und welche Felder für den jeweiligen Prozess relevant sind. Rechnungen, Bestellungen und Lieferscheine haben unterschiedliche Prüfregeln. Eine gute Queue macht Status, Zuständigkeit und die nächste Aktion sichtbar, statt nur ein JSON-Ergebnis abzulegen.
 
-## Kernfunktionen im Prozess
+## Extraktion und Review
 
-Die relevanten Bausteine sind Dokumenttypen und Felder für Accounts-Payable- und Operations-Prozesse, Human-in-the-loop für Ausnahmen und unklare Extraktionen und Integration, Rollen, Queue-Betrieb und Auditierbarkeit als Einführungsthemen. Beginne mit zwei oder drei Dokumentfamilien und definiere Pflichtfelder, erlaubte Werte und einen Zustand für unvollständige Ergebnisse. So bleibt sichtbar, ob ein Fehler aus dem Dokument, dem Modell oder der eigenen Nachbearbeitung stammt.
+Rossum übernimmt die Erkennung von Dokumentfeldern, aber ein Operator muss unsichere Werte oder geschäftliche Ausnahmen bearbeiten können. Prüfe Summen, Lieferanten, Bestellbezug und Steuerdaten mit dem Original. Korrekturen sollten nachvollziehbar bleiben und nicht stillschweigend eine falsche Buchung erzeugen.
 
-## Praktischer Workflow
+## Einführung mit Referenzen
 
-Lege ein Referenzset mit guten, schlechten und ungewöhnlichen Beispielen an. Lass Rossum zunächst in eine isolierte Testablage schreiben, protokolliere Dokument-ID und Modellantwort und vergleiche die Felder mit einer geprüften Referenz. Erst danach sollte die Ausgabe an ERP, CRM, Tabelle oder Automatisierung weitergehen. Wiederholungen müssen idempotent behandelt werden.
+Wähle einen begrenzten Eingang, etwa Rechnungen einiger Lieferanten, und sammle echte Layoutvarianten. Miss Feldqualität, Straight-through-Rate und Review-Minuten getrennt. Ein Dokument mit hoher Extraktionsqualität kann dennoch wegen fehlender Bestellung oder doppelter Rechnung in der Queue bleiben.
 
-## Integration und Betrieb
+## Integrationen und Rollen
 
-Plane Eingang, API-Authentifizierung, Webhook oder Batch, Retries und die sichere Ablage von Original und Ergebnis. Integration, Rollen, Queue-Betrieb und Auditierbarkeit als Einführungsthemen Für den laufenden Betrieb gehören Quoten, Versionsänderungen, Fehlerschlangen und ein manueller Fallback in die Dokumentation.
+Plane API, Exporte, Webhooks, ERP-Ziel, Rollen und Eskalationen gemeinsam. Die Queue braucht einen Eigentümer für unbearbeitete Fälle; ein technischer Retry darf keine zweite Rechnung erzeugen. Prüfe außerdem, wie Originaldatei, Extraktionsdaten und die finale Entscheidung zusammen referenziert werden.
 
 ## Qualität und Grenzen
 
-Prüfe Feldgenauigkeit getrennt von Dokumentklassifikation und Durchlaufzeit. Nutze reale Layouts, Scanqualitäten, Sprachen und Seitenzahlen. Ein Review-Workflow ist weiterhin nötig, wenn Dokumente geschäftliche Verpflichtungen auslösen. Niedrige Konfidenz, fehlende Pflichtfelder und widersprüchliche Werte müssen sichtbar in einen Review-Pfad gelangen.
+Teste schlechte Scans, neue Lieferanten, Gutschriften, mehrseitige Belege und fehlende Bestellnummern. Vergleiche nicht nur OCR-Werte, sondern auch Klassifikation und Routing. Rossum nimmt keine Verantwortung für eure Kontierung, steuerliche Bewertung oder interne Freigabematrix ab.
 
-## Daten, Privacy und Governance
+## Datenschutz und Kosten
 
-rossum: Vor dem Einsatz sind Region, Aufbewahrung, Zugriff, Verschlüsselung, Unterauftragnehmer und Löschung mit dem Schutzbedarf abzugleichen. Personen-, Finanz- oder Identitätsdaten dürfen nur in freigegebenen Projekten verarbeitet werden. Protokolle sollten den Bearbeitungsweg zeigen, ohne mehr Rohdaten als nötig zu vervielfältigen.
-
-## Kosten und Entscheidung
-
-rossum: Die Kostenlogik hängt vom Anbieter und der Nutzung ab: mögliche Treiber sind Seiten, Dokumente, API-Aufrufe, Speicher, Integrationen und menschliche Nacharbeit. Prüfe das aktuelle Angebot des Anbieters statt Preise aus alten Vergleichen zu übernehmen. Ein sinnvoller Pilot misst Kosten pro erfolgreich geprüftem Dokument, nicht nur pro API-Aufruf.
+Finanzdokumente brauchen eine dokumentierte Regel für Region, Rollen, Aufbewahrung und Löschung. Prüfe das aktuelle Angebot mit Rossum, weil Preise und Vertragsumfang vom Prozess abhängen können. Rechne zusätzlich Review-Arbeit, ERP-Anpassung und Ausnahmevolumen ein.
 
 ## Redaktionelle Einschätzung
 
-Rossum ist eine gute Prüfoption, wenn Dokumentklassen, Review-Verantwortung und Integrationsgrenze klar sind. Der Dienst ersetzt keine Buchungskontrolle und keine menschliche Freigabe. Wähle einen lokalen Parser oder eine spezialisierte API, wenn Cloud-Governance, Layoutvielfalt oder Betriebskosten dagegen sprechen.
+Rossum passt, wenn ein Team einen sichtbaren operativen Review-Prozess für wiederkehrende Geschäftsdokumente braucht. Für reine API-Extraktion ohne Queue sind [mindee](/tools/mindee/) oder [veryfi](/tools/veryfi/) schlanker; für selbst definierte Zonen ist [docparser](/tools/docparser/) nachvollziehbarer.
 
 ## Alternativen
 
-- [google-document-ai](/tools/google-document-ai/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [nanonets](/tools/nanonets/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [veryfi](/tools/veryfi/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [klippa](/tools/klippa/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
+- [mindee](/tools/mindee/): Entwickler-API für eine eigene Review- und Integrationsoberfläche.
+- [veryfi](/tools/veryfi/): Finanzdokumente mit API-first Übergabe an die eigene Anwendung.
+- [docparser](/tools/docparser/): Regelbasierte Layoutkontrolle für bekannte Dokumentformen.
+- [nanonets](/tools/nanonets/): Klassifikation, Modellrouting und Workflow-Automation.
 
 ## FAQ
 
-**Was sollte ein erster Pilot messen?**
+**Wann gehört eine Rechnung in die Review-Queue?**
 
-Miss Feldgenauigkeit, Ausnahmequote, Laufzeit und Kosten pro geprüftem Dokument.
+Wenn ein Pflichtfeld fehlt, die Konfidenz nicht genügt, der Bestellbezug nicht passt oder ein fachlicher Konflikt vorliegt. Die genaue Schwelle sollte eure Referenzdaten widerspiegeln.
 
-**Dürfen extrahierte Felder ungeprüft gebucht werden?**
+**Ersetzt Rossum das ERP?**
 
-rossum: Nein. Freigabe- und Abgleichregeln gehören in den nachgelagerten Prozess; unsichere oder widersprüchliche Werte brauchen Review.
+Nein. Rossum kann Dokumentdaten vorbereiten und Ausnahmen bearbeiten; Kontierung, Lieferantenstamm, Freigabe und Buchung bleiben im Zielprozess.
 
-**Welche Dokumente gehören in den Testdatensatz?**
+**Was misst ein realistischer Pilot?**
 
-Nimm reale Formate, Layouts, schlechte Scans, Sprachen und mehrseitige Fälle aus dem späteren Betrieb auf.
+Feldfehler, korrekt geroutete Dokumente, Straight-through-Rate, Review-Minuten und doppelte Fälle. Nur OCR-Genauigkeit würde die Queue-Arbeit ausblenden.
 
-**Wann sollte ein Team ein anderes Tool wählen?**
+**Für wen ist eine API-first Alternative besser?**
 
-Wähle ein anderes Tool, wenn Dokumentumfang, Datenschutzgrenze oder Betriebsmodell deutlich enger sind.
+Für Teams, die bereits eine eigene Review-Oberfläche und Geschäftslogik besitzen. Dann kann eine spezialisierte Extraktions-API weniger Prozessballast bedeuten.

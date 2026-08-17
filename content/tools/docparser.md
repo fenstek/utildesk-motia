@@ -20,65 +20,59 @@ translation: full
 ---
 # Docparser
 
-Docparser extrahiert strukturierte Daten aus wiederkehrenden PDFs und Dokumenten. Der Ansatz passt besonders dann, wenn Layouts, Positionen und erwartete Felder ausreichend stabil sind.
+Docparser ist ein regelbasierter Parser für wiederkehrende Dokumentlayouts. Man erstellt einen Parser pro Layout, lädt Beispieldokumente und markiert mit Regeln feste Positionen, Schlüsselwörter oder Tabellen. Diese Transparenz ist nützlich, verlangt aber Pflege, sobald Lieferanten die Struktur ihrer PDFs ändern.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/docparser-editorial.webp" alt="Dokumentverarbeitungs-Workflow für Docparser" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/docparser-editorial.webp" alt="Docparser-Regel mit markiertem Rechnungsfeld und Tabellenbereich" loading="lazy" decoding="async" /></figure>
 
-## Für wen und welches Problem?
+## Parser pro Layout
 
-Für Docparser passen Teams, die wiederkehrende Dokumente digital annehmen und die Ausgabe in einen überprüfbaren Prozess einbauen. Entscheidend ist nicht die Demo-Erkennung, sondern die Frage, wer Eingang, Extraktion, Ausnahme und Freigabe verantwortet. Bei stark wechselnden Layouts steigt der Pflegeaufwand; ein Parser ist kein universelles OCR-Modell.
+Beginne mit einem Rechnungstemplate oder einer leeren Vorlage und trenne Layouts, die nicht dieselbe Geometrie haben. Fixed Position eignet sich für ein Feld an derselben Stelle; Keyword- oder Variable-Text-Regeln folgen einem Anker. Tabellenregeln extrahieren wiederkehrende Zeilen wie Positionen.
 
-## Kernfunktionen im Prozess
+## Regeln und Filter
 
-Die relevanten Bausteine sind Parser-Regeln, Zonen und Feldzuordnung für bekannte Dokumentlayouts, Weitergabe an Tabellen, Webhooks oder verbundene Workflows und Testset mit Layoutvarianten und Fallback für nicht passende Dokumente. Beginne mit zwei oder drei Dokumentfamilien und definiere Pflichtfelder, erlaubte Werte und einen Zustand für unvollständige Ergebnisse. So bleibt sichtbar, ob ein Fehler aus dem Dokument, dem Modell oder der eigenen Nachbearbeitung stammt.
+Eine Regel kann einen Bereich schneiden, ein Datum formatieren, Text ersetzen oder nur relevante Zeilen behalten. Die Filter sind stark, wenn das Rohresultat bereits aus dem richtigen Bereich stammt. Sie sind kein Ersatz für eine zweite Kontrolle, wenn OCR einen falschen Anker gefunden hat.
 
-## Praktischer Workflow
+## Import und Ergebnis
 
-Lege ein Referenzset mit guten, schlechten und ungewöhnlichen Beispielen an. Lass Docparser zunächst in eine isolierte Testablage schreiben, protokolliere Dokument-ID und Modellantwort und vergleiche die Felder mit einer geprüften Referenz. Erst danach sollte die Ausgabe an ERP, CRM, Tabelle oder Automatisierung weitergehen. Wiederholungen müssen idempotent behandelt werden.
+Dokumente kommen per Upload, URL oder privater Parser-Mailbox. Die HTTP-API importiert Dateien und liest Ergebnisse; Webhooks können das fertige Resultat an eure Anwendung senden. Bewahre die remote_id auf, damit ein Ergebnis wieder dem internen Dokument zugeordnet werden kann.
 
-## Integration und Betrieb
+## Testen von Layoutwechseln
 
-Plane Eingang, API-Authentifizierung, Webhook oder Batch, Retries und die sichere Ablage von Original und Ergebnis. Testset mit Layoutvarianten und Fallback für nicht passende Dokumente Für den laufenden Betrieb gehören Quoten, Versionsänderungen, Fehlerschlangen und ein manueller Fallback in die Dokumentation.
+Teste mehrere Lieferanten, Seitenumbrüche, leere Felder und Tabellen mit unterschiedlicher Zeilenzahl. Ein neuer PDF-Kopf kann eine zonale Regel verschieben, ohne dass der Request fehlschlägt. Deshalb muss der Test neben HTTP-Status auch Feldposition, Zeilenanzahl und Format prüfen.
 
-## Qualität und Grenzen
+## Export und Sicherheit
 
-Prüfe Feldgenauigkeit getrennt von Dokumentklassifikation und Durchlaufzeit. Nutze reale Layouts, Scanqualitäten, Sprachen und Seitenzahlen. Bei stark wechselnden Layouts steigt der Pflegeaufwand; ein Parser ist kein universelles OCR-Modell. Niedrige Konfidenz, fehlende Pflichtfelder und widersprüchliche Werte müssen sichtbar in einen Review-Pfad gelangen.
+Docparser kann strukturierte Daten über API, Webhook und Integrationen weitergeben. API-Schlüssel gehören in Secret Storage; Query-Parameter mit Schlüsseln sind besonders riskant. Beschränke die Zielsysteme und protokolliere, welcher Parser welche Datei verarbeitet hat.
 
-## Daten, Privacy und Governance
+## Kosten und Betrieb
 
-docparser: Vor dem Einsatz sind Region, Aufbewahrung, Zugriff, Verschlüsselung, Unterauftragnehmer und Löschung mit dem Schutzbedarf abzugleichen. Personen-, Finanz- oder Identitätsdaten dürfen nur in freigegebenen Projekten verarbeitet werden. Protokolle sollten den Bearbeitungsweg zeigen, ohne mehr Rohdaten als nötig zu vervielfältigen.
-
-## Kosten und Entscheidung
-
-docparser: Die Kostenlogik hängt vom Anbieter und der Nutzung ab: mögliche Treiber sind Seiten, Dokumente, API-Aufrufe, Speicher, Integrationen und menschliche Nacharbeit. Prüfe das aktuelle Angebot des Anbieters statt Preise aus alten Vergleichen zu übernehmen. Ein sinnvoller Pilot misst Kosten pro erfolgreich geprüftem Dokument, nicht nur pro API-Aufruf.
+Prüfe die aktuelle Preisstruktur anhand Dokumentvolumen, Parseranzahl und gewünschter Integrationen. Der eigentliche Betriebsaufwand liegt häufig im Erstellen und Pflegen von Regeln. Bei stark heterogenen Dokumenten kann ein Modell- oder API-Ansatz weniger manuelle Layoutpflege bedeuten.
 
 ## Redaktionelle Einschätzung
 
-Docparser ist eine gute Prüfoption, wenn Dokumentklassen, Review-Verantwortung und Integrationsgrenze klar sind. Der Dienst ersetzt keine Buchungskontrolle und keine menschliche Freigabe. Wähle einen lokalen Parser oder eine spezialisierte API, wenn Cloud-Governance, Layoutvielfalt oder Betriebskosten dagegen sprechen.
+Docparser ist eine gute Wahl, wenn Layouts bekannt sind und ein Fachteam die Extraktionsregel sehen und korrigieren möchte. Für ein lernendes Routing, eine Cloud-Processor-Familie oder eine fertige Review-Queue passen [nanonets](/tools/nanonets/), [google-document-ai](/tools/google-document-ai/) oder [rossum](/tools/rossum/) eher.
 
 ## Alternativen
 
-- [parseur](/tools/parseur/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [nanonets](/tools/nanonets/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [mindee](/tools/mindee/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [veryfi](/tools/veryfi/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
+- [parseur](/tools/parseur/): Mailbox- und Template-Workflow mit Webhook- und Exportpfaden.
+- [nanonets](/tools/nanonets/): Klassifikations- und Modellrouting für wechselnde Dokumentklassen.
+- [mindee](/tools/mindee/): API- und SDK-Integration ohne layoutbezogene Regeloberfläche.
+- [rossum](/tools/rossum/): Review-Queue für operative Rechnungs- und Dokumentprozesse.
 
 ## FAQ
 
-**Was sollte ein erster Pilot messen?**
+**Wann braucht ein Dokument einen eigenen Parser?**
 
-Miss Feldgenauigkeit, Ausnahmequote, Laufzeit und Kosten pro geprüftem Dokument.
+Wenn seine Feldpositionen und Tabellenstruktur nicht zuverlässig mit dem bestehenden Parser übereinstimmen. Mehrere Lieferantenlayouts in einer Regel zu verstecken, macht Fehler schwerer prüfbar.
 
-**Dürfen extrahierte Felder ungeprüft gebucht werden?**
+**Welche Regel passt zu Positionszeilen?**
 
-docparser: Nein. Freigabe- und Abgleichregeln gehören in den nachgelagerten Prozess; unsichere oder widersprüchliche Werte brauchen Review.
+Eine Table-Data- oder Line-Items-Regel ist der passende Ausgangspunkt für wiederholte Zeilen. Prüfe anschließend Spalten, leere Werte und Seitenwechsel mit echten Beispielen.
 
-**Welche Dokumente gehören in den Testdatensatz?**
+**Sind Webhooks sofort verfügbar?**
 
-Nimm reale Formate, Layouts, schlechte Scans, Sprachen und mehrseitige Fälle aus dem späteren Betrieb auf.
+Sie können das fertige Parsing-Ergebnis an einen eigenen Endpunkt liefern. Der Empfänger muss aber Wiederholungen, Fehler und die Zuordnung über Parser- und Dokument-ID sicher behandeln.
 
-**Wann sollte ein Team ein anderes Tool wählen?**
+**Wann ist Docparser zu pflegeintensiv?**
 
-Wähle ein anderes Tool, wenn Dokumentumfang, Datenschutzgrenze oder Betriebsmodell deutlich enger sind.
+Wenn viele Lieferanten ständig neue Layouts senden oder semantisch ähnliche Felder an wechselnden Stellen stehen. Dann kann ein trainierbares Modell den Regelbestand reduzieren.

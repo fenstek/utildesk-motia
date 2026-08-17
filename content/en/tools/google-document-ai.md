@@ -20,65 +20,59 @@ translation: full
 ---
 # Google Document AI
 
-Google Document AI is a set of managed processors in Google Cloud. Enterprise Document OCR extracts printed and handwritten text, while Form Parser, Layout Parser and specialized processors return structured fields.
+Google Document AI is a Google Cloud platform that turns documents into text, layout information, and structured fields through selectable processors. Its central design choice is separating OCR, form or layout analysis, classification, and trained extraction; a processor returns data, not an accounting approval.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/google-document-ai-editorial.webp" alt="Document processing workflow for Google Document AI" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/google-document-ai-editorial.webp" alt="Google Cloud document flow with OCR and form processors" loading="lazy" decoding="async" /></figure>
 
-## Who it is for and the problem
+## Choosing a processor
 
-Google Document AI fits teams that receive recurring documents and need to place extracted data inside a reviewable process. The important question is who owns intake, extraction, exceptions and approval. The service extracts data; it does not provide business approval or a complete accounting system.
+Enterprise Document OCR handles text, page layout, and optional quality analysis. Form Parser targets key-value pairs, tables, and selection marks, while Layout Parser exposes paragraphs, lists, headings, and tables for search or retrieval use cases. Pretrained processors or a Custom Extractor cover business fields; a classifier and splitter can route mixed document batches first.
 
-## Core functions in context
+## Building the Cloud boundary
 
-The useful building blocks are OCR, Form Parser, Layout Parser und spezialisierte Prozessoren, Cloud-Region, IAM, Quoten, Batch-Verarbeitung und Processor-Versionen and page-based billing plus storage, logging and review costs. Start with a small document set and define required fields, valid values and an explicit state for incomplete results. This separates document, model and downstream errors.
+Create a processor instance in the intended project and region before automating requests. Define IAM roles, Cloud Storage locations, retention, and accepted file types. Synchronous processing fits a short individual request; batch processing is better when inputs and results are staged in storage and reviewed asynchronously.
 
-## A practical workflow
+## A controlled document workflow
 
-Create a reference set containing clean, poor and unusual examples. Send Google Document AI output to an isolated test destination, record document identifiers and compare fields with a reviewed reference. Only then route data to an ERP, CRM, spreadsheet or automation. Reprocessing should be idempotent.
+Use separate fixtures for clean scans, handwriting, tables, and multi-page PDFs. Compare text anchors, returned entities, and page locations with a labelled reference set, and keep the processor version beside each prediction. Missing required fields or contradictory values should enter a review queue instead of flowing directly into an ERP.
 
-## Integration and operations
+## Training and evaluation
 
-Plan intake, API authentication, webhooks or batch jobs, retries and safe storage of source and result. page-based billing plus storage, logging and review costs Quotas, version changes, exception queues and a manual fallback belong in the runbook.
+A Custom Extractor starts with a schema and representative labels; a foundation approach is different from a narrow template model when layouts vary. Measure field-level precision, omissions, classification errors, and latency separately. Image quality and document splitting can fail before the requested business field is even evaluated.
 
-## Quality and limits
+## Integrations and operations
 
-Measure field accuracy separately from classification and throughput. Use real layouts, scan quality, languages and page counts. The service extracts data; it does not provide business approval or a complete accounting system. Low confidence, missing required fields and contradictions should enter a visible review path.
+Cloud Storage, BigQuery, and other Google services can form a useful pipeline, but each hand-off needs its own permission boundary. Track quotas, failed batches, retry behaviour, and cost per page. When a processor version changes, replay the same fixtures before accepting a new output contract.
 
-## Data, privacy and governance
+## Data and pricing logic
 
-Align region, retention, access, encryption, subprocessors and deletion with the sensitivity of the documents. Personal, financial and identity data require an approved project and access model. Logs should explain the processing path without multiplying raw documents unnecessarily.
+Identity, financial, or health documents require an explicit decision on region, retention, access, logs, and deletion. Pricing is processor- and page-related; storage, network, BigQuery, and human review may add separate costs. Use the current Google Cloud pricing page rather than an old comparison table.
 
-## Costs and decision boundary
+## Editorial assessment
 
-Cost may depend on pages, documents, API calls, storage, integrations and human rework. Check the provider's current offer rather than copying prices from an old comparison. A useful pilot measures cost per successfully reviewed document, not only cost per API request.
-
-## Editorial Assessment
-
-Google Document AI is worth evaluating when its document classes, review ownership and integration boundary are explicit. It is not a substitute for accounting controls or human approval. Choose a narrower local parser or a specialized API when cloud governance, layout diversity or operating cost makes this platform disproportionate.
+Google Document AI is a strong fit when a team already operates Google Cloud and can own processor lifecycle, IAM, and storage governance. It is especially useful when OCR, layout understanding, and custom extraction belong in one controlled platform. A small email parser or local workflow may be better served by [parseur](/en/tools/parseur/) or [tesseract-ocr](/en/tools/tesseract-ocr/).
 
 ## Alternatives
 
-- [tesseract-ocr](/en/tools/tesseract-ocr/): A different scope or operating model for document extraction.
-- [mindee](/en/tools/mindee/): A different scope or operating model for document extraction.
-- [veryfi](/en/tools/veryfi/): A different scope or operating model for document extraction.
-- [rossum](/en/tools/rossum/): A different scope or operating model for document extraction.
+- [mindee](/en/tools/mindee/): An API-first parser for developers who want application-level control of model responses.
+- [veryfi](/en/tools/veryfi/): A focused route for financial documents and structured accounting data.
+- [rossum](/en/tools/rossum/): An operational review and exception workflow for recurring business documents.
+- [parseur](/en/tools/parseur/): A mailbox, template, and export-oriented route for incoming files.
 
 ## FAQ
 
-**What should the first pilot measure?**
+**Which processor fits tables and checkboxes?**
 
-Measure field accuracy, exception rate, processing time and cost per reviewed document.
+Form Parser is the practical starting point for structured forms, key-value pairs, tables, and selection marks. A custom business schema may require Custom Extractor instead.
 
-**Can extracted fields be posted without review?**
+**Can Document AI post accounting entries by itself?**
 
-No. Define approval and reconciliation rules downstream; uncertain or contradictory results need a review path.
+No. Downstream rules must verify required fields, totals, suppliers, and permissions before another system performs a posting or approval.
 
-**Which input documents belong in the test set?**
+**When should a team create a Custom Extractor?**
 
-Include representative formats, layouts, poor scans, languages and multi-page cases that occur in production.
+Use one when a recurring document class is not represented well by a pretrained processor and the team can provide a stable schema with representative examples. Layout variation belongs in training and testing.
 
-**When should a team choose another tool?**
+**What belongs in a Cloud pilot decision?**
 
-Choose another tool when the required document scope, data boundary or operating model is narrower than this service.
+Agree on region, IAM, storage retention, logging, page costs, and a manual fallback first. Otherwise the pilot measures a demo rather than a production boundary.
