@@ -20,65 +20,59 @@ translation: full
 ---
 # Mindee
 
-Mindee is an API-oriented document AI platform for developers. Prebuilt and customizable parsers help applications extract fields from invoices, receipts and other documents.
+Mindee is an API- and SDK-oriented document-AI platform for developers. Prebuilt models such as invoice, receipt, or passport return structured responses while your application owns upload, authentication, validation, and review. That division is the product's strength and the team's responsibility.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/mindee-editorial.webp" alt="Document processing workflow for Mindee" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/mindee-editorial.webp" alt="Mindee API document model returning structured fields" loading="lazy" decoding="async" /></figure>
 
-## Who it is for and the problem
+## Select the model
 
-Mindee fits teams that receive recurring documents and need to place extracted data inside a reviewable process. The important question is who owns intake, extraction, exceptions and approval. Mindee is a developer building block, not a complete end-to-end accounting system.
+Choose a model from the actual input: an invoice parser is not automatically suitable for passports or free-form contracts. Check supported document types and returned fields in current developer documentation. Custom documents require a separate plan for schema, model approach, annotations, and examples.
 
-## Core functions in context
+## API and SDK boundary
 
-The useful building blocks are API- und SDK-orientierte Einbindung in eigene Anwendungen, Vorgefertigte Parser plus eigene Felder und Dokumenttypen and Anwendungsseitige Validierung, Speicherung, Retries und Review müssen geplant werden. Start with a small document set and define required fields, valid values and an explicit state for incomplete results. This separates document, model and downstream errors.
+Integration starts with an API key, an upload, and a response containing fields, positions, and model-specific metadata. An official SDK can simplify the call but does not solve failure handling. Attach every response to your own document ID and retain source and result according to policy.
 
-## A practical workflow
+## Application validation
 
-Create a reference set containing clean, poor and unusual examples. Send Mindee output to an isolated test destination, record document identifiers and compare fields with a reviewed reference. Only then route data to an ERP, CRM, spreadsheet or automation. Reprocessing should be idempotent.
+Mindee extracts data; the application decides whether it is plausible and allowed. Validate invoice totals, currency, date, supplier, and required fields with deterministic rules. Route low-confidence or contradictory values to review instead of treating them as approved business objects.
 
-## Integration and operations
+## Custom model work
 
-Plan intake, API authentication, webhooks or batch jobs, retries and safe storage of source and result. Anwendungsseitige Validierung, Speicherung, Retries und Review müssen geplant werden Quotas, version changes, exception queues and a manual fallback belong in the runbook.
+Building a custom model is a different project from calling a prebuilt endpoint. Define entities, annotations, layout variation, and a test set before training or changing versions. Version schemas and parser responses so a field change cannot silently break a downstream service.
 
-## Quality and limits
+## Operations and integrations
 
-Measure field accuracy separately from classification and throughput. Use real layouts, scan quality, languages and page counts. Mindee is a developer building block, not a complete end-to-end accounting system. Low confidence, missing required fields and contradictions should enter a visible review path.
+Plan queueing, rate limits, retries, observability, and hand-off to an ERP, CRM, or database. Synchronous callers need safe timeout retries; asynchronous jobs need an explicit status and deadline rather than unbounded polling.
 
-## Data, privacy and governance
+## Privacy and cost
 
-Align region, retention, access, encryption, subprocessors and deletion with the sensitivity of the documents. Personal, financial and identity data require an approved project and access model. Logs should explain the processing path without multiplying raw documents unnecessarily.
+Agree on region, deletion, key handling, and onward sharing of original files. Pricing depends on the chosen model and usage; API calls, storage, and your own review application add work. Use current Mindee terms rather than copying an old price into a catalogue card.
 
-## Costs and decision boundary
+## Editorial assessment
 
-Cost may depend on pages, documents, API calls, storage, integrations and human rework. Check the provider's current offer rather than copying prices from an old comparison. A useful pilot measures cost per successfully reviewed document, not only cost per API request.
-
-## Editorial Assessment
-
-Mindee is worth evaluating when its document classes, review ownership and integration boundary are explicit. It is not a substitute for accounting controls or human approval. Choose a narrower local parser or a specialized API when cloud governance, layout diversity or operating cost makes this platform disproportionate.
+Mindee fits developers who want a clear API boundary and ownership of validation and UI. Teams wanting a visual mailbox or ready queue should compare [parseur](/en/tools/parseur/) or [rossum](/en/tools/rossum/); teams invested in Google processors should compare [google-document-ai](/en/tools/google-document-ai/).
 
 ## Alternatives
 
-- [google-document-ai](/en/tools/google-document-ai/): A different scope or operating model for document extraction.
-- [veryfi](/en/tools/veryfi/): A different scope or operating model for document extraction.
-- [docparser](/en/tools/docparser/): A different scope or operating model for document extraction.
-- [klippa](/en/tools/klippa/): A different scope or operating model for document extraction.
+- [google-document-ai](/en/tools/google-document-ai/): Processor and cloud governance for OCR, layout, and custom extraction.
+- [veryfi](/en/tools/veryfi/): API-focused handling of financial documents and accounting fields.
+- [docparser](/en/tools/docparser/): A visible rule editor for stable layouts and field regions.
+- [klippa](/en/tools/klippa/): Several concrete document classes through OCR and document APIs.
 
 ## FAQ
 
-**What should the first pilot measure?**
+**What belongs in application validation?**
 
-Measure field accuracy, exception rate, processing time and cost per reviewed document.
+Required fields, totals, currency, date logic, supplier matching, and expected document class. A confidence score does not answer those business questions.
 
-**Can extracted fields be posted without review?**
+**When is a prebuilt model enough?**
 
-No. Define approval and reconciliation rules downstream; uncertain or contradictory results need a review path.
+When the document type and requested fields match the official model contract and fixtures represent real variation. Investigate a custom approach only after recurring gaps are measured.
 
-**Which input documents belong in the test set?**
+**How can a team prevent schema drift?**
 
-Include representative formats, layouts, poor scans, languages and multi-page cases that occur in production.
+Version the response contract, run contract tests, and shadow a new model beside the old one before switching. This makes field changes observable.
 
-**When should a team choose another tool?**
+**Who should choose Mindee?**
 
-Choose another tool when the required document scope, data boundary or operating model is narrower than this service.
+Teams with their own application and review logic that are willing to own API operations and data governance. A ready-made business queue is outside this product shape.

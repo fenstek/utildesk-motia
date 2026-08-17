@@ -20,65 +20,59 @@ translation: full
 ---
 # Klippa
 
-Klippa verarbeitet Rechnungen, Belege, Ausweisdokumente und weitere Geschäftsdokumente per OCR und API. Für Teams ist entscheidend, welche Felder benötigt werden und wie unklare Ergebnisse in den Finanzprozess gelangen.
+Klippa bietet OCR- und Document-AI-APIs für Dokumenttypen wie Rechnungen, Belege, Ausweise und andere Geschäftsdokumente. Für eine Integration ist die Auswahl des passenden Dokumentmodells entscheidend: Ein Receipt- oder Invoice-Workflow hat andere Felder und Prüfungen als eine Identitätsprüfung.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/klippa-editorial.webp" alt="Dokumentverarbeitungs-Workflow für Klippa" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/klippa-editorial.webp" alt="Klippa-OCR-API mit Belegfeldern und Validierungsschritt" loading="lazy" decoding="async" /></figure>
 
-## Für wen und welches Problem?
+## Dokumentklasse zuerst
 
-Für Klippa passen Teams, die wiederkehrende Dokumente digital annehmen und die Ausgabe in einen überprüfbaren Prozess einbauen. Entscheidend ist nicht die Demo-Erkennung, sondern die Frage, wer Eingang, Extraktion, Ausnahme und Freigabe verantwortet. Die API macht Extraktion zugänglich, nimmt dem Unternehmen aber keine Datenschutz- und Prüfpflicht ab.
+Definiere den Eingang anhand des tatsächlichen Dokuments und nicht anhand des Zielsystems. Rechnungen brauchen etwa Lieferant, Nummer, Datum, Positionen und Summen; Ausweise bringen Identitätsfelder und andere Schutzanforderungen. Ein gemischter Upload muss klassifiziert oder sauber getrennt werden.
 
-## Kernfunktionen im Prozess
+## API-Workflow
 
-Die relevanten Bausteine sind OCR- und Extraktions-APIs für mehrere Dokumentklassen, Feldvalidierung, Confidence-Handling und Übergabe an eigene Systeme und Dokumentenarten, Datenregionen, Rollen und Aufbewahrung vor dem Pilot klären. Beginne mit zwei oder drei Dokumentfamilien und definiere Pflichtfelder, erlaubte Werte und einen Zustand für unvollständige Ergebnisse. So bleibt sichtbar, ob ein Fehler aus dem Dokument, dem Modell oder der eigenen Nachbearbeitung stammt.
+Sende ein zulässiges Bild oder PDF über den dokumentierten API-Endpunkt und speichere Request-ID, Rohdatei und strukturierte Antwort getrennt. Baue eine Zustandsmaschine für angenommen, verarbeitet, zu prüfen und abgeschlossen. Retries dürfen weder doppelte Belege noch doppelte Identitätsfälle erzeugen.
 
-## Praktischer Workflow
+## Confidence und Validierung
 
-Lege ein Referenzset mit guten, schlechten und ungewöhnlichen Beispielen an. Lass Klippa zunächst in eine isolierte Testablage schreiben, protokolliere Dokument-ID und Modellantwort und vergleiche die Felder mit einer geprüften Referenz. Erst danach sollte die Ausgabe an ERP, CRM, Tabelle oder Automatisierung weitergehen. Wiederholungen müssen idempotent behandelt werden.
+Nutze Konfidenzen als Signal, nicht als fachliche Wahrheit. Prüfe Summen, Datumslogik, Belegnummern, Länderfelder und Pflichtwerte mit eigenen Regeln. Bei Ausweisen kommen zusätzlich Zugriffs-, Einwilligungs- und Löschregeln hinzu; OCR allein beweist keine Identität.
 
-## Integration und Betrieb
+## Integrationen
 
-Plane Eingang, API-Authentifizierung, Webhook oder Batch, Retries und die sichere Ablage von Original und Ergebnis. Dokumentenarten, Datenregionen, Rollen und Aufbewahrung vor dem Pilot klären Für den laufenden Betrieb gehören Quoten, Versionsänderungen, Fehlerschlangen und ein manueller Fallback in die Dokumentation.
+Klippa kann in eigene Apps und Backoffice-Prozesse eingebettet werden. Plane Webhooks oder Polling, Fehlerantworten, Rate Limits und eine sichere Übergabe an ERP, Expense- oder KYC-System. Die eigentliche Freigabe sollte nach der API-Antwort stattfinden, nicht in einem unüberwachten Importjob.
 
-## Qualität und Grenzen
+## Testdatensatz
 
-Prüfe Feldgenauigkeit getrennt von Dokumentklassifikation und Durchlaufzeit. Nutze reale Layouts, Scanqualitäten, Sprachen und Seitenzahlen. Die API macht Extraktion zugänglich, nimmt dem Unternehmen aber keine Datenschutz- und Prüfpflicht ab. Niedrige Konfidenz, fehlende Pflichtfelder und widersprüchliche Werte müssen sichtbar in einen Review-Pfad gelangen.
+Sammle gerade und schiefe Fotos, unterschiedliche Beleuchtung, handschriftliche Ergänzungen, mehrere Sprachen und abgeschnittene Seiten. Miss pro Dokumentklasse Feldfehler und manuelle Nacharbeit. Ein gutes Ergebnis bei Rechnungen sagt nichts über Ausweise oder Belege aus.
 
-## Daten, Privacy und Governance
+## Datenschutz und Kosten
 
-klippa: Vor dem Einsatz sind Region, Aufbewahrung, Zugriff, Verschlüsselung, Unterauftragnehmer und Löschung mit dem Schutzbedarf abzugleichen. Personen-, Finanz- oder Identitätsdaten dürfen nur in freigegebenen Projekten verarbeitet werden. Protokolle sollten den Bearbeitungsweg zeigen, ohne mehr Rohdaten als nötig zu vervielfältigen.
-
-## Kosten und Entscheidung
-
-klippa: Die Kostenlogik hängt vom Anbieter und der Nutzung ab: mögliche Treiber sind Seiten, Dokumente, API-Aufrufe, Speicher, Integrationen und menschliche Nacharbeit. Prüfe das aktuelle Angebot des Anbieters statt Preise aus alten Vergleichen zu übernehmen. Ein sinnvoller Pilot misst Kosten pro erfolgreich geprüftem Dokument, nicht nur pro API-Aufruf.
+Dokumenttyp, Region, Aufbewahrung, Rollen und Unterauftragnehmer müssen vor echten Kundendaten geklärt werden. Preise können von Dokumentklasse, Volumen, API-Produkt und Vertrag abhängen; aktuelle Klippa-Konditionen sind maßgeblich. Rechne Speicher, Review und Korrekturworkflow separat.
 
 ## Redaktionelle Einschätzung
 
-Klippa ist eine gute Prüfoption, wenn Dokumentklassen, Review-Verantwortung und Integrationsgrenze klar sind. Der Dienst ersetzt keine Buchungskontrolle und keine menschliche Freigabe. Wähle einen lokalen Parser oder eine spezialisierte API, wenn Cloud-Governance, Layoutvielfalt oder Betriebskosten dagegen sprechen.
+Klippa passt zu Teams, die mehrere konkrete Dokumentklassen über APIs in vorhandene Anwendungen bringen wollen. Ein einzelner, mailbasierter Parser ist mit [parseur](/tools/parseur/) einfacher; für eine Review-Queue oder ein eigenes Entwickler-API sind [rossum](/tools/rossum/) und [mindee](/tools/mindee/) andere Zuschnitte.
 
 ## Alternativen
 
-- [mindee](/tools/mindee/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [veryfi](/tools/veryfi/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [rossum](/tools/rossum/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [docparser](/tools/docparser/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
+- [mindee](/tools/mindee/): Entwicklerfreundliche Parser-APIs und SDKs für eigene Anwendungen.
+- [veryfi](/tools/veryfi/): Finanzdokumente mit spezialisiertem Receipt- und Invoice-Fokus.
+- [rossum](/tools/rossum/): Queue-basierter Ausnahme- und Review-Betrieb.
+- [parseur](/tools/parseur/): Mailbox-Parser für wiederkehrende E-Mail-Eingänge.
 
 ## FAQ
 
-**Was sollte ein erster Pilot messen?**
+**Ist ein hoher Confidence-Wert eine Freigabe?**
 
-Miss Feldgenauigkeit, Ausnahmequote, Laufzeit und Kosten pro geprüftem Dokument.
+Nein. Er beschreibt die Modellzuversicht, nicht ob Lieferant, Summe, Identität oder Buchungsregel fachlich stimmt. Dafür braucht es eigene Validierungen.
 
-**Dürfen extrahierte Felder ungeprüft gebucht werden?**
+**Wie testet man Rechnungen und Ausweise getrennt?**
 
-klippa: Nein. Freigabe- und Abgleichregeln gehören in den nachgelagerten Prozess; unsichere oder widersprüchliche Werte brauchen Review.
+Lege getrennte Klassen, Referenzwerte, Zugriffskreise und Erfolgskriterien an. Vermische ihre Ergebnisse nicht in einer einzigen Durchschnittsquote.
 
-**Welche Dokumente gehören in den Testdatensatz?**
+**Wie sollte ein Retry funktionieren?**
 
-Nimm reale Formate, Layouts, schlechte Scans, Sprachen und mehrseitige Fälle aus dem späteren Betrieb auf.
+Verwende eine stabile interne Dokument-ID und speichere den API-Status. Ein erneuter Request darf nur nach einer bewusst geprüften Unsicherheit entstehen.
 
-**Wann sollte ein Team ein anderes Tool wählen?**
+**Wann reicht Klippa nicht aus?**
 
-Wähle ein anderes Tool, wenn Dokumentumfang, Datenschutzgrenze oder Betriebsmodell deutlich enger sind.
+Wenn eure Regeln eine vollständige Review-Oberfläche, komplexe Klassifikation oder eine bestimmte Cloud-Region voraussetzen. Diese Anforderungen müssen vor dem Vertrag geprüft werden.

@@ -20,65 +20,59 @@ translation: full
 ---
 # Docparser
 
-Docparser extracts structured data from recurring PDFs and documents. The approach fits best when layouts, positions and expected fields are stable enough for repeatable parsing.
+Docparser is a rule-based parser for recurring document layouts. You create a parser for a layout, upload samples, and mark fixed positions, keyword anchors, or tables. That visibility is valuable for stable forms, but it also creates maintenance work when suppliers redesign their PDFs.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/docparser-editorial.webp" alt="Document processing workflow for Docparser" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/docparser-editorial.webp" alt="Docparser rule marking an invoice field and a table region" loading="lazy" decoding="async" /></figure>
 
-## Who it is for and the problem
+## One parser per layout
 
-Docparser fits teams that receive recurring documents and need to place extracted data inside a reviewable process. The important question is who owns intake, extraction, exceptions and approval. Highly variable layouts increase maintenance; a parser is not a universal OCR model.
+Start with an invoice template or a blank parser and separate layouts that do not share geometry. Fixed-position extraction fits a field that stays in one place; keyword or variable-text rules follow an anchor. Table rules handle repeated rows such as line items.
 
-## Core functions in context
+## Rules and filters
 
-The useful building blocks are Parser-Regeln, Zonen und Feldzuordnung für bekannte Dokumentlayouts, Weitergabe an Tabellen, Webhooks oder verbundene Workflows and Testset mit Layoutvarianten und Fallback für nicht passende Dokumente. Start with a small document set and define required fields, valid values and an explicit state for incomplete results. This separates document, model and downstream errors.
+A rule can crop a region, format a date, replace text, or keep selected rows. Filters are useful when the initial crop is correct. They are not a substitute for checking the anchor when OCR has located the wrong label or the supplier has changed its form.
 
-## A practical workflow
+## Import and result handling
 
-Create a reference set containing clean, poor and unusual examples. Send Docparser output to an isolated test destination, record document identifiers and compare fields with a reviewed reference. Only then route data to an ERP, CRM, spreadsheet or automation. Reprocessing should be idempotent.
+Documents can arrive through upload, URL, or a private parser mailbox. The HTTP API imports files and retrieves results, while webhooks can push completed data to an application. Store the remote_id so an extracted result remains connected to the internal document record.
 
-## Integration and operations
+## Testing layout changes
 
-Plan intake, API authentication, webhooks or batch jobs, retries and safe storage of source and result. Testset mit Layoutvarianten und Fallback für nicht passende Dokumente Quotas, version changes, exception queues and a manual fallback belong in the runbook.
+Include several suppliers, page breaks, blank fields, and tables with different row counts in the fixture set. A new PDF header can move a zone without producing an HTTP error. Tests should therefore inspect field placement, row counts, and formats, not only request status.
 
-## Quality and limits
+## Export and security
 
-Measure field accuracy separately from classification and throughput. Use real layouts, scan quality, languages and page counts. Highly variable layouts increase maintenance; a parser is not a universal OCR model. Low confidence, missing required fields and contradictions should enter a visible review path.
+Docparser can deliver structured data through API, webhooks, and integrations. Keep API keys in secret storage and avoid query-string credentials. Limit destinations and record which parser processed each source file.
 
-## Data, privacy and governance
+## Pricing and operations
 
-Align region, retention, access, encryption, subprocessors and deletion with the sensitivity of the documents. Personal, financial and identity data require an approved project and access model. Logs should explain the processing path without multiplying raw documents unnecessarily.
+Check current pricing against document volume, parser count, and integrations. The recurring cost is often rule creation and maintenance rather than the first upload. Highly heterogeneous documents may be better served by a model or API that needs less manual layout work.
 
-## Costs and decision boundary
+## Editorial assessment
 
-Cost may depend on pages, documents, API calls, storage, integrations and human rework. Check the provider's current offer rather than copying prices from an old comparison. A useful pilot measures cost per successfully reviewed document, not only cost per API request.
-
-## Editorial Assessment
-
-Docparser is worth evaluating when its document classes, review ownership and integration boundary are explicit. It is not a substitute for accounting controls or human approval. Choose a narrower local parser or a specialized API when cloud governance, layout diversity or operating cost makes this platform disproportionate.
+Docparser is a sensible choice when layouts are known and a team wants extraction rules it can inspect and edit. For learning-based routing, a processor family, or a ready operational queue, [nanonets](/en/tools/nanonets/), [google-document-ai](/en/tools/google-document-ai/), or [rossum](/en/tools/rossum/) are different fits.
 
 ## Alternatives
 
-- [parseur](/en/tools/parseur/): A different scope or operating model for document extraction.
-- [nanonets](/en/tools/nanonets/): A different scope or operating model for document extraction.
-- [mindee](/en/tools/mindee/): A different scope or operating model for document extraction.
-- [veryfi](/en/tools/veryfi/): A different scope or operating model for document extraction.
+- [parseur](/en/tools/parseur/): Mailbox and template workflow with webhook and export paths.
+- [nanonets](/en/tools/nanonets/): Classification and model routing for changing document classes.
+- [mindee](/en/tools/mindee/): API and SDK integration without a layout-rule editor.
+- [rossum](/en/tools/rossum/): Review queue for operational invoice and document processes.
 
 ## FAQ
 
-**What should the first pilot measure?**
+**When should a document get its own parser?**
 
-Measure field accuracy, exception rate, processing time and cost per reviewed document.
+When its field positions or table structure cannot be trusted with an existing parser. Hiding several incompatible supplier layouts in one rule makes failures harder to diagnose.
 
-**Can extracted fields be posted without review?**
+**Which rule fits line items?**
 
-No. Define approval and reconciliation rules downstream; uncertain or contradictory results need a review path.
+Start with a Table Data or Line Items rule for repeated rows. Then test columns, blank values, and page breaks using real samples.
 
-**Which input documents belong in the test set?**
+**Do webhooks mean the result is immediately ready?**
 
-Include representative formats, layouts, poor scans, languages and multi-page cases that occur in production.
+They can deliver a completed parsing result to your endpoint. The receiver still needs retry handling and a reliable parser and document identifier.
 
-**When should a team choose another tool?**
+**When does Docparser become too costly to maintain?**
 
-Choose another tool when the required document scope, data boundary or operating model is narrower than this service.
+When suppliers frequently redesign layouts or semantically similar fields move between locations. A trainable model may then reduce the rule inventory.

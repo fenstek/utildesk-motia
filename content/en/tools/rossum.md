@@ -20,65 +20,59 @@ translation: full
 ---
 # Rossum
 
-Rossum is a document AI platform for recurring business documents such as invoices, purchase orders and delivery notes. Its focus is extraction, exception handling and operational review.
+Rossum is a document-automation platform for operational document streams, especially accounts payable. Its distinctive unit is the queue and review workflow: documents are received, classified, extracted, and sent to an operator when an exception needs attention. The resulting data still has to satisfy ERP and approval rules.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/rossum-editorial.webp" alt="Document processing workflow for Rossum" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/rossum-editorial.webp" alt="Rossum queue showing extracted invoice fields and a review exception" loading="lazy" decoding="async" /></figure>
 
-## Who it is for and the problem
+## Document streams and queues
 
-Rossum fits teams that receive recurring documents and need to place extracted data inside a reviewable process. The important question is who owns intake, extraction, exceptions and approval. A review workflow remains necessary when documents create business obligations.
+Define which document types enter which queue and which fields matter there. Invoices, purchase orders, and delivery notes need different controls. A useful queue exposes status, ownership, and next action rather than merely storing a JSON response.
 
-## Core functions in context
+## Extraction and review
 
-The useful building blocks are Dokumenttypen und Felder für Accounts-Payable- und Operations-Prozesse, Human-in-the-loop für Ausnahmen und unklare Extraktionen and Integration, Rollen, Queue-Betrieb und Auditierbarkeit als Einführungsthemen. Start with a small document set and define required fields, valid values and an explicit state for incomplete results. This separates document, model and downstream errors.
+Rossum can extract document fields, but an operator still needs to handle uncertain values and business exceptions. Compare totals, suppliers, order references, and tax data with the source document. Corrections should remain traceable and must not silently create a wrong posting.
 
-## A practical workflow
+## A bounded rollout
 
-Create a reference set containing clean, poor and unusual examples. Send Rossum output to an isolated test destination, record document identifiers and compare fields with a reviewed reference. Only then route data to an ERP, CRM, spreadsheet or automation. Reprocessing should be idempotent.
+Start with a narrow supplier or invoice stream and collect real layout variants. Measure field quality, straight-through rate, and review minutes separately. A document can be extracted accurately and still require review because an order is missing or the invoice is a duplicate.
 
-## Integration and operations
+## Integration and ownership
 
-Plan intake, API authentication, webhooks or batch jobs, retries and safe storage of source and result. Integration, Rollen, Queue-Betrieb und Auditierbarkeit als Einführungsthemen Quotas, version changes, exception queues and a manual fallback belong in the runbook.
+Plan API, exports, webhooks, ERP destination, roles, and escalation together. Someone must own unprocessed queue items; a technical retry must not create a second invoice. Preserve links between the original file, extracted data, and final decision.
 
-## Quality and limits
+## Evaluation and limits
 
-Measure field accuracy separately from classification and throughput. Use real layouts, scan quality, languages and page counts. A review workflow remains necessary when documents create business obligations. Low confidence, missing required fields and contradictions should enter a visible review path.
+Test poor scans, new suppliers, credit notes, multi-page documents, and missing order numbers. Evaluate classification and routing as well as OCR fields. Rossum does not decide your accounting treatment, tax interpretation, or internal approval matrix.
 
-## Data, privacy and governance
+## Data and pricing
 
-Align region, retention, access, encryption, subprocessors and deletion with the sensitivity of the documents. Personal, financial and identity data require an approved project and access model. Logs should explain the processing path without multiplying raw documents unnecessarily.
+Financial documents need an explicit rule for region, roles, retention, and deletion. Check Rossum's current commercial terms because scope and pricing depend on the process. Budget for review, ERP work, and exception volume in addition to the service itself.
 
-## Costs and decision boundary
+## Editorial assessment
 
-Cost may depend on pages, documents, API calls, storage, integrations and human rework. Check the provider's current offer rather than copying prices from an old comparison. A useful pilot measures cost per successfully reviewed document, not only cost per API request.
-
-## Editorial Assessment
-
-Rossum is worth evaluating when its document classes, review ownership and integration boundary are explicit. It is not a substitute for accounting controls or human approval. Choose a narrower local parser or a specialized API when cloud governance, layout diversity or operating cost makes this platform disproportionate.
+Rossum fits teams that need a visible operational review process for recurring business documents. Teams with their own review UI may prefer [mindee](/en/tools/mindee/) or [veryfi](/en/tools/veryfi/); stable layouts with explicit rules may favour [docparser](/en/tools/docparser/).
 
 ## Alternatives
 
-- [google-document-ai](/en/tools/google-document-ai/): A different scope or operating model for document extraction.
-- [nanonets](/en/tools/nanonets/): A different scope or operating model for document extraction.
-- [veryfi](/en/tools/veryfi/): A different scope or operating model for document extraction.
-- [klippa](/en/tools/klippa/): A different scope or operating model for document extraction.
+- [mindee](/en/tools/mindee/): Developer API for a custom review and integration surface.
+- [veryfi](/en/tools/veryfi/): API-first financial-document extraction for an application you own.
+- [docparser](/en/tools/docparser/): Rule-based layout control for known document forms.
+- [nanonets](/en/tools/nanonets/): Classification, model routing, and workflow automation.
 
 ## FAQ
 
-**What should the first pilot measure?**
+**When should an invoice enter review?**
 
-Measure field accuracy, exception rate, processing time and cost per reviewed document.
+When a required field is missing, confidence is insufficient, the purchase-order link fails, or a business conflict appears. Set thresholds from your own labelled fixtures.
 
-**Can extracted fields be posted without review?**
+**Does Rossum replace an ERP?**
 
-No. Define approval and reconciliation rules downstream; uncertain or contradictory results need a review path.
+No. It can prepare document data and handle exceptions; vendor master data, coding, approval, and posting remain in the destination process.
 
-**Which input documents belong in the test set?**
+**What should a useful pilot measure?**
 
-Include representative formats, layouts, poor scans, languages and multi-page cases that occur in production.
+Track field errors, routing correctness, straight-through rate, review minutes, and duplicate cases. OCR accuracy alone hides operational work.
 
-**When should a team choose another tool?**
+**When is an API-first alternative preferable?**
 
-Choose another tool when the required document scope, data boundary or operating model is narrower than this service.
+When the team already owns the review interface and business rules. A focused extraction API can then provide data without another queue layer.

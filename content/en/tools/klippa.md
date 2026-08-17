@@ -20,65 +20,59 @@ translation: full
 ---
 # Klippa
 
-Klippa processes invoices, receipts, identity documents and other business documents through OCR and APIs. Teams need to define required fields and how uncertain results enter the finance workflow.
+Klippa provides OCR and document-AI APIs for invoices, receipts, identity documents, and other business files. The important integration decision is choosing the right document model: an invoice or receipt workflow has different fields and checks from an identity workflow.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/klippa-editorial.webp" alt="Document processing workflow for Klippa" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/klippa-editorial.webp" alt="Klippa OCR API returning receipt fields for validation" loading="lazy" decoding="async" /></figure>
 
-## Who it is for and the problem
+## Start with the document class
 
-Klippa fits teams that receive recurring documents and need to place extracted data inside a reviewable process. The important question is who owns intake, extraction, exceptions and approval. The API makes extraction accessible, but it does not remove privacy or review responsibilities.
+Define the intake from the source document rather than from the destination system. An invoice may need supplier, number, date, line items, and totals; an identity document has different fields and a stronger privacy boundary. Mixed uploads need classification or deliberate separation.
 
-## Core functions in context
+## API workflow
 
-The useful building blocks are OCR- und Extraktions-APIs für mehrere Dokumentklassen, Feldvalidierung, Confidence-Handling und Übergabe an eigene Systeme and Dokumentenarten, Datenregionen, Rollen und Aufbewahrung vor dem Pilot klären. Start with a small document set and define required fields, valid values and an explicit state for incomplete results. This separates document, model and downstream errors.
+Send an allowed image or PDF through the documented API and keep request ID, source file, and structured response distinct. Model states such as accepted, processed, review, and complete. Retries must not create duplicate expenses or identity cases.
 
-## A practical workflow
+## Confidence and validation
 
-Create a reference set containing clean, poor and unusual examples. Send Klippa output to an isolated test destination, record document identifiers and compare fields with a reviewed reference. Only then route data to an ERP, CRM, spreadsheet or automation. Reprocessing should be idempotent.
+Treat confidence as a signal, not a business truth. Validate totals, date rules, document numbers, country fields, and required values in your application. For identity material, access, consent, and deletion controls are additional obligations; OCR does not prove identity.
 
-## Integration and operations
+## Integrations
 
-Plan intake, API authentication, webhooks or batch jobs, retries and safe storage of source and result. Dokumentenarten, Datenregionen, Rollen und Aufbewahrung vor dem Pilot klären Quotas, version changes, exception queues and a manual fallback belong in the runbook.
+Klippa can sit inside a custom application or back-office process. Plan webhooks or polling, error responses, rate limits, and the hand-off to ERP, expense, or KYC systems. Approval should happen after the response has passed validation, not inside an unattended import job.
 
-## Quality and limits
+## Test coverage
 
-Measure field accuracy separately from classification and throughput. Use real layouts, scan quality, languages and page counts. The API makes extraction accessible, but it does not remove privacy or review responsibilities. Low confidence, missing required fields and contradictions should enter a visible review path.
+Use straight and skewed photos, varied lighting, handwritten additions, multiple languages, and clipped pages. Report field errors and review effort per document class. Good invoice results do not establish performance for identity documents or receipts.
 
-## Data, privacy and governance
+## Privacy and cost
 
-Align region, retention, access, encryption, subprocessors and deletion with the sensitivity of the documents. Personal, financial and identity data require an approved project and access model. Logs should explain the processing path without multiplying raw documents unnecessarily.
+Agree on document types, region, retention, roles, and subprocessors before sending customer data. Current Klippa terms may vary by document class, volume, API product, and contract. Budget storage, review, and correction workflows separately.
 
-## Costs and decision boundary
+## Editorial assessment
 
-Cost may depend on pages, documents, API calls, storage, integrations and human rework. Check the provider's current offer rather than copying prices from an old comparison. A useful pilot measures cost per successfully reviewed document, not only cost per API request.
-
-## Editorial Assessment
-
-Klippa is worth evaluating when its document classes, review ownership and integration boundary are explicit. It is not a substitute for accounting controls or human approval. Choose a narrower local parser or a specialized API when cloud governance, layout diversity or operating cost makes this platform disproportionate.
+Klippa suits teams that need several concrete document classes embedded through APIs. A single email-driven parser may be simpler with [parseur](/en/tools/parseur/); teams needing queues or a developer-owned extraction layer should compare [rossum](/en/tools/rossum/) and [mindee](/en/tools/mindee/).
 
 ## Alternatives
 
-- [mindee](/en/tools/mindee/): A different scope or operating model for document extraction.
-- [veryfi](/en/tools/veryfi/): A different scope or operating model for document extraction.
-- [rossum](/en/tools/rossum/): A different scope or operating model for document extraction.
-- [docparser](/en/tools/docparser/): A different scope or operating model for document extraction.
+- [mindee](/en/tools/mindee/): Developer-oriented parser APIs and SDKs for custom applications.
+- [veryfi](/en/tools/veryfi/): Financial documents with a focused receipt and invoice route.
+- [rossum](/en/tools/rossum/): Queue-based exception and review operations.
+- [parseur](/en/tools/parseur/): Mailbox parsing for recurring email intake.
 
 ## FAQ
 
-**What should the first pilot measure?**
+**Does a high confidence score approve a document?**
 
-Measure field accuracy, exception rate, processing time and cost per reviewed document.
+No. It describes model certainty, not whether supplier, total, identity, or accounting rules are correct. Application-level validation is still required.
 
-**Can extracted fields be posted without review?**
+**How should invoices and identity documents be evaluated?**
 
-No. Define approval and reconciliation rules downstream; uncertain or contradictory results need a review path.
+Use separate classes, reference values, access groups, and success criteria. Do not hide their very different risks in one average score.
 
-**Which input documents belong in the test set?**
+**How should an API retry work?**
 
-Include representative formats, layouts, poor scans, languages and multi-page cases that occur in production.
+Keep a stable internal document ID and persist API status. Create a new request only after the uncertain state has been deliberately inspected.
 
-**When should a team choose another tool?**
+**When is Klippa not enough?**
 
-Choose another tool when the required document scope, data boundary or operating model is narrower than this service.
+When the workflow requires a full review UI, complex classification, or a specific processing region. Confirm those requirements before selecting the service.

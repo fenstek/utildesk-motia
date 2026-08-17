@@ -20,65 +20,59 @@ translation: full
 ---
 # Veryfi
 
-Veryfi ist eine API-first-Lösung für Belege, Rechnungen und Buchhaltungsdaten. Sie zielt auf strukturierte Geschäftsdaten, die Anwendungen anschließend validieren, abgleichen und weitergeben.
+Veryfi ist eine API-first-Lösung für Belege, Rechnungen und verwandte Finanzdokumente. Der praktische Kern ist nicht ein allgemeiner Dokumentkatalog, sondern die schnelle Übergabe strukturierter Ausgaben an eine eigene Expense-, Buchhaltungs- oder Reconciliation-Anwendung. Original und JSON-Ergebnis müssen dabei gemeinsam nachvollziehbar bleiben.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/veryfi-editorial.webp" alt="Dokumentverarbeitungs-Workflow für Veryfi" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/veryfi-editorial.webp" alt="Veryfi-API extrahiert Belegbetrag und Händlerdaten für eine Finanzprüfung" loading="lazy" decoding="async" /></figure>
 
-## Für wen und welches Problem?
+## Beleg oder Rechnung
 
-Für Veryfi passen Teams, die wiederkehrende Dokumente digital annehmen und die Ausgabe in einen überprüfbaren Prozess einbauen. Entscheidend ist nicht die Demo-Erkennung, sondern die Frage, wer Eingang, Extraktion, Ausnahme und Freigabe verantwortet. Ein strukturiertes JSON-Ergebnis ist noch keine geprüfte Buchung.
+Trenne Receipt- und Invoice-Fälle in den Tests. Für Belege sind Händler, Datum, Betrag, Steuer und Zeilen relevant; Rechnungen bringen zusätzlich Lieferant, Rechnungsnummer, Zahlungsbedingungen und häufig Positionstabellen. Welche Felder benötigt werden, entscheidet der nachgelagerte Abgleich.
 
-## Kernfunktionen im Prozess
+## Upload und Antwort
 
-Die relevanten Bausteine sind API-Extraktion für Rechnungen, Belege und verwandte Finanzdokumente, Strukturierte Felder für Weitergabe an Buchhaltung oder eigene Anwendungen und Review, Dublettenprüfung, Lieferantenabgleich und Löschkonzept bleiben Anwendungspflichten. Beginne mit zwei oder drei Dokumentfamilien und definiere Pflichtfelder, erlaubte Werte und einen Zustand für unvollständige Ergebnisse. So bleibt sichtbar, ob ein Fehler aus dem Dokument, dem Modell oder der eigenen Nachbearbeitung stammt.
+Eine eigene Anwendung sendet Bild oder PDF, bewahrt die interne Dokument-ID auf und verarbeitet die strukturierte API-Antwort. Implementiere Status, Timeout, Retry und Duplicate Detection, bevor Daten in ein Expense- oder ERP-System gelangen. Ein erfolgreicher API-Response ist keine fachliche Freigabe.
 
-## Praktischer Workflow
+## Abgleich statt blindes Speichern
 
-Lege ein Referenzset mit guten, schlechten und ungewöhnlichen Beispielen an. Lass Veryfi zunächst in eine isolierte Testablage schreiben, protokolliere Dokument-ID und Modellantwort und vergleiche die Felder mit einer geprüften Referenz. Erst danach sollte die Ausgabe an ERP, CRM, Tabelle oder Automatisierung weitergehen. Wiederholungen müssen idempotent behandelt werden.
+Vergleiche Händler oder Lieferant mit dem Stammdatensatz und Summen mit Zeilen sowie Steuer. Markiere unbekannte Währungen, ungewöhnliche Beträge und fehlende Pflichtfelder. Bei Belegen aus Mobilfotos muss der Prozess auch abgeschnittene, schiefe oder schlecht beleuchtete Bilder zurückweisen können.
 
-## Integration und Betrieb
+## Entwicklerbetrieb
 
-Plane Eingang, API-Authentifizierung, Webhook oder Batch, Retries und die sichere Ablage von Original und Ergebnis. Review, Dublettenprüfung, Lieferantenabgleich und Löschkonzept bleiben Anwendungspflichten Für den laufenden Betrieb gehören Quoten, Versionsänderungen, Fehlerschlangen und ein manueller Fallback in die Dokumentation.
+Plane Schlüsselverwaltung, Request-Limits, Observability und einen kleinen Replay-Speicher für Fehlerfälle. Halte Rohdatei, API-Antwort und die finale Korrektur referenzierbar. Wenn die Buchhaltungsanwendung ein eigenes Schema verlangt, mappe Felder explizit statt die API-Antwort ungeprüft durchzureichen.
 
-## Qualität und Grenzen
+## Qualität und Review
 
-Prüfe Feldgenauigkeit getrennt von Dokumentklassifikation und Durchlaufzeit. Nutze reale Layouts, Scanqualitäten, Sprachen und Seitenzahlen. Ein strukturiertes JSON-Ergebnis ist noch keine geprüfte Buchung. Niedrige Konfidenz, fehlende Pflichtfelder und widersprüchliche Werte müssen sichtbar in einen Review-Pfad gelangen.
+Erstelle Referenzen für Händler, Länder, Steuersätze, Währungen und typische Zeilen. Miss Feldfehler und Korrekturzeit pro Dokumenttyp. Ein Review soll die Originalansicht neben den Werten zeigen; nur eine Konfidenznummer reicht für eine Zahlungsentscheidung nicht.
 
-## Daten, Privacy und Governance
+## Daten und Preislogik
 
-veryfi: Vor dem Einsatz sind Region, Aufbewahrung, Zugriff, Verschlüsselung, Unterauftragnehmer und Löschung mit dem Schutzbedarf abzugleichen. Personen-, Finanz- oder Identitätsdaten dürfen nur in freigegebenen Projekten verarbeitet werden. Protokolle sollten den Bearbeitungsweg zeigen, ohne mehr Rohdaten als nötig zu vervielfältigen.
-
-## Kosten und Entscheidung
-
-veryfi: Die Kostenlogik hängt vom Anbieter und der Nutzung ab: mögliche Treiber sind Seiten, Dokumente, API-Aufrufe, Speicher, Integrationen und menschliche Nacharbeit. Prüfe das aktuelle Angebot des Anbieters statt Preise aus alten Vergleichen zu übernehmen. Ein sinnvoller Pilot misst Kosten pro erfolgreich geprüftem Dokument, nicht nur pro API-Aufruf.
+Finanzbelege enthalten personenbezogene und geschäftliche Daten. Prüfe Region, Aufbewahrung, Zugriff, Löschung und Auftragsverarbeitung. Die aktuelle Veryfi-Preislogik kann nach Dokumenttyp und Volumen variieren; berücksichtige zusätzlich Mobile-Upload, Speicherung, Review und die Integration in die Buchhaltung.
 
 ## Redaktionelle Einschätzung
 
-Veryfi ist eine gute Prüfoption, wenn Dokumentklassen, Review-Verantwortung und Integrationsgrenze klar sind. Der Dienst ersetzt keine Buchungskontrolle und keine menschliche Freigabe. Wähle einen lokalen Parser oder eine spezialisierte API, wenn Cloud-Governance, Layoutvielfalt oder Betriebskosten dagegen sprechen.
+Veryfi ist eine gute Kandidatin für Entwicklerteams, die Receipt- und Invoice-Daten schnell in eigene Finanzprozesse übernehmen wollen. Für freie Dokumentklassen sind [google-document-ai](/tools/google-document-ai/) oder [mindee](/tools/mindee/) breiter; für eine menschliche AP-Queue ist [rossum](/tools/rossum/) besser ausgerichtet.
 
 ## Alternativen
 
-- [mindee](/tools/mindee/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [nanonets](/tools/nanonets/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [rossum](/tools/rossum/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [parseur](/tools/parseur/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
+- [mindee](/tools/mindee/): API- und SDK-Ansatz für eigene Dokumentanwendungen.
+- [nanonets](/tools/nanonets/): Workflow, Klassifikation und Routing vor der Extraktion.
+- [rossum](/tools/rossum/): Operative Queue mit Ausnahmebehandlung für AP-Dokumente.
+- [google-document-ai](/tools/google-document-ai/): Mehrere Processor-Typen für OCR, Layout und Custom Extraction.
 
 ## FAQ
 
-**Was sollte ein erster Pilot messen?**
+**Welche Dokumente sollte ein Veryfi-Pilot enthalten?**
 
-Miss Feldgenauigkeit, Ausnahmequote, Laufzeit und Kosten pro geprüftem Dokument.
+Reale Belege und Rechnungen mit unterschiedlichen Händlern, Ländern, Währungen, Steuerzeilen und Fotoqualitäten. Trenne die Ergebnisse nach Dokumenttyp.
 
-**Dürfen extrahierte Felder ungeprüft gebucht werden?**
+**Kann die API eine Zahlung freigeben?**
 
-veryfi: Nein. Freigabe- und Abgleichregeln gehören in den nachgelagerten Prozess; unsichere oder widersprüchliche Werte brauchen Review.
+Nein. Händlerabgleich, Summenprüfung, Richtlinien und die menschliche oder regelbasierte Freigabe gehören in den Finanzprozess.
 
-**Welche Dokumente gehören in den Testdatensatz?**
+**Wie behandelt man doppelte Uploads?**
 
-Nimm reale Formate, Layouts, schlechte Scans, Sprachen und mehrseitige Fälle aus dem späteren Betrieb auf.
+Vergib eine stabile Dokument-ID und speichere Hash oder Quellreferenz in der eigenen Anwendung. Retries müssen denselben Fall fortsetzen und keinen zweiten Beleg anlegen.
 
-**Wann sollte ein Team ein anderes Tool wählen?**
+**Wann ist eine breitere Document-AI-Plattform besser?**
 
-Wähle ein anderes Tool, wenn Dokumentumfang, Datenschutzgrenze oder Betriebsmodell deutlich enger sind.
+Wenn Verträge, Formulare, Klassifikation oder eigene Entitäten gleichwertig neben Rechnungen stehen. Dann kann ein allgemeiner Processor die Modelllandschaft vereinfachen.

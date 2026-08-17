@@ -20,65 +20,63 @@ translation: full
 ---
 # Parseur
 
-Parseur nimmt E-Mails, Anhänge und Dateien wie PDF, Excel oder Bilder an und wandelt sie in strukturierte Daten um. Upload, dedizierte E-Mail-Adresse und API lassen sich mit nachgelagerten Automatisierungen verbinden.
+Parseur ist ein mailbox-orientierter Parser für E-Mails, Anhänge und wiederkehrende Dokumente. Ein Eingang wird einer Mailbox zugeordnet, ein visueller Parser beziehungsweise AI-Anweisungen formen daraus Felder, und die fertigen Daten verlassen Parseur über Webhooks, Exporte oder Automationsplattformen. Diese Kette unterscheidet Parseur von einer frei trainierbaren OCR-Plattform.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/parseur-editorial.webp" alt="Dokumentverarbeitungs-Workflow für Parseur" loading="lazy" decoding="async" />
-</figure>
+<figure class="tool-editorial-figure"><img src="/images/tools/parseur-editorial.webp" alt="Parseur-Mailbox mit Parserfeldern und Export in einen Workflow" loading="lazy" decoding="async" /></figure>
 
-## Für wen und welches Problem?
+## Eingang über Mailbox oder API
 
-Für Parseur passen Teams, die wiederkehrende Dokumente digital annehmen und die Ausgabe in einen überprüfbaren Prozess einbauen. Entscheidend ist nicht die Demo-Erkennung, sondern die Frage, wer Eingang, Extraktion, Ausnahme und Freigabe verantwortet. Parseur beschleunigt Dateneingang, aber nicht die fachliche Freigabe oder Datenbereinigung.
+Richte pro Lieferanten- oder Dokumentstrom eine Mailbox ein und sende E-Mails, Dateien oder Text an den passenden Eingang. Die aktuelle API kann Mailboxen, Felder, Webhooks und Dokumente verwalten; Templates werden weiterhin im visuellen Editor gepflegt. Das ist wichtig, wenn ein Team Parser im UI gestaltet, aber die Übergabe programmatisch überwachen will.
 
-## Kernfunktionen im Prozess
+## Felder und Layouts
 
-Die relevanten Bausteine sind E-Mail- und Datei-Eingang mit mailbox- und parserbezogenem Workflow, Felder können für wechselnde Layouts beschrieben und geprüft werden und Export als CSV/Excel sowie Verbindungen zu Zapier, Make und n8n. Beginne mit zwei oder drei Dokumentfamilien und definiere Pflichtfelder, erlaubte Werte und einen Zustand für unvollständige Ergebnisse. So bleibt sichtbar, ob ein Fehler aus dem Dokument, dem Modell oder der eigenen Nachbearbeitung stammt.
+Definiere die Felder, die ein Dokument wirklich braucht, statt den kompletten Rohtext zu exportieren. Prüfe mehrere Absender, Anhänge, Tabellen und leere Werte im Editor. Bei wechselnden Lieferanten gehören getrennte Parser oder klare Regeln in die Wartungsplanung; ein gemeinsames Schema darf Unterschiede nicht unsichtbar machen.
 
-## Praktischer Workflow
+## Asynchroner Ablauf
 
-Lege ein Referenzset mit guten, schlechten und ungewöhnlichen Beispielen an. Lass Parseur zunächst in eine isolierte Testablage schreiben, protokolliere Dokument-ID und Modellantwort und vergleiche die Felder mit einer geprüften Referenz. Erst danach sollte die Ausgabe an ERP, CRM, Tabelle oder Automatisierung weitergehen. Wiederholungen müssen idempotent behandelt werden.
+Ein Upload bestätigt zunächst den Eingang, nicht die abgeschlossene Analyse. Für produktive Verarbeitung sind Webhooks der bevorzugte Push-Weg; alternativ kann die Anwendung Dokumentstatus pollen oder Mailbox-Exporte herunterladen. Der Empfänger sollte innerhalb der dokumentierten Zeit antworten und Wiederholungen anhand der Dokument-ID idempotent behandeln.
 
-## Integration und Betrieb
+## Export und Automatisierung
 
-Plane Eingang, API-Authentifizierung, Webhook oder Batch, Retries und die sichere Ablage von Original und Ergebnis. Export als CSV/Excel sowie Verbindungen zu Zapier, Make und n8n Für den laufenden Betrieb gehören Quoten, Versionsänderungen, Fehlerschlangen und ein manueller Fallback in die Dokumentation.
+Parseur stellt CSV-, JSON- und Excel-Downloads auf Mailbox-Ebene bereit und lässt sich mit Zapier, Make, n8n oder Power Automate verbinden. Für einen eigenen Service ist die API mit API-Key, Logs und Webhook-Endpunkt passender. Download-URLs enthalten ein Geheimnis und dürfen weder in Tickets noch in Browser-Logs öffentlich werden.
 
-## Qualität und Grenzen
+## Kontrolle und Grenzen
 
-Prüfe Feldgenauigkeit getrennt von Dokumentklassifikation und Durchlaufzeit. Nutze reale Layouts, Scanqualitäten, Sprachen und Seitenzahlen. Parseur beschleunigt Dateneingang, aber nicht die fachliche Freigabe oder Datenbereinigung. Niedrige Konfidenz, fehlende Pflichtfelder und widersprüchliche Werte müssen sichtbar in einen Review-Pfad gelangen.
+Vergleiche extrahierte Felder mit Originalmail und Anlage, besonders bei Beträgen, Datumsformaten und Tabellenzeilen. Prüfe, ob ein Dokument zur richtigen Mailbox gelangt ist, bevor ein Workflow startet. Parseur übernimmt die Strukturierung; fachliche Freigabe, Dublettenprüfung und Buchungslogik bleiben beim Zielsystem.
 
-## Daten, Privacy und Governance
+## Datenschutz und Betrieb
 
-parseur: Vor dem Einsatz sind Region, Aufbewahrung, Zugriff, Verschlüsselung, Unterauftragnehmer und Löschung mit dem Schutzbedarf abzugleichen. Personen-, Finanz- oder Identitätsdaten dürfen nur in freigegebenen Projekten verarbeitet werden. Protokolle sollten den Bearbeitungsweg zeigen, ohne mehr Rohdaten als nötig zu vervielfältigen.
+Lege Aufbewahrung, Zugriffsrollen, API-Schlüssel und den Umgang mit personenbezogenen Anhängen fest. Beobachte Webhook-Fehler, Rate Limits, Parseränderungen und unzustellbare E-Mails. Für vertrauliche Dokumente ist ein geheimer Download-Link genauso schutzbedürftig wie ein Token.
 
-## Kosten und Entscheidung
+## Kosten und Auswahl
 
-parseur: Die Kostenlogik hängt vom Anbieter und der Nutzung ab: mögliche Treiber sind Seiten, Dokumente, API-Aufrufe, Speicher, Integrationen und menschliche Nacharbeit. Prüfe das aktuelle Angebot des Anbieters statt Preise aus alten Vergleichen zu übernehmen. Ein sinnvoller Pilot misst Kosten pro erfolgreich geprüftem Dokument, nicht nur pro API-Aufruf.
+Die Kosten hängen vom Plan, der Anzahl verarbeiteter Dokumente und den benötigten Automations- oder Exportwegen ab. Prüfe die aktuelle Parseur-Preisseite mit dem erwarteten Mailvolumen und dem Review-Aufwand. Parseur ist attraktiv, wenn der Eingang per E-Mail den Prozess dominiert; bei eigener Modellkontrolle sind [mindee](/tools/mindee/) oder [google-document-ai](/tools/google-document-ai/) anders zugeschnitten.
 
 ## Redaktionelle Einschätzung
 
-Parseur ist eine gute Prüfoption, wenn Dokumentklassen, Review-Verantwortung und Integrationsgrenze klar sind. Der Dienst ersetzt keine Buchungskontrolle und keine menschliche Freigabe. Wähle einen lokalen Parser oder eine spezialisierte API, wenn Cloud-Governance, Layoutvielfalt oder Betriebskosten dagegen sprechen.
+Parseur eignet sich für Teams, die schnell Mailboxen und wiederkehrende Felder produktiv verbinden wollen. Der visuelle Parser ist eine Stärke, zugleich müssen Templatepflege und Sonderfälle bewusst betrieben werden. Für präzise zonale Regeln oder einen großen AP-Review-Betrieb passen [docparser](/tools/docparser/) beziehungsweise [rossum](/tools/rossum/) besser.
 
 ## Alternativen
 
-- [docparser](/tools/docparser/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [nanonets](/tools/nanonets/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [mindee](/tools/mindee/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
-- [veryfi](/tools/veryfi/): Ein anderer Zuschnitt oder Betriebsansatz für Dokumentextraktion.
+- [docparser](/tools/docparser/): Layout- und regelbasierte Extraktion mit sichtbaren Crops, Keywords und Tabellenregeln.
+- [nanonets](/tools/nanonets/): Modell-, Klassifikations- und Routing-Workflows für Geschäftsdokumente.
+- [mindee](/tools/mindee/): Entwicklerorientierte APIs und SDKs statt mailbox-zentriertem Setup.
+- [google-document-ai](/tools/google-document-ai/): Processor-Plattform mit Google-Cloud-Governance.
 
 ## FAQ
 
-**Was sollte ein erster Pilot messen?**
+**Ist ein erfolgreicher Upload schon ein fertiges Ergebnis?**
 
-Miss Feldgenauigkeit, Ausnahmequote, Laufzeit und Kosten pro geprüftem Dokument.
+Nein. Parseur verarbeitet asynchron. Nutze Webhook, Statusabfrage oder einen Export und behandle verspätete sowie wiederholte Zustellungen im Empfänger.
 
-**Dürfen extrahierte Felder ungeprüft gebucht werden?**
+**Kann die API Parser-Templates erstellen?**
 
-parseur: Nein. Freigabe- und Abgleichregeln gehören in den nachgelagerten Prozess; unsichere oder widersprüchliche Werte brauchen Review.
+Die API verwaltet unter anderem Mailboxen, Felder, Dokumente und Webhooks. Das Erstellen oder Aktualisieren von Templates erfolgt laut aktueller Dokumentation im visuellen Editor.
 
-**Welche Dokumente gehören in den Testdatensatz?**
+**Wie schützt man Download-Links?**
 
-Nimm reale Formate, Layouts, schlechte Scans, Sprachen und mehrseitige Fälle aus dem späteren Betrieb auf.
+Behandle sie wie Zugangsdaten, weil sie Daten direkt liefern können. Speichere sie nicht in öffentlichen Logs und begrenze die Empfänger auf den vorgesehenen Dienst.
 
-**Wann sollte ein Team ein anderes Tool wählen?**
+**Wann ist Parseur die falsche Wahl?**
 
-Wähle ein anderes Tool, wenn Dokumentumfang, Datenschutzgrenze oder Betriebsmodell deutlich enger sind.
+Wenn die Anwendung eigene Modelle, tiefe Klassifikation oder eine stark kontrollierte Cloud-Region benötigt. Dann ist ein API- oder Cloud-Processor mit passender Governance oft geeigneter.
