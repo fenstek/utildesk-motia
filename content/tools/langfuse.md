@@ -7,7 +7,7 @@ tags: [llmops, observability, evaluation, prompts, open-source]
 official_url: "https://langfuse.com/"
 tier: D
 generated_at: 2026-07-19
-popularity: 28
+popularity: 29
 description: Open-Source-Plattform für Tracing, Evaluation, Prompt-Management und Metriken von LLM-Anwendungen, die nur mit sauberer Instrumentierung und Daten-Governance belastbare Aussagen liefert.
 updated_at: 2026-07-19
 editorial_reviewed: true

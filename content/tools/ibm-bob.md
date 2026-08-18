@@ -11,7 +11,7 @@ price_model: Freemium
 tags: [ibm, coding-agent, software-development, modernization]
 official_url: "https://bob.ibm.com/"
 description: Agentischer Entwicklungspartner für Codeanalyse, Änderungen, Shell-Aufgaben und Modernisierung mit Modi, Skills, MCP und kontrollierbaren Werkzeugfreigaben.
-popularity: 43
+popularity: 42
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19

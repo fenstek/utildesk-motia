@@ -11,7 +11,7 @@ category: AI Infrastructure
 price_model: Open Source
 tags: [nlp, topic-modeling, python]
 official_url: "https://radimrehurek.com/gensim/"
-popularity: 55
+popularity: 54
 tier: C
 generated_at: 2026-05-12
 updated_at: 2026-07-17
