@@ -11,7 +11,7 @@ price_model: Open Source, Abonnement
 tags: [ai-agents, llm-workflows, low-code, orchestration]
 official_url: "https://flowiseai.com/"
 description: Flowise ist eine visuelle Open-Source-Plattform für LLM-Workflows und Agenten, deren produktiver Einsatz Modellkosten, Zugriffsschutz, Evaluation und belastbaren Betrieb erfordert.
-popularity: 59
+popularity: 0
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19
