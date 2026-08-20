@@ -11,7 +11,7 @@ price_model: Freemium
 tags: [ai, app-builder, cloud-development, firebase]
 official_url: "https://firebase.studio/"
 description: Cloud-Entwicklungsumgebung mit Gemini und Firebase-Anbindung für bestehende Workspaces; Neuanlage ist gesperrt und die Abschaltung für März 2027 angekündigt.
-popularity: 55
+popularity: 48
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-31
