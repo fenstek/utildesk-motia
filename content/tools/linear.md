@@ -10,7 +10,7 @@ category: Productivity
 price_model: Subscription
 tags: [project-management, developer-tools, planning, productivity]
 official_url: "https://linear.app/"
-popularity: 34
+popularity: 29
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-07-31
