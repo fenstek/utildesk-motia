@@ -13,7 +13,7 @@ category: AI Agents
 price_model: Usage-based
 tags: [customer-support, automation, productivity, workflow]
 official_url: "https://aide.app/"
-popularity: 93
+popularity: 92
 tier: D
 generated_at: 2026-05-10
 ---
