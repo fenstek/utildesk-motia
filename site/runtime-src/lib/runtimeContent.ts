@@ -290,11 +290,16 @@ export async function listRuntimeToolContext(
     .filter((slug) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))
     .slice(0, 48);
   const titles = [...new Set(requestedTitles.map((title) => String(title).trim()).filter(Boolean))].slice(0, 32);
-  const conditions: string[] = [];
-  const values: unknown[] = [locale];
+  const selectColumns = "slug, title, excerpt, metadata_json, category, price_model";
+  const baseWhere = "kind = 'tool' AND locale = ? AND is_active = 1 AND route_state = 'active'";
+  const queries: string[] = [];
+  const values: unknown[] = [];
   if (slugs.length) {
-    conditions.push(`slug IN (${slugs.map(() => "?").join(", ")})`);
-    values.push(...slugs);
+    queries.push(
+      `SELECT ${selectColumns} FROM content_entries
+       WHERE ${baseWhere} AND slug IN (${slugs.map(() => "?").join(", ")})`,
+    );
+    values.push(locale, ...slugs);
   }
   if (titles.length) {
     const exactTitleKeys = [...new Set(titles.flatMap((title) => {
@@ -307,19 +312,28 @@ export async function listRuntimeToolContext(
       .replace(/\b(ai|tool|app|platform)\b/g, " ")
       .replace(/\s+/g, " ")
       .trim()))].filter(Boolean);
-    conditions.push(`(
-      lower(title) IN (SELECT lower(value) FROM json_each(?))
-      OR title_match_key IN (SELECT value FROM json_each(?))
-    )`);
-    values.push(JSON.stringify(exactTitleKeys), JSON.stringify(fuzzyTitleKeys));
+    queries.push(
+      `SELECT ${selectColumns} FROM content_entries
+       WHERE ${baseWhere}
+         AND lower(title) IN (SELECT lower(value) FROM json_each(?))`,
+    );
+    values.push(locale, JSON.stringify(exactTitleKeys));
+    if (fuzzyTitleKeys.length) {
+      queries.push(
+        `SELECT ${selectColumns} FROM content_entries
+         WHERE ${baseWhere}
+           AND title_match_key IN (SELECT value FROM json_each(?))`,
+      );
+      values.push(locale, JSON.stringify(fuzzyTitleKeys));
+    }
   }
-  if (!conditions.length) return [];
+  if (!queries.length) return [];
   const result = await database()
     .prepare(
-      `SELECT slug, title, excerpt, metadata_json, category, price_model
-       FROM content_entries
-       WHERE kind = 'tool' AND locale = ? AND is_active = 1 AND route_state = 'active'
-         AND (${conditions.join(" OR ")})
+      `SELECT ${selectColumns}
+       FROM (
+         ${queries.join("\nUNION\n")}
+       )
        ORDER BY title ASC`,
     )
     .bind(...values)
