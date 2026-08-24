@@ -16,6 +16,9 @@ test("tool context lookup keeps every match branch indexable", () => {
   assert.match(runtimeSource, /queries\.join\("\\nUNION\\n"\)/);
   assert.doesNotMatch(runtimeSource, /conditions\.join\(" OR "\)/);
 
+  assert.match(runtimeSource, /INDEXED BY idx_content_entries_tool_active_slug/);
+  assert.match(runtimeSource, /INDEXED BY idx_content_entries_tool_active_lower_title/);
+  assert.match(runtimeSource, /INDEXED BY idx_content_entries_tool_title_match/);
   const database = new DatabaseSync(":memory:");
   try {
     database.exec(`
@@ -54,14 +57,17 @@ test("tool context lookup keeps every match branch indexable", () => {
     const sql = `
       SELECT ${columns}
       FROM (
-        SELECT ${columns} FROM content_entries
+        SELECT ${columns}
+          FROM content_entries INDEXED BY idx_content_entries_tool_active_slug
           WHERE ${baseWhere} AND slug IN (?, ?, ?, ?, ?)
         UNION
-        SELECT ${columns} FROM content_entries
+        SELECT ${columns}
+          FROM content_entries INDEXED BY idx_content_entries_tool_active_lower_title
           WHERE ${baseWhere}
             AND lower(title) IN (SELECT lower(value) FROM json_each(?))
         UNION
-        SELECT ${columns} FROM content_entries
+        SELECT ${columns}
+          FROM content_entries INDEXED BY idx_content_entries_tool_title_match
           WHERE ${baseWhere}
             AND title_match_key IN (SELECT value FROM json_each(?))
       )

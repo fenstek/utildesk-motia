@@ -296,7 +296,8 @@ export async function listRuntimeToolContext(
   const values: unknown[] = [];
   if (slugs.length) {
     queries.push(
-      `SELECT ${selectColumns} FROM content_entries
+      `SELECT ${selectColumns}
+       FROM content_entries INDEXED BY idx_content_entries_tool_active_slug
        WHERE ${baseWhere} AND slug IN (${slugs.map(() => "?").join(", ")})`,
     );
     values.push(locale, ...slugs);
@@ -313,14 +314,16 @@ export async function listRuntimeToolContext(
       .replace(/\s+/g, " ")
       .trim()))].filter(Boolean);
     queries.push(
-      `SELECT ${selectColumns} FROM content_entries
+      `SELECT ${selectColumns}
+       FROM content_entries INDEXED BY idx_content_entries_tool_active_lower_title
        WHERE ${baseWhere}
          AND lower(title) IN (SELECT lower(value) FROM json_each(?))`,
     );
     values.push(locale, JSON.stringify(exactTitleKeys));
     if (fuzzyTitleKeys.length) {
       queries.push(
-        `SELECT ${selectColumns} FROM content_entries
+        `SELECT ${selectColumns}
+         FROM content_entries INDEXED BY idx_content_entries_tool_title_match
          WHERE ${baseWhere}
            AND title_match_key IN (SELECT value FROM json_each(?))`,
       );
