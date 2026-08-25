@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Lizenz
 tags: [video, security, vms, hardware]
 official_url: "https://www.axis.com/products/axis-camera-station-pro"
-popularity: 70
+popularity: 67
 tier: D
 generated_at: 2026-05-16
 updated_at: 2026-07-31
