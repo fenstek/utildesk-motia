@@ -8,7 +8,6 @@ import { resolveLocalLogo } from "../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../lib/favicon";
 import { fromContent } from "../lib/contentRoot.mjs";
 import { normalizePriceModel } from "../lib/priceModel";
-import { tagHref } from "../lib/tagRoutes";
 import { CATEGORIES } from "../lib/categories";
 import { listRatgeberEntries } from "../lib/ratgeber";
 import { normalizeToolEditorialVerdict } from "../lib/toolVerdict";
@@ -144,16 +143,7 @@ enabledTools.forEach((tool) => {
 const sortedTags = Array.from(tagFrequency.entries())
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "de"));
 
-const getFrequencyClass = (count: number, max: number) => {
-  const ratio = count / max;
-  if (ratio >= 0.6) return "tag-freq-high";
-  if (ratio >= 0.3) return "tag-freq-medium";
-  return "tag-freq-low";
-};
-
-const visibleTags = sortedTags.filter(([, count]) => count >= 3).slice(0, 24);
-const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
-const topTags = visibleTags.slice(0, 18);
+const topTags = sortedTags.filter(([, count]) => count >= 3).slice(0, 18);
 
 const pinnedSlugs = ["bolt-new", "wispr-flow", "chatgpt", "claude", "midjourney", "perplexity", "zapier"];
 const enabledBySlug = new Map(enabledTools.map((tool) => [tool.slug, tool]));
@@ -428,16 +418,6 @@ const homepageSchemas = [
         ))}
       </div>
 
-      <div class="terminal-rail-block">
-        <h2 class="terminal-rail-title">top.tags</h2>
-        {topTags.slice(0, 8).map(([tag, count]) => (
-          <a class="terminal-rail-link" href={tagHref(tag)}>
-            <span>{tag}</span>
-            <span>{count}</span>
-          </a>
-        ))}
-      </div>
-
       <p class="terminal-rail-note">
         Quellen: lokale Tool-Dateien, redaktionelle Ratgeber und maschinenlesbare Kataloge.
         Keine bezahlten Slots.
@@ -481,7 +461,7 @@ const homepageSchemas = [
               <p class="terminal-row-desc">{tool.excerpt || "Kompakter Eintrag im Utildesk-Verzeichnis."}</p>
               <div class="terminal-row-tags">
                 {tool.tags.slice(0, 3).map((tag) => (
-                  <a href={tagHref(tag)}>#{tag}</a>
+                  <span>#{tag}</span>
                 ))}
               </div>
             </div>
@@ -559,23 +539,6 @@ const homepageSchemas = [
 
   <section class="terminal-bottom" aria-label="Themen und maschinenlesbare Einstiege">
     <div class="terminal-bottom-grid">
-      <div class="terminal-panel">
-        <div class="terminal-panel-head">
-          <h2>tags.index</h2>
-          <a href="/tools/">alle tools</a>
-        </div>
-        <div class="tag-cloud home-tags-cloud">
-          {topTags.map(([tag, count]) => (
-            <a
-              href={tagHref(tag)}
-              class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
-            >
-              #{tag}
-            </a>
-          ))}
-        </div>
-      </div>
-
       <div class="terminal-panel">
         <div class="terminal-panel-head">
           <h2>guides.index</h2>
