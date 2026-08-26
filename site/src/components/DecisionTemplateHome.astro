@@ -266,14 +266,6 @@ const avoidRows = primaryGuide?.data.decisionAvoid?.length
 copy.avoidOne = avoidRows[0] ?? copy.avoidOne;
 copy.avoidTwo = avoidRows[1] ?? copy.avoidTwo;
 
-const normalizeTagSlug = (tag: string) =>
-  tag
-    .toLowerCase()
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-
 const shortCategory = (category?: string | null) => {
   if (!category) return "AI";
   const value = String(category);
@@ -480,7 +472,7 @@ const categoryRows = categories.slice(0, 8);
         <div class="ds-index-top-tags" aria-label={isEn ? "Top tags" : "Top-Tags"}>
           <span>{copy.topTagsLabel}</span>
           {tagRows.map(([tag, count]) => (
-            <a href={`${prefix}/tools/tag/${normalizeTagSlug(tag)}/`}>#{tag}<small>{count}</small></a>
+            <span>#{tag}<small>{count}</small></span>
           ))}
         </div>
       </section>
