@@ -169,7 +169,7 @@ test("bounded one-card release dry-run invokes no Astro build and mutates no sou
     assert.deepEqual(report.skippedIndexNowSlugs, ["dell-boomi"]);
     assert.equal(report.estimates.indexNow.total, 0);
 
-    await writeFile(slugFile, "chatgpt\n");
+    await writeFile(slugFile, "cloudconvert\n");
     const { stdout: focusStdout } = await execFileAsync(process.execPath, [
       resolve(import.meta.dirname, "../tool_runtime_release.mjs"),
       "--slugs-file", slugFile,
@@ -179,8 +179,8 @@ test("bounded one-card release dry-run invokes no Astro build and mutates no sou
     ], { cwd: siteDir, maxBuffer: 4 * 1024 * 1024 });
     const focusReport = JSON.parse(focusStdout);
     assert.deepEqual(focusReport.indexNowCanonicalUrls, [
-      "https://tools.utildesk.de/tools/chatgpt/",
-      "https://tools.utildesk.de/en/tools/chatgpt/",
+      "https://tools.utildesk.de/tools/cloudconvert/",
+      "https://tools.utildesk.de/en/tools/cloudconvert/",
     ]);
     assert.deepEqual(focusReport.skippedIndexNowSlugs, []);
     assert.equal(focusReport.estimates.indexNow.total, 2);
