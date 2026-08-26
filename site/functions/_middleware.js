@@ -29,6 +29,53 @@ const PUBLIC_EXACT_PATHS = new Set([
 const RUNTIME_ORIGIN = "https://utildesk-content-runtime.s-skorykov.workers.dev";
 const FROZEN_TOOL_FALLBACK_ORIGIN = "https://utildesk-tool-fallback.pages.dev";
 const RUNTIME_RATGEBER_STYLESHEET = "/runtime-ratgeber-detail.css?v=20260805-1";
+const RECOVERY_ROBOTS_INDEX_FOLLOW =
+  "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
+const RECOVERY_ROBOTS_NOINDEX_FOLLOW =
+  "noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
+const RECOVERY_PROOF_RATGEBER_SLUGS = new Set([
+  "beste-ocr-apis-rechnungen-deutschland-2026",
+  "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+  "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+  "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+  "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+]);
+const RECOVERY_PROOF_TOOL_SLUGS = new Set([
+  "cloudconvert",
+  "convertio",
+  "smallpdf",
+  "tesseract-ocr",
+]);
+
+const recoveryRobotsForPath = (pathname) => {
+  const normalized = String(pathname || "").replace(/\/$/, "") || "/";
+  if (["/", "/tools", "/methodologie", "/ratgeber"].includes(normalized)) {
+    return RECOVERY_ROBOTS_INDEX_FOLLOW;
+  }
+  const ratgeber = normalized.match(/^\/ratgeber\/([^/]+)$/);
+  if (ratgeber && RECOVERY_PROOF_RATGEBER_SLUGS.has(ratgeber[1])) {
+    return RECOVERY_ROBOTS_INDEX_FOLLOW;
+  }
+  const tool = normalized.match(/^\/tools\/([^/]+)$/);
+  if (tool && RECOVERY_PROOF_TOOL_SLUGS.has(tool[1])) {
+    return RECOVERY_ROBOTS_INDEX_FOLLOW;
+  }
+  return RECOVERY_ROBOTS_NOINDEX_FOLLOW;
+};
+
+export const applyRecoveryRobotsToHtml = (html, pathname) => {
+  const robots = recoveryRobotsForPath(pathname);
+  const meta = `<meta name="robots" content="${robots}">`;
+  const withRobotsMeta = /<meta\b(?=[^>]*\bname\s*=\s*["']robots["'])[^>]*>/i.test(html)
+    ? html.replace(/<meta\b(?=[^>]*\bname\s*=\s*["']robots["'])[^>]*>/gi, meta)
+    : html.replace(/<\/head>/i, `${meta}</head>`);
+  return {
+    html: withRobotsMeta,
+    indexable: robots === RECOVERY_ROBOTS_INDEX_FOLLOW,
+    robots,
+  };
+};
+
 const stripDuplicatedRuntimeSecondaryImage = (html) => html.replace(
   /<figure class="ratgeber-inline-image">\s*<img\b[^>]*\bsrc="([^"]+)"[^>]*>\s*<\/figure>/g,
   (figure, imageSrc, offset, fullHtml) => {
@@ -198,7 +245,7 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
     // the Worker bundle can be redeployed.
     if (
       context.request.method === "GET" &&
-      cluster === "ratgeber" &&
+      (cluster === "ratgeber" || cluster === "tools" || cluster === "tool-shell") &&
       response.ok &&
       response.headers.get("content-type")?.includes("text/html")
     ) {
@@ -207,11 +254,15 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
         ? sortRuntimeRatgeberIndex(html, url.pathname.startsWith("/en/"))
         : html;
       const cleanedHtml = stripDuplicatedRuntimeSecondaryImage(orderedHtml);
-      if (!cleanedHtml.includes(RUNTIME_RATGEBER_STYLESHEET)) {
+      const recoveryHtml = applyRecoveryRobotsToHtml(cleanedHtml, url.pathname);
+      const runtimeHtml = recoveryHtml.html;
+      if (cluster === "ratgeber" && !runtimeHtml.includes(RUNTIME_RATGEBER_STYLESHEET)) {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
         headers.delete("content-encoding");
-        const styledHtml = cleanedHtml.replace(
+        if (recoveryHtml.indexable) headers.delete("X-Robots-Tag");
+        else headers.set("X-Robots-Tag", "noindex, follow");
+        const styledHtml = runtimeHtml.replace(
           "</head>",
           `<link rel="stylesheet" href="${RUNTIME_RATGEBER_STYLESHEET}"></head>`,
         );
@@ -220,12 +271,14 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
         styledResponse.headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
         return styledResponse;
       }
-      if (cleanedHtml !== html) {
+      if (runtimeHtml !== html || (!recoveryHtml.indexable && response.headers.get("X-Robots-Tag") !== "noindex, follow")) {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
         headers.delete("content-encoding");
-        const orderedResponse = new Response(cleanedHtml, { status: response.status, headers });
-        orderedResponse.headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
+        if (recoveryHtml.indexable) headers.delete("X-Robots-Tag");
+        else headers.set("X-Robots-Tag", "noindex, follow");
+        const orderedResponse = new Response(runtimeHtml, { status: response.status, headers });
+        orderedResponse.headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : cluster === "tool-shell" ? "tool-shell-v1" : "ratgeber-v1");
         return orderedResponse;
       }
     }
@@ -239,11 +292,15 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
     ) {
       const catalogResponse = await filterToolCatalogResponse(response);
       const headers = new Headers(catalogResponse.headers);
+      headers.set("X-Robots-Tag", "noindex");
       headers.set("X-Utildesk-Content-Runtime", "tools-v1");
       return new Response(catalogResponse.body, { status: catalogResponse.status, headers });
     }
 
     const headers = new Headers(response.headers);
+    if (cluster === "tools" && toolMachineRoute(url.pathname)) {
+      headers.set("X-Robots-Tag", "noindex");
+    }
     headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : cluster === "tool-shell" ? "tool-shell-v1" : "ratgeber-v1");
     return new Response(response.body, { status: response.status, headers });
   } catch {
