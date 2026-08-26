@@ -10,7 +10,7 @@ import {
   ROBOTS_INDEX_FOLLOW,
   ROBOTS_NOINDEX_FOLLOW,
 } from "../../src/lib/searchIndexPolicy.mjs";
-import { redirectPreviewHost } from "../../functions/_middleware.js";
+import { applyRecoveryRobotsToHtml, redirectPreviewHost } from "../../functions/_middleware.js";
 
 test("recovery policy has explicit proof and global noindex samples", () => {
   assert.equal(getToolSearchIndexDecision({ slug: "cloudconvert", data: {} }).robots, ROBOTS_INDEX_FOLLOW);
@@ -27,6 +27,23 @@ test("Pages preview host redirect preserves path and query only", () => {
   assert.equal(response.status, 301);
   assert.equal(response.headers.get("location"), "https://tools.utildesk.de/en/tools/foo/?q=ocr&sort=new");
   assert.equal(redirectPreviewHost(new URL("https://tools.utildesk.de/tools/foo/?q=ocr")), null);
+});
+
+test("runtime recovery robots preserve canonical and non-robots HTML", () => {
+  const source = '<head><link rel="canonical" href="https://tools.utildesk.de/ratgeber/proof/"><meta name="description" content="keep"><meta name="robots" content="index,follow"></head><body>keep</body>';
+  const proof = applyRecoveryRobotsToHtml(source, "/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/");
+  assert.equal(proof.indexable, true);
+  assert.match(proof.html, /<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">/);
+  assert.match(proof.html, /canonical" href="https:\/\/tools\.utildesk\.de\/ratgeber\/proof\//);
+  assert.match(proof.html, /<body>keep<\/body>/);
+
+  const nonProofDe = applyRecoveryRobotsToHtml("<head><meta name='robots' content='index,follow'></head><main>DE</main>", "/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly/");
+  assert.equal(nonProofDe.indexable, false);
+  assert.match(nonProofDe.html, /content="noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/);
+
+  const nonProofEn = applyRecoveryRobotsToHtml("<head></head><main>EN</main>", "/en/ratgeber/example/");
+  assert.equal(nonProofEn.indexable, false);
+  assert.match(nonProofEn.html, /<meta name="robots" content="noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><\/head>/);
 });
 
 test("recovery sitemaps are exact when a build is present", async (t) => {
