@@ -25,6 +25,7 @@ import {
 } from "../lib/i18n";
 import { getLatestContentDateLabels } from "../lib/contentFreshness";
 import { getDecisionIssueCount, getDecisionIssueLabel, getDecisionIssueNavLabel } from "../lib/contentIssue";
+import { getRecoveryPageRobots } from "../lib/searchIndexPolicy.mjs";
 import "../styles/global.css";
 import "../styles/decision-refinements.css";
 import "../styles/mobile-tool-cards.css";
@@ -55,13 +56,14 @@ const {
   title = SITE_NAME,
   description = SITE_DESCRIPTION,
   image: propImage = null,
-  robots = DEFAULT_ROBOTS_CONTENT,
+  robots = undefined,
   googlebotRobots = null,
   locale: propLocale,
   alternatePaths: propAlternatePaths,
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
+const effectiveRobots = robots ?? getRecoveryPageRobots(pathname) ?? DEFAULT_ROBOTS_CONTENT;
 const locale = propLocale ?? getLocaleFromPath(pathname);
 const ui = UI[locale];
 const pathSegments = pathname.split("/").filter(Boolean);
@@ -329,7 +331,7 @@ const analyticsConsentLabels = locale === "en"
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="description" content={resolvedDescription} />
-    <meta name="robots" content={robots} />
+    <meta name="robots" content={effectiveRobots} />
     {googlebotRobots ? <meta name="googlebot" content={googlebotRobots} /> : null}
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={resolvedTitle} />

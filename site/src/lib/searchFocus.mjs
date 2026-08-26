@@ -1,4 +1,6 @@
-export const FOCUS_TOOL_SLUGS = [
+import { RECOVERY_PROOF_TOOL_SLUGS, SEARCH_RECOVERY_MODE } from "./searchIndexPolicy.mjs";
+
+const LEGACY_FOCUS_TOOL_SLUGS = [
   "chatgpt",
   "claude",
   "gemini",
@@ -36,6 +38,10 @@ export const FOCUS_TOOL_SLUGS = [
   "streamlit",
 ];
 
+export const FOCUS_TOOL_SLUGS = SEARCH_RECOVERY_MODE
+  ? [...RECOVERY_PROOF_TOOL_SLUGS]
+  : LEGACY_FOCUS_TOOL_SLUGS;
+
 const focusRank = new Map(FOCUS_TOOL_SLUGS.map((slug, index) => [slug, index]));
 
 export function compareToolsBySearchFocus(a, b) {
@@ -46,6 +52,7 @@ export function compareToolsBySearchFocus(a, b) {
 
 export function selectSearchFocusTools(tools, limit = 36) {
   return [...tools]
+    .filter((tool) => !SEARCH_RECOVERY_MODE || RECOVERY_PROOF_TOOL_SLUGS.has(tool.slug))
     .sort((a, b) => {
       const focusDiff = compareToolsBySearchFocus(a, b);
       if (focusDiff !== 0) return focusDiff;

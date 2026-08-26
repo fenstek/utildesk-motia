@@ -337,6 +337,12 @@ const sanitizeToolsIndexQuery = (url) => {
   return sanitized;
 };
 
+export const redirectPreviewHost = (url) => {
+  if (url.hostname.toLowerCase() !== "utildesk-motia.pages.dev") return null;
+  const target = new URL(`${url.pathname}${url.search}`, "https://tools.utildesk.de");
+  return Response.redirect(target.toString(), 301);
+};
+
 export async function onRequest(context) {
   const { request } = context;
   if (request.method !== "GET" && request.method !== "HEAD") {
@@ -344,6 +350,8 @@ export async function onRequest(context) {
   }
 
   const url = new URL(request.url);
+  const previewRedirect = redirectPreviewHost(url);
+  if (previewRedirect) return previewRedirect;
   const policyResponse = applyToolRoutePolicy(request);
   if (policyResponse) return policyResponse;
   if (RETIRED_ASSET_PATHS.has(url.pathname)) {
