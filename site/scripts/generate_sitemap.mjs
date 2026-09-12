@@ -19,10 +19,12 @@ import { getToolPublicState } from '../shared/toolPublicState.mjs';
 import {
   createToolAddedAtRankMap,
   getToolSearchIndexDecision,
-  RECOVERY_PROOF_RATGEBER_SLUGS,
-  RECOVERY_PROOF_TOOL_SLUGS,
   SEARCH_RECOVERY_MODE,
 } from '../src/lib/searchIndexPolicy.mjs';
+import {
+  RECOVERY_ALLOWED_RATGEBER_SLUGS,
+  RECOVERY_ALLOWED_TOOL_SLUGS,
+} from '../shared/recoveryManifest.mjs';
 import { FOCUS_TOOL_SLUGS } from '../src/lib/searchFocus.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -393,9 +395,9 @@ async function readFocusedRuntimeTools(indexableSlugs, locale = 'de') {
   const directory = locale === 'en' ? join(REPO_ROOT, 'content/en/tools') : CONTENT_TOOLS_DIR;
   const tools = [];
   for (const slug of FOCUS_TOOL_SLUGS) {
-    if (SEARCH_RECOVERY_MODE && locale === 'de' && !RECOVERY_PROOF_TOOL_SLUGS.has(slug)) continue;
+    if (SEARCH_RECOVERY_MODE && locale === 'de' && !RECOVERY_ALLOWED_TOOL_SLUGS.has(slug)) continue;
     if (!indexableSlugs.has(slug)) {
-      if (SEARCH_RECOVERY_MODE && locale === 'de') throw new Error(`Recovery proof tool is not indexable: ${slug}`);
+      if (SEARCH_RECOVERY_MODE && locale === 'de') throw new Error(`Recovery tool is not indexable: ${slug}`);
       continue;
     }
     const sourcePath = join(directory, `${slug}.md`);
@@ -405,7 +407,7 @@ async function readFocusedRuntimeTools(indexableSlugs, locale = 'de') {
       if (!publicState.isPublishable) continue;
       tools.push({ slug, lastmod: await readToolSourceLastmod(slug, locale, sourcePath) });
     } catch (error) {
-      if (SEARCH_RECOVERY_MODE && locale === 'de') throw new Error(`Missing recovery proof tool source: ${slug} (${error.message})`);
+      if (SEARCH_RECOVERY_MODE && locale === 'de') throw new Error(`Missing recovery tool source: ${slug} (${error.message})`);
       continue;
     }
   }
@@ -743,7 +745,7 @@ function buildFocusedUrlList(inputs, tools, enTools) {
           },
         ]
       : []),
-    ...(SEARCH_RECOVERY_MODE ? ratgeber.filter((article) => RECOVERY_PROOF_RATGEBER_SLUGS.has(article.slug)) : ratgeber).map((article) => ({
+    ...(SEARCH_RECOVERY_MODE ? ratgeber.filter((article) => RECOVERY_ALLOWED_RATGEBER_SLUGS.has(article.slug)) : ratgeber).map((article) => ({
       loc: `${BASE_URL}/ratgeber/${article.slug}/`,
       lastmod: article.lastmod,
       priority: '0.8',
@@ -800,8 +802,8 @@ function buildFocusedUrlList(inputs, tools, enTools) {
   if (SEARCH_RECOVERY_MODE) {
     const expected = new Set([
       `${BASE_URL}/`, `${BASE_URL}/tools/`, `${BASE_URL}/methodologie/`, `${BASE_URL}/ratgeber/`,
-      ...[...RECOVERY_PROOF_RATGEBER_SLUGS].map((slug) => `${BASE_URL}/ratgeber/${slug}/`),
-      ...[...RECOVERY_PROOF_TOOL_SLUGS].map((slug) => `${BASE_URL}/tools/${slug}/`),
+      ...[...RECOVERY_ALLOWED_RATGEBER_SLUGS].map((slug) => `${BASE_URL}/ratgeber/${slug}/`),
+      ...[...RECOVERY_ALLOWED_TOOL_SLUGS].map((slug) => `${BASE_URL}/tools/${slug}/`),
     ]);
     const actual = new Set(urls.map((url) => url.loc));
     const missing = [...expected].filter((url) => !actual.has(url));
@@ -821,7 +823,7 @@ async function generateSitemaps() {
 
   if (SEARCH_RECOVERY_MODE) {
     const builtRatgeber = new Set(sharedInputs.ratgeber.map((article) => article.slug));
-    const missingRatgeber = [...RECOVERY_PROOF_RATGEBER_SLUGS].filter((slug) => !builtRatgeber.has(slug));
+    const missingRatgeber = [...RECOVERY_ALLOWED_RATGEBER_SLUGS].filter((slug) => !builtRatgeber.has(slug));
     if (missingRatgeber.length) throw new Error(`Missing recovery proof Ratgeber build output: ${missingRatgeber.join(', ')}`);
   }
 

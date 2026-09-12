@@ -16,7 +16,7 @@ tags:
   - speech
   - productivity
   - writing
-description: "Wispr Flow is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+description: "Wispr Flow is a dictation app that turns spoken language into editable text for messages, documents and other workflows. Before adoption, review data handling, ownership, cost and the provider's official product information."
 official_url: "https://wisprflow.ai/"
 affiliate_url: 'https://wisprflow.ai/r?SSERGEJ1'
 created_at: 2026-04-25T00:00:00.000Z

@@ -10,6 +10,10 @@ import {
   ROBOTS_INDEX_FOLLOW,
   ROBOTS_NOINDEX_FOLLOW,
 } from "../../src/lib/searchIndexPolicy.mjs";
+import {
+  RECOVERY_ALLOWED_DE_PATHS,
+  RECOVERY_FORBIDDEN_SLUGS,
+} from "../../shared/recoveryManifest.mjs";
 import { applyRecoveryRobotsToHtml, redirectPreviewHost } from "../../functions/_middleware.js";
 
 test("recovery policy has explicit proof and global noindex samples", () => {
@@ -18,8 +22,13 @@ test("recovery policy has explicit proof and global noindex samples", () => {
   assert.equal(getToolSearchIndexDecision({ slug: "chatgpt", data: { search_index: true } }).robots, ROBOTS_NOINDEX_FOLLOW);
   assert.equal(getRecoveryPageRobots("/en/tools/"), ROBOTS_NOINDEX_FOLLOW);
   assert.equal(getRecoveryPageRobots("/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/"), ROBOTS_INDEX_FOLLOW);
-  assert.equal(RECOVERY_PROOF_RATGEBER_SLUGS.size, 5);
-  assert.equal(RECOVERY_PROOF_TOOL_SLUGS.size, 4);
+  assert.equal(RECOVERY_PROOF_RATGEBER_SLUGS.size, 8);
+  assert.equal(RECOVERY_PROOF_TOOL_SLUGS.size, 8);
+  assert.equal(RECOVERY_ALLOWED_DE_PATHS.size, 20);
+  for (const slug of RECOVERY_FORBIDDEN_SLUGS) {
+    assert.equal(RECOVERY_PROOF_TOOL_SLUGS.has(slug), false, slug);
+    assert.equal(RECOVERY_PROOF_RATGEBER_SLUGS.has(slug), false, slug);
+  }
 });
 
 test("Pages preview host redirect preserves path and query only", () => {
@@ -56,10 +65,13 @@ test("recovery sitemaps are exact when a build is present", async (t) => {
   assert.deepEqual(xmls[1], xmls[0]);
   assert.deepEqual(xmls[2], xmls[0]);
   const urls = [...xmls[0].matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-  assert.equal(urls.length, 13);
+  assert.equal(urls.length, 20);
   assert.equal(new Set(urls).size, urls.length);
   assert.ok(urls.every((url) => url.startsWith("https://tools.utildesk.de/") && !url.includes("/en/")));
-  const proofTools = new Set(["cloudconvert", "convertio", "smallpdf", "tesseract-ocr"]);
+  const proofTools = new Set([
+    "cloudconvert", "convertio", "smallpdf", "tesseract-ocr",
+    "openai-codex", "claude", "cursor", "github-copilot",
+  ]);
   assert.ok(!urls.some((url) => {
     const slug = url.match(/\/tools\/([^/]+)\/$/)?.[1];
     return slug && !proofTools.has(slug);
