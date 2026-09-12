@@ -5712,6 +5712,47 @@
         "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-09-12T23:31:12.663Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 3,
+        "pagesAssets": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-09-12T23:31:18.353Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file /tmp/utildesk-tool-runtime-release-2026-09-12T23-31-11-801Z/slugs.json --out /tmp/utildesk-tool-runtime-release-2026-09-12T23-31-11-801Z/live-delta --ledger /home/jgdus/projects/utildesk-seo-core-live-20260913/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/wispr-flow/",
+        "https://tools.utildesk.de/api/tools/wispr-flow.json",
+        "https://tools.utildesk.de/markdown/tools/wispr-flow.md",
+        "https://tools.utildesk.de/en/tools/wispr-flow/",
+        "https://tools.utildesk.de/en/api/tools/wispr-flow.json",
+        "https://tools.utildesk.de/en/markdown/tools/wispr-flow.md",
+        "https://tools.utildesk.de/tool-assets/daaf1426cadf093585fb1de63906774acb1f6bbb9141d38c7723b7cd0f6a3dc6/wispr-flow-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
