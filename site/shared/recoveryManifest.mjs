@@ -35,10 +35,3 @@ export const RECOVERY_ALLOWED_DE_PATHS = new Set([
   ...[...RECOVERY_ALLOWED_TOOL_SLUGS].map((slug) => `/tools/${slug}`),
   ...[...RECOVERY_ALLOWED_RATGEBER_SLUGS].map((slug) => `/ratgeber/${slug}`),
 ]);
-
-export const RECOVERY_FORBIDDEN_SLUGS = new Set([
-  "opencode",
-  "qodo",
-  "mem0",
-  "openclaw",
-]);
