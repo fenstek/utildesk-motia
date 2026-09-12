@@ -1,5 +1,15 @@
 # Recent Changes — utildesk-motia
 
+## 2026-09-13 - Bounded SEO recovery core
+
+- Expanded the live DE-only recovery surface from exactly 13 to exactly 20
+  canonical URLs using the shared `site/shared/recoveryManifest.mjs` consumed
+  by static policy, sitemap generation and edge middleware.
+- Added only the approved Codex, Claude, Cursor, GitHub Copilot and three
+  coding-workflow guide URLs; `opencode`, `qodo`, `mem0` and `openclaw` remain
+  excluded. EN policy and runtime D1 were not expanded or written.
+- Corrected Wispr Flow descriptions in DE/EN to truthful dictation wording.
+
 ## 2026-08-16 - Restored approved WebMCP archive after stale-base release [Codex]
 
 - Restored the approved DE/EN `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` package under its canonical slug, date, updated date and releaseOrder 52 after the stale-base release displaced it; Swarm remains the newest issue.

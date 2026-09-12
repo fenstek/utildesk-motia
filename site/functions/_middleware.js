@@ -1,4 +1,9 @@
 import { applyToolRoutePolicy, TOOL_REDIRECTS, TOOL_TOMBSTONES } from "../shared/toolRoutePolicy.mjs";
+import {
+  RECOVERY_ALLOWED_RATGEBER_SLUGS,
+  RECOVERY_ALLOWED_STATIC_PATHS,
+  RECOVERY_ALLOWED_TOOL_SLUGS,
+} from "../shared/recoveryManifest.mjs";
 
 const PUBLIC_SECTION_PREFIXES = [
   "/tools",
@@ -33,31 +38,17 @@ const RECOVERY_ROBOTS_INDEX_FOLLOW =
   "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
 const RECOVERY_ROBOTS_NOINDEX_FOLLOW =
   "noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
-const RECOVERY_PROOF_RATGEBER_SLUGS = new Set([
-  "beste-ocr-apis-rechnungen-deutschland-2026",
-  "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
-  "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
-  "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
-  "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
-]);
-const RECOVERY_PROOF_TOOL_SLUGS = new Set([
-  "cloudconvert",
-  "convertio",
-  "smallpdf",
-  "tesseract-ocr",
-]);
-
 const recoveryRobotsForPath = (pathname) => {
   const normalized = String(pathname || "").replace(/\/$/, "") || "/";
-  if (["/", "/tools", "/methodologie", "/ratgeber"].includes(normalized)) {
+  if (RECOVERY_ALLOWED_STATIC_PATHS.has(normalized)) {
     return RECOVERY_ROBOTS_INDEX_FOLLOW;
   }
   const ratgeber = normalized.match(/^\/ratgeber\/([^/]+)$/);
-  if (ratgeber && RECOVERY_PROOF_RATGEBER_SLUGS.has(ratgeber[1])) {
+  if (ratgeber && RECOVERY_ALLOWED_RATGEBER_SLUGS.has(ratgeber[1])) {
     return RECOVERY_ROBOTS_INDEX_FOLLOW;
   }
   const tool = normalized.match(/^\/tools\/([^/]+)$/);
-  if (tool && RECOVERY_PROOF_TOOL_SLUGS.has(tool[1])) {
+  if (tool && RECOVERY_ALLOWED_TOOL_SLUGS.has(tool[1])) {
     return RECOVERY_ROBOTS_INDEX_FOLLOW;
   }
   return RECOVERY_ROBOTS_NOINDEX_FOLLOW;

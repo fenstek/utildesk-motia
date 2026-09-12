@@ -15,7 +15,8 @@ continuity while adding no evidence-backed remedy.
 
 ## Deliberately narrow proof cluster
 
-The recovery sitemap contains exactly 13 URLs:
+The recovery sitemap contains exactly 20 URLs: the original 13 URLs below plus
+the seven approved coding-core URLs listed after them.
 
 - `https://tools.utildesk.de/`
 - `https://tools.utildesk.de/tools/`
@@ -30,13 +31,23 @@ The recovery sitemap contains exactly 13 URLs:
 - `https://tools.utildesk.de/tools/convertio/`
 - `https://tools.utildesk.de/tools/smallpdf/`
 - `https://tools.utildesk.de/tools/tesseract-ocr/`
+- `https://tools.utildesk.de/tools/openai-codex/`
+- `https://tools.utildesk.de/tools/claude/`
+- `https://tools.utildesk.de/tools/cursor/`
+- `https://tools.utildesk.de/tools/github-copilot/`
+- `https://tools.utildesk.de/ratgeber/coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow/`
+- `https://tools.utildesk.de/ratgeber/vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen/`
+- `https://tools.utildesk.de/ratgeber/multi-model-coding-workflows-codex-gemini-claude-code-review/`
 
 Requested tool slugs absent from source and therefore excluded: `abbyy-vantage`,
 `mistral-ocr`, `ocrmypdf`, `paddleocr`.
 
-`sitemap.xml`, `sitemap-focus.xml` and `sitemap-bing.xml` are intentionally
-identical. Tags remain routable, but tag archives and tag links are removed
-from the primary homepage/catalog graph and are not in recovery sitemaps.
+`site/shared/recoveryManifest.mjs` is the single allowlist consumed by static
+robots policy, sitemap generation and edge middleware. `sitemap.xml`,
+`sitemap-focus.xml` and `sitemap-bing.xml` are intentionally identical. Tags
+remain routable, but tag archives and tag links are removed from the primary
+homepage/catalog graph and are not in recovery sitemaps. `opencode`, `qodo`,
+`mem0` and `openclaw` are explicitly excluded.
 
 ## Switch and rollback
 

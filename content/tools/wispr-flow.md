@@ -9,7 +9,7 @@ editorial_batch: 2026-07-17-full-tool-card-editorial
 category: Audio & Video
 price_model: Freemium
 tags: [ai, audio, voice, dictation, speech, productivity, writing]
-description: Wispr Flow ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+description: Wispr Flow ist eine Diktier-App, die gesprochene Sprache in bearbeitbaren Text für Nachrichten, Dokumente und andere Arbeitsabläufe umwandelt. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
 official_url: "https://wisprflow.ai/"
 affiliate_url: "https://wisprflow.ai/r?SSERGEJ1"
 tier: A
