@@ -55,6 +55,12 @@ interface TaskItem {
   links?: { label: string; href: string }[];
 }
 
+interface RecoveryShowcaseItem {
+  title: string;
+  href: string;
+  rationale: string;
+}
+
 const {
   locale = "de",
   toolsCount = 0,
@@ -65,6 +71,7 @@ const {
   tools = [],
   tasks = [],
   tags = [],
+  recoveryShowcase,
 } = Astro.props as {
   locale?: "de" | "en";
   toolsCount: number;
@@ -75,6 +82,12 @@ const {
   tools: ToolItem[];
   tasks: TaskItem[];
   tags: [string, number][];
+  recoveryShowcase?: {
+    kicker: string;
+    title: string;
+    intro: string;
+    items: RecoveryShowcaseItem[];
+  };
 };
 
 const isEn = locale === "en";
@@ -417,6 +430,23 @@ const categoryRows = categories.slice(0, 8);
           ))}
         </div>
       </section>
+
+      {recoveryShowcase && (
+        <section class="ds-recovery-showcase" aria-labelledby="recovery-showcase-title">
+          <p class="ds-kicker">↳ {recoveryShowcase.kicker}</p>
+          <h2 id="recovery-showcase-title">{recoveryShowcase.title}</h2>
+          <p class="ds-recovery-intro">{recoveryShowcase.intro}</p>
+          <div class="ds-recovery-grid">
+            {recoveryShowcase.items.map((item, index) => (
+              <a href={item.href}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{item.title}</strong>
+                <em>{item.rationale}</em>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section class="ds-index ds-index-appendix">
         <div class="ds-index-head ds-index-head-spread">

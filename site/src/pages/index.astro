@@ -213,6 +213,20 @@ const taskIntents = [
     ],
   },
 ];
+const recoveryShowcase = {
+  kicker: "Coding-Praxis",
+  title: "Coding-Tools und praktische Leitfäden.",
+  intro: "Sieben redaktionelle Einstiege verbinden wichtige Coding-Tools mit konkreten Fragen zu Workflow, Review und Multi-Model-Praxis.",
+  items: [
+    { title: "OpenAI Codex", href: "/tools/openai-codex/", rationale: "Agentische Code-Arbeit mit klarer Review-Verantwortung einordnen." },
+    { title: "Claude", href: "/tools/claude/", rationale: "Kontextstärke und Grenzen für anspruchsvolle Entwickler-Workflows prüfen." },
+    { title: "Cursor", href: "/tools/cursor/", rationale: "Editor-first Coding gegen Teamregeln und Pilotbetrieb abwägen." },
+    { title: "GitHub Copilot", href: "/tools/github-copilot/", rationale: "Den pragmatischen Team-Standard mit Review-Grenzen verstehen." },
+    { title: "Coding-Agenten 2026", href: "/ratgeber/coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow/", rationale: "Codex, Claude Code und Gemini CLI im Entwickler-Workflow vergleichen." },
+    { title: "Vibe Coding", href: "/ratgeber/vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen/", rationale: "Prototyping von belastbarer Verifikation und Tests trennen." },
+    { title: "Multi-Model-Workflows", href: "/ratgeber/multi-model-coding-workflows-codex-gemini-claude-code-review/", rationale: "Mehrere Modelle mit Zuständigkeiten, Übergaben und Review verbinden." },
+  ],
+};
 const recentRatgeber = allRatgeber.slice(0, 3);
 
 const normalizedToolTerms = (tool) =>
@@ -296,6 +310,7 @@ const homepageSchemas = [
     tools={templateTools}
     tasks={taskIntents}
     tags={topTags}
+    recoveryShowcase={recoveryShowcase}
   />
 
   <div class="legacy-home" hidden>

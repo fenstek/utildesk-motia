@@ -54,6 +54,12 @@ const recoveryRobotsForPath = (pathname) => {
   return RECOVERY_ROBOTS_NOINDEX_FOLLOW;
 };
 
+export const applyRecoveryResponseHeaders = (headers, indexable) => {
+  if (indexable) headers.delete("X-Robots-Tag");
+  else headers.set("X-Robots-Tag", "noindex, follow");
+  return headers;
+};
+
 export const applyRecoveryRobotsToHtml = (html, pathname) => {
   const robots = recoveryRobotsForPath(pathname);
   const meta = `<meta name="robots" content="${robots}">`;
@@ -251,8 +257,7 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
         headers.delete("content-encoding");
-        if (recoveryHtml.indexable) headers.delete("X-Robots-Tag");
-        else headers.set("X-Robots-Tag", "noindex, follow");
+        applyRecoveryResponseHeaders(headers, recoveryHtml.indexable);
         const styledHtml = runtimeHtml.replace(
           "</head>",
           `<link rel="stylesheet" href="${RUNTIME_RATGEBER_STYLESHEET}"></head>`,
@@ -266,8 +271,7 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
         headers.delete("content-encoding");
-        if (recoveryHtml.indexable) headers.delete("X-Robots-Tag");
-        else headers.set("X-Robots-Tag", "noindex, follow");
+        applyRecoveryResponseHeaders(headers, recoveryHtml.indexable);
         const orderedResponse = new Response(runtimeHtml, { status: response.status, headers });
         orderedResponse.headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : cluster === "tool-shell" ? "tool-shell-v1" : "ratgeber-v1");
         return orderedResponse;
