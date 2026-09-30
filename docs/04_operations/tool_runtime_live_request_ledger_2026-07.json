@@ -5712,6 +5712,88 @@
         "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-09-30T09:09:58.821Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 3,
+        "pagesAssets": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-09-30T09:10:11.102Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\Users\\sserg\\.codex\\jev-runtime-release-20260930\\slugs.json --out C:\\Users\\sserg\\.codex\\jev-runtime-release-20260930\\live-delta --ledger C:\\projects\\utildesk-jev-release-20260930\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/jev/",
+        "https://tools.utildesk.de/api/tools/jev.json",
+        "https://tools.utildesk.de/markdown/tools/jev.md",
+        "https://tools.utildesk.de/en/tools/jev/",
+        "https://tools.utildesk.de/en/api/tools/jev.json",
+        "https://tools.utildesk.de/en/markdown/tools/jev.md",
+        "https://tools.utildesk.de/tool-assets/e18a9d5dcc7e525d6fe9c3e38be3e324ca65e10ec791e06c48245edeff0517fc/jev-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-09-30T09:13:16.101Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 3,
+        "pagesAssets": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-09-30T09:13:26.267Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\Users\\sserg\\.codex\\jev-runtime-price-fix-20260930\\slugs.json --out C:\\Users\\sserg\\.codex\\jev-runtime-price-fix-20260930\\live-delta --ledger C:\\projects\\utildesk-jev-release-20260930\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/jev/",
+        "https://tools.utildesk.de/api/tools/jev.json",
+        "https://tools.utildesk.de/markdown/tools/jev.md",
+        "https://tools.utildesk.de/en/tools/jev/",
+        "https://tools.utildesk.de/en/api/tools/jev.json",
+        "https://tools.utildesk.de/en/markdown/tools/jev.md",
+        "https://tools.utildesk.de/tool-assets/e18a9d5dcc7e525d6fe9c3e38be3e324ca65e10ec791e06c48245edeff0517fc/jev-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
