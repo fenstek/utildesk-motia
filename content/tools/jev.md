@@ -8,7 +8,7 @@ editorial_status: "manual_polished"
 editorial_verdict: caution
 editorial_batch: "2026-09-30-full-tool-card-editorial"
 category: AI Infrastructure
-price_model: Nutzungsbasiert
+price_model: "Pay-as-you-go"
 tags: [ai, api, classification, structured-output]
 official_url: "https://typesafe.ai/"
 description: "Jev von TypeSafe bewertet enge Textfragen als typisierte Entscheidungen mit Wahrscheinlichkeiten; Qualität, Sprachabdeckung und Eskalationsregeln müssen Teams selbst prüfen."
