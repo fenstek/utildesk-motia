@@ -1,26 +1,24 @@
 ---
-description: "Programmierschnittstelle für multimodale Modellantworten, strukturierte Ausgaben, Tool-Aufrufe, Agenten und Evaluation."
-slug: "openai-api"
-title: "OpenAI API"
+description: Programmierschnittstelle für multimodale Modellantworten, strukturierte Ausgaben, Tool-Aufrufe, Agenten und Evaluation.
+slug: openai-api
+title: OpenAI API
 editorial_reviewed: true
 editorial_verdict: recommend
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-31"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-31-story-card-refresh-20"
-category: "AI Coding"
-price_model: "Pay-as-you-go"
-tags:
-  - ai
-  - devtools
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-20
+category: AI Coding
+price_model: Pay-as-you-go
+tags: 
 official_url: "https://platform.openai.com/"
 affiliate_url: "https://platform.openai.com/"
-tier: "A"
-lastReviewed: "2026-07-31"
+tier: A
+lastReviewed: 2026-07-31
 mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen"]
-created_at: "2026-02-11"
-updated_at: "2026-07-31"
-popularity: 0
+created_at: 2026-02-11
+updated_at: 2026-07-31
+popularity: 1
 ---
 # OpenAI API
 
