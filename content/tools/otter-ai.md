@@ -1,24 +1,22 @@
 ---
-description: "Meeting-Assistent für Live-Transkripte, Sprecherzuordnung, Zusammenfassungen und verknüpfte Aufgaben mit menschlicher Prüfung."
-slug: "otter-ai"
-title: "Otter.ai"
-updated_at: "2026-07-31"
+description: Meeting-Assistent für Live-Transkripte, Sprecherzuordnung, Zusammenfassungen und verknüpfte Aufgaben mit menschlicher Prüfung.
+slug: otter-ai
+title: Otter.ai
+updated_at: 2026-07-31
 editorial_reviewed: true
 editorial_verdict: caution
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-31"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-31-story-card-refresh-20"
-category: "Audio & Video"
-price_model: "Freemium"
-tags:
-  - ai
-  - transcription
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-31
+editorial_status: manual_polished
+editorial_batch: 2026-07-31-story-card-refresh-20
+category: Audio & Video
+price_model: Freemium
+tags: 
 official_url: "https://otter.ai/"
-popularity: 0
-tier: "A"
+popularity: 17
+tier: A
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
-created_at: "2026-02-02"
+created_at: 2026-02-02
 ---
 # Otter.ai
 

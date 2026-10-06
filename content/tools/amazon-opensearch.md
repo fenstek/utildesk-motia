@@ -2,18 +2,18 @@
 slug: amazon-opensearch
 title: Amazon OpenSearch
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [search, data, analytics, cloud]
 official_url: "https://aws.amazon.com/opensearch-service/"
-description: "Verwalteter AWS-Dienst für Volltextsuche, Log- und Sicherheitsanalysen, Observability sowie Vektor- und Hybrid-Retrieval."
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+description: Verwalteter AWS-Dienst für Volltextsuche, Log- und Sicherheitsanalysen, Observability sowie Vektor- und Hybrid-Retrieval.
+popularity: 100
+tier: C
+generated_at: 2026-05-14
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
 ---

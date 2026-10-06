@@ -18,7 +18,7 @@ lastReviewed: 2026-07-31
 mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen"]
 created_at: 2026-02-11
 updated_at: 2026-07-31
-popularity: 1
+popularity: 51
 ---
 # OpenAI API
 
