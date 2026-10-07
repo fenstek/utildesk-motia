@@ -1,0 +1,235 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Datenschutzerklärung - Utildesk"
+  description="Datenschutzhinweise für Utildesk, Hosting, Webanalyse, externe Inhalte und Kontaktaufnahme."
+  robots="noindex,nofollow,noarchive,nosnippet"
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/datenschutz/" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="bingbot" content="noindex,nofollow,noarchive,nosnippet" />
+  </Fragment>
+
+  <article class="tool-akte sheet-wrap legal-sheet legal-sheet-plain">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/">← Startseite</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Datenschutz</span>
+    </nav>
+
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">↳ rechtliches · datenschutz</div>
+      <h1 class="sheet-head-h1">Datenschutzerklärung<span class="akte-mast-dot">.</span></h1>
+      <p class="sheet-head-dek">
+        Diese Datenschutzhinweise beschreiben, welche Daten beim Besuch von Utildesk verarbeitet werden.
+        Sie dienen der Transparenz und ersetzen keine individuelle Rechtsberatung.
+      </p>
+      <div class="sheet-head-meta">
+        <span><strong>Stand:</strong> 7. Oktober 2026</span>
+        <span>·</span>
+        <span>Noindex, nicht für Suchmaschinen bestimmt</span>
+      </div>
+    </header>
+
+    <section class="akte-article legal-article">
+      <div class="akte-article-body legal-prose">
+        <div>
+          <h2>1. Kontakt für Datenschutzanfragen</h2>
+          <p>
+            Öffentliche Kontaktstelle für Datenschutzanfragen ist Utildesk Redaktion. Sie erreichen
+            die Redaktion unter <a href="mailto:utildesk@proton.me">utildesk@proton.me</a>.
+          </p>
+
+          <h2>2. Welche Daten grundsätzlich anfallen</h2>
+          <p>
+            Beim Aufruf der Website übermittelt Ihr Browser technisch notwendige Verbindungsdaten.
+            Dazu gehören insbesondere IP-Adresse, Zeitpunkt, angeforderte Adresse, Referrer,
+            Browser-/Betriebssystemangaben und HTTP-Status. Weitere Daten erhalten wir nur, wenn Sie
+            sie mitteilen, optionale Statistik erlauben oder den geschützten Redaktionsbereich nutzen.
+          </p>
+          <p>
+            Die Verarbeitung dient der Auslieferung, Sicherheit und Fehlerbehebung, der von Ihnen
+            gewählten Darstellung, der Bearbeitung von Anfragen und – nur mit Einwilligung – einer
+            sparsamen Reichweitenmessung.
+          </p>
+
+          <h2>3. Hosting und Auslieferung über Cloudflare</h2>
+          <p>
+            Die öffentliche Website, Weiterleitungen und bestimmte API-Funktionen werden über
+            Cloudflare Pages und Cloudflare Pages Functions bereitgestellt. Empfänger und
+            Auftragsverarbeiter ist Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA.
+            Cloudflare verarbeitet die technisch notwendigen Zugriffsdaten, um den Dienst
+            auszuliefern, gegen Angriffe zu schützen und Störungen zu untersuchen.
+          </p>
+          <p>
+            Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in
+            einer sicheren, schnellen und stabilen Bereitstellung. Für Übermittlungen in die USA
+            stützt sich Cloudflare nach eigenen Angaben auf das EU-US Data Privacy Framework und,
+            soweit erforderlich, auf EU-Standardvertragsklauseln mit ergänzenden Maßnahmen.
+            Weitere Informationen finden Sie in der
+            <a href="https://www.cloudflare.com/policies/privacy/" rel="nofollow noopener">Datenschutzerklärung von Cloudflare</a>.
+          </p>
+
+          <h2>4. Server- und Sicherheitslogs</h2>
+          <p>
+            Cloudflare und die von uns betriebenen Server können Zugriffs- und Sicherheitslogs
+            erstellen. Sie werden für Auslieferung, Fehleranalyse, Missbrauchsabwehr, DDoS-Schutz
+            und Nachweis technischer Vorfälle verwendet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f
+            DSGVO. Logdaten werden gelöscht, anonymisiert oder überschrieben, sobald sie für diese
+            Zwecke nicht mehr erforderlich sind; abweichende Aufbewahrung kommt nur bei einem
+            konkreten Sicherheitsvorfall oder einer gesetzlichen Pflicht in Betracht.
+          </p>
+
+          <h2>5. Cookies und lokale Einstellungen</h2>
+          <p>
+            Der öffentliche Bereich setzt keine Marketing-Cookies. Für ausdrücklich gewählte
+            Einstellungen nutzt Utildesk <code>localStorage</code>. Gespeichert werden können
+            <code>utildesk-theme</code> und <code>utildesk-design</code> für Darstellung und Design,
+            <code>utildesk-tools-view</code> und <code>utildesk-tools-sort</code> für die Ansicht des
+            Tool-Index sowie <code>utildesk-analytics-consent-v1</code> für Ihre Statistik-Auswahl.
+            Diese Werte bleiben grundsätzlich auf Ihrem Gerät.
+          </p>
+          <p>
+            Diese Speicherung ist erforderlich, um die ausdrücklich gewünschten Einstellungen
+            bereitzustellen oder eine bereits getroffene Datenschutz-Auswahl zu beachten
+            (§ 25 Abs. 2 Nr. 2 TDDDG). Sie können die Werte in den Website-Daten Ihres Browsers
+            löschen; dann werden die Einstellungen erneut abgefragt oder auf Standardwerte gesetzt.
+          </p>
+          <p>
+            Der nicht öffentliche Ratgeber-Review-Bereich unter <code>/admin/ratgeber/</code> setzt
+            nach erfolgreicher Anmeldung das sichere Session-Cookie
+            <code>utildesk_ratgeber_review</code>. Es dient ausschließlich der Zugangskontrolle und
+            ist nach § 25 Abs. 2 Nr. 2 TDDDG technisch erforderlich.
+          </p>
+
+          <h2>6. Optionale Webanalyse mit Umami</h2>
+          <p>
+            Utildesk lädt die selbst gehostete Umami-Analyse auf <code>stats.utildesk.de</code> erst,
+            nachdem Sie „Statistik erlauben“ gewählt haben. Ohne Einwilligung wird das
+            Analyse-Skript nicht geladen. Rechtsgrundlagen sind Ihre Einwilligung nach Art. 6 Abs. 1
+            lit. a DSGVO und § 25 Abs. 1 TDDDG.
+          </p>
+          <p>
+            Umami arbeitet ohne Analyse-Cookies und ohne websiteübergreifende Werbeprofile. Erfasst
+            werden können Seitenadresse und Seitentitel, Referrer, Zeitpunkt, Sprache,
+            Browser-/Betriebssystem- und Gerätetyp, Bildschirmauflösung sowie Land oder Region.
+            Die IP-Adresse wird serverseitig zur technischen Verarbeitung und groben
+            Standortbestimmung verwendet, nach Angaben von Umami aber nicht gespeichert. Utildesk
+            erfasst zusätzlich das Ereignis <code>qualified-reader</code>, wenn eine reale
+            Nutzerinteraktion, mindestens 45 Sekunden Lesezeit und mindestens 50 Prozent
+            Scrolltiefe zusammenkommen; gespeichert werden dabei Seitentyp, Sprache, Schwellenwert
+            und Zeitwert, nicht der Inhalt Ihrer Eingaben.
+          </p>
+          <p>
+            Umami läuft auf einem von uns betriebenen Server in Deutschland. Sie können Ihre
+            Einwilligung jederzeit mit Wirkung für die Zukunft über
+            „Datenschutz-Einstellungen“ im Seitenfuß ändern. Ein Widerruf berührt nicht die
+            Rechtmäßigkeit der bis dahin erfolgten Verarbeitung.
+          </p>
+
+          <h2>7. Externe Schriftarten, Logos und Favicons</h2>
+          <p>
+            Die Website lädt Schriftarten von Google Fonts. Bei fehlenden lokalen Tool-Logos können
+            außerdem Favicon-Dienste von Google, DuckDuckGo oder Icon.Horse angefragt werden. Dabei
+            wird Ihre IP-Adresse technisch an den jeweiligen Anbieter übermittelt; je nach Anbieter
+            können Browserinformationen und die anfordernde Seite hinzukommen.
+          </p>
+          <p>
+            Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in
+            einer lesbaren, konsistenten und wiedererkennbaren Darstellung des Katalogs. Anbieter
+            mit Sitz in den USA können Daten dort verarbeiten und hierfür insbesondere
+            Angemessenheitsbeschlüsse oder Standardvertragsklauseln nutzen.
+          </p>
+
+          <h2>8. Externe Links und mögliche Affiliate-Links</h2>
+          <p>
+            Tool-Einträge und Ratgeber verweisen auf externe Anbieter. Einige Links können
+            Affiliate- oder Referral-Parameter enthalten. Erst wenn Sie einen solchen Link
+            anklicken, verlassen Sie Utildesk; der Zielanbieter verarbeitet den Aufruf nach seiner
+            eigenen Datenschutzerklärung und kann eine Partnerzuordnung vornehmen. Utildesk setzt
+            hierfür keine eigenen Marketing-Cookies.
+          </p>
+
+          <h2>9. Maschinenlesbare Inhalte und interner Redaktionsbereich</h2>
+          <p>
+            RSS-/JSON-Feeds, <code>llms.txt</code>, Markdown-Spiegel und JSON-API-Endpunkte erzeugen
+            dieselben technischen Zugriffsdaten wie normale Seiten. Der geschützte
+            Ratgeber-Review-Bereich verarbeitet Artikelentwürfe, Bilder, Metadaten und
+            Statusinformationen in Cloudflare KV. Er ist nicht öffentlich indexierbar und durch
+            Anmeldung bzw. technische Tokens geschützt.
+          </p>
+
+          <h2>10. Kontaktaufnahme</h2>
+          <p>
+            Bei einer Kontaktaufnahme verarbeiten wir Absenderadresse, Inhalt, Zeitpunkt und weitere
+            freiwillig übermittelte Angaben zur Bearbeitung der Anfrage und möglicher Anschlussfragen.
+            Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO für vorvertragliche oder vertragliche
+            Anliegen, ansonsten Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der
+            sachgerechten Kommunikation und Dokumentation.
+          </p>
+
+          <h2>11. Empfänger und Drittlandübermittlungen</h2>
+          <p>
+            Daten erhalten nur Stellen, die sie für die genannten Zwecke benötigen: insbesondere
+            Cloudflare für Hosting und Schutz, die beim Abruf externer Ressourcen angesprochenen
+            Anbieter sowie E-Mail- und Infrastrukturprovider bei einer Kontaktaufnahme. Innerhalb
+            unseres Betriebs erhalten nur berechtigte Personen Zugriff.
+          </p>
+          <p>
+            Bei Empfängern außerhalb der EU/des EWR stützen wir Übermittlungen – soweit erforderlich –
+            auf einen Angemessenheitsbeschluss, EU-Standardvertragsklauseln und ergänzende
+            Schutzmaßnahmen.
+          </p>
+
+          <h2>12. Speicherdauer</h2>
+          <p>
+            Wir speichern personenbezogene Daten nur so lange, wie der jeweilige Zweck besteht.
+            Kontaktanfragen werden nach abschließender Bearbeitung gelöscht, sofern keine gesetzlichen
+            Aufbewahrungs- oder Nachweispflichten entgegenstehen. Sicherheitsdaten können bei einem
+            konkreten Vorfall bis zu dessen Klärung aufbewahrt werden. Analyseinformationen werden
+            gelöscht oder aggregiert, sobald sie für Reichweitenvergleich und Verbesserung des
+            Angebots nicht mehr benötigt werden. Lokale Einstellungen bleiben bis zur Löschung durch
+            Sie oder den Browser auf Ihrem Gerät.
+          </p>
+
+          <h2>13. Ihre Rechte</h2>
+          <p>
+            Soweit die gesetzlichen Voraussetzungen vorliegen, haben Sie Rechte auf Auskunft
+            (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18),
+            Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Eine Einwilligung können Sie
+            jederzeit mit Wirkung für die Zukunft widerrufen.
+          </p>
+          <p>
+            <strong>Widerspruch:</strong> Sie können einer Verarbeitung, die auf Art. 6 Abs. 1
+            lit. f DSGVO beruht, aus Gründen widersprechen, die sich aus Ihrer besonderen Situation
+            ergeben. Wir verarbeiten die betroffenen Daten dann nicht weiter, sofern keine
+            zwingenden schutzwürdigen Gründe oder Rechtsansprüche entgegenstehen.
+          </p>
+          <p>
+            Sie können sich außerdem nach Art. 77 DSGVO bei einer Datenschutzaufsichtsbehörde
+            beschweren. Für den Betreiber ist die Landesbeauftragte für Datenschutz und
+            Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf,
+            <a href="https://www.ldi.nrw.de/" rel="nofollow noopener">www.ldi.nrw.de</a>, zuständig.
+          </p>
+
+          <h2>14. Pflicht zur Bereitstellung und automatisierte Entscheidungen</h2>
+          <p>
+            Ohne die technisch notwendigen Verbindungsdaten kann die Website nicht ausgeliefert
+            werden. Alle weiteren Angaben sind freiwillig; ohne Kontaktdaten können wir eine Anfrage
+            gegebenenfalls nicht beantworten. Eine ausschließlich automatisierte Entscheidung mit
+            rechtlicher oder ähnlich erheblicher Wirkung findet nicht statt.
+          </p>
+
+          <h2>15. Aktualität und Änderungen</h2>
+          <p>
+            Diese Datenschutzerklärung wird angepasst, wenn sich Website, Infrastruktur,
+            Verarbeitungsvorgänge oder rechtliche Anforderungen ändern.
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>

@@ -1,0 +1,166 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+---
+
+<BaseLayout
+  locale="en"
+  title="Privacy Policy - Utildesk"
+  description="Privacy information for Utildesk, hosting, analytics and external resources."
+  robots="noindex,nofollow,noarchive,nosnippet"
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/en/privacy/" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="bingbot" content="noindex,nofollow,noarchive,nosnippet" />
+  </Fragment>
+
+  <article class="tool-akte sheet-wrap legal-sheet legal-sheet-plain">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/en/">Back to directory</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Privacy</span>
+    </nav>
+
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">legal / privacy</div>
+      <h1 class="sheet-head-h1">Privacy Policy<span class="akte-mast-dot">.</span></h1>
+      <p class="sheet-head-dek">
+        This English version summarizes the German privacy policy for international readers.
+        The German version remains the primary legal text.
+      </p>
+      <div class="sheet-head-meta">
+        <span><strong>Last updated:</strong> 7 October 2026</span>
+        <span>·</span>
+        <span>Noindex, not intended for search discovery</span>
+      </div>
+    </header>
+
+    <section class="akte-article legal-article">
+      <div class="akte-article-body legal-prose">
+        <div>
+          <h2>1. Data protection contact</h2>
+          <p>
+            The public contact point for data protection enquiries is Utildesk Redaktion. You can
+            reach the editorial desk at
+            <a href="mailto:utildesk@proton.me">utildesk@proton.me</a>.
+          </p>
+
+          <h2>2. Technical access data and Cloudflare</h2>
+          <p>
+            A page request necessarily transmits connection data such as IP address, timestamp,
+            requested URL, referrer, browser/operating-system information and HTTP status. Utildesk is
+            delivered through Cloudflare Pages and Cloudflare Pages Functions. Cloudflare, Inc. acts as
+            a recipient and processor for delivery, security, DDoS protection and troubleshooting.
+            Processing is based on Article 6(1)(f) GDPR.
+          </p>
+          <p>
+            Cloudflare may process data outside the EEA. According to Cloudflare, transfers to the
+            United States rely on the EU-US Data Privacy Framework and, where required, the EU Standard
+            Contractual Clauses with supplementary measures.
+          </p>
+
+          <h2>3. Logs, cookies and local storage</h2>
+          <p>
+            Server and security logs are used only for delivery, troubleshooting, abuse prevention and
+            security. They are deleted, anonymised or overwritten when no longer needed, unless an
+            incident or legal obligation requires longer retention.
+          </p>
+          <p>
+            The public site does not set marketing cookies. <code>localStorage</code> can retain
+            <code>utildesk-theme</code>, <code>utildesk-design</code>,
+            <code>utildesk-tools-view</code>, <code>utildesk-tools-sort</code> and
+            <code>utildesk-analytics-consent-v1</code> to remember choices expressly made by the
+            visitor. The protected editorial area uses the strictly necessary session cookie
+            <code>utildesk_ratgeber_review</code>.
+          </p>
+
+          <h2>4. Optional Umami analytics</h2>
+          <p>
+            The self-hosted, cookie-free Umami tracker on <code>stats.utildesk.de</code> is loaded only
+            after the visitor chooses “Allow statistics”. The legal bases are consent under Article
+            6(1)(a) GDPR and Section 25(1) TDDDG. Without consent, the analytics script is not loaded.
+          </p>
+          <p>
+            Umami may process page URL and title, referrer, timestamp, language, browser, operating
+            system, device type, screen resolution and approximate country or region. The IP address
+            is used for technical processing and coarse location but, according to Umami, is not
+            stored. Utildesk also records a <code>qualified-reader</code> event after a trusted
+            interaction, at least 45 seconds reading time and at least 50 percent scroll depth. It
+            stores page type, language and threshold values, not the content of user input.
+          </p>
+          <p>
+            Consent can be changed at any time through “Privacy settings” in the footer. Withdrawal
+            does not affect processing that was lawful before withdrawal.
+          </p>
+
+          <h2>5. External resources and links</h2>
+          <p>
+            The site loads Google Fonts and may request missing tool favicons from Google, DuckDuckGo
+            or Icon.Horse. The visitor's IP address and technical request information are transferred
+            to the relevant provider. This is based on the legitimate interest in a readable and
+            recognisable directory under Article 6(1)(f) GDPR. Providers outside the EEA may rely on
+            adequacy decisions or Standard Contractual Clauses.
+          </p>
+          <p>
+            Tool entries and guides can contain affiliate or referral links. The destination provider
+            processes a request under its own privacy policy only after the visitor follows the link.
+            Utildesk does not set its own marketing cookie for this purpose.
+          </p>
+
+          <h2>6. Machine-readable and editorial endpoints</h2>
+          <p>
+            Utildesk provides feeds, JSON APIs, Markdown mirrors and <code>llms.txt</code> manifests. These
+            endpoints create the same technical access data as regular page views. The protected
+            Ratgeber review area stores drafts, images, metadata and status information in Cloudflare
+            KV and is protected by authentication and technical tokens.
+          </p>
+
+          <h2>7. Contact</h2>
+          <p>
+            If a visitor contacts Utildesk, the sender address, message, time and voluntarily supplied
+            information are processed to handle the request. The legal basis is Article 6(1)(b) GDPR
+            for contractual or pre-contractual matters and otherwise Article 6(1)(f) GDPR.
+          </p>
+
+          <h2>8. Recipients, transfers and retention</h2>
+          <p>
+            Data is disclosed only to recipients needed for the stated purposes, especially Cloudflare,
+            providers of requested external resources and communication or infrastructure providers.
+            International transfers rely, where required, on an adequacy decision, Standard Contractual
+            Clauses and supplementary measures.
+          </p>
+          <p>
+            Personal data is retained only while the relevant purpose exists. Contact data is deleted
+            after the request is resolved unless retention duties apply. Security data can be retained
+            until an incident is resolved. Analytics data is deleted or aggregated when no longer
+            needed for audience comparison and service improvement. Local preferences remain on the
+            visitor's device until deleted by the visitor or browser.
+          </p>
+
+          <h2>9. Your rights</h2>
+          <p>
+            Subject to the statutory conditions, data subjects have rights of access, rectification,
+            erasure, restriction, portability and objection under Articles 15–21 GDPR. Consent may be
+            withdrawn at any time with future effect. A complaint can be lodged under Article 77 GDPR,
+            including with the State Commissioner for Data Protection and Freedom of Information of
+            North Rhine-Westphalia, <a href="https://www.ldi.nrw.de/" rel="nofollow noopener">www.ldi.nrw.de</a>.
+          </p>
+
+          <h2>10. Required data and automated decisions</h2>
+          <p>
+            The website cannot be delivered without technically necessary connection data. All other
+            information is voluntary. Utildesk does not make solely automated decisions that produce
+            legal or similarly significant effects.
+          </p>
+
+          <h2>11. Updates</h2>
+          <p>This policy may be updated when the website, infrastructure or legal requirements change.</p>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>

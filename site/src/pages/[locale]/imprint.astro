@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+---
+
+<BaseLayout
+  locale="en"
+  title="Imprint - Utildesk"
+  description="Project and contact details for Utildesk Redaktion, an independent editorial project. Contact: utildesk@proton.me."
+  robots="noindex,nofollow,noarchive,nosnippet"
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/en/imprint/" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="bingbot" content="noindex,nofollow,noarchive,nosnippet" />
+  </Fragment>
+
+  <article class="tool-akte sheet-wrap legal-sheet legal-sheet-plain imprint-sheet">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/en/">Back to directory</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Imprint</span>
+    </nav>
+
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">legal / project and contact details</div>
+      <h1 class="sheet-head-h1">Imprint<span class="akte-mast-dot">.</span></h1>
+      <p class="sheet-head-dek">
+        Project and contact details for Utildesk.
+      </p>
+      <div class="sheet-head-meta">
+        <span><strong>Last updated:</strong> 7 October 2026</span>
+      </div>
+    </header>
+
+    <section class="akte-article legal-article">
+      <div class="akte-article-body legal-prose">
+        <div>
+          <h2>Project</h2>
+          <p>
+            Utildesk Redaktion is an independent editorial project.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            For project enquiries, contact the editorial desk at
+            <a href="mailto:utildesk@proton.me">utildesk@proton.me</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
