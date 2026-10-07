@@ -1,18 +1,18 @@
 ---
 slug: kodular
 title: Kodular
-editorial_reviewed: "true"
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed: true
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-17
 editorial_status: manual_polished
 editorial_batch: 2026-07-17-full-tool-card-editorial
-category: "AI Coding"
+category: AI Coding
 price_model: Freemium
 official_url: "https://www.kodular.io/"
 description: "Kodular im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
-tags: "[no-code, automation, productivity, design, developer-tools]"
-popularity: 0
+tags: [no-code, automation, productivity, design, developer-tools]
+popularity: 29
 tier: C
 generated_at: 2026-05-15
 ---

@@ -2,16 +2,16 @@
 slug: google-cloud-functions
 title: Google Cloud Functions
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-14
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-14-optiplex-editorial-50"
+editorial_status: manual_polished
+editorial_batch: 2026-07-14-optiplex-editorial-50
 category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [serverless, cloud, developer-tools, api]
 official_url: "https://cloud.google.com/functions"
-description: "Serverless-Funktionen für HTTP- und ereignisgetriebene Backends, deren Build-, IAM-, Event- und Cloud-Run-Betrieb bewusst eingerichtet werden muss."
-popularity: 0
+description: Serverless-Funktionen für HTTP- und ereignisgetriebene Backends, deren Build-, IAM-, Event- und Cloud-Run-Betrieb bewusst eingerichtet werden muss.
+popularity: 65
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-07-14

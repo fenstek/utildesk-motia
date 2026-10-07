@@ -1,21 +1,21 @@
 ---
-description: "Amazon Rekognition ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-title: "Amazon Rekognition"
+description: Amazon Rekognition ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+title: Amazon Rekognition
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-slug: "amazon-rekognition"
-category: "AI Coding"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+slug: amazon-rekognition
+category: AI Coding
+price_model: Freemium
 tags: ["video", "automation"]
 official_url: "https://aws.amazon.com/rekognition/"
 created_at: 2026-02-13
-popularity: 0
-tier: "C"
-generated_at: "2026-05-10"
-updated_at: "2026-07-17"
+popularity: 86
+tier: C
+generated_at: 2026-05-10
+updated_at: 2026-07-17
 ---
 
 # Amazon Rekognition

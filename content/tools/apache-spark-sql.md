@@ -11,7 +11,7 @@ category: AI Infrastructure
 price_model: Open Source
 tags: [data, workflow]
 official_url: "https://spark.apache.org/sql/"
-popularity: 0
+popularity: 72
 tier: C
 generated_at: 2026-05-14
 updated_at: 2026-07-13

@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant,automation]
 official_url: "https://www.kodular.io/"
-popularity: 0
+popularity: 29
 ---
 
 # Kodular

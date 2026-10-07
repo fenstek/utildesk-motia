@@ -1,20 +1,20 @@
 ---
-description: "Google Meet ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
-slug: "google-meet"
-title: "Google Meet"
+description: Google Meet ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+slug: google-meet
+title: Google Meet
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
-category: "AI Agents"
-price_model: "Freemium"
+editorial_reviewed_by: Utildesk Redaktion
+editorial_reviewed_at: 2026-07-17
+editorial_status: manual_polished
+editorial_batch: 2026-07-17-full-tool-card-editorial
+category: AI Agents
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://workspace.google.com/products/meet/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-12"
-updated_at: "2026-07-17"
+popularity: 58
+tier: C
+generated_at: 2026-05-12
+updated_at: 2026-07-17
 ---
 
 # Google Meet

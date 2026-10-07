@@ -12,7 +12,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [ai, coding, developer-tools, cli]
 official_url: "https://opencode.ai/"
-popularity: 34
+popularity: 15
 tier: B
 updated_at: 2026-07-17
 generated_at: 2026-05-31

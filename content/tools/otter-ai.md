@@ -13,7 +13,7 @@ category: Audio & Video
 price_model: Freemium
 tags: 
 official_url: "https://otter.ai/"
-popularity: 17
+popularity: 8
 tier: A
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-02-02
