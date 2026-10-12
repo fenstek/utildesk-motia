@@ -175,6 +175,18 @@ html[data-design="decision"] .ki-blatt-header .ds-nav-right {
   opacity: 1;
 }
 
+@supports (height: 1cqw) {
+  .ds-shader-cover-artwork {
+    container-type: inline-size;
+  }
+
+  .ds-shader-preview-stage {
+    /* Give percentage-sized image/canvas children a definite block size. */
+    height: calc(100cqw / 1.38);
+    aspect-ratio: auto;
+  }
+}
+
 .ds-shader-cover-artwork figcaption {
   display: flex;
   flex-wrap: wrap;
