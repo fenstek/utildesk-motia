@@ -10,6 +10,23 @@ export const INDEXABLE_NEWEST_TOOL_LIMIT = 0;
 export const MIN_EDITORIAL_BODY_WORDS = 450;
 export const MIN_EDITORIAL_SECTION_MATCHES = 6;
 
+// Temporary 6–8 week search recovery experiment. Roll back by setting this
+// to false and restoring the previous proof lists below.
+export const SEARCH_RECOVERY_MODE = true;
+export const RECOVERY_PROOF_TOOL_SLUGS = new Set([
+  "cloudconvert",
+  "convertio",
+  "smallpdf",
+  "tesseract-ocr",
+]);
+export const RECOVERY_PROOF_RATGEBER_SLUGS = new Set([
+  "beste-ocr-apis-rechnungen-deutschland-2026",
+  "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+  "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+  "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+  "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+]);
+
 const TRUE_VALUES = new Set(["1", "true", "yes", "index", "indexable"]);
 const FALSE_VALUES = new Set(["0", "false", "no", "noindex", "hidden"]);
 const EDITORIAL_SECTION_PATTERNS = [
@@ -217,6 +234,16 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
     };
   }
 
+  if (SEARCH_RECOVERY_MODE) {
+    const indexable = RECOVERY_PROOF_TOOL_SLUGS.has(slug);
+    return {
+      indexable,
+      robots: indexable ? ROBOTS_INDEX_FOLLOW : ROBOTS_NOINDEX_FOLLOW,
+      googlebotRobots: null,
+      reason: indexable ? "recovery_proof_tool" : "recovery_non_proof_tool",
+    };
+  }
+
   if (explicit === true) {
     return {
       indexable: true,
@@ -287,6 +314,20 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
     googlebotRobots: indexable ? null : ROBOTS_NOINDEX_FOLLOW,
     reason,
   };
+};
+
+export const getRecoveryPageRobots = (pathname) => {
+  if (!SEARCH_RECOVERY_MODE) return null;
+  const normalized = String(pathname || "").replace(/\/$/, "") || "/";
+  if (normalized === "/" || normalized === "/tools" || normalized === "/methodologie") {
+    return ROBOTS_INDEX_FOLLOW;
+  }
+  if (normalized === "/ratgeber") return ROBOTS_INDEX_FOLLOW;
+  const match = normalized.match(/^\/ratgeber\/([^/]+)$/);
+  if (match && RECOVERY_PROOF_RATGEBER_SLUGS.has(match[1])) {
+    return ROBOTS_INDEX_FOLLOW;
+  }
+  return ROBOTS_NOINDEX_FOLLOW;
 };
 
 export const createToolAddedAtRankMap = (manifest = {}) => {

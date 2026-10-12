@@ -19,6 +19,9 @@ import { getToolPublicState } from '../shared/toolPublicState.mjs';
 import {
   createToolAddedAtRankMap,
   getToolSearchIndexDecision,
+  RECOVERY_PROOF_RATGEBER_SLUGS,
+  RECOVERY_PROOF_TOOL_SLUGS,
+  SEARCH_RECOVERY_MODE,
 } from '../src/lib/searchIndexPolicy.mjs';
 import { FOCUS_TOOL_SLUGS } from '../src/lib/searchFocus.mjs';
 
@@ -390,14 +393,19 @@ async function readFocusedRuntimeTools(indexableSlugs, locale = 'de') {
   const directory = locale === 'en' ? join(REPO_ROOT, 'content/en/tools') : CONTENT_TOOLS_DIR;
   const tools = [];
   for (const slug of FOCUS_TOOL_SLUGS) {
-    if (!indexableSlugs.has(slug)) continue;
+    if (SEARCH_RECOVERY_MODE && locale === 'de' && !RECOVERY_PROOF_TOOL_SLUGS.has(slug)) continue;
+    if (!indexableSlugs.has(slug)) {
+      if (SEARCH_RECOVERY_MODE && locale === 'de') throw new Error(`Recovery proof tool is not indexable: ${slug}`);
+      continue;
+    }
     const sourcePath = join(directory, `${slug}.md`);
     try {
       const parsed = matter(await readFile(sourcePath, 'utf8'));
       const publicState = getToolPublicState({ filename: `${slug}.md`, data: parsed.data });
       if (!publicState.isPublishable) continue;
       tools.push({ slug, lastmod: await readToolSourceLastmod(slug, locale, sourcePath) });
-    } catch {
+    } catch (error) {
+      if (SEARCH_RECOVERY_MODE && locale === 'de') throw new Error(`Missing recovery proof tool source: ${slug} (${error.message})`);
       continue;
     }
   }
@@ -706,7 +714,7 @@ function buildFocusedUrlList(inputs, tools, enTools) {
     .map((slug) => enToolsBySlug.get(slug))
     .filter(Boolean);
 
-  return dedupeUrls([
+  const urls = dedupeUrls([
     {
       loc: `${BASE_URL}/`,
       lastmod: today,
@@ -735,7 +743,7 @@ function buildFocusedUrlList(inputs, tools, enTools) {
           },
         ]
       : []),
-    ...ratgeber.map((article) => ({
+    ...(SEARCH_RECOVERY_MODE ? ratgeber.filter((article) => RECOVERY_PROOF_RATGEBER_SLUGS.has(article.slug)) : ratgeber).map((article) => ({
       loc: `${BASE_URL}/ratgeber/${article.slug}/`,
       lastmod: article.lastmod,
       priority: '0.8',
@@ -745,7 +753,7 @@ function buildFocusedUrlList(inputs, tools, enTools) {
       lastmod: tool.lastmod,
       priority: '0.8',
     })),
-    ...(focusedEnTools.length > 0
+    ...(!SEARCH_RECOVERY_MODE && focusedEnTools.length > 0
       ? [
           {
             loc: `${BASE_URL}/en/`,
@@ -768,7 +776,7 @@ function buildFocusedUrlList(inputs, tools, enTools) {
             : []),
         ]
       : []),
-    ...(enRatgeber.length > 0
+    ...(!SEARCH_RECOVERY_MODE && enRatgeber.length > 0
       ? [
           {
             loc: `${BASE_URL}/en/ratgeber/`,
@@ -777,24 +785,45 @@ function buildFocusedUrlList(inputs, tools, enTools) {
           },
         ]
       : []),
-    ...enRatgeber.map((article) => ({
+    ...(!SEARCH_RECOVERY_MODE ? enRatgeber.map((article) => ({
       loc: `${BASE_URL}/en/ratgeber/${article.slug}/`,
       lastmod: article.lastmod,
       priority: '0.7',
-    })),
-    ...focusedEnTools.map((tool) => ({
+    })) : []),
+    ...(!SEARCH_RECOVERY_MODE ? focusedEnTools.map((tool) => ({
       loc: `${BASE_URL}/en/tools/${tool.slug}/`,
       lastmod: tool.lastmod,
       priority: '0.6',
-    })),
+    })) : []),
   ]);
+
+  if (SEARCH_RECOVERY_MODE) {
+    const expected = new Set([
+      `${BASE_URL}/`, `${BASE_URL}/tools/`, `${BASE_URL}/methodologie/`, `${BASE_URL}/ratgeber/`,
+      ...[...RECOVERY_PROOF_RATGEBER_SLUGS].map((slug) => `${BASE_URL}/ratgeber/${slug}/`),
+      ...[...RECOVERY_PROOF_TOOL_SLUGS].map((slug) => `${BASE_URL}/tools/${slug}/`),
+    ]);
+    const actual = new Set(urls.map((url) => url.loc));
+    const missing = [...expected].filter((url) => !actual.has(url));
+    const forbidden = [...actual].filter((url) => !expected.has(url));
+    if (missing.length || forbidden.length || actual.size !== urls.length) {
+      throw new Error(`Recovery sitemap exactness failed: missing=${missing.join(',')} forbidden=${forbidden.join(',')} duplicates=${urls.length - actual.size}`);
+    }
+  }
+  return urls;
 }
 
 async function generateSitemaps() {
   const toolIndexPolicy = await readToolIndexPolicySlugs();
   const sharedInputs = await collectSharedSitemapInputs();
   const googleTools = await readFocusedRuntimeTools(toolIndexPolicy.googleIndexableSlugs, 'de');
-  const googleEnTools = await readFocusedRuntimeTools(toolIndexPolicy.googleIndexableSlugs, 'en');
+  const googleEnTools = SEARCH_RECOVERY_MODE ? [] : await readFocusedRuntimeTools(toolIndexPolicy.googleIndexableSlugs, 'en');
+
+  if (SEARCH_RECOVERY_MODE) {
+    const builtRatgeber = new Set(sharedInputs.ratgeber.map((article) => article.slug));
+    const missingRatgeber = [...RECOVERY_PROOF_RATGEBER_SLUGS].filter((slug) => !builtRatgeber.has(slug));
+    if (missingRatgeber.length) throw new Error(`Missing recovery proof Ratgeber build output: ${missingRatgeber.join(', ')}`);
+  }
 
   const focusUrls = buildFocusedUrlList(sharedInputs, googleTools, googleEnTools);
   const googleUrls = focusUrls;

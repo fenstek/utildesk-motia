@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
 
+## 2026-09-30 - JEV by TypeSafe AI DE/EN editorial card [Codex]
+
+- Added a complete DE/EN tool card after editorial acceptance; each locale goes from 0 to 8 FAQs and from 0 to 4 alternatives. No pre-existing source card was present.
+- Grounded the description in TypeSafe's System One and primitive documentation, model/pricing/language notes, SDK quickstart, Jev 1.13 jaggedness documentation, legal pages and privacy policy. The support-message workflow is an illustrative pilot, not a reported or tested deployment.
+- Added the approved decision-sorting illustration as `content/images/tools/jev-editorial.webp` and localized the figure alt text. No paid JEV/API test was performed.
+
 ## 2026-08-16 - Restored approved WebMCP archive after stale-base release [Codex]
 
 - Restored the approved DE/EN `cloudflare-webmcp-browser-run-lab-operatoren-pruefen` package under its canonical slug, date, updated date and releaseOrder 52 after the stale-base release displaced it; Swarm remains the newest issue.
