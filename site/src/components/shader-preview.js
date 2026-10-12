@@ -35,16 +35,12 @@ function setStatus(message) {
 
 function markReady(canvas) {
   canvas.dataset.ready = "true";
-  if (canvas.dataset.shaderCanvas === "cover") {
-    canvas.closest(".ds-shader-preview-stage")?.classList.add("is-ready");
-  }
 }
 
 function markFailed(canvas, reason = "init-failed") {
   failedCanvases.add(canvas);
   delete canvas.dataset.ready;
   canvas.dataset.failure = String(reason).slice(0, 40);
-  canvas.closest(".ds-shader-preview-stage")?.classList.remove("is-ready");
   setStatus(reason === "no-adapter" || reason === "no-device" || reason === "unsupported" ? messages.noAdapter : messages.fallback);
 }
 
@@ -62,22 +58,27 @@ function componentsFor(canvas) {
     const url = imageUrlFor(canvas);
     return [
       {
-        type: "Halftone",
-        props: { style: "classic", frequency: 34, angle: 45, paperColor: "#f3efdf", blackColor: "#27231f" },
+        type: "Duotone",
+        props: { colorA: "#2b2721", colorB: "#b33a2f", blend: 0.48, colorSpace: "linear" },
         children: [
           {
-            type: "Duotone",
-            props: { colorA: "#2b2721", colorB: "#b33a2f", blend: 0.48, colorSpace: "linear" },
-            children: [
-              {
-                type: "NoiseDissolve",
-                id: "noise-reveal",
-                props: { progress: prefersReducedMotion.matches ? 0 : 1, scale: 6, softness: 0.22, seed: 7 },
-                children: [{ type: "ImageTexture", props: { url, objectFit: "cover" } }],
-              },
-            ],
+            type: "NoiseDissolve",
+            id: "noise-reveal",
+            props: { progress: 0, scale: 6, softness: 0.22, seed: 7 },
+            children: [{ type: "ImageTexture", props: { url, objectFit: "cover" } }],
           },
         ],
+      },
+    ];
+  }
+
+  if (kind === "halftone") {
+    const url = imageUrlFor(canvas);
+    return [
+      {
+        type: "Halftone",
+        props: { style: "classic", frequency: 80, angle: 45 },
+        children: [{ type: "ImageTexture", props: { url, objectFit: "cover" } }],
       },
     ];
   }
@@ -172,6 +173,9 @@ function openPreview() {
   if (!panel || window.location.hash !== PREVIEW_HASH) return;
   panel.hidden = false;
   document.documentElement.dataset.shaderPreview = "true";
+  requestAnimationFrame(() => {
+    panel.scrollIntoView({ block: "start", behavior: prefersReducedMotion.matches ? "auto" : "smooth" });
+  });
   if (mountPromise) return;
   const token = ++generation;
   mountPromise = mountPreview(token);
@@ -189,7 +193,6 @@ function closePreview() {
   document.querySelectorAll("[data-shader-canvas]").forEach((canvas) => {
     delete canvas.dataset.ready;
     delete canvas.dataset.failure;
-    canvas.closest(".ds-shader-preview-stage")?.classList.remove("is-ready");
   });
   mountPromise = null;
 }

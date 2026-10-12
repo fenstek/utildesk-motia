@@ -107,6 +107,7 @@ const copy = isEn
       verdict: "Claude Code for senior teams. Copilot as the safer default. Cursor only after a pilot.",
       verdictText: "The bottleneck is no longer writing code. It is understanding, reviewing and owning what the tool changed.",
       toolsLabel: "In the test",
+      printStudy: "View the print study",
       latestLabel: "New guide",
       latestDeck: "Fresh editorial context with practical examples and related tools from the Utildesk catalog.",
       avoidLabel: "Do not start with",
@@ -164,6 +165,7 @@ const copy = isEn
       verdict: "Claude Code f\u00fcr Senior-Teams. Copilot als sicherer Standard. Cursor erst nach Pilot.",
       verdictText: "Der Engpass liegt nicht mehr im Schreiben von Code, sondern im Verstehen, Pr\u00fcfen und Verantworten der \u00c4nderungen.",
       toolsLabel: "Im Test",
+      printStudy: "Druckprobe ansehen",
       latestLabel: "Neu im Ratgeber",
       latestDeck: "Frische redaktionelle Einordnung mit Praxisbezug und Tool-Verweisen aus dem Utildesk-Katalog.",
       avoidLabel: "Nicht damit starten",
@@ -332,7 +334,7 @@ const categoryRows = categories.slice(0, 8);
       </div>
 
       {shaderPreviewImage && shaderPreviewGuide ? (
-        <section class="ds-shader-preview" data-shader-preview-panel hidden aria-labelledby="ds-shader-preview-title">
+        <section id="shader-preview" class="ds-shader-preview" data-shader-preview-panel hidden aria-labelledby="ds-shader-preview-title">
           <div class="ds-shader-paper" aria-hidden="true">
             <canvas data-shader-canvas="paper"></canvas>
           </div>
@@ -352,6 +354,7 @@ const categoryRows = categories.slice(0, 8);
               <div class="ds-shader-preview-stage" data-shader-preview-stage>
                 <img src={shaderPreviewImage} alt={shaderPreviewGuide.data.title} loading="lazy" decoding="async" />
                 <canvas data-shader-canvas="cover" aria-hidden="true"></canvas>
+                <canvas data-shader-canvas="halftone" aria-hidden="true"></canvas>
               </div>
               <figcaption>
                 <span>{isEn ? "LEAD ILLUSTRATION" : "TITELBILD"}</span>
@@ -413,6 +416,7 @@ const categoryRows = categories.slice(0, 8);
 
           <div class="ds-front-actions">
             <a href={primaryGuide ? `${prefix}/ratgeber/${primaryGuide.slug}/` : `${prefix}/ratgeber/`}>{copy.read}</a>
+            {shaderPreviewImage ? <a class="ds-preview-link" href="#shader-preview">{copy.printStudy}</a> : null}
             <span>{primaryGuide?.data.readTime || 8} {copy.minutes}</span>
           </div>
         </article>
