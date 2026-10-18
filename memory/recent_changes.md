@@ -1,5 +1,10 @@
 # Recent Changes — utildesk-motia
 
+## 2026-10-12 - KI-Blatt editorial print study [Codex]
+
+- Prepared a homepage print-study panel for the lead Ratgeber story with `Paper` texture, `ImageTexture`/`NoiseDissolve` reveal and `Halftone`/`Duotone` print treatment. It is opt-in, localized in DE/EN, keeps the static cover fallback and respects reduced-motion settings.
+- Release branch `codex/shader-release-20261012` joins the cached histories of `origin/master` (`8f89490c`) and `origin/autobot` (`17541a19`) while keeping the production `master` versions of tool cards. The autobot snapshot had 29 older card revisions, including removed tags, so they were excluded from the release tree. The production refs have not been changed; refresh both refs and verify Cloudflare billing before publication.
+
 ## 2026-09-30 - JEV by TypeSafe AI DE/EN editorial card [Codex]
 
 - Added a complete DE/EN tool card after editorial acceptance; each locale goes from 0 to 8 FAQs and from 0 to 4 alternatives. No pre-existing source card was present.
