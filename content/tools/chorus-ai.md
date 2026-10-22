@@ -10,7 +10,7 @@ editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Agents"
 price_model: "Abonnement"
 tags: [assistant, automation, workflow]
-official_url: "https://chorus-ai.org/"
+official_url: "https://www.zoominfo.com/products/chorus"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-11"

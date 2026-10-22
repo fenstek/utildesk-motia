@@ -64,7 +64,6 @@ We would not choose FaceSwap as the default for a marketing team without GPU own
 
 ## Alternatives
 
-- [DeepFaceLab](/en/tools/deepfacelab/): Another technically demanding local training and face-swap workflow for teams seeking an experimental alternative.
 - [Reface](/en/tools/reface/): A guided mobile and web-oriented route for quick short-form effects instead of maintaining a training pipeline.
 - [Avatarify](/en/tools/avatarify/): A live-oriented approach for streams and video calls when real-time interaction matters more than offline training.
 - [Pixlr](/en/tools/pixlr/): Browser-based image editing with manual and AI-assisted operations when no face model should be trained.

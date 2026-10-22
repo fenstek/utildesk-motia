@@ -12,7 +12,7 @@ tags:
   - detox
   - qa
   - test-automation
-official_url: 'https://www.detox.com/'
+official_url: 'https://wix.github.io/Detox/'
 popularity: 0
 source_language: de
 translation: full
@@ -66,7 +66,7 @@ Test environments should not use real customer data. Credentials, test accounts,
 
 In the catalog, Detox is marked with the pricing model **Open Source**. For a real decision, check the current provider pricing, limits, team features, and export options directly.
 
-**Provider:** https://www.detox.com/
+**Provider:** https://wix.github.io/Detox/
 
 ## Alternatives
 

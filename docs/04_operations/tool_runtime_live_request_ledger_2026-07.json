@@ -5794,6 +5794,145 @@
         "https://tools.utildesk.de/tool-assets/e18a9d5dcc7e525d6fe9c3e38be3e324ca65e10ec791e06c48245edeff0517fc/jev-editorial.webp"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T09:41:44.747Z",
+      "mode": "production-inventory-passive-read",
+      "command": "Record two initial public DE/EN catalog snapshot GETs captured before discovering the project ledger requirement; no per-tool production crawl.",
+      "estimate": {
+        "catalogJson": 2,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://tools.utildesk.de/api/tools.json",
+        "https://tools.utildesk.de/en/api/tools.json"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T09:41:44.753Z",
+      "mode": "production-state-inspection",
+      "command": "Bounded existing-account token/database identity, subscriptions/billing visibility and runtime state inspection; no billing or service changes.",
+      "estimate": {
+        "accountMetadata": 6,
+        "boundedD1Snapshot": 1,
+        "metrics": 2,
+        "transportAllowance": 1,
+        "total": 10
+      },
+      "worstCaseRequests": 10,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/user/tokens/verify",
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}",
+        "https://api.cloudflare.com/client/v4/accounts/{account}/subscriptions",
+        "https://api.cloudflare.com/client/v4/accounts/{account}/billing/profile",
+        "https://api.cloudflare.com/client/v4/graphql"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T09:50:04.761Z",
+      "mode": "production-metrics-inspection",
+      "command": "One aggregate GraphQL request for current UTC day Worker/D1 metrics and one bounded post-release repeat; no queries or services changed.",
+      "estimate": {
+        "metricsBefore": 1,
+        "metricsAfter": 1,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/graphql"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T09:55:33.575Z",
+      "mode": "production-source-url-snapshot",
+      "command": "One bounded D1 snapshot of canonical published German tool official URLs to distinguish curated public source from stale intake Sheet URLs.",
+      "estimate": {
+        "d1Snapshot": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}/query"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T10:05:47.117Z",
+      "mode": "production-d1-backup",
+      "command": "Fresh private D1 SQL export of verified utildesk-content-runtime-production before bounded catalog retirement; existing Windows process credential via encrypted SSH stdin, not stored.",
+      "estimate": {
+        "d1ExportWorstCase": 5,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}/export"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T10:09:29.274Z",
+      "mode": "production-target-inspection",
+      "command": "Read existing Pages project production deployment and runtime Worker deployment identities before retirement release; two read-only provider requests.",
+      "estimate": {
+        "pagesProject": 1,
+        "workerDeployments": 1,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{pages-account}/pages/projects/utildesk-motia",
+        "https://api.cloudflare.com/client/v4/accounts/{runtime-account}/workers/scripts/utildesk-content-runtime/deployments"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T10:26:23.532Z",
+      "mode": "catalog-retirement-pages-release-20261022",
+      "command": "Git-backed Pages preview/production deployment and bounded status/target checks; at most 50 provider operations",
+      "estimate": {
+        "providerDeploymentAndStatus": 50,
+        "total": 50
+      },
+      "worstCaseRequests": 50,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/f95e0a354dedfcd2eb4f6213e8af207d/pages/projects/utildesk-motia"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T10:26:23.538Z",
+      "mode": "catalog-retirement-ratgeber-pair-20261022",
+      "command": "Two bounded Ratgeber relatedTools upserts, DE+EN; no all/legacy full sync; up to 12 provider operations",
+      "estimate": {
+        "ratgeberPairPublish": 12,
+        "total": 12
+      },
+      "worstCaseRequests": 12,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/1e2548f3d1cdf6784b1f4dde9141a742/d1/database/259ed703-ba7c-4aba-a269-e167d391eae6"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-10-22T10:26:23.542Z",
+      "mode": "catalog-retirement-final-global-check-20261022",
+      "command": "Two catalog JSON snapshots, one bounded D1 state/metadata snapshot, two Ratgeber live readbacks, one bounded control, at most 10 requests",
+      "estimate": {
+        "globalVerification": 10,
+        "total": 10
+      },
+      "worstCaseRequests": 10,
+      "plannedUrls": [
+        "https://tools.utildesk.de/api/tools.json",
+        "https://tools.utildesk.de/en/api/tools.json",
+        "https://api.cloudflare.com/client/v4/accounts/1e2548f3d1cdf6784b1f4dde9141a742/d1/database/259ed703-ba7c-4aba-a269-e167d391eae6/query"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }

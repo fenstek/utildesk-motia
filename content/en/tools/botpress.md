@@ -11,7 +11,7 @@ price_model: Freemium
 tags:
   - ai
   - chatbot
-official_url: 'https://botpress.com'
+official_url: 'https://botpress.com/'
 created_at: '2026-02-12'
 updated_at: 2026-07-14
 lastReviewed: 2026-07-14
@@ -68,7 +68,7 @@ It is a poor fit when self-hosting, local processing, or an already-standardised
 
 - [Dialogflow](/en/tools/dialogflow/): A better fit when Google Cloud services, intent-based conversations, and a tightly integrated Google platform matter more than Botpress' visual cloud workflow.
 - [Rasa](/en/tools/rasa/): Preferable for a developer team that needs open-source components and more control over runtime and data architecture.
-- [Microsoft Bot Framework](/en/tools/microsoft-bot-framework/): A natural option for organisations connecting bots closely to Azure, Microsoft 365, and established Microsoft development practices.
+- [Dialogflow](/en/tools/dialogflow/): for managed conversation flows with webhooks and integrations.
 - [ManyChat](/en/tools/manychat/): Better for marketing-led automation in social messaging channels with less need for a custom agent workflow.
 - [Tidio](/en/tools/tidio/): More practical for small support teams that want live chat plus straightforward automation rather than a freely modelled agent platform.
 

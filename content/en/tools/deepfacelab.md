@@ -19,6 +19,13 @@ tags:
   - deepfakes
   - video
   - open-source
+disabled: true
+status: DISABLED
+lifecycle: unsupported
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Original DeepFaceLab repository was archived by its owner on 2024-11-13 and is read-only; the original project is no longer maintained."
+lifecycle_evidence_url: "https://github.com/iperov/DeepFaceLab"
+lifecycle_date: "2024-11-13"
 ---
 # DeepFaceLab
 

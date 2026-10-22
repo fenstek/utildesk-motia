@@ -9,7 +9,7 @@ editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Agents"
 price_model: "Abonnement"
 tags: [assistant, automation, workflow]
-official_url: "https://transistor.com/"
+official_url: "https://transistor.fm/"
 popularity: 0
 description: "Transistor ist ein Audio- und Musikwerkzeug für Podcast-Hosting, Distribution und Analyse für Shows, die regelmäßig erscheinen sollen."
 tier: "C"
@@ -70,7 +70,7 @@ Bei Transistor geht es vor allem um Audiodateien, Stimmen, Projektmetadaten, Liz
 
 Im Katalog ist Transistor mit dem Preismodell **Abonnement** geführt. Für eine belastbare Entscheidung zählen hier vor allem Exportqualität, Nutzungsrechte, Speicher, Teamzugänge und wiederkehrende Produktionsmenge; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
 
-**Zum Anbieter:** https://transistor.com/
+**Zum Anbieter:** https://transistor.fm/
 
 ## Alternativen zu Transistor
 

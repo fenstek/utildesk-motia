@@ -66,7 +66,7 @@ Google Assistant ist empfehlenswert für private oder kleine gemeinsam genutzte 
 - [Amazon Alexa](/tools/amazon-alexa/): Bietet einen eigenen Smart-Home- und Lautsprecher-Schwerpunkt mit Alexa-Geräten.
 - Samsung Bixby: Passt besser, wenn Galaxy-Geräte und Samsung-Einstellungen den Mittelpunkt bilden.
 - [Gemini](/tools/gemini/): Der relevante Google-Pfad für viele mobile Android-Szenarien, in denen Gemini Assistant ersetzt.
-- [Mycroft](/tools/mycroft/): Eine offenere, community-orientierte Option für Teams, die lokale Kontrolle und Anpassbarkeit priorisieren.
+- [Amazon Alexa](/tools/amazon-alexa/): als weitere etablierte Sprachassistenz; Cloud- und Datenschutzmodell prüfen.
 
 ## FAQ
 

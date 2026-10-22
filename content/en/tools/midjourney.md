@@ -91,7 +91,7 @@ Midjourney uses paid plans. Trial availability, limits, and usage rights can cha
 
 ## Alternatives
 
-- [DALL-E](/en/tools/dall-e/): for image generation in the OpenAI ecosystem.
+- [Stable Diffusion](/en/tools/stable-diffusion/): when open models and local control matter more.
 - [Stable Diffusion](/en/tools/stable-diffusion/): for open and self-hostable image models.
 - Leonardo AI: for creator and game-oriented visuals.
 - [Runway](/en/tools/runway/): when image and video should be planned together.

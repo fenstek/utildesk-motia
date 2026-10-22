@@ -85,7 +85,7 @@ Für die Budgetplanung sollte Stable Diffusion nicht nur nach Listenpreis bewert
 
 ## Alternativen
 
-- [DALL·E](/tools/dall-e/): bietet einen stärker verwalteten Bildworkflow über OpenAI, wenn eigener Modellbetrieb und lokale Anpassung nicht nötig sind.
+- [Adobe Firefly](/tools/adobe-firefly/): für einen verwalteten kreativen Bildworkflow.
 - [Midjourney](/tools/midjourney/): ist eine Alternative für schnelle, art-direktionale Bildideen mit weniger Infrastrukturverantwortung.
 - [Adobe Firefly](/tools/adobe-firefly/): passt zu Creative-Cloud-Teams, die Generierung in einen bestehenden Adobe-Produktionsweg einbetten wollen.
 - [Runway](/tools/runway/): eignet sich besser, wenn Bewegtbild, Referenzsteuerung und Video-Editing wichtiger sind als lokaler Modellbetrieb.

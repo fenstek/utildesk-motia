@@ -99,7 +99,7 @@ CapCut offers free and paid capabilities; plans, allowances and regional availab
 
 - [InShot](/en/tools/inshot/): a lean comparison for rapid mobile edits and reframing.
 - [KineMaster](/en/tools/kinemaster/): a deeper mobile timeline and layer workflow.
-- [Adobe Premiere Rush](/en/tools/adobe-premiere-rush/): suited to Adobe-oriented cross-platform short production.
+- [Clipchamp](/en/tools/clipchamp/): as an accessible editor for quick clips.
 - [Filmora](/en/tools/filmora/): accessible consumer and creator editing with many templates.
 - [VN Video Editor](/en/tools/vn-video-editor/): mobile editing with more manual control.
 

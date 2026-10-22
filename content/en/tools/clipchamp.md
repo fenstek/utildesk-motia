@@ -96,7 +96,7 @@ Depending on the selected plan, features such as 4K export, brand customization,
 ## Alternatives
 - WeVideo: Cloud-based video editing with similar features and team tools.
 - [InVideo](/en/tools/invideo/): Focuses on video templates and marketing videos, also with AI-powered tools.
-- [Adobe Premiere Rush](/en/tools/adobe-premiere-rush/): Beginner-friendly Adobe solution for quick video editing across different devices.
+- [CapCut](/en/tools/capcut/): for mobile and desktop workflows with quick social clips.
 - [Kapwing](/en/tools/kapwing/): Easy-to-use online video platform with collaborative features.
 - [FlexClip](/en/tools/flexclip/): Web-based video editing with templates and simple editing options.
 

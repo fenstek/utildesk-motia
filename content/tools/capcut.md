@@ -12,7 +12,7 @@ price_model: Freemium
 description: Zugänglicher Videoeditor für mobile und Desktop-Produktion, automatische Untertitel, textbasierten Schnitt und Social-Formate.
 tags: [ai, video, editing]
 official_url: "https://www.capcut.com/"
-popularity: 0
+popularity: 64
 updated_at: 2026-07-31
 tier: C
 generated_at: 2026-05-27
@@ -97,7 +97,7 @@ CapCut bietet kostenlose und kostenpflichtige Funktionen; Pläne, Kontingente un
 
 - [InShot](/tools/inshot/): schlanker Vergleich für sehr schnelle mobile Schnitte und Formatwechsel.
 - [KineMaster](/tools/kinemaster/): stärkerer mobiler Timeline- und Ebenen-Workflow.
-- [Adobe Premiere Rush](/tools/adobe-premiere-rush/): passend für Adobe-nahe, plattformübergreifende Kurzproduktion.
+- [Clipchamp](/tools/clipchamp/): als zugänglicher Editor für schnelle Clips.
 - [Filmora](/tools/filmora/): zugänglicher Consumer- und Creator-Schnitt mit vielen Vorlagen.
 - [VN Video Editor](/tools/vn-video-editor/): mobile Bearbeitung mit stärkerer manueller Kontrolle.
 

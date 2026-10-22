@@ -9,7 +9,7 @@ editorial_batch: 2026-07-13-full-tool-card-editorial
 category: AI Infrastructure
 price_model: Plan-based
 tags: ["data", "analytics", "developer-tools", "chatbot"]
-official_url: "https://www.graphcore.ai/products/ipu"
+official_url: "https://www.graphcore.ai/"
 popularity: 0
 tier: C
 generated_at: 2026-05-15

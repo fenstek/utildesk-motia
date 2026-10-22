@@ -15,6 +15,12 @@ tags: [automation, productivity, developer-tools]
 popularity: 0
 tier: C
 generated_at: 2026-05-15
+disabled: true
+status: DISABLED
+lifecycle_date: "2025-04-21"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "PaLM API decommissioned 2024-08-15; remaining text-bison/chat-bison models retired on Vertex AI 2025-04-21. Historical research page does not provide the retired API."
+lifecycle_evidence_url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
 ---
 # Google PaLM
 

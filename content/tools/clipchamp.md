@@ -100,7 +100,7 @@ Neben dem Listenpreis sollte bei Clipchamp auch der Einführungsaufwand berücks
 ## Alternativen
 - WeVideo: Cloud-basierte Videobearbeitung mit ähnlichen Funktionen und Team-Features.
 - [InVideo](/tools/invideo/): Fokus auf Videovorlagen und Marketingvideos, ebenfalls mit KI-gestützten Tools.
-- [Adobe Premiere Rush](/tools/adobe-premiere-rush/): Einsteigerfreundliche Adobe-Lösung für schnelle Videobearbeitung auf verschiedenen Geräten.
+- [CapCut](/tools/capcut/): für mobile und Desktop-Workflows mit schnellen Social-Clips.
 - [Kapwing](/tools/kapwing/): Einfach zu bedienende Online-Videoplattform mit kollaborativen Funktionen.
 - [FlexClip](/tools/flexclip/): Webbasierte Videobearbeitung mit Vorlagen und einfachen Bearbeitungsoptionen.
 

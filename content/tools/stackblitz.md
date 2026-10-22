@@ -79,7 +79,7 @@ Weniger passend ist StackBlitz als alleinige Basis für sensible Daten, native A
 - [Gitpod](/tools/gitpod/): besser, wenn aus Git-Repositories reproduzierbare, konfigurierbare Cloud-Workspaces für Entwicklungs- und DevOps-Abläufe entstehen sollen.
 - [GitHub Codespaces](/tools/github-codespaces/): passend, wenn Repository, Pull Requests und Devcontainer-Konfiguration eng im GitHub-Ökosystem bleiben sollen.
 - [Replit](/tools/replit/): stärker auf niedrigschwellige Mehrsprachen-Projekte, Lernen, Kollaboration und schnelle veröffentlichte Prototypen ausgerichtet.
-- [Glitch](/tools/glitch/): eine einfache Option für kleine remixbare Webexperimente, wenn die gemeinsame Bearbeitung wichtiger ist als eine vollständige Engineering-Umgebung.
+- [CodeSandbox](/tools/codesandbox/): für isolierte Web-Projekte und ausführbare Vorschauen.
 
 ## FAQ
 

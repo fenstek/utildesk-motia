@@ -79,7 +79,7 @@ Im Katalog ist PixVerse mit dem Preismodell **Freemium** geführt. Für eine bel
 - [Kaiber](/tools/kaiber/): passender, wenn der Schwerpunkt auf KI-Video und kreative Motion-Ästhetik für Musik, Social Clips und visuelle Experimente liegt.
 - [Runway](/tools/runway/): prüfen, wenn ein anderer Schwerpunkt als bei PixVerse relevant ist.
 - [Pika](/tools/pika/): prüfen, wenn ein anderer Schwerpunkt als bei PixVerse relevant ist.
-- [Sora](/tools/sora/): naheliegend, falls ein anderer Schwerpunkt als bei PixVerse im Vordergrund steht.
+- [Runway](/tools/runway/): für generative Videomodelle mit Referenzsteuerung und Editing.
 
 ## Redaktionelle Einschätzung
 

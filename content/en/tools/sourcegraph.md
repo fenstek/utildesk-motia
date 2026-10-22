@@ -84,7 +84,6 @@ For budget planning, Sourcegraph should not be judged only by list price. More i
 - [GitHub Copilot](/en/tools/github-copilot/): stronger for AI-assisted code suggestions directly in the editor.
 - [Cursor](/en/tools/cursor/): useful when code context, chat, and editing should live in one IDE.
 - [Tabnine](/en/tools/tabnine/): more focused on code completion and team or enterprise control.
-- [Continue](/en/tools/continue/): open-source route for custom LLM-assisted coding workflows in IDEs.
 - [OpenAI Codex](/en/tools/openai-codex/): more relevant when agentic coding tasks matter more than pure code search.
 
 When choosing alternatives, it is worth comparing them against the specific bottleneck. If code search, navigation, and context across large repositories are the focus, different criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of results in your own material.

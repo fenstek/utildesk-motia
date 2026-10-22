@@ -20,7 +20,8 @@ if (!base) {
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const toolsDir = path.join(repoRoot, "content", "tools");
-const minActiveTools = Number(process.env.UTILDESK_MIN_ACTIVE_TOOLS || 1124);
+// Approved 2026-10-22 catalog audit retired 14 products; 1111 active cards remain.
+const minActiveTools = Number(process.env.UTILDESK_MIN_ACTIVE_TOOLS || 1111);
 const maxCategories = Number(process.env.UTILDESK_MAX_TOOL_CATEGORIES || 14);
 const bannedCategoryValues = new Set([
   "AI",

@@ -15,6 +15,13 @@ popularity: 0
 tier: "C"
 generated_at: "2026-05-12"
 updated_at: "2026-07-17"
+disabled: true
+status: DISABLED
+lifecycle: unsupported
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Original Facebook Research Fairseq repository was archived by its owner on 2026-03-20 and is read-only; exclude the unsupported original distribution from the maintained-tools catalog."
+lifecycle_evidence_url: "https://github.com/facebookresearch/fairseq"
+lifecycle_date: "2026-03-20"
 ---
 
 # Fairseq

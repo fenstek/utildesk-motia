@@ -79,7 +79,7 @@ In the catalog, PixVerse is marked with the pricing model **Freemium**. For a re
 - [Kaiber](/en/tools/kaiber/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Runway](/en/tools/runway/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Pika](/en/tools/pika/): useful comparison point if workflow, pricing, or specialization should differ.
-- [Sora](/en/tools/sora/): useful comparison point if workflow, pricing, or specialization should differ.
+- [Runway](/en/tools/runway/): for generative video models with reference controls and editing.
 
 ## Editorial assessment
 

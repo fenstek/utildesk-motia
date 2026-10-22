@@ -10,7 +10,7 @@ editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [automation, data, analytics, productivity]
-official_url: "https://thedeepbrain.com/"
+official_url: "https://www.aistudios.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-11"

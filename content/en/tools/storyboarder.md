@@ -15,7 +15,7 @@ tags:
   - productivity
   - automation
   - workflow
-official_url: "https://storyboarder.com/"
+official_url: "https://wonderunit.com/storyboarder/"
 popularity: 0
 translation: "full"
 updated_at: "2026-07-17"

@@ -12,7 +12,7 @@ tags:
   - digital painting
   - illustration
   - creative tools
-official_url: 'https://krita.org/en/download/krita-desktop'
+official_url: 'https://krita.org/en/download/'
 popularity: 0
 translation: full
 description: "Krita is a design and creative tool for open-source painting software for illustration, concept art, comics, and digital sketching."
@@ -71,7 +71,7 @@ Depending on the use case, text, images, audio, customer data, research notes, o
 
 In the catalog, Krita is marked with the pricing model **Open Source**. For a real decision, check current limits, team features, export options, and whether a free or cheap entry point turns into an expensive workflow later.
 
-**Provider:** https://krita.org/en/download/krita-desktop
+**Provider:** https://krita.org/en/download/
 
 ## Alternatives to Krita
 

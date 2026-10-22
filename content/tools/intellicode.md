@@ -12,13 +12,15 @@ official_url: "https://visualstudio.microsoft.com/services/intellicode/"
 description: "IntelliCode (Microsoft) im Praxischeck: Einsatz, Grenzen, Datenfluss, Kosten und passende Alternativen für eine belastbare Entscheidung."
 updated_at: 2026-07-17
 tags: [coding, developer-tools]
-popularity: 39
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---
 # IntelliCode (Microsoft)
 
-IntelliCode ist ein KI-gestütztes Entwickler-Tool von Microsoft, das die Programmierproduktivität durch intelligente Code-Vervollständigungen und kontextbezogene Empfehlungen verbessert. Es integriert sich nahtlos in Visual Studio und Visual Studio Code und unterstützt Entwickler dabei, schneller und effizienter zu arbeiten, indem es Vorschläge auf Basis von tausenden Open-Source-Projekten und individuellen Projektmustern liefert.
+**Verfügbarkeit:** IntelliCode-Erweiterungen für VS Code sind eingestellt; der Support endete im November 2025. IntelliCode bleibt in Visual Studio verfügbar.
+
+IntelliCode ist ein KI-gestütztes Entwickler-Tool von Microsoft, das die Programmierproduktivität durch intelligente Code-Vervollständigungen und kontextbezogene Empfehlungen verbessert. Es ist in Visual Studio verfügbar und unterstützt Entwickler dabei, schneller und effizienter zu arbeiten, indem es Vorschläge auf Basis von tausenden Open-Source-Projekten und individuellen Projektmustern liefert.
 
 ## Für wen ist IntelliCode geeignet?
 
@@ -26,7 +28,7 @@ IntelliCode richtet sich primär an Softwareentwickler aller Erfahrungsstufen, d
 
 - Einzelentwickler, die schneller und mit weniger Fehlern programmieren wollen.
 - Teams, die konsistente Codestandards einhalten und gemeinsam von KI-gestützten Empfehlungen profitieren möchten.
-- Entwickler, die Visual Studio oder Visual Studio Code nutzen und ihre Produktivität steigern wollen.
+- Entwickler, die IntelliCode in Visual Studio einsetzen und ihre Produktivität steigern wollen.
 - Personen, die sich in neue Frameworks oder Programmiersprachen einarbeiten und dabei kontextbezogene Tipps benötigen.
 
 ## Typische Einsatzszenarien
@@ -50,7 +52,7 @@ IntelliCode (Microsoft) passt, wenn Standards, Akzeptanzkriterien und Ownership 
 - **KI-basierte Code-Vervollständigung:** IntelliCode schlägt kontextabhängige Codezeilen vor, basierend auf häufigen Mustern aus Open-Source-Projekten.
 - **Mehrsprachige Unterstützung:** Funktioniert mit gängigen Sprachen wie C#, Python, JavaScript, TypeScript, Java und mehr.
 - **Team-spezifische Modelle:** Möglichkeit, eigene Modelle auf Basis des Team-Codes zu trainieren, um individuelle Empfehlungen zu erhalten.
-- **Integration in Visual Studio und VS Code:** Nahtlose Einbindung in beliebte Microsoft-Entwicklungsumgebungen.
+- **Visual Studio:** IntelliCode bleibt in Visual Studio verfügbar.
 - **Code-Qualitätsverbesserung:** Vorschläge helfen, bewährte Praktiken und Standards einzuhalten.
 - **Automatische Lernfähigkeit:** IntelliCode passt sich mit der Zeit an den individuellen Stil und die verwendeten Bibliotheken an.
 - **Schnellere Navigation:** Unterstützt bei der schnellen Identifikation relevanter APIs und Methoden.
@@ -70,10 +72,10 @@ IntelliCode (Microsoft) passt, wenn Standards, Akzeptanzkriterien und Ownership 
 ### Nachteile
 
 - Qualität der Vorschläge kann je nach Projekt und Sprache variieren.
-- Für optimale Ergebnisse sind aktuelle Versionen von Visual Studio oder VS Code erforderlich.
+- Für optimale Ergebnisse ist eine unterstützte Visual-Studio-Version erforderlich.
 - Team-spezifische Modelle erfordern zusätzlichen Aufwand zur Einrichtung.
 - In einigen Fällen können Vorschläge nicht zum gewünschten Stil passen.
-- Keine eigenständige Anwendung, sondern als Erweiterung/Plugin nutzbar.
+- IntelliCode ist in die unterstützte Visual-Studio-Entwicklungsumgebung integriert.
 
 ## Arbeitsablauf und Einführung
 

@@ -14,7 +14,7 @@ tags:
   - assistant
   - automation
   - workflow
-official_url: "https://www.gladia.com/"
+official_url: "https://www.gladia.io/"
 popularity: 0
 source_language: de
 translation: "full"

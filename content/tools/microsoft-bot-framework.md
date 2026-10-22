@@ -15,6 +15,12 @@ tags: "[ai, chatbot]"
 popularity: 0
 tier: C
 generated_at: 2026-05-16
+disabled: true
+status: DISABLED
+lifecycle_date: "2025-12-31"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Bot Framework SDK support ended 2025-12-31; repository archived 2026-01-05. Azure AI Bot Service and Web Chat remain separate active products."
+lifecycle_evidence_url: "https://github.com/microsoft/botframework-sdk"
 ---
 # Microsoft Bot Framework
 

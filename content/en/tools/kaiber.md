@@ -77,7 +77,7 @@ In the catalog, Kaiber is marked with the pricing model **Freemium**. For a real
 - [PixVerse](/en/tools/pixverse/): useful comparison point if workflow, pricing, or specialization should differ.
 - Higgsfield: useful comparison point if workflow, pricing, or specialization should differ.
 - [Runway](/en/tools/runway/): useful comparison point if workflow, pricing, or specialization should differ.
-- [Sora](/en/tools/sora/): useful comparison point if workflow, pricing, or specialization should differ.
+- [PixVerse](/en/tools/pixverse/): as an active option for generative short clips.
 - [Deep Dream Generator](/en/tools/deep-dream-generator/): useful comparison point if workflow, pricing, or specialization should differ.
 
 ## Editorial assessment

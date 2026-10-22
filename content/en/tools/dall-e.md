@@ -19,6 +19,12 @@ popularity: 0
 source_language: de
 translation: full
 description: "OpenAI model for text-based image generation, visual concepts, and API-driven image production with human quality and rights review."
+disabled: true
+status: DISABLED
+lifecycle_date: "2026-05-12"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "DALL-E 2 and DALL-E 3 were removed from the API on 2026-05-12; GPT Image is a separate replacement."
+lifecycle_evidence_url: "https://developers.openai.com/api/docs/deprecations"
 ---
 # DALL·E
 

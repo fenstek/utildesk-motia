@@ -89,7 +89,7 @@ n  <a href="https://firefly.adobe.com/?media=featured">Click here to visit the p
 ## Alternatives
 
   - [Canva](/en/tools/canva/): A user-friendly online design tool with many templates and easy editing features.
-  - [DALL-E (OpenAI)](/en/tools/dall-e/): AI-based image generation through text input, specialized in creative image creation.
+- [Midjourney](/en/tools/midjourney/): for high-quality visual concepts and illustrations.
   - [Figma](/en/tools/figma/): Collaborative design tool with a focus on UI/UX design and prototyping.
   - [Midjourney](/en/tools/midjourney/): AI-powered creative image generation with a focus on artistic styles.
   - [Affinity Designer](/en/tools/affinity-designer/): Powerful design software as an alternative to Adobe products, without a subscription model.

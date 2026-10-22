@@ -69,7 +69,7 @@ Nicht wählen sollte man Runway, wenn framegenaue Kontinuität, unveränderliche
 
 ## Alternativen
 
-- [Sora](/tools/sora/): eignet sich zum Vergleich hochwertiger generativer Videoideen im OpenAI-Ökosystem.
+- [PixVerse](/tools/pixverse/): für generative Kurzclips aus Prompts und Bildern.
 - [Kling AI](/tools/kling-ai/): ist eine Alternative für text- und bildbasierte Videogenerierung mit einem anderen Bewegungs- und Modellcharakter.
 - [Adobe Firefly](/tools/adobe-firefly/): passt besser, wenn Creative-Cloud-Integration und ein Adobe-orientierter Produktionsweg im Vordergrund stehen.
 - [Pika](/tools/pika/): bietet einen zugänglichen Weg zu kurzen, effektorientierten Videoexperimenten und schnellen Varianten.

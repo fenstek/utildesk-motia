@@ -72,7 +72,7 @@ Wählen Sie eine stärker repository- und containerorientierte Cloud-IDE, wenn D
 - [GitHub Codespaces](/tools/github-codespaces/): besser, wenn Repository, Pull Requests und Devcontainer-Konfiguration eng im GitHub-Ökosystem bleiben sollen.
 - [Gitpod](/tools/gitpod/): sinnvoll, wenn aus Git-Repositories reproduzierbare, konfigurierbare Cloud-Workspaces für Entwicklungs- und DevOps-Abläufe entstehen sollen.
 - [Replit](/tools/replit/): niedrigschwelliger für Lernen, Mehrsprachen-Prototypen und gemeinsames Bauen kleiner Anwendungen mit stärkerem Produkt- und Hosting-Fokus.
-- [Glitch](/tools/glitch/): eine einfache Option für kleine remixbare Webexperimente, wenn ein schneller öffentlicher Prototyp wichtiger ist als eine vollständige Engineering-Umgebung.
+- [StackBlitz](/tools/stackblitz/): für browserbasierte Projekte mit ausführbarer Vorschau.
 
 ## FAQ
 

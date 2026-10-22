@@ -38,7 +38,7 @@ npm --prefix site run gate:tool-runtime-production-delta -- \
 ```
 
 Production commands refuse `--all`, more than 24 canary slugs, a budget above
-10,000, a cumulative daily ledger over 10,000, and execution before the recorded reset
+10,000, total recorded reservations over 10,000, and execution before the recorded reset
 gate. The legacy capture and recursive resource-audit scripts refuse every
 non-loopback origin. Reservations are written before the first request and are
 never automatically reclaimed. There is no automatic retry; one retry may be
@@ -49,6 +49,65 @@ ledger paths are written from the repository root.
 The request ledger is the only tracked path allowed to change while the
 publisher verifies the production release commit. Any content, runtime,
 configuration or unrelated documentation change still blocks publication.
+
+## Retire or correct a tool
+
+Retirement requires provider-maintained primary evidence that support has ended
+or that the original project has been officially archived; a published EOL date,
+when available, must have passed. A 403, DNS failure or single 404 is not
+sufficient evidence. A rebrand or incorrect URL is a source URL correction, not
+a retirement. Verify external URLs against the provider's primary source.
+Determine published product URLs from a one-time D1 metadata/source
+JSON snapshot; the intake Sheet URL is a cross-check and may be stale. This audit
+identified 40 source-versus-Sheet URL mismatches, each checked separately. Match
+a Sheet row by exact slug plus `DONE`; ignore duplicate `BLACKLIST` rows (for
+example, Mimic row 391 is not the active row 971). Compare source and Sheet URLs
+in both directions, but never copy a stale Sheet URL back into Git. Apply only
+the final approved corrections, not every AGY recommendation. Do not crawl all
+our production routes.
+
+For a verified shutdown or unsupported project, find the active Sheet row by
+exact slug plus `DONE`, record `DISABLED` in column G and put the reason, primary
+evidence URL and checked date in column H. For a verified identity error, the
+exact active `DONE` row may instead be changed to `BLACKLIST`; no pre-existing
+blacklist row is required. If the correct row is already `BLACKLIST`, preserve
+it. Ignore duplicate `BLACKLIST` rows when a matching `DONE` row exists, and do
+not invent an end-of-life date for an invalid entity. Preserve the Sheet row,
+both DE/EN Markdown files and their body; set their frontmatter to
+`disabled: true` and `status: DISABLED`, with lifecycle evidence metadata.
+Remove or replace internal links from active DE/EN alternatives and advice, then
+prepare a bounded upsert allowlist containing only those active pairs. Add the
+retired slug to the static
+tombstone manifest and publish a D1 `tombstone` state for both locales. Do not
+physically delete source or D1 rows. A static 410 carries
+`X-Utildesk-Route-State: tombstone` for HTML, JSON and Markdown in both locales.
+
+The static Pages policy returns 410 for HTML, JSON and Markdown routes, including
+when the runtime is off. A source build refreshes the static API, search/catalog
+surfaces and sitemap; the D1 tombstone removes the slug from active runtime
+collections and search context, advances collection revisions and changes cache
+identity. Runtime rendering also filters inactive alternatives. For production
+verification, query/export a one-time bounded D1 metadata/source JSON snapshot,
+compare it locally, then run only the separately ledgered changed-slug delta.
+Use the external provider sources to validate product URLs; never use a full
+production route crawl.
+
+Recovery is reversible: restore the DE/EN public flags and Sheet status if the
+product is again supported, remove its static tombstone, rebuild Pages, and use a
+paired D1 upsert. The original content and D1 rows remain available for that
+recovery.
+
+The legacy `scripts/audit_repo_disable_by_sheet_status.mjs` is DE-only and renames
+source files, so it is not a retirement workflow. `scripts/apply_sheet_patch.mjs`
+currently imports missing `scripts/google_auth_lib.mjs` and
+`scripts/sheet_snapshot_lib.mjs`; do not use it for this process. Use the
+connected Sheets connector for approved Sheet updates.
+
+The current live-request guard sums every historical ledger entry, while its
+reset timestamp is not used to roll entries into daily windows. Until this is
+fixed separately, treat the 10,000 limit as a conservative cumulative ceiling;
+keep all existing ledger entries and reserve each future operation before it
+runs. Do not change the algorithm or lower the limit as part of a retirement.
 
 ## Invariants
 

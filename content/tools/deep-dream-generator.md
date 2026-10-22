@@ -77,7 +77,7 @@ Im Katalog ist Deep Dream Generator mit dem Preismodell **Je nach Plan** geführ
 
 - [Midjourney](/tools/midjourney/): stärker, wenn hochwertige Konzeptbilder, Illustrationen, Stimmungen und visuelle Experimente gefragt ist.
 - [Stable Diffusion](/tools/stable-diffusion/): passender, wenn ein anderer Schwerpunkt als bei Deep Dream Generator im Vordergrund steht.
-- [DALL·E](/tools/dall-e/): prüfen, wenn ein anderer Schwerpunkt als bei Deep Dream Generator relevant ist.
+- [Adobe Firefly](/tools/adobe-firefly/): für generative Bildideen im Creative-Cloud-Workflow.
 - [Prisma](/tools/prisma/): prüfen, wenn KI-nahe Bildbearbeitung und visuelle Effekte für schnelle, auffällige Bildvarianten wichtiger ist.
 - Higgsfield: naheliegend, falls KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen im Vordergrund steht.
 

@@ -9,7 +9,7 @@ editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Design
 price_model: Open Source
 tags: [digital-painting, illustration, creative-tools]
-official_url: "https://krita.org/en/download/krita-desktop"
+official_url: "https://krita.org/en/download/"
 popularity: 0
 description: Krita ist eine Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen.
 tier: C
@@ -71,7 +71,7 @@ Bei Krita geht es vor allem um Bilder, Designs, Referenzen, Gesichter, Markenass
 
 Im Katalog ist Krita mit dem Preismodell **Open Source** geführt. Für eine belastbare Entscheidung zählen hier vor allem Exportauflösung, kommerzielle Nutzung, Teamzugänge, Dateiformate und Nachbearbeitungszeit; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
 
-**Zum Anbieter:** https://krita.org/en/download/krita-desktop
+**Zum Anbieter:** https://krita.org/en/download/
 
 ## Alternativen zu Krita
 

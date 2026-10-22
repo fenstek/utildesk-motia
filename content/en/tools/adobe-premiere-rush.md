@@ -20,6 +20,12 @@ popularity: 0
 source_language: de
 translation: full
 generated_at: "2026-05-14"
+disabled: true
+status: DISABLED
+lifecycle_date: "2026-09-30"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Adobe discontinued Premiere Rush and ended technical support on 2026-09-30."
+lifecycle_evidence_url: "https://helpx.adobe.com/premiere-rush/premiere-rush-discontinuation.html"
 ---
 # Adobe Premiere Rush
 

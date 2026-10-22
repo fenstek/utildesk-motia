@@ -17,6 +17,12 @@ popularity: 0
 description: "Mycroft is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
 translation: "full"
 updated_at: "2026-07-17"
+disabled: true
+status: DISABLED
+lifecycle_date: "2024-09-08"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Official mycroft-core repository archived and explicitly no longer maintained; maintainers direct users to Open Voice OS and Neon."
+lifecycle_evidence_url: "https://github.com/MycroftAI/mycroft-core"
 ---
 
 # Mycroft

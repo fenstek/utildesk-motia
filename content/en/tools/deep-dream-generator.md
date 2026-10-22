@@ -80,7 +80,7 @@ In the catalog, Deep Dream Generator is marked with the pricing model **Plan-bas
 
 - [Midjourney](/en/tools/midjourney/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Stable Diffusion](/en/tools/stable-diffusion/): useful comparison point if workflow, pricing, or specialization should differ.
-- [DALL·E](/en/tools/dall-e/): useful comparison point if workflow, pricing, or specialization should differ.
+- [Adobe Firefly](/en/tools/adobe-firefly/): for generative image work in a Creative Cloud workflow.
 - [Prisma](/en/tools/prisma/): useful comparison point if workflow, pricing, or specialization should differ.
 - Higgsfield: useful comparison point if workflow, pricing, or specialization should differ.
 
