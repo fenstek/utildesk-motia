@@ -10,7 +10,7 @@ editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Image"
 price_model: "Je nach Plan"
 tags: [design, video, productivity, automation, workflow]
-official_url: "https://storyboarder.com/"
+official_url: "https://wonderunit.com/storyboarder/"
 popularity: 0
 tier: C
 generated_at: 2026-05-18

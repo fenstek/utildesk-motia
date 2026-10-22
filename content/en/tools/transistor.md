@@ -12,7 +12,7 @@ tags:
   - assistant
   - automation
   - workflow
-official_url: 'https://transistor.com/'
+official_url: 'https://transistor.fm/'
 popularity: 0
 translation: full
 description: "Transistor is a audio and music tool for podcast hosting, distribution, and analytics for shows that publish regularly."
@@ -70,7 +70,7 @@ Depending on the use case, text, images, audio, customer data, research notes, o
 
 In the catalog, Transistor is marked with the pricing model **Subscription**. For a real decision, check current limits, team features, export options, and whether a free or cheap entry point turns into an expensive workflow later.
 
-**Provider:** https://transistor.com/
+**Provider:** https://transistor.fm/
 
 ## Alternatives to Transistor
 

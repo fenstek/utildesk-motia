@@ -1,5 +1,5 @@
 ---
-description: Phrasee ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
+description: Phrasee (heute Jacquard) ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben.
 slug: phrasee
 title: Phrasee
 editorial_reviewed: true
@@ -10,8 +10,8 @@ editorial_batch: 2026-07-17-full-tool-card-editorial
 category: AI Writing
 price_model: Freemium
 tags: ["writing", "marketing"]
-official_url: "'http://www.phraseexpress.com/'"
-affiliate_url: "http://www.phraseexpress.com/"
+official_url: "https://www.jacquard.com/"
+affiliate_url: "https://www.jacquard.com/"
 tier: C
 generated_at: 2026-05-16
 created_at: 2026-02-03

@@ -16,6 +16,12 @@ popularity: 0
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-19
+disabled: true
+status: DISABLED
+lifecycle_date: "2026-08-31"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Official team sunset: code freeze 2026-07-29, repository archival 2026-08-10, end of life 2026-08-31; no maintained official product."
+lifecycle_evidence_url: "https://flowiseai.com/sunset"
 ---
 # Flowise
 

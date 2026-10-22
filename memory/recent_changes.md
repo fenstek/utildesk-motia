@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
 
+## 2026-10-22 - Source retirement and URL correction preparation [Codex]
+
+- Prepared paired DE/EN source withdrawals for 14 approved slugs, preserving card bodies and editorial history; added static 410 tombstones, disabled alternative links in active cards and the corrected tombstone response-state header.
+- Applied the approved URL corrections and short availability notices for Firebase Studio, AWS Cloud9 and IntelliCode; Run:ai now describes NVIDIA Kubernetes AI workload/GPU orchestration.
+- This worktree is source preparation only. Sheet updates, production D1 tombstones/upserts, Pages release and verification remain pending the main agent's separate operations; no production release has occurred.
+
 ## 2026-10-12 - KI-Blatt editorial print study [Codex]
 
 - Prepared a homepage print-study panel for the lead Ratgeber story with `Paper` texture, `ImageTexture`/`NoiseDissolve` reveal and `Halftone`/`Duotone` print treatment. It is opt-in, localized in DE/EN, keeps the static cover fallback and respects reduced-motion settings.

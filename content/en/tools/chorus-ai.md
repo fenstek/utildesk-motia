@@ -13,7 +13,7 @@ tags:
   - assistant
   - automation
   - workflow
-official_url: "https://chorus-ai.org/"
+official_url: "https://www.zoominfo.com/products/chorus"
 popularity: 0
 source_language: de
 translation: "full"

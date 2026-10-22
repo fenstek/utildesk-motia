@@ -26,8 +26,8 @@ relatedTools:
     href: "/tools/runway/"
   - title: "Adobe Firefly"
     href: "/tools/adobe-firefly/"
-  - title: "Sora"
-    href: "/tools/sora/"
+  - title: "PixVerse"
+    href: "/tools/pixverse/"
   - title: "Kling AI"
     href: "/tools/kling-ai/"
 decisionTools:

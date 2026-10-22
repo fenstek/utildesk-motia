@@ -9,8 +9,8 @@ editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Developer"
 price_model: "Open Source"
 tags: ["developer", "nlp", "topic-modeling", "machine-learning", "text"]
-official_url: "https://mallet.cs.umass.edu/download.php"
-affiliate_url: "https://mallet.cs.umass.edu/download.php"
+official_url: "https://mimno.github.io/Mallet/"
+affiliate_url: "https://mimno.github.io/Mallet/"
 popularity: 47
 source_language: de
 translation: full
@@ -72,7 +72,7 @@ Because MALLET can be run locally, text data can stay under your control. Corpor
 
 MALLET is open source. Costs come from infrastructure, data preparation, and technical implementation.
 
-**Go to provider:** https://mallet.cs.umass.edu/download.php
+**Go to provider:** https://mimno.github.io/Mallet/
 
 ## Alternatives to MALLET
 

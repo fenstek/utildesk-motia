@@ -15,6 +15,12 @@ tags: "[\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"automation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 popularity: 0
 tier: C
 generated_at: 2026-05-12
+disabled: true
+status: DISABLED
+lifecycle_date: "2021-12-01"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "IBM Visual Recognition instances were discontinued and all remaining instances deleted 2021-12-01."
+lifecycle_evidence_url: "https://watson-developer-cloud.github.io/node-sdk/master/classes/visualrecognitionv3.html"
 ---
 # IBM Watson Visual Recognition
 

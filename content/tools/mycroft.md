@@ -15,6 +15,12 @@ popularity: 0
 tier: "C"
 generated_at: "2026-05-16"
 updated_at: "2026-07-17"
+disabled: true
+status: DISABLED
+lifecycle_date: "2024-09-08"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Official mycroft-core repository archived and explicitly no longer maintained; maintainers direct users to Open Voice OS and Neon."
+lifecycle_evidence_url: "https://github.com/MycroftAI/mycroft-core"
 ---
 
 # Mycroft

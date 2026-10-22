@@ -50,7 +50,10 @@ node_modules/.bin/wrangler kv key put content-runtime:tools off \
   --binding RATGEBER_REVIEW --env production --remote --config wrangler.toml
 ```
 
-Do not set `on` until the 20- and 100-route cohorts have each passed two complete live-check rounds. Tool Worker 404, 5xx or fetch exceptions fall back to the frozen/static Pages route; successful proxied responses carry `X-Utildesk-Content-Runtime: tools-v1`.
+Do not set `on` until the 20-route cohort and the current 100-route cohort in
+`tools-100.json` have each passed two complete live-check rounds. The latter contains 100 unique active slugs; retired entries must be replaced with a unique active analogue. Tool Worker 404,
+5xx or fetch exceptions fall back to the frozen/static Pages route; successful
+proxied responses carry `X-Utildesk-Content-Runtime: tools-v1`.
 
 ### Presentation bridge
 

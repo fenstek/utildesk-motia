@@ -91,7 +91,7 @@ Beyond the list price, OpenAI GPT-Modelle should be evaluated by the cost of ado
 
 ## Alternatives to OpenAI GPT Models
 
-- [Google PaLM](/tools/google-palm/): A powerful language model from Google with similar functions.
+- [Gemini](/en/tools/gemini/): as Google’s active multimodal assistant.
 - **Anthropic Claude:** Focuses on safe and ethical AI models with natural language processing.
 - [Cohere](/tools/cohere/): Offers APIs for text generation and language understanding with flexible pricing models.
 - **AI21 Labs Jurassic:** Large language models with a focus on creative and complex text tasks.

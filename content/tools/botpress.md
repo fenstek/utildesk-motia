@@ -9,7 +9,7 @@ editorial_batch: "2026-07-14-full-tool-card-editorial"
 category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, chatbot]
-official_url: "https://botpress.com"
+official_url: "https://botpress.com/"
 created_at: "2026-02-12"
 updated_at: 2026-07-14
 lastReviewed: 2026-07-14
@@ -66,7 +66,7 @@ Weniger passend ist Botpress, wenn Self-Hosting, lokale Verarbeitung oder eine b
 
 - [Dialogflow](/tools/dialogflow/): Sinnvoll, wenn Google-Cloud-Dienste, intent-basierte Dialoge und eine stark integrierte Plattform wichtiger sind als Botpress' visueller Cloud-Workflow.
 - [Rasa](/tools/rasa/): Die passendere Option, wenn ein Entwicklerteam Open-Source-Komponenten und mehr Kontrolle über die eigene Laufzeit und Datenarchitektur braucht.
-- [Microsoft Bot Framework](/tools/microsoft-bot-framework/): Naheliegend für Organisationen, die Bots eng an Azure, Microsoft 365 und bestehende Microsoft-Entwicklungsprozesse anbinden.
+- [Dialogflow](/tools/dialogflow/): für kontrollierte Dialogabläufe mit Webhooks und Integrationen.
 - [ManyChat](/tools/manychat/): Besser für marketinggetriebene Automationen in Social-Messaging-Kanälen mit weniger eigener Dialoglogik.
 - [Tidio](/tools/tidio/): Praktischer für kleinere Supportteams, die Live-Chat und einfache Automatisierung statt einer frei modellierten Agentenplattform suchen.
 

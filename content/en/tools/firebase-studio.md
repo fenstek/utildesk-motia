@@ -16,6 +16,8 @@ updated_at: 2026-07-31
 ---
 # Firebase Studio
 
+**Availability:** New Firebase Studio workspaces can no longer be created; Google has announced shutdown on 22 March 2027.
+
 An existing workspace contains a functioning prototype, two undocumented secrets and a Firebase database, but nobody can start it locally. For this team, Firebase Studio is no longer a new platform decision. It is a migration project with a deadline. The useful sequence is to secure the repository and dependencies, document configuration, export data, reproduce the application locally and only then choose the replacement.
 
 Firebase Studio is a browser-based cloud development environment with a code editor, terminal, previews, Gemini assistance and Firebase deployment paths. Product status is now the defining boundary: new sign-ups and workspaces are disabled, and the environment is scheduled to shut down in March 2027. This card therefore supports operation and orderly migration of existing workspaces, not selection for a new project.

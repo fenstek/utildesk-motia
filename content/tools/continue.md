@@ -15,6 +15,12 @@ popularity: 0
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-07-17
+disabled: true
+status: DISABLED
+lifecycle: unsupported
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Official Continue repository now states it is no longer actively maintained and is read-only; final 2.0.0 release follows acquisition by Cursor."
+lifecycle_evidence_url: "https://github.com/continuedev/continue"
 ---
 
 # Continue

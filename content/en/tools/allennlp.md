@@ -20,6 +20,12 @@ popularity: 0
 source_language: de
 translation: "full"
 updated_at: "2026-07-17"
+disabled: true
+status: DISABLED
+lifecycle_date: "2022-12-16"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Maintainer ended feature/dependency development and bug support by 2022-12-16; repository archived on that date."
+lifecycle_evidence_url: "https://github.com/allenai/allennlp"
 ---
 
 # AllenNLP

@@ -13,7 +13,7 @@ tags:
   - analytics
   - developer tools
   - chatbot
-official_url: 'https://www.graphcore.ai/products/ipu'
+official_url: 'https://www.graphcore.ai/'
 popularity: 0
 description: 'A specialised accelerator platform for machine-learning training and inference, combining IPU hardware with the Poplar software stack and profiling tools.'
 translation: full

@@ -1246,13 +1246,6 @@
         "excerpt": "KI-Video 2026 ist weniger Clip-Zauber als Workflow-Management: Gemini Omni, Flow, Runway und Adobe Firefly zeigen, wie Teams Ideen, Bearbeitung und Freigaben neu organisieren."
       }
     ],
-    "sora": [
-      {
-        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
-        "title": "KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly",
-        "excerpt": "KI-Video 2026 ist weniger Clip-Zauber als Workflow-Management: Gemini Omni, Flow, Runway und Adobe Firefly zeigen, wie Teams Ideen, Bearbeitung und Freigaben neu organisieren."
-      }
-    ],
     "kling-ai": [
       {
         "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
@@ -1507,6 +1500,13 @@
         "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
         "title": "Metas persönlicher KI-Agent kennt dein Ziel. Aber wessen Interessen verfolgt er?",
         "excerpt": "Mark Zuckerberg will persönliche KI-Agenten für Milliarden Menschen bauen. Doch ein Helfer, der Termine, Beziehungen und Finanzen versteht, braucht genau den Kontext, mit dem Meta schon heute Empfehlungen und Werbung personalisiert."
+      }
+    ],
+    "pixverse": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly",
+        "excerpt": "Ein kurzer Werbeclip scheitert selten am Generator. 2026 entscheidet sich KI-Video daran, ob ein Team Versionen, Rechte und Freigaben bis zum letzten Frame zusammenhält."
       }
     ]
   },
@@ -2757,13 +2757,6 @@
         "excerpt": "AI video in 2026 is less about flashy clips than about repeatable production workflows: Gemini Omni, Flow, Runway and Adobe Firefly show how teams organize ideas, editing and approvals."
       }
     ],
-    "sora": [
-      {
-        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
-        "title": "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly",
-        "excerpt": "AI video in 2026 is less about flashy clips than about repeatable production workflows: Gemini Omni, Flow, Runway and Adobe Firefly show how teams organize ideas, editing and approvals."
-      }
-    ],
     "kling-ai": [
       {
         "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
@@ -3018,6 +3011,13 @@
         "slug": "meta-persoenliche-ki-agenten-wem-gehoert-dein-kontext",
         "title": "Meta's personal AI agent knows your goal. But whose interests does it serve?",
         "excerpt": "Mark Zuckerberg wants to build personal AI agents for billions of people. Yet a helper that understands schedules, relationships and finances needs the same context Meta already uses to personalize recommendations and advertising."
+      }
+    ],
+    "pixverse": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly",
+        "excerpt": "A short product clip rarely fails because of the first generation. In 2026, AI video is decided by whether a team can keep versions, rights and approvals together through the last frame."
       }
     ]
   }

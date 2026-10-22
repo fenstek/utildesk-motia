@@ -19,6 +19,8 @@ updated_at: "2026-07-17"
 
 # AWS Cloud9
 
+**Verfügbarkeit:** Seit dem 25. Juli 2024 steht AWS Cloud9 neuen AWS-Kunden nicht mehr zur Verfügung; bestehende Kunden können es weiter nutzen.
+
 AWS Cloud9 ist eine cloudbasierte Entwicklungsumgebung im AWS-Umfeld. Die Idee: Code, Terminal, Laufzeit und AWS-Ressourcen liegen näher zusammen, sodass Entwickler direkt im Browser arbeiten und Cloud-nahe Projekte bearbeiten können.
 
 Vor einem neuen Einsatz sollte man die aktuelle Verfügbarkeit und AWS-Hinweise prüfen, weil Cloud-Services sich veraendern können. Inhaltlich bleibt Cloud9 besonders interessant, wenn Entwicklungsumgebung und AWS-Infrastruktur eng verzahnt sind.

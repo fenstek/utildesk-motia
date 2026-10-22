@@ -14,7 +14,8 @@ const repoRoot = path.resolve(scriptDir, "..");
 const toolsDir = path.join(repoRoot, "content", "tools");
 const enToolsDir = path.join(repoRoot, "content", "en", "tools");
 
-const minActiveTools = Number(process.env.UTILDESK_MIN_ACTIVE_TOOLS || 1124);
+// Approved 2026-10-22 catalog audit retired 14 products; 1111 active cards remain.
+const minActiveTools = Number(process.env.UTILDESK_MIN_ACTIVE_TOOLS || 1111);
 // The catalog now uses the expanded editorial taxonomy (24 active labels).
 // Keep this guard focused on accidental explosions, not intentional taxonomy.
 const maxCategories = Number(process.env.UTILDESK_MAX_TOOL_CATEGORIES || 24);

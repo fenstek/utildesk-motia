@@ -80,7 +80,7 @@ StackBlitz is a weaker primary platform for sensitive data, native dependencies,
 - [Gitpod](/en/tools/gitpod/): a better fit when Git repositories should produce configurable, reproducible cloud workspaces for development and DevOps work.
 - [GitHub Codespaces](/en/tools/github-codespaces/): suitable when repositories, pull requests, and devcontainer configuration should stay tightly integrated with GitHub.
 - [Replit](/en/tools/replit/): more oriented toward accessible multi-language projects, learning, collaboration, and quickly published prototypes.
-- [Glitch](/en/tools/glitch/): a simple choice for small remixable web experiments when shared editing matters more than a complete engineering environment.
+- [CodeSandbox](/en/tools/codesandbox/): for isolated web projects and runnable previews.
 
 ## FAQ
 

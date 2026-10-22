@@ -13,7 +13,7 @@ tags:
   - data
   - analytics
   - productivity
-official_url: "https://thedeepbrain.com/"
+official_url: "https://www.aistudios.com/"
 popularity: 0
 description: "DeepBrain is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
 translation: "full"

@@ -11,12 +11,14 @@ price_model: Freemium
 tags: [ai, app-builder, cloud-development, firebase]
 official_url: "https://firebase.studio/"
 description: Cloud-Entwicklungsumgebung mit Gemini und Firebase-Anbindung für bestehende Workspaces; Neuanlage ist gesperrt und die Abschaltung für März 2027 angekündigt.
-popularity: 47
+popularity: 53
 tier: C
 generated_at: 2026-07-19
 updated_at: 2026-07-31
 ---
 # Firebase Studio
+
+**Verfügbarkeit:** Neue Firebase-Studio-Workspaces können nicht mehr angelegt werden; Google kündigt die Abschaltung für den 22. März 2027 an.
 
 Ein bestehender Workspace enthält einen funktionierenden Prototypen, zwei nicht dokumentierte Secrets und eine Firebase-Datenbank, aber niemand kann ihn lokal starten. Für dieses Team ist Firebase Studio keine neue Plattformentscheidung mehr, sondern ein Migrationsprojekt mit Frist. Der sinnvolle Ablauf lautet: Repository und Abhängigkeiten sichern, Konfiguration dokumentieren, Daten exportieren, lokal reproduzieren und erst danach den Ersatz auswählen.
 

@@ -17,6 +17,12 @@ popularity: 0
 source_language: de
 translation: "full"
 updated_at: "2026-07-17"
+disabled: true
+status: DISABLED
+lifecycle_date: "2025-07-08"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Glitch shut down project hosting, user profiles and app editing on 2025-07-08."
+lifecycle_evidence_url: "https://blog.glitch.com/post/changes-are-coming-to-glitch"
 ---
 
 # Glitch

@@ -71,7 +71,7 @@ I recommend CodePen to frontend and design teams, educators, and support teams t
 - [JSFiddle](/en/tools/jsfiddle/): A lean HTML, CSS, and JavaScript playground for small reproducible examples and simple result views.
 - [StackBlitz](/en/tools/stackblitz/): A browser IDE for larger framework projects and an npm-oriented development workflow.
 - [CodeSandbox](/en/tools/codesandbox/): Better when templates, richer project structures, and collaborative app prototypes matter more than a single Pen.
-- [Glitch](/en/tools/glitch/): More suitable for small web apps where an editable app workflow matters beyond the frontend.
+- [StackBlitz](/en/tools/stackblitz/): for runnable web app prototypes with a live preview.
 - [JS Bin](/en/tools/jsbin/): A minimal alternative for quickly testing and sharing HTML, CSS, and JavaScript.
 
 ## FAQ

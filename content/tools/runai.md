@@ -1,5 +1,5 @@
 ---
-description: "RunAI ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+description: "Run:ai von NVIDIA orchestriert AI-Workloads und GPU-Ressourcen für Kubernetes-Umgebungen."
 slug: "runai"
 title: "RunAI"
 editorial_reviewed: true
@@ -8,9 +8,9 @@ editorial_reviewed_at: "2026-07-17"
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Agents"
-price_model: "Je nach Plan"
-tags: [ai, assistant, automation, workflow]
-official_url: "https://runai.com/"
+price_model: "Nicht ausgewiesen"
+tags: [ai, kubernetes, gpu-orchestration, ai-workloads]
+official_url: "https://www.nvidia.com/en-us/software/run-ai/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-13"
@@ -19,18 +19,11 @@ updated_at: "2026-07-17"
 
 # RunAI
 
-RunAI ist eine innovative Plattform, die speziell entwickelt wurde, um KI-gestützte Arbeitsabläufe zu automatisieren und zu optimieren. Mit einem Fokus auf die Integration von KI-Assistenten in verschiedene Unternehmensprozesse ermöglicht RunAI eine effizientere Nutzung von Ressourcen und eine verbesserte Zusammenarbeit im Team. Die Plattform unterstützt Unternehmen dabei, repetitive Aufgaben zu automatisieren und komplexe Workflows mit künstlicher Intelligenz zu steuern.
+Run:ai von NVIDIA orchestriert AI-Workloads und GPU-Ressourcen für Kubernetes-Umgebungen. Es richtet sich an Teams, die GPU-Auslastung und Workload-Orchestrierung in Kubernetes koordinieren; es ist kein allgemeiner Büroassistent.
 
 ## Für wen ist RunAI geeignet?
 
-RunAI richtet sich vor allem an Unternehmen und Teams, die ihre Arbeitsprozesse mithilfe von Künstlicher Intelligenz effizienter gestalten wollen. Besonders nützlich ist die Plattform für:
-
-- IT- und Data-Science-Teams, die KI-Modelle entwickeln und skalieren möchten
-- Unternehmen, die Automatisierung in ihren Arbeitsabläufen integrieren wollen
-- Organisationen, die komplexe Workflows mit KI-Unterstützung optimieren möchten
-- Entwickler und Forscher, die flexible und skalierbare KI-Infrastrukturen benötigen
-
-Die Plattform ist sowohl für kleine bis mittelständische Unternehmen als auch für größere Konzerne geeignet, abhängig von den individuellen Anforderungen und dem gewählten Plan.
+Run:ai eignet sich für Plattform- und Infrastrukturteams, die AI-Workloads und GPU-Ressourcen in Kubernetes orchestrieren.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/runai-editorial.webp" alt="Illustration zu RunAI: Workload-Wagen werden in einem Mini-Rechenzentrum zu GPU-Spuren geleitet" loading="lazy" decoding="async" />
@@ -38,7 +31,7 @@ Die Plattform ist sowohl für kleine bis mittelständische Unternehmen als auch 
 
 ## Typische Einsatzszenarien
 
-- **Gezielter Einstieg:** RunAI eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um ai, assistant, automation nicht mehr improvisieren wollen.
+- **Gezielter Einstieg:** Run:ai eignet sich, wenn Plattformteams die Orchestrierung von AI-Workloads und GPU-Ressourcen in Kubernetes prüfen wollen.
 - **Betrieb statt Demo:** Nützlich wird das Tool vor allem dann, wenn Prompts, Modelle, Ausgaben und Freigaben sauber dokumentiert und nicht nur einmalig ausprobiert werden.
 - **Übergaben im Team:** RunAI kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
@@ -73,10 +66,9 @@ RunAI lohnt sich, wenn Integrationen betrieben und nicht nur verbunden werden. O
 
 ### Nachteile
 
-- Preisgestaltung ist abhängig vom gewählten Plan und kann für kleinere Teams kostspielig sein
+- Lizenz- und Betriebskosten sollten vor der Einführung direkt mit NVIDIA geklärt werden
 - Komplexität der Plattform kann für Einsteiger eine gewisse Einarbeitungszeit erfordern
 - Abhängigkeit von stabiler Infrastruktur und Internetverbindung
-- Nicht alle Funktionen sind in jedem Plan verfügbar
 
 ## Redaktionelle Einschätzung
 
@@ -90,11 +82,11 @@ Ein sinnvoller Start mit RunAI beginnt mit einem konkreten Ablauf und einem klei
 
 **Für wen eignet sich RunAI?**
 
-RunAI eignet sich für Teams, die den beschriebenen Ablauf regelmäßig nutzen und die Einführung sowie die Qualitätskontrolle verantworten können.
+Run:ai eignet sich für Plattformteams, die Kubernetes-AI-Workloads und GPU-Ressourcen orchestrieren und den Betrieb verantworten können.
 
 **Wie sollte ein Pilot mit RunAI aussehen?**
 
-Für RunAI: Starte mit einem abgegrenzten Prozess, wenigen Beteiligten und einem klaren Erfolgskriterium. Prüfe Ergebnisqualität, Berechtigungen und Übergaben, bevor der Einsatz erweitert wird.
+Starte mit einem begrenzten Kubernetes-Workload und prüfe, ob GPU-Ressourcen und Workload-Orchestrierung den Bedarf abdecken, bevor du den Einsatz erweiterst.
 
 **Welche Daten sollten nicht ungeprüft in RunAI verarbeitet werden?**
 

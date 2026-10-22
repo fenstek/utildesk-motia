@@ -127,6 +127,20 @@ export const TOOL_TOMBSTONES = new Set([
   "zoom-phone",
   "zoom",
   "zulip",
+  "adobe-premiere-rush",
+  "glitch",
+  "sora",
+  "dall-e",
+  "flowise",
+  "allennlp",
+  "microsoft-bot-framework",
+  "mycroft",
+  "ibm-watson-visual-recognition",
+  "google-palm",
+  "lumiere",
+  "deepfacelab",
+  "fairseq",
+  "continue",
 ]);
 
 const slugPattern = "[a-z0-9]+(?:-[a-z0-9]+)*";
@@ -169,6 +183,7 @@ export function respondToToolRouteAction(action, origin, search = "") {
     headers: {
       "Cache-Control": "no-store",
       "X-Robots-Tag": "noindex, nofollow",
+      "X-Utildesk-Route-State": "tombstone",
     },
   });
 }

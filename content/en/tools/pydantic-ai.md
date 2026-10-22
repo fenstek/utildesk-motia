@@ -11,7 +11,7 @@ editorial_verdict: "recommend"
 category: "Entwickler-Tools"
 price_model: "Open Source"
 tags: [ai-agents, python, developer-tools, framework]
-official_url: "https://pydantic.dev/ai/"
+official_url: "https://pydantic.dev/docs/ai/overview/"
 popularity: 0
 source_language: de
 translation: "full"

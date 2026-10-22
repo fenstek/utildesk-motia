@@ -9,7 +9,7 @@ editorial_batch: 2026-07-31-story-card-refresh-50
 category: "AI Agents"
 price_model: Open Source
 tags: [detox, qa, test-automation]
-official_url: "https://www.detox.com/"
+official_url: "https://wix.github.io/Detox/"
 popularity: 0
 description: "Detox testet mobile Anwendungen Ende-zu-Ende mit synchronisierten Aktionen und eignet sich für wenige geschäftskritische Nutzerabläufe."
 tier: "C"
@@ -71,7 +71,7 @@ Detox ist im Katalog als **Open Source** geführt. Direkte Lizenzkosten sind nic
 
 Teams sollten einkalkulieren, dass E2E-Tests laufend gewartet werden müssen. Der Preis ist also weniger das Tool selbst als die Disziplin, Testfälle aktuell zu halten.
 
-**Zum Anbieter:** https://www.detox.com/
+**Zum Anbieter:** https://wix.github.io/Detox/
 
 ## Alternativen
 

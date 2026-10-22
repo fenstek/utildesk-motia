@@ -15,6 +15,12 @@ popularity: 0
 description: "Sora was OpenAI's generative video project for visual drafts. OpenAI says the product has not been available since April 26, 2026."
 translation: full
 updated_at: 2026-07-19
+disabled: true
+status: DISABLED
+lifecycle_date: "2026-09-24"
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Sora web/app discontinued 2026-04-26; Videos API and Sora 2 models removed 2026-09-24."
+lifecycle_evidence_url: "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation"
 ---
 # Sora
 

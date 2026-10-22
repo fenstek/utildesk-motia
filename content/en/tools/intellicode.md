@@ -9,7 +9,7 @@ editorial_batch: 2026-07-17-full-tool-card-editorial
 category: Entwickler-Tools
 price_model: "Je nach Plan"
 official_url: "https://visualstudio.microsoft.com/services/intellicode/"
-description: "Microsoft IntelliCode is an AI-powered coding assistant for Visual Studio and Visual Studio Code that suggests context-aware completions and recommendations based on open-source patterns and project-specific code."
+description: "Microsoft IntelliCode is an AI-powered coding assistant for Visual Studio that suggests context-aware completions and recommendations based on open-source patterns and project-specific code."
 updated_at: 2026-07-17
 
 popularity: 0
@@ -19,7 +19,9 @@ translation: full
 ---
 # IntelliCode (Microsoft)
 
-IntelliCode is an AI-powered developer tool from Microsoft that improves coding productivity through intelligent code completions and context-aware recommendations. It integrates seamlessly into Visual Studio and Visual Studio Code and helps developers work faster and more efficiently by delivering suggestions based on thousands of open-source projects and individual project patterns.
+**Availability:** IntelliCode extensions for VS Code are deprecated, with support ending in November 2025. IntelliCode remains available in Visual Studio.
+
+IntelliCode is an AI-powered developer tool from Microsoft that improves coding productivity through intelligent code completions and context-aware recommendations. It is available in Visual Studio and helps developers work faster and more efficiently by delivering suggestions based on thousands of open-source projects and individual project patterns.
 
 ## Who is IntelliCode suitable for?
 
@@ -27,7 +29,7 @@ IntelliCode is primarily aimed at software developers of all experience levels w
 
 - Solo developers who want to code faster and with fewer errors.
 - Teams that want to maintain consistent coding standards and benefit from AI-powered recommendations together.
-- Developers who use Visual Studio or Visual Studio Code and want to increase their productivity.
+- Developers who use Visual Studio and want to increase their productivity.
 - People getting started with new frameworks or programming languages who need context-aware tips.
 
 ## Typical Use Cases
@@ -52,7 +54,7 @@ IntelliCode (Microsoft) is strongest when it reduces friction in an existing wor
 - **AI-based code completion:** IntelliCode suggests context-dependent lines of code based on common patterns from open-source projects.
 - **Multilingual support:** Works with common languages such as C#, Python, JavaScript, TypeScript, Java, and more.
 - **Team-specific models:** Ability to train your own models based on team code to receive tailored recommendations.
-- **Integration with Visual Studio and VS Code:** Seamless integration into popular Microsoft development environments.
+- **Visual Studio:** IntelliCode remains available in Visual Studio.
 - **Code quality improvements:** Suggestions help maintain best practices and standards.
 - **Automatic learning capability:** IntelliCode adapts over time to your individual style and the libraries you use.
 - **Faster navigation:** Helps quickly identify relevant APIs and methods.
@@ -72,10 +74,10 @@ IntelliCode (Microsoft) is strongest when it reduces friction in an existing wor
 ### Cons
 
 - Suggestion quality can vary depending on the project and language.
-- Current versions of Visual Studio or VS Code are required for best results.
+- A supported Visual Studio version is required for best results.
 - Team-specific models require additional setup effort.
 - In some cases, suggestions may not match the desired style.
-- Not a standalone application, but used as an extension/plugin.
+- IntelliCode is integrated into the supported Visual Studio environment.
 
 ## Workflow Fit
 
@@ -97,7 +99,7 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 ## Pricing & Costs
 
-IntelliCode is included for free in many Visual Studio versions and in Visual Studio Code. For advanced features such as custom team models, there may be additional costs depending on the Microsoft plan or subscription. Exact pricing depends on the licensing of the respective Microsoft product and may vary.
+IntelliCode remains available in many Visual Studio editions; VS Code IntelliCode extensions are deprecated and unsupported. For advanced features such as custom team models, there may be additional costs depending on the Microsoft plan or subscription. Exact pricing depends on the licensing of the respective Microsoft product and may vary.
 
 ## Alternatives
 

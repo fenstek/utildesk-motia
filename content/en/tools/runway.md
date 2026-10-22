@@ -70,7 +70,7 @@ Do not choose it when frame-accurate continuity, immutable product geometry or f
 
 ## Alternatives
 
-- [Sora](/en/tools/sora/): is worth comparing for high-quality generative video concepts in the OpenAI ecosystem.
+- [PixVerse](/en/tools/pixverse/): for generative short clips from prompts and images.
 - [Kling AI](/en/tools/kling-ai/): offers text- and image-driven video generation with a different motion and model character.
 - [Adobe Firefly](/en/tools/adobe-firefly/): fits when Creative Cloud integration and an Adobe-oriented production path matter most.
 - [Pika](/en/tools/pika/): provides an accessible route to short effects-led video experiments and rapid variants.

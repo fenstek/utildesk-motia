@@ -17,6 +17,13 @@ popularity: 0
 description: "Lumiere is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
 translation: "full"
 updated_at: "2026-07-17"
+disabled: true
+status: BLACKLIST
+lifecycle: invalid_entity
+lifecycle_checked_at: "2026-10-22"
+lifecycle_reason: "Invalid catalog entity: intake identifies the European audiovisual film-admissions database, while the card invents a generic freemium AI product. The named Google Lumiere is a research demonstration, not the described available service; the catalog URL does not identify that tool."
+lifecycle_evidence_url: "https://lumiere-video.github.io/"
+lifecycle_secondary_evidence_url: "https://www.wikidata.org/wiki/Q47085761"
 ---
 
 # Lumiere

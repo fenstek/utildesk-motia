@@ -9,8 +9,8 @@ editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Entwickler-Tools
 price_model: Open Source
 tags: ["developer", "nlp", "topic-modeling", "machine-learning", "text"]
-official_url: "https://mallet.cs.umass.edu/download.php"
-affiliate_url: "https://mallet.cs.umass.edu/download.php"
+official_url: "https://mimno.github.io/Mallet/"
+affiliate_url: "https://mimno.github.io/Mallet/"
 tier: C
 generated_at: 2026-05-20
 popularity: 0
@@ -75,7 +75,7 @@ Da MALLET lokal betrieben werden kann, bleiben Textdaten unter eigener Kontrolle
 
 MALLET ist Open Source. Kosten entstehen durch Infrastruktur, Datenaufbereitung und technische Umsetzung.
 
-**Zum Anbieter:** https://mallet.cs.umass.edu/download.php
+**Zum Anbieter:** https://mimno.github.io/Mallet/
 
 ## Alternativen zu MALLET
 

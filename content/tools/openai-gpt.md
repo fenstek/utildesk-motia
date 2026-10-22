@@ -101,7 +101,7 @@ Neben dem Listenpreis sollte bei OpenAI GPT auch der Einführungsaufwand berück
 
 ## Alternativen zu OpenAI GPT
 
-- [Google PaLM](/tools/google-palm/): Ein weiteres großes Sprachmodell mit umfangreichen Funktionen und Integration in Google-Dienste.
+- [Gemini](/tools/gemini/): als aktiver multimodaler Google-Assistent.
 - **Anthropic Claude:** KI-Modell mit Fokus auf Sicherheit und ethische Nutzung.
 - [Cohere](/tools/cohere/): Bietet KI-gestützte Sprachtools mit Schwerpunkt auf Entwicklerfreundlichkeit.
 - [Microsoft Azure OpenAI Service](/tools/microsoft-azure-openai-service/): Ermöglicht Zugriff auf OpenAI-Modelle über Azure mit zusätzlichen Unternehmensfeatures.

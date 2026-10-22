@@ -82,7 +82,6 @@ Für die Budgetplanung sollte Sourcegraph nicht nur nach Listenpreis bewertet we
 - [GitHub Copilot](/tools/github-copilot/): stärker für KI-gestützte Codevorschläge direkt im Editor.
 - [Cursor](/tools/cursor/): gute Alternative, wenn Codekontext, Chat und Bearbeitung in einer IDE zusammenlaufen sollen.
 - [Tabnine](/tools/tabnine/): fokussierter auf Code-Completion und Team-/Enterprise-Kontrolle.
-- [Continue](/tools/continue/): Open-Source-Weg für eigene LLM-gestützte Coding-Workflows in IDEs.
 - [OpenAI Codex](/tools/openai-codex/): relevanter Vergleich, wenn agentische Coding-Aufgaben statt reiner Code-Suche im Vordergrund stehen.
 
 Bei der Auswahl der Alternativen lohnt sich ein Vergleich entlang des konkreten Engpasses. Wenn Code-Suche, Navigation und Kontext über große Repositories im Mittelpunkt stehen, zählen andere Kriterien als bei einem allgemeinen Toolvergleich: Datenkontrolle, Lernkurve, Integrationen und die Qualität der Ergebnisse im eigenen Material.

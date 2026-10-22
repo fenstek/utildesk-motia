@@ -90,7 +90,7 @@ Das Preismodell von Kilo Code sollte direkt beim Anbieter geprüft werden, weil 
 
 ## Naheliegende Alternativen
 
-Als Vergleichspunkt lohnen sich [OpenAI Codex](/tools/openai-codex/), [GitHub Copilot](/tools/github-copilot/), [Continue](/tools/continue/). Entscheidend ist, welches Werkzeug im vorhandenen Team die wenigsten neuen Blindstellen erzeugt und den konkreten Ablauf rund um Kilo Code am besten absichert.
+Als Vergleichspunkt lohnen sich [OpenAI Codex](/tools/openai-codex/), [GitHub Copilot](/tools/github-copilot/). Entscheidend ist, welches Werkzeug im vorhandenen Team die wenigsten neuen Blindstellen erzeugt und den konkreten Ablauf rund um Kilo Code am besten absichert.
 
 ## FAQ
 
@@ -123,7 +123,7 @@ Ein guter Test misst nicht nur Geschwindigkeit. Wichtig sind weniger Rückfragen
 Der häufigste Fehler ist ein zu breiter Einstieg. Kilo Code sollte zuerst an einer engen, realen Aufgabe geprüft werden, bevor mehrere Teams, sensible Daten oder verbindliche Aktionen dazukommen.
 
 **6. Welche Alternativen sollte man vergleichen?**
-Als Vergleich lohnen sich [OpenAI Codex](/tools/openai-codex/), [GitHub Copilot](/tools/github-copilot/), [Continue](/tools/continue/). Der Vergleich sollte am konkreten Workflow rund um Kilo Code erfolgen, nicht nur anhand von Funktionslisten.
+Als Vergleich lohnen sich [OpenAI Codex](/tools/openai-codex/), [GitHub Copilot](/tools/github-copilot/). Der Vergleich sollte am konkreten Workflow rund um Kilo Code erfolgen, nicht nur anhand von Funktionslisten.
 
 **7. Welche Kosten werden leicht übersehen?**
 Neben dem Preisplan zählen Einrichtung, Schulung, Monitoring, Review-Zeit, spätere Migration und mögliche Modell- oder Nutzungslimits. Bei Kilo Code sollte deshalb nicht nur der Monatsbetrag bewertet werden.

@@ -10,7 +10,7 @@ editorial_batch: "2026-07-17-full-tool-card-editorial"
 category: "AI Agents"
 price_model: "Je nach Plan"
 tags: [ai, assistant, automation, workflow]
-official_url: "https://www.gladia.com/"
+official_url: "https://www.gladia.io/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-12"

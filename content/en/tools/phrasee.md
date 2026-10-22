@@ -1,5 +1,5 @@
 ---
-description: "Phrasee is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+description: "Phrasee (now Jacquard) is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
 slug: "phrasee"
 title: "Phrasee"
 editorial_reviewed: true
@@ -12,8 +12,8 @@ price_model: "Freemium"
 tags:
   - writing
   - marketing
-official_url: "'http://www.phraseexpress.com/'"
-affiliate_url: 'http://www.phraseexpress.com/'
+official_url: "https://www.jacquard.com/"
+affiliate_url: 'https://www.jacquard.com/'
 created_at: '2026-02-03'
 popularity: 0
 translation: "full"
@@ -96,7 +96,7 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 Phrasee offers a freemium model that makes it easy to get started. Exact prices for paid plans depend on usage volume, the features required, and the level of support. In many cases, custom quotes are available on request, especially for larger companies. The freemium version usually includes a limited number of text generations and basic features. Paid plans are required for advanced features such as extensive A/B testing, multilingual support, or integrations with third-party systems.
 
-👉 **To the provider:** http://www.phraseexpress.com/
+👉 **To the provider:** https://www.jacquard.com/
 
 ## FAQ
 

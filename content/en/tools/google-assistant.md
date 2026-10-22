@@ -70,7 +70,7 @@ Google Assistant is recommended for personal or small shared-device environments
 - [Amazon Alexa](/en/tools/amazon-alexa/): A separate smart-home and speaker ecosystem built around Alexa devices.
 - Samsung Bixby: A better fit when Galaxy hardware and Samsung device controls are central.
 - [Gemini](/en/tools/gemini/): Google’s relevant mobile path where Gemini is replacing Assistant as the primary Android assistant.
-- [Mycroft](/en/tools/mycroft/): A more open, community-oriented option for teams prioritizing local control and customization.
+- [Amazon Alexa](/en/tools/amazon-alexa/): as another established voice assistant; review its cloud and privacy model.
 
 ## FAQ
 
