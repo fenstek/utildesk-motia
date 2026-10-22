@@ -20,7 +20,7 @@ maintained or archived; `lumiere` is an invalid entity and has no EOL date.
 | `adobe-premiere-rush` | Support ended 2026-09-30 | [Adobe discontinuation notice](https://helpx.adobe.com/premiere-rush/premiere-rush-discontinuation.html) |
 | `glitch` | Hosting/editor shut down 2025-07-08 | [Glitch service changes](https://blog.glitch.com/post/changes-are-coming-to-glitch) |
 | `sora` | Sora web/app and API/models discontinued; final API/model date 2026-09-24 | [OpenAI Sora discontinuation](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation) |
-| `dall-e` | DALL·E 2/3 API models removed 2026-05-12 | [OpenAI API deprecations](https://developers.openai.com/api/docs/deprecations) |
+| `dall-e` | DALL·E 2/3 API models removed 2026-05-12; the official DALL·E GPT in ChatGPT retired 2026-08-30 | [OpenAI API deprecations](https://developers.openai.com/api/docs/deprecations); [ChatGPT release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) |
 | `flowise` | Official sunset; EOL 2026-08-31 | [Flowise sunset](https://flowiseai.com/sunset) |
 | `allennlp` | Unsupported; repository archived 2022-12-16 | [AllenNLP repository](https://github.com/allenai/allennlp) |
 | `microsoft-bot-framework` | SDK support ended 2025-12-31; repository archived 2026-01-05 | [Microsoft Bot Framework SDK](https://github.com/microsoft/botframework-sdk) |
@@ -74,6 +74,38 @@ The DE source popularity values for `capcut` (64), `firebase-studio` (53) and
 `intellicode` (0) now match the independently confirmed runtime values. EN values
 and other metrics were not changed in this correction.
 
-Production runtime publication and Google Sheet updates are still pending the
-main agent’s separately approved release operations. No live D1, Cloudflare or
-Sheet changes are represented as completed here.
+Production runtime publication and Google Sheet updates were completed and
+independently live-verified. The 1,125-tool inventory is not a claim that support
+for all 1,125 cards was manually verified.
+
+## Production release results
+
+Fourteen DE/EN tool pairs were retired reversibly; the public catalog now has
+1,111 tools per locale. Thirty-five active DE/EN pairs and one Ratgeber pair
+were updated. All 245 active-route checks and 84 retirement checks passed, and
+all 72 source hashes matched. No source, D1 or R2 content was physically deleted.
+
+The Sheet readback exactly matched all 60 updated rows: 13 `DISABLED`, one
+`BLACKLIST`, 19 official URL repairs, one invalid-entity URL cleared, three
+availability notices, and 46 `DONE` rows retained. Existing notes were
+preserved.
+
+Pages deployment `de397d60-bcc4-4035-9fee-a12bd762f2dc` serves merge/source
+commit `3ab6fc047f1377149481de067394cae145bd4685`. The source change is commit
+`61ebc529ef538fb006fa1919c6d5b2d93881ea44`, merged through
+[PR #221](https://github.com/fenstek/utildesk-motia/pull/221). The cumulative
+live-request ledger is `7509/10000`, with `2491` remaining. Runtime metrics are
+2,086 requests and zero errors; the 34 D1 write queries were exactly 18 bounded
+active-pair statements, 14 tombstone statements and two Ratgeber statements.
+
+Cloudflare plan, bill, payment method and spend controls were unavailable with
+the current token; no plan, budget or resource-tier changes were made.
+
+Private release evidence is in
+`/home/jgdus/.local/state/utildesk-audits/gemini_4_argon_high_catalog_20261022/catalog-audit-final.json`,
+with active-pair reports in `active-release/release.json` and
+`active-release/live-delta/result.json`, and retirement reports in
+`tombstone-release/release.json` and `tombstone-release/live-delta/result.json`
+under the same audit directory. The pre-release D1 backup is
+`before-catalog-retirement.sql`, SHA-256
+`cf9622f5ced6a93348431f1283b3ec17f9b3cc9a026ada214488a70820f9b0ef`.

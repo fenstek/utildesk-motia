@@ -1,10 +1,20 @@
 # Recent Changes — utildesk-motia
 
-## 2026-10-22 - Source retirement and URL correction preparation [Codex]
+## 2026-10-22 - Catalog lifecycle production release [Codex]
+
+- Completed and independently verified the release of 14 withdrawn DE/EN pairs; 1,111 tool cards remain public per locale. Updated 35 active DE/EN pairs and one Ratgeber pair. No physical source, D1 or R2 deletion occurred; 24 uncertain candidates remain review-only.
+- The Sheet readback matched all 60 updated rows: 13 `DISABLED`, one `BLACKLIST`, 19 official URL repairs, one invalid-entity URL cleared and three availability notices; 46 `DONE` rows and existing notes were preserved.
+- All 329 live checks passed (245 active-route and 84 retirement checks); 72 source hashes verified. Pages deployment `de397d60-bcc4-4035-9fee-a12bd762f2dc` serves merge commit `3ab6fc047f1377149481de067394cae145bd4685`; source commit `61ebc529ef538fb006fa1919c6d5b2d93881ea44` was merged through PR #221. Runtime: 2,086 requests, zero errors; D1: 34 bounded writes (18 active-pair, 14 tombstone, two Ratgeber statements). Ledger: `7509/10000`, with `2491` remaining.
+- Cloudflare billing and spend controls were unavailable with the current token; no plan, budget or resource-tier changes were made. Inventory coverage of 1,125 published tools does not mean all 1,125 were manually verified for support.
+- The lifecycle decision and release record is [catalog_lifecycle_audit_2026-10-22.md](../docs/04_operations/catalog_lifecycle_audit_2026-10-22.md). The algorithm runbook [tool_runtime_release.md](../docs/04_operations/tool_runtime_release.md) was updated in source commit `61ebc529e` with primary-evidence rules, exact-slug/`DONE` Sheet matching, reversible paired tombstones, bounded verification and conservative cumulative-ledger guidance.
+- Private evidence: `/home/jgdus/.local/state/utildesk-audits/gemini_4_argon_high_catalog_20261022/catalog-audit-final.json`; active reports `active-release/release.json` and `active-release/live-delta/result.json`; retirement reports `tombstone-release/release.json` and `tombstone-release/live-delta/result.json`. Backup: `before-catalog-retirement.sql`, SHA-256 `cf9622f5ced6a93348431f1283b3ec17f9b3cc9a026ada214488a70820f9b0ef`.
+
+## 2026-10-22 - Source retirement and URL correction preparation [Codex, pre-release checkpoint]
 
 - Prepared paired DE/EN source withdrawals for 14 approved slugs, preserving card bodies and editorial history; added static 410 tombstones, disabled alternative links in active cards and the corrected tombstone response-state header.
 - Applied the approved URL corrections and short availability notices for Firebase Studio, AWS Cloud9 and IntelliCode; Run:ai now describes NVIDIA Kubernetes AI workload/GPU orchestration.
 - This worktree is source preparation only. Sheet updates, production D1 tombstones/upserts, Pages release and verification remain pending the main agent's separate operations; no production release has occurred.
+- This entry records the earlier preparation checkpoint; production was completed later the same day as recorded above.
 
 ## 2026-10-12 - KI-Blatt editorial print study [Codex]
 
