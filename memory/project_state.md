@@ -1,5 +1,13 @@
 # Project State
 
+## 2026-10-22 Catalog lifecycle release — live complete
+
+- Production is live-verified after 14 reversible DE/EN withdrawals: 1,111 tools remain public per locale, 35 active pairs and one Ratgeber pair were updated, and 24 uncertain candidates remain review-only. No physical source, D1 or R2 deletion occurred.
+- The Sheet readback matched 60 rows: 13 `DISABLED`, one `BLACKLIST`, 19 official URL repairs, one invalid-entity URL cleared, three availability notices, and 46 `DONE` rows retained. All 329 live checks passed and 72 source hashes verified.
+- Pages deployment `de397d60-bcc4-4035-9fee-a12bd762f2dc` uses merge commit `3ab6fc047f1377149481de067394cae145bd4685` (source commit `61ebc529ef538fb006fa1919c6d5b2d93881ea44`, PR #221). Runtime: 2,086 requests / 0 errors; D1 writes: 34 bounded statements (18 active-pair + 14 tombstone + 2 Ratgeber). Ledger: `7509/10000`, `2491` remaining.
+- Algorithm runbook: `docs/04_operations/tool_runtime_release.md`; release report: `docs/04_operations/catalog_lifecycle_audit_2026-10-22.md`. Private final audit: `/home/jgdus/.local/state/utildesk-audits/gemini_4_argon_high_catalog_20261022/catalog-audit-final.json`; active and tombstone release/delta reports are under `active-release/` and `tombstone-release/` in that directory. Pre-release backup: `before-catalog-retirement.sql`, SHA-256 `cf9622f5ced6a93348431f1283b3ec17f9b3cc9a026ada214488a70820f9b0ef`.
+- Cloudflare plan, bill, payment and spend controls were unavailable with the current token; no plan, budget or resource-tier changes were made. The 1,125-tool inventory is not a manual support verification of every card.
+
 ## 2026-07-31 Legal and privacy refresh
 
 - German and English legal pages were updated from the repealed TMG reference
