@@ -2039,3 +2039,10 @@ _Last updated: 2026-07-19_
 # 2026-08-16 - Swarm article narrative illustrations
 
 - The user rejected the abstract illustrations for `autonome-cyber-agenten-sicher-testen-sandbox-vertrauensgrenzen`; both DE/EN images were replaced with the approved narrative scenes. Article text and publication metadata were not changed.
+
+## 2026-11-01 - JEV motion illustration production release
+
+- Replaced the static JEV figure with a lazy, muted, looping H.264 illustration at `/videos/tools/jev-flow-motion-720p-crf27-b3a414d16850e8df.mp4`; the existing localized WebP remains the poster and reduced-motion fallback. Source commit: `5f3b70d6af1c7f713501861b3a8755aef96e5feb`.
+- Verified the live MP4 as `video/mp4`, 1,053,565 bytes, SHA-256 `b3a414d16850e8df1e65860a5b19b954ffb9dc254ad022ea545bbcebb4190541`, with one-year immutable caching. The paired DE/EN runtime upsert passed its bounded HTML, JSON, Markdown and poster checks; the independent live gate passed 14 requests.
+- Updated only `Tabellenblatt1!H2008` after live verification; status `DONE` was preserved. The pre-upsert D1 export is held outside the repository (SHA-256 `b4027d2a2957e4eaf5fdb73fa08f3db528da2108a3c89c9f15fea48378708655`).
+- Cloudflare billing and Pages account metadata were inaccessible to the configured token (HTTP 403). No plan, payment, spend-policy, R2 or billing settings were changed.

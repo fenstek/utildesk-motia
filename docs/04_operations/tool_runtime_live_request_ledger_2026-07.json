@@ -6330,6 +6330,77 @@
         "https://tools.utildesk.de/en/markdown/tools/sora.md"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-01T21:25:07.055Z",
+      "mode": "jev-motion-pages-production-release",
+      "command": "Git-backed Pages production build plus bounded live asset/card verification; no exhaustive crawl",
+      "estimate": {
+        "pagesDeploymentAndLiveVerification": 50,
+        "total": 50
+      },
+      "worstCaseRequests": 50,
+      "plannedUrls": [
+        "https://tools.utildesk.de/videos/tools/jev-flow-motion-720p-crf27-b3a414d16850e8df.mp4",
+        "https://tools.utildesk.de/tools/jev/",
+        "https://tools.utildesk.de/en/tools/jev/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-01T21:29:25.173Z",
+      "mode": "jev-motion-d1-backup-export",
+      "command": "Cloudflare D1 production export before the bounded JEV DE/EN upsert; read-only",
+      "estimate": {
+        "d1Export": 5,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/1e2548f3d1cdf6784b1f4dde9141a742/d1/database/259ed703-ba7c-4aba-a269-e167d391eae6/export"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-01T21:29:49.179Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 0,
+        "pagesAssets": 1,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-01T21:29:50.385Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\Users\\sserg\\.codex\\backups\\jev-motion-release-20261101\\runtime-report\\slugs.json --out C:\\Users\\sserg\\.codex\\backups\\jev-motion-release-20261101\\runtime-report\\live-delta --ledger C:\\Users\\sserg\\.codex\\backups\\jev-motion-release-20261101\\runtime-live-request-ledger.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/jev/",
+        "https://tools.utildesk.de/api/tools/jev.json",
+        "https://tools.utildesk.de/markdown/tools/jev.md",
+        "https://tools.utildesk.de/en/tools/jev/",
+        "https://tools.utildesk.de/en/api/tools/jev.json",
+        "https://tools.utildesk.de/en/markdown/tools/jev.md",
+        "https://tools.utildesk.de/tool-assets/e18a9d5dcc7e525d6fe9c3e38be3e324ca65e10ec791e06c48245edeff0517fc/jev-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
