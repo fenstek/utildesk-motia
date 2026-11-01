@@ -26,7 +26,10 @@ updated_at: 2026-09-30
 TypeSafe’s Jev is designed for software that needs a bounded decision from text, such as choosing a support queue or estimating an urgency band. Instead of writing a response, the model returns typed answers with probabilities. That can simplify downstream logic, but it does not make a decision automatically correct or establish that German is already a dependable production language.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/jev-editorial.webp" alt="An artistic decision-sorting workshop: ambiguous cases go to a person while clear decisions are sorted into separate trays" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/tools/jev-editorial.webp" width="1280" height="720" aria-label="Animated illustration of a decision-sorting workshop: ambiguous cases go to a person while clear decisions are sorted into separate trays">
+    <source src="/videos/tools/jev-flow-motion-720p-crf27-b3a414d16850e8df.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/jev-editorial.webp" alt="An artistic decision-sorting workshop: ambiguous cases go to a person while clear decisions are sorted into separate trays" loading="lazy" decoding="async" width="1280" height="720" />
+  </video>
 </figure>
 
 ## What Jev does and who it is for

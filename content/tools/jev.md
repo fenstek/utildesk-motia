@@ -21,7 +21,10 @@ updated_at: 2026-09-30
 Jev von TypeSafe ist für Software gedacht, die aus Text eine eng umrissene Entscheidung ableiten muss: etwa das passende Team-Postfach (Queue) oder eine grobe Dringlichkeitsstufe. Statt einen Text zu verfassen, liefert das Modell typisierte Antworten samt Wahrscheinlichkeiten. Das kann nachgelagerte Logik vereinfachen, macht die Entscheidung aber weder automatisch richtig noch für Deutsch bereits verlässlich.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/jev-editorial.webp" alt="Ein künstlerisches Sortieratelier: mehrdeutige Fälle werden an einen Menschen weitergereicht, während klare Entscheidungen in getrennte Fächer sortiert werden" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/tools/jev-editorial.webp" width="1280" height="720" aria-label="Animierte Illustration eines Sortierateliers: Mehrdeutige Fälle gehen an einen Menschen, während klare Entscheidungen in getrennte Fächer sortiert werden">
+    <source src="/videos/tools/jev-flow-motion-720p-crf27-b3a414d16850e8df.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/jev-editorial.webp" alt="Ein künstlerisches Sortieratelier: mehrdeutige Fälle werden an einen Menschen weitergereicht, während klare Entscheidungen in getrennte Fächer sortiert werden" loading="lazy" decoding="async" width="1280" height="720" />
+  </video>
 </figure>
 
 ## Was Jev macht und für wen

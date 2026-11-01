@@ -534,9 +534,15 @@ html[data-design="decision"] .rg-head .inv-head-h1 {
   background: #e9e4d8;
 }
 
+.akte-feature-visual .tool-editorial-figure:has(> video) {
+  aspect-ratio: 16 / 9;
+}
+
 /* Tool art was generated in several legacy ratios. Present it in one stable
    editorial frame instead of letting a square asset make a whole page taller. */
-.akte-feature-visual .tool-editorial-figure > img {
+.akte-feature-visual .tool-editorial-figure > img,
+.akte-feature-visual .tool-editorial-figure > video,
+.akte-feature-visual .tool-editorial-figure > video > img {
   display: block;
   width: 100%;
   height: 100%;
