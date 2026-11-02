@@ -6401,6 +6401,46 @@
         "https://tools.utildesk.de/tool-assets/e18a9d5dcc7e525d6fe9c3e38be3e324ca65e10ec791e06c48245edeff0517fc/jev-editorial.webp"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-02T07:28:36Z",
+      "mode": "unreserved-preflight-accounting",
+      "command": "Retrospective accounting only: three bounded production GETs already executed before this release ledger was inspected; two reads of the Clip Studio Paint page and one read of the JEV page.",
+      "estimate": {
+        "actualRequests": 3,
+        "total": 3
+      },
+      "worstCaseRequests": 3,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/clip-studio-paint/",
+        "https://tools.utildesk.de/tools/clip-studio-paint/",
+        "https://tools.utildesk.de/tools/jev/"
+      ],
+      "retryPolicy": "Accounting entry for completed requests; no automatic retry."
+    },
+    {
+      "reservedAt": "2026-11-02T07:28:36Z",
+      "mode": "clip-studio-paint-motion-production-release",
+      "command": "Reserve worst-case budget for account/project verification, Git-backed Pages deployment and propagation, deployment-origin MP4 HEAD, D1 export and exact dry-run/upsert, and bounded D1 HTML plus MP4 live verification on deployment origin and custom domain.",
+      "estimate": {
+        "cloudflareAccountAndProjectReads": 10,
+        "pagesDeploymentAndStatus": 50,
+        "d1BackupAndDryRun": 10,
+        "d1ExactUpsert": 5,
+        "assetAndLiveReadbackAndPropagation": 125,
+        "total": 200
+      },
+      "worstCaseRequests": 200,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/1e2548f3d1cdf6784b1f4dde9141a742",
+        "https://<clip-studio-paint-deployment>.utildesk-motia.pages.dev/videos/tools/clip-studio-paint-motion-720p-crf27-9bbef0aaa6e0580b.mp4",
+        "https://<clip-studio-paint-deployment>.utildesk-motia.pages.dev/tools/clip-studio-paint/",
+        "https://<clip-studio-paint-deployment>.utildesk-motia.pages.dev/en/tools/clip-studio-paint/",
+        "https://tools.utildesk.de/tools/clip-studio-paint/",
+        "https://tools.utildesk.de/en/tools/clip-studio-paint/",
+        "https://tools.utildesk.de/videos/tools/clip-studio-paint-motion-720p-crf27-9bbef0aaa6e0580b.mp4"
+      ],
+      "retryPolicy": "No automatic retry; only bounded release-gate polling within the reserved budget; any manual retry requires a separate ledger entry."
     }
   ]
 }
