@@ -6571,6 +6571,23 @@
         "https://tools.utildesk.de/videos/tools/kling-ai-motion-720p-crf27-3f3708a077d7f0bd.mp4"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-02T09:37:45.840Z",
+      "mode": "production-final-deployment-readback",
+      "command": "verify both live Kling pages and motion MP4 after final active Pages deployment 8cc000f3",
+      "estimate": {
+        "html": 2,
+        "assets": 1,
+        "total": 3
+      },
+      "worstCaseRequests": 3,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/kling-ai/",
+        "https://tools.utildesk.de/en/tools/kling-ai/",
+        "https://tools.utildesk.de/videos/tools/kling-ai-motion-720p-crf27-3f3708a077d7f0bd.mp4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
