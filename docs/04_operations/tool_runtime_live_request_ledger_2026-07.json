@@ -6499,6 +6499,78 @@
         "https://api.cloudflare.com/client/v4"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-02T09:34:21.713Z",
+      "mode": "production-d1-backup",
+      "command": "single remote D1 SQL export before Kling AI production upsert",
+      "estimate": {
+        "d1": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-02T09:35:00.770Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 0,
+        "pagesAssets": 1,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-02T09:35:05.636Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\Users\\sserg\\AppData\\Local\\Utildesk\\releases\\kling-ai-20261102\\release-report-final\\slugs.json --out C:\\Users\\sserg\\AppData\\Local\\Utildesk\\releases\\kling-ai-20261102\\release-report-final\\live-delta --ledger C:\\projects\\utildesk-motia-kling-ai-motion-20261102\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/kling-ai/",
+        "https://tools.utildesk.de/api/tools/kling-ai.json",
+        "https://tools.utildesk.de/markdown/tools/kling-ai.md",
+        "https://tools.utildesk.de/en/tools/kling-ai/",
+        "https://tools.utildesk.de/en/api/tools/kling-ai.json",
+        "https://tools.utildesk.de/en/markdown/tools/kling-ai.md",
+        "https://tools.utildesk.de/tool-assets/81923c489894f3f89dc2eaed7461b7cee4d4c049fdac13a2e2990a0f39fb754a/kling-ai-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-02T09:36:01.323Z",
+      "mode": "production-post-deploy-motion-readback",
+      "command": "two localized live HTML checks plus one motion MP4 read-back and SHA-256 verification",
+      "estimate": {
+        "html": 2,
+        "assets": 1,
+        "total": 3
+      },
+      "worstCaseRequests": 3,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/kling-ai/",
+        "https://tools.utildesk.de/en/tools/kling-ai/",
+        "https://tools.utildesk.de/videos/tools/kling-ai-motion-720p-crf27-3f3708a077d7f0bd.mp4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
