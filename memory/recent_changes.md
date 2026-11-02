@@ -2065,8 +2065,10 @@ _Last updated: 2026-07-19_
 - Preserved publication dates, archive order, editorial-review metadata, robots policy, and the already-current DE/EN content-lastmod entries.
 - The MP4 is 6,911,467 bytes; SHA-256 70211729127768cf323602f3d59e60a7d39cdad0872b520b3be357bcd80b6964. This is a source package awaiting the separate production release step.
 
-## 2026-11-02 - KI-Video Ratgeber content update (release prepared)
+## 2026-11-02 - KI-Video Ratgeber content update (production release)
 
 - Rewrote the German and English guide for a general audience with current post-Sora market context and simpler first-test takeaways; slug, original publication date, and archive position stay unchanged.
 - Kept the existing silent-cinema cover motion, lower illustration motion, posters, and reduced-motion fallbacks. Updated the five generated tool-page backlink titles and excerpts per language to match the revised article metadata.
-- Prepared for the D1 Ratgeber runtime upsert. The existing public `noindex,follow` policy remains in place; no global SEO setting or IndexNow submission is part of this release.
+- Published both D1 locale rows at revision 7 from source commit `135d4045f74150886b19b7c09ae087050e4c2475`. Live detail URLs return 200 with their canonical paths and existing `noindex,follow` policy; both motion videos remain present.
+- The first source commit skipped Pages deployment; the live static Ratgeber archive still showed the old card title. This follow-up release commit requests the normal Pages Git deployment so the archive card and excerpt can refresh. No global search policy change or IndexNow submission is part of this release.
+- Cloudflare billing and spend-policy data were not readable with the available token (HTTP 403); no plan, payment, budget, R2, or other account settings were changed.
