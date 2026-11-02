@@ -2076,3 +2076,9 @@ _Last updated: 2026-07-19_
 - Published both D1 locale rows at revision 7 from source commit `135d4045f74150886b19b7c09ae087050e4c2475`. Live detail URLs return 200 with their canonical paths and existing `noindex,follow` policy; both motion videos remain present.
 - The first source commit skipped Pages deployment; the live static Ratgeber archive still showed the old card title. This follow-up release commit requests the normal Pages Git deployment so the archive card and excerpt can refresh. No global search policy change or IndexNow submission is part of this release.
 - Cloudflare billing and spend-policy data were not readable with the available token (HTTP 403); no plan, payment, budget, R2, or other account settings were changed.
+## 2026-11-02 - Kling AI DE/EN editorial rewrite and motion figure
+
+- Rewrote the German and English Kling AI cards around a concrete short-shot workflow, model-specific limits, review steps, upload rights, privacy and credit costs; refreshed the official destination and both lastmod entries.
+- Replaced the four generic FAQs with seven product-specific questions per language. Removed Microsoft Teams, Zoom and Dropbox Business as irrelevant alternatives and linked the first three matching active alternatives: Runway, Adobe Firefly and Pika.
+- Replaced the static figure with a silent 10-second 1280×720 H.264 loop; the existing WebP remains the poster and reduced-motion fallback. The scene animates the storyboard panels, rider, light ribbon, camera and paper-set background. The encoded MP4 is 981,655 bytes, SHA-256 3f3708a077d7f0bd1d8a7d1ae86f3941bd56ca72263877234e11ca33312c52c3. The loop endpoints are visually close but not mathematically identical.
+- This is an isolated source and preview change only; no production publication or source-of-truth Sheet update was performed.
