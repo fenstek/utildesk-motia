@@ -22,6 +22,7 @@ export interface RatgeberEntryData {
   category?: string;
   eyebrow?: string;
   coverImage?: string;
+  coverVideo?: string;
   secondaryImage?: string;
   tags?: string[];
   sidebarTitle?: string;

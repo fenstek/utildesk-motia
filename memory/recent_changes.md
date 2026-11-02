@@ -2046,3 +2046,9 @@ _Last updated: 2026-07-19_
 - Verified the live MP4 as `video/mp4`, 1,053,565 bytes, SHA-256 `b3a414d16850e8df1e65860a5b19b954ffb9dc254ad022ea545bbcebb4190541`, with one-year immutable caching. The paired DE/EN runtime upsert passed its bounded HTML, JSON, Markdown and poster checks; the independent live gate passed 14 requests.
 - Updated only `Tabellenblatt1!H2008` after live verification; status `DONE` was preserved. The pre-upsert D1 export is held outside the repository (SHA-256 `b4027d2a2957e4eaf5fdb73fa08f3db528da2108a3c89c9f15fea48378708655`).
 - Cloudflare billing and Pages account metadata were inaccessible to the configured token (HTTP 403). No plan, payment, spend-policy, R2 or billing settings were changed.
+
+## 2026-11-02 - KI Video Ratgeber cover motion
+
+- Added a silent, looping H.264 hero video to the DE/EN KI Video guide; the current WebP remains the poster and localized fallback, and the video source is gated by `prefers-reduced-motion: no-preference`.
+- Kept article text, publication date/order, secondary illustration, social metadata and robots/index policy unchanged; refreshed only the target article's `updated` date and DE/EN lastmod entries.
+- Verified the source and built MP4 at 767,471 bytes (SHA-256 `b52a42d4388d4a8b28b2a4880463035c1c39bddef3c2d0db3d29246e08ff1be3`). Transparency, static build, runtime build and runtime deploy-bundle checks passed. No D1/Cloudflare write or deployment was performed.

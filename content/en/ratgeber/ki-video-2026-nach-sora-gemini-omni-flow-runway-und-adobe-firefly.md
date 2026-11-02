@@ -2,12 +2,13 @@
 slug: "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly"
 title: "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly"
 date: 2026-06-21
-updated: 2026-08-05
+updated: 2026-11-02
 category: "Analysis"
 eyebrow: "AI Video"
 excerpt: "A short product clip rarely fails because of the first generation. In 2026, AI video is decided by whether a team can keep versions, rights and approvals together through the last frame."
 readTime: 11
 coverImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-cover-v3.webp
+coverVideo: /videos/ratgeber/ki-video-silent-cinema-motion-b52a42d4388d.mp4
 secondaryImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp
 tags:
   - "AI Video"

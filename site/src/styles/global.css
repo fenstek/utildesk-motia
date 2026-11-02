@@ -6440,7 +6440,8 @@ html[data-design="decision"] .akte-article-body .tool-disclosure--compact a {
   overflow: hidden;
 }
 
-.sheet-cover-btn img {
+.sheet-cover-btn img,
+.sheet-cover-btn video {
   display: block;
   width: 100%;
   height: auto;

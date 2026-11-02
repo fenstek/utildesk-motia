@@ -29,6 +29,7 @@ const excerpt = entry.excerpt || value("excerpt");
 const category = value("category", isEnglish ? "Guide" : "Ratgeber");
 const eyebrow = value("eyebrow", category);
 const coverImage = value("coverImage");
+const coverVideo = value("coverVideo");
 const secondaryImage = value("secondaryImage");
 const tags = stringArray(data.tags);
 const sidebarPoints = stringArray(data.sidebarPoints);
@@ -83,6 +84,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 ]);
 const dateLabel = new Intl.DateTimeFormat(isEnglish ? "en-GB" : "de-DE", { dateStyle: "medium" }).format(new Date(updatedAt));
 const cleanImage = (image: string) => image && (/^https:\/\//.test(image) || image.startsWith("/"));
+const cleanVideo = (video: string) => video && (/^https:\/\//.test(video) || video.startsWith("/"));
+const safeCoverVideo = cleanVideo(coverVideo) ? coverVideo : "";
 // Newer article packages place the secondary illustration in the relevant
 // Markdown section. Do not append the same image once more after the prose.
 const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.includes(secondaryImage);
@@ -136,7 +139,36 @@ const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.
 
       {cleanImage(coverImage) && (
         <figure class="ratgeber-cover runtime-ratgeber-cover">
-          <img src={coverImage} alt={title} loading="eager" fetchpriority="high" />
+          {safeCoverVideo ? (
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              loading="lazy"
+              preload="none"
+              poster={coverImage}
+              width="1280"
+              height="720"
+              aria-label={isEnglish
+                ? "Animated illustration of a silent-film studio with film reels and a director"
+                : "Animierte Illustration eines Stummfilmstudios mit Filmrollen und Regisseur"}
+            >
+              <source src={safeCoverVideo} type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+              <img
+                src={coverImage}
+                alt={isEnglish
+                  ? "Illustration of a silent-film studio with film reels and a director"
+                  : "Illustration eines Stummfilmstudios mit Filmrollen und Regisseur"}
+                loading="lazy"
+                decoding="async"
+                width="1280"
+                height="720"
+              />
+            </video>
+          ) : (
+            <img src={coverImage} alt={title} loading="eager" fetchpriority="high" />
+          )}
           <AiImageDisclosure locale={locale} mode={transparency.coverDisclosure} />
         </figure>
       )}

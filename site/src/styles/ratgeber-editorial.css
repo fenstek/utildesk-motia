@@ -315,7 +315,8 @@ html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover {
   box-shadow: 10px 10px 0 #d7d1c1;
 }
 
-html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover img {
+html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover img,
+html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover video {
   display: block;
   width: 100%;
   aspect-ratio: 21 / 8;
@@ -674,7 +675,8 @@ html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeb
     box-shadow: none;
   }
 
-  html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover img {
+  html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover img,
+  html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover video {
     aspect-ratio: 16 / 10;
     max-height: none;
   }
@@ -857,7 +859,8 @@ html[data-design="decision"] .sheet-lead .sheet-cover-btn {
   box-shadow: 10px 10px 0 #d7d1c1;
 }
 
-html[data-design="decision"] .sheet-lead .sheet-cover-btn img {
+html[data-design="decision"] .sheet-lead .sheet-cover-btn img,
+html[data-design="decision"] .sheet-lead .sheet-cover-btn video {
   width: 100%;
   height: 100% !important;
   max-height: none !important;
