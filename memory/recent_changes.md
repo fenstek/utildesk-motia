@@ -2052,3 +2052,9 @@ _Last updated: 2026-07-19_
 - Added a silent, looping H.264 hero video to the DE/EN KI Video guide; the current WebP remains the poster and localized fallback, and the video source is gated by `prefers-reduced-motion: no-preference`.
 - Kept article text, publication date/order, secondary illustration, social metadata and robots/index policy unchanged; refreshed only the target article's `updated` date and DE/EN lastmod entries.
 - Verified the source and built MP4 at 767,471 bytes (SHA-256 `b52a42d4388d4a8b28b2a4880463035c1c39bddef3c2d0db3d29246e08ff1be3`). Transparency, static build, runtime build and runtime deploy-bundle checks passed. No D1/Cloudflare write or deployment was performed.
+
+## 2026-11-02 - E2a workflow illustration motion
+
+- Added the silent, looping Gemini illustration video to the lower illustration in the DE/EN E2a guide, retaining the existing WebP as poster and reduced-motion fallback; the MP4 is 1280×720, 10 seconds, 969,694 bytes, and has no audio.
+- Preserved the original publication date and archive order, set the DE/EN updated date to 2026-11-02, and regenerated the paired content-lastmod entries.
+- The source MP4 SHA-256 is c77c967919852ccff0f127ea0792453af35b9112202212b807216d5975bcb92c.

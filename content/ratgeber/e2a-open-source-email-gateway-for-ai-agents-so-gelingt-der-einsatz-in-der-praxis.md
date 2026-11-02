@@ -2,6 +2,13 @@
 slug: "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis"
 title: "E2a – Open-source email gateway for AI agents: So gelingt der Einsatz in der Praxis"
 date: 2026-05-13
+updated: 2026-11-02
+editorial_reviewed: true
+editorial_reviewed_at: 2026-05-13
+final_human_approval_at: 2026-05-13
+editorial_review_scope: "Quellen, Tatsachenbehauptungen, Einordnung und Endfassung"
+ai_assistance: true
+ai_disclosure_mode: editorial-passport
 category: "Anleitung"
 eyebrow: "KI-Anleitung"
 excerpt: "E2a macht E-Mail für KI-Agenten nutzbar: als geprüfter Eingang, signierter Webhook oder WebSocket-Kanal. Der Ratgeber zeigt, wo der Gateway hilft und welche Guardrails vor dem Produktiveinsatz nötig sind."
@@ -66,7 +73,12 @@ Für eine erste Prüfung reicht ein Docker-basierter Start. Der Stack bringt API
 
 Sobald echte eingehende Mail getestet werden soll, wird DNS wichtig. Die eigene Domain braucht einen passenden MX-Eintrag zum Relay; zusätzlich muss die Domain im System verifiziert werden. Für schnelle Tests bietet die gehostete Variante einen geteilten Domainpfad mit Slug-Adressen, während Self-Hosting mehr Kontrolle über Infrastruktur, Datenhaltung und Zustellbarkeit gibt. Genau hier sollte ein Team entscheiden, ob es E2a zunächst als Laborumgebung oder gleich als produktionsnahen Kommunikationskanal betrachtet.
 
-![KI-Agent verarbeitet geprüfte E-Mail-Ereignisse über ein Open-Source-Gateway](/images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow-chagall.webp)
+<figure class="article-inline-image article-inline-video">
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow-chagall.webp" width="1280" height="720" aria-label="Animierte Illustration eines KI-Agenten, der geprüfte E-Mail-Ereignisse über ein Open-Source-Gateway verarbeitet">
+    <source src="/videos/ratgeber/e2a-email-gateway-workflow-motion-c77c96791985.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow-chagall.webp" alt="KI-Agent verarbeitet geprüfte E-Mail-Ereignisse über ein Open-Source-Gateway" loading="lazy" decoding="async" width="1280" height="720" />
+  </video>
+</figure>
 
 ## Vertrauen entsteht nicht durch Header allein
 

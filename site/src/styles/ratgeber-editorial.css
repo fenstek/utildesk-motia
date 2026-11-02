@@ -464,14 +464,16 @@ html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose th {
 }
 
 html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose img,
-html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image {
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose .article-inline-image {
   display: block;
   width: 100%;
   margin: 32px 0 38px;
 }
 
 html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose img,
-html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image {
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose .article-inline-image {
   padding: 7px;
   border: 1px solid #171713;
   border-radius: 3px;
@@ -486,11 +488,29 @@ html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose img {
   background: #f6f4ee;
 }
 
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose .article-inline-image img,
 html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
   margin: 0;
   padding: 0;
   border: 0;
+  border-radius: 0;
   box-shadow: none;
+  object-fit: contain;
+  background: #f6f4ee;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose .article-inline-image video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  margin: 0;
+  object-fit: contain;
+  background: #f6f4ee;
 }
 
 html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar {
@@ -1100,6 +1120,17 @@ html[data-design="decision"] .sheet-prose .article-inline-figure {
 
 html[data-design="decision"] .sheet-prose .article-inline-image img,
 html[data-design="decision"] .sheet-prose .article-inline-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  margin: 0;
+  object-fit: contain;
+  background: #f6f4ee;
+}
+
+html[data-design="decision"] .sheet-prose .article-inline-image video,
+html[data-design="decision"] .sheet-prose .article-inline-figure video {
   display: block;
   width: 100%;
   height: auto;
