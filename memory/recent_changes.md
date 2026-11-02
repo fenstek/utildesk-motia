@@ -2058,3 +2058,9 @@ _Last updated: 2026-07-19_
 - Added the silent, looping Gemini illustration video to the lower illustration in the DE/EN E2a guide, retaining the existing WebP as poster and reduced-motion fallback; the MP4 is 1280×720, 10 seconds, 969,694 bytes, and has no audio.
 - Preserved the original publication date and archive order, set the DE/EN updated date to 2026-11-02, and regenerated the paired content-lastmod entries.
 - The source MP4 SHA-256 is c77c967919852ccff0f127ea0792453af35b9112202212b807216d5975bcb92c.
+
+## 2026-11-02 - KI Video lower illustration motion package
+
+- Replaced only the lower body illustration in the DE/EN KI Video guide source with the Gemini-generated silent-cinema motion video; the existing WebP remains the poster and reduced-motion fallback. The existing cover video and article text are unchanged.
+- Preserved publication dates, archive order, editorial-review metadata, robots policy, and the already-current DE/EN content-lastmod entries.
+- The MP4 is 6,911,467 bytes; SHA-256 70211729127768cf323602f3d59e60a7d39cdad0872b520b3be357bcd80b6964. This is a source package awaiting the separate production release step.
