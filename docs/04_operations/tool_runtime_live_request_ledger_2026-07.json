@@ -6441,6 +6441,47 @@
         "https://tools.utildesk.de/videos/tools/clip-studio-paint-motion-720p-crf27-9bbef0aaa6e0580b.mp4"
       ],
       "retryPolicy": "No automatic retry; only bounded release-gate polling within the reserved budget; any manual retry requires a separate ledger entry."
+    },
+    {
+      "reservedAt": "2026-11-02T07:47:01.531Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 3,
+        "pagesAssets": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-02T07:47:16.311Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\projects\\utildesk-motia-clip-studio-paint-output-20261102\\production-runtime\\release-report\\slugs.json --out C:\\projects\\utildesk-motia-clip-studio-paint-output-20261102\\production-runtime\\release-report\\live-delta --ledger C:\\projects\\utildesk-motia-clip-studio-motion-20261102\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/clip-studio-paint/",
+        "https://tools.utildesk.de/api/tools/clip-studio-paint.json",
+        "https://tools.utildesk.de/markdown/tools/clip-studio-paint.md",
+        "https://tools.utildesk.de/en/tools/clip-studio-paint/",
+        "https://tools.utildesk.de/en/api/tools/clip-studio-paint.json",
+        "https://tools.utildesk.de/en/markdown/tools/clip-studio-paint.md",
+        "https://tools.utildesk.de/tool-assets/350081496771eb4074c936ad8ff7048b45a9c1fac31bd67d78de60578aa3e71f/clip-studio-paint-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
