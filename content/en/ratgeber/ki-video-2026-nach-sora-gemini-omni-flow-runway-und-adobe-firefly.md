@@ -1,12 +1,12 @@
 ---
 slug: "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly"
-title: "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly"
+title: "AI video in 2026 after Sora: Gemini Omni, Kling 4.0, Seedance and Firefly"
 date: 2026-06-21
-updated: 2026-11-02
+updated: "2026-11-02"
 category: "Analysis"
 eyebrow: "AI Video"
-excerpt: "A short product clip rarely fails because of the first generation. In 2026, AI video is decided by whether a team can keep versions, rights and approvals together through the last frame."
-readTime: 11
+excerpt: "Sora has shut down. Gemini Omni, Kling 4.0 and Seedance 2.5 bring new possibilities, but early tests also show mistakes. Here is what to check before choosing an AI video tool."
+readTime: 9
 coverImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-cover-v3.webp
 coverVideo: /videos/ratgeber/ki-video-silent-cinema-motion-b52a42d4388d.mp4
 secondaryImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp
@@ -15,11 +15,11 @@ tags:
   - "Content Production"
   - "Marketing"
   - "Security"
-sidebarTitle: "Short take"
+sidebarTitle: "At a glance"
 sidebarPoints:
-  - "In 2026 the bottleneck is rarely the first clip; it is versioning, rights and approval."
-  - "Gemini Omni and Flow speed up the move from material to scene; Runway adds more control to the edit."
-  - "Adobe Firefly moves the decision closer to Creative Cloud workflows and accountable handoffs."
+  - "Sora’s web and app service ended in April; its developer API followed in September 2026."
+  - "Early tests show strengths and mistakes. There is no clear all-round winner yet."
+  - "Try your own scene and check cost and data handling before committing to a model."
 relatedTools:
   - title: "Gemini"
     href: "/en/tools/gemini/"
@@ -48,53 +48,78 @@ decisionTools:
     score: "8.3"
     kind: "recommend"
 decisionAvoid:
-  - "dropping a raw clip from Sora, Flow or another generator straight into client work"
-  - "treating a variant without a version number, source record or rights note as the final file"
-decisionNote: "Do not choose the loudest demo generator. Choose the chain in which a person can explain and approve every handoff."
+  - "putting an unchecked raw clip straight into client work"
+  - "approving a version without a version number, source record or rights note"
+decisionNote: "A strong demo clip is not enough. Choose a tool where you can fix mistakes and trace approvals."
 editorial_reviewed: true
-editorial_reviewed_at: 2026-08-05
-final_human_approval_at: 2026-08-05
-editorial_review_scope: "Sources, factual claims, framing and final copy"
+editorial_reviewed_at: 2026-11-02
+final_human_approval_at: 2026-11-02
+editorial_review_scope: "Sources, factual claims, framing and the complete final copy"
 ai_assistance: true
 ai_disclosure_mode: editorial-passport
 ---
-Picture a normal Tuesday: at nine in the morning, a 40-second product clip looks brilliant. By five, four versions sit on the server, a different soundtrack is in the team chat and nobody knows whether the logo came from the approved kit. The clip did not fail on image quality. It failed at the handoff.
 
-That is why the AI-video question has moved. [Gemini](/en/tools/gemini/) and Google [Flow](https://labs.google/flow/about) can turn images, audio, video and text into a scene quickly. [Runway](/en/tools/runway/) focuses on control and continued editing. [Adobe Firefly](/en/tools/adobe-firefly/) brings assistance, edit preparation and approvals closer to Creative Cloud. The interesting question is not who makes the best first frame. It is which workflow remains explainable at 5 p.m.
+Picture a small campaign team. By morning, it has two product photos and a rough script; by afternoon, it needs a finished clip in several formats. The first draft arrives quickly. The harder work is keeping the same character across scenes, changing one faulty shot without rebuilding everything, and showing who approved the final export.
 
-## The market lost its old reference point
+The market question has changed too. [Sora](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation) is no longer available, but AI video has not stood still. New models from Google, Kuaishou and ByteDance compete on longer scenes and stronger reference controls. Meanwhile, [Runway](/en/tools/runway/) and [Adobe Firefly](/en/tools/adobe-firefly/) are bringing multiple models together with editing and production steps. For a team, the best-looking demo is only one part of the decision. The full path to an approved file matters more.
 
-Sora was once the name used to set expectations for motion and realism. It is now also a lesson in the new phase: OpenAI says the Sora product has not been available since April 26, 2026. The safety work still matters. OpenAI describes C2PA metadata, visible watermarks, consent for real likenesses and internal tracing as parts of the Sora approach.
+## Sora is gone; development has continued
 
-That changes the way the market should be read. A model can be technically impressive and still fail to provide a dependable production path. A team needs to know which source material was used, which version was approved and whether a later export kept the provenance signals. The first generation is only the beginning of an evidence trail.
+As of November 2, 2026, both shutdowns have already happened: OpenAI ended the Sora web and app experiences on April 26, 2026, and the API on September 24, 2026. Sora is no longer an active service to plan new work around. Those dates do not explain why OpenAI ended the product or prove that another model is better. [OpenAI’s Help Center confirms both dates](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation).
 
-## Google: from references to a scene, quickly
+The practical lesson from the Sora era remains useful: an impressive demo is not a dependable production process. A team still needs to track image and audio sources, version files clearly, check rights, and assign someone to approve the final export.
 
-Google describes Gemini Omni as a multimodal model that can combine images, audio, video and text. In the Gemini app and in Flow, Google says video can also be edited conversationally, with character consistency and scene memory across instructions. Google has expanded Flow into a creative studio and says Omni is available globally to Google AI subscribers.
+## Choose the job first, then the model
 
-That is valuable when a brief is not yet a shot list. A marketing team can develop three openings from the same product photo: factual, narrative and social-first. A product team can turn a voice note and two reference images into a direction before opening a production suite.
+Some products are individual models that generate clips from text, images or reference footage. Others are workspaces where a team can switch models, make edits, keep versions together and prepare a final cut. These are often grouped under “AI video tools,” but they solve different problems.
 
-The limit appears exactly where the speed becomes tempting. A fast variant is not an approved scene. Teams using Flow should label every working version with a purpose, source and status: `idea`, `review`, `approved`. Otherwise the conversation becomes the version system, and nobody can later say which instruction changed the final clip.
+### Google: [Gemini](/en/tools/gemini/) Omni 1.1 and [Flow](https://labs.google/flow/about) add control over transitions
 
-## Runway: control is a cost, not magic
+Google introduced Gemini Omni 1.1 Flash on August 27, 2026. Its API can extend scenes in 10-second increments to a cumulative total of 40 seconds. It also supports setting the first and last frame; 360p drafts are designed for quicker iteration. For Flow, Google highlights first/last-frame controls and exports at 1080p and 4K. The Gemini app, Flow and the API do not necessarily offer the same controls or terms. [Google describes the API features](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/) and [the Flow update](https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow/).
 
-[Runway](/en/tools/runway/) takes a different approach. Runway describes Gen-4.5 as offering precise prompt adherence, temporal consistency and controllable motion; its own benchmark number is a vendor claim, not an independent quality verdict. In practice, the more important point is that Runway brings editing and steering modes into a repeatable workflow.
+That is useful when a scene needs extending or when the transition between two specified images matters. But a short website illustration may only need a quick draft; 4K will not help if the movement, subject or message is still wrong.
 
-That helps when one shot must appear in three formats. The visual idea stays the same, while framing, movement and timing change. The team can review the variants side by side instead of inventing a new prompt every time. The price is discipline: without naming, change notes and a reviewer, a controllable interface still becomes a colourful archive.
+### [Kling AI](/en/tools/kling-ai/) 4.0: longer shots and reference control
 
-## Adobe Firefly: the handoff becomes the product
+Kling 4.0 launched on October 15, 2026; Kuaishou confirmed the launch in its announcement. The company says the model can generate up to 30 seconds in one pass and use up to 15 reference assets and ten keyframes. Kuaishou emphasizes dynamic movement, complex camera work and longer storytelling. These are vendor claims, not an independent ranking. [Kuaishou’s launch announcement](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-officially-launches-next-generation-kling-40-raising) describes the announced capabilities.
 
-Adobe is taking a third route with Firefly AI Assistant. Adobe describes an assistant that orchestrates multi-step work across Firefly and Creative Cloud apps. In its April and June 2026 updates, Adobe names short product videos from photos, Quick Cuts, storyboards, collaborative feedback and additional models inside Firefly.
+The practical test is whether references stay consistent and whether one shot can be changed without rebuilding the rest of the scene. Adobe’s current partner-model list also includes Kling 4.0 Omni for image-to-video and video-to-video workflows in Firefly. The variant available depends on the product and region.
 
-That is not a blank cheque for commercial use. It is a different operating model: the clip stays closer to the places where brand kits, editing, comments and approvals already live. For a team using Premiere, Photoshop or Frame.io, that may matter more than the last spectacular text-to-video demo. The specific licence and usage review still belongs to the team.
+### [Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5): more references and targeted edits
 
-## Three handoffs that save a clip
+ByteDance introduced Seedance 2.5 on July 31, 2026. The company lists clips up to 30 seconds, up to 30 image references, ten video references and ten audio references, plus timestamp-based edits. That points to more control over longer scenes, but it does not replace testing the model with your own style and source material. [ByteDance Seed’s announcement](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) explains the model’s features and limits.
 
-Take a 30-second announcement for a new product. In the first handoff, the concept owner uses Gemini and Flow to create three directions. They save not only the clip, but also reference images, inputs and the reason one direction continues.
+Access depends on the workspace: ByteDance named Jimeng AI and Doubao Pro at launch, while Runway also documents Seedance 2.5 in its MCP offering. A model name alone does not tell you its availability, plan, data path or terms of use.
 
-In the second handoff, an editor takes the selected direction into Runway. They check a recurring character, replace a wrong object and export a clearly numbered version. The observable rule is simple: no new export without a change note and a quick review of the first and last second.
+## What the first tests show
 
-In the third handoff, the file enters Firefly or the existing Adobe workflow. One accountable person checks the logo, language, music, rights and target channel. Only then does the file become `approved`. If a scene changes later, it automatically returns to `review`, not to silent trust.
+The first reviews do not pick one model that wins at everything. They do show what can go right, and where video tools still make surprising mistakes.
+
+- **Gemini Omni 1.1 Flash:** In a test published by Fulgor on October 9, the model spoke a Polish sentence very convincingly, scoring 9/10. Its coffee and tram clips had visible flaws. In the tram scene, a tripod even appeared on the tracks: the model had turned a camera instruction into an object in the picture. [Fulgor test](https://elfulgor.es/gemini-omni-flash/).
+- **Seedance 2.5:** Twenty-seven people from creative and technical fields tried it for a week. Compared with the previous version, they found that camera movement and action scenes looked more convincing. But a character can change appearance in a longer clip, and the model may miss detailed instructions. Many retries also mean more time and cost. [The 36Kr test, published August 12](https://eu.36kr.com/en/p/3936379078409606).
+- **Kling 4.0:** Fuser gave versions 4.0 and 3.0 the same four scenes to create, with just one try for each. In three cases, the newer version followed the action better, including how to row a boat and how to perform a judo throw. The flower opening looked almost the same in both versions. It is a useful first check, but four scenes are not enough to name an overall winner. [Fuser comparison from October 23](https://fuser.studio/articles/kling-4-vs-kling-3).
+
+For now, no model does everything best. For your own video, check three simple things: does the speech sound right, does the character stay the same, and does the action match what you asked for?
+
+## Runway and Firefly are becoming production workspaces
+
+Runway remains a model provider with Gen-4.5, while adding an environment for agents, editing and partner models. On September 29, 2026, Runway announced Runway Creative in the OpenAI Marketplace for eligible enterprise customers. Runway says the workspace brings together Gen-4.5, Seedance 2.5, [ChatGPT](/en/tools/chatgpt/) Image 2.5 and [ElevenLabs](/en/tools/elevenlabs/) V4, among other models; an agent can help plan, generate and assemble work. This is a route for eligible enterprise customers, not a claim that every Runway user gets the same model list. [Runway’s Marketplace announcement](https://runway.com/news/company-news/runway-openai-marketplace) and [product changelog](https://runway.com/changelog) show how quickly integrations can change.
+
+Adobe Firefly follows a similar platform approach. Adobe’s partner-model list, updated on October 23, 2026, includes options such as Kling 4.0 Omni, Kling 3.0, Seedance 2.0, [Veo 3.1](https://deepmind.google/models/veo/), Runway Gen-4.5 and Gemini Omni Flash in Firefly Boards, depending on the feature. Adobe identifies Firefly AI Assistant and its timeline as beta features; partner-model availability can vary by region. [Adobe’s model list](https://helpx.adobe.com/creative-cloud/apps/generative-ai/non-adobe-models-in-adobe-products.html), [AI Assistant FAQ](https://helpx.adobe.com/firefly/web/firefly-ai-assistant/ai-assistant-faq.html) and [timeline guide](https://helpx.adobe.com/firefly/web/firefly-video-editor/generate-videos/generate-video-using-firefly-models.html) describe the current state.
+
+The data route matters too. Adobe says prompts and reference files are sent to the model providers for selected Chinese-developed partner models. If a team uploads internal material, client data or a product that has not launched, it should check which model processes the request and which terms apply.
+
+## How a team can compare the options
+
+A quick, fair comparison uses the same task and inputs:
+
+1. **Continuity:** Can the same character or product remain recognizable across two shots?
+2. **Correction:** Can one detail be changed without regenerating the whole scene?
+3. **Transition:** Can the team control the beginning and end of a movement?
+4. **Effort:** How many attempts does it take to get a usable clip, including editing, export and approval?
+5. **Operations:** What credits, generation times, export formats, country restrictions and data routes apply to this account?
+
+For every attempt, record the model and version, prompts, references, date, edits and approval status. Later, the team should still be able to explain which source material went into the final clip and recover an earlier version.
 
 <figure class="article-inline-image article-inline-video">
   <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp" width="1280" height="720" aria-label="Animated illustration of a silent-film production between idea, editing and approval">
@@ -102,24 +127,28 @@ In the third handoff, the file enters Firefly or the existing Adobe workflow. On
     <img src="/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp" alt="Two silent-film filmmakers keep a moving production between idea, edit and approval on track, an original black-and-white early-cinema editorial illustration." loading="lazy" decoding="async" width="1280" height="720" />
   </video>
 </figure>
+## The decision depends on the whole workflow
 
-## The decision for teams
+- **Gemini Omni and Flow** are worth considering when reference images, scene extension and first/last-frame controls fit the team’s Google workflow.
+- **Kling 4.0** belongs in a comparison when longer shots, keyframes and multiple references matter.
+- **Seedance 2.5** is worth testing when the brief relies on many image, video or audio references and timestamped edits.
+- **Runway** may fit when generation, editing, an agent and multiple models need to live in one workspace.
+- **Adobe Firefly** is relevant when partner models and editing need to sit within a Creative Cloud workflow, after checking beta status, account and regional availability, and data terms.
 
-The choice can be made pragmatically:
-
-- **Gemini and Flow** when a team needs to turn many references into a direction quickly and discard variants in conversation.
-- **Runway** when a direction exists and characters, camera movement or shot variants need controlled editing.
-- **Adobe Firefly** when the bottleneck is Creative Cloud handoff, brand kits, comments and a traceable approval path.
-- **Sora** when the subject is the history of safety and provenance, not a current standard service, because OpenAI ended its availability.
-
-The most useful test is not a blind comparison of demo clips. Open the file that began on Tuesday and answer three questions on Friday: What sources are inside it? Who approved the last change? Can somebody restore the previous version? If one answer is missing, the team does not need more magic. It needs a cleaner handoff.
+Sora has left the market. There is no single replacement: model makers keep advancing their systems, while platforms put several of them into production workflows. Compare more than the best opening frame. Compare the clip your team can revise, explain and approve.
 
 ## Sources
 
-1. OpenAI: [Creating with Sora safely](https://openai.com/index/creating-with-sora-safely/)
-2. OpenAI: [Sora 2 System Card](https://openai.com/index/sora-system-card/)
-3. Google: [9 demos of Gemini Omni and Gemini 3.5](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/)
-4. Google Labs: [Introducing Gemini Omni for Google Flow](https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-updates/)
-5. Runway: [Introducing Runway Gen-4.5](https://runwayml.com/research/introducing-runway-gen-4.5?id=RunwayGen-4.5)
-6. Adobe: [Creative Agent and Firefly innovations](https://news.adobe.com/news/2026/04/adobe-new-creative-agent)
-7. Adobe: [Major expansion across Firefly and Creative Cloud](https://news.adobe.com/news/2026/06/adobe-unveils-major-expansion)
+1. OpenAI: [What to know about the Sora discontinuation](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation)
+2. Google: [Build with Gemini Omni 1.1 Flash](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/)
+3. Google: [New creative controls in Flow](https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow/)
+4. Kuaishou: [Kling 4.0 launch](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-officially-launches-next-generation-kling-40-raising)
+5. ByteDance Seed: [Introducing Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5)
+6. Runway: [Runway Creative in the OpenAI Marketplace](https://runway.com/news/company-news/runway-openai-marketplace)
+7. Runway: [Product updates and changelog](https://runway.com/changelog)
+8. Adobe: [Partner models in Adobe products](https://helpx.adobe.com/creative-cloud/apps/generative-ai/non-adobe-models-in-adobe-products.html)
+9. Adobe: [Firefly AI Assistant FAQ](https://helpx.adobe.com/firefly/web/firefly-ai-assistant/ai-assistant-faq.html)
+10. Adobe: [Generate video with Firefly models and add it to the timeline](https://helpx.adobe.com/firefly/web/firefly-video-editor/generate-videos/generate-video-using-firefly-models.html)
+11. Fulgor: [Gemini Omni Flash hands-on tests](https://elfulgor.es/gemini-omni-flash/)
+12. 36Kr AI Evaluation: [Seedance 2.5 seven-dimensional hands-on test](https://eu.36kr.com/en/p/3936379078409606)
+13. Fuser: [Kling 4.0 vs. 3.0 on identical inputs](https://fuser.studio/articles/kling-4-vs-kling-3)

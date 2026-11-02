@@ -2064,3 +2064,9 @@ _Last updated: 2026-07-19_
 - Replaced only the lower body illustration in the DE/EN KI Video guide source with the Gemini-generated silent-cinema motion video; the existing WebP remains the poster and reduced-motion fallback. The existing cover video and article text are unchanged.
 - Preserved publication dates, archive order, editorial-review metadata, robots policy, and the already-current DE/EN content-lastmod entries.
 - The MP4 is 6,911,467 bytes; SHA-256 70211729127768cf323602f3d59e60a7d39cdad0872b520b3be357bcd80b6964. This is a source package awaiting the separate production release step.
+
+## 2026-11-02 - KI-Video Ratgeber content update (release prepared)
+
+- Rewrote the German and English guide for a general audience with current post-Sora market context and simpler first-test takeaways; slug, original publication date, and archive position stay unchanged.
+- Kept the existing silent-cinema cover motion, lower illustration motion, posters, and reduced-motion fallbacks. Updated the five generated tool-page backlink titles and excerpts per language to match the revised article metadata.
+- Prepared for the D1 Ratgeber runtime upsert. The existing public `noindex,follow` policy remains in place; no global SEO setting or IndexNow submission is part of this release.
