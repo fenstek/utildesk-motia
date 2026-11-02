@@ -97,7 +97,7 @@ In der zweiten Übergabe übernimmt ein Editor die ausgewählte Richtung in Runw
 In der dritten Übergabe landet die Fassung in Firefly oder im bestehenden Adobe-Workflow. Eine verantwortliche Person prüft Logo, Sprache, Musik, Rechte und Zielkanal. Erst danach wird `approved` gesetzt. Wird später eine Szene geändert, fällt die Datei automatisch zurück auf `review` – nicht auf stillschweigendes Vertrauen.
 
 <figure class="article-inline-image article-inline-video">
-  <video autoplay muted loop playsinline preload="none" poster="/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp" width="1280" height="720" aria-label="Animierte Illustration einer Stummfilmproduktion zwischen Idee, Schnitt und Freigabe">
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp" width="1280" height="720" aria-label="Animierte Illustration einer Stummfilmproduktion zwischen Idee, Schnitt und Freigabe">
     <source src="/videos/ratgeber/ki-video-silent-cinema-platform-motion-702117291277.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
     <img src="/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp" alt="Zwei Stummfilm-Filmemacher halten eine laufende Filmproduktion zwischen Idee, Schnitt und Freigabe in Bewegung – eine eigenständige Schwarzweiß-Illustration im Stil des frühen Kinos." loading="lazy" decoding="async" width="1280" height="720" />
   </video>

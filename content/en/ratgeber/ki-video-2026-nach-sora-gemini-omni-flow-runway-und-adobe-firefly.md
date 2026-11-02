@@ -97,7 +97,7 @@ In the second handoff, an editor takes the selected direction into Runway. They 
 In the third handoff, the file enters Firefly or the existing Adobe workflow. One accountable person checks the logo, language, music, rights and target channel. Only then does the file become `approved`. If a scene changes later, it automatically returns to `review`, not to silent trust.
 
 <figure class="article-inline-image article-inline-video">
-  <video autoplay muted loop playsinline preload="none" poster="/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp" width="1280" height="720" aria-label="Animated illustration of a silent-film production between idea, editing and approval">
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp" width="1280" height="720" aria-label="Animated illustration of a silent-film production between idea, editing and approval">
     <source src="/videos/ratgeber/ki-video-silent-cinema-platform-motion-702117291277.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
     <img src="/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-silent-cinema-platform-v1.webp" alt="Two silent-film filmmakers keep a moving production between idea, edit and approval on track, an original black-and-white early-cinema editorial illustration." loading="lazy" decoding="async" width="1280" height="720" />
   </video>
