@@ -1,5 +1,9 @@
 # Recent Changes — utildesk-motia
 
+## 2026-11-02 - Clip Studio Paint animated tool illustration
+
+- Replaced the paired DE/EN tool-card figure with a 10-second looping animation. The existing WebP remains the poster and video fallback; the 1.11 MB 1280×720 H.264 source loads only when reduced motion is not requested. Rechecked current license and feature basics against official product/support pages; no copy changes were needed.
+
 ## 2026-10-22 - Catalog lifecycle production release [Codex]
 
 - Completed and independently verified the release of 14 withdrawn DE/EN pairs; 1,111 tool cards remain public per locale. Updated 35 active DE/EN pairs and one Ratgeber pair. No physical source, D1 or R2 deletion occurred; 24 uncertain candidates remain review-only.

@@ -4,9 +4,9 @@ slug: clip-studio-paint
 title: Clip Studio Paint
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Redaktion
-editorial_reviewed_at: 2026-07-17
+editorial_reviewed_at: 2026-11-02
 editorial_status: manual_polished
-editorial_batch: 2026-07-17-full-tool-card-editorial
+editorial_batch: 2026-11-02-clip-studio-paint-motion-release
 category: Audio & Video
 price_model: Abonnement, Einmalzahlung
 tags: [design, painting, illustration, animation]
@@ -14,7 +14,7 @@ official_url: "https://www.clipstudio.net/en/"
 popularity: 0
 tier: D
 generated_at: 2026-05-28
-updated_at: 2026-07-17
+updated_at: 2026-11-02
 ---
 
 # Clip Studio Paint
@@ -34,7 +34,10 @@ Geeignet ist Clip Studio Paint für Illustratoren, Comiczeichner, Konzeptkünstl
 - Zeichenprozesse mit Tablet, Stift und Ebenen systematisch verbessern.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/clip-studio-paint-editorial.webp" alt="Illustration zu Clip Studio Paint: Comiczeichnung entwickelt sich von Skizzen zu farbigen Panels auf einem Zeichentablet" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/tools/clip-studio-paint-editorial.webp" width="1280" height="720" aria-label="Animierte Illustration zu Clip Studio Paint: Ein Künstler zeichnet an einem Comic-Panel, während Wolken, Blätter und Kaffeedampf sich dezent bewegen">
+    <source src="/videos/tools/clip-studio-paint-motion-720p-crf27-9bbef0aaa6e0580b.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/clip-studio-paint-editorial.webp" alt="Illustration zu Clip Studio Paint: Comiczeichnung entwickelt sich von Skizzen zu farbigen Panels auf einem Zeichentablet" loading="lazy" decoding="async" width="1280" height="720" />
+  </video>
 </figure>
 
 ## Hauptfunktionen

@@ -60,5 +60,8 @@
 /videos/tools/jev-flow-motion-720p-crf27-b3a414d16850e8df.mp4
   Cache-Control: public, max-age=31536000, immutable
 
+/videos/tools/clip-studio-paint-motion-720p-crf27-9bbef0aaa6e0580b.mp4
+  Cache-Control: public, max-age=31536000, immutable
+
 /videos/ratgeber/ki-video-silent-cinema-motion-b52a42d4388d.mp4
   Cache-Control: public, max-age=31536000, immutable

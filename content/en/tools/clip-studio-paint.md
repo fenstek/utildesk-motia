@@ -4,9 +4,9 @@ slug: "clip-studio-paint"
 title: "Clip Studio Paint"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-11-02"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-11-02-clip-studio-paint-motion-release"
 category: "Audio & Video"
 price_model: "Abonnement, Einmalzahlung"
 tags:
@@ -18,7 +18,7 @@ official_url: "https://www.clipstudio.net/en/"
 popularity: 0
 source_language: de
 translation: "full"
-updated_at: "2026-07-17"
+updated_at: "2026-11-02"
 ---
 
 # Clip Studio Paint
@@ -30,7 +30,10 @@ Clip Studio Paint is a versatile software specializing in digital drawing, paint
 Clip Studio Paint is designed for artists, illustrators, comic artists, and animators seeking a powerful and flexible solution for digital drawing and animation. The software is suitable for hobbyists and professionals alike who want to create detailed illustrations, comics, or animated sequences. Designers who prioritize precise brushes and a variety of drawing tools will also find a suitable platform here.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/clip-studio-paint-editorial.webp" alt="Illustration for Clip Studio Paint: comic artwork evolving from sketches into colored panels on a drawing tablet" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/tools/clip-studio-paint-editorial.webp" width="1280" height="720" aria-label="Animated Clip Studio Paint illustration: an artist continues a comic panel on a drawing tablet as clouds, leaves and coffee steam move gently">
+    <source src="/videos/tools/clip-studio-paint-motion-720p-crf27-9bbef0aaa6e0580b.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/clip-studio-paint-editorial.webp" alt="Illustration for Clip Studio Paint: comic artwork evolving from sketches into colored panels on a drawing tablet" loading="lazy" decoding="async" width="1280" height="720" />
+  </video>
 </figure>
 
 ## Key Features
