@@ -1,125 +1,112 @@
 ---
 slug: notebooklm
-title: NotebookLM
-updated_at: 2026-07-19
+title: Gemini Notebook (NotebookLM)
+updated_at: 2026-11-03
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Editorial
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-11-03
 editorial_status: manual_polished
-editorial_batch: 2026-07-19-product-update-echelon
+editorial_batch: 2026-11-03-notebooklm-editorial-motion
+editorial_verdict: recommend
+editorial_verdict_headline: Highly recommended for working with your own sources
+editorial_verdict_text: A very good, useful tool when you want to understand a curated set of documents faster and check its evidence yourself.
 category: Productivity
 price_model: Freemium
 tags:
   - ai
   - research
   - notes
-official_url: "https://notebooklm.google/"
+official_url: "https://notebook.google/"
 popularity: 30
 translation: full
-description: "NotebookLM is a research and note assistant that derives answers from uploaded sources and document collections."
+description: "Gemini Notebook (formerly NotebookLM) organizes your documents, notes, and web sources, answers with citations, and turns selected material into study and work aids."
+tier: C
+generated_at: 2026-05-28
 ---
-# NotebookLM
+# Gemini Notebook (formerly NotebookLM)
 
-Since July 2026, NotebookLM is called **Gemini Notebook**. The old name still matters for existing users and links, but the product remains the same standalone, source-grounded research workspace. It is most useful when an AI assistant should not talk freely about everything, but work inside a defined source space. Users add documents, links, or notes and derive summaries, questions, outlines, and study material from them.
-
-Good for research, learning, briefings, editorial preparation, and internal knowledge collections.
-
-## Editorial update July 2026
-
-The rename is more than a label change: Google is connecting Gemini Notebook more closely with the Gemini app and Google Search. For Pro users, a secure cloud computer for code and data analysis is also rolling out; depending on the account, this can produce charts, spreadsheets, and other working artefacts. The central review point remains unchanged: every answer is shaped by the quality and selection of the notebook's sources.
-
-For a real workflow, keep three stages separate: collect sources, work with the notebook, and approve the resulting material. Tighter Google integration can make handoffs easier, but it does not replace source criticism or a privacy review.
-
-## Who is NotebookLM for?
-
-NotebookLM is most useful for teams and individuals that treat a source-grounded research assistant as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
-
+If you have gathered material for an exam, briefing, or article, sorting it can take longer than thinking through the topic. **Gemini Notebook** (NotebookLM until 16 July 2026) turns a selected source pack into answers, summaries, and study material. It remains a standalone source-grounded product as Google connects it more closely with Gemini. [Google describes the rename](https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/).
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/notebooklm-editorial.webp" alt="Illustration for NotebookLM: sources and notes gathering into a glowing knowledge core" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/tools/notebooklm-editorial.webp" width="1280" height="720" aria-label="Animated hand-drawn illustration: links between sources and the notebook appear as source cards move into place">
+    <source src="/videos/tools/notebooklm-knowledge-graph-motion-720p-crf27-20cc983c840e.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/notebooklm-editorial.webp" alt="Hand-drawn illustration of an open notebook with source cards connected by a knowledge graph." loading="lazy" decoding="async" width="1280" height="720" />
+  </video>
 </figure>
 
-## Typical use cases
+## What Gemini Notebook does well
 
-- Collect source packs for a topic
-- Summarize documents and compare key points
-- Ask questions against your own material
-- Prepare briefings, study cards, or article outlines
+The notebook answers questions from the sources you add and shows citations or excerpts that link back to their locations. This helps you see what is in a pack, compare topics, and build an initial outline faster. It reduces searching, but it does not judge whether your sources are complete, current, or trustworthy.
 
-## Strengths
+## A study workflow in practice
 
-- More source-grounded than ordinary chatbots
-- Good for long document collections
-- Helps turn material into structure
+Put your lecture notes, course documents, and reading list in one notebook. State the task and date, such as comparing two theories for an exam. Ask for key claims and their locations, then request flashcards for chapters you still find difficult. Open citations while studying and compare them with the notes. The notebook handles search and sorting; choosing what to learn remains your job.
 
-## Limits
+## Sources and import limits
 
-- Source quality remains decisive
-- Not every answer is automatically complete evidence
-- Publishing still needs editorial review
+Depending on format, sources can include documents, notes, pasted text, PDFs, web addresses, and supported audio or video. YouTube imports need a transcript with captions. A web URL imports readable page text, not embedded media or linked pages; paywalls are unsupported. Check that important sections arrived, and only add material you are allowed to process. [Google explains source types and limits](https://support.google.com/gemininotebook/answer/16215270?hl=en).
 
-## Workflow fit
+## Ask narrowly, then check the citation
 
-NotebookLM makes sense when it has a clear place in the process: intake, production, review, or publishing. Without that role, even a strong tool becomes just another open tab.
+Ask a focused question, then open the cited passage. Does it support the claim, and do its date and context fit? Check for disagreement elsewhere. A citation leads back to evidence but cannot guarantee a true or complete answer. Without a useful passage, treat the response as an unchecked summary. [Google explains source references](https://support.google.com/gemininotebook/answer/16179559?hl=en).
 
-## Privacy & data
+## Turn sources into useful formats
 
-NotebookLM works with uploaded material. Internal documents, customer data, and confidential sources should be used only with approval.
+Outputs include briefings, summaries, mind maps, flashcards, and quizzes; account access may also include audio and video overviews, reports, and slides. In October, Google introduced short video overviews, interactive learning overviews, new quiz formats, and more control over slides and videos. Availability varies by account and rollout; reviewing video producer notes is limited to Ultra in current help. See the [learning updates](https://blog.google/innovation-and-ai/products/gemini-notebook/three-tips-study-gemini-notebook/), [slide and video controls](https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/), and [current help](https://support.google.com/gemininotebook/answer/16454555?hl=en).
 
-## Pricing & costs
+## Data analysis, accounts, and cost
 
-In the catalog, NotebookLM is marked with the pricing model **Freemium**. For a real decision, check the current provider pricing, limits, team features, and export options directly.
+Google offers a secure cloud computer for code and data analysis to eligible accounts; access varies. Standard is free, while Google AI plans and eligible Workspace, Education, or Cloud licences add account-dependent features. Limits change, so check current plan help. See the [feature announcement](https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/) and [plan help](https://support.google.com/gemininotebook/answer/16213268?hl=en).
 
-**Provider:** https://notebooklm.google/
+Google says consumer content is not directly used to train foundational models unless you send feedback; feedback may trigger human review of its context. Workspace, Education, and Cloud use separate terms. Check your account and get approval before adding confidential files. [The data help distinguishes account types](https://support.google.com/gemininotebook/answer/17004255?hl=en).
+
+## When another tool fits better
+
+Gemini Notebook is built around a selected source set. Another tool may fit better for current open-web research, structured paper reviews, or a personal note archive you maintain over time. Incomplete documents, unreadable scans, videos without transcripts, and fast-moving web topics can limit answers. Before sharing an output, check claims, dates, disagreements, and source rights.
 
 ## Alternatives
 
-- [Perplexity](/en/tools/perplexity/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Elicit](/en/tools/elicit/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Research Rabbit](/en/tools/research-rabbit/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Claude](/en/tools/claude/): useful comparison point for adjacent workflows, pricing, or team fit.
-- [Chatgpt](/en/tools/chatgpt/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Perplexity](/en/tools/perplexity/): for current open-web sources and research beyond a fixed notebook.
+- [Elicit](/en/tools/elicit/): for academic papers, literature reviews, and comparing studies.
+- [Obsidian](/en/tools/obsidian/): for linked notes and a personal knowledge archive you maintain.
+- [Research Rabbit](/en/tools/research-rabbit/): discovers academic work through citations and related topics.
+- [Claude](/en/tools/claude/): for long documents and writing with a broader assistant.
+- [ChatGPT](/en/tools/chatgpt/): more versatile across mixed tasks and files, with a different source workflow.
 
-## Editorial assessment
+## Editorial Verdict
 
-NotebookLM is strong when source work should remain visible. For Utildesk guides, it is a useful stage before editorial polishing.
+**Editorial verdict: Recommend.** Gemini Notebook is a very good and useful tool when you work with your own selected sources. It saves time searching, sorting, and reshaping material, helping you reach a checkable briefing or study plan sooner. It pays off when sources are readable and permitted, and you check evidence, dates, and disagreements. For open web research, papers, or a lasting note archive, Perplexity, Elicit, or Obsidian fits better.
 
 ## FAQ
 
-**Is NotebookLM beginner-friendly?**
+**Is Gemini Notebook suitable for beginners?**
 
-It depends on the use case. Simple trials are usually manageable, but production workflows need ownership and quality control.
+Yes. Start with familiar documents and one question; check its citations.
 
-**When is NotebookLM worth it?**
+**What sources can I add?**
 
-When the recurring value is greater than setup, cost, and review effort. For one-off tasks, a lighter tool is often faster.
+Documents, notes, PDFs, pasted text, web pages, and supported media. YouTube needs captions.
 
-**What should be checked before adoption?**
+**Does a citation prove an answer is correct?**
 
-Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+No. Check the cited passage's context and date; sources may be wrong or disagree.
 
-**What does the Gemini Notebook name change?**
+**When is it most useful?**
 
-The rename connects the standalone notebook more closely with Gemini, the Gemini app, and Google Search. The old name still matters as a practical search and continuity anchor for existing notebooks and links.
+When you turn course material, interviews, reports, or product documents into work aids.
 
-**Can NotebookLM analyse data?**
+**What should I check before using an answer?**
 
-Depending on the account and rollout, its secure cloud computer can run code and produce analyses or files. That adds a useful working stage, not a free pass: inputs, permissions, and outputs still need review.
+Open the passage, confirm its context and date, then check for conflicting sources.
 
-## Editorial cluster update June 2026
+**What changed with the Gemini Notebook name?**
 
-NotebookLM belongs in the memory and research cluster as a source-grounded tool for documents, briefings and longer topic spaces.
+Renamed on 16 July 2026 and more closely connected with Gemini; NotebookLM remains a useful search term.
 
-The best use is not fast chat, but a curated source space: collect documents, test questions, generate briefings and then edit the result manually.
+**Can it analyze data?**
 
-### When NotebookLM fits well
+Eligible accounts may get a cloud computer; check access and permitted inputs.
 
-NotebookLM is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+**Are my sources private?**
 
-### Limits and review points
-
-NotebookLM does not replace editorial review. Sources can be missing, outputs can sound too polished, and sensitive documents need clear rules before upload.
-
-### Internal comparison points
-
-Useful comparison points in the Utildesk catalogue are [ChatGPT](/en/tools/chatgpt/), [Claude](/en/tools/claude/), [Gemini](/en/tools/gemini/), [Google Workspace](/en/tools/google-workspace/). These links keep NotebookLM connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
+It depends on account terms. Read the data help; upload confidential files only with approval.
