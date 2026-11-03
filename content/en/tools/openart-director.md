@@ -9,7 +9,7 @@ tags:
   - director
   - storytelling
   - video-generation
-official_url: "https://openart.ai/whats-new"
+official_url: "https://openart.ai/suite/director"
 tier: D
 generated_at: '2026-06-24'
 description: "OpenArt Director is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
