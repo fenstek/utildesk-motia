@@ -6588,6 +6588,46 @@
         "https://tools.utildesk.de/videos/tools/kling-ai-motion-720p-crf27-3f3708a077d7f0bd.mp4"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:32:20.231Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation tombstone [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 0,
+        "pagesAssets": 0,
+        "total": 4
+      },
+      "worstCaseRequests": 4,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:32:21.579Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation tombstone --slugs-file /tmp/utildesk-tool-runtime-release-2026-11-03T03-32-19-345Z/slugs.json --out /tmp/utildesk-tool-runtime-release-2026-11-03T03-32-19-345Z/live-delta --ledger /home/jgdus/projects/gpt_6_luna_catalog_retirement_20261103/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 0,
+        "control": 0,
+        "indexNow": 0,
+        "total": 6
+      },
+      "worstCaseRequests": 6,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/designify/",
+        "https://tools.utildesk.de/api/tools/designify.json",
+        "https://tools.utildesk.de/markdown/tools/designify.md",
+        "https://tools.utildesk.de/en/tools/designify/",
+        "https://tools.utildesk.de/en/api/tools/designify.json",
+        "https://tools.utildesk.de/en/markdown/tools/designify.md"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
