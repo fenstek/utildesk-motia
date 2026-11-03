@@ -2082,3 +2082,8 @@ _Last updated: 2026-07-19_
 - Replaced the four generic FAQs with seven product-specific questions per language. Removed Microsoft Teams, Zoom and Dropbox Business as irrelevant alternatives and linked the first three matching active alternatives: Runway, Adobe Firefly and Pika.
 - Replaced the static figure with a silent 10-second 1280×720 H.264 loop; the existing WebP remains the poster and reduced-motion fallback. The scene animates the storyboard panels, rider, light ribbon, camera and paper-set background. The encoded MP4 is 981,655 bytes, SHA-256 3f3708a077d7f0bd1d8a7d1ae86f3941bd56ca72263877234e11ca33312c52c3. The loop endpoints are visually close but not mathematically identical.
 - This is an isolated source and preview change only; no production publication or source-of-truth Sheet update was performed.
+
+## 2026-11-03 - Obsidian Second Brain editorial card and Graph View motion
+
+- Rewrote the DE/EN Obsidian cards around a practical Second Brain workflow: capture a source, separate it from personal interpretation, link both to a topic, revisit backlinks, and verify the original before quoting. Clarified that Graph View shows explicit links rather than semantic understanding, plus plugin, Sync, SSO, team-use, and cost boundaries.
+- Replaced the still illustration with an original 8-second, 1280×720 H.264 vector loop in which the complete linked-note graph moves around an active note. The MP4 is 228,128 bytes (SHA-256 `2cc0d4234c1a05838a77a9f2f808ccffd4405efd3222ca03d4b9efe015f6fa3a`); the 16,246-byte WebP poster remains the reduced-motion fallback. The video source is gated by `prefers-reduced-motion` and receives one-year immutable caching.

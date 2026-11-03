@@ -7,105 +7,107 @@ tags: ["notes", "knowledge-management", "writing", "productivity"]
 official_url: "https://obsidian.md/"
 affiliate_url: ""
 created_at: "2026-06-14"
-updated_at: 2026-07-31
+updated_at: 2026-11-03
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk Editorial
-editorial_reviewed_at: 2026-07-31
+editorial_reviewed_at: 2026-11-03
 editorial_status: manual_polished
-editorial_batch: 2026-07-31-story-card-refresh-50
+editorial_batch: 2026-11-03-obsidian-second-brain-motion
 tier: "D"
 popularity: 0
 translation: "full"
-description: "Obsidian connects local Markdown notes into a flexible knowledge space whose backups, plugins, and team rules need deliberate management."
+description: "Obsidian connects local Markdown notes through deliberate links and makes their structure visible in Graph View."
 ---
 # Obsidian
 
-For a research project lasting several months, an editor keeps sources, interview notes, and decisions in a local vault. Instead of building a huge folder hierarchy, she connects notes with links and a small set of properties, separates primary evidence from her own conclusions, and maintains versioned backups. Obsidian is excellent for this kind of personal knowledge work. Teams still need to organise shared governance, permissions, and plugin risk beyond one person's notebook.
+Months into a project, you may need to reconnect the original source, your interpretation, and the decision that followed. Obsidian can turn that work into a personal Second Brain: a local folder of Markdown notes connected by links and backlinks. Graph View makes those relationships visible and lets you explore them as a moving map. It does not think for you or infer semantic links from note content. The value comes from notes you name clearly, connect deliberately, and reuse later.
 
-Obsidian is a note system for people who treat knowledge as a durable working archive. Its core is not a flashy interface but local Markdown files, links, backlinks, and an ecosystem that can turn notes into a personal knowledge network.
+## Who Is Obsidian For?
 
-## Who Is It For?
+Obsidian suits writers, researchers, developers, and other knowledge workers who want to maintain their own archive over time. It is especially useful when Markdown files, offline access, and control over storage matter. If you need browser access, SSO, or settings enforced centrally, choose a team wiki: Obsidian runs as a local app and does not support SSO.
 
-It fits researchers, writers, developers, and knowledge workers with documentation discipline. For classic team wikis with central permissions, task workflows, and enterprise processes, a collaboration suite may be easier.
+## What a Second Brain Means Here
 
-## Typical Use Cases
+“Second Brain” is a working method, not a built-in AI feature. Alongside a claim, keep its source, your interpretation, and a possible future use. Link the source, conclusion, and next step so you can reconstruct a decision months later. The graph shows those links; a dense network is not proof of well-organised knowledge.
 
-- Maintain personal knowledge bases and project journals.
-- Connect research, sources, ideas, and drafts.
-- Organize meeting notes and technical decisions locally.
-- Keep Markdown-based archives portable over time.
+## A Workflow From Source to Reusable Note
 
-## What Matters In Daily Work
+Start with a study, conversation, or technical decision. Record the source separately from your own interpretation, link both to a topic or project, and add an open question or next action. Backlinks show which notes already refer to the topic. When writing, follow the path from source to conclusion and check the original before quoting it.
 
-Obsidian works when notes do not die in an inbox. Links, templates, and simple folder rules help; too many plugins and graph tinkering can easily become a distraction.
+Success means reusing the note in a report, decision, or next step. If maintenance and graph-tuning take more time than retrieval saves, simplify the structure.
+
+## What Graph View Actually Shows
+
+Graph View is a built-in core plugin: circles represent notes, lines represent internal links. Frequently referenced notes appear larger. Hovering highlights direct connections; clicking opens a note. Filters, tags, attachments, orphans, and coloured groups help narrow a large vault to the structure you need.
+
+The global graph shows the vault; the local graph focuses on the active note and its connections, with an adjustable depth. See the [official Graph View help](https://obsidian.md/help/Plugins/Graph+view) for the full controls.
+
+## How the Graph Moves
+
+Adjustable forces hold the network together, create space, and pull linked notes towards each other. The map shifts and rebalances as you explore it. **Animate** also starts a time-lapse in which notes and attachments appear by creation time. This is a view of the network you built, not an AI process.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/obsidian-editorial.webp" alt="Illustration for Obsidian: a knowledge garden made of linked notes, shelves, and small memory rooms" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" poster="/images/tools/obsidian-editorial.webp" width="1280" height="720" aria-label="Illustration of Obsidian Graph View: linked note nodes and their lines move together around an active note">
+    <source src="/videos/tools/obsidian-graph-view-motion-720p-crf27-2cc0d4234c1a0583.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/obsidian-editorial.webp" alt="Vector illustration of Obsidian Graph View with linked note circles and a highlighted active note" loading="lazy" decoding="async" width="1280" height="720" />
+  </video>
 </figure>
 
-## Key Features
+## What the Graph Cannot Do
 
-- Local Markdown files as the foundation.
-- Backlinks, graph view, and internal linking.
-- Large plugin ecosystem for workflows, templates, and publishing.
-- Sync and extra services depending on setup.
+A line only means that notes have been linked. Graph View does not assess source accuracy or the importance of a relationship. Orphans may signal missing context or may be intentionally separate. Use the graph to orient yourself and check evidence in the original.
 
-## Strengths And Limits
+## Privacy, Plugins, and Team Use
 
-### Strengths
+Notes are stored locally by default; Obsidian says no account or telemetry is required. Sync encrypts remote vaults and communication; new remote vaults default to end-to-end encryption, but standard encryption is also an option. Sync does not encrypt the local vault. Publish puts selected content on the web; review linked notes and attachments first. Obsidian is a local app, not a web app, and the [team guide](https://obsidian.md/help/teams/deploy) confirms that it does not support SSO.
 
-- Very portable because Markdown stays central.
-- Strong for long-term thinking, writing, and research.
-- Flexible enough for highly personal workflows.
+Community plugins run third-party code. Obsidian says their access cannot be reliably restricted to individual permissions; plugins may read files, connect to the internet, and install programs. Security scans help, but do not replace your own review of a sensitive vault. See the [plugin security guidance](https://obsidian.md/help/plugin-security). Teams should also decide which system remains authoritative.
 
-### Limits
+## Pricing and Ongoing Work
 
-- Team governance and permissions are not its natural center.
-- Without a system, it can become a beautiful note graveyard.
-- Plugins can add maintenance and complexity.
-
-## Workflow Fit
-
-Obsidian works best with one simple rule: every important note needs context, links, and a future use. Teams should define what stays private, what is shared, and which system is the official source.
-
-## Privacy And Data
-
-Local files are an advantage, but sync, plugins, and publishing change the risk profile. Sensitive notes should only use reviewed extensions and deliberate storage locations.
-
-## Pricing And Costs
-
-Obsidian is listed as Freemium. Costs may come from sync, publishing, commercial use, or supporting infrastructure.
-
-**Provider:** https://obsidian.md/
-
-## Alternatives
-- [Roam Research](/en/tools/roam-research/): when block-based networked thinking is central.
-- [Notion AI](/en/tools/notion-ai/): when a team wiki, databases, and AI help should live in one SaaS workspace.
-- [NotebookLM](/en/tools/notebooklm/): when source analysis and AI summaries matter more than a permanent note system.
-- [Jupyter Notebook](/en/tools/jupyter-notebook/): when notes need to sit next to code and data analysis.
+The apps are free, need no account, and have no feature limits. A commercial licence is not required for work; it is optional support. Sync and Publish cost extra. Check the [official pricing page](https://obsidian.md/pricing) for current plans. Also budget time for backups, plugin review, and shared conventions.
 
 ## Editorial Assessment
 
-Obsidian is valuable for people who seriously maintain their knowledge. It looks simple, but can become powerful if it is not overloaded with plugins and has clear rules for finding, sharing, and archiving.
+Obsidian fits if you follow a few habits for capture, linking, and backup. Graph View can show patterns, but it is not a finished Second Brain. For source-grounded answers, SSO, or centrally managed team workflows, do not use it as your only system.
+
+## Alternatives
+
+- [Notion AI](/en/tools/notion-ai/): when team wikis, structured databases, and collaboration in a hosted workspace matter more than local Markdown files.
+- [NotebookLM](/en/tools/notebooklm/): when you want to ask questions about a bounded set of sources instead of maintaining a permanent personal note network.
+- [Jupyter Notebook](/en/tools/jupyter-notebook/): when notes should sit beside executable code, calculations, and data analysis.
+- [Roam Research](/en/tools/roam-research/): when daily notes, networked outlines, and references to individual blocks shape your workflow.
 
 ## FAQ
 
-**What is the practical reason to use this tool?**
+**Why is Obsidian popular with knowledge workers?**
 
-Use it when the workflow described above is recurring enough to justify a dedicated tool rather than an ad-hoc workaround.
+Markdown files, links, and backlinks can form a portable long-term archive.
 
-**What should teams check first?**
+**What does Graph View show?**
 
-Check ownership, data access, cost drivers, integration points, and how results will be reviewed.
+Circles are notes; lines are internal links. The map does not assess accuracy or importance.
 
-**When is it a poor fit?**
+**Does Obsidian automatically connect similar notes?**
 
-It is a poor fit when the team has no clear workflow, no maintenance owner, or no data rules.
+No. You create the links; Graph View is not semantic search.
 
-**Does it replace human review?**
+**How does the graph animation work?**
 
-No. It can accelerate work, but results and operational decisions still need accountable review.
+Layout forces position linked nodes; **Animate** shows notes and attachments as a time-lapse by creation date.
 
-**What is the best first step?**
+**Can Obsidian replace Notion as a team wiki?**
 
-Run a narrow pilot with real inputs and a clear decision about whether to adopt, harden, or stop.
+It can suit a personal vault. A browser-based wiki with SSO and shared databases is easier in Notion.
+
+**Do I need lots of community plugins?**
+
+No. Start with core features; community plugins have broad file and network access.
+
+**What is free, and what costs extra?**
+
+Apps are free for organisational use. Sync and Publish cost extra; a commercial licence is optional.
+
+**Who is Obsidian a poor fit for?**
+
+If you expect automatic links, managed team permissions, or a company wiki, choose a collaboration tool.
