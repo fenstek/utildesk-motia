@@ -6685,6 +6685,137 @@
         "https://tools.utildesk.de/tool-assets/1ba8772aa4af93e27d345491d2b250782d1f874100a9b2b2ac92a4e3a5fa1a5d/openart-director-editorial.webp"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:40:50.614Z",
+      "mode": "production-preview-asset-readback",
+      "command": "single HEAD for Obsidian Graph View MP4 on successful PR preview",
+      "estimate": {
+        "assets": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://75009608.utildesk-motia.pages.dev/videos/tools/obsidian-graph-view-motion-720p-crf27-2cc0d4234c1a0583.mp4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:41:12.867Z",
+      "mode": "production-preview-asset-inspection",
+      "command": "one byte-range GET to inspect the PR preview response for the motion asset",
+      "estimate": {
+        "assets": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://75009608.utildesk-motia.pages.dev/videos/tools/obsidian-graph-view-motion-720p-crf27-2cc0d4234c1a0583.mp4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:54:35.173Z",
+      "mode": "production-pages-asset-readiness-probe",
+      "command": "single HEAD for the Obsidian MP4 at the exact post-merge Pages deployment origin while its check is still pending",
+      "estimate": {
+        "assets": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://5509072c.utildesk-motia.pages.dev/videos/tools/obsidian-graph-view-motion-720p-crf27-2cc0d4234c1a0583.mp4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:58:44.801Z",
+      "mode": "production-custom-domain-asset-readiness-probe",
+      "command": "single HEAD for the Obsidian MP4 on the public custom domain after the deployment-origin host was blocked by Access",
+      "estimate": {
+        "assets": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://tools.utildesk.de/videos/tools/obsidian-graph-view-motion-720p-crf27-2cc0d4234c1a0583.mp4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:59:00.665Z",
+      "mode": "production-custom-domain-asset-hash-readback",
+      "command": "single full GET for MP4 body because production HEAD omitted Content-Length; verify local SHA and size",
+      "estimate": {
+        "assets": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://tools.utildesk.de/videos/tools/obsidian-graph-view-motion-720p-crf27-2cc0d4234c1a0583.mp4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:59:22.903Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 3,
+        "pagesAssets": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T03:59:27.777Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\tmp\\utildesk-tool-runtime-release-2026-11-03T03-59-21-471Z\\slugs.json --out C:\\tmp\\utildesk-tool-runtime-release-2026-11-03T03-59-21-471Z\\live-delta --ledger C:\\projects\\utildesk-motia-obsidian-build-20261103\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/obsidian/",
+        "https://tools.utildesk.de/api/tools/obsidian.json",
+        "https://tools.utildesk.de/markdown/tools/obsidian.md",
+        "https://tools.utildesk.de/en/tools/obsidian/",
+        "https://tools.utildesk.de/en/api/tools/obsidian.json",
+        "https://tools.utildesk.de/en/markdown/tools/obsidian.md",
+        "https://tools.utildesk.de/tool-assets/031ce4325cab5ed6647dead41d739bfb776029b7348b22af4f05a5c03cb46f72/obsidian-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T04:00:05.329Z",
+      "mode": "production-post-deploy-live-guard",
+      "command": "batch_release_guard live for obsidian on tools.utildesk.de; 31 attempts maximum at 300s timeout with 14 worst-case HTTP requests per attempt including MP4 GET fallback",
+      "estimate": {
+        "attempts": 31,
+        "requestsPerAttempt": 14,
+        "total": 434
+      },
+      "worstCaseRequests": 434,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/obsidian/",
+        "https://tools.utildesk.de/en/tools/obsidian/",
+        "https://tools.utildesk.de/videos/tools/obsidian-graph-view-motion-720p-crf27-2cc0d4234c1a0583.mp4",
+        "https://tools.utildesk.de/robots.txt",
+        "https://tools.utildesk.de/sitemap.xml",
+        "https://tools.utildesk.de/sitemap-bing.xml"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
