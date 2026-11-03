@@ -21,6 +21,7 @@ export const TOOL_TOMBSTONES = new Set([
   "mxnet",
   "adobe-xd",
   "deepfake",
+  "designify",
   "meaningcloud",
   "pipio",
   "play-ht",

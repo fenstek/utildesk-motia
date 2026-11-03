@@ -15,6 +15,12 @@ popularity: 0
 tier: "C"
 generated_at: "2026-05-11"
 updated_at: "2026-07-17"
+disabled: true
+status: DISABLED
+lifecycle_date: "2026-06-22"
+lifecycle_checked_at: "2026-11-03"
+lifecycle_reason: "Canva's Help Centre states that Designify.com closed on 2026-06-22. External rank is not evidence of continued support."
+lifecycle_evidence_url: "https://www.canva.com/en_au/help/designify-shutdown/"
 ---
 
 # Designify

@@ -19,11 +19,12 @@ const locales = [
   { name: "en", prefix: "/en" },
 ];
 
-test("the complete route manifests have exactly 15 redirects and 124 tombstones", () => {
+test("the complete route manifests have exactly 15 redirects and 125 tombstones", () => {
   assert.equal(Object.keys(TOOL_REDIRECTS).length, 15);
-  assert.equal(TOOL_TOMBSTONES.size, 124);
+  assert.equal(TOOL_TOMBSTONES.size, 125);
   assert.equal(new Set(Object.keys(TOOL_REDIRECTS)).size, 15);
-  assert.equal(new Set(TOOL_TOMBSTONES).size, 124);
+  assert.equal(new Set(TOOL_TOMBSTONES).size, 125);
+  assert.equal(TOOL_TOMBSTONES.has("designify"), true);
   for (const slug of TOOL_TOMBSTONES) {
     assert.equal(Object.hasOwn(TOOL_REDIRECTS, slug), false, slug);
   }
@@ -47,7 +48,7 @@ test("all 15 same-locale merge mappings remain 301 with query strings", async ()
   }
 });
 
-test("all 124 tombstones cover DE/EN, HTML slash variants, JSON and Markdown", async () => {
+test("all 125 tombstones cover DE/EN, HTML slash variants, JSON and Markdown", async () => {
   for (const slug of TOOL_TOMBSTONES) {
     for (const { prefix } of locales) {
       for (const representation of REPRESENTATIONS) {
