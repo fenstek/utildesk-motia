@@ -6816,6 +6816,135 @@
         "https://tools.utildesk.de/sitemap-bing.xml"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T22:38:37.345Z",
+      "mode": "production-pages-deploy-status-inspection",
+      "command": "Two read-only Cloudflare CLI calls: identify Pages account and list utildesk-motia production deployments",
+      "estimate": {
+        "cliReads": 2,
+        "worstCasePerRead": 5,
+        "total": 10
+      },
+      "worstCaseRequests": 10,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T22:39:16.799Z",
+      "mode": "production-pages-motion-asset-readiness-probe",
+      "command": "Single HEAD for the new NotebookLM motion MP4 on the production custom domain after Pages deployment 1778eed",
+      "estimate": {
+        "http": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://tools.utildesk.de/videos/tools/notebooklm-knowledge-graph-motion-720p-crf27-20cc983c840e.mp4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T22:39:55.711Z",
+      "mode": "production-d1-backup-notebooklm",
+      "command": "wrangler d1 export utildesk-content-runtime-production before the bounded NotebookLM DE/EN upsert",
+      "estimate": {
+        "cliReads": 1,
+        "worstCasePerRead": 5,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T22:43:33.839Z",
+      "mode": "production-d1-backup-notebooklm-corrected-target",
+      "command": "Fresh wrangler d1 export after correcting the local destination path; previous export was not saved and no D1 mutation occurred",
+      "estimate": {
+        "cliReads": 1,
+        "worstCasePerRead": 5,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T22:44:46.951Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 3,
+        "pagesAssets": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T22:44:52.532Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file /tmp/utildesk-tool-runtime-notebooklm-20261103-1778eed/slugs.json --out /tmp/utildesk-tool-runtime-notebooklm-20261103-1778eed/live-delta --ledger /home/jgdus/projects/gpt_6_luna_notebooklm_editorial_motion_20261103/docs/04_operations/tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/notebooklm/",
+        "https://tools.utildesk.de/api/tools/notebooklm.json",
+        "https://tools.utildesk.de/markdown/tools/notebooklm.md",
+        "https://tools.utildesk.de/en/tools/notebooklm/",
+        "https://tools.utildesk.de/en/api/tools/notebooklm.json",
+        "https://tools.utildesk.de/en/markdown/tools/notebooklm.md",
+        "https://tools.utildesk.de/tool-assets/e338cd85407193fa6f46ab72f319e8a100dadb4bd02af906ce8958287fdfb78b/notebooklm-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-03T22:45:45.154Z",
+      "mode": "production-post-deploy-live-guard-notebooklm",
+      "command": "tool_card_guard live for NotebookLM with six DE/EN alternatives and the editorial WebP",
+      "estimate": {
+        "html": 14,
+        "assets": 1,
+        "total": 15
+      },
+      "worstCaseRequests": 15,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/notebooklm/",
+        "https://tools.utildesk.de/en/tools/notebooklm/",
+        "https://tools.utildesk.de/tools/perplexity/",
+        "https://tools.utildesk.de/en/tools/perplexity/",
+        "https://tools.utildesk.de/tools/elicit/",
+        "https://tools.utildesk.de/en/tools/elicit/",
+        "https://tools.utildesk.de/tools/obsidian/",
+        "https://tools.utildesk.de/en/tools/obsidian/",
+        "https://tools.utildesk.de/tools/research-rabbit/",
+        "https://tools.utildesk.de/en/tools/research-rabbit/",
+        "https://tools.utildesk.de/tools/claude/",
+        "https://tools.utildesk.de/en/tools/claude/",
+        "https://tools.utildesk.de/tools/chatgpt/",
+        "https://tools.utildesk.de/en/tools/chatgpt/",
+        "https://tools.utildesk.de/images/tools/notebooklm-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
