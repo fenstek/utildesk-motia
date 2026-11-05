@@ -7,6 +7,7 @@ const siteRoot = path.resolve(here, "..");
 
 export async function inspectRuntimeDeployBundle({
   configPath = path.join(siteRoot, "dist-runtime", "server", "wrangler.json"),
+  readAssetFiles = (assetsDir) => readdir(assetsDir, { recursive: true }),
 } = {}) {
   const config = JSON.parse(await readFile(configPath, "utf8"));
   if (config.main !== "entry.mjs") {
@@ -17,28 +18,39 @@ export async function inspectRuntimeDeployBundle({
   }
 
   const assetsDir = path.resolve(path.dirname(configPath), config.assets.directory);
-  const files = await readdir(assetsDir, { recursive: true });
+  const files = await readAssetFiles(assetsDir);
   const stylesheets = files.filter((file) => file.endsWith(".css"));
   const scripts = files.filter((file) => file.endsWith(".js"));
-  if (stylesheets.length !== 1) {
-    throw new Error(`Runtime deploy bundle must contain exactly one shared stylesheet, found ${stylesheets.length}.`);
+  const sharedStylesheets = stylesheets.filter((file) => {
+    const filename = file.replaceAll("\\", "/").split("/").at(-1);
+    return filename === "BaseLayout.css" || (filename.startsWith("BaseLayout.") && filename.endsWith(".css"));
+  });
+  if (sharedStylesheets.length !== 1) {
+    throw new Error(
+      `Runtime deploy bundle must contain exactly one shared stylesheet named BaseLayout, found ${sharedStylesheets.length}.`,
+    );
   }
   if (scripts.length < 2) {
     throw new Error(`Runtime deploy bundle must contain the localized inventory scripts, found ${scripts.length}.`);
   }
 
-  const stylesheetPath = path.join(assetsDir, stylesheets[0]);
+  const sharedStylesheet = sharedStylesheets[0];
+  const stylesheetPath = path.join(assetsDir, sharedStylesheet);
   const stylesheetStat = await stat(stylesheetPath);
   if (stylesheetStat.size < 100_000) {
-    throw new Error(`Runtime stylesheet is unexpectedly small: ${stylesheetStat.size} bytes.`);
+    throw new Error(`Runtime BaseLayout stylesheet is unexpectedly small: ${stylesheetStat.size} bytes.`);
   }
+
+  const normalizedStylesheets = stylesheets.map((file) => file.replaceAll("\\", "/")).sort();
 
   return {
     configPath,
     assetsDir,
-    stylesheet: stylesheets[0].replaceAll("\\", "/"),
+    stylesheet: sharedStylesheet.replaceAll("\\", "/"),
     stylesheetBytes: stylesheetStat.size,
     scriptCount: scripts.length,
+    stylesheets: normalizedStylesheets,
+    stylesheetCount: normalizedStylesheets.length,
   };
 }
 
