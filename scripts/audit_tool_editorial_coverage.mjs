@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import sharp from "../site/node_modules/sharp/lib/index.js";
+import sharp from "./sharp.mjs";
 import {
   countTemplatePhrases,
   findEditorialBlocks,

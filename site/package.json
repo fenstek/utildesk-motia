@@ -47,5 +47,8 @@
   "devDependencies": {
     "@astrojs/cloudflare": "^13.7.0",
     "wrangler": "^4.110.0"
+  },
+  "overrides": {
+    "sharp": "0.35.5"
   }
 }

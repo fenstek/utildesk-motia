@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import sharp from "../site/node_modules/sharp/lib/index.js";
+import sharp from "./sharp.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const IMAGE_DIR = path.join(ROOT, "content", "images", "ratgeber");
