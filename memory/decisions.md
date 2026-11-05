@@ -1,5 +1,26 @@
 # Decisions
 
+## 2026-11-05 Cloudflare Agent Readiness crawler policy
+
+- Set `Content-Signal: search=yes, ai-input=yes, ai-train=no` in every named
+  robots group and the wildcard group.
+- Disallow `GPTBot` at `/` while keeping `OAI-SearchBot` and `ChatGPT-User`
+  accessible. These are distinct OpenAI user agents and should remain covered
+  by separate tests.
+- Keep the existing `Google-Extended: Allow: /` rule as an explicit owner-chosen
+  exception to the general `ai-train=no` preference, accepting that Google may
+  use accessible content for Gemini training and grounding.
+- Add the draft `__usage_ai-training` preference group with `Disallow: /` as a
+  training preference token, not as a crawler access ban. Its adoption is
+  future-facing (Microsoft says 2027-02-01; Google plans 2027), voluntary, and
+  not retroactive or technically enforced.
+- Treat robots rules and Content Signals as voluntary crawler instructions,
+  not technical access controls or guaranteed enforcement.
+- Public machine discovery must describe only verified, read-only Utildesk
+  endpoints. Do not advertise vendor operations, MCP, OAuth, A2A, or an ARD
+  manifest unless those capabilities and their contracts actually exist.
+- Implementation details: `docs/04_operations/cloudflare_agent_readiness.md`.
+
 ## 2026-07-31 Legal pages and analytics consent
 
 - Use § 5 DDG, not the repealed § 5 TMG, for German provider information.
