@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "utildesk-research",
+      "type": "skill-md",
+      "description": "Find, compare, and cite AI tools and editorial guides from the public Utildesk directory. Use when researching tool options, workflows, or Utildesk Ratgeber content.",
+      "url": "/.well-known/agent-skills/utildesk-research/SKILL.md",
+      "digest": "sha256:64fb8db1a9471121d53bbb6612d09fc792b3ba0de9a386d30e3c3d90332ffa74"
+    }
+  ]
+}

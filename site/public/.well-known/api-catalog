@@ -1,0 +1,53 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://tools.utildesk.de/.well-known/api-catalog",
+      "item": [
+        {
+          "href": "https://tools.utildesk.de/api/tools.json",
+          "type": "application/json",
+          "title": "German AI tools catalog"
+        },
+        {
+          "href": "https://tools.utildesk.de/api/ratgeber.json",
+          "type": "application/json",
+          "title": "German editorial guides catalog"
+        }
+      ]
+    },
+    {
+      "anchor": "https://tools.utildesk.de/api/tools.json",
+      "service-desc": [
+        {
+          "href": "https://tools.utildesk.de/api/openapi.json",
+          "type": "application/vnd.oai.openapi+json",
+          "title": "OpenAPI 3.1 description"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://tools.utildesk.de/api/README.md#tool-catalog",
+          "type": "text/markdown",
+          "title": "Tool catalog API documentation"
+        }
+      ]
+    },
+    {
+      "anchor": "https://tools.utildesk.de/api/ratgeber.json",
+      "service-desc": [
+        {
+          "href": "https://tools.utildesk.de/api/openapi.json",
+          "type": "application/vnd.oai.openapi+json",
+          "title": "OpenAPI 3.1 description"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://tools.utildesk.de/api/README.md#ratgeber-catalog",
+          "type": "text/markdown",
+          "title": "Ratgeber catalog API documentation"
+        }
+      ]
+    }
+  ]
+}

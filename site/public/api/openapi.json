@@ -1,0 +1,95 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Utildesk public content catalogs",
+    "version": "1.0.0",
+    "description": "Read-only descriptions of the public tool and Ratgeber catalog GET endpoints."
+  },
+  "servers": [
+    {
+      "url": "https://tools.utildesk.de"
+    }
+  ],
+  "paths": {
+    "/api/tools.json": {
+      "get": {
+        "operationId": "getToolsCatalog",
+        "summary": "Get the public AI tools catalog",
+        "responses": {
+          "200": {
+            "description": "The current public tool catalog.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Catalog"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ratgeber.json": {
+      "get": {
+        "operationId": "getRatgeberCatalog",
+        "summary": "Get the public Ratgeber catalog",
+        "responses": {
+          "200": {
+            "description": "The current public Ratgeber catalog.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Catalog"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Catalog": {
+        "type": "object",
+        "required": [
+          "version",
+          "site",
+          "siteUrl",
+          "generatedAt",
+          "count",
+          "items"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "const": 1
+          },
+          "site": {
+            "type": "string"
+          },
+          "siteUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "generatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

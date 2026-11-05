@@ -1,5 +1,32 @@
 import { applyToolRoutePolicy, TOOL_REDIRECTS, TOOL_TOMBSTONES } from "../shared/toolRoutePolicy.mjs";
 
+const AGENT_METADATA_HEADERS = new Map([
+  ["/.well-known/api-catalog", {
+    "Content-Type": "application/linkset+json; profile=\"https://www.rfc-editor.org/info/rfc9727\"",
+    Link: '<https://tools.utildesk.de/.well-known/api-catalog>; rel="api-catalog"',
+  }],
+  ["/.well-known/agent-skills/index.json", {
+    "Content-Type": "application/json; charset=utf-8",
+  }],
+  ["/.well-known/agent-skills/utildesk-research/SKILL.md", {
+    "Content-Type": "text/markdown; charset=utf-8",
+  }],
+]);
+
+const agentMetadataFromNext = async (context, pathname) => {
+  const response = await context.next();
+  const headers = new Headers(response.headers);
+  headers.set("X-Robots-Tag", "noindex");
+  for (const [name, value] of Object.entries(AGENT_METADATA_HEADERS.get(pathname) ?? {})) {
+    headers.set(name, value);
+  }
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+};
+
 const PUBLIC_SECTION_PREFIXES = [
   "/tools",
   "/category",
@@ -409,6 +436,7 @@ export async function onRequest(context) {
   const url = new URL(request.url);
   const previewRedirect = redirectPreviewHost(url);
   if (previewRedirect) return previewRedirect;
+  if (AGENT_METADATA_HEADERS.has(url.pathname)) return agentMetadataFromNext(context, url.pathname);
   const policyResponse = applyToolRoutePolicy(request);
   if (policyResponse) return policyResponse;
   if (RETIRED_ASSET_PATHS.has(url.pathname)) {
