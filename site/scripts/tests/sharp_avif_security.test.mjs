@@ -21,9 +21,25 @@ function compareVersions(actual, minimum) {
   return 0;
 }
 
-test("sharp and its prebuilt libheif meet the patched minimums", () => {
-  assert.ok(compareVersions(sharp.versions.sharp, "0.35.4") >= 0, `sharp ${sharp.versions.sharp} is below 0.35.4`);
+test("sharp and its prebuilt codecs meet the patched minimums", () => {
+  assert.ok(compareVersions(sharp.versions.sharp, "0.35.5") >= 0, `sharp ${sharp.versions.sharp} is below 0.35.5`);
   assert.ok(compareVersions(sharp.versions.heif ?? "", "1.23.2") >= 0, `libheif ${sharp.versions.heif ?? "(missing)"} is below 1.23.2`);
+  if (sharp.versions.rsvg !== undefined) {
+    assert.ok(compareVersions(sharp.versions.rsvg, "2.63.2") >= 0, `librsvg ${sharp.versions.rsvg} is below 2.63.2`);
+  }
+});
+
+test("rasterizes an ordinary SVG when the prebuilt includes SVG support", { skip: sharp.versions.rsvg === undefined }, async () => {
+  const svg = Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" width="3" height="2"><rect width="3" height="2" fill="#2577cc"/></svg>');
+  const metadata = await sharp(svg).metadata();
+  assert.equal(metadata.format, "svg");
+  assert.equal(metadata.width, 3);
+  assert.equal(metadata.height, 2);
+
+  const decoded = await sharp(svg).raw().toBuffer({ resolveWithObject: true });
+  assert.equal(decoded.info.width, 3);
+  assert.equal(decoded.info.height, 2);
+  assert.ok(decoded.data.length > 0, "SVG yields decoded pixel data");
 });
 
 test("decodes valid PNG, JPEG, WebP, and AVIF image contents", async () => {
