@@ -1,0 +1,21 @@
+#home-motion-cloth-stage {
+  position: fixed;
+  z-index: 1400;
+  inset: 0;
+  overflow: hidden;
+  background: #191916;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 520ms cubic-bezier(.22, .61, .36, 1);
+}
+
+#home-motion-cloth-stage.home-motion-cloth-leaving { opacity: 0; }
+
+#home-motion-cloth-stage canvas {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  pointer-events: none;
+}

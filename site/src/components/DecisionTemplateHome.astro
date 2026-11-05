@@ -333,6 +333,46 @@ const categoryRows = categories.slice(0, 8);
         </div>
       </div>
 
+      <section class="ds-home-motion" data-home-motion aria-labelledby="ds-home-motion-title">
+        <div class="ds-home-motion-intro">
+          <h2 id="ds-home-motion-title">{isEn ? "See this page in motion" : "Diese Seite in Bewegung"}</h2>
+          <p id="ds-home-motion-note" data-home-motion-note>
+            {isEn ? "Both views use the page you are reading now." : "Beide Ansichten verwenden diese aktuelle Seite."}
+          </p>
+        </div>
+        <div class="ds-home-motion-choices" role="group" aria-label={isEn ? "Choose an animation" : "Animation auswählen"}>
+          <button type="button" data-home-motion-choice="cloth" aria-pressed="false" aria-describedby="ds-home-motion-note" disabled>
+            <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+              <path d="M3 4.5c2.1-1.6 4.2-1.6 6.3 0s4.2 1.6 7.4-.1M3 9.9c2.1-1.6 4.2-1.6 6.3 0s4.2 1.6 7.4-.1M3 15.3c2.1-1.6 4.2-1.6 6.3 0s4.2 1.6 7.4-.1" />
+            </svg>
+            <span>{isEn ? "Unfold as fabric" : "Als Stoff entfalten"}</span>
+          </button>
+          <button type="button" data-home-motion-choice="swarm" aria-pressed="false" aria-describedby="ds-home-motion-note" disabled>
+            <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+              <path d="M3.2 2.2v13.4l3.3-3.4 2.3 5.5 2.8-1.2-2.4-5.4 5 .2L3.2 2.2Z" />
+              <path d="M14 3.5h3M15.5 2v3" />
+            </svg>
+            <span>{isEn ? "Assemble with cursors" : "Mit Cursorn aufbauen"}</span>
+          </button>
+        </div>
+        <div class="ds-home-motion-runtime" data-home-motion-runtime hidden>
+          <p class="ds-home-motion-status" data-home-motion-status role="status" aria-live="polite"></p>
+          <div class="ds-home-motion-progress" data-home-motion-progress-wrap hidden>
+            <progress max="100" value="0" data-home-motion-progress aria-label={isEn ? "Animation progress" : "Animationsfortschritt"}></progress>
+            <span data-home-motion-progress-label>0%</span>
+          </div>
+          <div class="ds-home-motion-utility">
+            <button type="button" data-home-motion-skip hidden>{isEn ? "Skip" : "Überspringen"}</button>
+            <button type="button" data-home-motion-close hidden>{isEn ? "Close view" : "Ansicht schließen"}</button>
+          </div>
+        </div>
+        <noscript>
+          <p class="ds-home-motion-noscript">
+            {isEn ? "Animations need JavaScript; the full page remains available below." : "Für die Animationen wird JavaScript benötigt; die ganze Seite bleibt darunter verfügbar."}
+          </p>
+        </noscript>
+      </section>
+
       {shaderPreviewImage && shaderPreviewGuide ? (
         <section id="shader-preview" class="ds-shader-preview" data-shader-preview-panel hidden aria-labelledby="ds-shader-preview-title">
           <div class="ds-shader-paper" aria-hidden="true">
@@ -554,5 +594,7 @@ const categoryRows = categories.slice(0, 8);
 </section>
 
 <script>
+  import "./home-motion-control.css";
+  import "./home-motion-control.js";
   import "./shader-preview.js";
 </script>
