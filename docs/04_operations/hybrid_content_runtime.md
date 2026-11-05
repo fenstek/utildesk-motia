@@ -138,8 +138,10 @@ npm run deploy:runtime
 ```
 
 `deploy:runtime` is the only supported production renderer deployment command.
-It builds the runtime, verifies the generated `ASSETS` binding plus the shared
-CSS and locale scripts, and deploys through `dist-runtime/server/wrangler.json`.
+It builds the runtime, verifies the generated `ASSETS` binding, the unique
+shared `BaseLayout` stylesheet, and the locale scripts, then deploys through
+`dist-runtime/server/wrangler.json`. Astro may also emit component-split CSS;
+those stylesheets are valid as long as the shared layout stylesheet is present.
 Never deploy `dist-runtime/server/entry.mjs` directly: that uploads the Worker
 code without the hashed `/runtime-assets/*` files and leaves runtime HTML
 unstyled.
