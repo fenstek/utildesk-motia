@@ -1,0 +1,106 @@
+html .home-motion-swarm-pending {
+  opacity: 0 !important;
+}
+
+#home-motion-swarm-stage {
+  position: fixed;
+  z-index: 1150;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.home-motion-swarm-cursor {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  opacity: 0;
+  transition: transform 460ms cubic-bezier(.22, 1, .36, 1), opacity 200ms ease;
+  will-change: transform;
+}
+
+.home-motion-swarm-cursor.is-visible { opacity: 1; }
+
+.home-motion-swarm-cursor svg {
+  display: block;
+  width: 22px;
+  height: 26px;
+  overflow: visible;
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 22%));
+}
+
+.home-motion-swarm-label {
+  margin: 16px 0 0 -4px;
+  padding: 3px 6px;
+  background: var(--home-motion-cursor-color);
+  color: #101010;
+  font: 700 11px/1.2 "JetBrains Mono", ui-monospace, monospace;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+}
+
+.home-motion-swarm-selection {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  border: 1.5px solid var(--home-motion-cursor-color);
+  background: rgba(255, 255, 255, .07);
+  animation: home-motion-outline-in 260ms cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.home-motion-swarm-selection::before,
+.home-motion-swarm-selection::after {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--home-motion-cursor-color);
+  background: #fff;
+  content: "";
+}
+
+.home-motion-swarm-selection::before {
+  top: -4px;
+  left: -4px;
+}
+
+.home-motion-swarm-selection::after {
+  right: -4px;
+  bottom: -4px;
+}
+
+.home-motion-swarm-caption,
+.home-motion-swarm-size {
+  position: absolute;
+  z-index: 2;
+  max-width: min(180px, calc(100vw - 32px));
+  overflow: hidden;
+  padding: 3px 5px;
+  background: var(--home-motion-cursor-color);
+  color: #101010;
+  font: 700 11px/1.2 ui-monospace, monospace;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-motion-swarm-caption { top: -20px; left: -1px; }
+.home-motion-swarm-size { right: -1px; bottom: -20px; }
+
+@keyframes home-motion-outline-in {
+  from { clip-path: inset(0 100% 0 0); opacity: .3; }
+  to { clip-path: inset(0 -16px -16px -16px); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  .home-motion-swarm-cursor svg { width: 20px; height: 24px; }
+  .home-motion-swarm-label { font-size: 11px; }
+  .home-motion-swarm-caption,
+  .home-motion-swarm-size { font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-motion-swarm-cursor { transition: none; }
+  .home-motion-swarm-selection { animation: none; }
+}

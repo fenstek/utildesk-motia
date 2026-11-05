@@ -40,6 +40,7 @@
   "dependencies": {
     "astro": "^6.4.8",
     "gray-matter": "^4.0.3",
+    "html-to-image": "^1.11.13",
     "marked": "^18.0.2",
     "shaders": "4.0.4"
   },
