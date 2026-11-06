@@ -7,10 +7,10 @@ editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: "2026-11-06"
 editorial_status: "manual_polished"
 editorial_batch: "2026-11-06-full-tool-card-editorial"
-editorial_verdict: "caution"
-editorial_verdict_headline: "Mit Vorbehalt – für einzelne Wort- und Wendungssuchen, nicht für vertrauliche oder automatisierte Übersetzungsprozesse."
-editorial_verdict_text: "Wir empfehlen WordReference mit Vorbehalt Lernenden und Redaktionen, die einzelne Wort- und Wendungsbedeutungen anhand verschiedener Einträge prüfen. Der Nutzen entsteht, wenn ein passender Sinn samt Beispiel im Satzkontext bestätigt wird. Für zusammenhängende Text- oder Dokumentübersetzung ist DeepL der bessere Startpunkt; vertrauliche Suchen und automatisierte Wörterbuchdaten brauchen zuerst eine Datenschutzprüfung und schriftliche Nutzungsfreigabe."
-editorial_trust_label: "Quellenlage: offizielle Produkt-, Preis-, Datenschutz- und Nutzungsbedingungen geprüft (06.11.2026)"
+editorial_verdict: "recommend"
+editorial_verdict_headline: "Empfehlung für gezielte Wörterbuchsuchen."
+editorial_verdict_text: "WordReference empfehlen wir Lernenden und Schreibenden für gezielte manuelle Wort- und Wendungssuchen; für vollständige Dokumente passt ein Übersetzungsdienst besser. Vertrauliche Texte solltest du nicht eingeben; automatisierter Zugriff braucht vorherige Erlaubnis, und die Nutzung von Website-Inhalten für maschinelles Lernen oder maschinelle Übersetzung braucht direkte schriftliche Zustimmung."
+editorial_trust_label: "Quellen geprüft · 06.11.2026"
 category: "Produktivität"
 price_model: "Freemium"
 tags: [translation, language, reference, productivity]
@@ -25,7 +25,7 @@ updated_at: "2026-11-06"
 
 WordReference eignet sich, wenn du beim Lesen oder Schreiben ein einzelnes englisches Wort oder eine Wendung auf Deutsch einordnen willst. Ein Eintrag zeigt mögliche Bedeutungen; du entscheidest, welche zum Satz passt. Das ist keine automatische Übersetzung oder fachliche Freigabe ganzer Texte.
 
-Für Lernende und Redaktionen ist es eine manuelle Recherchehilfe, sofern die Stelle keine vertraulichen Angaben enthält und eine Person die Formulierung prüft. Für große Textmengen, sensible Inhalte und automatisierte Nutzung gelten andere Grenzen.
+Für Lernende und Redaktionen ist es eine manuelle Recherchehilfe, wenn die Stelle keine vertraulichen Angaben enthält und du die Formulierung im Satzkontext prüfst. Für große Textmengen, sensible Inhalte und automatisierte Nutzung gelten andere Grenzen.
 
 <figure class="tool-editorial-figure">
   <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/wordreference-editorial.webp" aria-label="Zwei Reisende tauschen eine Karte aus, während sich die Seiten des aufgeschlagenen Wörterbuchs leicht bewegen.">
@@ -42,15 +42,15 @@ Das hilft bei einer konkreten Wortwahl. Es ersetzt keine Volltextübersetzung un
 
 ## Ein Lookup vom Wort bis zum geprüften Satz
 
-Angenommen, eine E-Mail lautet: “The project meeting starts at four.” Suche nach *meeting*. Der Englisch-Deutsch-Eintrag trennt eine geschäftliche Besprechung von einer allgemeinen Begegnung; im Projektkontext kann „Besprechung“ passender sein als „Treffen“.
+Angenommen, eine E-Mail lautet: “The project meeting starts at four.” Suche nach *meeting*. Der Englisch-Deutsch-Eintrag unterscheidet eine geschäftliche Besprechung von einer allgemeinen Begegnung und zeigt Beispiele. Im Projektkontext kann „Besprechung“ passender sein als „Treffen“.
 
-Vergleiche den Beispielsatz mit der ganzen E-Mail und lass eine zweisprachige Person die deutsche Zeile prüfen. Stoppe erst, wenn Bedeutung, Kontext und Formulierung zusammenpassen. Bleiben Lesarten offen, frage eine Fachperson oder vergleiche PONS, statt den ersten Treffer zu übernehmen.
+Vergleiche das Beispiel mit der ganzen E-Mail und prüfe, ob Bedeutung und Ton passen. Beende die Suche, wenn eine Lesart zum Kontext passt und die deutsche Zeile natürlich klingt. Bei wichtigen Texten oder verbleibendem Zweifel frage eine zweisprachige Fachperson; wenn keine Lesart passt, vergleiche PONS oder markiere die Stelle als offen.
 
 ## Einträge kritisch lesen
 
 Ein Treffer ist kein Qualitätssiegel: Prüfe Wortart, Fachgebiet, Region, Register und Beispiel am ganzen Satz. Manche aktuellen Seiten kennzeichnen experimentelle KI-generierte Bereiche; lies die Quelle und das Label des konkreten Abschnitts. Das heißt weder, dass alle Einträge KI-generiert sind, noch dass jeder andere automatisch menschlich geprüft wurde.
 
-Ein Team kann den Nutzen mit einer kleinen, anonymisierten Liste wiederkehrender Begriffe prüfen und Auswahl sowie Korrekturen notieren. Bleiben viele Fälle uneindeutig oder steigt der Prüfaufwand, sollte es die Quelle wechseln. Dieser Prüfplan wurde nicht durchgeführt.
+Ein Team kann den Nutzen mit einer kleinen, anonymisierten Liste wiederkehrender Begriffe prüfen und Auswahl sowie Korrekturen notieren. Bleiben viele Fälle uneindeutig oder steigt der Prüfaufwand, sollte es die Quelle wechseln.
 
 ## Einbindung im Alltag
 
@@ -60,17 +60,17 @@ Suchkürzel sparen Klicks, erlauben aber kein automatisches Abrufen von Inhalten
 
 ## Datenschutz und Nutzungsrechte
 
-Die Datenschutzerklärung nennt Browser- und Betriebssystemangaben sowie IP-Adressen; in manchen Fällen kommen Zielsprache und Suchverlauf hinzu. Cookies, Analyse und Drittanbieterwerbung sind ebenfalls beschrieben. Bei Forenkonten werden E-Mails zum Login verwendet und IP-Adressen bei Registrierung und Beiträgen protokolliert. Gib keine vertraulichen Kunden-, Personal- oder Vertragsdaten ein; teile in Foren nur bereinigten Kontext.
+Die [Datenschutzerklärung](https://www.wordreference.com/english/Privacy%20Policy.htm) nennt Browser- und Betriebssystemangaben sowie IP-Adressen; in manchen Fällen kommen Zielsprache und Suchverlauf hinzu. Cookies, Analyse und Drittanbieterwerbung sind ebenfalls beschrieben. Bei Forenkonten werden E-Mails zum Login verwendet und IP-Adressen bei Registrierung und Beiträgen protokolliert. Gib vertrauliche oder sensible Inhalte nicht in die Suche oder in einen öffentlichen Forumsbeitrag ein. Prüfe die Datenschutzerklärung, bevor du entscheidest, ob WordReference für einen datenschutzsensiblen Ablauf infrage kommt.
 
-Die Nutzungsbedingungen beschränken automatisiertes Sammeln und verbieten die Nutzung von Website-Inhalten für maschinelles Lernen oder maschinelle Übersetzung ohne direkte schriftliche Zustimmung. Ein sichtbarer Eintrag ist keine pauschale Scraping-, Datensatz- oder API-Lizenz.
+Die [Nutzungsbedingungen](https://www.wordreference.com/english/TermsOfService.aspx) unterscheiden zwei Fälle: Automatisierter Zugriff oder das Sammeln von Inhalten beziehungsweise Nutzerinformationen braucht vorherige Erlaubnis. Wer Website-Inhalte als Grundlage für maschinelles Lernen, KI oder maschinelle Übersetzung verwenden will, benötigt direkte schriftliche Zustimmung.
 
 ## Kosten
 
-Der normale Zugang wird mit Werbung finanziert. Die Supporter-Seite nennt 20 US-Dollar pro Jahr für werbefreie Nutzung und schnellere Seitenaufrufe (geprüft am 6. November 2026); daraus folgt kein lokaler Europreis. Im professionellen Einsatz zählt zusätzlich die Zeit für menschliche Prüfung.
+Der normale Zugang wird mit Werbung finanziert. Die [Supporter-Seite](https://www.wordreference.com/docs/supporter.aspx) nennt 20 US-Dollar pro Jahr für werbefreie Nutzung und schnellere Seitenaufrufe (geprüft am 6. November 2026); daraus folgt kein lokaler Europreis. Im professionellen Einsatz zählt zusätzlich die Zeit für menschliche Prüfung.
 
 ## Redaktionelle Einschätzung
 
-Mit Vorbehalt eignet sich WordReference für Lernende und Redaktionen, die einzelne Bedeutungen manuell vergleichen und im Satzkontext prüfen. Für Textentwürfe ist DeepL passender; vertrauliche Suchen und automatisierte Datennutzung brauchen Datenschutzprüfung und schriftliche Freigabe. Verbindliche Fachübersetzungen gehören zu qualifizierten Personen.
+WordReference verdient eine Empfehlung für Lernende und Schreibende, die einzelne Wörter oder Wendungen anhand von Bedeutungen und Beispielen im Kontext klären. Für vollständige Dokumente passt DeepL besser. Gib keine vertraulichen Texte ein. Automatisierter Zugriff oder das Sammeln von Inhalten braucht vorherige Erlaubnis; die Nutzung der Inhalte als Grundlage für maschinelles Lernen oder maschinelle Übersetzung erfordert direkte schriftliche Zustimmung.
 
 ## Alternativen
 
@@ -92,7 +92,7 @@ Die Website listet Englisch-Deutsch und weitere Wörterbücher. Zusatzwerkzeuge 
 
 **Übersetzt WordReference ganze Texte oder Dokumente?**
 
-Nein. Für vollständige Sätze oder Dokumente ist ein Übersetzungsdienst wie DeepL der passendere Entwurfsschritt; prüfe das Ergebnis anschließend.
+Der Schwerpunkt liegt auf einzelnen Wörtern und Wendungen mit Bedeutungsangaben und Beispielen. Für vollständige Dokumente eignet sich ein Übersetzungsdienst wie DeepL; prüfe dessen Ergebnis anschließend.
 
 **Wie wähle ich bei mehreren Treffern die passende Bedeutung?**
 
@@ -100,7 +100,7 @@ Vergleiche Wortart, Fach- oder Regionalhinweise und Beispiele mit dem ganzen Sat
 
 **Sind alle Wörterbucheinträge von Menschen geprüft?**
 
-Nein, das lässt sich nicht pauschal annehmen. Manche Einträge kennzeichnen experimentelle KI-generierte Bereiche; prüfe Label und Quelle pro Abschnitt.
+Eine allgemeine Zusicherung, dass jeder Eintrag von Menschen verfasst und geprüft wurde, lässt sich nicht geben. Manche Einträge kennzeichnen experimentelle KI-generierte Bereiche; prüfe Label und Quelle pro Abschnitt.
 
 **Sind Antworten in den Foren Expertenmeinungen?**
 
@@ -116,7 +116,7 @@ Vermeide Kunden-, Personal-, Vertrags- und unveröffentlichte Produktdaten. Die 
 
 **Darf ein Unternehmen Wörterbuchinhalte automatisiert abrufen oder zum Training nutzen?**
 
-Nicht ohne ausdrückliche Zustimmung: Die Nutzungsbedingungen beschränken automatisiertes Sammeln und die Nutzung für maschinelles Lernen oder maschinelle Übersetzung.
+Automatisierter Zugriff oder das Sammeln von Inhalten braucht vorherige Erlaubnis. Wer Inhalte als Grundlage für maschinelles Lernen oder maschinelle Übersetzung verwenden will, benötigt laut Nutzungsbedingungen direkte schriftliche Zustimmung.
 
 **Wie kann ein Team den Nutzen sinnvoll prüfen?**
 
