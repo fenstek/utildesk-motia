@@ -7020,6 +7020,155 @@
         "https://68ec138b.utildesk-motia.pages.dev"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:13:26.618Z",
+      "mode": "production-pages-authenticated-origin-assets",
+      "command": "Authenticated Chrome checks for four exact deployment-origin MP4s including bounded media range requests",
+      "estimate": {
+        "total": 20
+      },
+      "worstCaseRequests": 20,
+      "plannedUrls": [
+        "https://68ec138b.utildesk-motia.pages.dev"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:16:17.669Z",
+      "mode": "production-pages-browser-origin-adjustment",
+      "command": "Conservative additional accounting for observed browser network responses during authenticated origin verification",
+      "estimate": {
+        "total": 55
+      },
+      "worstCaseRequests": 55,
+      "plannedUrls": [],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:16:17.850Z",
+      "mode": "production-worker-renderer-deploy-motion",
+      "command": "Bounded Worker renderer deployment and immediate health readback",
+      "estimate": {
+        "total": 30
+      },
+      "worstCaseRequests": 30,
+      "plannedUrls": [],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:18:29.572Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 9,
+        "pagesAssets": 0,
+        "total": 13
+      },
+      "worstCaseRequests": 13,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:18:53.505Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\Users\\sserg\\.codex\\artifacts\\utildesk-motion-release-20261106\\runtime-release-report\\slugs.json --out C:\\Users\\sserg\\.codex\\artifacts\\utildesk-motion-release-20261106\\runtime-release-report\\live-delta --ledger C:\\projects\\ud-motion-release-20261106\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 8,
+        "json": 8,
+        "markdown": 8,
+        "assets": 4,
+        "control": 0,
+        "indexNow": 0,
+        "total": 28
+      },
+      "worstCaseRequests": 28,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/amazon-bedrock-agentcore-browser/",
+        "https://tools.utildesk.de/api/tools/amazon-bedrock-agentcore-browser.json",
+        "https://tools.utildesk.de/markdown/tools/amazon-bedrock-agentcore-browser.md",
+        "https://tools.utildesk.de/en/tools/amazon-bedrock-agentcore-browser/",
+        "https://tools.utildesk.de/en/api/tools/amazon-bedrock-agentcore-browser.json",
+        "https://tools.utildesk.de/en/markdown/tools/amazon-bedrock-agentcore-browser.md",
+        "https://tools.utildesk.de/tools/h2o-ai/",
+        "https://tools.utildesk.de/api/tools/h2o-ai.json",
+        "https://tools.utildesk.de/markdown/tools/h2o-ai.md",
+        "https://tools.utildesk.de/en/tools/h2o-ai/",
+        "https://tools.utildesk.de/en/api/tools/h2o-ai.json",
+        "https://tools.utildesk.de/en/markdown/tools/h2o-ai.md",
+        "https://tools.utildesk.de/tools/textblob/",
+        "https://tools.utildesk.de/api/tools/textblob.json",
+        "https://tools.utildesk.de/markdown/tools/textblob.md",
+        "https://tools.utildesk.de/en/tools/textblob/",
+        "https://tools.utildesk.de/en/api/tools/textblob.json",
+        "https://tools.utildesk.de/en/markdown/tools/textblob.md",
+        "https://tools.utildesk.de/tools/wordreference/",
+        "https://tools.utildesk.de/api/tools/wordreference.json",
+        "https://tools.utildesk.de/markdown/tools/wordreference.md",
+        "https://tools.utildesk.de/en/tools/wordreference/",
+        "https://tools.utildesk.de/en/api/tools/wordreference.json",
+        "https://tools.utildesk.de/en/markdown/tools/wordreference.md",
+        "https://tools.utildesk.de/tool-assets/05589de6cd19c0a538990817459235dbd770111054a8edf53c0135911a7a451c/h2o-ai-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/45e151de19dc4100dd21d5fe2caecc64cb9e3d666d6aadd8dd375a57317c33c9/wordreference-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/8c7e620055cdffaf1a39362d5405dccdb4ff416671779f381176a015b786583a/amazon-bedrock-agentcore-browser-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/b142abd1067fd4b67609aae14107c9bf8c471eedf1883ed3972814876c498370/textblob-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:20:34.573Z",
+      "mode": "production-origin-eight-card-browser-check",
+      "command": "Authenticated Chrome validation of eight localized deployment-origin pages with bounded supporting assets",
+      "estimate": {
+        "total": 320
+      },
+      "worstCaseRequests": 320,
+      "plannedUrls": [
+        "https://68ec138b.utildesk-motia.pages.dev"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:22:11.039Z",
+      "mode": "production-custom-domain-batch-live-guard",
+      "command": "Single batch live guard attempt: 33 distinct HTML/image/sitemap requests, four MP4 HEADs and up to four hash GETs",
+      "estimate": {
+        "total": 41
+      },
+      "worstCaseRequests": 41,
+      "plannedUrls": [
+        "https://tools.utildesk.de"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:22:11.138Z",
+      "mode": "production-custom-domain-browser-motion-qa",
+      "command": "Chrome visual and playback checks for production cards including supporting assets",
+      "estimate": {
+        "total": 60
+      },
+      "worstCaseRequests": 60,
+      "plannedUrls": [
+        "https://tools.utildesk.de"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T05:25:13.337Z",
+      "mode": "production-postrelease-provider-metrics",
+      "command": "Bounded Worker analytics and D1 usage readback after the renderer and four-card release",
+      "estimate": {
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/graphql"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
