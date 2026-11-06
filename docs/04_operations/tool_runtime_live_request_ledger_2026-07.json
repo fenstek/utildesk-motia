@@ -7246,6 +7246,37 @@
         "https://tools.utildesk.de/tool-assets/b142abd1067fd4b67609aae14107c9bf8c471eedf1883ed3972814876c498370/textblob-editorial.webp"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T16:02:11.521Z",
+      "mode": "production-fallback-access-and-validation-preflight",
+      "command": "Pre-reserve bounded access, state inspection and selective validation for the independent fallback Pages project; no requests issued by this reservation step",
+      "estimate": {
+        "total": 160
+      },
+      "worstCaseRequests": 160,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4",
+        "https://utildesk-tool-fallback.pages.dev"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T16:55:23.359Z",
+      "mode": "production-fallback-staged-deploy",
+      "command": "bounded staged Pages fallback preview and production uploads plus control; Windows Wrangler execution time-limited",
+      "estimate": {
+        "previewUpload": 200,
+        "productionUpload": 200,
+        "control": 50,
+        "total": 450
+      },
+      "worstCaseRequests": 450,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4",
+        "https://utildesk-tool-fallback.pages.dev"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
