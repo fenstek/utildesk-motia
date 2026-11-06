@@ -1,5 +1,9 @@
 # Recent Changes — utildesk-motia
 
+## 2026-11-06 - TextBlob DE/EN editorial refresh
+
+- Replaced unrelated Asana, Microsoft Teams and Dropbox Business alternatives with active NLP libraries spaCy, NLTK, Stanza and scikit-learn; retained spaCy as the first shared alternative.
+
 ## 2026-11-02 - Clip Studio Paint animated tool illustration
 
 - Replaced the paired DE/EN tool-card figure with a 10-second looping animation. The existing WebP remains the poster and video fallback; the 1.11 MB 1280×720 H.264 source loads only when reduced motion is not requested. Rechecked current license and feature basics against official product/support pages; no copy changes were needed. Published the Pages asset and exact DE/EN D1 update; the public-domain live guard passed all 14 bounded checks.
