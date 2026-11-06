@@ -7169,6 +7169,21 @@
         "https://api.cloudflare.com/client/v4/graphql"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T08:58:02.948Z",
+      "mode": "editorial-fix-preflight-and-renderer-release",
+      "command": "Retrospectively account for bounded provider and fallback read-only preflight; reserve remaining capacity for renderer deployment, targeted production browser checks and provider metrics",
+      "estimate": {
+        "total": 150
+      },
+      "worstCaseRequests": 150,
+      "plannedUrls": [
+        "https://api.cloudflare.com/",
+        "https://tools.utildesk.de/",
+        "https://utildesk-tool-fallback.pages.dev/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
