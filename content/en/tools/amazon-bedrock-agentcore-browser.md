@@ -9,7 +9,7 @@ editorial_batch: "2026-11-06-full-tool-card-editorial"
 editorial_verdict: caution
 editorial_verdict_headline: "With caution: verify a read-only flow first"
 editorial_verdict_text: "The documented isolation, Live View, and IAM controls fit portals without a suitable API. Start with a bounded read-only run, then verify permissions, network access, result quality, and costs in the target account."
-editorial_trust_label: "3 / 5 · check"
+editorial_trust_label: "Sources checked · 6 Nov 2026"
 category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags:
@@ -93,6 +93,10 @@ Depending on the setup, costs can also come from the model, AgentCore Runtime or
 **What does the browser do, and what remains with the model or orchestrator?**
 
 The browser carries out navigation and interactions in the session. The model interprets the task; the agent application sets rules, chooses calls, checks structured results, and requests approval when needed. A successful browser action is not proof of a correct result.
+
+**Can I use AgentCore Browser with Playwright without a Bedrock model or agent framework?**
+
+Yes. AWS documents using AgentCore Browser directly with Playwright, without an agent framework or large language model (LLM); Playwright controls the browser session programmatically. This describes direct browser automation and does not mean agent workflows generally run without a model ([AWS Playwright quickstart](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-quickstart-playwright.html), [AgentCore FAQs](https://aws.amazon.com/bedrock/agentcore/faqs/)).
 
 **Can a person observe a running session?**
 

@@ -9,7 +9,7 @@ editorial_batch: "2026-11-06-full-tool-card-editorial"
 editorial_verdict: caution
 editorial_verdict_headline: "Mit Vorbehalt: zuerst einen lesenden Ablauf prüfen"
 editorial_verdict_text: "Die dokumentierten Isolations-, Live-View- und IAM-Funktionen passen, wenn ein Portal keinen geeigneten API-Zugang bietet. Beginnen Sie mit einem begrenzten Leseablauf und prüfen Sie Rechte, Netzwerk, Ergebnisqualität und Kosten im Zielkonto."
-editorial_trust_label: "3 / 5 · prüfen"
+editorial_trust_label: "Quellen geprüft · 06.11.2026"
 category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [aws, browser-automation, ai-agents, infrastructure]
@@ -91,6 +91,10 @@ Je nach Aufbau kommen Modell, AgentCore Runtime oder Gateway, CloudWatch, Aufzei
 **Was macht der Browser selbst, und was bleibt beim Modell oder Orchestrator?**
 
 Der Browser führt Navigation und Interaktionen in der Sitzung aus. Das Modell interpretiert die Aufgabe; die Agentenanwendung setzt Regeln, wählt Aufrufe, prüft das strukturierte Ergebnis und fordert bei Bedarf eine Freigabe an. Eine erfolgreiche Browseraktion ist noch kein Nachweis für ein richtiges Ergebnis.
+
+**Lässt sich AgentCore Browser ohne Bedrock-Modell oder Agent-Framework mit Playwright nutzen?**
+
+Ja. AWS dokumentiert die direkte Nutzung von AgentCore Browser mit Playwright ohne Agent-Framework oder Large Language Model (LLM); Playwright steuert dabei die Browsersitzung programmatisch. Das bezieht sich auf direkte Browser-Automation und sagt nicht aus, dass Agentenabläufe generell ohne Modell auskommen ([AWS-Playwright-Kurzanleitung](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-quickstart-playwright.html), [AgentCore-FAQs](https://aws.amazon.com/bedrock/agentcore/faqs/)).
 
 **Kann ein Mensch eine laufende Sitzung beobachten?**
 
