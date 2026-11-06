@@ -6945,6 +6945,81 @@
         "https://tools.utildesk.de/images/tools/notebooklm-editorial.webp"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T04:44:11.278Z",
+      "mode": "production-d1-backup-motion-20261106",
+      "command": "D1 SQL export before four-card paired runtime upsert",
+      "estimate": {
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T04:47:17.582Z",
+      "mode": "production-preflight-readbacks-retrospective",
+      "command": "Retrospective conservative accounting for pre-release page, alternative, asset and provider-read checks already performed",
+      "estimate": {
+        "total": 30
+      },
+      "worstCaseRequests": 30,
+      "plannedUrls": [],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T04:47:41.557Z",
+      "mode": "production-pages-motion-readiness-origin",
+      "command": "Four motion HEADs and up to four content-hash GETs on the exact Pages deployment origin",
+      "estimate": {
+        "total": 8
+      },
+      "worstCaseRequests": 8,
+      "plannedUrls": [
+        "https://68ec138b.utildesk-motia.pages.dev"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T04:48:19.220Z",
+      "mode": "production-pages-motion-readiness-custom-domain",
+      "command": "One origin redirect probe plus four custom-domain motion HEADs and up to four SHA256 GETs",
+      "estimate": {
+        "total": 9
+      },
+      "worstCaseRequests": 9,
+      "plannedUrls": [
+        "https://68ec138b.utildesk-motia.pages.dev",
+        "https://tools.utildesk.de"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T04:48:49.622Z",
+      "mode": "production-pages-origin-access-diagnosis",
+      "command": "Single non-following HEAD to identify the deployment-origin redirect",
+      "estimate": {
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://68ec138b.utildesk-motia.pages.dev"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-06T04:52:23.372Z",
+      "mode": "production-pages-origin-browser-access-check",
+      "command": "Open exact Pages deployment in existing Chrome profile with bounded redirects",
+      "estimate": {
+        "total": 4
+      },
+      "worstCaseRequests": 4,
+      "plannedUrls": [
+        "https://68ec138b.utildesk-motia.pages.dev"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
