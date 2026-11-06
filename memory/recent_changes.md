@@ -2087,3 +2087,7 @@ _Last updated: 2026-07-19_
 
 - Rewrote the DE/EN Obsidian cards around a practical Second Brain workflow: capture a source, separate it from personal interpretation, link both to a topic, revisit backlinks, and verify the original before quoting. Clarified that Graph View shows explicit links rather than semantic understanding, plus plugin, Sync, SSO, team-use, and cost boundaries.
 - Replaced the still illustration with an original 8-second, 1280×720 H.264 vector loop in which the complete linked-note graph moves around an active note. The MP4 is 228,128 bytes (SHA-256 `2cc0d4234c1a05838a77a9f2f808ccffd4405efd3222ca03d4b9efe015f6fa3a`); the 16,246-byte WebP poster remains the reduced-motion fallback. The video source is gated by `prefers-reduced-motion` and receives one-year immutable caching.
+
+## 2026-11-06 - WordReference editorial review candidate
+
+- Rewrote the DE/EN cards around a sense-in-context lookup and added a cautious source-based verdict. Replaced Asana, Microsoft Teams and Dropbox Business because project management, collaboration and file storage do not perform the dictionary lookup job; linked active dictionary and translation alternatives instead. Kept all 11 FAQ slots per language, replacing template placeholders and correcting unsupported offline, reliability and blanket human-review claims. Preserved the approved motion figure unchanged; this is a local candidate only.

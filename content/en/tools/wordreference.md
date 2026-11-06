@@ -1,12 +1,16 @@
 ---
-description: "WordReference is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+description: "WordReference helps compare individual word senses and phrases; full texts, confidential searches and automated reuse call for different safeguards."
 slug: "wordreference"
 title: "WordReference"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-11-06"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-11-06-full-tool-card-editorial"
+editorial_verdict: "caution"
+editorial_verdict_headline: "Use with caution – for focused word and phrase lookups, not confidential or automated translation workflows."
+editorial_verdict_text: "We recommend WordReference with caution to learners and editors comparing individual word senses and phrases across entries. It earns its place when a sense and example fit the full sentence and a person checks the final wording. DeepL is a better starting point for connected text or document drafts; confidential searches and automated dictionary reuse require a privacy review and written permission first."
+editorial_trust_label: "Evidence note: official product, pricing, privacy and terms pages checked (2026-11-06)"
 category: "Produktivität"
 price_model: "Freemium"
 tags:
@@ -17,12 +21,14 @@ tags:
 official_url: "https://www2.wordreference.com/"
 popularity: 0
 translation: "full"
-updated_at: "2026-07-17"
+updated_at: "2026-11-06"
 ---
 
 # WordReference
 
-WordReference is a comprehensive online dictionary and translation tool that helps users overcome language barriers. It offers fast and accurate translations, extensive dictionary entries, and forums for exchanging ideas with native speakers. It is ideal for students, professionals, and anyone who wants to learn or translate foreign languages.
+WordReference suits a focused lookup when you need to place one English word or phrase in German. An entry can show several meanings; you decide which fits the sentence. That is not full-text translation or specialist approval.
+
+It works as a manual reference for learners and editors when the passage is not confidential and a person can check the final wording. Large volumes, sensitive content and automation need different safeguards.
 
 <figure class="tool-editorial-figure">
   <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/wordreference-editorial.webp" aria-label="Two travelers exchange a note while the pages of an open dictionary move gently.">
@@ -31,107 +37,94 @@ WordReference is a comprehensive online dictionary and translation tool that hel
   </video>
 </figure>
 
-## Who is WordReference for?
+## What WordReference covers
 
-WordReference is aimed at language learners, translators, teachers, and anyone who regularly uses foreign languages. Whether for study, work, or everyday use, the tool helps with quickly looking up word meanings, synonyms, conjugations, and idiomatic expressions. It is especially useful for people who need a reliable, versatile, and easily accessible language reference.
+The site lists an English-German dictionary, other language pairs, an English learner's dictionary, synonyms, collocations and forums. Grammar and conjugation tools cover selected languages only. Entries may show part of speech, sense labels, regional or subject notes, examples and pronunciation.
 
-## Key Features
+This helps with one wording decision. It does not provide full-text translation or a localization team's terminology and approval system.
 
-- Online dictionaries for many language pairs (e.g. English-German, French-Spanish)
-- Detailed definitions, synonyms, and examples in context
-- Conjugation support for verbs in various languages
-- Language forums for exchanging ideas with native speakers and other users
-- Audio pronunciation help for words and phrases
-- Regular updates and expansions of the dictionaries
-- Mobile and desktop access without installation
-- Integration of idiomatic phrases and expressions
+## One lookup, from word to checked sentence
 
-## Pros and Cons
+Suppose an email says, “The project meeting starts at four.” Search for *meeting*. The English-German entry distinguishes a business discussion from a general encounter; “Besprechung” may fit the project context better than “Treffen.”
 
-### Pros
+Compare the example with the full email and ask a bilingual person to check the German sentence. Stop when sense, context and wording agree. If readings remain open, ask a specialist or compare PONS instead of copying the first result.
 
-- Comprehensive and accurate dictionaries with many language combinations
-- Free access to the core features (freemium model)
-- Very active community in the forums for additional help
-- Simple, user-friendly interface
-- Useful extra information such as conjugations and pronunciation
+## Read entries critically
 
-### Cons
+A result is not a quality stamp: check part of speech, subject, region, register and example against the full sentence. Some current pages label experimental AI-generated sections; read the label and source for that section. This does not mean every entry is AI-generated or every other entry was reviewed by a person.
 
-- Some advanced features and ad-free use are only available in the paid version
-- Translations are sometimes more literal and not always context-sensitive
-- No fully automatic translator like some AI-based tools
-- Mobile app functionality may vary by platform
+A team can assess the fit with a small, anonymized list of recurring terms and log choices and corrections. If ambiguity or review effort stays high, switch sources. This evaluation was not performed.
 
-## Pricing & Costs
+## Everyday access and workflow fit
 
-WordReference offers a freemium model: the core features are available for free, including access to dictionaries and forums. Ad-free use and additional features may be paid depending on the platform and offer. Detailed pricing information is available on the respective website.
+For one lookup, the website is enough. WordReference lists mobile apps and search shortcuts for Firefox and Chrome; available functions vary by language, device and browser. The tools page does not establish general offline access, so check the specific app listing.
 
-## WordReference Alternatives
+Shortcuts save clicks but do not permit automated content retrieval. Manual research needs no integration; review the terms before automated use.
 
-- **Linguee** – A combination of dictionary and search engine for translations with example sentences from real texts.
-- **DeepL Translator** – An AI-powered translation service with high accuracy, especially for longer texts.
-- **Google Translate** – A versatile free translation service with extensive language options and AI-powered translation.
-- **Reverso Context** – Translations in context with example sentences and learning aids.
-- **Bab.la** – Online dictionary with translations, games, and learning materials.
+## Privacy and reuse rights
 
-## What really matters in daily use
+The privacy policy lists browser and operating-system details and IP addresses; in some cases it also collects target language and search history. Cookies, analytics and third-party ads are described too. Forum emails are used for login, and IPs are logged for registration and posts. Keep confidential customer, personnel and contract material out of searches and public posts.
 
-WordReference is strong when users need meaning nuances, examples, and community explanations rather than a quick translation alone. For idioms, register questions, and ambiguous terms, reading several references is more helpful than accepting one machine-generated result.
+The terms restrict automated collection and prohibit using site content for machine learning or machine translation without direct written consent. A visible entry is not a blanket scraping, dataset or API license.
 
-## Workflow Fit
+## Cost
 
-- Good for language learners, translators, editors, and anyone who wants to verify wording in context.
-- Less suitable for fully automatic document translation or localization management with approval workflows.
+Regular access is ad-supported. The Supporter page lists USD 20 per year for no ads and faster page loads (checked 6 November 2026); it does not establish a local-currency price. Professional use also costs human review time.
 
-## Editorial Assessment
+## Editorial assessment
 
-WordReference is a research tool for language. Its value lies in patiently choosing the right expression, not in delivering the fastest answer box.
-
-## FAQ
-
-**1. Is WordReference free?**
-
-**What should a WordReference pilot look like?**
-
-Start with a bounded process, a small group and a clear success criterion. Check output quality, permissions and handovers before expanding the scope.
-
-**Which data should not be processed in WordReference without review?**
-
-Sensitive or confidential content should wait until contract terms, access, storage and deletion controls have been reviewed. Escalate uncertainty to the responsible privacy owner.
-
-**When is an alternative to WordReference the better choice?**
-
-Choose an alternative when the need is occasional, a required integration is missing, or administration and cost outweigh the practical benefit.
-
-WordReference's core features can be used for free. Some additional features or ad-free use are paid and depend on the provider and plan.
-
-**2. Which languages does WordReference support?**
-WordReference offers dictionaries for many language pairs, including English, German, French, Spanish, Italian, Russian, and others. Availability varies by language combination.
-
-**3. Is there a mobile app?**
-Yes, WordReference provides mobile apps for various platforms that make many features accessible on the go. Functionality may vary depending on the operating system.
-
-**4. Can I use WordReference offline?**
-WordReference's main features are available online. Some mobile apps offer limited offline functions, depending on the platform and version.
-
-**5. How reliable are the translations?**
-WordReference is based on extensive dictionaries and an active community, which improves translation quality. Nevertheless, complex or context-sensitive texts should be handled with care and checked separately if needed.
-
-**6. Is there a way to communicate with native speakers?**
-Yes, WordReference offers forums where users can ask questions and exchange ideas with native speakers and other language learners.
-
-**7. What advantages does WordReference offer over pure translation apps?**
-WordReference combines dictionary content, conjugations, pronunciation help, and an active community, enabling a deeper and more precise language reference than pure translation services.
-
-**8. How can I integrate WordReference into my daily workflow?**
-WordReference is well suited as a quick reference source when writing, translating, or learning. Integration usually happens through a browser or mobile apps, without requiring additional software installation.
-
----
+Use WordReference with caution when learners or editors compare one meaning and verify it in context. DeepL is better for text drafts; confidential searches and automated reuse need privacy review and written permission. Qualified people should review binding specialist translations.
 
 ## Alternatives
 
-- [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
-- [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
-- [DeepL](/en/tools/deepl/): DeepL is a useful fit when translating full texts or sentences; WordReference also offers dictionary entries and language forums.
-- [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.
+- [PONS](/en/tools/pons/): A structured German-English dictionary with parts of speech, pronunciation and examples.
+- [Linguee](/en/tools/linguee/): Dictionary search with examples from bilingual texts; check each source and context.
+- [DeepL](/en/tools/deepl/): For sentence and document drafts, rather than explaining individual dictionary senses.
+- [Reverso](/en/tools/reverso/): For phrase examples in context plus learning and conjugation tools.
+- [Google Translate](/en/tools/google-translate/): For many languages and text, image, document or website input.
+
+## FAQ
+
+**Is WordReference free?**
+
+Standard access is ad-supported. Supporter costs USD 20 per year for no ads (checked 6 November 2026); no local-currency price is established.
+
+**Which language pairs are available?**
+
+The site lists English-German and other dictionaries. Check the pair; extra tools vary by language.
+
+**Does WordReference translate whole texts or documents?**
+
+No. For a complete sentence or document draft, DeepL is a better fit; review its output afterwards.
+
+**How do I choose the right sense when there are several results?**
+
+Compare part of speech, regional or subject notes and examples with the full sentence. If unsure, leave it unresolved.
+
+**Have people reviewed every dictionary entry?**
+
+No blanket assurance applies. Some entries label experimental AI-generated sections; check the specific label and source.
+
+**Are forum replies expert answers?**
+
+They are public member discussions, not guaranteed expert approval. Check important meanings independently.
+
+**Is there a mobile app, and does it work offline?**
+
+Apps are listed, but the tools page does not establish general offline use. Check the specific app description.
+
+**What should I avoid entering?**
+
+Keep customer, personnel, contract and unpublished product data out. The policy lists IP/browser information and, in some cases, search history and target language.
+
+**Can a company retrieve dictionary content automatically or use it for training?**
+
+Not without explicit permission: the terms restrict automated collection and use for machine learning or machine translation.
+
+**How can a team check whether it helps?**
+
+Use a short, sanitized list of recurring terms and log choices and corrections. High ambiguity points to another source.
+
+**When is an alternative the better choice?**
+
+PONS offers structured entries, Linguee more text examples, and DeepL full-text drafts. Sensitive material still needs privacy review.
