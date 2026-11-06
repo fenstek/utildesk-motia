@@ -2095,3 +2095,7 @@ _Last updated: 2026-07-19_
 ## 2026-11-06 - WordReference editorial review candidate
 
 - Rewrote the DE/EN cards around a sense-in-context lookup and added a cautious source-based verdict. Replaced Asana, Microsoft Teams and Dropbox Business because project management, collaboration and file storage do not perform the dictionary lookup job; linked active dictionary and translation alternatives instead. Kept all 11 FAQ slots per language, replacing template placeholders and correcting unsupported offline, reliability and blanket human-review claims. Preserved the approved motion figure unchanged; this is a local candidate only.
+
+## 2026-11-06 - Amazon Bedrock AgentCore Browser editorial refresh
+
+- Reworked the DE/EN card with a safe read-only portal workflow, current AWS session, profile, network, recording, and pricing boundaries, and a cautious verdict. Replaced the broader AWS Bedrock alternative with Browser Use because it is a browser-agent option rather than a model and agent platform.
