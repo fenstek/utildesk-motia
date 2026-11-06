@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="color-scheme" content="light">
+    <title>Поздравительная открытка</title>
+    <style>
+      :root {
+        color-scheme: light;
+        background: #f6ebe2;
+        --space-top: max(12px, env(safe-area-inset-top));
+        --space-right: max(12px, env(safe-area-inset-right));
+        --space-bottom: max(12px, env(safe-area-inset-bottom));
+        --space-left: max(12px, env(safe-area-inset-left));
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-width: 0;
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background: radial-gradient(ellipse at center, #fff8f2 0%, #f8eee7 58%, #f1e3d8 100%);
+      }
+
+      main {
+        display: grid;
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100svh;
+        padding: var(--space-top) var(--space-right) var(--space-bottom) var(--space-left);
+        place-items: center;
+      }
+
+      video {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: calc(100vw - var(--space-left) - var(--space-right));
+        max-height: calc(100svh - var(--space-top) - var(--space-bottom));
+        aspect-ratio: 4 / 5;
+        background: #f6ebe2;
+        object-fit: contain;
+      }
+
+      video:focus-visible {
+        outline: 2px solid #8d503a;
+        outline-offset: 3px;
+      }
+
+      @supports not (height: 100svh) {
+        main {
+          min-height: 100vh;
+        }
+
+        video {
+          max-height: calc(100vh - var(--space-top) - var(--space-bottom));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <video
+        id="greeting-card"
+        width="896"
+        height="1120"
+        muted
+        loop
+        playsinline
+        controls
+        preload="metadata"
+        poster="greeting-poster.webp"
+        aria-label="Поздравительная открытка для Гали"
+      >
+        <source src="greeting-loop.mp4" type="video/mp4">
+      </video>
+    </main>
+    <script>
+      (() => {
+        const video = document.querySelector("#greeting-card");
+        const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+        const syncPlayback = () => {
+          if (motionPreference.matches) {
+            video.autoplay = false;
+            video.pause();
+            return;
+          }
+
+          video.autoplay = true;
+          const playback = video.play();
+          if (playback) playback.catch(() => {});
+        };
+
+        syncPlayback();
+        motionPreference.addEventListener?.("change", syncPlayback);
+      })();
+    </script>
+  </body>
+</html>
