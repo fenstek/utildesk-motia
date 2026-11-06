@@ -1,4 +1,5 @@
 import { getToolContextHints } from "../../shared/toolDetailViewModel.mjs";
+import { translateLabel, translatePriceModelLabel } from "../../shared/toolLabelTranslations.mjs";
 import type { RuntimeContentEntry, RuntimeGuideContextEntry, RuntimeLocale, RuntimeToolContextEntry } from "./runtimeContent";
 
 const stringValue = (data: Record<string, unknown>, key: string) => typeof data[key] === "string" ? String(data[key]) : "";
@@ -67,7 +68,7 @@ export function runtimeToolDescription(entry: RuntimeContentEntry, locale: Runti
   return explicit || excerptFromMarkdown(entry.markdown, true);
 }
 
-export function runtimeDisplayTools(entries: RuntimeToolContextEntry[]) {
+export function runtimeDisplayTools(entries: RuntimeToolContextEntry[], locale: RuntimeLocale) {
   return entries.map((entry) => {
     const data = entry.metadata;
     const title = entry.title;
@@ -77,9 +78,9 @@ export function runtimeDisplayTools(entries: RuntimeToolContextEntry[]) {
     return {
       slug: entry.slug,
       title,
-      category: entry.category,
-      priceModel: entry.priceModel,
-      price_model: entry.priceModel,
+      category: locale === "en" ? translateLabel(entry.category || stringValue(data, "category")) || null : entry.category,
+      priceModel: locale === "en" ? translatePriceModelLabel(entry.priceModel || stringValue(data, "price_model")) || null : entry.priceModel,
+      price_model: locale === "en" ? translatePriceModelLabel(entry.priceModel || stringValue(data, "price_model")) || null : entry.priceModel,
       tags: stringArray(data.tags),
       excerpt: entry.excerpt,
       ...resolved,

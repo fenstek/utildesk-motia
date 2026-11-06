@@ -1,5 +1,6 @@
 import { marked } from "marked";
 import { classifyToolEntry, isCuratedToolEntry, stripTemplateBoilerplate } from "../src/lib/toolQuality.mjs";
+import { translateLabel, translatePriceModelLabel } from "./toolLabelTranslations.mjs";
 
 export const TOOL_SITE_URL = "https://tools.utildesk.de";
 
@@ -305,8 +306,10 @@ export function buildToolDetailViewModel({
   const markdownSource = asString(localized.markdown ?? entry.content);
   const markdown = isCuratedTool ? markdownSource : stripTemplateBoilerplate(markdownSource);
   const title = asString(localized.title ?? data.title) || slug;
-  const category = asString(localized.category ?? data.category) || null;
-  const priceModel = asString(localized.priceModel ?? data.price_model) || null;
+  const categoryValue = asString(localized.category ?? data.category);
+  const category = categoryValue ? (locale === "en" ? translateLabel(categoryValue) : categoryValue) : null;
+  const priceModelValue = asString(localized.priceModel ?? data.price_model);
+  const priceModel = priceModelValue ? (locale === "en" ? translatePriceModelLabel(priceModelValue) : priceModelValue) : null;
   const sourceToolFacts = localized.toolFacts ?? (locale === "de" ? data.tool_facts : null);
   const unknownFact = locale === "en" ? "check" : "prüfen";
   const openSourceFact = asString(sourceToolFacts?.open_source)

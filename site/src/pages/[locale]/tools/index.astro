@@ -27,12 +27,15 @@ const recentRatgeber = ratgeberEntries.slice(0, 3);
 
 const categoryCounts = Array.from(
   enabledTools.reduce((map, tool) => {
-    const category = tool.category || "Unsorted";
-    map.set(category, (map.get(category) || 0) + 1);
+    const label = tool.category || "Unsorted";
+    const value = tool.categoryFilterValue || label;
+    const existing = map.get(value);
+    map.set(value, { label, count: (existing?.count || 0) + 1 });
     return map;
-  }, new Map<string, number>()),
+  }, new Map<string, { label: string; count: number }>()),
 )
-  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "en"))
+  .map(([value, category]) => ({ value, ...category }))
+  .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "en"))
   .slice(0, 8);
 
 const jumpLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "#"];
@@ -259,16 +262,16 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       </div>
       <div class="inv-filter-group">
         <h3>Category</h3>
-        {categoryCounts.map(([category, count]) => (
+        {categoryCounts.map(({ value, label, count }) => (
           <button
             type="button"
             class="inv-filter-option"
             data-filter-type="category"
-            data-filter-value={category.toLowerCase()}
+            data-filter-value={value.toLowerCase()}
             aria-pressed="false"
           >
             <span class="inv-filter-box" aria-hidden="true"></span>
-            <span>{category}</span>
+            <span>{label}</span>
             <em>{count}</em>
           </button>
         ))}
@@ -278,7 +281,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <div class="tools-grid inv-register inv-view-register" id="tools-grid" data-inventory-api="/en/api/tools.json" data-inventory-locale="en">
       {initialTools.map((tool, idx) => {
         const verdict = getDisplayToolVerdict(tool);
-        const categoryValue = (tool.category || "Unsorted").toLowerCase();
+        const categoryValue = (tool.categoryFilterValue || tool.category || "Unsorted").toLowerCase();
         const priceModel = tool.priceModel || tool.price_model;
         return (
           <a

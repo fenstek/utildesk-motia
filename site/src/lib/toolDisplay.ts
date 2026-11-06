@@ -14,6 +14,7 @@ export type DisplayTool = {
   slug: string;
   title: string;
   category: string | null;
+  categoryFilterValue: string | null;
   priceModel: string | null;
   price_model: string | null;
   iconUrl: string | null;
@@ -94,6 +95,7 @@ export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promi
   const englishMeta = locale === "en" ? getEnglishToolMeta(entry) : null;
   const title = englishMeta?.title ?? String(entry.data.title ?? slug);
   const category = englishMeta?.category ?? (entry.data.category ? String(entry.data.category) : null);
+  const categoryFilterValue = englishMeta?.categoryFilterValue ?? (entry.data.category ? String(entry.data.category).trim() : null);
   const priceModel = englishMeta?.priceModel ?? normalizePriceModel(entry.data.price_model);
   const tags = englishMeta?.tags ?? rawTags;
   const description = englishMeta?.description ?? germanDescription;
@@ -116,6 +118,7 @@ export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promi
     slug,
     title,
     category,
+    categoryFilterValue,
     priceModel,
     price_model: priceModel,
     iconUrl,

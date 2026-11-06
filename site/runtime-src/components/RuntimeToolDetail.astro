@@ -38,7 +38,7 @@ const view = buildToolDetailViewModel({
     editorialVerdictText: entry.metadata.editorial_verdict_text,
     editorialTrustLabel: entry.metadata.editorial_trust_label,
   },
-  displayTools: runtimeDisplayTools(tools),
+  displayTools: runtimeDisplayTools(tools, locale),
   categories: CATEGORIES,
   guideBacklinks: backlinks,
   contentLastmod: { [`content/tools/${entry.slug}.md`]: entry.sourceUpdatedAt || entry.sourcePublishedAt || "" },

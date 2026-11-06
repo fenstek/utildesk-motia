@@ -6,6 +6,7 @@ import { fromContent } from "./contentRoot.mjs";
 import { stripMarkdown } from "./machineReadable";
 import { normalizePriceModel } from "./priceModel";
 import { isPublishableTool } from "../../shared/toolPublicState.mjs";
+import { translateLabel as translateSharedLabel, translatePriceModelLabel } from "../../shared/toolLabelTranslations.mjs";
 
 export const CATEGORY_EN: Record<string, { title: string; description: string }> = {
   "ai-chatbots": {
@@ -40,50 +41,6 @@ export const CATEGORY_EN: Record<string, { title: string; description: string }>
     title: "Marketing & Sales",
     description: "AI tools for SEO, content marketing, campaigns, CRM, ads and sales automation.",
   },
-};
-
-const CATEGORY_LABELS: Record<string, string> = {
-  produktivitaet: "Productivity",
-  produktivität: "Productivity",
-  schreiben: "Writing",
-  content: "Content",
-  audio: "Audio",
-  video: "Video",
-  design: "Design",
-  marketing: "Marketing",
-  vertrieb: "Sales",
-  automatisierung: "Automation",
-  automation: "Automation",
-  entwickler: "Developer Tools",
-  "developer tools": "Developer Tools",
-  vergleich: "Comparison",
-  anleitung: "Guide",
-  einordnung: "Analysis",
-  workflow: "Workflow",
-};
-
-const PRICE_LABELS: Record<string, string> = {
-  Kostenlos: "Free",
-  Freemium: "Freemium",
-  Kostenpflichtig: "Paid",
-  "Open Source": "Open Source",
-  Abonnement: "Subscription",
-  Nutzungsbasiert: "Usage-based",
-  Einmalzahlung: "One-time purchase",
-  "Individuelles Angebot": "Custom quote",
-  "Je nach Plan": "Plan-based",
-  Testversion: "Trial",
-  "Auf Anfrage": "On request",
-};
-
-const TAG_LABELS: Record<string, string> = {
-  "ki-agenten": "AI agents",
-  "ki-assistenten": "AI assistants",
-  "ki-orchestrierung": "AI orchestration",
-  softwareentwicklung: "software development",
-  produktivitaet: "productivity",
-  produktivität: "productivity",
-  webstrategie: "web strategy",
 };
 
 type ToolEntryLike = { slug: string; data: Record<string, any>; content: string };
@@ -129,15 +86,12 @@ export const categoryDescriptionEn = (slug: string, fallback?: string) =>
   CATEGORY_EN[slug]?.description ?? translateLabel(fallback ?? slug);
 
 export const translateLabel = (value?: string | null) => {
-  const raw = String(value ?? "").trim();
-  if (!raw) return "";
-  const key = raw.toLowerCase();
-  return CATEGORY_LABELS[key] ?? TAG_LABELS[key] ?? raw;
+  return translateSharedLabel(value);
 };
 
 export const translatePriceModel = (value?: string | null) => {
   const normalized = normalizePriceModel(value);
-  return normalized ? PRICE_LABELS[normalized] ?? normalized : "";
+  return normalized ? translatePriceModelLabel(normalized) : "";
 };
 
 export const translateTags = (tags: string[] = []) =>
@@ -207,8 +161,11 @@ export const getEnglishToolMeta = (entry: ToolEntryLike) => {
   if (translation) {
     const title = String(translation.data.title ?? entry.data.title ?? entry.slug).trim();
     const category = translation.data.category
-      ? String(translation.data.category)
+      ? translateLabel(String(translation.data.category))
       : translateLabel(entry.data.category ? String(entry.data.category) : "");
+    const categoryFilterValue = entry.data.category
+      ? String(entry.data.category).trim()
+      : translation.data.category ? String(translation.data.category).trim() : null;
     const priceModel = translation.data.price_model
       ? translatePriceModel(String(translation.data.price_model)) || String(translation.data.price_model).trim()
       : translatePriceModel(entry.data.price_model ? String(entry.data.price_model) : "");
@@ -227,6 +184,7 @@ export const getEnglishToolMeta = (entry: ToolEntryLike) => {
     return {
       title,
       category,
+      categoryFilterValue,
       priceModel,
       toolFacts: localizedToolFacts(translation.data.tool_facts),
       editorialVerdictHeadline: String(translation.data.editorial_verdict_headline ?? ""),
@@ -243,6 +201,7 @@ export const getEnglishToolMeta = (entry: ToolEntryLike) => {
 
   const title = String(entry.data.title ?? entry.slug).trim();
   const category = translateLabel(entry.data.category ? String(entry.data.category) : "");
+  const categoryFilterValue = entry.data.category ? String(entry.data.category).trim() : null;
   const priceModel = translatePriceModel(entry.data.price_model ? String(entry.data.price_model) : "");
   const tags = translateTags(Array.isArray(entry.data.tags) ? entry.data.tags.map(String) : []);
   const officialUrl = entry.data.official_url ? String(entry.data.official_url) : "";
@@ -252,6 +211,7 @@ export const getEnglishToolMeta = (entry: ToolEntryLike) => {
   return {
     title,
     category,
+    categoryFilterValue,
     priceModel,
     toolFacts: {},
     editorialVerdictHeadline: "",

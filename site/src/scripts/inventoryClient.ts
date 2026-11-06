@@ -2,6 +2,7 @@ type InventoryItem = {
   slug: string;
   title: string;
   category?: string | null;
+  categoryFilterValue?: string | null;
   priceModel?: string | null;
   price_model?: string | null;
   tags?: string[];
@@ -54,7 +55,7 @@ if (grid) {
     card.className = `card tool-card inv-row inv-row-verdict-${verdict.value}${item.editorialImage ? " has-editorial-art" : ""}`;
     Object.assign(card.dataset, {
       title: text(item.title).toLowerCase(), slug: text(item.slug).toLowerCase(),
-      tags: tags.map((tag) => text(tag).toLowerCase()).join(","), category: category.toLowerCase(),
+      tags: tags.map((tag) => text(tag).toLowerCase()).join(","), category: text(item.categoryFilterValue || category).toLowerCase(),
       search: text(item.excerpt || item.description).toLowerCase(),
       verdict: verdict.value, letter: letterFor(text(item.title)), added: text(item.addedAtMs || 0),
       addedOrder: text(item.addedAtOrderMs || 0), popularity: text(item.popularity || 0),
