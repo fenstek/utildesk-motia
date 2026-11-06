@@ -6,7 +6,7 @@ import {
   getWordCountFromMarkdown,
 } from "../../src/lib/machineReadable";
 import { normalizePriceModel } from "../../src/lib/priceModel";
-import { translateLabel, translatePriceModel, translateTags } from "../../src/lib/englishContent";
+import { translateLabel, translatePriceModelLabel, translateTags } from "../../shared/toolLabelTranslations.mjs";
 import { normalizeToolEditorialVerdict } from "../../src/lib/toolVerdict";
 import { classifyToolEntry, isCuratedToolEntry, stripTemplateBoilerplate } from "../../src/lib/toolQuality.mjs";
 import type { RuntimeContentEntry, RuntimeLocale } from "./runtimeContent";
@@ -54,11 +54,13 @@ export function buildRuntimeDisplayTool(entry: RuntimeContentEntry, locale: Runt
   const tags = locale === "en" && !Array.isArray(data.tags) ? translateTags(rawTags) : stringArray(data.tags);
   const title = entry.title;
   const description = runtimeToolDescription(entry, locale);
-  const category = entry.category || stringValue(data, "category")
-    || (locale === "en" ? translateLabel(primaryEntry.category || stringValue(primaryData, "category")) : "")
-    || null;
+  const categorySource = entry.category || stringValue(data, "category")
+    || (locale === "en" ? primaryEntry.category || stringValue(primaryData, "category") : "");
+  const category = categorySource
+    ? (locale === "en" ? translateLabel(categorySource) : categorySource)
+    : null;
   const normalizedPriceModel = normalizePriceModel(entry.priceModel || data.price_model || primaryEntry.priceModel || primaryData.price_model);
-  const priceModel = locale === "en" ? translatePriceModel(normalizedPriceModel) : normalizedPriceModel;
+  const priceModel = locale === "en" ? translatePriceModelLabel(normalizedPriceModel) : normalizedPriceModel;
   const providerUrl = stringValue(primaryData, "affiliate_url") || stringValue(primaryData, "official_url") || stringValue(data, "affiliate_url") || stringValue(data, "official_url") || null;
   const brandLogo = stringValue(primaryData, "brandLogo") || stringValue(data, "brandLogo") || null;
   const localLogoExtension = LOCAL_LOGOS.get(entry.slug);
@@ -74,6 +76,7 @@ export function buildRuntimeDisplayTool(entry: RuntimeContentEntry, locale: Runt
     slug: entry.slug,
     title,
     category,
+    categoryFilterValue: categorySource || null,
     priceModel,
     price_model: priceModel,
     iconUrl,
@@ -145,7 +148,12 @@ export function buildRuntimeToolJson(entry: RuntimeContentEntry, locale: Runtime
   const canonicalUrl = `${SITE_URL}${prefix}/tools/${entry.slug}/`;
   const markdownUrl = `${SITE_URL}${prefix}/markdown/tools/${entry.slug}.md`;
   const normalizedPrice = normalizePriceModel(entry.priceModel || data.price_model || primaryEntry.priceModel || primaryData.price_model);
-  const priceModel = locale === "en" ? translatePriceModel(normalizedPrice) : normalizedPrice;
+  const priceModel = locale === "en" ? translatePriceModelLabel(normalizedPrice) : normalizedPrice;
+  const categorySource = entry.category || stringValue(data, "category")
+    || (locale === "en" ? primaryEntry.category || stringValue(primaryData, "category") : "");
+  const category = categorySource
+    ? (locale === "en" ? translateLabel(categorySource) : categorySource)
+    : null;
   const officialUrl = stringValue(primaryData, "official_url") || stringValue(data, "official_url") || null;
   const affiliateUrl = stringValue(primaryData, "affiliate_url") || stringValue(data, "affiliate_url") || null;
   return {
@@ -157,7 +165,8 @@ export function buildRuntimeToolJson(entry: RuntimeContentEntry, locale: Runtime
     data: locale === "en" ? {
       slug: entry.slug,
       title: entry.title,
-      category: entry.category || stringValue(data, "category") || null,
+      category,
+      categoryFilterValue: categorySource || null,
       priceModel,
       tags: stringArray(data.tags),
       description: runtimeToolDescription(entry, locale),
@@ -171,7 +180,8 @@ export function buildRuntimeToolJson(entry: RuntimeContentEntry, locale: Runtime
       slug: entry.slug,
       title: entry.title,
       url: canonicalUrl,
-      category: entry.category || stringValue(data, "category") || null,
+      category,
+      categoryFilterValue: categorySource || null,
       priceModel,
       tags: stringArray(data.tags),
       description: runtimeToolDescription(entry, locale),

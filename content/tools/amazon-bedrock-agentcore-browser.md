@@ -3,18 +3,26 @@ slug: amazon-bedrock-agentcore-browser
 title: Amazon Bedrock AgentCore Browser
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: 2026-07-19
+editorial_reviewed_at: 2026-11-06
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-19-full-tool-card-editorial"
+editorial_batch: "2026-11-06-full-tool-card-editorial"
+editorial_verdict: caution
+editorial_verdict_headline: "Mit Vorbehalt: zuerst einen lesenden Ablauf prüfen"
+editorial_verdict_text: "Die dokumentierten Isolations-, Live-View- und IAM-Funktionen passen, wenn ein Portal keinen geeigneten API-Zugang bietet. Beginnen Sie mit einem begrenzten Leseablauf und prüfen Sie Rechte, Netzwerk, Ergebnisqualität und Kosten im Zielkonto."
+editorial_trust_label: "Quellen geprüft · 06.11.2026"
 category: AI Infrastructure
 price_model: Nutzungsbasiert
+tool_facts:
+  hosting: "AWS Cloud"
+  open_source: "prüfen"
+  self_hostable: "prüfen"
 tags: [aws, browser-automation, ai-agents, infrastructure]
 official_url: "https://aws.amazon.com/bedrock/agentcore/"
-description: "Verwaltete, isolierte Browser-Laufzeit für KI-Agenten mit Sitzungssteuerung, Live-Ansicht, Aufzeichnung und AWS-Berechtigungsmodell."
+description: "Isolierte Browser-Laufzeit für Agenten mit Sitzungssteuerung, Live-Ansicht, optionaler Aufzeichnung und konfigurierbaren AWS-Berechtigungen und Netzwerken."
 popularity: 0
 tier: C
 generated_at: 2026-07-19
-updated_at: 2026-07-19
+updated_at: 2026-11-06
 ---
 # Amazon Bedrock AgentCore Browser
 
@@ -29,71 +37,89 @@ Amazon Bedrock AgentCore Browser stellt KI-Agenten eine verwaltete, isolierte Br
 
 ## Was ist AgentCore Browser und für wen ist es gedacht?
 
-Der Dienst gehört zur Amazon-Bedrock-AgentCore-Plattform, kann aber als Browser-Werkzeug in eine eigene Agentenarchitektur eingebunden werden. Er passt zu AWS-Teams, die Browserinteraktionen in einer separat ausgeführten Umgebung benötigen und IAM, CloudWatch, CloudTrail, S3 sowie bestehende Betriebsprozesse nutzen möchten. Typische Fälle sind portalbasierte Recherche, das Ausfüllen nicht per API erreichbarer Masken und beaufsichtigte Backoffice-Abläufe.
+Amazon Bedrock AgentCore Browser führt Webschritte eines Agenten in einer isolierten Cloud-Browsersitzung aus. Er ist für AWS-Teams interessant, wenn ein Portal keinen geeigneten API-Zugang bietet und die Sitzung in bestehende Berechtigungs- und Betriebsabläufe passen soll. Der Browser führt Interaktionen aus; er bestätigt weder selbst die fachliche Richtigkeit eines Werts noch macht er eine Folgeaktion sicher.
 
-Für stabile Systeme mit dokumentierter API ist eine direkte API-Integration meist schneller, günstiger und robuster. AgentCore Browser sollte deshalb nicht zum Standardweg für jede Integration werden, sondern die Lücke schließen, in der eine Weboberfläche tatsächlich der verfügbare Zugriffskanal ist.
+Bei einer stabilen, dokumentierten API sollte zuerst geprüft werden, ob sie den benötigten Vorgang abdeckt. Browser-Automation ist sinnvoll, wenn tatsächlich die Weboberfläche der Zugang ist, etwa für eine begrenzte Recherche oder ein beaufsichtigtes Backoffice-Verfahren.
 
 ## Welche Komponenten bilden eine Browsersitzung?
 
-AWS bietet einen verwalteten Browser für den schnellen Einstieg und konfigurierbare eigene Browser-Ressourcen. Eine Anwendung startet eine isolierte Sitzung und erhält Endpunkte für Automation und Live View. Über die WebSocket-basierte Automation lässt sich der Browser per Chrome DevTools Protocol ansprechen; Playwright und Agentenframeworks können darauf aufsetzen. Eine zusätzliche InvokeBrowser-Schnittstelle steuert Maus, Tastatur und Screenshots auf Betriebssystemebene, wenn CDP etwa einen nativen Dialog nicht erreicht.
+Für den Einstieg stellt AWS einen verwalteten Browser bereit; eigene Browser-Ressourcen erlauben unter anderem eigene IAM-Rollen, Netzwerkeinstellungen und Sitzungsaufzeichnung. Die Anwendung startet eine Sitzung mit Zeitlimit. Die Sitzungen sind isoliert; Live View zeigt den laufenden Browser und lässt einen berechtigten Menschen bei Bedarf eingreifen. Aufzeichnung ist für benutzerdefinierte Browser verfügbar und wird im eigenen S3-Bucket gespeichert. [AWS beschreibt verwaltete und benutzerdefinierte Browser, Live View und Recording in der Browser-Dokumentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-tool.html).
 
-Sitzungen haben ein konfigurierbares Zeitlimit. Benutzerdefinierte Browser können Rollen, Netzwerkeinstellungen und eine Aufzeichnung in S3 erhalten. Live View erlaubt einem Menschen, den Lauf zu beobachten und bei Bedarf direkt einzugreifen. CloudWatch-Metriken, CloudTrail-Ereignisse und Session Replay ergänzen die technische Spur, ersetzen aber keine fachliche Ergebnisprotokollierung.
+## Wie sieht ein sicherer Leseablauf aus?
 
-## Wie führt man einen Browser-Agenten kontrolliert ein?
+Ein begrenztes Beispiel ist das Nachschlagen eines Vorgangs in einem Kundenportal. Die Eingabe besteht aus einer Vorgangs-ID und einem separaten Portal-Konto mit Leserechten. Die Anwendung startet eine Sitzung mit kurzem, zum Ablauf passendem Zeitlimit und lässt nur die benötigten Browser- und AWS-Ressourcen zu. Über die erlaubte Portal-Domain liest Playwright Status und Datum aus und gibt diese Werte zusammen mit Quell-URL und Abrufzeit strukturiert zurück.
 
-Wählen Sie zunächst einen reversiblen Ablauf auf einer klar abgegrenzten Website. Definieren Sie Startzustand, erlaubte Domains, erwartete Seiten, Abbruchbedingungen und das strukturierte Ergebnis. Erstellen Sie eine Browser-Ressource mit minimaler IAM-Rolle und entscheiden Sie bewusst zwischen öffentlichem Netzwerk, VPC-Anbindung oder eigenem Proxy. Zugangsdaten gehören in einen verwalteten Secret-Prozess, nicht in Prompt oder Sitzungsprotokoll.
+Die Automatisierung klickt nicht auf „Senden“, „Freigeben“ oder ähnliche Schaltflächen. Ein Mensch vergleicht die Felder im Live View oder auf der Quellseite und bestätigt den Datensatz; unklare oder fehlende Werte bleiben als ungeprüft markiert. Bei einer unerwarteten Domain, abgelaufener Anmeldung, CAPTCHA oder geänderter Seite stoppt der Ablauf, statt weitere Klicks zu raten. Danach beendet die Anwendung die Sitzung ausdrücklich; AWS dokumentiert sowohl manuelles Stoppen als auch das Ende über den konfigurierten Timeout ([Sitzungsgrundlagen](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-resource-session-management.html), [Sitzungen verwalten](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-managing-sessions.html)).
 
-Testen Sie Navigation und Extraktion zuerst ohne schreibende Aktion. Danach können Sie einen einzelnen Formularschritt ergänzen, während Absenden, Kauf oder Veröffentlichung eine menschliche Bestätigung verlangt. Die Agentenanwendung sollte jede Sitzung mit einer fachlichen Task-ID verknüpfen, Zeitouts behandeln und bei unerwarteten Domains, Captchas oder Layouts sicher stoppen.
+## Was übernimmt der Browser gegenüber Modell und Orchestrator?
 
-## Wie funktioniert die Integration im Betrieb?
+Die Browser-Ressource stellt die Ausführungsumgebung und die Verbindungen für eine Sitzung bereit. Das Modell interpretiert die Aufgabe und kann nächste Schritte vorschlagen. Die Agentenanwendung beziehungsweise der Orchestrator entscheidet, wann der Browser aufgerufen wird, welche Domains erlaubt sind, welches Ergebnisformat gilt und wo eine menschliche Freigabe nötig ist. Keine dieser Komponenten macht aus einer plausiblen Extraktion automatisch einen geprüften Geschäftsvorgang.
 
-Die Anwendung startet und beendet Sitzungen über AgentCore-APIs und streamt Automationsbefehle über den bereitgestellten Endpunkt. Für Standard-DOM-Aktionen bietet sich Playwright an; OS-Aktionen sind eine gezielte Ergänzung, keine universelle Ersatzsteuerung. Wer konstante Ausgangs-IP-Adressen benötigt, kann den Verkehr über einen eigenen Proxy leiten. Zugang zum Proxy und zu S3-Aufzeichnungen muss über getrennte, minimal berechtigte Rollen erfolgen.
+Für DOM-Navigation, Formulare und Auslesen lässt sich der WebSocket-Endpunkt über das Chrome DevTools Protocol (CDP) mit Playwright ansprechen. `InvokeBrowser` ergänzt Maus-, Tastatur- und Screenshot-Aktionen auf Betriebssystemebene, etwa für native Dialoge, die nicht im DOM liegen. Das ist eine andere Steuerungsebene, keine Zusage höherer Agentenzuverlässigkeit ([AWS zu CDP und OS-Aktionen](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-invoke.html)).
 
-Im Betrieb sind Sitzungslebensdauer, Parallelität, Fehlerquote, aktive CPU- und Speichernutzung sowie Zielseitenänderungen relevant. Ein Cleanup-Prozess beendet verwaiste Sitzungen. Aufzeichnungen erhalten eine begrenzte Retention, und Live View wird nur Rollen zugänglich gemacht, die auch die darin sichtbaren Daten sehen dürfen.
+Die API kennt `PUBLIC` und `VPC` als Netzwerkmodi. Ein eigener Proxy wird separat als Sitzungskonfiguration angegeben und ist kein dritter Modus. Diese Browser-Proxy-Einstellung ersetzt keine Netzwerkdurchsetzung: Für privaten Zugriff und kontrollierten Egress kann VPC nötig sein. Benötigt eine VPC-Sitzung außerdem Zugriff auf öffentliche Portale, muss das Routing einschließlich NAT passen; ein öffentliches Subnetz allein stellt laut AWS keinen Internetzugang bereit ([Netzwerkmodi](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_BrowserNetworkConfiguration.html), [VPC-Zugang](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-vpc.html), [Browser-Proxys](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-proxies.html)).
 
 ## Wie prüft man Zuverlässigkeit und Ergebnisqualität?
 
-Ein Testkorpus sollte normale Seiten, verzögerte Inhalte, Login-Ablauf, modale Dialoge, Pagination, leere Ergebnisse und bewusst veränderte Selektoren enthalten. Bewertet werden nicht nur Task-Erfolg, sondern korrekte Datenerfassung, Zahl unnötiger Aktionen, Wiederanlauf nach Timeout und sichere Abbrüche. Für transaktionale Abläufe braucht jeder Schritt eine idempotente Prüfung, damit ein Retry keine doppelte Buchung oder Nachricht erzeugt.
+Ein Testkorpus sollte normale Seiten, verzögertes Laden, abgelaufene Anmeldung, Dialoge, Pagination, leere Ergebnisse und geänderte Selektoren abdecken. Verglichen werden die extrahierten Felder mit bekannten Referenzwerten; zusätzlich zählen sichere Abbrüche und unnötige Aktionen. Für einen Schreibablauf braucht jeder Schritt eine eigene Prüfung gegen Doppelaktionen, und eine irreversible Übermittlung sollte bis zur ausdrücklichen menschlichen Bestätigung gesperrt bleiben.
 
-Screenshots und Replay helfen bei der Diagnose, sind aber kein automatischer Wahrheitsbeleg. Vergleichen Sie extrahierte Werte mit einer bekannten Referenz und testen Sie die Agentenentscheidung separat von der Browsermechanik. Ein Produktionskandidat benötigt außerdem Lasttests mit realistischer Parallelität und ein Budget für Websites, die ihren Aufbau ohne Vorankündigung ändern.
+Screenshots und Replay helfen bei der Fehlersuche, sind aber kein Wahrheitsbeleg. Prüfen Sie die Browsermechanik getrennt von der Entscheidung des Modells und beobachten Sie Zielseitenänderungen, Timeouts und Wiederholungen. Ein Agent kann auch mit funktionierendem Browser falsche Schlüsse ziehen.
 
 ## Welche Sicherheits- und Datenschutzgrenzen sind wichtig?
 
-Die Container-Isolation trennt Webaktivität vom eigenen Host, verhindert aber nicht, dass ein Agent auf einer erlaubten Seite falschen Anweisungen folgt. Seiteninhalt ist untrusted input. Domain-Allowlisting, Egress-Regeln, minimale IAM-Rollen, getrennte Identitäten und ein Verbot irreversibler Aktionen ohne Freigabe begrenzen den Schaden. Sitzungs-Cookies und gespeicherte Profile sind Zugangsdaten und benötigen entsprechende Schutz- und Löschregeln.
+Die Isolation trennt die Browsersitzung vom eigenen Host, aber nicht den Agenten von irreführenden Anweisungen auf einer erlaubten Website. Behandeln Sie Seiteninhalt als nicht vertrauenswürdige Eingabe. Begrenzen Sie IAM auf die nötigen Browseraktionen und Ressourcen, verwenden Sie eine separate Portalidentität mit den passenden Leserechten und definieren Sie erlaubte Domains sowie Egress-Regeln. Zugangsdaten gehören in einen dafür vorgesehenen Secret-Prozess, nicht in den Prompt.
 
-Live View, Screenshots und Replay können personenbezogene oder vertrauliche Inhalte enthalten. Vor der Aktivierung sind Zweck, Speicherort, S3-Verschlüsselung, Retention und Zugriffsprotokollierung festzulegen. CloudTrail dokumentiert API-Aufrufe, nicht automatisch die fachliche Rechtmäßigkeit der vom Agenten vorgenommenen Handlung.
+Browserprofile können Cookies und `localStorage` über Sitzungen hinweg erhalten. Änderungen werden erst mit einem ausdrücklichen Speichervorgang gesichert; Sitzungen mit demselben Profil bleiben voneinander unabhängig, und abgelaufene Website-Cookies werden nicht durch das Profil wieder gültig. IAM steuert den Zugriff auf Profile. Behandeln Sie sie deshalb wie Zugangsdaten und speichern Sie nur, was der Ablauf benötigt ([AWS zu Browserprofilen](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-profiles.html)).
+
+Live View, Screenshots und Aufzeichnungen können vertrauliche Portalinhalte zeigen. Legen Sie vor dem Einschalten Zweck, Rollen, S3-Zugriff und Aufbewahrungsdauer fest. CloudTrail protokolliert API-Aufrufe, nicht die fachliche Richtigkeit oder Rechtmäßigkeit eines Ergebnisses.
 
 ## Wie setzen sich die Kosten zusammen?
 
-AgentCore Browser wird nach aktiver CPU- und Speichernutzung innerhalb der Sitzung abgerechnet. Leerlauf und I/O-Verhalten beeinflussen die Rechnung; genaue Preise hängen von Region und aktueller AWS-Preisliste ab. Zusätzlich können Kosten für das verwendete Sprachmodell, AgentCore Runtime oder Gateway, Datenübertragung, Proxy-Infrastruktur, S3-Aufzeichnungen sowie CloudWatch-Logs und -Metriken entstehen.
+AWS berechnet Browser-CPU nach tatsächlicher Nutzung und Speicher nach dem belegten Spitzenwert, jeweils in Sekundenintervallen über die Sitzung. Während einer I/O-Wartezeit kann die CPU-Abrechnung bei fehlender Hintergrundaktivität auf null fallen; Speicher und andere Ressourcen werden dadurch nicht pauschal kostenlos. Die [aktuelle AWS-Preisseite](https://aws.amazon.com/bedrock/agentcore/pricing/) nennt außerdem S3-Speicher für Profile und Netzwerkübertragung als mögliche Posten.
 
-Messen Sie deshalb Kosten pro erfolgreich abgeschlossenem Vorgang statt nur pro Sitzung. Kurze Timeouts, kontrollierte Parallelität, frühe Abbrüche und direkte APIs für stabile Teilaufgaben reduzieren Verbrauch. Ein eigener Browsercluster kann bei sehr gleichmäßiger hoher Last wirtschaftlicher sein, verursacht dafür aber Patch-, Skalierungs- und Sicherheitsarbeit.
+Je nach Aufbau kommen Modell, AgentCore Runtime oder Gateway, CloudWatch, Aufzeichnungen, Datenverkehr sowie eigene Proxy- oder NAT-Infrastruktur hinzu. Region, Konto und Konfiguration bestimmen den tatsächlichen Betrag; ein verlässlicher lokaler Rechnungsbetrag lässt sich ohne diese Angaben nicht versprechen. Beenden Sie Sitzungen, messen Sie Kosten pro geprüfter Aufgabe und kalkulieren Sie die zusätzlichen AWS-Ressourcen separat.
 
 ## Redaktionelle Einschätzung
 
-Amazon Bedrock AgentCore Browser ist eine passende Wahl für AWS-orientierte Plattformteams, die agentische Webinteraktionen isolieren, beobachten und in ihr IAM-Modell integrieren müssen. Der größte Wert entsteht bei wechselnden, nicht per API erreichbaren Oberflächen mit klarer menschlicher Aufsicht. Für einfache Scrapes, lokale Tests oder gut dokumentierte APIs sind Playwright, Puppeteer oder eine direkte Integration schlanker und transparenter.
+**Redaktionelles Verdikt: Mit Vorbehalt.** AgentCore Browser passt zu AWS-Teams, deren Portal keinen geeigneten API-Zugang bietet und die isolierte Sitzungen, IAM, Netzwerkregeln und menschliche Prüfung selbst einrichten können. Beginnen Sie lesend und geben Sie Schreibaktionen erst nach einer nachvollziehbaren Prüfung frei. Für stabile API-Zugänge ist die direkte Schnittstelle der passendere Weg; für selbst betriebene Browser-Skripte kommt Playwright infrage, für einen gehosteten Browser außerhalb dieser AWS-Integration Browserbase.
 
 ## Alternativen
 
-- [Browserbase](/tools/browserbase/): Spezialisierte Cloud-Browser-Plattform für Automation, wenn eine AWS-native AgentCore-Umgebung nicht erforderlich ist.
-- [Playwright](/tools/playwright/): Open-Source-Framework mit direkter Browserkontrolle für Teams, die Laufzeit und Skalierung selbst betreiben.
-- [Puppeteer](/tools/puppeteer/): Schlankere JavaScript-Automation für Chromium-nahe Aufgaben ohne verwaltete Agentenplattform.
-- [AWS Bedrock](/tools/aws-bedrock/): Breitere AWS-Modell- und Agentenplattform, wenn der Browser nur ein Teil einer umfassenden KI-Architektur ist.
+- [Browserbase](/tools/browserbase/): Gehostete Browser-Infrastruktur für Teams, die Browser-Sitzungen außerhalb ihrer AgentCore-Umgebung betreiben möchten.
+- [Playwright](/tools/playwright/): Codegesteuerte Browser-Automation, wenn das Team Laufzeit und Betrieb selbst kontrollieren will.
+- [Puppeteer](/tools/puppeteer/): JavaScript-Steuerung für Chromium-Aufgaben, wenn kein AgentCore-Sitzungsdienst benötigt wird.
+- [Browser Use](/tools/browser-use/): Python-Bibliothek für Browser-Agenten, wenn das Team Agentenlogik und Browserbetrieb im eigenen Stack zusammensetzen möchte.
 
 ## FAQ
 
-**Ist AgentCore Browser nur mit Amazon-Bedrock-Modellen nutzbar?**
+**Was macht der Browser selbst, und was bleibt beim Modell oder Orchestrator?**
 
-AgentCore ist auf Framework- und Modellflexibilität ausgelegt. Die Browser-Laufzeit wird über APIs angebunden; Modell, Agentenframework und Orchestrierung werden separat gewählt.
+Der Browser führt Navigation und Interaktionen in der Sitzung aus. Das Modell interpretiert die Aufgabe; die Agentenanwendung setzt Regeln, wählt Aufrufe, prüft das strukturierte Ergebnis und fordert bei Bedarf eine Freigabe an. Eine erfolgreiche Browseraktion ist noch kein Nachweis für ein richtiges Ergebnis.
+
+**Lässt sich AgentCore Browser ohne Bedrock-Modell oder Agent-Framework mit Playwright nutzen?**
+
+Ja. AWS dokumentiert die direkte Nutzung von AgentCore Browser mit Playwright ohne Agent-Framework oder Large Language Model (LLM); Playwright steuert dabei die Browsersitzung programmatisch. Das bezieht sich auf direkte Browser-Automation und sagt nicht aus, dass Agentenabläufe generell ohne Modell auskommen ([AWS-Playwright-Kurzanleitung](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-quickstart-playwright.html), [AgentCore-FAQs](https://aws.amazon.com/bedrock/agentcore/faqs/)).
 
 **Kann ein Mensch eine laufende Sitzung beobachten?**
 
-Ja. Live View stellt einen Echtzeitblick auf die Browsersitzung bereit und erlaubt auch direkte Interaktion. Der Zugang sollte wegen möglicher vertraulicher Inhalte rollenbasiert begrenzt werden.
+Ja. Live View zeigt die Sitzung in Echtzeit und ermöglicht direkte Interaktion. Beschränken Sie den Zugriff auf Rollen, die auch die dort sichtbaren Daten sehen dürfen.
 
 **Warum gibt es CDP- und OS-Aktionen?**
 
-CDP eignet sich für DOM-basierte Navigation und Formulare. OS-Aktionen erreichen zusätzlich native Dialoge, Kontextmenüs, Tastenkürzel und vollständige Desktop-Screenshots.
+CDP steuert DOM-basierte Navigation und Formulare. OS-Aktionen erreichen zusätzlich native Dialoge, Tastenkürzel oder den gesamten Bildschirm. Sie sind eine Ergänzung für Fälle, die der Browser-DOM nicht abdeckt.
 
 **Ersetzt die Isolation eine Sicherheitsprüfung?**
 
-Nein. Sie trennt die Browsersitzung vom eigenen System, aber Zielseiten können untrusted Inhalte liefern. Berechtigungen, Egress, Bestätigungen und Datenaufbewahrung bleiben Aufgabe des Betreibers.
+Nein. Sie grenzt die Sitzung vom Host ab, verhindert aber nicht, dass Inhalte einer erlaubten Website den Agenten fehlleiten. IAM, Domain- und Egress-Regeln, menschliche Freigaben und Datenaufbewahrung bleiben nötig.
+
+**Wie bleiben Anmeldedaten über mehrere Sitzungen erhalten?**
+
+Ein Browserprofil kann Cookies und `localStorage` speichern. Das geschieht nur nach einem ausdrücklichen Speichervorgang; neue Sitzungen laden den gespeicherten Stand unabhängig, und Website-Cookies können ablaufen. Schützen Sie Profile deshalb per IAM.
+
+**Ist ein Proxy ein eigener Netzwerkmodus?**
+
+Nein. AgentCore Browser kennt `PUBLIC` und `VPC`; Proxy-Einstellungen werden separat an der Sitzung konfiguriert. Für Internetzugriff aus einer VPC kann NAT erforderlich sein, während der Browser-Proxy allein keine Netzwerkebene absichert.
+
+**Ist die Browser-Sitzung in Wartezeiten kostenlos?**
+
+Nicht pauschal. AWS rechnet CPU und Speicher nach der aktuellen Nutzungslogik ab; bei I/O-Wartezeit kann nur die CPU-Nutzung entfallen, während Speicher und weitere Dienste Kosten verursachen können. Prüfen Sie die Preise für Ihre Region und Ihr Konto.

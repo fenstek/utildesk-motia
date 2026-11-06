@@ -32,8 +32,13 @@ const view = buildToolDetailViewModel({
     tags: Array.isArray(entry.metadata.tags) ? entry.metadata.tags.map(String) : [],
     officialUrl: typeof entry.metadata.official_url === "string" ? entry.metadata.official_url : "",
     affiliateUrl: typeof entry.metadata.affiliate_url === "string" ? entry.metadata.affiliate_url : "",
+    toolFacts: entry.metadata.tool_facts,
+    editorialVerdict: entry.metadata.editorial_verdict,
+    editorialVerdictHeadline: entry.metadata.editorial_verdict_headline,
+    editorialVerdictText: entry.metadata.editorial_verdict_text,
+    editorialTrustLabel: entry.metadata.editorial_trust_label,
   },
-  displayTools: runtimeDisplayTools(tools),
+  displayTools: runtimeDisplayTools(tools, locale),
   categories: CATEGORIES,
   guideBacklinks: backlinks,
   contentLastmod: { [`content/tools/${entry.slug}.md`]: entry.sourceUpdatedAt || entry.sourcePublishedAt || "" },
@@ -120,10 +125,10 @@ const priceModel = view.priceModel;
           </div>
           <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">{en ? "Category" : "Kategorie"}</span><span class="akte-faktenblatt-val">{view.category || "—"}</span></div>
           <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">{en ? "Pricing model" : "Preismodell"}</span><span class="akte-faktenblatt-val">{priceModel || "—"}</span></div>
-          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Hosting</span><span class="akte-faktenblatt-val">Web / {en ? "provider" : "Anbieter"}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Hosting</span><span class="akte-faktenblatt-val">{view.toolFacts.hosting}</span></div>
           <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">{en ? "DPA available" : "AVV verfügbar"}</span><span class="akte-faktenblatt-val">{en ? "check" : "prüfen"}</span></div>
-          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Open Source</span><span class="akte-faktenblatt-val">{priceModel === "Open Source" ? (en ? "Yes" : "Ja") : (en ? "No" : "Nein")}</span></div>
-          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Self-hostable</span><span class="akte-faktenblatt-val">{en ? "No" : "Nein"}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Open Source</span><span class="akte-faktenblatt-val">{view.toolFacts.openSource}</span></div>
+          <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Self-hostable</span><span class="akte-faktenblatt-val">{view.toolFacts.selfHostable}</span></div>
           <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">API</span><span class="akte-faktenblatt-val">{en ? "check" : "prüfen"}</span></div>
           <div class="akte-faktenblatt-row is-paid"><span class="akte-faktenblatt-key">{en ? "Paid placement" : "Bezahlte Platzierung"}</span><span class="akte-faktenblatt-val">{en ? "no" : "nein"}</span></div>
           <hr class="akte-faktenblatt-divider" />

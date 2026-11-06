@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import { DatabaseSync } from "node:sqlite";
+import { readFileSync } from "node:fs";
+import matter from "gray-matter";
 import test from "node:test";
 import { buildEntryUpsertStatement } from "../runtime-content.mjs";
 
@@ -82,6 +84,36 @@ test("editorial_reviewed-only changes update the row and increment revision", ()
 
     assert.equal(Number(result.changes), 1);
     assert.deepEqual({ ...row }, { editorial_reviewed: 1, revision: 2 });
+  } finally {
+    database.close();
+  }
+});
+
+test("localized tool_facts survive frontmatter parsing and D1 metadata JSON storage", () => {
+  const database = new DatabaseSync(":memory:");
+  try {
+    database.exec(schema);
+    for (const [locale, prefix] of [["de", ""], ["en", "en/"]]) {
+      for (const slug of ["textblob", "h2o-ai", "wordreference", "amazon-bedrock-agentcore-browser"]) {
+        const file = new URL(`../../../content/${prefix}tools/${slug}.md`, import.meta.url);
+        const metadata = matter(readFileSync(file, "utf8")).data;
+        const row = {
+          ...entry(1),
+          contentKey: `tool:${locale}:${slug}`,
+          kind: "tool",
+          locale,
+          slug,
+          title: metadata.title,
+          metadata,
+        };
+        const statement = buildEntryUpsertStatement(row);
+        database.prepare(statement.sql).run(...statement.params);
+        const stored = database.prepare(
+          "SELECT metadata_json FROM content_entries WHERE kind = ? AND locale = ? AND slug = ?",
+        ).get("tool", locale, slug);
+        assert.deepEqual(JSON.parse(stored.metadata_json).tool_facts, metadata.tool_facts, `${locale}/${slug}`);
+      }
+    }
   } finally {
     database.close();
   }

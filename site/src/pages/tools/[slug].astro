@@ -26,7 +26,7 @@ const currentDisplayTool = displayTools.find((tool) => tool.slug === entry.slug)
 const sharedView = buildToolDetailViewModel({
   entry,
   locale: "de",
-  localized: { priceModel: currentDisplayTool?.priceModel },
+  localized: { priceModel: currentDisplayTool?.priceModel, toolFacts: entry.data.tool_facts },
   displayTools,
   categories: CATEGORIES,
   guideBacklinks: guideBacklinkManifest.de[entry.slug] || [],
@@ -183,7 +183,7 @@ const schemaDescription = sharedView.description;
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Hosting</span>
-          <span class="akte-faktenblatt-val">Web · Anbieter</span>
+          <span class="akte-faktenblatt-val">{sharedView.toolFacts.hosting}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">DPA verfügbar</span>
@@ -191,11 +191,11 @@ const schemaDescription = sharedView.description;
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Open Source</span>
-          <span class="akte-faktenblatt-val">Nein</span>
+          <span class="akte-faktenblatt-val">{sharedView.toolFacts.openSource}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Self-hostable</span>
-          <span class="akte-faktenblatt-val">Nein</span>
+          <span class="akte-faktenblatt-val">{sharedView.toolFacts.selfHostable}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">API verfügbar</span>
