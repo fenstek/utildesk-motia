@@ -37,7 +37,10 @@ Bei H2O.ai zählt, ob Modell, Daten und Betrieb kontrollierbar bleiben. Wir wür
 H2O.ai ist hilfreich, wenn ein Team Evaluation, Reproduzierbarkeit und Nachpflege wirklich übernimmt. Ohne diese Disziplin bleibt selbst starke Technik schwer erklärbar und im Betrieb riskant.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/h2o-ai-editorial.webp" alt="Illustration zu H2O.ai: ML-Terrarium mit Wasserschichten und Modellbaeumen" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/h2o-ai-editorial.webp" aria-label="Im quadratischen H2O.ai-Terrarium bewegen sich leuchtende Datenpunkte zwischen Wasser- und Pflanzenschichten.">
+    <source src="/videos/tools/h2o-ai-motion-8145e1b02a92ea31.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/h2o-ai-editorial.webp" width="1280" height="720" alt="Illustration zu H2O.ai: ML-Terrarium mit Wasserschichten und Modellbaeumen" loading="lazy" decoding="async" />
+  </video>
 </figure>
 
 ## Hauptfunktionen
@@ -87,7 +90,7 @@ Die realen Kosten von H2O.ai bestehen nicht nur aus einem möglichen Tarif. Ber�
 ## Alternativen
 
 - [Microsoft Teams](/tools/microsoft-teams/): Microsoft Teams setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit H2O.ai, bevor Daten oder Zuständigkeiten verlagert werden.
-- Zoom: Zoom setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit H2O.ai, bevor Daten oder Zuständigkeiten verlagert werden.
+- [Dataiku](/tools/dataiku/): Dataiku bündelt Data Science, Machine Learning und Analytics in einer kollaborativen Plattform.
 - [Dropbox Business](/tools/dropbox-business/): Dropbox Business setzt einen anderen Schwerpunkt; vergleiche den konkreten Ablauf mit H2O.ai, bevor Daten oder Zuständigkeiten verlagert werden.
 
 ## FAQ

@@ -23,7 +23,10 @@ updated_at: 2026-07-19
 Amazon Bedrock AgentCore Browser gives AI agents a managed isolated browser runtime for navigating websites, completing forms, and collecting information. It removes much of the work involved in operating browser containers, but it does not remove the uncertainty of web automation: target sites, permissions, confirmations, and failure paths still need explicit controls.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/amazon-bedrock-agentcore-browser-editorial.webp" alt="Isolated cloud browser session with agent controls, live viewing, and restricted network access" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/amazon-bedrock-agentcore-browser-editorial.webp" aria-label="Browser panels softly fade in and out around a compass in an isolated cloud browser scene.">
+    <source src="/videos/tools/amazon-bedrock-agentcore-browser-motion-9c2b06a7c60e4ccb.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/amazon-bedrock-agentcore-browser-editorial.webp" width="1280" height="720" alt="Isolated cloud browser session with agent controls, live viewing, and restricted network access" loading="lazy" decoding="async" />
+  </video>
 </figure>
 
 ## What is AgentCore Browser for?

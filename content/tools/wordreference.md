@@ -22,7 +22,10 @@ updated_at: "2026-07-17"
 WordReference ist ein umfassendes Online-Wörterbuch und Übersetzungstool, das Nutzern hilft, Sprachbarrieren zu überwinden. Es bietet schnelle und präzise Übersetzungen, umfangreiche Wörterbucheinträge sowie Foren für den Austausch mit Muttersprachlern. Ideal für Studierende, Berufstätige und jeden, der Fremdsprachen lernen oder übersetzen möchte.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/wordreference-editorial.webp" alt="Zwei Reisende klären eine Sprachbedeutung am Wörterbuch" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/wordreference-editorial.webp" aria-label="Zwei Reisende tauschen eine Karte aus, während sich die Seiten des aufgeschlagenen Wörterbuchs leicht bewegen.">
+    <source src="/videos/tools/wordreference-motion-00d68ae471cd0d77.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/wordreference-editorial.webp" width="1280" height="720" alt="Zwei Reisende klären eine Sprachbedeutung am Wörterbuch" loading="lazy" decoding="async" />
+  </video>
 </figure>
 
 ## Für wen ist WordReference geeignet?
@@ -119,5 +122,5 @@ WordReference eignet sich gut als schnelle Nachschlagequelle beim Schreiben, Üb
 
 - [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
 - [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- zoom: ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [DeepL](/tools/deepl/): DeepL ist eine passende Ergänzung, wenn ganze Texte oder Sätze übersetzt werden sollen; WordReference bietet Wörterbucheinträge und Sprachforen.
 - [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.

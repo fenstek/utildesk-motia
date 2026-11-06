@@ -21,7 +21,10 @@ updated_at: 2026-07-19
 Amazon Bedrock AgentCore Browser stellt KI-Agenten eine verwaltete, isolierte Browser-Laufzeit bereit, damit sie Webseiten navigieren, Formulare ausfüllen und Informationen erfassen können. Der Dienst nimmt Teams den Betrieb eigener Browser-Container ab, löst aber nicht die fachliche Unsicherheit von Web-Automation: Zielseiten, Berechtigungen, Bestätigungen und Fehlerpfade müssen weiterhin ausdrücklich kontrolliert werden.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/amazon-bedrock-agentcore-browser-editorial.webp" alt="Isolierte Cloud-Browsersitzung mit Agentensteuerung, Live-Ansicht und kontrolliertem Netzwerkzugang" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/amazon-bedrock-agentcore-browser-editorial.webp" aria-label="Browserfenster blenden in einer isolierten Cloud-Browserszene rund um einen Kompass sanft ein und aus.">
+    <source src="/videos/tools/amazon-bedrock-agentcore-browser-motion-9c2b06a7c60e4ccb.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/amazon-bedrock-agentcore-browser-editorial.webp" width="1280" height="720" alt="Isolierte Cloud-Browsersitzung mit Agentensteuerung, Live-Ansicht und kontrolliertem Netzwerkzugang" loading="lazy" decoding="async" />
+  </video>
 </figure>
 
 ## Was ist AgentCore Browser und für wen ist es gedacht?

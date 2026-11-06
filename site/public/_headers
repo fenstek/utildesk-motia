@@ -95,3 +95,15 @@
 
 /videos/ratgeber/ki-video-silent-cinema-motion-b52a42d4388d.mp4
   Cache-Control: public, max-age=31536000, immutable
+
+/videos/tools/amazon-bedrock-agentcore-browser-motion-9c2b06a7c60e4ccb.mp4
+  Cache-Control: public, max-age=31536000, immutable
+
+/videos/tools/h2o-ai-motion-8145e1b02a92ea31.mp4
+  Cache-Control: public, max-age=31536000, immutable
+
+/videos/tools/textblob-motion-07a68bb1297b4b90.mp4
+  Cache-Control: public, max-age=31536000, immutable
+
+/videos/tools/wordreference-motion-00d68ae471cd0d77.mp4
+  Cache-Control: public, max-age=31536000, immutable

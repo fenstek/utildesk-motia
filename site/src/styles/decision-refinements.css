@@ -550,6 +550,18 @@ html[data-design="decision"] .rg-head .inv-head-h1 {
   object-position: center;
 }
 
+/* Preserve the approved square H2O.ai terrarium at its natural aspect ratio. */
+.akte-feature-visual .tool-editorial-figure:has(> video[poster$="/h2o-ai-editorial.webp"]) {
+  width: min(760px, 100%);
+  aspect-ratio: 1 / 1;
+  margin-inline: auto !important;
+}
+
+.akte-feature-visual .tool-editorial-figure:has(> video[poster$="/h2o-ai-editorial.webp"]) > video,
+.akte-feature-visual .tool-editorial-figure:has(> video[poster$="/h2o-ai-editorial.webp"]) > video > img {
+  object-fit: contain;
+}
+
 .inv-row-art {
   display: none;
 }
