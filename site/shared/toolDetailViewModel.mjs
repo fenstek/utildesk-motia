@@ -307,6 +307,15 @@ export function buildToolDetailViewModel({
   const title = asString(localized.title ?? data.title) || slug;
   const category = asString(localized.category ?? data.category) || null;
   const priceModel = asString(localized.priceModel ?? data.price_model) || null;
+  const sourceToolFacts = localized.toolFacts ?? (locale === "de" ? data.tool_facts : null);
+  const unknownFact = locale === "en" ? "check" : "prüfen";
+  const openSourceFact = asString(sourceToolFacts?.open_source)
+    || (priceModel === "Open Source" ? (locale === "en" ? "Yes" : "Ja") : unknownFact);
+  const toolFacts = {
+    hosting: asString(sourceToolFacts?.hosting) || unknownFact,
+    openSource: openSourceFact,
+    selfHostable: asString(sourceToolFacts?.self_hostable) || unknownFact,
+  };
   const tags = Array.isArray(localized.tags ?? data.tags) ? (localized.tags ?? data.tags).map(String) : [];
   const rawTags = Array.isArray(data.tags) ? data.tags.map(String) : [];
   const officialUrl = asString(localized.officialUrl ?? data.official_url);
@@ -366,24 +375,31 @@ export function buildToolDetailViewModel({
     ?? data.editorial_reviewed_at ?? data.editorialReviewedAt
     ?? (quality.tier === "A" ? contentLastmod[`content/tools/${slug}.md`] : "");
   const generatedAtSource = contentLastmod[`content/tools/${slug}.md`] ?? data.generatedAt ?? data.generated_at ?? data.created_at ?? data.createdAt ?? data.date;
-  const hasExplicitEditorialVerdict = Boolean(asString(data.editorial_verdict));
-  const editorialVerdict = verdict(data.editorial_verdict, locale);
-  const editorialVerdictHeadline = (hasExplicitEditorialVerdict && asString(data.editorial_verdict_headline)) || editorialVerdict.detailHeadline;
-  const editorialVerdictText = (hasExplicitEditorialVerdict && asString(data.editorial_verdict_text)) || editorialVerdict.detailText;
-  const editorialTrustLabel = (hasExplicitEditorialVerdict && asString(data.editorial_trust_label)) || editorialVerdict.trustLabel;
+  const editorialVerdictValue = localized.editorialVerdict ?? data.editorial_verdict;
+  const hasExplicitEditorialVerdict = Boolean(asString(editorialVerdictValue));
+  const editorialVerdict = verdict(editorialVerdictValue, locale);
+  const editorialCopy = (localizedKey, dataKey) => locale === "en"
+    ? asString(localized[localizedKey])
+    : asString(localized[localizedKey] ?? data[dataKey]);
+  const editorialVerdictHeadline = (hasExplicitEditorialVerdict && editorialCopy("editorialVerdictHeadline", "editorial_verdict_headline")) || editorialVerdict.detailHeadline;
+  const editorialVerdictText = (hasExplicitEditorialVerdict && editorialCopy("editorialVerdictText", "editorial_verdict_text")) || editorialVerdict.detailText;
+  const editorialTrustLabel = (hasExplicitEditorialVerdict && editorialCopy("editorialTrustLabel", "editorial_trust_label")) || editorialVerdict.trustLabel;
   const mentionedInCount = new Set([
     ...(Array.isArray(data.mentionedIn) ? data.mentionedIn.map(String) : []),
     ...guideBacklinks.map((guide) => guide.slug),
   ]).size;
   const offer = buildOffer(priceModel, locale);
+  const softwareApplicationType = asString(data.schema_application_type);
   const schema = {
     "@context": "https://schema.org",
-    "@type": ["SoftwareApplication", "WebApplication"],
+    "@type": softwareApplicationType === "SoftwareApplication"
+      ? ["SoftwareApplication"]
+      : ["SoftwareApplication", "WebApplication"],
     name: title,
     description: description.slice(0, 500),
     url: canonicalUrl,
     mainEntityOfPage: canonicalUrl,
-    operatingSystem: "Web",
+    ...(softwareApplicationType === "SoftwareApplication" ? {} : { operatingSystem: "Web" }),
     applicationCategory: mapSchemaCategory(category, tags),
     applicationSubCategory: category || undefined,
     inLanguage: locale === "en" ? "en" : "de-DE",
@@ -415,6 +431,7 @@ export function buildToolDetailViewModel({
     category,
     priceModel,
     price_model: priceModel,
+    toolFacts,
     tags,
     displayTags,
     primaryCategory,

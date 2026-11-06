@@ -152,6 +152,11 @@ const cleanSentence = (value: string) =>
     .replace(/\s+([,.;:!?])/g, "$1")
     .trim();
 
+const localizedToolFacts = (value: unknown): Record<string, unknown> =>
+  value && typeof value === "object" && !Array.isArray(value)
+    ? value as Record<string, unknown>
+    : {};
+
 const joinHumanList = (items: string[]) => {
   const cleaned = items.map((item) => item.trim()).filter(Boolean);
   if (cleaned.length <= 1) return cleaned[0] ?? "";
@@ -223,6 +228,10 @@ export const getEnglishToolMeta = (entry: ToolEntryLike) => {
       title,
       category,
       priceModel,
+      toolFacts: localizedToolFacts(translation.data.tool_facts),
+      editorialVerdictHeadline: String(translation.data.editorial_verdict_headline ?? ""),
+      editorialVerdictText: String(translation.data.editorial_verdict_text ?? ""),
+      editorialTrustLabel: String(translation.data.editorial_trust_label ?? ""),
       tags,
       officialUrl,
       affiliateUrl,
@@ -244,6 +253,10 @@ export const getEnglishToolMeta = (entry: ToolEntryLike) => {
     title,
     category,
     priceModel,
+    toolFacts: {},
+    editorialVerdictHeadline: "",
+    editorialVerdictText: "",
+    editorialTrustLabel: "",
     tags,
     officialUrl,
     affiliateUrl,

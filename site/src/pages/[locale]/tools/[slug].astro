@@ -45,6 +45,10 @@ const sharedView = buildToolDetailViewModel({
     affiliateUrl: meta.affiliateUrl,
     targetUrl: meta.targetUrl,
     featureList,
+    toolFacts: meta.toolFacts,
+    editorialVerdictHeadline: meta.editorialVerdictHeadline,
+    editorialVerdictText: meta.editorialVerdictText,
+    editorialTrustLabel: meta.editorialTrustLabel,
   },
   displayTools: allDisplayTools,
   categories: CATEGORIES,
@@ -194,7 +198,7 @@ const {
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Hosting</span>
-          <span class="akte-faktenblatt-val">Web / provider</span>
+          <span class="akte-faktenblatt-val">{sharedView.toolFacts.hosting}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">DPA available</span>
@@ -202,11 +206,11 @@ const {
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Open source</span>
-          <span class="akte-faktenblatt-val">No</span>
+          <span class="akte-faktenblatt-val">{sharedView.toolFacts.openSource}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Self-hostable</span>
-          <span class="akte-faktenblatt-val">No</span>
+          <span class="akte-faktenblatt-val">{sharedView.toolFacts.selfHostable}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">API available</span>
