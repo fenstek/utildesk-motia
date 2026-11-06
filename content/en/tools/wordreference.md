@@ -25,7 +25,10 @@ updated_at: "2026-07-17"
 WordReference is a comprehensive online dictionary and translation tool that helps users overcome language barriers. It offers fast and accurate translations, extensive dictionary entries, and forums for exchanging ideas with native speakers. It is ideal for students, professionals, and anyone who wants to learn or translate foreign languages.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/wordreference-editorial.webp" alt="Two travelers clarify a language meaning beside a dictionary" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/wordreference-editorial.webp" aria-label="Two travelers exchange a note while the pages of an open dictionary move gently.">
+    <source src="/videos/tools/wordreference-motion-00d68ae471cd0d77.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/wordreference-editorial.webp" width="1280" height="720" alt="Two travelers clarify a language meaning beside a dictionary" loading="lazy" decoding="async" />
+  </video>
 </figure>
 
 ## Who is WordReference for?
@@ -130,5 +133,5 @@ WordReference is well suited as a quick reference source when writing, translati
 
 - [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
 - [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
-- zoom: is worth comparing when the scope, collaboration model or administration needs differ.
+- [DeepL](/en/tools/deepl/): DeepL is a useful fit when translating full texts or sentences; WordReference also offers dictionary entries and language forums.
 - [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

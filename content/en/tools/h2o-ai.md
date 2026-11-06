@@ -39,7 +39,10 @@ In day-to-day work, H2O.ai is less about having every edge feature and more abou
 H2O.ai is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/h2o-ai-editorial.webp" alt="Illustration for H2O.ai: machine learning terrarium with water layers and model trees" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/h2o-ai-editorial.webp" aria-label="Glowing data points move through the water and plant layers of a square H2O.ai terrarium.">
+    <source src="/videos/tools/h2o-ai-motion-8145e1b02a92ea31.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/h2o-ai-editorial.webp" width="1280" height="720" alt="Illustration for H2O.ai: machine learning terrarium with water layers and model trees" loading="lazy" decoding="async" />
+  </video>
 </figure>
 
 ## Key Features
@@ -95,7 +98,7 @@ H2O.ai pricing depends heavily on the chosen plan and individual requirements. T
 ## Alternatives
 
 - [Microsoft Teams](/en/tools/microsoft-teams/): Microsoft Teams takes a different approach; compare the actual workflow with H2O.ai before moving data or ownership.
-- Zoom: Zoom takes a different approach; compare the actual workflow with H2O.ai before moving data or ownership.
+- [Dataiku](/en/tools/dataiku/): Dataiku combines data science, machine learning and analytics in a collaborative platform.
 - [Dropbox Business](/en/tools/dropbox-business/): Dropbox Business takes a different approach; compare the actual workflow with H2O.ai before moving data or ownership.
 
 ## FAQ

@@ -24,7 +24,10 @@ updated_at: "2026-07-17"
 TextBlob is a user-friendly Python library for natural language processing (NLP). It provides simple APIs for performing common NLP tasks such as sentiment analysis, text classification, translation, and more. TextBlob is especially well suited for developers and data scientists who want to analyze text data quickly and easily without having to dive deeply into complex NLP frameworks.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/textblob-editorial.webp" alt="Illustration for textblob: Editor watching language turn into living bubbles" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/textblob-editorial.webp" aria-label="A reader watches luminous language bubbles drift above a book as its pages turn.">
+    <source src="/videos/tools/textblob-motion-07a68bb1297b4b90.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/textblob-editorial.webp" width="1280" height="720" alt="Illustration for textblob: Editor watching language turn into living bubbles" loading="lazy" decoding="async" />
+  </video>
 </figure>
 ## Who is TextBlob suitable for?
 
@@ -142,5 +145,5 @@ A useful start with TextBlob begins with one concrete workflow and a small user 
 
 - [asana](/en/tools/asana/): is worth comparing when another existing workflow or ecosystem fits better.
 - [Microsoft Teams](/en/tools/microsoft-teams/): is worth comparing when the scope, collaboration model or administration needs differ.
-- zoom: is worth comparing when the scope, collaboration model or administration needs differ.
+- [spaCy](/en/tools/spacy/): spaCy is a good fit for structured NLP pipelines using pretrained models, tokenization and entity recognition.
 - [dropbox-business](/en/tools/dropbox-business/): is worth comparing when the scope, collaboration model or administration needs differ.

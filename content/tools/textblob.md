@@ -22,7 +22,10 @@ updated_at: "2026-07-17"
 TextBlob ist eine benutzerfreundliche Python-Bibliothek für die Verarbeitung natürlicher Sprache (Natural Language Processing, NLP). Sie bietet einfache APIs zur Durchführung typischer NLP-Aufgaben wie Sentiment-Analyse, Textklassifikation, Übersetzung und mehr. TextBlob eignet sich besonders für Entwickler und Datenwissenschaftler, die schnell und unkompliziert Textdaten analysieren möchten, ohne sich tief in komplexe NLP-Frameworks einzuarbeiten.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/textblob-editorial.webp" alt="Illustration zu textblob: Eine Lektorin beobachtet, wie Sprache zu schwebenden Blasen wird" loading="lazy" decoding="async" />
+  <video autoplay muted loop playsinline loading="lazy" preload="none" width="1280" height="720" poster="/images/tools/textblob-editorial.webp" aria-label="Eine Lektorin betrachtet Sprachblasen, während sich die Seiten des geöffneten Buchs langsam wenden.">
+    <source src="/videos/tools/textblob-motion-07a68bb1297b4b90.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+    <img src="/images/tools/textblob-editorial.webp" width="1280" height="720" alt="Illustration zu textblob: Eine Lektorin beobachtet, wie Sprache zu schwebenden Blasen wird" loading="lazy" decoding="async" />
+  </video>
 </figure>
 ## Redaktionelle Einordnung
 
@@ -131,5 +134,5 @@ TextBlob ist vor allem dann eine tragfähige Wahl, wenn ein klarer Prozess, eine
 
 - [asana](/tools/asana/): ist eine prüfenswerte Option, wenn ein anderer bestehender Workflow oder ein anderes Ökosystem besser passt.
 - [Microsoft Teams](/tools/microsoft-teams/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
-- zoom: ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
+- [spaCy](/tools/spacy/): spaCy eignet sich für strukturierte NLP-Aufgaben wie Tokenisierung und Entitätserkennung mit vortrainierten Modellen.
 - [dropbox-business](/tools/dropbox-business/): ist eine prüfenswerte Option, wenn sich Anforderungen an Umfang, Zusammenarbeit oder Administration unterscheiden.
