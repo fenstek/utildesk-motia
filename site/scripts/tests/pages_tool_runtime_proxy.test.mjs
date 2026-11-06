@@ -6,10 +6,10 @@ import { listRuntimeEntries } from "../runtime-content.mjs";
 
 const originalFetch = globalThis.fetch;
 
-const contextFor = ({ pathname = "/tools/chatgpt/", values = {}, nextBody = "static" } = {}) => {
+const contextFor = ({ pathname = "/tools/chatgpt/", values = {}, nextBody = "static", requestHeaders = {} } = {}) => {
   let nextCalls = 0;
   const context = {
-    request: new Request(`https://tools.utildesk.de${pathname}`),
+    request: new Request(`https://tools.utildesk.de${pathname}`, { headers: requestHeaders }),
     env: {
       RATGEBER_REVIEW: {
         get: async (key) => Object.hasOwn(values, key) ? values[key] : null,
@@ -260,26 +260,91 @@ test("tool upstream 404, 5xx and exception fail open to the static route", async
   }
 });
 
-test("an intentional D1 disabled state is not resurrected from the frozen fallback", async () => {
-  globalThis.fetch = async () => new Response("disabled", {
-    status: 404,
-    headers: { "X-Utildesk-Route-State": "disabled", "X-Robots-Tag": "noindex" },
+test("intentional D1 disabled and tombstone states are not resurrected from the frozen fallback", async () => {
+  for (const { state, status } of [{ state: "disabled", status: 404 }, { state: "tombstone", status: 410 }]) {
+    let fetchCalls = 0;
+    globalThis.fetch = async () => {
+      fetchCalls += 1;
+      return new Response(state, {
+        status,
+        headers: { "X-Utildesk-Route-State": state, "X-Robots-Tag": "noindex" },
+      });
+    };
+    const fixture = contextFor({ values: { "content-runtime:tools": "on" } });
+    const response = await onRequest(fixture.context);
+    assert.equal(response.status, status);
+    assert.equal(response.headers.get("X-Utildesk-Route-State"), state);
+    assert.equal(await response.text(), state);
+    assert.equal(fetchCalls, 1);
+    assert.equal(fixture.nextCalls(), 0);
+  }
+});
+
+test("valid frozen snapshot marker comes from the fallback response and preserves its other headers", async () => {
+  globalThis.fetch = async (request) => {
+    assert.equal(new URL(request.url).origin, "https://utildesk-tool-fallback.pages.dev");
+    return new Response("frozen-current", {
+      status: 200,
+      headers: {
+        "Content-Type": "text/html; charset=utf-8",
+        "X-Utildesk-Frozen-Snapshot": "frozen-pages-2026-11-06",
+        "X-Utildesk-Content-Runtime": "should-be-removed-as-before",
+        "X-Fallback-Proof": "preserved",
+      },
+    });
+  };
+  const fixture = contextFor({
+    pathname: "/en/tools/chatgpt/",
+    requestHeaders: { "X-Utildesk-Frozen-Snapshot": "frozen-user-supplied" },
   });
-  const fixture = contextFor({ values: { "content-runtime:tools": "on" } });
-  const response = await onRequest(fixture.context);
-  assert.equal(response.status, 404);
-  assert.equal(response.headers.get("X-Utildesk-Route-State"), "disabled");
-  assert.equal(await response.text(), "disabled");
+  const response = await frozenToolFallback(fixture.context);
+  assert.equal(response.status, 200);
+  assert.equal(await response.text(), "frozen-current");
+  assert.equal(response.headers.get("X-Utildesk-Tool-Fallback"), "frozen-pages-2026-11-06");
+  assert.equal(response.headers.get("X-Utildesk-Frozen-Snapshot"), "frozen-pages-2026-11-06");
+  assert.equal(response.headers.get("X-Fallback-Proof"), "preserved");
+  assert.equal(response.headers.get("Content-Type"), "text/html; charset=utf-8");
+  assert.equal(response.headers.get("X-Utildesk-Content-Runtime"), null);
   assert.equal(fixture.nextCalls(), 0);
 });
 
-test("frozen tool fallback is immutable and fails through only if unavailable", async () => {
-  globalThis.fetch = async (request) => new Response(new URL(request.url).pathname, { status: 200 });
-  const fixture = contextFor({ pathname: "/en/tools/chatgpt/" });
-  const response = await frozenToolFallback(fixture.context);
-  assert.equal(await response.text(), "/en/tools/chatgpt/");
-  assert.equal(response.headers.get("X-Utildesk-Tool-Fallback"), "frozen-7a4190c4");
-  assert.equal(fixture.nextCalls(), 0);
+test("missing or malformed frozen snapshot markers keep the legacy fallback marker", async () => {
+  const cases = [
+    { name: "missing", marker: null },
+    { name: "empty suffix", marker: "frozen-" },
+    { name: "invalid character", marker: "frozen-bad_value" },
+    { name: "uppercase", marker: "Frozen-valid" },
+    { name: "too long", marker: `frozen-${"a".repeat(58)}` },
+  ];
+
+  for (const { name, marker } of cases) {
+    globalThis.fetch = async () => new Response(name, {
+      status: 200,
+      headers: marker === null ? {} : { "X-Utildesk-Frozen-Snapshot": marker },
+    });
+    const fixture = contextFor({
+      requestHeaders: { "X-Utildesk-Frozen-Snapshot": "frozen-user-supplied" },
+    });
+    const response = await frozenToolFallback(fixture.context);
+    assert.equal(response.headers.get("X-Utildesk-Tool-Fallback"), "frozen-7a4190c4", name);
+    assert.equal(await response.text(), name);
+    assert.equal(fixture.nextCalls(), 0);
+  }
+});
+
+test("frozen tool fallback still uses the static route when the fallback origin errors", async () => {
+  for (const behavior of ["non-ok", "throw"]) {
+    globalThis.fetch = async () => {
+      if (behavior === "throw") throw new Error("fallback unavailable");
+      return new Response("fallback unavailable", { status: 503 });
+    };
+    const fixture = contextFor({ nextBody: "static after fallback error" });
+    const response = await frozenToolFallback(fixture.context);
+    assert.equal(response.status, 200);
+    assert.equal(await response.text(), "static after fallback error");
+    assert.equal(response.headers.get("X-Static-Fallback"), "1");
+    assert.equal(fixture.nextCalls(), 1);
+  }
 });
 
 test("Pages proxy does not hide source-revision changes behind a second cache", async () => {

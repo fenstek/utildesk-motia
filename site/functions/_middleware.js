@@ -55,6 +55,9 @@ const PUBLIC_EXACT_PATHS = new Set([
 // to the D1-backed renderer; every other public route stays on the static app.
 const RUNTIME_ORIGIN = "https://utildesk-content-runtime.s-skorykov.workers.dev";
 const FROZEN_TOOL_FALLBACK_ORIGIN = "https://utildesk-tool-fallback.pages.dev";
+const FROZEN_TOOL_FALLBACK_MARKER = "frozen-7a4190c4";
+const FROZEN_SNAPSHOT_HEADER = "X-Utildesk-Frozen-Snapshot";
+const FROZEN_SNAPSHOT_MARKER_PATTERN = /^frozen-[a-z0-9-]{1,57}$/;
 const RUNTIME_RATGEBER_STYLESHEET = "/runtime-ratgeber-detail.css?v=20260805-1";
 const RECOVERY_ROBOTS_INDEX_FOLLOW =
   "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
@@ -236,7 +239,13 @@ export const frozenToolFallback = async (context) => {
     if (!response.ok) return context.next();
     const headers = new Headers(response.headers);
     headers.delete("X-Utildesk-Content-Runtime");
-    headers.set("X-Utildesk-Tool-Fallback", "frozen-7a4190c4");
+    const snapshotMarker = response.headers.get(FROZEN_SNAPSHOT_HEADER);
+    headers.set(
+      "X-Utildesk-Tool-Fallback",
+      snapshotMarker && FROZEN_SNAPSHOT_MARKER_PATTERN.test(snapshotMarker)
+        ? snapshotMarker
+        : FROZEN_TOOL_FALLBACK_MARKER,
+    );
     return new Response(response.body, { status: response.status, headers });
   } catch {
     return context.next();
