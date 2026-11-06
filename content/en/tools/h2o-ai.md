@@ -48,15 +48,15 @@ A small one-off analysis may need only Python; H2O-3 fits better when AutoML or 
 
 ## What does a sound tabular workflow look like?
 
-Suppose a team wants to estimate which subscriptions will end next month. It prepares features known at prediction time and a target such as “cancellation within 30 days.” IDs and later cancellation reasons must not become inputs.
+Suppose a team wants to estimate the probability that each subscription will be cancelled within the next 30 days. It prepares features known at prediction time and a target such as “cancellation within 30 days.” IDs and later cancellation reasons must not become inputs.
 
-Separate training data from an untouched holdout before fitting preprocessing. Split by time or person where needed to keep near-identical cases together. Train a simple GLM baseline, then H2O-3 AutoML or Driverless AI; the [H2O-3 AutoML guide](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) describes separate training, validation, and leaderboard data.
+Split training, validation, and final test data before fitting preprocessing. Compare and select candidates using validation data or cross-validation; keep the final test sample untouched until selection is complete, then use it once to evaluate the selected model. Split by time or person where needed to keep near-identical cases together. Train a simple GLM baseline and compare it with H2O-3 AutoML or Driverless AI. The [H2O-3 AutoML guide](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) describes separate training, validation, and leaderboard data; a leaderboard dataset used to rank candidates is part of selection and does not replace the final test set.
 
-This is an example, not a measured benchmark. A domain reviewer checks errors, thresholds, and affected groups. Do not deploy unless the candidate improves on the baseline in a defensible way and its errors are acceptable.
+A domain reviewer checks errors, thresholds, and affected groups. Do not deploy unless the candidate improves on the baseline in a defensible way and its errors are acceptable.
 
 ## How should model quality be judged?
 
-A leaderboard does not establish suitability. Select metrics for the decision: with rare cancellations, precision, recall, and calibration may matter more than overall accuracy. Use the final holdout once after selection; [H2O](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/algo-params/validation_frame.html) and [scikit-learn](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage) explain the split and leakage risks.
+A leaderboard does not establish suitability. Select metrics for the decision: with rare cancellations, precision, recall, and calibration may matter more than overall accuracy. Use the final test sample once after final selection to evaluate the selected model; [H2O](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/algo-params/validation_frame.html) and [scikit-learn](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage) explain the split and leakage risks.
 
 ## What does production use require?
 
@@ -93,7 +93,7 @@ Analytics teams with structured data, recurring predictions, and clear responsib
 
 **What should a pilot look like?**
 
-Define the target, baseline, metric, and stop condition first; compare candidates on the same untouched holdout sample.
+Define the target, baseline, metric, and stop condition first; compare and select candidates using the same validation data or cross-validation. Keep the final test sample aside until selection is complete, then use it once to evaluate the selected model.
 
 **How do H2O-3, Driverless AI, and AI Cloud differ?**
 
@@ -105,7 +105,7 @@ Tabular AutoML needs no chat prompts. Flow has a UI, but integration and operati
 
 **How do I prevent data leakage?**
 
-Split by time or person before preprocessing, and do not use holdout data for feature tuning or model selection.
+Split by time or person before preprocessing, and do not use the final test sample for tuning or model selection.
 
 **What data should not be uploaded without review?**
 

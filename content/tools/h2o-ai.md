@@ -47,15 +47,15 @@ Für eine einzelne kleine Analyse kann ein Python-Modell genügen; H2O-3 passt e
 
 ## Wie sieht ein belastbarer Tabellenfall aus?
 
-Ein Team möchte abschätzen, welche Abonnements im nächsten Monat auslaufen. Es erstellt eine Tabelle mit damals bekannten Merkmalen und der Zielspalte „Kündigung innerhalb von 30 Tagen“. IDs und spätere Kündigungsgründe dürfen nicht als Modellmerkmale einfließen.
+Ein Team möchte für jedes Abonnement die Wahrscheinlichkeit einer Kündigung innerhalb der nächsten 30 Tage schätzen. Es erstellt eine Tabelle mit damals bekannten Merkmalen und der Zielspalte „Kündigung innerhalb von 30 Tagen“. IDs und spätere Kündigungsgründe dürfen nicht als Modellmerkmale einfließen.
 
-Trennen Sie Trainingsdaten und eine unangetastete Kontrollstichprobe vor der Vorverarbeitung. Bei Zeit- oder Personengruppen muss die Aufteilung dem späteren Einsatz entsprechen. Trainieren Sie eine einfache GLM-Baseline und danach H2O-3 AutoML oder Driverless AI; [H2O-3 AutoML](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) kann Training, Validierung und Leaderboard-Daten getrennt nutzen.
+Trennen Sie Trainings-, Validierungs- und finale Testdaten vor der Vorverarbeitung. Vergleichen und wählen Sie Kandidaten anhand der Validierungsdaten oder Kreuzvalidierung; die finale Teststichprobe bleibt bis zum Abschluss der Auswahl unangetastet und bewertet das ausgewählte Modell anschließend genau einmal. Bei Zeit- oder Personengruppen muss die Aufteilung dem späteren Einsatz entsprechen. Trainieren Sie eine einfache GLM-Baseline und vergleichen Sie sie mit H2O-3 AutoML oder Driverless AI. Die [H2O-3-AutoML-Anleitung](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) beschreibt getrennte Trainings-, Validierungs- und Leaderboard-Daten; ein zum Rangieren genutzter Leaderboard-Datensatz gehört ebenfalls zur Auswahl und ersetzt nicht den finalen Testsatz.
 
-Das ist ein Beispiel, kein gemessener Test. Eine fachkundige Person prüft Fehler, Schwellenwerte und betroffene Gruppen. Ohne belastbare Verbesserung gegenüber der Baseline oder bei fachlich untragbaren Fehlern wird nicht ausgerollt.
+Eine fachkundige Person prüft Fehler, Schwellenwerte und betroffene Gruppen. Ohne belastbare Verbesserung gegenüber der Baseline oder bei fachlich untragbaren Fehlern wird nicht ausgerollt.
 
 ## Wie beurteilen wir die Modellgüte?
 
-Eine Ranglistenposition belegt keine Eignung. Wählen Sie Kennzahlen nach Fehlerkosten: Bei seltenen Kündigungen können Präzision, Recall und Kalibrierung mehr aussagen als Gesamtgenauigkeit. Nutzen Sie die finale Kontrollstichprobe erst nach der Auswahl einmalig; [H2O](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/algo-params/validation_frame.html) und [scikit-learn](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage) erläutern die Trennung und das Risiko von Data Leakage.
+Eine Ranglistenposition belegt keine Eignung. Wählen Sie Kennzahlen nach Fehlerkosten: Bei seltenen Kündigungen können Präzision, Recall und Kalibrierung mehr aussagen als Gesamtgenauigkeit. Nutzen Sie die finale Teststichprobe erst nach der endgültigen Auswahl einmalig, um das ausgewählte Modell zu bewerten; [H2O](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/algo-params/validation_frame.html) und [scikit-learn](https://scikit-learn.org/stable/common_pitfalls.html#data-leakage) erläutern die Trennung und das Risiko von Data Leakage.
 
 ## Was verlangt der spätere Betrieb?
 
@@ -92,7 +92,7 @@ Für Analytics-Teams mit strukturierten Daten, wiederkehrenden Prognosen und eig
 
 **Wie sollte ein Pilot aussehen?**
 
-Definieren Sie Ziel, Baseline, Kennzahl und Stoppschwelle vorab; vergleichen Sie Kandidaten auf derselben unberührten Kontrollstichprobe.
+Definieren Sie Ziel, Baseline, Kennzahl und Stoppschwelle vorab; vergleichen und wählen Sie Kandidaten anhand derselben Validierungsdaten oder Kreuzvalidierung. Halten Sie die finale Teststichprobe bis zum Abschluss der Auswahl zurück und bewerten Sie das ausgewählte Modell damit genau einmal.
 
 **Was unterscheidet H2O-3, Driverless AI und AI Cloud?**
 
@@ -104,7 +104,7 @@ Chat-Prompts sind für tabellarisches AutoML nicht nötig. Flow hat eine Oberfl�
 
 **Wie verhindere ich Data Leakage?**
 
-Teilen Sie Daten vor der Vorverarbeitung nach Zeit oder Person auf und nutzen Sie die Kontrollstichprobe nicht für Tuning oder Auswahl.
+Teilen Sie Daten vor der Vorverarbeitung nach Zeit oder Person auf und nutzen Sie die finale Teststichprobe nicht für Tuning oder Modellauswahl.
 
 **Welche Daten sollte ich nicht ungeprüft laden?**
 
