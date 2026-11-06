@@ -2099,3 +2099,7 @@ _Last updated: 2026-07-19_
 ## 2026-11-06 - Amazon Bedrock AgentCore Browser editorial refresh
 
 - Reworked the DE/EN card with a safe read-only portal workflow, current AWS session, profile, network, recording, and pricing boundaries, and a cautious verdict. Replaced the broader AWS Bedrock alternative with Browser Use because it is a browser-agent option rather than a model and agent platform.
+
+## 2026-11-06 - H2O.ai editorial refresh
+
+- Replaced irrelevant Microsoft Teams and Dropbox Business alternatives with Dataiku, scikit-learn, DataRobot, and KNIME, whose documented workflows cover machine learning and analytics.
