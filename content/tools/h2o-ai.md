@@ -11,7 +11,12 @@ editorial_verdict_headline: "Mit Vorbehalt für tabellarisches AutoML mit eigene
 editorial_verdict_text: "H2O-3 empfehlen wir Teams, die tabellarische Vorhersagen mit einer einfachen Baseline, getrennten Kontrolldaten und eigener Betriebsverantwortung entwickeln. Prüfen Sie Lizenz und Verfügbarkeit für das konkrete Produkt und die eingesetzte Version; für ein einzelnes Python-Modell oder visuelle Datenpipelines passt meist eine engere Alternative."
 editorial_trust_label: "Quellen geprüft · 06.11.2026"
 category: "AI Infrastructure"
+schema_application_type: "SoftwareApplication"
 price_model: "Je nach Plan"
+tool_facts:
+  hosting: "Cloud / eigener Betrieb"
+  open_source: "Teilweise (H2O-3)"
+  self_hostable: "Teilweise (H2O-3)"
 official_url: "https://h2o.ai/"
 description: "H2O.ai verbindet H2O-3 AutoML mit separat lizenzierten Produkten. Für tabellarische Vorhersagen zählt, ob Datenaufteilung, Modellprüfung und Betrieb im Team kontrolliert sind."
 updated_at: 2026-11-06

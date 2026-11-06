@@ -11,7 +11,12 @@ editorial_verdict_headline: "With caution for tabular AutoML when the team owns 
 editorial_verdict_text: "We recommend H2O-3 to teams that can build tabular predictions with a simple baseline, separate holdout data, and clear ownership of operations. Check the license and availability for the specific product and release; a single Python model or visual data workflow may be a closer fit."
 editorial_trust_label: "Sources checked · 6 Nov 2026"
 category: "AI Infrastructure"
+schema_application_type: "SoftwareApplication"
 price_model: "Je nach Plan"
+tool_facts:
+  hosting: "Cloud / self-managed"
+  open_source: "Partly (H2O-3)"
+  self_hostable: "Partly (H2O-3)"
 official_url: "https://h2o.ai/"
 description: "H2O.ai combines H2O-3 AutoML with separately licensed products. For tabular prediction, the key questions are whether the team controls data splitting, model evaluation, and operations."
 updated_at: 2026-11-06

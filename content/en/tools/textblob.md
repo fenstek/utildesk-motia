@@ -11,7 +11,12 @@ editorial_verdict_headline: "Use with caution for small, reviewable NLP tasks"
 editorial_verdict_text: "With caution, use it as a local Python baseline; validate German or consequential classifications with representative data and human review."
 editorial_trust_label: "Sources checked · 6 Nov 2026"
 category: "Produktivität"
+schema_application_type: "SoftwareApplication"
 price_model: "Open Source"
+tool_facts:
+  hosting: "Local / own infrastructure"
+  open_source: "Yes (MIT)"
+  self_hostable: "Runs locally"
 tags:
   - nlp
   - python

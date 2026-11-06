@@ -13,6 +13,10 @@ editorial_verdict_text: "We recommend WordReference to learners and writers for 
 editorial_trust_label: "Sources checked · 6 Nov 2026"
 category: "Produktivität"
 price_model: "Freemium"
+tool_facts:
+  hosting: "Web / provider"
+  open_source: "check"
+  self_hostable: "check"
 tags:
   - translation
   - language

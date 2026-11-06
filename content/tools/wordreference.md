@@ -13,6 +13,10 @@ editorial_verdict_text: "WordReference empfehlen wir Lernenden und Schreibenden 
 editorial_trust_label: "Quellen geprüft · 06.11.2026"
 category: "Produktivität"
 price_model: "Freemium"
+tool_facts:
+  hosting: "Web · Anbieter"
+  open_source: "prüfen"
+  self_hostable: "prüfen"
 tags: [translation, language, reference, productivity]
 official_url: "https://www2.wordreference.com/"
 popularity: 0

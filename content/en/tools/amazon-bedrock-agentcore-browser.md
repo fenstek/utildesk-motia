@@ -12,6 +12,10 @@ editorial_verdict_text: "The documented isolation, Live View, and IAM controls f
 editorial_trust_label: "Sources checked · 6 Nov 2026"
 category: AI Infrastructure
 price_model: Nutzungsbasiert
+tool_facts:
+  hosting: "AWS Cloud"
+  open_source: "check"
+  self_hostable: "check"
 tags:
   - aws
   - browser automation

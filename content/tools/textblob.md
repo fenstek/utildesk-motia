@@ -12,7 +12,12 @@ editorial_verdict_headline: "Bedingt geeignet für kleine, geprüfte NLP-Aufgabe
 editorial_verdict_text: "Mit Vorbehalt für lokale Python-Baselines; deutsche oder folgenreiche Klassifikationen brauchen eigene Prüfdaten und menschliche Kontrolle."
 editorial_trust_label: "Quellen geprüft · 06.11.2026"
 category: "Produktivität"
+schema_application_type: "SoftwareApplication"
 price_model: "Open Source"
+tool_facts:
+  hosting: "Lokal / eigene Infrastruktur"
+  open_source: "Ja (MIT)"
+  self_hostable: "Lokal ausführbar"
 tags: [nlp, python, library]
 official_url: "https://textblob.readthedocs.io/en/dev/"
 popularity: 0

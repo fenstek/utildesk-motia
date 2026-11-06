@@ -12,6 +12,10 @@ editorial_verdict_text: "Die dokumentierten Isolations-, Live-View- und IAM-Funk
 editorial_trust_label: "Quellen geprüft · 06.11.2026"
 category: AI Infrastructure
 price_model: Nutzungsbasiert
+tool_facts:
+  hosting: "AWS Cloud"
+  open_source: "prüfen"
+  self_hostable: "prüfen"
 tags: [aws, browser-automation, ai-agents, infrastructure]
 official_url: "https://aws.amazon.com/bedrock/agentcore/"
 description: "Isolierte Browser-Laufzeit für Agenten mit Sitzungssteuerung, Live-Ansicht, optionaler Aufzeichnung und konfigurierbaren AWS-Berechtigungen und Netzwerken."
