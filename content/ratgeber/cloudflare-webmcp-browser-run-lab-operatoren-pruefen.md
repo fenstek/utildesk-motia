@@ -13,9 +13,9 @@ language: "de"
 coverImage: "/images/ratgeber/cloudflare-webmcp-browser-run-lab-hero-poster-7d734cb28f4d41c2.webp"
 coverVideo: "/videos/ratgeber/cloudflare-webmcp-browser-run-lab-hero-loop-da23b913e3cdc6c5.mp4"
 coverVideoAlt: "Hotelmitarbeiterin und Messingroboter am Empfangstresen mit Buchungsformular."
-secondaryImage: "/images/ratgeber/cloudflare-webmcp-browser-run-lab-inline-poster-d1c6470d9b540185.webp"
-inlineVideo: "/videos/ratgeber/cloudflare-webmcp-browser-run-lab-inline-loop-9ecc15c8c970797a.mp4"
-inlineVideoAlt: "Hotelmitarbeiterin und Messingroboter betrachten eine Karte am Empfangstresen."
+secondaryImage: "/images/ratgeber/cloudflare-webmcp-railway-signal-poster-d08e5ef9d6376a80.webp"
+inlineVideo: "/videos/ratgeber/cloudflare-webmcp-railway-signal-loop-f2fd80a0345934e2.mp4"
+inlineVideoAlt: "Eine Fahrdienstleiterin stellt das Signal für einen wartenden automatisierten Triebwagen."
 editorial_reviewed: false
 ai_assistance: true
 ai_disclosure_mode: required-text
@@ -56,7 +56,7 @@ Genau hier kippt die Prüfung von „Ist `complete_booking` vorhanden?“ zu „
 
 Am 6. August 2026 beschrieb Cloudflare eine optionale WebMCP-Entwicklervorschau: Ein Domaininhaber konnte sie im Dashboard einschalten; Cloudflare fügte dann einen Verweis auf ein Bridge-Skript unter derselben Herkunft in HTML-Antworten ein und registrierte ausgewählte Werkzeugpakete. Das Paket „Site MCP Server“ ruft laut Cloudflare den eigenen MCP-Endpunkt der Website auf und nutzt dabei die bestehende Sitzung des Besuchers. Das ist ein freiwilliger Cloudflare-Pfad für eine vom Domaininhaber gewählte Website, keine automatische Erweiterung aller Websites – und keine zusätzliche Buchungsberechtigung. [Cloudflares Ankündigung](https://blog.cloudflare.com/webmcp/) datiert diesen Funktionsumfang auf den 6. August.
 
-![Hotelmitarbeiterin und Messingroboter betrachten eine Karte am Empfangstresen.](/images/ratgeber/cloudflare-webmcp-browser-run-lab-inline-poster-d1c6470d9b540185.webp)
+![Eine Fahrdienstleiterin stellt das Signal für einen wartenden automatisierten Triebwagen.](/images/ratgeber/cloudflare-webmcp-railway-signal-poster-d08e5ef9d6376a80.webp)
 
 Für eine echte Anwendung sollte die Buchungsentscheidung daher in der Geschäftslogik der Anwendung liegen: Sie prüft Konto und Berechtigung erneut, bindet die Freigabe an Hotel, Termin, Gesamtpreis und Bedingungen und protokolliert anschließend genau einen Testvorgang. Das ist eine Betriebsempfehlung, keine Zusage, dass eine beliebige WebMCP-Seite diese Kontrollen schon eingebaut hat.
 

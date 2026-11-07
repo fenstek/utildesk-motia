@@ -13,9 +13,9 @@ language: "en"
 coverImage: "/images/ratgeber/cloudflare-webmcp-browser-run-lab-hero-poster-7d734cb28f4d41c2.webp"
 coverVideo: "/videos/ratgeber/cloudflare-webmcp-browser-run-lab-hero-loop-da23b913e3cdc6c5.mp4"
 coverVideoAlt: "A hotel clerk and a brass automaton at the reception desk with a booking form."
-secondaryImage: "/images/ratgeber/cloudflare-webmcp-browser-run-lab-inline-poster-d1c6470d9b540185.webp"
-inlineVideo: "/videos/ratgeber/cloudflare-webmcp-browser-run-lab-inline-loop-9ecc15c8c970797a.mp4"
-inlineVideoAlt: "A hotel clerk and a brass automaton looking over a card at the reception desk."
+secondaryImage: "/images/ratgeber/cloudflare-webmcp-railway-signal-poster-d08e5ef9d6376a80.webp"
+inlineVideo: "/videos/ratgeber/cloudflare-webmcp-railway-signal-loop-f2fd80a0345934e2.mp4"
+inlineVideoAlt: "A railway signal operator clears the signal for a waiting automated railcar."
 editorial_reviewed: false
 ai_assistance: true
 ai_disclosure_mode: required-text
@@ -56,7 +56,7 @@ That changes the review question from “Does `complete_booking` exist?” to �
 
 Cloudflare described an optional WebMCP developer preview on August 6, 2026: a domain owner could switch it on in the dashboard, after which Cloudflare would add a bridge-script reference from the same origin to HTML responses and register selected tool packs. The Site MCP Server pack calls the site's own MCP endpoint using the visitor's existing session, according to Cloudflare. This is an opt-in path for a domain owner, not automatic support for every website—and it adds no booking authorization. [Cloudflare’s announcement](https://blog.cloudflare.com/webmcp/) dates that design to August 6.
 
-![A hotel clerk and a brass automaton looking over a card at the reception desk.](/images/ratgeber/cloudflare-webmcp-browser-run-lab-inline-poster-d1c6470d9b540185.webp)
+![A railway signal operator clears the signal for a waiting automated railcar.](/images/ratgeber/cloudflare-webmcp-railway-signal-poster-d08e5ef9d6376a80.webp)
 
 For a real application, the booking decision should live in its business logic: recheck the account and permission, bind approval to the hotel, dates, total price, and terms, then record exactly one test action. That is an operating recommendation, not a claim that an arbitrary WebMCP site already has these controls.
 

@@ -108,6 +108,12 @@
 /images/ratgeber/cloudflare-webmcp-browser-run-lab-inline-poster-d1c6470d9b540185.webp
   Cache-Control: public, max-age=31536000, immutable
 
+/videos/ratgeber/cloudflare-webmcp-railway-signal-loop-f2fd80a0345934e2.mp4
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/ratgeber/cloudflare-webmcp-railway-signal-poster-d08e5ef9d6376a80.webp
+  Cache-Control: public, max-age=31536000, immutable
+
 /scripts/ratgeber-article-motion.js
   Cache-Control: public, max-age=3600
 

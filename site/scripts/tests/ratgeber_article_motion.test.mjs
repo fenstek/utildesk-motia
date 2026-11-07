@@ -22,9 +22,13 @@ const sources = {
 };
 const assets = {
   heroVideo: "/videos/ratgeber/cloudflare-webmcp-browser-run-lab-hero-loop-da23b913e3cdc6c5.mp4",
-  inlineVideo: "/videos/ratgeber/cloudflare-webmcp-browser-run-lab-inline-loop-9ecc15c8c970797a.mp4",
+  inlineVideo: "/videos/ratgeber/cloudflare-webmcp-railway-signal-loop-f2fd80a0345934e2.mp4",
   heroPoster: "/images/ratgeber/cloudflare-webmcp-browser-run-lab-hero-poster-7d734cb28f4d41c2.webp",
-  inlinePoster: "/images/ratgeber/cloudflare-webmcp-browser-run-lab-inline-poster-d1c6470d9b540185.webp",
+  inlinePoster: "/images/ratgeber/cloudflare-webmcp-railway-signal-poster-d08e5ef9d6376a80.webp",
+};
+const inlineAlts = {
+  de: "Eine Fahrdienstleiterin stellt das Signal für einen wartenden automatisierten Triebwagen.",
+  en: "A railway signal operator clears the signal for a waiting automated railcar.",
 };
 const publishedAssets = Object.fromEntries(Object.entries(assets).map(([key, value]) => [key, path.join(siteRoot, "public", value.slice(1))]));
 const sha256 = (buffer) => createHash("sha256").update(buffer).digest("hex");
@@ -49,7 +53,9 @@ test("approved DE and EN article metadata keeps archive identity and truthful re
     assert.equal(data.canonicalUrl, `https://tools.utildesk.de/${locale === "en" ? "en/" : ""}ratgeber/${slug}/`);
     assert.equal(data.relatedTools.length, 3);
     assert.equal(data.coverVideo, assets.heroVideo);
+    assert.equal(data.secondaryImage, assets.inlinePoster);
     assert.equal(data.inlineVideo, assets.inlineVideo);
+    assert.equal(data.inlineVideoAlt, inlineAlts[locale]);
   }
 });
 
@@ -57,7 +63,11 @@ test("Markdown mirrors retain a useful inline poster and expose no placeholders"
   const articles = await readArticles();
   for (const [locale, { data, content }] of Object.entries(articles)) {
     assert.doesNotMatch(content, /\[NEW (?:HERO|INLINE) MOTION\]/);
-    assert.ok(content.includes(`![${data.inlineVideoAlt}](${assets.inlinePoster})`));
+    const inlineImage = [...content.matchAll(/!\[([^\]]*)\]\(([^)]+)\)/g)]
+      .find(([, , source]) => source === assets.inlinePoster);
+    assert.ok(inlineImage, `${locale} Markdown includes the new railway poster`);
+    assert.equal(inlineImage[1], data.inlineVideoAlt);
+    assert.equal(inlineImage[2], assets.inlinePoster);
     const markdownHtml = await marked.parse(content);
     assert.doesNotMatch(markdownHtml, /\[NEW (?:HERO|INLINE) MOTION\]/);
 
@@ -118,6 +128,7 @@ test("hero and inline output use one approved video each and localized descripti
 
     assert.equal(count(hero, /<video\b/g), 1);
     assert.equal(count(inline, /<video\b/g), 1);
+    assert.ok(inline.includes(`data-src="${assets.inlineVideo}"`));
     assert.equal(inline, runtimeInline);
     assert.equal(count(html, /<video\b/g), 2);
     assert.equal(count(html, /<figure class="article-inline-image article-motion-inline">/g), 1);
@@ -162,9 +173,9 @@ test("source media are the approved assets and runtime stores unreviewed status"
   for (const [name, file] of Object.entries(publishedAssets)) assert.equal(existsSync(file), true, `${name} is present`);
 
   assert.equal(await sha256(await readFile(publishedAssets.heroVideo)), "da23b913e3cdc6c555e21ca2c31e5519b96554badacffdbcdf4856a58376a126");
-  assert.equal(await sha256(await readFile(publishedAssets.inlineVideo)), "9ecc15c8c970797a414b7c5f180cdc729443cca196e226d60950ceef9f75e085");
+  assert.equal(await sha256(await readFile(publishedAssets.inlineVideo)), "f2fd80a0345934e2226405bf171500733e63b22c6d19ffee67e2bfd3f6298101");
   assert.equal(await sha256(await readFile(publishedAssets.heroPoster)), "7d734cb28f4d41c276ae551dcbaead26d5e3122ab06656490b51792ec2145525");
-  assert.equal(await sha256(await readFile(publishedAssets.inlinePoster)), "d1c6470d9b5401850cfd74736ba4b1284ecc661dd47e64e19a3fa78963833a30");
+  assert.equal(await sha256(await readFile(publishedAssets.inlinePoster)), "d08e5ef9d6376a80ef0a9a6750567cc75bfd43e751bbcbdf7c01178e713341ba");
 
   for (const locale of ["de", "en"]) {
     const entry = (await listRuntimeEntries({ kind: "ratgeber", locale })).find((candidate) => candidate.slug === slug);

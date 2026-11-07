@@ -14,6 +14,15 @@ const {
 } = Astro.props;
 const isEnglish = locale === "en";
 const isRequiredNotice = !transparency.reviewed || transparency.disclosureMode === "required-text";
+const publisherRequestedNoticeExceptionPaths = new Set([
+  "/ratgeber/cloudflare-webmcp-browser-run-lab-operatoren-pruefen",
+  "/en/ratgeber/cloudflare-webmcp-browser-run-lab-operatoren-pruefen",
+]);
+const normalizedPath = Astro.url.pathname.replace(/\/+$/, "");
+// Publisher-requested exception for this DE/EN article only; review metadata stays truthful.
+const showDisclosure = transparency.disclosureMode !== "none" && !(
+  isRequiredNotice && publisherRequestedNoticeExceptionPaths.has(normalizedPath)
+);
 const reviewDate = transparency.reviewedAt ? new Date(transparency.reviewedAt) : null;
 const formattedDate = reviewDate && Number.isFinite(reviewDate.getTime())
   ? new Intl.DateTimeFormat(isEnglish ? "en-GB" : "de-DE", { dateStyle: "medium" }).format(reviewDate)
@@ -23,7 +32,7 @@ const defaultScope = isEnglish
   : "Quellen, Tatsachenbehauptungen, Einordnung und Endfassung wurden von der Utildesk Redaktion geprüft und verantwortet.";
 ---
 
-{transparency.disclosureMode !== "none" && (
+{showDisclosure && (
   isRequiredNotice ? (
     <aside class="editorial-transparency-alert" role="note" aria-label={isEnglish ? "AI content disclosure" : "Hinweis zu KI-Inhalten"}>
       <span class="editorial-transparency-alert-kicker">{isEnglish ? "AI DISCLOSURE" : "KI-HINWEIS"}</span>
