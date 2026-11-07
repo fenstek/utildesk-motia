@@ -23,7 +23,12 @@ export interface RatgeberEntryData {
   eyebrow?: string;
   coverImage?: string;
   coverVideo?: string;
+  coverVideoAlt?: string;
   secondaryImage?: string;
+  inlineVideo?: string;
+  inlineVideoAlt?: string;
+  canonicalUrl?: string;
+  language?: string;
   tags?: string[];
   sidebarTitle?: string;
   sidebarPoints?: string[];

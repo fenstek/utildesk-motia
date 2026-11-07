@@ -22,6 +22,16 @@ const CONTENT_SOURCES = [
 ];
 
 const asString = (value) => (value == null ? "" : String(value).trim());
+const asBoolean = (value, fallback) => {
+  if (typeof value === "boolean") return value;
+  if (typeof value === "number") return value !== 0;
+  if (typeof value === "string") {
+    const normalized = value.trim().toLowerCase();
+    if (["true", "yes", "1", "ja"].includes(normalized)) return true;
+    if (["false", "no", "0", "nein", "none"].includes(normalized)) return false;
+  }
+  return fallback;
+};
 const asIsoDate = (value) => {
   if (value == null || value === "") return "";
   const parsed = value instanceof Date ? value : new Date(String(value));
@@ -52,6 +62,12 @@ const toRuntimeEntry = async ({ kind, locale, file, raw, primaryEntry = null }) 
   const excerpt = asString(parsed.data.excerpt || parsed.data.description || parsed.data.summary) || firstParagraph(parsed.content);
   const sourceUpdatedAt = asIsoDate(parsed.data.updated || parsed.data.lastReviewed || parsed.data.last_reviewed);
   const sourcePublishedAt = asIsoDate(parsed.data.date || parsed.data.created_at || parsed.data.createdAt);
+  const editorialReviewed = kind === "tool"
+    ? Number(isCuratedToolEntry(primaryEntry ?? { slug, data: parsed.data, content: parsed.content }))
+    : Number(asBoolean(
+        parsed.data.editorial_reviewed ?? parsed.data.editorialReviewed ?? parsed.data.human_reviewed ?? parsed.data.humanReviewed,
+        true,
+      ));
 
   const basis = primaryEntry ?? { slug, data: parsed.data, content: parsed.content };
   const searchDecision = kind === "tool"
@@ -85,7 +101,7 @@ const toRuntimeEntry = async ({ kind, locale, file, raw, primaryEntry = null }) 
     canonicalPath,
     robotsPolicy: searchDecision.robots,
     googlebotPolicy: searchDecision.googlebotRobots,
-    editorialReviewed: kind === "tool" ? Number(isCuratedToolEntry(basis)) : 1,
+    editorialReviewed,
     illustrationPath,
     assetKey,
     assetHash,

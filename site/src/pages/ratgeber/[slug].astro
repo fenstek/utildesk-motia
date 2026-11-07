@@ -20,6 +20,7 @@ import {
 import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../lib/schema";
 import { addContentHeadingIds, wrapFaqSection } from "../../lib/contentNavigation";
 import { resolveEditorialTransparency } from "../../lib/editorialTransparency";
+import { buildArticleMotionMarkup, replaceInlineMotionImage } from "../../lib/articleMotion.mjs";
 
 export async function getStaticPaths() {
   const entries = await listRatgeberEntries();
@@ -52,6 +53,17 @@ const localAssetExists = (src: string | null | undefined) => {
 const safeCoverImage = data.coverImage && localAssetExists(String(data.coverImage)) ? String(data.coverImage) : null;
 const safeCoverVideo = data.coverVideo && localAssetExists(String(data.coverVideo)) ? String(data.coverVideo) : null;
 const safeSecondaryImage = data.secondaryImage && localAssetExists(String(data.secondaryImage)) ? String(data.secondaryImage) : null;
+const heroMotionHtml = data.coverVideoAlt
+  ? buildArticleMotionMarkup({
+      video: safeCoverVideo,
+      poster: safeCoverImage,
+      alt: data.coverVideoAlt,
+      locale: "de",
+      slug,
+      position: "hero",
+    })
+  : "";
+const inlineVideo = data.inlineVideo && localAssetExists(String(data.inlineVideo)) ? String(data.inlineVideo) : null;
 const rawArticleHtml = String(marked.parse(content));
 let articleHtml = rawArticleHtml.replace(
   /<p>\s*(<img\b[^>]*>)\s*<\/p>/g,
@@ -61,6 +73,13 @@ articleHtml = articleHtml.replace(
   /<figure class="article-inline-image">\s*<img\b([^>]*?)src="([^"]+)"([^>]*)>\s*<\/figure>/g,
   (match, before, src, after) => localAssetExists(src) ? match : "",
 );
+articleHtml = replaceInlineMotionImage(articleHtml, {
+  video: inlineVideo,
+  poster: safeSecondaryImage,
+  alt: data.inlineVideoAlt,
+  locale: "de",
+  slug,
+});
 const headingNavigation = addContentHeadingIds(articleHtml);
 articleHtml = wrapFaqSection(headingNavigation.html, "FAQ aufklappen");
 const articleHeadings = headingNavigation.headings;
@@ -241,7 +260,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     </header>
 
     {safeCoverImage ? (
-      <figure class="sheet-cover">
+      <figure class:list={["sheet-cover", heroMotionHtml ? "sheet-cover-motion" : ""]}>
+        {heroMotionHtml ? (
+          <Fragment set:html={heroMotionHtml} />
+        ) : (
         <button
           type="button"
           class="article-cover-trigger js-lightbox-image sheet-cover-btn"
@@ -276,9 +298,11 @@ const breadcrumbSchema = buildBreadcrumbSchema([
             <img src={safeCoverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
           )}
         </button>
+        )}
         <AiImageDisclosure locale="de" mode={transparency.coverDisclosure} />
       </figure>
     ) : null}
+    {heroMotionHtml && <script is:inline src="/scripts/ratgeber-article-motion.js" defer></script>}
     </div>
 
     <div class="sheet-body">

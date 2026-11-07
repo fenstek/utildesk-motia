@@ -1,32 +1,36 @@
 ---
 slug: "cloudflare-webmcp-browser-run-lab-operatoren-pruefen"
-title: "Cloudflare WebMCP in Browser Run Lab: Who may let the agent complete the hotel booking?"
-date: 2026-08-14
-updated: 2026-08-15
+title: "The hotel is found. Who gets to book? Testing WebMCP in Cloudflare Browser Run"
+canonicalUrl: "https://tools.utildesk.de/en/ratgeber/cloudflare-webmcp-browser-run-lab-operatoren-pruefen/"
+date: "2026-08-14"
+updated: "2026-11-07"
 category: "Analysis"
 eyebrow: "WebMCP & Browser Run"
-excerpt: "Cloudflare's hotel-chain demo shows where a WebMCP agent meets the confirmation boundary: a typed call does not grant the right to complete a booking."
+excerpt: "The hotel demo shows where an agent must wait for a person, and why Lab and Kitesurf support different kinds of tests."
 readTime: 8
 releaseOrder: 52
-coverImage: /images/ratgeber/cloudflare-webmcp-browser-run-lab-cover-pop-art.webp
-secondaryImage: /images/ratgeber/cloudflare-webmcp-browser-run-lab-workflow-pop-art.webp
-editorial_reviewed: true
-editorial_reviewed_at: 2026-08-15
-final_human_approval_at: 2026-08-15
-editorial_review_scope: "Sources, factual claims, analysis, and final version"
+language: "en"
+coverImage: "/images/ratgeber/cloudflare-webmcp-browser-run-lab-hero-poster-7d734cb28f4d41c2.webp"
+coverVideo: "/videos/ratgeber/cloudflare-webmcp-browser-run-lab-hero-loop-da23b913e3cdc6c5.mp4"
+coverVideoAlt: "A hotel clerk and a brass automaton at the reception desk with a booking form."
+secondaryImage: "/images/ratgeber/cloudflare-webmcp-browser-run-lab-inline-poster-d1c6470d9b540185.webp"
+inlineVideo: "/videos/ratgeber/cloudflare-webmcp-browser-run-lab-inline-loop-9ecc15c8c970797a.mp4"
+inlineVideoAlt: "A hotel clerk and a brass automaton looking over a card at the reception desk."
+editorial_reviewed: false
 ai_assistance: true
-ai_disclosure_mode: editorial-passport
+ai_disclosure_mode: required-text
+cover_disclosure: ai-generated
+sidebarTitle: "Key takeaways"
+sidebarPoints:
+  - "Lab and Kitesurf support WebMCP; only Lab provides a live handoff to a person in an automated session."
+  - "A typed tool call clarifies the interface, but it does not grant business authority."
+  - "Discovery, preview, and final mutation need separate actors, boundaries, and evidence."
 tags:
   - "WebMCP"
   - "Browser Run"
   - "AI agents"
   - "Browser automation"
   - "Human-in-the-loop"
-sidebarTitle: "Bottom line"
-sidebarPoints:
-  - "Browser Run shows WebMCP in a Chrome-beta lab, not a production approval."
-  - "A typed tool call clarifies the interface, but it does not grant business authority."
-  - "Discovery, preview, and final mutation need separate actors, boundaries, and evidence."
 relatedTools:
   - title: "Google Chrome"
     href: "/en/tools/google-chrome/"
@@ -36,51 +40,51 @@ relatedTools:
     href: "/en/tools/langchain/"
 ---
 
-In the documented hotel-chain demo for [Cloudflare Browser Run](https://developers.cloudflare.com/browser-run/features/webmcp/), the agent starts cleanly: it discovers the available tools, calls `search_location`, picks a hotel, and uses `start_booking` to begin the reservation. It can then call `complete_booking` as well—but the reservation is not complete yet. The tool waits until a person presses Confirm Reservation in the browser.
+Give a browser agent a clear acceptance task: “Find a hotel in Paris with breakfast and prepare the booking. Do not complete it until I approve.” The documented hotel example in [Cloudflare Browser Run](https://developers.cloudflare.com/browser-run/features/webmcp/) makes the handoff visible: search and selection lead to `start_booking` and then `complete_booking`; in this example, the last call waits for a person to select Confirm Reservation in the browser.
 
-That is the operator's real question: if the agent already knows how to call the final tool, who allows it to create an actual booking, and on what basis? The guest faces a binding transaction; the business faces a real side effect. [WebMCP](https://webmachinelearning.github.io/webmcp/) removes much of the brittle screenshot-and-click guesswork. It does not move permission for the mutation away from the application and the person.
+For an operator, finding a hotel is only half the question. Who may create a binding reservation, and can the test surface show the point where a person must step in? Since September 28, 2026, Lab and Kitesurf have supported WebMCP through `document.modelContext`; Lab no longer exposes the old `navigator.modelContextTesting` API. That [Cloudflare changelog](https://developers.cloudflare.com/changelog/post/2026-09-28-webmcp-api/) changes where the inspection begins.
 
-## The hotel booking exposes the control point
+## A tool list is an interface, not consent
 
-Cloudflare presents the flow as a sequence rather than an API catalogue. `navigator.modelContextTesting.listTools()` lets the operator inspect what the page exposes. After `search_location`, the page state changes and further tools may become available. After the hotel is selected, `start_booking` begins the booking step. Only then does `complete_booking` enter with the guest details. That final tool pauses until the visible confirmation happens. It is a concrete human-in-the-loop pattern: the agent can prepare and request, while the browser waits for a human decision.
+[WebMCP](https://webmachinelearning.github.io/webmcp/) lets a website expose structured tools to agents: a name, description, inputs, and executable page code. In Cloudflare’s hotel example, the available list changes with page state: search first, then filtering, and booking actions after a hotel is selected. That replaces some manual button-finding with named actions. It still does not tell you what a real booking service will do when one of those actions runs. ([Cloudflare Browser Run](https://developers.cloudflare.com/browser-run/features/webmcp/)) The current WebMCP specification is a Community Group draft, not a W3C Standard. ([WebMCP draft](https://webmachinelearning.github.io/webmcp/))
 
-The change in viewpoint comes after the typed call works. Before WebMCP, the operational problem is often whether the agent can find the right button. A website can now offer structured functions with names, descriptions, and input schemas, which makes that interface less fragile. The harder question follows immediately: is the function a preview, or does it already change business state? A typed call improves the entry point into business logic. It does not create a new authorization layer.
+The confirmation belongs to this specific demo. Chrome says a site can request user interaction for sensitive actions such as a purchase; WebMCP does not require every tool or application to pause that way. The browser’s `tools` Permissions Policy can limit which contexts may register tools where that policy is supported. It does not decide whether the signed-in account may book this room at this price. Those are separate layers in [Chrome for Developers](https://developer.chrome.com/docs/ai/webmcp/) and the [WebMCP draft](https://webmachinelearning.github.io/webmcp/).
 
-## A clear name does not prove clear intent
+That changes the review question from “Does `complete_booking` exist?” to “What does its handler actually do?” The current specification draft warns that a tool’s declared intent can differ from its behavior; its example describes a cart action that appears to be for review but actually makes a purchase. Names, schemas, and hints such as “read-only” are review material, not proof of the effect. ([WebMCP security section](https://webmachinelearning.github.io/webmcp/))
 
-The [WebMCP specification](https://webmachinelearning.github.io/webmcp/) names this gap as *misrepresentation of intent*. A tool description is not guaranteed to match what its implementation actually does. In its *ambiguous finalization* scenario, a tool sounds as if it finalizes a cart for viewing but actually triggers a purchase. That is not merely an API naming problem: an authenticated page session may already carry the power to make purchases, change account settings, or share private data.
+## A bridge can expose tools; it cannot grant booking rights
 
-The control point therefore has to move. An operator should not stop at seeing `complete_booking` in the tool list. The review needs to establish which identity the session represents, which tenant is in scope, which backend rule accepts the call, and whether the person visibly releases the exact effect. The tool is a new entry point into existing business logic—not evidence that the caller is authorized to use it.
+Cloudflare described an optional WebMCP developer preview on August 6, 2026: a domain owner could switch it on in the dashboard, after which Cloudflare would add a bridge-script reference from the same origin to HTML responses and register selected tool packs. The Site MCP Server pack calls the site's own MCP endpoint using the visitor's existing session, according to Cloudflare. This is an opt-in path for a domain owner, not automatic support for every website—and it adds no booking authorization. [Cloudflare’s announcement](https://blog.cloudflare.com/webmcp/) dates that design to August 6.
 
-## Native integration is site code, not proven edge injection
+![A hotel clerk and a brass automaton looking over a card at the reception desk.](/images/ratgeber/cloudflare-webmcp-browser-run-lab-inline-poster-d1c6470d9b540185.webp)
 
-Native integration belongs to the website. [Chrome documents](https://developer.chrome.com/docs/ai/webmcp/imperative-api/) the imperative path through `document.modelContext.registerTool()` with a name, description, input schema, and execution function. The specification also describes a declarative path based on HTML forms. Both paths require the site to express capabilities for agents. The four official sources do not establish that an arbitrary unmodified site is automatically made WebMCP-capable through a Cloudflare edge injection. That would be an additional claim and does not belong in this rewrite.
+For a real application, the booking decision should live in its business logic: recheck the account and permission, bind approval to the hotel, dates, total price, and terms, then record exactly one test action. That is an operating recommendation, not a claim that an arbitrary WebMCP site already has these controls.
 
-The test surface is narrower than a demo impression may suggest. Cloudflare provides WebMCP in Browser Run through an experimental pool of Chrome-beta instances. Lab sessions are for testing; production workloads should not be sent there. The specification is also a Draft Community Group Report, explicitly not a W3C Standard. For an operator, the practical sequence is to understand behavior in the lab first, then decide separately whether the application can earn a pilot under its own production controls.
+## Choose the browser around the human handoff
 
-## Three decisions before a pilot
+Choose **Lab** when an automated browser test using the Chrome DevTools Protocol (CDP) must pause so a person can inspect or provide the confirmation in the same live browser session. Cloudflare provides a live view for Lab. It uses experimental Chrome features, though, and Cloudflare says not to use Lab for production workloads. ([Cloudflare Browser Run](https://developers.cloudflare.com/browser-run/features/webmcp/))
 
-The following separation is an operating test, not a claim that WebMCP prescribes one universal architecture.
+Choose **Kitesurf** for tool discovery and flows that do not require human input inside the running CDP test. Kitesurf has no live view; an agent using Chrome DevTools MCP cannot complete a booking confirmation that waits for a person. Someone can run such a tool manually in the WebMCP panel in the Kitesurf playground. Cloudflare announced Kitesurf support on September 28; its [current Browser Run guidance](https://developers.cloudflare.com/browser-run/features/webmcp/) explains the operational difference. ([Kitesurf update](https://blog.cloudflare.com/kitesurf-update/))
 
-![Pop-art collage showing the path from a read-only tool to a confirmed hotel booking at the origin](/images/ratgeber/cloudflare-webmcp-browser-run-lab-workflow-pop-art.webp)
+Cloudflare also documents two Kitesurf isolation limits: it does not currently implement the WebMCP `tools` Permissions Policy or filter tools by origin. Kitesurf also does not expose through CDP tools registered in iframes or popups. So a Kitesurf test should not be treated as proof that those browser isolation boundaries are enforced. [Cloudflare’s current documentation](https://developers.cloudflare.com/browser-run/features/webmcp/) describes these limits.
 
-| Decision | Actor | Boundary | Observable check |
-| --- | --- | --- | --- |
-| **Read-only discovery** | An agent in the Browser Run Lab may list tools and read search, status, or preview data. | No creation, update, payment, publication, or deletion; use only allowlisted tools and test data. | The `listTools`/search call is visible in the trace; the backend shows no write or mutation event. |
-| **Preview / start action** | The agent may request a selection or a preliminary booking step; the application validates identity and scope. | `start_booking` creates at most a pending, inspectable state; it does not commit the business action. | The UI or API exposes a concrete preview or pending reference; there is no commit entry or final receipt. |
-| **Final mutation / confirmation** | The application decides server-side; a person confirms the concrete effect in the browser. | Before `complete_booking`, the session, authorization, and current business state are checked again; the agent cannot replace that release. | Visible confirmation, authorization decision, and resulting mutation or booking record are traceable with a correlation ID. |
+## Read first; then release a test state
 
-These checks make the difference between “the tool exists” and “the action is controlled” visible. They also explain why a human fallback is not a regression. If the schema is unclear, permission is missing, or backend state no longer matches the preview, the normal booking flow should remain available instead of making the agent guess through the DOM.
+Start in an isolated test application with synthetic accounts and booking data. In DevTools, open **Application > WebMCP** and, in Lab, inspect tool names, descriptions, input schemas, and activity first. Run search and filtering only; the backend should record no write, payment, or booking event. Cloudflare’s demo documentation shows that the tool list can change with the page and the action taken. [Cloudflare Browser Run](https://developers.cloudflare.com/browser-run/features/webmcp/)
 
-## Who allows the last step?
+Cloudflare says Lab sessions count toward regular Browser Run limits and pricing. Check the account quota before starting, then close the temporary session after testing. Checking the quota and closing the session are operational recommendations; the limits and pricing statement comes from [Cloudflare’s documentation](https://developers.cloudflare.com/browser-run/features/webmcp/).
 
-The hotel demo's answer is precise, but not magical: the agent may request `complete_booking`. The application must accept that request within its own business logic. The final confirmation remains with the person who selects Confirm Reservation. In a real application, that browser click is only the visible demo boundary; authentication, authorization, validation, limits, and auditing still have to be sound.
+Next, call `start_booking` in that same test system and stop before confirmation. Check that the application and backend show a specific pending reference and that no confirmed booking record exists. This tests the boundary between “prepared” and “committed” without reaching a real hotel provider.
 
-WebMCP is therefore a cleaner new entry point into existing business logic. It can free an agent from screenshot and click guesswork, but it gives the agent no rights by itself. An operator starting in Browser Run should discover read-only, observe preview and start actions separately, and allow a final mutation only after a demonstrable application decision and human confirmation. Without that chain, the defensible status is a controlled lab experiment—not production approval.
+Only in a second run that is guaranteed to target a test or mock application should a person select the confirmation. Then check that exactly one test record exists with the same booking details. The [Cloudflare demo](https://developers.cloudflare.com/browser-run/features/webmcp/) waits for that click; your application may behave differently. Do not run this step against a real hotel account or payment method.
+
+Apply the same release rule to either backend: verify that a test action stays pending until the application presents that exact transaction for review; confirm only in the isolated environment and only after that review. The application decides whether the booking is authorized; WebMCP makes its entry point visible.
 
 ## Sources
 
-- [Cloudflare Browser Run: WebMCP](https://developers.cloudflare.com/browser-run/features/webmcp/)
-- [Cloudflare Changelog: Browser Run adds WebMCP support](https://developers.cloudflare.com/changelog/post/2026-04-15-br-webmcp/)
-- [WebMCP specification](https://webmachinelearning.github.io/webmcp/)
-- [Chrome for Developers: Imperative API](https://developer.chrome.com/docs/ai/webmcp/imperative-api/)
+- [Cloudflare Browser Run: WebMCP](https://developers.cloudflare.com/browser-run/features/webmcp/) — updated September 28, 2026
+- [Cloudflare Changelog: WebMCP in Kitesurf and `document.modelContext`](https://developers.cloudflare.com/changelog/post/2026-09-28-webmcp-api/) — September 28, 2026
+- [Cloudflare Blog: Give any website a WebMCP interface](https://blog.cloudflare.com/webmcp/) — August 6, 2026
+- [Cloudflare Blog: The road to the agentic browser: A Kitesurf update](https://blog.cloudflare.com/kitesurf-update/) — September 28, 2026
+- [WebMCP Community Group draft](https://webmachinelearning.github.io/webmcp/) — November 2, 2026
+- [Chrome for Developers: WebMCP](https://developer.chrome.com/docs/ai/webmcp/) — updated October 7, 2026

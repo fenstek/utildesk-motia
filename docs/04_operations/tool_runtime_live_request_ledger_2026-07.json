@@ -7277,6 +7277,32 @@
         "https://utildesk-tool-fallback.pages.dev"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-07T20:26:15.945Z",
+      "mode": "production-webmcp-article-release-reservation",
+      "command": "Bounded WebMCP article release and verification; 30 read-only preflight requests were already performed before reservation; exclude the noindex article from sitemap and IndexNow; no automatic retry and at most one manually controlled transient retry",
+      "estimate": {
+        "preflightReadOnlyAlreadyPerformedBeforeReservation": 30,
+        "pagesReleaseControl": 40,
+        "workerReleaseControl": 40,
+        "bothD1RowsAndTargetChecks": 16,
+        "liveArticleChecks": 12,
+        "liveAssetChecks": 8,
+        "archiveChecks": 8,
+        "sitemapAndNoindexPolicyChecks": 3,
+        "indexNowEligibleIndexableUrlsOnly": 2,
+        "oneManualTransientRetryMaximum": 1,
+        "total": 160
+      },
+      "worstCaseRequests": 160,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4",
+        "https://tools.utildesk.de",
+        "https://{pages-project}.pages.dev",
+        "https://api.indexnow.org/indexnow (only indexable URLs; not this noindex article)"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }

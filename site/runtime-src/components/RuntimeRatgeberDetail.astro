@@ -8,6 +8,7 @@ import { addContentHeadingIds, wrapFaqSection } from "../../src/lib/contentNavig
 import { resolveEditorialTransparency } from "../../src/lib/editorialTransparency";
 import { buildBreadcrumbSchema, buildPublisherOrganization, SITE_URL, toAbsoluteUrl } from "../../src/lib/siteMeta";
 import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../src/lib/schema";
+import { buildArticleMotionMarkup, replaceInlineMotionImage } from "../../src/lib/articleMotion.mjs";
 import { tagHref } from "../../src/lib/tagRoutes";
 import type { RuntimeContentEntry, RuntimeLocale } from "../lib/runtimeContent";
 import { getRuntimeRelatedGuides, relatedTools, stringArray } from "../lib/ratgeberRuntime";
@@ -30,7 +31,10 @@ const category = value("category", isEnglish ? "Guide" : "Ratgeber");
 const eyebrow = value("eyebrow", category);
 const coverImage = value("coverImage");
 const coverVideo = value("coverVideo");
+const coverVideoAlt = value("coverVideoAlt");
 const secondaryImage = value("secondaryImage");
+const inlineVideo = value("inlineVideo");
+const inlineVideoAlt = value("inlineVideoAlt");
 const tags = stringArray(data.tags);
 const sidebarPoints = stringArray(data.sidebarPoints);
 const relatedGuideEntries = getRuntimeRelatedGuides(entry, entries);
@@ -46,8 +50,18 @@ const transparency = resolveEditorialTransparency(data, {
   aiAssisted: true,
   reviewedAt: updatedAt,
 });
+const heroMotionHtml = coverVideoAlt
+  ? buildArticleMotionMarkup({ video: coverVideo, poster: coverImage, alt: coverVideoAlt, locale, slug, position: "hero" })
+  : "";
 const rawHtml = await marked.parse(entry.markdown, { async: false });
-const { html: withHeadingIds, headings } = addContentHeadingIds(rawHtml);
+const articleHtmlWithMotion = replaceInlineMotionImage(rawHtml, {
+  video: inlineVideo,
+  poster: secondaryImage,
+  alt: inlineVideoAlt,
+  locale,
+  slug,
+});
+const { html: withHeadingIds, headings } = addContentHeadingIds(articleHtmlWithMotion);
 const articleHtml = wrapFaqSection(withHeadingIds, isEnglish ? "Frequently asked questions" : "Häufige Fragen");
 const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(entry.markdown));
 const articleSchema = {
@@ -88,7 +102,7 @@ const cleanVideo = (video: string) => video && (/^https:\/\//.test(video) || vid
 const safeCoverVideo = cleanVideo(coverVideo) ? coverVideo : "";
 // Newer article packages place the secondary illustration in the relevant
 // Markdown section. Do not append the same image once more after the prose.
-const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.includes(secondaryImage);
+const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && (entry.markdown.includes(secondaryImage) || articleHtml.includes(secondaryImage));
 ---
 
 <BaseLayout
@@ -139,7 +153,9 @@ const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.
 
       {cleanImage(coverImage) && (
         <figure class="ratgeber-cover runtime-ratgeber-cover">
-          {safeCoverVideo ? (
+          {heroMotionHtml ? (
+            <Fragment set:html={heroMotionHtml} />
+          ) : safeCoverVideo ? (
             <video
               autoplay
               muted
@@ -223,5 +239,6 @@ const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.
         </section>
       )}
     </article>
+    {heroMotionHtml && <script is:inline src="/scripts/ratgeber-article-motion.js" defer></script>}
   </main>
 </BaseLayout>
