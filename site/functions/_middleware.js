@@ -70,12 +70,23 @@ const RECOVERY_PROOF_RATGEBER_SLUGS = new Set([
   "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
   "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
 ]);
+const RECOVERY_PROOF_EN_RATGEBER_SLUGS = new Set([
+  "beste-ocr-apis-rechnungen-deutschland-2026",
+  "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+  "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+]);
 const RECOVERY_PROOF_TOOL_SLUGS = new Set([
   "cloudconvert",
   "convertio",
   "smallpdf",
   "tesseract-ocr",
 ]);
+
+const isEnglishRecoveryProofGuide = (pathname) => {
+  const normalized = String(pathname || "").replace(/\/$/, "") || "/";
+  const match = normalized.match(/^\/en\/ratgeber\/([^/]+)$/);
+  return Boolean(match && RECOVERY_PROOF_EN_RATGEBER_SLUGS.has(match[1]));
+};
 
 const recoveryRobotsForPath = (pathname) => {
   const normalized = String(pathname || "").replace(/\/$/, "") || "/";
@@ -84,6 +95,10 @@ const recoveryRobotsForPath = (pathname) => {
   }
   const ratgeber = normalized.match(/^\/ratgeber\/([^/]+)$/);
   if (ratgeber && RECOVERY_PROOF_RATGEBER_SLUGS.has(ratgeber[1])) {
+    return RECOVERY_ROBOTS_INDEX_FOLLOW;
+  }
+  const englishRatgeber = normalized.match(/^\/en\/ratgeber\/([^/]+)$/);
+  if (englishRatgeber && RECOVERY_PROOF_EN_RATGEBER_SLUGS.has(englishRatgeber[1])) {
     return RECOVERY_ROBOTS_INDEX_FOLLOW;
   }
   const tool = normalized.match(/^\/tools\/([^/]+)$/);
@@ -96,14 +111,42 @@ const recoveryRobotsForPath = (pathname) => {
 export const applyRecoveryRobotsToHtml = (html, pathname) => {
   const robots = recoveryRobotsForPath(pathname);
   const meta = `<meta name="robots" content="${robots}">`;
-  const withRobotsMeta = /<meta\b(?=[^>]*\bname\s*=\s*["']robots["'])[^>]*>/i.test(html)
-    ? html.replace(/<meta\b(?=[^>]*\bname\s*=\s*["']robots["'])[^>]*>/gi, meta)
+  if (!isEnglishRecoveryProofGuide(pathname)) {
+    const withRobotsMeta = /<meta\b(?=[^>]*\bname\s*=\s*["']robots["'])[^>]*>/i.test(html)
+      ? html.replace(/<meta\b(?=[^>]*\bname\s*=\s*["']robots["'])[^>]*>/gi, meta)
+      : html.replace(/<\/head>/i, `${meta}</head>`);
+    return {
+      html: withRobotsMeta,
+      indexable: robots === RECOVERY_ROBOTS_INDEX_FOLLOW,
+      robots,
+    };
+  }
+
+  const robotsMetaPattern = /<meta\b(?=[^>]*\bname\s*=\s*(?:"robots"|'robots'|robots(?=\s|\/?\>)))[^>]*>/gi;
+  let replacedRobotsMeta = false;
+  const replacedHtml = html.replace(robotsMetaPattern, () => {
+    if (replacedRobotsMeta) return "";
+    replacedRobotsMeta = true;
+    return meta;
+  });
+  const withRobotsMeta = replacedRobotsMeta
+    ? replacedHtml
     : html.replace(/<\/head>/i, `${meta}</head>`);
   return {
     html: withRobotsMeta,
     indexable: robots === RECOVERY_ROBOTS_INDEX_FOLLOW,
     robots,
   };
+};
+
+const applyRecoveryRobotsHeader = (headers, pathname, recoveryHtml) => {
+  if (isEnglishRecoveryProofGuide(pathname)) {
+    headers.set("X-Robots-Tag", recoveryHtml.robots);
+  } else if (recoveryHtml.indexable) {
+    headers.delete("X-Robots-Tag");
+  } else {
+    headers.set("X-Robots-Tag", "noindex, follow");
+  }
 };
 
 const stripDuplicatedRuntimeSecondaryImage = (html) => html.replace(
@@ -276,6 +319,19 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
       return cluster === "tools" ? frozenToolFallback(context) : context.next();
     }
 
+    if (
+      context.request.method === "HEAD" &&
+      cluster === "ratgeber" &&
+      isEnglishRecoveryProofGuide(url.pathname) &&
+      response.ok &&
+      response.headers.get("content-type")?.includes("text/html")
+    ) {
+      const headers = new Headers(response.headers);
+      headers.set("X-Robots-Tag", RECOVERY_ROBOTS_INDEX_FOLLOW);
+      headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
+      return new Response(null, { status: response.status, statusText: response.statusText, headers });
+    }
+
     // The runtime Worker and Pages are deployed independently. Keep the
     // article presentation resilient when a newer Pages design ships before
     // the Worker bundle can be redeployed.
@@ -292,12 +348,14 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
       const cleanedHtml = stripDuplicatedRuntimeSecondaryImage(orderedHtml);
       const recoveryHtml = applyRecoveryRobotsToHtml(cleanedHtml, url.pathname);
       const runtimeHtml = recoveryHtml.html;
+      const recoveryRobotsHeaderMismatch =
+        isEnglishRecoveryProofGuide(url.pathname) &&
+        response.headers.get("X-Robots-Tag") !== recoveryHtml.robots;
       if (cluster === "ratgeber" && !runtimeHtml.includes(RUNTIME_RATGEBER_STYLESHEET)) {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
         headers.delete("content-encoding");
-        if (recoveryHtml.indexable) headers.delete("X-Robots-Tag");
-        else headers.set("X-Robots-Tag", "noindex, follow");
+        applyRecoveryRobotsHeader(headers, url.pathname, recoveryHtml);
         const styledHtml = runtimeHtml.replace(
           "</head>",
           `<link rel="stylesheet" href="${RUNTIME_RATGEBER_STYLESHEET}"></head>`,
@@ -307,12 +365,15 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
         styledResponse.headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
         return styledResponse;
       }
-      if (runtimeHtml !== html || (!recoveryHtml.indexable && response.headers.get("X-Robots-Tag") !== "noindex, follow")) {
+      if (
+        runtimeHtml !== html ||
+        (!recoveryHtml.indexable && response.headers.get("X-Robots-Tag") !== "noindex, follow") ||
+        recoveryRobotsHeaderMismatch
+      ) {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
         headers.delete("content-encoding");
-        if (recoveryHtml.indexable) headers.delete("X-Robots-Tag");
-        else headers.set("X-Robots-Tag", "noindex, follow");
+        applyRecoveryRobotsHeader(headers, url.pathname, recoveryHtml);
         const orderedResponse = new Response(runtimeHtml, { status: response.status, headers });
         orderedResponse.headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : cluster === "tool-shell" ? "tool-shell-v1" : "ratgeber-v1");
         return orderedResponse;

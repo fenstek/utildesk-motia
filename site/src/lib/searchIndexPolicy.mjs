@@ -26,6 +26,11 @@ export const RECOVERY_PROOF_RATGEBER_SLUGS = new Set([
   "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
   "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
 ]);
+export const RECOVERY_PROOF_EN_RATGEBER_SLUGS = new Set([
+  "beste-ocr-apis-rechnungen-deutschland-2026",
+  "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+  "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+]);
 
 const TRUE_VALUES = new Set(["1", "true", "yes", "index", "indexable"]);
 const FALSE_VALUES = new Set(["0", "false", "no", "noindex", "hidden"]);
@@ -325,6 +330,10 @@ export const getRecoveryPageRobots = (pathname) => {
   if (normalized === "/ratgeber") return ROBOTS_INDEX_FOLLOW;
   const match = normalized.match(/^\/ratgeber\/([^/]+)$/);
   if (match && RECOVERY_PROOF_RATGEBER_SLUGS.has(match[1])) {
+    return ROBOTS_INDEX_FOLLOW;
+  }
+  const englishMatch = normalized.match(/^\/en\/ratgeber\/([^/]+)$/);
+  if (englishMatch && RECOVERY_PROOF_EN_RATGEBER_SLUGS.has(englishMatch[1])) {
     return ROBOTS_INDEX_FOLLOW;
   }
   return ROBOTS_NOINDEX_FOLLOW;

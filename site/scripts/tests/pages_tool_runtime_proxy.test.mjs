@@ -3,13 +3,15 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { filterToolCatalogResponse, frozenToolFallback, onRequest, toolDetailSlug, toolMachineRoute, toolRuntimeIsEnabled, toolShellRoute, toolShellRuntimeIsEnabled } from "../../functions/_middleware.js";
 import { listRuntimeEntries } from "../runtime-content.mjs";
+import { RECOVERY_PROOF_EN_RATGEBER_SLUGS, ROBOTS_INDEX_FOLLOW } from "../../src/lib/searchIndexPolicy.mjs";
 
 const originalFetch = globalThis.fetch;
+const robotMetaPattern = /<meta\b(?=[^>]*\bname\s*=\s*["']robots["'])[^>]*>/gi;
 
-const contextFor = ({ pathname = "/tools/chatgpt/", values = {}, nextBody = "static", requestHeaders = {} } = {}) => {
+const contextFor = ({ pathname = "/tools/chatgpt/", method = "GET", values = {}, nextBody = "static", requestHeaders = {} } = {}) => {
   let nextCalls = 0;
   const context = {
-    request: new Request(`https://tools.utildesk.de${pathname}`, { headers: requestHeaders }),
+    request: new Request(`https://tools.utildesk.de${pathname}`, { method, headers: requestHeaders }),
     env: {
       RATGEBER_REVIEW: {
         get: async (key) => Object.hasOwn(values, key) ? values[key] : null,
@@ -149,10 +151,130 @@ test("all-route mode proxies tool machine endpoints while off mode keeps the sta
   for (const pathname of ["/api/tools.json", "/en/api/tools.json", "/api/tools/chatgpt.json", "/en/markdown/tools/chatgpt.md"]) {
     const response = await onRequest(contextFor({ pathname, values: { "content-runtime:tools": "on" } }).context);
     assert.equal(response.headers.get("X-Utildesk-Content-Runtime"), "tools-v1");
+    assert.equal(response.headers.get("X-Robots-Tag"), "noindex");
     assert.equal(await response.text(), `runtime:${pathname}`);
   }
   const staticResponse = await onRequest(contextFor({ pathname: "/api/tools/chatgpt.json", values: { "content-runtime:tools": "off" } }).context);
   assert.equal(await staticResponse.text(), "static");
+});
+
+test("Pages proxy opens only the three English OCR guides and overrides upstream noindex", async () => {
+  const sourceHtml = '<!doctype html><html lang="en"><head><meta name="robots" content="noindex"><meta name="description" content="preserve this description"><link rel="canonical" href="https://tools.utildesk.de/en/ratgeber/ocr-proof/"><link rel="alternate" hreflang="de" href="https://tools.utildesk.de/ratgeber/ocr-proof/"><meta name=\'robots\' content="noindex,nofollow"></head><body><main>preserve this OCR article content</main></body></html>';
+  const expectedRobotsMeta = `<meta name="robots" content="${ROBOTS_INDEX_FOLLOW}">`;
+
+  for (const slug of RECOVERY_PROOF_EN_RATGEBER_SLUGS) {
+    for (const pathname of [`/en/ratgeber/${slug}`, `/en/ratgeber/${slug}/`]) {
+      globalThis.fetch = async (request) => {
+        assert.equal(new URL(request.url).pathname, pathname);
+        return new Response(sourceHtml, {
+          status: 200,
+          headers: {
+            "Content-Type": "text/html; charset=utf-8",
+            "X-Robots-Tag": "noindex",
+          },
+        });
+      };
+      const fixture = contextFor({ pathname });
+      const response = await onRequest(fixture.context);
+      const html = await response.text();
+
+      assert.equal(response.status, 200, pathname);
+      assert.equal(response.headers.get("X-Robots-Tag"), ROBOTS_INDEX_FOLLOW, pathname);
+      assert.equal(response.headers.get("X-Utildesk-Content-Runtime"), "ratgeber-v1", pathname);
+      assert.deepEqual([...html.matchAll(robotMetaPattern)].map(([meta]) => meta), [expectedRobotsMeta], pathname);
+      assert.match(html, /canonical" href="https:\/\/tools\.utildesk\.de\/en\/ratgeber\/ocr-proof\//, pathname);
+      assert.match(html, /rel="alternate" hreflang="de" href="https:\/\/tools\.utildesk\.de\/ratgeber\/ocr-proof\//, pathname);
+      assert.match(html, /name="description" content="preserve this description"/, pathname);
+      assert.match(html, /<main>preserve this OCR article content<\/main>/, pathname);
+      assert.equal(fixture.nextCalls(), 0, pathname);
+    }
+  }
+});
+
+test("Pages proxy fixes selected EN noindex while keeping legacy DE header behavior", async () => {
+  const stylesheet = '<link rel="stylesheet" href="/runtime-ratgeber-detail.css?v=20260805-1">';
+  const alreadyIndexableHtml = `<html><head><meta name="robots" content="${ROBOTS_INDEX_FOLLOW}">${stylesheet}</head><body><main>OCR article</main></body></html>`;
+  globalThis.fetch = async () => new Response(alreadyIndexableHtml, {
+    status: 200,
+    headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
+  });
+  const english = await onRequest(contextFor({
+    pathname: "/en/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/",
+  }).context);
+  const englishHtml = await english.text();
+  assert.equal(english.headers.get("X-Robots-Tag"), ROBOTS_INDEX_FOLLOW);
+  assert.equal([...englishHtml.matchAll(robotMetaPattern)].length, 1);
+
+  globalThis.fetch = async () => new Response(`<html><head><meta name=robots content="index,follow">${stylesheet}</head><body><main>DE proof article</main></body></html>`, {
+    status: 200,
+    headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "vendorbot: noindex" },
+  });
+  const german = await onRequest(contextFor({
+    pathname: "/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/",
+  }).context);
+  const germanHtml = await german.text();
+  assert.equal(german.headers.get("X-Robots-Tag"), null);
+  assert.match(germanHtml, /<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">/);
+});
+
+test("Pages HEAD fixes noindex only for the three selected EN HTML routes", async () => {
+  for (const slug of RECOVERY_PROOF_EN_RATGEBER_SLUGS) {
+    for (const pathname of [`/en/ratgeber/${slug}`, `/en/ratgeber/${slug}/`]) {
+      globalThis.fetch = async (request) => {
+        assert.equal(request.method, "HEAD");
+        return new Response(null, {
+          status: 200,
+          headers: {
+            "Content-Type": "text/html; charset=utf-8",
+            "X-Robots-Tag": "noindex",
+          },
+        });
+      };
+      const fixture = contextFor({ pathname, method: "HEAD" });
+      const response = await onRequest(fixture.context);
+      assert.equal(response.status, 200, pathname);
+      assert.equal(response.headers.get("X-Robots-Tag"), ROBOTS_INDEX_FOLLOW, pathname);
+      assert.equal(response.headers.get("X-Utildesk-Content-Runtime"), "ratgeber-v1", pathname);
+      assert.equal(await response.text(), "", pathname);
+      assert.equal(fixture.nextCalls(), 0, pathname);
+    }
+  }
+
+  for (const [pathname, robots] of [
+    ["/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/", "vendorbot: noindex"],
+    ["/en/ratgeber/another-guide/", "noindex"],
+  ]) {
+    globalThis.fetch = async (request) => {
+      assert.equal(request.method, "HEAD");
+      return new Response(null, {
+        status: 200,
+        headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": robots },
+      });
+    };
+    const response = await onRequest(contextFor({ pathname, method: "HEAD" }).context);
+    assert.equal(response.headers.get("X-Robots-Tag"), robots, pathname);
+    assert.equal(await response.text(), "", pathname);
+  }
+});
+
+test("Pages proxy keeps unrelated EN and non-proof DE guides noindex", async () => {
+  const sourceHtml = '<html><head><meta name="robots" content="index,follow"></head><body><main>guide content</main></body></html>';
+  for (const pathname of [
+    "/en/ratgeber/another-guide/",
+    "/en/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026-extra/",
+    "/ratgeber/not-in-the-proof-cluster/",
+  ]) {
+    globalThis.fetch = async () => new Response(sourceHtml, {
+      status: 200,
+      headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "index,follow" },
+    });
+    const response = await onRequest(contextFor({ pathname }).context);
+    const html = await response.text();
+    assert.equal(response.headers.get("X-Robots-Tag"), "noindex, follow", pathname);
+    assert.equal([...html.matchAll(robotMetaPattern)].length, 1, pathname);
+    assert.match(html, /<meta name="robots" content="noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">/, pathname);
+    assert.match(html, /<main>guide content<\/main>/, pathname);
+  }
 });
 
 test("catalog policy removes tombstones and redirects while preserving canonical order and fields", async () => {
