@@ -7418,6 +7418,56 @@
         "https://tools.utildesk.de/en/tools/convertio/"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-18T22:41:18.509Z",
+      "mode": "production-delta",
+      "command": "production-delta --slugs-file C:\\Users\\sserg\\AppData\\Local\\Utildesk-Runtime-Backups\\gpt_6_luna_convertio_20261118_2259\\convertio-slugs.json --operation upsert --execute --max-live-requests 10000 --ledger C:\\Users\\sserg\\AppData\\Local\\Temp\\gpt_6_luna_convertio_release_20261118_2256\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --out C:\\Users\\sserg\\AppData\\Local\\Utildesk-Runtime-Backups\\gpt_6_luna_convertio_20261118_2259\\live-delta-final",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/convertio/",
+        "https://tools.utildesk.de/api/tools/convertio.json",
+        "https://tools.utildesk.de/markdown/tools/convertio.md",
+        "https://tools.utildesk.de/en/tools/convertio/",
+        "https://tools.utildesk.de/en/api/tools/convertio.json",
+        "https://tools.utildesk.de/en/markdown/tools/convertio.md",
+        "https://tools.utildesk.de/tool-assets/ad26687a3e708fa8abc3d3109e43a53c0389699028a3abcc674f986192510534/convertio-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-18T22:44:44.078Z",
+      "mode": "production-delta",
+      "command": "production-delta --slugs-file C:\\Users\\sserg\\AppData\\Local\\Utildesk-Runtime-Backups\\gpt_6_luna_convertio_20261118_2259\\convertio-slugs.json --operation upsert --execute --max-live-requests 10000 --ledger C:\\Users\\sserg\\AppData\\Local\\Temp\\gpt_6_luna_convertio_release_20261118_2256\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --out C:\\Users\\sserg\\AppData\\Local\\Utildesk-Runtime-Backups\\gpt_6_luna_convertio_20261118_2259\\live-delta-verified",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/convertio/",
+        "https://tools.utildesk.de/api/tools/convertio.json",
+        "https://tools.utildesk.de/markdown/tools/convertio.md",
+        "https://tools.utildesk.de/en/tools/convertio/",
+        "https://tools.utildesk.de/en/api/tools/convertio.json",
+        "https://tools.utildesk.de/en/markdown/tools/convertio.md",
+        "https://tools.utildesk.de/tool-assets/ad26687a3e708fa8abc3d3109e43a53c0389699028a3abcc674f986192510534/convertio-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
