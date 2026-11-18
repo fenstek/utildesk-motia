@@ -48,7 +48,8 @@ Dateien werden zur Verarbeitung an Convertio übertragen. Der Anbieter beschreib
 ## Preise und Betrieb
 Die kostenlose Nutzung hat Grenzen für Dateigröße, Konvertierungsguthaben und parallele Aufträge. Die Bezahlpläne unterscheiden sich bei der maximalen Dateigröße, dem monatlichen Guthaben und den Möglichkeiten für parallele Konvertierungen. Prüfe die aktuellen Konditionen für Dateikonvertierung, OCR und API jeweils separat. [Tarife](https://convertio.co/de/pricing/) · [Hinweise zu den Bezahlplänen](https://support.convertio.co/hc/en-us/articles/360004387214-Premium-plans-for-file-conversions)
 
-## Alternativen
+<h2>Alternativen</h2>
+
 Vergleiche bei einem allgemeinen Formatwechsel dieselbe Datei und dasselbe Zielformat. Achte auf die Qualität der Ausgabe, den Aufwand bis zum Download und die Bedingungen für die Datenverarbeitung. Bei PDF-Aufgaben kannst du zusätzlich Smallpdf einbeziehen. [CloudConvert](/tools/cloudconvert/) · [AnyConv](/tools/anyconv/) · [Zamzar AI](/tools/zamzar-ai/) · [Smallpdf](/tools/smallpdf/)
 
 ## FAQ

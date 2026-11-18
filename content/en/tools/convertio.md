@@ -56,7 +56,7 @@ Files are transferred to Convertio for processing. On its security page, the pro
 
 Free use is subject to limits on file size, conversion credits, and concurrent jobs. Paid plans differ in maximum file size, monthly credits, and options for concurrent conversions. Check the current terms for file conversion, OCR, and the API separately. [Plans](https://convertio.co/de/pricing/) · [Information about paid plans](https://support.convertio.co/hc/en-us/articles/360004387214-Premium-plans-for-file-conversions)
 
-## Alternatives
+<h2>Alternatives</h2>
 
 For general format conversion, compare the same file and output format. Consider the output quality, the effort involved before you can download the result, and the terms for data processing. For PDF tasks, you can also include Smallpdf. [CloudConvert](/en/tools/cloudconvert/) · [AnyConv](/en/tools/anyconv/) · [Zamzar AI](/en/tools/zamzar-ai/) · [Smallpdf](/en/tools/smallpdf/)
 
