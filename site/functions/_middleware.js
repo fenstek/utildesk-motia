@@ -348,9 +348,6 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
       const cleanedHtml = stripDuplicatedRuntimeSecondaryImage(orderedHtml);
       const recoveryHtml = applyRecoveryRobotsToHtml(cleanedHtml, url.pathname);
       const runtimeHtml = recoveryHtml.html;
-      const recoveryRobotsHeaderMismatch =
-        isEnglishRecoveryProofGuide(url.pathname) &&
-        response.headers.get("X-Robots-Tag") !== recoveryHtml.robots;
       if (cluster === "ratgeber" && !runtimeHtml.includes(RUNTIME_RATGEBER_STYLESHEET)) {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
@@ -360,24 +357,19 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
           "</head>",
           `<link rel="stylesheet" href="${RUNTIME_RATGEBER_STYLESHEET}"></head>`,
         );
-        const styledResponse = new Response(styledHtml, { status: response.status, headers });
+        const styledResponse = new Response(styledHtml, { status: response.status, statusText: response.statusText, headers });
         styledResponse.headers.set("X-Utildesk-Runtime-Styles", "pages-bridge-v1");
         styledResponse.headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
         return styledResponse;
       }
-      if (
-        runtimeHtml !== html ||
-        (!recoveryHtml.indexable && response.headers.get("X-Robots-Tag") !== "noindex, follow") ||
-        recoveryRobotsHeaderMismatch
-      ) {
-        const headers = new Headers(response.headers);
-        headers.delete("content-length");
-        headers.delete("content-encoding");
-        applyRecoveryRobotsHeader(headers, url.pathname, recoveryHtml);
-        const orderedResponse = new Response(runtimeHtml, { status: response.status, headers });
-        orderedResponse.headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : cluster === "tool-shell" ? "tool-shell-v1" : "ratgeber-v1");
-        return orderedResponse;
-      }
+
+      const headers = new Headers(response.headers);
+      headers.delete("content-length");
+      headers.delete("content-encoding");
+      applyRecoveryRobotsHeader(headers, url.pathname, recoveryHtml);
+      headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : cluster === "tool-shell" ? "tool-shell-v1" : "ratgeber-v1");
+      const responseBody = [204, 205, 304].includes(response.status) ? null : runtimeHtml;
+      return new Response(responseBody, { status: response.status, statusText: response.statusText, headers });
     }
 
     if (

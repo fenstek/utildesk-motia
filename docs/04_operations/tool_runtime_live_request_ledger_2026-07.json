@@ -7360,6 +7360,64 @@
         "https://tools.utildesk.de/tool-assets/ad26687a3e708fa8abc3d3109e43a53c0389699028a3abcc674f986192510534/convertio-editorial.webp"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-18T22:28:07.809Z",
+      "mode": "production-convertio-diagnostic",
+      "command": "Single German Convertio HTML read after D1 publication",
+      "estimate": {
+        "html": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/convertio/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-18T22:28:25.364Z",
+      "mode": "production-convertio-upstream-diagnostic",
+      "command": "Single direct German runtime HTML read to identify the fallback",
+      "estimate": {
+        "html": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://utildesk-content-runtime.s-skorykov.workers.dev/tools/convertio/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-18T22:33:55.239Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 0,
+        "pagesAssets": 1,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-18T22:34:31.524Z",
+      "mode": "production-convertio-english-recheck",
+      "command": "Single English HTML read after correcting alternative links",
+      "estimate": {
+        "html": 1,
+        "total": 1
+      },
+      "worstCaseRequests": 1,
+      "plannedUrls": [
+        "https://tools.utildesk.de/en/tools/convertio/"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }

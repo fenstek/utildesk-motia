@@ -143,6 +143,52 @@ test("allowlist proxies both locales and leaves other tools static", async () =>
   assert.equal(fetchCalls, 3);
 });
 
+test("indexable German tool HTML with matching robots metadata returns its consumed runtime body", async () => {
+  const sourceHtml = `<!doctype html><html lang="de"><head><meta name="robots" content="${ROBOTS_INDEX_FOLLOW}"></head><body><main>Convertio runtime HTML remains intact.</main></body></html>`;
+  const sourceHash = "78a1a276ca6df6211f2c537bbab1d096e4979cfb875cbc2db14263b4c830ee45";
+  let frozenFallbackCalls = 0;
+  globalThis.fetch = async (request) => {
+    if (new URL(request.url).hostname === "utildesk-tool-fallback.pages.dev") {
+      frozenFallbackCalls += 1;
+      return new Response("frozen fallback", { status: 200 });
+    }
+    return new Response(sourceHtml, {
+      status: 200,
+      statusText: "OK",
+      headers: {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": String(sourceHtml.length),
+        "Content-Encoding": "gzip",
+        "X-Robots-Tag": "index,follow",
+        "X-Utildesk-Content-Runtime": "tool-v2",
+        "X-Utildesk-Source-Hash": sourceHash,
+        "X-Utildesk-Source-Revision": "4",
+      },
+    });
+  };
+
+  const fixture = contextFor({
+    pathname: "/tools/convertio/",
+    values: {
+      "content-runtime:tools": "allowlist",
+      "content-runtime:tools:allowlist": JSON.stringify(["convertio"]),
+    },
+  });
+  const response = await onRequest(fixture.context);
+
+  assert.equal(response.status, 200);
+  assert.equal(response.statusText, "OK");
+  assert.equal(await response.text(), sourceHtml);
+  assert.equal(response.headers.get("X-Utildesk-Content-Runtime"), "tools-v1");
+  assert.equal(response.headers.get("X-Utildesk-Source-Hash"), sourceHash);
+  assert.equal(response.headers.get("X-Utildesk-Source-Revision"), "4");
+  assert.equal(response.headers.get("X-Robots-Tag"), null);
+  assert.equal(response.headers.get("content-length"), null);
+  assert.equal(response.headers.get("content-encoding"), null);
+  assert.equal(frozenFallbackCalls, 0);
+  assert.equal(fixture.nextCalls(), 0);
+});
+
 test("all-route mode proxies tool machine endpoints while off mode keeps the static mirror", async () => {
   globalThis.fetch = async (request) => new Response(`runtime:${new URL(request.url).pathname}`, {
     status: 200,
