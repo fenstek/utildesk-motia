@@ -38,11 +38,15 @@ npm --prefix site run gate:tool-runtime-production-delta -- \
 ```
 
 Production commands refuse `--all`, more than 24 canary slugs, a budget above
-10,000, total recorded reservations over 10,000, and execution before the recorded reset
-gate. The legacy capture and recursive resource-audit scripts refuse every
-non-loopback origin. Reservations are written before the first request and are
-never automatically reclaimed. There is no automatic retry; one retry may be
-planned and ledgered only for a genuine transient transport failure.
+10,000, and any reservation that would put the UTC calendar day's recorded
+worst-case total above 10,000. The ledger keeps older entries as history; only
+entries whose `reservedAt` falls on the current UTC date count toward today's
+limit. The `resetAt` field remains the original rollout execution gate and does
+not define the daily window. The legacy capture and recursive resource-audit
+scripts refuse every non-loopback origin. Reservations are written before the
+first request and are never automatically reclaimed. There is no automatic
+retry; one retry may be planned and ledgered only for a genuine transient
+transport failure.
 The explicit `$PWD` prefixes above are intentional: `npm --prefix site` runs the
 Node command with `site/` as its working directory, while these evidence and
 ledger paths are written from the repository root.
@@ -103,11 +107,11 @@ currently imports missing `scripts/google_auth_lib.mjs` and
 `scripts/sheet_snapshot_lib.mjs`; do not use it for this process. Use the
 connected Sheets connector for approved Sheet updates.
 
-The current live-request guard sums every historical ledger entry, while its
-reset timestamp is not used to roll entries into daily windows. Until this is
-fixed separately, treat the 10,000 limit as a conservative cumulative ceiling;
-keep all existing ledger entries and reserve each future operation before it
-runs. Do not change the algorithm or lower the limit as part of a retirement.
+The live-request guard sums worst-case reservations whose `reservedAt` timestamp
+falls within the current UTC calendar day. It preserves all prior-day entries
+for audit history without charging them against today's 10,000-request limit.
+Every future operation still reserves its full estimate before it runs; the
+guard never removes historical entries or automatically reclaims reservations.
 
 ## Invariants
 

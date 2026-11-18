@@ -6,6 +6,7 @@ export const DEFAULT_MAX_LIVE_REQUESTS = 10_000;
 export const HARD_MAX_LIVE_REQUESTS = 10_000;
 export const MAX_PRODUCTION_CANARY_SLUGS = 24;
 export const MAX_PERFORMANCE_ROUTES = 10;
+const UTC_DAY_MS = 24 * 60 * 60 * 1000;
 
 const LOCAL_HOSTS = new Set(["127.0.0.1", "localhost", "::1"]);
 const CLOUDFLARE_HOST = /(?:^|\.)(?:tools\.utildesk\.de|workers\.dev|pages\.dev)$/i;
@@ -88,7 +89,7 @@ export function emptyLiveRequestLedger() {
     version: 1,
     resetAt: LIVE_REQUEST_RESET_AT,
     hardLimit: HARD_MAX_LIVE_REQUESTS,
-    policy: "Worst-case reservations are charged before execution and are never reclaimed automatically.",
+    policy: "Worst-case reservations are charged to the UTC calendar day of reservedAt before execution and are never reclaimed automatically; older entries remain for history.",
     entries: [],
   };
 }
@@ -99,8 +100,22 @@ export function validateLiveRequestLedger(value) {
   return value;
 }
 
-export function usedLiveRequests(ledger) {
-  return ledger.entries.reduce((sum, entry) => sum + Number(entry.worstCaseRequests || 0), 0);
+export function usedLiveRequests(ledger, now = new Date()) {
+  const nowMs = now instanceof Date ? now.getTime() : Date.parse(now);
+  if (!Number.isFinite(nowMs)) throw new Error("Invalid live-request budget time");
+  const instant = new Date(nowMs);
+  const dayStart = Date.UTC(instant.getUTCFullYear(), instant.getUTCMonth(), instant.getUTCDate());
+  const dayEnd = dayStart + UTC_DAY_MS;
+
+  return ledger.entries.reduce((sum, entry, index) => {
+    const reservedAt = Date.parse(entry?.reservedAt ?? "");
+    if (!Number.isFinite(reservedAt)) throw new Error(`Live-request ledger entry ${index + 1} has invalid reservedAt`);
+    const requests = Number(entry?.worstCaseRequests);
+    if (!Number.isInteger(requests) || requests < 0) {
+      throw new Error(`Live-request ledger entry ${index + 1} has invalid worstCaseRequests`);
+    }
+    return reservedAt >= dayStart && reservedAt < dayEnd ? sum + requests : sum;
+  }, 0);
 }
 
 export async function readLiveRequestLedger(path) {
@@ -120,7 +135,7 @@ export async function reserveLiveRequests({ ledgerPath, mode, command, estimate,
 
   const resolved = resolve(ledgerPath);
   const ledger = await readLiveRequestLedger(resolved);
-  const used = usedLiveRequests(ledger);
+  const used = usedLiveRequests(ledger, now);
   const effectiveLimit = Math.min(HARD_MAX_LIVE_REQUESTS, maxLiveRequests);
   if (used + estimate.total > effectiveLimit) {
     throw new Error(`Live request budget exhausted: used ${used}, requested ${estimate.total}, limit ${effectiveLimit}`);

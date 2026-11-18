@@ -2,7 +2,7 @@
   "version": 1,
   "resetAt": "2026-07-16T00:05:00.000Z",
   "hardLimit": 10000,
-  "policy": "Worst-case reservations are charged before execution and are never reclaimed automatically.",
+  "policy": "Worst-case reservations are charged to the UTC calendar day of reservedAt before execution and are never reclaimed automatically; older entries remain for history.",
   "historicalNote": "The previous live exhaustive audits consumed the old daily quota and are preserved as evidence. They must not be repeated. This ledger starts the bounded post-reset remainder of the release.",
   "entries": [
     {
@@ -7319,6 +7319,47 @@
         "https://tools.utildesk.de/en/tools/convertio/"
       ],
       "retryPolicy": "Already completed and reported as HTTP 200; no retry."
+    },
+    {
+      "reservedAt": "2026-11-18T22:03:37.044Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 0,
+        "pagesAssets": 1,
+        "total": 5
+      },
+      "worstCaseRequests": 5,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-18T22:04:09.346Z",
+      "mode": "production-delta",
+      "command": "production-delta --slugs-file C:\\Users\\sserg\\AppData\\Local\\Utildesk-Runtime-Backups\\gpt_6_luna_convertio_20261118_2259\\convertio-slugs.json --operation upsert --execute --max-live-requests 10000 --ledger C:\\Users\\sserg\\AppData\\Local\\Temp\\gpt_6_luna_convertio_release_20261118_2256\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --out C:\\Users\\sserg\\AppData\\Local\\Utildesk-Runtime-Backups\\gpt_6_luna_convertio_20261118_2259\\live-delta",
+      "estimate": {
+        "html": 2,
+        "json": 2,
+        "markdown": 2,
+        "assets": 1,
+        "control": 0,
+        "indexNow": 0,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/convertio/",
+        "https://tools.utildesk.de/api/tools/convertio.json",
+        "https://tools.utildesk.de/markdown/tools/convertio.md",
+        "https://tools.utildesk.de/en/tools/convertio/",
+        "https://tools.utildesk.de/en/api/tools/convertio.json",
+        "https://tools.utildesk.de/en/markdown/tools/convertio.md",
+        "https://tools.utildesk.de/tool-assets/ad26687a3e708fa8abc3d3109e43a53c0389699028a3abcc674f986192510534/convertio-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }

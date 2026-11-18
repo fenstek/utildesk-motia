@@ -13,6 +13,7 @@ import {
   estimateProductionDelta,
   estimateProductionPublish,
   reserveLiveRequests,
+  usedLiveRequests,
 } from "../lib/tool-runtime-live-budget.mjs";
 
 const execFileAsync = promisify(execFile);
@@ -115,6 +116,85 @@ test("ledger reserves worst-case requests before execution and never exceeds 100
     const ledger = JSON.parse(await readFile(ledgerPath, "utf8"));
     assert.equal(ledger.entries.length, 1);
     assert.equal(ledger.entries[0].worstCaseRequests, 9_000);
+    assert.equal(usedLiveRequests(ledger, afterReset), 9_000);
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
+test("UTC midnight rolls the active counter over without deleting prior reservations", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "utildesk-live-ledger-"));
+  const ledgerPath = join(directory, "ledger.json");
+  const beforeMidnight = new Date("2026-11-18T23:59:59.999Z");
+  const midnight = new Date("2026-11-19T00:00:00.000Z");
+  try {
+    const previousDay = await reserveLiveRequests({
+      ledgerPath,
+      mode: "production-delta",
+      command: "previous UTC day",
+      estimate: { total: 10_000 },
+      maxLiveRequests: 10_000,
+      now: beforeMidnight,
+    });
+    assert.equal(previousDay.remaining, 0);
+
+    const currentDay = await reserveLiveRequests({
+      ledgerPath,
+      mode: "production-delta",
+      command: "new UTC day",
+      estimate: { total: 7 },
+      maxLiveRequests: 10_000,
+      now: midnight,
+    });
+    assert.equal(currentDay.usedBefore, 0);
+    assert.equal(currentDay.remaining, 9_993);
+
+    const ledger = JSON.parse(await readFile(ledgerPath, "utf8"));
+    assert.equal(ledger.entries.length, 2);
+    assert.equal(usedLiveRequests(ledger, beforeMidnight), 10_000);
+    assert.equal(usedLiveRequests(ledger, midnight), 7);
+    assert.deepEqual(ledger.entries[0], previousDay.entry);
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
+test("older reservations remain intact and only today's reservations count against the daily cap", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "utildesk-live-ledger-"));
+  const ledgerPath = join(directory, "ledger.json");
+  const now = new Date("2026-11-18T22:00:00.000Z");
+  const history = [
+    { reservedAt: "2026-07-16T00:06:00.000Z", mode: "old", command: "historical", estimate: { total: 10_000 }, worstCaseRequests: 10_000, plannedUrls: [] },
+    { reservedAt: "2026-11-17T23:59:59.999Z", mode: "yesterday", command: "prior UTC day", estimate: { total: 8_000 }, worstCaseRequests: 8_000, plannedUrls: [] },
+    { reservedAt: "2026-11-18T00:00:00.000Z", mode: "today", command: "current UTC day", estimate: { total: 14 }, worstCaseRequests: 14, plannedUrls: [] },
+  ];
+  try {
+    await writeFile(ledgerPath, `${JSON.stringify({
+      version: 1,
+      resetAt: "2026-07-16T00:05:00.000Z",
+      hardLimit: 10_000,
+      policy: "keep history",
+      entries: history,
+    }, null, 2)}\n`);
+    const before = JSON.parse(await readFile(ledgerPath, "utf8"));
+    assert.equal(usedLiveRequests(before, now), 14);
+
+    const reservation = await reserveLiveRequests({
+      ledgerPath,
+      mode: "production-delta",
+      command: "finish today's budget",
+      estimate: { total: 9_986 },
+      maxLiveRequests: 10_000,
+      now,
+    });
+    assert.equal(reservation.usedBefore, 14);
+    assert.equal(reservation.remaining, 0);
+
+    const after = JSON.parse(await readFile(ledgerPath, "utf8"));
+    assert.deepEqual(after.entries.slice(0, history.length), history);
+    assert.equal(after.entries.length, history.length + 1);
+    assert.equal(usedLiveRequests(after, now), 10_000);
+    assert.equal(usedLiveRequests(after, new Date("2026-11-17T12:00:00.000Z")), 8_000);
   } finally {
     await rm(directory, { recursive: true, force: true });
   }
