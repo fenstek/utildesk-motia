@@ -1,13 +1,13 @@
 ---
-description: "AnyConv is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+description: "For a one-off browser conversion: upload a file, choose an output format and download the result, without installing software."
 slug: "anyconv"
 title: "AnyConv"
-updated_at: "2026-07-17"
+updated_at: "2026-11-19"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-11-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-11-19-convertio-alt-summaries"
 category: "AI Image"
 price_model: "Freemium"
 tags:
