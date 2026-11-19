@@ -7554,6 +7554,76 @@
         "https://tools.utildesk.de/en/tools/convertio/"
       ],
       "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-19T00:33:04.429Z",
+      "mode": "production-publish",
+      "command": "publish_runtime_content.mjs --kind tool --operation upsert [bounded release]",
+      "estimate": {
+        "d1": 4,
+        "r2": 0,
+        "pagesAssets": 3,
+        "total": 7
+      },
+      "worstCaseRequests": 7,
+      "plannedUrls": [
+        "https://api.cloudflare.com/client/v4/accounts/{account}/d1/database/{database}"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-19T00:33:06.134Z",
+      "mode": "production-delta",
+      "command": "production-delta --operation upsert --slugs-file C:\\Users\\sserg\\AppData\\Local\\Codex\\backups\\utildesk\\tool-runtime\\2026-11-19\\release-report\\slugs.json --out C:\\Users\\sserg\\AppData\\Local\\Codex\\backups\\utildesk\\tool-runtime\\2026-11-19\\release-report\\live-delta --ledger C:\\projects\\utildesk-motia-alt-release-20261119\\site\\docs\\04_operations\\tool_runtime_live_request_ledger_2026-07.json --max-live-requests 10000 --execute",
+      "estimate": {
+        "html": 6,
+        "json": 6,
+        "markdown": 6,
+        "assets": 3,
+        "control": 0,
+        "indexNow": 0,
+        "total": 21
+      },
+      "worstCaseRequests": 21,
+      "plannedUrls": [
+        "https://tools.utildesk.de/tools/anyconv/",
+        "https://tools.utildesk.de/api/tools/anyconv.json",
+        "https://tools.utildesk.de/markdown/tools/anyconv.md",
+        "https://tools.utildesk.de/en/tools/anyconv/",
+        "https://tools.utildesk.de/en/api/tools/anyconv.json",
+        "https://tools.utildesk.de/en/markdown/tools/anyconv.md",
+        "https://tools.utildesk.de/tools/cloudconvert/",
+        "https://tools.utildesk.de/api/tools/cloudconvert.json",
+        "https://tools.utildesk.de/markdown/tools/cloudconvert.md",
+        "https://tools.utildesk.de/en/tools/cloudconvert/",
+        "https://tools.utildesk.de/en/api/tools/cloudconvert.json",
+        "https://tools.utildesk.de/en/markdown/tools/cloudconvert.md",
+        "https://tools.utildesk.de/tools/zamzar-ai/",
+        "https://tools.utildesk.de/api/tools/zamzar-ai.json",
+        "https://tools.utildesk.de/markdown/tools/zamzar-ai.md",
+        "https://tools.utildesk.de/en/tools/zamzar-ai/",
+        "https://tools.utildesk.de/en/api/tools/zamzar-ai.json",
+        "https://tools.utildesk.de/en/markdown/tools/zamzar-ai.md",
+        "https://tools.utildesk.de/tool-assets/0376472d127de10426aa5fbf475f159c9a95d31856826cdf7ce851e882138d07/anyconv-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/208e39de368a09f05a4037f0e49c4532e0ae23fb53639ec6bd019b8f39cb9174/zamzar-ai-editorial.webp",
+        "https://tools.utildesk.de/tool-assets/965b61ca49359f5e66cf8edd1ac28892e6f530dc12997bac1f1dee834fcfbb81/cloudconvert-editorial.webp"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
+    },
+    {
+      "reservedAt": "2026-11-19T00:33:13.389Z",
+      "mode": "production-indexnow-focus-delta",
+      "command": "indexnow_submit.py submit-batch [changed focus-tool canonicals only]",
+      "estimate": {
+        "indexNow": 2,
+        "total": 2
+      },
+      "worstCaseRequests": 2,
+      "plannedUrls": [
+        "https://api.indexnow.org/indexnow",
+        "https://www.bing.com/indexnow"
+      ],
+      "retryPolicy": "No automatic retry; one manually ledgered retry is allowed only for a genuine transient network failure."
     }
   ]
 }
