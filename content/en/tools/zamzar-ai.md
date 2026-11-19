@@ -3,9 +3,9 @@ slug: "zamzar-ai"
 title: "Zamzar AI"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Editorial"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-11-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-11-19-convertio-alt-summaries"
 category: "AI Coding"
 price_model: "Je nach Plan"
 tags:
@@ -16,9 +16,9 @@ tags:
   - design
 official_url: "https://www.zamzar.com/"
 popularity: 0
-description: "Zamzar AI is a tool for the workflow described here. Before adoption, review data handling, ownership, cost and the provider's official product information."
+description: "Zamzar's API supports over 1,100 file conversions; the service also offers a web converter and a desktop app."
 translation: "full"
-updated_at: "2026-07-17"
+updated_at: "2026-11-19"
 ---
 
 # Zamzar AI

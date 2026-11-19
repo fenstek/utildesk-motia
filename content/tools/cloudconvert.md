@@ -1,13 +1,13 @@
 ---
-description: "CloudConvert ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+description: "CloudConvert bündelt Dateiimport, Umwandlung und Export in API-Jobs für wiederkehrende Abläufe."
 slug: "cloudconvert"
 title: "CloudConvert"
-updated_at: "2026-07-17"
+updated_at: "2026-11-19"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-11-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-11-19-convertio-alt-summaries"
 category: "AI Image"
 price_model: "Freemium"
 tags: [file-conversion, documents, utilities]

@@ -1,12 +1,12 @@
 ---
-description: "Zamzar AI ist ein Werkzeug für den beschriebenen Arbeitsablauf. Prüfe vor dem Einsatz Daten, Zuständigkeiten, Kosten und die offiziellen Produktangaben."
+description: "Die Zamzar-API unterstützt über 1.100 Dateikonvertierungen; außerdem gibt es einen Webkonverter und eine Desktop-App."
 slug: "zamzar-ai"
 title: "Zamzar AI"
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk Redaktion"
-editorial_reviewed_at: "2026-07-17"
+editorial_reviewed_at: "2026-11-19"
 editorial_status: "manual_polished"
-editorial_batch: "2026-07-17-full-tool-card-editorial"
+editorial_batch: "2026-11-19-convertio-alt-summaries"
 category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [automation, productivity, video, audio, design]
@@ -14,7 +14,7 @@ official_url: "https://www.zamzar.com/"
 popularity: 0
 tier: C
 generated_at: 2026-05-09
-updated_at: "2026-07-17"
+updated_at: "2026-11-19"
 ---
 
 # Zamzar AI
