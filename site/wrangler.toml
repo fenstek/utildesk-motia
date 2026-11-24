@@ -14,6 +14,7 @@ id = "0648e73366e04931a03af182c7894603"
 NODE_VERSION = "22.12.0"
 PUBLIC_UMAMI_SRC = "https://stats.utildesk.de/script.js"
 PUBLIC_UMAMI_WEBSITE_ID = "1cb00ebe-8e55-45c6-ad41-e34ff8e28e18"
+UTILDESK_TOOL_HTML_CACHE = "on"
 
 [[env.production.kv_namespaces]]
 binding = "RATGEBER_REVIEW"
