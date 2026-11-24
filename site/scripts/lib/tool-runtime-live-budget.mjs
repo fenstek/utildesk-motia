@@ -6,6 +6,7 @@ export const DEFAULT_MAX_LIVE_REQUESTS = 10_000;
 export const HARD_MAX_LIVE_REQUESTS = 10_000;
 export const MAX_PRODUCTION_CANARY_SLUGS = 24;
 export const MAX_PERFORMANCE_ROUTES = 10;
+export const TOOL_CATALOG_REFRESH_MAX_ATTEMPTS = 4;
 const UTC_DAY_MS = 24 * 60 * 60 * 1000;
 
 const LOCAL_HOSTS = new Set(["127.0.0.1", "localhost", "::1"]);
@@ -75,13 +76,24 @@ export function estimateProductionDelta({ slugs, assetPaths = [], includeControl
   return { ...result, total: Object.values(result).reduce((sum, value) => sum + value, 0) };
 }
 
-export function estimateProductionPublish({ assets = 0, assetMode = "none", compareOnly = false }) {
+export function estimateToolCatalogRefresh({ maxAttempts = TOOL_CATALOG_REFRESH_MAX_ATTEMPTS } = {}) {
+  if (!Number.isInteger(maxAttempts) || maxAttempts < 1) throw new Error("maxAttempts must be a positive integer");
+  const d1 = 2 + maxAttempts * 3; // database/schema preflight, then two snapshots and one CAS per attempt
+  const r2 = maxAttempts * 5; // each attempt verifies the bucket and round-trips both locale objects
+  return { d1, r2, pagesAssets: 0, total: d1 + r2 };
+}
+
+export function estimateProductionPublish({ assets = 0, assetMode = "none", compareOnly = false, includeToolCatalogs = false }) {
   if (!Number.isInteger(assets) || assets < 0) throw new Error("assets must be a non-negative integer");
   if (compareOnly) return { d1: 1, r2: 0, pagesAssets: 0, total: 1 };
-  const d1 = 4; // target identity, schema, one atomic batch, post-write source-state verification
-  const r2 = assetMode === "r2" && assets ? 1 + assets * 2 : 0; // bucket identity plus put/get per object
+  const catalog = includeToolCatalogs ? estimateToolCatalogRefresh() : { d1: 0, r2: 0 };
+  const catalogD1 = catalog.d1;
+  const d1 = 4 + catalogD1; // target identity, schema, one atomic batch, post-write source-state verification
+  const assetR2 = assetMode === "r2" && assets ? 1 + assets * 2 : 0; // bucket identity plus put/get per object
+  const catalogR2 = catalog.r2;
+  const r2 = assetR2 + catalogR2;
   const pagesAssets = assetMode === "pages-fallback" ? assets : 0;
-  return { d1, r2, pagesAssets, total: d1 + r2 + pagesAssets };
+  return { d1, r2, pagesAssets, ...(includeToolCatalogs ? { catalogD1, catalogR2 } : {}), total: d1 + r2 + pagesAssets };
 }
 
 export function emptyLiveRequestLedger() {

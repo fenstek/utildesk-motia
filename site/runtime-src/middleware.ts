@@ -14,6 +14,11 @@ export const onRequest = defineMiddleware(async (context, next) => {
   const policyResponse = applyToolRoutePolicy(context.request);
   if (policyResponse) return policyResponse;
 
+  // Catalog object identity lives in runtime_tool_catalogs and is switched by
+  // the content-only publisher without a Worker deploy. Do not let an earlier
+  // dynamic fallback response occupy the same collection-revision cache key.
+  if (/^\/(?:en\/)?api\/tools\.json$/.test(context.url.pathname)) return next();
+
   let identity;
   try {
     identity = await getRuntimeCacheIdentity(context.url.pathname);

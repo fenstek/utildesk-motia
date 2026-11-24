@@ -45,7 +45,7 @@ const skippedIndexNowSlugs = slugs.filter((slug) => !focusToolSlugs.has(slug));
 const release = operation === "upsert" ? await loadToolRelease(slugs, null) : { entries: [] };
 const assets = operation === "upsert" ? toolAssetsForEntries(release.entries, repoDir) : [];
 const assetMode = valueFor("--asset-bucket") ? "r2" : has("--allow-pages-fallback-assets") ? "pages-fallback" : "none";
-const publishEstimate = estimateProductionPublish({ assets: assets.length, assetMode });
+const publishEstimate = estimateProductionPublish({ assets: assets.length, assetMode, includeToolCatalogs: true });
 const deltaEstimate = estimateProductionDelta({ slugs, assetPaths: assets.map((asset) => `/tool-assets/${asset.hash}/${asset.fallbackPath.split("/").pop()}`), includeIndexNow: false });
 const indexNowEstimate = { indexNow: indexNowSlugs.length ? 2 : 0, total: indexNowSlugs.length ? 2 : 0 };
 const totalEstimate = publishEstimate.total + deltaEstimate.total + indexNowEstimate.total;

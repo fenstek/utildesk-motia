@@ -101,7 +101,7 @@ async function fetchHtmlCanary(options, slugs, budget) {
     const started = performance.now();
     const response = await fetch(`${options.baseUrl}${record.path}`, {
       redirect: "manual",
-      headers: { "User-Agent": "Utildesk-Quota-Safe-Production-Canary/1.0" },
+      headers: { "User-Agent": "Utildesk-Quota-Safe-Production-Canary/1.0", "Cache-Control": "no-cache" },
     });
     const html = await response.text();
     records.push({
@@ -144,7 +144,7 @@ async function runProductionDelta(options, slugs, budget) {
         ["json", `${prefix}/api/tools/${slug}.json`],
         ["markdown", `${prefix}/markdown/tools/${slug}.md`],
       ]) {
-        const response = await fetch(`${options.baseUrl}${path}`, { redirect: "manual", headers: { "User-Agent": "Utildesk-Quota-Safe-Production-Delta/1.0" } });
+        const response = await fetch(`${options.baseUrl}${path}`, { redirect: "manual", headers: { "User-Agent": "Utildesk-Quota-Safe-Production-Delta/1.0", ...(kind === "html" ? { "Cache-Control": "no-cache" } : {}) } });
         const body = await response.text();
         const headers = headerObject(response.headers);
         const noindexOk = kind === "html" || /\bnoindex\b/i.test(headers["x-robots-tag"] || "");

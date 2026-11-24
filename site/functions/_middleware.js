@@ -1,4 +1,4 @@
-import { applyToolRoutePolicy, TOOL_REDIRECTS, TOOL_TOMBSTONES } from "../shared/toolRoutePolicy.mjs";
+import { applyToolRoutePolicy, getToolRoutePolicyHash, TOOL_REDIRECTS, TOOL_TOMBSTONES } from "../shared/toolRoutePolicy.mjs";
 
 const AGENT_METADATA_HEADERS = new Map([
   ["/.well-known/api-catalog", {
@@ -54,6 +54,9 @@ const PUBLIC_EXACT_PATHS = new Set([
 // cannot own a path directly. Pages proxies just this migrated content cluster
 // to the D1-backed renderer; every other public route stays on the static app.
 const RUNTIME_ORIGIN = "https://utildesk-content-runtime.s-skorykov.workers.dev";
+const RUNTIME_PREVIEW_MODE = "preview";
+const TOOL_HTML_CACHE_TTL_SECONDS = 30;
+const TOOL_HTML_CACHE_FORMAT = "tool-html-v1";
 const FROZEN_TOOL_FALLBACK_ORIGIN = "https://utildesk-tool-fallback.pages.dev";
 const FROZEN_TOOL_FALLBACK_MARKER = "frozen-7a4190c4";
 const FROZEN_SNAPSHOT_HEADER = "X-Utildesk-Frozen-Snapshot";
@@ -229,6 +232,16 @@ const isRetiredCatalogSlug = (slug) =>
 
 export const filterToolCatalogResponse = async (response) => {
   const headers = new Headers(response.headers);
+  const readyPolicyHash = response.headers.get("X-Utildesk-Catalog-Policy-Hash");
+  if (
+    response.headers.get("X-Utildesk-Catalog-Ready") === "v1" &&
+    response.headers.get("X-Utildesk-Catalog-Policy") === "retired-filter-v1" &&
+    readyPolicyHash && readyPolicyHash === await getToolRoutePolicyHash()
+  ) {
+    headers.set("X-Utildesk-Catalog-Policy", "retired-filter-v1");
+    return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+  }
+
   let payload;
 
   try {
@@ -274,6 +287,109 @@ export const toolShellRoute = (pathname) => {
 
 const isToolAssetPath = (pathname) => pathname.startsWith("/tool-assets/");
 
+const isPreviewRuntime = (context) => context.env?.UTILDESK_RUNTIME_MODE === RUNTIME_PREVIEW_MODE;
+
+export const configuredRuntimeOrigin = (context) => {
+  if (!isPreviewRuntime(context)) return RUNTIME_ORIGIN;
+  const configured = String(context.env?.UTILDESK_RUNTIME_ORIGIN ?? "").trim();
+  if (!configured) return null;
+  try {
+    const parsed = new URL(configured);
+    const loopback = ["localhost", "127.0.0.1", "[::1]"].includes(parsed.hostname);
+    const isWorkerHost = parsed.hostname.endsWith(".workers.dev");
+    if (
+      parsed.origin !== configured.replace(/\/$/, "") ||
+      parsed.username || parsed.password || parsed.pathname !== "/" || parsed.search || parsed.hash ||
+      (!isWorkerHost && !(loopback && ["http:", "https:"].includes(parsed.protocol))) ||
+      (isWorkerHost && parsed.protocol !== "https:")
+    ) return null;
+    if (parsed.origin === RUNTIME_ORIGIN) return null;
+    return parsed.origin;
+  } catch {
+    return null;
+  }
+};
+
+const toolRuntimeFallback = (context) => isPreviewRuntime(context) ? context.next() : frozenToolFallback(context);
+
+const toolHtmlCacheRequestBypasses = (request) => {
+  if (request.method !== "GET") return true;
+  if (new URL(request.url).search) return true;
+  if (request.headers.has("authorization") || request.headers.has("cookie")) return true;
+  if (request.headers.has("range")) return true;
+  if (["if-match", "if-none-match", "if-modified-since", "if-unmodified-since"].some((name) => request.headers.has(name))) return true;
+  if (/\b(?:no-cache|no-store|max-age=0)\b/i.test(request.headers.get("cache-control") ?? "")) return true;
+  if (/\bno-cache\b/i.test(request.headers.get("pragma") ?? "")) return true;
+  return ["no-store", "reload", "no-cache"].includes(request.cache);
+};
+
+const cacheableToolHtmlResponse = (response) => {
+  if (response.status !== 200 || !response.ok) return false;
+  if (!response.headers.get("content-type")?.toLowerCase().includes("text/html")) return false;
+  if (response.headers.get("X-Utildesk-Content-Runtime") !== "tools-v1") return false;
+  if (response.headers.has("location") || response.headers.has("set-cookie")) return false;
+  const vary = response.headers.get("vary")?.split(",").map((value) => value.trim().toLowerCase()).filter(Boolean) ?? [];
+  if (vary.some((value) => value !== "accept-encoding")) return false;
+  if (/\b(?:private|no-store|no-cache)\b/i.test(response.headers.get("cache-control") ?? "")) return false;
+  return true;
+};
+
+export async function proxyToolDetailWithCache(context, slug) {
+  const request = context.request;
+  const url = new URL(request.url);
+  const cacheEnabled = context.env?.UTILDESK_TOOL_HTML_CACHE === "on";
+  const cache = globalThis.caches?.default;
+  if (!cacheEnabled || !cache || toolHtmlCacheRequestBypasses(request)) return proxyRuntime(context, "tools");
+
+  const namespace = String(context.env?.UTILDESK_TOOL_HTML_CACHE_NAMESPACE || (isPreviewRuntime(context) ? "preview" : "production"))
+    .replace(/[^a-zA-Z0-9._-]/g, "-")
+    .slice(0, 80);
+  const cacheUrl = new URL(url);
+  cacheUrl.search = "";
+  cacheUrl.searchParams.set("__utildesk_pages_tool_cache", `${namespace}:${TOOL_HTML_CACHE_FORMAT}:${slug}`);
+  const cacheKey = new Request(cacheUrl, request);
+
+  try {
+    const hit = await cache.match(cacheKey);
+    if (hit) {
+      const headers = new Headers(hit.headers);
+      const originalCacheControl = headers.get("X-Utildesk-Page-Cache-Original-CC");
+      headers.delete("X-Utildesk-Page-Cache-Original-CC");
+      if (originalCacheControl === "__missing__") headers.delete("Cache-Control");
+      else if (originalCacheControl != null) headers.set("Cache-Control", originalCacheControl);
+      headers.set("X-Utildesk-Pages-Tool-Cache", "HIT");
+      return new Response(hit.body, { status: hit.status, statusText: hit.statusText, headers });
+    }
+  } catch {
+    const response = await proxyRuntime(context, "tools");
+    const headers = new Headers(response.headers);
+    headers.set("X-Utildesk-Pages-Tool-Cache", "BYPASS");
+    return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+  }
+
+  const response = await proxyRuntime(context, "tools");
+  const headers = new Headers(response.headers);
+  headers.set("X-Utildesk-Pages-Tool-Cache", "MISS");
+  const result = new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+  if (!cacheableToolHtmlResponse(result)) return result;
+
+  const cacheHeaders = new Headers(result.headers);
+  cacheHeaders.set("X-Utildesk-Page-Cache-Original-CC", cacheHeaders.get("Cache-Control") ?? "__missing__");
+  cacheHeaders.set("Cache-Control", `public, max-age=0, s-maxage=${TOOL_HTML_CACHE_TTL_SECONDS}`);
+  const cacheResponse = new Response(result.clone().body, {
+    status: result.status,
+    statusText: result.statusText,
+    headers: cacheHeaders,
+  });
+  try {
+    await cache.put(cacheKey, cacheResponse);
+  } catch {
+    // Cache failures only reduce the optimization; they never replace the
+    // successful upstream response or extend stale content beyond the TTL.
+  }
+  return result;
+};
+
 export const frozenToolFallback = async (context) => {
   const url = new URL(context.request.url);
   const frozen = new URL(`${url.pathname}${url.search}`, FROZEN_TOOL_FALLBACK_ORIGIN);
@@ -297,10 +413,17 @@ export const frozenToolFallback = async (context) => {
 
 export const proxyRuntime = async (context, cluster = "ratgeber") => {
   const url = new URL(context.request.url);
-  const upstream = new URL(`${url.pathname}${url.search}`, RUNTIME_ORIGIN);
+  const runtimeOrigin = configuredRuntimeOrigin(context);
+  if (!runtimeOrigin) return cluster === "tools" ? toolRuntimeFallback(context) : context.next();
+  const upstream = new URL(`${url.pathname}${url.search}`, runtimeOrigin);
 
   try {
-    const response = await fetch(new Request(upstream, context.request));
+    const upstreamRequest = new Request(upstream, {
+      method: context.request.method,
+      headers: context.request.headers,
+      redirect: cluster === "tools" && toolDetailSlug(url.pathname) ? "manual" : context.request.redirect,
+    });
+    const response = await fetch(upstreamRequest);
     const intentionalRouteState = response.headers.get("X-Utildesk-Route-State");
     // A runtime miss can be returned as a redirect to /404 rather than a
     // plain 404. Let a freshly deployed static article serve as the safe
@@ -316,7 +439,7 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
     }
     // Keep a static fallback for a path which has not been imported into D1.
     if ((response.status === 404 && !intentionalRouteState && !url.pathname.startsWith("/runtime-assets/") && !isToolAssetPath(url.pathname)) || response.status >= 500) {
-      return cluster === "tools" ? frozenToolFallback(context) : context.next();
+      return cluster === "tools" ? toolRuntimeFallback(context) : context.next();
     }
 
     if (
@@ -395,11 +518,12 @@ export const proxyRuntime = async (context, cluster = "ratgeber") => {
   } catch {
     // An upstream outage must preserve the existing Pages version instead of
     // turning an editorial page into a hard error.
-    return cluster === "tools" ? frozenToolFallback(context) : context.next();
+    return cluster === "tools" ? toolRuntimeFallback(context) : context.next();
   }
 };
 
 const runtimeIsEnabled = async (context) => {
+  if (isPreviewRuntime(context)) return context.env?.UTILDESK_RATGEBER_PREVIEW_ENABLED === "on";
   try {
     // Set this key to "off" for an instant Pages-side rollback. The missing
     // key intentionally means enabled, so first rollout needs no KV mutation.
@@ -410,6 +534,7 @@ const runtimeIsEnabled = async (context) => {
 };
 
 export const toolRuntimeIsEnabled = async (context, slug) => {
+  if (isPreviewRuntime(context)) return context.env?.UTILDESK_TOOL_RUNTIME_PREVIEW_ENABLED === "on";
   try {
     const mode = (await context.env.RATGEBER_REVIEW?.get("content-runtime:tools")) ?? "off";
     if (mode === "on") return true;
@@ -425,6 +550,7 @@ export const toolRuntimeIsEnabled = async (context, slug) => {
 };
 
 export const toolShellRuntimeIsEnabled = async (context) => {
+  if (isPreviewRuntime(context)) return context.env?.UTILDESK_TOOL_SHELL_PREVIEW_ENABLED === "on";
   try {
     return (await context.env.RATGEBER_REVIEW?.get("content-runtime:tool-shell")) === "on";
   } catch {
@@ -497,7 +623,7 @@ export async function onRequest(context) {
 
   const url = new URL(request.url);
   const previewRedirect = redirectPreviewHost(url);
-  if (previewRedirect) return previewRedirect;
+  if (previewRedirect && !isPreviewRuntime(context)) return previewRedirect;
   if (AGENT_METADATA_HEADERS.has(url.pathname)) return agentMetadataFromNext(context, url.pathname);
   const policyResponse = applyToolRoutePolicy(request);
   if (policyResponse) return policyResponse;
@@ -527,8 +653,8 @@ export async function onRequest(context) {
   const runtimeToolSlug = toolDetailSlug(url.pathname);
   if (runtimeToolSlug) {
     return await toolRuntimeIsEnabled(context, runtimeToolSlug)
-      ? proxyRuntime(context, "tools")
-      : frozenToolFallback(context);
+      ? proxyToolDetailWithCache(context, runtimeToolSlug)
+      : toolRuntimeFallback(context);
   }
 
   const runtimeToolShell = toolShellRoute(url.pathname);

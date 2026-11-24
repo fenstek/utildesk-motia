@@ -12,6 +12,7 @@ import {
   estimateProductionCanary,
   estimateProductionDelta,
   estimateProductionPublish,
+  estimateToolCatalogRefresh,
   reserveLiveRequests,
   usedLiveRequests,
 } from "../lib/tool-runtime-live-budget.mjs";
@@ -52,6 +53,10 @@ test("production canary is deterministically limited to 48 localized HTML reques
 test("publisher estimate covers atomic D1 verification and content-addressed asset round trips", () => {
   assert.deepEqual(estimateProductionPublish({ assets: 10, assetMode: "r2" }), { d1: 4, r2: 21, pagesAssets: 0, total: 25 });
   assert.deepEqual(estimateProductionPublish({ assets: 10, assetMode: "pages-fallback" }), { d1: 4, r2: 0, pagesAssets: 10, total: 14 });
+  assert.deepEqual(estimateProductionPublish({ assets: 10, assetMode: "r2", includeToolCatalogs: true }), {
+    d1: 18, r2: 41, pagesAssets: 0, catalogD1: 14, catalogR2: 20, total: 59,
+  });
+  assert.deepEqual(estimateToolCatalogRefresh({ maxAttempts: 4 }), { d1: 14, r2: 20, pagesAssets: 0, total: 34 });
   assert.equal(estimateProductionPublish({ compareOnly: true }).total, 1);
 });
 

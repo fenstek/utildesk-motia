@@ -282,7 +282,71 @@ npm --prefix site run release:tool-runtime -- \
   --max-live-requests 10000 --production --execute
 ```
 
-The wrapper never invokes Astro and fingerprints `site/dist` before/after execution. It refuses `--all`, refuses a complete worst-case estimate beyond the remaining ledger, and reserves publisher, delta-validation and two IndexNow submissions before their respective live commands. An ordinary ten-card release with ten changed assets is budgeted at 97 requests.
+The wrapper never invokes Astro and fingerprints `site/dist` before/after execution. It refuses `--all`, refuses a complete worst-case estimate beyond the remaining ledger, and reserves publisher, delta-validation and two IndexNow submissions before their respective live commands. With the four-attempt catalog CAS allowance, a fully focused ten-card release with ten changed assets is budgeted at up to 131 requests.
+
+Each tool content publish also refreshes both public JSON catalogs before the publisher returns. This step reads one D1 snapshot per locale, uploads the content-addressed DE and EN JSON objects to the existing `TOOL_ASSETS` R2 bucket, reads both back and verifies SHA-256, then updates both manifest rows in one D1 CAS batch. The CAS requires the captured DE and EN collection revisions to remain current. EN's manifest additionally records the DE revision because EN cards merge DE popularity, verdict, URL, tags and image metadata. A DE-only D1 write therefore hides the prior EN object immediately, before refresh.
+
+If an R2 write fails before the content D1 batch, the old catalog remains current. If D1 has advanced but upload/CAS has not published the new pair, revision matching hides the old pointers and runtime serves the current legacy D1 renderer; Pages retains the full legacy JSON retirement filter. Retry with `refresh:tool-catalogs`, passing the same explicit `--preview` or `--production` target and config. The operation is idempotent: objects are content-addressed, and a retry snapshots current D1 before attempting the pair CAS again. At most four CAS attempts are made. The standalone worst-case reservation is 14 D1 requests and 20 R2 requests; the release estimate uses the same retry maximum.
+
+The catalog JSON stays at `/api/tools.json` and `/en/api/tools.json`, with its existing fields, sorting, locale merge, redirects/tombstones, noindex and conditional response behavior. ETags now include the JSON body hash; EN also carries the DE collection revision. Legacy fallback EN ETags use the current DE revision and response body, so a DE-only update cannot receive a false 304.
+
+Cloudflare D1 limits a row/string/BLOB to 2,000,000 bytes. Current source-derived catalog JSON is about 2,140,706 bytes for DE and 2,122,196 for EN (1,110 active entries each), so full JSON is stored in R2; D1 stores only each compact pointer and revision pair. Pages skips parsing a ready precomputed response only when its route-policy hash matches the current Pages policy. Responses without that trusted marker, including responses from an older Worker, still use the full JSON retirement filter.
+
+### First isolated preview bootstrap
+
+Use a private QA Wrangler config at `site/.runtime/wrangler.tool-catalog-qa.jsonc`, with only the supplied QA Worker name, QA D1 ID/name under `UTILDESK_CONTENT`, and the supplied small QA Standard bucket under `TOOL_ASSETS`. Set `migrations_dir` to `../runtime/migrations`. Do not copy the production D1 ID, production R2 bucket, or the shared `RATGEBER_REVIEW` KV binding into this file. The preview publisher accepts a custom QA database name only under `--preview` and refuses the production database ID/name or Worker name.
+
+After the QA resources exist, bootstrap them in this order. The fixture is a local QA seed with one DE/EN pair and no production content:
+
+```bash
+cd site
+QA_CONFIG=.runtime/wrangler.tool-catalog-qa.jsonc
+QA_DB=utildesk-content-runtime-qa
+QA_BUCKET=utildesk-tool-catalog-qa
+
+node_modules/.bin/wrangler d1 migrations apply "$QA_DB" --remote --config "$QA_CONFIG"
+node_modules/.bin/wrangler d1 execute "$QA_DB" --remote --config "$QA_CONFIG" \
+  --file runtime/fixtures/tool_catalog_cache_seed.sql
+
+# Build the runtime against the private QA bindings, then check its deploy bundle.
+UTILDESK_RUNTIME_WRANGLER_CONFIG="$QA_CONFIG" npm run build:hybrid
+npm run check:runtime-deploy-bundle
+node_modules/.bin/wrangler deploy --config dist-runtime/server/wrangler.json
+
+# Bootstrap both catalog objects and their atomic D1 pointers before Pages preview.
+npm run refresh:tool-catalogs -- --execute --remote --preview \
+  --config "$QA_CONFIG" --database "$QA_DB" --catalog-bucket "$QA_BUCKET" \
+  --confirm TOOL_RUNTIME_PREVIEW_CATALOGS --ledger /tmp/utildesk-qa-ledger.json
+```
+
+The Worker code must be available at the supplied QA origin before Pages preview is tested. Pages preview variables are runtime inputs:
+
+```text
+UTILDESK_RUNTIME_MODE=preview
+UTILDESK_RUNTIME_ORIGIN=https://<qa-worker>.workers.dev
+UTILDESK_TOOL_RUNTIME_PREVIEW_ENABLED=on
+UTILDESK_TOOL_HTML_CACHE=on
+UTILDESK_TOOL_HTML_CACHE_NAMESPACE=qa-<unique-preview-id>
+```
+
+Use only the separate QA Worker origin and QA state. Missing origin fails closed to the Pages static route; the exact production Worker origin is rejected in preview mode. Preview flags bypass the `RATGEBER_REVIEW` KV binding, so omit that shared binding entirely from the Pages QA deployment. The HTML cache is opt-in and can be disabled immediately with `UTILDESK_TOOL_HTML_CACHE=off`.
+
+The Pages Cache API key includes the incoming host, path, slug, format and an explicit environment namespace. Query-bearing requests are not normalized and go upstream unchanged. Static redirects and tombstones run before cache lookup. Only final successful public HTML with no `Vary` or `Vary: Accept-Encoding` is stored; HEAD, conditional, no-cache, query, cookie, authorization, private, Set-Cookie, error, fallback and redirect responses bypass storage. The upstream SEO/cache headers are restored unchanged downstream.
+
+The cache TTL is 30 seconds, with no stale extension. A hot cache entry in one Cloudflare data center may serve the prior active card until its TTL expires; a D1-only redirect or tombstone then becomes visible on the next miss, at most 30 seconds after the write. Cache API entries are local to a data center, so there is no reliable global immediate purge from the separate runtime account. Release verification sends `Cache-Control: no-cache` and bypasses this grace. Cache API is supported for Pages Functions on `*.pages.dev`; see [Cloudflare Cache API limitations](https://developers.cloudflare.com/workers/runtime-apis/cache/).
+
+To verify a content-only QA update without an Astro/Pages build, first refresh a paired card from a bounded QA slug file:
+
+```bash
+npm --prefix site run publish:runtime -- \
+  --kind tool --operation upsert --slugs-file /tmp/utildesk-qa-changed-slugs.txt \
+  --remote --config .runtime/wrangler.tool-catalog-qa.jsonc \
+  --database utildesk-content-runtime-qa --catalog-bucket utildesk-tool-catalog-qa \
+  --asset-bucket utildesk-tool-catalog-qa \
+  --ledger /tmp/utildesk-qa-ledger.json --max-live-requests 10000
+```
+
+That publisher refreshes both catalogs after its paired D1 write and source-hash check; it does not build Astro or Pages. Confirm the DE and EN catalog ETags/JSON at the QA origin, then repeat with a DE-only popularity or metadata update: EN's prepared pointer must be unavailable between the D1 mutation and refresh, and its ETag must change after refresh. Use `Cache-Control: no-cache` for the immediate HTML freshness check; a regular cached GET may show the former successful HTML for up to 30 seconds.
 
 ## Runtime shell switch
 

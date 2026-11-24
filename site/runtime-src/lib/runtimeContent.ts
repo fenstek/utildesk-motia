@@ -1,4 +1,5 @@
 import { env } from "cloudflare:workers";
+import { RUNTIME_TOOL_CATALOG_MANIFEST_SQL } from "../../shared/toolCatalogManifestQuery.mjs";
 
 export type RuntimeContentKind = "tool" | "ratgeber";
 export type RuntimeLocale = "de" | "en";
@@ -48,6 +49,18 @@ export interface RuntimeGuideContextEntry {
   metadata: Record<string, unknown>;
 }
 
+export interface RuntimeToolCatalogManifest {
+  collectionRevision: number;
+  primaryCollectionRevision: number;
+  updatedAt: string;
+  objectKey: string | null;
+  etag: string | null;
+  generatedAt: string | null;
+  itemCount: number | null;
+  policyHash: string | null;
+  contentHash: string | null;
+}
+
 type RuntimeContentRow = {
   kind: RuntimeContentKind;
   locale: RuntimeLocale;
@@ -87,6 +100,12 @@ type RuntimeDatabase = {
 };
 
 const database = () => (env as unknown as { UTILDESK_CONTENT: RuntimeDatabase }).UTILDESK_CONTENT;
+
+export function runtimeToolCatalogBucket() {
+  return (env as unknown as {
+    TOOL_ASSETS?: { get(key: string): Promise<{ body: ReadableStream<Uint8Array> | null; size?: number } | null> };
+  }).TOOL_ASSETS;
+}
 
 function parseMetadata(value: string): Record<string, unknown> {
   try {
@@ -393,6 +412,35 @@ export async function getRuntimeCollectionRevision(
     .first<CacheVersionRow>();
   if (!row) throw new Error(`Runtime collection revision missing for ${kind}:${locale}`);
   return { kind, locale, revision: Number(row.revision ?? 1), updatedAt: row.updated_at ?? new Date(0).toISOString() };
+}
+
+export async function getRuntimeToolCatalogManifest(locale: RuntimeLocale): Promise<RuntimeToolCatalogManifest | null> {
+  const row = await database()
+    .prepare(RUNTIME_TOOL_CATALOG_MANIFEST_SQL)
+    .bind(locale)
+    .first<{
+      collection_revision: number;
+      updated_at: string;
+      primary_collection_revision: number;
+      object_key: string | null;
+      etag: string | null;
+      generated_at: string | null;
+      item_count: number | null;
+      policy_hash: string | null;
+      content_hash: string | null;
+    }>();
+  if (!row) return null;
+  return {
+    collectionRevision: Number(row.collection_revision ?? 1),
+    primaryCollectionRevision: Number(row.primary_collection_revision ?? 1),
+    updatedAt: row.updated_at ?? new Date(0).toISOString(),
+    objectKey: row.object_key,
+    etag: row.etag,
+    generatedAt: row.generated_at,
+    itemCount: row.item_count == null ? null : Number(row.item_count),
+    policyHash: row.policy_hash,
+    contentHash: row.content_hash,
+  };
 }
 
 export type RuntimeCacheIdentity = {

@@ -144,6 +144,18 @@ export const TOOL_TOMBSTONES = new Set([
   "continue",
 ]);
 
+// A content-addressed fingerprint lets Pages avoid parsing the full catalog
+// when the runtime has already applied the same retire policy. Any change to
+// the redirect/tombstone data changes this value automatically.
+export async function getToolRoutePolicyHash() {
+  const policy = JSON.stringify({
+    redirects: Object.entries(TOOL_REDIRECTS).sort(([left], [right]) => left.localeCompare(right)),
+    tombstones: [...TOOL_TOMBSTONES].sort(),
+  });
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(policy));
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
 const slugPattern = "[a-z0-9]+(?:-[a-z0-9]+)*";
 
 function routeFor(pathname) {

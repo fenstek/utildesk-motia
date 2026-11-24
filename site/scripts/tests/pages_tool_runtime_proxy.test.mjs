@@ -1,11 +1,13 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { filterToolCatalogResponse, frozenToolFallback, onRequest, toolDetailSlug, toolMachineRoute, toolRuntimeIsEnabled, toolShellRoute, toolShellRuntimeIsEnabled } from "../../functions/_middleware.js";
+import { configuredRuntimeOrigin, filterToolCatalogResponse, frozenToolFallback, onRequest, toolDetailSlug, toolMachineRoute, toolRuntimeIsEnabled, toolShellRoute, toolShellRuntimeIsEnabled } from "../../functions/_middleware.js";
 import { listRuntimeEntries } from "../runtime-content.mjs";
 import { RECOVERY_PROOF_EN_RATGEBER_SLUGS, ROBOTS_INDEX_FOLLOW } from "../../src/lib/searchIndexPolicy.mjs";
+import { getToolRoutePolicyHash } from "../../shared/toolRoutePolicy.mjs";
 
 const originalFetch = globalThis.fetch;
+const originalCaches = globalThis.caches;
 const robotMetaPattern = /<meta\b(?=[^>]*\bname\s*=\s*["']robots["'])[^>]*>/gi;
 
 const contextFor = ({ pathname = "/tools/chatgpt/", method = "GET", values = {}, nextBody = "static", requestHeaders = {} } = {}) => {
@@ -27,7 +29,47 @@ const contextFor = ({ pathname = "/tools/chatgpt/", method = "GET", values = {},
 
 test.after(() => {
   globalThis.fetch = originalFetch;
+  if (originalCaches === undefined) delete globalThis.caches;
+  else globalThis.caches = originalCaches;
 });
+
+function installMemoryCache(now = () => Date.now()) {
+  const records = new Map();
+  globalThis.caches = {
+    default: {
+      async match(request) {
+        const key = new URL(request.url).toString();
+        const record = records.get(key);
+        if (!record || record.expiresAt <= now()) {
+          records.delete(key);
+          return undefined;
+        }
+        return record.response.clone();
+      },
+      async put(request, response) {
+        const key = new URL(request.url).toString();
+        const ttl = Number(response.headers.get("Cache-Control")?.match(/s-maxage=(\d+)/)?.[1] ?? 0);
+        if (!ttl) return;
+        records.set(key, { response: response.clone(), expiresAt: now() + ttl * 1_000 });
+      },
+    },
+  };
+  return records;
+}
+
+function cacheEnabledContext({ pathname = "/tools/chatgpt/", method = "GET", requestHeaders = {}, values = { "content-runtime:tools": "on" }, mode = "production", origin } = {}) {
+  const fixture = contextFor({ pathname, method, requestHeaders, values });
+  Object.assign(fixture.context.env, {
+    UTILDESK_TOOL_HTML_CACHE: "on",
+    UTILDESK_TOOL_HTML_CACHE_NAMESPACE: mode === "preview" ? "qa-preview" : "production",
+    ...(mode === "preview" ? {
+      UTILDESK_RUNTIME_MODE: "preview",
+      UTILDESK_TOOL_RUNTIME_PREVIEW_ENABLED: "on",
+      ...(origin ? { UTILDESK_RUNTIME_ORIGIN: origin } : {}),
+    } : {}),
+  });
+  return fixture;
+}
 
 test("tool route parser accepts only canonical DE/EN detail paths", () => {
   assert.equal(toolDetailSlug("/tools/chatgpt/"), "chatgpt");
@@ -548,4 +590,285 @@ test("tool kill switch does not disable the existing Ratgeber runtime", async ()
   assert.equal(response.headers.get("X-Utildesk-Content-Runtime"), "ratgeber-v1");
   assert.equal(await response.text(), "ratgeber runtime");
   assert.equal(fixture.nextCalls(), 0);
+});
+
+test("Pages cache stores only final public tool HTML and skips the Worker on repeat hits", async () => {
+  installMemoryCache();
+  let upstreamCalls = 0;
+  globalThis.fetch = async (request) => {
+    upstreamCalls += 1;
+    assert.equal(new URL(request.url).origin, "https://utildesk-content-runtime.s-skorykov.workers.dev");
+    return new Response("<html><head></head><body>runtime card</body></html>", {
+      headers: {
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800",
+        "X-Utildesk-Content-Runtime": "tools-v1",
+        "X-Utildesk-Source-Revision": "7",
+      },
+    });
+  };
+
+  const miss = await onRequest(cacheEnabledContext().context);
+  assert.equal(miss.headers.get("X-Utildesk-Pages-Tool-Cache"), "MISS");
+  assert.equal(miss.headers.get("Cache-Control"), "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800");
+  assert.match(await miss.text(), /<meta name="robots"/);
+  const hit = await onRequest(cacheEnabledContext().context);
+  assert.equal(hit.headers.get("X-Utildesk-Pages-Tool-Cache"), "HIT");
+  assert.equal(hit.headers.get("Cache-Control"), "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800");
+  assert.match(await hit.text(), /runtime card/);
+  assert.equal(upstreamCalls, 1);
+});
+
+test("Pages cache expires after 30 seconds and never stores dynamic redirects or tombstones", async () => {
+  let now = 0;
+  installMemoryCache(() => now);
+  let state = "active-one";
+  let upstreamCalls = 0;
+  globalThis.fetch = async () => {
+    upstreamCalls += 1;
+    if (state === "redirect") return new Response(null, { status: 301, headers: { Location: "/tools/ren-py/" } });
+    if (state === "tombstone") return new Response("retired", { status: 410, headers: { "X-Utildesk-Route-State": "tombstone" } });
+    return new Response(`<html><head></head><body>${state}</body></html>`, {
+      headers: { "Content-Type": "text/html", "X-Utildesk-Content-Runtime": "tools-v1", "Cache-Control": "public, s-maxage=600" },
+    });
+  };
+
+  const first = await onRequest(cacheEnabledContext().context);
+  assert.equal(await first.text().then((text) => text.includes("active-one")), true);
+  state = "redirect";
+  const withinGrace = await onRequest(cacheEnabledContext().context);
+  assert.equal(withinGrace.headers.get("X-Utildesk-Pages-Tool-Cache"), "HIT");
+  assert.equal(withinGrace.status, 200);
+
+  now = 30_001;
+  const redirected = await onRequest(cacheEnabledContext().context);
+  assert.equal(redirected.status, 301);
+  assert.equal(redirected.headers.get("Location"), "/tools/ren-py/");
+  assert.equal(redirected.headers.get("X-Utildesk-Pages-Tool-Cache"), "MISS");
+  assert.equal(upstreamCalls, 2);
+
+  state = "tombstone";
+  const tombstone = await onRequest(cacheEnabledContext().context);
+  assert.equal(tombstone.status, 410);
+  assert.equal(upstreamCalls, 3);
+
+  state = "restored-after-rollback";
+  const restored = await onRequest(cacheEnabledContext().context);
+  assert.equal(restored.status, 200);
+  assert.match(await restored.text(), /restored-after-rollback/);
+  assert.equal(restored.headers.get("X-Utildesk-Pages-Tool-Cache"), "MISS");
+  const restoredHit = await onRequest(cacheEnabledContext().context);
+  assert.equal(restoredHit.headers.get("X-Utildesk-Pages-Tool-Cache"), "HIT");
+  assert.equal(upstreamCalls, 4);
+});
+
+test("static route redirects and tombstones run before the Pages HTML cache", async () => {
+  installMemoryCache();
+  let upstreamCalls = 0;
+  globalThis.fetch = async () => {
+    upstreamCalls += 1;
+    return new Response("unexpected upstream", { headers: { "Content-Type": "text/html" } });
+  };
+  const redirect = await onRequest(cacheEnabledContext({ pathname: "/tools/sendinblue/" }).context);
+  assert.equal(redirect.status, 301);
+  assert.equal(redirect.headers.get("Location"), "https://tools.utildesk.de/tools/brevo/");
+  const tombstone = await onRequest(cacheEnabledContext({ pathname: "/tools/xamarin/" }).context);
+  assert.equal(tombstone.status, 410);
+  assert.equal(tombstone.headers.get("X-Utildesk-Route-State"), "tombstone");
+  assert.equal(upstreamCalls, 0);
+});
+
+test("query, conditional, HEAD, cookie and authorization variants bypass the Pages cache unchanged", async () => {
+  installMemoryCache();
+  const seen = [];
+  globalThis.fetch = async (request) => {
+    seen.push({ url: request.url, method: request.method, cookie: request.headers.get("cookie"), authorization: request.headers.get("authorization") });
+    return new Response("<html><head></head><body>fresh</body></html>", {
+      headers: { "Content-Type": "text/html", "X-Utildesk-Content-Runtime": "tools-v1", "Cache-Control": "public, s-maxage=600" },
+    });
+  };
+
+  for (const request of [
+    cacheEnabledContext({ pathname: "/tools/chatgpt/?utm_source=mail" }).context,
+    cacheEnabledContext({ pathname: "/tools/chatgpt/?utm_medium=other" }).context,
+    cacheEnabledContext({ requestHeaders: { "Cache-Control": "no-cache" } }).context,
+    cacheEnabledContext({ requestHeaders: { "If-None-Match": "W/\"old\"" } }).context,
+    cacheEnabledContext({ method: "HEAD" }).context,
+    cacheEnabledContext({ requestHeaders: { Cookie: "session=private" } }).context,
+    cacheEnabledContext({ requestHeaders: { Authorization: "Bearer private" } }).context,
+  ]) {
+    const response = await onRequest(request);
+    await response.text();
+  }
+  assert.equal(seen.length, 7);
+  assert.equal(new URL(seen[0].url).search, "?utm_source=mail");
+  assert.equal(new URL(seen[1].url).search, "?utm_medium=other");
+  assert.equal(seen[4].method, "HEAD");
+  assert.equal(seen[5].cookie, "session=private");
+  assert.equal(seen[6].authorization, "Bearer private");
+});
+
+test("a no-cache request sees content-only Worker updates immediately without changing query variants", async () => {
+  installMemoryCache();
+  let version = "before";
+  let upstreamCalls = 0;
+  globalThis.fetch = async () => {
+    upstreamCalls += 1;
+    return new Response(`<html><head></head><body>${version}</body></html>`, {
+      headers: { "Content-Type": "text/html", "X-Utildesk-Content-Runtime": "tools-v1", "Cache-Control": "public, s-maxage=600" },
+    });
+  };
+  const first = await onRequest(cacheEnabledContext().context);
+  assert.match(await first.text(), /before/);
+  version = "published-DE-EN-update";
+  const gated = await onRequest(cacheEnabledContext({ requestHeaders: { "Cache-Control": "no-cache" } }).context);
+  assert.match(await gated.text(), /published-DE-EN-update/);
+  const nextPublicHit = await onRequest(cacheEnabledContext().context);
+  assert.match(await nextPublicHit.text(), /before/);
+  assert.equal(nextPublicHit.headers.get("X-Utildesk-Pages-Tool-Cache"), "HIT");
+  assert.equal(upstreamCalls, 2);
+});
+
+test("the alternative tool JSON API keeps its separate body and noindex behavior", async () => {
+  let upstreamCalls = 0;
+  globalThis.fetch = async (request) => {
+    upstreamCalls += 1;
+    assert.equal(new URL(request.url).pathname, "/api/tools/chatgpt.json");
+    return new Response(JSON.stringify({ slug: "chatgpt", data: { title: "ChatGPT" } }), {
+      headers: { "Content-Type": "application/json", ETag: '"source-revision-json"' },
+    });
+  };
+  const response = await onRequest(cacheEnabledContext({ pathname: "/api/tools/chatgpt.json" }).context);
+  assert.equal(response.headers.get("X-Robots-Tag"), "noindex");
+  assert.equal(response.headers.get("ETag"), '"source-revision-json"');
+  assert.deepEqual(JSON.parse(await response.text()), { slug: "chatgpt", data: { title: "ChatGPT" } });
+  assert.equal(upstreamCalls, 1);
+});
+
+test("HTML cache stores only responses without Vary or with Accept-Encoding alone", async () => {
+  for (const vary of ["Origin", "Accept-Language", "Accept-Encoding, Origin"]) {
+    installMemoryCache();
+    let calls = 0;
+    globalThis.fetch = async () => {
+      calls += 1;
+      return new Response("<html><head></head><body>variant</body></html>", {
+        headers: { "Content-Type": "text/html", "X-Utildesk-Content-Runtime": "tools-v1", Vary: vary },
+      });
+    };
+    await (await onRequest(cacheEnabledContext().context)).text();
+    await (await onRequest(cacheEnabledContext().context)).text();
+    assert.equal(calls, 2, `${vary} must bypass storage`);
+  }
+
+  installMemoryCache();
+  let calls = 0;
+  globalThis.fetch = async () => {
+    calls += 1;
+    return new Response("<html><head></head><body>encoded</body></html>", {
+      headers: { "Content-Type": "text/html", "X-Utildesk-Content-Runtime": "tools-v1", Vary: " Accept-Encoding " },
+    });
+  };
+  await (await onRequest(cacheEnabledContext().context)).text();
+  await (await onRequest(cacheEnabledContext().context)).text();
+  assert.equal(calls, 1);
+});
+
+test("errors, Set-Cookie and private HTML are never cached", async () => {
+  for (const headers of [
+    { "Content-Type": "text/html", "X-Utildesk-Content-Runtime": "tools-v1", "Set-Cookie": "session=private" },
+    { "Content-Type": "text/html", "X-Utildesk-Content-Runtime": "tools-v1", "Cache-Control": "private, no-store" },
+  ]) {
+    installMemoryCache();
+    let calls = 0;
+    globalThis.fetch = async () => {
+      calls += 1;
+      return new Response("<html><head></head><body>private</body></html>", { headers });
+    };
+    await (await onRequest(cacheEnabledContext().context)).text();
+    await (await onRequest(cacheEnabledContext().context)).text();
+    assert.equal(calls, 2);
+  }
+
+  installMemoryCache();
+  let contentWorkerCalls = 0;
+  let fallbackCalls = 0;
+  globalThis.fetch = async (request) => {
+    if (new URL(request.url).hostname === "utildesk-content-runtime.s-skorykov.workers.dev") {
+      contentWorkerCalls += 1;
+      return new Response("upstream error", { status: 503 });
+    }
+    fallbackCalls += 1;
+    throw new Error("fallback unavailable");
+  };
+  await (await onRequest(cacheEnabledContext().context)).text();
+  await (await onRequest(cacheEnabledContext().context)).text();
+  assert.equal(contentWorkerCalls, 2);
+  assert.equal(fallbackCalls, 2);
+});
+
+test("preview origin is explicit, isolated, and never uses production KV or fallback", async () => {
+  installMemoryCache();
+  let kvReads = 0;
+  const missing = cacheEnabledContext({ mode: "preview" });
+  missing.context.env.RATGEBER_REVIEW.get = async () => { kvReads += 1; throw new Error("production KV must not be read"); };
+  const savedFetch = globalThis.fetch;
+  globalThis.fetch = async () => { throw new Error("no origin must mean no network request"); };
+  const staticFallback = await onRequest(missing.context);
+  assert.equal(staticFallback.headers.get("X-Static-Fallback"), "1");
+  assert.equal(missing.nextCalls(), 1);
+  assert.equal(kvReads, 0);
+  assert.equal(configuredRuntimeOrigin(missing.context), null);
+  assert.equal(configuredRuntimeOrigin(cacheEnabledContext({
+    mode: "preview",
+    origin: "https://utildesk-content-runtime.s-skorykov.workers.dev",
+  }).context), null, "preview must reject the production Worker origin explicitly");
+
+  globalThis.fetch = async (request) => {
+    assert.equal(new URL(request.url).origin, "https://utildesk-hybrid-preview.example.workers.dev");
+    return new Response("preview-only", { headers: { "Content-Type": "text/html", "X-Utildesk-Content-Runtime": "tools-v1" } });
+  };
+  const configured = cacheEnabledContext({ mode: "preview", origin: "https://utildesk-hybrid-preview.example.workers.dev" });
+  configured.context.env.RATGEBER_REVIEW.get = async () => { kvReads += 1; throw new Error("production KV must not be read"); };
+  const previewResponse = await onRequest(configured.context);
+  assert.equal(await previewResponse.text(), "preview-only");
+  assert.equal(kvReads, 0);
+  assert.equal(configuredRuntimeOrigin(configured.context), "https://utildesk-hybrid-preview.example.workers.dev");
+  globalThis.fetch = savedFetch;
+});
+
+test("static video routes do not require runtime environment bindings", async () => {
+  const fixture = contextFor({ pathname: "/videos/tool-walkthrough/" });
+  Object.defineProperty(fixture.context, "env", {
+    configurable: true,
+    get() { throw new Error("static routes must not read runtime-only bindings"); },
+  });
+  const response = await onRequest(fixture.context);
+  assert.equal(response.status, 200);
+  assert.equal(fixture.nextCalls(), 1);
+});
+
+test("catalog-ready marker avoids the Pages full JSON parse only for the matching retire policy", async () => {
+  const policyHash = await getToolRoutePolicyHash();
+  const ready = await filterToolCatalogResponse(new Response(JSON.stringify({ version: 1, count: 1, items: [{ slug: "chatgpt" }] }), {
+    headers: {
+      "Content-Type": "application/json",
+      "Content-Length": "99",
+      "X-Utildesk-Catalog-Ready": "v1",
+      "X-Utildesk-Catalog-Policy": "retired-filter-v1",
+      "X-Utildesk-Catalog-Policy-Hash": policyHash,
+    },
+  }));
+  assert.equal(ready.headers.get("Content-Length"), "99");
+  assert.equal(ready.headers.get("X-Utildesk-Catalog-Policy"), "retired-filter-v1");
+  assert.deepEqual(JSON.parse(await ready.text()).items.map((item) => item.slug), ["chatgpt"]);
+
+  const legacy = await filterToolCatalogResponse(new Response(JSON.stringify({ version: 1, count: 2, items: [{ slug: "chatgpt" }, { slug: "xamarin" }] }), {
+    headers: {
+      "Content-Type": "application/json",
+      "X-Utildesk-Catalog-Ready": "v1",
+      "X-Utildesk-Catalog-Policy": "retired-filter-v1",
+      "X-Utildesk-Catalog-Policy-Hash": "stale-policy",
+    },
+  }));
+  assert.deepEqual(JSON.parse(await legacy.text()).items.map((item) => item.slug), ["chatgpt"]);
 });
