@@ -12,7 +12,7 @@ export default defineConfig({
   build: { assets: "runtime-assets" },
   integrations: [],
   adapter: cloudflare({
-    configPath: "./wrangler.runtime.production.jsonc",
+    configPath: process.env.UTILDESK_RUNTIME_WRANGLER_CONFIG || "./wrangler.runtime.production.jsonc",
     imageService: "passthrough",
     prerenderEnvironment: "node",
   }),

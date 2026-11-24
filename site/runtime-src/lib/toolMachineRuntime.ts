@@ -9,7 +9,7 @@ import { normalizePriceModel } from "../../src/lib/priceModel";
 import { translateLabel, translatePriceModelLabel, translateTags } from "../../shared/toolLabelTranslations.mjs";
 import { normalizeToolEditorialVerdict } from "../../src/lib/toolVerdict";
 import { classifyToolEntry, isCuratedToolEntry, stripTemplateBoilerplate } from "../../src/lib/toolQuality.mjs";
-import type { RuntimeContentEntry, RuntimeLocale } from "./runtimeContent";
+import type { RuntimeContentEntry, RuntimeLocale, RuntimeToolCatalogManifest } from "./runtimeContent";
 import { runtimeToolDescription, runtimeToolEntryLike } from "./toolRuntime";
 
 const SITE_URL = "https://tools.utildesk.de";
@@ -137,6 +137,62 @@ export function buildRuntimeToolCatalog(entries: RuntimeContentEntry[], locale: 
     count: entries.length,
     items: entries.map((entry) => buildRuntimeDisplayTool(entry, locale, primaryBySlug.get(entry.slug) ?? entry)),
   };
+}
+
+export async function runtimeToolCatalogETag(
+  locale: RuntimeLocale,
+  collectionRevision: number,
+  primaryCollectionRevision: number,
+  body: string,
+) {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(body));
+  const hash = [...new Uint8Array(digest)].map((value) => value.toString(16).padStart(2, "0")).join("");
+  const primary = locale === "en" ? `-de-${primaryCollectionRevision}` : "";
+  return `W/\"tool-${locale}-${collectionRevision}${primary}-${hash}\"`;
+}
+
+type RuntimeCatalogObject = { body: ReadableStream<Uint8Array> | null; size?: number };
+type RuntimeCatalogBucket = { get(key: string): Promise<RuntimeCatalogObject | null> };
+
+export async function prebuiltRuntimeToolCatalogResponse(
+  request: Request,
+  locale: RuntimeLocale,
+  manifest: RuntimeToolCatalogManifest | null,
+  bucket: RuntimeCatalogBucket | undefined,
+  currentPolicyHash: string,
+) {
+  if (
+    !manifest?.objectKey || !manifest.etag || !manifest.policyHash || !manifest.contentHash ||
+    !Number.isInteger(manifest.collectionRevision) || !Number.isInteger(manifest.primaryCollectionRevision) ||
+    manifest.policyHash !== currentPolicyHash || !bucket
+  ) return null;
+
+  let object: RuntimeCatalogObject | null;
+  try {
+    object = await bucket.get(manifest.objectKey);
+  } catch {
+    return null;
+  }
+  if (!object?.body) return null;
+
+  const headers = new Headers({
+    "Content-Type": "application/json; charset=utf-8",
+    "X-Robots-Tag": "noindex",
+    "Cache-Control": "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800",
+    ETag: manifest.etag,
+    "X-Utildesk-Catalog-Ready": "v1",
+    "X-Utildesk-Catalog-Policy": "retired-filter-v1",
+    "X-Utildesk-Catalog-Policy-Hash": currentPolicyHash,
+    "X-Utildesk-Catalog-Revision": String(manifest.collectionRevision),
+    "X-Utildesk-Catalog-Locale": locale,
+    "X-Utildesk-Catalog-Hash": manifest.contentHash,
+  });
+  if (object.size != null) headers.set("Content-Length", String(object.size));
+  if (request.headers.get("If-None-Match") === manifest.etag) {
+    headers.delete("Content-Length");
+    return new Response(null, { status: 304, headers });
+  }
+  return new Response(object.body, { headers });
 }
 
 export function buildRuntimeToolJson(entry: RuntimeContentEntry, locale: RuntimeLocale, primaryEntry: RuntimeContentEntry = entry) {

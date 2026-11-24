@@ -19,6 +19,7 @@
     "preview": "astro preview",
     "export:runtime": "node scripts/export_runtime_content.mjs",
     "publish:runtime": "node scripts/publish_runtime_content.mjs",
+    "refresh:tool-catalogs": "node scripts/refresh_tool_catalogs.mjs",
     "release:tool-runtime": "node scripts/tool_runtime_release.mjs",
     "astro": "astro",
     "check:tools-sort": "node ../scripts/check_tools_newest_sort.mjs",

@@ -19,6 +19,7 @@ import {
   uploadR2Assets,
   verifyPagesFallbackAssets,
 } from "./lib/tool-runtime-publisher.mjs";
+import { refreshToolCatalogs } from "./lib/tool-runtime-catalog-publisher.mjs";
 import {
   DEFAULT_MAX_LIVE_REQUESTS,
   estimateProductionPublish,
@@ -95,6 +96,10 @@ async function runToolPublisher() {
   const configPath = valueFor("--config") || (production ? "wrangler.runtime.production.jsonc" : "wrangler.hybrid.jsonc");
   const requestedDatabase = valueFor("--database") || (production ? "utildesk-content-runtime-production" : "utildesk-content-runtime-preview");
   const target = readRuntimeConfig(resolve(RUNTIME_PATHS.SITE_DIR, configPath), requestedDatabase);
+  const catalogBucket = valueFor("--catalog-bucket") || target.catalogBucket;
+  if (target.catalogBucket && valueFor("--catalog-bucket") && target.catalogBucket !== valueFor("--catalog-bucket")) {
+    throw new Error(`--catalog-bucket must match the configured TOOL_ASSETS binding (${target.catalogBucket})`);
+  }
   const ledgerPath = resolve(valueFor("--ledger") || join(RUNTIME_PATHS.REPO_DIR, "docs/04_operations/tool_runtime_live_request_ledger_2026-07.json"));
   const releaseState = gitReleaseState(RUNTIME_PATHS.REPO_DIR, {
     allowedDirtyPaths: [relative(RUNTIME_PATHS.REPO_DIR, ledgerPath)],
@@ -145,6 +150,10 @@ async function runToolPublisher() {
     return;
   }
 
+  if (remote && kind === "tool" && !catalogBucket) {
+    throw new Error("Tool publication requires an existing, isolated TOOL_ASSETS R2 binding for precomputed catalogs; no D1 writes were sent");
+  }
+
   let statements;
   const assets = operation === "upsert" ? toolAssetsForEntries(release.entries) : [];
   if (operation === "upsert") {
@@ -182,7 +191,7 @@ async function runToolPublisher() {
 
   if (liveAccess) {
     const assetMode = valueFor("--asset-bucket") ? "r2" : allowPagesFallbackAssets ? "pages-fallback" : "none";
-    const estimate = estimateProductionPublish({ assets: assets.length, assetMode, compareOnly: !remote });
+    const estimate = estimateProductionPublish({ assets: assets.length, assetMode, compareOnly: !remote, includeToolCatalogs: kind === "tool" });
     summary.liveRequestBudget = await reserveLiveRequests({
       ledgerPath,
       mode: remote ? "production-publish" : "production-compare",
@@ -214,6 +223,12 @@ async function runToolPublisher() {
   const columns = new Set((schemaCheck[0]?.results ?? []).map((row) => row.name));
   for (const required of ["is_active", "route_state", "canonical_path", "source_commit", "asset_key", "asset_hash"]) {
     if (!columns.has(required)) throw new Error(`D1 tool runtime schema is not applied: missing ${required}`);
+  }
+  if (kind === "tool") {
+    const catalogSchema = await queryD1({ ...connection, sql: "SELECT name FROM sqlite_master WHERE type = 'table' AND name = 'runtime_tool_catalogs'" });
+    if (!(catalogSchema[0]?.results ?? []).some((row) => row.name === "runtime_tool_catalogs")) {
+      throw new Error("D1 migration 0008_tool_catalog_objects.sql is required before a tool runtime publish; no content D1 batch was sent");
+    }
   }
   if (operation === "upsert" && assets.length) {
     const assetBucket = valueFor("--asset-bucket");
@@ -252,7 +267,17 @@ async function runToolPublisher() {
     }
   }
   if (verificationErrors.length) throw new Error(`Post-publish D1 verification failed:\n- ${verificationErrors.join("\n- ")}`);
-  const report = { ...summary, published: true, results: results.length, verifiedRows: verifiedRows.length, sourceHashVerified: operation === "upsert" };
+  const catalogRefresh = kind === "tool"
+    ? await refreshToolCatalogs({
+        connection,
+        queryD1,
+        executeD1Batch,
+        bucket: catalogBucket,
+        siteDir: RUNTIME_PATHS.SITE_DIR,
+        configPath: target.configPath,
+      })
+    : null;
+  const report = { ...summary, published: true, results: results.length, verifiedRows: verifiedRows.length, sourceHashVerified: operation === "upsert", catalogRefresh };
   const reportPath = valueFor("--report");
   if (reportPath) {
     await mkdir(resolve(reportPath, ".."), { recursive: true });

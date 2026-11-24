@@ -235,7 +235,14 @@ export function readRuntimeConfig(configPath, databaseName = null) {
   const parsed = JSON.parse(readFileSync(resolvedPath, "utf8"));
   const binding = (parsed.d1_databases ?? []).find((candidate) => !databaseName || candidate.database_name === databaseName || candidate.binding === databaseName);
   if (!binding?.database_id || !binding?.database_name) throw new Error(`D1 binding not found in ${resolvedPath}`);
-  return { configPath: resolvedPath, workerName: parsed.name, databaseId: binding.database_id, databaseName: binding.database_name };
+  const catalogBinding = (parsed.r2_buckets ?? []).find((candidate) => candidate.binding === "TOOL_ASSETS");
+  return {
+    configPath: resolvedPath,
+    workerName: parsed.name,
+    databaseId: binding.database_id,
+    databaseName: binding.database_name,
+    catalogBucket: catalogBinding?.bucket_name ?? null,
+  };
 }
 
 const apiErrors = (payload) => (payload?.errors ?? []).map((error) => `${error.code ?? "api"}: ${error.message ?? "unknown error"}`).join("; ");

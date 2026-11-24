@@ -14,7 +14,7 @@ export default defineConfig({
   output: "server",
   integrations: [],
   adapter: cloudflare({
-    configPath: "./wrangler.hybrid.jsonc",
+    configPath: process.env.UTILDESK_RUNTIME_WRANGLER_CONFIG || "./wrangler.hybrid.jsonc",
     imageService: "passthrough",
     // Existing static routes still read the repository during prerendering.
     prerenderEnvironment: "node",
